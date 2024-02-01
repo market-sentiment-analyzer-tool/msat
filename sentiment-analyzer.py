@@ -1,4 +1,4 @@
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # --- examples -------
 sentences = ["VADER is smart, handsome, and funny.",  # positive sentence example
