@@ -1,0 +1,9 @@
+List of added/modified words from the vader_lexicon.txt file to fit our narrative
+
+buy	2.5	0.8	[2, 3, 2, 3, 1, 2, 3, 2, 2, 3]
+oversell	2.0	0.6	[2, 1, 2, 2, 3, 2, 1, 2, 2, 1]
+overselling	2.2	0.5	[2, 3, 2, 2, 2, 2, 3, 2, 3, 2]
+oversells	2.1	0.7	[2, 3, 1, 2, 1, 2, 2, 2, 1, 2]
+oversold	2.0	0.6	[2, 1, 2, 2, 3, 2, 1, 2, 2, 1]
+sell	-2.0	0.7	[-2, -3, -1, -2, -2, -1, -3, -2, -2, -2]
+short	-2.5	0.8	[-3, -2, -3, -2, -3, -2, -3, -2, -2, -3]
