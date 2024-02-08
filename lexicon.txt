@@ -1,9 +1,43 @@
 List of added/modified words from the vader_lexicon.txt file to fit our narrative
 
+back	-0.3	0.458	[0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+bearish	-2.5	1.025	[-3, -1, -4, -2, -2, -3, -1, -3, -4, -2]
+bookings	1	0.632	[0, 1, 2, 2, 1, 0, 1, 1, 1, 1]
+bullish	2.3	0.9	[2, 3, 4, 1, 2, 2, 3, 3, 2, 1]
 buy	2.5	0.8	[2, 3, 2, 3, 1, 2, 3, 2, 2, 3]
+buyback	2.0	1.095	[1, 2, 4, 2, 2, 3, 1, 0, 2, 3]
+dividend	1.5	1.204 	[2, 3, 1, 0, -1, 2, 3, 2, 1, 2]
+earnings	2.6	0.917	[3, 2, 2, 3, 4, 2, 3, 4, 1, 2]
+estimates	1.7	0.9	[2, 1, 3, 2, 0, 2, 1, 1, 3, 2]
+growth 	2.4	0.917	[2, 3, 4, 1, 2, 3, 2, 3, 3, 1]
+guidance	0.9	0.943	[1, 2, 0, -1, 2, 1, 1, 1, 0, 2]
+hold	0.7	0.781	[1, 0, 2, 1, 1, -1, 1, 1, 0, 1]
+holding	0.7	0.781	[1, 0, 2, 1, 1, -1, 1, 1, 0, 1]
+loss	-1.8	1.166	[0, -3, -2, -2, -1, -3, -1, 0, -3, -3]
+losses	-1.8	1.166	[0, -3, -2, -2, -1, -3, -1, 0, -3, -3]
 oversell	2.0	0.6	[2, 1, 2, 2, 3, 2, 1, 2, 2, 1]
 overselling	2.2	0.5	[2, 3, 2, 2, 2, 2, 3, 2, 3, 2]
 oversells	2.1	0.7	[2, 3, 1, 2, 1, 2, 2, 2, 1, 2]
 oversold	2.0	0.6	[2, 1, 2, 2, 3, 2, 1, 2, 2, 1]
+revenue	2	0.775	[2, 3, 1, 3, 2, 2, 1, 3, 2, 1]
 sell	-2.0	0.7	[-2, -3, -1, -2, -2, -1, -3, -2, -2, -2]
 short	-2.5	0.8	[-3, -2, -3, -2, -3, -2, -3, -2, -2, -3]
+slash	--REMOVED--
+slashed	--REMOVED--
+slashes	--REMOVED--
+underperform	-1.2	0.6	[-1, -2, -1, -1, -2, 0, -1, -1, -1, -2]
+underperforming	-1.2	0.6	[-1, -2, -1, -1, -2, 0, -1, -1, -1, -2]
+underperformed	-0.5	0.922	[-1, 1, -1, 0, -1, 0, -1, 1, -1, -2]
+up	1.9	0.7	[2, 3, 1, 2, 2, 2, 1, 3, 2, 1]
+
+"beats": B_INCR
+"definitely": B_INCR
+"double-digit": B_INCR
+"hikes": B_INCR
+
+"single-digit": B_DECR
+
+NEGATE = {"slash", "slashed", "slashes"}
+
+debt, margin(s), overvalued, disruptor
+"go woke go broke", "bag holders", "never bet against"
