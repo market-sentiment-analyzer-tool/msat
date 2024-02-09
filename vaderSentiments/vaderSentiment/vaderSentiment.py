@@ -53,7 +53,7 @@ BOOSTER_DICT = \
      "fabulously": B_INCR, "flipping": B_INCR, "flippin": B_INCR, "frackin": B_INCR, "fracking": B_INCR,
      "fricking": B_INCR, "frickin": B_INCR, "frigging": B_INCR, "friggin": B_INCR, "fully": B_INCR,
      "fuckin": B_INCR, "fucking": B_INCR, "fuggin": B_INCR, "fugging": B_INCR,
-     "greatly": B_INCR, "hella": B_INCR, "highly": B_INCR, "hugely": B_INCR, "hikes": B_INCR,
+     "greatly": B_INCR, "hella": B_INCR, "high":  B_INCR, "highly": B_INCR, "hugely": B_INCR, "hikes": B_INCR,
      "incredible": B_INCR, "incredibly": B_INCR, "intensely": B_INCR,
      "major": B_INCR, "majorly": B_INCR, "more": B_INCR, "most": B_INCR, "particularly": B_INCR,
      "purely": B_INCR, "quite": B_INCR, "really": B_INCR, "remarkably": B_INCR,
@@ -63,7 +63,7 @@ BOOSTER_DICT = \
      "very": B_INCR,
      "almost": B_DECR, "barely": B_DECR, "hardly": B_DECR, "just enough": B_DECR,
      "kind of": B_DECR, "kinda": B_DECR, "kindof": B_DECR, "kind-of": B_DECR,
-     "less": B_DECR, "little": B_DECR, "marginal": B_DECR, "marginally": B_DECR,
+     "less": B_DECR, "little": B_DECR, "low": B_DECR, "marginal": B_DECR, "marginally": B_DECR,
      "occasional": B_DECR, "occasionally": B_DECR, "partly": B_DECR,
      "scarce": B_DECR, "scarcely": B_DECR, "single-digit": B_DECR, "slight": B_DECR, "slightly": B_DECR, "somewhat": B_DECR,
      "sort of": B_DECR, "sorta": B_DECR, "sortof": B_DECR, "sort-of": B_DECR}

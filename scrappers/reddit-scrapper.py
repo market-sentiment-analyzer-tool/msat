@@ -16,5 +16,7 @@ submission = reddit.submission(id="1aldp6e")
 comments = []
 for top_level_comment in submission.comments:
     comments.append([top_level_comment.body])
+
 comments = pd.DataFrame(comments,columns=['body'])
-print(comments)   
+print(comments)
+# print(comments.iloc[0])   
