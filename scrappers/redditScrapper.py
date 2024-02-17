@@ -1,0 +1,30 @@
+import praw
+import pandas as pd
+
+reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKpWKQHH69WQ69feJMp8znHyw', user_agent='WebScrapper')
+
+def getPosts():
+    posts = []
+    titles = []
+    subreddit = reddit.subreddit('stocks')
+    for post in subreddit.hot(limit=10):
+    # for post in subreddit.top(time_filter="day",limit=10):
+        posts.append([post.title, post.score, post.id, post.subreddit, post.url, post.num_comments, post.selftext, post.created])
+        titles.append(post.title)
+    posts = pd.DataFrame(posts,columns=['title', 'score', 'id', 'subreddit', 'url', 'num_comments', 'body', 'created'])
+    # print(posts)
+    return titles
+
+def getComments():
+    submission = reddit.submission(id="1aldp6e")
+
+    comments = []
+    for top_level_comment in submission.comments:
+        comments.append(top_level_comment.body)
+
+    # comments = pd.DataFrame(comments,columns=['body'])
+    # print(comments)
+    # print (comments.iloc[0])
+    return comments
+
+getPosts()
