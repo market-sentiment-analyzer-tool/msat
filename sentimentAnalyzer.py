@@ -1,5 +1,5 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from scrappers.redditScrapper import getComments, getPosts
+from scrapers.redditScraper import getComments, getPosts
 
 # --- examples -------
 # sentences = ["A buy back is always bullish. Think of it basically like a dividend lol. It reduces the float which raises the avg price per share.",
@@ -12,6 +12,15 @@ from scrappers.redditScrapper import getComments, getPosts
 #             ]
 
 
+# Rate sentiment of posts
+
+# Rate sentiment of comments
+
+# Return table
+# subreddit - id - date - score - sentiment - description
+
+
+# comments = ["Nvidia overvalued and risks blowup"]
 comments = getPosts()
 
 analyzer = SentimentIntensityAnalyzer()
