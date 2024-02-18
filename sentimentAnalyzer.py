@@ -1,5 +1,5 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from scrapers.redditScraper import getComments, getPosts
+from scrapers.redditScraper import getComments, getPosts, getPostsID, printPostsID
 
 # --- examples -------
 # sentences = ["A buy back is always bullish. Think of it basically like a dividend lol. It reduces the float which raises the avg price per share.",
@@ -11,19 +11,32 @@ from scrapers.redditScraper import getComments, getPosts
 #              "NVDA has so much potential, but on the other hand, it is so overvalued right now."
 #             ]
 
+# Time filter (hour, day, week, year)
+time_filter = "week"
 
-# Rate sentiment of posts
+# Stock filter 
+stock_filter = ["nvda", "nvidia"]
+# stock_filter = [""] # no filter
 
-# Rate sentiment of comments
+getPostsID(time_filter,stock_filter)
+# printPostsID(time_filter,stock_filter)
+
 
 # Return table
 # subreddit - id - date - score - sentiment - description
 
 
 # comments = ["Nvidia overvalued and risks blowup"]
-comments = getPosts()
+# comments = getPosts()
 
-analyzer = SentimentIntensityAnalyzer()
-for comment in comments:
-    vs = analyzer.polarity_scores(comment)
-    print("{:-<65} {}".format(comment, str(vs)))
+# posts = getPosts()
+
+# for post in posts:
+#     post_content = post.lower()
+#     matches = ["nvda", "nvidia"]
+#     print(any(x in post_content for x in matches), post_content)
+
+# analyzer = SentimentIntensityAnalyzer()
+# for comment in comments:
+#     vs = analyzer.polarity_scores(comment)
+#     print("{:-<65} {}".format(comment, str(vs)))
