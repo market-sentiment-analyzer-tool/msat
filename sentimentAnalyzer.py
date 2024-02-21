@@ -12,18 +12,20 @@ from scrapers.redditScraper import getComments, getPosts, getPostsID, printPosts
 #             ]
 
 # Time filter (hour, day, week, year)
-time_filter = "week"
+time_filter = "day"
 
 # Stock filter 
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-getPostsID(time_filter,stock_filter)
+# posts = getPostsID(time_filter,stock_filter)
+posts = getComments(time_filter,stock_filter)
+print(posts)
 # printPostsID(time_filter,stock_filter)
 
 
 # Return table
-# subreddit - id - date - score - sentiment - description
+# subreddit - post_id - comment_id - date - score - sentiment - description
 
 
 # comments = ["Nvidia overvalued and risks blowup"]

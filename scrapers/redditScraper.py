@@ -8,7 +8,7 @@ reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKp
 subreddits_visited = ['stocks']
 
 # Limit of posts scraped
-limit = 10
+limit = 100
 
 # Returns an array containing IDs of posts scraped
 # Args: time_filter, stock_filter[]
@@ -35,27 +35,40 @@ def printPostsID(time_filter,stock_filter):
     print(posts)
 
 # Returns an array containing all the comments related to a stock
-# Args: 
-def getComments():
-    post_IDs = getPostsID()
+# Args: time_filter, stock_filter[]
+def getComments(time_filter,stock_filter):
     comments = []
+    post_IDs_with_stock = getPostsID(time_filter,stock_filter)
+    post_IDs_without_stock = getPostsID(time_filter,[""]) # No stock filter
 
-    for post_ID in post_IDs:
-        submission = reddit.submission(id=post_ID)
+    # Get all comments from post mentioning the stock
+    for post in post_IDs_with_stock:
+        post_IDs_without_stock.remove(post) # Removes duplicate posts
+        submission = reddit.submission(id=post)
+        submission.comments.replace_more(limit=0) # Removes all MoreComments
         for top_level_comment in submission.comments:
             comments.append(top_level_comment.body)
+
+    # If stock not mentioned in post
+    # Get only comments mentioning the stock
+    for post in post_IDs_without_stock:
+        submission = reddit.submission(id=post)
+        submission.comments.replace_more(limit=0) # Removes all MoreComments
+        for top_level_comment in submission.comments:
+            comment_content = top_level_comment.body.lower()
+            if(any(x in comment_content for x in stock_filter)): # Filter only comments with stock mentioned
+                comments.append(comment_content)
+
     return comments
 
-
-
-
 # Returns an array containing the title of posts
+# Args: post_IDs[]
 def getPosts():
     titles = []
-    for subreddit_visited in subreddits_visited:
-        subreddit = reddit.subreddit(subreddit_visited)
-        for post in subreddit.hot(limit=limit):
-            titles.append(post.title)
+    # for subreddit_visited in subreddits_visited:
+    #     subreddit = reddit.subreddit(subreddit_visited)
+    #     for post in subreddit.hot(limit=limit):
+    #         titles.append(post.title)
     return titles
 
 
