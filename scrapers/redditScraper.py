@@ -1,5 +1,4 @@
 import praw
-import pandas as pd
 
 # Client information used to scrape Reddit
 reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKpWKQHH69WQ69feJMp8znHyw', user_agent='WebScrapper')
@@ -40,7 +39,6 @@ def getComments(time_filter,stock_filter):
     comments = []
     post_IDs_with_stock = getPostsID(time_filter,stock_filter)
     post_IDs_without_stock = getPostsID(time_filter,[""]) # No stock filter
-
     # Get all comments from post mentioning the stock
     for post in post_IDs_with_stock:
         post_IDs_without_stock.remove(post) # Removes duplicate posts
@@ -48,7 +46,6 @@ def getComments(time_filter,stock_filter):
         submission.comments.replace_more(limit=0) # Removes all MoreComments
         for top_level_comment in submission.comments:
             comments.append(top_level_comment.body)
-
     # If stock not mentioned in post
     # Get only comments mentioning the stock
     for post in post_IDs_without_stock:
@@ -58,17 +55,15 @@ def getComments(time_filter,stock_filter):
             comment_content = top_level_comment.body.lower()
             if(any(x in comment_content for x in stock_filter)): # Filter only comments with stock mentioned
                 comments.append(comment_content)
-
     return comments
 
 # Returns an array containing the title of posts
 # Args: post_IDs[]
-def getPosts():
+def getPosts(posts):
     titles = []
-    # for subreddit_visited in subreddits_visited:
-    #     subreddit = reddit.subreddit(subreddit_visited)
-    #     for post in subreddit.hot(limit=limit):
-    #         titles.append(post.title)
+    for post in posts:
+        post_content = reddit.submission(id=post).title
+        titles.append(post_content)
     return titles
 
 
@@ -85,3 +80,11 @@ def getPosts():
 #     # posts = pd.DataFrame(posts,columns=['title', 'score', 'id', 'subreddit', 'url', 'num_comments', 'body', 'created'])
 #     # print(posts)
 #     return titles
+
+def printCommentsID():
+    submission = reddit.submission(id='1awntpz')
+    submission.comments.replace_more(limit=0) # Removes all MoreComments
+    for top_level_comment in submission.comments:
+        print(top_level_comment.id)
+
+printCommentsID()

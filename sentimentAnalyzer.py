@@ -1,6 +1,8 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from scrapers.redditScraper import getComments, getPosts, getPostsID, printPostsID
 
+import pandas as pd
+
 # --- examples -------
 # sentences = ["A buy back is always bullish. Think of it basically like a dividend lol. It reduces the float which raises the avg price per share.",
 #              "This is great news for all semi stocks and tech in general. Up we go.",
@@ -18,10 +20,13 @@ time_filter = "day"
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-# posts = getPostsID(time_filter,stock_filter)
-posts = getComments(time_filter,stock_filter)
-print(posts)
-# printPostsID(time_filter,stock_filter)
+test = getPostsID(time_filter,stock_filter)
+print(test)
+
+# posts = getPosts(getPostsID(time_filter,stock_filter))
+# comments = getComments(time_filter,stock_filter)
+# print(posts)
+# print(comments)
 
 
 # Return table
