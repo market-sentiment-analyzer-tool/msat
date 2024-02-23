@@ -71,8 +71,8 @@ time_filter = "day"
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-test = getPostsID(time_filter,stock_filter)
-print(test)
+# test = getPostsID(time_filter,stock_filter)
+# print(test)
 
 # posts = getPosts(getPostsID(time_filter,stock_filter))
 # comments = getComments(time_filter,stock_filter)

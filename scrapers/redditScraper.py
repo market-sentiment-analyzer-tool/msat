@@ -1,4 +1,5 @@
 import praw
+from datetime import datetime
 
 
 # Client information used to scrape Reddit
@@ -67,9 +68,33 @@ def getPosts(posts):
         titles.append(post_content)
     return titles
 
+# Returns an array containing info posts related to the stock
+# Args: time_filter, stock_filter[]
+# Output: [subreddit,post_id,comment_id,date,score,description]
+def getPostsTable(time_filter,stock_filter):
+    table = []
+    posts = getPostsID(time_filter,stock_filter)
+    for post in posts:
+        post_subreddit = reddit.submission(id=post).subreddit.display_name
+        post_id = reddit.submission(id=post).id
+        comment_id = None
+        # Time conversion
+        post_date_utc = int(reddit.submission(id=post).created_utc)
+        post_date = datetime.fromtimestamp(post_date_utc).strftime('%d-%m-%Y')
+        post_score = reddit.submission(id=post).score
+        post_content = reddit.submission(id=post).title
+        table.append([post_subreddit,post_id,comment_id,post_date,post_score,post_content])
+    return table
 
+# Returns an array containing info comments related to the stock
+# Args: time_filter, stock_filter[]
+# Output: [subreddit,post_id,comment_id,date,score,description]
+def getCommentsTable():
+    table = []
+    return table
 
-
+posts = getPostsTable("day",["nvda", "nvidia"])
+print(posts)
 # def getPosts():
 #     # posts = []
 #     titles = []
@@ -82,10 +107,8 @@ def getPosts(posts):
 #     # print(posts)
 #     return titles
 
-def printCommentsID():
-    submission = reddit.submission(id='1awntpz')
+def printCommentsID(id):
+    submission = reddit.submission(id=id)
     submission.comments.replace_more(limit=0) # Removes all MoreComments
     for top_level_comment in submission.comments:
         print(top_level_comment.id)
-
-printCommentsID()
