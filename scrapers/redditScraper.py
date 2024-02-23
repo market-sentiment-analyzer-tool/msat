@@ -1,39 +1,6 @@
 import praw
-import mysql.connector
-from mysql.connector import Error, connection
 
-try:
-    # Establish a connection to the MySQL database
-    connection = mysql.connector.connect(host='localhost',  # MySQL server address
-                                         database='MarketSentiment',  # Name of the database
-                                         user='root',  # Username
-                                         password='kalonji1!')  # Password
 
-    # Check if the connection is successful
-    if connection.is_connected():
-        # Retrieve server information
-        db_Info = connection.get_server_info()
-        print("Connected to MySQL Server version ", db_Info)
-        
-        # Create a cursor object to execute SQL queries
-        cursor = connection.cursor()
-        
-        # Execute a SQL query to determine the current database being used
-        cursor.execute("select database();")
-        record = cursor.fetchone()
-        print("You're connected to database: ", record)
-
-except Error as e:
-    # Handle any errors that occur during connection
-    print("Error while connecting to MySQL", e)
-
-finally:
-    # Close the cursor and connection objects to release resources
-    if connection.is_connected():
-        cursor.close()
-        connection.close()
-        print("MySQL connection is closed")
-        
 # Client information used to scrape Reddit
 reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKpWKQHH69WQ69feJMp8znHyw', user_agent='WebScrapper')
 
