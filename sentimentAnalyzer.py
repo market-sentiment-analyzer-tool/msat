@@ -20,6 +20,8 @@ try:
         
         # Create a cursor object to execute SQL queries
         cursor = connection.cursor()
+        with open('db/schema.sql') as f:
+            cursor.execute(f.read(), multi=True)
         
         # Execute a SQL query to determine the current database being used
         cursor.execute("select database();")
