@@ -1,5 +1,5 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from scrapers.redditScraper import getComments, getPosts, getPostsID, printPostsID
+from scrapers.redditScraper import getCommentsTable, getPostsTable
 
 import pandas as pd
 import mysql.connector
@@ -65,29 +65,14 @@ def append_posts(posts):
 #             ]
 
 # Time filter (hour, day, week, year)
-time_filter = "day"
+time_filter = "hour"
 
 # Stock filter 
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-# test = getPostsID(time_filter,stock_filter)
-# print(test)
-
-# posts = getPosts(getPostsID(time_filter,stock_filter))
-# comments = getComments(time_filter,stock_filter)
-# print(posts)
-# print(comments)
-
-
-# Return table
-# subreddit - post_id - comment_id - date - score - sentiment - description
-
-
-# comments = ["Nvidia overvalued and risks blowup"]
-# comments = getPosts()
-
-# posts = getPosts()
+comments = getCommentsTable(time_filter,stock_filter)
+print(comments)
 
 # for post in posts:
 #     post_content = post.lower()
