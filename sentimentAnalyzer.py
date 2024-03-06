@@ -1,5 +1,6 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from scrapers.redditScraper import getCommentsTable, getPostsTable
+from datetime import datetime
 
 import pandas as pd
 import mysql.connector
@@ -16,17 +17,23 @@ try:
     if connection.is_connected():
         # Retrieve server information
         db_Info = connection.get_server_info()
-        print("Connected to MySQL Server version ", db_Info)
-        
+        print("Connected to MySQL Server version", db_Info)
+
         # Create a cursor object to execute SQL queries
         cursor = connection.cursor()
+
+        # Read the contents of the schema.sql file
         with open('db/schema.sql') as f:
-            cursor.execute(f.read(), multi=True)
-        
-        # Execute a SQL query to determine the current database being used
-        cursor.execute("select database();")
-        record = cursor.fetchone()
-        print("You're connected to database: ", record)
+            queries = f.read().split(';')
+
+        # Execute each SQL statement separately
+        for query in queries:
+            if query.strip():  # Skip empty queries
+                cursor.execute(query)
+
+        # Commit the changes to the database
+        connection.commit()
+        print("Schema created successfully!")
 
 except Error as e:
     # Handle any errors that occur during connection
@@ -35,26 +42,37 @@ except Error as e:
 finally:
     # Close the cursor and connection objects to release resources
     if connection.is_connected():
-        cursor.close()
-        connection.close()
-        print("MySQL connection is closed")
+        print("Onto the next thing")
+
+
 
 #fonction to add posts to database
 def append_posts(posts):
     try:
         for post in posts:
-            #SQL query to insert post
-            query = "INSERT INTO nvda (subreddit, post_id, comment_id, p_date, score, sentiment, p_date) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-            #Execute SQL query
-            cursor.execute(query, (post.subreddit, post.post_id, post.comment_id, post.p_date, post.score, post.sentiment, post.p_description))
-            #commit transaction
-            connection.commit()
-            print ("Posts added to database successfully!")
-
+            # Convert the date string to the correct format
+            p_date = datetime.strptime(post[3], '%d-%m-%Y').strftime('%Y-%m-%d')
+            query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+            cursor.execute(query, (post[0], post[1], None, p_date, post[4], 0.0, post[5]))
+        connection.commit()
+        print("Posts added to the database successfully!")
     except Error as e:
-        #Rollback error if an error occured
         connection.rollback()
-        print("Error while adding post to database!")
+        print("Error while adding posts to the database:", e)
+        
+def append_comments(comments):
+    try:
+        for comment in comments:
+            # Convert the date string to the correct format
+            p_date = datetime.strptime(comment[3], '%d-%m-%Y').strftime('%Y-%m-%d')
+            query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+            cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], 0.0, comment[5]))
+            cursor.close()  # Close the result set
+        connection.commit()
+        print("Comments added to the database successfully!")
+    except Error as e:
+        connection.rollback()
+        print("Error while adding comments to the database:", e)
 
 # --- examples -------
 # sentences = ["A buy back is always bullish. Think of it basically like a dividend lol. It reduces the float which raises the avg price per share.",
@@ -67,14 +85,16 @@ def append_posts(posts):
 #             ]
 
 # Time filter (hour, day, week, year)
-time_filter = "hour"
+time_filter = "year"
 
 # Stock filter 
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-comments = getCommentsTable(time_filter,stock_filter)
+comments = getPostsTable(time_filter,stock_filter)
 print(comments)
+append_posts(comments)
+#append_comments(comments)
 
 # for post in posts:
 #     post_content = post.lower()
@@ -85,3 +105,4 @@ print(comments)
 # for comment in comments:
 #     vs = analyzer.polarity_scores(comment)
 #     print("{:-<65} {}".format(comment, str(vs)))
+

@@ -106,8 +106,8 @@ def getCommentsTable(time_filter,stock_filter):
         table.append([comment_subreddit,post_id,comment_id,comment_date,comment_score,comment_content])
     return table
 
-posts = getCommentsTable("day",["aapl", "apple"])
-print(posts)
+#posts = getCommentsTable("day",["aapl", "apple"])
+#print(posts)
 # def getPosts():
 #     # posts = []
 #     titles = []

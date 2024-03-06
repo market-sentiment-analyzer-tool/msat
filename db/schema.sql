@@ -1,16 +1,15 @@
--- Crée une base de données appelée MarketSentiment si elle n'existe pas déjà
 CREATE DATABASE IF NOT EXISTS MarketSentiment;
 
--- Sélectionne la base de données MarketSentiment pour travailler dessus
 USE MarketSentiment;
 
--- Crée une table appelée NVDA si elle n'existe pas déjà
-CREATE TABLE IF NOT EXISTS NVDA (
+CREATE TABLE IF NOT EXISTS NVDA_DATA (
+    id INT AUTO_INCREMENT,
     subreddit VARCHAR(255),
-    post_id INT,
-    comment_id INT,
+    post_id VARCHAR(255),
+    comment_id VARCHAR(255),
     p_date DATE,
     score INT,
     sentiment FLOAT,
-    p_description TEXT
+    p_description TEXT,
+    PRIMARY KEY (id)
 );
