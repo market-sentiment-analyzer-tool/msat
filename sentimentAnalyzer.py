@@ -67,12 +67,19 @@ def append_comments(comments):
             p_date = datetime.strptime(comment[3], '%d-%m-%Y').strftime('%Y-%m-%d')
             query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
             cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], 0.0, comment[5]))
-            cursor.close()  # Close the result set
         connection.commit()
         print("Comments added to the database successfully!")
     except Error as e:
         connection.rollback()
         print("Error while adding comments to the database:", e)
+
+def close_db_connection():
+    # Close the cursor and connection objects to release resources
+    cursor.close()
+    connection.close()
+    print("Database connection closed successfully!")
+
+
 
 # --- examples -------
 # sentences = ["A buy back is always bullish. Think of it basically like a dividend lol. It reduces the float which raises the avg price per share.",
@@ -85,16 +92,17 @@ def append_comments(comments):
 #             ]
 
 # Time filter (hour, day, week, year)
-time_filter = "year"
+time_filter = "day"
 
 # Stock filter 
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-comments = getPostsTable(time_filter,stock_filter)
+comments = getCommentsTable(time_filter,stock_filter)
 print(comments)
-append_posts(comments)
+append_comments(comments)
 #append_comments(comments)
+close_db_connection()
 
 # for post in posts:
 #     post_content = post.lower()
