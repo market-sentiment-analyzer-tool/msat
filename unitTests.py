@@ -3,6 +3,13 @@ import re
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from scrapers.redditScraper import getCommentsTable, getPostsTable
 
+def is_integer(value):
+    try:
+        int(value)
+        return True
+    except ValueError:
+        return False
+
 class TestSentimentAnalyzer(unittest.TestCase):
     def setUp(self):
         pass
@@ -84,6 +91,27 @@ class TestRedditApi(unittest.TestCase):
         posts = getPostsTable(time_filter,stock_filter)
         self.assertGreaterEqual(len(posts),0)
 
+    def test_good_request_2(self):
+        # Get posts table
+        time_filter = "day"
+        stock_filter = ["aapl","apple"]
+        posts = getPostsTable(time_filter,stock_filter)
+        # print(posts)
+        if(len(posts) > 0):
+            for post in posts:
+                # Length of post data should be 6
+                self.assertEqual(len(post),6)
+                # Check content of post data
+                self.assertRegex(post[0],r"^.+$")
+                self.assertRegex(post[1],r"^.+$")
+                self.assertIsNone(post[2])
+                self.assertRegex(post[3],r"\d{1,2}-\d{1,2}-\d{4}")
+                self.assertTrue(is_integer(post[4]))
+                self.assertRegex(post[5],r"^.+$")
+                
+        else:
+            raise unittest.SkipTest("Array of length 0")
+
     # Testing bad requests to API
     # Time filter (hour, day, week, year)
     # stock_filter = [""] # no filter
@@ -97,6 +125,10 @@ class TestRedditApi(unittest.TestCase):
         # Request without time_filter
         stock_filter = ["aapl","apple"]
         self.assertRaises(TypeError,getPostsTable,stock_filter)
+
+    def test_bad_request_2(self):
+        # Request without any arguments
+        self.assertRaises(TypeError,getPostsTable)
 
 
 if __name__ == '__main__': 
