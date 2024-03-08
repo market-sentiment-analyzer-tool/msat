@@ -66,7 +66,10 @@ def append_posts(posts):
             else:
                 # Post does not exist, insert a new row
                 query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-                cursor.execute(query, (post[0], post[1], None, p_date, post[4], 0.0, post[5]))
+                analyzer = SentimentIntensityAnalyzer()
+                vs = analyzer.polarity_scores(post[5])
+                compound_value = vs.get('compound')
+                cursor.execute(query, (post[0], post[1], None, p_date, post[4], compound_value, post[5]))
                 print("Posts added to the database successfully!")
 
         connection.commit()
@@ -93,7 +96,10 @@ def append_comments(comments):
             else:
                 # Comment does not exist, insert a new row
                 query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-                cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], 0.0, comment[5]))
+                analyzer = SentimentIntensityAnalyzer()
+                vs = analyzer.polarity_scores(comment[5])
+                compound_value = vs.get('compound')
+                cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], compound_value, comment[5]))
                 print("Comment added to the database successfully!")
 
         connection.commit()
