@@ -52,23 +52,51 @@ def append_posts(posts):
         for post in posts:
             # Convert the date string to the correct format
             p_date = datetime.strptime(post[3], '%d-%m-%Y').strftime('%Y-%m-%d')
-            query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-            cursor.execute(query, (post[0], post[1], None, p_date, post[4], 0.0, post[5]))
+
+            # Check if the post already exists in the database
+            query = "SELECT id FROM NVDA_DATA WHERE post_id = %s"
+            cursor.execute(query, (post[1],))
+            result = cursor.fetchone()
+
+            if result:
+                # Post already exists, update the score
+                query = "UPDATE NVDA_DATA SET score = %s WHERE id = %s"
+                cursor.execute(query, (post[4], result[0]))
+                print("Posts updated successfully!")
+            else:
+                # Post does not exist, insert a new row
+                query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+                cursor.execute(query, (post[0], post[1], None, p_date, post[4], 0.0, post[5]))
+                print("Posts added to the database successfully!")
+
         connection.commit()
-        print("Posts added to the database successfully!")
     except Error as e:
         connection.rollback()
         print("Error while adding posts to the database:", e)
-        
+
 def append_comments(comments):
     try:
         for comment in comments:
             # Convert the date string to the correct format
             p_date = datetime.strptime(comment[3], '%d-%m-%Y').strftime('%Y-%m-%d')
-            query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-            cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], 0.0, comment[5]))
+            
+            # Check if the comment already exists in the database
+            query = "SELECT id FROM NVDA_DATA WHERE comment_id = %s"
+            cursor.execute(query, (comment[2],))
+            result = cursor.fetchone()
+
+            if result:
+                # Comment already exists, update the score
+                query = "UPDATE NVDA_DATA SET score = %s WHERE id = %s"
+                cursor.execute(query, (comment[4], result[0]))
+                print("Comment updated successfully!")
+            else:
+                # Comment does not exist, insert a new row
+                query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+                cursor.execute(query, (comment[0], comment[1], comment[2], p_date, comment[4], 0.0, comment[5]))
+                print("Comment added to the database successfully!")
+
         connection.commit()
-        print("Comments added to the database successfully!")
     except Error as e:
         connection.rollback()
         print("Error while adding comments to the database:", e)
@@ -92,15 +120,15 @@ def close_db_connection():
 #             ]
 
 # Time filter (hour, day, week, year)
-time_filter = "day"
+time_filter = "week"
 
 # Stock filter 
 stock_filter = ["nvda", "nvidia"]
 # stock_filter = [""] # no filter
 
-comments = getCommentsTable(time_filter,stock_filter)
+comments = getPostsTable(time_filter,stock_filter)
 print(comments)
-append_comments(comments)
+append_posts(comments)
 #append_comments(comments)
 close_db_connection()
 
