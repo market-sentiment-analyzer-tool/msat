@@ -5,6 +5,7 @@ from datetime import datetime
 import pandas as pd
 import mysql.connector
 from mysql.connector import Error, connection
+import subprocess
 
 try:
     # Establish a connection to the MySQL database
@@ -76,6 +77,50 @@ def append_posts(posts):
     except Error as e:
         connection.rollback()
         print("Error while adding posts to the database:", e)
+    finally:
+        # Advance the cursor to the next result set, if any
+        if cursor.nextset():
+            # Call the function recursively to process the next result set
+            append_posts(posts)
+
+def get_post_comment_ids():
+    try:
+        # Create an empty array to store the post and comment ids
+        result = []
+
+        # Execute the SQL query to retrieve the post and comment ids
+        query = "SELECT post_id, comment_id FROM NVDA_DATA"
+        cursor.execute(query)
+        rows = cursor.fetchall()
+
+        # Iterate over the rows and append the post and comment ids to the result array
+        for row in rows:
+            result.append(row)
+
+        return result
+    except Error as e:
+        print("Error while retrieving post and comment ids:", e)
+        return []
+    
+def dump_database_data(host, database, user, password, output_file):
+    try:
+        # Construct the mysqldump command
+        command = [
+            "mysqldump",
+            "--host=" + host,
+            "--user=" + user,
+            "--password=" + password,
+            "--result-file=" + output_file,
+            database
+        ]
+
+        # Execute the mysqldump command
+        subprocess.run(command, check=True)
+
+        print("Data dumped successfully to:", output_file)
+
+    except subprocess.CalledProcessError as e:
+        print("Error while dumping data:", e)
 
 def append_comments(comments):
     try:
@@ -117,13 +162,28 @@ def close_db_connection():
 time_filter = "week"
 
 # Stock filter 
-stock_filter = ["nvda", "nvidia"]
+stock_filter = ['nvda', 'nvidia']
+ 
 # stock_filter = [""] # no filter
 
 comments = getPostsTable(time_filter,stock_filter)
 print(comments)
-append_posts(comments)
 #append_comments(comments)
+append_posts(comments)
+
+
+# Call the function to get the post and comment ids
+post_comment_ids = get_post_comment_ids()
+print(post_comment_ids)
+
+# dump_database_data(
+#     host='localhost',
+#     database='MarketSentiment',
+#     user='root',
+#     password='kalonji1!',
+#     output_file='db/data.sql'
+# )
+
 close_db_connection()
 
 # for post in posts:

@@ -93,7 +93,7 @@ class TestRedditApi(unittest.TestCase):
 
     def test_good_request_1002(self):
         # Get posts table
-        time_filter = "day"
+        time_filter = "hour"
         stock_filter = ["aapl","apple"]
         posts = getPostsTable(time_filter,stock_filter)
         # print(posts)
