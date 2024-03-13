@@ -14,7 +14,18 @@ Our current architecture is the following:
 
 #### Reddit
 
-The Python Reddit API was made by [PRAW](https://praw.readthedocs.io/en/stable/).
+The Python Reddit API used in this project was made by [PRAW](https://praw.readthedocs.io/en/stable/). It was used to scrape posts and comments from different subreddits. Posts and comments from a specific stock (example: NVDA) were scraped following this technique:
+
+```
+if a post mentions NVDA:
+-> include the post
+-> include all the comments associated with the post
+
+otherwise:
+-> include only comments mentioning NVDA
+```
+
+This way, only comments that are related to NVDA are taken into consideration for the sentiment analysis.
 
 #### Yahoo Finance
 
@@ -30,7 +41,22 @@ The Sentiment Analyzer used for this project was made by [vaderSentiment](https:
 
 ### Database
 
-Coming Soon.
+The Data Base Management System (DBMS) used in this project is MySQL. Each stock have their own tables, one for each source (i.e Reddit, Yahoo Finance, Twitter/X). Taking the example of NVDA, the posts and comments scraped from Reddit are stored this way:
+
+|subreddit  |post_id|comment_id|date       |score|sentiment|description|
+|-----------|-------|----------|-----------|-----|---------|-----------|
+|stocks     |180s2lt|`NULL`    |2023-11-21 |726  |0.4588   |Nvidia crush earnings yet again|
+|stocks     |1b9l1ex|ktxppxv   |2024-03-08 |1    |-0.128   |literally sold NVDA yesterday from fear of a drop. wow|
+|stocks     |1b9l1ex|ktxtmyh   |2024-03-08 |3    |0.5848   |Nvda dip is rare. Buy while you can!|
+|NVDA_Stock |1bcbw8h|`NULL`    |2024-03-11 |21   |0.2263   |Someone bought $780 MILLION worth of NVDA call options of Friday|
+
+The database stores both posts and comments, each comment is associated to a post. All posts have `NULL` as their `comment_id` value. Two columns are important to calculate the sentiment of the stock, explanations are listed below:
+
+```
+score: note associated with a comment or post, the higher the score the higher the weight on the overall sentiment (i.e upvotes on Reddit)
+sentiment: grade on a scale of -1 to 1 (-1 being very negative and 1 being very positive) given to a comment or post by the Sentiment Analyzer
+```
+
 
 ### User Interface
 
