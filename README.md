@@ -41,7 +41,17 @@ The Sentiment Analyzer used for this project was made by [vaderSentiment](https:
 
 ### Database
 
-The Data Base Management System (DBMS) used in this project is MySQL. Each stock have their own tables, one for each source (i.e Reddit, Yahoo Finance, Twitter/X). Taking the example of NVDA, the posts and comments scraped from Reddit are stored this way:
+The Data Base Management System (DBMS) used in this project is MySQL. The database is divided in folders, one for each stock. Each folder contains multiple tables, one for each source (i.e Reddit, Yahoo Finance, Twitter/X). Taking the example of NVDA:
+
+```
+NVDA tables:
+  - Reddit
+  - Yahoo Finance
+  - Twitter/X
+  - ...
+```
+
+For each of these tables, posts/comments are stored in our database. For the case of Reddit, the posts and comments scraped are stored this way:
 
 |subreddit  |post_id|comment_id|date       |score|sentiment|description|
 |-----------|-------|----------|-----------|-----|---------|-----------|
