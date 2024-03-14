@@ -6,6 +6,7 @@ import pandas as pd
 import mysql.connector
 from mysql.connector import Error, connection
 import subprocess
+import re
 
 try:
     # Establish a connection to the MySQL database
@@ -45,43 +46,6 @@ finally:
     if connection.is_connected():
         print("Onto the next thing")
 
-
-
-#fonction to add posts to database
-def append_posts(posts):
-    try:
-        for post in posts:
-            # Convert the date string to the correct format
-            p_date = datetime.strptime(post[3], '%d-%m-%Y').strftime('%Y-%m-%d')
-
-            # Check if the post already exists in the database
-            query = "SELECT id FROM NVDA_DATA WHERE post_id = %s"
-            cursor.execute(query, (post[1],))
-            result = cursor.fetchone()
-
-            if result:
-                # Post already exists, update the score
-                query = "UPDATE NVDA_DATA SET score = %s WHERE id = %s"
-                cursor.execute(query, (post[4], result[0]))
-                print("Posts updated successfully!")
-            else:
-                # Post does not exist, insert a new row
-                query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-                analyzer = SentimentIntensityAnalyzer()
-                vs = analyzer.polarity_scores(post[5])
-                compound_value = vs.get('compound')
-                cursor.execute(query, (post[0], post[1], None, p_date, post[4], compound_value, post[5]))
-                print("Posts added to the database successfully!")
-
-        connection.commit()
-    except Error as e:
-        connection.rollback()
-        print("Error while adding posts to the database:", e)
-    finally:
-        # Advance the cursor to the next result set, if any
-        if cursor.nextset():
-            # Call the function recursively to process the next result set
-            append_posts(posts)
 
 def get_post_comment_ids():
     try:
@@ -152,6 +116,38 @@ def append_comments(comments):
         connection.rollback()
         print("Error while adding comments to the database:", e)
 
+#fonction to add posts to database
+def append_posts(posts):
+    try:
+        for post in posts:
+            # Convert the date string to the correct format
+            p_date = datetime.strptime(post[3], '%d-%m-%Y').strftime('%Y-%m-%d')
+            
+            # Check if the comment already exists in the database
+            query = "SELECT id FROM NVDA_DATA WHERE post_id = %s"
+            cursor.execute(query, (post[1],))
+            result = cursor.fetchone()
+            cursor.fetchall()
+
+            if result:
+                # Comment already exists, update the score
+                query = "UPDATE NVDA_DATA SET score = %s WHERE id = %s"
+                cursor.execute(query, (post[4], result[0]))
+                print("Post updated successfully!")
+            else:
+                # Comment does not exist, insert a new row
+                query = "INSERT INTO NVDA_DATA (subreddit, post_id, comment_id, p_date, score, sentiment, p_description) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+                analyzer = SentimentIntensityAnalyzer()
+                vs = analyzer.polarity_scores(post[5])
+                compound_value = vs.get('compound')
+                cursor.execute(query, (post[0], post[1], None, p_date, post[4], compound_value, post[5]))
+                print("Post added to the database successfully!")
+
+        connection.commit()
+    except Error as e:
+        connection.rollback()
+        print("Error while adding comments to the database:", e)
+
 def close_db_connection():
     # Close the cursor and connection objects to release resources
     cursor.close()
@@ -159,7 +155,7 @@ def close_db_connection():
     print("Database connection closed successfully!")
 
 # Time filter (hour, day, week, year)
-time_filter = "week"
+time_filter = "day"
 
 # Stock filter 
 stock_filter = ['nvda', 'nvidia']
@@ -168,13 +164,13 @@ stock_filter = ['nvda', 'nvidia']
 
 comments = getPostsTable(time_filter,stock_filter)
 print(comments)
-#append_comments(comments)
 append_posts(comments)
+#append_posts(comments)
 
 
 # Call the function to get the post and comment ids
-post_comment_ids = get_post_comment_ids()
-print(post_comment_ids)
+#post_comment_ids = get_post_comment_ids()
+#print(post_comment_ids)
 
 # dump_database_data(
 #     host='localhost',
