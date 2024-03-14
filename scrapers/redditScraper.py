@@ -106,6 +106,27 @@ def getCommentsTable(time_filter,stock_filter):
         table.append([comment_subreddit,post_id,comment_id,comment_date,comment_score,comment_content])
     return table
 
+# Returns an array containing the updated rating of comments and posts
+# Args: info[]
+# Output: [post_id,comment_id,score]
+def getUpdatedScores(info):
+    table = []
+    for tuple in info:
+        # Update score of post
+        if tuple[1] == None:
+            post = reddit.submission(id=tuple[0])
+            table.append([tuple[0],tuple[1],post.score])
+        # Update score of comment
+        else:
+            # print(tuple[0],tuple[1]) # remove
+            comment = reddit.comment(tuple[1])
+            table.append([tuple[0],tuple[1],comment.score])
+    return table
+
+# info = [('1b27tqo','ksjkf6s'),('1b9l1ex','ktxppxv'),('180s2lt',None)]
+# update = getUpdatedScores(info)
+# print(update)
+
 #posts = getCommentsTable("day",["aapl", "apple"])
 #print(posts)
 # def getPosts():
