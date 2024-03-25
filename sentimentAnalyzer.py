@@ -1,6 +1,7 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from scrapers.redditScraper import getCommentsTable, getPostsTable
 from datetime import datetime
+from creds import credentials
 
 import pandas as pd
 import mysql.connector
@@ -10,10 +11,10 @@ import re
 
 try:
     # Establish a connection to the MySQL database
-    connection = mysql.connector.connect(host='localhost',  # MySQL server address
-                                         database='MarketSentiment',  # Name of the database
-                                         user='root',  # Username
-                                         password='kalonji1!')  # Password
+    connection = mysql.connector.connect(host=credentials["host"],  # MySQL server address
+                                         database=credentials["database"],  # Name of the database
+                                         user=credentials["user"],  # Username
+                                         password=credentials["password"])  # Password
 
     # Check if the connection is successful
     if connection.is_connected():
