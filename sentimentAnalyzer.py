@@ -1,5 +1,5 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from scrapers.redditScraper import getCommentsTable, getPostsTable
+from scrapers.redditScraper import getCommentsTable, getPostsTable, getUpdatedScores
 from datetime import datetime
 from creds import credentials
 
@@ -48,14 +48,14 @@ finally:
         print("Onto the next thing")
 
 
-def get_post_comment_ids():
+def get_post_comment_ids(min_id, max_id):
     try:
         # Create an empty array to store the post and comment ids
         result = []
 
-        # Execute the SQL query to retrieve the post and comment ids
-        query = "SELECT post_id, comment_id FROM NVDA_DATA"
-        cursor.execute(query)
+        # Execute the SQL query to retrieve the post and comment ids within the specified range
+        query = "SELECT post_id, comment_id FROM NVDA_DATA WHERE id BETWEEN %s AND %s"
+        cursor.execute(query, (min_id, max_id))
         rows = cursor.fetchall()
 
         # Iterate over the rows and append the post and comment ids to the result array
@@ -66,7 +66,7 @@ def get_post_comment_ids():
     except Error as e:
         print("Error while retrieving post and comment ids:", e)
         return []
-    
+
 def dump_database_data(host, database, user, password, output_file):
     try:
         # Construct the mysqldump command
@@ -125,7 +125,7 @@ def append_posts(posts):
             p_date = datetime.strptime(post[3], '%d-%m-%Y').strftime('%Y-%m-%d')
             
             # Check if the comment already exists in the database
-            query = "SELECT id FROM NVDA_DATA WHERE post_id = %s"
+            query = "SELECT id FROM NVDA_DATA WHERE post_id = %s AND comment_id IS NULL"
             cursor.execute(query, (post[1],))
             result = cursor.fetchone()
             cursor.fetchall()
@@ -155,6 +155,26 @@ def close_db_connection():
     connection.close()
     print("Database connection closed successfully!")
 
+def update_score(data):
+    try:
+        # Iterate over the data and update the score in the database
+        for row in data:
+            post_id = row[0]
+            comment_id = row[1]
+            score = row[2]
+
+            # Execute the SQL query to update the score
+            query = "UPDATE NVDA_DATA SET score = %s WHERE post_id = %s AND comment_id = %s"
+            cursor.execute(query, (score, post_id, comment_id))
+
+        # Commit the changes to the database
+        connection.commit()
+        print("Scores updated successfully.")
+    except Error as e:
+        # Rollback the transaction in case of an error
+        connection.rollback()
+        print("Error while updating scores:", e)
+
 # Time filter (hour, day, week, year)
 time_filter = "day"
 
@@ -169,9 +189,14 @@ append_posts(comments)
 #append_posts(comments)
 
 
+
+
 # Call the function to get the post and comment ids
-#post_comment_ids = get_post_comment_ids()
+post_comment_ids = get_post_comment_ids(0, 50)
 #print(post_comment_ids)
+new_score = getUpdatedScores(post_comment_ids)
+print(new_score)
+update_score(new_score)
 
 # dump_database_data(
 #     host='localhost',

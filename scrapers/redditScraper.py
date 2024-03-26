@@ -123,9 +123,9 @@ def getUpdatedScores(info):
             table.append([tuple[0],tuple[1],comment.score])
     return table
 
-# info = [('1b27tqo','ksjkf6s'),('1b9l1ex','ktxppxv'),('180s2lt',None)]
-# update = getUpdatedScores(info)
-# print(update)
+#info = [('1b27tqo','ksjkf6s'),('1b9l1ex','ktxppxv'),('180s2lt',None)]
+#update = getUpdatedScores(info)
+#print(update)
 
 #posts = getCommentsTable("day",["aapl", "apple"])
 #print(posts)
