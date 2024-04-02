@@ -1,6 +1,8 @@
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from scrapers.redditScraper import getCommentsTable, getPostsTable, getUpdatedScores
 from datetime import datetime
+from datetime import datetime
+from dateutil import relativedelta
 from creds import credentials
 
 import pandas as pd
@@ -67,28 +69,43 @@ def get_post_comment_ids(min_id, max_id):
         print("Error while retrieving post and comment ids:", e)
         return []
     
-def get_scores_and_sentiments(table_name):
+def get_scores_and_sentiments(table_name, time_filter):
     try:
-        result = []
+        # Create a cursor object to execute SQL queries
+        date = getTimeFilter(time_filter)
 
         # Retrieve the scores and sentiments from the specified table
-        query = f"SELECT score, sentiment FROM {table_name}"
+        query = f"SELECT score, sentiment FROM {table_name} WHERE p_date > '{date}'"
         cursor.execute(query)
         rows = cursor.fetchall()
 
-        # Close the cursor and connection objects to release resources
-        cursor.close()
-
-        # Return the scores and sentiments as a list of tuples
-        for row in rows:
-            result.append(row)
-        return result
+        return rows
 
     except Error as e:
         # Handle any errors that occur during the connection
-        print("Error while connecting to MySQL", e)
+        print("Error while retrieving scores and sentiments:", e)
         return []
 
+# Helper function for time filters
+# Args: time_filter
+# Output: current date - time_filter
+def getTimeFilter(time_filter):
+    today = datetime.today()
+    match time_filter:
+        case "M":
+            delta = relativedelta.relativedelta(months=1)
+            new_date = today - delta
+            return new_date.strftime('%Y-%m-%d')
+        case "Q":
+            delta = relativedelta.relativedelta(months=3)
+            new_date = today - delta
+            return new_date.strftime('%Y-%m-%d')
+        case "Y":
+            delta = relativedelta.relativedelta(years=1)
+            new_date = today - delta
+            return new_date.strftime('%Y-%m-%d')
+        case "A":
+            return '2000-01-01'
     
 
 def dump_database_data(host, database, user, password, output_file):
@@ -223,10 +240,10 @@ append_posts(comments)
 #print(new_score)
 #update_score(new_score)
 
-table_name = "NVDA_DATA"  # Replace with the actual table name
-scores_and_sentiments = get_scores_and_sentiments(table_name)
-print("Here are the scores and sentiments:")
-print(scores_and_sentiments)
+#table_name = "NVDA_DATA"  # Replace with the actual table name
+#scores_and_sentiments = get_scores_and_sentiments(table_name)
+#print("Here are the scores and sentiments:")
+#print(scores_and_sentiments)
 
 
 
@@ -238,7 +255,7 @@ print(scores_and_sentiments)
 #     output_file='db/data.sql'
 # )
 
-close_db_connection()
+#close_db_connection()
 
 # for post in posts:
 #     post_content = post.lower()
