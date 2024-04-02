@@ -8,13 +8,19 @@ class SentimentPage extends Component{
         super(props)
         this.state = {
             currentStock: 'NVIDIA Corporation',
-            redditSentiment: 0.25,
+            redditSentiment: 0,
             redditNumOfComments: 153,
             yahooSentiment: 0,
             yahooNumOfComments: 0,
             twitterSentiment: 0,
             twitterNumOfComments: 0,
         }
+    }
+
+    componentDidMount() {
+        fetch(`http://127.0.0.1:5000/sentiment`)
+        .then(response => response.json())
+        .then(json => this.setState({redditSentiment: json}))
     }
 
     render(){
