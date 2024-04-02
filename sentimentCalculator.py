@@ -1,27 +1,56 @@
 from datetime import datetime
 from dateutil import relativedelta
+from creds import credentials
+import mysql.connector
+from mysql.connector import Error, connection
 
 # Returns the Reddit sentiment associated with a stock
 # Args: stock, time_filter
 # time_filter options -> M (month), Q (quarter), Y (year), A (all)
-def getRedditSentiment(stock,time_filter):
+def getRedditSentiment(table_name, time_filter):
     # Call helper function
     date = getTimeFilter(time_filter)
-    # Call sentiment table from database
-    # table = getTable(stock,date)
+    try:
+        # Establish a connection to the MySQL database
+        connection = mysql.connector.connect(host=credentials["host"],  # MySQL server address
+                                             database=credentials["database"],  # Name of the database
+                                             user=credentials["user"],  # Username
+                                             password=credentials["password"])  # Password
 
-    # Calculate sentiment
-    sum_of_scores = 0
-    num_of_votes = 0
-    # Go through the table
-    # for val in table:
-    #     score = votes * sentiment 
-    #     sum_of_scores += score
-    #     num_of_votes += votes
-    
-    # Sentiment is the average
-    sentiment = sum_of_scores / num_of_votes
-    return sentiment
+        # Check if the connection is successful
+        if connection.is_connected():
+            # Create a cursor object to execute SQL queries
+            cursor = connection.cursor()
+
+            # Retrieve the scores and sentiments from the specified table
+            query = f"SELECT score, sentiment FROM {table_name} WHERE p_date > '{date}'"
+            cursor.execute(query)
+            rows = cursor.fetchall()
+
+            # Calculate sentiment
+            sum_of_scores = 0
+            num_of_votes = 0
+
+            for row in rows:
+                score = row[0] * row[1]
+                votes = row[0]
+                sum_of_scores += score
+                num_of_votes += votes
+
+            # Sentiment is the average
+            final_sentiment = sum_of_scores / num_of_votes
+
+            # Close the cursor and connection objects to release resources
+            cursor.close()
+            connection.close()
+
+            # Return the final sentiment
+            return final_sentiment
+        print(final_sentiment)
+
+    except Error as e:
+        # Handle any errors that occur during the connection
+        print("Error while connecting to MySQL", e)
 
 # Helper function for time filters
 # Args: time_filter
@@ -44,4 +73,5 @@ def getTimeFilter(time_filter):
         case "A":
             return '2000-01-01'
 
-getRedditSentiment("","Q")
+final_sentiment = getRedditSentiment("NVDA_DATA","A")
+print(final_sentiment)
