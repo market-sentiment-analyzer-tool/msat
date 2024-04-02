@@ -66,6 +66,30 @@ def get_post_comment_ids(min_id, max_id):
     except Error as e:
         print("Error while retrieving post and comment ids:", e)
         return []
+    
+def get_scores_and_sentiments(table_name):
+    try:
+        result = []
+
+        # Retrieve the scores and sentiments from the specified table
+        query = f"SELECT score, sentiment FROM {table_name}"
+        cursor.execute(query)
+        rows = cursor.fetchall()
+
+        # Close the cursor and connection objects to release resources
+        cursor.close()
+
+        # Return the scores and sentiments as a list of tuples
+        for row in rows:
+            result.append(row)
+        return result
+
+    except Error as e:
+        # Handle any errors that occur during the connection
+        print("Error while connecting to MySQL", e)
+        return []
+
+    
 
 def dump_database_data(host, database, user, password, output_file):
     try:
@@ -192,11 +216,19 @@ append_posts(comments)
 
 
 # Call the function to get the post and comment ids
-post_comment_ids = get_post_comment_ids(0, 50)
+#post_comment_ids = get_post_comment_ids(0, 50)
 #print(post_comment_ids)
-new_score = getUpdatedScores(post_comment_ids)
-print(new_score)
-update_score(new_score)
+#Updates with the new score
+#new_score = getUpdatedScores(post_comment_ids)
+#print(new_score)
+#update_score(new_score)
+
+table_name = "NVDA_DATA"  # Replace with the actual table name
+scores_and_sentiments = get_scores_and_sentiments(table_name)
+print("Here are the scores and sentiments:")
+print(scores_and_sentiments)
+
+
 
 # dump_database_data(
 #     host='localhost',
