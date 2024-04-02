@@ -28,5 +28,5 @@ def getRedditSentiment(table_name, time_filter):
 
 
 
-final_sentiment = getRedditSentiment("NVDA_DATA","M")
+final_sentiment = getRedditSentiment("NVDA_DATA","A")
 print(final_sentiment)

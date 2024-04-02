@@ -216,19 +216,6 @@ def update_score(data):
         connection.rollback()
         print("Error while updating scores:", e)
 
-# Time filter (hour, day, week, year)
-time_filter = "day"
-
-# Stock filter 
-stock_filter = ['nvda', 'nvidia']
- 
-# stock_filter = [""] # no filter
-
-comments = getPostsTable(time_filter,stock_filter)
-print(comments)
-append_posts(comments)
-#append_posts(comments)
-
 
 
 
@@ -239,13 +226,6 @@ append_posts(comments)
 #new_score = getUpdatedScores(post_comment_ids)
 #print(new_score)
 #update_score(new_score)
-
-#table_name = "NVDA_DATA"  # Replace with the actual table name
-#scores_and_sentiments = get_scores_and_sentiments(table_name)
-#print("Here are the scores and sentiments:")
-#print(scores_and_sentiments)
-
-
 
 # dump_database_data(
 #     host='localhost',
