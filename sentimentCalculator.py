@@ -32,9 +32,12 @@ def getRedditSentiment(table_name, time_filter):
             num_of_votes = 0
 
             for row in rows:
-                score = row[0] * row[1]
+                #Multiply the score and sentiment for each stock
+                final_score = row[0] * row[1]
                 votes = row[0]
-                sum_of_scores += score
+                #Add the final score of each stock
+                sum_of_scores += final_score
+                #Add the score of each stock
                 num_of_votes += votes
 
             # Sentiment is the average
@@ -46,7 +49,6 @@ def getRedditSentiment(table_name, time_filter):
 
             # Return the final sentiment
             return final_sentiment
-        print(final_sentiment)
 
     except Error as e:
         # Handle any errors that occur during the connection
