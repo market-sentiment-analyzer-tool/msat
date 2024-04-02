@@ -1,0 +1,24 @@
+
+p{
+    text-align: right;
+}
+
+.pointer{
+    margin-top: -45px;
+    width: 8px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.sentiment-box{
+    height: 40px;
+}
+
+.sentiment-range{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}

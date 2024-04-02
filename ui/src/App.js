@@ -1,9 +1,12 @@
 import './App.css';
+import SentimentPage from './SentimentPage'
 
-function App() {
+const App = () => {
   return (
-    <div></div>
-  );
+    <>
+      <SentimentPage></SentimentPage>
+    </>
+  )
 }
 
 export default App;
