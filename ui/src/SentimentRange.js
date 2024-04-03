@@ -38,7 +38,7 @@ const SentimentRange = (props) => {
         } else if(value >= 0.5){
             return '94%';
         } else if(value < 0){
-            let range = 90 * value * -1;
+            let range = (90 * value) + 49;
             return range.toString() + '%';
         } else{
             let range = (90 * value) + 49;
