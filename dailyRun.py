@@ -1,5 +1,6 @@
 from scrapers.redditScraper import getCommentsTable, getPostsTable, getUpdatedScores
 from sentimentAnalyzer import  append_comments, append_posts, close_db_connection
+import threading
 
 # Time filter (hour, day, week, year)
 
@@ -15,7 +16,7 @@ def hourly():
     print("Hourly done")
 
 #Daily posts and comments
-def dayly():
+def daily():
     time_filter = "day"
     stock_filter = ['nvda', 'nvidia']
     daily_comments = getCommentsTable(time_filter,stock_filter)
@@ -45,7 +46,23 @@ def yearly():
     append_posts(weekly_posts)
     ("Yearly done")
 
-weekly()
+# Create threads for each task
+hourly_thread = threading.Thread(target=hourly)
+daily_thread = threading.Thread(target=daily)
+weekly_thread = threading.Thread(target=weekly)
+yearly_thread = threading.Thread(target=yearly)
+
+# Start the threads
+hourly_thread.start()
+daily_thread.start()
+weekly_thread.start()
+yearly_thread.start()
+
+# Wait for all threads to complete
+hourly_thread.join()
+daily_thread.join()
+weekly_thread.join()
+yearly_thread.join()
 
 
 

@@ -227,13 +227,13 @@ def update_score(data):
 #print(new_score)
 #update_score(new_score)
 
-# dump_database_data(
-#     host='localhost',
-#     database='MarketSentiment',
-#     user='root',
-#     password='kalonji1!',
-#     output_file='db/data.sql'
-# )
+dump_database_data(
+    host='localhost',
+    database='MarketSentiment',
+    user='root',
+    password='kalonji1!',
+    output_file='db/data.sql'
+)
 
 #close_db_connection()
 
