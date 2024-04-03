@@ -49,7 +49,7 @@ const SentimentRange = (props) => {
 
     return(
         <>
-            <h1>{value}</h1>
+            {/* <h1>{value}</h1> */}
             <div className='sentiment-box'>
                 <div className="sentiment-range" style={{backgroundColor:getColor(value)}}></div>
                 <div className='pointer' style={{marginLeft:getSpectrum(value)}}></div>
