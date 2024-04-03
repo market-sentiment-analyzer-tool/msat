@@ -15,7 +15,7 @@ def hourly():
     print("Hourly done")
 
 #Daily posts and comments
-def dayly():
+def daily():
     time_filter = "day"
     stock_filter = ['nvda', 'nvidia']
     daily_comments = getCommentsTable(time_filter,stock_filter)
@@ -45,7 +45,7 @@ def yearly():
     append_posts(weekly_posts)
     ("Yearly done")
 
-weekly()
+daily()
 
 
 
