@@ -5,7 +5,7 @@ from sentimentAnalyzer import  append_comments, append_posts, close_db_connectio
 
 
 #Hourly posts and comments
-def daily():
+def hourly():
     time_filter = "hour"
     stock_filter = ['nvda', 'nvidia']
     hourly_comments = getCommentsTable(time_filter,stock_filter)
