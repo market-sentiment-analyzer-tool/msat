@@ -45,7 +45,7 @@ def yearly():
     append_posts(weekly_posts)
     ("Yearly done")
 
-yearly()
+weekly()
 
 
 

@@ -32,7 +32,7 @@ const SentimentRange = (props) => {
     }
 
     function getSpectrum(val){
-        let value = val.toFixed(0);
+        var value = val.toFixed(1);
         if(value <= -0.5){
             return '4%';
         } else if(value >= 0.5){
@@ -49,7 +49,7 @@ const SentimentRange = (props) => {
 
     return(
         <>
-            {/* <h1>{value}</h1> */}
+            <h1>{value}</h1>
             <div className='sentiment-box'>
                 <div className="sentiment-range" style={{backgroundColor:getColor(value)}}></div>
                 <div className='pointer' style={{marginLeft:getSpectrum(value)}}></div>
