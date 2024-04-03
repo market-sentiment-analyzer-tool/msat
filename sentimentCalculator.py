@@ -28,8 +28,8 @@ def getRedditSentiment(table_name, time_filter):
 
 
 
-# final_sentiment = getRedditSentiment("NVDA_DATA","A")
-# print(final_sentiment)
+final_sentiment = getRedditSentiment("NVDA_DATA","A")
+print(final_sentiment)
 
-def test(table_name, time_filter):
-    return 0.447
+# def test(table_name, time_filter):
+#     return 0.447
