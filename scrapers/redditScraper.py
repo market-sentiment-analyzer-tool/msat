@@ -6,10 +6,10 @@ from datetime import datetime
 reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKpWKQHH69WQ69feJMp8znHyw', user_agent='WebScrapper')
 
 # List of Subreddits scraped
-subreddits_visited = ['stocks', 'finance', 'NVDA_Stock']
+subreddits_visited = ['stocks', 'NVDA_Stock']
 
 # Limit of posts scraped
-limit = 50
+limit = 5
 
 # Returns an array containing IDs of posts scraped
 # Args: time_filter, stock_filter[]

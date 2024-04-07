@@ -252,8 +252,8 @@ def update_score(data):
 #update_score(new_score)
         
 #Call fonction to return number of tuples with the time filter
-count = count_tuples_with_time_filter("A")
-print("Number of tuples:", count)
+#count = count_tuples_with_time_filter("A")
+#print("Number of tuples:", count)
 
 # dump_database_data(
 #     host='localhost',
