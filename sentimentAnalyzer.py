@@ -190,6 +190,30 @@ def append_posts(posts):
         connection.rollback()
         print("Error while adding comments to the database:", e)
 
+def count_tuples_with_time_filter(time_filter):
+    try:
+
+        # Get the date based on the time filter
+        date = getTimeFilter(time_filter)
+
+        # Execute the SQL query to count the tuples with the specified time filter
+        query = f"SELECT COUNT(*) FROM NVDA_DATA WHERE p_date > '{date}'"
+        cursor.execute(query)
+        result = cursor.fetchone()
+
+        # Close the cursor
+        cursor.close()
+
+        if result:
+            return result[0]
+        else:
+            return 0
+
+    except Error as e:
+        # Handle any errors that occur during the connection
+        print("Error while counting tuples:", e)
+        return 0
+
 def close_db_connection():
     # Close the cursor and connection objects to release resources
     cursor.close()
@@ -226,6 +250,10 @@ def update_score(data):
 #new_score = getUpdatedScores(post_comment_ids)
 #print(new_score)
 #update_score(new_score)
+        
+#Call fonction to return number of tuples with the time filter
+count = count_tuples_with_time_filter("A")
+print("Number of tuples:", count)
 
 # dump_database_data(
 #     host='localhost',
