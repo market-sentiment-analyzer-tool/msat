@@ -7,20 +7,50 @@ class SentimentPage extends Component{
     constructor(props){
         super(props)
         this.state = {
-            currentStock: 'NVIDIA Corporation',
-            redditSentiment: 0,
-            redditNumOfComments: 153,
+            searchStock: '',
+            currentStock: '',
+            redditSentiment: 0.44,
+            redditNumOfComments: 453,
             yahooSentiment: 0,
             yahooNumOfComments: 0,
             twitterSentiment: 0,
             twitterNumOfComments: 0,
         }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount() {
-        fetch(`http://127.0.0.1:5000/sentiment`)
+    fetchData() {
+        fetch(`http://127.0.0.1:5000/sentiment?stock=${this.state.searchStock}&interval="A"`)
         .then(response => response.json())
-        .then(json => this.setState({redditSentiment: json}))
+        // .then(json => console.log(json))
+        .then(json => this.setState(
+            {   
+                currentStock: json.name,
+                redditSentiment: json.redditSentiment,
+                redditNumOfComments: json.redditPosts
+            }
+        ))
+    }
+
+    handleSubmit(e){
+        e.preventDefault();
+        console.log("search "+ this.state.searchStock);
+        // reset data
+        this.setState(
+            {   
+                searchStock: '',
+                currentStock: null,
+                redditSentiment: 0,
+                redditNumOfComments: 0
+            }
+        )
+        this.fetchData()
+    }
+
+    handleChange(e) {
+        e.preventDefault()
+        this.setState({searchStock: e.target.value});
     }
 
     render(){
@@ -29,9 +59,9 @@ class SentimentPage extends Component{
                 <div className='panel'>
                     <div className='column left'>
                         <div className='search-container'>
-                            <form>
-                                <input className='search-bar' type='text' placeholder='Search..' name='search'></input>
-                                <button type='submit'><i class="fa fa-search"></i></button>
+                            <form onSubmit={(e) => this.handleSubmit(e)}>
+                                <input className='search-bar' type='text' placeholder='Search..' name='search' onChange={this.handleChange}></input>
+                                <button type='submit'><i className="fa fa-search"></i></button>
                             </form>
                         </div>
                         <div className='reddit'>
