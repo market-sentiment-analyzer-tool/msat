@@ -40,10 +40,10 @@ def weekly():
 def yearly():
     time_filter = "year"
     stock_filter = ['nvda', 'nvidia']
-    weekly_comments = getCommentsTable(time_filter,stock_filter)
-    weekly_posts = getPostsTable(time_filter,stock_filter)
-    append_comments(weekly_comments)
-    append_posts(weekly_posts)
+    yearly_comments = getCommentsTable(time_filter,stock_filter)
+    yearly_posts = getPostsTable(time_filter,stock_filter)
+    append_comments(yearly_comments)
+    append_posts(yearly_posts)
     ("Yearly done")
 
 # Create threads for each task
