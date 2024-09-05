@@ -32,7 +32,7 @@ const SentimentRange = (props) => {
     }
 
     function getSpectrum(val){
-        var value = val.toFixed(1);
+        var value = val.toFixed(3);
         if(value <= -0.5){
             return '4%';
         } else if(value >= 0.5){
