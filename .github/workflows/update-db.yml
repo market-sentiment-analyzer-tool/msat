@@ -1,4 +1,4 @@
-name: Update Reddit DB
+name: Update DB
 
 # Run cron job every day at midnight (UTC)
 on:
@@ -10,9 +10,21 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Check out the code from the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Print date and time
       - name: Print date and time
         run: |
           echo "Current date and time: $(date)"
+
+  update-reddit-db:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: ...
+        

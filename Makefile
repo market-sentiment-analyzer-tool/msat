@@ -15,6 +15,7 @@ run: venv
 
 clean:
 	rm -rf __pycache__
+	rm -rf scrapers/__pycache__
 	rm -rf venv
 
 .PHONY: run clean
