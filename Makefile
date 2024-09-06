@@ -2,18 +2,19 @@
 
 .DEFAULT_GLOBAL:= run
 
-PYTHON = .\venv\Scripts\python
-PIP = .\venv\Scripts\pip	
+PYTHON = ./venv/bin/python3
+PIP = ./venv/bin/pip
 
 venv: requirements.txt
-	python -m venv venv
+	python3 -m venv venv
+	chmod +x venv/bin/activate
 	$(PIP) install -r requirements.txt
 
 run: venv
 	$(PYTHON) api.py
 
 clean:
-	if exist __pycache__ rmdir /Q /S __pycache__
-	rmdir /Q /S venv
+	rm -rf __pycache__
+	rm -rf venv
 
 .PHONY: run clean
