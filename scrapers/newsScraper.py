@@ -2,7 +2,7 @@ import sys
 import os
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from creds import credentials
+# from creds import credentials
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 import requests
@@ -147,7 +147,7 @@ def fetchNewsData(stock,urls,data,news_data_key):
             data.append(article_data)
     return data
 
-def fetchNewsAPIs(stock,news_api_key=credentials["apikeys"]["newsapi"],news_data_key=credentials["apikeys"]["newsdata"]):
+def fetchNewsAPIs(stock,news_api_key,news_data_key):
     # Fetch News API
     urls, data = fetchNewsAPI(stock,news_api_key)
     # Fetch News Data
@@ -170,7 +170,7 @@ if __name__ == "__main__":
     stock = sys.argv[1]
     news_api_key = sys.argv[2]
     news_data_key = sys.argv[3]
-    
+
     # Calling command
     data = fetchNewsAPIs(stock,news_api_key,news_data_key)
     print(data)
