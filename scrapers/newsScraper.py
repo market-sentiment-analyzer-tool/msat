@@ -9,10 +9,6 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-# Examples of parameters
-stock = 'NVDA,Nvidia'
-# stock = 'AAPL,Apple'
-
 def getPageContent(url):
     try:
         # Send an HTTP request to the URL
@@ -40,7 +36,7 @@ def calculateSentiment(title,content):
     sentiment = title_sentiment * 0.75 + content_sentiment * 0.25
     return sentiment
 
-def fetchNewsAPI(stock):
+def fetchNewsAPI(stock,news_api_key):
     # Keep track of URLs
     urls = []
     # Keep track of data added to DB
@@ -55,7 +51,7 @@ def fetchNewsAPI(stock):
                     f'q={stock}&'                                   # change depending on stock
                     f'from={yesterday}&'                            # change to previous day, will run daily
                     'sortBy=popularity&'                         
-                    f'apiKey={credentials["apikeys"]["newsapi"]}')  # apiKey in secrets file
+                    f'apiKey={news_api_key}')                       # apiKey in secrets file
     json = requests.get(news_api_url)
     response = json.json()
 
@@ -95,13 +91,13 @@ def fetchNewsAPI(stock):
     # Return data
     return urls, data
 
-def fetchNewsData(stock,urls,data):
+def fetchNewsData(stock,urls,data,news_data_key):
     # Keep track of urls and data from previous API call
     urls = urls
     data = data
     # Call News Data
     news_data_url = ('https://newsdata.io/api/1/latest?'
-                    f'apikey={credentials["apikeys"]["newsdata"]}&'
+                    f'apikey={news_data_key}&'
                     'country=us,ca&'
                     f'q={stock}&'
                     'category=business&'
@@ -138,7 +134,7 @@ def fetchNewsData(stock,urls,data):
             # proceed to add it to DB
             urls.append(url)
             # analyze sentiment of article
-            sentiment = calculateSentiment(title=title,content=full_content)
+            sentiment = calculateSentiment(title,content=full_content)
             # create json for article
             article_data = {
                 "author": author,
@@ -151,13 +147,30 @@ def fetchNewsData(stock,urls,data):
             data.append(article_data)
     return data
 
-def fetchNewsAPIs(stock):
+def fetchNewsAPIs(stock,news_api_key=credentials["apikeys"]["newsapi"],news_data_key=credentials["apikeys"]["newsdata"]):
     # Fetch News API
-    urls, data = fetchNewsAPI(stock=stock)
+    urls, data = fetchNewsAPI(stock,news_api_key)
     # Fetch News Data
-    data = fetchNewsData(stock=stock,urls=urls,data=data)
+    data = fetchNewsData(stock,urls,data,news_data_key)
     # Return data formatted in json
     return data
 
-data = fetchNewsAPIs(stock=stock)
-print(data)
+# To call the file in bash:
+# python3 scrapers/newsScraper.py "NVDA,Nvidia" "$NEWS_API" "$NEWS_DATA"
+if __name__ == "__main__":
+    # Examples of parameters
+    # stock = 'NVDA,Nvidia'
+    # stock = 'AAPL,Apple'
+
+    if len(sys.argv) != 4:
+        print("Please provide a stock symbol, a NEWS_API key, a NEWS_DATA key")
+        sys.exit(1)
+    
+    # Arguments
+    stock = sys.argv[1]
+    news_api_key = sys.argv[2]
+    news_data_key = sys.argv[3]
+    
+    # Calling command
+    data = fetchNewsAPIs(stock,news_api_key,news_data_key)
+    print(data)
