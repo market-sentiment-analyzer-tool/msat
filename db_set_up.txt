@@ -1,0 +1,6 @@
+1. Install MySQL by running this command:
+sudo apt install mysql-server
+3.ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+4. exit
+5. mysql -u root -p
+6.make sure you can log in
