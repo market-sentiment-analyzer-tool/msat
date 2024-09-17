@@ -9,13 +9,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Create Branch if not exists
+        run: |
+          git checkout -b example-patches || git checkout example-patches
 
       - name: Make changes to pull request
         run: date +%s > report.txt
 
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Update report"
+
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v7
+        env:
+          GIT_TRACE: true
+          GIT_VERBOSE: true
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update report
