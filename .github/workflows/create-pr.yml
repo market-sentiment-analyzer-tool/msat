@@ -39,6 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update report
           signoff: false
+          base: main
           branch: example-patches
           delete-branch: true
           title: '[Example] Update report'
