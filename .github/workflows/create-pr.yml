@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Checkout dev branch
+      - name: Create and checkout dev branch
         run: |
           git checkout -b dev || git checkout dev
           git pull origin dev || true
@@ -25,7 +25,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add .
           git commit -m "Automated change"
-          git branch --set-upstream-to=origin/dev dev || git push --set-upstream origin dev
+
+      - name: Push changes
+        run: |
+          git push origin dev --set-upstream origin dev -f
 
       - name: Create pull request
         uses: peter-evans/repository-dispatch@v2
