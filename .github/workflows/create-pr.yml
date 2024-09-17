@@ -25,7 +25,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add .
           git commit -m "Automated change"
-          git push origin dev --set-upstream origin dev
+          git push origin dev --set-upstream origin dev --force
 
       - name: Create pull request
         uses: peter-evans/repository-dispatch@v2
