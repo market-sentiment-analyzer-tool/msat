@@ -2,7 +2,7 @@ name: Create Automated PR
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   create-pr:
