@@ -1,4 +1,5 @@
 import sys
+import json
 import os
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -35,6 +36,30 @@ def calculateSentiment(title,content):
     # Sentiment formula
     sentiment = title_sentiment * 0.75 + content_sentiment * 0.25
     return sentiment
+
+def save_data_to_json(data, file_path="output/news-data.json"):
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    # Check if the file exists
+    if os.path.exists(file_path):
+        # If the file exists, load the existing data
+        with open(file_path, 'r') as file:
+            try:
+                existing_data = json.load(file)
+            except json.JSONDecodeError:
+                existing_data = []
+    else:
+        # If the file doesn't exist, start with an empty list
+        existing_data = []
+
+    # Combine existing data with new data
+    combined_data = existing_data + data
+
+    # Save the updated data back to the JSON file
+    with open(file_path, 'w') as file:
+        json.dump(combined_data, file, indent=4)
+
 
 def fetchNewsAPI(stock,news_api_key):
     # Keep track of URLs
@@ -161,16 +186,20 @@ if __name__ == "__main__":
     # Examples of parameters
     # stock = 'NVDA,Nvidia'
     # stock = 'AAPL,Apple'
-
     if len(sys.argv) != 4:
         print("Please provide a stock symbol, a NEWS_API key, a NEWS_DATA key")
         sys.exit(1)
-    
+
     # Arguments
     stock = sys.argv[1]
     news_api_key = sys.argv[2]
     news_data_key = sys.argv[3]
 
-    # Calling command
-    data = fetchNewsAPIs(stock,news_api_key,news_data_key)
-    print(data)
+    # Calling the scraping function
+    data = fetchNewsAPIs(stock, news_api_key, news_data_key)
+
+    # Save data to news-data.json
+    save_data_to_json(data)
+
+    # Print the scraped data (optional, for debugging)
+    print(json.dumps(data, indent=4))
