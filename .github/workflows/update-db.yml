@@ -3,7 +3,7 @@ name: Update DB
 # Run cron job every 5 minutes (UTC)
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '0 0 * * *'
 
   workflow_dispatch: 
 

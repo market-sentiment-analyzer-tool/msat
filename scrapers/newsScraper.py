@@ -38,23 +38,24 @@ def calculateSentiment(title,content):
     return sentiment
 
 def save_data_to_json(data, file_path="output/news-data.json"):
-    # Ensure the directory exists
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
-    # Check if the file exists
+    existing_data = []
     if os.path.exists(file_path):
-        # If the file exists, load the existing data
         with open(file_path, 'r') as file:
             try:
                 existing_data = json.load(file)
             except json.JSONDecodeError:
                 existing_data = []
-    else:
-        # If the file doesn't exist, start with an empty list
-        existing_data = []
+
+    # Extract existing URLs
+    existing_urls = {item['url'] for item in existing_data}
+
+    # Filter new data to only include items that are not already in existing data
+    new_data = [item for item in data if item['url'] not in existing_urls]
 
     # Combine existing data with new data
-    combined_data = existing_data + data
+    combined_data = existing_data + new_data
 
     # Save the updated data back to the JSON file
     with open(file_path, 'w') as file:
