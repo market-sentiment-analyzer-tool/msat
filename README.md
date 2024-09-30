@@ -20,9 +20,15 @@ Introducing our innovative project, a **Stock Market Sentiment Analyzer Tool**, 
 
 # Architecture
 
-Our current architecture is the following:
+This architecture diagram provides a high-level view of how the different components in the system interact with each other. Each part of the architecture will be explained in more detail in the following sections:
+* React User Interface: The front-end of the application is built with React, it serves as the user interface and sends requests to the Flask API
+* Flask API: The Flask API acts as the backend, handling requests from the React UI, it processes the data, interacts with the database, and returns the sentiment of the requested company
+* MySQL Database: All data is stored and managed in a MySQL database, the database is updated regularly by scrapers
+* News Scraper and Reddit Scraper: These scrapers gather news and Reddit data for sentiment analysis relevant to specific stock tickers or companies, which are then stored in the database
 
-![image](./docs/architecture%20image.JPG)
+**Architecture diagram:**
+
+![image](./docs/architecture-diagram.png)
 
 # Scraping APIs
 
@@ -43,7 +49,14 @@ This way, only comments that are related to NVDA are taken into consideration fo
 
 ## News
 
-Not Implemented.
+The News Scraping API is constructed using data from two external APIs: [News Data](https://newsdata.io/) and [News API](https://newsapi.org/) which are combined to create our own API.
+
+Key features include:
+* Ensuring no duplicate news articles are stored
+* Only news articles relevant to specific stock tickers or company names (present in the title or content) are scraped and added to the database
+* The news is scraped daily, ensuring fresh and up-to-date content
+
+This process provides a consistent, daily stream of uniuqe, company-specific news updates for further processing or display.
 
 ## Yahoo Finance
 
@@ -72,7 +85,7 @@ NVDA tables:
 
 ## Reddit
 
-For each of these tables, posts/comments are stored in our database. For the case of Reddit, the posts and comments scraped are stored this way:
+For the case of Reddit, the posts and comments scraped are stored this way:
 
 |subreddit  |post_id|comment_id|date       |score|sentiment|description|
 |-----------|-------|----------|-----------|-----|---------|-----------|
