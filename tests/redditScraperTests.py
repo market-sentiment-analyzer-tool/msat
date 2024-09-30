@@ -47,6 +47,8 @@ class RedditScraperTests(unittest.TestCase):
                 
         else:
             raise unittest.SkipTest("Array of length 0")
+        
+    # Test json output
 
     # Testing bad requests to API
     # Time filter (hour, day, week, year)

@@ -16,6 +16,7 @@ class NewsScraperTests(unittest.TestCase):
     # Check if title is not empty
     # Check if url is not empty
     # Test without passing stock info
+    # Check if expected output is ok, json keys
 
 if __name__ == '__main__': 
     unittest.main() 
