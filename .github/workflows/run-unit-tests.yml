@@ -6,6 +6,8 @@ on:
     - cron: '0 */6 * * *' # Run sentiment-analyzer-tests, reddit-scraper-tests, database-tests every 6 hours
     - cron: '0 0 * * *' # Run news-scraper-tests daily
 
+  workflow_dispatch: 
+
 jobs:
   sentiment-analyzer-tests:
     runs-on: ubuntu-latest
