@@ -3,7 +3,7 @@ name: Run Unit Tests
 # Run Unit tests every 6 hours
 on:
   schedule:
-    - cron: '0 */6 * * *' # Run sentiment-analyzer-tests, reddit-scraper-tests every 6 hours
+    - cron: '0 */6 * * *' # Run sentiment-analyzer-tests, reddit-scraper-tests, database-tests every 6 hours
     - cron: '0 0 * * *' # Run news-scraper-tests daily
 
 jobs:
@@ -100,6 +100,39 @@ jobs:
         run: |
           . venv/bin/activate
           python3 tests/newsScraperTests.py
+
+      # Step 6: Cleanup files/folders
+      - name: Cleanup
+        run: |
+          make clean
+
+  database-tests:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 */6 * * *'
+    steps:
+      # Step 1: Check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+       # Step 3: Install dependencies
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y make
+
+      # Step 4: Create virtual environment
+      - name: Create virtual environment
+        run: make venv
+
+      # Step 5: Run unit tests using pytest or any other framework
+      - name: Run tests
+        run: |
+          . venv/bin/activate
+          python3 tests/databaseTests.py
 
       # Step 6: Cleanup files/folders
       - name: Cleanup
