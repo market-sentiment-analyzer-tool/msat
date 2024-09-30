@@ -6,7 +6,16 @@ import unittest
 
 class NewsScraperTests(unittest.TestCase):
     def setUp(self):
+        # Call API
         pass
+
+    # Check if date is today or yesterday
+    # Check if date or content includes company ticker/name
+    # Check if sentiment is within -1,1 range
+    # Check if sentiment is not 0
+    # Check if title is not empty
+    # Check if url is not empty
+    # Test without passing stock info
 
 if __name__ == '__main__': 
     unittest.main() 
