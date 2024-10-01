@@ -182,19 +182,15 @@ def fetchNewsAPIs(stock,news_api_key,news_data_key):
     return data
 
 # To call the file in bash:
-# python3 scrapers/newsScraper.py "NVDA,Nvidia" "$NEWS_API" "$NEWS_DATA"
+# set variables in env
+# python3 scrapers/newsScraper.py
 if __name__ == "__main__":
     # Examples of parameters
     # stock = 'NVDA,Nvidia'
     # stock = 'AAPL,Apple'
-    if len(sys.argv) != 4:
-        print("Please provide a stock symbol, a NEWS_API key, a NEWS_DATA key")
-        sys.exit(1)
-
-    # Arguments
-    stock = sys.argv[1]
-    news_api_key = sys.argv[2]
-    news_data_key = sys.argv[3]
+    stock = os.environ['STOCK'] 
+    news_api_key = os.environ['NEWS_API']
+    news_data_key = os.environ['NEWS_DATA']
 
     # Calling the scraping function
     data = fetchNewsAPIs(stock, news_api_key, news_data_key)
