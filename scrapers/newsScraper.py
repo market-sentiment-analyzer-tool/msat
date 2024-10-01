@@ -1,4 +1,5 @@
 import sys
+import json
 import os
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -35,6 +36,31 @@ def calculateSentiment(title,content):
     # Sentiment formula
     sentiment = title_sentiment * 0.75 + content_sentiment * 0.25
     return sentiment
+
+def save_data_to_json(data, file_path="output/news-data.json"):
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    existing_data = []
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            try:
+                existing_data = json.load(file)
+            except json.JSONDecodeError:
+                existing_data = []
+
+    # Extract existing URLs
+    existing_urls = {item['url'] for item in existing_data}
+
+    # Filter new data to only include items that are not already in existing data
+    new_data = [item for item in data if item['url'] not in existing_urls]
+
+    # Combine existing data with new data
+    combined_data = existing_data + new_data
+
+    # Save the updated data back to the JSON file
+    with open(file_path, 'w') as file:
+        json.dump(combined_data, file, indent=4)
+
 
 def fetchNewsAPI(stock,news_api_key):
     # Keep track of URLs
@@ -166,6 +192,11 @@ if __name__ == "__main__":
     news_api_key = os.environ['NEWS_API']
     news_data_key = os.environ['NEWS_DATA']
 
-    # Calling command
-    data = fetchNewsAPIs(stock,news_api_key,news_data_key)
-    print(data)
+    # Calling the scraping function
+    data = fetchNewsAPIs(stock, news_api_key, news_data_key)
+
+    # Save data to news-data.json
+    save_data_to_json(data)
+
+    # Print the scraped data (optional, for debugging)
+    print(json.dumps(data, indent=4))

@@ -12,3 +12,14 @@ CREATE TABLE IF NOT EXISTS NVDA_DATA (
     p_description TEXT,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS NEWS_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    n_date DATE,
+    sentiment FLOAT,
+    title VARCHAR(255),
+    n_url VARCHAR(255),
+    PRIMARY KEY (id)
+);
