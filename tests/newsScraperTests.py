@@ -69,9 +69,10 @@ class NewsScraperTests(unittest.TestCase):
                 "date": {"type": "string"},
                 "sentiment": {"type": "number"},
                 "title": {"type": "string"},
-                "url": {"type": "string"}
+                "url": {"type": "string"},
+                "weight": {"type": "number"}
             },
-            "required": ["author", "content", "date", "sentiment", "title", "url"]
+            "required": ["author", "content", "date", "sentiment", "title", "url", "weight"]
         }
         # validating schema for each item
         for item in self.nvda_data:
