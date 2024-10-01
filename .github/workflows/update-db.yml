@@ -56,7 +56,7 @@ jobs:
           NEWS_DATA: ${{ secrets.NEWS_DATA }}
         run: |
           . venv/bin/activate
-          python3 scrapers/newsScraper.py $STOCK $NEWS_API $NEWS_DATA
+          python3 scrapers/newsScraper.py
 
       # Step 6: Cleanup files/folders
       - name: Cleanup

@@ -99,6 +99,9 @@ jobs:
 
       # Step 5: Run unit tests using pytest or any other framework
       - name: Run tests
+        env:
+          NEWS_API: ${{ secrets.NEWS_API }}
+          NEWS_DATA: ${{ secrets.NEWS_DATA }}
         run: |
           . venv/bin/activate
           python3 tests/newsScraperTests.py
@@ -132,6 +135,11 @@ jobs:
 
       # Step 5: Run unit tests using pytest or any other framework
       - name: Run tests
+        env:
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
+          MYSQL_USER: ${{ secrets.MYSQL_USER }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           . venv/bin/activate
           python3 tests/databaseTests.py
