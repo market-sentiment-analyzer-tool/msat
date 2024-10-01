@@ -34,8 +34,60 @@ def calculateSentiment(title,content):
     vs = analyzer.polarity_scores(content)
     content_sentiment = vs.get('compound')
     # Sentiment formula
-    sentiment = title_sentiment * 0.75 + content_sentiment * 0.25
+    sentiment = title_sentiment * 0.8 + content_sentiment * 0.2
     return sentiment
+
+# calculate the weight of the article
+# article starts by default with 1 and we multiply it depending on different factors
+# multipliers:
+    # stock in title (10x)
+    # website's reputation (2x-10x)
+    # author's reputation (2x)
+    # author not empty (2x)
+    # content is not empty (2x)
+def calculateWeight(stock, title, url, author, content):
+    # default weight
+    weight = 1
+    stock_words = [item.lower() for item in stock.split(",")]
+    title_words = title.lower().split()
+    trusted_authors = ["MarketBeat News", "ABMN Staff"]
+    empty_authors = [None, "null", ""]
+    premium_sources = ["cnbc", "finance.yahoo"]
+    trusted_sources = ["benzinga", "seekingalpha"]
+
+    # apply formula
+    # multiply by 10 if stock in title
+    for stock_word in stock_words:
+        if stock_word in title_words:
+            weight *= 10
+            break
+
+    # multiply weight by 10 if premium source
+    for source in premium_sources:
+        if url.startswith(f"https://{source}") or url.startswith(f"https://www.{source}"):
+            weight *= 10
+            break
+
+    # multiply weight by 2 if trusted source
+    for source in trusted_sources:
+        if url.startswith(f"https://{source}") or url.startswith(f"https://www.{source}"):
+            weight *= 2
+            break
+
+    # multiply weight by 2 if author is trusted
+    if author in trusted_authors:
+        weight *= 2
+
+    # multiply weight by 2 if author is not empty
+    if author not in empty_authors:
+        weight *= 2
+
+    # multiply weight by 2 if content is not empty
+    if content.strip() != "...":
+        weight *= 2
+
+    # return weighted score of article
+    return weight
 
 def save_data_to_json(data, file_path="output/news-data.json"):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
@@ -104,6 +156,8 @@ def fetchNewsAPI(stock,news_api_key):
             urls.append(url)
             # analyze sentiment of article
             sentiment = calculateSentiment(title=title,content=full_content)
+            # get weighted score of article
+            weight = calculateWeight(stock,title,url,author,content)
             # create json for article
             article_data = {
                 "author": author,
@@ -111,7 +165,8 @@ def fetchNewsAPI(stock,news_api_key):
                 "date": date,
                 "sentiment": sentiment,
                 "title": title,
-                "url": url
+                "url": url,
+                "weight": weight
             }
             data.append(article_data)
     # Return data
@@ -161,6 +216,8 @@ def fetchNewsData(stock,urls,data,news_data_key):
             urls.append(url)
             # analyze sentiment of article
             sentiment = calculateSentiment(title,content=full_content)
+            # get weighted score of article
+            weight = calculateWeight(stock,title,url,author,content)
             # create json for article
             article_data = {
                 "author": author,
@@ -168,7 +225,8 @@ def fetchNewsData(stock,urls,data,news_data_key):
                 "date": date,
                 "sentiment": sentiment,
                 "title": title,
-                "url": url
+                "url": url,
+                "weight": weight
             }
             data.append(article_data)
     return data
@@ -185,9 +243,6 @@ def fetchNewsAPIs(stock,news_api_key,news_data_key):
 # set variables in env
 # python3 scrapers/newsScraper.py
 if __name__ == "__main__":
-    # Examples of parameters
-    # stock = 'NVDA,Nvidia'
-    # stock = 'AAPL,Apple'
     stock = os.environ['STOCK'] 
     news_api_key = os.environ['NEWS_API']
     news_data_key = os.environ['NEWS_DATA']
