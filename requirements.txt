@@ -1,5 +1,6 @@
 bs4
 flask
 flask_cors
+jsonschema
 mysql-connector-python
 praw
