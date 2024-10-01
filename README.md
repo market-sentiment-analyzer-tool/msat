@@ -16,6 +16,9 @@ Introducing our innovative project, a **Stock Market Sentiment Analyzer Tool**, 
 * [User Interface](#user-interface)
 * [Deployment](#deployment)
 * [Quality Assurance](#quality-assurance)
+  * [Github Actions](#github-actions)
+  * [Docker](#docker)
+  * [Selenium](#selenium)
 * [Troubleshooting](#troubleshooting)
 
 # Architecture
@@ -124,7 +127,25 @@ This deployment diagram illustrates the following key components:
 
 # Quality Assurance
 
-Coming Soon.
+Our system ensures high reliability and performance through automated testing and containerization. Below are the two key components of our QA strategy:
+
+## Github Actions
+
+GitHub Actions uses workflows to automatically run Unit Tests on various parts of the system. These tests ensure that all components are functioning correctly and are regularly updated. The following parts are tested periodically:
+* Database (every 6 hours)
+* News Scraper (daily)
+* Reddit Scraper (every 6 hours)
+* Sentiment analyzer (every 6 hours)
+
+This automated process ensures that our core components maintain data integrity and provide accurate results.
+
+## Docker
+
+The API and MySQL Database run in a Docker container, ensuring consistent and reproducible environments across different systems. As we continue to improve our scrapers, they will be added to the containerized environment once they reach a stable and production-ready state.
+
+## Selenium
+
+Not implemented.
 
 # Troubleshooting
 
