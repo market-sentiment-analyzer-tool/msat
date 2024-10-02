@@ -12,9 +12,11 @@ Introducing our innovative project, a **Stock Market Sentiment Analyzer Tool**, 
 * [Sentiment Anlayzer](#sentiment-analyzer)
 * [Database](#database)
   * [Reddit](#reddit-1)
+    * [Data Structure](#data-structure)
     * [Score Calculation](#score-calculation)
     * [Sentiment Calculation](#sentiment-calculation)
   * [News](#news-1)
+    * [Data Structure](#data-structure-1)
     * [Sentiment Calculation](#sentiment-calculation-1)
     * [Weight Calculation](#weight-calculation)
 * [User Interface](#user-interface)
@@ -127,7 +129,11 @@ This is a grade between -1 and 1 that represents the tone of the post or comment
 
 ## News
 
-The News section of the database stores articles scraped from external sources. The data is structured in the following columns:
+The News section of the database stores articles scraped from external sources. 
+
+### Data Structure
+
+The data is structured in the following columns:
 * **author**: The name of the article's author
 * **content**: The main body or the article
 * **date**: The date the article was published
