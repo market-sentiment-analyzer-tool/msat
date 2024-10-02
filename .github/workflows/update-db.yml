@@ -66,16 +66,16 @@ jobs:
         run: |
           sudo service mysql start
 
-      - name: Create a Dummy Database
-        run: |
-          mysql -e 'CREATE DATABASE MarketSentiment;' 
-  
       - name: Create MySQL User and Grant Privileges
         run: |
           mysql -e "CREATE USER '${{ secrets.DB_USER }}'@'localhost' IDENTIFIED BY '${{ secrets.DB_PASSWORD }}';"
           mysql -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO '${{ secrets.DB_USER }}'@'localhost';"
           mysql -e "FLUSH PRIVILEGES;"
-  
+      
+      - name: Create a Dummy Database
+        run: |
+          mysql -u ${{ secrets.DB_USER }} -p'${{ secrets.DB_PASSWORD }}' -e 'CREATE DATABASE MarketSentiment;' 
+          
       - name: Import existing data from dump file into MarketSentiment
         run: |
           mysql -u ${{ secrets.DB_USER }} -p'${{ secrets.DB_PASSWORD }}' MarketSentiment < data.sql  
