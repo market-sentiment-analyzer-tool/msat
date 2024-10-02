@@ -21,5 +21,6 @@ CREATE TABLE IF NOT EXISTS NEWS_DATA (
     sentiment FLOAT,
     title VARCHAR(255),
     n_url VARCHAR(255),
+    n_weight INT,
     PRIMARY KEY (id)
 );
