@@ -68,29 +68,28 @@ jobs:
 
       - name: Create MySQL User and Grant Privileges
         run: |
-          mysql -e "CREATE USER 'root'@'localhost' IDENTIFIED BY 'test';"
-          mysql -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO 'root'@'localhost';"
-          mysql -e "FLUSH PRIVILEGES;"
-      
+          sudo mysql -e "CREATE USER 'root'@'localhost' IDENTIFIED BY 'test';"
+          sudo mysql -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO 'root'@'localhost';"
+          sudo mysql -e "FLUSH PRIVILEGES;"
+  
       - name: Create a Dummy Database
         run: |
-          mysql -u root -p'test' -e 'CREATE DATABASE MarketSentiment;' 
-
+          sudo mysql -u root -p'test' -e 'CREATE DATABASE MarketSentiment;' 
+  
       - name: Import existing data from dump file into MarketSentiment
         run: |
-          mysql -u root -p'test' MarketSentiment < data.sql  
-
+          sudo mysql -u root -p'test' MarketSentiment < data.sql  
+  
       - name: Add new data from JSON
         env:
           DB_USER: root
           DB_PASSWORD: test
         run: |
           python ../db/add_json_to_db.py ../output/new_data.json
-
+  
       - name: Dump the updated MarketSentiment to a new file
         run: |
-          mysqldump MarketSentiment > ../db/new_data_dump.sql
-
+          sudo mysqldump -u root -p'test' MarketSentiment > ../db/new_data_dump.sql
       - name: Replace old dump file
         run: |
           mv ../db/new_data_dump.sql ../db/data_dump.sql
