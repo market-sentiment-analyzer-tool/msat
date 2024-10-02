@@ -68,22 +68,22 @@ jobs:
 
       - name: Create MySQL User and Grant Privileges
         run: |
-          mysql -e "CREATE USER '${{ secrets.DB_USER }}'@'localhost' IDENTIFIED BY '${{ secrets.DB_PASSWORD }}';"
-          mysql -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO '${{ secrets.DB_USER }}'@'localhost';"
+          mysql -e "CREATE USER 'root'@'localhost' IDENTIFIED BY 'test';"
+          mysql -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO 'root'@'localhost';"
           mysql -e "FLUSH PRIVILEGES;"
       
       - name: Create a Dummy Database
         run: |
-          mysql -u ${{ secrets.DB_USER }} -p'${{ secrets.DB_PASSWORD }}' -e 'CREATE DATABASE MarketSentiment;' 
-          
+          mysql -u root -p'test' -e 'CREATE DATABASE MarketSentiment;' 
+
       - name: Import existing data from dump file into MarketSentiment
         run: |
-          mysql -u ${{ secrets.DB_USER }} -p'${{ secrets.DB_PASSWORD }}' MarketSentiment < data.sql  
+          mysql -u root -p'test' MarketSentiment < data.sql  
 
       - name: Add new data from JSON
         env:
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_USER: root
+          DB_PASSWORD: test
         run: |
           python ../db/add_json_to_db.py ../output/new_data.json
 
