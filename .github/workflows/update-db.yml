@@ -1,10 +1,9 @@
 name: Update DB
 
-# Run cron job every 5 minutes (UTC)
+# Run cron job every day at midnight (UTC)
 on:
   schedule:
     - cron: '0 0 * * *'
-
   workflow_dispatch: 
 
 jobs:
@@ -22,7 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: # Placeholder for your logic
+      # Step 2: Placeholder for your logic
       - name: Placeholder step
         run: echo "Update Reddit DB step"
 
@@ -57,57 +56,83 @@ jobs:
           . venv/bin/activate
           python3 scrapers/newsScraper.py
 
+      # Step 6: Set up MySQL
       - name: Set up MySQL
         run: |
           sudo apt-get update
           sudo apt-get install -y mysql-client mysql-server
-  
+
+      # Step 7: Start MySQL service
       - name: Start MySQL Service
         run: |
           sudo service mysql start
+          sudo mysql --skip-grant-tables &
+          sleep 5 # Wait for MySQL to start
+
+      # Step 8: Set root password
+      - name: Set root password
+        run: |
+          sudo mysql -e "FLUSH PRIVILEGES;"
           sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test';"
-  
+
+      # Step 9: Create Dummy Database
       - name: Create Dummy Database
         run: |
           sudo mysql -u root -ptest -e "CREATE DATABASE MarketSentiment;"
-  
+
+      # Step 10: Create MySQL User and Grant Privileges
       - name: Create MySQL User and Grant Privileges
         run: |
           sudo mysql -u root -ptest -e "CREATE USER 'workflow'@'localhost' IDENTIFIED BY 'test';"
           sudo mysql -u root -ptest -e "GRANT ALL PRIVILEGES ON MarketSentiment.* TO 'workflow'@'localhost';"
           sudo mysql -u root -ptest -e "FLUSH PRIVILEGES;"
-    
+
+      # Step 11: Stop MySQL
+      - name: Stop MySQL
+        run: |
+          sudo mysqladmin -u root -ptest shutdown
+
+      # Step 12: Start MySQL Normally
+      - name: Start MySQL Normally
+        run: |
+          sudo service mysql start
+
+      # Step 13: Import existing data from dump file into MarketSentiment
       - name: Import existing data from dump file into MarketSentiment
         run: |
           sudo mysql -u workflow -p'test' MarketSentiment < data.sql  
-  
+
+      # Step 14: Add new data from JSON
       - name: Add new data from JSON
         env:
           DB_USER: workflow
           DB_PASSWORD: test
         run: |
           python ../db/add_json_to_db.py ../output/new_data.json
-  
+
+      # Step 15: Dump the updated MarketSentiment to a new file
       - name: Dump the updated MarketSentiment to a new file
         run: |
           sudo mysqldump -u workflow -p'test' MarketSentiment > ../db/new_data_dump.sql
+
+      # Step 16: Replace old dump file
       - name: Replace old dump file
         run: |
           mv ../db/new_data_dump.sql ../db/data_dump.sql
 
-      # Step 6: Configure Git with the bot credentials (PAT required)
+      # Step 17: Configure Git with the bot credentials (PAT required)
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 7: Commit the changes (if any)
+      # Step 18: Commit the changes (if any)
       - name: Commit changes
         run: |
           git add data_dump.sql
           git commit -m "Updated database dump" || echo "No changes to commit"
 
-      # Step 8: Push the changes back to the repository
+      # Step 19: Push the changes back to the repository
       - name: Push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
