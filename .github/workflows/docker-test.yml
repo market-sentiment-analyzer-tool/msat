@@ -24,11 +24,6 @@ jobs:
           sudo apt-get install -y mysql-server
           sudo service mysql start
           
-      - name: Debug environment variables
-        run: |
-          echo "MYSQL_ROOT_PASSWORD is set: ${{ secrets.MYSQL_ROOT_PASSWORD != '' }}"
-          echo "MYSQL_DATABASE is set: ${{ secrets.MYSQL_DATABASE != '' }}"
-          
       - name: Set up Docker Compose
         run: |
           docker compose version
@@ -41,10 +36,6 @@ jobs:
       - name: Check MySQL environment variables
         run: |
           docker exec mysql-db env | grep MYSQL_ROOT_PASSWORD
-
-      - name: Get MySQL Logs
-        run: |
-          docker logs mysql-db
 
       - name: Wait for MySQL to be ready
         run: |
