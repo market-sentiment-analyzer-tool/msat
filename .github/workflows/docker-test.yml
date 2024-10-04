@@ -30,7 +30,7 @@ jobs:
 
       - name: Wait for MySQL to be ready
         run: |
-          until docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
+          until docker exec -it mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
             echo "Waiting for MySQL to be ready..."
             sleep 5
           done
