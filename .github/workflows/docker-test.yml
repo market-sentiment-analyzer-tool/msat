@@ -23,6 +23,20 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y mysql-server
           sudo service mysql start
+          
+      - name: Debug environment variables
+        run: |
+          if [ -z "$MYSQL_ROOT_PASSWORD" ]; then
+            echo "MYSQL_ROOT_PASSWORD is not set"
+          else
+            echo "MYSQL_ROOT_PASSWORD is set"
+          fi
+      
+          if [ -z "$MYSQL_DATABASE" ]; then
+            echo "MYSQL_DATABASE is not set"
+          else
+            echo "MYSQL_DATABASE is set"
+          fi
 
       - name: Set up Docker Compose
         run: |
