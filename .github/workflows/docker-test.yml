@@ -57,7 +57,7 @@ jobs:
 
       - name: Run SQL Query on NVDA_DATA
         run: |
-          docker exec -it mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${MYSQL_DATABASE} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${MYSQL_DATABASE} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
 
       - name: Tear down Docker Compose
         run: |
