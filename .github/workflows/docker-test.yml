@@ -40,7 +40,7 @@ jobs:
 
       - name: Check MySQL environment variables
         run: |
-          docker exec mysql env | grep MYSQL_ROOT_PASSWORD
+          docker exec mysql-db env | grep MYSQL_ROOT_PASSWORD
 
       - name: Get MySQL Logs
         run: |
