@@ -33,6 +33,10 @@ jobs:
           docker compose up -d
           docker compose ps
 
+      - name: Get MySQL Logs
+        run: |
+          docker logs mysql-db
+
       - name: Wait for MySQL to be ready
         run: |
           until docker exec -it mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
