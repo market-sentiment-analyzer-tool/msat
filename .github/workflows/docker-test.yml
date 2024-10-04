@@ -38,6 +38,10 @@ jobs:
           docker compose up -d
           docker compose ps
 
+      - name: Check MySQL environment variables
+        run: |
+          docker exec mysql env | grep MYSQL_ROOT_PASSWORD
+
       - name: Get MySQL Logs
         run: |
           docker logs mysql-db
