@@ -1,0 +1,51 @@
+name: CI Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        ports:
+          - 3307:3306
+        options: > 
+          --health-cmd='mysqladmin ping --silent'
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Compose
+        run: |
+          docker-compose version
+
+      - name: Start MySQL Service
+        run: |
+          docker-compose up -d
+          docker-compose ps
+
+      - name: Wait for MySQL to be ready
+        run: |
+          until docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
+            echo "Waiting for MySQL to be ready..."
+            sleep 5
+          done
+          echo "MySQL is ready!"
+
+      - name: Run SQL Query on NVDA_DATA
+        run: |
+          docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${MYSQL_DATABASE} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+
+      - name: Tear down Docker Compose
+        run: |
+          docker-compose down
