@@ -15,8 +15,6 @@ jobs:
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         ports:
           - 3307:3306
-        options: > 
-          --health-cmd="mysqladmin ping -h 127.0.0.1 --silent" --health-interval=10s --health-timeout=5s
 
     steps:
       - name: Checkout repository
