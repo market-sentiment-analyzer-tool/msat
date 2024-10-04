@@ -3,8 +3,8 @@ services:
     image: mysql:latest
     container_name: mysql-db
     environment:
-      MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-      MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+      MYSQL_ROOT_PASSWORD: $${{ secrets.MYSQL_ROOT_PASSWORD }}
+      MYSQL_DATABASE: $${{ secrets.MYSQL_DATABASE }}
     ports:
       - "3307:3306"
     volumes:
