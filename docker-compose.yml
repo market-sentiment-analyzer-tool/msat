@@ -3,8 +3,8 @@ services:
     image: mysql:latest
     container_name: mysql-db
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: kalonji1!
+      MYSQL_DATABASE: MarketSentiment
     ports:
       - "3306:3306"
     volumes:

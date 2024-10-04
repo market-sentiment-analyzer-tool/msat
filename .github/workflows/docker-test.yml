@@ -13,12 +13,17 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install MySQL Server
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mysql-server
+          sudo service mysql start
+          
       - name: Set up Docker Compose
         run: |
           docker compose version
@@ -28,17 +33,22 @@ jobs:
           docker compose up -d
           docker compose ps
 
+      - name: Check MySQL environment variables
+        run: |
+          docker exec mysql-db env | grep MYSQL_ROOT_PASSWORD
+
       - name: Wait for MySQL to be ready
         run: |
           until docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
             echo "Waiting for MySQL to be ready..."
+            docker logs mysql-db
             sleep 5
           done
           echo "MySQL is ready!"
 
       - name: Run SQL Query on NVDA_DATA
         run: |
-          docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${MYSQL_DATABASE} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D MarketSentiment -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
 
       - name: Tear down Docker Compose
         run: |

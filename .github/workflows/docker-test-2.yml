@@ -1,0 +1,23 @@
+name: MYSQL CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      DB_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+      DB_USER: root
+      DB_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Start MySQL
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -e "CREATE DATABASE IF NOT EXISTS $DB_DATABASE;" -u$DB_USER -p$DB_PASSWORD
+      # Add more steps for testing and other tasks
