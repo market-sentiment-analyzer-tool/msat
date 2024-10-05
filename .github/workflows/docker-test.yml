@@ -59,6 +59,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run databaseTests file
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           python3 tests/databaseTests.py
 

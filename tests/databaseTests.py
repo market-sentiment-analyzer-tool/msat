@@ -13,9 +13,6 @@ class DatabaseTests(unittest.TestCase):
         self.user = 'root'
         self.password = os.getenv('MYSQL_ROOT_PASSWORD')
 
-        command = f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "SELECT * FROM NVDA_DATA WHERE id = '16';" """
-        subprocess.run(command, shell=True)
-
         # Establish database connection
         self.conn = mysql.connector.connect(
             host=self.host,
