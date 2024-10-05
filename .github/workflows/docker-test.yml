@@ -80,8 +80,8 @@ jobs:
             MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
             MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-            docker exec mysql-db mysqldump -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} ${{ secrets.MYSQL_DATABASE }} NEWS_NVDA_DATA > news_nvda_data.sql
-            docker cp mysql-db:news_nvda_data.sql ./db/news/news_nvda_data.sql
+            docker exec mysql-db mysqldump -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} ${{ secrets.MYSQL_DATABASE }} NEWS_NVDA_DATA > /tmp/news_nvda_data.sql
+            docker cp mysql-db:/tmp/news_nvda_data.sql ./db/news/news_nvda_data.sql
 
       - name: Tear down Docker Compose
         run: |
