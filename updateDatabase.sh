@@ -20,7 +20,7 @@ jq -c '.[]' "$json_file" | while read -r item; do
     n_weight=$(echo "$item" | jq '.weight')
 
     # MySQL insert command using the mysql client
-    docker exec mysql-db mysql -h mysql -u root -p$MYSQL_ROOT_PASSWORD -D $MYSQL_DATABASE -e "INSERT INTO NEWS_DATA (author, content, n_date, sentiment, title, n_url, n_weight) VALUES ('$author', '$content', '$n_date', $sentiment, '$title', '$n_url', $n_weight);"
+    docker exec mysql-db mysql -h mysql -u root -p$MYSQL_ROOT_PASSWORD -D $MYSQL_DATABASE -e "INSERT INTO NEWS_NVDA_DATA (author, content, n_date, sentiment, title, n_url, n_weight) VALUES ('$author', '$content', '$n_date', $sentiment, '$title', '$n_url', $n_weight);"
 
     # Check if the insert was successful
     if [ $? -eq 0 ]; then
