@@ -18,11 +18,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install MySQL Server
+      - name: Installing dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y mysql-server
           sudo service mysql start
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
           
       - name: Set up Docker Compose
         run: |
@@ -52,6 +54,10 @@ jobs:
       - name: Run SQL Query on NVDA_DATA
         run: |
           docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+
+      - name: Run databaseTests file
+        run: |
+          python3 tests/databaseTests.py
 
       - name: Tear down Docker Compose
         run: |

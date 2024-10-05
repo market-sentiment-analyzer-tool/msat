@@ -8,31 +8,18 @@ from datetime import datetime, timedelta, date
 class DatabaseTests(unittest.TestCase):
     def setUp(self):
         # Database Connection Information
-        self.host = os.environ['MYSQL_HOST']
-        self.database = os.environ['MYSQL_DATABASE']
-        self.user = os.environ['MYSQL_USER']
-        self.password = os.environ['MYSQL_PASSWORD']
-        self.data_sql_path = os.path.join(os.path.dirname(__file__), '..', 'db', 'data.sql')
+        self.host = 'mysql'
+        self.database = os.getenv('MYSQL_DATABASE')
+        self.user = 'root'
+        self.password = os.getenv('MYSQL_ROOT_PASSWORD')
 
-        command = f"mysql -u {self.user} -p{self.password} {self.database} < {self.data_sql_path} 2>/dev/null"
 
         # Establish database connection
         self.conn = mysql.connector.connect(
             host=self.host,
             user=self.user,
-            password=self.password
-        )
-        self.cursor = self.conn.cursor()
-
-        # Run the command inside data.sql
-        subprocess.run(command, shell=True)
-
-        # Re-establish connection with database selected
-        self.conn = mysql.connector.connect(
-            host=self.host,
-            database=self.database,
-            user=self.user,
-            password=self.password
+            password=self.password,
+            database=self.database
         )
         self.cursor = self.conn.cursor()
 
