@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, date
 class DatabaseTests(unittest.TestCase):
     def setUp(self):
         # Database Connection Information
-        self.host = 'localhost'
+        self.host = 'mysql'
         self.database = os.getenv('MYSQL_DATABASE')
         self.user = 'root'
         self.password = os.getenv('MYSQL_ROOT_PASSWORD')
