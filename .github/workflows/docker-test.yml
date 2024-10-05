@@ -22,6 +22,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y mysql-server
+          sudo apt-get install jq
           sudo service mysql start
           
       - name: Set up Docker Compose
@@ -59,9 +60,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Scrape News
-        run: |
-          python3 scrapers/newsScraper.py
+      # - name: Scrape News
+      #   run: |
+      #     python3 scrapers/newsScraper.py
 
       - name: Run adding to DB file
         env:
