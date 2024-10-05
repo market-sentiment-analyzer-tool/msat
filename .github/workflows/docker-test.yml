@@ -29,6 +29,9 @@ jobs:
           docker compose version
 
       - name: Start MySQL Service
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           docker compose up -d
           docker compose ps
@@ -48,7 +51,7 @@ jobs:
 
       - name: Run SQL Query on NVDA_DATA
         run: |
-          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D MarketSentiment -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
 
       - name: Tear down Docker Compose
         run: |
