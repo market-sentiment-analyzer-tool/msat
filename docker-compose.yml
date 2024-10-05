@@ -9,6 +9,7 @@ services:
       - "3307:3306"
     volumes:
       - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      # should have multiple *data.sql files
       - ./db/data.sql:/docker-entrypoint-initdb.d/data.sql
 
 # docker compose up -d

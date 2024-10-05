@@ -60,7 +60,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # - name: Scrape News
+      # - name: Scrape News and dump json in output folder under ./output/news-<stock>-data.json
       #   run: |
       #     python3 scrapers/newsScraper.py
 
@@ -71,10 +71,34 @@ jobs:
         run: |
           bash updateDatabase.sh
 
-      - name: Run SQL Query on NVDA_DATA
+      - name: Run SQL Query on NEWS_NVDA_DATA
         run: |
           docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_NVDA_DATA;"
 
+      - name: Dump News DB data in ./db/news/news-<stock>-data.sql
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+            docker exec mysql-db mysqldump -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} NEWS_NVDA_DATA > news_nvda_data.sql
+            docker cp mysql-db:news_nvda_data.sql ./db/news/news_nvda_data.sql
+
       - name: Tear down Docker Compose
         run: |
-          docker compose down
+          docker compose down            
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Updated database dump" || echo "No changes to commit"
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:main
