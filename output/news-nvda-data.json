@@ -5,7 +5,8 @@
         "date": "2024-09-27",
         "sentiment": 0.47185,
         "title": "NVIDIA (NASDAQ:NVDA) Shares Down 2.5% Following Insider Selling",
-        "url": "https://www.etfdailynews.com/2024/09/27/nvidia-nasdaqnvda-shares-down-2-5-following-insider-selling/"
+        "url": "https://www.etfdailynews.com/2024/09/27/nvidia-nasdaqnvda-shares-down-2-5-following-insider-selling/",
+        "weight": 1
     },
     {
         "author": "MarketBeat News",
@@ -13,7 +14,8 @@
         "date": "2024-09-27",
         "sentiment": 0.620275,
         "title": "NVIDIA Co. (NASDAQ:NVDA) Stake Raised by Acima Private Wealth LLC",
-        "url": "https://www.etfdailynews.com/2024/09/27/nvidia-co-nasdaqnvda-stake-raised-by-acima-private-wealth-llc/"
+        "url": "https://www.etfdailynews.com/2024/09/27/nvidia-co-nasdaqnvda-stake-raised-by-acima-private-wealth-llc/",
+        "weight": 1
     },
     {
         "author": "MarketBeat News",
@@ -21,7 +23,8 @@
         "date": "2024-09-27",
         "sentiment": 0.2499,
         "title": "Jaffetilchin Investment Partners LLC Has $53.08 Million Stock Holdings in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.etfdailynews.com/2024/09/27/jaffetilchin-investment-partners-llc-has-53-08-million-stock-holdings-in-nvidia-co-nasdaqnvda/"
+        "url": "https://www.etfdailynews.com/2024/09/27/jaffetilchin-investment-partners-llc-has-53-08-million-stock-holdings-in-nvidia-co-nasdaqnvda/",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -29,7 +32,8 @@
         "date": "2024-09-28",
         "sentiment": 0.249875,
         "title": "NVIDIA (NASDAQ:NVDA) Stock Price Down 2.5% After Insider Selling",
-        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-nasdaqnvda-stock-price-down-2-5-after-insider-selling.html"
+        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-nasdaqnvda-stock-price-down-2-5-after-insider-selling.html",
+        "weight": 1
     },
     {
         "author": null,
@@ -37,7 +41,8 @@
         "date": "2024-09-28",
         "sentiment": 0.255,
         "title": "TCW Relative Value Large Cap Fund Q2 2024 Commentary",
-        "url": "https://seekingalpha.com/article/4723903-tcw-relative-value-large-cap-fund-q2-2024-commentary?source=feed_all_articles"
+        "url": "https://seekingalpha.com/article/4723903-tcw-relative-value-large-cap-fund-q2-2024-commentary?source=feed_all_articles",
+        "weight": 1
     },
     {
         "author": null,
@@ -45,7 +50,8 @@
         "date": "2024-09-28",
         "sentiment": 0.25,
         "title": "TCW Select Equities Fund Q2 2024 Commentary",
-        "url": "https://seekingalpha.com/article/4723897-tcw-select-equities-fund-q2-2024-commentary?source=feed_all_articles"
+        "url": "https://seekingalpha.com/article/4723897-tcw-select-equities-fund-q2-2024-commentary?source=feed_all_articles",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -53,7 +59,8 @@
         "date": "2024-09-27",
         "sentiment": 0.382725,
         "title": "Short Interest in Direxion Daily NVDA Bear 1X Shares (NASDAQ:NVDD) Declines By 32.3%",
-        "url": "https://www.defenseworld.net/2024/09/27/short-interest-in-direxion-daily-nvda-bear-1x-shares-nasdaqnvdd-declines-by-32-3.html"
+        "url": "https://www.defenseworld.net/2024/09/27/short-interest-in-direxion-daily-nvda-bear-1x-shares-nasdaqnvdd-declines-by-32-3.html",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Will Ebiefung)",
@@ -61,7 +68,8 @@
         "date": "2024-09-27",
         "sentiment": 0.2495,
         "title": "Is Nvidia Still a Millionaire-Maker Stock?",
-        "url": "https://www.fool.com/investing/2024/09/27/is-nvidia-still-a-millionaire-maker-stock/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/27/is-nvidia-still-a-millionaire-maker-stock/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": null,
@@ -69,7 +77,8 @@
         "date": "2024-09-27",
         "sentiment": 0.39502499999999996,
         "title": "AI data centres, Alberta's accelerating energy needs will increase need for nuclear to hit net zero, experts say - Calgary Herald",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVmZEeS1MWXlfVjVQVU8xMHozY3M2a2hoZHNwUVYyT2t1ZlBsMGZHMFRzazVaTTFadV9LYTYyc2h5NVJjOHdFcXRaY01GQUtlV1JYclRhdEl4cjN4WTdfVXI4Rll2UzNsb0FCdkNIb3NEQk1fV29KZzVkSEdaQl9BRFNhQ2dIREJrN2FpdzVDUG05YU01MEhQRmx4UXVhVjhVekZsNWlHRUhWa3VrQXdKT3BkZ0xVRUU4d2IxWjExRE8xM1JkWngxQmY5eWstczd1SDJjVldvbHJBOHVJWF9QUEZPbkhFQQ?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVmZEeS1MWXlfVjVQVU8xMHozY3M2a2hoZHNwUVYyT2t1ZlBsMGZHMFRzazVaTTFadV9LYTYyc2h5NVJjOHdFcXRaY01GQUtlV1JYclRhdEl4cjN4WTdfVXI4Rll2UzNsb0FCdkNIb3NEQk1fV29KZzVkSEdaQl9BRFNhQ2dIREJrN2FpdzVDUG05YU01MEhQRmx4UXVhVjhVekZsNWlHRUhWa3VrQXdKT3BkZ0xVRUU4d2IxWjExRE8xM1JkWngxQmY5eWstczd1SDJjVldvbHJBOHVJWF9QUEZPbkhFQQ?oc=5",
+        "weight": 1
     },
     {
         "author": null,
@@ -77,7 +86,8 @@
         "date": "2024-09-27",
         "sentiment": 0.249975,
         "title": "The S&P 500 hit multiple records this week, but it's still Nvidia's market",
-        "url": "https://www.cnbc.com/2024/09/27/all-time-highs-be-damned-its-still-nvidias-market-.html"
+        "url": "https://www.cnbc.com/2024/09/27/all-time-highs-be-damned-its-still-nvidias-market-.html",
+        "weight": 1
     },
     {
         "author": "Vaishali Prayag",
@@ -85,7 +95,8 @@
         "date": "2024-09-27",
         "sentiment": 0.24865,
         "title": "Nvidia Shares Are Trading Lower Today: What You Need To Know",
-        "url": "https://www.benzinga.com/news/24/09/41074346/nvidia-shares-are-trading-lower-today-what-you-need-to-know"
+        "url": "https://www.benzinga.com/news/24/09/41074346/nvidia-shares-are-trading-lower-today-what-you-need-to-know",
+        "weight": 1
     },
     {
         "author": null,
@@ -93,7 +104,8 @@
         "date": "2024-09-27",
         "sentiment": -0.27090000000000003,
         "title": "Nvidia AI chips under pressure in China as regulators push back: report",
-        "url": "https://seekingalpha.com/news/4154205-nvidia-ai-chips-under-pressure-in-china-as-regulators-push-back-report?feed_item_type=news"
+        "url": "https://seekingalpha.com/news/4154205-nvidia-ai-chips-under-pressure-in-china-as-regulators-push-back-report?feed_item_type=news",
+        "weight": 1
     },
     {
         "author": "KEN SHREVE",
@@ -101,7 +113,8 @@
         "date": "2024-09-27",
         "sentiment": 0.0228,
         "title": "Dow Jones Surges 300 Points After Inflation Data; Nvidia Pressured, But China Stocks Rip Higher (Live Coverage)",
-        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-chinese-stocks/"
+        "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-chinese-stocks/",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -109,7 +122,8 @@
         "date": "2024-09-28",
         "sentiment": 0.921675,
         "title": "NVIDIA Co. (NASDAQ:NVDA) is Catalytic Wealth RIA LLC\u2019s 8th Largest Position",
-        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-co-nasdaqnvda-is-catalytic-wealth-ria-llcs-8th-largest-position.html"
+        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-co-nasdaqnvda-is-catalytic-wealth-ria-llcs-8th-largest-position.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -117,7 +131,8 @@
         "date": "2024-09-28",
         "sentiment": 0.689275,
         "title": "NVIDIA Co. (NASDAQ:NVDA) Stock Position Lifted by Commonwealth Equity Services LLC",
-        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-co-nasdaqnvda-stock-position-lifted-by-commonwealth-equity-services-llc.html"
+        "url": "https://www.americanbankingnews.com/2024/09/28/nvidia-co-nasdaqnvda-stock-position-lifted-by-commonwealth-equity-services-llc.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -125,7 +140,8 @@
         "date": "2024-09-28",
         "sentiment": 0.249875,
         "title": "Baltimore Washington Financial Advisors Inc. Has $63.50 Million Stake in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/28/baltimore-washington-financial-advisors-inc-has-63-50-million-stake-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/28/baltimore-washington-financial-advisors-inc-has-63-50-million-stake-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -133,7 +149,8 @@
         "date": "2024-09-28",
         "sentiment": 0.566025,
         "title": "United Capital Management of KS Inc. Grows Holdings in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.defenseworld.net/2024/09/28/united-capital-management-of-ks-inc-grows-holdings-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.defenseworld.net/2024/09/28/united-capital-management-of-ks-inc-grows-holdings-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -141,7 +158,8 @@
         "date": "2024-09-28",
         "sentiment": 0.47182499999999994,
         "title": "Hixon Zuercher LLC Buys 51,559 Shares of NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.defenseworld.net/2024/09/28/hixon-zuercher-llc-buys-51559-shares-of-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.defenseworld.net/2024/09/28/hixon-zuercher-llc-buys-51559-shares-of-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -149,7 +167,8 @@
         "date": "2024-09-28",
         "sentiment": 0.471875,
         "title": "Viewpoint Capital Management LLC Purchases 62,747 Shares of NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.defenseworld.net/2024/09/28/viewpoint-capital-management-llc-purchases-62747-shares-of-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.defenseworld.net/2024/09/28/viewpoint-capital-management-llc-purchases-62747-shares-of-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -157,7 +176,8 @@
         "date": "2024-09-28",
         "sentiment": 0.471875,
         "title": "Blue Fin Capital Inc. Purchases 641,575 Shares of NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.defenseworld.net/2024/09/28/blue-fin-capital-inc-purchases-641575-shares-of-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.defenseworld.net/2024/09/28/blue-fin-capital-inc-purchases-641575-shares-of-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -165,7 +185,8 @@
         "date": "2024-09-28",
         "sentiment": 0.7605249999999999,
         "title": "Sabal Trust CO Boosts Holdings in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.defenseworld.net/2024/09/28/sabal-trust-co-boosts-holdings-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.defenseworld.net/2024/09/28/sabal-trust-co-boosts-holdings-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -173,7 +194,8 @@
         "date": "2024-09-28",
         "sentiment": 0.4719,
         "title": "NVIDIA Co. (NASDAQ:NVDA) Shares Purchased by Legacy Advisors LLC",
-        "url": "https://www.defenseworld.net/2024/09/28/nvidia-co-nasdaqnvda-shares-purchased-by-legacy-advisors-llc.html"
+        "url": "https://www.defenseworld.net/2024/09/28/nvidia-co-nasdaqnvda-shares-purchased-by-legacy-advisors-llc.html",
+        "weight": 1
     },
     {
         "author": "Defense World Staff",
@@ -181,7 +203,8 @@
         "date": "2024-09-28",
         "sentiment": 0.471875,
         "title": "NVIDIA Co. (NASDAQ:NVDA) Shares Bought by Private Ocean LLC",
-        "url": "https://www.defenseworld.net/2024/09/28/nvidia-co-nasdaqnvda-shares-bought-by-private-ocean-llc.html"
+        "url": "https://www.defenseworld.net/2024/09/28/nvidia-co-nasdaqnvda-shares-bought-by-private-ocean-llc.html",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Will Healy and Justin Pope)",
@@ -189,7 +212,8 @@
         "date": "2024-09-29",
         "sentiment": 0.8940750000000001,
         "title": "Is There Still Time to Buy These 2 Artificial Intelligence (AI) Stocks That Are Up 37% and 190%?",
-        "url": "https://www.fool.com/investing/2024/09/29/up-37-to-190-time-buy-2-ai-stocks/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/29/up-37-to-190-time-buy-2-ai-stocks/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": "Benzinga Neuro",
@@ -197,7 +221,8 @@
         "date": "2024-09-29",
         "sentiment": 0.24175,
         "title": "Apple Bowing Out Of OpenAI Funding Round, iPhone 16's Camera Ranking, And More: This Week In Appleverse",
-        "url": "https://www.benzinga.com/news/24/09/41081522/apple-bowing-out-of-openai-funding-round-iphone-16s-camera-ranking-and-more-this-week-in-appleverse"
+        "url": "https://www.benzinga.com/news/24/09/41081522/apple-bowing-out-of-openai-funding-round-iphone-16s-camera-ranking-and-more-this-week-in-appleverse",
+        "weight": 1
     },
     {
         "author": null,
@@ -205,7 +230,8 @@
         "date": "2024-09-29",
         "sentiment": 0.545175,
         "title": "2 Growth Stocks to Buy Before They Soar 212% and 712%, According to Certain Wall Street Analysts - The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbFBacVNLWjBQU2NHbzN5OVNrQmFnLV9VdGp5TW9lX0lRenJPeG1hdkFLdUlqQzBhZ3JLLURncmVyUXdWZ19zTjN0WG9EZGthd2NSeUFLM0I2azdTUm14Q0hlZFZiRUZhZ2ZvY3lSQjA4MFpVOGFoYVdReHltYjVManVnVnhIRDN1cUFCZjdZWHFiV1cyYVdJRw?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbFBacVNLWjBQU2NHbzN5OVNrQmFnLV9VdGp5TW9lX0lRenJPeG1hdkFLdUlqQzBhZ3JLLURncmVyUXdWZ19zTjN0WG9EZGthd2NSeUFLM0I2azdTUm14Q0hlZFZiRUZhZ2ZvY3lSQjA4MFpVOGFoYVdReHltYjVManVnVnhIRDN1cUFCZjdZWHFiV1cyYVdJRw?oc=5",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Danny Vena)",
@@ -213,7 +239,8 @@
         "date": "2024-09-29",
         "sentiment": 0.249475,
         "title": "Prediction: Nvidia Stock Will Surge Into 2025. Here's Why.",
-        "url": "https://www.fool.com/investing/2024/09/29/prediction-nvidia-stock-will-surge-into-2025-heres/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/29/prediction-nvidia-stock-will-surge-into-2025-heres/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -221,7 +248,8 @@
         "date": "2024-09-29",
         "sentiment": 0.8428249999999999,
         "title": "Spire Wealth Management Grows Position in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/29/spire-wealth-management-grows-position-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/29/spire-wealth-management-grows-position-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -229,7 +257,8 @@
         "date": "2024-09-29",
         "sentiment": 0.248525,
         "title": "GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) Stock Price Down 4.3%",
-        "url": "https://www.americanbankingnews.com/2024/09/29/graniteshares-2x-long-nvda-daily-etf-nasdaqnvdl-stock-price-down-4-3.html"
+        "url": "https://www.americanbankingnews.com/2024/09/29/graniteshares-2x-long-nvda-daily-etf-nasdaqnvdl-stock-price-down-4-3.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -237,7 +266,8 @@
         "date": "2024-09-29",
         "sentiment": 0.24985,
         "title": "nVerses Capital LLC Raises Holdings in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/29/nverses-capital-llc-raises-holdings-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/29/nverses-capital-llc-raises-holdings-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -245,7 +275,8 @@
         "date": "2024-09-29",
         "sentiment": 0.47185,
         "title": "Sollinda Capital Management LLC Purchases Shares of 3,717 NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/29/sollinda-capital-management-llc-purchases-shares-of-3717-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/29/sollinda-capital-management-llc-purchases-shares-of-3717-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Trevor Jennewine)",
@@ -253,7 +284,8 @@
         "date": "2024-09-29",
         "sentiment": 0.8382,
         "title": "3 Brilliant AI Stocks Billionaires Are Buying for the 3 Stages of the Artificial Intelligence Boom",
-        "url": "https://www.fool.com/investing/2024/09/29/3-brilliant-ai-stocks-billionaires-buy-for-ai-boom/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/29/3-brilliant-ai-stocks-billionaires-buy-for-ai-boom/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Danny Vena)",
@@ -261,7 +293,8 @@
         "date": "2024-09-28",
         "sentiment": 0.6443249999999999,
         "title": "If You Bought 1 Share of Nvidia at Its IPO, Here's How Many Shares You Would Own Now",
-        "url": "https://www.fool.com/investing/2024/09/28/if-you-bought-1-share-of-nvidia-at-its-ipo-heres-h/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/28/if-you-bought-1-share-of-nvidia-at-its-ipo-heres-h/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": null,
@@ -269,7 +302,8 @@
         "date": "2024-09-30",
         "sentiment": 0.1345,
         "title": "Nvidia Is Likely To Have A Time Correction Vs The Broader Market",
-        "url": "https://seekingalpha.com/article/4724122-nvidia-stock-likely-have-time-correction-vs-broader-market-upgrade-hold?source=feed_all_articles"
+        "url": "https://seekingalpha.com/article/4724122-nvidia-stock-likely-have-time-correction-vs-broader-market-upgrade-hold?source=feed_all_articles",
+        "weight": 1
     },
     {
         "author": null,
@@ -277,7 +311,8 @@
         "date": "2024-09-30",
         "sentiment": 0.3834,
         "title": "Here are Monday's biggest analyst calls: Nvidia, Amazon, Tesla, Meta, Disney, Apple, Uber, JPMorgan Chase & more",
-        "url": "https://www.cnbc.com/2024/09/30/mondays-top-analyst-calls-on-wall-street.html"
+        "url": "https://www.cnbc.com/2024/09/30/mondays-top-analyst-calls-on-wall-street.html",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (George Budwell)",
@@ -285,7 +320,8 @@
         "date": "2024-09-30",
         "sentiment": 0.551125,
         "title": "3 Compelling Reasons Nvidia Stock Remains a Top Pick",
-        "url": "https://www.fool.com/investing/2024/09/30/3-compelling-reasons-nvidia-stock-remains-a-top-pi/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/30/3-compelling-reasons-nvidia-stock-remains-a-top-pi/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": null,
@@ -293,7 +329,8 @@
         "date": "2024-09-30",
         "sentiment": 0.0,
         "title": "Lazard Global Equity Select Portfolio Q2 2024 Commentary",
-        "url": "https://seekingalpha.com/article/4724190-lazard-global-equity-select-portfolio-q2-2024-commentary?source=feed_all_articles"
+        "url": "https://seekingalpha.com/article/4724190-lazard-global-equity-select-portfolio-q2-2024-commentary?source=feed_all_articles",
+        "weight": 1
     },
     {
         "author": "Tyler Durden",
@@ -301,7 +338,8 @@
         "date": "2024-09-30",
         "sentiment": 0.24995,
         "title": "US Futures, European Markets Slide Even As China Soars Most Since 2008",
-        "url": "https://www.zerohedge.com/markets/us-futures-european-markets-slide-even-china-soars-most-2008"
+        "url": "https://www.zerohedge.com/markets/us-futures-european-markets-slide-even-china-soars-most-2008",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Geoffrey Seiler)",
@@ -309,7 +347,8 @@
         "date": "2024-09-30",
         "sentiment": 0.767725,
         "title": "Micron Shares Surge on Outlook, Defying Analyst Expectations. Is the Stock a Buy Now?",
-        "url": "https://www.fool.com/investing/2024/09/30/micron-shares-surges-on-outlook-defying-analyst/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/30/micron-shares-surges-on-outlook-defying-analyst/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -317,7 +356,8 @@
         "date": "2024-09-30",
         "sentiment": 0.2499,
         "title": "Mitchell Mcleod Pugh & Williams Inc. Raises Stake in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/30/mitchell-mcleod-pugh-williams-inc-raises-stake-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/30/mitchell-mcleod-pugh-williams-inc-raises-stake-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -325,7 +365,8 @@
         "date": "2024-09-30",
         "sentiment": 0.888825,
         "title": "Cadence Wealth Management LLC Boosts Stock Position in NVIDIA Co. (NASDAQ:NVDA)",
-        "url": "https://www.americanbankingnews.com/2024/09/30/cadence-wealth-management-llc-boosts-stock-position-in-nvidia-co-nasdaqnvda.html"
+        "url": "https://www.americanbankingnews.com/2024/09/30/cadence-wealth-management-llc-boosts-stock-position-in-nvidia-co-nasdaqnvda.html",
+        "weight": 1
     },
     {
         "author": "newsfeedback@fool.com (Sean Williams)",
@@ -333,7 +374,8 @@
         "date": "2024-09-30",
         "sentiment": 0.6406000000000001,
         "title": "Wall Street's Most Anticipated Artificial Intelligence (AI) Stock Split of the 4th Quarter Has Arrived",
-        "url": "https://www.fool.com/investing/2024/09/30/wall-street-anticipated-ai-stock-split-4th-quarter/?source=iedfolrf0000001"
+        "url": "https://www.fool.com/investing/2024/09/30/wall-street-anticipated-ai-stock-split-4th-quarter/?source=iedfolrf0000001",
+        "weight": 1
     },
     {
         "author": "ABMN Staff",
@@ -341,7 +383,8 @@
         "date": "2024-09-30",
         "sentiment": 0.8667500000000001,
         "title": "NVIDIA Co. (NASDAQ:NVDA) is Summit Financial LLC\u2019s 10th Largest Position",
-        "url": "https://www.americanbankingnews.com/2024/09/30/nvidia-co-nasdaqnvda-is-summit-financial-llcs-10th-largest-position.html"
+        "url": "https://www.americanbankingnews.com/2024/09/30/nvidia-co-nasdaqnvda-is-summit-financial-llcs-10th-largest-position.html",
+        "weight": 1
     },
     {
         "author": null,

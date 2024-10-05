@@ -36,10 +36,6 @@ jobs:
           docker compose up -d
           docker compose ps
 
-      - name: Check MySQL environment variables
-        run: |
-          docker exec mysql-db env | grep MYSQL_ROOT_PASSWORD
-
       - name: Wait for MySQL to be ready
         run: |
           until docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
@@ -52,6 +48,20 @@ jobs:
       - name: Run SQL Query on NVDA_DATA
         run: |
           docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NVDA_DATA WHERE id = '16';"
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Installing dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Scrape News
+        run: |
+          python3 scrapers/newsScraper.py
 
       - name: Run adding to DB file
         env:
@@ -59,6 +69,10 @@ jobs:
             MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           bash updateDatabase.sh
+
+      - name: Run SQL Query on NVDA_DATA
+        run: |
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_NVDA_DATA;"
 
       - name: Tear down Docker Compose
         run: |
