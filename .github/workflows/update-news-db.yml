@@ -73,15 +73,8 @@ jobs:
             MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           bash updateDatabase.sh
-      
+
       # Step 10:
-      - name: Run SQL Query on News DB
-        run: |
-          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_AAPL_DATA;"
-          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_AMZN_DATA;"
-          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_NVDA_DATA;"
-  
-      # Step 11:
       - name: Dump News DB data in ./db/news/news-<stock>-data.sql
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
@@ -89,29 +82,29 @@ jobs:
         run: |
           bash db/dumpData.sh
       
-      # Step 12:
+      # Step 11:
       - name: Tear down Docker Compose
         run: |
           docker compose down 
 
-      # Step 13:
+      # Step 12:
       - name: Remove JSON output file
         run: |
           rm output/*.json
       
-      # Step 14:
+      # Step 13:
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      # Step 15:
+      # Step 14:
       - name: Commit changes
         run: |
           git add .
           git commit -m "Updated database dump" || echo "No changes to commit"
       
-      # Step 16:
+      # Step 15:
       - name: Push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
