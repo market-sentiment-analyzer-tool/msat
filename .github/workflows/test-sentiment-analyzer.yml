@@ -1,6 +1,5 @@
-name: Run Unit Tests
+name: "[Test] Sentiment Analyzer"
 
-# Run Unit tests every 6 hours
 on:
   schedule:
     - cron: '0 */6 * * *' # Runs every 6 hours
@@ -8,9 +7,8 @@ on:
   workflow_dispatch: 
 
 jobs:
-  database-tests:
+  sentiment-analyzer-tests:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 */6 * * *' || github.event_name == 'workflow_dispatch'
     steps:
       # Step 1: Check out the code from the repository
       - name: Checkout code
@@ -32,14 +30,9 @@ jobs:
 
       # Step 5: Run unit tests using pytest or any other framework
       - name: Run tests
-        env:
-          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
-          MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
-          MYSQL_USER: ${{ secrets.MYSQL_USER }}
-          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           . venv/bin/activate
-          python3 tests/databaseTests.py
+          python3 tests/sentimentAnalyzerTests.py
 
       # Step 6: Cleanup files/folders
       - name: Cleanup

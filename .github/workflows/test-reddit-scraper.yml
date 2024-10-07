@@ -1,0 +1,40 @@
+name: "[Test] Reddit Scraper"
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+
+  workflow_dispatch: 
+
+jobs:
+    reddit-scraper-tests:
+        runs-on: ubuntu-latest
+        steps:
+          # Step 1: Check out the code from the repository
+          - name: Checkout code
+            uses: actions/checkout@v3
+    
+          # Step 2: Set up Python
+          - name: Set up Python
+            uses: actions/setup-python@v4
+            with:
+              python-version: '3.x'
+    
+           # Step 3: Install dependencies
+          - name: Install dependencies
+            run: sudo apt-get update && sudo apt-get install -y make
+    
+          # Step 4: Create virtual environment
+          - name: Create virtual environment
+            run: make venv
+    
+          # Step 5: Run unit tests using pytest or any other framework
+          - name: Run tests
+            run: |
+              . venv/bin/activate
+              python3 tests/redditScraperTests.py
+    
+          # Step 6: Cleanup files/folders
+          - name: Cleanup
+            run: |
+              make clean
