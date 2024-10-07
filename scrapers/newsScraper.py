@@ -89,7 +89,7 @@ def calculateWeight(stock, title, url, author, content):
     # return weighted score of article
     return weight
 
-def save_data_to_json(data, file_path="output/news-data.json"):
+def save_data_to_json(data, file_path="output/news-nvda-data.json"):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     existing_data = []

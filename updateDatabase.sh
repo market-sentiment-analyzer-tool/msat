@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# List stocks needed to update
+stocks=("nvda" "aapl" "goog" "msft")
+
 # Path to your JSON file
 json_file="./output/news-nvda-data.json"
 

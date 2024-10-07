@@ -10,7 +10,7 @@ services:
     volumes:
       - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
       # should have multiple *data.sql files
-      - ./db/data.sql:/docker-entrypoint-initdb.d/data.sql
+      - ./db/data/:/docker-entrypoint-initdb.d/data/
 
 # docker compose up -d
 # docker exec -it mysql-db mysql -u root -p
