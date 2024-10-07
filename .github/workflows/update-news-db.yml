@@ -61,7 +61,6 @@ jobs:
       # Step 8:
       - name: Scrape News and dump json in output folder under ./output/news-<stock>-data.json
         env:
-            STOCK: "NVDA,Nvidia"
             NEWS_API: ${{ secrets.NEWS_API }}
             NEWS_DATA: ${{ secrets.NEWS_DATA }}
         run: |
@@ -76,8 +75,10 @@ jobs:
           bash updateDatabase.sh
       
       # Step 10:
-      - name: Run SQL Query on NEWS_NVDA_DATA
+      - name: Run SQL Query on News DB
         run: |
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM AAPL_AAPL_DATA;"
+          docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_AMZN_DATA;"
           docker exec mysql-db mysql -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e "SELECT * FROM NEWS_NVDA_DATA;"
   
       # Step 11:
@@ -97,7 +98,7 @@ jobs:
       # Step 13:
       - name: Remove JSON output file
         run: |
-          rm output/*.json
+          rm output/news-nvda-data.json
       
       # Step 14:
       - name: Configure Git

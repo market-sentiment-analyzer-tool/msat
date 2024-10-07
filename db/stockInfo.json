@@ -1,0 +1,9 @@
+[
+    {
+        "aapl":"NEWS_AAPL_DATA",
+        "amzn":"NEWS_AMZN_DATA",
+        "goog":"NEWS_GOOG_DATA",
+        "msft":"NEWS_MSFT_DATA",
+        "nvda":"NEWS_NVDA_DATA"
+    }
+]

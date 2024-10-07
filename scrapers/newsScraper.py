@@ -48,6 +48,7 @@ def calculateSentiment(title,content):
 def calculateWeight(stock, title, url, author, content):
     # default weight
     weight = 1
+    # set parameters
     stock_words = [item.lower() for item in stock.split(",")]
     title_words = title.lower().split()
     trusted_authors = ["MarketBeat News", "ABMN Staff"]
@@ -89,7 +90,32 @@ def calculateWeight(stock, title, url, author, content):
     # return weighted score of article
     return weight
 
-def save_data_to_json(data, file_path="output/news-nvda-data.json"):
+def get_stock_value(key):
+    # Get the file path in the same folder
+    file_path = os.path.join(os.path.dirname(__file__), 'stockInfo.json')
+    
+    # Open and read the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    
+    # Assuming your JSON structure is a list, so we access the first element
+    stock_info = data[0]
+    
+    # Return the value for the given key
+    return stock_info.get(key)
+
+def get_stock_info():
+    # Get the file path of stockInfo.json
+    file_path = os.path.join(os.path.dirname(__file__), 'stockInfo.json')
+    
+    # Open and load the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    return data[0]
+
+def save_data_to_json(data, stock):
+    file_path=f"output/news-{stock}-data.json"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     existing_data = []
@@ -232,6 +258,8 @@ def fetchNewsData(stock,urls,data,news_data_key):
     return data
 
 def fetchNewsAPIs(stock,news_api_key,news_data_key):
+    # get stock values from stockInfo.json
+    stock = get_stock_value(stock)
     # Fetch News API
     urls, data = fetchNewsAPI(stock,news_api_key)
     # Fetch News Data
@@ -243,15 +271,17 @@ def fetchNewsAPIs(stock,news_api_key,news_data_key):
 # set variables in env
 # python3 scrapers/newsScraper.py
 if __name__ == "__main__":
-    stock = os.environ['STOCK'] 
     news_api_key = os.environ['NEWS_API']
     news_data_key = os.environ['NEWS_DATA']
 
-    # Calling the scraping function
-    data = fetchNewsAPIs(stock, news_api_key, news_data_key)
+    stocks = get_stock_info()
 
-    # Save data to news-data.json
-    save_data_to_json(data)
+    for stock in stocks:
+        # Calling the scraping function
+        data = fetchNewsAPIs(stock, news_api_key, news_data_key)
 
-    # Print the scraped data (optional, for debugging)
-    print(json.dumps(data, indent=4))
+        # Save data to news-<stock>-data.json
+        save_data_to_json(data,stock)
+
+        # Print the scraped data (optional, for debugging)
+        print(json.dumps(data, indent=4))
