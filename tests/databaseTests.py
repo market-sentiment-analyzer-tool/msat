@@ -9,13 +9,6 @@ class DatabaseTests(unittest.TestCase):
         # Database Connection Information
         self.database = os.getenv('MYSQL_DATABASE')
         self.password = os.getenv('MYSQL_ROOT_PASSWORD')
-
-    # Close database connection after each test
-    def tearDown(self):
-        try:
-            self.conn.close()
-        except NameError:
-            pass
     
     # Test database basic connectivity
     def test_database_connection(self):
