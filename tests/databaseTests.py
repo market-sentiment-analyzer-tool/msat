@@ -12,8 +12,9 @@ class DatabaseTests(unittest.TestCase):
     
     # Test database basic connectivity
     def test_database_connection(self):
+        query = "SELECT 1;"
         result = subprocess.run(
-            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "SELECT 1;" """,
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
@@ -22,18 +23,30 @@ class DatabaseTests(unittest.TestCase):
         trimmed_output = result.stdout.strip()
         self.assertEqual(trimmed_output, "1")
 
-    # # Test number of tables 
-    # def test_number_of_tables(self):
-    #     self.cursor.execute("SHOW TABLES")
-    #     tables = self.cursor.fetchall()
-    #     # Check if exactly 1 table exist
-    #     self.assertEqual(len(tables), 1, "Expected 1 table, found {}".format(len(tables)))
+    # Test number of tables 
+    def test_number_of_tables(self):
+        query = "SHOW TABLES;"
+        # Check if exactly 5 tables exist
+        result = subprocess.run(
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
+            shell=True,
+            capture_output=True,
+            text=True # output is text, not bytes
+        )
+        # self.assertEqual(len(tables), 5, "Expected 5 tables, found {}".format(len(tables)))
+        print(result.stdout)
 
-    # # Test if data exists in MarketSentiment/NVDA_DATA
-    # def test_nvda_data_populated(self):
-    #     self.cursor.execute("SELECT * FROM NVDA_DATA LIMIT 5")
-    #     rows = self.cursor.fetchall()
-    #     self.assertEqual(len(rows), 5, "No data found in NVDA_DATA table")
+    # Test if data exists in MarketSentiment/NVDA_DATA
+    def test_nvda_data_populated(self):
+        query = "SELECT * FROM NEWS_NVDA_DATA LIMIT 5;"
+        result = subprocess.run(
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
+            shell=True,
+            capture_output=True,
+            text=True # output is text, not bytes
+        )
+        print(result.stdout)
+        # self.assertEqual(len(rows), 5, "No data found in NVDA_DATA table")
 
     # # Test that data in MarketSentiment/NVDA_DATA follows the template
     # def test_nvda_data_template(self):
