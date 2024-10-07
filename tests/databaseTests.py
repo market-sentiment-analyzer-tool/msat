@@ -14,7 +14,7 @@ class DatabaseTests(unittest.TestCase):
     def test_database_connection(self):
         query = "SELECT 1;"
         result = subprocess.run(
-            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
@@ -28,7 +28,7 @@ class DatabaseTests(unittest.TestCase):
         query = "SHOW TABLES;"
         # Check if exactly 5 tables exist
         result = subprocess.run(
-            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
@@ -40,7 +40,7 @@ class DatabaseTests(unittest.TestCase):
     def test_nvda_data_populated(self):
         query = "SELECT * FROM NEWS_NVDA_DATA LIMIT 5;"
         result = subprocess.run(
-            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e {query} """,
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
