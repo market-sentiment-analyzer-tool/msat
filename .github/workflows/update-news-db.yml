@@ -72,7 +72,7 @@ jobs:
             MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
             MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-          bash updateDatabase.sh
+          bash db/newsUpdateDatabase.sh
 
       # Step 10:
       - name: Dump News DB data in ./db/news/news-<stock>-data.sql
@@ -80,7 +80,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-          bash db/dumpData.sh
+          bash db/newsDumpData.sh
       
       # Step 11:
       - name: Tear down Docker Compose

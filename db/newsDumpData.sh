@@ -4,7 +4,7 @@
 script_dir=$(dirname "$0")
 
 # Path to the stockInfo.json file
-stock_info_file="$script_dir/stockInfo.json"
+stock_info_file="$script_dir/newsStockInfo.json"
 
 # Check if the file exists
 if [ ! -f "$stock_info_file" ]; then
