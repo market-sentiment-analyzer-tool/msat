@@ -97,7 +97,7 @@ jobs:
       # Step 13:
       - name: Remove JSON output file
         run: |
-          rm output/news-nvda-data.json
+          rm output/*.json
       
       # Step 14:
       - name: Configure Git
