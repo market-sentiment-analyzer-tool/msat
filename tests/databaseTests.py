@@ -18,7 +18,9 @@ class DatabaseTests(unittest.TestCase):
             capture_output=True,
             text=True # output is text, not bytes
         )
-        self.assertEqual(result.stdout, (1,))
+        # Trim the output to remove any extra whitespace (like newline characters)
+        trimmed_output = result.stdout.strip()
+        self.assertEqual(trimmed_output, "1")
 
     # # Test number of tables 
     # def test_number_of_tables(self):
