@@ -47,7 +47,7 @@ class DatabaseTests(unittest.TestCase):
 
     # Test if data exists in MarketSentiment/NVDA_DATA
     def test_nvda_data_populated(self):
-        query = "SELECT * FROM NEWS_NVDA_DATA LIMIT 5;"
+        query = "SELECT COUNT(*) FROM NEWS_NVDA_DATA LIMIT 5;"
         result = subprocess.run(
             f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
             shell=True,
