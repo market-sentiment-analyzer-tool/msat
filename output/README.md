@@ -1,1 +1,3 @@
-# This is where the scraped data are temporarily stored
+**Do not delete this directory**
+
+It is used as a temporary dicretory for the scraped data before being added to the databases.
