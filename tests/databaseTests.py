@@ -19,9 +19,11 @@ class DatabaseTests(unittest.TestCase):
             capture_output=True,
             text=True # output is text, not bytes
         )
-        # Trim the output to remove any extra whitespace (like newline characters)
-        trimmed_output = result.stdout.strip()
-        self.assertEqual(trimmed_output, "1")
+        # Get output lines and strip any whitespace
+        output_lines = result.stdout.strip().split('\n')
+
+        # Assert that the first line is '1'
+        self.assertEqual(output_lines[0], '1')
 
     # Test number of tables 
     def test_number_of_tables(self):
@@ -33,8 +35,15 @@ class DatabaseTests(unittest.TestCase):
             capture_output=True,
             text=True # output is text, not bytes
         )
-        # self.assertEqual(len(tables), 5, "Expected 5 tables, found {}".format(len(tables)))
-        print(result.stdout)
+        # Get the output lines and strip whitespace
+        output_lines = result.stdout.strip().split('\n')
+        # Exclude the first line (header) and count the remaining lines (tables)
+        table_count = len(output_lines) - 1
+        # Expected number of tables
+        expected_count = 6
+
+        # Assert that the count of tables matches the expected count
+        self.assertEqual(table_count, expected_count, f"Expected {expected_count} tables, found {table_count}.")
 
     # Test if data exists in MarketSentiment/NVDA_DATA
     def test_nvda_data_populated(self):
@@ -45,7 +54,11 @@ class DatabaseTests(unittest.TestCase):
             capture_output=True,
             text=True # output is text, not bytes
         )
-        print(result.stdout)
+        # Print the standard error if the command fails
+        if result.returncode != 0:
+            print("Error:", result.stderr)
+        else:
+            print("Query Output:", result.stdout)
         # self.assertEqual(len(rows), 5, "No data found in NVDA_DATA table")
 
     # # Test that data in MarketSentiment/NVDA_DATA follows the template
