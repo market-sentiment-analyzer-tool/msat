@@ -12,23 +12,13 @@ class DatabaseTests(unittest.TestCase):
     
     # Test database basic connectivity
     def test_database_connection(self):
-        # self.cursor.execute("SELECT 1")
-        # result = self.cursor.fetchone()
-        # self.assertEqual(result, (1,))
         result = subprocess.run(
             f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "SELECT 1;" """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
         )
-
-        # Check if the command was successful
-        if result.returncode == 0:
-            # Print the standard output (stdout)
-            print("Command Output:", result.stdout)
-        else:
-            # Print the standard error (stderr) if the command fails
-            print("Error:", result.stderr)
+        self.assertEqual(result.stdout, (1,))
 
     # # Test number of tables 
     # def test_number_of_tables(self):
