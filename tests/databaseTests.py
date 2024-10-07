@@ -16,7 +16,7 @@ class DatabaseTests(unittest.TestCase):
         # result = self.cursor.fetchone()
         # self.assertEqual(result, (1,))
         result = subprocess.run(
-            f"""docker exec mysql-db mysql -h mysql -u root -p${self.password} -D ${self.database} -e "SELECT 1;" """,
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "SELECT 1;" """,
             shell=True,
             capture_output=True,
             text=True # output is text, not bytes
