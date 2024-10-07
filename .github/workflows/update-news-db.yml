@@ -87,7 +87,7 @@ jobs:
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
           docker exec mysql-db mysqldump -h mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} --result-file=/tmp/news_nvda_data.sql ${{ secrets.MYSQL_DATABASE }} NEWS_NVDA_DATA 
-          docker cp mysql-db:/tmp/news_nvda_data.sql ./db/news/news_nvda_data.sql
+          docker cp mysql-db:/tmp/news_nvda_data.sql ./db/data/news/news_nvda_data.sql
       
       # Step 12:
       - name: Tear down Docker Compose
