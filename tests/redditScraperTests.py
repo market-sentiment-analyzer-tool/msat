@@ -1,5 +1,6 @@
 import sys
 import os
+import praw
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import unittest
@@ -14,7 +15,16 @@ def is_integer(value):
     
 class RedditScraperTests(unittest.TestCase):
     def setUp(self):
-        pass
+        reddit_client_id = os.environ['REDDIT_CLIENT_ID']
+        reddit_client_secret = os.environ['REDDIT_CLIENT_SECRET']
+        reddit_user_agent = os.environ['REDDIT_USER_AGENT']
+            
+        # Client information used to scrape Reddit
+        self.reddit = praw.Reddit(
+            client_id=reddit_client_id, 
+            client_secret=reddit_client_secret, 
+            user_agent=reddit_user_agent
+        )
 
     # Testing good requests to API
     # Time filter (hour, day, week, year)
@@ -25,7 +35,7 @@ class RedditScraperTests(unittest.TestCase):
         time_filter = "hour"
         stock_filter = ["aapl","apple"]
         subreddit = "AAPL"
-        posts = getPostsTable(time_filter,stock_filter,subreddit)
+        posts = getPostsTable(time_filter,stock_filter,subreddit,self.reddit)
         self.assertGreaterEqual(len(posts),0)
 
     def test_good_request_1002(self):
@@ -33,7 +43,7 @@ class RedditScraperTests(unittest.TestCase):
         time_filter = "hour"
         stock_filter = ["aapl","apple"]
         subreddit = "AAPL"
-        posts = getPostsTable(time_filter,stock_filter,subreddit)
+        posts = getPostsTable(time_filter,stock_filter,subreddit,self.reddit)
         # print(posts)
         if(len(posts) > 0):
             for post in posts:
@@ -73,7 +83,7 @@ class RedditScraperTests(unittest.TestCase):
         time_filter = "none"
         stock_filter = ["aapl","apple"]
         subreddit = "AAPL"
-        self.assertRaises(ValueError,getPostsTable,time_filter,stock_filter,subreddit)
+        self.assertRaises(ValueError,getPostsTable,time_filter,stock_filter,subreddit,self.reddit)
 
     def test_bad_request_2001(self):
         # Request without stock_filter, subreddit

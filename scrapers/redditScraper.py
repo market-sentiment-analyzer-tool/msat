@@ -8,6 +8,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # from creds import credentials
 from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+# Limit of posts scraped
+limit = 5
+
 def save_data_to_json(data, stock):
     file_path=f"output/reddit-{stock}-data.json"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
@@ -55,7 +58,7 @@ def get_stock_info():
 
 # Returns an array containing IDs of posts scraped
 # Args: time_filter, stock_filter[]
-def getPostsID(time_filter,stock_filter,subreddit_visited):
+def getPostsID(time_filter,stock_filter,subreddit_visited,reddit):
     post_IDs = []
     subreddit = reddit.subreddit(subreddit_visited)
     for post in subreddit.top(time_filter=time_filter,limit=limit):
@@ -80,7 +83,7 @@ def getPostsID(time_filter,stock_filter,subreddit_visited):
 # Args: time_filter, stock_filter[]
 def getCommentsID(time_filter,stock_filter,subreddit):
     comments = []
-    post_IDs_with_stock = getPostsID(time_filter,stock_filter,subreddit)
+    post_IDs_with_stock = getPostsID(time_filter,stock_filter,subreddit,reddit)
     # post_IDs_without_stock = getPostsID(time_filter,[""],subreddits_visited) # No stock filter
     # Get all comments from post mentioning the stock
     for post in post_IDs_with_stock:
@@ -112,9 +115,9 @@ def getPosts(posts):
 # Returns an array containing info posts related to the stock
 # Args: time_filter, stock_filter[]
 # Output: [subreddit,post_id,comment_id,date,score,description]
-def getPostsTable(time_filter,stock_filter,subreddit):
+def getPostsTable(time_filter,stock_filter,subreddit,reddit):
     table = []
-    posts = getPostsID(time_filter,stock_filter,subreddit)
+    posts = getPostsID(time_filter,stock_filter,subreddit,reddit)
     for post in posts:
         post_subreddit = reddit.submission(id=post).subreddit.display_name
         post_id = reddit.submission(id=post).id
@@ -202,8 +205,6 @@ if __name__ == "__main__":
         client_secret=reddit_client_secret, 
         user_agent=reddit_user_agent
     )
-    # Limit of posts scraped
-    limit = 5
     # Get stocks to scrape
     stocks = get_stock_info()
 
