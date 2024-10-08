@@ -14,3 +14,44 @@ services:
 
 # docker compose up -d
 # docker exec -it mysql-db mysql -u root -p
+
+  ui:
+    image: node:14
+    container_name: react-ui
+    working_dir: /app
+    volumes:
+      - ./ui:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm install && npm start"
+    depends_on:
+      - mysql
+
+  # http://localhost:3000/
+
+  api:
+    image: python:3.9
+    container_name: api
+    working_dir: /app
+    volumes:
+      - ./api:/app
+      - ./requirements.txt:/requirements.txt  # Mount the requirements.txt file
+    ports:
+      - "5000:5000"
+    environment:
+      MYSQL_HOST: mysql-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    command: sh -c "pip install -r /requirements.txt && python /app/api.py"
+    depends_on:
+      - mysql
+
+# docker exec -it api /bin/bash
+# curl "http://localhost:5000/sentiment?stock=NVDA&interval=A"
+
+# or
+
+# http://localhost:5000/sentiment?stock=NVDA&interval=A

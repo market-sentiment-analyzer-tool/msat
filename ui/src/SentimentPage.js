@@ -10,11 +10,13 @@ class SentimentPage extends Component{
             searchStock: '',
             currentStock: '',
             redditSentiment: 0.44,
-            redditNumOfComments: 453,
-            yahooSentiment: 0,
-            yahooNumOfComments: 0,
+            redditNumOfComments: 454,
+            newsSentiment: 0,
+            newsNumOfArticles: 0,
             twitterSentiment: 0,
             twitterNumOfComments: 0,
+            yahooSentiment: 0,
+            yahooNumOfComments: 0,
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -71,11 +73,11 @@ class SentimentPage extends Component{
                                 numOfComments={this.state.redditNumOfComments}>
                             </SentimentRange>
                         </div>
-                        <div className='yahoo'>
-                            <h1>Yahoo Finance</h1>
+                        <div className='news'>
+                            <h1>News</h1>
                             <SentimentRange 
-                                value={this.state.yahooSentiment}
-                                numOfComments={this.state.yahooNumOfComments}>
+                                value={this.state.newsSentiment}
+                                numOfComments={this.state.newsNumOfArticles}>
                             </SentimentRange>
                         </div>
                         <div className='twitter'>
@@ -83,6 +85,13 @@ class SentimentPage extends Component{
                             <SentimentRange 
                                 value={this.state.twitterSentiment}
                                 numOfComments={this.state.twitterNumOfComments}>
+                            </SentimentRange>
+                        </div>
+                        <div className='yahoo'>
+                            <h1>Yahoo Finance</h1>
+                            <SentimentRange 
+                                value={this.state.yahooSentiment}
+                                numOfComments={this.state.yahooNumOfComments}>
                             </SentimentRange>
                         </div>
                     </div>

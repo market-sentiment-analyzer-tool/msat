@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask_cors import CORS
+from flask_cors import CORS # type: ignore
 
 import json
 
@@ -78,4 +78,4 @@ def get_sentiment():
         raise SyntaxError("Unknown stock")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
