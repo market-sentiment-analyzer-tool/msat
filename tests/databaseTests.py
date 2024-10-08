@@ -45,7 +45,7 @@ class DatabaseTests(unittest.TestCase):
         # Assert that the count of tables matches the expected count
         self.assertEqual(table_count, expected_count, f"Expected {expected_count} tables, found {table_count}.")
 
-    # Test if data exists in MarketSentiment/NVDA_DATA
+    # Test if data exists in MarketSentiment/NEWS_NVDA_DATA
     def test_nvda_data_populated(self):
         query = "SELECT * FROM NEWS_NVDA_DATA LIMIT 5;"
         result = subprocess.run(
@@ -55,37 +55,74 @@ class DatabaseTests(unittest.TestCase):
             text=True # output is text, not bytes
         )
         # Print the standard error if the command fails
+        # Check for errors in execution
         if result.returncode != 0:
             print("Error:", result.stderr)
-        else:
-            print("Query Output:", result.stdout)
-        # self.assertEqual(len(rows), 5, "No data found in NVDA_DATA table")
+            self.fail("Failed to execute query")
+        
+        # Split the output by newlines and count the rows (excluding the header)
+        rows = result.stdout.strip().split('\n')
+        
+        # The first line is the header, so subtract it from the total
+        data_rows = rows[1:]  # ignore the header
 
-    # # Test that data in MarketSentiment/NVDA_DATA follows the template
-    # def test_nvda_data_template(self):
-    #     self.cursor.execute("SELECT * FROM NVDA_DATA LIMIT 5")
-    #     rows = self.cursor.fetchall()
-    #     # Expected columns
-    #     expected_columns = 8
-    #     for row in rows:
-    #         self.assertEqual(len(row), expected_columns)
-    #         self.assertIsInstance(row[0], int)              # id
-    #         self.assertIsInstance(row[1], str)              # subreddit
-    #         self.assertIsInstance(row[2], str)              # post_id
-    #         self.assertIsInstance(row[3], (str, type(None)))# comment_id
-    #         self.assertIsInstance(row[4], date)             # p_date (YYYY-MM-DD format)
-    #         self.assertIsInstance(row[5], int)              # score
-    #         self.assertIsInstance(row[6], float)            # sentiment
-    #         self.assertIsInstance(row[7], str)              # p_description
+        # Assert if there are exactly 5 data rows
+        self.assertEqual(len(data_rows), 5, f"Expected 5 rows, but found {len(data_rows)}")
 
-    # # Test that data in MarketSentiment/NVDA_DATA is recent (less than 1 month ago)
-    # def test_nvda_data_recent(self):
-    #     self.cursor.execute("SELECT p_date FROM NVDA_DATA ORDER BY p_date DESC LIMIT 1")
-    #     latest_date = self.cursor.fetchone()[0]
-    #     # Calculate the date one week ago
-    #     one_month_ago = datetime.now() - timedelta(days=30)
-    #     latest_date = datetime.strptime(latest_date.strftime("%Y-%m-%d"), "%Y-%m-%d")
-    #     self.assertGreater(latest_date, one_month_ago)
+    # Test that data in MarketSentiment/NEWS_NVDA_DATA follows the template
+    def test_nvda_data_template(self):
+        query = "SELECT * FROM NEWS_NVDA_DATA LIMIT 5;"
+        result = subprocess.run(
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
+            shell=True,
+            capture_output=True,
+            text=True # output is text, not bytes
+        )
+        # Check for errors in execution
+        if result.returncode != 0:
+            print("Error:", result.stderr)
+            self.fail("Failed to execute query")
+
+        # Process query result output
+        rows = result.stdout.strip().split("\n")[1:]  # Skip header row
+        # Expected columns
+        expected_columns = 8
+        for row in rows:
+            row = row.split("\t")  # Assuming tab-separated values from MySQL output
+            self.assertEqual(len(row), expected_columns, "Row does not have the expected number of columns")
+
+            # Check each column's data type
+            self.assertIsInstance(int(row[0]), int, "Expected 'id' to be an integer")                                   # id
+            self.assertIsInstance(row[1], (str, type(None)), "Expected 'author' to be a string or None")                # author
+            self.assertIsInstance(row[2], (str, type(None)), "Expected 'content' to be a string or None")               # content
+            self.assertIsInstance(datetime.strptime(row[3], "%Y-%m-%d"), datetime, "Expected 'n_date' to be a date")    # n_date
+            self.assertIsInstance(float(row[4]), float, "Expected 'sentiment' to be a float")                           # sentiment
+            self.assertIsInstance(row[5], str, "Expected 'title' to be a string")                                       # title
+            self.assertIsInstance(row[6], str, "Expected 'n_url' to be a string")                                       # n_url
+            self.assertIsInstance(int(row[7]), int, "Expected 'n_weight' to be an integer")  
+
+    # Test that data in MarketSentiment/NEWS_NVDA_DATA is recent (less than 1 month ago)
+    def test_nvda_data_recent(self):
+        query = "SELECT n_date FROM NEWS_NVDA_DATA ORDER BY n_date DESC LIMIT 1;"
+        result = subprocess.run(
+            f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
+            shell=True,
+            capture_output=True,
+            text=True
+        )
+        # Check for errors in execution
+        if result.returncode != 0:
+            print("Error:", result.stderr)
+            self.fail("Failed to execute query")
+
+        # Extract the latest date
+        latest_date_str = result.stdout.strip().split("\n")[1]  # Fetch the first row after the header
+        # Parse the date
+        latest_date = datetime.strptime(latest_date_str, "%Y-%m-%d")
+        # Calculate one week ago
+        one_week_ago = datetime.now() - timedelta(days=7)
+        # Assert that the latest date is within the last month
+        self.assertGreater(latest_date, one_week_ago, "The latest data is older than 1 week")
 
 if __name__ == '__main__': 
     unittest.main()
