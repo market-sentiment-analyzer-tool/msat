@@ -98,8 +98,8 @@ class DatabaseTests(unittest.TestCase):
             self.assertIsInstance(row[3], (str, type(None)), "Expected 'comment_id' to be a string or None")            # comment_id
             self.assertIsInstance(datetime.strptime(row[4], "%Y-%m-%d"), datetime, "Expected 'p_date' to be a date")    # p_date
             self.assertIsInstance(int(row[5]), int, "Expected 'score' to be an integer")                                # score
-            self.assertIsInstance(float(row[6]), float, "Expected 'sentiment' to be a float")                                  # sentiment
-            self.assertIsInstance(int(row[7]), str, "Expected 'p_description' to be a string")                          # p_description
+            self.assertIsInstance(float(row[6]), float, "Expected 'sentiment' to be a float")                           # sentiment
+            self.assertIsInstance(row[7], str, "Expected 'p_description' to be a string")                               # p_description
     
     # Test that data in MarketSentiment/REDDIT_AAPL_DATA is recent (less than 1 week ago)
     def test_reddit_aapl_data_recent(self):
