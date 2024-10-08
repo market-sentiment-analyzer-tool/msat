@@ -30,6 +30,10 @@ jobs:
     
           # Step 5: Run unit tests using pytest or any other framework
           - name: Run tests
+            env:
+              REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+              REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+              REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
             run: |
               . venv/bin/activate
               python3 tests/redditScraperTests.py

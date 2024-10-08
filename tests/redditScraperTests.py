@@ -24,14 +24,16 @@ class RedditScraperTests(unittest.TestCase):
         # Get posts table
         time_filter = "hour"
         stock_filter = ["aapl","apple"]
-        posts = getPostsTable(time_filter,stock_filter)
+        subreddit = "AAPL"
+        posts = getPostsTable(time_filter,stock_filter,subreddit)
         self.assertGreaterEqual(len(posts),0)
 
     def test_good_request_1002(self):
         # Get posts table
         time_filter = "hour"
         stock_filter = ["aapl","apple"]
-        posts = getPostsTable(time_filter,stock_filter)
+        subreddit = "AAPL"
+        posts = getPostsTable(time_filter,stock_filter,subreddit)
         # print(posts)
         if(len(posts) > 0):
             for post in posts:
@@ -53,12 +55,12 @@ class RedditScraperTests(unittest.TestCase):
     # stock_filter = [""] # no filter
         
     def test_bad_request_1001(self):
-        # Request without stock_filter
+        # Request without stock_filter, subreddit
         time_filter = "hour"
         self.assertRaises(TypeError,getPostsTable,time_filter)
     
     def test_bad_request_1002(self):
-        # Request without time_filter
+        # Request without time_filter, subbreddit
         stock_filter = ["aapl","apple"]
         self.assertRaises(TypeError,getPostsTable,stock_filter)
 
@@ -70,10 +72,11 @@ class RedditScraperTests(unittest.TestCase):
         # Request with time_filter argument not accepted
         time_filter = "none"
         stock_filter = ["aapl","apple"]
-        self.assertRaises(ValueError,getPostsTable,time_filter,stock_filter)
+        subreddit = "AAPL"
+        self.assertRaises(ValueError,getPostsTable,time_filter,stock_filter,subreddit)
 
     def test_bad_request_2001(self):
-        # Request without stock_filter
+        # Request without stock_filter, subreddit
         time_filter = "hour"
         self.assertRaises(TypeError,getCommentsTable,time_filter)
     
