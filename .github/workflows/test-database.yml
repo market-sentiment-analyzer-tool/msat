@@ -58,7 +58,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Step 5: 
+      # Step 8: 
       - name: Run tests
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
@@ -66,7 +66,15 @@ jobs:
         run: |
           python3 tests/databaseTests.py
 
-      # Step XX:
+      # Step 8: 
+      - name: Test
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+          docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e 'SELECT COUNT(*) FROM NEWS_NVDA_DATA LIMIT 5;'
+
+      # Step 9:
       - name: Tear down Docker Compose
         run: |
           docker compose down 
