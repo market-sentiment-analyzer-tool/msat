@@ -1,62 +1,103 @@
 import praw
+import json
+import os
+import sys
 from datetime import datetime
+# Add parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# from creds import credentials
+from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+def save_data_to_json(data, stock):
+    file_path=f"output/reddit-{stock}-data.json"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    # Save the data to the JSON file
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=4)
 
-# Client information used to scrape Reddit
-reddit = praw.Reddit(client_id='cbsZ48Da2i2eZ4AtTAQsjQ', client_secret='uk9kKwKpWKQHH69WQ69feJMp8znHyw', user_agent='WebScrapper')
+def get_stock_subreddits(key):
+    # Get the file path in the same folder
+    file_path = os.path.join(os.path.dirname(__file__), 'stockSubreddits.json')
+    # Open and read the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # Assuming your JSON structure is a list, so we access the first element
+    stock_subreddits = data[0]
+     # Get the value for the given key
+    subreddits_str = stock_subreddits.get(key)
+    # Split the string by commas and return as a list (array)
+    if subreddits_str:
+        return subreddits_str.split(',')
+    return []
 
-# List of Subreddits scraped
-subreddits_visited = ['stocks', 'NVDA_Stock']
+def get_stock_value(key):
+    # Get the file path in the same folder
+    file_path = os.path.join(os.path.dirname(__file__), 'stockInfo.json')
+    # Open and read the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # Assuming your JSON structure is a list, so we access the first element
+    stock_info = data[0]
+    # Return the value for the given key
+    stock_info_str = stock_info.get(key)
+    # Split the string by commas and return as a list (array)
+    if stock_info_str:
+        return stock_info_str.split(',')
+    return []
 
-# Limit of posts scraped
-limit = 5
+def get_stock_info():
+    # Get the file path of stockInfo.json
+    file_path = os.path.join(os.path.dirname(__file__), 'stockSubreddits.json')
+    # Open and load the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data[0]
 
 # Returns an array containing IDs of posts scraped
 # Args: time_filter, stock_filter[]
-def getPostsID(time_filter,stock_filter):
+def getPostsID(time_filter,stock_filter,subreddit_visited):
     post_IDs = []
-    for subreddit_visited in subreddits_visited:
-        subreddit = reddit.subreddit(subreddit_visited)
-        for post in subreddit.top(time_filter=time_filter,limit=limit):
-            post_content = post.title.lower()
-            if(any(x in post_content for x in stock_filter)):
-                post_IDs.append(post.id)
+    subreddit = reddit.subreddit(subreddit_visited)
+    for post in subreddit.top(time_filter=time_filter,limit=limit):
+        post_content = post.title.lower()
+        if(any(x in post_content for x in stock_filter)):
+            post_IDs.append(post.id)
     return post_IDs
 
 # Prints an array containing IDs of posts scraped and its title
 # Args: time_filter, stock_filter[]
-def printPostsID(time_filter,stock_filter):
-    posts = []
-    for subreddit_visited in subreddits_visited:
-        subreddit = reddit.subreddit(subreddit_visited)
-        for post in subreddit.top(time_filter=time_filter,limit=limit):
-            post_content = post.title.lower()
-            if(any(x in post_content for x in stock_filter)):
-                posts.append([post.id,post.title])
-    print(posts)
+# def printPostsID(time_filter,stock_filter):
+#     posts = []
+#     for subreddit_visited in subreddits_visited:
+#         subreddit = reddit.subreddit(subreddit_visited)
+#         for post in subreddit.top(time_filter=time_filter,limit=limit):
+#             post_content = post.title.lower()
+#             if(any(x in post_content for x in stock_filter)):
+#                 posts.append([post.id,post.title])
+#     print(posts)
 
 # Returns an array containing all the comments related to a stock
 # Args: time_filter, stock_filter[]
-def getCommentsID(time_filter,stock_filter):
+def getCommentsID(time_filter,stock_filter,subreddit):
     comments = []
-    post_IDs_with_stock = getPostsID(time_filter,stock_filter)
-    post_IDs_without_stock = getPostsID(time_filter,[""]) # No stock filter
+    post_IDs_with_stock = getPostsID(time_filter,stock_filter,subreddit)
+    # post_IDs_without_stock = getPostsID(time_filter,[""],subreddits_visited) # No stock filter
     # Get all comments from post mentioning the stock
     for post in post_IDs_with_stock:
-        post_IDs_without_stock.remove(post) # Removes duplicate posts
+        # post_IDs_without_stock.remove(post) # Removes duplicate posts
         submission = reddit.submission(id=post)
         submission.comments.replace_more(limit=0) # Removes all MoreComments
         for top_level_comment in submission.comments:
             comments.append(top_level_comment.id)
-    # If stock not mentioned in post
-    # Get only comments mentioning the stock
-    for post in post_IDs_without_stock:
-        submission = reddit.submission(id=post)
-        submission.comments.replace_more(limit=0) # Removes all MoreComments
-        for top_level_comment in submission.comments:
-            comment_content = top_level_comment.body.lower()
-            if(any(x in comment_content for x in stock_filter)): # Filter only comments with stock mentioned
-                comments.append(top_level_comment.id)
+    # # If stock not mentioned in post
+    # # Get only comments mentioning the stock
+    # for post in post_IDs_without_stock:
+    #     submission = reddit.submission(id=post)
+    #     submission.comments.replace_more(limit=0) # Removes all MoreComments
+    #     for top_level_comment in submission.comments:
+    #         comment_content = top_level_comment.body.lower()
+    #         if(any(x in comment_content for x in stock_filter)): # Filter only comments with stock mentioned
+    #             comments.append(top_level_comment.id)
     return comments
 
 # Returns an array containing the title of posts
@@ -71,9 +112,9 @@ def getPosts(posts):
 # Returns an array containing info posts related to the stock
 # Args: time_filter, stock_filter[]
 # Output: [subreddit,post_id,comment_id,date,score,description]
-def getPostsTable(time_filter,stock_filter):
+def getPostsTable(time_filter,stock_filter,subreddit):
     table = []
-    posts = getPostsID(time_filter,stock_filter)
+    posts = getPostsID(time_filter,stock_filter,subreddit)
     for post in posts:
         post_subreddit = reddit.submission(id=post).subreddit.display_name
         post_id = reddit.submission(id=post).id
@@ -90,9 +131,9 @@ def getPostsTable(time_filter,stock_filter):
 # Returns an array containing info comments related to the stock
 # Args: time_filter, stock_filter[]
 # Output: [subreddit,post_id,comment_id,date,score,description]
-def getCommentsTable(time_filter,stock_filter):
+def getCommentsTable(time_filter,stock_filter,subreddit):
     table = []
-    comments = getCommentsID(time_filter,stock_filter)
+    comments = getCommentsID(time_filter,stock_filter,subreddit)
     for comment in comments:
         comment_subreddit = reddit.comment(comment).subreddit.display_name
         post_id = reddit.comment(comment).link_id[3:]
@@ -146,3 +187,67 @@ def printCommentsID(id):
     submission.comments.replace_more(limit=0) # Removes all MoreComments
     for top_level_comment in submission.comments:
         print(top_level_comment.id)
+
+# To call the file in bash:
+# set variables in env
+# python3 scrapers/redditScraper.py
+if __name__ == "__main__":
+    reddit_client_id = os.environ['REDDIT_CLIENT_ID']
+    reddit_client_secret = os.environ['REDDIT_CLIENT_SECRET']
+    reddit_user_agent = os.environ['REDDIT_USER_AGENT']
+        
+    # Client information used to scrape Reddit
+    reddit = praw.Reddit(
+        client_id=reddit_client_id, 
+        client_secret=reddit_client_secret, 
+        user_agent=reddit_user_agent
+    )
+    # Limit of posts scraped
+    limit = 5
+    # Get stocks to scrape
+    stocks = get_stock_info()
+
+    for stock in stocks:
+        # Get stock_filter
+        stock_filter = get_stock_value(stock)
+
+        # Get subreddits to scrape for stock
+        subreddits = get_stock_subreddits(stock)
+
+        # Get data
+        data = []
+        json_data = []
+
+        for subreddit in subreddits:
+            # Calling the scraping function
+            tmp_data = getCommentsTable("day",stock_filter,subreddit)
+            # Merge the tmp_data into the data array
+            if tmp_data:  # Check if tmp_data is not empty
+                data.extend(tmp_data)
+
+        for entry in data:
+            # Get description
+            description = entry[5]
+            # Get sentiment of post
+            analyzer = SentimentIntensityAnalyzer()
+            vs = analyzer.polarity_scores(description)
+            sentiment = vs.get('compound')
+
+            # Convert p_date from "DD-MM-YYYY" to "YYYY-MM-DD"
+            original_date = entry[3]
+            p_date = datetime.strptime(original_date, "%d-%m-%Y").strftime("%Y-%m-%d")
+
+            # Assuming `entry` is structured like: [subreddit, post_id, comment_id, p_date, score, p_description]
+            formatted_entry = {
+                "subreddit": entry[0],
+                "post_id": entry[1],
+                "comment_id": entry[2],
+                "p_date": p_date,
+                "score": entry[4],
+                "sentiment": sentiment,
+                "p_description": description
+            }
+            json_data.append(formatted_entry)
+
+        # Save data to reddit-<stock>-data.json
+        save_data_to_json(json_data,stock)
