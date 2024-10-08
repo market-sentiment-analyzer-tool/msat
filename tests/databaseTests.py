@@ -103,7 +103,7 @@ class DatabaseTests(unittest.TestCase):
     
     # Test that data in MarketSentiment/REDDIT_AAPL_DATA is recent (less than 1 week ago)
     def test_reddit_aapl_data_recent(self):
-        query = "SELECT p_date FROM REDDIT_AAPL_DATA ORDER BY n_date DESC LIMIT 1;"
+        query = "SELECT p_date FROM REDDIT_AAPL_DATA ORDER BY p_date DESC LIMIT 1;"
         result = subprocess.run(
             f"""docker exec mysql-db mysql -h mysql -u root -p{self.password} -D {self.database} -e "{query}" """,
             shell=True,
