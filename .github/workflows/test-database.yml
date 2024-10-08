@@ -60,7 +60,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-          docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e 'SELECT COUNT(*) FROM NEWS_NVDA_DATA LIMIT 5;'
+          docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -D ${{ secrets.MYSQL_DATABASE }} -e 'SELECT COUNT(*) FROM NEWS_NVDA_DATA;'
 
       # Step 6: Set up Python
       - name: Set up Python
