@@ -45,7 +45,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
-    command: sh -c "pip install -r /requirements.txt && python /api/api.py"
+    command: sh -c "pip install -r /requirements.txt && python /app/api.py"
     depends_on:
       - mysql
 
