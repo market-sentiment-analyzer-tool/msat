@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Path to the stockInfo.json file
+# Path to the newsStockInfo.json file
 stock_info_file="./db/newsStockInfo.json"
 
 # Check if the file exists

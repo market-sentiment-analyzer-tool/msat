@@ -1,0 +1,9 @@
+[
+    {
+        "aapl":"REDDIT_AAPL_DATA",
+        "amzn":"REDDIT_AMZN_DATA",
+        "goog":"REDDIT_GOOG_DATA",
+        "msft":"REDDIT_MSFT_DATA",
+        "nvda":"REDDIT_NVDA_DATA"
+    }
+]
