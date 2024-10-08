@@ -11,7 +11,7 @@ venv: requirements.txt
 	$(PIP) install -r requirements.txt
 
 run: venv
-	$(PYTHON) api.py
+	$(PYTHON) ./api/api.py
 
 clean:
 	rm -rf __pycache__
