@@ -37,14 +37,6 @@ jobs:
           docker compose ps
 
       # Step 5:
-      - name: Initialize DB
-        env:
-            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
-        run: |
-          bash ./db/initializeDatabase.sh
-
-      # Step 6:
       - name: Wait for MySQL to be ready
         run: |
           until docker exec mysql-db mysql -u root -p${{ secrets.MYSQL_ROOT_PASSWORD }} -e 'SHOW DATABASES;' > /dev/null 2>&1; do
@@ -53,6 +45,14 @@ jobs:
             sleep 5
           done
           echo "MySQL is ready!"
+
+      # Step 6:
+      - name: Initialize DB
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+          bash ./db/initializeDatabase.sh
 
       # Step 7:
       - name: Set up Python
