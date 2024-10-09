@@ -112,7 +112,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
-          git commit -m "Updated database dump" || echo "No changes to commit"
+          git commit -m "Updated Reddit Database dump" || echo "No changes to commit"
       
       # Step 16:
       - name: Push changes
