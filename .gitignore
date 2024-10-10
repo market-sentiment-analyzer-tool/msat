@@ -1,3 +1,4 @@
 creds.py
 venv/*
 .env
+.DS_Store
