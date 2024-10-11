@@ -27,11 +27,11 @@ class NewsScraperTests(unittest.TestCase):
             item_date = datetime.strptime(item['date'], '%Y-%m-%d').date()
             self.assertGreater(item_date, two_days_ago)
     
-    # Check if date or content includes company ticker/name
+    # Check if title or content includes company ticker/name
     def test_nvda_company_included(self):
         company_tickers_names = ['NVDA', 'NVIDIA', 'Nvidia', 'Nvidia Corporation']
         self.assertTrue(
-            any(any(ticker in item['date'] or ticker in item['content'] for ticker in company_tickers_names) 
+            any(any(ticker in item['title'] or ticker in item['content'] for ticker in company_tickers_names) 
                 for item in self.nvda_data)
         )
     
