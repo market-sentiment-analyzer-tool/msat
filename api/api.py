@@ -38,6 +38,55 @@ def get_sentiment(stock):
     except Exception as e:
         abort(400, description=f"Bad request: {str(e)}")
 
+@app.route('/table/<stock>/<media>')
+def get_table(stock,media):
+    try:
+        stock = stock.upper()
+        media = media.upper()
+        # time_filter = request.args['interval'] # interval parameter
+        stock_list = ["AAPL", "AMZN", "GOOG", "MSFT", "NVDA"]
+        media_list = ["REDDIT", "NEWS", "YAHOO", "TWITTER"]
+
+        if stock not in stock_list:
+            abort(404, description="Stock not found")
+        if media not in media_list:
+            abort(404, description="Media not found")
+
+        # different arguments based on media type
+        arguments = []
+        if media == "REDDIT":
+            arguments.append("score")  # multiplier
+            arguments.append("p_date,subreddit,p_description,sentiment,score")  # columns
+        elif media == "NEWS":
+            arguments.append("n_weight")  # multiplier
+            arguments.append("n_date,title,n_url,sentiment,n_weight")  # columns
+        else:
+            arguments.append("multiplier")  # default multiplier
+            arguments.append("columns")  # default columns
+
+        output = return_table(stock,media,arguments[0],arguments[1])
+
+        # temporary output
+        data = {
+            "stock": stock,
+            "media": media,
+            "output": output
+        }
+
+        return json.dumps(data)
+
+    except Exception as e:
+        abort(400, description=f"Bad request: {str(e)}")
+
+
+def return_table(stock,media,multiplier,columns):
+    # Reddit columns: p_date,subreddit,p_description,sentiment,score
+    # News columns: n_date,title,n_url,sentiment,n_weight
+    table = f"{media}_{stock}_DATA"
+    command = f"mysql -h mysql -u root -p{password} -D {database} -e 'SELECT {columns} FROM {table} WHERE sentiment <> 0 AND {multiplier} <> 0;'"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+
+    return result.stdout
 
 def return_sentiment(stock,media,multiplier):
     # Reddit DB: sentiment, score
