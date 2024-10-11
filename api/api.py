@@ -1,81 +1,52 @@
-from flask import Flask, request
+from flask import Flask, abort
 from flask_cors import CORS # type: ignore
-
+import os
 import json
-
-# from sentimentCalculator import getRedditSentiment
+import subprocess
 
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/sentiment')
-def get_sentiment():
-    # Return an array containing the following information:
-    # [
-    #   Full name of company, 
-    #   [
-    #    Reddit sentiment (A),
-    #    number of posts
-    #   ], 
-    #   [
-    #    Yahoo sentiment (A),
-    #    number of posts
-    #   ],
-    #   [
-    #    Twitter sentiment (A),
-    #    number of posts
-    #   ],
-    #   [
-    #    Reddit sentiment (time_filter),
-    #    number of posts (time_filter)
-    #   ],
-    #   [
-    #    Yahoo sentiment (time_filter),
-    #    number of posts (time_filter)
-    #   ],
-    #   [
-    #    Twitter sentiment (time_filter),
-    #    number of posts (time_filter)
-    #   ]
-    # ]
+database = os.getenv('MYSQL_DATABASE')
+password = os.getenv('MYSQL_ROOT_PASSWORD')
 
-    # Example of NVDA:
-    # [
-    #  "NVIDIA Corporation",
-    #   [
-    #    "0.443",
-    #    "563"
-    #   ]
-    # ...
-    # ]
-    
+@app.route('/sentiment/<stock>')
+def get_sentiment(stock):
     try:
-        stock = request.args['stock'] # stock parameter
-        time_filter = request.args['interval'] # interval parameter
+        stock = stock.upper()
+        # time_filter = request.args['interval'] # interval parameter
+        stock_list = ["AAPL", "AMZN", "GOOG", "MSFT", "NVDA"]
+
+        if stock not in stock_list:
+            abort(404, description="Stock not found")
 
         data = {
-            "name": stock,
-            # Always call time_filter = "A"
-            "redditSentiment": "0.443",     # Can implement
-            "redditPosts": "468",           # Can implement
+            "redditSentiment": "0",     
+            "redditPosts": return_count(stock, "REDDIT"),
+            "newsSentiment": "0",
+            "newsPosts": return_count(stock, "NEWS"),         
             "yahooSentiment": "0",
-            "yahooPosts": "0",
+            "yahooPosts": return_count(stock, "YAHOO"),
             "twitterSentiment": "0",
-            "twitterPosts": "0",
-            # Always call time_filter = time_filter
-            "redditSentimentFilter": "0",   # Can implement
-            "redditPostsFilter": "0",       # Can implement
-            "yahooSentimentFilter": "0",
-            "yahooPostsFilter": "0",
-            "twitterSentimentFilter": "0",
-            "twitterPostsFilter": "0",
+            "twitterPosts": return_count(stock, "TWITTER")
         }
 
-        # return str(getRedditSentiment("NVDA_DATA", "A"))
         return json.dumps(data)
 
-    except:
-        raise SyntaxError("Unknown stock")
+    except Exception as e:
+        abort(400, description=f"Bad request: {str(e)}")
+    
+
+def return_count(stock,media):
+    table = f"{media}_{stock}_DATA"
+    command = f"mysql -h mysql -u root -p{password} -D {database} -e 'SELECT COUNT(*) FROM {table};'"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+
+    if result.returncode == 0:
+        count = result.stdout.strip().split('\n')[-1]
+        return count
+    else:
+        return 0
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)

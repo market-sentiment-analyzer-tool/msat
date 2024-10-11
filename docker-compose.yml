@@ -43,9 +43,9 @@ services:
     environment:
       MYSQL_HOST: mysql-db
       MYSQL_USER: root
-      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
-    command: sh -c "pip install -r /requirements.txt && python /app/api.py"
+    command: sh -c "apt-get update && apt-get install -y default-mysql-client && pip install -r /requirements.txt && python /app/api.py"
     depends_on:
       - mysql
 
@@ -54,4 +54,4 @@ services:
 
 # or
 
-# http://localhost:5000/sentiment?stock=NVDA&interval=A
+# http://localhost:5000/sentiment/nvda
