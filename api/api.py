@@ -3,6 +3,7 @@ from flask_cors import CORS # type: ignore
 import os
 import json
 import subprocess
+import re
 
 app = Flask(__name__)
 CORS(app)
@@ -64,16 +65,16 @@ def get_table(stock,media):
             arguments.append("multiplier")  # default multiplier
             arguments.append("columns")  # default columns
 
-        output = return_table(stock,media,arguments[0],arguments[1])
+        # output = return_table(stock,media,arguments[0],arguments[1])
 
-        # temporary output
-        data = {
-            "stock": stock,
-            "media": media,
-            "output": output
-        }
+        # # temporary output
+        # data = {
+        #     "stock": stock,
+        #     "media": media,
+        #     "output": output
+        # }
 
-        return json.dumps(data)
+        return return_table(stock,media,arguments[0],arguments[1])
 
     except Exception as e:
         abort(400, description=f"Bad request: {str(e)}")
@@ -86,7 +87,22 @@ def return_table(stock,media,multiplier,columns):
     command = f"mysql -h mysql -u root -p{password} -D {database} -e 'SELECT {columns} FROM {table} WHERE sentiment <> 0 AND {multiplier} <> 0;'"
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
 
-    return result.stdout
+    # Split the result by lines (rows)
+    rows = result.stdout.strip().split('\n')
+    
+    # Get the column names from the first row
+    headers = rows[0].split('\t')
+    
+    # Create a list of dictionaries for each row
+    data = []
+    for row in rows[1:]:  # Skip the first row (headers)
+        values = row.split('\t')
+        cleaned_values = [clean_text(value) for value in values] # clean text
+        entry = dict(zip(headers, cleaned_values))
+        data.append(entry)
+    
+    # Return the data as JSON
+    return json.dumps(data, indent=4)
 
 def return_sentiment(stock,media,multiplier):
     # Reddit DB: sentiment, score
@@ -136,6 +152,13 @@ def return_count(stock,media,multiplier):
         return count
     else:
         return 0
+    
+def clean_text(text):
+    # Remove unwanted characters using a regex
+    text = re.sub(r'\\n', ' ', text)  # Replace '\n' with a space
+    text = re.sub(r'\\u[\da-fA-F]{4}', '', text)  # Remove unicode characters like \u00e2, \u20ac
+    text = re.sub(r'[^\x00-\x7F]+', '', text)  # Remove any non-ASCII characters
+    return text.strip()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
