@@ -35,9 +35,11 @@ jobs:
         run: |
           docker compose up -d
           docker compose ps
-          docker logs mysql-db
-          docker exec mysql-db mysql -h mysql -u root -p${MYSQL_ROOT_PASSWORD} -D ${MYSQL_DATABASE} -e "SHOW TABLES;"
-          docker logs mysql-db
+          until docker exec mysql-db mysqladmin ping -h mysql --silent; do
+            echo "Waiting for MySQL to start..."
+            sleep 5
+          done
+          docker exec mysql-db mysql -h localhost -P 3307 -u root -p${MYSQL_ROOT_PASSWORD} -D ${MYSQL_DATABASE} -e "SHOW TABLES;"
 
       # Step 5: Set up Python
       - name: Set up Python
