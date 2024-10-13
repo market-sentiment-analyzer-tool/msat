@@ -36,6 +36,7 @@ jobs:
           docker compose up -d
           docker compose ps
           docker exec mysql-db mysql -h mysql -u root -p${MYSQL_ROOT_PASSWORD} -D ${MYSQL_DATABASE} -e "SHOW TABLES;"
+          docker logs mysql-db
 
       # Step 5: Set up Python
       - name: Set up Python
