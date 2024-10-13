@@ -39,7 +39,6 @@ jobs:
             echo "Waiting for MySQL to start..."
             sleep 5
           done
-          docker exec mysql-db mysql -h localhost -P 3307 -u root -p${MYSQL_ROOT_PASSWORD} -D ${MYSQL_DATABASE} -e "SHOW TABLES;"
 
       # Step 5: Set up Python
       - name: Set up Python
