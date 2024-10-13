@@ -35,6 +35,10 @@ jobs:
         run: |
           docker compose up -d
           docker compose ps
+          until docker exec mysql-db mysqladmin ping -h mysql --silent; do
+            echo "Waiting for MySQL to start..."
+            sleep 5
+          done
 
       # Step 5:
       - name: Set up Python
