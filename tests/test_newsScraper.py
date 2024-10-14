@@ -5,7 +5,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from scrapers.newsScraper import fetchNewsAPIs
 from datetime import datetime, timedelta
 from itertools import chain
-
 import unittest
 import jsonschema
 
