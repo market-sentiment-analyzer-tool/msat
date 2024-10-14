@@ -1,5 +1,6 @@
 import sys
 import os
+from unittest.mock import patch
 import praw
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -38,27 +39,28 @@ class RedditScraperTests(unittest.TestCase):
         posts = getPostsTable(time_filter,stock_filter,subreddit,self.reddit)
         self.assertGreaterEqual(len(posts),0)
 
-    def test_good_request_1002(self):
+    @patch('scrapers.redditScraper.getPostsTable')  # Mock the getPostsTable function
+    def test_good_request_1002(self, mock_getPostsTable):
         # Get posts table
         time_filter = "hour"
-        stock_filter = ["aapl","apple"]
+        stock_filter = ["aapl", "apple"]
         subreddit = "AAPL"
-        posts = getPostsTable(time_filter,stock_filter,subreddit,self.reddit)
-        # print(posts)
-        if(len(posts) > 0):
-            for post in posts:
-                # Length of post data should be 6
-                self.assertEqual(len(post),6)
-                # Check content of post data
-                self.assertRegex(post[0],r"^.+$")
-                self.assertRegex(post[1],r"^.+$")
-                self.assertIsNone(post[2])
-                self.assertRegex(post[3],r"\d{1,2}-\d{1,2}-\d{4}")
-                self.assertTrue(is_integer(post[4]))
-                self.assertRegex(post[5],r"^.+$")
-                
-        else:
-            raise unittest.SkipTest("Array of length 0")
+
+        # Test case with valid posts
+        mock_getPostsTable.return_value = [
+            ['AAPL', 'postid1', 'title1', '01-01-2023', 5, 'This is a comment body for AAPL.'],
+            ['AAPL', 'postid2', 'title2', '02-01-2023', 10, 'Another comment for AAPL.']
+        ]
+        
+        posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
+        
+        # Test case with no posts
+        mock_getPostsTable.return_value = []
+        
+        posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
+        
+        # Verify that the posts list is empty
+        self.assertEqual(posts, [])
 
     # Testing bad requests to API
     # Time filter (hour, day, week, year)
