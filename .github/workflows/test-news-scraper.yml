@@ -35,7 +35,7 @@ jobs:
               NEWS_DATA: ${{ secrets.NEWS_DATA }}
             run: |
               . venv/bin/activate
-              python3 tests/newsScraperTests.py
+              coverage run -m pytest tests/test_newsScraper.py
     
           # Step 6: Cleanup files/folders
           - name: Cleanup

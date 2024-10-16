@@ -46,19 +46,33 @@ class RedditScraperTests(unittest.TestCase):
         stock_filter = ["aapl", "apple"]
         subreddit = "AAPL"
 
-        # Test case with valid posts
+        # First test case with valid posts
         mock_getPostsTable.return_value = [
             ['AAPL', 'postid1', 'title1', '01-01-2023', 5, 'This is a comment body for AAPL.'],
             ['AAPL', 'postid2', 'title2', '02-01-2023', 10, 'Another comment for AAPL.']
         ]
-        
+
         posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
         
-        # Test case with no posts
+        # Log or print the result for debugging
+        print("First test case (valid posts):", posts)
+
+        # Check the first return of valid posts
+        self.assertGreater(len(posts), 0)  # Ensure there are posts
+        for post in posts:
+            # Length of post data should be 6
+            self.assertEqual(len(post), 6)
+
+        subreddit = "geegees"
+        # Now test the case with no posts
         mock_getPostsTable.return_value = []
         
+        # Call getPostsTable again and log the result
         posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
         
+        # Log or print the result for debugging
+        print("Second test case (no posts):", posts)
+
         # Verify that the posts list is empty
         self.assertEqual(posts, [])
 

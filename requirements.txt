@@ -1,6 +1,8 @@
 bs4
+coverage
 flask
 flask_cors
 jsonschema
 mysql-connector-python
 praw
+pytest

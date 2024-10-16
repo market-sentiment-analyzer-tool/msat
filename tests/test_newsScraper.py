@@ -42,9 +42,7 @@ class NewsScraperTests(unittest.TestCase):
     # Check if sentiment is not 0
     def test_sentiment_not_null(self):
         for item in chain(self.aapl_data, self.msft_data, self.nvda_data):
-            if item['sentiment'] == 0:
-                print(f"\n[FAIL] Title: Sentiment is 0 for: {item['title']}")
-            self.assertNotEqual(item['sentiment'], 0)
+            self.assertNotEqual(item['sentiment'], 0, f"Sentiment is 0 for: {item['title']}")
     
     # Check if title is not empty
     def test_title_not_empty(self):

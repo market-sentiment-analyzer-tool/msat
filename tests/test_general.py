@@ -8,13 +8,13 @@ from unittest.mock import patch, mock_open, MagicMock
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import unittest
 import pytest
-from datetime import datetime
-from scrapers.newsScraper import getPageContent, calculateWeight, get_stock_info
+from datetime import datetime, timedelta
+from scrapers.newsScraper import getPageContent, calculateWeight, get_stock_info, fetchNewsAPI
 from scrapers.newsScraper import save_data_to_json as save_data_to_json_news
 from scrapers.redditScraper import get_stock_subreddits, get_stock_value, get_stock_info, getPostsID, getPostsTable, getCommentsTable, getCommentsID, pushJsonData
 from scrapers.redditScraper import save_data_to_json as save_data_to_json_reddit
 from test_redditScraper import is_integer
-from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer, normalize, scalar_inc_dec
+from vaderSentiments.vaderSentiment.vaderSentiment import SentiText, SentimentIntensityAnalyzer, normalize, scalar_inc_dec, negated
 
 class GeneralTests(unittest.TestCase):
     # getPageContent(url)
@@ -313,6 +313,9 @@ class GeneralTests(unittest.TestCase):
         self.assertTrue(is_integer('  10  '))     # String with whitespace around an integer
         self.assertFalse(is_integer('123abc'))     # String with characters mixed with numbers
 
+    def test_special_negated(self):
+        self.assertTrue(negated(["letn't"]))
+
     def test_positive_score(self):
         # Test for a positive score that should normalize correctly
         self.assertAlmostEqual(normalize(10), 0.9325048082403138, places=6)
@@ -328,6 +331,12 @@ class GeneralTests(unittest.TestCase):
     def test_high_negative_score(self):
         # Test for a very high negative score
         self.assertAlmostEqual(normalize(-1000), -0.999992500084374, places=6)
+
+    def test_low_negative_score(self):
+        self.assertEqual(normalize(-3,-8),-1)
+
+    def test_low_positive_score(self):
+        self.assertEqual(normalize(3,-8),1)
 
     def test_zero_score(self):
         # Test for a score of zero
@@ -358,6 +367,9 @@ class GeneralTests(unittest.TestCase):
 
     def test_dampener_word(self):
         self.assertAlmostEqual(scalar_inc_dec("not", 1, False), 0.0)
+
+    def test_scal_inc_dec(self):
+        self.assertAlmostEqual(scalar_inc_dec("ABSOLUTELY", -1, True), -1.026)
 
     def test_score_valence_no_sentiments(self):
         # Initialize the class containing the score_valence method
@@ -463,6 +475,167 @@ class GeneralTests(unittest.TestCase):
 
         # Assertions can be added here as needed
         self.assertEqual(mock_save_data_to_json.call_count, 2)
+
+    
+    @patch('scrapers.newsScraper.requests.get')  # Mock requests.get
+    @patch('scrapers.newsScraper.getPageContent')  # Mock getPageContent
+    @patch('scrapers.newsScraper.calculateSentiment')  # Mock calculateSentiment
+    @patch('scrapers.newsScraper.calculateWeight')  # Mock calculateWeight
+    def test_fetch_news_api(self, mock_calculateWeight, mock_calculateSentiment, mock_getPageContent, mock_requests_get):
+        # Mock the current date and time
+        current_date = datetime.now().strftime("%Y-%m-%d")
+        yesterday = (datetime.strptime(current_date, "%Y-%m-%d") - timedelta(days=1)).strftime("%Y-%m-%d")
+
+        # Sample response for News API with 2 articles
+        mock_response = {
+            "totalResults": 2,
+            "articles": [
+                {
+                    "title": "First Article",
+                    "url": "https://example.com/article1",
+                    "content": "This is the content of the first article.",
+                    "author": "Author 1",
+                    "publishedAt": "2023-10-14T10:00:00Z"
+                },
+                {
+                    "title": "Second Article",
+                    "url": "https://example.com/article2",
+                    "content": "This is the content of the second article.",
+                    "author": "Author 2",
+                    "publishedAt": "2023-10-14T15:30:00Z"
+                }
+            ]
+        }
+
+        # Mock the requests.get() response
+        mock_requests_get.return_value = MagicMock(status_code=200)
+        mock_requests_get.return_value.json.return_value = mock_response
+
+        # Mock the other external function calls
+        mock_getPageContent.side_effect = ['Full content 1', 'Full content 2']
+        mock_calculateSentiment.side_effect = [0.5, 0.8]
+        mock_calculateWeight.side_effect = [3, 5]
+
+        # Call the function
+        stock = "AAPL"
+        news_api_key = os.getenv('NEWS_DATA')
+        urls, data = fetchNewsAPI(stock, news_api_key)
+
+        # Validate the results
+        self.assertEqual(len(urls), 2)
+        self.assertEqual(len(data), 2)
+
+        # Check if data contains the expected content
+        self.assertEqual(urls[0], "https://example.com/article1")
+        self.assertEqual(data[0]['author'], "Author 1")
+        self.assertEqual(data[0]['title'], "First Article")
+        self.assertEqual(data[0]['sentiment'], 0.5)
+        self.assertEqual(data[0]['weight'], 3)
+        self.assertEqual(data[0]['date'], "2023-10-14")
+
+        self.assertEqual(urls[1], "https://example.com/article2")
+        self.assertEqual(data[1]['author'], "Author 2")
+        self.assertEqual(data[1]['title'], "Second Article")
+        self.assertEqual(data[1]['sentiment'], 0.8)
+        self.assertEqual(data[1]['weight'], 5)
+        self.assertEqual(data[1]['date'], "2023-10-14")
+
+    @patch('scrapers.newsScraper.requests.get')  # Mock requests.get
+    def test_no_articles(self, mock_requests_get):
+        # Mock the response for no articles
+        mock_response = {
+            "totalResults": 0,
+            "articles": []
+        }
+
+        mock_requests_get.return_value = MagicMock(status_code=200)
+        mock_requests_get.return_value.json.return_value = mock_response
+
+        stock = "AAPL"
+        news_api_key = os.getenv('NEWS_DATA')
+        urls, data = fetchNewsAPI(stock, news_api_key)
+
+        # Check that no data or URLs were returned
+        self.assertEqual(len(urls), 0)
+        self.assertEqual(len(data), 0)
+
+    def test_text_is_string(self):
+        # Case when text is a string
+        input_text = "This is a sample text."
+        senti = SentiText(input_text)
+        # Check that the text is unchanged
+        self.assertEqual(senti.text, input_text)
+    
+    def test_text_is_not_string(self):
+        input_text = 12345  # Use an integer to trigger encoding
+
+        with patch.object(SentiText, '_words_and_emoticons', return_value=[]):
+            senti = SentiText(input_text)
+
+        # Check that the text is stored as a UTF-8 encoded byte string
+        expected_output = str(input_text).encode('utf-8')
+        self.assertEqual(senti.text, expected_output)
+
+        # Check that the type of self.text is bytes
+        self.assertIsInstance(senti.text, bytes)
+
+    def test_least_check_with_specific_conditions(self):
+        # Example input for words_and_emoticons
+        self.analyzer = SentimentIntensityAnalyzer()
+        words_and_emoticons = ["I", "feel", "least", "happy"]
+        valence = 1.0  # Starting valence
+        i = 3  # Index of "happy"
+
+        N_SCALAR = -0.74  # Modify this value based on your actual constant
+
+        # Call the _least_check method directly
+        result = self.analyzer._least_check(valence, words_and_emoticons, i)
+
+        # Expected valence after applying N_SCALAR
+        expected_valence = valence * N_SCALAR  # Should be 0.5 if the multiplication occurs
+
+        # Assert that the resulting valence is as expected
+        self.assertEqual(result, expected_valence)
+
+    def test_least_check_with_at_or_very(self):
+        self.analyzer = SentimentIntensityAnalyzer()
+        # Testing when the previous words are "at" or "very"
+        words_and_emoticons = ["I", "feel", "least", "at", "happy"]
+        valence = 1.0  # Starting valence
+        i = 4  # Index of "happy"
+
+        # Call the _least_check method directly
+        result = self.analyzer._least_check(valence, words_and_emoticons, i)
+
+        # Assert that the resulting valence is unchanged
+        self.assertEqual(result, valence)
+
+    def test_amplify_ep_with_more_than_four_exclamations(self):
+        self.analyzer = SentimentIntensityAnalyzer()
+        text = "Wow!!! This is amazing!!!!!!!"
+        
+        # Call the _amplify_ep method directly
+        result = self.analyzer._amplify_ep(text)
+        
+        # Since ep_count should be capped at 4, calculate expected result
+        expected_ep_amplifier = 4 * 0.292  # Capped at 4 exclamation points
+        
+        # Assert that the resulting amplifier is as expected
+        self.assertEqual(result, expected_ep_amplifier)
+
+    def test_amplify_qm_with_two_question_marks(self):
+        self.analyzer = SentimentIntensityAnalyzer()
+        text = "Is this good????"
+        
+        # Call the _amplify_qm method directly
+        result = self.analyzer._amplify_qm(text)
+        
+        # Expected amplifier when qm_count is >= 4
+        expected_qm_amplifier = 0.96
+        
+        # Assert that the resulting amplifier is as expected
+        self.assertEqual(result, expected_qm_amplifier)
+
     
 if __name__ == '__main__': 
     unittest.main()
