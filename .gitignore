@@ -2,3 +2,6 @@ creds.py
 venv/*
 .env
 .DS_Store
+tests/__pycache__/
+scrapers/__pycache__/
+.coverage

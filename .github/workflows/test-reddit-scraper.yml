@@ -36,7 +36,7 @@ jobs:
               REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
             run: |
               . venv/bin/activate
-              python3 tests/redditScraperTests.py
+              coverage run -m pytest tests/test_redditScraper.py
     
           # Step 6: Cleanup files/folders
           - name: Cleanup

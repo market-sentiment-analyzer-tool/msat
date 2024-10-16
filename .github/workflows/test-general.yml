@@ -1,4 +1,4 @@
-name: "[Test] Sentiment Analyzer"
+name: "[Test] General"
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  sentiment-analyzer-tests:
+  general-tests:
     runs-on: ubuntu-latest
     steps:
       # Step 1: Check out the code from the repository
@@ -30,9 +30,17 @@ jobs:
 
       # Step 5: Run unit tests using pytest or any other framework
       - name: Run tests
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+          NEWS_API: ${{ secrets.NEWS_API }}
+          NEWS_DATA: ${{ secrets.NEWS_DATA }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
         run: |
           . venv/bin/activate
-          coverage run -m pytest tests/test_sentimentAnalyzer.py
+          coverage run -m pytest tests/test_general.py
 
       # Step 6: Cleanup files/folders
       - name: Cleanup

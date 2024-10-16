@@ -81,7 +81,7 @@ def getPostsID(time_filter,stock_filter,subreddit_visited,reddit):
 
 # Returns an array containing all the comments related to a stock
 # Args: time_filter, stock_filter[]
-def getCommentsID(time_filter,stock_filter,subreddit):
+def getCommentsID(time_filter,stock_filter,subreddit,reddit):
     comments = []
     post_IDs_with_stock = getPostsID(time_filter,stock_filter,subreddit,reddit)
     # post_IDs_without_stock = getPostsID(time_filter,[""],subreddits_visited) # No stock filter
@@ -92,6 +92,7 @@ def getCommentsID(time_filter,stock_filter,subreddit):
         submission.comments.replace_more(limit=0) # Removes all MoreComments
         for top_level_comment in submission.comments:
             comments.append(top_level_comment.id)
+    return comments
     # # If stock not mentioned in post
     # # Get only comments mentioning the stock
     # for post in post_IDs_without_stock:
@@ -101,16 +102,15 @@ def getCommentsID(time_filter,stock_filter,subreddit):
     #         comment_content = top_level_comment.body.lower()
     #         if(any(x in comment_content for x in stock_filter)): # Filter only comments with stock mentioned
     #             comments.append(top_level_comment.id)
-    return comments
 
 # Returns an array containing the title of posts
 # Args: post_IDs[]
-def getPosts(posts):
-    titles = []
-    for post in posts:
-        post_content = reddit.submission(id=post).title
-        titles.append(post_content)
-    return titles
+# def getPosts(posts):
+#     titles = []
+#     for post in posts:
+#         post_content = reddit.submission(id=post).title
+#         titles.append(post_content)
+#     return titles
 
 # Returns an array containing info posts related to the stock
 # Args: time_filter, stock_filter[]
@@ -134,9 +134,9 @@ def getPostsTable(time_filter,stock_filter,subreddit,reddit):
 # Returns an array containing info comments related to the stock
 # Args: time_filter, stock_filter[]
 # Output: [subreddit,post_id,comment_id,date,score,description]
-def getCommentsTable(time_filter,stock_filter,subreddit):
+def getCommentsTable(time_filter,stock_filter,subreddit,reddit):
     table = []
-    comments = getCommentsID(time_filter,stock_filter,subreddit)
+    comments = getCommentsID(time_filter,stock_filter,subreddit,reddit)
     for comment in comments:
         comment_subreddit = reddit.comment(comment).subreddit.display_name
         post_id = reddit.comment(comment).link_id[3:]
@@ -153,19 +153,19 @@ def getCommentsTable(time_filter,stock_filter,subreddit):
 # Returns an array containing the updated rating of comments and posts
 # Args: info[]
 # Output: [post_id,comment_id,score]
-def getUpdatedScores(info):
-    table = []
-    for tuple in info:
-        # Update score of post
-        if tuple[1] == None:
-            post = reddit.submission(id=tuple[0])
-            table.append([tuple[0],tuple[1],post.score])
-        # Update score of comment
-        else:
-            # print(tuple[0],tuple[1]) # remove
-            comment = reddit.comment(tuple[1])
-            table.append([tuple[0],tuple[1],comment.score])
-    return table
+# def getUpdatedScores(info):
+#     table = []
+#     for tuple in info:
+#         # Update score of post
+#         if tuple[1] == None:
+#             post = reddit.submission(id=tuple[0])
+#             table.append([tuple[0],tuple[1],post.score])
+#         # Update score of comment
+#         else:
+#             # print(tuple[0],tuple[1]) # remove
+#             comment = reddit.comment(tuple[1])
+#             table.append([tuple[0],tuple[1],comment.score])
+#     return table
 
 #info = [('1b27tqo','ksjkf6s'),('1b9l1ex','ktxppxv'),('180s2lt',None)]
 #update = getUpdatedScores(info)
@@ -185,29 +185,13 @@ def getUpdatedScores(info):
 #     # print(posts)
 #     return titles
 
-def printCommentsID(id):
-    submission = reddit.submission(id=id)
-    submission.comments.replace_more(limit=0) # Removes all MoreComments
-    for top_level_comment in submission.comments:
-        print(top_level_comment.id)
+# def printCommentsID(id):
+#     submission = reddit.submission(id=id)
+#     submission.comments.replace_more(limit=0) # Removes all MoreComments
+#     for top_level_comment in submission.comments:
+#         print(top_level_comment.id)
 
-# To call the file in bash:
-# set variables in env
-# python3 scrapers/redditScraper.py
-if __name__ == "__main__":
-    reddit_client_id = os.environ['REDDIT_CLIENT_ID']
-    reddit_client_secret = os.environ['REDDIT_CLIENT_SECRET']
-    reddit_user_agent = os.environ['REDDIT_USER_AGENT']
-        
-    # Client information used to scrape Reddit
-    reddit = praw.Reddit(
-        client_id=reddit_client_id, 
-        client_secret=reddit_client_secret, 
-        user_agent=reddit_user_agent
-    )
-    # Get stocks to scrape
-    stocks = get_stock_info()
-
+def pushJsonData(stocks,reddit):
     for stock in stocks:
         # Get stock_filter
         stock_filter = get_stock_value(stock)
@@ -221,7 +205,7 @@ if __name__ == "__main__":
 
         for subreddit in subreddits:
             # Calling the scraping function
-            tmp_data = getCommentsTable("day",stock_filter,subreddit)
+            tmp_data = getCommentsTable("day",stock_filter,subreddit,reddit)
             # Merge the tmp_data into the data array
             if tmp_data:  # Check if tmp_data is not empty
                 data.extend(tmp_data)
@@ -252,3 +236,23 @@ if __name__ == "__main__":
 
         # Save data to reddit-<stock>-data.json
         save_data_to_json(json_data,stock)
+        
+
+# To call the file in bash:
+# set variables in env
+# python3 scrapers/redditScraper.py
+if __name__ == "__main__":
+    reddit_client_id = os.environ['REDDIT_CLIENT_ID']
+    reddit_client_secret = os.environ['REDDIT_CLIENT_SECRET']
+    reddit_user_agent = os.environ['REDDIT_USER_AGENT']
+        
+    # Client information used to scrape Reddit
+    reddit = praw.Reddit(
+        client_id=reddit_client_id, 
+        client_secret=reddit_client_secret, 
+        user_agent=reddit_user_agent
+    )
+    # Get stocks to scrape
+    stocks = get_stock_info()
+
+    pushJsonData(stocks,reddit)

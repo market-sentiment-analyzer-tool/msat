@@ -43,11 +43,27 @@ class SentimentAnalyzerTests(unittest.TestCase):
         compound_value = vs.get('compound')
         self.assertTrue(compound_value > 0)
 
+    def test_positive_comment_1005(self):
+        # Positive comment, compound expected > 0
+        text = "ClearBridge Select Strategy Q3 2024 Commentary"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value > 0)
+
     # Testing negative comments
         
     def test_negative_comment_1001(self):
         # Negative comment, compound expected < 0
         text = "RSI is like 80. it's overbought. I wouldn't buy TSM or NVDA right now. If I wanted more exposure to them I might buy SMH."
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1001(self):
+        # Negative comment, compound expected < 0
+        text = "Berkshire Hathaway: Is Buffett Sending A Message To The Market With High-Profile Selling?"
         analyzer = SentimentIntensityAnalyzer()
         vs = analyzer.polarity_scores(text)
         compound_value = vs.get('compound')
