@@ -61,9 +61,17 @@ class SentimentAnalyzerTests(unittest.TestCase):
         compound_value = vs.get('compound')
         self.assertTrue(compound_value < 0)
 
-    def test_negative_comment_1001(self):
+    def test_negative_comment_1002(self):
         # Negative comment, compound expected < 0
         text = "Berkshire Hathaway: Is Buffett Sending A Message To The Market With High-Profile Selling?"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1003(self):
+        # Negative comment, compound expected < 0
+        text = "Wall Street Lunch: Chip Stocks Slide On ASML Early Numbers"
         analyzer = SentimentIntensityAnalyzer()
         vs = analyzer.polarity_scores(text)
         compound_value = vs.get('compound')
