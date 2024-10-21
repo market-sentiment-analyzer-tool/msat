@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './SentimentPage.css';
 import SentimentRange from './SentimentRange';
+import PieChart from './PieChart'; // Import the PieChart component
 
-class SentimentPage extends Component{
-
-    constructor(props){
-        super(props)
+class SentimentPage extends Component {
+    constructor(props) {
+        super(props);
         this.state = {
             searchStock: '',
             currentStock: '',
@@ -17,51 +17,47 @@ class SentimentPage extends Component{
             twitterNumOfComments: 0,
             yahooSentiment: 0,
             yahooNumOfComments: 0,
-        }
+        };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     fetchData() {
         fetch(`http://127.0.0.1:5000/sentiment?stock=${this.state.searchStock}&interval="A"`)
-        .then(response => response.json())
-        // .then(json => console.log(json))
-        .then(json => this.setState(
-            {   
+            .then(response => response.json())
+            .then(json => this.setState({
                 currentStock: json.name,
                 redditSentiment: json.redditSentiment,
-                redditNumOfComments: json.redditPosts
-            }
-        ))
+                redditNumOfComments: json.redditPosts,
+                // Add other sentiments here if needed
+            }));
     }
 
-    handleSubmit(e){
+    handleSubmit(e) {
         e.preventDefault();
-        console.log("search "+ this.state.searchStock);
+        console.log("search " + this.state.searchStock);
         // reset data
-        this.setState(
-            {   
-                searchStock: '',
-                currentStock: null,
-                redditSentiment: 0,
-                redditNumOfComments: 0
-            }
-        )
-        this.fetchData()
+        this.setState({
+            searchStock: '',
+            currentStock: null,
+            redditSentiment: 0,
+            redditNumOfComments: 0,
+        });
+        this.fetchData();
     }
 
     handleChange(e) {
-        e.preventDefault()
-        this.setState({searchStock: e.target.value});
+        e.preventDefault();
+        this.setState({ searchStock: e.target.value });
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <>
                 <div className='panel'>
                     <div className='column left'>
                         <div className='search-container'>
-                            <form onSubmit={(e) => this.handleSubmit(e)}>
+                            <form onSubmit={this.handleSubmit}>
                                 <input className='search-bar' type='text' placeholder='Search..' name='search' onChange={this.handleChange}></input>
                                 <button type='submit'><i className="fa fa-search"></i></button>
                             </form>
@@ -99,10 +95,14 @@ class SentimentPage extends Component{
                         <div>
                             <h1>{this.state.currentStock}</h1>
                         </div>
+                        <div>
+                            <h2>Sentiment Distribution</h2>
+                            <PieChart /> {/* Include the PieChart component */}
+                        </div>
                     </div>
                 </div>
             </>
-        )
+        );
     }
 }
 
