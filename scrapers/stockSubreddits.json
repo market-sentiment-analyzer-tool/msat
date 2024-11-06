@@ -1,9 +1,9 @@
 [
     {
-        "aapl":"investing,stocks,AAPL",
-        "amzn":"investing,stocks",
-        "goog":"investing,stocks",
-        "msft":"investing,stocks",
-        "nvda":"investing,stocks,NVDA_Stock"
+        "aapl":"investing,stocks,AAPL,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+        "amzn":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+        "goog":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+        "msft":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+        "nvda":"investing,stocks,NVDA_Stock,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge"
     }
 ]
