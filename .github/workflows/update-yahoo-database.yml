@@ -1,4 +1,4 @@
-name: "[Update] News Database"
+name: "[Update] Yahoo Database"
 
 # Run cron job every day at midnight (UTC)
 on:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  update-news-database:
+  update-yahoo-database:
     runs-on: ubuntu-latest
     steps:
       # Step 1: Check out the code from the repository
@@ -53,52 +53,44 @@ jobs:
           pip install -r requirements.txt
 
       # Step 7:
-      - name: Scrape News and dump json in output folder under ./output/news-<stock>-data.json
-        env:
-            NEWS_API: ${{ secrets.NEWS_API }}
-            NEWS_DATA: ${{ secrets.NEWS_DATA }}
-        run: |
-          python3 scrapers/newsScraper.py
-
-      # Step 8:
       - name: Run adding to DB file
         env:
             MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
             MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-          bash db/newsUpdateDatabase.sh
+          bash db/yahooUpdateDatabase.sh
 
-      # Step 9:
-      - name: Dump News DB data in ./db/news/news-<stock>-data.sql
+      # Step 8:
+      - name: Dump Yahoo DB data in ./db/yahoo/yahoo-<stock>-data.sql
         env:
           MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
           MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
         run: |
-          bash db/newsDumpData.sh
+          bash db/yahooDumpData.sh
       
-      # Step 10:
+      # Step 9:
       - name: Tear down Docker Compose
         run: |
           docker compose down 
 
-      # Step 11:
+      # Step 10:
       - name: Remove JSON output file
         run: |
-          rm output/news*.json
+          rm output/yahoo*.json
       
-      # Step 12:
+      # Step 11:
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      # Step 13:
+      # Step 12:
       - name: Commit changes
         run: |
           git add .
-          git commit -m "Updated News Database dump" || echo "No changes to commit"
+          git commit -m "Updated Yahoo Database dump" || echo "No changes to commit"
       
-      # Step 14:
+      # Step 13:
       - name: Push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

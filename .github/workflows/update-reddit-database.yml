@@ -85,7 +85,7 @@ jobs:
       # Step 11:
       - name: Remove JSON output file
         run: |
-          rm output/*.json
+          rm output/reddit*.json
       
       # Step 12:
       - name: Configure Git
