@@ -1,0 +1,9 @@
+[
+    {
+        "aapl":"YAHOO_AAPL_DATA",
+        "amzn":"YAHOO_AMZN_DATA",
+        "goog":"YAHOO_GOOG_DATA",
+        "msft":"YAHOO_MSFT_DATA",
+        "nvda":"YAHOO_NVDA_DATA"
+    }
+]

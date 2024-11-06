@@ -124,3 +124,55 @@ CREATE TABLE IF NOT EXISTS NEWS_NVDA_DATA (
     n_weight INT,
     PRIMARY KEY (id)
 );
+
+-- Yahoo Section
+
+CREATE TABLE IF NOT EXISTS YAHOO_AAPL_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    y_date DATE,
+    sentiment FLOAT,
+    y_weight INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS YAHOO_AMZN_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    y_date DATE,
+    sentiment FLOAT,
+    y_weight INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS YAHOO_GOOG_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    y_date DATE,
+    sentiment FLOAT,
+    y_weight INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS YAHOO_MSFT_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    y_date DATE,
+    sentiment FLOAT,
+    y_weight INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS YAHOO_NVDA_DATA (
+    id INT AUTO_INCREMENT,
+    author VARCHAR(255),
+    content TEXT,
+    y_date DATE,
+    sentiment FLOAT,
+    y_weight INT,
+    PRIMARY KEY (id)
+);
