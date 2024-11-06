@@ -1,0 +1,37 @@
+[   
+    {
+        "author": "James",
+        "content": "Hi guys. I am sorry. My do dilligence was wrong. I am now a NADVAD long. My pluts did not do good.",
+        "date": "2024-11-06",
+        "sentiment": -0.7009,
+        "weight": "1"
+    },
+    {
+        "author": "Sleep Merriq",
+        "content": "What a splendid day if I do say myself! Congrats fellow longs - a new record and earnings just around the corner.",
+        "date": "2024-11-06",
+        "sentiment": 0.902,
+        "weight": "5"
+    },
+    {
+        "author": "Mike",
+        "content": "Bullish NVDA $150 tomorrow.",
+        "date": "2024-11-06",
+        "sentiment": 0.5106,
+        "weight": "6"
+    },
+    {
+        "author": "BL",
+        "content": "Bullish: Finally the market can run, unburdened by what has been \ud83d\ude03",
+        "date": "2024-11-06",
+        "sentiment": 0.7003,
+        "weight": "10"
+    },
+    {
+        "author": "RoadKitten",
+        "content": "Bullish: great day BULLS",
+        "date": "2024-11-06",
+        "sentiment": 0.8126,
+        "weight": "12"
+    }
+]
