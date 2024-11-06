@@ -1,0 +1,99 @@
+name: "[Update] Yahoo Database"
+
+# Run cron job every day at midnight (UTC)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: 
+
+jobs:
+  update-yahoo-database:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Installing dependencies
+      - name: Installing dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mysql-server
+          sudo apt-get install jq
+          sudo service mysql start
+          
+      # Step 3: 
+      - name: Set up Docker Compose
+        run: |
+          docker compose version
+
+      # Step 4:
+      - name: Start MySQL Service
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+          docker compose up -d
+          docker compose ps
+          until docker exec mysql-db mysqladmin ping -h mysql --silent; do
+            echo "Waiting for MySQL to start..."
+            sleep 5
+          done
+
+      # Step 5:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Step 6:
+      - name: Installing dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 7:
+      - name: Run adding to DB file
+        env:
+            MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+            MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+          bash db/yahooUpdateDatabase.sh
+
+      # Step 8:
+      - name: Dump Yahoo DB data in ./db/yahoo/yahoo-<stock>-data.sql
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+        run: |
+          bash db/yahooDumpData.sh
+      
+      # Step 9:
+      - name: Tear down Docker Compose
+        run: |
+          docker compose down 
+
+      # Step 10:
+      - name: Remove JSON output file
+        run: |
+          rm output/yahoo*.json
+      
+      # Step 11:
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      # Step 12:
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Updated Yahoo Database dump" || echo "No changes to commit"
+      
+      # Step 13:
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git pull
+          git push origin HEAD:main
