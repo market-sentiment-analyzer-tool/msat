@@ -34,7 +34,7 @@ for sql_file in "$REDDIT_DATA_DIR"*.sql; do
         echo "Failed to import data from $sql_file."
     fi
 done
-# Loop over each .sql file in the data/reddit directory and insert it into the database
+# Loop over each .sql file in the data/yahoo directory and insert it into the database
 for sql_file in "$YAHOO_DATA_DIR"*.sql; do
     echo "Importing data from $sql_file..."
     mysql -u root -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE" < $sql_file 2>/dev/null

@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Ken y",
+        "content": "Aapl just has bad timing for negative news on a huge mkt day; this is not first time. Stay long",
+        "date": "2024-11-06",
+        "sentiment": -0.7096,
+        "weight": "-3"
+    },
+    {
+        "author": "Jack",
+        "content": "Bearish: Down $5 tomorrow.",
+        "date": "2024-11-06",
+        "sentiment": -0.5423,
+        "weight": "-4"
+    },
+    {
+        "author": "B",
+        "content": "Bullish: So if apple is $300 next December instead of $350 from tariffs we are still in good shape!  GO LONGS",
+        "date": "2024-11-06",
+        "sentiment": 0.7574,
+        "weight": "1"
+    },
+    {
+        "author": "Sit Lord",
+        "content": "This company is a HAS BEEN. Until they can cook, things will never be good with this non-innovating  trash",
+        "date": "2024-11-06",
+        "sentiment": -0.3412,
+        "weight": "-4"
+    },
+    {
+        "author": "jvysz",
+        "content": "Bullish: Dear Apple, I want you to make the products that you think are best. Use any connector type that is best suited for your products and that makes the customers happy. Ignore the EU. Sincerely, Donald Trump.",
+        "date": "2024-11-06",
+        "sentiment": 0.9633,
+        "weight": "1"
+    }
+]
