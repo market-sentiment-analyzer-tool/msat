@@ -10,13 +10,13 @@ class SentimentPage extends Component {
         this.state = {
             searchStock: '',
             currentStock: '',
-            redditSentiment: -0.48,
-            redditNumOfComments: 454,
-            newsSentiment: 0,
+            redditSentiment: null,
+            redditNumOfComments: 0,
+            newsSentiment: null,
             newsNumOfArticles: 0,
-            twitterSentiment: 0,
+            twitterSentiment: null,
             twitterNumOfComments: 0,
-            yahooSentiment: 0,
+            yahooSentiment: null,
             yahooNumOfComments: 0,
             newsData: [],
             redditData: [],
@@ -43,18 +43,43 @@ class SentimentPage extends Component {
     fetchData() {
         const { currentStock } = this.state;
 
+        // Fetch sentiment data from the API
+        fetch(`http://localhost:5000/sentiment/${currentStock}`)
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    redditSentiment: data.redditSentiment,
+                    redditNumOfComments: data.redditPosts,
+                    newsSentiment: data.newsSentiment,
+                    newsNumOfArticles: data.newsPosts,
+                    twitterSentiment: data.twitterSentiment,
+                    twitterNumOfComments: data.twitterPosts,
+                    yahooSentiment: data.yahooSentiment,
+                    yahooNumOfComments: data.yahooPosts,
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+
         // Fetch news data
-        fetch(`http://127.0.0.1:5000/table/${currentStock}/News`)
+        fetch(`http://localhost:5000/table/${currentStock}/News`)
             .then(response => response.json())
             .then(news => {
-                this.setState({ newsData: news.slice(-4) });
+                this.setState({ newsData: news.slice(-4) }); // Update to set the latest news data
+            })
+            .catch(error => {
+                console.error("Error fetching news data:", error);
             });
 
         // Fetch Reddit data
-        fetch(`http://127.0.0.1:5000/table/${currentStock}/Reddit`)
+        fetch(`http://localhost:5000/table/${currentStock}/Reddit`)
             .then(response => response.json())
             .then(reddit => {
-                this.setState({ redditData: reddit.slice(-4) });
+                this.setState({ redditData: reddit.slice(-4) }); // Update to set the latest Reddit data
+            })
+            .catch(error => {
+            console.error("Error fetching Reddit data:", error);
             });
     }
 
@@ -127,40 +152,50 @@ class SentimentPage extends Component {
                                 </ul>
                             )}
                         </div>
-                        <div className='reddit'>
-                            <h1>Reddit Sentiment</h1>
-                            <SentimentRange
-                                value={this.state.redditSentiment}
-                                numOfComments={this.state.redditNumOfComments}
-                            />
-                        </div>
-                        <div className='news'>
-                            <h1>News Sentiment</h1>
-                            <SentimentRange
-                                value={this.state.newsSentiment}
-                                numOfComments={this.state.newsNumOfArticles}
-                            />
-                        </div>
-                        <div className='twitter'>
-                            <h1>Twitter/X</h1>
-                            <SentimentRange 
-                                value={this.state.twitterSentiment}
-                                numOfComments={this.state.twitterNumOfComments}>
-                            </SentimentRange>
-                        </div>
-                        <div className='yahoo'>
-                            <h1>Yahoo Finance</h1>
-                            <SentimentRange 
-                                value={this.state.yahooSentiment}
-                                numOfComments={this.state.yahooNumOfComments}>
-                            </SentimentRange>
-                        </div>
+                        {this.state.redditSentiment !== null && (
+                            <div className='reddit'>
+                                <h1>Reddit Sentiment</h1>
+                                <SentimentRange
+                                    value={this.state.redditSentiment}
+                                    numOfComments={this.state.redditNumOfComments}
+                                />
+                            </div>
+                        )}
+                        {this.state.newsSentiment !== null && (
+                            <div className='news'>
+                                <h1>News Sentiment</h1>
+                                <SentimentRange
+                                    value={this.state.newsSentiment}
+                                    numOfComments={this.state.newsNumOfArticles}
+                                />
+                            </div>
+                        )}
+                        {this.state.twitterSentiment !== null && (
+                            <div className='twitter'>
+                                <h1>Twitter/X</h1>
+                                <SentimentRange 
+                                    value={this.state.twitterSentiment}
+                                    numOfComments={this.state.twitterNumOfComments}
+                                />
+                            </div>
+                        )}
+                        {this.state.yahooSentiment !== null && (
+                            <div className='yahoo'>
+                                <h1>Yahoo Finance</h1>
+                                <SentimentRange 
+                                    value={this.state.yahooSentiment}
+                                    numOfComments={this.state.yahooNumOfComments}
+                                />
+                            </div>
+                        )}
                     </div>
                     <div className='column right'>
-                        <div>
-                            <h1>{this.state.currentStock}</h1>
-                        </div>
-                        <InfoTable newsData={this.state.newsData} redditData={this.state.redditData} stockName={this.state.currentStock} />
+                        {this.state.currentStock && (
+                            <div>
+                                <h1>{this.state.currentStock}</h1>
+                                <InfoTable newsData={this.state.newsData} redditData={this.state.redditData} stockName={this.state.currentStock} />
+                            </div>
+                        )}
                     </div>
                 </div>
             </>
