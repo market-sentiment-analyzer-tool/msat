@@ -1,0 +1,37 @@
+[
+    {
+        "author": "David",
+        "content": "I\u2019d never thought I\u2019d say this but Microsoft is my worst stock I\u2019ve ever bought. I bought this stock in March and there isn\u2019t one day where it outperformed the s and p 500",
+        "date": "2024-11-07",
+        "sentiment": -0.7684,
+        "weight": "2"
+    },
+    {
+        "author": "Kalpesh from Mars",
+        "content": "Bullish: It's starting to sink in how 4 years of super economic growth will affect MSFT",
+        "date": "2024-11-07",
+        "sentiment": 0.891,
+        "weight": "4"
+    },
+    {
+        "author": "XX",
+        "content": "Bullish: 450 by end of year easy",
+        "date": "2024-11-07",
+        "sentiment": 0.7351,
+        "weight": "7"
+    },
+    {
+        "author": "mahmood",
+        "content": "I own Microsoft but I doubt if it passes 450 by end of the year.",
+        "date": "2024-11-07",
+        "sentiment": -0.5023,
+        "weight": "-4"
+    },
+    {
+        "author": "Ick",
+        "content": "Bullish: Current wars will end.  American businesses will be going back into Russia.  The Abraham peace cord will start back. Iran will stop building nukes..The middle east will become a huge economic delta..India is growing and will continue.  China must change its human rights positions or it will suffer globally...and MSFT will be huge beyond your imagination.",
+        "date": "2024-11-07",
+        "sentiment": 0.296,
+        "weight": "2"
+    }
+]
