@@ -22,23 +22,15 @@ jobs:
     
            # Step 3: Install dependencies
           - name: Install dependencies
-            run: sudo apt-get update && sudo apt-get install -y make
+            run: |
+              python -m pip install --upgrade pip
+              pip install -r requirements.txt
     
-          # Step 4: Create virtual environment
-          - name: Create virtual environment
-            run: make venv
-    
-          # Step 5: Run unit tests using pytest or any other framework
+          # Step 4: Run unit tests using pytest or any other framework
           - name: Run tests
             env:
               REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
               REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
               REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
             run: |
-              . venv/bin/activate
               coverage run -m pytest tests/test_redditScraper.py
-    
-          # Step 6: Cleanup files/folders
-          - name: Cleanup
-            run: |
-              make clean
