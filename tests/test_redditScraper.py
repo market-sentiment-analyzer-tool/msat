@@ -43,7 +43,7 @@ class RedditScraperTests(unittest.TestCase):
     def test_good_request_1002(self, mock_getPostsTable):
         # Get posts table
         time_filter = "hour"
-        stock_filter = ["aapl", "apple"]
+        stock_filter = ["aapl"]
         subreddit = "AAPL"
 
         # First test case with valid posts
