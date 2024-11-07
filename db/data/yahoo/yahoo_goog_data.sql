@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.1.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.0.1, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.1.0
+-- Server version	9.0.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -30,7 +30,7 @@ CREATE TABLE `YAHOO_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `y_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `YAHOO_GOOG_DATA` (
 
 LOCK TABLES `YAHOO_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `YAHOO_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `YAHOO_GOOG_DATA` VALUES (1,'DennisK','Bullish: new all time highs by year  end?','2024-11-07',0.5106,2),(2,'karl','Broke the $180 but didnâ€™t holdðŸ¤” Value stock at a good price should rally beyond the level today based on the fundamentals','2024-11-07',0.7964,4),(3,'Dent','Buybacks to look good . Still democrats garbage','2024-11-07',0.7096,3),(4,'greg','Bullish: Weâ€™re headed to the moon! ðŸš€ ðŸš€ ðŸš€','2024-11-07',0.5562,4),(5,'Dent','Bearish: Time to cancel Sundar Pitchai and his clowns forever.','2024-11-07',-0.6705,-3);
 /*!40000 ALTER TABLE `YAHOO_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-07 15:50:45
+-- Dump completed on 2024-11-07 17:22:34
