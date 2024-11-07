@@ -21,15 +21,16 @@ def get_sentiment(stock):
         if stock not in stock_list:
             abort(404, description="Stock not found")
 
-        # multiplier for Reddit, Yahoo, Twitter DB: score
+        # multiplier for Reddit, Twitter DB: score
         # multiplier for News DB: n_weight
+        # multiplier for Yahoo DB: y_weight
         data = {
             "redditSentiment": return_sentiment(stock, "REDDIT", "score"),     
             "redditPosts": return_count(stock, "REDDIT", "score"),
             "newsSentiment": return_sentiment(stock, "NEWS", "n_weight"),
             "newsPosts": return_count(stock, "NEWS", "n_weight"),         
-            "yahooSentiment": return_sentiment(stock, "YAHOO", "score"),
-            "yahooPosts": return_count(stock, "YAHOO", "score"),
+            "yahooSentiment": return_sentiment(stock, "YAHOO", "y_weight"),
+            "yahooPosts": return_count(stock, "YAHOO", "y_weight"),
             "twitterSentiment": return_sentiment(stock, "TWITTER", "score"),
             "twitterPosts": return_count(stock, "TWITTER", "score")
         }
@@ -61,6 +62,9 @@ def get_table(stock,media):
         elif media == "NEWS":
             arguments.append("n_weight")  # multiplier
             arguments.append("n_date,title,n_url,sentiment,n_weight")  # columns
+        elif media == "YAHOO":
+            arguments.append("y_weight") # mutliplier
+            arguments.append("y_date,author,content,sentiment,y_weight") # columns
         else:
             arguments.append("multiplier")  # default multiplier
             arguments.append("columns")  # default columns
@@ -83,6 +87,7 @@ def get_table(stock,media):
 def return_table(stock,media,multiplier,columns):
     # Reddit columns: p_date,subreddit,p_description,sentiment,score
     # News columns: n_date,title,n_url,sentiment,n_weight
+    # Yahoo columns: y_date,author,content,sentiment,y_weight
     table = f"{media}_{stock}_DATA"
     command = f"mysql -h mysql -u root -p{password} -D {database} -e 'SELECT {columns} FROM {table} WHERE sentiment <> 0 AND {multiplier} <> 0;'"
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
@@ -107,6 +112,7 @@ def return_table(stock,media,multiplier,columns):
 def return_sentiment(stock,media,multiplier):
     # Reddit DB: sentiment, score
     # News DB: sentiment, n_weight
+    # Yahoo DB: sentiment, y_weight
     
     table = f"{media}_{stock}_DATA"
     command = f"mysql -h mysql -u root -p{password} -D {database} -e 'SELECT sentiment,{multiplier} FROM {table} WHERE sentiment <> 0 AND {multiplier} <> 0;'"
