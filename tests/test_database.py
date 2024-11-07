@@ -40,7 +40,7 @@ class DatabaseTests(unittest.TestCase):
         # Exclude the first line (header) and count the remaining lines (tables)
         table_count = len(output_lines) - 1
         # Expected number of tables
-        expected_count = 10
+        expected_count = 15
 
         # Assert that the count of tables matches the expected count
         self.assertEqual(table_count, expected_count, f"Expected {expected_count} tables, found {table_count}.")
