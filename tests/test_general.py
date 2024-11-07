@@ -136,7 +136,7 @@ class GeneralTests(unittest.TestCase):
     # get_stock_subreddits(key)
     def test_good_stock_subreddits(self):
         result = get_stock_subreddits("aapl")
-        self.assertEqual(result,['investing', 'stocks', 'AAPL'])
+        self.assertEqual(result,['investing', 'stocks', 'AAPL', 'valueinvesting', 'wallstreetbets', 'wallstreetbetsnew', 'tradingedge'])
 
     # get_stock_subreddits(key)
     def test_bad_stock_subreddits(self):
@@ -166,11 +166,11 @@ class GeneralTests(unittest.TestCase):
         }
 
         expected_json = {
-            "aapl":"investing,stocks,AAPL",
-            "amzn":"investing,stocks",
-            "goog":"investing,stocks",
-            "msft":"investing,stocks",
-            "nvda":"investing,stocks,NVDA_Stock"
+            "aapl":"investing,stocks,AAPL,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+            "amzn":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+            "goog":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+            "msft":"investing,stocks,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge",
+            "nvda":"investing,stocks,NVDA_Stock,valueinvesting,wallstreetbets,wallstreetbetsnew,tradingedge"
         }
 
         # Call the function to test
