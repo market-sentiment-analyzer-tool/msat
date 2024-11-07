@@ -12,7 +12,7 @@ fi
 # Loop over each stock ticker in the JSON file
 jq -c '.[0]' "$stock_info_file" | jq -r 'to_entries[] | "\(.key) \(.value)"' | while read -r ticker table_name; do
   # Path to the JSON file for the specific stock
-  json_file="./output/reddit-${ticker}-data.json"
+  json_file="./scrapers/output/reddit-${ticker}-data.json"
 
   # Check if the stock-specific file exists
   if [ ! -f "$json_file" ]; then

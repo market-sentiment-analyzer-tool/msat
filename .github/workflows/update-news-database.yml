@@ -53,7 +53,7 @@ jobs:
           pip install -r requirements.txt
 
       # Step 7:
-      - name: Scrape News and dump json in output folder under ./output/news-<stock>-data.json
+      - name: Scrape News and dump json in scrapers/output folder under ./scrapers/output/news-<stock>-data.json
         env:
             NEWS_API: ${{ secrets.NEWS_API }}
             NEWS_DATA: ${{ secrets.NEWS_DATA }}
@@ -84,7 +84,7 @@ jobs:
       # Step 11:
       - name: Remove JSON output file
         run: |
-          [ -f output/news*.json ] && rm output/news*.json || true
+          [ -f scrapers/output/news*.json ] && rm scrapers/output/news*.json || true
       
       # Step 12:
       - name: Configure Git

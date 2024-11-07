@@ -3,7 +3,7 @@ import json
 import os
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 from datetime import datetime
 
@@ -36,7 +36,7 @@ def calculateSentiment(content):
     return sentiment
 
 def pushJsonData(data, stock):
-    filename = f"output/yahoo-{stock}-data.json"
+    filename = f"scrapers/output/yahoo-{stock}-data.json"
     
     # Create output directory if it doesn't exist
     os.makedirs(os.path.dirname(filename), exist_ok=True)

@@ -6,13 +6,13 @@ from datetime import datetime
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # from creds import credentials
-from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # Limit of posts scraped
 limit = 5
 
 def save_data_to_json(data, stock):
-    file_path=f"output/reddit-{stock}-data.json"
+    file_path=f"scrapers/output/reddit-{stock}-data.json"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     # Save the data to the JSON file
     with open(file_path, 'w') as file:

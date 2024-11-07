@@ -14,7 +14,7 @@ from scrapers.newsScraper import save_data_to_json as save_data_to_json_news
 from scrapers.redditScraper import get_stock_subreddits, get_stock_value, get_stock_info, getPostsID, getPostsTable, getCommentsTable, getCommentsID, pushJsonData
 from scrapers.redditScraper import save_data_to_json as save_data_to_json_reddit
 from test_redditScraper import is_integer
-from vaderSentiments.vaderSentiment.vaderSentiment import SentiText, SentimentIntensityAnalyzer, normalize, scalar_inc_dec, negated
+from vaderSentiment.vaderSentiment.vaderSentiment import SentiText, SentimentIntensityAnalyzer, normalize, scalar_inc_dec, negated
 
 class GeneralTests(unittest.TestCase):
     # getPageContent(url)
@@ -66,11 +66,11 @@ class GeneralTests(unittest.TestCase):
         save_data_to_json_news(data, stock)
 
         # Check if there is any .json file in the output directory
-        json_files = [f for f in os.listdir('output') if f.endswith('.json')]
+        json_files = [f for f in os.listdir('scrapers/output') if f.endswith('.json')]
         self.assertTrue(len(json_files) > 0, "No .json files were created in the output directory.")
         
         # Remove the file
-        os.remove(f"output/news-AAPL-data.json")
+        os.remove(f"scrapers/output/news-AAPL-data.json")
     
     # save_data_to_json(data, stock)
     @patch('builtins.open', new_callable=mock_open, read_data='[{"url": "http://example.com/1", "content": "Content 1"}]')
@@ -86,10 +86,10 @@ class GeneralTests(unittest.TestCase):
         save_data_to_json_news(data, stock)
 
         # Assert that the file was opened for reading
-        mock_open.assert_any_call(f"output/news-{stock}-data.json", 'r')
+        mock_open.assert_any_call(f"scrapers/output/news-{stock}-data.json", 'r')
 
         # Assert that the file was opened for writing
-        mock_open.assert_any_call(f"output/news-{stock}-data.json", 'w')
+        mock_open.assert_any_call(f"scrapers/output/news-{stock}-data.json", 'w')
 
     # save_data_to_json(data, stock)
     @patch('builtins.open', new_callable=mock_open)
@@ -108,10 +108,10 @@ class GeneralTests(unittest.TestCase):
         save_data_to_json_news(data, stock)
 
         # Ensure that open was called with the correct filename for reading
-        mock_open.assert_any_call(f'output/news-{stock}-data.json', 'r')  # Adjusted for the potential output path
+        mock_open.assert_any_call(f'scrapers/output/news-{stock}-data.json', 'r')  # Adjusted for the potential output path
 
         # Ensure that open was called to write the data back to the file
-        mock_open.assert_any_call(f'output/news-{stock}-data.json', 'w')
+        mock_open.assert_any_call(f'scrapers/output/news-{stock}-data.json', 'w')
 
         # Check that the write method was called at least once.
         # Use the mock_open directly to access the write method on the last opened file handle.
@@ -127,11 +127,11 @@ class GeneralTests(unittest.TestCase):
         save_data_to_json_reddit(data, stock)
 
         # Check if there is any .json file in the output directory
-        json_files = [f for f in os.listdir('output') if f.endswith('.json')]
+        json_files = [f for f in os.listdir('scrapers/output') if f.endswith('.json')]
         self.assertTrue(len(json_files) > 0, "No .json files were created in the output directory.")
         
         # Remove the file
-        os.remove(f"output/reddit-AAPL-data.json")
+        os.remove(f"scrapers/output/reddit-AAPL-data.json")
 
     # get_stock_subreddits(key)
     def test_good_stock_subreddits(self):

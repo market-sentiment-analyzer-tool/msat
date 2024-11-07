@@ -4,7 +4,7 @@ import os
 # Add parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # from creds import credentials
-from vaderSentiments.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 import requests
 from bs4 import BeautifulSoup
@@ -115,7 +115,7 @@ def get_stock_info():
     return data[0]
 
 def save_data_to_json(data, stock):
-    file_path=f"output/news-{stock}-data.json"
+    file_path=f"scrapers/output/news-{stock}-data.json"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
 
     existing_data = []
