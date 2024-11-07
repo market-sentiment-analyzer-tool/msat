@@ -92,6 +92,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global pull.rebase false
       
       # Step 13:
       - name: Commit changes
@@ -104,7 +105,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config pull.rebase true
-          git pull origin main
+          git pull origin main --no-rebase
           git push origin HEAD:main
 
