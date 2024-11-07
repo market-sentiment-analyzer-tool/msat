@@ -84,7 +84,7 @@ jobs:
       # Step 11:
       - name: Remove JSON output file
         run: |
-          rm output/news*.json
+          [ -f output/news*.json ] && rm output/news*.json || true
       
       # Step 12:
       - name: Configure Git
@@ -96,6 +96,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
+          git reset ui/package-lock.json
           git commit -m "Updated News Database dump" || echo "No changes to commit"
       
       # Step 14:
