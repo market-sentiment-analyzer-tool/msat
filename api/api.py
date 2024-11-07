@@ -131,7 +131,7 @@ def return_sentiment(stock,media,multiplier):
             
             # Calculate the weighted sentiment
             total_weighted_sentiment += sentiment * score
-            total_score += score
+            total_score += abs(score)
         
         # Calculate the final weighted sentiment
         if total_score != 0:
