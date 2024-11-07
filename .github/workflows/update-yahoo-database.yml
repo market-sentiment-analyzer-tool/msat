@@ -88,6 +88,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
+          git reset ui/package-lock.json
           git commit -m "Updated Yahoo Database dump" || echo "No changes to commit"
       
       # Step 13:
