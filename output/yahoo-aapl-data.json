@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Jack",
+        "content": "Bearish: Low single digit growth doesn't deserve a 36 PE",
+        "date": "2024-11-07",
+        "sentiment": -0.0935,
+        "weight": "-1"
+    },
+    {
+        "author": "james",
+        "content": "Glad I dumped this at open.  This stuff has flattened.  Need more gains.",
+        "date": "2024-11-07",
+        "sentiment": 0.4576,
+        "weight": "-4"
+    },
+    {
+        "author": "JohnU",
+        "content": "I crack up when the naysayers say  ITS GARBAGE, did you see how much they made in the last quarter? This is just beginning of a great run !!! 2.2 active user base, they not moving on to Cell Phone that have less capability as the I Phone, do the research on this  Services, Services, growing big. and healthcare on the I Phone is coming . How about that FDA approval on hearing aid. Saving people big bucks !!",
+        "date": "2024-11-07",
+        "sentiment": 0.94,
+        "weight": "4"
+    },
+    {
+        "author": "Jack",
+        "content": "Bearish: Thanks you garbage Apple. My puts will make me rich!",
+        "date": "2024-11-07",
+        "sentiment": 0.5093,
+        "weight": "1"
+    },
+    {
+        "author": "Paul",
+        "content": "Bearish: AAPL getting completely annihilated in A.I. by TSLA, MSFT and GOOG it's not even close",
+        "date": "2024-11-07",
+        "sentiment": -0.5423,
+        "weight": "-7"
+    },
+    {
+        "author": "Star1",
+        "content": "Bullish: M4 chips rule!!!!",
+        "date": "2024-11-07",
+        "sentiment": 0.6671,
+        "weight": "1"
+    }
+]
