@@ -85,7 +85,7 @@ jobs:
       # Step 11:
       - name: Remove JSON output file
         run: |
-          rm output/reddit*.json
+          [ -f output/reddit*.json ] && rm output/reddit*.json || true
       
       # Step 12:
       - name: Configure Git
@@ -97,6 +97,7 @@ jobs:
       - name: Commit changes
         run: |
           git add .
+          git reset ui/package-lock.json
           git commit -m "Updated Reddit Database dump" || echo "No changes to commit"
       
       # Step 14:
