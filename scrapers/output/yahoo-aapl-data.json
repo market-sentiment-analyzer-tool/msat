@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Jack",
+        "content": "Bearish: Garbage company",
+        "date": "2024-11-08",
+        "sentiment": -0.5423,
+        "weight": "-4"
+    },
+    {
+        "author": "Liam",
+        "content": "no room left to run or are they taking their nickels and dimes",
+        "date": "2024-11-08",
+        "sentiment": -0.296,
+        "weight": "-5"
+    },
+    {
+        "author": "CochiseGordon",
+        "content": "Lol.  Apple can\u2019t keep up with Tesla!",
+        "date": "2024-11-08",
+        "sentiment": 0.7177,
+        "weight": "-6"
+    },
+    {
+        "author": "Joseph",
+        "content": "Bearish: This stock has to be heading for a major and long term correction and it is just a matter of when not if.  If you look at the company's key financial stats it is not a pretty picture.  It's book value and cash value per share are 3.77% and 4.31 respectively yet the stocks share price is 228 per share.  Worse is it's debt to equity ratio .With $119billion in debt it's debt to equity ratio is 209%.  For comparison purposes the ratios for MSFT, GOOG and AMZN ARE 33%, 9% respectively.  Add to that a PE ratio of 37.  Now as far as the business is concerned, the company has not exhibited growth over the past year nor is significant growth expected.  Aside from added AI enhancements to its products (other companies will no doubt match these if they haven't already) there have been no innovative products in years.  I suspect that AAPL's best days are behind it and I suspect so has Warren.  The financial position seems so shaky that I wonder what a detailed investigation into it's reported financials would reveal.  One analyst has a price target of 168 and that may be where the stock is headed over the next year.  I assume haters will respond and if you do please do so with facts and not insults.  MAGA",
+        "date": "2024-11-08",
+        "sentiment": -0.7375,
+        "weight": "-7"
+    },
+    {
+        "author": "gord",
+        "content": "Bullish: Record iPhone sales. No competition. 275 wit",
+        "date": "2024-11-08",
+        "sentiment": 0.2732,
+        "weight": "3"
+    }
+]

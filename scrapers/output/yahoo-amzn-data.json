@@ -1,0 +1,30 @@
+[
+    {
+        "author": "Ralph",
+        "content": "Well AMZn gave you enough notice to buy it in the right moment don\u2019t cry in the future saying \u201cis it late to buy?\u201d",
+        "date": "2024-11-08",
+        "sentiment": 0.3612,
+        "weight": "5"
+    },
+    {
+        "author": "Rob",
+        "content": "Bullish: Can we get a Good Friday ????",
+        "date": "2024-11-08",
+        "sentiment": 0.7998,
+        "weight": "4"
+    },
+    {
+        "author": "Rob",
+        "content": "Bullish: Signed contracts with Palantir for AWS for government services.",
+        "date": "2024-11-08",
+        "sentiment": 0.5106,
+        "weight": "8"
+    },
+    {
+        "author": "Sunny in CA",
+        "content": "Took out Bezos resistance in good volume. Seems to be still undervalued.",
+        "date": "2024-11-08",
+        "sentiment": 0.4404,
+        "weight": "1"
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "author": "It",
+        "content": "Bullish: Going to close green. Guaranteed",
+        "date": "2024-11-08",
+        "sentiment": 0.5106,
+        "weight": "-5"
+    },
+    {
+        "author": "William Hateroski",
+        "content": "NVDA=DOWGARBAGE",
+        "date": "2024-11-08",
+        "sentiment": 0.0,
+        "weight": "-2"
+    },
+    {
+        "author": "joe",
+        "content": "Bearish: crash",
+        "date": "2024-11-08",
+        "sentiment": -0.7351,
+        "weight": "-3"
+    },
+    {
+        "author": "justin",
+        "content": "Bullish: No clue whether Nvda finishes green or red today? I really don\u2019t care. Higher highs and higher lows and I know AI spending is not slowing down in 2025. Whether higher today or next week does not matter to me. I am good!",
+        "date": "2024-11-08",
+        "sentiment": 0.7843,
+        "weight": "7"
+    },
+    {
+        "author": "Sally",
+        "content": "Bearish: NVDA is at all time high from $115 since Oct 1st. Don't be too greedy. People will get hurt. Take your profits. Every Micro Chip stock have pulled back except Nvda. People will get hurt ! Institution investors are waiting for pullback to $110. Everything that goes up must come down.",
+        "date": "2024-11-08",
+        "sentiment": -0.6286,
+        "weight": "-4"
+    },
+    {
+        "author": "Mark",
+        "content": "NVDA should retrace to $124 before continuing its upward trend.",
+        "date": "2024-11-08",
+        "sentiment": 0.0,
+        "weight": "4"
+    },
+    {
+        "author": "T",
+        "content": "Bearish: This stock is such a bubble.",
+        "date": "2024-11-08",
+        "sentiment": -0.5423,
+        "weight": "-5"
+    },
+    {
+        "author": "Jim",
+        "content": "Short term traders are taking profits today.  NVIDIA will be resuming upward movement today or next few trading days.  We're still in the very early stages of AI.",
+        "date": "2024-11-08",
+        "sentiment": -0.1531,
+        "weight": "6"
+    },
+    {
+        "author": "Sith Lord",
+        "content": "2T overvalued. Not even $100B in rev. What a bubble",
+        "date": "2024-11-08",
+        "sentiment": -0.5574,
+        "weight": "-8"
+    }
+]
