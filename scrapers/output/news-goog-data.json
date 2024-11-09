@@ -88,5 +88,59 @@
         "title": "US judge dismisses lawsuit against Google over gift card scams - report",
         "url": "https://seekingalpha.com/news/4253890-us-judge-dismisses-lawsuit-against-google-over-gift-card-scams?feed_item_type=news",
         "weight": 20
+    },
+    {
+        "author": null,
+        "content": "...",
+        "date": "2024-11-08",
+        "sentiment": 0.6951200000000001,
+        "title": "Amazon: AWS Is Poised For Continued Excellence With Operating Margin And Revenue",
+        "url": "https://seekingalpha.com/article/4734875-amazon-aws-is-poised-for-continued-excellence-with-operating-margin-and-revenue?source=feed_all_articles",
+        "weight": 2
+    },
+    {
+        "author": "newsfeedback@fool.com (Keithen Drury)",
+        "content": "Founded in 1993, The Motley Fool is a financial services company dedicated to making the world smarter, happier, and richer. The Motley Fool reaches millions of people every month through our premium ...",
+        "date": "2024-11-08",
+        "sentiment": 0.38094000000000006,
+        "title": "Alphabet's Secret Weapon in the Global Artificial Intelligence (AI) Race",
+        "url": "https://www.fool.com/investing/2024/11/08/alphabets-secret-weapon-in-the-global-artificial/?source=iedfolrf0000001",
+        "weight": 4
+    },
+    {
+        "author": "ABMN Staff",
+        "content": "\n\t\t\t\t\tPosted by ABMN Staff on Nov 8th, 2024\n\nAlphabet Inc. (NASDAQ:GOOG \u2013 Get Free Report) CEO Sundar Pichai sold 22,500 shares of the stock in a transaction on Wednesday, November 6th. The shares wer...",
+        "date": "2024-11-08",
+        "sentiment": 0.4366,
+        "title": "Sundar Pichai Sells 22,500 Shares of Alphabet Inc. (NASDAQ:GOOG) Stock",
+        "url": "https://www.americanbankingnews.com/2024/11/08/sundar-pichai-sells-22500-shares-of-alphabet-inc-nasdaqgoog-stock-2.html",
+        "weight": 8
+    },
+    {
+        "author": "newsfeedback@fool.com (Daniel Foelber)",
+        "content": "Founded in 1993, The Motley Fool is a financial services company dedicated to making the world smarter, happier, and richer. The Motley Fool reaches millions of people every month through our premium ...",
+        "date": "2024-11-08",
+        "sentiment": 0.19974000000000003,
+        "title": "With Nvidia Kicking Intel Out of the Dow Jones, Will Meta Platforms or Alphabet Eventually Replace Walt Disney Stock?",
+        "url": "https://www.fool.com/investing/2024/11/08/nvidia-intel-dow-jones-meta-alphabet-disney-stock/?source=iedfolrf0000001",
+        "weight": 4
+    },
+    {
+        "author": "Ananya Gairola",
+        "content": "Alphabet Inc.\u2019s GOOG GOOGL Google Gemini app has introduced a \u201cUtilities\u201d extension for Android users.\nWhat Happened: Initially previewed\u00a0at I/O 2024 in May, the Gemini Utilities Extension\u00a0is now bein...",
+        "date": "2024-11-08",
+        "sentiment": 0.19640000000000002,
+        "title": "Google Gemini Rolls Out 'Utilities' Extension For Android: Here's What All You Can Do With It",
+        "url": "https://www.benzinga.com/tech/24/11/41835032/google-gemini-rolls-out-utilities-extension-for-android-heres-what-all-you-can-do-with-it",
+        "weight": 80
+    },
+    {
+        "author": "Ananya Gairola",
+        "content": "Amazon.com, Inc.\u00a0AMZN is reportedly contemplating its second multi-billion-dollar investment in\u00a0artificial intelligence startup\u00a0Anthropic, which leverages its cloud services for training.\nWhat Happene...",
+        "date": "2024-11-08",
+        "sentiment": 0.5803200000000001,
+        "title": "After OpenAI And Perplexity, AI Startup Anthropic May Secure Another Massive Investment \u2014 Amazon Reportedly Considers Major Funding",
+        "url": "https://www.benzinga.com/news/24/11/41832230/after-openai-and-perplexity-ai-startup-anthropic-may-secure-another-massive-investment-amazon-report",
+        "weight": 8
     }
 ]
