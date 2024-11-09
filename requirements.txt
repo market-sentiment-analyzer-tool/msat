@@ -3,6 +3,7 @@ coverage
 flask
 flask_cors
 jsonschema
+locust
 mysql-connector-python
 praw
 pytest
