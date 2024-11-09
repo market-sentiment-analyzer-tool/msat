@@ -26,5 +26,26 @@
         "date": "2024-11-08",
         "sentiment": 0.4404,
         "weight": "1"
+    },
+    {
+        "author": "Hold That Bag",
+        "content": "Can\u2019t believe the Bezos $200 FireWall FINALLY broke\u2026 unbelievable!",
+        "date": "2024-11-09",
+        "sentiment": 0.2714,
+        "weight": "4"
+    },
+    {
+        "author": "Sunny in CA",
+        "content": "Amazon broke the Bezos resistance of $200, ripe for further breakout.",
+        "date": "2024-11-09",
+        "sentiment": -0.2732,
+        "weight": "2"
+    },
+    {
+        "author": "Stevie",
+        "content": "half a million space heaters recalled. govee. made in china. of course. plastic in dog food, lead in babies toys, largest manufacturer of precurser chemicals for fentanyl. of course. thank you jeff, for helping to bring them here. probably not the plant manager there cutting corners. probably ordered to, from someone who could order their demise.",
+        "date": "2024-11-09",
+        "sentiment": 0.7906,
+        "weight": "-3"
     }
 ]

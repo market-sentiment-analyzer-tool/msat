@@ -61,5 +61,33 @@
         "date": "2024-11-08",
         "sentiment": -0.5574,
         "weight": "-8"
+    },
+    {
+        "author": "steve",
+        "content": "Bullish: In the Dow. Goin straight up from here. Big week ahead.",
+        "date": "2024-11-09",
+        "sentiment": 0.7964,
+        "weight": "3"
+    },
+    {
+        "author": "Freedom",
+        "content": "BUY NVDA!",
+        "date": "2024-11-09",
+        "sentiment": 0.5848,
+        "weight": "6"
+    },
+    {
+        "author": "Kovi",
+        "content": "We need to sell",
+        "date": "2024-11-09",
+        "sentiment": -0.4588,
+        "weight": "-4"
+    },
+    {
+        "author": "justin",
+        "content": "Bullish: Hey Bulls, how has it been investing in the most valuable company in the world? This cash cow juggernaut now has technicals, fundamentals, and momentum in its favor. Not to mention Higher highs and Higher lows. Full speed ahead",
+        "date": "2024-11-09",
+        "sentiment": 0.8221,
+        "weight": "5"
     }
 ]

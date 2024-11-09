@@ -33,5 +33,26 @@
         "date": "2024-11-08",
         "sentiment": 0.2732,
         "weight": "3"
+    },
+    {
+        "author": "sargeantfury",
+        "content": "And you thought this was gonna be a good stock...",
+        "date": "2024-11-09",
+        "sentiment": 0.4404,
+        "weight": "-3"
+    },
+    {
+        "author": "JohnU",
+        "content": "The other cell phone makers do not have the overall capabilities the Apple does.. On track to make over 100 billion in services  this year!! Let that sink in. Nobody is leaving the Great products and services.. Did Apple have issues during the Crowdstrike/Microsoft outage which is still effecting some companies.. NO !! The Team Mobile CEO made a point of this at the time.. Families who use Apple will buy Apple for their kids and grandkids. Its just the start of a big run..!!",
+        "date": "2024-11-09",
+        "sentiment": 0.7805,
+        "weight": "1"
+    },
+    {
+        "author": "Toby",
+        "content": "Bullish: Congratulations longs well deserved!",
+        "date": "2024-11-09",
+        "sentiment": 0.8622,
+        "weight": "3"
     }
 ]
