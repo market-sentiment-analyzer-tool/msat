@@ -39,42 +39,34 @@ class RedditScraperTests(unittest.TestCase):
         posts = getPostsTable(time_filter,stock_filter,subreddit,self.reddit)
         self.assertGreaterEqual(len(posts),0)
 
-    @patch('scrapers.redditScraper.getPostsTable')  # Mock the getPostsTable function
+    @patch('test_redditScraper.getPostsTable')
     def test_good_request_1002(self, mock_getPostsTable):
-        # Get posts table
+        # Test case 1: Valid subreddit with posts
         time_filter = "hour"
         stock_filter = ["aapl"]
         subreddit = "AAPL"
 
-        # First test case with valid posts
-        mock_getPostsTable.return_value = [
+        mock_posts = [
             ['AAPL', 'postid1', 'title1', '01-01-2023', 5, 'This is a comment body for AAPL.'],
             ['AAPL', 'postid2', 'title2', '02-01-2023', 10, 'Another comment for AAPL.']
         ]
+        mock_getPostsTable.return_value = mock_posts
 
         posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
-        
-        # Log or print the result for debugging
         print("First test case (valid posts):", posts)
 
-        # Check the first return of valid posts
-        self.assertGreater(len(posts), 0)  # Ensure there are posts
+        self.assertEqual(len(posts), 2)  # We expect exactly 2 posts
         for post in posts:
-            # Length of post data should be 6
-            self.assertEqual(len(post), 6)
+            self.assertEqual(len(post), 6)  # Each post should have 6 elements
 
+        # Test case 2: Invalid subreddit with no posts
         subreddit = "geegees"
-        # Now test the case with no posts
         mock_getPostsTable.return_value = []
         
-        # Call getPostsTable again and log the result
         posts = getPostsTable(time_filter, stock_filter, subreddit, self.reddit)
-        
-        # Log or print the result for debugging
         print("Second test case (no posts):", posts)
 
-        # Verify that the posts list is empty
-        self.assertEqual(posts, [])
+        self.assertEqual(len(posts), 0)  # We expect an empty list
 
     # Testing bad requests to API
     # Time filter (hour, day, week, year)
