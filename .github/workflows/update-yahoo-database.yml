@@ -1,9 +1,9 @@
 name: "[Update] Yahoo Database"
 
-# Run cron job every day at midnight (UTC)
+# Run cron job every day
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 2 * * *'
   workflow_dispatch: 
 
 jobs:
