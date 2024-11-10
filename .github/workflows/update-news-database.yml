@@ -1,9 +1,9 @@
 name: "[Update] News Database"
 
-# Run cron job every day at midnight (UTC)
+# Run cron job every day
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 1 * * *'
   workflow_dispatch: 
 
 jobs:
