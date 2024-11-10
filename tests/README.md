@@ -15,7 +15,10 @@ GitHub Actions uses workflows to automatically run Unit Tests on various parts o
 * Database (every 6 hours)
 * News Scraper (daily)
 * Reddit Scraper (every 6 hours)
+* Yahoo Scraper (every 6 hours)
 * Sentiment analyzer (every 6 hours)
+* API (every 6 hours)
+* User Interface (every 6 hours)
 
 This automated process ensures that our core components maintain data integrity and provide accurate results.
 
