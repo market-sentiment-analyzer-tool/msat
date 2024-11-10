@@ -142,5 +142,41 @@
         "title": "After OpenAI And Perplexity, AI Startup Anthropic May Secure Another Massive Investment \u2014 Amazon Reportedly Considers Major Funding",
         "url": "https://www.benzinga.com/news/24/11/41832230/after-openai-and-perplexity-ai-startup-anthropic-may-secure-another-massive-investment-amazon-report",
         "weight": 8
+    },
+    {
+        "author": "newsfeedback@fool.com (Collin Brantmeyer)",
+        "content": "Founded in 1993, The Motley Fool is a financial services company dedicated to making the world smarter, happier, and richer. The Motley Fool reaches millions of people every month through our premium ...",
+        "date": "2024-11-09",
+        "sentiment": 0.11758000000000002,
+        "title": "How Much Will Alphabet Pay Out in Dividends in 2025?",
+        "url": "https://www.fool.com/investing/2024/11/09/how-much-will-alphabet-pay-out-in-dividends-in-202/?source=iedfolrf0000001",
+        "weight": 4
+    },
+    {
+        "author": "Ananya Gairola",
+        "content": "Apple Inc.\u00a0AAPL has updated its messaging system to accurately display Android user reactions on iOS, marking a major step forward in iPhone\u2013Android messaging.\nWhat Happened: Apple has addressed the l...",
+        "date": "2024-11-09",
+        "sentiment": 0.19364,
+        "title": "Apple Bridges iOS-Android Messaging Gap: RCS Reactions Finally Displayed Correctly On iPhones",
+        "url": "https://www.benzinga.com/tech/24/11/41864008/apple-bridges-ios-android-messaging-gap-rcs-reactions-finally-displayed-correctly-on-iphones",
+        "weight": 8
+    },
+    {
+        "author": "Rounak Jain",
+        "content": "In a move affecting users globally, Alphabet Inc. GOOG GOOGL subsidiary Google's YouTube has announced price increases for its Premium and Music services, impacting legacy subscribers in the U.S. and ...",
+        "date": "2024-11-09",
+        "sentiment": 0.19736,
+        "title": "YouTube Premium's Legacy Prices Come To An End More Users",
+        "url": "https://www.benzinga.com/24/11/41863047/youtube-premiums-legacy-prices-come-to-an-end-more-users",
+        "weight": 8
+    },
+    {
+        "author": "DAVID SAITO-CHUNG",
+        "content": "\n                Access to this page has been denied because we believe you are using automation tools to browse the\n                website.\n            \n\n                This may happen as a result ...",
+        "date": "2024-11-08",
+        "sentiment": -0.27956000000000003,
+        "title": "Google Stock Today: Sell This Iron Condor, Collect Money Off Google Owner Alphabet",
+        "url": "https://www.investors.com/research/options/google-stock-today-alphabet-sell-iron-condor-collect-money/",
+        "weight": 40
     }
 ]
