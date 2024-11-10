@@ -1,0 +1,3 @@
+# Sentiment Analyzer
+
+The Sentiment Analyzer used for this project was made by [vaderSentiment](https://pypi.org/project/vaderSentiment/) and modified to fit the narratives of this project. A lot of changes were made to the `vader_lexicon.txt` file to be more tailored to stock market and finance terminology, a list of those changes can be seen in the [lexicon.txt](../docs/lexicon.txt) file. The tool evaluates emotions and generates score from -1 to 1. It specializes in analyzins social media content by understanding slang, emojis and informal language. The tool provides a compound score that indicates if a text is positive, negative or neutral, making it particularly useful in the case of our projet.
