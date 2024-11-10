@@ -85,7 +85,7 @@ jobs:
       # Step 11:
       - name: Remove JSON output file
         run: |
-          [ -f scrapers/output/reddit*.json ] && rm scrapers/output/reddit*.json || true
+          find scrapers/output -name "reddit*.json" -delete 2>/dev/null || true
       
       # Step 12:
       - name: Configure Git

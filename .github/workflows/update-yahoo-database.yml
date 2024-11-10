@@ -76,7 +76,7 @@ jobs:
       # Step 10:
       - name: Remove JSON output file
         run: |
-          [ -f scrapers/output/yahoo*.json ] && rm scrapers/output/yahoo*.json || true
+          find scrapers/output -name "yahoo*.json" -delete 2>/dev/null || true
       
       # Step 11:
       - name: Configure Git
