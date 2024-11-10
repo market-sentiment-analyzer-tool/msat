@@ -20,11 +20,15 @@ Introducing our innovative project, a **Stock Market Sentiment Analyzer Tool**, 
     * [Data Structure](#data-structure-1)
     * [Sentiment Calculation](#sentiment-calculation-1)
     * [Weight Calculation](#weight-calculation)
+  * [Yahoo Finance](#yahoo-finance-1)
+    * [Data Structure](#data-structure-2)
+    * [Sentiment Calculation](#sentiment-calculation-2)
 * [User Interface](#user-interface)
 * [Deployment](#deployment)
 * [Quality Assurance](#quality-assurance)
   * [Github Actions](#github-actions)
   * [Docker](#docker)
+  * [Locust](#locust)
   * [Selenium](#selenium)
 * [Troubleshooting](#troubleshooting)
   * [Issues with local deployment](#issues-with-local-deployment)
@@ -46,6 +50,14 @@ git clone <repository-url>
 cd <repository-folder>
 ```
 
+### Export Environment Variables
+
+A `.env` file with all environment variables is necessary to run the application. Once placing the `.env` file in the main directory, run the following command:
+
+```bash
+source .env
+```
+
 ### Start the services with Docker
 
 Run the following command to initialize the entire system, including the user interface and backend:
@@ -64,7 +76,7 @@ This architecture diagram provides a high-level view of how the different compon
 * **React User Interface**: The front-end of the application is built with React, it serves as the user interface and sends requests to the Flask API
 * **Flask API**: The Flask API acts as the backend, handling requests from the React UI, it processes the data, interacts with the database, and returns the sentiment of the requested company
 * **MySQL Database**: All data is stored and managed in a MySQL database, the database is updated regularly by scrapers
-* **News Scraper and Reddit Scraper**: These scrapers gather news and Reddit data for sentiment analysis relevant to specific stock tickers or companies, which are then stored in the database
+* **Scrapers**: The scrapers gather News, Reddit and Yahoo data for sentiment analysis relevant to specific stock tickers or companies, which are then stored in the database
 * **Sentiment Analyzer**: The Sentiment Analyzer processes the gathered data and user input, analyzing the text to determine the sentiment score, which reflects the overall tone of the input.
 
 **Architecture diagram:**
@@ -86,11 +98,11 @@ Key features include:
 * Only news articles relevant to specific stock tickers or company names (present in the title or content) are scraped and added to the database
 * The news is scraped daily, ensuring fresh and up-to-date content
 
-This process provides a consistent, daily stream of uniuqe, company-specific news updates for further processing or display.
+This process provides a consistent, daily stream of unique, company-specific news updates for further processing or display.
 
 ## Yahoo Finance
 
-Not Implemented.
+The Yahoo Finance scraper targets the Conversation section of stock-specific pages, where users actively discuss and share market sentiments. The section is particularly valuable for sentiment analysis as users can explicitly mark their stance as "Bullish" or "Bearish" alongside their comments. This feature provides additional context to enhance our sentiment analysis accuracy. While the scraping process is currently performed daily, full automation remains a work in progress due to Yahoo Finance's sophisticated bot detection system. Manual intervention is required until a solution to bypass these restrictions is developed.
 
 ## Twitter/X
 
@@ -98,7 +110,7 @@ Not Implemented.
 
 # Sentiment Analyzer
 
-The Sentiment Analyzer used for this project was made by [vaderSentiment](https://pypi.org/project/vaderSentiment/) and modified to fit the narratives of this project. A lot of changes were made to the `vader_lexicon.txt` file to be more tailored to stock market and finance terminology, a list of those changes can be seen in the [lexicon.txt file](lexicon.txt).
+The Sentiment Analyzer used for this project was made by [vaderSentiment](https://pypi.org/project/vaderSentiment/) and modified to fit the narratives of this project. A lot of changes were made to the `vader_lexicon.txt` file to be more tailored to stock market and finance terminology, a list of those changes can be seen in the [lexicon.txt](./docs/lexicon.txt) file. The tool evaluates emotions and generates score from -1 to 1. It specializes in analyzins social media content by understanding slang, emojis and informal language. The tool provides a compound score that indicates if a text is positive, negative or neutral, making it particularly useful in the case of our projet.
 
 # Database
 
@@ -189,6 +201,49 @@ The weight score represents the importance of an article, starting with a defaul
 
 This weighting system helps prioritize more relevant and higher-quality articles in the database, ensuring accurate data for further analysis
 
+## Yahoo Finance
+
+The Yahoo Finance section stores user comments from the Conversation section of stock-specific pages.
+
+### Data Structure
+
+The data is structured in the following columns:
+* **author**: The username of the comment author
+* **content**: The text content of the comment
+* **date**: The date the comment was posted
+* **sentiment**: A calculated score based on the comment's sentiment
+* **weight**: The difference between likes and dislikes on the comment
+
+**Yahoo Database (NVDA)**
+|author  |content|date|sentiment       |weight|
+|-----------|-------|----------|-----------|-----|
+|Trader joe |Will sell at 202.5 . Even million.|2024-11-06   |-0.4588 |1  |
+|Gary     |Cisco was different because the router and switches mostly became commodities over time and other companies moved in. There wasn't any software to differentiate them from anyone else. A whole different ballgame back then|2024-05-24   |-0.0772 |65    |
+|Benjamin     |Nvidia will continue to dominate the AI GPU market for many quarters to come, and perhaps years.  They have big head start, the best GPU's, R&D and CUDA.|2024-07-06   |0.5719 |14    |
+|JeffG |Investors focused on backward-looking metrics likely missed out on Nvidia (NVDA), one of the most lucrative investment opportunities in the past decade.|2024-05-24  |0.5046 |20   |
+
+### Sentiment Calculation
+
+The sentiment score combines multiple factors to generate a comprehensive evaluation: 
+* **Comment Content**: The primary sentiment is derived from analyzing the text using the sentiment analyzer
+* **User's Position**: If the user explicitly marks their stance as "Bullish" or "Bearish," this influences the final score
+* **Community Response**: The ratio of likes to dislikes affects the sentiment weighting:
+  * Comments with negative sentiment but many dislikes are interpreted as bullish indicators
+  * Comments with positive sentiment but many dislikes are interpreted as bearish indicators
+
+The final sentiment impact is calculated by multiplying the sentiment score by the weight:
+* Negative sentiment × Negative weight = Positive impact
+* Negative sentiment × Positive weight = Negative impact
+* Positive sentiment × Negative weight = Negative impact
+* Positive sentiment × Positive weight = Positive impact
+
+For example: 
+* A bearish comment (-0.8 sentiment) with -20 weight would result in a +16 positive impact
+* A bullish comment (0.9 sentiment) with +30 weight would result in a +27 positive impact
+* Comments with weights close to zero have minimal impact on the final sentiment calculation
+
+This multiplication approach ensures that community disagreement with negative comments (through dislikes) properly translates into positive market sentiment, and vice versa. Notably, Yahoo Finance conversations tend to be heavily one-sided for each stock, with users typically being either overwhelmingly bullish or bearish, making it an excellent indicator of retail investor sentiment.
+
 # User Interface
 
 Coming Soon.
@@ -197,11 +252,13 @@ Coming Soon.
 
 This deployment diagram illustrates the following key components:
 * **User Interface (React)**: A user interface built with React that communicated with the backend API
+* **Selenium**: Performs automated browser testing to ensure UI functionality
 * **API (Flask)**: A Flask API that processes requests from the UI and interacts with the database
+* **Locust**: Implements load testing simulations to evaluate the application's performance under various user loads
 * **Database (MySQL)**: Stores the data processed by the scrapers
 * **GitHub Actions**: A CI/CD pipeline responsible for running unit tests on the database and scrapers and also updating the database periodically
 * **Docker**: The services are encapsulated within a Docker container to ensure consistent deployment across environment
-* **Sentiment analyzer**: Analyzes text data (comments, news) and returns a sentiment score
+* **Sentiment Analyzer**: Analyzes text data (comments, news) and returns a sentiment score
 * **Data Dump**: `.sql` files stored in the GitHub repo, used to populate the database with pre-saved data during initialization
 
 **Deployment diagram:**
@@ -226,9 +283,13 @@ This automated process ensures that our core components maintain data integrity 
 
 The User Interface, API and MySQL Database run in different Docker container, ensuring consistent and reproducible environments across different systems. As we continue to improve our scrapers, they will be added to the containerized environment once they reach a stable and production-ready state.
 
+## Locust
+
+Coming soon.
+
 ## Selenium
 
-Not implemented.
+Coming soon.
 
 # Troubleshooting
 
