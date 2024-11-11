@@ -82,11 +82,12 @@ class SentimentPage extends Component {
                 console.error("Error fetching Reddit data:", error);
             });
 
-        // Fetch Twitter data
         fetch(`http://localhost:5000/table/${currentStock}/Twitter`)
             .then(response => response.json())
+            .catch(error => {
+                console.error("Error fetching Twitter data:", error);
+            });
 
-        // Fetch Yahoo data
         fetch(`http://localhost:5000/table/${currentStock}/Yahoo`)
             .then(response => response.json())
             .then(yahoo => {
@@ -103,6 +104,7 @@ class SentimentPage extends Component {
         this.setState({ currentStock: upperCaseStock }, () => {
             this.fetchData();
         });
+        // Clear the input and hide the dropdown
         this.setState({ searchStock: '', dropdownVisible: false });
     }
 
@@ -157,8 +159,8 @@ class SentimentPage extends Component {
                                     value={this.state.searchStock}
                                     onChange={this.handleChange}
                                     onFocus={this.handleFocus}
+                                    autoComplete='off' // Prevent autofill
                                 />
-                                <button type='submit'><i className="fa fa-search"></i></button>
                             </form>
                             {this.state.dropdownVisible && this.state.filteredStocks.length > 0 && (
                                 <ul className='dropdown'>
@@ -172,7 +174,7 @@ class SentimentPage extends Component {
                         </div>
                         {this.state.redditSentiment !== null && (
                             <div className='reddit'>
-                                <h1>Reddit Sentiment</h1>
+                                <h1>Reddit</h1>
                                 <SentimentRange
                                     value={this.state.redditSentiment}
                                     numOfComments={this.state.redditNumOfComments}
@@ -181,7 +183,7 @@ class SentimentPage extends Component {
                         )}
                         {this.state.newsSentiment !== null && (
                             <div className='news'>
-                                <h1>News Sentiment</h1>
+                                <h1>News</h1>
                                 <SentimentRange
                                     value={this.state.newsSentiment}
                                     numOfComments={this.state.newsNumOfArticles}
@@ -190,7 +192,7 @@ class SentimentPage extends Component {
                         )}
                         {this.state.yahooSentiment !== null && (
                             <div className='yahoo'>
-                                <h1>Yahoo Finance Sentiment</h1>
+                                <h1>Yahoo Finance</h1>
                                 <SentimentRange 
                                     value={this.state.yahooSentiment}
                                     numOfComments={this.state.yahooNumOfComments}
@@ -199,7 +201,7 @@ class SentimentPage extends Component {
                         )}
                         {this.state.twitterSentiment !== null && (
                             <div className='twitter'>
-                                <h1>Twitter/X Sentiment</h1>
+                                <h1>Twitter/X</h1>
                                 <SentimentRange 
                                     value={this.state.twitterSentiment}
                                     numOfComments={this.state.twitterNumOfComments}

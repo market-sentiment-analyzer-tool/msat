@@ -1,75 +1,58 @@
 import React, { useState } from 'react';
+import './WeightInput.css';
 
 const WeightInput = ({ onWeightsChange }) => {
-    const [newsWeight, setNewsWeight] = useState(33);
-    const [redditWeight, setRedditWeight] = useState(33);
-    const [yahooWeight, setYahooWeight] = useState(34);
+    const [pendingWeights, setPendingWeights] = useState({
+        news: 33,
+        reddit: 33,
+        yahoo: 34,
+    });
 
-    const handleWeightChange = () => {
-        const total = newsWeight + redditWeight + yahooWeight;
+    const handleInputChange = (setter) => (e) => {
+        const value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+        setter(value === '' ? '': value); // Keep empty input
+    };
+
+    const updateWeights = () => {
+        const total = Number(pendingWeights.news) + Number(pendingWeights.reddit) + Number(pendingWeights.yahoo);
         if (total > 0) {
             const normalizedWeights = {
-                news: newsWeight / total,
-                reddit: redditWeight / total,
-                yahoo: yahooWeight / total,
+                news: Number(pendingWeights.news) / total,
+                reddit: Number(pendingWeights.reddit) / total,
+                yahoo: Number(pendingWeights.yahoo) / total,
             };
             onWeightsChange(normalizedWeights);
         }
     };
 
-    const handleInputChange = (setter) => (e) => {
-        const value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
-        if (value === '') {
-            setter(0); // Handle empty input as 0
-        } else {
-            setter(Number(value)); // Convert to number
-        }
-        handleWeightChange();
-    };
-
-    const incrementWeight = (setter) => () => {
-        setter(prev => prev + 1);
-        handleWeightChange();
-    };
-
-    const decrementWeight = (setter) => () => {
-        setter(prev => Math.max(prev - 1, 0)); // Ensure weight doesn't go below zero
-        handleWeightChange();
-    };
-
     return (
-        <div>
+        <div className="weight-input-container-inputs">
             <h2>Set Weights for Sentiment Sources</h2>
             <label>
                 News Weight:
-                <button onClick={decrementWeight(setNewsWeight)}>-</button>
                 <input
                     type="text"
-                    value={newsWeight}
-                    onChange={handleInputChange(setNewsWeight)}
+                    value={pendingWeights.news}
+                    onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, news: value }))}
                 />
-                <button onClick={incrementWeight(setNewsWeight)}>+</button>
             </label>
             <label>
                 Reddit Weight:
-                <button onClick={decrementWeight(setRedditWeight)}>-</button>
                 <input
                     type="text"
-                    value={redditWeight}
-                    onChange={handleInputChange(setRedditWeight)}
+                    value={pendingWeights.reddit}
+                    onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, reddit: value }))}
                 />
-                <button onClick={incrementWeight(setRedditWeight)}>+</button>
             </label>
             <label>
                 Yahoo Weight:
-                <button onClick={decrementWeight(setYahooWeight)}>-</button>
                 <input
                     type="text"
-                    value={yahooWeight}
-                    onChange={handleInputChange(setYahooWeight)}
+                    value={pendingWeights.yahoo}
+                    onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, yahoo: value }))}
                 />
-                <button onClick={incrementWeight(setYahooWeight)}>+</button>
             </label>
+            <button onClick={updateWeights}>Update Weights</button>
         </div>
     );
 };

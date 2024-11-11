@@ -4,7 +4,7 @@ const SentimentCalculator = ({ weights, sentiments }) => {
         const { newsSentiment, redditSentiment, yahooSentiment } = sentiments;
 
         const cumulativeSentiment = (news * newsSentiment) + (reddit * redditSentiment) + (yahoo * yahooSentiment);
-        return cumulativeSentiment.toFixed(2);
+        return cumulativeSentiment.toFixed(4);
     };
 
     return (

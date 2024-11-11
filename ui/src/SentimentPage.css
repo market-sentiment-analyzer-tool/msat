@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 300px; /* Set maximum width */
+    max-width: 600px; /* Set maximum width */
     margin: 0 auto; /* Center the chart */
 }
 
@@ -109,4 +109,38 @@
     border-radius: 10px; /* Rounded corners for aesthetics */
     padding: 20px; /* Add some space around the chart */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc; /* Border for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin-top: 8px; /* Space between input and dropdown */
+    width: calc(100% - 20px); /* Match width with input */
+    z-index: 1000; /* Ensure dropdown is on top */
+    max-height: 200px; /* Set max height for dropdown */
+    overflow-y: auto; /* Enable scrolling if dropdown exceeds max height */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding from the dropdown */
+}
+
+.dropdown li {
+    padding: 10px; /* Padding for dropdown items */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background transition */
+    border-bottom: 1px solid #eaeaea; /* Optional: Add a divider between items */
+}
+
+.dropdown li:last-child {
+    border-bottom: none; /* Remove the border from the last item */
+}
+
+.dropdown li:hover {
+    background: #f0f0f0; /* Hover effect */
+}
+
+.dropdown li:active {
+    background: #e0e0e0; /* Active effect */
 }
