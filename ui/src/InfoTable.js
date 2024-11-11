@@ -23,8 +23,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Title</th>
                                 <th>Link</th>
+                                <th>Title</th>
+                                <th>Sentiment</th> {/* Added sentiment column */}
                             </tr>
                         </thead>
                         <tbody>
@@ -33,6 +34,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                     <tr key={index}>
                                         <td>{article.n_date}</td>
                                         <td>
+                                            <a href={article.n_url} target="_blank" rel="noopener noreferrer">Read More</a>
+                                        </td>
+                                        <td>
                                             {expanded.news?.[index] ? article.title : truncateText(article.title, 200)}
                                             {article.title.length > 200 && (
                                                 <button onClick={() => handleToggle('news', index)}>
@@ -40,14 +44,12 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>
-                                            <a href={article.n_url} target="_blank" rel="noopener noreferrer">Read More</a>
-                                        </td>
+                                        <td>{article.sentiment}</td> {/* Display sentiment here */}
                                     </tr>
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan="3">No news data available</td>
+                                    <td colSpan="4">No news data available</td>
                                 </tr>
                             )}
                         </tbody>
@@ -62,6 +64,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                 <th>Date</th>
                                 <th>Subreddit</th>
                                 <th>Description</th>
+                                <th>Sentiment</th> {/* Added sentiment column */}
                             </tr>
                         </thead>
                         <tbody>
@@ -78,11 +81,12 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
+                                        <td>{post.sentiment}</td> {/* Display sentiment here */}
                                     </tr>
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan="3">No Reddit data available</td>
+                                    <td colSpan="4">No Reddit data available</td>
                                 </tr>
                             )}
                         </tbody>
@@ -119,14 +123,13 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan="5">No Yahoo data available</td>
+                                    <td colSpan="4">No Yahoo data available</td>
                                 </tr>
                             )}
                         </tbody>
                     </table>
                 </div>
 
-                {/* Moved Twitter table here */}
                 <div className='twitter-table'>
                     <h1>{stockName} Twitter</h1>
                     <table>
