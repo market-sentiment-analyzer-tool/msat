@@ -2,11 +2,12 @@ import React, { Component, createRef } from 'react';
 import './SentimentPage.css';
 import SentimentRange from './SentimentRange';
 import InfoTable from './InfoTable';
+import SentimentAnalyzer from './SentimentAnalyzer';
 
 class SentimentPage extends Component {
     constructor(props) {
         super(props);
-        const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN']; // Define stock options here
+        const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN'];
         this.state = {
             searchStock: '',
             currentStock: '',
@@ -20,11 +21,13 @@ class SentimentPage extends Component {
             yahooNumOfComments: 0,
             newsData: [],
             redditData: [],
-            filteredStocks: stockOptions, // Show all stocks on initial load
-            dropdownVisible: false, // Track dropdown visibility
+            twitterData: [],
+            yahooData: [],
+            filteredStocks: stockOptions,
+            dropdownVisible: false,
         };
 
-        this.dropdownRef = createRef(); // Create ref for dropdown
+        this.dropdownRef = createRef();
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.selectStock = this.selectStock.bind(this);
@@ -33,17 +36,16 @@ class SentimentPage extends Component {
     }
 
     componentDidMount() {
-        document.addEventListener('mousedown', this.handleClickOutside); // Add event listener
+        document.addEventListener('mousedown', this.handleClickOutside);
     }
 
     componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClickOutside); // Clean up event listener
+        document.removeEventListener('mousedown', this.handleClickOutside);
     }
 
     fetchData() {
         const { currentStock } = this.state;
 
-        // Fetch sentiment data from the API
         fetch(`http://localhost:5000/sentiment/${currentStock}`)
             .then(response => response.json())
             .then(data => {
@@ -59,27 +61,39 @@ class SentimentPage extends Component {
                 });
             })
             .catch(error => {
-                console.error("Error fetching data:", error);
+                console.error("Error fetching sentiment data:", error);
             });
 
-        // Fetch news data
         fetch(`http://localhost:5000/table/${currentStock}/News`)
             .then(response => response.json())
             .then(news => {
-                this.setState({ newsData: news.slice(-4) }); // Update to set the latest news data
+                this.setState({ newsData: news.slice(-4) });
             })
             .catch(error => {
                 console.error("Error fetching news data:", error);
             });
 
-        // Fetch Reddit data
         fetch(`http://localhost:5000/table/${currentStock}/Reddit`)
             .then(response => response.json())
             .then(reddit => {
-                this.setState({ redditData: reddit.slice(-4) }); // Update to set the latest Reddit data
+                this.setState({ redditData: reddit.slice(-4) });
             })
             .catch(error => {
-            console.error("Error fetching Reddit data:", error);
+                console.error("Error fetching Reddit data:", error);
+            });
+
+        // Fetch Twitter data
+        fetch(`http://localhost:5000/table/${currentStock}/Twitter`)
+            .then(response => response.json())
+
+        // Fetch Yahoo data
+        fetch(`http://localhost:5000/table/${currentStock}/Yahoo`)
+            .then(response => response.json())
+            .then(yahoo => {
+                this.setState({ yahooData: yahoo.slice(-4) });
+            })
+            .catch(error => {
+                console.error("Error fetching Yahoo data:", error);
             });
     }
 
@@ -89,14 +103,13 @@ class SentimentPage extends Component {
         this.setState({ currentStock: upperCaseStock }, () => {
             this.fetchData();
         });
-        this.setState({ searchStock: '', dropdownVisible: false }); // Hide dropdown on submit
+        this.setState({ searchStock: '', dropdownVisible: false });
     }
 
     handleChange(e) {
         const value = e.target.value;
-        const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN']; // Define stock options here
+        const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN'];
         
-        // Filter stocks based on input; show all if input is empty
         const filteredStocks = value ? 
             stockOptions.filter(stock => 
                 stock.toLowerCase().includes(value.toLowerCase())
@@ -106,30 +119,35 @@ class SentimentPage extends Component {
     }
 
     handleFocus() {
-        // Show dropdown when the input is focused
         this.setState({ dropdownVisible: true });
     }
 
     handleClickOutside(event) {
-        // Close dropdown if clicked outside of it
         if (this.dropdownRef.current && !this.dropdownRef.current.contains(event.target)) {
             this.setState({ dropdownVisible: false });
         }
     }
 
     selectStock(stock) {
-        const upperCaseStock = stock.toUpperCase(); // Convert selected stock to uppercase
+        const upperCaseStock = stock.toUpperCase();
         this.setState({ searchStock: upperCaseStock, filteredStocks: [], dropdownVisible: false, currentStock: upperCaseStock }, () => {
-            this.fetchData(); // Fetch data for the selected stock
+            this.fetchData();
         });
     }
 
     render() {
+        const sentiments = {
+            newsSentiment: this.state.newsSentiment,
+            redditSentiment: this.state.redditSentiment,
+            twitterSentiment: this.state.twitterSentiment,
+            yahooSentiment: this.state.yahooSentiment,
+        };
+
         return (
             <>
                 <div className='panel'>
                     <div className='column left'>
-                        <div className='search-container' ref={this.dropdownRef}> {/* Attach ref to container */}
+                        <div className='search-container' ref={this.dropdownRef}>
                             <form onSubmit={this.handleSubmit}>
                                 <input
                                     className='search-bar'
@@ -138,7 +156,7 @@ class SentimentPage extends Component {
                                     name='search'
                                     value={this.state.searchStock}
                                     onChange={this.handleChange}
-                                    onFocus={this.handleFocus} // Show dropdown on focus
+                                    onFocus={this.handleFocus}
                                 />
                                 <button type='submit'><i className="fa fa-search"></i></button>
                             </form>
@@ -170,30 +188,38 @@ class SentimentPage extends Component {
                                 />
                             </div>
                         )}
-                        {this.state.twitterSentiment !== null && (
-                            <div className='twitter'>
-                                <h1>Twitter/X</h1>
-                                <SentimentRange 
-                                    value={this.state.twitterSentiment}
-                                    numOfComments={this.state.twitterNumOfComments}
-                                />
-                            </div>
-                        )}
                         {this.state.yahooSentiment !== null && (
                             <div className='yahoo'>
-                                <h1>Yahoo Finance</h1>
+                                <h1>Yahoo Finance Sentiment</h1>
                                 <SentimentRange 
                                     value={this.state.yahooSentiment}
                                     numOfComments={this.state.yahooNumOfComments}
                                 />
                             </div>
                         )}
+                        {this.state.twitterSentiment !== null && (
+                            <div className='twitter'>
+                                <h1>Twitter/X Sentiment</h1>
+                                <SentimentRange 
+                                    value={this.state.twitterSentiment}
+                                    numOfComments={this.state.twitterNumOfComments}
+                                />
+                            </div>
+                        )}
                     </div>
                     <div className='column right'>
+                        <h1>Sentiment Analysis</h1>
+                        <SentimentAnalyzer sentiments={sentiments} />
                         {this.state.currentStock && (
                             <div>
                                 <h1>{this.state.currentStock}</h1>
-                                <InfoTable newsData={this.state.newsData} redditData={this.state.redditData} stockName={this.state.currentStock} />
+                                <InfoTable 
+                                    newsData={this.state.newsData} 
+                                    redditData={this.state.redditData} 
+                                    twitterData={this.state.twitterData} 
+                                    yahooData={this.state.yahooData} 
+                                    stockName={this.state.currentStock} 
+                                />
                             </div>
                         )}
                     </div>

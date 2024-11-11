@@ -1,13 +1,14 @@
 .info-tables {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
     justify-content: space-between;
     margin: 20px;
     font-family: Arial, sans-serif;
 }
 
-.news-table, .reddit-table {
-    flex: 1;
-    margin: 0 10px;
+.news-table, .reddit-table, .twitter-table, .yahoo-table {
+    flex: 0 0 calc(50% - 10px); /* Two columns with space between */
+    margin: 0 5px; /* Margin adjusted to maintain spacing */
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -54,10 +55,11 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .info-tables {
-        flex-direction: column;
+        flex-direction: column; /* Stack tables on narrow screens */
     }
 
-    .news-table, .reddit-table {
-        margin: 10px 0;
+    .news-table, .reddit-table, .twitter-table, .yahoo-table {
+        margin: 10px 0; /* Adjust margins for stacking */
+        flex: 1; /* Allow full width on small screens */
     }
 }

@@ -86,3 +86,27 @@
     display: table;
     clear: both;
 }
+
+/* SentimentPage.css */
+.pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Set maximum width */
+    margin: 0 auto; /* Center the chart */
+}
+
+.pie-chart {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit height */
+}
+
+/* Optional: Add some padding and background */
+.chart-wrapper {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    padding: 20px; /* Add some space around the chart */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
