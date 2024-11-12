@@ -1,0 +1,23 @@
+[
+    {
+        "author": "Erik",
+        "content": "Bullish: 200 before the end of the year, unless there's some horrible anti-trust litigation.",
+        "date": "2024-11-11",
+        "sentiment": -0.25,
+        "weight": "4"
+    },
+    {
+        "author": "Bren",
+        "content": "Googl shares - Ken Fisher\u2019s top tech stock with unstoppable growth.",
+        "date": "2024-11-11",
+        "sentiment": 0.6808,
+        "weight": "3"
+    },
+    {
+        "author": "Abrine",
+        "content": "Bullish: Bank of America just gave GOOGL an upgrade.",
+        "date": "2024-11-11",
+        "sentiment": 0.5106,
+        "weight": "5"
+    }
+]
