@@ -31,7 +31,7 @@ label {
 }
 
 /* Input Fields */
-input[type="text"] {
+input[type="number"] {
     width: calc(100% - 40px);
     padding: 10px;
     margin-bottom: 20px;
@@ -63,13 +63,14 @@ button:hover {
     background-color: #218838;
 }
 
+
 /* Responsive Design */
 @media (max-width: 500px) {
     .weight-input-container {
         padding: 15px;
     }
 
-    input[type="text"], button {
+    input[type="number"], button {
         font-size: 14px;
     }
 }

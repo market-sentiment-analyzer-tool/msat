@@ -31,7 +31,7 @@ const WeightInput = ({ onWeightsChange }) => {
             <label>
                 News Weight:
                 <input
-                    type="text"
+                    type="number"
                     value={pendingWeights.news}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, news: value }))}
                 />
@@ -39,7 +39,7 @@ const WeightInput = ({ onWeightsChange }) => {
             <label>
                 Reddit Weight:
                 <input
-                    type="text"
+                    type="number"
                     value={pendingWeights.reddit}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, reddit: value }))}
                 />
@@ -47,7 +47,7 @@ const WeightInput = ({ onWeightsChange }) => {
             <label>
                 Yahoo Weight:
                 <input
-                    type="text"
+                    type="number"
                     value={pendingWeights.yahoo}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, yahoo: value }))}
                 />

@@ -8,9 +8,18 @@ class SentimentPage extends Component {
     constructor(props) {
         super(props);
         const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN'];
+        const companyNames = {
+            NVDA: 'NVIDIA Corporation',
+            GOOG: 'Alphabet Inc.',
+            AAPL: 'Apple Inc.',
+            MSFT: 'Microsoft Corporation',
+            AMZN: 'Amazon.com, Inc.',
+        };
+        
         this.state = {
             searchStock: '',
             currentStock: '',
+            currentCompanyName: '',
             redditSentiment: null,
             redditNumOfComments: 0,
             newsSentiment: null,
@@ -25,6 +34,7 @@ class SentimentPage extends Component {
             yahooData: [],
             filteredStocks: stockOptions,
             dropdownVisible: false,
+            companyNames,
         };
 
         this.dropdownRef = createRef();
@@ -101,10 +111,10 @@ class SentimentPage extends Component {
     handleSubmit(e) {
         e.preventDefault();
         const upperCaseStock = this.state.searchStock.toUpperCase();
-        this.setState({ currentStock: upperCaseStock }, () => {
+        const currentCompanyName = this.state.companyNames[upperCaseStock] || '';
+        this.setState({ currentStock: upperCaseStock, currentCompanyName }, () => {
             this.fetchData();
         });
-        // Clear the input and hide the dropdown
         this.setState({ searchStock: '', dropdownVisible: false });
     }
 
@@ -132,7 +142,8 @@ class SentimentPage extends Component {
 
     selectStock(stock) {
         const upperCaseStock = stock.toUpperCase();
-        this.setState({ searchStock: upperCaseStock, filteredStocks: [], dropdownVisible: false, currentStock: upperCaseStock }, () => {
+        const currentCompanyName = this.state.companyNames[upperCaseStock] || '';
+        this.setState({ searchStock: upperCaseStock, filteredStocks: [], dropdownVisible: false, currentStock: upperCaseStock, currentCompanyName }, () => {
             this.fetchData();
         });
     }
@@ -159,7 +170,7 @@ class SentimentPage extends Component {
                                     value={this.state.searchStock}
                                     onChange={this.handleChange}
                                     onFocus={this.handleFocus}
-                                    autoComplete='off' // Prevent autofill
+                                    autoComplete='off'
                                 />
                             </form>
                             {this.state.dropdownVisible && this.state.filteredStocks.length > 0 && (
@@ -210,11 +221,14 @@ class SentimentPage extends Component {
                         )}
                     </div>
                     <div className='column right'>
-                        <h1>Sentiment Analysis</h1>
+                        <h1>
+                            {this.state.currentStock ? 
+                                `${this.state.currentCompanyName} (${this.state.currentStock}) - Sentiment Analysis` : 
+                                'Sentiment Analysis'}
+                        </h1>
                         <SentimentAnalyzer sentiments={sentiments} />
                         {this.state.currentStock && (
                             <div>
-                                <h1>{this.state.currentStock}</h1>
                                 <InfoTable 
                                     newsData={this.state.newsData} 
                                     redditData={this.state.redditData} 
