@@ -1,0 +1,100 @@
+[
+    {
+        "author": "Gerry",
+        "content": "At 3:05 pm today MSFT 50 day SMA crossed it's 200 day SMA, known as a \"golden cross\" and very bullish. Just an FYI.",
+        "date": "2024-11-12",
+        "sentiment": 0.7291,
+        "weight": "6"
+    },
+    {
+        "author": "Josephson",
+        "content": "Bullish: MSFT: The Most Widely Held Stock by Hedge Funds (279 Hedge Funds)",
+        "date": "2024-11-12",
+        "sentiment": 0.5106,
+        "weight": "6"
+    },
+    {
+        "author": "Ick",
+        "content": "Bullish: A lot of happy MSFT investors today.\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2\ud83d\udfe2",
+        "date": "2024-11-12",
+        "sentiment": 0.7906,
+        "weight": "6"
+    },
+    {
+        "author": "Lindy",
+        "content": "Bullish: This is just the beginning\u2026. November 18 MICROSOFT IGNITE!!!",
+        "date": "2024-11-12",
+        "sentiment": 0.6341,
+        "weight": "6"
+    },
+    {
+        "author": "Lorax",
+        "content": "Bullish: this thing is undervalued by 20% min. at this point... the p/e ratio is way too low for what it is!",
+        "date": "2024-11-12",
+        "sentiment": 0.5562,
+        "weight": "3"
+    },
+    {
+        "author": "AK",
+        "content": "Fake uprise. It'll free fall now",
+        "date": "2024-11-12",
+        "sentiment": 0.0516,
+        "weight": "-3"
+    },
+    {
+        "author": "Kalpesh from Mars",
+        "content": "Bullish: Market tanking,  MSFT deep green. Obviously a rotation WOW!",
+        "date": "2024-11-12",
+        "sentiment": 0.8452,
+        "weight": "7"
+    },
+    {
+        "author": "Albi",
+        "content": "Bullish: Buy\u2026Buy..Buy\u2026!!!!!",
+        "date": "2024-11-12",
+        "sentiment": 0.6671,
+        "weight": "3"
+    },
+    {
+        "author": "Joseph",
+        "content": "Sell before this gets worse",
+        "date": "2024-11-12",
+        "sentiment": -0.7269,
+        "weight": "-8"
+    },
+    {
+        "author": "Michael",
+        "content": "Bearish: Everyone sells msft and buying Tesla nowadays!!",
+        "date": "2024-11-12",
+        "sentiment": -0.6229,
+        "weight": "-8"
+    },
+    {
+        "author": "Beverly",
+        "content": "mighty go down to around 390.",
+        "date": "2024-11-12",
+        "sentiment": 0.0,
+        "weight": "-4"
+    },
+    {
+        "author": "Keep Florida Free!",
+        "content": "Such a boring stock",
+        "date": "2024-11-12",
+        "sentiment": -0.3182,
+        "weight": "4"
+    },
+    {
+        "author": "lyndal",
+        "content": "Something we're not being told?",
+        "date": "2024-11-12",
+        "sentiment": 0.0,
+        "weight": "6"
+    },
+    {
+        "author": "Mike",
+        "content": "Dead money they say and I believe them",
+        "date": "2024-11-12",
+        "sentiment": -0.6486,
+        "weight": "3"
+    }
+]
