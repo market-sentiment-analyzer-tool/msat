@@ -38,6 +38,7 @@ services:
     working_dir: /app
     volumes:
       - ./api:/app
+      - ./vaderSentiment:/app/vaderSentiment
       - ./requirements.txt:/requirements.txt  # Mount the requirements.txt file
     ports:
       - "5000:5000"

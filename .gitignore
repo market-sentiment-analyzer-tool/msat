@@ -6,3 +6,4 @@ scrapers/__pycache__/
 tests/__pycache__/
 ui/package-lock.json
 venv/*
+vaderSentiment/vaderSentiment/__pycache__/

@@ -1,15 +1,41 @@
-from flask import Flask, abort
+from flask import Flask, abort, request
 from flask_cors import CORS # type: ignore
 import os
 import json
 import subprocess
 import re
+import sys
+# Add parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from vaderSentiment.vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 app = Flask(__name__)
 CORS(app)
 
 database = os.getenv('MYSQL_DATABASE')
 password = os.getenv('MYSQL_ROOT_PASSWORD')
+
+@app.route('/sentiment')
+def analyze_sentiment():
+    try:
+        # Get the text from query parameters
+        text = request.args.get('text')
+
+        if not text:
+            abort(400, description="Missing 'text' parameter")
+
+        if not text.strip():
+            abort(400, description="'text' parameter connot be empty")
+
+        # Call the sentiment analyzer function
+        sentiment_score = calculateSentiment(text)
+
+        return json.dumps({
+            "score": sentiment_score
+        })
+    
+    except Exception as e:
+        abort(400, description=f"Bad request: {str(e)}")
 
 @app.route('/sentiment/<stock>')
 def get_sentiment(stock):
@@ -83,6 +109,13 @@ def get_table(stock,media):
     except Exception as e:
         abort(400, description=f"Bad request: {str(e)}")
 
+
+def calculateSentiment(text):
+    analyzer = SentimentIntensityAnalyzer()
+    # Get content sentiment
+    vs = analyzer.polarity_scores(text)
+    sentiment_score = vs.get('compound')
+    return sentiment_score
 
 def return_table(stock,media,multiplier,columns):
     # Reddit columns: p_date,subreddit,p_description,sentiment,score
