@@ -1,0 +1,23 @@
+.sentiment-analyzer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weight-input-container,
+.pie-chart-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sentiment-analyzer-container > .weight-input-container,
+.sentiment-analyzer-container > .pie-chart-container {
+    margin: 0; /* Remove any default margin to ensure no space between them */
+}
+
+.sentiment-calculator-container {
+    text-align: center;
+    margin-top: 10px; /* Adds some space between the cumulative score and the row above */
+}
