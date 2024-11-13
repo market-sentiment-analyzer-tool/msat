@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Josephson",
+        "content": "Bullish: Entire market is up after data today but this is the only stock has a problem..",
+        "date": "2024-11-13",
+        "sentiment": -0.1154,
+        "weight": "3"
+    },
+    {
+        "author": "ak",
+        "content": "Bearish: SELL and SECURE your profits before hedge funds! Rug pull coming",
+        "date": "2024-11-13",
+        "sentiment": -0.3595,
+        "weight": "-1"
+    },
+    {
+        "author": "Zach",
+        "content": "Bullish: MSFT is an absolute beast that is a coiled spring waiting to explode. MSFT has an phenomenally diverse stream of revenues in spectacular areas with incredibly wide moats. It is true that they sandbagged their guidance which caused what should have been a blowout quarter to temporarily tank their stock. If you snagged some more MSFT that day in the low 400's then congrats on the awesome move.",
+        "date": "2024-11-13",
+        "sentiment": 0.9353,
+        "weight": "7"
+    },
+    {
+        "author": "Lindy",
+        "content": "Bullish: OpenAI co-founder Greg Brockman returns after three months of leave",
+        "date": "2024-11-13",
+        "sentiment": 0.4767,
+        "weight": "6"
+    },
+    {
+        "author": "Wt",
+        "content": "Bullish: Msft has 50% shares of open ai, it will finally pay out, and will be an explosion news after open AI becomes big and profit",
+        "date": "2024-11-13",
+        "sentiment": 0.7906,
+        "weight": "17"
+    }
+]

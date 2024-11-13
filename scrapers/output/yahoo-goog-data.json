@@ -1,0 +1,16 @@
+[
+    {
+        "author": "Kaching",
+        "content": "Bullish: Google needs to hurry up with the AI stuff. OpenAI already scraped all their data for ChatGPT but Google can do better. It\u2019s the best tech company after all.",
+        "date": "2024-11-13",
+        "sentiment": 0.9294,
+        "weight": "5"
+    },
+    {
+        "author": "Gtr",
+        "content": "Entire market is up after data today but this is the only stock has a problem..",
+        "date": "2024-11-13",
+        "sentiment": -0.3818,
+        "weight": "2"
+    }
+]
