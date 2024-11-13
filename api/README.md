@@ -82,6 +82,32 @@ Retrieves detailed posts and sentiment data from a specific media source for a g
 }
 ```
 
+### 3. Text Sentiment Analysis
+
+```bash
+GET /sentiment?text=<string>
+```
+
+Analyzes the sentiment of provided text using our Sentiment Analyzer.
+
+### Request Body
+
+```json
+{
+    "text": "Your text to analyze"
+}
+```
+
+### Response Format
+
+```json
+{
+    "score": -0.4566
+}
+```
+
+A score closer to -1 indicate negative sentiment, while a score closer to 1 indicates positive sentiment.
+
 ## Upcoming Features
 
 Date filtering will be added to both endpoints, allowing users to filter data by the following periods:

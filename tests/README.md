@@ -28,8 +28,39 @@ The User Interface, API and MySQL Database run in different Docker container, en
 
 ## Locust
 
-Coming soon.
+Locust is an open-source load testing tool that allows us to simulate thousands of users interacting with our API simultaneously. We conducted extensive performance testing of our API endpoints using Locust, focusing on:
+* Endpoint Validation Testing
+  * Verified correct responses for valid requests
+  * Confirmed proper error handling for invalid requests
+  * Tested all API endpoints with various input parameters
+* Load Testing Parameters
+  * Tested different spawn rates (low to high)
+  * Analyzed spawn intervals and clustering
+  * Evaluated multiple concurrent spawn rates
+  * Measured spawn gaps impact on performance
+* Resource Usage and Stress Testing
+  * Monitored CPU and memory usage under load
+  * Identified performance bottlenecks
+  * Tested system stability under stress
+* Sequential Task Testing
+  * Simulated real-world user behavior patterns
+  * Tested complex sequences of API calls
+  * Verified data consistency across sequential requests
 
 ## Selenium
 
-Coming soon.
+Selenium is a powerful automated testing framework used to validate our user interface functionality. Our Selenium test suite includes:
+
+* Stock Search Functionality
+  * Verified correct routing when valid stock symbols are entered
+  * Confirmed appropriate error handling for invalid inputs
+  * Tested auto-completion and suggestion features
+* Data Display Validation
+  * Ensured correct population of stock data tables
+  * Tested data filtering and sorting capabilities, should only show most recent
+  * Confirmed proper handling of empty data sets
+* Sentiment Analysis Input Testing
+  * Validated the custom text sentiment analysis feature
+  * Tested various input lengths and special characters
+  * Confirmed accurate sentiment score display
+  * Verified proper error handling for edge cases
