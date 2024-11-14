@@ -1,3 +1,45 @@
+# User Interface
+
+The user interface provides an intuitive way to analyze sentiment data across multiple media sources for major tech stocks. Built with React.js, it offers real-time sentiment analysis visualization and customizable weight distribution.
+
+## Features
+
+### Stock Search
+* Search bar for supported stocks (AAPL, AMZN, GOOG, MSFT, NVDA)
+* Real-time validation and feedback
+* Auto-complete suggestions
+
+### Sentiment Display
+* Interactive sliders showing sentiment scores for each media source:
+    * Reddit
+    * News
+    * Yahoo Finance
+* Post count indicators showing the number of analyzed posts per source
+* Sentiment scores range from -1 (most negative) to 1 (most positive)
+
+### Weight Distribution
+* Interactive weight adjustment system
+* Customize importance of each media source
+* Real-time recalculation of overall sentiment
+* Percentage-based distribution totaling 100%
+
+### Data Tables
+* Detailed view of recent posts from each source
+* Reddit table: date, subreddit, post content, sentiment score, and post score
+* News table: date, article title, URL, sentiment score, and relevance weight
+* Yahoo Finance table: date, author, comment content, sentiment score, and comment weight
+
+### Custom Sentiment Analysis
+* Text input box for custom sentiment analysis
+* Real-time sentiment scoring of user-provided text
+* Score visualization matching the main interface style
+
+## Coming soon
+* Date range filtering
+* Export functionality
+* Advanced visualization options
+* Additional stock symbols
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
