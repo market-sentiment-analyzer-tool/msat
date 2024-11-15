@@ -1,0 +1,51 @@
+[
+    {
+        "author": "Anonymous",
+        "content": "Sell everything and buy bitcoin. It is the safest in this market environment.",
+        "date": "2024-11-15",
+        "sentiment": 0.4939,
+        "weight": "-3"
+    },
+    {
+        "author": "Gene Munster",
+        "content": "Beyond trash",
+        "date": "2024-11-15",
+        "sentiment": 0.0,
+        "weight": "-1"
+    },
+    {
+        "author": "Lalit",
+        "content": "Msft is garbage this year",
+        "date": "2024-11-15",
+        "sentiment": 0.0,
+        "weight": "-1"
+    },
+    {
+        "author": "AMY",
+        "content": "Good company, but horrible stock. Been holding for a few years and finally sold all of it (made a small profit) to free up some funds to invest in other companies. So far for this year, it has delivered an underwhelming return of less than half of S&P Index. Not sure why this is part of the Mag 7, but I'm glad I've moved on.",
+        "date": "2024-11-15",
+        "sentiment": 0.9618,
+        "weight": "2"
+    },
+    {
+        "author": "Mark",
+        "content": "Bullish: MSFT is undervalued. Start accumulating if you don't have a position.",
+        "date": "2024-11-15",
+        "sentiment": 0.0588,
+        "weight": "7"
+    },
+    {
+        "author": "Keep Florida Free!",
+        "content": "Bullish: Rough day but we will see a bounce back tomorrow",
+        "date": "2024-11-15",
+        "sentiment": 0.1779,
+        "weight": "-2"
+    },
+    {
+        "author": "Neanderthal",
+        "content": "Bullish: Adding to my position of Microsoft today !",
+        "date": "2024-11-15",
+        "sentiment": 0.8122,
+        "weight": "3"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "author": "RC",
+        "content": "Opportunity buys at sale prices.   Holding some cash to buy more at lower price later.",
+        "date": "2024-11-15",
+        "sentiment": 0.6728,
+        "weight": "3"
+    },
+    {
+        "author": "Hyper Growth",
+        "content": "Bullish: This stock is on sale, Patience grasshopper!",
+        "date": "2024-11-15",
+        "sentiment": 0.5562,
+        "weight": "5"
+    },
+    {
+        "author": "Dromo",
+        "content": "Bearish: $172 today?  Next week I expect another downturn for tech....$168",
+        "date": "2024-11-15",
+        "sentiment": -0.5423,
+        "weight": "-3"
+    },
+    {
+        "author": "Cathie",
+        "content": "Bullish: Waymo",
+        "date": "2024-11-15",
+        "sentiment": 0.5106,
+        "weight": "3"
+    },
+    {
+        "author": "Phish",
+        "content": "Bullish: I like the stock",
+        "date": "2024-11-15",
+        "sentiment": 0.7003,
+        "weight": "2"
+    }
+]
