@@ -1,0 +1,37 @@
+[
+    {
+        "author": "American Dreamer",
+        "content": "Huge news - this pops monday money morning.",
+        "date": "2024-11-16",
+        "sentiment": 0.3182,
+        "weight": "4"
+    },
+    {
+        "author": "Rob",
+        "content": "Bullish: Now that Bezos is supposedly done selling hopefully the stock will make gains as investors fear of Bezos selling will not hold stock back.",
+        "date": "2024-11-16",
+        "sentiment": -0.2723,
+        "weight": "3"
+    },
+    {
+        "author": "Sony",
+        "content": "Bearish: Next Thursday close 169",
+        "date": "2024-11-16",
+        "sentiment": -0.5423,
+        "weight": "-8"
+    },
+    {
+        "author": "Mike",
+        "content": "Well had a fun day buying stocks near lows today. Hopefully turns around next week. This was Black Friday in the market.. lots of deals. May not get many more opportunities at this level.",
+        "date": "2024-11-16",
+        "sentiment": 0.8479,
+        "weight": "3"
+    },
+    {
+        "author": "Fred",
+        "content": "buy on downgrade, sell on upgrade",
+        "date": "2024-11-16",
+        "sentiment": 0.128,
+        "weight": "1"
+    }
+]
