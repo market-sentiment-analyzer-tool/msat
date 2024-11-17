@@ -14,6 +14,10 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
         return `${text.slice(0, limit)}...`;
     };
 
+    const formatSentiment = (sentiment) => {
+        return Number(sentiment).toFixed(4); // Format to 4 decimal places
+    };
+
     return (
         <div className='info-tables'>
             <div className='table-container'>
@@ -25,7 +29,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                 <th>Date</th>
                                 <th>Link</th>
                                 <th>Title</th>
-                                <th>Sentiment</th> {/* Added sentiment column */}
+                                <th>Sentiment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,7 +48,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>{article.sentiment}</td> {/* Display sentiment here */}
+                                        <td>{formatSentiment(article.sentiment)}</td> {/* Display formatted sentiment here */}
                                     </tr>
                                 ))
                             ) : (
@@ -64,7 +68,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                 <th>Date</th>
                                 <th>Subreddit</th>
                                 <th>Description</th>
-                                <th>Sentiment</th> {/* Added sentiment column */}
+                                <th>Sentiment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -81,7 +85,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>{post.sentiment}</td> {/* Display sentiment here */}
+                                        <td>{formatSentiment(post.sentiment)}</td> {/* Display formatted sentiment here */}
                                     </tr>
                                 ))
                             ) : (
@@ -118,7 +122,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>{article.sentiment}</td>
+                                        <td>{formatSentiment(article.sentiment)}</td>
                                     </tr>
                                 ))
                             ) : (
