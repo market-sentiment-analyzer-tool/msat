@@ -35,6 +35,7 @@ class SentimentPage extends Component {
             filteredStocks: stockOptions,
             dropdownVisible: false,
             companyNames,
+            isStockSupported: true, // Track if the stock is supported
         };
 
         this.dropdownRef = createRef();
@@ -59,19 +60,53 @@ class SentimentPage extends Component {
         fetch(`http://localhost:5000/sentiment/${currentStock}`)
             .then(response => response.json())
             .then(data => {
-                this.setState({
-                    redditSentiment: data.redditSentiment,
-                    redditNumOfComments: data.redditPosts,
-                    newsSentiment: data.newsSentiment,
-                    newsNumOfArticles: data.newsPosts,
-                    twitterSentiment: data.twitterSentiment,
-                    twitterNumOfComments: data.twitterPosts,
-                    yahooSentiment: data.yahooSentiment,
-                    yahooNumOfComments: data.yahooPosts,
-                });
+                if (data.redditSentiment === null) {
+                    this.setState({ 
+                        isStockSupported: false,
+                        redditSentiment: null,
+                        newsSentiment: null,
+                        twitterSentiment: null,
+                        yahooSentiment: null,
+                        redditNumOfComments: 0,
+                        newsNumOfArticles: 0,
+                        twitterNumOfComments: 0,
+                        yahooNumOfComments: 0,
+                        newsData: [],
+                        redditData: [],
+                        twitterData: [],
+                        yahooData: [],
+                    });
+                } else {
+                    this.setState({
+                        redditSentiment: data.redditSentiment,
+                        redditNumOfComments: data.redditPosts,
+                        newsSentiment: data.newsSentiment,
+                        newsNumOfArticles: data.newsPosts,
+                        twitterSentiment: data.twitterSentiment,
+                        twitterNumOfComments: data.twitterPosts,
+                        yahooSentiment: data.yahooSentiment,
+                        yahooNumOfComments: data.yahooPosts,
+                        isStockSupported: true, // Stock is supported
+                    });
+                }
             })
             .catch(error => {
                 console.error("Error fetching sentiment data:", error);
+                this.setState({ 
+                    isStockSupported: false,
+                    redditSentiment: null,
+                    newsSentiment: null,
+                    twitterSentiment: null,
+                    yahooSentiment: null,
+                    redditNumOfComments: 0,
+                    newsNumOfArticles: 0,
+                    twitterNumOfComments: 0,
+                    yahooNumOfComments: 0,
+                    newsData: [],
+                    redditData: [],
+                    twitterData: [],
+                    yahooData: [],
+                }); // In case of error
             });
 
         fetch(`http://localhost:5000/table/${currentStock}/News`)
@@ -112,7 +147,7 @@ class SentimentPage extends Component {
         e.preventDefault();
         const upperCaseStock = this.state.searchStock.toUpperCase();
         const currentCompanyName = this.state.companyNames[upperCaseStock] || '';
-        this.setState({ currentStock: upperCaseStock, currentCompanyName }, () => {
+        this.setState({ currentStock: upperCaseStock, currentCompanyName, isStockSupported: true }, () => {
             this.fetchData();
         });
         this.setState({ searchStock: '', dropdownVisible: false });
@@ -143,7 +178,7 @@ class SentimentPage extends Component {
     selectStock(stock) {
         const upperCaseStock = stock.toUpperCase();
         const currentCompanyName = this.state.companyNames[upperCaseStock] || '';
-        this.setState({ searchStock: upperCaseStock, filteredStocks: [], dropdownVisible: false, currentStock: upperCaseStock, currentCompanyName }, () => {
+        this.setState({ searchStock: upperCaseStock, filteredStocks: [], dropdownVisible: false, currentStock: upperCaseStock, currentCompanyName, isStockSupported: true }, () => {
             this.fetchData();
         });
     }
@@ -183,40 +218,49 @@ class SentimentPage extends Component {
                                 </ul>
                             )}
                         </div>
-                        {this.state.redditSentiment !== null && (
-                            <div className='reddit'>
-                                <h1>Reddit</h1>
-                                <SentimentRange
-                                    value={this.state.redditSentiment}
-                                    numOfComments={this.state.redditNumOfComments}
-                                />
-                            </div>
-                        )}
-                        {this.state.newsSentiment !== null && (
-                            <div className='news'>
-                                <h1>News</h1>
-                                <SentimentRange
-                                    value={this.state.newsSentiment}
-                                    numOfComments={this.state.newsNumOfArticles}
-                                />
-                            </div>
-                        )}
-                        {this.state.yahooSentiment !== null && (
-                            <div className='yahoo'>
-                                <h1>Yahoo Finance</h1>
-                                <SentimentRange 
-                                    value={this.state.yahooSentiment}
-                                    numOfComments={this.state.yahooNumOfComments}
-                                />
-                            </div>
-                        )}
-                        {this.state.twitterSentiment !== null && (
-                            <div className='twitter'>
-                                <h1>Twitter/X</h1>
-                                <SentimentRange 
-                                    value={this.state.twitterSentiment}
-                                    numOfComments={this.state.twitterNumOfComments}
-                                />
+
+                        {this.state.isStockSupported ? (
+                            <>
+                                {this.state.redditSentiment !== null && (
+                                    <div className='reddit'>
+                                        <h1>Reddit</h1>
+                                        <SentimentRange
+                                            value={this.state.redditSentiment}
+                                            numOfComments={this.state.redditNumOfComments}
+                                        />
+                                    </div>
+                                )}
+                                {this.state.newsSentiment !== null && (
+                                    <div className='news'>
+                                        <h1>News</h1>
+                                        <SentimentRange
+                                            value={this.state.newsSentiment}
+                                            numOfComments={this.state.newsNumOfArticles}
+                                        />
+                                    </div>
+                                )}
+                                {this.state.yahooSentiment !== null && (
+                                    <div className='yahoo'>
+                                        <h1>Yahoo Finance</h1>
+                                        <SentimentRange 
+                                            value={this.state.yahooSentiment}
+                                            numOfComments={this.state.yahooNumOfComments}
+                                        />
+                                    </div>
+                                )}
+                                {this.state.twitterSentiment !== null && (
+                                    <div className='twitter'>
+                                        <h1>Twitter/X</h1>
+                                        <SentimentRange 
+                                            value={this.state.twitterSentiment}
+                                            numOfComments={this.state.twitterNumOfComments}
+                                        />
+                                    </div>
+                                )}
+                            </>
+                        ) : (
+                            <div className='error-message'>
+                                <h2>Sorry, we do not support the stock "{this.state.currentStock}" currently.</h2>
                             </div>
                         )}
                     </div>
