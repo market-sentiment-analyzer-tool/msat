@@ -22,9 +22,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
         <div className='info-tables'>
             <div className='table-container'>
                 <div className='news-table'>
-                    <h1>{stockName} News</h1>
+                    <h1 className='news'>{stockName} News</h1>
                     <table>
-                        <thead>
+                        <thead className='news'>
                             <tr>
                                 <th>Date</th>
                                 <th>Link</th>
@@ -61,9 +61,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                 </div>
 
                 <div className='reddit-table'>
-                    <h1>{stockName} Reddit</h1>
+                    <h1 className='reddit'>{stockName} Reddit</h1>
                     <table>
-                        <thead>
+                        <thead className='reddit'>
                             <tr>
                                 <th>Date</th>
                                 <th>Subreddit</th>
@@ -98,9 +98,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                 </div>
 
                 <div className='yahoo-table'>
-                    <h1>{stockName} Yahoo</h1>
+                    <h1 className='yahoo'>{stockName} Yahoo</h1>
                     <table>
-                        <thead>
+                        <thead className='yahoo'>
                             <tr>
                                 <th>Date</th>
                                 <th>Author</th>
@@ -135,9 +135,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                 </div>
 
                 <div className='twitter-table'>
-                    <h1>{stockName} Twitter</h1>
+                    <h1 className='twitter'>{stockName} Twitter</h1>
                     <table>
-                        <thead>
+                        <thead className='twitter'>
                             <tr>
                                 <th>Date</th>
                                 <th>Tweet</th>

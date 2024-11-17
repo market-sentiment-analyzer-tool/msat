@@ -3,9 +3,9 @@ import './WeightInput.css';
 
 const WeightInput = ({ onWeightsChange }) => {
     const [pendingWeights, setPendingWeights] = useState({
-        news: 33,
-        reddit: 33,
-        yahoo: 34,
+        news: 1,
+        reddit: 1,
+        yahoo: 1,
     });
 
     const handleInputChange = (setter) => (e) => {

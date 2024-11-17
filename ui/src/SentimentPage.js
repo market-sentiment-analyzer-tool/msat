@@ -222,8 +222,8 @@ class SentimentPage extends Component {
                         {this.state.isStockSupported ? (
                             <>
                                 {this.state.redditSentiment !== null && (
-                                    <div className='reddit'>
-                                        <h1>Reddit</h1>
+                                    <div>
+                                        <h1 className='reddit'>Reddit</h1>
                                         <SentimentRange
                                             value={this.state.redditSentiment}
                                             numOfComments={this.state.redditNumOfComments}
@@ -231,8 +231,8 @@ class SentimentPage extends Component {
                                     </div>
                                 )}
                                 {this.state.newsSentiment !== null && (
-                                    <div className='news'>
-                                        <h1>News</h1>
+                                    <div>
+                                        <h1 className='news'>News</h1>
                                         <SentimentRange
                                             value={this.state.newsSentiment}
                                             numOfComments={this.state.newsNumOfArticles}
@@ -240,8 +240,8 @@ class SentimentPage extends Component {
                                     </div>
                                 )}
                                 {this.state.yahooSentiment !== null && (
-                                    <div className='yahoo'>
-                                        <h1>Yahoo Finance</h1>
+                                    <div>
+                                        <h1 className='yahoo'>Yahoo Finance</h1>
                                         <SentimentRange 
                                             value={this.state.yahooSentiment}
                                             numOfComments={this.state.yahooNumOfComments}
@@ -249,8 +249,8 @@ class SentimentPage extends Component {
                                     </div>
                                 )}
                                 {this.state.twitterSentiment !== null && (
-                                    <div className='twitter'>
-                                        <h1>Twitter/X</h1>
+                                    <div>
+                                        <h1 className='twitter'>Twitter/X</h1>
                                         <SentimentRange 
                                             value={this.state.twitterSentiment}
                                             numOfComments={this.state.twitterNumOfComments}

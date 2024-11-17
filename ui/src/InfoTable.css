@@ -29,7 +29,6 @@ table {
 }
 
 thead {
-    background-color: #007bff;
     color: white;
 }
 
@@ -62,4 +61,20 @@ a:hover {
         margin: 10px 0; /* Adjust margins for stacking */
         flex: 1; /* Allow full width on small screens */
     }
+}
+
+.reddit {
+    background-color: #FF5700; /* Reddit color */
+}
+
+.news {
+    background-color: #880808; /* News color */
+}
+
+.yahoo {
+    background-color: #6001D2; /* Yahoo color */
+}
+
+.twitter {
+    background-color: #08a0e9; /* Twitter color */
 }
