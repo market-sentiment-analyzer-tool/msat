@@ -13,6 +13,8 @@ p{
 
 .sentiment-box{
     height: 40px;
+    margin-top: 20px; /* Add space above the sentiment box */
+    margin-bottom: 20px;
 }
 
 .sentiment-range{
