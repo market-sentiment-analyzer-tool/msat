@@ -50,6 +50,7 @@ const SentimentRange = (props) => {
                 <div className='pointer' style={{ marginLeft: getSpectrum(value) }}></div>
             </div>
             <div><p>Based on {numOfComments} comments</p></div>
+            <div><p>Sentiment: {value.toFixed(4)}</p></div>
         </>
     );
 }
