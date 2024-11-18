@@ -169,7 +169,6 @@ class SentimentPage extends Component {
                 this.setState({ score: null });
             });
 
-        this.setState({ userInput: '' });
     }
 
     handleChange(e) {
