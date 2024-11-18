@@ -6,7 +6,7 @@ import './SentimentAnalyzer.css';
 
 
 const SentimentAnalyzer = ({ sentiments }) => {
-    const [weights, setWeights] = useState({ news: 0.01, reddit: 0.01, yahoo: 0.01 });
+    const [weights, setWeights] = useState({ news: 0.33, reddit: 0.33, yahoo: 0.34 });
 
     return (
         <div>

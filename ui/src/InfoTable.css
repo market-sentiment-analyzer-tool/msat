@@ -9,6 +9,7 @@
 .news-table, .reddit-table, .twitter-table, .yahoo-table {
     flex: 0 0 calc(50% - 10px); /* Two columns with space between */
     margin: 0 5px; /* Margin adjusted to maintain spacing */
+    margin-bottom: 10px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
