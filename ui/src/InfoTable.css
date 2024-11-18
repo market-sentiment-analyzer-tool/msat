@@ -16,7 +16,6 @@
 }
 
 h1 {
-    background-color: #007bff;
     color: white;
     padding: 10px;
     margin: 0;
@@ -64,17 +63,33 @@ a:hover {
 }
 
 .reddit {
-    background-color: #FF5700; /* Reddit color */
+    background-color: #FF5700;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Reddit color */
 }
 
 .news {
-    background-color: #880808; /* News color */
+    background-color: #880808;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* News color */
 }
 
 .yahoo {
-    background-color: #6001D2; /* Yahoo color */
+    background-color: #6001D2;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Yahoo color */
 }
 
 .twitter {
-    background-color: #08a0e9; /* Twitter color */
+    background-color: #08a0e9;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Twitter color */
 }

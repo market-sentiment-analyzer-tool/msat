@@ -35,7 +35,9 @@ class SentimentPage extends Component {
             filteredStocks: stockOptions,
             dropdownVisible: false,
             companyNames,
-            isStockSupported: true, // Track if the stock is supported
+            isStockSupported: true,
+            userInput: '', // State for user input
+            score: null, // State to store the sentiment result
         };
 
         this.dropdownRef = createRef();
@@ -44,6 +46,8 @@ class SentimentPage extends Component {
         this.selectStock = this.selectStock.bind(this);
         this.handleFocus = this.handleFocus.bind(this);
         this.handleClickOutside = this.handleClickOutside.bind(this);
+        this.handleUserInputChange = this.handleUserInputChange.bind(this); // Bind new method
+        this.handleUserInputSubmit = this.handleUserInputSubmit.bind(this); // Bind new method
     }
 
     componentDidMount() {
@@ -86,29 +90,20 @@ class SentimentPage extends Component {
                         twitterNumOfComments: data.twitterPosts,
                         yahooSentiment: data.yahooSentiment,
                         yahooNumOfComments: data.yahooPosts,
-                        isStockSupported: true, // Stock is supported
+                        isStockSupported: true,
                     });
                 }
             })
             .catch(error => {
                 console.error("Error fetching sentiment data:", error);
-                this.setState({ 
-                    isStockSupported: false,
-                    redditSentiment: null,
-                    newsSentiment: null,
-                    twitterSentiment: null,
-                    yahooSentiment: null,
-                    redditNumOfComments: 0,
-                    newsNumOfArticles: 0,
-                    twitterNumOfComments: 0,
-                    yahooNumOfComments: 0,
-                    newsData: [],
-                    redditData: [],
-                    twitterData: [],
-                    yahooData: [],
-                }); // In case of error
+                this.resetSentimentData();
             });
 
+        // Fetch news and data for other platforms
+        this.fetchAdditionalData(currentStock);
+    }
+
+    fetchAdditionalData(currentStock) {
         fetch(`http://localhost:5000/table/${currentStock}/News`)
             .then(response => response.json())
             .then(news => {
@@ -143,6 +138,24 @@ class SentimentPage extends Component {
             });
     }
 
+    resetSentimentData() {
+        this.setState({ 
+            isStockSupported: false,
+            redditSentiment: null,
+            newsSentiment: null,
+            twitterSentiment: null,
+            yahooSentiment: null,
+            redditNumOfComments: 0,
+            newsNumOfArticles: 0,
+            twitterNumOfComments: 0,
+            yahooNumOfComments: 0,
+            newsData: [],
+            redditData: [],
+            twitterData: [],
+            yahooData: [],
+        });
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         const upperCaseStock = this.state.searchStock.toUpperCase();
@@ -151,6 +164,27 @@ class SentimentPage extends Component {
             this.fetchData();
         });
         this.setState({ searchStock: '', dropdownVisible: false });
+    }
+
+    handleUserInputChange(e) {
+        this.setState({ userInput: e.target.value });
+    }
+
+    handleUserInputSubmit(e) {
+        e.preventDefault();
+        const { userInput } = this.state;
+
+        fetch(`http://localhost:5000/sentiment?text=${encodeURIComponent(userInput)}`)
+            .then(response => response.json())
+            .then(data => {
+                this.setState({ score: data.score }); // Make sure to set `score` directly
+            })
+            .catch(error => {
+                console.error("Error fetching sentiment analysis:", error);
+                this.setState({ score: null });
+            });
+
+        this.setState({ userInput: '' }); // Clear input after submission
     }
 
     handleChange(e) {
@@ -221,42 +255,24 @@ class SentimentPage extends Component {
 
                         {this.state.isStockSupported ? (
                             <>
-                                {this.state.redditSentiment !== null && (
-                                    <div>
-                                        <h1 className='reddit'>Reddit</h1>
-                                        <SentimentRange
-                                            value={this.state.redditSentiment}
-                                            numOfComments={this.state.redditNumOfComments}
+                                {/* ... other sentiment sections ... */}
+                                <div className='user-input'>
+                                    <form onSubmit={this.handleUserInputSubmit}>
+                                        <input
+                                            type='text'
+                                            placeholder='Enter your text for sentiment analysis'
+                                            value={this.state.userInput}
+                                            onChange={this.handleUserInputChange}
                                         />
-                                    </div>
-                                )}
-                                {this.state.newsSentiment !== null && (
-                                    <div>
-                                        <h1 className='news'>News</h1>
-                                        <SentimentRange
-                                            value={this.state.newsSentiment}
-                                            numOfComments={this.state.newsNumOfArticles}
-                                        />
-                                    </div>
-                                )}
-                                {this.state.yahooSentiment !== null && (
-                                    <div>
-                                        <h1 className='yahoo'>Yahoo Finance</h1>
-                                        <SentimentRange 
-                                            value={this.state.yahooSentiment}
-                                            numOfComments={this.state.yahooNumOfComments}
-                                        />
-                                    </div>
-                                )}
-                                {this.state.twitterSentiment !== null && (
-                                    <div>
-                                        <h1 className='twitter'>Twitter/X</h1>
-                                        <SentimentRange 
-                                            value={this.state.twitterSentiment}
-                                            numOfComments={this.state.twitterNumOfComments}
-                                        />
-                                    </div>
-                                )}
+                                        <button type='submit'>Analyze</button>
+                                    </form>
+                                    {this.state.score !== null && (
+                                        <div>
+                                            <h2 className='sentiment_result'>Sentiment Result:</h2>
+                                            <p className='sentiment_result'>{this.state.score}</p> 
+                                        </div>
+                                    )}
+                                </div>
                             </>
                         ) : (
                             <div className='error-message'>

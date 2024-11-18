@@ -47,6 +47,11 @@
     cursor: pointer;
     border-radius: 4px; /* Rounded corners */
 }
+.sentiment_result {
+    color: #333;
+    text-align: right;
+    display: inline;
+}
 
 .dropdown {
     position: absolute;
