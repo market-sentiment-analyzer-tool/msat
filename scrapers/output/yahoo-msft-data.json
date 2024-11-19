@@ -1,0 +1,65 @@
+[
+    {
+        "author": "Mark",
+        "content": "Bullish: MSFT is undervalued. Great time to start a position if you haven't already.",
+        "date": "2024-11-18",
+        "sentiment": 0.9042,
+        "weight": "2"
+    },
+    {
+        "author": "Arch",
+        "content": "Why isnt this stock up?",
+        "date": "2024-11-18",
+        "sentiment": 0.0,
+        "weight": "2"
+    },
+    {
+        "author": "John",
+        "content": "When this sleeping giant wakes up it\u2019s going to soar \ud83d\udcb0\ud83d\udcb0\ud83d\udcb0",
+        "date": "2024-11-18",
+        "sentiment": 0.4404,
+        "weight": "7"
+    },
+    {
+        "author": "Gold is the new TINA",
+        "content": "Devastating news for Microsoft Investors: This will greatly delay microsofts Ai plans. New Nvidia AI chips overheating in servers, the Information reports",
+        "date": "2024-11-18",
+        "sentiment": -0.7841,
+        "weight": "-7"
+    },
+    {
+        "author": "Your retirement is shrinking",
+        "content": "Microsoft has lost 6% cloud market share ytd. May get worse",
+        "date": "2024-11-18",
+        "sentiment": -0.4939,
+        "weight": "-3"
+    },
+    {
+        "author": "Kaching",
+        "content": "Bullish: No idea how Microsoft is down. It should be nearing $800 now",
+        "date": "2024-11-18",
+        "sentiment": 0.2732,
+        "weight": "5"
+    },
+    {
+        "author": "None",
+        "content": "Up only 10% ytd and puny dividend. Not bad but not great.",
+        "date": "2024-11-18",
+        "sentiment": -0.2062,
+        "weight": "4"
+    },
+    {
+        "author": "Nicholas",
+        "content": "Bullish: Nice pullback but need more. MSFT is overpriced and needs to be at $385",
+        "date": "2024-11-18",
+        "sentiment": 0.4678,
+        "weight": "-15"
+    },
+    {
+        "author": "Lindy",
+        "content": "Bullish: $MSFT Microsoft CEO Satya Nadella is scheduled to deliver a significant announcement during the Microsoft Ignite conference on Tuesday, November 19, 2024. Following this, CNBC will air an exclusive interview with Mr. Nadella at 11:00am.",
+        "date": "2024-11-18",
+        "sentiment": 0.6808,
+        "weight": "7"
+    }
+]
