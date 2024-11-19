@@ -3,14 +3,14 @@ import './WeightInput.css';
 
 const WeightInput = ({ onWeightsChange }) => {
     const [pendingWeights, setPendingWeights] = useState({
-        news: 33,
-        reddit: 33,
-        yahoo: 34,
+        news: 1,
+        reddit: 1,
+        yahoo: 1,
     });
 
     const handleInputChange = (setter) => (e) => {
         const value = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
-        setter(value === '' ? '': value); // Keep empty input
+        setter(value === '' ? '' : value); // Keep empty input
     };
 
     const updateWeights = () => {
@@ -25,6 +25,12 @@ const WeightInput = ({ onWeightsChange }) => {
         }
     };
 
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            updateWeights();
+        }
+    };
+
     return (
         <div className="weight-input-container-inputs">
             <h2>Set Weights for Sentiment Sources</h2>
@@ -34,6 +40,7 @@ const WeightInput = ({ onWeightsChange }) => {
                     type="number"
                     value={pendingWeights.news}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, news: value }))}
+                    onKeyPress={handleKeyPress}
                 />
             </label>
             <label>
@@ -42,6 +49,7 @@ const WeightInput = ({ onWeightsChange }) => {
                     type="number"
                     value={pendingWeights.reddit}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, reddit: value }))}
+                    onKeyPress={handleKeyPress}
                 />
             </label>
             <label>
@@ -50,6 +58,7 @@ const WeightInput = ({ onWeightsChange }) => {
                     type="number"
                     value={pendingWeights.yahoo}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, yahoo: value }))}
+                    onKeyPress={handleKeyPress}
                 />
             </label>
             <button onClick={updateWeights}>Update Weights</button>

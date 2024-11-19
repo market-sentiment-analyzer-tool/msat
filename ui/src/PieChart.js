@@ -17,7 +17,7 @@ const PieChart = ({ weights }) => {
         labels: ['News', 'Reddit', 'Yahoo'],
         datasets: [{
             data: normalizedData,
-            backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56'],
+            backgroundColor: ['#880808', '#FF5700', '#6001D2'],
         }],
     };
 

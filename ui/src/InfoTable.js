@@ -14,18 +14,60 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
         return `${text.slice(0, limit)}...`;
     };
 
+    const formatSentiment = (sentiment) => {
+        return Number(sentiment).toFixed(4); // Format to 4 decimal places
+    };
+
     return (
         <div className='info-tables'>
             <div className='table-container'>
-                <div className='news-table'>
-                    <h1>{stockName} News</h1>
+
+                <div className='reddit-table'>
+                    <h1 className='reddit'>{stockName} Reddit</h1>
                     <table>
-                        <thead>
+                        <thead className='reddit'>
+                            <tr>
+                                <th>Date</th>
+                                <th>Subreddit</th>
+                                <th>Description</th>
+                                <th>Sentiment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {redditData.length > 0 ? (
+                                redditData.map((post, index) => (
+                                    <tr key={index}>
+                                        <td>{post.p_date}</td>
+                                        <td>{post.subreddit}</td>
+                                        <td>
+                                            {expanded.reddit?.[index] ? post.p_description : truncateText(post.p_description, 200)}
+                                            {post.p_description.length > 200 && (
+                                                <button onClick={() => handleToggle('reddit', index)}>
+                                                    {expanded.reddit?.[index] ? 'See Less' : 'See More'}
+                                                </button>
+                                            )}
+                                        </td>
+                                        <td>{formatSentiment(post.sentiment)}</td> {/* Display formatted sentiment here */}
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4">No Reddit data available</td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className='news-table'>
+                    <h1 className='news'>{stockName} News</h1>
+                    <table>
+                        <thead className='news'>
                             <tr>
                                 <th>Date</th>
                                 <th>Link</th>
                                 <th>Title</th>
-                                <th>Sentiment</th> {/* Added sentiment column */}
+                                <th>Sentiment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,7 +86,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>{article.sentiment}</td> {/* Display sentiment here */}
+                                        <td>{formatSentiment(article.sentiment)}</td> {/* Display formatted sentiment here */}
                                     </tr>
                                 ))
                             ) : (
@@ -56,47 +98,10 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                     </table>
                 </div>
 
-                <div className='reddit-table'>
-                    <h1>{stockName} Reddit</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Subreddit</th>
-                                <th>Description</th>
-                                <th>Sentiment</th> {/* Added sentiment column */}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {redditData.length > 0 ? (
-                                redditData.map((post, index) => (
-                                    <tr key={index}>
-                                        <td>{post.p_date}</td>
-                                        <td>{post.subreddit}</td>
-                                        <td>
-                                            {expanded.reddit?.[index] ? post.p_description : truncateText(post.p_description, 200)}
-                                            {post.p_description.length > 200 && (
-                                                <button onClick={() => handleToggle('reddit', index)}>
-                                                    {expanded.reddit?.[index] ? 'See Less' : 'See More'}
-                                                </button>
-                                            )}
-                                        </td>
-                                        <td>{post.sentiment}</td> {/* Display sentiment here */}
-                                    </tr>
-                                ))
-                            ) : (
-                                <tr>
-                                    <td colSpan="4">No Reddit data available</td>
-                                </tr>
-                            )}
-                        </tbody>
-                    </table>
-                </div>
-
                 <div className='yahoo-table'>
-                    <h1>{stockName} Yahoo</h1>
+                    <h1 className='yahoo'>{stockName} Yahoo</h1>
                     <table>
-                        <thead>
+                        <thead className='yahoo'>
                             <tr>
                                 <th>Date</th>
                                 <th>Author</th>
@@ -118,7 +123,7 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                                                 </button>
                                             )}
                                         </td>
-                                        <td>{article.sentiment}</td>
+                                        <td>{formatSentiment(article.sentiment)}</td>
                                     </tr>
                                 ))
                             ) : (
@@ -131,9 +136,9 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                 </div>
 
                 <div className='twitter-table'>
-                    <h1>{stockName} Twitter</h1>
+                    <h1 className='twitter'>{stockName} Twitter</h1>
                     <table>
-                        <thead>
+                        <thead className='twitter'>
                             <tr>
                                 <th>Date</th>
                                 <th>Tweet</th>

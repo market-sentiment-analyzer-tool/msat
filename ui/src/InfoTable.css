@@ -9,6 +9,7 @@
 .news-table, .reddit-table, .twitter-table, .yahoo-table {
     flex: 0 0 calc(50% - 10px); /* Two columns with space between */
     margin: 0 5px; /* Margin adjusted to maintain spacing */
+    margin-bottom: 10px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -29,7 +30,6 @@ table {
 }
 
 thead {
-    background-color: #007bff;
     color: white;
 }
 
@@ -62,4 +62,36 @@ a:hover {
         margin: 10px 0; /* Adjust margins for stacking */
         flex: 1; /* Allow full width on small screens */
     }
+}
+
+.reddit {
+    background-color: #FF5700;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Reddit color */
+}
+
+.news {
+    background-color: #880808;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* News color */
+}
+
+.yahoo {
+    background-color: #6001D2;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Yahoo color */
+}
+
+.twitter {
+    background-color: #08a0e9;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center; /* Twitter color */
 }

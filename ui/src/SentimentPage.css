@@ -2,9 +2,16 @@
     text-align: left;
 }
 
+/* SentimentPage.css */
+
+/* Layout Styles */
 .panel {
     display: flex; /* Use flexbox for layout */
     flex-direction: row; /* Align children in a row */
+    padding: 20px;
+    background: #f9f9f9; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 .column {
@@ -13,109 +20,56 @@
 
 .left {
     width: 25%;
-    /* background-color: lightgrey; */
     position: relative; /* Keep dropdown positioning relative to this column */
 }
 
 .right {
     width: 75%;
-    /* background-color: green; */
 }
 
+/* Search Container */
 .search-container {
     margin-bottom: 20px; /* Space below the search container */
 }
 
 .search-bar {
-    padding: 6px 10px;
+    padding: 10px 15px;
     margin-top: 8px;
     background: #ddd;
     font-size: 17px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px; /* Rounded corners */
-    width: calc(100% - 100px); /* Adjust width to fit with button */
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    width: calc(100% - 85px); /* Adjust width to fit with button */
+    transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none;
 }
 
 .search-container button {
-    padding: 6px 10px;
+    padding: 10px 15px;
     margin-top: 8px;
     margin-left: 10px; /* Space between input and button */
-    background: #ddd;
-    font-size: 17px;
+    background: #007BFF; /* Blue background */
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s;
 }
 
+.search-container button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Dropdown Styles */
 .dropdown {
     position: absolute;
     background: white;
     border: 1px solid #ccc; /* Border for dropdown */
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    margin-top: 8px; /* Space between input and dropdown */
-    width: calc(100% - 20px); /* Match width with input */
-    z-index: 1000; /* Ensure dropdown is on top */
-    max-height: 200px; /* Set max height for dropdown */
-    overflow-y: auto; /* Enable scrolling if dropdown exceeds max height */
-}
-
-.dropdown li {
-    padding: 10px; /* Padding for dropdown items */
-    cursor: pointer;
-    transition: background 0.3s; /* Smooth background transition */
-}
-
-.dropdown li:hover {
-    background: #f0f0f0; /* Hover effect */
-}
-
-.dropdown li:active {
-    background: #e0e0e0; /* Active effect */
-}
-
-.reddit, .yahoo, .twitter {
-    text-align: left;
-    margin-top: 20px; /* Space above sentiment sections */
-}
-
-/* Clearfix for columns */
-.panel::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* SentimentPage.css */
-.pie-chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px; /* Set maximum width */
-    margin: 0 auto; /* Center the chart */
-}
-
-.pie-chart {
-    width: 100%; /* Full width for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Limit height */
-}
-
-/* Optional: Add some padding and background */
-.chart-wrapper {
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 10px; /* Rounded corners for aesthetics */
-    padding: 20px; /* Add some space around the chart */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.dropdown {
-    position: absolute;
-    background: white;
-    border: 1px solid #ccc; /* Border for dropdown */
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
     margin-top: 8px; /* Space between input and dropdown */
     width: calc(100% - 20px); /* Match width with input */
@@ -143,4 +97,103 @@
 
 .dropdown li:active {
     background: #e0e0e0; /* Active effect */
+}
+
+/* Sentiment Sections */
+.reddit, .yahoo, .twitter {
+    text-align: left;
+    margin-top: 20px; /* Space above sentiment sections */
+}
+
+.sentiment_result {
+    color: #333;
+    text-align: right;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    background: #e9f7fe; /* Light blue background */
+}
+
+/* User Input Styles */
+.user-input {
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.user-input input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 85px);
+    margin-right: 10px; /* Space between input and button */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.user-input input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+}
+
+.user-input button {
+    padding: 10px 15px;
+    background: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.user-input button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: #f8d7da; /* Light red background */
+}
+
+/* Clearfix for columns */
+.panel::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Pie Chart Styles */
+.pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Set maximum width */
+    margin: 0 auto; /* Center the chart */
+}
+
+.pie-chart {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit height */
+}
+
+/* Optional: Chart Wrapper */
+.chart-wrapper {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    padding: 20px; /* Add some space around the chart */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }

@@ -1,4 +1,3 @@
-import './App.css';
 import SentimentPage from './SentimentPage'
 
 const App = () => {
