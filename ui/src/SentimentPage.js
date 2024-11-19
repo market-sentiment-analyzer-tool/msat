@@ -92,7 +92,7 @@ class SentimentPage extends Component {
         fetch(`http://localhost:5000/table/${currentStock}/News`)
             .then(response => response.json())
             .then(news => {
-                this.setState({ newsData: news.slice(-4) });
+                this.setState({ newsData: news.slice(-5) });
             })
             .catch(error => {
                 console.error("Error fetching news data:", error);
@@ -101,7 +101,7 @@ class SentimentPage extends Component {
         fetch(`http://localhost:5000/table/${currentStock}/Reddit`)
             .then(response => response.json())
             .then(reddit => {
-                this.setState({ redditData: reddit.slice(-4) });
+                this.setState({ redditData: reddit.slice(-5) });
             })
             .catch(error => {
                 console.error("Error fetching Reddit data:", error);
@@ -116,7 +116,7 @@ class SentimentPage extends Component {
         fetch(`http://localhost:5000/table/${currentStock}/Yahoo`)
             .then(response => response.json())
             .then(yahoo => {
-                this.setState({ yahooData: yahoo.slice(-4) });
+                this.setState({ yahooData: yahoo.slice(-5) });
             })
             .catch(error => {
                 console.error("Error fetching Yahoo data:", error);
@@ -208,7 +208,35 @@ class SentimentPage extends Component {
             twitterSentiment: this.state.twitterSentiment,
             yahooSentiment: this.state.yahooSentiment,
         };
-
+    
+        // Function to get color based on score
+        const getColor = (val) => {
+            if (val <= -0.4) {
+                return '#ff0000'; // Red
+            } else if (val <= -0.3) {
+                return '#ff4000'; // Dark Orange
+            } else if (val <= -0.2) {
+                return '#ff8000'; // Orange
+            } else if (val <= -0.1) {
+                return '#ffbf00'; // Yellow Orange
+            } else if (val === 0) {
+                return '#808080'; // Gray
+            } else if (val <= 0.1) {
+                return '#ffff00'; // Yellow
+            } else if (val <= 0.2) {
+                return '#bfff00'; // Light Green
+            } else if (val <= 0.3) {
+                return '#80ff00'; // Green
+            } else if (val <= 0.4) {
+                return '#40ff00'; // Dark Green
+            } else {
+                return '#00ff00'; // Bright Green
+            }
+        };
+    
+        // Determine background color for sentiment result
+        const sentimentResultColor = this.state.score !== null ? getColor(this.state.score) : '#ffffff'; // Default to white if no score
+    
         return (
             <>
                 <div className='panel'>
@@ -236,7 +264,7 @@ class SentimentPage extends Component {
                                 </ul>
                             )}
                         </div>
-
+    
                         {this.state.isStockSupported ? (
                             <>
                                 {this.state.redditSentiment !== null && (
@@ -277,6 +305,7 @@ class SentimentPage extends Component {
                                 )}
 
                                 <div className='user-input'>
+                                    <h2>Sentiment Explorer</h2>
                                     <form onSubmit={this.handleUserInputSubmit}>
                                         <input
                                             type='text'
@@ -288,7 +317,7 @@ class SentimentPage extends Component {
                                     </form>
                                     {this.state.score !== null && (
                                         <div>
-                                            <h2 className='sentiment_result'>Sentiment Result: {this.state.score}</h2>
+                                            <h2 style={{backgroundColor: sentimentResultColor}} className='sentiment_result'>Sentiment Result: {this.state.score}</h2>
                                         </div>
                                     )}
                                 </div>

@@ -21,6 +21,44 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
     return (
         <div className='info-tables'>
             <div className='table-container'>
+
+                <div className='reddit-table'>
+                    <h1 className='reddit'>{stockName} Reddit</h1>
+                    <table>
+                        <thead className='reddit'>
+                            <tr>
+                                <th>Date</th>
+                                <th>Subreddit</th>
+                                <th>Description</th>
+                                <th>Sentiment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {redditData.length > 0 ? (
+                                redditData.map((post, index) => (
+                                    <tr key={index}>
+                                        <td>{post.p_date}</td>
+                                        <td>{post.subreddit}</td>
+                                        <td>
+                                            {expanded.reddit?.[index] ? post.p_description : truncateText(post.p_description, 200)}
+                                            {post.p_description.length > 200 && (
+                                                <button onClick={() => handleToggle('reddit', index)}>
+                                                    {expanded.reddit?.[index] ? 'See Less' : 'See More'}
+                                                </button>
+                                            )}
+                                        </td>
+                                        <td>{formatSentiment(post.sentiment)}</td> {/* Display formatted sentiment here */}
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4">No Reddit data available</td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </div>
+
                 <div className='news-table'>
                     <h1 className='news'>{stockName} News</h1>
                     <table>
@@ -54,43 +92,6 @@ const InfoTable = ({ stockName, newsData = [], redditData = [], twitterData = []
                             ) : (
                                 <tr>
                                     <td colSpan="4">No news data available</td>
-                                </tr>
-                            )}
-                        </tbody>
-                    </table>
-                </div>
-
-                <div className='reddit-table'>
-                    <h1 className='reddit'>{stockName} Reddit</h1>
-                    <table>
-                        <thead className='reddit'>
-                            <tr>
-                                <th>Date</th>
-                                <th>Subreddit</th>
-                                <th>Description</th>
-                                <th>Sentiment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {redditData.length > 0 ? (
-                                redditData.map((post, index) => (
-                                    <tr key={index}>
-                                        <td>{post.p_date}</td>
-                                        <td>{post.subreddit}</td>
-                                        <td>
-                                            {expanded.reddit?.[index] ? post.p_description : truncateText(post.p_description, 200)}
-                                            {post.p_description.length > 200 && (
-                                                <button onClick={() => handleToggle('reddit', index)}>
-                                                    {expanded.reddit?.[index] ? 'See Less' : 'See More'}
-                                                </button>
-                                            )}
-                                        </td>
-                                        <td>{formatSentiment(post.sentiment)}</td> {/* Display formatted sentiment here */}
-                                    </tr>
-                                ))
-                            ) : (
-                                <tr>
-                                    <td colSpan="4">No Reddit data available</td>
                                 </tr>
                             )}
                         </tbody>
