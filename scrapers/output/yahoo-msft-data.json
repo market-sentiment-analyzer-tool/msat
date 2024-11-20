@@ -1,0 +1,72 @@
+[
+    {
+        "author": "Josephson",
+        "content": "Bullish: Financial Institutions have accumulated MSFT stocks in recent days. MSFT is under-valued. Be patient. Don't sell. Buy more today and After Hours; MSFT will break 52-week high sooner than expected",
+        "date": "2024-11-19",
+        "sentiment": 0.446,
+        "weight": "6"
+    },
+    {
+        "author": "Rocky",
+        "content": "Garbage stock",
+        "date": "2024-11-19",
+        "sentiment": 0.0,
+        "weight": "-1"
+    },
+    {
+        "author": "Steve",
+        "content": "Bullish: A stock split is a sign of management confidence.  Let's get a 4-1 split done before the end of the year!",
+        "date": "2024-11-19",
+        "sentiment": 0.784,
+        "weight": "4"
+    },
+    {
+        "author": "Okay",
+        "content": "Bearish: sales and eps of msft is a big red flag. This is going to crash upcoming earnings and big institutions have already sold 3% stake out of 10%.",
+        "date": "2024-11-19",
+        "sentiment": -0.3818,
+        "weight": "-4"
+    },
+    {
+        "author": "Daniel",
+        "content": "Bearish: Compared to other big Tech MSFT has been a severe underperformer for most of the year.  I have other opportunities that look better so after many years I am moving on.",
+        "date": "2024-11-19",
+        "sentiment": -0.1531,
+        "weight": "3"
+    },
+    {
+        "author": "Scott",
+        "content": "Bullish: Buybacks, potential stock splits and Ai growth on the horizon. Seems like waiting around for the CEO to speak after hours today \ud83d\udc40",
+        "date": "2024-11-19",
+        "sentiment": 0.9042,
+        "weight": "1"
+    },
+    {
+        "author": "DINO",
+        "content": "Bearish: WHITE COLLAR CRIME PAYS AND PAYS VERY HANDSOMELY!!",
+        "date": "2024-11-19",
+        "sentiment": -0.5659,
+        "weight": "2"
+    },
+    {
+        "author": "Lulu",
+        "content": "This stock is heading for negative territory ytd in a bull run year for the market and is apparently a leader in ai. They need to double their buybacks to 120b for several years in a row.",
+        "date": "2024-11-19",
+        "sentiment": -0.1779,
+        "weight": "1"
+    },
+    {
+        "author": "Wayne",
+        "content": "Comparing MSFT to NVDA? Apples and oranges. Both are great, but Microsoft is a safer, long-term bet.",
+        "date": "2024-11-19",
+        "sentiment": 0.7391,
+        "weight": "1"
+    },
+    {
+        "author": "Kali",
+        "content": "The $60B buyback program should put a floor under the stock. Shorts better watch out!",
+        "date": "2024-11-19",
+        "sentiment": 0.7345,
+        "weight": "1"
+    }
+]

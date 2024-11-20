@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Bren",
+        "content": "Bullish: Google for Gemini Live, Waymo, and quantum computing. Great progress are coming fast and furious while search ads revenues are not going away, still at 90%. LOL!",
+        "date": "2024-11-19",
+        "sentiment": 0.884,
+        "weight": "6"
+    },
+    {
+        "author": "Joylove",
+        "content": "Bullish: I never lie",
+        "date": "2024-11-19",
+        "sentiment": 0.5106,
+        "weight": "3"
+    },
+    {
+        "author": "Ryan",
+        "content": "Bullish: Undervalued",
+        "date": "2024-11-19",
+        "sentiment": 0.5106,
+        "weight": "7"
+    },
+    {
+        "author": "RajS",
+        "content": "Nullish: DOJ - the shake down department comes with new headline every week to lower stock price and help vested interests. Now they want google to sell chrome. They may want anything but there are laws and google lawyers that will prevent them. They should be packing their bags. Only few days left.",
+        "date": "2024-11-19",
+        "sentiment": 0.0387,
+        "weight": "8"
+    },
+    {
+        "author": "Kemar",
+        "content": "Bearish: DOJ is forcing Google to sell chrome",
+        "date": "2024-11-19",
+        "sentiment": -0.7579,
+        "weight": "-4"
+    }
+]

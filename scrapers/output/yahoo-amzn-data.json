@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Joe D",
+        "content": "Finishing in red. Jassey is lame and needs to pay a dividend.",
+        "date": "2024-11-19",
+        "sentiment": -0.1779,
+        "weight": "-9"
+    },
+    {
+        "author": "Darknight23",
+        "content": "It's up but volume is low, let's see if this is just a pop before testing the mid $190s",
+        "date": "2024-11-19",
+        "sentiment": 0.2382,
+        "weight": "-12"
+    },
+    {
+        "author": "Always buying stocks",
+        "content": "Cup and handle forming to get us up to new heights...be nice to fill gap up to 212...then higher.",
+        "date": "2024-11-19",
+        "sentiment": 0.8225,
+        "weight": "9"
+    },
+    {
+        "author": "NovaNomad",
+        "content": "Trump tariffs will hurt consumers and retailers like Amazon and Wal-Mart etc...",
+        "date": "2024-11-19",
+        "sentiment": -0.0516,
+        "weight": "-10"
+    },
+    {
+        "author": "DOUGLAS",
+        "content": "FACT: On Nov. 19, 2021, AMZN shares reached $188.  They opened today $11 higher.  That's an average profit of 1.96 percent per year.",
+        "date": "2024-11-19",
+        "sentiment": 0.6705,
+        "weight": "4"
+    },
+    {
+        "author": "Charles",
+        "content": "Never ceases to disappoint....",
+        "date": "2024-11-19",
+        "sentiment": 0.3089,
+        "weight": "2"
+    }
+]
