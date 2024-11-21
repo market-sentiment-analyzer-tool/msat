@@ -1,0 +1,86 @@
+[
+    {
+        "author": "Patricia G",
+        "content": "Bullish: Amzn up tomorrow!",
+        "date": "2024-11-20",
+        "sentiment": 0.7574,
+        "weight": "3"
+    },
+    {
+        "author": "Colon Wrecker",
+        "content": "Bullish: NVDA is the last big hurdle for the market. Now the market can focus on the Thanksgiving and end of the year melt up! \ud83d\ude80",
+        "date": "2024-11-20",
+        "sentiment": 0.5562,
+        "weight": "4"
+    },
+    {
+        "author": "Real comments",
+        "content": "Bullish: Cramer: If AMZN grows its EPS by an average of 25% annually like now, over the next three years, it will achieve an EPS of around $9.25, what suggests a fair stock value over $300",
+        "date": "2024-11-20",
+        "sentiment": 0.8591,
+        "weight": "2"
+    },
+    {
+        "author": "dunkleman",
+        "content": "Just a garbage stock\u2026continues to be in weak hands.",
+        "date": "2024-11-20",
+        "sentiment": -0.4404,
+        "weight": "-2"
+    },
+    {
+        "author": "Srini",
+        "content": "Better not invest in Amazon...",
+        "date": "2024-11-20",
+        "sentiment": -0.2292,
+        "weight": "-4"
+    },
+    {
+        "author": "Kali",
+        "content": "Bearish on AMZN short-term. Too many macro headwinds and weak volume on rallies. Waiting for a better entry below $190.",
+        "date": "2024-11-20",
+        "sentiment": -0.5423,
+        "weight": "-1"
+    },
+    {
+        "author": "Gabriella",
+        "content": "Amazon Haul is interesting, but is it really gonna compete with Temu? They\u2019re late to the game. Feels like a desperation move.",
+        "date": "2024-11-20",
+        "sentiment": 0.1154,
+        "weight": "-3"
+    },
+    {
+        "author": "Lily",
+        "content": "AMZN needs to reinvest in same-day delivery. It used to feel revolutionary, but now Walmart\u2019s catching up. Competitive edge is shrinking.",
+        "date": "2024-11-20",
+        "sentiment": 0.2617,
+        "weight": "-3"
+    },
+    {
+        "author": "Jaime",
+        "content": "Black Friday will pump this stock, no doubt. But what happens after the holiday sugar rush? Long-term story feels murky lately.",
+        "date": "2024-11-20",
+        "sentiment": 0.6255,
+        "weight": "-3"
+    },
+    {
+        "author": "Victoria",
+        "content": "Why is nobody talking about Amazon Ads? It\u2019s growing faster than most ad platforms, and margins are insane. This is an underappreciated gem.",
+        "date": "2024-11-20",
+        "sentiment": -0.0772,
+        "weight": "3"
+    },
+    {
+        "author": "Grace",
+        "content": "Bezos dumping shares again? Makes me nervous. Insiders usually know more than retail. Might trim some of my position here.",
+        "date": "2024-11-20",
+        "sentiment": 0.3818,
+        "weight": "-5"
+    },
+    {
+        "author": "Joe D",
+        "content": "Finishing in red. Jassey is lame and needs to pay a dividend.",
+        "date": "2024-11-20",
+        "sentiment": -0.1779,
+        "weight": "-12"
+    }
+]

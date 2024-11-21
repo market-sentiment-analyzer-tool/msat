@@ -1,0 +1,86 @@
+[
+    {
+        "author": "BRIAN",
+        "content": "Bullish: apple cash position $65 billion plus !!!",
+        "date": "2024-11-20",
+        "sentiment": 0.8392,
+        "weight": "2"
+    },
+    {
+        "author": "CochiseGordon",
+        "content": "Nvidia tanking Apple,which does not need help tanking.",
+        "date": "2024-11-20",
+        "sentiment": -0.3089,
+        "weight": "-4"
+    },
+    {
+        "author": "eastside",
+        "content": "Bullish: Nice late day comeback",
+        "date": "2024-11-20",
+        "sentiment": 0.7269,
+        "weight": "6"
+    },
+    {
+        "author": "HENRY",
+        "content": "Bearish: 25% correction starts tomorrow",
+        "date": "2024-11-20",
+        "sentiment": -0.5423,
+        "weight": "-3"
+    },
+    {
+        "author": "Common Sense",
+        "content": "Bullish: Bernstein Apple bull case to 290. He is a very credible analyst too. Highly respected. Let\u2019s go!",
+        "date": "2024-11-20",
+        "sentiment": 0.7897,
+        "weight": "11"
+    },
+    {
+        "author": "gord",
+        "content": "Bullish: The short term upside of this is incredible \ud83d\udcb0",
+        "date": "2024-11-20",
+        "sentiment": -0.0516,
+        "weight": "8"
+    },
+    {
+        "author": "gord",
+        "content": "Bullish: This thing is so cheap. Get in before the liftoff to 250 \ud83d\ude80",
+        "date": "2024-11-20",
+        "sentiment": 0.5106,
+        "weight": "6"
+    },
+    {
+        "author": "George",
+        "content": "Sideways action again. Guess the market\u2019s waiting for news on tariffs or Vision Pro. Either way, this feels like dead money for the next few months",
+        "date": "2024-11-20",
+        "sentiment": -0.2023,
+        "weight": "-5"
+    },
+    {
+        "author": "Wayne",
+        "content": "$AAPL isn\u2019t a stock; it\u2019s a way of life. This company isn\u2019t going anywhere, and the long-term trend is always up. Ignore the noise, buy the dips.",
+        "date": "2024-11-20",
+        "sentiment": 0.25,
+        "weight": "6"
+    },
+    {
+        "author": "Kevin",
+        "content": "$AAPL feels overvalued. P/E near 30 while growth is slowing? Not a great setup. I\u2019m trimming my position until I see something compelling in the product pipeline",
+        "date": "2024-11-20",
+        "sentiment": 0.2973,
+        "weight": "-7"
+    },
+    {
+        "author": "Paul",
+        "content": "Bearish: Apple will be punished for outsourcing all their manufacturing to China",
+        "date": "2024-11-20",
+        "sentiment": -0.7579,
+        "weight": "-2"
+    },
+    {
+        "author": "Toby",
+        "content": "Bullish: Sweet dreams Apple longs!",
+        "date": "2024-11-20",
+        "sentiment": 0.8516,
+        "weight": "7"
+    }
+]
