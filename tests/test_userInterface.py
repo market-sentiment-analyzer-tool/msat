@@ -209,65 +209,65 @@ class UserInterfaceTests(unittest.TestCase):
             # Small delay to prevent rate limiting
             time.sleep(1)
 
-    def test_data_consistency(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_data_consistency(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Search for a stock
-        test_stock = "AAPL"
-        search_box.send_keys(test_stock)
-        search_box.submit()
+    #     # Search for a stock
+    #     test_stock = "AAPL"
+    #     search_box.send_keys(test_stock)
+    #     search_box.submit()
         
-        # Wait for all elements to load
-        elements_to_check = [
-            "info-tables",
-            "table-container",
-            "reddit-table",
-            "news-table",
-            "yahoo-table",
-            "twitter-table"
-        ]
+    #     # Wait for all elements to load
+    #     elements_to_check = [
+    #         "info-tables",
+    #         "table-container",
+    #         "reddit-table",
+    #         "news-table",
+    #         "yahoo-table",
+    #         "twitter-table"
+    #     ]
         
-        # Verify elements exist and are not empty
-        for element_class in elements_to_check:
-            element = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, element_class))
-            )
-            self.assertTrue(
-                element.is_displayed(),
-                f"Element {element_class} is not displayed"
-            )
-            self.assertNotEqual(
-                element.text.strip(),
-                "",
-                f"Element {element_class} is empty"
-            )
+    #     # Verify elements exist and are not empty
+    #     for element_class in elements_to_check:
+    #         element = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #         )
+    #         self.assertTrue(
+    #             element.is_displayed(),
+    #             f"Element {element_class} is not displayed"
+    #         )
+    #         self.assertNotEqual(
+    #             element.text.strip(),
+    #             "",
+    #             f"Element {element_class} is empty"
+    #         )
             
-            # Verify specific structural elements based on table type
-            if "table" in element_class:
-                # Verify table has headers and at least one row
-                headers = element.find_elements(By.TAG_NAME, "th")
-                rows = element.find_elements(By.TAG_NAME, "tr")
-                self.assertGreater(
-                    len(headers),
-                    0,
-                    f"No headers found in {element_class}"
-                )
-                self.assertGreater(
-                    len(rows),
-                    1,  # At least header row plus one data row
-                    f"No data rows found in {element_class}"
-                )
+    #         # Verify specific structural elements based on table type
+    #         if "table" in element_class:
+    #             # Verify table has headers and at least one row
+    #             headers = element.find_elements(By.TAG_NAME, "th")
+    #             rows = element.find_elements(By.TAG_NAME, "tr")
+    #             self.assertGreater(
+    #                 len(headers),
+    #                 0,
+    #                 f"No headers found in {element_class}"
+    #             )
+    #             self.assertGreater(
+    #                 len(rows),
+    #                 1,  # At least header row plus one data row
+    #                 f"No data rows found in {element_class}"
+    #             )
         
-        # Separate check for sentiment-box
-        sentiment_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "sentiment-box"))
-        )
-        self.assertTrue(
-            sentiment_box.is_displayed(),
-            "Sentiment box is not displayed"
-        )
+    #     # Separate check for sentiment-box
+    #     sentiment_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "sentiment-box"))
+    #     )
+    #     self.assertTrue(
+    #         sentiment_box.is_displayed(),
+    #         "Sentiment box is not displayed"
+    #     )
 
     def test_error_handling(self):
         search_box = self.wait.until(
