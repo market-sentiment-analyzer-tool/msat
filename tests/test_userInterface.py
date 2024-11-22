@@ -27,8 +27,7 @@ class UserInterfaceTests(unittest.TestCase):
         self.wait = WebDriverWait(self.driver, 10)
 
     def tearDown(self):
-        if self.driver:
-            self.driver.quit()
+        self.driver.quit()
 
     # Tests search with valid stock ticker
     def test_valid_stock_search(self):
@@ -90,7 +89,7 @@ class UserInterfaceTests(unittest.TestCase):
 
     def test_case_sensitivity(self):
         search_box = self.wait.until(
-            EC.presence_of_element_located((By.XPATH, "//input[@class='search-bar']"))
+            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
         )
         
         # Test lowercase input
