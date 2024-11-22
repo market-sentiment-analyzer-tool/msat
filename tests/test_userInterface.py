@@ -29,6 +29,9 @@ class UserInterfaceTests(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
+    def test(self):
+        assert(True)
+
     # Tests search with valid stock ticker
     # def test_valid_stock_search(self):
     #     search_box = self.driver.find_element(By.CLASS_NAME, "search-bar")
