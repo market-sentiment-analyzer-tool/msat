@@ -1,0 +1,135 @@
+[
+    {
+        "author": "Julia",
+        "content": "The market is treating Apple like it\u2019s invincible, but if their China supply chain gets disrupted, this stock could tank.",
+        "date": "2024-11-21",
+        "sentiment": 0.431,
+        "weight": "-3"
+    },
+    {
+        "author": "Delilah",
+        "content": "Tim Cook isn\u2019t Steve Jobs, but he\u2019s made Apple the most consistent performer on the Nasdaq. That\u2019s worth holding onto.",
+        "date": "2024-11-21",
+        "sentiment": 0.5267,
+        "weight": "3"
+    },
+    {
+        "author": "B",
+        "content": "Bullish: How many true longs are here?  I\u2019m talking buying and holding longer than 4 years without selling a single share!",
+        "date": "2024-11-21",
+        "sentiment": 0.895,
+        "weight": "8"
+    },
+    {
+        "author": "Bradley",
+        "content": "Watch out\u2014if Google loses their DOJ case, Apple\u2019s search deal is in jeopardy. That\u2019s a $20B question hanging over the stock.",
+        "date": "2024-11-21",
+        "sentiment": -0.6597,
+        "weight": "-5"
+    },
+    {
+        "author": "Troy",
+        "content": "I don\u2019t care about short-term noise; Apple\u2019s products are everywhere, and they\u2019re not going anywhere. Holding strong.",
+        "date": "2024-11-21",
+        "sentiment": 0.7169,
+        "weight": "5"
+    },
+    {
+        "author": "Mac",
+        "content": "Bearish: Busy walking beaks. Starting wars, stealing money, tsk tsk tsk. Eh!?",
+        "date": "2024-11-21",
+        "sentiment": -0.902,
+        "weight": "-5"
+    },
+    {
+        "author": "Wayne",
+        "content": "As much as I love Apple, I think the stock is overvalued. The market is treating it like a growth stock when it\u2019s really a cash cow.",
+        "date": "2024-11-21",
+        "sentiment": 0.7579,
+        "weight": "-4"
+    },
+    {
+        "author": "Bobby",
+        "content": "Let\u2019s be honest: Apple has been more of a dividend play recently. Growth is slowing, but it\u2019s still reliable",
+        "date": "2024-11-21",
+        "sentiment": 0.7124,
+        "weight": "-2"
+    },
+    {
+        "author": "Johnny",
+        "content": "All the hype around AI, but Apple\u2019s focus on quality hardware and ecosystem keeps it unmatched. Strong buy for me.",
+        "date": "2024-11-21",
+        "sentiment": 0.8674,
+        "weight": "4"
+    },
+    {
+        "author": "Gabriel",
+        "content": "It\u2019s simple: every product launch turns into a cash machine. I\u2019m holding AAPL for the next decade.",
+        "date": "2024-11-21",
+        "sentiment": 0.1779,
+        "weight": "4"
+    },
+    {
+        "author": "Alan",
+        "content": "Apple\u2019s cash reserves and brand loyalty make it a long-term winner, but the current valuation feels stretched. Waiting for a pullback before buying",
+        "date": "2024-11-21",
+        "sentiment": 0.5647,
+        "weight": "-4"
+    },
+    {
+        "author": "Joseph",
+        "content": "Bearish: Warren must be happy that stock ticked back up to 229 so he can take advantage an unload more of his shares.  Stock will be below 228 by the close.",
+        "date": "2024-11-21",
+        "sentiment": 0.5367,
+        "weight": "-6"
+    },
+    {
+        "author": "Neanderthal",
+        "content": "Bullish: India the next great frontier for Apple ! We are so excited about Apple products in India. It\u2019s going to be great for consumers and investors of Apple.",
+        "date": "2024-11-21",
+        "sentiment": 0.9424,
+        "weight": "7"
+    },
+    {
+        "author": "Java",
+        "content": "Bearish: -20B profits from Google? The stock was supposed to loose 10% the least. Am I missing something?",
+        "date": "2024-11-21",
+        "sentiment": -0.6662,
+        "weight": "-4"
+    },
+    {
+        "author": "Josephine",
+        "content": "Vision Pro isn\u2019t about today\u2019s profits; it\u2019s a play for the future. AR/VR is the next frontier, and Apple is leading.",
+        "date": "2024-11-21",
+        "sentiment": 0.743,
+        "weight": "4"
+    },
+    {
+        "author": "Jade",
+        "content": "Tim Cook\u2019s leadership during tough economic cycles has been stellar. Apple is built for resilience.",
+        "date": "2024-11-21",
+        "sentiment": -0.128,
+        "weight": "4"
+    },
+    {
+        "author": "Vivian",
+        "content": "Stock splits, massive buybacks, and steady dividend growth. There\u2019s a reason Buffett keeps a huge chunk of Berkshire in AAPL.",
+        "date": "2024-11-21",
+        "sentiment": 0.8807,
+        "weight": "-1"
+    },
+    {
+        "author": "gord",
+        "content": "Bullish: Great buying opportunity",
+        "date": "2024-11-21",
+        "sentiment": 0.8807,
+        "weight": "-2"
+    },
+    {
+        "author": "CochiseGordon",
+        "content": "All the dumb money goes into Apple and the pros know it!",
+        "date": "2024-11-21",
+        "sentiment": -0.5562,
+        "weight": "-3"
+    }
+]
