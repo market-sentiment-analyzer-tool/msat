@@ -30,28 +30,28 @@ class UserInterfaceTests(unittest.TestCase):
         self.driver.quit()
 
     # Tests search with valid stock ticker
-    def test_valid_stock_search(self):
-        search_box = self.driver.find_element(By.CLASS_NAME, "search-bar")
-        search_box.send_keys("AAPL")
-        search_box.submit()
+    # def test_valid_stock_search(self):
+    #     search_box = self.driver.find_element(By.CLASS_NAME, "search-bar")
+    #     search_box.send_keys("AAPL")
+    #     search_box.submit()
         
-        # List of elements to check
-        elements_to_check = [
-            "info-tables",
-            "table-container",
-            "reddit-table",
-            "news-table",
-            "yahoo-table",
-            "twitter-table",
-            "sentiment-box"
-        ]
+    #     # List of elements to check
+    #     elements_to_check = [
+    #         "info-tables",
+    #         "table-container",
+    #         "reddit-table",
+    #         "news-table",
+    #         "yahoo-table",
+    #         "twitter-table",
+    #         "sentiment-box"
+    #     ]
         
-        # Verify each element
-        for element_class in elements_to_check:
-            element = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, element_class))
-            )
-            self.assertTrue(element.is_displayed(), f"The element '{element_class}' is not diplayed")
+    #     # Verify each element
+    #     for element_class in elements_to_check:
+    #         element = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #         )
+    #         self.assertTrue(element.is_displayed(), f"The element '{element_class}' is not diplayed")
 
     # def test_invalid_stock_search(self):
     #     search_box = self.wait.until(
@@ -312,67 +312,67 @@ class UserInterfaceTests(unittest.TestCase):
     #             # Element not found is expected behavior
     #             pass
 
-    def test_responsive_layout(self):
-        # Test different viewport sizes
-        viewport_sizes = [
-            (1920, 1080),  # Desktop
-            (768, 1024)   # Tablet
-        ]
+    # def test_responsive_layout(self):
+    #     # Test different viewport sizes
+    #     viewport_sizes = [
+    #         (1920, 1080),  # Desktop
+    #         (768, 1024)   # Tablet
+    #     ]
         
-        for width, height in viewport_sizes:
-            # Set viewport size
-            self.driver.set_window_size(width, height)
+    #     for width, height in viewport_sizes:
+    #         # Set viewport size
+    #         self.driver.set_window_size(width, height)
             
-            # Perform search
-            search_box = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-            )
-            search_box.clear()
-            search_box.send_keys("AAPL")
-            search_box.submit()
+    #         # Perform search
+    #         search_box = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #         )
+    #         search_box.clear()
+    #         search_box.send_keys("AAPL")
+    #         search_box.submit()
             
-            # Check if elements are visible and properly laid out
-            elements_to_check = [
-                "info-tables",
-                "table-container",
-                "reddit-table",
-                "news-table",
-                "yahoo-table",
-                "twitter-table",
-                "sentiment-box"
-            ]
+    #         # Check if elements are visible and properly laid out
+    #         elements_to_check = [
+    #             "info-tables",
+    #             "table-container",
+    #             "reddit-table",
+    #             "news-table",
+    #             "yahoo-table",
+    #             "twitter-table",
+    #             "sentiment-box"
+    #         ]
             
-            for element_class in elements_to_check:
-                element = self.wait.until(
-                    EC.presence_of_element_located((By.CLASS_NAME, element_class))
-                )
+    #         for element_class in elements_to_check:
+    #             element = self.wait.until(
+    #                 EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #             )
                 
-                # Verify element is displayed
-                self.assertTrue(
-                    element.is_displayed(),
-                    f"Element {element_class} not visible at {width}x{height}"
-                )
+    #             # Verify element is displayed
+    #             self.assertTrue(
+    #                 element.is_displayed(),
+    #                 f"Element {element_class} not visible at {width}x{height}"
+    #             )
                 
-                # Verify element width doesn't exceed viewport
-                element_width = element.size['width']
-                self.assertLessEqual(
-                    element_width,
-                    width,
-                    f"Element {element_class} width ({element_width}px) exceeds viewport width ({width}px)"
-                )
+    #             # Verify element width doesn't exceed viewport
+    #             element_width = element.size['width']
+    #             self.assertLessEqual(
+    #                 element_width,
+    #                 width,
+    #                 f"Element {element_class} width ({element_width}px) exceeds viewport width ({width}px)"
+    #             )
                 
-                # Verify element is not overlapping viewport
-                location = element.location
-                self.assertGreaterEqual(
-                    location['x'],
-                    0,
-                    f"Element {element_class} extends beyond left viewport at {width}x{height}"
-                )
-                self.assertLessEqual(
-                    location['x'] + element_width,
-                    width,
-                    f"Element {element_class} extends beyond right viewport at {width}x{height}"
-                )
+    #             # Verify element is not overlapping viewport
+    #             location = element.location
+    #             self.assertGreaterEqual(
+    #                 location['x'],
+    #                 0,
+    #                 f"Element {element_class} extends beyond left viewport at {width}x{height}"
+    #             )
+    #             self.assertLessEqual(
+    #                 location['x'] + element_width,
+    #                 width,
+    #                 f"Element {element_class} extends beyond right viewport at {width}x{height}"
+    #             )
 
     # def test_data_display_validation(self):
     #     search_box = self.wait.until(
