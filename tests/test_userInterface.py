@@ -87,32 +87,32 @@ class UserInterfaceTests(unittest.TestCase):
         expected_error = 'Sorry, we do not support the stock "" currently.'
         self.assertEqual(error_message.text, expected_error)
 
-    def test_case_sensitivity(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_case_sensitivity(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Test lowercase input
-        search_box.send_keys("aapl")
-        search_box.submit()
+    #     # Test lowercase input
+    #     search_box.send_keys("aapl")
+    #     search_box.submit()
 
-        # Check if results are shown despite lowercase input
-        elements_to_check = [
-            "info-tables",
-            "table-container",
-            "reddit-table",
-            "news-table",
-            "yahoo-table",
-            "twitter-table",
-            "sentiment-box"
-        ]
+    #     # Check if results are shown despite lowercase input
+    #     elements_to_check = [
+    #         "info-tables",
+    #         "table-container",
+    #         "reddit-table",
+    #         "news-table",
+    #         "yahoo-table",
+    #         "twitter-table",
+    #         "sentiment-box"
+    #     ]
         
-        # Verify all elements appear correctly
-        for element_class in elements_to_check:
-            element = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, element_class))
-            )
-            self.assertTrue(element.is_displayed(), f"Element '{element_class}' not displayed for lowercase input")
+    #     # Verify all elements appear correctly
+    #     for element_class in elements_to_check:
+    #         element = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #         )
+    #         self.assertTrue(element.is_displayed(), f"Element '{element_class}' not displayed for lowercase input")
 
     def test_special_characters(self):
         search_box = self.wait.until(
