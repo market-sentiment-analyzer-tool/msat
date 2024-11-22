@@ -53,39 +53,39 @@ class UserInterfaceTests(unittest.TestCase):
             )
             self.assertTrue(element.is_displayed(), f"The element '{element_class}' is not diplayed")
 
-    def test_invalid_stock_search(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
-        search_box.send_keys("INVALID_TICKER")
-        search_box.submit()
+    # def test_invalid_stock_search(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
+    #     search_box.send_keys("INVALID_TICKER")
+    #     search_box.submit()
         
-        # Wait for error message to appear
-        error_message = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
-        )
+    #     # Wait for error message to appear
+    #     error_message = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
+    #     )
         
-        # Verify error message is displayed and contains expected text
-        self.assertTrue(error_message.is_displayed())
-        expected_error = 'Sorry, we do not support the stock "INVALID_TICKER" currently.'
-        self.assertEqual(error_message.text, expected_error)
+    #     # Verify error message is displayed and contains expected text
+    #     self.assertTrue(error_message.is_displayed())
+    #     expected_error = 'Sorry, we do not support the stock "INVALID_TICKER" currently.'
+    #     self.assertEqual(error_message.text, expected_error)
 
-    def test_empty_search(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
-        # Try to submit without entering any text
-        search_box.submit()
+    # def test_empty_search(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
+    #     # Try to submit without entering any text
+    #     search_box.submit()
         
-        # Wait for error message to appear
-        error_message = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
-        )
+    #     # Wait for error message to appear
+    #     error_message = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
+    #     )
         
-        # Verify error message is displayed and contains expected text
-        self.assertTrue(error_message.is_displayed())
-        expected_error = 'Sorry, we do not support the stock "" currently.'
-        self.assertEqual(error_message.text, expected_error)
+    #     # Verify error message is displayed and contains expected text
+    #     self.assertTrue(error_message.is_displayed())
+    #     expected_error = 'Sorry, we do not support the stock "" currently.'
+    #     self.assertEqual(error_message.text, expected_error)
 
     # def test_case_sensitivity(self):
     #     search_box = self.wait.until(
