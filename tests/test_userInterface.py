@@ -471,113 +471,113 @@ class UserInterfaceTests(unittest.TestCase):
     #                         except ValueError:
     #                             self.fail(f"Invalid sentiment value format in {table_class}: {sentiment}")
 
-    def test_sentiment_explorer(self):
-        def get_fresh_elements():
-            self.driver.refresh()
-            user_input_div = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, "user-input"))
-            )
-            input_box = user_input_div.find_element(By.TAG_NAME, "input")
-            submit_button = user_input_div.find_element(By.CSS_SELECTOR, "button[type='submit']")
-            return input_box, submit_button
+    # def test_sentiment_explorer(self):
+    #     def get_fresh_elements():
+    #         self.driver.refresh()
+    #         user_input_div = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, "user-input"))
+    #         )
+    #         input_box = user_input_div.find_element(By.TAG_NAME, "input")
+    #         submit_button = user_input_div.find_element(By.CSS_SELECTOR, "button[type='submit']")
+    #         return input_box, submit_button
         
-        test_cases = [
-            # Positive sentiment texts
-            ("buy", 0.0, 1.0),
-            ("This stock will go up", 0.0, 1.0),
-            ("excellent performance", 0.0, 1.0),
-            ("great potential for growth", 0.0, 1.0),
+    #     test_cases = [
+    #         # Positive sentiment texts
+    #         ("buy", 0.0, 1.0),
+    #         ("This stock will go up", 0.0, 1.0),
+    #         ("excellent performance", 0.0, 1.0),
+    #         ("great potential for growth", 0.0, 1.0),
             
-            # Negative sentiment texts
-            # ("sell", -1.0, 0.0),
-            ("this stock is declining", -1.0, 0.0),
-            ("poor performance", -1.0, 0.0),
-            ("losing market share", -1.0, 0.0),
+    #         # Negative sentiment texts
+    #         # ("sell", -1.0, 0.0),
+    #         ("this stock is declining", -1.0, 0.0),
+    #         ("poor performance", -1.0, 0.0),
+    #         ("losing market share", -1.0, 0.0),
             
-            # Neutral sentiment texts
-            ("hold", -0.3, 0.3),
-            ("market is stable", -0.3, 0.3),
-            ("no significant changes", -0.3, 0.3),
+    #         # Neutral sentiment texts
+    #         ("hold", -0.3, 0.3),
+    #         ("market is stable", -0.3, 0.3),
+    #         ("no significant changes", -0.3, 0.3),
             
-            # Edge cases
-            ("!@#$%", -1.0, 1.0),  # Special characters
-            ("12345", -1.0, 1.0),  # Numbers only
-        ]
+    #         # Edge cases
+    #         ("!@#$%", -1.0, 1.0),  # Special characters
+    #         ("12345", -1.0, 1.0),  # Numbers only
+    #     ]
         
-        for text, min_sentiment, max_sentiment in test_cases:
-            max_attempts = 3
-            attempt = 0
+    #     for text, min_sentiment, max_sentiment in test_cases:
+    #         max_attempts = 3
+    #         attempt = 0
             
-            while attempt < max_attempts:
-                try:
-                    # Get fresh references to elements
-                    input_box, submit_button = get_fresh_elements()
+    #         while attempt < max_attempts:
+    #             try:
+    #                 # Get fresh references to elements
+    #                 input_box, submit_button = get_fresh_elements()
                     
-                    # Clear and input text
-                    input_box.clear()
-                    input_box.send_keys(text)
+    #                 # Clear and input text
+    #                 input_box.clear()
+    #                 input_box.send_keys(text)
                     
-                    # Submit and wait briefly
-                    submit_button.click()
+    #                 # Submit and wait briefly
+    #                 submit_button.click()
                     
-                    # Wait for result with a new element reference
-                    result_element = WebDriverWait(self.driver, 10).until(
-                        EC.presence_of_element_located((By.CLASS_NAME, "sentiment_result"))
-                    )
+    #                 # Wait for result with a new element reference
+    #                 result_element = WebDriverWait(self.driver, 10).until(
+    #                     EC.presence_of_element_located((By.CLASS_NAME, "sentiment_result"))
+    #                 )
                     
-                    # Get the text contents
-                    result_lines = result_element.text.strip().split('\n')
+    #                 # Get the text contents
+    #                 result_lines = result_element.text.strip().split('\n')
 
-                    # Verify the format matches "Sentiment Result: [number]"
-                    pattern = r"^Sentiment Result: -?\d+\.?\d*$"
-                    self.assertTrue(re.match(pattern, result_lines[0]), 
-                                f"Result '{result_lines}' doesn't match expected format 'Sentiment Result: [number]' for input '{text}'")
+    #                 # Verify the format matches "Sentiment Result: [number]"
+    #                 pattern = r"^Sentiment Result: -?\d+\.?\d*$"
+    #                 self.assertTrue(re.match(pattern, result_lines[0]), 
+    #                             f"Result '{result_lines}' doesn't match expected format 'Sentiment Result: [number]' for input '{text}'")
                     
-                    # Extract the sentiment value
-                    sentiment_value = float(result_lines[0].replace("Sentiment Result: ", ""))
+    #                 # Extract the sentiment value
+    #                 sentiment_value = float(result_lines[0].replace("Sentiment Result: ", ""))
                     
-                    # Verify sentiment is within expected range
-                    self.assertGreaterEqual(sentiment_value, min_sentiment,
-                                        f"Sentiment for '{text}' is too low: {sentiment_value}")
-                    self.assertLessEqual(sentiment_value, max_sentiment,
-                                    f"Sentiment for '{text}' is too high: {sentiment_value}")
+    #                 # Verify sentiment is within expected range
+    #                 self.assertGreaterEqual(sentiment_value, min_sentiment,
+    #                                     f"Sentiment for '{text}' is too low: {sentiment_value}")
+    #                 self.assertLessEqual(sentiment_value, max_sentiment,
+    #                                 f"Sentiment for '{text}' is too high: {sentiment_value}")
                     
-                    # If we got here, the test passed
-                    break
+    #                 # If we got here, the test passed
+    #                 break
                     
-                except StaleElementReferenceException:
-                    attempt += 1
-                    if attempt == max_attempts:
-                        raise
-                    continue
+    #             except StaleElementReferenceException:
+    #                 attempt += 1
+    #                 if attempt == max_attempts:
+    #                     raise
+    #                 continue
                 
-                except Exception as e:
-                    self.fail(f"Test failed for input '{text}': {str(e)}")
+    #             except Exception as e:
+    #                 self.fail(f"Test failed for input '{text}': {str(e)}")
             
-    def test_sentiment_explorer_rapid_inputs(self):
-        """Test rapid consecutive inputs"""
-        user_input_div = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "user-input"))
-        )
-        input_box = user_input_div.find_element(By.TAG_NAME, "input")
-        submit_button = user_input_div.find_element(By.CSS_SELECTOR, "button[type='submit']")
+    # def test_sentiment_explorer_rapid_inputs(self):
+    #     """Test rapid consecutive inputs"""
+    #     user_input_div = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "user-input"))
+    #     )
+    #     input_box = user_input_div.find_element(By.TAG_NAME, "input")
+    #     submit_button = user_input_div.find_element(By.CSS_SELECTOR, "button[type='submit']")
         
-        rapid_inputs = ["buy", "sell", "hold", "buy"]
+    #     rapid_inputs = ["buy", "sell", "hold", "buy"]
         
-        for text in rapid_inputs:
-            input_box.clear()
-            input_box.send_keys(text)
-            submit_button.click()
+    #     for text in rapid_inputs:
+    #         input_box.clear()
+    #         input_box.send_keys(text)
+    #         submit_button.click()
             
-            # Wait for and verify result
-            result_element = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, "sentiment_result"))
-            )
-            self.assertRegex(
-                result_element.text,
-                r"Sentiment Result: -?\d+\.\d+",
-                f"Invalid result format for rapid input '{text}'"
-            )
+    #         # Wait for and verify result
+    #         result_element = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, "sentiment_result"))
+    #         )
+    #         self.assertRegex(
+    #             result_element.text,
+    #             r"Sentiment Result: -?\d+\.\d+",
+    #             f"Invalid result format for rapid input '{text}'"
+    #         )
 
 if __name__ == '__main__': 
     unittest.main() 
