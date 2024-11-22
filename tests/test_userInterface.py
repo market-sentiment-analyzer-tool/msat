@@ -372,7 +372,6 @@ class UserInterfaceTests(unittest.TestCase):
         search_box.send_keys("AAPL")
         search_box.submit()
         
-        # Define table structures
         tables_to_check = {
             "reddit-table": ["Date", "Subreddit", "Description", "Sentiment"],
             "news-table": ["Date", "Link", "Title", "Sentiment"],
@@ -381,12 +380,15 @@ class UserInterfaceTests(unittest.TestCase):
         }
         
         for table_class, expected_columns in tables_to_check.items():
+            # Relocate table element on each iteration
             table = self.wait.until(
                 EC.presence_of_element_located((By.CLASS_NAME, table_class))
             )
             
             # Verify column headers
-            headers = table.find_elements(By.TAG_NAME, "th")
+            headers = self.wait.until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, f".{table_class} th"))
+            )
             header_texts = [header.text.strip() for header in headers]
             self.assertEqual(
                 header_texts,
@@ -394,21 +396,30 @@ class UserInterfaceTests(unittest.TestCase):
                 f"Incorrect columns in {table_class}"
             )
             
-            # Skip data validation for Twitter table
             if table_class == "twitter-table":
-                # Just verify that the table exists and has the correct headers
                 continue
             
-            # Get dates from the table
-            rows = table.find_elements(By.TAG_NAME, "tr")[1:]  # Skip header row
+            # Get dates from the table - relocate rows each time
+            rows = self.wait.until(
+                EC.presence_of_all_elements_located(
+                    (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
+                )
+            )
+            
             if rows:
                 dates = []
                 for row in rows:
-                    date_cell = row.find_elements(By.TAG_NAME, "td")[0]  # Date is first column
-                    if date_cell.text.strip():
-                        dates.append(datetime.strptime(date_cell.text.strip(), '%Y-%m-%d'))
+                    # Relocate cells within each row
+                    cells = self.wait.until(
+                        EC.presence_of_all_elements_located(
+                            (By.CSS_SELECTOR, f"td")
+                        )
+                    )
+                    if cells:
+                        date_text = cells[0].text.strip()
+                        if date_text:
+                            dates.append(datetime.strptime(date_text, '%Y-%m-%d'))
                 
-                # Verify all dates are within last 30 days
                 current_date = datetime.now()
                 for date in dates:
                     self.assertLessEqual(
@@ -420,11 +431,20 @@ class UserInterfaceTests(unittest.TestCase):
                 # Verify sentiment values
                 if "Sentiment" in expected_columns:
                     sentiment_index = expected_columns.index("Sentiment")
+                    # Relocate rows again for sentiment check
+                    rows = self.wait.until(
+                        EC.presence_of_all_elements_located(
+                            (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
+                        )
+                    )
                     for row in rows:
-                        cells = row.find_elements(By.TAG_NAME, "td")
-                        if cells:  # Skip if row is empty
+                        cells = self.wait.until(
+                            EC.presence_of_all_elements_located(
+                                (By.CSS_SELECTOR, f"td")
+                            )
+                        )
+                        if cells:
                             sentiment = cells[sentiment_index].text.strip()
-                            # Verify sentiment is a float between -1 and 1
                             try:
                                 sentiment_value = float(sentiment)
                                 self.assertGreaterEqual(
@@ -496,7 +516,7 @@ class UserInterfaceTests(unittest.TestCase):
                     
                     # Get the text contents
                     result_lines = result_element.text.strip().split('\n')
-                    print(result_lines)
+
                     # Verify the format matches "Sentiment Result: [number]"
                     pattern = r"^Sentiment Result: -?\d+\.?\d*$"
                     self.assertTrue(re.match(pattern, result_lines[0]), 
