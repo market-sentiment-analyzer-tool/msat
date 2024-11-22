@@ -90,7 +90,7 @@ class UserInterfaceTests(unittest.TestCase):
 
     def test_case_sensitivity(self):
         search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+            EC.presence_of_element_located((By.XPATH, "//input[@class='search-bar']"))
         )
         
         # Test lowercase input
