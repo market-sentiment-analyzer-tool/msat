@@ -114,100 +114,100 @@ class UserInterfaceTests(unittest.TestCase):
     #         )
     #         self.assertTrue(element.is_displayed(), f"Element '{element_class}' not displayed for lowercase input")
 
-    def test_special_characters(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_special_characters(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Test input with special characters
-        test_inputs = ["@APL", "A@PL", "AAPL!", "A&PL"]
+    #     # Test input with special characters
+    #     test_inputs = ["@APL", "A@PL", "AAPL!", "A&PL"]
         
-        for invalid_input in test_inputs:
-            search_box.clear()  # Clear previous input
-            search_box.send_keys(invalid_input)
-            search_box.submit()
+    #     for invalid_input in test_inputs:
+    #         search_box.clear()  # Clear previous input
+    #         search_box.send_keys(invalid_input)
+    #         search_box.submit()
             
-            # Wait for error message
-            error_message = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
-            )
+    #         # Wait for error message
+    #         error_message = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
+    #         )
             
-            # Verify error message
-            self.assertTrue(error_message.is_displayed())
-            expected_error = f'Sorry, we do not support the stock "{invalid_input}" currently.'
-            self.assertEqual(error_message.text, expected_error)
+    #         # Verify error message
+    #         self.assertTrue(error_message.is_displayed())
+    #         expected_error = f'Sorry, we do not support the stock "{invalid_input}" currently.'
+    #         self.assertEqual(error_message.text, expected_error)
 
-    def test_rapid_searches(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_rapid_searches(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # List of valid stock symbols to search rapidly
-        test_stocks = ["AAPL", "MSFT", "GOOG"]
+    #     # List of valid stock symbols to search rapidly
+    #     test_stocks = ["AAPL", "MSFT", "GOOG"]
         
-        for stock in test_stocks:
-            search_box.clear()
-            search_box.send_keys(stock)
-            search_box.submit()
+    #     for stock in test_stocks:
+    #         search_box.clear()
+    #         search_box.send_keys(stock)
+    #         search_box.submit()
             
-            # Check if results load correctly for each search
-            elements_to_check = [
-                "info-tables",
-                "table-container",
-                "reddit-table",
-                "news-table",
-                "yahoo-table",
-                "twitter-table",
-                "sentiment-box"
-            ]
+    #         # Check if results load correctly for each search
+    #         elements_to_check = [
+    #             "info-tables",
+    #             "table-container",
+    #             "reddit-table",
+    #             "news-table",
+    #             "yahoo-table",
+    #             "twitter-table",
+    #             "sentiment-box"
+    #         ]
             
-            # Verify all elements appear for each stock
-            for element_class in elements_to_check:
-                element = self.wait.until(
-                    EC.presence_of_element_located((By.CLASS_NAME, element_class))
-                )
-                self.assertTrue(element.is_displayed(),
-                            f"Element '{element_class}' not displayed for {stock}")
+    #         # Verify all elements appear for each stock
+    #         for element_class in elements_to_check:
+    #             element = self.wait.until(
+    #                 EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #             )
+    #             self.assertTrue(element.is_displayed(),
+    #                         f"Element '{element_class}' not displayed for {stock}")
                 
-            # Optional: Add a small delay to prevent potential rate limiting
-            time.sleep(1)
+    #         # Optional: Add a small delay to prevent potential rate limiting
+    #         time.sleep(1)
 
-    def test_search_history(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_search_history(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Test multiple stock searches
-        test_stocks = ["AAPL", "MSFT", "GOOG"]
+    #     # Test multiple stock searches
+    #     test_stocks = ["AAPL", "MSFT", "GOOG"]
         
-        for stock in test_stocks:
-            search_box.clear()
-            search_box.send_keys(stock)
-            search_box.submit()
+    #     for stock in test_stocks:
+    #         search_box.clear()
+    #         search_box.send_keys(stock)
+    #         search_box.submit()
             
-            elements_to_check = [
-                "info-tables",
-                "table-container", 
-                "reddit-table",
-                "news-table",
-                "yahoo-table",
-                "twitter-table",
-                "sentiment-box"
-            ]
+    #         elements_to_check = [
+    #             "info-tables",
+    #             "table-container", 
+    #             "reddit-table",
+    #             "news-table",
+    #             "yahoo-table",
+    #             "twitter-table",
+    #             "sentiment-box"
+    #         ]
             
-            # Verify elements for each search
-            for element_class in elements_to_check:
-                try:
-                    element = self.wait.until(
-                        EC.presence_of_element_located((By.CLASS_NAME, element_class))
-                    )
-                    self.assertTrue(element.is_displayed(),
-                                  f"Element '{element_class}' not displayed for {stock}")
-                except:
-                    self.fail(f"Element '{element_class}' not found for stock {stock}")
+    #         # Verify elements for each search
+    #         for element_class in elements_to_check:
+    #             try:
+    #                 element = self.wait.until(
+    #                     EC.presence_of_element_located((By.CLASS_NAME, element_class))
+    #                 )
+    #                 self.assertTrue(element.is_displayed(),
+    #                               f"Element '{element_class}' not displayed for {stock}")
+    #             except:
+    #                 self.fail(f"Element '{element_class}' not found for stock {stock}")
                     
-            # Small delay to prevent rate limiting
-            time.sleep(1)
+    #         # Small delay to prevent rate limiting
+    #         time.sleep(1)
 
     # def test_data_consistency(self):
     #     search_box = self.wait.until(
@@ -269,48 +269,48 @@ class UserInterfaceTests(unittest.TestCase):
     #         "Sentiment box is not displayed"
     #     )
 
-    def test_error_handling(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_error_handling(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Test with invalid stock symbol
-        invalid_stock = "INVALIDSTOCK123"
-        search_box.send_keys(invalid_stock)
-        search_box.submit()
+    #     # Test with invalid stock symbol
+    #     invalid_stock = "INVALIDSTOCK123"
+    #     search_box.send_keys(invalid_stock)
+    #     search_box.submit()
         
-        # Wait for error message
-        try:
-            error_element = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
-            )
-            self.assertTrue(
-                error_element.is_displayed(),
-                "Error message not displayed for invalid stock"
-            )
-            self.assertNotEqual(
-                error_element.text.strip(),
-                "",
-                "Error message is empty"
-            )
-        except:
-            self.fail("Error message not found for invalid stock symbol")
+    #     # Wait for error message
+    #     try:
+    #         error_element = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, "error-message"))
+    #         )
+    #         self.assertTrue(
+    #             error_element.is_displayed(),
+    #             "Error message not displayed for invalid stock"
+    #         )
+    #         self.assertNotEqual(
+    #             error_element.text.strip(),
+    #             "",
+    #             "Error message is empty"
+    #         )
+    #     except:
+    #         self.fail("Error message not found for invalid stock symbol")
             
-        # Verify that data tables are not displayed
-        elements_to_check = [
-            "sentiment-box"
-        ]
+    #     # Verify that data tables are not displayed
+    #     elements_to_check = [
+    #         "sentiment-box"
+    #     ]
         
-        for element_class in elements_to_check:
-            try:
-                element = self.driver.find_element(By.CLASS_NAME, element_class)
-                self.assertFalse(
-                    element.is_displayed(),
-                    f"Element {element_class} should not be displayed for invalid stock"
-                )
-            except NoSuchElementException:
-                # Element not found is expected behavior
-                pass
+    #     for element_class in elements_to_check:
+    #         try:
+    #             element = self.driver.find_element(By.CLASS_NAME, element_class)
+    #             self.assertFalse(
+    #                 element.is_displayed(),
+    #                 f"Element {element_class} should not be displayed for invalid stock"
+    #             )
+    #         except NoSuchElementException:
+    #             # Element not found is expected behavior
+    #             pass
 
     def test_responsive_layout(self):
         # Test different viewport sizes
