@@ -5,18 +5,30 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
 
 class UserInterfaceTests(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        chrome_options = Options()
+        # Required options for running in CI/CD environment
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--disable-gpu')
+        
+        # Create the Chrome WebDriver with the specified options
+        self.driver = webdriver.Chrome(options=chrome_options)
+        self.driver.implicitly_wait(10)  # Add implicit wait
         self.driver.get("http://localhost:3000")  # Ajustez l'URL selon votre configuration
         self.wait = WebDriverWait(self.driver, 10)
 
     def tearDown(self):
-        self.driver.quit()
+        if self.driver:
+            self.driver.quit()
 
     # Tests search with valid stock ticker
     def test_valid_stock_search(self):
