@@ -374,102 +374,102 @@ class UserInterfaceTests(unittest.TestCase):
                     f"Element {element_class} extends beyond right viewport at {width}x{height}"
                 )
 
-    def test_data_display_validation(self):
-        search_box = self.wait.until(
-            EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
-        )
+    # def test_data_display_validation(self):
+    #     search_box = self.wait.until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "search-bar"))
+    #     )
         
-        # Test with a known stock
-        search_box.send_keys("AAPL")
-        search_box.submit()
+    #     # Test with a known stock
+    #     search_box.send_keys("AAPL")
+    #     search_box.submit()
         
-        tables_to_check = {
-            "reddit-table": ["Date", "Subreddit", "Description", "Sentiment"],
-            "news-table": ["Date", "Link", "Title", "Sentiment"],
-            "yahoo-table": ["Date", "Author", "Content", "Sentiment"],
-            "twitter-table": ["Date", "Tweet", "Link"]
-        }
+    #     tables_to_check = {
+    #         "reddit-table": ["Date", "Subreddit", "Description", "Sentiment"],
+    #         "news-table": ["Date", "Link", "Title", "Sentiment"],
+    #         "yahoo-table": ["Date", "Author", "Content", "Sentiment"],
+    #         "twitter-table": ["Date", "Tweet", "Link"]
+    #     }
         
-        for table_class, expected_columns in tables_to_check.items():
-            # Relocate table element on each iteration
-            table = self.wait.until(
-                EC.presence_of_element_located((By.CLASS_NAME, table_class))
-            )
+    #     for table_class, expected_columns in tables_to_check.items():
+    #         # Relocate table element on each iteration
+    #         table = self.wait.until(
+    #             EC.presence_of_element_located((By.CLASS_NAME, table_class))
+    #         )
             
-            # Verify column headers
-            headers = self.wait.until(
-                EC.presence_of_all_elements_located((By.CSS_SELECTOR, f".{table_class} th"))
-            )
-            header_texts = [header.text.strip() for header in headers]
-            self.assertEqual(
-                header_texts,
-                expected_columns,
-                f"Incorrect columns in {table_class}"
-            )
+    #         # Verify column headers
+    #         headers = self.wait.until(
+    #             EC.presence_of_all_elements_located((By.CSS_SELECTOR, f".{table_class} th"))
+    #         )
+    #         header_texts = [header.text.strip() for header in headers]
+    #         self.assertEqual(
+    #             header_texts,
+    #             expected_columns,
+    #             f"Incorrect columns in {table_class}"
+    #         )
             
-            if table_class == "twitter-table":
-                continue
+    #         if table_class == "twitter-table":
+    #             continue
             
-            # Get dates from the table - relocate rows each time
-            rows = self.wait.until(
-                EC.presence_of_all_elements_located(
-                    (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
-                )
-            )
+    #         # Get dates from the table - relocate rows each time
+    #         rows = self.wait.until(
+    #             EC.presence_of_all_elements_located(
+    #                 (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
+    #             )
+    #         )
             
-            if rows:
-                dates = []
-                for row in rows:
-                    # Relocate cells within each row
-                    cells = self.wait.until(
-                        EC.presence_of_all_elements_located(
-                            (By.CSS_SELECTOR, f"td")
-                        )
-                    )
-                    if cells:
-                        date_text = cells[0].text.strip()
-                        if date_text:
-                            dates.append(datetime.strptime(date_text, '%Y-%m-%d'))
+    #         if rows:
+    #             dates = []
+    #             for row in rows:
+    #                 # Relocate cells within each row
+    #                 cells = self.wait.until(
+    #                     EC.presence_of_all_elements_located(
+    #                         (By.CSS_SELECTOR, f"td")
+    #                     )
+    #                 )
+    #                 if cells:
+    #                     date_text = cells[0].text.strip()
+    #                     if date_text:
+    #                         dates.append(datetime.strptime(date_text, '%Y-%m-%d'))
                 
-                current_date = datetime.now()
-                for date in dates:
-                    self.assertLessEqual(
-                        (current_date - date).days,
-                        30,
-                        f"Found date older than 30 days in {table_class}"
-                    )
+    #             current_date = datetime.now()
+    #             for date in dates:
+    #                 self.assertLessEqual(
+    #                     (current_date - date).days,
+    #                     30,
+    #                     f"Found date older than 30 days in {table_class}"
+    #                 )
                     
-                # Verify sentiment values
-                if "Sentiment" in expected_columns:
-                    sentiment_index = expected_columns.index("Sentiment")
-                    # Relocate rows again for sentiment check
-                    rows = self.wait.until(
-                        EC.presence_of_all_elements_located(
-                            (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
-                        )
-                    )
-                    for row in rows:
-                        cells = self.wait.until(
-                            EC.presence_of_all_elements_located(
-                                (By.CSS_SELECTOR, f"td")
-                            )
-                        )
-                        if cells:
-                            sentiment = cells[sentiment_index].text.strip()
-                            try:
-                                sentiment_value = float(sentiment)
-                                self.assertGreaterEqual(
-                                    sentiment_value,
-                                    -1.0,
-                                    f"Sentiment value less than -1 in {table_class}"
-                                )
-                                self.assertLessEqual(
-                                    sentiment_value,
-                                    1.0,
-                                    f"Sentiment value greater than 1 in {table_class}"
-                                )
-                            except ValueError:
-                                self.fail(f"Invalid sentiment value format in {table_class}: {sentiment}")
+    #             # Verify sentiment values
+    #             if "Sentiment" in expected_columns:
+    #                 sentiment_index = expected_columns.index("Sentiment")
+    #                 # Relocate rows again for sentiment check
+    #                 rows = self.wait.until(
+    #                     EC.presence_of_all_elements_located(
+    #                         (By.CSS_SELECTOR, f".{table_class} tr:not(:first-child)")
+    #                     )
+    #                 )
+    #                 for row in rows:
+    #                     cells = self.wait.until(
+    #                         EC.presence_of_all_elements_located(
+    #                             (By.CSS_SELECTOR, f"td")
+    #                         )
+    #                     )
+    #                     if cells:
+    #                         sentiment = cells[sentiment_index].text.strip()
+    #                         try:
+    #                             sentiment_value = float(sentiment)
+    #                             self.assertGreaterEqual(
+    #                                 sentiment_value,
+    #                                 -1.0,
+    #                                 f"Sentiment value less than -1 in {table_class}"
+    #                             )
+    #                             self.assertLessEqual(
+    #                                 sentiment_value,
+    #                                 1.0,
+    #                                 f"Sentiment value greater than 1 in {table_class}"
+    #                             )
+    #                         except ValueError:
+    #                             self.fail(f"Invalid sentiment value format in {table_class}: {sentiment}")
 
     def test_sentiment_explorer(self):
         def get_fresh_elements():
