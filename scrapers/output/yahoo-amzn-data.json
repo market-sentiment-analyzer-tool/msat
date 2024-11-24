@@ -1,0 +1,44 @@
+[
+    {
+        "author": "chris",
+        "content": "Down 9% from ath and still above 50 dma of 193.  Up about the same amount as S&P 500 for the year. This looks like a needed correction before we go higher.  Great buying opportunity.",
+        "date": "2024-11-23",
+        "sentiment": 0.0,
+        "weight": "4"
+    },
+    {
+        "author": "Fred",
+        "content": "even a great earnings will not get this trash back to $200",
+        "date": "2024-11-23",
+        "sentiment": 0.8126,
+        "weight": "-4"
+    },
+    {
+        "author": "Coolmask",
+        "content": "Bearish: So much potential at 188 , 169 , 145 !",
+        "date": "2024-11-23",
+        "sentiment": -0.5848,
+        "weight": "-3"
+    },
+    {
+        "author": "Steven",
+        "content": "Long term hold. It truly is a wonderful company.",
+        "date": "2024-11-23",
+        "sentiment": 0.8074,
+        "weight": "-1"
+    },
+    {
+        "author": "Roger",
+        "content": "Amazon will have The Mother of All Blow-Out Quarters this very quarter.  Need to show Walmart a thing or two.",
+        "date": "2024-11-23",
+        "sentiment": 0.1779,
+        "weight": "4"
+    },
+    {
+        "author": "BigMac",
+        "content": "Jassy was a terrible CEO hire. No leadership whatsoever. Comes across as a Socialist rather than an aggressive CEO trying to drive shareholder value. Yet he doesn't seem to mind his obscene compensation especially relative to poor stock performance.",
+        "date": "2024-11-23",
+        "sentiment": -0.8925,
+        "weight": "5"
+    }
+]
