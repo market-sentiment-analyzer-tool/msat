@@ -1,0 +1,23 @@
+[
+    {
+        "author": "aj",
+        "content": "Bigly oversold",
+        "date": "2024-11-24",
+        "sentiment": 0.4588,
+        "weight": "2"
+    },
+    {
+        "author": "Joylove",
+        "content": "Bullish: On Monday up 3%",
+        "date": "2024-11-24",
+        "sentiment": 0.7351,
+        "weight": "5"
+    },
+    {
+        "author": "Jake",
+        "content": "Bearish: Google's search business is doomed, LLM's such as Perplexity, CoPilot, etc. will take its business. Android's only use is to avoid paying the Apple tax on search revenue, the only future profit driver currently in sight is Gemini, which will probably be killed by CoPilot or ChatGPT. What the DOJ does is irrelevant. The P/B ratio means that Google risk portion of the Break-Even point formula is very dangerous.",
+        "date": "2024-11-24",
+        "sentiment": -0.9324,
+        "weight": "-3"
+    }
+]
