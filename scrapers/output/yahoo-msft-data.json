@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Josephson",
+        "content": "Bullish: MSFT high target price $600; average target $504.77; Most analysts rated MSFT Strong Buy. MSFT is under-valued. Be patient. Don't sell. Or else, buy MSFT $470 by the year end",
+        "date": "2024-11-25",
+        "sentiment": 0.944,
+        "weight": "1"
+    },
+    {
+        "author": "sharon",
+        "content": "literally this is pure garbage",
+        "date": "2024-11-25",
+        "sentiment": 0.0,
+        "weight": "-1"
+    },
+    {
+        "author": "Zzfktop",
+        "content": "It\u2019s garbage",
+        "date": "2024-11-25",
+        "sentiment": 0.0,
+        "weight": "3"
+    },
+    {
+        "author": "Julian",
+        "content": "Woah! Another stellar day by MSFT!! Everything is up while MSFT is down .43%! How lucky are we to have a consistent losing stock the last 2 months while the markets are reaching new highs.  We know where to park our money, thank you MsFT for never changing\u2026.literally.",
+        "date": "2024-11-25",
+        "sentiment": 0.8209,
+        "weight": "1"
+    },
+    {
+        "author": "Bill",
+        "content": "In my humble opinion for the first time in 20 years, I feel like MSFT is super inflated over the years it is going to crash 30 percent any minute! It could be as early as Monday morning..",
+        "date": "2024-11-25",
+        "sentiment": 0.6114,
+        "weight": "-9"
+    }
+]
