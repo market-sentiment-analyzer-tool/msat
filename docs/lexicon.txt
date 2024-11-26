@@ -1,5 +1,6 @@
 List of added/modified words from the vader_lexicon.txt file to fit our narrative
 
+affect	-1.9	0.83066	[-3, -2, -2, -2, -3, -1, -2, -2, 0, -2]
 back	-0.3	0.458	[0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
 bearish	-3.1	0.9434	[-3, -4, -2, -2, -4, -2, -2, -4, -4, -4]
 bookings	1	0.632	[0, 1, 2, 2, 1, 0, 1, 1, 1, 1]

@@ -1,0 +1,37 @@
+[
+    {
+        "author": "Han",
+        "content": "Bullish: Google is way too undervalued. I just loaded 1100 shares and plan to hold until my retirement. Thanks Google.",
+        "date": "2024-11-26",
+        "sentiment": 0.8442,
+        "weight": "3"
+    },
+    {
+        "author": "Dr",
+        "content": "Buy this stock before the next president assumes the duty. This will be the last opportunity.",
+        "date": "2024-11-26",
+        "sentiment": 0.743,
+        "weight": "2"
+    },
+    {
+        "author": "T",
+        "content": "Bullish: Shorts will get crushed",
+        "date": "2024-11-26",
+        "sentiment": 0.128,
+        "weight": "2"
+    },
+    {
+        "author": "Terminal Gravity",
+        "content": "Bullish: Love the articles that are coming out saying to ignore the noise and load up. DOJ's request for GOOG to sell Chrome won't stand up and is basically just a wish list item. Compared to peers, GOOG is 50% undervalued. Accumulating.",
+        "date": "2024-11-26",
+        "sentiment": 0.5096,
+        "weight": "4"
+    },
+    {
+        "author": "Wswolf",
+        "content": "Bearish: High risk for antitrust action not priced in yet",
+        "date": "2024-11-26",
+        "sentiment": -0.7574,
+        "weight": "-3"
+    }
+]
