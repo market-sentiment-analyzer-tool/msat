@@ -29,8 +29,10 @@
 
 /* Search Container */
 .search-container {
-    margin-bottom: 20px; /* Space below the search container */
+    margin-bottom: 20px;
+    width: 100%; 
 }
+
 
 .search-bar {
     padding: 10px 15px;
@@ -39,9 +41,10 @@
     font-size: 17px;
     border: 2px solid #007BFF; /* Blue border */
     border-radius: 5px; /* Rounded corners */
-    width: calc(100% - 85px); /* Adjust width to fit with button */
+    width: 90% ;
     transition: border-color 0.3s;
 }
+
 
 .search-bar:focus {
     border-color: #0056b3; /* Darker blue on focus */
@@ -129,8 +132,7 @@
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: calc(100% - 85px);
-    margin-right: 10px; /* Space between input and button */
+    width: 94%;
     font-size: 16px;
     transition: border-color 0.3s;
 }

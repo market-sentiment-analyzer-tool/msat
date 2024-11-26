@@ -14,10 +14,10 @@ const PieChart = ({ weights }) => {
         : [0, 0, 0]; // Handle case where total is 0
 
     const data = {
-        labels: ['News', 'Reddit', 'Yahoo'],
+        labels: ['Reddit', 'News','Yahoo'],
         datasets: [{
             data: normalizedData,
-            backgroundColor: ['#880808', '#FF5700', '#6001D2'],
+            backgroundColor: ['#FF5700', '#880808','#6001D2'],
         }],
     };
 

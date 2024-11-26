@@ -304,23 +304,24 @@ class SentimentPage extends Component {
                                     </div>
                                 )}
 
-                                <div className='user-input'>
-                                    <h2>Sentiment Explorer</h2>
-                                    <form onSubmit={this.handleUserInputSubmit}>
-                                        <input
-                                            type='text'
-                                            placeholder='Enter your text for sentiment analysis'
-                                            value={this.state.userInput}
-                                            onChange={this.handleUserInputChange}
-                                        />
-                                        <button type='submit'>Analyze</button>
-                                    </form>
+                            <div className='user-input'>
+                                <h2>Sentiment Explorer</h2>
+                                <form onSubmit={this.handleUserInputSubmit} className='input-form'>
+                                    <input
+                                        className='input-box'
+                                        type='text'
+                                        placeholder='Enter your text for sentiment analysis'
+                                        value={this.state.userInput}
+                                        onChange={this.handleUserInputChange}
+                                    />
+                                    <button type='submit'>Analyze</button>
                                     {this.state.score !== null && (
-                                        <div>
-                                            <h2 style={{backgroundColor: sentimentResultColor}} className='sentiment_result'>Sentiment Result: {this.state.score}</h2>
-                                        </div>
+                                        <h2 style={{ backgroundColor: sentimentResultColor }} className='sentiment_result'>
+                                            Sentiment Result: {this.state.score}
+                                        </h2>
                                     )}
-                                </div>
+                                </form>
+                            </div>
                             </>
                         ) : (
                             <div className='error-message'>
@@ -329,7 +330,7 @@ class SentimentPage extends Component {
                         )}
                     </div>
                     <div className='column right'>
-                        <h1>
+                        <h1 className='title'>
                             {this.state.currentStock ? 
                                 `${this.state.currentCompanyName} (${this.state.currentStock}) - Sentiment Analysis` : 
                                 'Sentiment Analysis'}
