@@ -92,6 +92,54 @@ class SentimentAnalyzerTests(unittest.TestCase):
         vs = analyzer.polarity_scores(text)
         compound_value = vs.get('compound')
         self.assertTrue(compound_value < 0)
+    
+    def test_negative_comment_1005(self):
+        # Negative comment, compound expected < 0
+        text = "Bearish: Hi my extensive do dilligence have proved to me that this NDAV will be red do too earnings disaster. Your so very welcome for this info to help safe you money :)"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1006(self):
+        # Negative comment, compound expected < 0
+        text = "Futures down LOL"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1007(self):
+        # Negative comment, compound expected < 0
+        text = "Griffin Asset Management Inc. Reduces Stock Position in Amazon.com, Inc. (NASDAQ:AMZN)"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1008(self):
+        # Negative comment, compound expected < 0
+        text = "Never ceases to disappoint...."
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+
+    def test_negative_comment_1009(self):
+        # Negative comment, compound expected < 0
+        text = "Apple pushes to dismiss DOJ smartphone monopoly case"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
+    
+    def test_negative_comment_1010(self):
+        # Negative comment, compound expected < 0
+        text = "Bearish: super overvalued.. huge P/E and market cap...lots of pre Christmas shedding. People need to buy their expensive gifts."
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(compound_value < 0)
 
     # Testing mixed sentiment comments
         
@@ -110,6 +158,40 @@ class SentimentAnalyzerTests(unittest.TestCase):
         vs = analyzer.polarity_scores(text)
         compound_value = vs.get('compound')
         self.assertTrue(compound_value < 0)
+
+    # Testing neutral sentiment comments
+
+    def test_neutral_comment_1001(self):
+        # Test for neutral sentiment (between -0.5 and 0.5)
+        text = "Rivian and VW Are Going At It Together"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(-0.5 <= compound_value <= 0.5)
+
+    def test_neutral_comment_1002(self):
+        # Test for neutral sentiment (between -0.5 and 0.5)
+        text = "Fidelity Multi-Asset Income Fund Q3 2024 Review"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(-0.5 <= compound_value <= 0.5)
+
+    def test_neutral_comment_1003(self):
+        # Test for neutral sentiment (between -0.5 and 0.5)
+        text = "Franklin DynaTech SMA Q3 2024 Commentary"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(-0.5 <= compound_value <= 0.5)
+
+    def test_neutral_comment_1004(self):
+        # Test for neutral sentiment (between -0.5 and 0.5)
+        text = "SIXG: The Next Big Tech Wave"
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(text)
+        compound_value = vs.get('compound')
+        self.assertTrue(-0.5 <= compound_value <= 0.5)
 
 if __name__ == '__main__': 
     unittest.main() 
