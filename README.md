@@ -96,7 +96,7 @@ export <VARIABLE_NAME>=<VALUE>
 
 ## Issues with Docker services
 
-If running docker compose up -d fails, you can troubleshoot by inspecting the status of the Docker containers. Use the following command to check:
+If running `docker compose up -d` fails, you can troubleshoot by inspecting the status of the Docker containers. Use the following command to check:
 ```bash
 docker ps
 ```
