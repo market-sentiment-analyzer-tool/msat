@@ -7,8 +7,8 @@ const PieChart = ({ weights }) => {
     // Normalize weights to percentages
     const normalizedData = total > 0 
         ? [
-            (weights.news / total) * 100,
             (weights.reddit / total) * 100,
+            (weights.news / total) * 100,
             (weights.yahoo / total) * 100
           ]
         : [0, 0, 0]; // Handle case where total is 0

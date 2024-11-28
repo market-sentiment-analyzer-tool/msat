@@ -35,20 +35,20 @@ const WeightInput = ({ onWeightsChange }) => {
         <div className="weight-input-container-inputs">
             <h2>Set Weights for Sentiment Sources</h2>
             <label>
-                News Weight:
-                <input
-                    type="number"
-                    value={pendingWeights.news}
-                    onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, news: value }))}
-                    onKeyPress={handleKeyPress}
-                />
-            </label>
-            <label>
                 Reddit Weight:
                 <input
                     type="number"
                     value={pendingWeights.reddit}
                     onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, reddit: value }))}
+                    onKeyPress={handleKeyPress}
+                />
+            </label>
+            <label>
+                News Weight:
+                <input
+                    type="number"
+                    value={pendingWeights.news}
+                    onChange={handleInputChange((value) => setPendingWeights({ ...pendingWeights, news: value }))}
                     onKeyPress={handleKeyPress}
                 />
             </label>

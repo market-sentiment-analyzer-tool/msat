@@ -7,7 +7,7 @@ import SentimentAnalyzer from './SentimentAnalyzer';
 class SentimentPage extends Component {
     constructor(props) {
         super(props);
-        const stockOptions = ['NVDA', 'GOOG', 'AAPL', 'MSFT', 'AMZN'];
+        const stockOptions = ['AAPL','AMZN','GOOG','MSFT','NVDA'];
         const companyNames = {
             NVDA: 'NVIDIA Corporation',
             GOOG: 'Alphabet Inc.',
