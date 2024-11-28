@@ -1,0 +1,79 @@
+[
+    {
+        "author": "Paul",
+        "content": "Tariff concerns. They are way overblown. It's really a great way to get what you want,provided you have the muscle and will to prevail. The USA will cease to be the world cash register and product dumping ground.",
+        "date": "2024-11-27",
+        "sentiment": 0.2212,
+        "weight": "7"
+    },
+    {
+        "author": "Robert",
+        "content": "Coming back.  Is it possible get a gain in AMZN today?",
+        "date": "2024-11-27",
+        "sentiment": 0.4767,
+        "weight": "-2"
+    },
+    {
+        "author": "DStateGovernor",
+        "content": "Bullish: We need you AMZN.  Cruise on.",
+        "date": "2024-11-27",
+        "sentiment": 0.5106,
+        "weight": "-2"
+    },
+    {
+        "author": "jsj",
+        "content": "Bullish: Lets go Amzn",
+        "date": "2024-11-27",
+        "sentiment": 0.5106,
+        "weight": "3"
+    },
+    {
+        "author": "Gold is the new TINA",
+        "content": "90% of items sold by Amazon are from China. Amazon  stock must get a big haircut as revenues and earnings will drop big. Ikea says the same this this morning. Walmart CFO Says They Don't Want To Raise Prices, But 'Prices Will Go Up For Consumers' Due To Upcoming Tariffs",
+        "date": "2024-11-27",
+        "sentiment": 0.6797,
+        "weight": "-7"
+    },
+    {
+        "author": "Ray",
+        "content": "The tariffs on China and other countries seems bad for Amazon yet stock keeps going up.",
+        "date": "2024-11-27",
+        "sentiment": -0.4215,
+        "weight": "5"
+    },
+    {
+        "author": "Kaiden",
+        "content": "I\u2019ve held AMZN through dips for years, and every time it\u2019s paid off. $300+ isn\u2019t a question of if, but when.",
+        "date": "2024-11-27",
+        "sentiment": 0.0,
+        "weight": "2"
+    },
+    {
+        "author": "Harold",
+        "content": "Long-term, AMZN is a bet on global e-commerce and logistics. Every dip in the stock has been a buying opportunity for me since 2018. Not selling until I see $300+.",
+        "date": "2024-11-27",
+        "sentiment": 0.6463,
+        "weight": "4"
+    },
+    {
+        "author": "Oscar",
+        "content": "Added more AMZN today after seeing Anthropic\u2019s latest AI demo. This partnership isn\u2019t just about catching up to Microsoft or Google\u2014it\u2019s about setting a new standard in cloud AI integration.",
+        "date": "2024-11-27",
+        "sentiment": 0.4404,
+        "weight": "2"
+    },
+    {
+        "author": "Randall",
+        "content": "Can we talk about AMZN\u2019s advertising segment? $14.3 billion in revenue last quarter and growing faster than expected. It\u2019s becoming the hidden gem of their business model.",
+        "date": "2024-11-27",
+        "sentiment": 0.5719,
+        "weight": "2"
+    },
+    {
+        "author": "Willie",
+        "content": "Bearish: Macro risks are real. Recession fears might hit AMZN hard next year.",
+        "date": "2024-11-27",
+        "sentiment": -0.9042,
+        "weight": "-3"
+    }
+]
