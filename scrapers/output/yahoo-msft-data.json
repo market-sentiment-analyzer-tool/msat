@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Danielle Philips",
+        "content": "Market success requires informed strategies and a growth mindset. Ongoing education and regular backtesting can help optimize investment approaches. Viewing market volatility as a catalyst for improvement can also drive growth.",
+        "date": "2024-11-28",
+        "sentiment": 0.9607,
+        "weight": "1"
+    },
+    {
+        "author": "ed",
+        "content": "Bearish: Collapsed at end. Could not even hold $424. Down 3 percent last 6 months. The beating continues unrelentingly.",
+        "date": "2024-11-28",
+        "sentiment": -0.9139,
+        "weight": "2"
+    },
+    {
+        "author": "Josephson",
+        "content": "Bullish: Financial Institutions have accumulated MSFT stocks in recent days. MSFT is under-valued. Be patient. Don't sell. Buy more today and After Hours; MSFT will break 52-week high sooner than expected",
+        "date": "2024-11-28",
+        "sentiment": 0.446,
+        "weight": "1"
+    },
+    {
+        "author": "kerl",
+        "content": "Antitrust allegations causing the negative market for Microsoft, should have been moving towards $440 otherwise",
+        "date": "2024-11-28",
+        "sentiment": -0.5719,
+        "weight": "2"
+    },
+    {
+        "author": "Eric",
+        "content": "Bullish: All big techs gets investigated and sued\u2026 it\u2019s the cost of doing business, hold and you will be rewarded",
+        "date": "2024-11-28",
+        "sentiment": 0.802,
+        "weight": "9"
+    },
+    {
+        "author": "warren",
+        "content": "Bearish: Jamieson greer is once again elected as u.s trade representative , he will wage trade wars on China, bumpy road ahead for global economic growth",
+        "date": "2024-11-28",
+        "sentiment": -0.6486,
+        "weight": "1"
+    }
+]

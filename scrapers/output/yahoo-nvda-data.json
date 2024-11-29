@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Victor",
+        "content": "Bearish: Garbage overpriced overhyped ponzi meme. Billionaires selling out of this meme, they know more than you.",
+        "date": "2024-11-28",
+        "sentiment": -0.7964,
+        "weight": "-3"
+    },
+    {
+        "author": "Ashley",
+        "content": "Bullish: Ladies and gentlemen here comes December 2024 one of the best 4 months in the year.  Santa will visit you through the chimney. Keep your wish list handy and eggnog slightly warm . Spike it up with whiskey and see the Santa roll his eyes. He will say \u201c I got to go but just a little more\u201d. He will frolick and sing and then off he goes.",
+        "date": "2024-11-28",
+        "sentiment": 0.7816,
+        "weight": "1"
+    },
+    {
+        "author": "Mike",
+        "content": "Bearish: Year end tax selling next week NVDA will retest support at $127",
+        "date": "2024-11-28",
+        "sentiment": -0.6597,
+        "weight": "-4"
+    },
+    {
+        "author": "De",
+        "content": "Bearish: These valuations are insane, under 30 billion annual net income, market cap 3420 billion. They have to grow for like 187 years lol 2025 will be a smell the coffee year",
+        "date": "2024-11-28",
+        "sentiment": -0.8316,
+        "weight": "-5"
+    },
+    {
+        "author": "Kenneth",
+        "content": "Bullish: Nvidia investors are in a great position here with 7 trillion dollars sitting on the sidelines waiting to come into the market.  With a dovish federal reserve and a corporate tax cutting President stock price is going alot higher in 2025 on the backs of even higher revenue estimated at 210 billion dollars.  This is the perfect time to purchase Nvidia as the best time frame for return on investment in the market is the last two weeks of December and the first two weeks of January historically.",
+        "date": "2024-11-28",
+        "sentiment": 0.9413,
+        "weight": "3"
+    },
+    {
+        "author": "Hi",
+        "content": "Bullish: oversold",
+        "date": "2024-11-28",
+        "sentiment": 0.743,
+        "weight": "1"
+    }
+]
