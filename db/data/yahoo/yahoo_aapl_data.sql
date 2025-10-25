@@ -21,9 +21,10 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '558fac86-b085-11f0-b905-96cbfc3c5dfc:1-22,
-6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+b0ae45c9-b14e-11f0-8de2-12b3f5280ccf:1-22,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
+d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224';
 
 --
@@ -63,4 +64,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-24  2:59:09
+-- Dump completed on 2025-10-25  3:00:32
