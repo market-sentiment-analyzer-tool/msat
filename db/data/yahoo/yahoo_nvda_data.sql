@@ -21,11 +21,12 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
-b0ae45c9-b14e-11f0-8de2-12b3f5280ccf:1-22,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224';
+e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+f63416a7-b218-11f0-9889-b6bd7ef4c739:1-22';
 
 --
 -- Table structure for table `YAHOO_NVDA_DATA`
@@ -64,4 +65,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-25  3:00:33
+-- Dump completed on 2025-10-26  3:08:28
