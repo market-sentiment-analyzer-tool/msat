@@ -27,7 +27,8 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224';
+e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
 -- Table structure for table `NEWS_NVDA_DATA`
@@ -46,7 +47,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -55,7 +56,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'Joey Frenette','Investing\n\n					Sending You to Google News in 3\n\nAdvanced Micro Devices (NASDAQ:AMD) stock is having a pretty easy time outperforming Nvidia (NASDAQ:NVDA) so far this year, with an impressive 95% gain...','2025-10-27',-0.16776,'AMD is Beating NVIDIA in 2025. Why I Expect More of the Same in 2026','https://247wallst.com/investing/2025/10/27/amd-is-beating-nvidia-in-2025-why-i-expect-more-of-the-same-in-2026/',40),(2,'Joel South','\n					By\n					\n						Joel South					\n\n\n					Oct 27, 2025 Â |Â  Updated 11:45 AM ET				\nThis post may contain links from our sponsors and affiliates, and Flywheel Publishing may receive compensation for ...','2025-10-27',0.53704,'Stock Market Live October 27: S&P 500 (VOO) Rises on China Trade Deal Hopes','https://247wallst.com/investing/2025/10/27/stock-market-live-october-27-sp-500-voo-rises-on-china-trade-deal-hopes/',4),(3,'Sristi Suman Jayaswal','...','2025-10-27',0.43384,'Nvidia Stock Just Got a New Street-High Price Target. Should You Buy NVDA Now?','https://www.barchart.com/story/news/35698421/nvidia-stock-just-got-a-new-street-high-price-target-should-you-buy-nvda-now',20),(4,'Luke Lango','\n\n			The powerful partnership uncovering stocks with 200%-plus profit potential		\nKey Takeaways:\nEditorâ€™s Note: The future of investing is data-driven; and two of the sharpest minds in the business ar...','2025-10-27',0.19972,'What Happens When a Wall Street Icon Meets Silicon Valley Data','https://investorplace.com/hypergrowthinvesting/2025/10/when-a-wall-street-icon-meets-silicon-valley-data/',4),(5,'Tyler Durden','US equity futures are higher after progress was made by US and Chinese trade negotiators, with a framework in place ahead to provide a basis for the upcoming Trump-Xi meeting on Thursday.Â As of 8:00am...','2025-10-27',0.6338,'Futures Soar To New Record High On US-China Deal Optimism','https://www.zerohedge.com/markets/futures-soar-new-record-high-us-china-deal-optimism',4),(6,'John Towfighi','Markets \n\n\n\nHot Stocks \n\n\n\nFear & Greed Index \n\n\n\n\n            Latest Market News \n\n\n\n\n            Hot Stocks \n\n\n\n\n            The stock market rally has already defied expectations this year, shruggi...','2025-10-27',0.19944,'Think the stock rally is over? It may just be beginning | CNN Business','https://www.cnn.com/2025/10/27/investing/us-stock-market-rally',4),(7,'CME Group','...','2025-10-27',0,'AI, Crypto And Gold On Watch As Equity Bull Run Continues','https://seekingalpha.com/article/4833580-ai-crypto-gold-watch-equity-bull-run-continues',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'Joel South','Forecasts\n\n					Sending You to Google News in 3\n\nShares of  NVIDIAÂ Corp. (NASDAQ:NVDA) climbed 6.55% Â over the past five trading sessions after losing 2.08% the five prior. That brings the stockâ€™s yea...','2025-10-28',0.1999,'NVIDIA (NASDAQ: NVDA) Price Prediction and Forecast 2025-2030 for October 28','https://247wallst.com/forecasts/2025/10/28/nvidia-nvda-price-prediction-and-forecast/',40),(2,'Fahad Saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2025-10-28',0.19844,'What is the Next NVIDIA (NVDA)? Brad Gerstner Answers','https://www.insidermonkey.com/blog/what-is-the-next-nvidia-nvda-brad-gerstner-answers-1634363/',40),(3,'Luke Lango','\n\n			Every AI data center will need it. Few investors are paying attention â€“ yet.		\nCanary Media just dropped a story that stopped me in my tracks:\nIn a first, a data center is using a big battery to ...','2025-10-28',0.53686,'Before the Battery Boom: The Quiet Opportunity Powering the AI Revolution','https://investorplace.com/hypergrowthinvesting/2025/10/before-the-battery-boom-the-quiet-opportunity-powering-the-ai-revolution/',4),(4,'Tech Stock Pros','...','2025-10-28',-0.3372,'Intel: Legs But No Muscles Yet','https://seekingalpha.com/article/4833823-intel-stock-q3-earnings-unchanged-capex-guidance-maintain-sell',4),(5,'Wall Street Breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nGetty Images\n \nGood morning! Here is the latest in trending:More downsizing...','2025-10-28',0.56638,'Big Tech Is Ready To Dominate The AI Era','https://seekingalpha.com/article/4833928-big-tech-is-ready-to-dominate-the-ai-era',8),(6,'Wall Street Breakfast','...','2025-10-28',-0.08216,'Wall Street Breakfast Podcast: Amazon Weighs Biggest Corporate Layoff Yet','https://seekingalpha.com/article/4833942-wall-street-breakfast-podcast-amazon-weighs-biggest-corporate-layoff-yet',4),(7,'Kunal Kapoor','...','2025-10-28',0,'Investors-First-Benchmarking-Modern-Market','https://www.morningstar.com/markets/investors-first-benchmarking-modern-market',2),(8,'Brian Colello','...','2025-10-28',0,'Qualcomm-Humain-Deal-Provides-Some-Ai-Upside','https://www.morningstar.com/stocks/qualcomm-humain-deal-provides-some-ai-upside',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -69,4 +70,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-28  2:22:11
+-- Dump completed on 2025-10-29  2:29:33
