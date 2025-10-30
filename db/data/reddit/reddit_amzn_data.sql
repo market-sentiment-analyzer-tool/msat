@@ -21,12 +21,15 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0b4ed53d-b2d9-11f0-b553-c62aadf1b476:1-32,
-19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+ac778608-b2de-11f0-9770-a29135d94770:1-67,
+c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224';
+e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+f2d7851d-b533-11f0-92b1-568d3dc3a83c:1-283,
+f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
 -- Table structure for table `REDDIT_AMZN_DATA`
@@ -45,7 +48,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -54,7 +57,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1og91hz','nlf4bfo','2025-10-26',7,0.4215,'CRM is being bled by excessive SBC.  TTM SBC is 3.2 billion...for reference their TTM gaap net income is 6.6 billion.  Five years ago their share price was 241...today it\'s just 254.  This company is setup for insiders to loot...not to make money for retail investors.\n\n[https://portfolioslab.com/tools/stock-comparison/crm/qqq](https://portfolioslab.com/tools/stock-comparison/crm/qqq)'),(2,'ValueInvesting','1og91hz','nlfc61r','2025-10-26',7,-0.6908,'I think Amazon is solid, just donâ€™t ever go to r/amznâ€¦ impatient bitches constantly whining about the stock price.'),(3,'ValueInvesting','1og91hz','nlfc4qs','2025-10-26',5,0.6369,'Just buy Amazon'),(4,'ValueInvesting','1og91hz','nlew94x','2025-10-26',3,0.6124,'Nobody knows the future, but I think your rationale seems reasonable.  \n\nMight consider using it all on AMZN. :)'),(5,'ValueInvesting','1og91hz','nlewnxv','2025-10-26',3,0,'Iâ€™d go with NEE and CRM.'),(6,'ValueInvesting','1og91hz','nlfo2fc','2025-10-26',2,0,'MCD for MNST \nNEE for PWR'),(7,'ValueInvesting','1og91hz','nlf3j1i','2025-10-26',1,0,'How about amd'),(8,'ValueInvesting','1og91hz','nlhxx0i','2025-10-26',1,0.956,'Amazon has regular dips, so accumulate at a good level. McDonaldâ€™s looks fully valued now, if not a bit overvalued. If you got in at a good price you can still hold. The dividend is good too. NEE I donâ€™t know about.\n\nAmazon should eventually pay off. Looks undervalued and they are investing heavily for a future pay off.'),(9,'ValueInvesting','1og91hz','nliuy5i','2025-10-26',1,0.9869,'I donâ€™t know if the principle of buying tech laggards makes sense â€” technology is all about disruption and growth and over time I am starting to believe one should invest in winners but at good valuations. \n\nAMZN feels like itâ€™s in this category. AWS is slagging at the moment but I wouldnâ€™t count them out yet. And their traditional business will benefit significantly from AI and robotics (automation in the warehouses). \n\nCRM feels like a laggard at the moment â€” both in terms of concerns about SaaS in general and CRMs products in particular. I have a position but Iâ€™m not adding to it significantly. Iâ€™d love to see an indication that they are seeing traction in AI. \n\nNEE seems great, I donâ€™t know enough about how to value itâ€¦');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -68,4 +70,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-27  2:03:35
+-- Dump completed on 2025-10-30  2:09:32
