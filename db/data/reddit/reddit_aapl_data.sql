@@ -25,13 +25,14 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '19b4a178-b213-11f0-a14d-12a03b378155:1-
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
+b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-da2ac91d-b78f-11f0-8a77-4a52fbd34831:1-153,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+e5fc4d82-b858-11f0-abb6-124e7c13d791:1-84,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -51,7 +52,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +61,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1olskq0','nmkru3f','2025-11-01',9,0.9562,'I agree, it is exhibiting mature growth. However, personally I would rather much invest in APPL than crypto or speculative AI specific stocks. APPL not only has tangible well made and popular products but APPL services continue to generate a lot of income. I still continue to hold and invest, tho I did trim a bit the day prior to earning announcement.'),(2,'AAPL','1olskq0','nmk6ek5','2025-11-01',1,0,'Did you?'),(3,'AAPL','1olskq0','nmmsf9v','2025-11-02',1,0.9925,' *>> growth is there but itâ€™s getting more expensive to maintain*\n\nCounterpoint: Apple are successfully executing on their strategy of monetizing their installed base of billions â€” with a B â€” of devices. The past quarter was a new record for services, making just under 28% of total revenue. \n\nServices is their fastest growing segment, up 15% in the just-completed Q4 to $28.75B. Also note that includes things like AppleCare and TV+ which are recurring subscriptions, with substantially higher margins.\n\nYou can tell they are trying to drive growth, too. Buy any new ï£¿ device and you get a series of \'3-months free\' offers that keep popping up. The tv+ app positions itself as the \'hub\' for all content on your AppleTV box, across all apps/services â€” and third-party apps like Reelgood are blocked from duplicating that or any related functionality.\n\nThen again, why invest in Tim\'s promise of 12% growth when you can get 30-100% or more elsewhere?'),(4,'AAPL','1olskq0','nmlabxo','2025-11-01',0,0,'$APPL ðŸš€'),(5,'AAPL','1olskq0','nmka5ai','2025-11-01',-17,-0.9153,'20 year old primary product \\_ expensive recurring expenses and accessories trapped in a failed ecosystem of crap');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1omgr6l','nmqatei','2025-11-02',7,0.4404,'If AAPL follows the trend of the last 5 \"lackluster\" years (only up 110%) - it should be at $350 by the end of 2026'),(2,'AAPL','1omgr6l','nmptc3c','2025-11-02',3,0.3612,'Feel like if we hit $350+ weâ€™d be hearing about a stock split. Or atleast I remember the stock being around $360 last time it split.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -74,4 +75,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-02  2:07:07
+-- Dump completed on 2025-11-03  2:03:32
