@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -35,7 +36,7 @@ d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
-e8b8e5ea-bab3-11f0-8e39-8216cd7fe72c:1-98,
+eac6c9b6-bb7c-11f0-98b4-2a9f487259e5:1-117,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -55,7 +56,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,6 +65,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1oq9g8w','nnhhvyr','2025-11-06',2,-0.8126,'Apple has always struggled selling enterprise gear. So who are they going to sell these to?'),(2,'AAPL','1oq9g8w','nnhqswl','2025-11-06',1,0,'Wouldn\'t they need an AI component?   \n\nMight go the way of the Apple automobile'),(3,'AAPL','1oq9g8w','nni0ake','2025-11-06',1,0.3612,'Like they did with their electric vehicles?'),(4,'AAPL','1oq9g8w','nni1onb','2025-11-06',1,-0.1779,'I thought AI is a bubble and all tech stocks must crash ðŸ™„'),(5,'AAPL','1oq9g8w','nni7jda','2025-11-06',1,0.5719,'yeah like I need a musk robotic spy in the home LOL'),(6,'AAPL','1oq9g8w','nniheou','2025-11-07',1,0,'What a load.....'),(7,'AAPL','1oq9g8w','nnij2kv','2025-11-07',1,0.5106,'Morgan Stanley analyst drinking some strong vodka'),(8,'AAPL','1oq9g8w','nninez9','2025-11-07',1,-0.6739,'I donâ€™t even know what to say. MS literally throwing darts to see what sticks. AAPL will not be doing this and itâ€™s BULLSHIT article'),(9,'AAPL','1oq9g8w','nnh7rny','2025-11-06',-4,0.6249,'ðŸ˜‚ apple making humanoid robots? What joke is this â€¦'),(10,'AAPL','1oq9g8w','nnh9oya','2025-11-06',-1,0,'I don\'t think so..'),(11,'AAPL','1oq9g8w','nnhdiwd','2025-11-06',0,0.4404,'Apple could make robots that suck (not literally you filthy animal) and the fan boys will still buy them.Â '),(12,'AAPL','1oq9g8w','nnhi6p5','2025-11-06',-1,0,'could'),(13,'AAPL','1oq9g8w','nnhi634','2025-11-06',-2,0,'Morgan Stanley â€¦ enough said.Â '),(14,'AAPL','1optii8','nnfmbap','2025-11-06',2,0.8739,'Not sure I like it or not. Itâ€™s better than nothing but\nI prefer to see I can just ask whatever AI platform I want to search. For example â€œSiri, can you find â€œbest rated Japanese restaurant within 10miles from my current location? And search from chatGPT and gemini.â€\nThen Siri gives me one from ChatGPT and the other from Gemini so I can have more options to choose from.Â \n\nApple should hookup to whatever companies I want instead of exclusively lockup to Gemini. Good thing is gemini is getting better but certain things I want to get info from other AI companies such as ChatGPT instead of Gemini.Â '),(15,'AAPL','1optii8','nnh5jyh','2025-11-06',1,-0.4336,'What will move the needle is making a deal **and** \"fixing\" Siri so it is no longer the dumbest voice assistant.\n\nOf *course* they made a deal with Google. \n\nApple pride themselves on \'not first\' when it comes to new tech, so it would be surprising for them to make a Siri deal with OpenAI. Then again, after the embarrassing \'woke AI\' incident, they may have thought twice about Gemini.'),(16,'AAPL','1optii8','nnhadsi','2025-11-06',1,0.4932,'doesnt google pay apple 20 billion to be default, why dont they just throw in the LLM as a gift?'),(17,'AAPL','1optii8','nnfii42','2025-11-06',0,0.0258,'Ha Ha pathetic'),(18,'AAPL','1oq3b4y','nnfx8ly','2025-11-06',4,0,'lol'),(19,'AAPL','1oq3b4y','nng487c','2025-11-06',3,-0.296,'No apple juice for you.\n\nðŸš€ ðŸš€Â ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -77,4 +79,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-06  1:58:51
+-- Dump completed on 2025-11-07  1:57:44
