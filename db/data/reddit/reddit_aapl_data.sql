@@ -22,9 +22,9 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
-3f98e037-bc45-11f0-b700-3a015db9047d:1-61,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -35,6 +35,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
+e10d3571-bd0f-11f0-a802-be708c3b2c62:1-37,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -57,7 +58,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +67,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1oqkaqx','nnjifk5','2025-11-07',35,0.7906,'Because Apple revenue doesnâ€™t depend on AI. While all the other companies have skyrocketed on the premise that AI is God almightyâ€™s gift to humanity.'),(2,'AAPL','1oqkaqx','nnjva85','2025-11-07',13,0.7964,'Yes. This is a Michael Burry shorting ai correction .  AAPL is not overspending on ai . Its a safe haven like bonds or gold during correction'),(3,'AAPL','1oqkaqx','nnkwlsk','2025-11-07',5,-0.1007,'Apple earning doesnt depend on AI. Maybe it a good stock in AI crash or pull back!'),(4,'AAPL','1oqkaqx','nnm56wn','2025-11-07',3,0.296,'AAPL is a stable stock with some sense in it. It has not hyped in a day unlike other stocks which are crashing'),(5,'AAPL','1oqkaqx','nnmur44','2025-11-07',1,0.2263,'AI which meean ALL IDIOTS.  ;)');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -80,4 +80,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-08  1:52:22
+-- Dump completed on 2025-11-09  2:01:34
