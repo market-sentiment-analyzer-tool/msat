@@ -37,8 +37,9 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-dc0f3136-bea1-11f0-9868-a6e8212ff335:1-100,
+d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
+e34fc78c-bf6a-11f0-a253-2a1088e4bcab:1-249,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
@@ -60,7 +61,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,6 +70,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1ounuio','noda4bv','2025-11-11',21,0.5859,'>BRK.B is the inverse of MAG7  \n\nIsn\'t apple still his largest position by far?'),(2,'ValueInvesting','1ounuio','nod9k3i','2025-11-11',14,0.8146,'As a holding company, Berkshire Hathaway acts very much like an ETF. Outsized returns may be impossible for its current size going forward, but I imagine it wouldn\'t be very different from owning the DJIA or something. Alphabet is one of the wide moat companies I imagine will do okay for decades to come too. This is still a better portfolio than many of the ones I\'ve seen posted here.'),(3,'ValueInvesting','1ounuio','nod4viz','2025-11-11',69,-0.3205,'This is still a dumb idea, but it is one of the less dumb 2-equity portfolios you could come up with.'),(4,'ValueInvesting','1ounuio','nod39i6','2025-11-11',18,0.4404,'This looks solid actually lol. Warren B only owns one stock (Berkshire).\n\nYou may want to diversify the tech - GOOG component'),(5,'ValueInvesting','1ounuio','nodfq2h','2025-11-12',9,0.1195,'Meaningless when you say â€œthe restâ€ of your portfolio is VT.\n\nYou could be 90% VT, 5% BRK, 5% GOOGL and thinking youâ€™re so bold.'),(6,'ValueInvesting','1ounuio','nodadaw','2025-11-11',3,-0.0772,'I have done 10%-15% in each for a handful of years now and itâ€™s a great combo. In bull times, Google will outperform, and in scary times BRK will do the lifting. The duo overall are both very high quality cross sections of the economy - better quality than most of whatâ€™s in the S&P 500 for example.\n\nI would not go full 50/50 due to single stock black swan risk, e.g. if a particular important person dies, the government turns on them, fraud, etc.'),(7,'ValueInvesting','1ounuio','nodf5zt','2025-11-12',2,0.34,'This is unironically basically Li Luâ€™s portfolio, just add some value Chinese stocks, BAC and you got it.'),(8,'ValueInvesting','1ounuio','nodg8l9','2025-11-12',2,0.6124,'Fun fact about Berkshire: the stock could drop 99% tomorrow and still have comfortably outperformed the S&P 500 since its inception.'),(9,'ValueInvesting','1ounuio','nodro1g','2025-11-12',2,-0.0772,'Google will go down along with other mag7 during a crash although I agree theyâ€™re a better diversified company.'),(10,'ValueInvesting','1ounuio','nod7hea','2025-11-11',4,-0.2454,'BRK.B has been working pretty well lately. When tech stocks went down, it went up. When tech stocks went up, it went down but only slightly. I do have about 15% of my portfolio in it but I\'m not sure if it will continue to perform this well. I\'m also diversifying into global stocks and gold so if both BRK.B and US tech fail, maybe something will still be up.'),(11,'ValueInvesting','1ounuio','nodezma','2025-11-12',1,0,'this post reminds me of Nelson on the Simpsons saying nothing beats rock.'),(12,'ValueInvesting','1ounuio','nodhd38','2025-11-12',1,0.7351,'OP should add efts with international exposure  to emerging markets and a bit of European market. Add some precious metals like gold and bitcoin (gold plus bitcoin should be about 5% or less of your portfolio)'),(13,'ValueInvesting','1ounuio','nodjxvf','2025-11-12',1,0.6249,'Awesome. Iâ€™m a bit more diversified. BRK.B 65% GOOGL 10% COST 10% CROWD 5% SILVER 5% GENI 5%- (End of the world portfolio)'),(14,'ValueInvesting','1ounuio','nodpv5g','2025-11-12',1,0.4588,'Now this a legit value investing port in the subâ€™s spirit. \n\nYou might as well pin this post and delete all future posts. There is no need for additional content in this sub.'),(15,'ValueInvesting','1ounuio','nodsbm1','2025-11-12',1,0,'This is almost my portfolio, Iâ€™m 40%berk 40%goog and some other small ones'),(16,'ValueInvesting','1ounuio','nodw2f0','2025-11-12',1,0,'I think youâ€™re looking for SCHD/GOOG'),(17,'ValueInvesting','1ounuio','nodcozd','2025-11-11',0,0.1027,'Could you endure years of soul crushing underperformance? Thatâ€™s what you may be signing up for.'),(18,'ValueInvesting','1ounuio','nodcp8u','2025-11-11',-1,0.5362,'do you want a cookie? is there a question with your post or do you just want this echo chamber to agree with you?'),(19,'ValueInvesting','1ounuio','nod02ci','2025-11-11',-18,0.3818,'That\'s merely buying two different flavors of the same exposure. Google IS one of the Magnificent 7, an integral part of that exposure. They\'re burning $75-93 billion on AI infrastructure in 2025 alone, so if AI turns out to be vaporware, you\'re holding a company with crushed margins from billions in wasted capex. Meanwhile, BRK.B just outperformed the entire MAG 7 through 2025 precisely because it owns minimal tech and sits on $320 billion in cash earning 5%+ while everyone else chases AI dreams. Your logic would work if you paired BRK.B with something actually inverse to tech concentrationâ€”like energy, utilities, or consumer staples. Two-stock portfolios are inherently fragile; this one fails to deliver the diversification you expect.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -82,4 +84,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-11  2:00:43
+-- Dump completed on 2025-11-12  2:02:34
