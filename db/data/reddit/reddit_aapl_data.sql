@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
+47072863-c034-11f0-b7c4-eef255d5388b:1-114,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -39,7 +40,6 @@ d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
-e34fc78c-bf6a-11f0-a253-2a1088e4bcab:1-249,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
@@ -61,7 +61,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1oujhc7','noc5hfg','2025-11-11',34,0,'Because AI bubble is gonna pop â€¦ and guess who did not spend billions in AI ?'),(2,'AAPL','1oujhc7','noc8m7a','2025-11-11',16,0.7506,'Love it. 86,987% return on my shares as of this afternoon.'),(3,'AAPL','1oujhc7','noc7har','2025-11-11',11,0.5093,'iPhone 17! Everyone is buying them nowâ€¦.  Almost everyone I know is upgrading to 17â€¦ 256gb entry price ðŸ˜'),(4,'AAPL','1oujhc7','nocelsl','2025-11-11',10,0.1779,'Hold, donâ€™t trade.'),(5,'AAPL','1oujhc7','noc82z2','2025-11-11',7,0,'Itâ€™s because of the new Apple Pocket obviously'),(6,'AAPL','1oujhc7','nocf2ed','2025-11-11',6,0,'obviously because of this announcement https://www.apple.com/newsroom/2025/11/introducing-iphone-pocket-a-beautiful-way-to-wear-and-carry-iphone/'),(7,'AAPL','1oujhc7','nod99ua','2025-11-11',5,-0.7623,'Because the tech bros are all lying about how much of their revenue is actually attributed to AI. Itâ€™s basically insignificant. And Apple doesnâ€™t make money from AI, they make money from shiny phones. Also consumers donâ€™t give a crap about GPUs either. Once the big hyperscalers can no longer hide the fact that no revenue is coming from AI, the bubble will pop.'),(8,'AAPL','1oujhc7','nociwfb','2025-11-11',3,0,'Because WhalesðŸ³ðŸ³ðŸ³ðŸ³ðŸ³'),(9,'AAPL','1oujhc7','noc399e','2025-11-11',8,0,'Cuz of your momma'),(10,'AAPL','1oujhc7','noc9de7','2025-11-11',2,0,'Usually, the market follows thereafter'),(11,'AAPL','1oujhc7','nocaib1','2025-11-11',2,0.25,'Apple pops when the market loses confidence.'),(12,'AAPL','1oujhc7','nocgvkm','2025-11-11',2,0,'Because they announced the $150 iPhone knit pocketÂ '),(13,'AAPL','1oujhc7','nocx2r9','2025-11-11',2,-0.4019,'My fault, sold covered calls yesterday.'),(14,'AAPL','1oujhc7','noccgdf','2025-11-11',1,0,'And the new new new iphone on 50th anniversary.....'),(15,'AAPL','1oujhc7','nocil83','2025-11-11',1,0.2023,'Check your headlines. Y\'know, the one alll the way at the top.'),(16,'AAPL','1oujhc7','nocm9c8','2025-11-11',1,0.6369,'The best poker player of any public company'),(17,'AAPL','1oujhc7','nodnapp','2025-11-12',1,0,'see that\'s what I\'ve been talking about. Just believe in AAPL'),(18,'AAPL','1ouldhv','nociibk','2025-11-11',18,0,'You would have made more money if you used punctuation.'),(19,'AAPL','1ouldhv','nocjbn9','2025-11-11',8,0,'You know they invented screenshots right?'),(20,'AAPL','1ouldhv','nod5nfd','2025-11-11',2,0,'lol why? Shouldâ€™ve held brother'),(21,'AAPL','1ouldhv','nocktj0','2025-11-11',1,-0.6249,' ðŸ˜µâ€ðŸ’« ðŸ˜•ðŸ¤”'),(22,'AAPL','1ouldhv','nocl8hw','2025-11-11',1,0,'sent'),(23,'AAPL','1ouldhv','nocjzyr','2025-11-11',0,0.3382,'Tell me the trading signals, my God! SET'),(24,'AAPL','1ou0zzq','no8l4n0','2025-11-11',8,0,'Apple didn\'t announce anything.  It\'s just conjecture from Reuters.  And what is this AI slop anyway?'),(25,'AAPL','1ou0zzq','no8hx66','2025-11-11',6,0.9643,'Modern iPhone success doesnâ€™t hinge on the Air. Itâ€™s perfectly fine if consumers choose the Pro or standard 17 over it, and this is shaping up to be a super cycle for upgrades. Margins still hold strongest on the Pro Max.'),(26,'AAPL','1ou0zzq','no8mbk9','2025-11-11',2,-0.0258,'iPhone 17 series and iPhone air just released not long â€¦ what delay joke is this about?'),(27,'AAPL','1ou0zzq','no8mzo3','2025-11-11',2,0,'Apple is cooked  /s'),(28,'AAPL','1ou0zzq','noad2uy','2025-11-11',1,-0.3804,'iPhone air joins Vision Pro ,Homepod , Touchbar, Arpower as complete nd total failed products');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ov8qps','nohi82a','2025-11-12',14,0.4215,'Remember all the people lamenting in here a month or two ago about how Apple is losing the AI race? Now itâ€™s getting rewarded for not throwing money in the AI arms race. Love to see it.'),(2,'AAPL','1ov8qps','noh2wyw','2025-11-12',4,0,'Flight to **quality** AI potential. Late stage bubble.'),(3,'AAPL','1ov8qps','noh71jn','2025-11-12',6,0.4019,'Didn\'t AAPL close at $275.25? That\'s not merely \"around $270.00.\" Apple has some interesting things happening in the relatively near future. Project J595 is among them.'),(4,'AAPL','1ov8qps','nohcukd','2025-11-12',4,0.4754,'No news on a stock climbing higher is usually good news, really great news when the overall market going down.'),(5,'AAPL','1ov8qps','noh6sjd','2025-11-12',4,0.4215,'AAPL actually holding above 4T while MSFT has been in shambles (in the red for over 3 months) and somehow is still the 2nd largest holding in VOO.'),(6,'AAPL','1ov8qps','noh22l5','2025-11-12',3,0,'Once the media talks about it .. itâ€™s over'),(7,'AAPL','1ov8qps','noh763v','2025-11-12',3,0.4215,'Flight to safety.'),(8,'AAPL','1ov8qps','noheq2i','2025-11-12',3,-0.2263,'new iphones are selling well'),(9,'AAPL','1ov8qps','noi21ms','2025-11-12',3,0,'And itâ€™s only going to climb higher.'),(10,'AAPL','1ov8qps','noiapwn','2025-11-12',3,-0.2235,'Iâ€™ve held onto my Apple stock for over 13 years. Never sold any shares yet.'),(11,'AAPL','1ov8qps','nohuep4','2025-11-12',2,-0.4588,'Zzzzz same old same old , WallStreet despises Apple along with many Analysts simply because of its power in the space , so you get zero coverage'),(12,'AAPL','1ov8qps','nohrun6','2025-11-12',1,0,'Most likely not big news because itâ€™s YTD is trailing the S&P'),(13,'AAPL','1ov8qps','noj2brp','2025-11-12',1,0,'You heard it here first: Apple is at the beginning of a supercycle, but it\'s not what you think.'),(14,'AAPL','1ov8qps','noj2v2l','2025-11-12',1,0,'That\'s where some of the PLTR and NVDA money went'),(15,'AAPL','1ov8qps','nojo3ay','2025-11-12',1,0.4404,'Easy money comes un-noticed Apple for president'),(16,'AAPL','1ov8qps','nok53qb','2025-11-13',1,0.8539,'Did you jinx it? Haha ðŸ˜› IMO, AAPL is an ETF in itself. Never disappointed as a stock and company. Been with them since 2012. I was prudent enough to invest all of my savings in AAPL back then.'),(17,'AAPL','1ov8qps','nohtaa3','2025-11-12',-2,-0.1734,'No shit? Good stocks will always hit new ATHs thatâ€™s what inflation is, it isnâ€™t news. Thatâ€™s why no oneâ€™s talking about it.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -84,4 +84,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-12  2:02:34
+-- Dump completed on 2025-11-13  2:02:09
