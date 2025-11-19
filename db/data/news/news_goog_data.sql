@@ -47,6 +47,7 @@ e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -66,7 +67,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +76,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Ethan Ryder','\n					Posted by Ethan Ryder on Nov 17th, 2025\n\nPoehling Capital Management INC. increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.5% in the second quarter, Holdings Channel.com re...','2025-11-17',0.43664,'Poehling Capital Management INC. Buys 315 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13251984/poehling-capital-management-inc-buys-315-shares-of-alphabet-inc-goog.html',4),(2,'Nicole Kennedy','\n					Posted by Nicole Kennedy on Nov 17th, 2025\n\nKazazian Asset Management LLC lowered its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 52.9% during the second quarter, according to its mos...','2025-11-17',0.28198,'Alphabet Inc. $GOOG Stock Holdings Cut by Kazazian Asset Management LLC','https://www.watchlistnews.com/alphabet-inc-goog-stock-holdings-cut-by-kazazian-asset-management-llc/10893599.html',4),(3,'Tyler Durden','US equity futures are slightly higher led by Tech, but well off overnight highs, while stocks around global markets slide. As of 8:00am ET, S&P and Nasdaq futures are up 0.1%, having previously been a...','2025-11-17',0.4716,'US Equity Futures Fade Overnight Gains As Global Selloff Deepens','https://www.zerohedge.com/markets/us-equity-futures-fade-overnight-gains-global-selloff-deepens',4),(4,'Lindsey Winhoffer','\n					Posted by Lindsey Winhoffer on Nov 17th, 2025\n\nIntrust Bank NA raised its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.5% during the second quarter, according to its most recent d...','2025-11-17',0.19982,'Intrust Bank NA Increases Stock Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/intrust-bank-na-increases-stock-position-in-alphabet-inc-goog/10893489.html',4),(5,'Kim Johansen','\n					Posted by Kim Johansen on Nov 17th, 2025\n\nSymphony Financial Ltd. Co. raised its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 19,211.8% in the second quarter, according to...','2025-11-17',0.1998,'Symphony Financial Ltd. Co. Increases Stock Holdings in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2025/11/17/symphony-financial-ltd-co-increases-stock-holdings-in-alphabet-inc-goog.html',4),(6,'Mitch Edgeman','\n					Posted by Mitch Edgeman on Nov 17th, 2025\n\nMar Vista Investment Partners LLC lowered its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 38.1% during the second quarter, according to i...','2025-11-17',0.4366,'Alphabet Inc. $GOOG Shares Sold by Mar Vista Investment Partners LLC','https://www.themarketsdaily.com/2025/11/17/alphabet-inc-goog-shares-sold-by-mar-vista-investment-partners-llc.html',4),(7,'Max Byerly','\n					Posted by Max Byerly on Nov 17th, 2025\n\nDorsey & Whitney Trust CO LLC reduced its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.4% during the 2nd quarter, according to its m...','2025-11-17',0.73626,'Dorsey & Whitney Trust CO LLC Sells 6,649 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13251329/dorsey-whitney-trust-co-llc-sells-6649-shares-of-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Wall Street Breakfast','...','2025-11-18',0,'Wall Street Breakfast Podcast: Bitcoin Slides Below $90K','https://seekingalpha.com/article/4844987-wall-street-breakfast-podcast-bitcoin-slides-below-90k',4),(2,'A.J. Button','  Google CEO Sundar Pichai discusses AI Chip Somodevilla/Getty Images News\nGoogle CEO Sundar Pichai discusses AI\nChip Somodevilla/Getty Images News\nAlphabet Inc (GOOG)(GOOGL), better known as Google, ...','2025-11-18',0.1526,'Google: All That Capex Is Delivering Results','https://seekingalpha.com/article/4844849-google-stock-all-that-capex-is-delivering-results',8),(3,'FinancialContent','Date: November 18, 2025\nAlphabet Inc. (NASDAQ: GOOG, GOOGL), the parent company of Google, stands as a multinational technology conglomerate headquartered in Mountain View, California. As of November ...','2025-11-18',0.19994,'Deep Dive: Alphabet Inc. (GOOG) â€“ Navigating the AI Frontier','https://www.financialcontent.com/article/predictstreet-2025-11-18-deep-dive-alphabet-inc-goog-navigating-the-ai-frontier',4),(4,'Rounak Jain','...','2025-11-18',0,'Google Launches Gemini 3 Amid Intensifying Competition With OpenAI','https://stocktwits.com/news-articles/markets/equity/google-launches-gemini-3-competition-openai/cLPVeh6RE7u',20),(5,'Investing Experts Podcast','    ogichobanov/iStock via Getty Images\n \nogichobanov/iStock via Getty Images\nListen here or on the go via Apple Podcasts and Spotify\n\n\n\n\n\n\n\n\n\n\nTravis Koldus runs The Contrarian and shares why he look...','2025-11-17',0.26176,'It Ultimately Comes Down To Free Cash Flow Yield','https://seekingalpha.com/article/4844731-it-ultimately-comes-down-to-free-cash-flow-yield',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -89,4 +90,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-18  2:26:28
+-- Dump completed on 2025-11-19  2:25:53
