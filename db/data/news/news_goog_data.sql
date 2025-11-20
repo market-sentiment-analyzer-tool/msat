@@ -47,6 +47,7 @@ e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
@@ -76,7 +77,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Wall Street Breakfast','...','2025-11-18',0,'Wall Street Breakfast Podcast: Bitcoin Slides Below $90K','https://seekingalpha.com/article/4844987-wall-street-breakfast-podcast-bitcoin-slides-below-90k',4),(2,'A.J. Button','  Google CEO Sundar Pichai discusses AI Chip Somodevilla/Getty Images News\nGoogle CEO Sundar Pichai discusses AI\nChip Somodevilla/Getty Images News\nAlphabet Inc (GOOG)(GOOGL), better known as Google, ...','2025-11-18',0.1526,'Google: All That Capex Is Delivering Results','https://seekingalpha.com/article/4844849-google-stock-all-that-capex-is-delivering-results',8),(3,'FinancialContent','Date: November 18, 2025\nAlphabet Inc. (NASDAQ: GOOG, GOOGL), the parent company of Google, stands as a multinational technology conglomerate headquartered in Mountain View, California. As of November ...','2025-11-18',0.19994,'Deep Dive: Alphabet Inc. (GOOG) â€“ Navigating the AI Frontier','https://www.financialcontent.com/article/predictstreet-2025-11-18-deep-dive-alphabet-inc-goog-navigating-the-ai-frontier',4),(4,'Rounak Jain','...','2025-11-18',0,'Google Launches Gemini 3 Amid Intensifying Competition With OpenAI','https://stocktwits.com/news-articles/markets/equity/google-launches-gemini-3-competition-openai/cLPVeh6RE7u',20),(5,'Investing Experts Podcast','    ogichobanov/iStock via Getty Images\n \nogichobanov/iStock via Getty Images\nListen here or on the go via Apple Podcasts and Spotify\n\n\n\n\n\n\n\n\n\n\nTravis Koldus runs The Contrarian and shares why he look...','2025-11-17',0.26176,'It Ultimately Comes Down To Free Cash Flow Yield','https://seekingalpha.com/article/4844731-it-ultimately-comes-down-to-free-cash-flow-yield',8);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Ravikash Bakolia','...','2025-11-19',0,'Google DeepMind to open AI research lab in Singapore','https://seekingalpha.com/news/4523695-google-deepmind-to-open-ai-research-lab-in-singapore?feed_item_type=news',40),(2,'Keithen Drury','Investors must be patient with these stocks as they will have natural rising and falling periods.\nFinding stocks that you can buy now and hold forever is the goal of nearly every investor. These low-m...','2025-11-19',0.85788,'3 Growth Stocks to Buy and Hold Forever','https://www.fool.com/investing/2025/11/19/3-growth-stocks-to-buy-and-hold-forever/',4),(3,'Prabhjote Gill','...','2025-11-19',0,'Google Stock Hits $300 For First Time Ever After Announcing Gemini 3, Waymo Expansion','https://stocktwits.com/news-articles/markets/equity/google-stock-hits-300-for-first-time-ever-after-announcing-gemini-3-waymo-expansion/cLPoXCPREBV',20),(4,'Wall Street Breakfast','...','2025-11-18',0,'Wall Street Breakfast Podcast: Bitcoin Slides Below $90K','https://seekingalpha.com/article/4844987-wall-street-breakfast-podcast-bitcoin-slides-below-90k',4),(5,'A.J. Button','...','2025-11-18',0,'Google: All That Capex Is Delivering Results','https://seekingalpha.com/article/4844849-google-stock-all-that-capex-is-delivering-results',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -90,4 +91,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-19  2:25:53
+-- Dump completed on 2025-11-20  2:24:40
