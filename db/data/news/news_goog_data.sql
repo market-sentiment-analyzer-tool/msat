@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
+2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -68,7 +69,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +78,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Ravikash Bakolia','...','2025-11-19',0,'Google DeepMind to open AI research lab in Singapore','https://seekingalpha.com/news/4523695-google-deepmind-to-open-ai-research-lab-in-singapore?feed_item_type=news',40),(2,'Keithen Drury','Investors must be patient with these stocks as they will have natural rising and falling periods.\nFinding stocks that you can buy now and hold forever is the goal of nearly every investor. These low-m...','2025-11-19',0.85788,'3 Growth Stocks to Buy and Hold Forever','https://www.fool.com/investing/2025/11/19/3-growth-stocks-to-buy-and-hold-forever/',4),(3,'Prabhjote Gill','...','2025-11-19',0,'Google Stock Hits $300 For First Time Ever After Announcing Gemini 3, Waymo Expansion','https://stocktwits.com/news-articles/markets/equity/google-stock-hits-300-for-first-time-ever-after-announcing-gemini-3-waymo-expansion/cLPoXCPREBV',20),(4,'Wall Street Breakfast','...','2025-11-18',0,'Wall Street Breakfast Podcast: Bitcoin Slides Below $90K','https://seekingalpha.com/article/4844987-wall-street-breakfast-podcast-bitcoin-slides-below-90k',4),(5,'A.J. Button','...','2025-11-18',0,'Google: All That Capex Is Delivering Results','https://seekingalpha.com/article/4844849-google-stock-all-that-capex-is-delivering-results',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Barchart Insights','...','2025-11-20',0.2,'Burry Calls â€˜Fraudâ€™ on Hyperscalers: 4 Pins Set to Pop the AI Bubble and the â€˜Big Shortâ€™ Math on Big Tech','https://www.barchart.com/story/news/36229287/burry-calls-fraud-on-hyperscalers-4-pins-set-to-pop-the-ai-bubble-and-the-big-short-math-on-big-tech',2),(2,'Chris Katje','Shares of Magnificent Seven stock Alphabet Inc (NASDAQ:GOOG)(NASDAQ:GOOGL) have soared to new all-time highs in recent days and posted an impressive gain of 54% year-to-date in 2025. Investors in the ...','2025-11-20',0.66824,'Google Founders Page, Brin Up Over $160B In 2025, Now Worth More Than Zuckerberg','https://www.benzinga.com/markets/tech/25/11/48990917/google-founders-page-brin-up-over-160b-in-2025-now-worth-more-than-zuckerberg',80),(3,'Keith Speights','A lot can happen for this quantum computing leader over the next decade.\nTen years go by quickly. Duke University professors Chris Monroe and Jungang Kim founded IonQ (IONQ 14.44%) in 2015. Their goal...','2025-11-20',0.19954,'Where Will IonQ Be in 10 Years?','https://www.fool.com/investing/2025/11/20/where-will-ionq-be-in-10-years/',4),(4,'Aanchal Sugandh','...','2025-11-19',0.2368,'Is GOOGL Stock a Buy, Sell, or Hold as Google Launches Gemini 3?','https://www.barchart.com/story/news/36215701/is-googl-stock-a-buy-sell-or-hold-as-google-launches-gemini-3',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -91,4 +92,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-20  2:24:40
+-- Dump completed on 2025-11-21  2:25:14
