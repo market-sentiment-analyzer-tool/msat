@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
+ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -69,7 +70,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,7 +79,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Barchart Insights','...','2025-11-20',0.2,'Burry Calls â€˜Fraudâ€™ on Hyperscalers: 4 Pins Set to Pop the AI Bubble and the â€˜Big Shortâ€™ Math on Big Tech','https://www.barchart.com/story/news/36229287/burry-calls-fraud-on-hyperscalers-4-pins-set-to-pop-the-ai-bubble-and-the-big-short-math-on-big-tech',2),(2,'Chris Katje','Shares of Magnificent Seven stock Alphabet Inc (NASDAQ:GOOG)(NASDAQ:GOOGL) have soared to new all-time highs in recent days and posted an impressive gain of 54% year-to-date in 2025. Investors in the ...','2025-11-20',0.66824,'Google Founders Page, Brin Up Over $160B In 2025, Now Worth More Than Zuckerberg','https://www.benzinga.com/markets/tech/25/11/48990917/google-founders-page-brin-up-over-160b-in-2025-now-worth-more-than-zuckerberg',80),(3,'Keith Speights','A lot can happen for this quantum computing leader over the next decade.\nTen years go by quickly. Duke University professors Chris Monroe and Jungang Kim founded IonQ (IONQ 14.44%) in 2015. Their goal...','2025-11-20',0.19954,'Where Will IonQ Be in 10 Years?','https://www.fool.com/investing/2025/11/20/where-will-ionq-be-in-10-years/',4),(4,'Aanchal Sugandh','...','2025-11-19',0.2368,'Is GOOGL Stock a Buy, Sell, or Hold as Google Launches Gemini 3?','https://www.barchart.com/story/news/36215701/is-googl-stock-a-buy-sell-or-hold-as-google-launches-gemini-3',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (John Ballard)','These elite tech stocks offer excellent return prospects.\nArtificial intelligence (AI) promises to deliver trillions of dollars in efficiency gains to the economy. It could take a few decades to reali...','2025-11-21',0.84586,'Got $3,000? 2 Artificial Intelligence (AI) Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2025/11/21/got-3000-2-ai-stocks-buy-and-hold-long-term/',4),(2,'Kennedy Njagi','...','2025-11-21',0,'AI Is Catalyzing A New Era Of Expansion For Alphabet','https://seekingalpha.com/article/4846387-ai-is-catalyzing-a-new-era-of-expansion-for-alphabet',4),(3,'Keithen Drury','Alphabet is a far better stock pick than Apple.\nWatching what Warren Buffett and Berkshire Hathaway (BRK.A +0.09%) (BRK.B +0.48%) are doing is a popular investing strategy. While the CEO is stepping d...','2025-11-21',0.76736,'Warren Buffett Is Selling Apple and Buying This Brilliant Growth Stock Instead','https://www.fool.com/investing/2025/11/21/warren-buffett-is-selling-apple-and-buying-this-br/',4),(4,'Barchart Insights','...','2025-11-20',0.2,'Burry Calls â€˜Fraudâ€™ on Hyperscalers: 4 Pins Set to Pop the AI Bubble and the â€˜Big Shortâ€™ Math on Big Tech','https://www.barchart.com/story/news/36229287/burry-calls-fraud-on-hyperscalers-4-pins-set-to-pop-the-ai-bubble-and-the-big-short-math-on-big-tech',2),(5,'Ravikash Bakolia','...','2025-11-20',0,'Google to open hardware engineering center in Taipei','https://seekingalpha.com/news/4524307-google-to-open-hardware-engineering-center-in-taipei?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -92,4 +93,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-21  2:25:14
+-- Dump completed on 2025-11-22  2:20:26
