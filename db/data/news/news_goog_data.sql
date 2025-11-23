@@ -29,6 +29,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -70,7 +71,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -79,7 +80,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (John Ballard)','These elite tech stocks offer excellent return prospects.\nArtificial intelligence (AI) promises to deliver trillions of dollars in efficiency gains to the economy. It could take a few decades to reali...','2025-11-21',0.84586,'Got $3,000? 2 Artificial Intelligence (AI) Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2025/11/21/got-3000-2-ai-stocks-buy-and-hold-long-term/',4),(2,'Kennedy Njagi','...','2025-11-21',0,'AI Is Catalyzing A New Era Of Expansion For Alphabet','https://seekingalpha.com/article/4846387-ai-is-catalyzing-a-new-era-of-expansion-for-alphabet',4),(3,'Keithen Drury','Alphabet is a far better stock pick than Apple.\nWatching what Warren Buffett and Berkshire Hathaway (BRK.A +0.09%) (BRK.B +0.48%) are doing is a popular investing strategy. While the CEO is stepping d...','2025-11-21',0.76736,'Warren Buffett Is Selling Apple and Buying This Brilliant Growth Stock Instead','https://www.fool.com/investing/2025/11/21/warren-buffett-is-selling-apple-and-buying-this-br/',4),(4,'Barchart Insights','...','2025-11-20',0.2,'Burry Calls â€˜Fraudâ€™ on Hyperscalers: 4 Pins Set to Pop the AI Bubble and the â€˜Big Shortâ€™ Math on Big Tech','https://www.barchart.com/story/news/36229287/burry-calls-fraud-on-hyperscalers-4-pins-set-to-pop-the-ai-bubble-and-the-big-short-math-on-big-tech',2),(5,'Ravikash Bakolia','...','2025-11-20',0,'Google to open hardware engineering center in Taipei','https://seekingalpha.com/news/4524307-google-to-open-hardware-engineering-center-in-taipei?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Barchart Insights','...','2025-11-22',-0.2368,'Elon Musk Says the Job of the Future is No Longer Coding, Itâ€™s â€˜No Jobâ€™ At All. Hereâ€™s How Investors Can Prepare.','https://www.barchart.com/story/news/36263449/elon-musk-says-the-job-of-the-future-is-no-longer-coding-its-no-job-at-all-heres-how-investors-can-prepare',2),(2,'Ahmed Farhath','...','2025-11-21',0,'Google continues to test ads in AI Mode results (update)','https://seekingalpha.com/news/4525029-google-rolls-out-ads-in-ai-mode-results?feed_item_type=news',40),(3,'Chris Ciaccia','...','2025-11-21',-0.1024,'Google exec says compute needs to be doubled every 6 months to meet demand: report','https://seekingalpha.com/news/4524831-google-exec-says-compute-needs-to-be-doubled-every-6-months-to-meet-demand-report?feed_item_type=news',40),(4,'Tangerine Tan Capital','...','2025-11-21',-0.21856,'Alphabet: Still Being Underestimated','https://seekingalpha.com/article/4846639-alphabet-still-being-underestimated',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -93,4 +94,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-22  2:20:26
+-- Dump completed on 2025-11-23  2:52:47
