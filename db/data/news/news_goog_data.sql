@@ -40,6 +40,7 @@ baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
+cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -71,7 +72,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -80,7 +81,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Barchart Insights','...','2025-11-22',-0.2368,'Elon Musk Says the Job of the Future is No Longer Coding, Itâ€™s â€˜No Jobâ€™ At All. Hereâ€™s How Investors Can Prepare.','https://www.barchart.com/story/news/36263449/elon-musk-says-the-job-of-the-future-is-no-longer-coding-its-no-job-at-all-heres-how-investors-can-prepare',2),(2,'Ahmed Farhath','...','2025-11-21',0,'Google continues to test ads in AI Mode results (update)','https://seekingalpha.com/news/4525029-google-rolls-out-ads-in-ai-mode-results?feed_item_type=news',40),(3,'Chris Ciaccia','...','2025-11-21',-0.1024,'Google exec says compute needs to be doubled every 6 months to meet demand: report','https://seekingalpha.com/news/4524831-google-exec-says-compute-needs-to-be-doubled-every-6-months-to-meet-demand-report?feed_item_type=news',40),(4,'Tangerine Tan Capital','...','2025-11-21',-0.21856,'Alphabet: Still Being Underestimated','https://seekingalpha.com/article/4846639-alphabet-still-being-underestimated',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Brett Schafer','Apple is more expensive and growing slower than these other artificial intelligence (AI) stocks.\nApple (AAPL +1.97%) stock has done well this year, and it currently sports a $4 trillion market cap, ma...','2025-11-23',0.38084,'Prediction: These 2 AI Stocks Will Be Worth More Than Apple by Year-End 2026','https://www.fool.com/investing/2025/11/23/predict-ai-stocks-worth-more-than-apple-2026/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -94,4 +95,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-23  2:52:47
+-- Dump completed on 2025-11-24  2:47:31
