@@ -27,6 +27,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -72,7 +73,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -81,7 +82,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Brett Schafer','Apple is more expensive and growing slower than these other artificial intelligence (AI) stocks.\nApple (AAPL +1.97%) stock has done well this year, and it currently sports a $4 trillion market cap, ma...','2025-11-23',0.38084,'Prediction: These 2 AI Stocks Will Be Worth More Than Apple by Year-End 2026','https://www.fool.com/investing/2025/11/23/predict-ai-stocks-worth-more-than-apple-2026/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (Adria Cimino)','These Magnificent Seven players are well-positioned to benefit in the AI boom.\nBillionaire Stanley Druckenmiller is known for delivering long-term results to investors. At the helm of Duquesne Capital...','2025-11-24',0.67932,'Billionaire Stanley Druckenmiller Dropped Nvidia, Palantir, and Eli Lilly Over the Past Year and Just Bought the 2 Cheapest Magnificent Seven Stocks.','https://www.fool.com/investing/2025/11/23/billionaire-stanley-druckenmiller-dropped-nvidia-p/',4),(2,'Rich Smith','Alphabet just stole a march on OpenAI, and investors are thrilled.\nThe stock market is starting strong this holiday-shortened week, with the S&P 500 up more than 1% -- and Alphabet (GOOG +6.34%) (GOOG...','2025-11-24',0.1983,'Why Alphabet Stock Just Popped','https://www.fool.com/investing/2025/11/24/why-alphabet-stock-just-popped/',4),(3,'Shanthi M','...','2025-11-24',0.65408,'Bargain Hunting Among Beaten-Down Megacaps? This Mag 7 Stock Looks Like The Best Deal On The Rack','https://stocktwits.com/news-articles/markets/equity/bargain-hunting-among-beaten-down-megacaps-this-mag-7-stock-looks-best-deal/cL5bcWLREfq',2),(4,'Keithen Drury','Alphabet was a popular stock to purchase during Q3.\nTracking billionaire-run hedge funds is a smart move for investors. This information is made available to investors 45 days after a quarter ends thr...','2025-11-24',0.4184,'Meet the Unstoppable AI Stock Billionaires Are Loading Up On','https://www.fool.com/investing/2025/11/24/meet-the-unstoppable-ai-stock-billionaires-are-loa/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -95,4 +96,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-24  2:47:31
+-- Dump completed on 2025-11-25  2:28:15
