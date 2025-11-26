@@ -33,6 +33,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
@@ -73,7 +74,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,7 +83,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (Adria Cimino)','These Magnificent Seven players are well-positioned to benefit in the AI boom.\nBillionaire Stanley Druckenmiller is known for delivering long-term results to investors. At the helm of Duquesne Capital...','2025-11-24',0.67932,'Billionaire Stanley Druckenmiller Dropped Nvidia, Palantir, and Eli Lilly Over the Past Year and Just Bought the 2 Cheapest Magnificent Seven Stocks.','https://www.fool.com/investing/2025/11/23/billionaire-stanley-druckenmiller-dropped-nvidia-p/',4),(2,'Rich Smith','Alphabet just stole a march on OpenAI, and investors are thrilled.\nThe stock market is starting strong this holiday-shortened week, with the S&P 500 up more than 1% -- and Alphabet (GOOG +6.34%) (GOOG...','2025-11-24',0.1983,'Why Alphabet Stock Just Popped','https://www.fool.com/investing/2025/11/24/why-alphabet-stock-just-popped/',4),(3,'Shanthi M','...','2025-11-24',0.65408,'Bargain Hunting Among Beaten-Down Megacaps? This Mag 7 Stock Looks Like The Best Deal On The Rack','https://stocktwits.com/news-articles/markets/equity/bargain-hunting-among-beaten-down-megacaps-this-mag-7-stock-looks-best-deal/cL5bcWLREfq',2),(4,'Keithen Drury','Alphabet was a popular stock to purchase during Q3.\nTracking billionaire-run hedge funds is a smart move for investors. This information is made available to investors 45 days after a quarter ends thr...','2025-11-24',0.4184,'Meet the Unstoppable AI Stock Billionaires Are Loading Up On','https://www.fool.com/investing/2025/11/24/meet-the-unstoppable-ai-stock-billionaires-are-loa/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Tyler Durden','US futures are flat, having rebounded from session lows, even as Nvidia shares fell 3.8% in premarket trading as investors assess the threat of increased competition after a report that Meta Platforms...','2025-11-25',0.1999,'Stock Rally Falters As Nvidia-Google AI Rivalry Intensifies','https://www.zerohedge.com/markets/stock-rally-falters-nvidia-google-ai-rivalry-intensifies',4),(2,'Rich Duprey','Investing\n\n					Sending You to Google News in 3\n\nÂ© achinthamb / Shutterstock.com\n\nAlphabet (NASDAQ:GOOG)(NASDAQ:GOOGL) has been on a rocket ride this year, and its market capitalization recently cross...','2025-11-25',0.19974,'Will Alphabet Hit $4 Trillion Before the End of the Year?','https://247wallst.com/investing/2025/11/25/will-alphabet-hit-4-trillion-before-the-end-of-the-year/',4),(3,'Sushree Mohanty','...','2025-11-25',0,'Could This AI Stock Become the Next Trillion-Dollar Chip Giant?','https://www.barchart.com/story/news/36302484/could-this-ai-stock-become-the-next-trillion-dollar-chip-giant',2),(4,'Ravikash Bakolia','...','2025-11-25',0.02064,'Apple, Google ordered by Singapore to prevent government spoofing on messaging platforms: report','https://seekingalpha.com/news/4525697-apple-google-ordered-by-singapore-to-prevent-government-spoofing-on-messaging-platforms?feed_item_type=news',40),(5,'Emily Bary','Please enable JS and disable any ad blocker...','2025-11-25',0.06364,'Alphabet stock rises as possible Meta chip deal highlights new twist in AI trade','https://www.marketwatch.com/bulletins/redirect/go?g=cf77a52a-edf0-4943-b5b8-c6e955a8d27e&mod=mw_rss_bulletins',4),(6,'The Arora Report','To gain an edge, this is what you need to know today.\nPlease click here for an enlarged chart of NVIDIA Corp (NASDAQ:NVDA).\nNote the following:\nMost portfolios are now heavily concentrated in the Mag ...','2025-11-25',-0.34854,'Google Deal With Meta Is Bad News for Nvidia, Rate Cut Probability Rises','https://www.benzinga.com/Opinion/25/11/49065039/google-deal-with-meta-is-bad-news-for-nvidia-rate-cut-probability-rises',80);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -96,4 +97,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-25  2:28:15
+-- Dump completed on 2025-11-26  2:28:58
