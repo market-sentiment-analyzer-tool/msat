@@ -27,6 +27,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -74,7 +75,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +84,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Tyler Durden','US futures are flat, having rebounded from session lows, even as Nvidia shares fell 3.8% in premarket trading as investors assess the threat of increased competition after a report that Meta Platforms...','2025-11-25',0.1999,'Stock Rally Falters As Nvidia-Google AI Rivalry Intensifies','https://www.zerohedge.com/markets/stock-rally-falters-nvidia-google-ai-rivalry-intensifies',4),(2,'Rich Duprey','Investing\n\n					Sending You to Google News in 3\n\nÂ© achinthamb / Shutterstock.com\n\nAlphabet (NASDAQ:GOOG)(NASDAQ:GOOGL) has been on a rocket ride this year, and its market capitalization recently cross...','2025-11-25',0.19974,'Will Alphabet Hit $4 Trillion Before the End of the Year?','https://247wallst.com/investing/2025/11/25/will-alphabet-hit-4-trillion-before-the-end-of-the-year/',4),(3,'Sushree Mohanty','...','2025-11-25',0,'Could This AI Stock Become the Next Trillion-Dollar Chip Giant?','https://www.barchart.com/story/news/36302484/could-this-ai-stock-become-the-next-trillion-dollar-chip-giant',2),(4,'Ravikash Bakolia','...','2025-11-25',0.02064,'Apple, Google ordered by Singapore to prevent government spoofing on messaging platforms: report','https://seekingalpha.com/news/4525697-apple-google-ordered-by-singapore-to-prevent-government-spoofing-on-messaging-platforms?feed_item_type=news',40),(5,'Emily Bary','Please enable JS and disable any ad blocker...','2025-11-25',0.06364,'Alphabet stock rises as possible Meta chip deal highlights new twist in AI trade','https://www.marketwatch.com/bulletins/redirect/go?g=cf77a52a-edf0-4943-b5b8-c6e955a8d27e&mod=mw_rss_bulletins',4),(6,'The Arora Report','To gain an edge, this is what you need to know today.\nPlease click here for an enlarged chart of NVIDIA Corp (NASDAQ:NVDA).\nNote the following:\nMost portfolios are now heavily concentrated in the Mag ...','2025-11-25',-0.34854,'Google Deal With Meta Is Bad News for Nvidia, Rate Cut Probability Rises','https://www.benzinga.com/Opinion/25/11/49065039/google-deal-with-meta-is-bad-news-for-nvidia-rate-cut-probability-rises',80);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Christopher Parkmond','\nSo, youâ€™re curious about Waymo and how it fits into the investment picture, right? Itâ€™s a bit different from buying stock in a company you see on the big exchanges every day. Letâ€™s break down where W...','2025-11-26',0.6999,'Exploring the Options: How to Invest in Waymo Before its IPO','https://techannouncer.com/exploring-the-options-how-to-invest-in-waymo-before-its-ipo/',4),(2,'Ananya Mariam Rajesh','...','2025-11-26',0,'Nvidia Is Still The â€˜Rocky Balboa Of The AI Revolution,â€™ Says Wedbushâ€™s Dan Ives','https://stocktwits.com/news-articles/markets/equity/nvidia-is-still-the-rocky-balboa-of-the-ai-revolution-says-dan-ives/cL53NHdREWR',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -97,4 +98,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-26  2:28:58
+-- Dump completed on 2025-11-27  2:25:57
