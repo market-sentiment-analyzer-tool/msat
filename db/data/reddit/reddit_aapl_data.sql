@@ -27,12 +27,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
-4b591be1-cb34-11f0-9872-e6648de6404d:1-63,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+6bb54ec7-cbfd-11f0-9fd1-3a27a3da0e20:1-89,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -75,7 +76,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -84,7 +85,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1p7d62b','nqx42ke','2025-11-26',5,0,'Letâ€™s go!!'),(2,'AAPL','1p7d62b','nqz2ixy','2025-11-27',2,0,'285 is next target'),(3,'AAPL','1p7d62b','nqyt0fb','2025-11-26',1,0,'Has anyone tried an Android? ðŸ¤¦ðŸ»â€â™‚ï¸'),(4,'AAPL','1p7b2py','nqwd8w8','2025-11-26',3,0.6908,'I mean, the share price is up 2,000% since his death.  If youâ€™re holding long-term, thereâ€™s joy in that.'),(5,'AAPL','1p7b2py','nqwepj9','2025-11-26',2,0.9136,'Zoom out. Thereâ€™s a lot of joy, at least for shareholders. Tim Cook has overseen far greater growth and revenue than Steve Jobs did.'),(6,'AAPL','1p7b2py','nqwo3qv','2025-11-26',1,0.5242,'Nice work! This is the #2 post on r/AAPL today!'),(7,'Wallstreetbetsnew','1p7gfzl','nqxg5r9','2025-11-26',1,-0.7912,'Already up 70% this week. No one buy this bullshit.  Squeeze? Where? ðŸ”­'),(8,'Wallstreetbetsnew','1p785wx','nqvqryh','2025-11-26',0,0.9788,'Let\'s focus on IVP... I love my pets n need to save this. FUNDMENTALLY ITS MC=600k n \n1. Rev=4M n 7% increase from LY.\n2. , Service (1%), Product,(8%), Clinical (9%)Rev are up in 3 categories.\n3. Expenses Decreased GA (19% down), NLoss decrease 27%.\n\n2026 Guidance \n1. Online pharmacy\n2. Regain compliance 2.5M shareholders equity.\n\nO/S =3M Rev yearly 14M lowest price 0.12\nCash =3M ((Debt=17M)). Inst 3% shares locked..\n\n*** IF U OR LOVED ONES LOVE PETS THEN SAVE THIS*****buy $100 worth.\n *****HOLD****HOLD****HOLD*****\n\n***WOOF...WOOF...MEEOW...MEEOW...***');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1p8fayp','nr4u159','2025-11-27',1,0.7483,'I have a feeling it\'s the K economy. People who have money buy iPhones ppl who don\'t don\'t buy phones.'),(2,'AAPL','1p8hk02','nr59ces','2025-11-28',2,-0.3919,'I firmly believe AAPL can and will hit the $300s, but no one knows when thatâ€™ll happen.  The timing for me doesnâ€™t matter as much since Iâ€™m a long term investor and never try to trade it.'),(3,'AAPL','1p8hk02','nr5amib','2025-11-28',2,0,'Go go AAPL.'),(4,'AAPL','1p8hk02','nr55h48','2025-11-28',1,0,'The stock was at $385ish when it last split. $300 seems totally plausible. Will probably split again in the next couple years.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -98,4 +99,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-27  1:57:31
+-- Dump completed on 2025-11-28  1:57:23
