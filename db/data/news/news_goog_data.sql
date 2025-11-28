@@ -31,6 +31,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -75,7 +76,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -84,7 +85,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Christopher Parkmond','\nSo, youâ€™re curious about Waymo and how it fits into the investment picture, right? Itâ€™s a bit different from buying stock in a company you see on the big exchanges every day. Letâ€™s break down where W...','2025-11-26',0.6999,'Exploring the Options: How to Invest in Waymo Before its IPO','https://techannouncer.com/exploring-the-options-how-to-invest-in-waymo-before-its-ipo/',4),(2,'Ananya Mariam Rajesh','...','2025-11-26',0,'Nvidia Is Still The â€˜Rocky Balboa Of The AI Revolution,â€™ Says Wedbushâ€™s Dan Ives','https://stocktwits.com/news-articles/markets/equity/nvidia-is-still-the-rocky-balboa-of-the-ai-revolution-says-dan-ives/cL53NHdREWR',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Aditya Raghunath','...','2025-11-27',-0.08216,'As Founder Ray Dalio Warns the Market Is in a Bubble, Bridgewater Associates Just Bought CoreWeave Stock','https://www.barchart.com/story/news/36343272/as-founder-ray-dalio-warns-the-market-is-in-a-bubble-bridgewater-associates-just-bought-coreweave-stock',2),(2,'Keithen Drury','The AI race shows no signs of slowing down.\nWhile the market shows signs that it might be easing up a little on its craze for all things artificial intelligence (AI) and getting a little wary about th...','2025-11-27',0.71848,'3 Top AI Stocks to Buy With $1,000','https://www.fool.com/investing/2025/11/27/3-top-ai-stocks-to-buy-with-1000/',4),(3,'Johnny Zhang','...','2025-11-26',0.47952,'Alphabet: Why It Beat The Rest Of The Magnificent 7 During The Market Pullback','https://seekingalpha.com/article/4848058-alphabet-why-it-beat-the-rest-of-magnificent-7-during-market-pullback',4),(4,'Larry Ramer','...','2025-11-26',0.43384,'Is Google Stock a Buy at $4 Trillion?','https://www.barchart.com/story/news/36331109/is-google-stock-a-buy-at-4-trillion',20),(5,'Chris Ciaccia','...','2025-11-26',0.21856,'Google selling 500,000 chips could boost earnings by 3%, MS says','https://seekingalpha.com/news/4526310-google-selling-500000-chips-could-boost-earnings-by-3-percent-ms-says?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -98,4 +99,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-27  2:25:57
+-- Dump completed on 2025-11-28  2:25:16
