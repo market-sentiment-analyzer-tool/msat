@@ -31,10 +31,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
-6bb54ec7-cbfd-11f0-9fd1-3a27a3da0e20:1-89,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+8ca4f864-ccc6-11f0-b70c-22c6f5167aa3:1-135,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -76,7 +77,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,7 +86,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1p7u2pb','nr0e9ri','2025-11-27',24,-0.5267,'You\'ll find threads here with opinions about everyone, the amount of stupid people is staggering'),(2,'ValueInvesting','1p7u2pb','nr0c2id','2025-11-27',21,0.9382,'Amazon is going to have its massive run up more than the previous one just like google. any time its below 220 is a buy. Even after 25-230 it might still be a buy. Easily will be over 300 by the end of 2026.'),(3,'ValueInvesting','1p7u2pb','nr0pb8x','2025-11-27',10,-0.128,'IMO heâ€™s still a kinda mid CEO. He made many mistakes and arguably underperformed. He hasnâ€™t been a great executor. The return of Sergey, the Deepmind reorg, and a series of screwups by OpenAI are what saved the company. Also the stock depreciation was absurd to begin with, just the market being irrational.'),(4,'ValueInvesting','1p7u2pb','nr1188u','2025-11-27',3,-0.296,'I\'ve said no such thing.'),(5,'ValueInvesting','1p7u2pb','nr0h7xr','2025-11-27',2,-0.2944,'The only posts to take seriously in this sub are the ones that put in effort and provide a an actual coherent thesis. Event if I totally disagree at least itâ€™s giving me new information\n\nOtherwise itâ€™s just people getting off hot takes or bots'),(6,'ValueInvesting','1p7u2pb','nr1sgy1','2025-11-27',2,0.9161,'Yeah, I think people are letting themselves get swayed by Sundar\'s more calm and careful personality. Because he was a \"product manager\". And seems like \"an accountant\". \n\nThe dude was a big part for making Chrome lol. He made the decision for TPUs. Think for Google Cloud too. He\'s invested in AI. And, he was able to lead the company though Google\'s biggest challenge yet. Man deserves a ton of credit. \n\nThank you, Sundar!'),(7,'ValueInvesting','1p7u2pb','nr17cto','2025-11-27',1,0.4698,'He was messing it up with the flawed demos and sad product announcements. Almost creating this narrative of Google not being able to execute. You simply cannot fake a demo in Silicon Valley.\n\nThen they put Demis Hassabis as the front AI guy and all got better over time.'),(8,'ValueInvesting','1p7u2pb','nr1btts','2025-11-27',1,-0.4767,'If youâ€™re not using Reddit as a source to counter trade or find new ideas from regards, youâ€™re doing it wrong.Â '),(9,'ValueInvesting','1p7u2pb','nr1ev7z','2025-11-27',1,-0.2342,'Nah Iâ€™ve always supported Pichai and I was on of the biggest Google bulls on here during the FUD times.'),(10,'ValueInvesting','1p7u2pb','nr1jvrk','2025-11-27',1,-0.6369,'The fear or greed of market players come to reddit to voice their opinions. This Is good signal to be attentive and go contarian. Posts and comments Is just a reflection of market sentiment, this subreddit being no diferent.'),(11,'ValueInvesting','1p7u2pb','nr2oqx6','2025-11-27',1,0.3818,' No they werenâ€™t \n\nAll the real GOOG bulls knew he was brilliant from pushing TPUs 10+ years ago and acquiring DeepMind for $400M (less than the cost that Meta paid for literally one guy Andrew Tulloch this year )'),(12,'ValueInvesting','1p7u2pb','nr3aly2','2025-11-27',1,0.163,'All investing subs, and especially stocktwits are filled with regarded overly emotional petulant children. Very little of what is said I take seriously, the rest is just noise to me. It\'s not surprising how terrible retail does making money in the stock market.Â '),(13,'ValueInvesting','1p7u2pb','nr5aw3f','2025-11-28',1,-0.6124,'There were plenty racist comments about him being an Indian too'),(14,'ValueInvesting','1p7u2pb','nr0kxiz','2025-11-27',1,0.8538,'Amazon already has a lot of growth priced in and is not a discounted stock. Google was discounted even without their AI. I\'ll rather buy more of Google than Amazon right now.'),(15,'ValueInvesting','1p7u2pb','nr0ul82','2025-11-27',1,0.4404,'You can spend your time better than going through old Reddit posts'),(16,'ValueInvesting','1p7u2pb','nr0s2nc','2025-11-27',0,0.5719,'He had gone from Sundar Bichai to Sundar Pichai. He has the aura of an intelligent,Â  humble, happyÂ  man. Google arr beatingÂ  the more brash Tesla CEO on self driving cars.'),(17,'ValueInvesting','1p7u2pb','nr0hea1','2025-11-27',0,0.7131,'Really? 6 months ago? Back when Gemini 2.5 Pro was a thing? That model was already SOTA for its time. It was evident the company was gonna boost itself since then with its various infrastructure to fetch revenue.');
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'TradingEdge','1p8trmm','nr7q1hq','2025-11-28',4,0.3612,'Thank you for the insight'),(2,'TradingEdge','1p8trmm','nr8z536','2025-11-28',2,0,'Donâ€™t sleep on Googleâ€™s hosting providers. ServiceNow, Meta, Fluidstack, CIFR, and WULF');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -99,4 +100,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-28  1:57:23
+-- Dump completed on 2025-11-29  1:58:10
