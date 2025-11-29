@@ -35,6 +35,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -85,7 +86,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Aditya Raghunath','...','2025-11-27',-0.08216,'As Founder Ray Dalio Warns the Market Is in a Bubble, Bridgewater Associates Just Bought CoreWeave Stock','https://www.barchart.com/story/news/36343272/as-founder-ray-dalio-warns-the-market-is-in-a-bubble-bridgewater-associates-just-bought-coreweave-stock',2),(2,'Keithen Drury','The AI race shows no signs of slowing down.\nWhile the market shows signs that it might be easing up a little on its craze for all things artificial intelligence (AI) and getting a little wary about th...','2025-11-27',0.71848,'3 Top AI Stocks to Buy With $1,000','https://www.fool.com/investing/2025/11/27/3-top-ai-stocks-to-buy-with-1000/',4),(3,'Johnny Zhang','...','2025-11-26',0.47952,'Alphabet: Why It Beat The Rest Of The Magnificent 7 During The Market Pullback','https://seekingalpha.com/article/4848058-alphabet-why-it-beat-the-rest-of-magnificent-7-during-market-pullback',4),(4,'Larry Ramer','...','2025-11-26',0.43384,'Is Google Stock a Buy at $4 Trillion?','https://www.barchart.com/story/news/36331109/is-google-stock-a-buy-at-4-trillion',20),(5,'Chris Ciaccia','...','2025-11-26',0.21856,'Google selling 500,000 chips could boost earnings by 3%, MS says','https://seekingalpha.com/news/4526310-google-selling-500000-chips-could-boost-earnings-by-3-percent-ms-says?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Denis Buivolov','    400tmax/iStock Unreleased via Getty Images\n \n400tmax/iStock Unreleased via Getty Images\nIt has been four months since my previous article on Alphabet (GOOG)(GOOGL), during which the companyâ€™s shar...','2025-11-28',0.13542,'Alphabet: Q3 Results, Waymo, TPU Ironwood, Gemini 3, And More (Rating Downgrade)','https://seekingalpha.com/article/4848529-alphabet-3q-results-waymo-tpu-ironwood-gemini-3-and-more',8),(2,'newsfeedback@fool.com (Rachel Warren)','The AI industry is full of investment opportunities.\nThe artificial intelligence (AI) industry is expanding rapidly. With that growth, there are tremendous opportunities for investors to capitalize on...','2025-11-28',0.86154,'2 Best AI Stocks to Buy This Month','https://www.fool.com/investing/2025/11/28/2-best-ai-stocks-to-buy-this-month/',4),(3,'Chris Ciaccia','vzphotos\nGoogle (GOOG) (GOOGL) said on Friday that it dropped its antitrust complaint against Microsoft (MSFT) in the European Union over concerns about its cloud computing practices after regulators ...','2025-11-28',-0.32488,'Google drops Microsoft antitrust complaint in EU after new investigation','https://seekingalpha.com/news/4526531-google-drops-microsoft-antitrust-complaint-in-eu-after-new-investigation?feed_item_type=news',80),(4,'newsfeedback@fool.com (Keithen Drury)','The AI race is going strong into 2026.\nThe market is full of great deals for investors to take advantage of before 2026 arrives. Several companies are benefiting from the AI race, and these are the on...','2025-11-28',0.86146,'The 4 Best Stocks to Buy Right Now','https://www.fool.com/investing/2025/11/28/the-4-best-stocks-to-buy-right-now/',4),(5,'Aditya Raghunath','...','2025-11-27',-0.08216,'As Founder Ray Dalio Warns the Market Is in a Bubble, Bridgewater Associates Just Bought CoreWeave Stock','https://www.barchart.com/story/news/36343272/as-founder-ray-dalio-warns-the-market-is-in-a-bubble-bridgewater-associates-just-bought-coreweave-stock',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -99,4 +100,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-28  2:25:16
+-- Dump completed on 2025-11-29  2:24:44
