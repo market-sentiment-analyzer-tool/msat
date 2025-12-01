@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -78,7 +79,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +88,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (Keithen Drury)','There are several great deals investors should be taking advantage of.\nThe stock market was fairly weak throughout most of November, but recovered leading into Thanksgiving. The S&P 500 (^GSPC +0.54%)...','2025-11-29',0.86156,'The Stock Market Is Near All-Time Highs Again. Here Are the 3 Best Stocks to Buy Now.','https://www.fool.com/investing/2025/11/29/the-stock-market-is-near-all-time-highs-again-here/',4),(2,'Denis Buivolov','...','2025-11-28',0,'Alphabet: Q3 Results, Waymo, TPU Ironwood, Gemini 3, And More (Rating Downgrade)','https://seekingalpha.com/article/4848529-alphabet-3q-results-waymo-tpu-ironwood-gemini-3-and-more',4),(3,'newsfeedback@fool.com (Rachel Warren)','The AI industry is full of investment opportunities.\nThe artificial intelligence (AI) industry is expanding rapidly. With that growth, there are tremendous opportunities for investors to capitalize on...','2025-11-28',0.86154,'2 Best AI Stocks to Buy This Month','https://www.fool.com/investing/2025/11/28/2-best-ai-stocks-to-buy-this-month/',4),(4,'Chris Ciaccia','...','2025-11-28',-0.2368,'Google drops Microsoft antitrust complaint in EU after new investigation','https://seekingalpha.com/news/4526531-google-drops-microsoft-antitrust-complaint-in-eu-after-new-investigation?feed_item_type=news',40),(5,'newsfeedback@fool.com (Keithen Drury)','The AI race is going strong into 2026.\nThe market is full of great deals for investors to take advantage of before 2026 arrives. Several companies are benefiting from the AI race, and these are the on...','2025-11-28',0.86146,'The 4 Best Stocks to Buy Right Now','https://www.fool.com/investing/2025/11/28/the-4-best-stocks-to-buy-right-now/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Keithen Drury','The $5 trillion club is about to get crowded in a few years.\nThere has only been one company to cross the $5 trillion threshold: Nvidia (NVDA 1.83%). However, with the recent market sell-off, it curre...','2025-11-30',0.3809,'Prediction: These 4 Stocks Will Be Worth $5 Trillion by 2028','https://www.fool.com/investing/2025/11/30/prediction-these-4-stocks-will-be-worth-5-trillion/',4),(2,'Ryan Vanzo','Berkshire Hathaway adds another AI stock to its portfolio.\nWarren Buffett is stepping down as head of Berkshire Hathaway (BRK.A +0.29%)(BRK.B +0.51%) at the end of 2025. But for now, no portfolio tran...','2025-11-30',0.59472,'Warren Buffett Bets Big on AI -- He Just Bought 17,846,142 Shares of This Legendary Tech Stock','https://www.fool.com/investing/2025/11/30/warren-buffett-bets-big-on-ai-he-just-bought-17846/',4),(3,'Anushka Mukherji','...','2025-11-29',0.1548,'Down 42% From Its 52-Week High, Should You Buy the Dip in Cipher Mining Stock?','https://www.barchart.com/story/news/36370905/down-42-from-its-52-week-high-should-you-buy-the-dip-in-cipher-mining-stock',2),(4,'newsfeedback@fool.com (Keithen Drury)','There are several great deals investors should be taking advantage of.\nThe stock market was fairly weak throughout most of November, but recovered leading into Thanksgiving. The S&P 500 (^GSPC +0.54%)...','2025-11-29',0.86156,'The Stock Market Is Near All-Time Highs Again. Here Are the 3 Best Stocks to Buy Now.','https://www.fool.com/investing/2025/11/29/the-stock-market-is-near-all-time-highs-again-here/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -101,4 +102,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-30  2:51:29
+-- Dump completed on 2025-12-01  3:02:56
