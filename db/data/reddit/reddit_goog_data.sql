@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -45,9 +46,9 @@ b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
-c6b2f44d-ce5c-11f0-9c0c-ce2448445ad8:1-23,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
+d1d86a61-cf22-11f0-8528-6e59a219aef7:1-148,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -79,7 +80,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,6 +89,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1pb575d','nro959h','2025-12-01',377,-0.3612,'Google and Nvidia, never heard of them, doubt either will go on to become anything'),(2,'stocks','1pb575d','nrog3e5','2025-12-01',92,0.5707,'*\"And, did you hear this? Billionaire Elon Musk recently said two thirds of the three richest companies on earth are set to make more money. We\'ll have more at 11!\"*'),(3,'stocks','1pb575d','nro5olr','2025-12-01',256,0.2732,'Well redditors are team Google so wonder what they will do now'),(4,'stocks','1pb575d','nro500i','2025-12-01',77,0.5719,'He\'s right. Those are both excellent stocks.'),(5,'stocks','1pb575d','nroiwun','2025-12-01',23,0.765,'Easy to pick when they have already won, typical musk'),(6,'stocks','1pb575d','nrobx84','2025-12-01',22,0,'GOOGL to $400'),(7,'stocks','1pb575d','nro7ocf','2025-12-01',9,0.4466,'GOOGL ðŸ‘Œ'),(8,'stocks','1pb575d','nro4q5p','2025-12-01',63,0.6652,'â€œI try to build thingsâ€ but he hasnâ€™t built anything in the â€œlone genius building stuff in his garageâ€ sense that he portrays himself asâ€¦matter of fact, musk is an investor at his core and as a whole. He invested in Tesla, and essentially just does project management for it. Same goes for SpaceX. At the end of the day musk is an investor and a glorified project manager.'),(9,'stocks','1pb575d','nrozzm5','2025-12-01',4,-0.4767,'Musk generally is right on investments and wrong on timelines.'),(10,'stocks','1pb575d','nrpaq52','2025-12-01',2,0,'He also said Spaceflight too.....'),(11,'stocks','1pb575d','nro4fhc','2025-12-01',3,0,'He would?  He literally could...'),(12,'stocks','1pb575d','nro581t','2025-12-01',2,0,'Also being reported by Robinhood. Iâ€™ve seen the video and these are accurate quotes. 1:26:04 in the YouTube video.'),(13,'stocks','1pb575d','nro92rj','2025-12-01',4,0,'Heâ€™s right'),(14,'stocks','1pb575d','nro6bet','2025-12-01',5,0.6705,'thanks for keeping the santa rally alive ElonÂ '),(15,'stocks','1pb575d','nroe8ye','2025-12-01',5,0.128,'lol redditors out here begrudgingly agreeing with Musk while showcasing their hatred at the same time. This sub and Reddit as a whole is really bunch of insufferable keyboard warriors virtue signaling everything, while not understanding scale or tech of any of these companies. Most people here canâ€™t even code hello world but will lecture on how Musk didnâ€™t build anything etc.'),(16,'stocks','1pb575d','nroy6mf','2025-12-01',1,0.6249,'> Just the output of goods and services from AI and robotics is so high that it will dwarf everything elseâ€\n\nThe value of Grok doing an epic roast and making it more epic and then even make it more vulgar and epic at parties.'),(17,'stocks','1pb575d','nrp4o3a','2025-12-01',1,0,'He wasnâ€™t going to say OpenAI and Microsoft from the last debacle'),(18,'stocks','1pb575d','nrppf5e','2025-12-01',1,-0.4019,'See the greed of man MUSK needs even more.'),(19,'stocks','1pb575d','nro5icy','2025-12-01',0,0.296,'Ok'),(20,'stocks','1pb575d','nro3wwr','2025-12-01',-4,0.4404,'I just hope this guy keeps his fingers from Nvidia and Google.'),(21,'stocks','1pb575d','nro5hp7','2025-12-01',-4,-0.5859,'He\'s joining the fraud team congratz'),(22,'stocks','1pb575d','nroae5z','2025-12-01',0,0.4404,'He doesnâ€™t profit from the ai bubble popping so ofcourse he wants us to know he â€œwouldâ€ if he had the money to do so. Waitâ€¦.'),(23,'stocks','1pb575d','nrovudd','2025-12-01',0,-0.0772,'Oh sheit. Its over guys. Sorry.'),(24,'stocks','1pb575d','nrp4jw9','2025-12-01',-1,0.4939,'Who cares? Stop giving Elon airtime'),(25,'stocks','1pb575d','nromuf7','2025-12-01',0,0.9231,'He said he would but said he doesnâ€™t invest in stocks. I donâ€™t think this is helpful in the near term for holder of either. Or in the long term.\n\nNow if he actually made a meaningful investment in both, that would be a different story.'),(26,'stocks','1pb575d','nrolvz9','2025-12-01',-1,0.7906,'Why would he invest in those 2 heâ€™s much better off using his bag and mouth to pump Tesla to try to extract that 1 trilllion dollars'),(27,'stocks','1pb575d','nronpt6','2025-12-01',-1,0,'What has jim Cramer said');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -101,4 +103,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-01  2:24:34
+-- Dump completed on 2025-12-02  2:06:53
