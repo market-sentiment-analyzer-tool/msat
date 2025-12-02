@@ -46,6 +46,7 @@ b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
+c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -79,7 +80,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +89,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Keithen Drury','The $5 trillion club is about to get crowded in a few years.\nThere has only been one company to cross the $5 trillion threshold: Nvidia (NVDA 1.83%). However, with the recent market sell-off, it curre...','2025-11-30',0.3809,'Prediction: These 4 Stocks Will Be Worth $5 Trillion by 2028','https://www.fool.com/investing/2025/11/30/prediction-these-4-stocks-will-be-worth-5-trillion/',4),(2,'Ryan Vanzo','Berkshire Hathaway adds another AI stock to its portfolio.\nWarren Buffett is stepping down as head of Berkshire Hathaway (BRK.A +0.29%)(BRK.B +0.51%) at the end of 2025. But for now, no portfolio tran...','2025-11-30',0.59472,'Warren Buffett Bets Big on AI -- He Just Bought 17,846,142 Shares of This Legendary Tech Stock','https://www.fool.com/investing/2025/11/30/warren-buffett-bets-big-on-ai-he-just-bought-17846/',4),(3,'Anushka Mukherji','...','2025-11-29',0.1548,'Down 42% From Its 52-Week High, Should You Buy the Dip in Cipher Mining Stock?','https://www.barchart.com/story/news/36370905/down-42-from-its-52-week-high-should-you-buy-the-dip-in-cipher-mining-stock',2),(4,'newsfeedback@fool.com (Keithen Drury)','There are several great deals investors should be taking advantage of.\nThe stock market was fairly weak throughout most of November, but recovered leading into Thanksgiving. The S&P 500 (^GSPC +0.54%)...','2025-11-29',0.86156,'The Stock Market Is Near All-Time Highs Again. Here Are the 3 Best Stocks to Buy Now.','https://www.fool.com/investing/2025/11/29/the-stock-market-is-near-all-time-highs-again-here/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Ravikash Bakolia','Just_Super/E+ via Getty Images\nAmazon (AMZN) and Google unveiled a jointly developed multicloud networking service to provide reliable connectivity to customers.\nAmazon Web Services, or AWS, and Alpha...','2025-12-01',0.51392,'Amazon, Google team up to unveil multicloud service for interconnectivity','https://seekingalpha.com/news/4526700-amazon-google-team-up-to-unveil-multicloud-service-for-interconnectivity?feed_item_type=news',80);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -102,4 +103,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-01  3:02:56
+-- Dump completed on 2025-12-02  2:30:44
