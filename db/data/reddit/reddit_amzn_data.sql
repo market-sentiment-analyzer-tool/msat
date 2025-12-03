@@ -45,10 +45,11 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
+c408cfb1-cfeb-11f0-a7aa-5e94f291c413:1-87,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
+c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
-d1d86a61-cf22-11f0-8528-6e59a219aef7:1-148,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -80,7 +81,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,6 +90,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'stocks','1pccf6b','nrwtbm4','2025-12-02',91,0.9332,'lol literally 10 minutes before this post AWS announced Tranium 4 with full NVIDIA support via NVLINK. CUDA isnâ€™t strictly required for parallel processing, itâ€™s just the most mature and has the widest support for backward compatibility. \n\nAmazon is going to continue to try and position itself for dominance as a provider by supporting wherever it can. One of the reasons why Anthropic is moving a lot of infra from GCS to AWSâ€¦ Companies are going to migrate to providers that offer the most inexpensive and flexible compute to train and serve.'),(2,'stocks','1pccf6b','nrx234s','2025-12-02',14,0.2732,'I\'m in a very large f25 company that uses aws exclusively. We do not use the aws chips as we have agreements for the Nvidia clusters until 2028.'),(3,'stocks','1pccf6b','nrwlpzs','2025-12-02',38,0.4019,'Youâ€™ve clearly never used CUDA.'),(4,'stocks','1pccf6b','nrwwl5z','2025-12-02',3,0.6901,'If this is cheaper than NVDA and you are an existing AWS customer probably more incentive to get the Google AI chip. If you are lets say using Microsoft Azure maybe NVDA is better, however I know more companies that use AWS than Azure.'),(5,'stocks','1pccf6b','nrwq91o','2025-12-02',7,0.2263,'Why doesn\'t someone just use AI to write a CUDA emulation layer? jk of course, I think that there are multiple projects in the works to translate CUDA to other hardware.'),(6,'stocks','1pccf6b','nrx18mn','2025-12-02',1,0.3182,'Would be curious to what generation of TPUs these are equal to.  I am guessing about the fourth generation?'),(7,'stocks','1pccf6b','nrxnnqt','2025-12-02',1,0.34,'This is confirmation Mag7 is realizing gains from scaling laws are coming to an end. Time for a breather to re-up for the age of research.'),(8,'stocks','1pccf6b','nry0u2i','2025-12-02',1,0.1779,'Amazon and Google and Anthropic. The new MAG 3'),(9,'stocks','1pccf6b','nrzre5n','2025-12-03',1,0,'Trainium 3 can\'t but TPU v7p can.'),(10,'stocks','1pccf6b','nrwvqid','2025-12-02',1,-0.1012,'Obvious point isn\'t address, Trainium chips aren\'t great at *inference*. They\'re good at...training.'),(11,'stocks','1pccf6b','nrxj67q','2025-12-02',0,0.7384,'I like how its suddenly so easy to make these chips now that anyone can do it.'),(12,'stocks','1pccf6b','nrwlrju','2025-12-02',-7,0.8126,'Seems any anyone can design/build the chips, but the software is their competitive advantage. That has been the talking point why AMD has been able to catch up to NVIDIA.');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -102,4 +104,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-02  2:06:53
+-- Dump completed on 2025-12-03  2:03:46
