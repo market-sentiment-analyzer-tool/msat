@@ -56,6 +56,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
+e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -80,7 +81,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +90,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Ravikash Bakolia','Just_Super/E+ via Getty Images\nAmazon (AMZN) and Google unveiled a jointly developed multicloud networking service to provide reliable connectivity to customers.\nAmazon Web Services, or AWS, and Alpha...','2025-12-01',0.51392,'Amazon, Google team up to unveil multicloud service for interconnectivity','https://seekingalpha.com/news/4526700-amazon-google-team-up-to-unveil-multicloud-service-for-interconnectivity?feed_item_type=news',80);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Wall Street Breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nGetty Images\n\nGood morning! Here is the latest in trending:Sweetened offer:...','2025-12-02',-0.22736,'Sam Altman Declares Code Red','https://seekingalpha.com/article/4849157-sam-altman-declares-code-red',8),(2,'Stone Fox Capital','    Jonathan Kitchen/DigitalVision via Getty Images\n \nJonathan Kitchen/DigitalVision via Getty Images\nAlphabet Inc. (GOOG, GOOGL), aka Google, has slowly re-captured AI leadership following the OpenAI...','2025-12-02',0.06678,'Alphabet: Emerging From The AI Pack','https://seekingalpha.com/article/4848902-alphabet-emerging-from-ai-pack',8),(3,'Shivani Kumaresan','...','2025-12-02',0,'Facing Gemini Surge, OpenAI Scrambles To Overhaul ChatGPT: Report','https://stocktwits.com/news-articles/markets/equity/facing-gemini-surge-open-ai-scrambles-to-overhaul-chat-gpt-report/cLIaK1BRE0F',2),(4,'Bram Berkowitz','The large tech conglomerates are constantly trying to outdo one another in the non-stop race for artificial intelligence supremacy.\nAlphabet (GOOG +0.29%)(GOOGL +0.26%) entered the year in a precariou...','2025-12-02',0.70196,'Once Viewed as an AI Laggard, This \"Magnificent Seven\" Company May Now Be Winning the AI War','https://www.fool.com/investing/2025/12/02/once-viewed-as-an-ai-laggard-this-magnificent-seve/',4),(5,'Anushka Mukherji','...','2025-12-01',0.43384,'Salesforce CEO Marc Benioff Just Said Gemini 3 Changed the World. Does That Make GOOGL Stock a Buy?','https://www.barchart.com/story/news/36394567/salesforce-ceo-marc-benioff-just-said-gemini-3-changed-the-world-does-that-make-googl-stock-a-buy',20),(6,'Anushka Mukherji','...','2025-12-01',0.55648,'Competition Is Heating Up, But Bank of America Still Thinks AMD Stock Is a Buy Here','https://www.barchart.com/story/news/36394508/competition-is-heating-up-but-bank-of-america-still-thinks-amd-stock-is-a-buy-here',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -103,4 +104,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-02  2:30:44
+-- Dump completed on 2025-12-03  2:30:18
