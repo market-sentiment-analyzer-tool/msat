@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1d03b60a-d0b5-11f0-a590-06fc214d86ec:1-93,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -45,7 +46,6 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
-c408cfb1-cfeb-11f0-a7aa-5e94f291c413:1-87,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -57,6 +57,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
+e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -81,7 +82,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,6 +91,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'investing','1pdhzad','ns57a80','2025-12-03',9,0.8555,'Google is already huge, has crazy growth, a serious tech moat, and other exciting bets like self driving cars. It\'s crazy undervalued compared to other tech companies and other companies pretending to be tech companies.'),(2,'investing','1pdhzad','ns6by8z','2025-12-04',1,0.7405,'I love Google and itâ€™s 15 percent of my portfolio but I really donâ€™t like to buy something when it grew so much in a short time.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -103,4 +105,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-03  2:03:46
+-- Dump completed on 2025-12-04  2:04:03
