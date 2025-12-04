@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -81,7 +82,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,7 +91,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Wall Street Breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nGetty Images\n\nGood morning! Here is the latest in trending:Sweetened offer:...','2025-12-02',-0.22736,'Sam Altman Declares Code Red','https://seekingalpha.com/article/4849157-sam-altman-declares-code-red',8),(2,'Stone Fox Capital','    Jonathan Kitchen/DigitalVision via Getty Images\n \nJonathan Kitchen/DigitalVision via Getty Images\nAlphabet Inc. (GOOG, GOOGL), aka Google, has slowly re-captured AI leadership following the OpenAI...','2025-12-02',0.06678,'Alphabet: Emerging From The AI Pack','https://seekingalpha.com/article/4848902-alphabet-emerging-from-ai-pack',8),(3,'Shivani Kumaresan','...','2025-12-02',0,'Facing Gemini Surge, OpenAI Scrambles To Overhaul ChatGPT: Report','https://stocktwits.com/news-articles/markets/equity/facing-gemini-surge-open-ai-scrambles-to-overhaul-chat-gpt-report/cLIaK1BRE0F',2),(4,'Bram Berkowitz','The large tech conglomerates are constantly trying to outdo one another in the non-stop race for artificial intelligence supremacy.\nAlphabet (GOOG +0.29%)(GOOGL +0.26%) entered the year in a precariou...','2025-12-02',0.70196,'Once Viewed as an AI Laggard, This \"Magnificent Seven\" Company May Now Be Winning the AI War','https://www.fool.com/investing/2025/12/02/once-viewed-as-an-ai-laggard-this-magnificent-seve/',4),(5,'Anushka Mukherji','...','2025-12-01',0.43384,'Salesforce CEO Marc Benioff Just Said Gemini 3 Changed the World. Does That Make GOOGL Stock a Buy?','https://www.barchart.com/story/news/36394567/salesforce-ceo-marc-benioff-just-said-gemini-3-changed-the-world-does-that-make-googl-stock-a-buy',20),(6,'Anushka Mukherji','...','2025-12-01',0.55648,'Competition Is Heating Up, But Bank of America Still Thinks AMD Stock Is a Buy Here','https://www.barchart.com/story/news/36394508/competition-is-heating-up-but-bank-of-america-still-thinks-amd-stock-is-a-buy-here',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Markit','...','2025-12-03',0.14232,'Alphabet, Amazon And Microsoft Charge Ahead On AI Capacity Build-Outs','https://seekingalpha.com/article/4849645-alphabet-amazon-microsoft-charge-ahead-on-ai-capacity-build-outs',4),(2,'Prabhjote Gill','...','2025-12-03',0,'Michael Saylor Says Bitcoinâ€™s Trading Power Exceeds Google, Microsoft â€“ Even The US Navyâ€™s Annual Spending','https://stocktwits.com/news-articles/markets/equity/mstr-michael-saylor-says-bitcoin-trading-power-trumps-google-microsoft/cLIXqr4RE17',2),(3,'Rounak Jain','...','2025-12-03',0.18104,'Anthropic, OpenAI Lead New AI Safety Index But Grades Signal â€˜Not Enoughâ€™ Is Being Done â€“ Chinese Rivals DeepSeek, Zhipu Rated â€˜Fâ€™','https://stocktwits.com/news-articles/markets/equity/anthropic-openai-top-in-ai-risk-assessment-deepseek-zhipu-fail/cLIX8WMRE1b',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -104,4 +105,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-03  2:30:18
+-- Dump completed on 2025-12-04  2:31:04
