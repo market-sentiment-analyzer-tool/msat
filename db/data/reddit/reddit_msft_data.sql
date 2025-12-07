@@ -24,8 +24,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
-1d03b60a-d0b5-11f0-a590-06fc214d86ec:1-93,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -33,6 +33,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -63,6 +64,7 @@ e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f4aa3935-d311-11f0-8640-9ea18df1e1f3:1-66,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -82,7 +84,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +93,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1pd74b1','ns34gko','2025-12-03',91,-0.4767,'Turns out to be fake news.'),(2,'stocks','1pd74b1','ns344u1','2025-12-03',79,-0.7739,'The problem is their product sucks - specifically Copilot, Studio and Azure AI foundry. Extremely difficult to use and confusing compared to market offerings. Copilot is basically completely fucking useless but even Studio and Foundry are poorly documented and hard to use.'),(3,'stocks','1pd74b1','ns2yaf9','2025-12-03',34,0.8459,'Sounds like all we know is that theyâ€™re lowering quotas because their sales teams were not hitting them across the board. \n\nCould be that the quotas were simply too high? Iâ€™m pretty sure this isnâ€™t that unusual, quotas tend to be pretty aggressive.'),(4,'stocks','1pd74b1','ns36azc','2025-12-03',7,0.6249,'Well, I asked for a refund on paying for copilot. Their AI sucks and doesnâ€™t live up to promises'),(5,'stocks','1pd74b1','ns308p5','2025-12-03',4,0.9696,'This is probably a good thing IMO. Lowering our expectations for AI from something that will revolutionize society in two years to something that will be important eventually, but will have growing pains and adoption frictions will make tech stocks more reasonably priced.\n\nThe best case scenario is that the bubble deflates a little without a dramatic crash, then we get the big returns that the market\'s currently pricing in in ten years once AI has improved and non-tech companies have figured out the best ways to use it.'),(6,'stocks','1pd74b1','ns38b6t','2025-12-03',13,-0.8271,'It was just stupid fake news from â€žThe Informationâ€œÂ \n\n100% market manipulationÂ '),(7,'stocks','1pd74b1','ns3g697','2025-12-03',3,0.3895,'Is it because it\'s just useless shit ?\n\nI want to save a document in a specific folder of my choice, you know, so I can actually use it later....I don\'t want my spastic computer to decide to save it in a random place on my behalf. Just how is that better?\n\nThey just added an extra 3 clicks to do basic things the way we always used to, and call it AI ðŸ˜‚ what a massive heap of shit.'),(8,'stocks','1pd74b1','ns3hav5','2025-12-03',2,-0.3612,'Copilot sucks'),(9,'stocks','1pd74b1','ns5lurv','2025-12-03',2,0.9377,'Microsoft currently offers between 12 and 14 different versions of \"Copilot\", many of them share the exact same name in the frontend, some have \"Microsoft\" in their name, some donâ€˜t. Every one has different features, capabilities, architecture, quality, costs and permissions. There is a high chance that you use a different version of \"Copilot\" than you think. Here are some of the better known ones:\n\n\n- Microsoft Copilot\n- Copilot Pro\n- Copilot in Windows\n- Microsoft 365 Copilot\n- Microsoft 365 Copilot Chat (Enterprise version)\n- Copilot for Sales (until recently \"Microsoft 365 Copilot for Sales\")\n- Copilot for Service\n- Copilot in Dynamics 365\n- Microsoft Security Copilot\n- Power Platform Copilot\n- GitHub Copilot\n- Microsoft Copilot Studio\n- And my absolute favorite so far: Finance solution in Microsoft 365 Copilot'),(10,'stocks','1pd74b1','ns2xr40','2025-12-03',4,0.128,'Does this affect their Azure growth?'),(11,'stocks','1pd74b1','ns34q60','2025-12-03',3,-0.7493,'Who is paying for AI subscriptions? Donâ€™t get me wrong the technology is very impressive but with very limited practical application. I see absolutely no reason why Iâ€™d pay for an AI subscription.'),(12,'stocks','1pd74b1','ns39o0f','2025-12-03',1,-0.0987,'Itâ€™s likely just a reality check that enterprise AI adoption is scaling more slowly and unevenly than last yearâ€™s hype-level quotas assumed. but it is weird that microsoft wouldn\'t stick with aggressive quotas even if team doesn\'t make targets...'),(13,'stocks','1pd74b1','ns3qsyw','2025-12-03',1,0,'The recent $465 is the bottom.'),(14,'stocks','1pd74b1','ns3tmlb','2025-12-03',1,0,'Looked at the data through my model.  \nThis isnâ€™t an AI meltdown.  \nItâ€™s just enterprise adoption moving slower than the hype curve.'),(15,'stocks','1pd74b1','ns3ttnx','2025-12-03',1,0.5106,'The number 2 AI stock and itâ€™s down 5% past 3 months. Looks like a buy.'),(16,'stocks','1pd74b1','ns44v65','2025-12-03',1,0,'Mmmm discount season'),(17,'stocks','1pd74b1','ns4ins8','2025-12-03',1,0.5073,'I\'m sure this name change also was related to the lackluster AI demand. Perhaps if they take the \"AI\" out of the name it will be harder to track. Shit\'s just not selling.\n\n[Microsoft just announced that Azure AI Foundry has been renamed to Microsoft Foundry. : r/AZURE](https://www.reddit.com/r/AZURE/comments/1p1xxh4/microsoft_just_announced_that_azure_ai_foundry/)'),(18,'stocks','1pd74b1','ns624qy','2025-12-04',1,0,'Lmaooooo'),(19,'stocks','1pd74b1','ns69y77','2025-12-04',1,0,'When does the â€œfalling out of helicoptersâ€ start?'),(20,'stocks','1pd74b1','ns2x0sz','2025-12-03',1,0.34,'The Information changed their headline from \"Microsoft Lowers AI Software Sales Quotas as Customers Resist Newer Products\" to \"Microsoft Lowers AI Software Growth Targets as Customers Resist Newer Products\". What a nothingburger.'),(21,'stocks','1pd74b1','ns2yk90','2025-12-03',-5,0.3612,'Looks like the bubble\'s startin\' to pop.'),(22,'stocks','1pd74b1','ns32c5h','2025-12-03',0,0.4404,'Dinged for being pragmatic. Goes to show how un-pragmatic the market truly is.'),(23,'stocks','1pd74b1','ns36jj7','2025-12-03',0,0,'This isnâ€™t the canary in the coal mineâ€¦. Yet.'),(24,'stocks','1pd74b1','ns39hn3','2025-12-03',0,0,'\"The Information\", the preferred goto for hedge funds everywhere.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -105,4 +106,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-04  2:04:03
+-- Dump completed on 2025-12-07  2:12:38

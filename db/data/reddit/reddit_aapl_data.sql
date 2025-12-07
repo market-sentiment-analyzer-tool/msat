@@ -24,8 +24,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
-1d03b60a-d0b5-11f0-a590-06fc214d86ec:1-93,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -33,6 +33,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -63,6 +64,7 @@ e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f4aa3935-d311-11f0-8640-9ea18df1e1f3:1-66,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -82,7 +84,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +93,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pd95pt','ns3ftq3','2025-12-03',8,0.802,'unless you are super bullish with the company, otherwise wait a bit'),(2,'AAPL','1pd95pt','ns3f8a3','2025-12-03',6,0.7906,'Invest when you can. The stock has already been on discount for more than half the year at $190-200 when it was trailing the sector and S&P since last year. Time in the market is better than timing the market.'),(3,'AAPL','1pd95pt','ns4068c','2025-12-03',3,0.6369,'If you have a commission free trading account just DCA each day and buy a small amount. Increase your purchase amount if the stock drops. I have a core position that I do not trade. But I do trade the single etf on a regular basis. Stay away from single ETFs if your risk tolerance is low.'),(4,'AAPL','1pd95pt','ns4malg','2025-12-03',3,0.5423,'Dollar\nCost\nAverage\n\nDonâ€™t wait, just buy a little bit at regular intervals'),(5,'AAPL','1pd95pt','ns3aikl','2025-12-03',4,0.4019,'Yes 270 or 258'),(6,'AAPL','1pd95pt','ns3rswh','2025-12-03',2,0.4404,'271â€“277. Youâ€™ll probably get it within the next 40 days between profit taking before and after year end, this is also going by the peak of the last High on the all-time chart as a bottom.'),(7,'AAPL','1pd95pt','ns40oer','2025-12-03',2,0.8943,'DCA all the way. Been increasing slowly over a decade. Now each time we buy an Apple product I buy the same amount in stock. If the product is so good, gotta bet on the company too.'),(8,'AAPL','1pd95pt','ns46f5r','2025-12-03',2,0.4019,'Yes'),(9,'AAPL','1pd95pt','ns49ts4','2025-12-03',2,0.3147,'Dollar cost average!Buy and hold!'),(10,'AAPL','1pd95pt','ns4gl4y','2025-12-03',2,0.5667,'Add a bit at a time so you average up or down donâ€™t buy all at once'),(11,'AAPL','1pd95pt','ns4ed5n','2025-12-03',3,0.7003,'â€œ The big money isnâ€™t in the buying and selling but in the waiting.â€ Munger. Buy and hold you canâ€™t time the market'),(12,'AAPL','1pd95pt','ns3o02a','2025-12-03',2,-0.9094,'Buy now or wait for dip is alway the question we askâ€¦. Itâ€™s so hard to answerâ€¦. To buy now or waitâ€¦â€¦ now or wait ? Now or waitâ€¦.. ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­'),(13,'AAPL','1pd95pt','ns5azmy','2025-12-03',1,0.4995,'I have auto-buy $100 every Friday, EZ PZ'),(14,'AAPL','1pd95pt','ns5bo49','2025-12-03',1,0.9135,'Always best to wait for a dip.  So it will got up 20% and then dip 15% thatâ€™s when you prefer to buy in? You prefer to buy a stock while itâ€™s dipping or bull running? \n\nTime in the market beats timing it. No one knows the answer to this. No one knows if the dip will be lower than what it will gain.'),(15,'AAPL','1pd95pt','ns60nsn','2025-12-04',1,0.8807,'Yes. Jan will be a disaster. Fact dividend yield is .37% the 4-8 week wait could mean 4-5%. If I had to do it, then  5% of position in a Feb 630 qqq put for good measure (adding those profits to Apple to get a better average price) and then let it ride after Feb/march once earnings start up.'),(16,'AAPL','1pd95pt','ns69bn3','2025-12-04',1,-0.5187,'Buy it now and forget about it , but if you want to be â€œsmartâ€ , wait when it retreats to 265-270 level , around its 50 day moving average . Itâ€™s been on a tear lately and currently overbought at rsi over 70. This shallow dip is likely , but not guaranteed.'),(17,'AAPL','1pd95pt','ns3pvql','2025-12-03',1,0.6249,'No. Just invest what you can when you can. Donâ€™t sweat the entry price.'),(18,'AAPL','1pd8ktz','ns3hseq','2025-12-03',0,0,'[deleted]'),(19,'AAPL','1pdlsnj','ns618eh','2025-12-04',2,0.6486,'Ha. The reality is the slow crawl up has been nice and a little consolidation is just fine.'),(20,'AAPL','1pdlsnj','ns67miw','2025-12-04',1,0.1531,'donâ€™t be surprised to see it back at $230 in the next 6 months, PE is off the charts right now');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pfjnya','nsmoyrn','2025-12-06',2,0.7579,'\"solid revenue growth and a strong balance sheet\"  \n\"services pivot\"\n\nI feel like I have time-warped back to 2014. Why did I bother reading this idiotic drivel?'),(2,'AAPL','1pfjnya','nsnelbh','2025-12-06',2,0.7845,'I just bought 200 shares on Friday. Wish me luck.'),(3,'AAPL','1pfjnya','nsl22sj','2025-12-06',1,0.4019,'Yes'),(4,'AAPL','1pfjnya','nsmj90m','2025-12-06',1,0.1695,'And letâ€™s not forget about robotics. \n\n[Appleâ€™s Next $133 Billion Business: Humanoid Robots](https://www.eweek.com/news/apple-humanoid-robots-133b/)'),(5,'AAPL','1pfjnya','nsng68d','2025-12-06',1,0.3535,'SpaceX to acquire GSAT.  \nGSAT booms.  AAPL has 20% of GSAT.  AAPL booms.\nMedia coverage of SpaceX, AAPL, & GSAT triumvirate causes a FOMO hype train that escalates buying, as getting GSAT will be as close as people can come to owning a part of SpaceX. \nAAPL shoots past multiple resistance levels because it is nearing Christmas and people know it typically runs up this time of year.\nAAPL continues to crush sales running up towards Christmas and people are less likely to sell knowing the price will continue to rise.\nAAPL rolls past $300 and hits $315 - $330 by Dec 26.'),(6,'AAPL','1pfjnya','nsm0uls','2025-12-06',-8,0.0772,'Nope old company in decline with expensive iUGLY Phones and accessories\' and services\n\nyou are fools to invest in a declining company remember when they were larges a long time ago , yea let that soak in\n\nthey keep surviving due to Monopolist hold over mobile that is all'),(7,'AAPL','1pg3mvx','nsotvb1','2025-12-07',1,0.8555,'Because Legal-Lead is yakking about this, somehow this will end up being hyper bullish and see the stock regain $285 tomorrow morning.  ðŸ¤£'),(8,'AAPL','1pg3mvx','nsokils','2025-12-07',1,0.6369,'He had more than a decade to transform Apple silica into other business profit centers. Time for fresh blood.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -105,4 +107,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-04  2:04:03
+-- Dump completed on 2025-12-07  2:12:37
