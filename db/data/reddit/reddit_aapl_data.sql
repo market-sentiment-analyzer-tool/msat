@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+7137e0c9-d56c-11f0-821d-82ea0121cc26:1-176,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -64,7 +65,6 @@ e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
-f5612431-d3d9-11f0-9f97-c69bd94080f4:1-45,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -84,7 +84,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pgs6yc','nstg8h8','2025-12-07',3,0.4019,'yes'),(2,'AAPL','1pgs6yc','nsul073','2025-12-07',3,0.7841,'Yep. Agree 100%. I would imagine that Tim is doing this along with his CEO successor â€” Clearing out the deadwood and people who donâ€™t align with the new vision. This way, Tim gets to be the bad guy and shake things up and deliver the new CEO totally fresh slate.'),(3,'AAPL','1pgs6yc','nstj4we','2025-12-07',2,-0.34,'Stock market didnâ€™t like it.  Hit ATH then reversed after news broke and continues to drop.'),(4,'AAPL','1pgs6yc','nsti9re','2025-12-07',2,-0.228,'my AAPL holdings were under 3% in 2008, now it\'s 21%.  So, I have tremendous interest in Apple\'s management.  The only concern is at CEO and I don\'t believe Tim Cook is leaving any time soon.  Still, I am selling some before 2026, get it under 20%.'),(5,'AAPL','1pgs6yc','nstqmtb','2025-12-07',1,0.3818,'Seriously we\'re being bullish about Federighi now?'),(6,'AAPL','1pgs6yc','nsuf0qj','2025-12-07',1,0,'How do you know what people are saying inside the company?Â '),(7,'AAPL','1pgs6yc','nstvxfc','2025-12-07',2,0.1779,'john ternus hardware org literally has the worst hires ever in the history of company - all experienced people are leaving and the new grads dont work or ship anything useful. the swe(craig) and hwtech(johny) org are overworked and the good people will soon switch.'),(8,'AAPL','1pgs6yc','nsu96mz','2025-12-07',0,0.6361,'Jackson is not old, and every exec is rich so that part doesnâ€™t even make sense. That one is a fumble, she is deeply respected and itâ€™s a loss that sheâ€™s not sticking around.'),(9,'AAPL','1pgs6yc','nstr4b3','2025-12-07',-1,0,'[deleted]'),(10,'AAPL','1pgxu80','nsuq28m','2025-12-08',3,-0.0772,'sorry - Johnny Srouji is leaving AAPL because they hire international?'),(11,'AAPL','1pgxu80','nsuqscy','2025-12-08',3,-0.5574,'Shit post');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pia1rz','nt4i832','2025-12-09',3,0.4364,'What Iâ€™ve noticed is the call options for 285-305 have an insanely high open interest for December 19th of this year. Idk if you have noticed that');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +107,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-08  2:03:22
+-- Dump completed on 2025-12-10  2:08:21
