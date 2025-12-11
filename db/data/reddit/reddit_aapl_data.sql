@@ -39,7 +39,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
-7137e0c9-d56c-11f0-821d-82ea0121cc26:1-176,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -57,6 +56,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d8c5dd50-d635-11f0-bc57-b670f10d46f2:1-83,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -84,7 +84,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pia1rz','nt4i832','2025-12-09',3,0.4364,'What Iâ€™ve noticed is the call options for 285-305 have an insanely high open interest for December 19th of this year. Idk if you have noticed that');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1piynlq','ntakf0z','2025-12-10',3,0.7003,'I believe 2026 will be good for Apple , I think today would be a good day to take a big biteðŸš€'),(2,'AAPL','1piynlq','ntbdwux','2025-12-10',1,0,'Weâ€™ll know next week. Or today'),(3,'AAPL','1pjg1xo','ntdg86c','2025-12-10',2,-0.5719,'SCAM POST'),(4,'AAPL','1pjg1xo','ntdax05','2025-12-10',1,0,'Get my $2....');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +107,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-10  2:08:21
+-- Dump completed on 2025-12-11  2:06:56

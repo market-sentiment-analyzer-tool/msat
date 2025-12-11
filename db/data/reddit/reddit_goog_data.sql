@@ -39,7 +39,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
-7137e0c9-d56c-11f0-821d-82ea0121cc26:1-176,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -57,6 +56,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d8c5dd50-d635-11f0-bc57-b670f10d46f2:1-83,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -84,7 +84,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1phyqnp','nt2q67q','2025-12-09',65,0,'Weâ€™re one software update away from â€œThey Liveâ€ becoming a documentary.'),(2,'stocks','1phyqnp','nt2dj7o','2025-12-09',89,0.7351,'Can I just get some good tech in glasses? \n\nYou dont even have to put ai in it. I promise'),(3,'stocks','1phyqnp','nt2fxh1','2025-12-09',24,0.8271,'I recently got a quest 3s and have been using augmented reality with Plex. I gotta say its amazing having a floating screen you can resize and scale up to any amount that just floats in your living room - where it positionally stays in that 3D space even if you walk away.\n\nJust give me that tech in normal looking and light frame prescription glasses. I don\'t need an AI built into it.'),(4,'stocks','1phyqnp','nt2yeoy','2025-12-09',10,0,'So GOOG are learning Meta'),(5,'stocks','1phyqnp','nt4dxsc','2025-12-09',3,0.2689,'I could actually see this being useful if say you\'re an English speaker in Japan and need to translate Kanji where you\'re going. Helpful for a lot of places like ramen shops that have buttons for ordering and no English. Or reading signage in rural areas.\n\n\nNever really had a problem with my phone for this but if you\'re visually impaired and it\'s not super distracting could be cool'),(6,'stocks','1phyqnp','nt2o7xn','2025-12-09',10,0.8369,'I....personally have no desire to use smart glasses of any kind. \n\nBut if this wearable market actually takes off, this is good for QCOM. Obviously Samsung as well, but QCOM will be foundational for this sort of product'),(7,'stocks','1phyqnp','nt4j6wd','2025-12-09',1,-0.7003,'Ooo Ray Ban Meta has competition that literally no one asked for.'),(8,'stocks','1phyqnp','nt4ohhz','2025-12-09',1,0.4215,'It\'s a winning move. People young enough to want the glasses also want to avoid Facebook.'),(9,'stocks','1phyqnp','nt5q9pk','2025-12-09',1,0.8898,'I am cautious knowing Google\'s habit of killing products, but Warby Parker makes great frames. If they look normal like the Meta Ray-Bans, I am interested. Having Gemini for live translation without looking at my phone would be huge for travel.'),(10,'stocks','1phyqnp','nt63yk8','2025-12-09',1,-0.6369,'Sigh I guess we really are going to be video-taped everywhere we go now....\n\nPrivacy is dead.'),(11,'stocks','1phyqnp','nt70cvq','2025-12-09',1,0.8024,'I want one with good closed caption please ðŸ™‚â€â†•ï¸'),(12,'stocks','1phyqnp','nt3fhp6','2025-12-09',1,-0.6808,'Google is just killing it.  Every layer of the AI stack.   Here this is the top and we got recent news Google is now willing to sell the TPUs, the bottom of the stack.\n\nThen Google plays in every layer inbetween.   I expect Google to really take off from here.'),(13,'stocks','1phyqnp','nt3udpq','2025-12-09',1,0.4404,'I do think augmented glasses are a good step toward making AI more accessible in a practical sense'),(14,'stocks','1phyqnp','nt2y0vj','2025-12-09',-1,0.4404,'Glasses are a limiting choice for AI companion because not everyone needs them.   The pin is a much better concept'),(15,'stocks','1phyqnp','nt3fvxz','2025-12-09',0,0.4019,'Iâ€™m excited to try these, and also the spectacles Snapchat is coming out with. Theyâ€™re integrating games my kids want to try.'),(16,'stocks','1phyqnp','nt3xz1q','2025-12-09',0,0.0772,'I am wondering how they are gonna enable flexible input without Meta\'s neural band.\n\nThe neural band is THE invention for Meta which might be enough to crush the entire competition in my opinion.\n\n.... And I am saying this as an Alphabet investor.'),(17,'stocks','1phyqnp','nt30jmg','2025-12-09',-1,0.541,'AI is 2025 king Midas. All a stock needs to recover is saying AI three times. Yesterday Gemini ads was not enough, so smart glasses should be');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +106,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-10  2:08:21
+-- Dump completed on 2025-12-11  2:06:56
