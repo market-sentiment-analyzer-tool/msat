@@ -56,8 +56,8 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
-d8c5dd50-d635-11f0-bc57-b670f10d46f2:1-83,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
+e2ac6868-d6fe-11f0-99b9-0203d58d1177:1-23,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
@@ -84,7 +84,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1pj5m2w','ntbdig6','2025-12-10',55,-0.0258,'And Googles Gemini is still in better position and doesn\'t need to be forced into anything else.'),(2,'stocks','1pj5m2w','ntb2a4m','2025-12-10',91,0.128,'Crazy, Gemini AI in my case is significantly better'),(3,'stocks','1pj5m2w','ntb5fow','2025-12-10',6,-0.5574,'AI wars saga continues, in a bubble far far away...'),(4,'stocks','1pj5m2w','ntbgd4m','2025-12-10',7,0.6486,'Everyone is hoping into an overloaded ship while GOOGL powers ahead with efficiency.Â '),(5,'stocks','1pj5m2w','ntb3zqg','2025-12-10',8,-0.5915,'I don\'t get the monetisation plan for many of these integrations. \n\nNo one is paying for Edge. Is Spotify expecting people to pay extra for GPT doing something, not sure what???  Booking and Expedia is all about the cheapest deal, no one is paying extra. Figma might be able to charge more, but enough more? \n\nI guess Coursera is going the Duolingo route, and that makes some sense.'),(6,'stocks','1pj5m2w','ntcg2kv','2025-12-10',6,0.6705,'I stopped my ChatGPT subscription after two years because Gemini is just superior supporting with my job'),(7,'stocks','1pj5m2w','ntayaxj','2025-12-10',17,-0.1779,'This AI integration race is getting crazy , everyone\'s jumping on the ChatGPT train , I wonder if we\'ll look back at this as revolutionary or just another tech hype bubble'),(8,'stocks','1pj5m2w','ntb29cp','2025-12-10',8,0,'Theyâ€™re turning themselves into slop machines.'),(9,'stocks','1pj5m2w','ntb6u5i','2025-12-10',2,-0.1538,'Of course OpenAI will not give up the race easily, but until some of their competitors, they do not have established businesses to sustain the burn, and is trying hard to get more partners onboard.'),(10,'stocks','1pj5m2w','ntbptuu','2025-12-10',2,0.4404,'Which in turn means good news for PATH too.'),(11,'stocks','1pj5m2w','ntc4hup','2025-12-10',2,-0.128,'companies overestimate AI\'s use case outside of novelty and underestimate anti-AI sentiment among young people.. in a world of increasing unemployment and income inequality, nobody wants their chance at success taken by a damn clanker'),(12,'stocks','1pj5m2w','ntda4qr','2025-12-10',2,0,'Kinda beginning to think people here own Google stock so are overhyping it.Â '),(13,'stocks','1pj5m2w','ntdeucv','2025-12-10',2,0,'Adobe is begging OpenAI to not disrupt them.'),(14,'stocks','1pj5m2w','ntb2ch4','2025-12-10',3,0,'Accelerating Adobeâ€™s demise'),(15,'stocks','1pj5m2w','ntbtuda','2025-12-10',2,-0.5367,'So when openai fails all of these companies will get the government bailout'),(16,'stocks','1pj5m2w','ntb2uz3','2025-12-10',1,0,'Just waiting for the first real ai toilet. I did see one where it analyzes your poo ...'),(17,'stocks','1pj5m2w','ntbi15w','2025-12-10',1,0.0762,'I still will never pay for it as a consumer'),(18,'stocks','1pj5m2w','ntc97d4','2025-12-10',1,0.34,'Someone edit that picture which was shared here always to add adobe to infinite money glitch now.'),(19,'stocks','1pj5m2w','ntcxcn0','2025-12-10',1,0.4019,'Native is a lot different than third party.'),(20,'stocks','1pj5m2w','ntd9ngo','2025-12-10',1,0,'Is this Gemini thing same or similar to the one on Google chrome AI overviewÂ '),(21,'stocks','1pj5m2w','ntdsi4g','2025-12-11',1,0.5423,'If Adobe gets to under $300 Iâ€™ll buy even more.'),(22,'stocks','1pj5m2w','ntaybzf','2025-12-10',1,0,'Why?'),(23,'stocks','1pj5m2w','ntbe2rb','2025-12-10',1,0,'Figma? What is Figma? The stock you\'re thinking of is called Ligma.'),(24,'stocks','1pj5m2w','ntc55f1','2025-12-10',-1,0.3612,'This sounds like advertising.'),(25,'NVDA_Stock','1pj3kvp','ntbbgd5','2025-12-10',5,-0.4588,'Nvidia is willing and able to sell. Its the Chinese authorities whom are the real gatekeepers atm'),(26,'NVDA_Stock','1pj3kvp','ntbfgzj','2025-12-10',3,0,'of course'),(27,'NVDA_Stock','1pj3kvp','ntar4mc','2025-12-10',2,-0.6142,'Puts! â€œMy uncle knows a guy and he said his cousin told him that nvidia chips are bad and china doesnt want themâ€ -every bear right now'),(28,'NVDA_Stock','1pj3kvp','ntawxw6','2025-12-10',2,0,'Obvious to anyone paying attention'),(29,'NVDA_Stock','1pj3kvp','nte2m0t','2025-12-11',1,0.3612,'They used h100s to distilled O1 to make deepseek.. Chinese are cons like the don'),(30,'NVDA_Stock','1pjcf27','ntdan4l','2025-12-10',2,-0.34,'Could someone please explain the insanity that is NVDAs stock price?'),(31,'NVDA_Stock','1pjcf27','ntd12v1','2025-12-10',1,0.4404,'Good stuff.'),(32,'NVDA_Stock','1pj84ou','ntbuue9','2025-12-10',3,0.1027,'So I guess itâ€™s true you canâ€™t do AI without Nvidia ðŸ¤£ so much for using lower quality chips. Bunch of liars.'),(33,'NVDA_Stock','1pj84ou','ntbkp05','2025-12-10',1,-0.8501,'More of a we can neither confirm nor deny with that response, but that\'s not good for the NVDA is doomed narrative, so nope, they\'re not using them, no sir!');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1pk5szu','ntiu2vp','2025-12-11',5,-0.25,'At least this is exclusive. I donâ€™t believe Google said G3 was â€œexclusivelyâ€ trained on TPUâ€™s. Suckers afraid to admit Nvidia helped.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +107,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-11  2:06:56
+-- Dump completed on 2025-12-12  2:05:06
