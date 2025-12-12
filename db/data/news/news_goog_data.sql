@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
@@ -92,7 +93,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Prabhjote Gill','...','2025-12-04',0.32152,'Google Cloud Partners With Replit To Boost AI Coding For Enterprises: Report','https://stocktwits.com/news-articles/markets/equity/google-cloud-partners-with-replit-to-boost-ai-coding-for-enterprises/cLIiPBfREj9',20),(2,'Keith Speights','Analysts appear to be right about this $3.6 trillion quantum computing stock.\nThe sizzle has largely fizzled for IonQ (IONQ +12.56%). This once-hot stock was up nearly 90% year-to-date by early Octobe...','2025-12-04',0.81188,'Looking for a Better Quantum Computing Stock Than IonQ? Wall Street Loves This One.','https://www.fool.com/investing/2025/12/04/looking-for-a-better-quantum-computing-stock-than/',4),(3,'Eric Sprague','...','2025-12-03',0.50952,'Google Has Changed From Buy To Hold','https://seekingalpha.com/article/4849984-google-has-changed-from-buy-to-hold',40),(4,'Aditya Raghunath','...','2025-12-03',0.72176,'Google Is Gaining Ground in TPUs, But This 1 Other Chipmaker Is Still a Strong Buy According to Morgan Stanley','https://www.barchart.com/story/news/36438956/google-is-gaining-ground-in-tpus-but-this-1-other-chipmaker-is-still-a-strong-buy-according-to-morgan-stanley',20),(5,'Nauman Khan','...','2025-12-03',0.35232,'Cathie Wood Is Buying Up Google Stock at Record Highs. Should You?','https://www.barchart.com/story/news/36436820/cathie-wood-is-buying-up-google-stock-at-record-highs-should-you',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'arundhati sarkar','...','2025-12-11',0,'Google picks veteran Amin Vahdat to steer AI infrastructure: report','https://seekingalpha.com/news/4530428-google-picks-veteran-amin-vahdat-to-steer-ai-infrastructure-report?feed_item_type=news',40),(2,'Rounak Jain','...','2025-12-11',0.50952,'Broadcom Q4 Earnings On Deck: Wall Street Bullish As Potential Meta-Google TPU Deal Expected To Supercharge AVGOâ€™s AI Chip Demand','https://stocktwits.com/news-articles/markets/equity/broadcom-q4-earnings-analysts-bullish-growth-expanded-tpu-demand-google/cLIxivRREnM',2),(3,'Dan Caplinger','Major market benchmarks set new record highs on enthusiasm about 2026.\nThursday was an interesting day for the stock market. Major market benchmarks opened mixed but generally improved over the course...','2025-12-11',0.19958,'Biggest Stock Movers Today, Dec. 11: ORCL, PL, & More','https://www.fool.com/investing/2025/12/11/biggest-stock-movers-today-dec-11-orcl-pl-more/',4),(4,'sristi suman jayaswal','...','2025-12-10',0.65712,'Googleâ€™s Gemini Just Scored a Major Military Win. Should You Buy GOOGL Stock Here?','https://www.barchart.com/story/news/36558156/googles-gemini-just-scored-a-major-military-win-should-you-buy-googl-stock-here',20),(5,'jabran kundi','...','2025-12-10',0.43384,'Is Google Stock a Buy Ahead of Its First AI Glasses Launch?','https://www.barchart.com/story/news/36557444/is-google-stock-a-buy-ahead-of-its-first-ai-glasses-launch',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -106,4 +107,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-05  2:31:15
+-- Dump completed on 2025-12-12  2:46:47
