@@ -29,6 +29,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -84,7 +85,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +94,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'arundhati sarkar','...','2025-12-11',0,'Google picks veteran Amin Vahdat to steer AI infrastructure: report','https://seekingalpha.com/news/4530428-google-picks-veteran-amin-vahdat-to-steer-ai-infrastructure-report?feed_item_type=news',40),(2,'Rounak Jain','...','2025-12-11',0.50952,'Broadcom Q4 Earnings On Deck: Wall Street Bullish As Potential Meta-Google TPU Deal Expected To Supercharge AVGOâ€™s AI Chip Demand','https://stocktwits.com/news-articles/markets/equity/broadcom-q4-earnings-analysts-bullish-growth-expanded-tpu-demand-google/cLIxivRREnM',2),(3,'Dan Caplinger','Major market benchmarks set new record highs on enthusiasm about 2026.\nThursday was an interesting day for the stock market. Major market benchmarks opened mixed but generally improved over the course...','2025-12-11',0.19958,'Biggest Stock Movers Today, Dec. 11: ORCL, PL, & More','https://www.fool.com/investing/2025/12/11/biggest-stock-movers-today-dec-11-orcl-pl-more/',4),(4,'sristi suman jayaswal','...','2025-12-10',0.65712,'Googleâ€™s Gemini Just Scored a Major Military Win. Should You Buy GOOGL Stock Here?','https://www.barchart.com/story/news/36558156/googles-gemini-just-scored-a-major-military-win-should-you-buy-googl-stock-here',20),(5,'jabran kundi','...','2025-12-10',0.43384,'Is Google Stock a Buy Ahead of Its First AI Glasses Launch?','https://www.barchart.com/story/news/36557444/is-google-stock-a-buy-ahead-of-its-first-ai-glasses-launch',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (stefon walters)','This tech stock checks many of the important boxes that Buffett and his managers often look for.\nAfter leading Berkshire Hathaway (BRK.A +0.85%)(BRK.B +0.77%) for 60 years, Warren Buffett is stepping ...','2025-12-12',0.1792,'Warren Buffett Is Dumping Apple and Bank of America Shares and Buying This Red-Hot AI Stock to End 2025','https://www.fool.com/investing/2025/12/11/warren-buffett-is-dumping-apple-and-bank-of-americ/',4),(2,'adam spatacco','Alphabet recently overtook Microsoft as the third-most valuable company in the world.\nNo company in the technology industry has benefited from the rise of artificial intelligence (AI) as much as Nvidi...','2025-12-12',0.66832,'Will Alphabet Overtake Nvidia as the Largest Company in the World in 2026?','https://www.fool.com/investing/2025/12/12/will-alphabet-overtake-nvidia-as-the-largest-compa/',4),(3,'Pathikrit Bose','...','2025-12-11',-0.18104,'Rivianâ€™s Autonomy & AI Day Failed to Move the Needle for RIVN Stock. How Should You Play It Here?','https://www.barchart.com/story/news/36580695/rivians-autonomy-ai-day-failed-to-move-the-needle-for-rivn-stock-how-should-you-play-it-here',2),(4,'arundhati sarkar','...','2025-12-11',0,'Google picks veteran Amin Vahdat to steer AI infrastructure: report','https://seekingalpha.com/news/4530428-google-picks-veteran-amin-vahdat-to-steer-ai-infrastructure-report?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +108,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-12  2:46:47
+-- Dump completed on 2025-12-13  2:27:58
