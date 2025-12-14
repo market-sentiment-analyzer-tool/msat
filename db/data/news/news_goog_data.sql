@@ -64,6 +64,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
@@ -85,7 +86,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +95,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (stefon walters)','This tech stock checks many of the important boxes that Buffett and his managers often look for.\nAfter leading Berkshire Hathaway (BRK.A +0.85%)(BRK.B +0.77%) for 60 years, Warren Buffett is stepping ...','2025-12-12',0.1792,'Warren Buffett Is Dumping Apple and Bank of America Shares and Buying This Red-Hot AI Stock to End 2025','https://www.fool.com/investing/2025/12/11/warren-buffett-is-dumping-apple-and-bank-of-americ/',4),(2,'adam spatacco','Alphabet recently overtook Microsoft as the third-most valuable company in the world.\nNo company in the technology industry has benefited from the rise of artificial intelligence (AI) as much as Nvidi...','2025-12-12',0.66832,'Will Alphabet Overtake Nvidia as the Largest Company in the World in 2026?','https://www.fool.com/investing/2025/12/12/will-alphabet-overtake-nvidia-as-the-largest-compa/',4),(3,'Pathikrit Bose','...','2025-12-11',-0.18104,'Rivianâ€™s Autonomy & AI Day Failed to Move the Needle for RIVN Stock. How Should You Play It Here?','https://www.barchart.com/story/news/36580695/rivians-autonomy-ai-day-failed-to-move-the-needle-for-rivn-stock-how-should-you-play-it-here',2),(4,'arundhati sarkar','...','2025-12-11',0,'Google picks veteran Amin Vahdat to steer AI infrastructure: report','https://seekingalpha.com/news/4530428-google-picks-veteran-amin-vahdat-to-steer-ai-infrastructure-report?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'uttam dey','    canbedone/iStock via Getty Images\n \ncanbedone/iStock via Getty Images\nAs an Alphabet (GOOG) (GOOGL) shareholder, I am elated that the companyâ€™s shares finally got the recognition that I believed t...','2025-12-13',0.16008,'Alphabet Running Too Hot Into 2026','https://seekingalpha.com/article/4853139-alphabet-running-too-hot-into-2026',8),(2,'ahmed farhath','...','2025-12-12',0,'Google integrates Gemini into its language translation service','https://seekingalpha.com/news/4531088-google-integrates-gemini-into-its-language-translation-service?feed_item_type=news',40),(3,'newsfeedback@fool.com (stefon walters)','This tech stock checks many of the important boxes that Buffett and his managers often look for.\nAfter leading Berkshire Hathaway (BRK.A +0.85%)(BRK.B +0.77%) for 60 years, Warren Buffett is stepping ...','2025-12-12',0.1792,'Warren Buffett Is Dumping Apple and Bank of America Shares and Buying This Red-Hot AI Stock to End 2025','https://www.fool.com/investing/2025/12/11/warren-buffett-is-dumping-apple-and-bank-of-americ/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -108,4 +109,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-13  2:27:58
+-- Dump completed on 2025-12-14  2:53:21
