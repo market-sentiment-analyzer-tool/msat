@@ -25,11 +25,12 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
-22bc6ec2-d7c7-11f0-b652-9266b8650c0e:1-101,
+21bc1048-d892-11f0-b96c-8272e73f703f:1-35,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -85,7 +86,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,6 +95,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1plrbz8','ntv1zb0','2025-12-13',25,0,'Amzn is my guess. After years of underperformance I think that some of their bets will start to shine.'),(2,'ValueInvesting','1plrbz8','ntuizah','2025-12-13',34,0.8705,'Yes. Certainly in the next year. I doubt we will see such a large run up. But 10-15% is possible.\n\nInteresting that Amazon a few days ago was $226 and exactly a year before that was $226. So donâ€™t bet the farm. Although if it dips then buy hard.'),(3,'ValueInvesting','1plrbz8','ntuogd6','2025-12-13',25,0,'Meta will outperform all mag 7s in 2026 is my guess'),(4,'ValueInvesting','1plrbz8','ntusww3','2025-12-13',10,0.6369,'I sold half my Nvidia position to buy Google, Amazon, and Meta last week. \n\nI think they will beat the market.'),(5,'ValueInvesting','1plrbz8','ntvk6yo','2025-12-13',3,0.6249,'You guys literally are lizards with mag 7. There are thousands of other companies to invest in'),(6,'ValueInvesting','1plrbz8','ntv8jsy','2025-12-13',7,0.1779,'**Amazon will never beat SP500.**\n\nThey havenâ€™t done it for 5 years.'),(7,'ValueInvesting','1plrbz8','ntv58wn','2025-12-13',2,0.6249,'All four are innovators and could break out on news. I would invest in them all.'),(8,'ValueInvesting','1plrbz8','ntuqppw','2025-12-13',1,0.4019,'Yes'),(9,'ValueInvesting','1plrbz8','ntvcx9o','2025-12-13',1,0.7295,'High probability nuclear energy will outperform tech as it has remained overlooked and without energy there is no AI. Windmills, dams and coal wont ever cover the need.\n I own no shares of any stock in nasdaq100, sold em all. Dont plan on buying again either.\n\nWhether \"AI\" is a success or a dud will remain to be seen; but it will sure require a lot of energy while we find out.'),(10,'ValueInvesting','1plrbz8','ntwags6','2025-12-13',1,0.6124,'Head above water, yes.\n\nAmazing potential - 2026-2028? I doubt it.'),(11,'ValueInvesting','1plrbz8','ntwhu1g','2025-12-14',1,0.802,'NVDA will do well again. No clue why people are acting like it\'s trash when it\'s the 2nd best performing mag 7 by far this year and has a huge demand for chips well into 2027.'),(12,'ValueInvesting','1plrbz8','ntvaq7y','2025-12-13',0,-0.7814,'These are my 3 tech/comm sector picks.\n\nI think NVDA has a short term moat but its vanishing.  Expect NVDA to be one of the biggest 2026 losers.'),(13,'ValueInvesting','1plrbz8','ntvfw50','2025-12-13',-1,0.5859,'i bet on $TSLA $AMZN $META $NVDA next year.. i actually own almost every mag7 except $MSFT lol\n\nif has to be 1. $TSLA will the biggest winner IMO next year ($600-$800 PT)');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -107,4 +109,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-13  1:59:09
+-- Dump completed on 2025-12-14  2:11:46
