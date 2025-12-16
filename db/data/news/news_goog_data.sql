@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -96,7 +97,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Keithen Drury','The AI computing market looks strong heading into 2026.\nStocks listed on the Nasdaq exchange tend to be some of the fastest-growing and most tech-focused stocks on the market. Of the top 10 largest U....','2025-12-14',0.71864,'Here Are My Top 4 Nasdaq Stocks to Buy in 2026','https://www.fool.com/investing/2025/12/14/here-are-my-top-4-nasdaq-stocks-to-buy-in-2026/',4),(2,'will healy','Both of these top tech companies have established leadership roles in the AI industry.\nBoth Microsoft (MSFT 1.02%) and Alphabet (GOOGL 1.03%) (GOOG 1.01%) continue to grow as they solidify their posit...','2025-12-14',0.80006,'Better (Almost) $4 Trillion AI Stock to Buy Now: Microsoft or Alphabet','https://www.fool.com/investing/2025/12/14/better-almost-4-trillion-ai-stock-buy-msft-googl/',4),(3,'Rounak Jain','OpenAI has reportedly revised its compensation structure by eliminating the six-month vesting cliff for new employees.\nAccording to a report by The Wall Street Journal on Sunday, this policy change, a...','2025-12-14',0.53596,'OpenAI Ends Vesting Cliff For Employee Stock Options Again As Competition For Top-Tier Talent Intensifies: Report','https://www.benzinga.com/markets/tech/25/12/49382203/openai-ends-vesting-cliff-for-employee-stock-options-again-as-competition-for-top-tier-talent-intensifies-report',8),(4,'uttam dey','    canbedone/iStock via Getty Images\n \ncanbedone/iStock via Getty Images\nAs an Alphabet (GOOG) (GOOGL) shareholder, I am elated that the companyâ€™s shares finally got the recognition that I believed t...','2025-12-13',0.16008,'Alphabet Running Too Hot Into 2026','https://seekingalpha.com/article/4853139-alphabet-running-too-hot-into-2026',8);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Picking companies with a strong long-term track record is a smart move.\nFinding stocks that you can buy and hold for the long term without worrying about day-to-day trends is a smart move for individu...','2025-12-15',0.78794,'Got $5,000? 3 Tech Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2025/12/15/got-5000-3-tech-stocks-to-hold-for-the-long-term/',4),(2,'wall street breakfast','...','2025-12-15',0,'Wall Street Breakfast Podcast: Roomba Maker Files For Chapter 11','https://seekingalpha.com/article/4853339-wall-street-breakfast-podcast-roomba-maker-files-for-chapter-11',4),(3,'arundhati sarkar','...','2025-12-15',0.21856,'Google inks solar power deal in Malaysia with Shizen Energy','https://seekingalpha.com/news/4531288-google-inks-solar-power-deal-in-malaysia-with-shizen-energy?feed_item_type=news',40),(4,'rounak jain','...','2025-12-15',-0.08216,'Amazonâ€™s â€˜Responsible AIâ€™ Pledge Questioned As Shareholders Target Its Contracts With Israeli Military, DHS: Report','https://stocktwits.com/news-articles/markets/equity/amazon-responsible-ai-pledge-questioned-as-shareholders-target-contracts-with-israeli-military-dhs/cLe42exREo5',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -110,4 +111,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-15  2:52:52
+-- Dump completed on 2025-12-16  2:47:35
