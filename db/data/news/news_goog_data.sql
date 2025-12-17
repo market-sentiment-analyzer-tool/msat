@@ -33,6 +33,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
+4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
@@ -88,7 +89,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +98,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Picking companies with a strong long-term track record is a smart move.\nFinding stocks that you can buy and hold for the long term without worrying about day-to-day trends is a smart move for individu...','2025-12-15',0.78794,'Got $5,000? 3 Tech Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2025/12/15/got-5000-3-tech-stocks-to-hold-for-the-long-term/',4),(2,'wall street breakfast','...','2025-12-15',0,'Wall Street Breakfast Podcast: Roomba Maker Files For Chapter 11','https://seekingalpha.com/article/4853339-wall-street-breakfast-podcast-roomba-maker-files-for-chapter-11',4),(3,'arundhati sarkar','...','2025-12-15',0.21856,'Google inks solar power deal in Malaysia with Shizen Energy','https://seekingalpha.com/news/4531288-google-inks-solar-power-deal-in-malaysia-with-shizen-energy?feed_item_type=news',40),(4,'rounak jain','...','2025-12-15',-0.08216,'Amazonâ€™s â€˜Responsible AIâ€™ Pledge Questioned As Shareholders Target Its Contracts With Israeli Military, DHS: Report','https://stocktwits.com/news-articles/markets/equity/amazon-responsible-ai-pledge-questioned-as-shareholders-target-contracts-with-israeli-military-dhs/cLe42exREo5',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (Marc Guberti)','These AI stocks look like bargains heading into the new year.\nArtificial intelligence (AI) stocks are starting to sell at discounted prices thanks to negative sentiment related to recently released Or...','2025-12-16',0.86154,'2 Best AI Stocks to Buy in December','https://www.fool.com/investing/2025/12/16/2-best-ai-stocks-to-buy-in-december/',4),(2,'Fundamental Options','...','2025-12-16',0.39016,'Alphabet: A Neutral Strategy With High Probability Of Profit','https://seekingalpha.com/article/4853634-alphabet-a-neutral-strategy-with-high-probability-of-profit',4),(3,'newsfeedback@fool.com (trevor jennewine)','Shares of Alphabet and Microsoft could soar in 2026 as the artificial intelligence boom keeps rolling.\nCertain Wall Street analysts expect Alphabet (GOOGL 0.49%) (GOOG 0.51%) and Microsoft (MSFT +0.45...','2025-12-16',0.81192,'2 Artificial Intelligence (AI) Stocks to Buy Before They Soar to $5 Trillion in 2026, According to Wall Street','https://www.fool.com/investing/2025/12/16/2-ai-stocks-buy-before-soar-5-trillion-2026-wall/',4),(4,'Ghazal Ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2025-12-16',0.19988,'10 Trending AI Stocks on Wall Street','https://www.insidermonkey.com/blog/10-trending-ai-stocks-on-wall-street-11-1660386/',4),(5,'chris katje','A surging valuation for SpaceX ahead of a potential 2026 IPO has made Elon Musk the first person to ever be worth $600 billion or more. While the new milestone is impressive, the fact that Musk is now...','2025-12-16',0.38066,'Musk Worth More Than Bezos, Zuckerberg, Buffett Combined â€“ And Still Has $11 Billion To Spare','https://www.benzinga.com/markets/tech/25/12/49434118/musk-worth-more-than-bezos-zuckerberg-buffett-combined-and-still-has-11-billion-to-spare',8),(6,'leo sun','Nvidia and Meta Platforms are still safe buys in this frothy market.\nOver the past seven years, the market capitalizations of several top tech companies soared past the $1 trillion mark. Those gains w...','2025-12-16',0.67938,'2 Trillion-Dollar Tech Stocks to Double Up on Right Now','https://www.fool.com/investing/2025/12/16/2-trillion-dollar-tech-stocks-to-double-up-on-righ/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -111,4 +112,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-16  2:47:35
+-- Dump completed on 2025-12-17  2:30:56
