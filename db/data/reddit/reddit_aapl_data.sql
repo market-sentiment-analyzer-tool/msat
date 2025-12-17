@@ -22,11 +22,13 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2ba208d4-daec-11f0-b12d-da87dae4df3d:1-37,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
@@ -40,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -67,7 +70,6 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
-f4a71af7-d95a-11f0-80a2-de22206f756b:1-22,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70';
 
 --
@@ -87,7 +89,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,6 +98,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1po24jz','nucfotd','2025-12-16',11,0.4588,'They own less than meâ€¦. Who cares?'),(2,'AAPL','1po24jz','nubyaa8','2025-12-16',10,0,'Why is an investment of less than a million noteworthy?'),(3,'AAPL','1po24jz','nucqp2j','2025-12-16',2,-0.4939,'lol. 1 million. Wasted my time'),(4,'AAPL','1po24jz','nuckezy','2025-12-16',1,0,'Pennies ðŸª™'),(5,'AAPL','1po24jz','nuewjc0','2025-12-16',1,0.4767,'4,682 shares are worth more than $961k.'),(6,'AAPL','1po24jz','nufczsj','2025-12-17',1,-0.4215,'Ugh I only have 50 ðŸ¤¦ðŸ»â€â™‚ï¸'),(7,'AAPL','1po8li2','nudbstx','2025-12-16',10,0.7044,'Not falling, going Sideways called consolidation. Itâ€™s normal. It will go up soon. Just be cash ready.'),(8,'AAPL','1po8li2','nuddc9g','2025-12-16',5,-0.6209,'Donâ€™t you worry about apple.  Itâ€™s apple!!!!'),(9,'AAPL','1po8li2','nudhdr2','2025-12-16',3,0.2023,'Apple will be fine. Refresh cycle with the 18 next year.'),(10,'AAPL','1po8li2','nudr82l','2025-12-16',3,-0.3089,'Not interested in your videos, man.'),(11,'AAPL','1po8li2','nue26hs','2025-12-16',3,0.2632,'The stock just had a major run up over the past couple of months. Itâ€™s a slight pull back. Any concern is silly.'),(12,'AAPL','1po8li2','nue6b8z','2025-12-16',2,-0.0258,'Why?  Because in the stock market, everything goes up and down.'),(13,'AAPL','1po8li2','nuei72h','2025-12-16',1,0.3252,'No worries, 2026ðŸš€ðŸš€'),(14,'AAPL','1po8li2','nuf76nz','2025-12-16',1,-0.6018,'paper-handed profits. i hope heavily tariffed categories aren\'t normal, but people are stupid and think paying outrageous prices is normal, so yeah idk'),(15,'AAPL','1po8li2','nude245','2025-12-16',1,-0.2057,'because it\'s a reflection of the american consumer.  The american consumer is not doing as well is being portrayed..');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -109,4 +112,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-15  2:09:09
+-- Dump completed on 2025-12-17  2:01:17
