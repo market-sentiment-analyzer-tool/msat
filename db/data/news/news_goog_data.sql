@@ -62,6 +62,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -90,7 +91,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,7 +100,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2025-12-17',0.19938,'TD Cowen Raises Alphabet (GOOGL) Price Target to $350 on AI Search Momentum','https://www.insidermonkey.com/blog/td-cowen-raises-alphabet-googl-price-target-to-350-on-ai-search-momentum-1660620/',4),(2,'Geoffrey Seiler','Nvidia and Alphabet look poised to become $5 trillion stocks next year.\nWhile a company obtaining a $5 trillion market cap seemed like a fantasy just several years ago, I think there will not just be ...','2025-12-17',0.43662,'Prediction: These 2 Stocks Will Be the First to Join the $5 Trillion Market Cap Club in 2026','https://www.fool.com/investing/2025/12/17/predict-stocks-join-5-trillion-market-cap-2026/',4),(3,'financialcontent','The financial markets in late 2025 are gripped by a palpable sense of dÃ©jÃ  vu, as a growing chorus of analysts and investors warn of an impending \"AI bubble.\" Comparisons to the dot-com bust of the la...','2025-12-17',0.19996,'The AI Reckoning: Top Tech Stocks Fueling Bubble Fears as Market Scrutiny Intensifies','https://www.financialcontent.com/article/marketminute-2025-12-17-the-ai-reckoning-top-tech-stocks-fueling-bubble-fears-as-market-scrutiny-intensifies',4),(4,'shivani kumaresan','...','2025-12-17',0.1024,'Google Reportedly Targets Nvidiaâ€™s AI Stronghold With New PyTorch Chip Strategy','https://stocktwits.com/news-articles/markets/equity/google-reportedly-targets-nvidia-s-ai-stronghold-with-new-py-torch-chip-strategy/cLeO8fWREqr',20),(5,'Ahmed Farhath','...','2025-12-16',0.08216,'U.S. blasts Europe for targeting Big Tech with fines, lawsuits','https://seekingalpha.com/news/4532254-us-blasts-europe-for-targeting-big-tech-with-fines-lawsuits?feed_item_type=news',4),(6,'newsfeedback@fool.com (Marc Guberti)','These AI stocks look like bargains heading into the new year.\nArtificial intelligence (AI) stocks are starting to sell at discounted prices thanks to negative sentiment related to recently released Or...','2025-12-16',0.86154,'2 Best AI Stocks to Buy in December','https://www.fool.com/investing/2025/12/16/2-best-ai-stocks-to-buy-in-december/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Defense World Staff','\n					Posted by Defense World Staff on Dec 18th, 2025\n\nGradient Investments LLC grew its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.4% in the third quarter, according to the company i...','2025-12-18',0.19982,'Gradient Investments LLC Increases Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2025/12/18/gradient-investments-llc-increases-stock-position-in-alphabet-inc-goog.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Dec 18th, 2025\n\nAssenagon Asset Management S.A. lifted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 73.5% in the third quarter, accord...','2025-12-18',0.48878,'Assenagon Asset Management S.A. Increases Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2025/12/18/assenagon-asset-management-s-a-increases-stock-holdings-in-alphabet-inc-goog.html',4),(3,'newsfeedback@fool.com (keithen drury)','Nvidia is a shoo-in to breach this level. But what about the other?\nCurrently, there are no stocks with a $5 trillion market cap or greater. Nvidia (NVDA +1.91%) is valued at $4.3 trillion, and was re...','2025-12-17',0.69972,'Prediction: These 2 AI Darlings Will Be Worth $5 Trillion or More in 2026','https://www.fool.com/investing/2025/12/17/prediction-these-2-ai-darlings-will-be-worth-5-tri/',4),(4,'ravikash bakolia','...','2025-12-17',0,'Google launches its faster AI model Gemini 3 Flash','https://seekingalpha.com/news/4532538-google-launches-its-faster-ai-model-gemini-3-flash?feed_item_type=news',40),(5,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2025-12-17',0.19938,'TD Cowen Raises Alphabet (GOOGL) Price Target to $350 on AI Search Momentum','https://www.insidermonkey.com/blog/td-cowen-raises-alphabet-googl-price-target-to-350-on-ai-search-momentum-1660620/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -113,4 +114,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-18  2:44:06
+-- Dump completed on 2025-12-19  2:46:56
