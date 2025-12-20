@@ -36,6 +36,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -91,7 +92,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -100,7 +101,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Defense World Staff','\n					Posted by Defense World Staff on Dec 18th, 2025\n\nGradient Investments LLC grew its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.4% in the third quarter, according to the company i...','2025-12-18',0.19982,'Gradient Investments LLC Increases Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2025/12/18/gradient-investments-llc-increases-stock-position-in-alphabet-inc-goog.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Dec 18th, 2025\n\nAssenagon Asset Management S.A. lifted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 73.5% in the third quarter, accord...','2025-12-18',0.48878,'Assenagon Asset Management S.A. Increases Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2025/12/18/assenagon-asset-management-s-a-increases-stock-holdings-in-alphabet-inc-goog.html',4),(3,'newsfeedback@fool.com (keithen drury)','Nvidia is a shoo-in to breach this level. But what about the other?\nCurrently, there are no stocks with a $5 trillion market cap or greater. Nvidia (NVDA +1.91%) is valued at $4.3 trillion, and was re...','2025-12-17',0.69972,'Prediction: These 2 AI Darlings Will Be Worth $5 Trillion or More in 2026','https://www.fool.com/investing/2025/12/17/prediction-these-2-ai-darlings-will-be-worth-5-tri/',4),(4,'ravikash bakolia','...','2025-12-17',0,'Google launches its faster AI model Gemini 3 Flash','https://seekingalpha.com/news/4532538-google-launches-its-faster-ai-model-gemini-3-flash?feed_item_type=news',40),(5,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2025-12-17',0.19938,'TD Cowen Raises Alphabet (GOOGL) Price Target to $350 on AI Search Momentum','https://www.insidermonkey.com/blog/td-cowen-raises-alphabet-googl-price-target-to-350-on-ai-search-momentum-1660620/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam spatacco','Hedge fund Coatue Management sold 14% of its Nvidia stake during the third quarter.\nAbout halfway through every quarter, any institutional investment fund that manages more than $100 million is requir...','2025-12-19',0.3803,'Billionaire Philippe Laffont Is Selling Nvidia and Buying This Other Magnificent Chip Stock Instead','https://www.fool.com/investing/2025/12/19/billionaire-philippe-laffont-is-selling-nvidia-and/',4),(2,'Shivani Kumaresan','...','2025-12-19',0.28896,'PANW Stock Rises As Company Teams Up To Secure AI Workloads Against Threats','https://stocktwits.com/news-articles/markets/equity/panw-stock-rises-as-company-teams-up-to-secure-ai-workloads-against-threats/cLeiUdMREsh',2),(3,'aditya raghunath','...','2025-12-18',0.43384,'Jefferies Says IonQ Stock Can Double Over the Next 12 Months. Should You Buy It Here?','https://www.barchart.com/story/news/36698463/jefferies-says-ionq-stock-can-double-over-the-next-12-months-should-you-buy-it-here',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -114,4 +115,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-19  2:46:56
+-- Dump completed on 2025-12-20  2:27:40
