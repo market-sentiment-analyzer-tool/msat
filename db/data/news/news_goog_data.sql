@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -92,7 +93,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +102,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam spatacco','Hedge fund Coatue Management sold 14% of its Nvidia stake during the third quarter.\nAbout halfway through every quarter, any institutional investment fund that manages more than $100 million is requir...','2025-12-19',0.3803,'Billionaire Philippe Laffont Is Selling Nvidia and Buying This Other Magnificent Chip Stock Instead','https://www.fool.com/investing/2025/12/19/billionaire-philippe-laffont-is-selling-nvidia-and/',4),(2,'Shivani Kumaresan','...','2025-12-19',0.28896,'PANW Stock Rises As Company Teams Up To Secure AI Workloads Against Threats','https://stocktwits.com/news-articles/markets/equity/panw-stock-rises-as-company-teams-up-to-secure-ai-workloads-against-threats/cLeiUdMREsh',2),(3,'aditya raghunath','...','2025-12-18',0.43384,'Jefferies Says IonQ Stock Can Double Over the Next 12 Months. Should You Buy It Here?','https://www.barchart.com/story/news/36698463/jefferies-says-ionq-stock-can-double-over-the-next-12-months-should-you-buy-it-here',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'Defense World Staff','\n					Posted by Defense World Staff on Dec 20th, 2025\n\nCooper Financial Group lessened its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 5.9% during the third quarter, according to...','2025-12-20',0.43662,'Alphabet Inc. $GOOGL Shares Sold by Cooper Financial Group','https://www.defenseworld.net/2025/12/20/alphabet-inc-googl-shares-sold-by-cooper-financial-group.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Dec 20th, 2025\n\nAlphabet Inc. (NASDAQ:GOOGL â€“ Get Free Report) shares rose 1.6% on Friday after Citigroup raised their price target on the stock from $343.00 to ...','2025-12-20',0.69958,'Alphabet (NASDAQ:GOOGL) Shares Up 1.6% Following Analyst Upgrade','https://www.defenseworld.net/2025/12/20/alphabet-nasdaqgoogl-shares-up-1-6-following-analyst-upgrade.html',4),(3,'analyticsinsight','Generative AI firms are driving business transformation and product innovation globally in 2025.\nOpenAI, Google DeepMind, and others lead with breakthrough models and partnerships.\nIndian tech firms a...','2025-12-20',0.36154,'Top 10 Generative AI Companies Leading the Pact','https://www.analyticsinsight.net/artificial-intelligence/top-10-generative-ai-companies-leading-the-pact',4),(4,'keithen drury','Alphabet had a dominant 2025 and looks to continue that success in 2026.\nAlphabet (GOOG +1.55%) (GOOGL +1.55%) has been one of the top-performing stocks in the whole market in 2025. Its stock has rise...','2025-12-20',0.30202,'3 Reasons to Buy Alphabet Stock in 2026 (And 1 to Sell)','https://www.fool.com/investing/2025/12/20/3-reasons-to-buy-alphabet-stock-in-2026-and-1-to/',4),(5,'larry ramer','...','2025-12-19',0.54464,'Zillow Stock Plunged on Google Listing News, But 1 Analyst Still Thinks It Can Gain 50% from Here','https://www.barchart.com/story/news/36719692/zillow-stock-plunged-on-google-listing-news-but-1-analyst-still-thinks-it-can-gain-50-from-here',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -115,4 +116,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-20  2:27:40
+-- Dump completed on 2025-12-21  2:53:35
