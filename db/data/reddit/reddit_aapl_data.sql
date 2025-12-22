@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -36,10 +37,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
-4ee709fe-de12-11f0-8ddc-f65487353708:1-60,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5925c9cf-dedb-11f0-9e8e-22bbdd7a467d:1-115,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -93,7 +94,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +103,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1prd51r','nv0tqek','2025-12-20',14,0.7096,'have been holding for decades...huge percentage of my net worth...will continue to hold and buy on dips...'),(2,'AAPL','1prd51r','nv1wt37','2025-12-20',3,0.1358,'Itâ€™s really been such a wealth creator. I bought 500 shares in 2008 and kept adding every year when I got my bonus until 2016. Then I jumped back in 2020 when everything went to shit. \nI have sold along the way to diversify and some of those worked out even better - Tesla 2012, ( sold in 21) NVDA 21 and Amazon. I need to sell some now but capital gains kill me. Better to have the cash for bad times. Nothing worse than being poor after having been rich.'),(3,'AAPL','1prd51r','nv2uxg3','2025-12-20',2,0.6808,'A company that gives back so much to shareholders via dividends and buybacks is worthy of my portfolio.'),(4,'AAPL','1prd51r','nv3dymu','2025-12-20',1,0.7974,'To be fair revenue growth is kind of meaningless without profit growth, which is a much more important metric.  You could double your revenue, but if your profits arenâ€™t growing investors are not going to care one bit unless there is a meaningful reason, such as a one time charge.'),(5,'AAPL','1prd51r','nv4qibw','2025-12-21',1,0.4019,'Smart'),(6,'AAPL','1prd51r','nv1czfk','2025-12-20',-7,0,'[removed]');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -116,4 +116,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-21  2:12:17
+-- Dump completed on 2025-12-22  2:15:07

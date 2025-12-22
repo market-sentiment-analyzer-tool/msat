@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -36,10 +37,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
-4ee709fe-de12-11f0-8ddc-f65487353708:1-60,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5925c9cf-dedb-11f0-9e8e-22bbdd7a467d:1-115,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -93,7 +94,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +103,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1prgjyp','nv1lc4w','2025-12-20',69,0.1531,'Is this written by AI? Stopped reading as soon as I saw 105x p/e. Also, AMD started the year with a share price of 120-125 so the 99% YTD number has to be a month old.'),(2,'stocks','1prgjyp','nv1j8ej','2025-12-20',49,-0.4767,'Before anyone sees maybe fix your mistake on the AMD PE, itâ€™s actually something like 40. The figure you have is inflated due to the amortisation cost of the Xilinx purchase, mad that people still donâ€™t know this yet post about it'),(3,'stocks','1prgjyp','nv1zur1','2025-12-20',13,0,'NVDA to $300'),(4,'stocks','1prgjyp','nv1nr94','2025-12-20',26,0.7814,'My .02 is picking one over the other is like trying to time the market. I have owned both for a long time and that would be my approach now. It ainâ€™t always easy because at times one will cannibalize the other, but long-term horizon is favorable.'),(5,'stocks','1prgjyp','nv1q2sd','2025-12-20',14,0.9686,'Iâ€™ve accumulated AMD shares using profits from trading. Nvidia is clearly the leader and will set the direction of the trade. However, AMD has made me more money this year for a simple reason: investors desperately want an Nvidia challenger. That creates profitable overreactions.\n\nEdit: relatively speaking, more % gains. I am organically 60% nvidia since buying in 2000. So Iâ€™ve trimmed nvidia and bought AMD on low prices (recently accumulated some at the $197 price along with some next earnings 220Cs). Up on ~13% on shares and up 70% on calls within 2 days.'),(6,'stocks','1prgjyp','nv2d6in','2025-12-20',6,0,'AMD'),(7,'stocks','1prgjyp','nv1sh10','2025-12-20',10,0,'This is written by an AI bot'),(8,'stocks','1prgjyp','nv219b3','2025-12-20',6,0.4215,'Its easier to move mcap on 300 bln than 4.5 trl'),(9,'stocks','1prgjyp','nv1xhqt','2025-12-20',3,0.775,'Both are great stocks to hold. But imo, nvidia is better pick amongst the two'),(10,'stocks','1prgjyp','nv2c7yv','2025-12-20',3,0.0258,'Solid analysis. Iâ€™m holding both. NVDA should have no issue surpassing 200 in H12026 while AMD has always been volatile and harder to predict.'),(11,'stocks','1prgjyp','nv2mqle','2025-12-20',3,0.7506,'Amd for sure has the better growth cycle ahead, no question.'),(12,'stocks','1prgjyp','nv303xb','2025-12-20',3,0.6486,'AMD is the better value.'),(13,'stocks','1prgjyp','nv1ljhx','2025-12-20',4,0.9794,'105 p/e is just straight up incorrect. It currently trades at a 40 p/e with respect to the Xilinx acquisition and amortization. Looking forward, projected revenue growth will drop p/e down into the single digits through 2030. What that means is the share price will appreciate into the 600 range in the base case through 2030, because AMD will never trade with single digits p/e. The share price will adjust to keep it in the 30 range. NVDA has less desirable risk/ reward these days. They need to remain perfect otherwise growth will stagnate, now that theyâ€™re facing fierce competition for the first time in a decade. \n\nAMD has traded at $190 per share within the last couple weeks so Iâ€™m not sure why you didnâ€™t get aggressive there. Itâ€™s a bargain getting anything below 225/share currently.'),(14,'stocks','1prgjyp','nv1parg','2025-12-20',5,0.2382,'Both are good but if I had to Iâ€™d pick NVDA'),(15,'stocks','1prgjyp','nv1zk7w','2025-12-20',2,0,'You are analyzing the past. You have to asses which company will monetizy the IA'),(16,'stocks','1prgjyp','nv213fb','2025-12-20',2,-0.4019,'PE can be misleading depending on how fast the company grows'),(17,'stocks','1prgjyp','nv2qmky','2025-12-20',2,0,'Amd has low float.'),(18,'stocks','1prgjyp','nv3haam','2025-12-20',2,0.7096,'Imo amd has far greater growth potential'),(19,'stocks','1prgjyp','nv3iqha','2025-12-20',2,0.4503,'I canâ€™t believe I am saying this, butâ€¦ why not split between both? I like Nvidia more, but the pullback has created good opportunities with both. AMD is definitely more volatile. People have been trying for almost 6 months to crash Nvidia below $168-$170 without success in comparison.'),(20,'stocks','1prgjyp','nv4bt87','2025-12-21',2,0.4404,'My XLK/SMH holdings cover both enough, I prefer it NVDA weighted though.  I can envision a world where NVDA gets another leg up without AMD, and not the other way around.'),(21,'stocks','1prgjyp','nv1rlgp','2025-12-20',2,0,'Karma farmer'),(22,'stocks','1prgjyp','nv1se9a','2025-12-20',2,0.5719,'The truth is both are almost at the same PEG. So, the both are same value'),(23,'stocks','1prgjyp','nv1rc8h','2025-12-20',1,-0.5927,'I don\'t see either as a value at the moment and would rather wait but I\'m a swing trader and just swing them on options for the time being. Just rode AMD down from 223 to 200. I personally hold the belief that AMD will still come down at some point and fill the gap around 170. At that point I\'d be willing to consider it as a value and jump in ðŸ¤·â€â™‚ï¸'),(24,'stocks','1prgjyp','nv257m5','2025-12-20',1,0.4329,'Another \"Which stocks only go up?\" post. Why are people like this?'),(25,'stocks','1prgjyp','nv1nnl1','2025-12-20',0,0.0772,'You canâ€™t possibly be using the word â€œvalueâ€ and those two stocks in the same sentence can you?'),(26,'stocks','1prgjyp','nv21lr4','2025-12-20',1,0,'AVGO'),(27,'stocks','1prgjyp','nv22mae','2025-12-20',1,0.4404,'CUDA â€œmoatâ€ has eroded somewhat. ROCmâ€™s HIP, code-translation efforts, and better PyTorch-on-ROCm are reducing friction for some workloads, especially cost-sensitive training and inference.'),(28,'stocks','1prgjyp','nv24npw','2025-12-20',1,0,'Nvidia Imo'),(29,'stocks','1prgjyp','nv1or8w','2025-12-20',0,0,'Neither.'),(30,'stocks','1prgjyp','nv1pzyo','2025-12-20',-2,0.6486,'Intel is the better value theirs you answer'),(31,'stocks','1prgjyp','nv1k26w','2025-12-20',-8,-0.25,'Both are still overpriced by at least 50%. Lots of room for downside'),(32,'stocks','1prgjyp','nv23zm8','2025-12-20',0,0,'Neither');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -116,4 +116,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-21  2:12:17
+-- Dump completed on 2025-12-22  2:15:07
