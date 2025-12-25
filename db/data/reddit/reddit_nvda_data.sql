@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3629443d-e136-11f0-9f47-fa9834db86a5:1-113,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -49,13 +50,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
-bf8c0b06-e06c-11f0-8a2c-f6e95caf16c3:1-50,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -96,7 +97,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,6 +106,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'investing','1puxj7p','nvs23r0','2025-12-24',85,0.3818,'Seems like Nvidia is nervous about Google\'s TPUs taking market share'),(2,'investing','1puxj7p','nvs1xef','2025-12-24',178,0.7579,'This is huge if it goes through. Groq makes custom chips that are among the fastest for AI inference and power efficiency, competing with Google\'s TPU. These chips produce insanely high tokens per second increasing the speed you get a response from AI. Nvidia acquiring them removes a competitor in inference and will bolster their hardware stack for inference time compute.  Makes perfect sense Nvidia is the leader of AI training and want to capture the inference market too.'),(3,'investing','1puxj7p','nvs1y3g','2025-12-24',18,0,'Isnâ€™t this Chamathâ€™s company?'),(4,'investing','1puxj7p','nvs7fkv','2025-12-24',48,-0.6369,'Overvalued monopolist continues to consolidate its hegemony through anti competitive business practices. FTFY'),(5,'investing','1puxj7p','nvs5971','2025-12-24',12,-0.5574,'And so begins the TPU Wars.Â '),(6,'investing','1puxj7p','nvse33y','2025-12-24',5,0.4215,'If this is real, it will be interesting to see what the FTC and DoJ think of the buyout. The legal basis of whether they block the deal as monopolistic will be contingent on whether they lump all \"AI chips\" together, or whether they discriminate between GPUs, ASICs, and FPGAs. The decision will probably come down to how the executive branch wants to shape the AI chip national strategy: let a few national champions carve out a killzone, or foster a competitive ecosystem.'),(7,'investing','1puxj7p','nvt0j57','2025-12-25',2,-0.3182,'Fucking Groq. Really? 1 letter away from Grok smh'),(8,'investing','1puxj7p','nvt2wf2','2025-12-25',1,-0.0951,'Should not be legal'),(9,'investing','1puxj7p','nvt5pb6','2025-12-25',1,0,'Karma farma'),(10,'investing','1puxj7p','nvt71i9','2025-12-25',1,0.7003,'This is a real hit to Google if approved as an acquisition haha'),(11,'investing','1puxj7p','nvsdin5','2025-12-24',1,-0.0772,'\"we are not acquiring Groq as a company\". People thinking this is an acquisition just read headlines and start crying monopoly and antitrust lmao'),(12,'investing','1puxj7p','nvs8pv8','2025-12-24',0,0,'Is this what a moat means in investing termsâ€¦ buying all the competition?'),(13,'investing','1puxj7p','nvs1ubw','2025-12-24',-17,0,'Whatever');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -118,4 +120,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-24  2:04:22
+-- Dump completed on 2025-12-25  2:07:02
