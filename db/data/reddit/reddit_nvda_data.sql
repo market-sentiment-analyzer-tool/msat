@@ -24,16 +24,17 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+179ec1ce-e2c8-11f0-a903-c698b28b34eb:1-54,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
-3d4f2548-e1ff-11f0-8cc9-7e81745873f3:1-32,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -98,7 +99,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,7 +108,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1pv8n92','nvvc61g','2025-12-25',17,0.7482,'Iâ€™ve long said Groq is DOA because they canâ€™t scale, no new semiconductor startups can scale. Their exist strategies have always been buy out by bigger players.\n\nI think itâ€™s a brilliant play by Nvidia. It can integrate Groq into their DS solution as LLM inference nodes for certain classes of models at a low per-token price. That effectively makes the barrier of entry too high for any new inference only chip startups and makers it unattractive for AI labs to build their own ASCII.'),(2,'NVDA_Stock','1pv8n92','nvui2nu','2025-12-25',10,0.4404,'Iâ€™ll take it as a Christmas gift from Nvidia. ðŸš€'),(3,'NVDA_Stock','1pv8n92','nvulit7','2025-12-25',6,-0.2577,'For a moment  was wondering WTF would they buy grok'),(4,'NVDA_Stock','1pv8n92','nvwldk4','2025-12-25',3,-0.3182,'Just imagine the lost in market cap if it was a deal between Groq and OpenAI.\nI believe that was very much on the cards and Jensen just orempted that'),(5,'NVDA_Stock','1pvgnbj','nvwes3a','2025-12-25',6,0.6652,'Wut seems like you guys think inference is something new instead of the most common usecase for nvidia GPUs already...\n\nGroq\'s architecture is good for one thing only. lower latency. In all other things it is much worse than GPUs.\n\nLow latency right now is largely useless (hence why Groq had no actual sales and eventually gave up on selling altogether). But in 2027 with robotics driving advanced realtime usecases it\'ll be a significant niche. It\'ll be something like 10% of the market probably.'),(6,'NVDA_Stock','1pvgnbj','nvx7khu','2025-12-25',3,0.8942,'I\'m not sure how meaningful it will be with regard to the next few quarters as I can\'t see any integration with Blackwell.  I\'d imagine we\'ll see some sort of integration with Rubin (but I don\'t have enough technical knowledge to offer any insight into what that integration might look like). With that said, it\'s big news - I could see stock gains when the market reopens, but I could also see this as being something that is underappreciated by the nontechnical crowd and therefore share price stays flat.  Will be interesting.'),(7,'NVDA_Stock','1pvgnbj','nvw7v5o','2025-12-25',2,-0.2453,'I think people are making this bigger than it is. I have a feeling groq won\'t bring revenue'),(8,'NVDA_Stock','1pvgnbj','nvy33k1','2025-12-26',2,0.4404,'Groq gives a shiny new object for Broadcom and Google to chase.   In the meantime the leather jacket is busy packing up'),(9,'NVDA_Stock','1pvgnbj','nvy7ao8','2025-12-26',2,0.6461,'If think it will medium to long term. They need to build synergies that give them a competitive advantage of using the total Nvidia solution vs using Nvidia just for training and anybody else for inference.'),(10,'NVDA_Stock','1pvgnbj','nvwuyyc','2025-12-25',1,0.8547,'ASICs are a threat to the long term not short and this is more of a play on the AI environment maturing years down the road. ASICs will gain more market share when workloads stabilize and become more predictable / require less flexibility.\n\nNvidia isn\'t going to just release bleeding-edge GPU\'s ad infinitum. When the industry matures they will adapt with more cost optimized offerings.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -121,4 +121,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-26  2:05:22
+-- Dump completed on 2025-12-27  2:03:23

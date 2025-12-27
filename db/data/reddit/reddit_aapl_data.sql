@@ -24,16 +24,17 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+179ec1ce-e2c8-11f0-a903-c698b28b34eb:1-54,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
-3d4f2548-e1ff-11f0-8cc9-7e81745873f3:1-32,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -98,7 +99,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,6 +108,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1pwiij8','nw3uyp5','2025-12-26',10,0.6249,'1402 shares here valued at 380k. Paid 95k.Â '),(2,'AAPL','1pwiij8','nw3t5zo','2025-12-26',3,0.8689,'Nice. I just sold 150 shares. Thanks for picking those up'),(3,'AAPL','1pwiij8','nw3wxww','2025-12-27',3,0.5106,'Bought 100 shares today as well to add to the portfolio.'),(4,'AAPL','1pwiij8','nw46lvm','2025-12-27',3,0.6249,'1680 shares valued at 460k. Bought in 2000.'),(5,'AAPL','1pwiij8','nw3xmno','2025-12-27',1,-0.0451,'I bought some shares today and the stock started to tank.  \nI didn\'t read any news that could explain this drop, what happened?'),(6,'AAPL','1pwiij8','nw4ahxe','2025-12-27',1,0.296,'4200 shares'),(7,'AAPL','1pwiij8','nw4ee2e','2025-12-27',1,0.5267,'i have 45,000 shares (originally 200 shares) bought in 1987 at a price around 0.22 split adjusted.'),(8,'AAPL','1pwiij8','nw3te1n','2025-12-26',-7,0.128,'Nice. ThatÂ´s the reason why rotten AAPL gave up its gains today. It keeps getting rotten.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -120,4 +122,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-26  2:05:22
+-- Dump completed on 2025-12-27  2:03:23
