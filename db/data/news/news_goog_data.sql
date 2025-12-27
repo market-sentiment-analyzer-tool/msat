@@ -74,6 +74,7 @@ e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -98,7 +99,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -107,7 +108,6 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adam levy)','AI is constantly evolving, and these companies will continue to push it forward in 2026.\nThe last three years have been marked by the rapid development and deployment of new artificial intelligence te...','2025-12-24',0.8415,'3 Artificial Intelligence (AI) Trends to Watch in 2026 and How to Invest in Them','https://www.fool.com/investing/2025/12/24/artificial-intelligence-ai-trends-to-watch-in-2026/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Dec 24th, 2025\n\nCurated Wealth Partners LLC decreased its stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 22.4% during the third quarter, according to it...','2025-12-24',0.72766,'Curated Wealth Partners LLC Sells 3,090 Shares of Alphabet Inc. $GOOGL','https://www.defenseworld.net/2025/12/24/curated-wealth-partners-llc-sells-3090-shares-of-alphabet-inc-googl.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Dec 24th, 2025\n\nBartlett & CO. Wealth Management LLC decreased its holdings in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 4.4% during the 3rd quarter, accord...','2025-12-24',0.595,'Bartlett & CO. Wealth Management LLC Has $103.38 Million Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2025/12/24/bartlett-co-wealth-management-llc-has-103-38-million-holdings-in-alphabet-inc-googl.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Dec 24th, 2025\n\nBrady Family Wealth LLC trimmed its holdings in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.5% in the third quarter, according to its most r...','2025-12-24',0.59502,'Brady Family Wealth LLC Has $15.47 Million Stake in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2025/12/24/brady-family-wealth-llc-has-15-47-million-stake-in-alphabet-inc-googl.html',4),(5,'newsfeedback@fool.com (trevor jennewine)','These top hedge fund managers own large stakes in Google-parent Alphabet and Meta Platforms.\nShares of Meta Platforms (META +0.39%) have advanced 13% year to date, bringing its market value to $1.6 tr...','2025-12-24',0.63376,'Billionaires Buy 2 Trillion-Dollar AI Stocks Hand Over Fist Ahead of 2026','https://www.fool.com/investing/2025/12/24/billionaires-buy-2-trillion-dollar-ai-stocks-2026/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -121,4 +121,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-26  2:47:41
+-- Dump completed on 2025-12-27  2:44:49
