@@ -40,6 +40,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -99,7 +100,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -108,6 +109,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (rachel warren)','These profitable businesses have plenty of room left to run.\nGrowth stocks are a great option for long-term investors due to their potential for high capital appreciation. These companies typically op...','2025-12-27',0.86162,'Here Are My Top 3 Growth Stocks to Buy Now','https://www.fool.com/investing/2025/12/27/here-are-my-top-3-growth-stocks-to-buy-now/',4),(2,'rich duprey','Investing\n\n					Sending You to Google News in 3\n\nÂ© Sergey Nivens / Shutterstock.com\n\nAlphabet (NASDAQ:GOOG)(NASDAQ:GOOGL) dominates the search engine market with over 90% share and powers billions of ...','2025-12-26',0.19982,'45% of Alphabetâ€™s $3 Billion Hidden Portfolio Is in Just 2 White-Hot Stocks','https://247wallst.com/investing/2025/12/26/45-of-alphabets-3-billion-hidden-portfolio-is-in-just-2-white-hot-stocks/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -121,4 +123,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-27  2:44:49
+-- Dump completed on 2025-12-28  3:02:16
