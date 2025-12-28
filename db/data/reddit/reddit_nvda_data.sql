@@ -24,9 +24,9 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
-179ec1ce-e2c8-11f0-a903-c698b28b34eb:1-54,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+1f271947-e394-11f0-b7cf-165ff230828e:1-29,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
@@ -75,6 +75,7 @@ e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -99,7 +100,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -108,6 +109,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'wallstreetbets','1pwnu7v','nw4vqh5','2025-12-27',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 2 | **First Seen In WSB** | 1 year ago\n**Total Comments** | 0 | **Previous Best DD** | \n**Account Age** | 3 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1pwnu7v','nw565r8','2025-12-27',17,0.4215,'Now do that with Puts on NVDA or you\'re a lucky regard.'),(3,'wallstreetbets','1pwnu7v','nw6ijj2','2025-12-27',4,0.7506,'Fortune favours the bold but in this case, fortune favoured the regard.'),(4,'wallstreetbets','1pwnu7v','nw7gezy','2025-12-27',2,0.2732,'Well done'),(5,'wallstreetbets','1pwnu7v','nw82edl','2025-12-27',2,0.8271,'It\'s nice to see someone who took profits instead of diamond handing to zero or a loss. Congrats.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -121,4 +123,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-27  2:03:23
+-- Dump completed on 2025-12-28  2:23:39
