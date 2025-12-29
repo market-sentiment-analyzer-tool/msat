@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
@@ -100,7 +101,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,7 +110,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (rachel warren)','These profitable businesses have plenty of room left to run.\nGrowth stocks are a great option for long-term investors due to their potential for high capital appreciation. These companies typically op...','2025-12-27',0.86162,'Here Are My Top 3 Growth Stocks to Buy Now','https://www.fool.com/investing/2025/12/27/here-are-my-top-3-growth-stocks-to-buy-now/',4),(2,'rich duprey','Investing\n\n					Sending You to Google News in 3\n\nÂ© Sergey Nivens / Shutterstock.com\n\nAlphabet (NASDAQ:GOOG)(NASDAQ:GOOGL) dominates the search engine market with over 90% share and powers billions of ...','2025-12-26',0.19982,'45% of Alphabetâ€™s $3 Billion Hidden Portfolio Is in Just 2 White-Hot Stocks','https://247wallst.com/investing/2025/12/26/45-of-alphabets-3-billion-hidden-portfolio-is-in-just-2-white-hot-stocks/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adria cimino)','Could this player outperform Nvidia next year, too?\nNvidia (NVDA +1.09%) is the artificial intelligence (AI) stock everyone has been watching over the past few years. The company has established itsel...','2025-12-28',0.1999,'This AI Stock Is Quietly Outperforming Nvidia in 2025','https://www.fool.com/investing/2025/12/28/this-ai-stock-is-quietly-outperforming-nvidia/',4),(2,'newsfeedback@fool.com (rachel warren)','Many AI stocks are driving the market these days.\nThe artificial intelligence (AI) revolution contains a wealth of investment opportunities, not to mention the potential for massive economic transform...','2025-12-28',0.84588,'Have $2,000? 3 Artificial Intelligence (AI) Stocks to Buy and Hold for at Least a Decade.','https://www.fool.com/investing/2025/12/27/meet-these-3-artificial-intelligence-ai-stocks/',4),(3,'newsfeedback@fool.com (rachel warren)','These profitable businesses have plenty of room left to run.\nGrowth stocks are a great option for long-term investors due to their potential for high capital appreciation. These companies typically op...','2025-12-27',0.86162,'Here Are My Top 3 Growth Stocks to Buy Now','https://www.fool.com/investing/2025/12/27/here-are-my-top-3-growth-stocks-to-buy-now/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -123,4 +124,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-28  3:02:16
+-- Dump completed on 2025-12-29  3:00:39
