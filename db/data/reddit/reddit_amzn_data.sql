@@ -21,12 +21,12 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05299b8d-e45d-11f0-ad93-8a784b76dd9f:1-54,
+063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
-1f271947-e394-11f0-b7cf-165ff230828e:1-29,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -100,7 +101,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,6 +110,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1pxjcmo','nwbiwrt','2025-12-28',17,0.7269,'H1-b visas are oversubscribed right now. It remains to be seen whether the changes make it so that we donâ€™t hit the cap anymore. Moving from being oversubscribed and lottery based to criteria based with emphasis on higher skilled and higher paid immigrants seems like a positive move.'),(2,'ValueInvesting','1pxjcmo','nwbnjx1','2025-12-28',16,0.4404,'Thanks for the jobs, trump.'),(3,'ValueInvesting','1pxjcmo','nwbhget','2025-12-28',30,0.7783,'TLDR:Â Demand is majorly concentrated on high-value, specialised tech skills rather than legacy support functions, reflecting strategic shifts toward innovation and emerging tech adoption.'),(4,'ValueInvesting','1pxjcmo','nwdx6nq','2025-12-28',3,0.4588,'Ramp up based on what?   They\'ve been doing it like crazy for 20 years.'),(5,'ValueInvesting','1pxjcmo','nwd7fge','2025-12-28',5,0.7964,'Looks like companies are shifting hiring to where the talent pipeline is easier to scale.'),(6,'ValueInvesting','1pxjcmo','nwde753','2025-12-28',5,0.25,'if you wonder why everything is becoming shittier\n\nThe great skilled workers in India do not stay in india earning shit wages.\n\nIt took our company 5 years to hire a half decent DBA in india... So, good luck. Greedy cockroaches'),(7,'ValueInvesting','1pxjcmo','nwec36k','2025-12-28',4,-0.8624,'Every engineer I work with who lives in India does a piss poor job. They create more bugs than they do solutions and every time they are audible it sounds like they are in the middle of a warzone. I highly doubt they give two fucks about these jobs. Companies will have fun in a few years when the cheaper labor makes big expensive problems. But management will probably be too dumb to correlate the two.'),(8,'ValueInvesting','1pxjcmo','nwbhlco','2025-12-28',-10,-0.1419,'I don\'t like doing this but I did tell you so:https://www.reddit.com/r/ValueInvesting/s/Zu0FYAXkXZ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -122,4 +124,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-28  2:23:39
+-- Dump completed on 2025-12-29  2:22:17
