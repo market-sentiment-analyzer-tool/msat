@@ -27,6 +27,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -101,7 +102,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +111,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adria cimino)','Could this player outperform Nvidia next year, too?\nNvidia (NVDA +1.09%) is the artificial intelligence (AI) stock everyone has been watching over the past few years. The company has established itsel...','2025-12-28',0.1999,'This AI Stock Is Quietly Outperforming Nvidia in 2025','https://www.fool.com/investing/2025/12/28/this-ai-stock-is-quietly-outperforming-nvidia/',4),(2,'newsfeedback@fool.com (rachel warren)','Many AI stocks are driving the market these days.\nThe artificial intelligence (AI) revolution contains a wealth of investment opportunities, not to mention the potential for massive economic transform...','2025-12-28',0.84588,'Have $2,000? 3 Artificial Intelligence (AI) Stocks to Buy and Hold for at Least a Decade.','https://www.fool.com/investing/2025/12/27/meet-these-3-artificial-intelligence-ai-stocks/',4),(3,'newsfeedback@fool.com (rachel warren)','These profitable businesses have plenty of room left to run.\nGrowth stocks are a great option for long-term investors due to their potential for high capital appreciation. These companies typically op...','2025-12-27',0.86162,'Here Are My Top 3 Growth Stocks to Buy Now','https://www.fool.com/investing/2025/12/27/here-are-my-top-3-growth-stocks-to-buy-now/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (lyle daly)','This Magnificent Seven stock has outperformed the market in 2025 and looks like a good pick to keep its momentum going.\nThe tech sector is full of exciting investment opportunities, especially in rece...','2025-12-29',0.89222,'The Best Tech Stock to Buy With $5,000 Right Now','https://www.fool.com/investing/2025/12/29/the-best-tech-stock-to-buy-with-5000-right-now/',4),(2,'newsfeedback@fool.com (marc guberti)','The right millionaire-maker stocks can grow your wealth faster than the S&P 500.\nInvesting in high-quality growth stocks and gradually building your positions can turn you into a millionaire investor....','2025-12-29',0.55184,'Investing in These 3 Millionaire-Maker Stocks Right Now Could Set You Up for Life','https://www.fool.com/investing/2025/12/28/investing-in-these-3-millionaire-maker-stocks-righ/',4),(3,'newsfeedback@fool.com (adam levy)','This stock has strong momentum across hardware, software, and consumer services.\nNvidiaÂ has been one of the best-performing stocks in the current bull market. The stock has increased by more than 1,00...','2025-12-29',0.58132,'Prediction: 1 Artificial Intelligence (AI) Stock That Will Outperform Nvidia in 2026','https://www.fool.com/investing/2025/12/28/prediction-1-artificial-intelligence-ai-stock-that/',4),(4,'newsfeedback@fool.com (rachel warren)','Quantum computing represents a relatively nascent industry.\nQuantum computing is a promising field with massive long-term potential, but it is still in its early commercialization phase. This can make...','2025-12-28',0.59436,'Are These 2 Quantum Computing Stocks the Key to Decades of Wealth?','https://www.fool.com/investing/2025/12/28/are-these-2-quantum-computing-stocks-the-key-to/',4),(5,'newsfeedback@fool.com (adria cimino)','Could this player outperform Nvidia next year, too?\nNvidia (NVDA 1.21%) is the artificial intelligence (AI) stock everyone has been watching over the past few years. The company has established itself...','2025-12-28',0.1999,'This AI Stock Is Quietly Outperforming Nvidia in 2025','https://www.fool.com/investing/2025/12/28/this-ai-stock-is-quietly-outperforming-nvidia/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -124,4 +125,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-29  3:00:39
+-- Dump completed on 2025-12-30  2:50:06
