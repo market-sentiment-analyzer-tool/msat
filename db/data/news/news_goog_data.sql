@@ -35,6 +35,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -102,7 +103,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -111,7 +112,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (lyle daly)','This Magnificent Seven stock has outperformed the market in 2025 and looks like a good pick to keep its momentum going.\nThe tech sector is full of exciting investment opportunities, especially in rece...','2025-12-29',0.89222,'The Best Tech Stock to Buy With $5,000 Right Now','https://www.fool.com/investing/2025/12/29/the-best-tech-stock-to-buy-with-5000-right-now/',4),(2,'newsfeedback@fool.com (marc guberti)','The right millionaire-maker stocks can grow your wealth faster than the S&P 500.\nInvesting in high-quality growth stocks and gradually building your positions can turn you into a millionaire investor....','2025-12-29',0.55184,'Investing in These 3 Millionaire-Maker Stocks Right Now Could Set You Up for Life','https://www.fool.com/investing/2025/12/28/investing-in-these-3-millionaire-maker-stocks-righ/',4),(3,'newsfeedback@fool.com (adam levy)','This stock has strong momentum across hardware, software, and consumer services.\nNvidiaÂ has been one of the best-performing stocks in the current bull market. The stock has increased by more than 1,00...','2025-12-29',0.58132,'Prediction: 1 Artificial Intelligence (AI) Stock That Will Outperform Nvidia in 2026','https://www.fool.com/investing/2025/12/28/prediction-1-artificial-intelligence-ai-stock-that/',4),(4,'newsfeedback@fool.com (rachel warren)','Quantum computing represents a relatively nascent industry.\nQuantum computing is a promising field with massive long-term potential, but it is still in its early commercialization phase. This can make...','2025-12-28',0.59436,'Are These 2 Quantum Computing Stocks the Key to Decades of Wealth?','https://www.fool.com/investing/2025/12/28/are-these-2-quantum-computing-stocks-the-key-to/',4),(5,'newsfeedback@fool.com (adria cimino)','Could this player outperform Nvidia next year, too?\nNvidia (NVDA 1.21%) is the artificial intelligence (AI) stock everyone has been watching over the past few years. The company has established itself...','2025-12-28',0.1999,'This AI Stock Is Quietly Outperforming Nvidia in 2025','https://www.fool.com/investing/2025/12/28/this-ai-stock-is-quietly-outperforming-nvidia/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2025-12-30',0.55264,'The 2 Smartest Stocks to Hold Into 2026 and Beyond','https://www.barchart.com/story/news/36824832/the-2-smartest-stocks-to-hold-into-2026-and-beyond',2),(2,'motley fool','...','2025-12-30',0.43384,'Is IonQ Stock a Buy Now?','https://finance.yahoo.com/news/ionq-stock-buy-now-100400124.html',20),(3,'newsfeedback@fool.com (leo sun)','Rigetti, IonQ, and QCi are excellent long-term investments in this emerging market.\nQuantum computing could represent the next secular growth trend for the tech sector. From 2025 to 2032, Fortune Busi...','2025-12-29',0.52122,'3 Quantum Computing Stocks That Could Help Make You a Fortune','https://www.fool.com/investing/2025/12/29/3-quantum-computing-stocks-that-could-help-make-yo/',4),(4,'newsfeedback@fool.com (geoffrey seiler)','Alphabet could be a huge AI growth story over the coming years.\nWhile Alphabet (GOOGL +0.15%) (GOOG +0.11%) has been the best performer among the so-called \"Magnificent Seven\" stocks this year, it sti...','2025-12-29',0.85784,'Could This Underrated AI Stock Be the Best Growth Story of 2026 and the Next Decade?','https://www.fool.com/investing/2025/12/29/could-this-underrated-ai-stock-be-the-best-growth/',4),(5,'rich duprey','Investing\n\n					Sending You to Google News in 3\n\nÂ© JHVEPhoto / iStock Editorial via Getty Images\n\nAlphabet (NASDAQ:GOOG)(NASDAQ:GOOGL) remains the dominant force in search and digital advertising, hol...','2025-12-29',0.72754,'Alphabet Isnâ€™t a Search and Ad Company Anymore. Now Itâ€™s Valued Like an AI Stock','https://247wallst.com/investing/2025/12/29/alphabet-isnt-a-search-and-ad-company-anymore-now-its-valued-like-an-ai-stock/',4),(6,'newsfeedback@fool.com (stefon walters)','Alphabet is working to be an AI one-stop shop.\nArtificial intelligence (AI) has been around for a while, but it has undoubtedly leaped into the mainstream with the popularity of generative AI tools li...','2025-12-29',0.38088,'Forget Highâ€Risk AI Penny Stocks: This Established AI Leader Is a Safer Longâ€Term Bet','https://www.fool.com/investing/2025/12/29/forget-high-risk-ai-penny-stocks-this-established/',4),(7,'dair sansyzbayev','...','2025-12-29',0,'Alphabet: Validation Flywheel Accelerating For Gemini','https://seekingalpha.com/article/4856189-alphabet-validation-flywheel-accelerating-for-gemini',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -125,4 +126,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-30  2:50:06
+-- Dump completed on 2025-12-31  2:49:46
