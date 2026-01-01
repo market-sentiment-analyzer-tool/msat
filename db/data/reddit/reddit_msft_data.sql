@@ -21,13 +21,13 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05299b8d-e45d-11f0-ad93-8a784b76dd9f:1-54,
-063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -35,6 +35,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05299b8d-e45d-11f0-ad93-8a784b76dd9f:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -49,6 +50,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05299b8d-e45d-11f0-ad93-8a784b76dd9f:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
@@ -72,6 +74,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+dc0ba46b-e6b8-11f0-a915-be0f3c6471fd:1-23,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -101,7 +104,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +113,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1pxjcmo','nwbiwrt','2025-12-28',17,0.7269,'H1-b visas are oversubscribed right now. It remains to be seen whether the changes make it so that we donâ€™t hit the cap anymore. Moving from being oversubscribed and lottery based to criteria based with emphasis on higher skilled and higher paid immigrants seems like a positive move.'),(2,'ValueInvesting','1pxjcmo','nwbnjx1','2025-12-28',15,0.4404,'Thanks for the jobs, trump.'),(3,'ValueInvesting','1pxjcmo','nwbhget','2025-12-28',29,0.7783,'TLDR:Â Demand is majorly concentrated on high-value, specialised tech skills rather than legacy support functions, reflecting strategic shifts toward innovation and emerging tech adoption.'),(4,'ValueInvesting','1pxjcmo','nwdx6nq','2025-12-28',3,0.4588,'Ramp up based on what?   They\'ve been doing it like crazy for 20 years.'),(5,'ValueInvesting','1pxjcmo','nwd7fge','2025-12-28',7,0.7964,'Looks like companies are shifting hiring to where the talent pipeline is easier to scale.'),(6,'ValueInvesting','1pxjcmo','nwde753','2025-12-28',4,0.25,'if you wonder why everything is becoming shittier\n\nThe great skilled workers in India do not stay in india earning shit wages.\n\nIt took our company 5 years to hire a half decent DBA in india... So, good luck. Greedy cockroaches'),(7,'ValueInvesting','1pxjcmo','nwec36k','2025-12-28',4,-0.8624,'Every engineer I work with who lives in India does a piss poor job. They create more bugs than they do solutions and every time they are audible it sounds like they are in the middle of a warzone. I highly doubt they give two fucks about these jobs. Companies will have fun in a few years when the cheaper labor makes big expensive problems. But management will probably be too dumb to correlate the two.'),(8,'ValueInvesting','1pxjcmo','nwbhlco','2025-12-28',-10,-0.1419,'I don\'t like doing this but I did tell you so:https://www.reddit.com/r/ValueInvesting/s/Zu0FYAXkXZ');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -124,4 +126,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-12-29  2:22:17
+-- Dump completed on 2026-01-01  2:24:08
