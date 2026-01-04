@@ -81,6 +81,7 @@ e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
+e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -106,7 +107,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +116,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-01-02',0.43384,'Alphabet Soars â€” Is GOOGL Stock Still a Buy for 2026?','https://www.barchart.com/story/news/36859123/alphabet-soars-is-googl-stock-still-a-buy-for-2026',20),(2,'newsfeedback@fool.com (jennifer saibil)','These stocks could soar in 2026 and have excellent long-term opportunities.\nArtificial intelligence (AI) has driven the market to the tune of an 81% gain over the past three years. The eight most high...','2026-01-01',0.85004,'5 Top Artificial Intelligence Stocks to Buy in 2026','https://www.fool.com/investing/2026/01/01/5-top-artificial-intelligence-stocks-to-buy-2026/',4),(3,'newsfeedback@fool.com (adam spatacco)','Berkshire Hathaway has been selling Apple stock throughout the artificial intelligence (AI) revolution.\nOver the last three years, artificial intelligence (AI) has become a theme so influential that t...','2026-01-01',0.68922,'Berkshire Is Selling Apple Stock and Buying This Other Magnificent Artificial Intelligence (AI) Stock Instead','https://www.fool.com/investing/2026/01/01/berkshire-is-selling-apple-stock-and-buying-this/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 1st, 2026\n\nFSM Wealth Advisors LLC grew its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 7.0% in the 3rd quarter, according to its mos...','2026-01-01',0.59502,'FSM Wealth Advisors LLC Grows Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/01/fsm-wealth-advisors-llc-grows-stock-holdings-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 1st, 2026\n\nApella Capital LLC boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.3% in the 3rd quarter, according to the compa...','2026-01-01',0.45444,'Apella Capital LLC Boosts Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/01/apella-capital-llc-boosts-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (harsh chauhan)','This AI giant has been soaring nicely of late, and investors can expect it to step on the gas in the new year.\nPalantir Technologies (PLTR 5.56%) stock is coming off another remarkable year. Shares of...','2026-01-03',0.72764,'Missed Out on Investing in Palantir? 1 No-Brainer Artificial Intelligence Stock to Buy Before It Soars in 2026.','https://www.fool.com/investing/2026/01/03/missed-out-on-palantir-1-no-brainer-artificial-int/',4),(2,'sneha nahata','...','2026-01-02',0.43384,'Alphabet Soars â€” Is GOOGL Stock Still a Buy for 2026?','https://www.barchart.com/story/news/36859123/alphabet-soars-is-googl-stock-still-a-buy-for-2026',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -129,4 +130,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-03  2:44:08
+-- Dump completed on 2026-01-04  3:04:02
