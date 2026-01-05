@@ -46,6 +46,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -107,7 +108,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,7 +117,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (harsh chauhan)','This AI giant has been soaring nicely of late, and investors can expect it to step on the gas in the new year.\nPalantir Technologies (PLTR 5.56%) stock is coming off another remarkable year. Shares of...','2026-01-03',0.72764,'Missed Out on Investing in Palantir? 1 No-Brainer Artificial Intelligence Stock to Buy Before It Soars in 2026.','https://www.fool.com/investing/2026/01/03/missed-out-on-palantir-1-no-brainer-artificial-int/',4),(2,'sneha nahata','...','2026-01-02',0.43384,'Alphabet Soars â€” Is GOOGL Stock Still a Buy for 2026?','https://www.barchart.com/story/news/36859123/alphabet-soars-is-googl-stock-still-a-buy-for-2026',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keith speights)','These three AI winners appear to be safer bets than Palantir in the new year.\nFew stocks received more buzz in 2025 than Palantir Technologies (PLTR 5.68%). Such attention is to be expected when a sto...','2026-01-04',0.88668,'3 Artificial Intelligence Stocks to Buy in 2026 That Could Be Better Picks Than Palantir','https://www.fool.com/investing/2026/01/04/3-artificial-intelligence-stocks-to-buy-in-2026-th/',4),(2,'mohit oberoi','...','2026-01-03',0.47416,'GOOGL Stock Rocked in 2025, But Is Googleâ€™s 2026 Forecast as Bright?','https://www.barchart.com/story/news/36871752/googl-stock-rocked-in-2025-but-is-googles-2026-forecast-as-bright',20),(3,'newsfeedback@fool.com (harsh chauhan)','This AI giant has been soaring nicely of late, and investors can expect it to step on the gas in the new year.\nPalantir Technologies (PLTR 5.68%) stock is coming off another remarkable year. Shares of...','2026-01-03',0.72764,'Missed Out on Investing in Palantir? 1 No-Brainer Artificial Intelligence Stock to Buy Before It Soars in 2026.','https://www.fool.com/investing/2026/01/03/missed-out-on-palantir-1-no-brainer-artificial-int/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -130,4 +131,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-04  3:04:02
+-- Dump completed on 2026-01-05  3:05:57
