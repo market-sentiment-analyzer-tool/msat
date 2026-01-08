@@ -79,6 +79,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -110,7 +111,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +120,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'cash flow venue','    400tmax/iStock Unreleased via Getty Images\n \n400tmax/iStock Unreleased via Getty Images\nAlphabet Inc. (GOOG) (GOOGL) has been one of my best-performing investments for years now, and 2025 was anot...','2026-01-06',0.47152,'Alphabet Takes A Swing At Nvidia, Making The Bull Case Stronger','https://seekingalpha.com/article/4857422-alphabet-takes-a-swing-at-nvidia-making-the-bull-case-stronger',8),(2,'joel south','Nvidia announced plans to produce AI chips and software to drive robotaxis by 2027.\nWall Street pounds the table, telling investors to keep buying Nvidia stock.\nGet earnings reminders, our top analysi...','2026-01-06',0.19986,'Stock Market Live January 6: Nvidia Revs Up, S&P 500 (VOO) Slips','https://247wallst.com/investing/2026/01/06/stock-market-live-january-6-nvidia-revs-up-sp-500-voo-slips/',40),(3,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-01-06',0.88426,'8 Best American Stocks to Buy and Hold in 2026','https://www.insidermonkey.com/blog/8-best-american-stocks-to-buy-and-hold-in-2026-1669747/',4),(4,'ian cooper','Nvidia just announced the launch of its next-generation Vera Rubin superchip at CES 2026.\nâ€œWe are just starting to realize the power of AI,â€ CEO Lisa Su said at the CES tech trade show in Las Vegas.\nG...','2026-01-06',0.19988,'Stock Market Live January 6, 2026: S&P 500 (SPY) Nearing All-Time Highs','https://247wallst.com/investing/2026/01/06/stock-market-live-january-6-2026-sp-500-spy-nearing-all-time-highs/',4),(5,'joel south','Forecasts\nNVIDIAâ€™s track record of strong earnings suggests an ability to remain at the forefront of its industry, as competitors fight for the leftovers.\nBetween NVIDIAâ€™s client list of Magnificent S...','2026-01-06',0.19992,'NVIDIA (NASDAQ: NVDA) Price Prediction and Forecast 2026-2030 for January 6','https://247wallst.com/forecasts/2026/01/06/nvidia-nvda-price-prediction-and-forecast/',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ian cooper','Oil continues to drop, with crude now at $56.92. Venezuela will reportedly give up to 50 million barrels of oil to the U.S. on news.\nShares of Nvidia are set for another positive open after CEO Jensen...','2026-01-07',0.45448,'Stock Market Live January 7, 2026: S&P 500 (SPY) Flat After Testing Fresh Highs','https://247wallst.com/investing/2026/01/07/stock-market-live-january-7-2026-sp-500-spy-flat-after-testing-fresh-highs/',4),(2,'moz farooque','Please enable JS and disable any ad blocker...','2026-01-07',0.36908,'Nvidia CEO makes clear break from playbook','https://www.thestreet.com/technology/nvidia-ceo-makes-clear-break-from-playbook',40),(3,'joel south','Investing\nU.S.-China trade relations have presented headwinds, but Nvidia Corp. (NASDAQ: NVDA) is also the dominant AI chipmaker in the market, and the companyâ€™s profitability remains strong.\nHere is ...','2026-01-07',0.19992,'Nvidia (NASDAQ: NVDA) Stock Price Prediction for 2026: Where Will It Be in 1 Year (Jan 7)','https://247wallst.com/investing/2026/01/07/nvidia-nasdaq-nvda-stock-price-prediction-for-2025-where-will-it-be-in-1-year/',40),(4,'joel south','Investing\nFuture stock performance hinges on Amazonâ€™s growth in e-commerce, AWS and advertising amidst increasing competition.\nAmazon posted net income of $59.2 billion in 2024, a 94.60% increase over...','2026-01-07',0.34228,'Amazon Stock (NASDAQ: AMZN) Price Prediction and Forecast 2026-2030 for January 7','https://247wallst.com/investing/2026/01/07/amazon-stock-amzn-price-prediction-and-forecast/',4),(5,'faisal humayun khan','...','2026-01-07',0.66168,'The 3 Best AI Stocks to Buy for 2026','https://www.barchart.com/story/news/36923970/the-3-best-ai-stocks-to-buy-for-2026',2),(6,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-01-07',0.48786,'Nvidiaâ€™s (NVDA) Investment in Intel Supports Its 2026 Bull Thesis','https://www.insidermonkey.com/blog/nvidias-nvda-investment-in-intel-supports-its-2026-bull-thesis-1670634/',4),(7,'zachary evens','...','2026-01-07',0,'3-Great-Etfs-2026-Beyond-2','https://www.morningstar.com/funds/3-great-etfs-2026-beyond-2',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -133,4 +134,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-07  2:52:35
+-- Dump completed on 2026-01-08  2:51:54
