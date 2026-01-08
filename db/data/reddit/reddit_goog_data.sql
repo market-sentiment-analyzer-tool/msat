@@ -63,7 +63,6 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
-af40a502-eb6d-11f0-929f-ca5331d489f4:1-176,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -71,8 +70,10 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
+c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d4b9405e-ec36-11f0-a7cc-be099422cd33:1-70,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -110,7 +111,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,6 +120,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1q6o0na','ny8zrb6','2026-01-07',421,-0.5742,'I constantly wonder why I didn\'t buy last year when it dipped so hard. Google obviously wasn\'t going anywhere'),(2,'stocks','1q6o0na','ny92467','2026-01-07',57,0.5574,'Till now the average net margin for 2025 of GOOG is 34.31%, while for 2024 it was 28.62%. This is already a 5.69% rise. They are keeping more and more of their multi billion revenue comparing y-o-y. Solid company indeed.'),(3,'stocks','1q6o0na','ny8zm4g','2026-01-07',123,0.7506,'Makes sense they do everything. Apple will buy a good AI company to compete eventually.'),(4,'stocks','1q6o0na','ny99bb9','2026-01-07',16,0.6369,'I bought when it was $90 in 2023. My best performer after AMD'),(5,'stocks','1q6o0na','ny9544j','2026-01-07',29,0.296,'Anyone still buying shares at these prices?'),(6,'stocks','1q6o0na','ny90yym','2026-01-07',21,-0.4588,'3rd will be MSFT. Apple slowly going down.'),(7,'stocks','1q6o0na','ny9b4y7','2026-01-07',9,0.5499,'I bought GOOGL at 170 in 2025.  Doing great in a short time.  Genius stock picker here.  \n\nBut I also bought ORLY recently just because I like seeing the ticker ORLY in my portfolio.  Should make some money too.'),(8,'stocks','1q6o0na','ny9qefh','2026-01-07',4,0.1779,'Goog and Amazon are what I am buying this year'),(9,'stocks','1q6o0na','ny9d884','2026-01-07',24,-0.4416,'Apple just isn\'t innovative anymore.  Show me an apple waymo, an apple browser, an apple AI assistant, an apple email, an apple anything that I want to use....  No, they just have a newer model of the same phone, laptop, watch...  \nBullish on GOOGL\nBearish on AAPL'),(10,'stocks','1q6o0na','ny9picq','2026-01-07',7,-0.6557,'No all time high for Europeans :('),(11,'stocks','1q6o0na','nya0lkm','2026-01-07',3,0.6115,'I bought dips. Very happy. Long on Google.'),(12,'stocks','1q6o0na','ny9qaug','2026-01-07',6,0,'I can\'t believe Apple chose to sit out on the AI race'),(13,'stocks','1q6o0na','ny9myj0','2026-01-07',2,0,'As it shouldÂ '),(14,'stocks','1q6o0na','ny9czpt','2026-01-07',7,0.1655,'Apple is a zombie company. They haven\'t actually innovated in years. I\'m sure they\'ll be making money for a long time from their paypigs, but they\'ve stayed on the backslide.'),(15,'stocks','1q6o0na','nya5oz7','2026-01-07',2,0,'Got a fuckin ad on Google maps the other day while I was trying to navigate'),(16,'stocks','1q6o0na','ny9b78f','2026-01-07',2,0,'GO google!'),(17,'stocks','1q6o0na','ny9o88g','2026-01-07',1,0.2263,'Apple phones are pretty boring these days, and thats saying something.'),(18,'stocks','1q6o0na','nya18hv','2026-01-07',1,0,'Next target - Nvidia'),(19,'stocks','1q6o0na','nyb1bdx','2026-01-08',1,0.2263,'Apple will reclaim the top spot, just matter of time'),(20,'stocks','1q6o0na','nybf4md','2026-01-08',1,-0.0397,'I\'m not impressed by any of this anymore, none of this is tied to actual value.'),(21,'stocks','1q6o0na','nybh5dv','2026-01-08',1,0.8791,'It\'s insane how Apple has completely missed, then bunked up AI. It\'s a marathon not a race, but if you really like AI, I feel like buying an Iphone or Mac doesn\'t do you much good versus anything else.'),(22,'stocks','1q6o0na','nyabb9f','2026-01-07',0,0,'LOL, whatâ€™s the market smoking'),(23,'stocks','1q6o0na','ny90bmf','2026-01-07',-18,0,'[removed]'),(24,'stocks','1q6o0na','ny9ot6e','2026-01-07',0,-0.5106,'I told you: Rotten $AAPL. \n\n$AAPL will be surpassed by $MSFT sooner or later.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -132,4 +134,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-07  2:10:05
+-- Dump completed on 2026-01-08  2:09:04
