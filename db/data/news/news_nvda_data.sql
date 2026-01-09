@@ -28,6 +28,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
@@ -111,7 +112,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +121,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ian cooper','Oil continues to drop, with crude now at $56.92. Venezuela will reportedly give up to 50 million barrels of oil to the U.S. on news.\nShares of Nvidia are set for another positive open after CEO Jensen...','2026-01-07',0.45448,'Stock Market Live January 7, 2026: S&P 500 (SPY) Flat After Testing Fresh Highs','https://247wallst.com/investing/2026/01/07/stock-market-live-january-7-2026-sp-500-spy-flat-after-testing-fresh-highs/',4),(2,'moz farooque','Please enable JS and disable any ad blocker...','2026-01-07',0.36908,'Nvidia CEO makes clear break from playbook','https://www.thestreet.com/technology/nvidia-ceo-makes-clear-break-from-playbook',40),(3,'joel south','Investing\nU.S.-China trade relations have presented headwinds, but Nvidia Corp. (NASDAQ: NVDA) is also the dominant AI chipmaker in the market, and the companyâ€™s profitability remains strong.\nHere is ...','2026-01-07',0.19992,'Nvidia (NASDAQ: NVDA) Stock Price Prediction for 2026: Where Will It Be in 1 Year (Jan 7)','https://247wallst.com/investing/2026/01/07/nvidia-nasdaq-nvda-stock-price-prediction-for-2025-where-will-it-be-in-1-year/',40),(4,'joel south','Investing\nFuture stock performance hinges on Amazonâ€™s growth in e-commerce, AWS and advertising amidst increasing competition.\nAmazon posted net income of $59.2 billion in 2024, a 94.60% increase over...','2026-01-07',0.34228,'Amazon Stock (NASDAQ: AMZN) Price Prediction and Forecast 2026-2030 for January 7','https://247wallst.com/investing/2026/01/07/amazon-stock-amzn-price-prediction-and-forecast/',4),(5,'faisal humayun khan','...','2026-01-07',0.66168,'The 3 Best AI Stocks to Buy for 2026','https://www.barchart.com/story/news/36923970/the-3-best-ai-stocks-to-buy-for-2026',2),(6,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-01-07',0.48786,'Nvidiaâ€™s (NVDA) Investment in Intel Supports Its 2026 Bull Thesis','https://www.insidermonkey.com/blog/nvidias-nvda-investment-in-intel-supports-its-2026-bull-thesis-1670634/',4),(7,'zachary evens','...','2026-01-07',0,'3-Great-Etfs-2026-Beyond-2','https://www.morningstar.com/funds/3-great-etfs-2026-beyond-2',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ian cooper','Today, many of those same downed defense stocks are soaring. All after Trump called for a $1.5 trillion defense budget.\nGet earnings reminders, our top analysis on SPDR S&P 500 ETF, market updates, an...','2026-01-08',0.13806,'Stock Market Live January 8, 2026: S&P 500 (SPY) Pulling Back from Record Highs','https://247wallst.com/investing/2026/01/08/stock-market-live-january-8-2026-sp-500-spy-pulling-back-from-record-highs/',4),(2,'donald scott','\n					Posted by Donald Scott on Jan 8th, 2026\n\nWorth Asset Management LLC increased its position in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 75.1% during the third quarter, accordi...','2026-01-08',0.74452,'Worth Asset Management LLC Purchases 7,717 Shares of NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/01/08/worth-asset-management-llc-purchases-7717-shares-of-nvidia-corporation-nvda.html',40),(3,'caleb naysmith','...','2026-01-08',0.64888,'Nvidia CEO Jensen Huang Warns â€˜Everyoneâ€™s Job Will be Affected by AI,â€™ But Hopes It Will â€˜Enhanceâ€™ Most Jobs, Not Destroy Them','https://www.barchart.com/story/news/36948290/nvidia-ceo-jensen-huang-warns-everyones-job-will-be-affected-by-ai-but-hopes-it-will-enhance-most-jobs-not-destroy-them',20),(4,'millennial dividends','...','2026-01-08',-0.3372,'Why Stock Picking Often Fails- And What To Do Instead','https://seekingalpha.com/article/4857529-why-stock-picking-often-fails-and-what-to-do-instead',4),(5,'anusuya lahiri','Nvidia Corp (NASDAQ:NVDA) is tightening its terms for selling H200 artificial intelligence chips to China as it tries to reopen a key market while navigating shifting regulatory signals in both Washin...','2026-01-08',-0.02694,'Nvidia Tightens H200 Chip Sales To China, Shift Risk to Buyers','https://www.benzinga.com/markets/tech/26/01/49782178/nvidia-tightens-h200-chip-sales-to-china-shift-risk-to-buyers',80),(6,'joel south','Forecasts\nMicrosoft Corp. (NASDAQ: MSFT) is one of the Magnificent 7 tech stocks and has been a millionaire maker for decades.\nWith its dominance in productivity and business solutions, cloud computin...','2026-01-08',0.19996,'Microsoft (NASDAQ: MSFT) Stock Price Prediction and Forecast 2026-2030 (Jan 2026)','https://247wallst.com/forecasts/2026/01/08/microsoft-msft-price-prediction-and-forecast/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -134,4 +135,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-08  2:51:54
+-- Dump completed on 2026-01-09  2:52:36

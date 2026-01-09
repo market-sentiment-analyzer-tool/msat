@@ -28,6 +28,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
@@ -111,7 +112,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +121,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (will healy)','These stocks are trading at surprisingly discounted valuations.\nAfter 60 years at the helm of Berkshire Hathaway, Warren Buffett has stepped down. While in the leadership role, he heavily influenced t...','2026-01-07',0.19956,'2 Warren Buffett Stock Picks That Could Soar in 2026','https://www.fool.com/investing/2026/01/06/2-stocks-warren-buffett-stock-picks-that-could-soa/',4),(2,'newsfeedback@fool.com (keithen drury)','Quantum computing is on course to take several steps forward this year.\nQuantum computing is a cutting-edge technology that has yet to be proven out, but numerous companies are working on producing co...','2026-01-06',0.19974,'Prediction: These 4 Quantum Computing Stocks Will Skyrocket in 2026','https://www.fool.com/investing/2026/01/06/prediction-these-4-quantum-computing-stocks-will-s/',4),(3,'newsfeedback@fool.com (manali pradhan, cfa)','Companies that are deeply embedded in the AI value chain can prove exceptional picks in the long run.\nThe most durable artificial intelligence (AI) investments for the next decade will not be defined ...','2026-01-06',0.70942,'2 Undervalued AI Companies to Buy in 2026 and Hold for Decades','https://www.fool.com/investing/2026/01/06/undervalued-ai-companies-buy-2026-hold-decade/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 6th, 2026\n\nSalomon & Ludwin LLC raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 94.4% during the 3rd quarter, according to its most recent ...','2026-01-06',0.45444,'Salomon & Ludwin LLC Boosts Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/06/salomon-ludwin-llc-boosts-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 6th, 2026\n\nNinety One UK Ltd cut its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 37.9% in the third quarter, according to the company in its mo...','2026-01-06',0.43668,'Ninety One UK Ltd Sells 72,787 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/06/ninety-one-uk-ltd-sells-72787-shares-of-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Jan 6th, 2026\n\nMather Group LLC. lifted its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 13.6% during the third quarter, according to the ...','2026-01-06',0.43668,'Mather Group LLC. Acquires 6,730 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/06/mather-group-llc-acquires-6730-shares-of-alphabet-inc-goog.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Jan 6th, 2026\n\nFinancial Consulate Inc. acquired a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 3rd quarter, according to the comp...','2026-01-06',0.19988,'Financial Consulate Inc. Purchases New Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/06/financial-consulate-inc-purchases-new-stake-in-alphabet-inc-goog.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Jan 6th, 2026\n\nHofer & Associates. Inc bought a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the third quarter, according to the company in its...','2026-01-06',0.4367,'Hofer & Associates. Inc Buys Shares of 1,700 Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/06/hofer-associates-inc-buys-shares-of-1700-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rob isbitts','...','2026-01-08',0.35232,'This Covered-Call Google ETF Yields 41%. These 2 Option Trades Are Even Better.','https://www.barchart.com/story/news/36949408/this-covered-call-google-etf-yields-41-these-2-option-trades-are-even-better',20),(2,'jessica kuruthukulangara','...','2026-01-08',0.18104,'Alphabet is worth more than Apple for the first time since 2019','https://seekingalpha.com/news/4537583-alphabet-is-now-worth-more-than-apple?feed_item_type=news',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -134,4 +135,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-08  2:51:54
+-- Dump completed on 2026-01-09  2:52:36
