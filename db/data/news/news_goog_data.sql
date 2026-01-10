@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
@@ -112,7 +113,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +122,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rob isbitts','...','2026-01-08',0.35232,'This Covered-Call Google ETF Yields 41%. These 2 Option Trades Are Even Better.','https://www.barchart.com/story/news/36949408/this-covered-call-google-etf-yields-41-these-2-option-trades-are-even-better',20),(2,'jessica kuruthukulangara','...','2026-01-08',0.18104,'Alphabet is worth more than Apple for the first time since 2019','https://seekingalpha.com/news/4537583-alphabet-is-now-worth-more-than-apple?feed_item_type=news',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (patrick sanders)','A mammoth second half of 2025 has this company on the cusp of a milestone.\nIn the history of the stock market, only three companies have achieved a market capitalization of $4 trillion. Nvidia was the...','2026-01-09',0.58062,'Prediction: This Artificial Intelligence Stock Will Become a Member of the $4 Trillion Club in 2026','https://www.fool.com/investing/2026/01/09/prediction-this-artificial-intelligence-stock-will/',4),(2,'jessica kuruthukulangara','...','2026-01-09',0,'Nvidia hires Google exec as its first marketing chief','https://seekingalpha.com/news/4537949-nvidia-hires-google-exec-as-its-first-marketing-chief?feed_item_type=news',40),(3,'newsfeedback@fool.com (geoffrey seiler)','Nvidia and Alphabet look like top artificial intelligence (AI) stocks to buy right now.\nAfter another strong run in 2025, artificial intelligence (AI) stocks look poised to continue their momentum in ...','2026-01-08',0.84994,'2 Top Artificial Intelligence Stocks to Buy Right Now','https://www.fool.com/investing/2026/01/08/2-top-artificial-intelligence-stocks-to-buy-right/',4),(4,'investing experts podcast','...','2026-01-08',0.35232,'Innovative Industrial Properties: Leverage (For A REIT) Is Everything','https://seekingalpha.com/article/4858185-innovative-industrial-properties-leverage-for-a-reit-is-everything',4),(5,'chris ciaccia','...','2026-01-08',0.2,'Microsoft, Google, Big Tech obtain reprieve from EU digital overhaul: report','https://seekingalpha.com/news/4537860-microsoft-google-big-tech-obtain-reprieve-from-eu-digital-overhaul-report?feed_item_type=news',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -135,4 +136,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-09  2:52:36
+-- Dump completed on 2026-01-10  2:46:27
