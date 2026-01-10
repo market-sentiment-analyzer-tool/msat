@@ -28,12 +28,12 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
-2dc8e5c6-ed00-11f0-bb70-36c7ad4349a6:1-101,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -68,6 +68,7 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
+c370f9bd-edc8-11f0-ac4e-36797692c9af:1-120,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -112,7 +113,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +122,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1q7dscc','nyez26n','2026-01-08',63,0,'I\'m just content with the spell checker and predictive typing'),(2,'stocks','1q7dscc','nyfq4k2','2026-01-08',12,0.1531,'I just want Gemini to go in and mark the 13,000 unread emails as read ðŸ˜”'),(3,'stocks','1q7dscc','nyf2d6g','2026-01-08',15,-0.34,'Hasnâ€™t this already been a thing? Thereâ€™s been suggested and summaries on mine for awhile. \n\nUnfortunately people actually use them so it starts a string of emails/frustrations because the suggested responses oftentimes donâ€™t actually answer the questions/email correctly.'),(4,'stocks','1q7dscc','nyez4qy','2026-01-08',22,-0.0857,'Not surprised, but it should really be opt in by default, not opt out.'),(5,'stocks','1q7dscc','nyetcxf','2026-01-08',21,0.4404,'The people I communicate with deserve better than an AI auto-reply.'),(6,'stocks','1q7dscc','nyesydk','2026-01-08',19,-0.7975,'Considering how many times Gemini has hallucinated major details when summarizing articles on the web, I wouldn\'t really trust it to summarize or write emails.\n\nI think there is a major disconnect between what tech CEOs think consumers want, and what they actually want.\n\nWith that said, email is one of those things where 99% of users aren\'t going to switch unless things get bad, because it\'s a pain to move move over dozens/hundreds of linked accounts.'),(7,'stocks','1q7dscc','nyg691u','2026-01-08',3,0.2975,'i kinda like it gemini'),(8,'stocks','1q7dscc','nyg0cce','2026-01-08',2,0,'r/degoogle'),(9,'stocks','1q7dscc','nyewj2p','2026-01-08',0,-0.2732,'And it makes older phones run like shit.'),(10,'ValueInvesting','1q72m3s','nych1i5','2026-01-08',23,0.7955,'In the money wars, Google obliterates OpenAI, so if all Google needs to do to continue to grow share is offer it for free/discount, they will win. OpenAIs models needs to not just be better than Gemini, but so superior that people will seek them out. Really though the play is corporate and automation and this is really where OpenAI lags behind both Anthropic and Gemini.'),(11,'ValueInvesting','1q72m3s','nychxg1','2026-01-08',86,-0.1655,'My experience has been that Gemini 3 is absolutely, without question, vastly superior to ChatGPT. Wife agrees. \n\nI would pay to continue to have access to it. Wife agrees.'),(12,'ValueInvesting','1q72m3s','nycg1hk','2026-01-08',18,-0.233,'Idk, I\'ve pretty much switched over. I like notebooklm the most because I can provide direct sources that I want to interrogate. I like Gemini, but honestly ChatGPT started getting so much stuff wrong for me that it basically became useless. Jury is still out on Gemini. But Notebooklm is my tool of choice right now. I get hard facts. And if they don\'t exist, it doesn\'t just spit out a nonsense hallucination.\n\nSo I\'m curious if that\'s been other\'s experience as well.'),(13,'ValueInvesting','1q72m3s','nycie05','2026-01-08',4,0.8319,'For the last few months,  I have been using their AI mode in Google Search which made things easy and also overtime I feel Gemini has got better in its responses while ChatGPT has become less impressive, so I\'m leaning towards Gemini instead of ChatGPT'),(14,'ValueInvesting','1q72m3s','nycf5q7','2026-01-08',3,-0.2168,'Wtf Indians get free pro for a year??'),(15,'ValueInvesting','1q72m3s','nycdspa','2026-01-08',2,0.4939,'Well thatâ€™s what I thought too. But look at the stock, it keeps rising. There are lot more things to consider as well.'),(16,'ValueInvesting','1q72m3s','nych92f','2026-01-08',2,0.6652,'I don\'t know anything about India. But I did switch to Gemini. I already a Google Drive Pro and nest aware subscriber ($100+$100 each year), so switching to Drive AI Pro means I could get Gemini Pro for free, with my current subscriptions price unchanged (still $200 a year).'),(17,'ValueInvesting','1q72m3s','nycig9j','2026-01-08',2,0.8319,'For the last few months,  I have been using their AI mode in Google Search which made search easy and also overtime I feel Gemini has got better in its responses while ChatGPT has become less impressive, so I\'m leaning towards Gemini instead of ChatGPT'),(18,'ValueInvesting','1q72m3s','nycj8fw','2026-01-08',2,0,'Android is a big factor. In MEA, everyone is on Android.'),(19,'ValueInvesting','1q72m3s','nycpq15','2026-01-08',2,0.1779,'I get 2TB of storage and a better AI model. There was no reason to keep paying for chatgpt.. get so much more now for my 20$'),(20,'ValueInvesting','1q72m3s','nycirpt','2026-01-08',1,0,'I got pro for a year since i bought a new phone. Yippie'),(21,'ValueInvesting','1q72m3s','nycnfsv','2026-01-08',1,0,'It\'s because Gemini is the only AI on a very specific platform used by a large portion of the US workforce.'),(22,'ValueInvesting','1q72m3s','nycqaws','2026-01-08',1,0.5574,'*1 year free subscription to indian students \n\nStill huge number though.'),(23,'ValueInvesting','1q72m3s','nycvbzj','2026-01-08',1,0.296,'I started using Gemini seriously two days ago and itâ€™s noticeably better than ChatGPT (I have the plus subscription)'),(24,'ValueInvesting','1q72m3s','nyd7kib','2026-01-08',1,0.4404,'Gemini for search based queries where I used to use Google search.\n\n\nChatGpt for creative tasks.'),(25,'ValueInvesting','1q72m3s','nydfnlx','2026-01-08',1,0.0258,'Speed matters. Can\'t endure GPT\'s latency.'),(26,'ValueInvesting','1q72m3s','nydv022','2026-01-08',1,-0.249,'I was using ChatGPT and Grok for most things, but I actually switched over to Gemini two months ago for a simple reason - it\'s responses are more accurate. It\'s hard for competitors to overcome that.'),(27,'ValueInvesting','1q72m3s','nydyv14','2026-01-08',1,0.5023,'Also that they have embedded Gemini into google search so that could be one reason also but I like Gemini than ChatGPT'),(28,'ValueInvesting','1q72m3s','nye9gpx','2026-01-08',1,0.6705,'We got a free one year subscription via my provider in Europe to it because we  bought a pixel. And you can share it with 5 family mee era.'),(29,'ValueInvesting','1q72m3s','nyeixqd','2026-01-08',1,0.5106,'Students also get 1 year free of Gemini Pro\n\nMy early 60s mother has even switched from ChatGPT to Gemini, organically'),(30,'ValueInvesting','1q72m3s','nyfhjni','2026-01-08',1,0.296,'Yeah Iâ€™m just at a point where I always use Gemini because itâ€™s right thrrr in the browser'),(31,'ValueInvesting','1q72m3s','nyhyjb0','2026-01-08',1,0,'You figure it out man. They almost got away with it to');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -135,4 +135,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-09  2:12:32
+-- Dump completed on 2026-01-10  2:06:57

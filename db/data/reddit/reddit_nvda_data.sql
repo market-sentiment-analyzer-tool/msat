@@ -28,12 +28,12 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
-2dc8e5c6-ed00-11f0-bb70-36c7ad4349a6:1-101,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -68,6 +68,7 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
+c370f9bd-edc8-11f0-ac4e-36797692c9af:1-120,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -112,7 +113,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +122,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'wallstreetbets','1q760m7','nyd1zfy','2026-01-08',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 2 | **First Seen In WSB** | 1 year ago\n**Total Comments** | 133 | **Previous Best DD** | \n**Account Age** | 5 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1q760m7','nydcwty','2026-01-08',138,-0.7783,'China: GREEN LIGHT. Red Light. GREEN LIGHT. Red Light.'),(3,'wallstreetbets','1q760m7','nydatqe','2026-01-08',58,-0.5574,'Next hour: China to ban all Nvidia graphic cards\n\nAnd then we just keep going...'),(4,'wallstreetbets','1q760m7','nyd6njq','2026-01-08',109,0.4374,'That\'s great news !! So the stock will only slide by 10%'),(5,'wallstreetbets','1q760m7','nydhwph','2026-01-08',25,0.6597,'Will be 5% up after 1 hour the market opens and then dips to -1% at the close of the day ðŸ˜†'),(6,'wallstreetbets','1q760m7','nydo4n6','2026-01-08',22,-0.2406,'Yesterday we got China stops h200 orders and today we get approve h200? Which one is it? Garbage reporting'),(7,'wallstreetbets','1q760m7','nydjx4w','2026-01-08',16,0.4449,'Didnt they ban them yesterday'),(8,'wallstreetbets','1q760m7','nydk002','2026-01-08',15,0.6166,'Massive news.\n\nNvidia in response: -0.000000000000000000000000000000000000000001%\n\nedit: -1% :D'),(9,'wallstreetbets','1q760m7','nyd7gnc','2026-01-08',8,0,'NVDA 360 LFG!'),(10,'wallstreetbets','1q760m7','nyd9gub','2026-01-08',6,0.5777,'This is so good for market'),(11,'wallstreetbets','1q760m7','nyd9jxu','2026-01-08',3,0.5106,'Bullish'),(12,'wallstreetbets','1q760m7','nydivo4','2026-01-08',3,0.4404,'I just hope this means more MU pump'),(13,'wallstreetbets','1q760m7','nyetnkx','2026-01-08',3,-0.4588,'And the stock is down. What the heck.'),(14,'wallstreetbets','1q760m7','nyg8gxj','2026-01-08',3,0.6966,'Presidential order to allow H200 Nvidia AI chips to be sold to China.\n\n[https://www.reuters.com/world/china/nvidia-requires-full-upfront-payment-h200-chips-china-sources-say-2026-01-08/](https://www.reuters.com/world/china/nvidia-requires-full-upfront-payment-h200-chips-china-sources-say-2026-01-08/)\n\nChina has their own AI firmware chips and are installing them in robots. Imbedded AI is allowing the robot to not be connected to the cloud.\n\nTSLA is WAY OVERVALUED. The only thing saving Elon\'s butt is the USA is banning EV from China. The BYU EV is more advanced than the Tesla, with more range and half the cost. Anti-American Apartheid South Africa Immigrant Elon Musk does not do his banking with US banks, maybe for good reason. The supposed wealthiest man on Earth does not keep that money in the USA. He funnels it all out through a family shell corporation then multiple moneylaundering funnels to South Africa.'),(15,'wallstreetbets','1q760m7','nyf2swp','2026-01-08',4,0,'China proudly announces that it doesn\'t need NVDA\n\nQuietly buys their shit anyway'),(16,'wallstreetbets','1q760m7','nydzd8r','2026-01-08',2,0.5106,'BULLISH'),(17,'wallstreetbets','1q760m7','nyebzor','2026-01-08',2,0,'Between now and then mango will probably do something...'),(18,'wallstreetbets','1q760m7','nyeze21','2026-01-08',2,0,'Calls'),(19,'wallstreetbets','1q760m7','nyf3eq8','2026-01-08',2,0,'Lots of calls all of a suddenâ€¦'),(20,'wallstreetbets','1q760m7','nyd5622','2026-01-08',4,0.9816,'Kind of incredibleâ€¦ Jensen said at CES that demand for older NVDA hardware was in such high demand that prices for those â€œolderâ€ chips were going to have higher prices too. ðŸ“ˆðŸ’›ðŸ’¯\n\nOutstanding. Heâ€™s been grinding every day for 30+ years to make his dreams come trueâ€¦ and give humanity a huge boost in capability, creativity, wealth and abundance.\n\nEven when shit was incredibly tough, and competitors were pulling out all the tricks to crush him and his team, he stayed positive and heads-down. All of these challenges probably pale in comparison to the hardships he endured earlier with less wealth, less product, and less of an ecosystem.\n\nA true visionary, savant, and inspiring leader. ðŸ™‡â€â™‚ï¸\n\nThank you, Jensen ðŸ™'),(21,'wallstreetbets','1q760m7','nydgeud','2026-01-08',2,0,'Winnie the pooh learning traffic lights\n\nhttps://preview.redd.it/88d66odmo3cg1.png?width=1168&format=png&auto=webp&s=8fc3c965c391588212b1e9824dd183629b1612d8'),(22,'wallstreetbets','1q760m7','nyeh39k','2026-01-08',1,0,'China is a bit erratic these days with the chips'),(23,'wallstreetbets','1q760m7','nyenyqv','2026-01-08',1,0,'Hmm ðŸ¤”'),(24,'wallstreetbets','1q760m7','nyfelk5','2026-01-08',1,-0.5824,'So they are going to approve it but tell people they cant buy it?'),(25,'wallstreetbets','1q760m7','nyi97sc','2026-01-09',1,0.128,'Everyone seems to forget China played chicken with bitcoin markets for years until it popped above 60k'),(26,'wallstreetbets','1q760m7','nydpftl','2026-01-08',1,0,'Still waiting for $5 trillion to reflect \"priced in\".Â ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -135,4 +135,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-09  2:12:32
+-- Dump completed on 2026-01-10  2:06:57
