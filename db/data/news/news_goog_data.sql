@@ -68,6 +68,7 @@ ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -114,7 +115,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +124,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adam levy)','This tech giant could have even more upside than analysts project.\nAt the start of the decade, there were just two companies with a market cap exceeding $1 trillion. Today, 10 publicly traded companie...','2026-01-10',0.86156,'The Best Trillion-Dollar Stock to Buy for 2026, According to Wall Street','https://www.fool.com/investing/2026/01/10/best-trillion-dollar-stock-buy-2026-microsoft/',4),(2,'newsfeedback@fool.com (keith speights)','This is one of the easiest predictions ever.\nIn the epic fantasy series The Lord of the Rings, a palantir is described as a crystal sphere that allows a person to view events happening far away, both ...','2026-01-10',0.37984,'Prediction: These 2 AI Stocks Will Be Worth More Than Palantir by the End of 2026','https://www.fool.com/investing/2026/01/10/prediction-these-2-ai-stocks-will-be-worth-more-th/',4),(3,'newsfeedback@fool.com (john ballard)','These companies should continue to grow in value for long-term shareholders.\nAnyone can grow their wealth in the stock market. It only requires patience and choosing the companies to invest in. To ass...','2026-01-09',0.34218,'2 Monster Stocks to Hold for the Next 5 Years','https://www.fool.com/investing/2026/01/09/2-monster-stocks-to-hold-for-the-next-5-years/',4),(4,'newsfeedback@fool.com (patrick sanders)','A mammoth second half of 2025 has this company on the cusp of a milestone.\nIn the history of the stock market, only three companies have achieved a market capitalization of $4 trillion. Nvidia was the...','2026-01-09',0.58062,'Prediction: This Artificial Intelligence Stock Will Become a Member of the $4 Trillion Club in 2026','https://www.fool.com/investing/2026/01/09/prediction-this-artificial-intelligence-stock-will/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adam levy)','This tech giant could have even more upside than analysts project.\nAt the start of the decade, there were just two companies with a market cap exceeding $1 trillion. Today, 10 publicly traded companie...','2026-01-10',0.86156,'The Best Trillion-Dollar Stock to Buy for 2026, According to Wall Street','https://www.fool.com/investing/2026/01/10/best-trillion-dollar-stock-buy-2026-microsoft/',4),(2,'newsfeedback@fool.com (keith speights)','This is one of the easiest predictions ever.\nIn the epic fantasy series The Lord of the Rings, a palantir is described as a crystal sphere that allows a person to view events happening far away, both ...','2026-01-10',0.37984,'Prediction: These 2 AI Stocks Will Be Worth More Than Palantir by the End of 2026','https://www.fool.com/investing/2026/01/10/prediction-these-2-ai-stocks-will-be-worth-more-th/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -137,4 +138,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-11  3:03:24
+-- Dump completed on 2026-01-12  3:00:32
