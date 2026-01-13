@@ -59,6 +59,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -124,7 +125,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adam levy)','This tech giant could have even more upside than analysts project.\nAt the start of the decade, there were just two companies with a market cap exceeding $1 trillion. Today, 10 publicly traded companie...','2026-01-10',0.86156,'The Best Trillion-Dollar Stock to Buy for 2026, According to Wall Street','https://www.fool.com/investing/2026/01/10/best-trillion-dollar-stock-buy-2026-microsoft/',4),(2,'newsfeedback@fool.com (keith speights)','This is one of the easiest predictions ever.\nIn the epic fantasy series The Lord of the Rings, a palantir is described as a crystal sphere that allows a person to view events happening far away, both ...','2026-01-10',0.37984,'Prediction: These 2 AI Stocks Will Be Worth More Than Palantir by the End of 2026','https://www.fool.com/investing/2026/01/10/prediction-these-2-ai-stocks-will-be-worth-more-th/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keith speights)','Several of the \"Magnificent Seven\" stocks could deliver magnificent returns this year, if analysts are right.\nThe S&P 500 (^GSPC +0.16%) finished 2025 up 16%. Certain members of the widely followed in...','2026-01-12',0.87838,'The Top \"Magnificent Seven\" Stocks to Buy in 2026, According to Wall Street','https://www.fool.com/investing/2026/01/12/the-top-magnificent-seven-stocks-to-buy-in-2026-ac/',4),(2,'rob williams','...','2026-01-11',0.08216,'Google expands Gemini shopping with Walmart, Wayfair, Shopify','https://seekingalpha.com/news/4538217-google-expands-gemini-shopping-with-walmart-wayfair-shopify?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -138,4 +139,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-12  3:00:32
+-- Dump completed on 2026-01-13  2:50:42
