@@ -51,7 +51,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
-5c09db13-f024-11f0-b681-1624adebc915:1-151,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -60,8 +59,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a12f44b5-f0ee-11f0-9479-4636cb2beb78:1-42,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -116,7 +117,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,6 +126,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qbf65m','nza4epq','2026-01-13',9,0.4019,'Interesting'),(2,'NVDA_Stock','1qbf65m','nzefnnt','2026-01-13',1,0.0258,'I hate to see Chamath get a win.'),(3,'NVDA_Stock','1qbf65m','nzgfcjy','2026-01-14',1,-0.3612,'Chamat the guy from spce spacs sucks.'),(4,'NVDA_Stock','1qbkok5','nzbzuz7','2026-01-13',4,-0.0772,'Here we go again. Back and forth lol'),(5,'NVDA_Stock','1qbkok5','nzcai03','2026-01-13',2,0,'That is correct and net on deal is forty billion involving H200 order of 2,000,000.  That would be 27,000.00 per H200 that willl be going out in Q2.  Current inventory is 700,000 on H200.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -138,4 +140,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-13  2:07:36
+-- Dump completed on 2026-01-14  2:14:32
