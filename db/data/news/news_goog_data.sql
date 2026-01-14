@@ -77,6 +77,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -116,7 +117,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +126,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keith speights)','Several of the \"Magnificent Seven\" stocks could deliver magnificent returns this year, if analysts are right.\nThe S&P 500 (^GSPC +0.16%) finished 2025 up 16%. Certain members of the widely followed in...','2026-01-12',0.87838,'The Top \"Magnificent Seven\" Stocks to Buy in 2026, According to Wall Street','https://www.fool.com/investing/2026/01/12/the-top-magnificent-seven-stocks-to-buy-in-2026-ac/',4),(2,'rob williams','...','2026-01-11',0.08216,'Google expands Gemini shopping with Walmart, Wayfair, Shopify','https://seekingalpha.com/news/4538217-google-expands-gemini-shopping-with-walmart-wayfair-shopify?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'arundhati sarkar','...','2026-01-13',0,'Google to develop and make high-end phones in Vietnam this year - report','https://seekingalpha.com/news/4538687-google-to-develop-and-make-high-end-phones-in-vietnam-this-year---report?feed_item_type=news',40),(2,'defense world staff','\n					Posted by Defense World Staff on Jan 13th, 2026\n\nChildress Capital Advisors LLC boosted its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 13.6% during the 3rd quarter, accordi...','2026-01-13',0.45448,'Childress Capital Advisors LLC Boosts Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/13/childress-capital-advisors-llc-boosts-stake-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 13th, 2026\n\nE Fund Management Hong Kong Co. Ltd. grew its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 512.7% in the 3rd quarter, acco...','2026-01-13',0.19992,'Alphabet Inc. $GOOG Stock Position Raised by E Fund Management Hong Kong Co. Ltd.','https://www.defenseworld.net/2026/01/13/alphabet-inc-goog-stock-position-raised-by-e-fund-management-hong-kong-co-ltd.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 13th, 2026\n\nCerity Partners LLC reduced its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.1% in the third quarter, according to the company in ...','2026-01-13',0.43672,'Cerity Partners LLC Sells 37,717 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/13/cerity-partners-llc-sells-37717-shares-of-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 13th, 2026\n\nAvalon Capital Management trimmed its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.0% during the third quarter, according t...','2026-01-13',0.1999,'Avalon Capital Management Has $18.09 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/13/avalon-capital-management-has-18-09-million-stock-position-in-alphabet-inc-goog.html',4),(6,'newsfeedback@fool.com (keithen drury)','These five are great starting points for nearly surefire bets for 2026.\nFinding stocks that are nearly unstoppable is a great way to pick investments. These companies are dominant in their industry wi...','2026-01-13',0.5212,'5 Unstoppable Stocks to Buy With $5,000 for 2026','https://www.fool.com/investing/2026/01/12/5-unstoppable-stocks-to-buy-with-5000-for-2026/',4),(7,'newsfeedback@fool.com (bram berkowitz)','The \"Magnificent Seven\" was constantly in the spotlight last year, but many of the stocks ultimately failed to outperform the broader market.\nDespite the hype surrounding artificial intelligence (AI) ...','2026-01-12',0.84988,'Only 2 \"Magnificent Seven\" Stocks Beat the S&P 500 Index in 2025. Should You Buy Them in 2026?','https://www.fool.com/investing/2026/01/12/only-2-magnificent-seven-stocks-beat-the-sp-500-in/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -139,4 +140,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-13  2:50:42
+-- Dump completed on 2026-01-14  2:58:46
