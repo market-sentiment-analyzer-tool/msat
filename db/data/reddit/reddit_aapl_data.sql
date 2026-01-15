@@ -62,7 +62,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-a12f44b5-f0ee-11f0-9479-4636cb2beb78:1-42,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -78,6 +77,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -96,6 +96,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f136b55d-f1b6-11f0-a7ff-d2a681ea8622:1-104,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
@@ -117,7 +118,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +127,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'investing','1qbhjyw','nzbjb7f','2026-01-13',112,0,'He wanted it all and he *could* have it.'),(2,'investing','1qbhjyw','nzbe7wz','2026-01-13',290,-0.719,'People forget 12k is not chump change in 1992 dollars. It\'s significant enough that they made a real bet and it wasn\'t just blind luck like the 1k that I invested in NVDA in 2011 with my first internship money. It\'s turned into 650k today.\n\nI would have loved to have invested 12k. That would have been real commitment. But then again I might have been more likely to panic sell much earlier.'),(3,'investing','1qbhjyw','nzclhuu','2026-01-13',14,0,'isnâ€™t this what happened in that forrest gump sequel book'),(4,'investing','1qbhjyw','nzcxpv0','2026-01-13',9,0.4215,'Worth about $6 million today, if truly left alone'),(5,'investing','1qbhjyw','nzcjjt8','2026-01-13',22,0.872,'Plus, Roddy played keys for a great band. #winning'),(6,'investing','1qbhjyw','nzd2p2v','2026-01-13',16,0.1265,'And you would have made no money until after 2004 with that investment.\n\nApple before jobs was not a good investment. It only became a great investment after jobs and the iPhone.'),(7,'investing','1qbhjyw','nze57ku','2026-01-13',5,0.7417,'Fun little story I think about a lot.\n\nI was in elementary school in the 1980s. I remember hanging out with my uncle and looking at the stocks in the newspaper. I always wanted to invest in stocks and he helped sparked my interest.\n\nI always wanted to take money and just buy a couple stocks. I wanted to buy Microsoft because you knowâ€¦ Microsoft was awesome and I was nine years old.\n\nMicrosoft was trading at something like $20 a share, I don\'t remember, but I didn\'t have a lot of money. So I thought why not by Apple? Apple wasn\'t doing very well and I was trading at something like a dollar a share.\n\nI wanted to buy apple stock so much when I was 9 years old and I was trying to figure out how I could do it but I never went through with it of course.\n\nThat story is right up there with this time I worked with this idiot of a coworker who told me about this stupid idea of using my computer to \"mine\" these dumb things called bitcoins. They\'re only worth $.30 each! What a stupid idea.\n\n\"But you can use it to order a pizza or buy a camera from some websites\"\n\nDude I can use regular money for thatâ€¦ What a dumb idea.\n\nOh wellâ€¦'),(8,'investing','1qbhjyw','nzaqmbh','2026-01-13',10,0.4404,'Look up David Choe and Facebook.'),(9,'investing','1qbhjyw','nzdg1g4','2026-01-13',3,0.4939,'We care a lot about this news.'),(10,'investing','1qbhjyw','nzcv7pm','2026-01-13',8,-0.34,'An epic small victory to help him through his midlife crisis'),(11,'investing','1qbhjyw','nzfq9dh','2026-01-13',2,0.5255,'Hey I know this guy! Kinda. He baby sat me when I was aâ€¦ a baby. And he was friends with my mom.'),(12,'investing','1qbhjyw','nzcy44c','2026-01-13',2,0,'What is it?'),(13,'investing','1qbhjyw','nzdfxb8','2026-01-13',2,0.841,'Apple almost went bankrupt around this time and didnâ€™t start to come back until the late 90s with the iMac. They really started making money again in like 2006 with the iPhone. It would have taken a long time I think for this investment to pay off. With the information available at the time it was probably looked like a really dumb and super risky investment. Buying in 1997 the price was still pretty low but Jobs was back and there was a lot more reason for optimism. I wonder when he sold? If he still had it today I think it would be worth a lot more than a few million.'),(14,'investing','1qbhjyw','nze5jc6','2026-01-13',1,-0.5719,'i hate these stories.....because it wasn\'t me...lol'),(15,'investing','1qbhjyw','nzgqe0j','2026-01-14',1,0.8402,'He wants it all, but he can\'t have it. Fortunately, he is well past his midlife crisis and will spend it wisely. Honestly, we care a lot about this guy.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -140,4 +140,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-14  2:14:32
+-- Dump completed on 2026-01-15  2:09:06

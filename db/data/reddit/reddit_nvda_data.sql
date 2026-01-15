@@ -62,7 +62,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-a12f44b5-f0ee-11f0-9479-4636cb2beb78:1-42,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -78,6 +77,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -96,6 +96,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f136b55d-f1b6-11f0-a7ff-d2a681ea8622:1-104,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
@@ -117,7 +118,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +127,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qbf65m','nza4epq','2026-01-13',9,0.4019,'Interesting'),(2,'NVDA_Stock','1qbf65m','nzefnnt','2026-01-13',1,0.0258,'I hate to see Chamath get a win.'),(3,'NVDA_Stock','1qbf65m','nzgfcjy','2026-01-14',1,-0.3612,'Chamat the guy from spce spacs sucks.'),(4,'NVDA_Stock','1qbkok5','nzbzuz7','2026-01-13',4,-0.0772,'Here we go again. Back and forth lol'),(5,'NVDA_Stock','1qbkok5','nzcai03','2026-01-13',2,0,'That is correct and net on deal is forty billion involving H200 order of 2,000,000.  That would be 27,000.00 per H200 that willl be going out in Q2.  Current inventory is 700,000 on H200.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'ValueInvesting','1qcfb6g','nzhs55e','2026-01-14',111,0.3612,'Your like 6 months too late as far as this sub goes.Â  We all made money already.'),(2,'ValueInvesting','1qcfb6g','nzisv45','2026-01-14',11,-0.8177,'Love the new deal with Apple.  Google getting Apple hooked on Gemini will mean a ton of money from Google running the Gemini instance for Apple.\n\nI am sure Apple\'s long term goal is to get it on device and then not have to pay Google for the inference.\n\nBut that is going to be very difficult to do.\n\nWhat is unclear is if Apple can pass the cost on to their customer directly or will it only be indirect as in part of the sale of an iPhone, Mac, etc.\n\nDirect would be a new subscription.  But what is awsome for Google is that it does not matter to them.  They get paid either way.\n\nThe big loser is OpenAI who was already hemorrhaging users.'),(3,'ValueInvesting','1qcfb6g','nzhx5ab','2026-01-14',5,0,'You don\'t say'),(4,'ValueInvesting','1qcfb6g','nziuh2r','2026-01-14',5,0.5859,'Imagine when the world realizes that the real winner will be Alibaba.'),(5,'ValueInvesting','1qcfb6g','nzif6uj','2026-01-14',2,0.1027,'surprised to see value investors are looking at daily news and panicking here, that narrative changes every week'),(6,'ValueInvesting','1qcfb6g','nzi4qau','2026-01-14',3,0,'And what is the purpose of this post? Apart from emphasizing the obviousâ€¦'),(7,'ValueInvesting','1qcfb6g','nzjtgsd','2026-01-14',1,0,'I think SAAS could get a narrative swap this year'),(8,'ValueInvesting','1qcfb6g','nzk8k40','2026-01-14',1,0.7351,'Any chance this goes to a grand a share? I need an nividia situation with Google'),(9,'wallstreetbets','1qcmy5q','nzj7qmh','2026-01-14',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 2 | **First Seen In WSB** | 4 years ago\n**Total Comments** | 2 | **Previous Best DD** | \n**Account Age** | 10 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(10,'wallstreetbets','1qcmy5q','nzjhhyd','2026-01-14',335,0.6956,'This is like the 4th time theyâ€™ve allowed and then didnâ€™t allow and then reallowed but advised against it. Hilarious'),(11,'wallstreetbets','1qcmy5q','nzj9444','2026-01-14',638,-0.6087,'So fucking stupid.\n\nhttps://preview.redd.it/fx1o3so1gbdg1.jpeg?width=1170&format=pjpg&auto=webp&s=17fe8d30ba0c3ac9ae38eb81d7d937becf107eb1'),(12,'wallstreetbets','1qcmy5q','nzj9dyj','2026-01-14',420,0,'Let me guess 35% tariff will be announced today on china across the board'),(13,'wallstreetbets','1qcmy5q','nzj8hgz','2026-01-14',685,0,'https://preview.redd.it/xxkel36gfbdg1.jpeg?width=1080&format=pjpg&auto=webp&s=228c3bfc4680100d9d85806e4943b9dbdd083e08\n\n[https://m.youtube.com/shorts/TjiEJructVY](https://m.youtube.com/shorts/TjiEJructVY)'),(14,'wallstreetbets','1qcmy5q','nzj9bno','2026-01-14',160,0,'https://preview.redd.it/h33sfbebgbdg1.png?width=268&format=png&auto=webp&s=a8667d55c6e4628ad4a55b28c4b33c39d69e55e5'),(15,'wallstreetbets','1qcmy5q','nzj890c','2026-01-14',55,0,'lol same dance'),(16,'wallstreetbets','1qcmy5q','nzj8mba','2026-01-14',119,0,'They have imported from 3rd country since day 1 anyways'),(17,'wallstreetbets','1qcmy5q','nzj8ome','2026-01-14',29,0.2023,'nobody cares no more'),(18,'wallstreetbets','1qcmy5q','nzjabjw','2026-01-14',13,0,'This little song and dance is tiring'),(19,'wallstreetbets','1qcmy5q','nzjhjfl','2026-01-14',24,0,'Another 9000% tariff on china on market close today\n\nhttps://preview.redd.it/l40pk81fobdg1.jpeg?width=1320&format=pjpg&auto=webp&s=5728ccb3ce1ba13c89ebea020390fd3d20c3d47e'),(20,'wallstreetbets','1qcmy5q','nzj8lu1','2026-01-14',7,0.5983,'Hahaha!'),(21,'wallstreetbets','1qcmy5q','nzjkac6','2026-01-14',21,-0.7845,'Poor donny admin just forcing the entire international markets to outperform USA due to his â€œamerica firstâ€ policies..\n\n2023 and 2024 outperformed 2025 and VXUS is already crushing SPY YTDâ€¦ morons'),(22,'wallstreetbets','1qcmy5q','nzjq1pq','2026-01-14',5,0.4877,'Probably the opposite of the same reason the US is allowing them to be exported, to hook China on Nvidia chips so they wonâ€™t improve their own to compete.'),(23,'wallstreetbets','1qcmy5q','nzja7rc','2026-01-14',16,0,'Rename them to the China#1 chip, that should fix it.Â Â '),(24,'wallstreetbets','1qcmy5q','nzjs1i6','2026-01-14',5,0.4033,'Make it make sense, cos I think weâ€™re all getting pretty fucking tired of this special needs dance off'),(25,'wallstreetbets','1qcmy5q','nzjcg71','2026-01-14',7,-0.5994,'Warâ€¦ war never changes.'),(26,'wallstreetbets','1qcmy5q','nzjetzf','2026-01-14',17,0.8674,'50/50 China let\'s them through.Â \n\n\nThere are reasons but for China\'s own national security, getting back in with Nvidia chips ensures China follow the same technological path as the US.\n\n\nThis allows the US some level of control and to keep Chinese companies at the mercy of American technology.Â \n\n\nChina has been figuring out AI and keeping up using less power and older design chips.Â '),(27,'wallstreetbets','1qcmy5q','nzjdba2','2026-01-14',13,0.6705,'Donald Trump, if you can hear us... please, Donald Trump, save my calls'),(28,'wallstreetbets','1qcmy5q','nzko7vo','2026-01-14',2,0,'They know they have backdoors lol'),(29,'wallstreetbets','1qcmy5q','nzjgnze','2026-01-14',3,0.5687,'So China said they don\'t even want them? Lmao'),(30,'wallstreetbets','1qcmy5q','nzjanda','2026-01-14',2,-0.1298,'A little bribe should fix that'),(31,'wallstreetbets','1qcmy5q','nzk6o86','2026-01-14',1,-0.3182,'AMPX is regaining ground it lost in late December, in case you are looking for something going against the trend right now'),(32,'wallstreetbets','1qcmy5q','nzkedd8','2026-01-14',1,0,'snip snap snip snap'),(33,'wallstreetbets','1qcmy5q','nzkjg0t','2026-01-14',1,0,'Who else is riding ROLR today?'),(34,'wallstreetbets','1qcmy5q','nzkjh78','2026-01-14',1,0.4404,'Hong Kong is usually not included in these bans though.  \nI\'m guessing that the companies could just set up data centers there to circumvent it.'),(35,'wallstreetbets','1qcmy5q','nzmj1ma','2026-01-14',1,0.6369,'Iâ€™m starting to like this Xi guy. He clearly knows ball'),(36,'wallstreetbets','1qcmy5q','nzmpwru','2026-01-14',1,0,'The plot thickens'),(37,'wallstreetbets','1qcmy5q','nzmwk5a','2026-01-14',1,0,'Bnzi , get after it'),(38,'wallstreetbets','1qcmy5q','nzkn9p7','2026-01-14',1,-0.5233,'Reuters... Don\'t you have news report from a news network that doesn\'t spread so much fake news?'),(39,'wallstreetbets','1qcmy5q','nzl60uu','2026-01-14',1,-0.4767,'Fake news'),(40,'wallstreetbets','1qcmy5q','nzkloyt','2026-01-14',0,0,'Sources says...'),(41,'wallstreetbets','1qcmy5q','nzks715','2026-01-14',-1,0.2023,'Honestly just stop trading with the Chinese');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -140,4 +141,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-14  2:14:32
+-- Dump completed on 2026-01-15  2:09:07
