@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
+5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -119,7 +120,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,7 +129,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'gabe alpert','...','2026-01-15',0,'These-Funds-Hold-Largest-Stakes-Alphabet-Stock','https://www.morningstar.com/funds/these-funds-hold-largest-stakes-alphabet-stock',2),(2,'newsfeedback@fool.com (marc guberti)','Alphabet is building digital AI infrastructure while launching physical AI products.\nLong-term investing is a lot easier than timing the stock market. You just have to pick growth stocks with good fun...','2026-01-15',0.19982,'Should Long-Term Investors Be Accumulating This Stock Right Now?','https://www.fool.com/investing/2026/01/15/should-long-term-investors-be-accumulating-this-st/',4),(3,'newsfeedback@fool.com (daniel sparks)','Both companies are riding the AI wave, but one stock offers a better mix of growth momentum and valuation today.\nThere are numerous ways to bet on AI (artificial intelligence). But two paths are parti...','2026-01-15',0.79434,'Nvidia vs. Alphabet: Which Is the Better AI Growth Stock for 2026?','https://www.fool.com/investing/2026/01/14/nvidia-vs-alphabet-which-is-the-better-ai-growth-s/',4),(4,'newsfeedback@fool.com (james hires)','AI is big business, but can the start-up that made it mainstream stand up to an industry giant throwing its weight around?\nArtificial intelligence (AI) is big business. Companies involved in it, eithe...','2026-01-14',0.47176,'Alphabet vs. OpenAI: Which AI Giant Will Drive 100% Gains?','https://www.fool.com/investing/2026/01/14/alphabet-vs-openai-which-ai-giant-will-drive-x-gai/',4),(5,'rich duprey','...','2026-01-14',0,'After Apple Deal, Is Google â€” Not OpenAI â€” Now the Premier AI Stock?','https://www.barchart.com/story/news/37046543/after-apple-deal-is-google-not-openai-now-the-premier-ai-stock',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nCortland Associates Inc. MO decreased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.0% during the third quarter, accord...','2026-01-16',0.6686,'Alphabet Inc. $GOOG is Cortland Associates Inc. MOâ€™s 9th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-cortland-associates-inc-mos-9th-largest-position.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nColorado Capital Management Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 372.1% in the third quarter, according to its ...','2026-01-16',0.66862,'Alphabet Inc. $GOOG is Colorado Capital Management Inc.â€™s 10th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-colorado-capital-management-inc-s-10th-largest-position.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nFamily Capital Trust Co decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 30.2% in the 3rd quarter, according to ...','2026-01-16',0.53712,'Family Capital Trust Co Lowers Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/family-capital-trust-co-lowers-position-in-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nClarity Wealth Advisors LLC cut its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.6% in the 3rd quarter, according to the company ...','2026-01-16',0.76758,'Clarity Wealth Advisors LLC Has $6.79 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/clarity-wealth-advisors-llc-has-6-79-million-stock-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nDock Street Asset Management Inc. reduced its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.0% during the third quarter, according ...','2026-01-16',0.6574,'Dock Street Asset Management Inc. Sells 4,713 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/dock-street-asset-management-inc-sells-4713-shares-of-alphabet-inc-goog.html',4),(6,'caleb naysmith','...','2026-01-15',0.2368,'â€˜It Makes No Sense To Meâ€™: Nvidiaâ€™s Jensen Huang Slams Americans Who â€˜Vilified Energy,â€™ Praises Trump for â€˜Sticking His Neck Outâ€™','https://www.barchart.com/story/news/37069799/it-makes-no-sense-to-me-nvidias-jensen-huang-slams-americans-who-vilified-energy-praises-trump-for-sticking-his-neck-out',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -142,4 +143,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-16  2:54:16
+-- Dump completed on 2026-01-17  2:44:47
