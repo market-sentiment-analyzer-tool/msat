@@ -87,6 +87,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
@@ -120,7 +121,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +130,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nCortland Associates Inc. MO decreased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.0% during the third quarter, accord...','2026-01-16',0.6686,'Alphabet Inc. $GOOG is Cortland Associates Inc. MOâ€™s 9th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-cortland-associates-inc-mos-9th-largest-position.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nColorado Capital Management Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 372.1% in the third quarter, according to its ...','2026-01-16',0.66862,'Alphabet Inc. $GOOG is Colorado Capital Management Inc.â€™s 10th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-colorado-capital-management-inc-s-10th-largest-position.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nFamily Capital Trust Co decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 30.2% in the 3rd quarter, according to ...','2026-01-16',0.53712,'Family Capital Trust Co Lowers Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/family-capital-trust-co-lowers-position-in-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nClarity Wealth Advisors LLC cut its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.6% in the 3rd quarter, according to the company ...','2026-01-16',0.76758,'Clarity Wealth Advisors LLC Has $6.79 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/clarity-wealth-advisors-llc-has-6-79-million-stock-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nDock Street Asset Management Inc. reduced its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.0% during the third quarter, according ...','2026-01-16',0.6574,'Dock Street Asset Management Inc. Sells 4,713 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/dock-street-asset-management-inc-sells-4713-shares-of-alphabet-inc-goog.html',4),(6,'caleb naysmith','...','2026-01-15',0.2368,'â€˜It Makes No Sense To Meâ€™: Nvidiaâ€™s Jensen Huang Slams Americans Who â€˜Vilified Energy,â€™ Praises Trump for â€˜Sticking His Neck Outâ€™','https://www.barchart.com/story/news/37069799/it-makes-no-sense-to-me-nvidias-jensen-huang-slams-americans-who-vilified-energy-praises-trump-for-sticking-his-neck-out',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adria cimino)','These players may help you along the path to wealth.\nInvestors always are searching for the next big hit in the world of technology -- and this is a wise move, considering how such innovations have re...','2026-01-17',0.19982,'2 Quantum Computing Stocks That Could Make a Millionaire','https://www.fool.com/investing/2026/01/17/2-quantum-computing-stocks-that-could-make-a-milli/',4),(2,'newsfeedback@fool.com (john ballard)','These tech giants are strengthening their competitive position with artificial intelligence (AI).\nShares of Amazon (AMZN +0.40%) and Alphabet (GOOG 0.80%) (GOOGL 0.80%) are looking to lead the bull ma...','2026-01-16',0.38098,'These Stocks Trade Near All-Time Highs but Remain Solid Long-Term Buys','https://www.fool.com/investing/2026/01/16/stocks-trade-all-time-highs-still-long-term-buys/',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nCortland Associates Inc. MO decreased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.0% during the third quarter, accord...','2026-01-16',0.6686,'Alphabet Inc. $GOOG is Cortland Associates Inc. MOâ€™s 9th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-cortland-associates-inc-mos-9th-largest-position.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nColorado Capital Management Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 372.1% in the third quarter, according to its ...','2026-01-16',0.66862,'Alphabet Inc. $GOOG is Colorado Capital Management Inc.â€™s 10th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-colorado-capital-management-inc-s-10th-largest-position.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nFamily Capital Trust Co decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 30.2% in the 3rd quarter, according to ...','2026-01-16',0.53712,'Family Capital Trust Co Lowers Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/family-capital-trust-co-lowers-position-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -143,4 +144,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-17  2:44:47
+-- Dump completed on 2026-01-18  3:01:32
