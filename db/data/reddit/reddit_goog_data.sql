@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
+5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -64,13 +65,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a30165c3-f414-11f0-930f-82d1853bff44:1-142,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
-b9495da9-f348-11f0-8ca9-96cb575c5b63:1-99,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -120,7 +121,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,6 +130,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1qfbp4k','o03db23','2026-01-17',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 1 | **First Seen In WSB** | just now\n**Total Comments** | 0 | **Previous Best DD** | \n**Account Age** | 1 year | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1qfbp4k','o03e4ci','2026-01-17',32,0.6808,'1 year, 21k.\n\nNice OP, nice.'),(3,'wallstreetbets','1qfbp4k','o03il7x','2026-01-17',23,0,'How I imagine OP writing the title of their post:\n\nhttps://preview.redd.it/tz4afhzipwdg1.jpeg?width=1483&format=pjpg&auto=webp&s=699f360f8f1cec1450901af521db7ceab42ca0e4'),(4,'wallstreetbets','1qfbp4k','o03egv6','2026-01-17',9,0.9022,'I\'m up 100% on my Google stocks in like 8 months. God I wish I had taken up calls instead'),(5,'wallstreetbets','1qfbp4k','o03dofv','2026-01-17',16,-0.0258,'Congrats and fuck you, despite the Europovertyâ„¢ï¸'),(6,'wallstreetbets','1qfbp4k','o03e7xu','2026-01-17',5,0,'How much % OTM was this call when you bought it?'),(7,'wallstreetbets','1qfbp4k','o03h6jh','2026-01-17',2,0.8225,'Congrats Europoor. Thats change for freedom people /s'),(8,'wallstreetbets','1qfbp4k','o044tig','2026-01-17',2,0.2732,'This is half of euro GDP..... well done'),(9,'wallstreetbets','1qfbp4k','o04xi0p','2026-01-17',2,0,'Still kicking myself for saying â€œgoogle should not be $158â€ and not doing anything more with that thought.'),(10,'wallstreetbets','1qfbp4k','o044oqq','2026-01-17',1,0,'ðŸ¤”'),(11,'wallstreetbets','1qfbp4k','o04odzw','2026-01-17',1,0.296,'Nice trade. Holding through the boring part usually pays off.'),(12,'wallstreetbets','1qfbp4k','o04vcb9','2026-01-17',1,0.4199,'This hurts, I bought shares and not calls abut then.  Congrats!');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -142,4 +144,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-17  2:04:53
+-- Dump completed on 2026-01-18  2:26:31

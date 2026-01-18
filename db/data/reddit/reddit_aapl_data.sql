@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
+5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -64,13 +65,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a30165c3-f414-11f0-930f-82d1853bff44:1-142,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
-b9495da9-f348-11f0-8ca9-96cb575c5b63:1-99,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -120,7 +121,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +130,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qefv1s','nzybe9s','2026-01-16',4,0.0772,'is that the reason why AAPL is nose diving today?'),(2,'AAPL','1qefv1s','nzzx0lz','2026-01-16',2,-0.1027,'How many days in a row has appl been in the red lol\n\nThe mag7 seems like the disappointing7. Aapl, msft, meta seem like dead money with no signs of growth and amz and goog seem to have fizzled out as well'),(3,'AAPL','1qefv1s','nzy0lnp','2026-01-16',1,0.7684,'Its hard to know how the Chinese people is going to feel about the offers (they are smart with money/business) and im bullish too but I think we see the results up to Q3-4 2026 or even Q1 2027 when new iPhone is outðŸ¤”. Patienceâ€¦ ðŸ¤·ðŸ»â€â™‚ï¸ðŸ˜®â€ðŸ’¨'),(4,'AAPL','1qefv1s','nzy5zj7','2026-01-16',1,0.8779,'Good move Apple. \n\nApple most likely is realizing that the lifetime value of getting people into the Apple platform ecosystem far outweighs the rebate/discount for trading in a competitors phone. \n\nLooking at their earnings growth, a lot of it comes from service subscriptions.'),(5,'AAPL','1qefv1s','o00nfd1','2026-01-16',1,0.6249,'Gonna be a stellar year for Apple with Googleâ€™s AI helping Siri good stuff'),(6,'AAPL','1qe78oy','nzyibhz','2026-01-16',3,0.4019,'Itâ€™s their services segment. Vibe coders are deploying apps day in and day out on the App Store.\n\nHuge productivity boost.'),(7,'AAPL','1qe78oy','nzzb7zt','2026-01-16',2,0.8322,'Solid article sort of backing up my earlier sentiment, services and the on device Ai will start to add to value.  The addition of Gemini and a new Mac cycle and iPad 10.9 will carry the growth until iPhone 18.  \n[Apple News Gemini and services speculation](https://stocks.apple.com/A9cz2qr9JRt-PSp3efknfGg)'),(8,'AAPL','1qe78oy','o00r3z1','2026-01-17',1,0,'And Project J595.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -143,4 +143,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-17  2:04:53
+-- Dump completed on 2026-01-18  2:26:31
