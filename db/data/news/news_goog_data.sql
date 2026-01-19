@@ -102,6 +102,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
 
 --
@@ -121,7 +122,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -130,7 +131,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (adria cimino)','These players may help you along the path to wealth.\nInvestors always are searching for the next big hit in the world of technology -- and this is a wise move, considering how such innovations have re...','2026-01-17',0.19982,'2 Quantum Computing Stocks That Could Make a Millionaire','https://www.fool.com/investing/2026/01/17/2-quantum-computing-stocks-that-could-make-a-milli/',4),(2,'newsfeedback@fool.com (john ballard)','These tech giants are strengthening their competitive position with artificial intelligence (AI).\nShares of Amazon (AMZN +0.40%) and Alphabet (GOOG 0.80%) (GOOGL 0.80%) are looking to lead the bull ma...','2026-01-16',0.38098,'These Stocks Trade Near All-Time Highs but Remain Solid Long-Term Buys','https://www.fool.com/investing/2026/01/16/stocks-trade-all-time-highs-still-long-term-buys/',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nCortland Associates Inc. MO decreased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.0% during the third quarter, accord...','2026-01-16',0.6686,'Alphabet Inc. $GOOG is Cortland Associates Inc. MOâ€™s 9th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-cortland-associates-inc-mos-9th-largest-position.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nColorado Capital Management Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 372.1% in the third quarter, according to its ...','2026-01-16',0.66862,'Alphabet Inc. $GOOG is Colorado Capital Management Inc.â€™s 10th Largest Position','https://www.defenseworld.net/2026/01/16/alphabet-inc-goog-is-colorado-capital-management-inc-s-10th-largest-position.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 16th, 2026\n\nFamily Capital Trust Co decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 30.2% in the 3rd quarter, according to ...','2026-01-16',0.53712,'Family Capital Trust Co Lowers Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/16/family-capital-trust-co-lowers-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The $4 trillion enterprise is ready to give investors a fresh update on its financial performance.\nAlphabet (GOOGL 0.83%) (GOOG 0.80%) did a great job taking care of its investors in 2025. Shares were...','2026-01-18',0.6337,'Should You Buy Alphabet Stock Before Feb. 4?','https://www.fool.com/investing/2026/01/18/should-you-buy-alphabet-stock-before-february-4/',4),(2,'newsfeedback@fool.com (matt dilallo)','Google continues to lock in new power supplies.\nAlphabet (GOOG 0.80%)(GOOGL 0.80%) subsidiary Google needs a massive amount of electricity to power its data centers supporting Google Cloud and Google ...','2026-01-18',0.19982,'Google Continues Its Massive Power Grab','https://www.fool.com/investing/2026/01/18/google-continues-its-massive-power-grab/',40),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 18th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report) Director John Hennessy sold 600 shares of the companyâ€™s stock in a transaction on Tuesday, January ...','2026-01-18',-0.16718,'Insider Selling: Alphabet (NASDAQ:GOOG) Director Sells $202,512.00 in Stock','https://www.defenseworld.net/2026/01/18/insider-selling-alphabet-nasdaqgoog-director-sells-202512-00-in-stock.html',4),(4,'newsfeedback@fool.com (adria cimino)','These players may help you along the path to wealth.\nInvestors always are searching for the next big hit in the world of technology -- and this is a wise move, considering how such innovations have re...','2026-01-17',0.19982,'2 Quantum Computing Stocks That Could Make a Millionaire','https://www.fool.com/investing/2026/01/17/2-quantum-computing-stocks-that-could-make-a-milli/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -144,4 +145,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-18  3:01:32
+-- Dump completed on 2026-01-19  3:01:06
