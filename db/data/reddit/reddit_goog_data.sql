@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0b612810-f5a5-11f0-9ee2-564c0fcaa609:1-57,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -60,7 +61,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
-767f381f-f4dd-11f0-aded-c66becbd78d9:1-60,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -103,6 +103,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
 
 --
@@ -122,7 +123,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,7 +132,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1qg595l','o09q68v','2026-01-18',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 1 | **First Seen In WSB** | 9 months ago\n**Total Comments** | 0 | **Previous Best DD** | \n**Account Age** | 1 year | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1qg595l','o09rbcp','2026-01-18',277,0.4753,'https://preview.redd.it/7x8geibj63eg1.png?width=320&format=png&auto=webp&s=d7b1a48fd41a23005d0716756065209eeac6685b\n\nnice!'),(3,'wallstreetbets','1qg595l','o09rkbh','2026-01-18',172,0,'https://preview.redd.it/1a4tohey63eg1.jpeg?width=1284&format=pjpg&auto=webp&s=a467f0e95143de04b8526d54e7accb6718af2059'),(4,'wallstreetbets','1qg595l','o09rn26','2026-01-18',121,0.4019,'You might be too smart for this sub.'),(5,'wallstreetbets','1qg595l','o09t8s0','2026-01-18',148,-0.5994,'Thowing 110k on Google leaps was Smart. But how the fuck can someone throw 110k at anything lol'),(6,'wallstreetbets','1qg595l','o0aw4v5','2026-01-18',36,0.6369,'Yeah not buying leaps on a solid blue chip name during that April crash will go down as one of the easiest plays I missed, bought like 10k of various tech stocks but options obvi the play'),(7,'wallstreetbets','1qg595l','o09seea','2026-01-18',67,0,'Now have your bosses wife suck you up'),(8,'wallstreetbets','1qg595l','o0as9g1','2026-01-18',13,0.5719,'https://preview.redd.it/ig89rh7yg4eg1.jpeg?width=1170&format=pjpg&auto=webp&s=17e7b0b0d95575181d95d27a31680a012fdc5574\n\nOp you did what I should have still happy about this little W'),(9,'wallstreetbets','1qg595l','o09x5l8','2026-01-18',9,-0.5719,'(Hate) from me to you'),(10,'wallstreetbets','1qg595l','o0ab4ln','2026-01-18',10,0.5423,'What delta/strike price did you buy them?'),(11,'wallstreetbets','1qg595l','o0arjn1','2026-01-18',9,0.5927,'I just bought 100k of Jan 2027 Google leaps myself. Not at all expecting a 10x, but I expect they have a good year'),(12,'wallstreetbets','1qg595l','o0amjj2','2026-01-18',6,0,'Im about to do this for nflx'),(13,'wallstreetbets','1qg595l','o09qfc7','2026-01-18',8,0,'Salute ðŸ«¡'),(14,'wallstreetbets','1qg595l','o0a7flj','2026-01-18',6,0.7433,'Good thing you didn\'t pick meta. Would have still performed fine due to timing the crash bottom but wouldn\'t have been crazy like google.'),(15,'wallstreetbets','1qg595l','o0b5c1t','2026-01-18',3,0.6266,'Yep. It is like the 3rd time I thought about google leaps and did not buy it because I thought the return would not be high enough.\n\nI truly belong here. Hope to post my loss porn soon.'),(16,'wallstreetbets','1qg595l','o0a7n43','2026-01-18',2,-0.3578,'freaking A! I believe this is the way. Walt strategically for an inevitable fat dump, and then buy big, cheap!Â '),(17,'wallstreetbets','1qg595l','o0anij6','2026-01-18',2,-0.1027,'Damn, what was the original delta?'),(18,'wallstreetbets','1qg595l','o0ax5d1','2026-01-18',2,-0.6124,'but why did you sell all, its got room to go more. trim and trail'),(19,'wallstreetbets','1qg595l','o0bzxle','2026-01-18',2,0.9631,'I did the same but sold with a modest profit. \n\nDoesn\'t feel so great, but it was the smart play for my situation.'),(20,'wallstreetbets','1qg595l','o0cj6jr','2026-01-18',2,0.9106,'You can retire in 5 years :D or maybe you wanna invest in  a business. Congrats'),(21,'wallstreetbets','1qg595l','o0a6bzh','2026-01-18',3,-0.4854,'I remember people betting on Google and I thought it was a bad deal. I thought it was going to be disrupted by ChatGPT (less and less people using Google), cracking down on that deal with Apple (to make default search) and many other examples. Seems like Google still makes money in advertising and creating their own chips to compete with Nvidia is paying out.\n\n  \nThen we have META. I thought it was a dying company since people don\'t advertise that much on Facebook or Instagram. Wasting money with Metaverse (retardation max) and being behind the AI bubble. Company still down.\n\n  \nSo you have OP making a fortune with Google but people losing money with META.\n\nIn the end, it\'s just luck.'),(22,'wallstreetbets','1qg595l','o0ai4fh','2026-01-18',1,0,'How much were the contacts on purchase?'),(23,'wallstreetbets','1qg595l','o0amoig','2026-01-18',1,-0.6124,'But did you sell'),(24,'wallstreetbets','1qg595l','o0bw6el','2026-01-18',1,-0.1326,'Just wondering. Any reason you didn\'t hold longer?'),(25,'wallstreetbets','1qg595l','o0ch7ne','2026-01-18',1,0,'Whatâ€™s next? Another GOOG leap?'),(26,'wallstreetbets','1qg595l','o0cty7w','2026-01-18',1,0.3612,'Can somebody explain this to me like im 5'),(27,'wallstreetbets','1qg595l','o0djgzf','2026-01-18',1,0,'what does that mean??'),(28,'wallstreetbets','1qg595l','o0dptat','2026-01-18',1,0.5707,'Congrats!'),(29,'wallstreetbets','1qg595l','o0aa53e','2026-01-18',-4,0,'Monkey throwing a dart at a board  ðŸŽ¯'),(30,'wallstreetbets','1qg2gl7','o098a6v','2026-01-18',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 1 | **First Seen In WSB** | 2 years ago\n**Total Comments** | 33 | **Previous Best DD** | \n**Account Age** | 4 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(31,'wallstreetbets','1qg2gl7','o09dsf8','2026-01-18',49,0,'Showed us what poors we really are by exercising that contract'),(32,'wallstreetbets','1qg2gl7','o0az14v','2026-01-18',6,0,'So you bought 500 Google stock for cheap now?'),(33,'wallstreetbets','1qg2gl7','o09bra9','2026-01-18',4,0.8225,'congrats, nice gains'),(34,'wallstreetbets','1qg2gl7','o09iqw4','2026-01-18',1,0.4767,'Wow thats a crazy hold'),(35,'wallstreetbets','1qg2gl7','o0aowcr','2026-01-18',1,0.296,'lol gg'),(36,'wallstreetbets','1qg2gl7','o0bbp3t','2026-01-18',1,0,'This isnâ€™t HYMC'),(37,'wallstreetbets','1qg2gl7','o0ebdyd','2026-01-19',1,0,'Jfc'),(38,'wallstreetbets','1qg2gl7','o09vyez','2026-01-18',-4,0,'[deleted]');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -145,4 +145,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-19  2:22:17
+-- Dump completed on 2026-01-20  2:12:07
