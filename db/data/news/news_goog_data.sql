@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
+5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -122,7 +123,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,7 +132,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The $4 trillion enterprise is ready to give investors a fresh update on its financial performance.\nAlphabet (GOOGL 0.83%) (GOOG 0.80%) did a great job taking care of its investors in 2025. Shares were...','2026-01-18',0.6337,'Should You Buy Alphabet Stock Before Feb. 4?','https://www.fool.com/investing/2026/01/18/should-you-buy-alphabet-stock-before-february-4/',4),(2,'newsfeedback@fool.com (matt dilallo)','Google continues to lock in new power supplies.\nAlphabet (GOOG 0.80%)(GOOGL 0.80%) subsidiary Google needs a massive amount of electricity to power its data centers supporting Google Cloud and Google ...','2026-01-18',0.19982,'Google Continues Its Massive Power Grab','https://www.fool.com/investing/2026/01/18/google-continues-its-massive-power-grab/',40),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 18th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report) Director John Hennessy sold 600 shares of the companyâ€™s stock in a transaction on Tuesday, January ...','2026-01-18',-0.16718,'Insider Selling: Alphabet (NASDAQ:GOOG) Director Sells $202,512.00 in Stock','https://www.defenseworld.net/2026/01/18/insider-selling-alphabet-nasdaqgoog-director-sells-202512-00-in-stock.html',4),(4,'newsfeedback@fool.com (adria cimino)','These players may help you along the path to wealth.\nInvestors always are searching for the next big hit in the world of technology -- and this is a wise move, considering how such innovations have re...','2026-01-17',0.19982,'2 Quantum Computing Stocks That Could Make a Millionaire','https://www.fool.com/investing/2026/01/17/2-quantum-computing-stocks-that-could-make-a-milli/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (manali pradhan, cfa)','Buy stakes in companies combining scale, profitability, and durable demand across the AI technology stack.\nThe global artificial intelligence (AI) market was estimated to be worth about $372 billion i...','2026-01-19',0.63368,'3 No-Brainer AI Stocks to Buy Hand Over Fist for 2026','https://www.fool.com/investing/2026/01/19/3-no-brainer-ai-stocks-to-buy-hand-over-fist-2026/',4),(2,'sushree mohanty','...','2026-01-19',0.43384,'If I Could Only Buy 1 Stock Right Now, This Would Be It','https://www.barchart.com/story/news/37109088/if-i-could-only-buy-1-stock-right-now-this-would-be-it',2),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nSumitomo Mitsui Trust Group Inc. boosted its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.0% during the third quarter, acco...','2026-01-19',0.60838,'Alphabet Inc. $GOOG Stake Lifted by Sumitomo Mitsui Trust Group Inc.','https://www.defenseworld.net/2026/01/19/alphabet-inc-goog-stake-lifted-by-sumitomo-mitsui-trust-group-inc.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nNew Republic Capital LLC decreased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.4% in the 3rd quarter, according to the compa...','2026-01-19',0.1999,'New Republic Capital LLC Has $2.53 Million Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/19/new-republic-capital-llc-has-2-53-million-stake-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nTokio Marine Asset Management Co. Ltd. cut its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.1% during the 3rd quarter, a...','2026-01-19',0.7943,'Alphabet Inc. $GOOG is Tokio Marine Asset Management Co. Ltd.â€™s 6th Largest Position','https://www.defenseworld.net/2026/01/19/alphabet-inc-goog-is-tokio-marine-asset-management-co-ltd-s-6th-largest-position.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nMGO One Seven LLC boosted its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 10.2% during the third quarter, according to its most rec...','2026-01-19',0.4367,'Alphabet Inc. $GOOG Shares Purchased by MGO One Seven LLC','https://www.defenseworld.net/2026/01/19/alphabet-inc-goog-shares-purchased-by-mgo-one-seven-llc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nZEGA Investments LLC lessened its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 57.1% in the 3rd quarter, according to its ...','2026-01-19',0.19992,'ZEGA Investments LLC Trims Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/19/zega-investments-llc-trims-stake-in-alphabet-inc-goog.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Jan 19th, 2026\n\nMeeder Asset Management Inc. lifted its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 22.8% during the 3rd quarter, according to its ...','2026-01-19',0.65742,'Alphabet Inc. $GOOG Shares Bought by Meeder Asset Management Inc.','https://www.defenseworld.net/2026/01/19/alphabet-inc-goog-shares-bought-by-meeder-asset-management-inc.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -145,4 +146,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-19  3:01:06
+-- Dump completed on 2026-01-20  2:55:31
