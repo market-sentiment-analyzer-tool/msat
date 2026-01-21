@@ -24,7 +24,6 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
-0b612810-f5a5-11f0-9ee2-564c0fcaa609:1-57,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -53,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
+5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -67,6 +67,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a7b22af2-f66e-11f0-ae76-5a33452c1541:1-80,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -123,7 +124,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -132,7 +133,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qgy0xl','o0jmlsv','2026-01-19',1,-0.5983,'Idiotic. We need Nuclear power!'),(2,'NVDA_Stock','1qh49jy','o0hdqgc','2026-01-19',4,0,'just about the same. 5 to 10 years till the next big thing comes.'),(3,'NVDA_Stock','1qh49jy','o0hn36m','2026-01-19',3,0.4019,'We are beginning what will hopefully be a long run'),(4,'NVDA_Stock','1qh49jy','o0is9mg','2026-01-19',3,0.4404,'If we look at this graph, things are looking good.'),(5,'NVDA_Stock','1qh49jy','o0h7m1x','2026-01-19',2,0,'AI changes the world.  Then robotics.  Then the Borg.  \nWe are loading a big clunky sling shot and aiming at each other.  I say 25 years.'),(6,'NVDA_Stock','1qh49jy','o0jfbea','2026-01-19',2,-0.7717,'This is a dumb chart. There is no explanation on the parameters of a company leading vs no longer leading.\n\nA lot of these companies are still dominant in their markets and you are getting triple digit plus returns if you invested and held a bunch of these companies.'),(7,'NVDA_Stock','1qh49jy','o0instb','2026-01-19',1,0.8742,'Itâ€™s interesting how the top market company during the dot com bubble is still around the top now, which makes me more comfortable holding NVDA, even if we are in an â€œAI bubbleâ€, which I personally donâ€™t believe we are in YET. I think in the end, the senior leadership of the company matters the most if they can pivot the ship as we go through different revolutions.'),(8,'NVDA_Stock','1qh49jy','o0jdhe1','2026-01-19',1,0,'Look at a&t. In and out, I don\'t think Nvidia will do that but still it can happen.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qid227','o0qh9s2','2026-01-20',-3,-0.4588,'it\'s over. just sell');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -146,4 +147,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-20  2:12:07
+-- Dump completed on 2026-01-21  2:13:59
