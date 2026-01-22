@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.5.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.5.0
+-- Server version	9.6.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
@@ -124,7 +125,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -133,7 +134,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (matt dilallo)','These energy companies could deliver high-powered total returns in the coming years.\nAI data centers consume an enormous amount of electricity to run the specialized chips this technology requires and...','2026-01-20',0.6998,'The AI Gold Rush Needs Energy: 3 Stocks That Could Benefit Most','https://www.fool.com/investing/2026/01/20/the-ai-gold-rush-needs-energy-3-stocks-that-could/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nSchmidt P J Investment Management Inc. decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.4% in the 3rd quarter,...','2026-01-20',0.43672,'Schmidt P J Investment Management Inc. Sells 4,761 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/schmidt-p-j-investment-management-inc-sells-4761-shares-of-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nKlingman & Associates LLC increased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.2% in the 3rd quarter, according to its most...','2026-01-20',0.19992,'Klingman & Associates LLC Raises Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/klingman-associates-llc-raises-holdings-in-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nNordea Investment Management AB boosted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.9% during the 3rd quarter, according to its ...','2026-01-20',0.19992,'Nordea Investment Management AB Grows Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/nordea-investment-management-ab-grows-stock-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nTD Private Client Wealth LLC grew its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.7% in the 3rd quarter, according to the compan...','2026-01-20',0.71878,'Alphabet Inc. $GOOG Stock Position Increased by TD Private Client Wealth LLC','https://www.defenseworld.net/2026/01/20/alphabet-inc-goog-stock-position-increased-by-td-private-client-wealth-llc.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nLiberty One Investment Management LLC lifted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 46.8% during the third quart...','2026-01-20',0.62128,'Liberty One Investment Management LLC Raises Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/liberty-one-investment-management-llc-raises-position-in-alphabet-inc-goog.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nGRIMES & Co WEALTH MANAGEMENT LLC raised its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 20.9% during the third quarter, acc...','2026-01-20',0.62124,'GRIMES & Co WEALTH MANAGEMENT LLC Acquires 15,160 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/grimes-co-wealth-management-llc-acquires-15160-shares-of-alphabet-inc-goog.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nConcurrent Investment Advisors LLC increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.2% during the third quarte...','2026-01-20',0.43668,'Concurrent Investment Advisors LLC Acquires 3,094 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/concurrent-investment-advisors-llc-acquires-3094-shares-of-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keith speights)','A few years from now, many investors could look back and wish they had bought these stocks.\nOnce-in-a-decade investment opportunities come along... about once in a decade. In the 1980s, the big opport...','2026-01-21',0.83166,'A Once-in-a-Decade Investment Opportunity: 3 Quantum Computing Stocks to Buy and Hold','https://www.fool.com/investing/2026/01/21/a-once-in-a-decade-investment-opportunity-3-quantu/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Jan 21st, 2026\n\nArcadia Investment Management Corp MI lowered its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.9% during the 3rd quarter, a...','2026-01-21',-0.22146,'Arcadia Investment Management Corp MI Reduces Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/21/arcadia-investment-management-corp-mi-reduces-position-in-alphabet-inc-goog.html',4),(3,'newsfeedback@fool.com (john ballard)','This tech juggernaut is building multiple revenue streams to monetize its AI technology.\nThe share price of Alphabet (GOOG +1.97%) (GOOGL +1.98%) surged to new highs in 2025. Some investors might be h...','2026-01-20',0.82696,'What Is One of the Best Tech Stocks to Hold for the Next 10 Years?','https://www.fool.com/investing/2026/01/20/one-best-tech-stocks-hold-next-10-years/',4),(4,'newsfeedback@fool.com (matt dilallo)','These energy companies could deliver high-powered total returns in the coming years.\nAI data centers consume an enormous amount of electricity to run the specialized chips this technology requires and...','2026-01-20',0.6998,'The AI Gold Rush Needs Energy: 3 Stocks That Could Benefit Most','https://www.fool.com/investing/2026/01/20/the-ai-gold-rush-needs-energy-3-stocks-that-could/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nSchmidt P J Investment Management Inc. decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.4% in the 3rd quarter,...','2026-01-20',0.43672,'Schmidt P J Investment Management Inc. Sells 4,761 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/schmidt-p-j-investment-management-inc-sells-4761-shares-of-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Jan 20th, 2026\n\nKlingman & Associates LLC increased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.2% in the 3rd quarter, according to its most...','2026-01-20',0.19992,'Klingman & Associates LLC Raises Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/20/klingman-associates-llc-raises-holdings-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -147,4 +148,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-21  2:54:32
+-- Dump completed on 2026-01-22  2:59:31
