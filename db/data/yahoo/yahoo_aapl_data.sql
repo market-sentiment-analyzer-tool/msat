@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.5.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.5.0
+-- Server version	9.6.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,7 +24,6 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
-0d7f6a1c-f67b-11f0-99cc-563b3ccf3382:1-22,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -40,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
@@ -81,6 +81,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
+cc2f1775-f744-11f0-9d6c-c631d49f8850:1-22,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
@@ -145,4 +146,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-21  3:41:53
+-- Dump completed on 2026-01-22  3:46:01
