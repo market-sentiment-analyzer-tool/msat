@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.5.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.5.0
+-- Server version	9.6.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -67,7 +68,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
-a7b22af2-f66e-11f0-ae76-5a33452c1541:1-80,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -91,6 +91,7 @@ d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
+e0e14ed1-f738-11f0-90a7-bacb7af191d2:1-26,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
@@ -124,7 +125,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -133,7 +134,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qi56vr','o0pu52y','2026-01-20',10,0.765,'I just bought a new 17 Pro and I liked it so much making me want to buy more stock'),(2,'AAPL','1qi56vr','o0q1o9d','2026-01-20',7,0,'Time to get some more!'),(3,'AAPL','1qi56vr','o0q0y3j','2026-01-20',4,0,'I am continuing to DCA my non core position.'),(4,'AAPL','1qi56vr','o0qmov8','2026-01-20',6,0.4754,'Earning next week with most powerful quarter'),(5,'AAPL','1qi56vr','o0qyfy6','2026-01-20',3,0.34,'Up up and away after May â¤ï¸until then chop chop maybe'),(6,'AAPL','1qi56vr','o0osbwx','2026-01-20',4,-0.7964,'I would nibble.  I think it is going down in sympathy.  On the one side, I think Trump is playing the â€œyeah, Iâ€™m crazy enough toâ€¦â€ as a negotiation tactic.  If this gets resolved, it slingshots the market higherâ€¦ if it doesnâ€™t, it goes down further but eventually comes back before the end of the year.  Because people are conditioned to believe that it will eventually come back, it wonâ€™t go down as far and as long as historicallyâ€¦'),(7,'AAPL','1qi56vr','o0pnq24','2026-01-20',2,0.2023,'I bought more at 256, Iâ€™ll load up more at 245, 235 and so on if it goes there. I donâ€™t worry about what the floor may be, I think about how far I am from reaching the ceiling.Â '),(8,'AAPL','1qi56vr','o0qgbd3','2026-01-20',2,-0.5267,'It has been printing red weekly candles for about a month now. Daily green candles have basically been sideways. I\'d wait for some reversal.'),(9,'AAPL','1qi56vr','o0oxt4w','2026-01-20',2,0,'Flip phones 8mil shipping @ $2000 did I read that right?'),(10,'AAPL','1qi56vr','o0pzac9','2026-01-20',1,-0.101,'Red when markets are flat or green, way more red when markets are red ðŸ¤¦â€â™‚ï¸\n\nI\'ve been nibbling at AAPL, MSFT, GOOG, NVDA and a bunch of other things. Hopefully things will start to turn around before I run out of cash. Saving grace was I loaded up on cahs yesterday while TSX was active'),(11,'AAPL','1qi56vr','o0rdnyl','2026-01-20',1,0.2734,'I think a bottom will be $230-ish. That\'s another 5-8%. They still have solid upside for 2026 and beyond. They might not have \"won\" the AI race but they own the device that the masses will use AI on. Plus by partnering with Google instead of creating yet another chatbot they are staying out of an over hyped market. +50% from here within a year or two is very very plausible.'),(12,'AAPL','1qi56vr','o0qgb19','2026-01-20',0,0,'229-232'),(13,'AAPL','1qi56vr','o0qjdnp','2026-01-20',0,-0.1531,'\"Never try to catch a falling knife\"'),(14,'AAPL','1qi56vr','o0p43e1','2026-01-20',-4,0.7545,'wouldn\'t really bother with this ticker.  \n\nAt best you might be getting 15% to 18% upside from $251 and you have to have tons of patience'),(15,'AAPL','1qi56vr','o0q71f1','2026-01-20',-1,0.5994,'I think it\'s pretty fairly valued at this price.  can see it going lower with the market tho.'),(16,'AAPL','1qi56vr','o0purat','2026-01-20',-7,-0.5106,'$AAPL keeps getting rottenÂ '),(17,'AAPL','1qi5ov9','o0pvihr','2026-01-20',2,-0.7184,'They will sell but they need to get the price down to really flood the market'),(18,'AAPL','1qi5ov9','o0rjbhm','2026-01-21',1,0.9269,'$2000? Yall are dreaming. Apple will price it at $3000 easy and people will buy it because itâ€™s Apple and Apple made great products especially iPhones. A disable with iOS will be so awesome. Tired of Android BS.'),(19,'AAPL','1qi5ov9','o0p3lqp','2026-01-20',-1,0,'today\'s price action tells you a lot'),(20,'AAPL','1qi5ov9','o0oz4lj','2026-01-20',-1,0.743,'I think theyâ€™re overestimating how many people want to buy this phone at $2000. I mean affordable are cool but other companies like Samsung have way cheaper alternatives and I think people still prefer normal phones. I think it will be the next iPhone Air.'),(21,'AAPL','1qi5ov9','o0p7vni','2026-01-20',-3,0,'A phone should not cost more than $300 or $400');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -147,4 +147,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-21  2:13:58
+-- Dump completed on 2026-01-22  2:20:52
