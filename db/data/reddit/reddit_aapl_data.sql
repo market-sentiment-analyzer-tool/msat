@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2d648427-f8c9-11f0-8328-161fb7c166b4:1-67,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -65,7 +66,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
-864b1fa9-f800-11f0-81b6-7a8311a5acda:1-112,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -76,6 +76,7 @@ ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -126,7 +127,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -135,6 +136,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ql3bj2','o1bacob','2026-01-23',18,0,'I wouldnâ€™t sweat it.  Been invested in Apple for years and this is not unusual.  Stick to your plan.'),(2,'AAPL','1ql3bj2','o1bg9ta','2026-01-23',2,0.9256,'TBH this is perfect since I sold some covered calls and can buy some more shares with the funds and I\'m not planning on selling for decades anyways :-)'),(3,'AAPL','1ql3bj2','o1cdymc','2026-01-24',2,0.5994,'I wouldn\'t sweat it. Apple is pretty stable, but at the same time, I\'ve reduced my Appl position by 70% in last 3 years. TBH, I think leadership / Cook has to go. \n\nRemember when people wanted to look at / hold your new iphone ? Those days are long gone. No one is ever going to say that\'s a cool (Apple) watch. We need new product, new U.I.'),(4,'AAPL','1ql3bj2','o1cedug','2026-01-24',2,-0.128,'Thatâ€™s down like 6 or 8 weeks in a row'),(5,'AAPL','1ql3bj2','o1bk53t','2026-01-23',1,0.5661,'Got a $305 call for dec 2027 last week. Down a couple hundred atm. Hoping for a run up after earnings but no problem holding for the next year tbh'),(6,'AAPL','1ql3bj2','o1bvw0k','2026-01-23',1,0,'Google had their turn.  MS and Meta did their thing this week.  Itâ€™s Apples turn next week.'),(7,'AAPL','1ql3bj2','o1cg000','2026-01-24',1,0.8074,'Aapl seems like itâ€™s been dead money for years. Its best days were prior to 2024 when it had decent growth. It was at this price back on Dec 10 2024. It trailed the s&p500 and tech sector for much of 2025, had a brief pump back uo only to give back those gains since dec 3rd. More reason to be diversified as other companies in the sector and mag7 are pulling the weight'),(8,'AAPL','1ql3bj2','o1cir8z','2026-01-24',1,0.3612,'Irrelevant.  Only thing that matters is earnings.'),(9,'AAPL','1ql3bj2','o1cjods','2026-01-24',1,-0.296,'#You sell at the top and start buying again here, welcome to apple stock boi'),(10,'AAPL','1ql3bj2','o1c2boo','2026-01-23',1,0.0387,'My mom died and had 4 million in apple. She loved apple but glad that I put emotions aside and been slowly selling and buying vti and vxus'),(11,'AAPL','1ql3bj2','o1bss3s','2026-01-23',-2,0,'$138 by June'),(12,'AAPL','1ql3bj2','o1bwk9j','2026-01-23',-4,0.7096,'Doesnâ€™t seem like thereâ€™s much future growth here. Iâ€™m out at 240');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -148,4 +150,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-23  2:14:37
+-- Dump completed on 2026-01-24  2:06:39
