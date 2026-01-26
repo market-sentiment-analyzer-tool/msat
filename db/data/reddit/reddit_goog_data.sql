@@ -46,11 +46,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
-4d4a98e7-f995-11f0-816e-fe45ecc9e640:1-141,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+5726f838-fa5e-11f0-87d4-ea90dd46c117:1-30,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -78,6 +78,7 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
+be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -128,7 +129,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -137,7 +138,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1qm3li6','o1j04tt','2026-01-25',362,0.6418,'And whatâ€™s so impressive is Gemini wrote this whole postâ€¦'),(2,'stocks','1qm3li6','o1izhds','2026-01-25',90,0.743,'I just sold my NVDA, itâ€™ll go back up to $250 Iâ€™m sure. But GOOG is gonna be a safe blue chip in my opinion, I donâ€™t even own any but I will soon.'),(3,'stocks','1qm3li6','o1j0q2b','2026-01-25',44,0.7209,'And they have that little asset share in SpaceX which could fatten up their bottom line whenever they IPO.'),(4,'stocks','1qm3li6','o1izev1','2026-01-25',70,0.8126,'GOOG is a buy. They\'re doing fantastic, and they have all of the right pieces. There is no company on Earth like Google.'),(5,'stocks','1qm3li6','o1j0hm1','2026-01-25',29,0.6124,'I hope both Google and NVDA do well because I own both of them lol.'),(6,'stocks','1qm3li6','o1j35o9','2026-01-25',27,0.5256,'If AI isnâ€™t a bubble, then Google is the #2 most valuable company. If AI is a bubble, then itâ€™s #1.'),(7,'stocks','1qm3li6','o1j0no2','2026-01-25',21,0.7506,'Nvidia wouldn\'t stay in the top market caps for too long. Its always going to be the tech giants with the diversified investments that would remain in the top. Google has finally made big progress.'),(8,'stocks','1qm3li6','o1j05r5','2026-01-25',38,0.3818,'You know the market has been good when saying \"That is just a 15.8% move\" about a 4T company and being serious.Â '),(9,'stocks','1qm3li6','o1j17bp','2026-01-25',3,0,'You forgot TPUs'),(10,'stocks','1qm3li6','o1izaz9','2026-01-25',4,0,'Amen'),(11,'stocks','1qm3li6','o1j4zpk','2026-01-25',1,0.6808,'You canâ€™t simply compare (past) P/E and say â€œif they were to have the same multiple bla bla.â€ P/E doesnâ€™t factor in growth rate at all, itâ€™s a backward looking ratio.\n\nIf you look at metrics that reflect expected growth: Nvidiaâ€™s peg ratio is less than half of Alphabetâ€™s. Its forward P/E is also lower.'),(12,'stocks','1qm3li6','o1j6eo5','2026-01-25',1,0.5423,'Buy it on monday'),(13,'stocks','1qm3li6','o1jafl6','2026-01-25',1,0.1695,'Dont forget about the quantum stuff'),(14,'stocks','1qm3li6','o1jeivm','2026-01-25',1,0.2732,'Well this is only the case if Nvidia stays at the same price'),(15,'stocks','1qm3li6','o1jfllf','2026-01-25',1,0,'Let me guess you own a lot of googl stock lol'),(16,'stocks','1qm3li6','o1jgoax','2026-01-25',1,0.8908,'Sitting at over 110% in profits since my first buys in 2023 until present. YouTube, Gmail, Search, I love it all so I buy and hold with no emotional problem at all'),(17,'stocks','1qm3li6','o1jh9hv','2026-01-25',1,0.552,'Only 663 Billion market cap worth of ground to make up, which is more than the value of the entire stock markets of most countries'),(18,'stocks','1qm3li6','o1jjus5','2026-01-25',1,0,'Warren Buffett knows'),(19,'stocks','1qm3li6','o1jkv27','2026-01-25',1,0.5859,'Earnings play? Hmmm'),(20,'stocks','1qm3li6','o1jl9so','2026-01-25',1,0,'I think the headline would be â€œDaddyâ€™s home.â€'),(21,'stocks','1qm3li6','o1jle4n','2026-01-25',1,0.25,'Wait till you hear about their work on Drug Discovery, Nuclear Fusion Power, and Humanoid Robots. Those also have a chance of making a few bucks.'),(22,'stocks','1qm3li6','o1jm5q8','2026-01-25',1,0,'â€œScientists predict it rained yesterdayâ€'),(23,'stocks','1qm3li6','o1izn7f','2026-01-25',-2,0.3213,'Thereâ€™s so much wrong here, I donâ€™t know where to start. Both are exceptional companies, so no disrespect to either of them. And I think both will continue grow their respective valuations. But you may want to check what typically happens when a new company takes the #1 market cap ranking - its stock rarely outperforms the S&P 500.'),(24,'stocks','1qm3li6','o1j3y2a','2026-01-25',-1,-0.7909,'How, Gemini really isn\'t paying off that much I mean hell the video shouldn\'t be up there anyways either?'),(25,'stocks','1qm3li6','o1j107a','2026-01-25',0,0.5423,'Lol you can replace everything with nvda. Just buy either stock.'),(26,'stocks','1qm3li6','o1jh7z5','2026-01-25',-1,-0.5122,'>Google Cloud revenue is accelerating at a rate that is frankly terrifying for Amazon and Microsoft. We are talking about parabolic revenue expansion driven by AI infrastructure demand.\n\nMost of that is AI spend that is only going to them because Amazon/Microsoft are out of capacity. Once capacity catches up with demand, Google cloud revenue will fall off a cliff. Their platform is terrible.\n\n>And Waymo driverless taxi is no longer a side project. They are doing 450,000 paid rides per week. They are live in Phoenix, SF, LA, and expanding fast.\n\nThey won\'t be able to compete with Tesla on pricing and achieve profitability on rids, because Tesla can produce Robotaxis for 80% less cost per unit that Waymo spends.\n\n>Apple announced Gemini is going to be the default native AI for Siri. Think about the distribution monopoly they just secured. They have Gemini native on 3 billion Android devices, and now they have integration across 1.5 billion iOS devices. Google now owns the AI layer on 100% of the mobile distribution channel. No other competitor exists at this scale. They have effectively checkmated the entire edge consumer AI market.\n\nThey\'re only being paid $1 Billion for Billions of users. That\'s like $0.05/month per user. There\'s a reason OpenAI turned Apple down. Google was the backup option\n\n\n>Google has been building its own TPUs for a decade, meaning they don\'t pay the \"Nvidia Tax\" that crushes other tech companies margins.\n\nThis isn\'t really true. They pay Broadcom which is actually more expensive because its custom Silicon.\n\nAnd of course this post ignores the elephant in the room which is Google search, their biggest revenue search, becoming obsolete.\n\nGoogle is a massive value trap, if you can even call it that. They\'re over 30x forward PE.'),(27,'stocks','1qm3li6','o1j4o32','2026-01-25',-3,0.4926,'I can remember loading up at $125!');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -151,4 +151,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-25  2:28:43
+-- Dump completed on 2026-01-26  2:26:38
