@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-32,
+063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -33,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
+2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -50,7 +52,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
-5726f838-fa5e-11f0-87d4-ea90dd46c117:1-30,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -129,7 +130,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,6 +139,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qnm8yk','o1wu2gk','2026-01-26',7,0,'NVDA to 192!!!'),(2,'NVDA_Stock','1qnm8yk','o1utwo9','2026-01-26',3,0,'waht OS does vera cpu run on? linux  i suppose?'),(3,'NVDA_Stock','1qnm8yk','o1vb7am','2026-01-26',2,0.3382,'Vera for DC\nAnd there is something on client side as well!'),(4,'NVDA_Stock','1qnm8yk','o1w5bl5','2026-01-26',2,0,'Here\'s the interview, about 20 minutes long, CPU discussion is in the first 5 minutes.\n\nhttps://youtu.be/4I7XBgPyRLM?si=Cq4FUU-3XZ7LRZW1'),(5,'NVDA_Stock','1qnm8yk','o1w9vjk','2026-01-26',1,-0.5093,'Since regular customers wonâ€™t be able to afford GPUs anymore. Jensen: â€œletâ€™s sell some CPUs!â€'),(6,'NVDA_Stock','1qnzd84','o1xm1uo','2026-01-27',5,-0.4588,'Goes down instead of'),(7,'NVDA_Stock','1qnhjeo','o1tnqm8','2026-01-26',3,0,'$2 billion investment'),(8,'NVDA_Stock','1qnhjeo','o1v8d3z','2026-01-26',1,-0.4588,'Doubling down it seems'),(9,'NVDA_Stock','1qnhjeo','o1tp3y0','2026-01-26',-3,0.4404,'Bailing out CRWV. NVDA should find better uses for their money'),(10,'NVDA_Stock','1qnhjeo','o1tubt2','2026-01-26',-2,0.0772,'I donâ€™t love this. It adds fuel to the fire that this is circular and Nvidia is keeping some of these companies afloat. CRWV is a mess.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -151,4 +153,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-26  2:26:38
+-- Dump completed on 2026-01-27  2:23:09

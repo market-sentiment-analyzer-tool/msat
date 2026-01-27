@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-32,
+063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -33,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
+2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -50,7 +52,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
-5726f838-fa5e-11f0-87d4-ea90dd46c117:1-30,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -129,7 +130,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,7 +139,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qmu67z','o1oqcij','2026-01-25',3,0,'Stfu bot'),(2,'AAPL','1qmu67z','o1q4q9k','2026-01-26',1,-0.1386,'Buying like anyone else should if they can afford it! When the apple drops, it gets the roots down and grows a new green apple tree. But it does not let the other trees wither.'),(3,'AAPL','1qmrj7k','o1oa9oc','2026-01-25',24,0.9601,'The entire premise of â€œcapitulatingâ€ is preposterous. Apple is doing what theyâ€™ve always done brilliantly. Correctly assessing what is worth investing in directly, and when itâ€™s better to outsource. \n\nThey earn $20B per year from google to allow google search to be the pre installed default. Thatâ€™s pure profit with zero cost of goods. \n\nThey are reportedly paying $1B per year to google for a custom version  of Gemini. \n\nTo everyone using an Apple device it will look and feel like Apple tech.  And they get there for a fraction of what it cost To develop. Meanwhile, their billions of users couldnâ€™t care less who technically owns the underlying technology.'),(4,'AAPL','1qmrj7k','o1oagnm','2026-01-25',12,0.9607,'Yeah, Apple going bankrupt ... any day now. Just wait till the end of January. Largest Phone maker in the world. Largest Tablet maker in the world. Largest airpods maker in the worlds. Services going up each quarter. Getting security updates six times per year for 5-6 years straight. Devices working long periods of time, etc. etc ... Sure. Bet against Apple, I dare ya. ;)'),(5,'AAPL','1qmrj7k','o1ofgk2','2026-01-25',3,0,'AI will be commoditized within 18 months and AAPL knows this. The money will be made in how its deployed into the physical world and eventually into the body'),(6,'AAPL','1qmrj7k','o1oby6v','2026-01-25',3,0,'Apple rules All. And AI. Just wait for itâ€¦.'),(7,'AAPL','1qmrj7k','o1omqw0','2026-01-25',1,0.1531,'Apple capitulated on making their maps when they launched the iPhone with Google Maps. Or not: they learned how users used maps and built their own solution when it was clearer what to build and when the heat was lower.Â '),(8,'AAPL','1qmrj7k','o1o1tv1','2026-01-25',-4,0.4391,'Theyâ€™re looking to power the most strongest Siri in iOS27 using Googles software and hardware. Theyâ€™re gutting the AI group in Apple.Â \n\nDepressing to read that both as a fan and stock holder of Apple, we are about to enter the Steve Ballmer era.Â ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -152,4 +152,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-26  2:26:38
+-- Dump completed on 2026-01-27  2:23:08
