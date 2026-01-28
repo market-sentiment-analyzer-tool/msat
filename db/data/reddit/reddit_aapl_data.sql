@@ -21,8 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-32,
-063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -42,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
@@ -79,6 +79,7 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
+bdaf103b-fbee-11f0-a525-0a87acf6cb93:1-148,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -130,7 +131,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,6 +140,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qo1kkk','o1y2arj','2026-01-27',1,0,'View in your timezone:  \n[Thursday January 29 at 4:30PM EST][0]  \n\n[0]: https://timee.io/20260129T2130?tl=%24AAPL%20Hourly%20Chart%20since%20277.84%20high%20Early%20January%202026'),(2,'AAPL','1qo1kkk','o20ylze','2026-01-27',1,0,'any thoughts about the future trading levels?'),(3,'AAPL','1qoo6k6','o2311kp','2026-01-27',4,0,'Sir, this is a Wendy\'s.'),(4,'AAPL','1qoo6k6','o22xwl0','2026-01-27',4,0,'Huh?'),(5,'AAPL','1qoo6k6','o2391br','2026-01-27',2,0,'Reading this just gave me epilepsy'),(6,'AAPL','1qoo6k6','o24te3h','2026-01-28',1,-0.6808,'Meth. Itâ€™s a hell of a drug.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -152,4 +154,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-27  2:23:08
+-- Dump completed on 2026-01-28  2:16:52

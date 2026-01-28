@@ -21,8 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-32,
-063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -42,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '005d4e8b-fb27-11f0-8c8d-4a09e7d6ba86:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
@@ -79,6 +79,7 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
+bdaf103b-fbee-11f0-a525-0a87acf6cb93:1-148,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -130,7 +131,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -139,7 +140,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qnm8yk','o1wu2gk','2026-01-26',7,0,'NVDA to 192!!!'),(2,'NVDA_Stock','1qnm8yk','o1utwo9','2026-01-26',3,0,'waht OS does vera cpu run on? linux  i suppose?'),(3,'NVDA_Stock','1qnm8yk','o1vb7am','2026-01-26',2,0.3382,'Vera for DC\nAnd there is something on client side as well!'),(4,'NVDA_Stock','1qnm8yk','o1w5bl5','2026-01-26',2,0,'Here\'s the interview, about 20 minutes long, CPU discussion is in the first 5 minutes.\n\nhttps://youtu.be/4I7XBgPyRLM?si=Cq4FUU-3XZ7LRZW1'),(5,'NVDA_Stock','1qnm8yk','o1w9vjk','2026-01-26',1,-0.5093,'Since regular customers wonâ€™t be able to afford GPUs anymore. Jensen: â€œletâ€™s sell some CPUs!â€'),(6,'NVDA_Stock','1qnzd84','o1xm1uo','2026-01-27',5,-0.4588,'Goes down instead of'),(7,'NVDA_Stock','1qnhjeo','o1tnqm8','2026-01-26',3,0,'$2 billion investment'),(8,'NVDA_Stock','1qnhjeo','o1v8d3z','2026-01-26',1,-0.4588,'Doubling down it seems'),(9,'NVDA_Stock','1qnhjeo','o1tp3y0','2026-01-26',-3,0.4404,'Bailing out CRWV. NVDA should find better uses for their money'),(10,'NVDA_Stock','1qnhjeo','o1tubt2','2026-01-26',-2,0.0772,'I donâ€™t love this. It adds fuel to the fire that this is circular and Nvidia is keeping some of these companies afloat. CRWV is a mess.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'wallstreetbets','1qol49q','o221pbn','2026-01-27',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 10 | **First Seen In WSB** | 4 years ago\n**Total Comments** | 63 | **Previous Best DD** | \n**Account Age** | 10 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1qol49q','o224ifq','2026-01-27',263,0,'Maybe it dropped the price by 0.00001'),(3,'wallstreetbets','1qol49q','o222mdc','2026-01-27',169,0.2411,'Don\'t forget to pay uncle Sam'),(4,'wallstreetbets','1qol49q','o223emw','2026-01-27',25,0.128,'https://preview.redd.it/04tos8irlxfg1.jpeg?width=1164&format=pjpg&auto=webp&s=a34acbe3fddcd546238cbcbb722f94e06e2d89b3\n\nHow OP feeling right now.'),(5,'wallstreetbets','1qol49q','o222uoo','2026-01-27',16,0.1007,'Lmao. What a flex! ðŸ”¥ðŸ”¥'),(6,'wallstreetbets','1qol49q','o225phn','2026-01-27',24,0.4019,'this is the only post iâ€™ve ever seen from this subreddit of someone doing something smart.'),(7,'wallstreetbets','1qol49q','o226rwf','2026-01-27',43,0.34,'Volume was 125 million just for yesterday and dude thinks selling a few thousand shares moves the price ðŸ¤£'),(8,'wallstreetbets','1qol49q','o221yu4','2026-01-27',11,0,'Ok, Nancy!'),(9,'wallstreetbets','1qol49q','o22lul5','2026-01-27',3,-0.765,'Selling green is illegal here apparently.'),(10,'wallstreetbets','1qol49q','o228pm4','2026-01-27',3,0.4767,'Nice gain bro but why bail ?'),(11,'wallstreetbets','1qol49q','o248wh0','2026-01-27',3,0.6705,'200 by tomorrow, thank goodness you sold.'),(12,'wallstreetbets','1qol49q','o22t5fb','2026-01-27',2,0.25,'Market sell 3650 shares nice work regard'),(13,'wallstreetbets','1qol49q','o231lob','2026-01-27',2,0.7925,'This is regarded, NVIDIA is about to lift off and you sold it :D Anyway, gz with return :)'),(14,'wallstreetbets','1qol49q','o237ksi','2026-01-27',2,0.626,'I cannot imagine doing a market sell of 10 shares, let alone fucking 3,650!!!  Were you studying the tape to make sure you didn\'t get completely fucked?'),(15,'wallstreetbets','1qol49q','o23viot','2026-01-27',2,0,'Everyone!!! OP dropped the market, stone him ðŸª¨'),(16,'wallstreetbets','1qol49q','o22425h','2026-01-27',6,0.5719,'Perfect timing\n\nhttps://preview.redd.it/m2x3zdvamxfg1.jpeg?width=1170&format=pjpg&auto=webp&s=ee92a37f08ea8d138ee61c76fbe3d94fdfc54a1e'),(17,'wallstreetbets','1qol49q','o22jm8o','2026-01-27',3,-0.5106,'You sold using a market order. How dumb are you?'),(18,'wallstreetbets','1qol49q','o227udq','2026-01-27',1,0.3612,'Do you like taxes or something?'),(19,'wallstreetbets','1qol49q','o2295nr','2026-01-27',1,0,'this is just investing \n\n  \nand is geh'),(20,'wallstreetbets','1qol49q','o229q9i','2026-01-27',1,0.296,'86M in volume today. I donâ€™t think 3.6k shares tipped it at all.'),(21,'wallstreetbets','1qol49q','o22d12j','2026-01-27',1,0.5423,'Now buy AMD ðŸš€'),(22,'wallstreetbets','1qol49q','o22gdeb','2026-01-27',1,0.3818,'Nice. Sadly this money glitch doesn\'t work anymore and has been replaced by MU.\n\nHopefully you selling will catapult the stock up 20% now...'),(23,'wallstreetbets','1qol49q','o22ho6w','2026-01-27',1,0.4404,'Good for you. You made some green'),(24,'wallstreetbets','1qol49q','o22i7yc','2026-01-27',1,-0.4588,'Why sell?'),(25,'wallstreetbets','1qol49q','o22t5lx','2026-01-27',1,0.3612,'Well earned congratulations and fuck you.'),(26,'wallstreetbets','1qol49q','o22x2x1','2026-01-27',1,-0.4374,'Good work taking profits. I am certain there are many who never will! But Iâ€™m seeing sell side bofa press release bullshit like â€œNvidia most undervalued stock!â€ And you know the top is at hand.'),(27,'wallstreetbets','1qol49q','o22y1ca','2026-01-27',1,0,'shoulda just sold calls instead to get out'),(28,'wallstreetbets','1qol49q','o231xfs','2026-01-27',1,0.8589,'I sold some, like 100k gain yesterday (tripled). Luckily it\'s from my HSA account, so I don\'t need to pay any tax...'),(29,'wallstreetbets','1qol49q','o232ciu','2026-01-27',1,0,'A (very) long time ago, I did 5% of RedHat volume of the day, after realizing that, I was a little bit chocked lol'),(30,'wallstreetbets','1qol49q','o23eyt4','2026-01-27',1,0,'Not exactly a whale move.'),(31,'wallstreetbets','1qol49q','o23fd9m','2026-01-27',1,0,'Why market and not limit ?'),(32,'wallstreetbets','1qol49q','o23g9lo','2026-01-27',1,0.4588,'I would say you moved the price, since your average fill price is not a multiple of the tick size, which seems to be one cent for NVDA on NASDAQ. A transparent brokerage would give you multiple partial trade confirmations/executions, separately for each price level, though.\n\nHowever, if you\'re using some brokerage \"without trading fees\", the price might simply have the \"fee\" tacked onto it, invalidating the entire paragraph above. :)'),(33,'wallstreetbets','1qol49q','o23l5xa','2026-01-27',1,-0.2846,'Bro I\'ve been holding this shit since 2019, just wish I had more than $1300 to out into it back then.'),(34,'wallstreetbets','1qol49q','o23xtib','2026-01-27',1,0.2732,'Well done OP'),(35,'wallstreetbets','1qol49q','o246aey','2026-01-27',1,0.8977,'enjoy your gains in good health! I am trimming Nvidia recently for gains as well. Hard to stay disciplined'),(36,'wallstreetbets','1qol49q','o246yi5','2026-01-27',1,-0.7326,'Look at it this way OP, you got out in massive green, will there be more green - possibly, will there be red at some point, MOST DEFINITELY. So I say well done.   I wish I had the balls to market sell my yolo stock but I keep selling Covered calls on it instead, each time hoping for it to be called away, its been 3 years now lol, I know im gonna get stung in the ass where it will crater one day.'),(37,'wallstreetbets','1qol49q','o24tuh4','2026-01-28',1,0,'I did the same thing with the S&P 500 the other month.'),(38,'wallstreetbets','1qol49q','o24u78d','2026-01-28',1,0,'Nvda 200 is gonna happen eventuallyÂ '),(39,'wallstreetbets','1qol49q','o225xtz','2026-01-27',1,-0.34,'There is so much volume that your trading is insignificant.'),(40,'wallstreetbets','1qol49q','o227ieq','2026-01-27',1,-0.5661,'Why did you sell? Do you plan on getting back in?'),(41,'wallstreetbets','1qol49q','o22hpnm','2026-01-27',0,0.7606,'Not sure why you â€œhope this time is differentâ€. There are still people that own shares of nvidia, how will it exactly affect you if the share price goes up in the future, which would be beneficial to existing share holders?'),(42,'wallstreetbets','1qol49q','o2256l4','2026-01-27',-7,0,'You sold 600K in NVDA and netted 200k? Are\nYou mental??');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -153,4 +154,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-27  2:23:09
+-- Dump completed on 2026-01-28  2:16:52
