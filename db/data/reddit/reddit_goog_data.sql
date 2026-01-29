@@ -79,7 +79,6 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
-bdaf103b-fbee-11f0-a525-0a87acf6cb93:1-148,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -107,10 +106,12 @@ e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
+efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f8b00427-fcba-11f0-8309-7ac708b2e3e5:1-73,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
 
@@ -131,7 +132,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -140,7 +141,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1qo577e','o1yus2i','2026-01-27',165,0.4019,'I\'m interested in knowing if they are physically co-designing this with Broadcom, Marvell, or someone else.'),(2,'stocks','1qo577e','o1ytz82','2026-01-27',141,-0.0258,'They say itâ€™s an alternate to NVIDA hardware, and then compare itâ€™s performance to Google and amazons. NVIDA still #1'),(3,'stocks','1qo577e','o1z263m','2026-01-27',122,-0.799,'Given MSFTâ€™s publishing complete bullshit â€˜developmentâ€™ in Quantum, I took a simple trip to a search engine to lookâ€¦\n\nItâ€™s nothing to do with the â€˜fantastic designâ€™ of their chip, theyâ€™ve stacked double the HBM on the package, and theyâ€™re likely comparing to an older Googleâ€™s TPU version and not their upcoming v7.\n\nIn fact, the MAIA200 has 140 billion transistors vs Googleâ€™s TPU v4 having 22 billion on 7nm node. So equivalent density at 4nm (their v6 release in 24/25) would be approx 45 billion transistors.\n\nSo 3x the perf is kind of â€˜parâ€™ and not something magical, and the fact itâ€™s only 3x perf in â€˜***some***â€™ tasks is demonstrative of MSFT still lagging, living in 2024â€¦\n\nBasically everything as one would expect from MSFT in hardware; talks a good game and never delivers.\n\nI donâ€™t want to â€˜Stanâ€™ for a company, but MSFT is so full of shit they need a fact checker on every press release.'),(4,'stocks','1qo577e','o1zc0mv','2026-01-27',19,0,'I would take anything Microsoft says with a grain of salt'),(5,'stocks','1qo577e','o1z6rx9','2026-01-27',11,0.3626,'And its 10000x less powerful the nvda\'s rubin .....'),(6,'stocks','1qo577e','o1z850v','2026-01-27',12,0.8622,'From the blog, it says:\n\nâ€œwith three times the FP4 performance of the third generation Amazon Trainium, and FP8 performance above Googleâ€™s seventh generation TPU. Maia 200 is also the most efficient inference system Microsoft has ever deployed, with 30% better performance per dollar than the latest generation hardware in our fleet today.â€\n\nThe 3x performance claim is against tranium. Somebody is trying to hype it up here.'),(7,'stocks','1qo577e','o1yw9y3','2026-01-27',23,0,'Marketing PR'),(8,'stocks','1qo577e','o1z6e1p','2026-01-27',5,0.296,'Yeah, rightâ€¦.'),(9,'stocks','1qo577e','o1z7t5q','2026-01-27',3,0.5423,'Yeah ok. Sure.'),(10,'stocks','1qo577e','o1z3di9','2026-01-27',13,-0.8564,'I\'d be really curious about power draw. If it\'s 3x more powerful but consumes 3x or more energy, I\'m not impressed. TPUs advantage also resides in the lower power consumption. Might not seem like a big deal. But when the power war for energy strikes that\'ll be a huge advantage.'),(11,'stocks','1qo577e','o204s89','2026-01-27',3,-0.3612,'I\'m gonna press X to doubt, lol'),(12,'stocks','1qo577e','o21bx41','2026-01-27',2,0,'Big claim, but the real test will be how it performs at scale and whether customers actually switch from existing chips.'),(13,'stocks','1qo577e','o1zuav4','2026-01-27',3,0.1531,'Yeah, but with how many bugs and hardware flaws?'),(14,'stocks','1qo577e','o1z3glo','2026-01-27',4,0.8071,'after the success of everyone loving copilot and the smooth transition into windows 11 , Iâ€™m certain this chip wonâ€™t not live up to expectations'),(15,'stocks','1qo577e','o1yuach','2026-01-27',2,0,'[deleted]'),(16,'stocks','1qo577e','o1z0boa','2026-01-27',2,0,'Cap, after their choice of renaming office to copilot, I dunno anymore, Satyas days are numbered'),(17,'stocks','1qo577e','o200mqb','2026-01-27',1,0,'Microsoft will be a legacy company in a decade'),(18,'stocks','1qo577e','o204azv','2026-01-27',1,0.4862,'Given a large enough budget itâ€™s not hard to build a chip that is better than another chip in one of the many dimensions. Itâ€™s proven again and again by startups and deep pocketed companies alike. Getting mass adoption is quite another story. Google has been investing in its TPU for a decade with its top tier software and data center talents. Microsoft, doesnâ€™t matter how you slice it, is not catching up to Google anytime soon with its second tier talents. Nvidia is in another league, so no comparison. Sorry if you work for MS, but youâ€™re just not the cream of the crop and you know it.'),(19,'stocks','1qo577e','o20ozjm','2026-01-27',1,0,'Sureeee it is, Microsoft.'),(20,'stocks','1qo577e','o20qvmf','2026-01-27',1,-0.3875,'dont care, they been hot garbage after the xbox360.'),(21,'stocks','1qo577e','o22ic4l','2026-01-27',1,0.9517,'Everyone\'s fixating on the Nvidia comparison but missing the actual play here. These chips are built for inference, not training - and that\'s where the money actually flows. Training is a one-time cost, inference runs 24/7 generating revenue. Custom ASICs crush GPUs on inference price/performance because you can strip out all the flexibility you don\'t need.\n\nThe strategic angle matters more than benchmarks: Microsoft just removed their biggest variable cost from Azure AI. Every Copilot query, every API call to GPT-4 that runs on Maia instead of rented Nvidia silicon goes straight to margin improvement. They\'re not trying to beat Nvidia at training - they\'re trying to own the inference stack where the recurring revenue lives.'),(22,'stocks','1qo577e','o1zwas6','2026-01-27',1,-0.5574,'Puts, maia is a shit name for a chip'),(23,'stocks','1qo577e','o1z576x','2026-01-27',0,0,'Nothing compared to AMDâ€™s chips'),(24,'stocks','1qo577e','o236vp5','2026-01-27',0,0.4588,'ÎŸÎš :)'),(25,'stocks','1qo577e','o1yxhlk','2026-01-27',-2,0,'waht is its nvlink correspondoing part?'),(26,'stocks','1qo577e','o1z99uh','2026-01-27',-3,0.5106,'Bullish');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -154,4 +154,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-28  2:16:52
+-- Dump completed on 2026-01-29  2:35:08

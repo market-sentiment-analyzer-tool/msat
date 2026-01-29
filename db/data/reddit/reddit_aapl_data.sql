@@ -79,7 +79,6 @@ b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
-bdaf103b-fbee-11f0-a525-0a87acf6cb93:1-148,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
@@ -107,10 +106,12 @@ e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
+efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f8b00427-fcba-11f0-8309-7ac708b2e3e5:1-73,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
 
@@ -131,7 +132,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -140,7 +141,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qo1kkk','o1y2arj','2026-01-27',1,0,'View in your timezone:  \n[Thursday January 29 at 4:30PM EST][0]  \n\n[0]: https://timee.io/20260129T2130?tl=%24AAPL%20Hourly%20Chart%20since%20277.84%20high%20Early%20January%202026'),(2,'AAPL','1qo1kkk','o20ylze','2026-01-27',1,0,'any thoughts about the future trading levels?'),(3,'AAPL','1qoo6k6','o2311kp','2026-01-27',4,0,'Sir, this is a Wendy\'s.'),(4,'AAPL','1qoo6k6','o22xwl0','2026-01-27',4,0,'Huh?'),(5,'AAPL','1qoo6k6','o2391br','2026-01-27',2,0,'Reading this just gave me epilepsy'),(6,'AAPL','1qoo6k6','o24te3h','2026-01-28',1,-0.6808,'Meth. Itâ€™s a hell of a drug.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -154,4 +154,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-28  2:16:52
+-- Dump completed on 2026-01-29  2:35:08
