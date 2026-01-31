@@ -45,6 +45,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
+457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -72,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -81,6 +83,7 @@ baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
+bf9e8807-fe4c-11f0-8a2f-06341ae4cdd6:1-129,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -111,7 +114,6 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
-f8b00427-fcba-11f0-8309-7ac708b2e3e5:1-73,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
 
@@ -132,7 +134,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -141,7 +143,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qp12yo','o25me6q','2026-01-28',26,0,' Bye bye Michael Burry'),(2,'NVDA_Stock','1qp12yo','o25m8yt','2026-01-28',16,0.7184,'Jan 28 (Reuters) - China has approved its first batch of Nvidia\'s â€‹H200 artificial intelligence chips for â€Œimport, two people familiar with the matter told â€ŒReuters, marking a shift in position as China seeks to balance its AI needs against spurring domestic â development.\n\nLink: [https://ca.finance.yahoo.com/news/exclusive-china-gives-green-light-034953176.html](https://ca.finance.yahoo.com/news/exclusive-china-gives-green-light-034953176.html)'),(3,'NVDA_Stock','1qp12yo','o25me9u','2026-01-28',18,0,'Rocket time ðŸš€'),(4,'NVDA_Stock','1qp12yo','o25qjmb','2026-01-28',12,0.8316,'Next quarter revenue guidance Nvidia going for $85billion probably lmao'),(5,'NVDA_Stock','1qp12yo','o2674rj','2026-01-28',6,0,'https://i.redd.it/w2ojd21ee1gg1.gif'),(6,'NVDA_Stock','1qp12yo','o282tza','2026-01-28',3,0.8356,'So much for the selfâ€‘reliance narrative. When it comes to powering their AI ambitions, China still canâ€™t do it without U.S. hardware. Huge win for Nvidia. Huge win for USA!'),(7,'NVDA_Stock','1qp12yo','o28tbvf','2026-01-28',3,-0.5719,'Huawei moment avoided: donâ€™t rage-quit the market, then act shocked when the replacement becomes the standard.'),(8,'NVDA_Stock','1qp12yo','o25qzqz','2026-01-28',8,0,'China numbaone'),(9,'NVDA_Stock','1qp12yo','o27756h','2026-01-28',2,0,'CALLS NOW.'),(10,'NVDA_Stock','1qp12yo','o27cf8m','2026-01-28',1,0,'ðŸš€ ðŸš€Â '),(11,'NVDA_Stock','1qp12yo','o2a2qlk','2026-01-28',1,0,'it\'s a rumour at this stage.'),(12,'NVDA_Stock','1qp12yo','o25p58f','2026-01-28',-2,-0.6251,'Blah, blah, fucking BLAH!!!\n\nI\'ll believe it when I see it.'),(13,'NVDA_Stock','1qp3dm1','o26axuk','2026-01-28',8,0.4404,'Buckle up ... it\'s going to be a fast ride till 25th and windy'),(14,'NVDA_Stock','1qp3dm1','o26kkml','2026-01-28',5,0.9274,'Nvidia is valued like this shift is a temporary boost. If they\'re allowed to keep selling H200s to China, it\'s going to materially boost earnings permanently. I remember when China was like 20% if sales. They\'ve been counted at more of less 0% for a while now. Times are good, people.'),(15,'NVDA_Stock','1qp5200','o28zkcs','2026-01-28',6,0.8074,'Assuming Jensenâ€™s claim is true that the Rubin uses only 10% of the power of the Blackwell chip (per token generated?), this could indeed be revolutionary. Data centers hogging power and potentially driving up energy prices is a genuine concern. Would be interested in other sources to substantiate this claim.'),(16,'NVDA_Stock','1qp5200','o28m94a','2026-01-28',3,0.7351,'Surprisingly well researched and concise. Good youtuber hitting all the right points.'),(17,'NVDA_Stock','1qp5200','o2b7bsg','2026-01-28',2,0.5574,'The people that didnâ€™t buy NVDA during this consolidation phase will regret it in 2-5 years if not sooner. The AI technological revolution is just ramping up and NVDA is ground zero.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qr9yrc','o2n5m97','2026-01-30',14,-0.7506,'They tried Huawei\'s chips and couldn\'t make it work. They failed their latest foundation model training runs and this caps their foundational capability. Hence, its imperative they can complete their model training runs or they risk being stuck on R1 since January 2025'),(2,'NVDA_Stock','1qr9yrc','o2mm8kk','2026-01-30',7,0,'Yup, since thatâ€™s what they used to make DeepSeek!'),(3,'NVDA_Stock','1qr9yrc','o2n42ij','2026-01-30',5,0.8655,'why is this lol?   The best is the best!'),(4,'NVDA_Stock','1qr9yrc','o2odyr5','2026-01-30',5,0,'everyone needs our chips!'),(5,'NVDA_Stock','1qr9yrc','o2p5b39','2026-01-30',3,-0.4019,'Cost of smuggling them in was more than buying them legally.'),(6,'NVDA_Stock','1qr9yrc','o2mqhmf','2026-01-30',1,-0.4588,'How much is Jensen selling NVDA for? Maybe if they offer 10 trillion...'),(7,'NVDA_Stock','1qr9yrc','o2pucah','2026-01-31',1,0.9201,'That â€œdeepseek is better than NVIDIA fudâ€ was the best thing ever to happen to my portfolio. So you put some respect on its name ðŸ˜‚'),(8,'NVDA_Stock','1qr9yrc','o2n45c9','2026-01-30',-5,0,'Donâ€™t believe everything in the media.'),(9,'NVDA_Stock','1qreswa','o2not4k','2026-01-30',8,-0.2006,'Uhm, itâ€™s the fastest company in history to achieve 13 billion in revenue. I think they will be just fine.\n\nThat being said, I absolutely hate OpenAI, Altman cock, and their AI etc. So Iâ€™m absolutely objective in my remarks.'),(10,'NVDA_Stock','1qreswa','o2nuyca','2026-01-30',6,0.128,'Hmm.    I wish NVidia would stop the entanglements with OpenAI.    I wonder if I should pair my NVidia position.'),(11,'NVDA_Stock','1qreswa','o2pib2g','2026-01-31',1,0,'Not.'),(12,'NVDA_Stock','1qreswa','o2q0qia','2026-01-31',1,0,'Proof link for the rumor about 30b?'),(13,'NVDA_Stock','1qreswa','o2oxkm5','2026-01-30',-2,0.6705,'Circular financing. They were going to run out of money by mid 2027. This just keeps the Nvidia gravy chain going longer. \n\nMicrosoft and oracle have slowly been losing the value gained by the AI hype. Nvidia of course will be the last one standing. Theyâ€™re the only real winners here so far.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -155,4 +157,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-29  2:35:08
+-- Dump completed on 2026-01-31  2:35:51
