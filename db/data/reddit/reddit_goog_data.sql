@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+6d57e68e-ff19-11f0-9a0a-0290eb9dcffe:1-47,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
@@ -82,8 +83,8 @@ b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
+bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
-bf9e8807-fe4c-11f0-8a2f-06341ae4cdd6:1-129,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -134,7 +135,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,7 +144,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1qrb233','o2mv3se','2026-01-30',51,0.4404,'You\'d think google would go up then -\\_-\n\n\\*pokes with stick'),(2,'ValueInvesting','1qrb233','o2mzhyw','2026-01-30',33,0.8211,'The market is overreacting to a demo that doesn\'t threaten these companies in the way traders think it does. Google\'s AI game creation tool is impressive as a toy, but building an actual engaging game requires design expertise, narrative coherence, gameplay balance, and iterative testing that AI can\'t replace yet. What AI will do is make game development faster and cheaper, which actually benefits Unity and Take-Two (maybe the next GTA won\'t take another decade lol), it doesn\'t eliminate the need for professional game studios.\n\nRoblox is the most insulated here because their moat isn\'t game creation technology, it\'s the network effect of millions of users and creators already on the platform.'),(3,'ValueInvesting','1qrb233','o2n0jth','2026-01-30',19,-0.1027,'Can someone vibe code me GTA6, Iâ€™m willing to pay $2 billion dollars'),(4,'ValueInvesting','1qrb233','o2nk5zw','2026-01-30',7,0.4939,'I personally bought more Unity. I don\'t believe that you can create well working MMO with this'),(5,'ValueInvesting','1qrb233','o2oz88g','2026-01-30',3,0.3818,'Wow, these sellers have no clue about gaming at all. I bought the dip'),(6,'ValueInvesting','1qrb233','o2p7ayt','2026-01-30',3,0.7003,'woh RBLX is finally nearing a good valuation again, thanks op'),(7,'ValueInvesting','1qrb233','o2oy2ae','2026-01-30',2,0.7717,'Microsoft has a better edge on gaming than Google, if Microsoft comes up something similar to challenge those game studios, the drop could be justified, Google does not have a gaming gene in its product line.'),(8,'ValueInvesting','1qrb233','o2pembq','2026-01-31',2,0.7371,'I\'ve been watching the fall of Roblox, holding a very small position which is down around 40% after my son and all the kids from his school seem fairly hooked on their games.  My son asked if he could add it so I said why not you never know despite it seeming overvalued atm i started the position.  When we travel it seems to be attracting huge amounts of kids world wide to the platform.  Been trying to decide at what price I will add to the position.  Feels like it is getting closer to that point. '),(9,'ValueInvesting','1qrb233','o2mui28','2026-01-30',2,0.9467,'I think video games are kind of a tough pick. Not unreasonable to buy, but a bit unpredictable for me. I think AI is definitely in the future. Some games like Mini Football created by miniclip uses AI. \nIf you use ChatGPT or Gemini or anything else like that, you can see how they would go hand-in-hand with a game. Most likely these companies that you selected will definitely be using AI in the future if they donâ€™t already do so. Iâ€™m going to put those on my watch list and have a look at them in the next few weeks. Iâ€™m glad you posted this. Thanks.'),(10,'ValueInvesting','1qrb233','o2nvkr8','2026-01-30',1,0.5423,'They should just buy Unity'),(11,'ValueInvesting','1qrb233','o2osvtj','2026-01-30',1,0.6808,'Lmao currently no game developer wants the word AI to show up in their news'),(12,'ValueInvesting','1qrb233','o2mw98d','2026-01-30',-13,0.3612,'Saying you dont see AI promps replacing video games developers is like  in 2005 saying that you dont see YouTube replacing tv');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -157,4 +157,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-01-31  2:35:51
+-- Dump completed on 2026-02-01  2:56:15
