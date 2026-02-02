@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
@@ -135,7 +136,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,7 +145,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (john ballard)','The agentic AI market is projected to increase nearly 10 times by 2030.\nArtificial intelligence (AI) adoption is poised to continue in 2026 as more companies move from experimentation to deployment.\nO...','2026-01-31',0.1998,'2 AI Stocks Building the \"Picks and Shovels\" of the Agentic Revolution','https://www.fool.com/investing/2026/01/31/2-ai-stocks-picks-shovels-agentic-revolution/',4),(2,'sushree mohanty','...','2026-01-30',0.56768,'This AI Chip Stock Could Power the Next Decade. Is It a Buy Ahead of Its Next Earnings Report?','https://www.barchart.com/story/news/37326449/this-ai-chip-stock-could-power-the-next-decade-is-it-a-buy-ahead-of-its-next-earnings-report',2),(3,'russel kinnel','...','2026-01-30',0,'3-Winners-3-Losers-Emerging-Market-Funds-Big-Rally-2','https://www.morningstar.com/funds/3-winners-3-losers-emerging-market-funds-big-rally-2',2),(4,'newsfeedback@fool.com (david jagielski, cpa)','Artificial intelligence (AI) no longer looks like a big risk for Alphabet, but instead a massive opportunity.\nThe share price of Alphabet (GOOG 0.02%)(GOOGL 0.05%) has been on fire over the past year,...','2026-01-30',0.63356,'Should You Buy Alphabet Stock Now or Wait for a Dip?','https://www.fool.com/investing/2026/01/30/buy-alphabet-stock-now-or-wait-for-dip-goog/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Jan 30th, 2026\n\nAtlas Legacy Advisors LLC lifted its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 51.7% during the third quarter, according to the c...','2026-01-30',0.1999,'Atlas Legacy Advisors LLC Increases Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/01/30/atlas-legacy-advisors-llc-increases-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (manali pradhan, cfa)','Both of these stocks look like exceptional AI-powered picks in 2026.\nThe artificial intelligence (AI) wave has triggered an all-out race for leadership among technology giants. Both Alphabet (GOOG 0.0...','2026-02-01',0.69932,'Alphabet vs. Amazon: Which One Will Make You Richer?','https://www.fool.com/investing/2026/02/01/alphabet-vs-amazon-which-one-will-make-you-richer/',4),(2,'wall street breakfast','...','2026-02-01',0,'Wall Street Week Ahead','https://seekingalpha.com/article/4864769-wall-street-week-ahead',4),(3,'newsfeedback@fool.com (keith speights)','The conglomerate is still the ultimate sleep-well-at-night stock.\nHas Berkshire Hathaway (BRK.A +1.19%) (BRK.B +0.78%) lost its luster now that Warren Buffett has stepped down as CEO? Some might think...','2026-02-01',0.85776,'1 Reason Now is a Great Time to Buy Berkshire Hathaway [BRK.B] Stock','https://www.fool.com/investing/2026/02/01/1-reason-now-is-a-great-time-to-buy-berkshire-hath/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 1st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report) major shareholder 2017 Gp L.L.C. Gv sold 1,845,308 shares of the companyâ€™s stock in a transaction on...','2026-02-01',0.43658,'2017 Gp L.L.C. Gv Sells 1,845,308 Shares of Alphabet (NASDAQ:GOOG) Stock','https://www.defenseworld.net/2026/02/01/2017-gp-l-l-c-gv-sells-1845308-shares-of-alphabet-nasdaqgoog-stock.html',4),(5,'newsfeedback@fool.com (adam spatacco)','Rising adoption of generative AI models from OpenAI and Anthropic directly affects the major cloud computing platforms.\nOver the last three years, OpenAI and Anthropic have evolved from speculative ar...','2026-02-01',0.7939,'OpenAI and Anthropic Now Rival Public Software Giants for Revenue. That Makes These 3 Stocks Strong Buys for 2026.','https://www.fool.com/investing/2026/01/31/openai-and-anthropic-revenues-now-rival-public-sof/',4),(6,'newsfeedback@fool.com (geoffrey seiler)','Alphabet is a favorite among a few hedge fund billionaires.\nOne artificial intelligence (AI) stock that has gained the interest of a lot of institutional investors lately is Alphabet (GOOGL 0.05%) (GO...','2026-01-31',0.7671,'Why This Artificial Intelligence (AI) Stock Is Gaining Attention From Institutional Investors','https://www.fool.com/investing/2026/01/31/artificial-intelligence-ai-stock-institutional/',4),(7,'newsfeedback@fool.com (john ballard)','The agentic AI market is projected to increase nearly 10 times by 2030.\nArtificial intelligence (AI) adoption is poised to continue in 2026 as more companies move from experimentation to deployment.\nO...','2026-01-31',0.1998,'2 AI Stocks Building the \"Picks and Shovels\" of the Agentic Revolution','https://www.fool.com/investing/2026/01/31/2-ai-stocks-picks-shovels-agentic-revolution/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -158,4 +159,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-01  3:43:58
+-- Dump completed on 2026-02-02  3:35:18
