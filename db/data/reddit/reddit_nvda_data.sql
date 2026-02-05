@@ -38,10 +38,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
-2aac39fd-0172-11f1-b065-ae7b38e946c4:1-150,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a351ae8c-023b-11f1-bd2d-0a9c5e5a5815:1-169,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -138,7 +139,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -147,7 +148,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'TradingEdge','1quojex','o3bnflo','2026-02-03',1,-0.7096,'But why is nvdia not following tsm i heard some mm shit happening'),(2,'TradingEdge','1quojex','o3bji7t','2026-02-03',-2,0.5661,'If you like my content and want to receive my full daily analysis across stocks, commodities, fx and the overall market, just a heads up to you that I do have a 15% off coupon running, but it\'s is almost gone. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1qvtrx3','o3kaqi1','2026-02-04',14,-0.2732,'They will hit it and the stock will drop'),(2,'NVDA_Stock','1qvtrx3','o3lbkd4','2026-02-04',5,0.5423,'Per Yahoo finance, the average analyst revenue estimate for 2026 is $324B. So most people think it\'ll be substantially higher than $250B.\n\nI think they\'ll do more than that, closer to $350B+. I think people are underestimating the demand and Vera Rubin will sell like hotcakes. Also, China likely to contribute to revs in 2026. At ~55% net margin, that equates to like a 24ish fwd PE, which is very cheap for a Mag7.\n\nSo I\'ve been buying this dip.'),(3,'NVDA_Stock','1qvtrx3','o3k57hz','2026-02-04',3,0.6124,'Yes, they absolutely can and it\'s going to increase even higher.  GB300 production and sales will be off the scale and Rubin is starting to hit production now.  The company is cheaper than ever.'),(4,'NVDA_Stock','1qvtrx3','o3kexsj','2026-02-04',8,-0.6557,'Its $500billion in orders claimed by both CEO and CFO in multiple public interviews. So even a bearish scenario where orders are rescinded, it should still be $250-300billion.\n\nAnd in the BAU case, it should be $400+ to $500billion.Â '),(5,'NVDA_Stock','1qvtrx3','o3llsbg','2026-02-04',3,0.849,'Pretty good, almost as good as the chances of people driving the stock down to $100 or so because reasons. You can take that as a buying opportunity or you can join the herd selling off if/when it comes. I\'m holding.'),(6,'NVDA_Stock','1qvtrx3','o3m1ap1','2026-02-04',3,-0.0258,'If NVDA\'s revenue next year is \"only\" 250B... it\'s going to be a much worse year than I expected. \n\nI would say closer to 350B... give or take. '),(7,'NVDA_Stock','1qvtrx3','o3kk3uh','2026-02-04',3,0,'Quite high if china goes through'),(8,'NVDA_Stock','1qvtrx3','o3k7pf9','2026-02-04',2,0,'They will do 350-400'),(9,'NVDA_Stock','1qvtrx3','o3mineb','2026-02-04',2,0.1238,'Nvidiaâ€™s revenue throughput is based entirely on TSMC capacity bottleneck and memory. TSMC is aggressively expanding capacity. Though Iâ€™m not sure how much more they can squeeze out in the short term, Iâ€™d bet on their execution. \n\nIf TSMC can make chips for $1T worth of GPU revenue, theyâ€™d book close to that. Googleâ€™s projected CapEx alone for 2026 is $150-180B. It wouldnâ€™t surprise me at all if Nvidia landed above $500B next year. Through all of the markets whining about AI circular financing and bubbles, Mag7 is continuing to accelerate, and I havenâ€™t even touched sovereign buildouts yet. Iâ€™m not 100% certain, but Iâ€™d imagine government rollouts cannot risk depending on rental/commercial capacity. We are still way early in the picks and shovel phase.'),(10,'NVDA_Stock','1qvtrx3','o3kgno6','2026-02-04',2,0.1926,'Have you actually done the maths, look at fundamentals and considered how is it possible that nvidia can grow over 50% YOY? I mean seriously, who has the money, like actual cash on their balance sheet to pay for this stuff? Everyone is just putting orders in for infrastructure that doesn\'t even exist.'),(11,'NVDA_Stock','1qvtrx3','o3k7s09','2026-02-04',0,0,'0'),(12,'TradingEdge','1qvlut2','o3j40pz','2026-02-04',3,0.7906,'Read this on your site this morning. Great write up btw.'),(13,'TradingEdge','1qvlut2','o3iff08','2026-02-04',-16,0.5661,'If you like my content and want to receive my full daily analysis across stocks, commodities, fx and the overall market, just a heads up to you that I do have a 15% off coupon running, but it\'s is almost gone. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -161,4 +162,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-04  2:37:14
+-- Dump completed on 2026-02-05  2:39:39

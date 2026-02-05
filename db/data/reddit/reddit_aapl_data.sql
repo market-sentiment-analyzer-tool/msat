@@ -38,10 +38,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
-2aac39fd-0172-11f1-b065-ae7b38e946c4:1-150,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a351ae8c-023b-11f1-bd2d-0a9c5e5a5815:1-169,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -138,7 +139,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -147,7 +148,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qv103i','o3fcvjq','2026-02-03',2,0.3612,'After hours is not showing anything, market workers were price stop hunting 270 all day. They are buying shares before dividend pays. 300 end of Feb.'),(2,'AAPL','1qv103i','o3fd10t','2026-02-03',2,-0.7184,'... did you post this a day late? Apple closed down 0.2%, and after hours has gone down 0.008%.'),(3,'AAPL','1quwrty','o3diz4c','2026-02-03',4,-0.7783,'no one has any idea. all these posts are based on pretend. \n\n\"it\'s going to go up\" \n\n\"it\'s going to go down\" \n\nno one knows. \n\nthe only thing you *can* know, possibly, maybe, are longer term theses based on understanding the company and the world around it.'),(4,'AAPL','1quwrty','o3eg483','2026-02-03',1,-0.5106,'Dipping back into the $250s this month...  rest of the Mag 7 dipping and rejecting will take its toll on AAPL.'),(5,'AAPL','1quwrty','o3dwfa1','2026-02-03',1,0.8225,'Great time to buy based on whatâ€™s in store. https://techcrunch.com/2026/02/03/agentic-coding-comes-to-apples-xcode-26-3-with-agents-from-anthropic-and-openai/');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qw3va8','o3m9hhg','2026-02-04',3,0,'Long.'),(2,'AAPL','1qw3va8','o3m9we7','2026-02-04',3,-0.8105,'Damn. Really?  Space connectivity that completely excludes Elon Musk?  This is the killer app Iâ€™ve been waiting for.'),(3,'AAPL','1qw3va8','o3mss7o','2026-02-05',1,0,'Long af'),(4,'AAPL','1qvycey','o3laz1h','2026-02-04',2,0.4404,'ðŸ‘ðŸ»'),(5,'AAPL','1qvycey','o3m0sp1','2026-02-04',2,-0.555,'\"Apple is down again because it\'s being left behind in the AI race!\"\n\n\"Apple is climbing fast because it\'s not in the AI race!\"\n\nWho\'d be an investor eh?'),(6,'AAPL','1qvycey','o3mdu8a','2026-02-04',1,0.6174,'what does this chart mean? and what is this 9-13 thing? I should buy tomorrow?');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -161,4 +162,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-04  2:37:14
+-- Dump completed on 2026-02-05  2:39:39
