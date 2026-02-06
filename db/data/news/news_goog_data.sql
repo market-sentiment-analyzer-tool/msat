@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -139,7 +140,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,7 +149,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-02-04',0.30544,'Dear Google Stock Fans, Mark Your Calendars for February 4','https://www.barchart.com/story/news/22461/dear-google-stock-fans-mark-your-calendars-for-february-4',20),(2,'marketpulse by oanda group','...','2026-02-04',0.272,'Alphabet Q4 Earnings Preview: Can AI And Cloud Momentum Sustain The $4 Trillion Valuation?','https://seekingalpha.com/article/4865533-alphabet-q4-earnings-preview-can-ai-cloud-momentum-sustain-4-trillion-valuation',4),(3,'nauman khan','...','2026-02-04',0.57472,'General Motors Just Raised Its Dividend 20%. Does That Make GM Stock a Buy?','https://www.barchart.com/story/news/7262/general-motors-just-raised-its-dividend-20-does-that-make-gm-stock-a-buy',2),(4,'sneha nahata','...','2026-02-03',0.272,'Can Amazonâ€™s Q4 Earnings Report Push AMZN Stock Higher?','https://www.barchart.com/story/news/2360/can-amazons-q4-earnings-report-push-amzn-stock-higher',2),(5,'aditya raghunath','...','2026-02-03',0.43384,'After the Google Genie 3 Selloff, Should You Buy the Dip in Unity Software Stock?','https://www.barchart.com/story/news/37387068/after-the-google-genie-3-selloff-should-you-buy-the-dip-in-unity-software-stock',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-02-05',0.08216,'Earnings live: Qualcomm stock dives as memory chip shortage weighs on outlook, Alphabet slides, Peloton falls','https://ca.finance.yahoo.com/news/earnings-live-qualcomm-stock-dives-as-memory-chip-shortage-weighs-on-outlook-alphabet-slides-peloton-falls-133307862.html',2),(2,'the goodhaven fund','...','2026-02-05',0,'The GoodHaven Fund 2025 Annual Letter To Shareholders','https://seekingalpha.com/article/4866182-the-goodhaven-fund-2025-annual-letter-to-shareholders',4),(3,'kenio fontes','...','2026-02-04',0,'Alphabet: Q4 Reinforces A Generational Compounding Story','https://seekingalpha.com/article/4866087-alphabet-q4-reinforces-a-generational-compounding-story',4),(4,'sristi suman jayaswal','...','2026-02-04',0.30544,'Dear Google Stock Fans, Mark Your Calendars for February 4','https://www.barchart.com/story/news/22461/dear-google-stock-fans-mark-your-calendars-for-february-4',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -162,4 +163,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-05  3:27:21
+-- Dump completed on 2026-02-06  3:27:06
