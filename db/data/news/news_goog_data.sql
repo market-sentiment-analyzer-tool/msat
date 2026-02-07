@@ -57,6 +57,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
+5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -140,7 +141,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +150,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-02-05',0.08216,'Earnings live: Qualcomm stock dives as memory chip shortage weighs on outlook, Alphabet slides, Peloton falls','https://ca.finance.yahoo.com/news/earnings-live-qualcomm-stock-dives-as-memory-chip-shortage-weighs-on-outlook-alphabet-slides-peloton-falls-133307862.html',2),(2,'the goodhaven fund','...','2026-02-05',0,'The GoodHaven Fund 2025 Annual Letter To Shareholders','https://seekingalpha.com/article/4866182-the-goodhaven-fund-2025-annual-letter-to-shareholders',4),(3,'kenio fontes','...','2026-02-04',0,'Alphabet: Q4 Reinforces A Generational Compounding Story','https://seekingalpha.com/article/4866087-alphabet-q4-reinforces-a-generational-compounding-story',4),(4,'sristi suman jayaswal','...','2026-02-04',0.30544,'Dear Google Stock Fans, Mark Your Calendars for February 4','https://www.barchart.com/story/news/22461/dear-google-stock-fans-mark-your-calendars-for-february-4',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-02-06',0.48992,'Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance','https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html',20),(2,'newsfeedback@fool.com (chris neiger)','Taiwan Semiconductor and Alphabet look like no-brainer buys right now.\nAmong all the great stocks out there to invest in, there are two tech companies today that I think stand above the rest: Taiwan S...','2026-02-06',0.91782,'The Smartest Growth Stocks to Buy With $500 Right Now','https://www.fool.com/investing/2026/02/06/the-smartest-growth-stocks-to-buy-with-500-right/',4),(3,'newsfeedback@fool.com (jeremy bowman)','Alphabet is doubling its capex spend to $175 billion-$185 billion this year.\nAlphabet (GOOG 2.42%) (GOOGL 2.53%) delivered solid results across the board in its fourth-quarter earnings report on Wedne...','2026-02-06',0.69918,'Alphabet Just Delivered Great News for Nvidia Stock Investors','https://www.fool.com/investing/2026/02/05/alphabet-just-delivered-great-news-for-nvidia-stoc/',4),(4,'hannah pedone','Please enable JS and disable any ad blocker...','2026-02-05',0.33564,'Why Microsoftâ€™s stock just lost a big fan in the wake of Alphabetâ€™s earnings','https://www.marketwatch.com/story/why-microsofts-stock-just-lost-a-big-fan-in-the-wake-of-alphabets-earnings-8e744c93?mod=mw_rss_topstories',4),(5,'wajeeh khan','...','2026-02-05',0.43384,'As Alphabet Plunges Below Its 50-Day MA, Should You Buy the Dip in GOOGL Stock?','https://www.barchart.com/story/news/54329/as-alphabet-plunges-below-its-50-day-ma-should-you-buy-the-dip-in-googl-stock',20),(6,'newsfeedback@fool.com (catie hogan)','NextEra Energy has a dual-business model that puts it in a great position for growth.\nNvidia (NVDA +8.01%) and other artificial intelligence (AI) companies dominated headlines with their meteoric stoc...','2026-02-05',0.4888,'Forget Tech Stocks: The Utility Play That Could Outperform Nvidia','https://www.fool.com/investing/2026/02/05/forget-tech-stocks-the-utility-play-that-could-out/',4),(7,'elizabeth h. volk','...','2026-02-05',0,'Is This the End of the Road for Google Stock? Plus, QQQâ€™s 100-Day Moving Average Break','https://www.barchart.com/story/news/54091/is-this-the-end-of-the-road-for-google-stock-plus-qqqs-100-day-moving-average-break',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -163,4 +164,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-06  3:27:06
+-- Dump completed on 2026-02-07  3:16:58
