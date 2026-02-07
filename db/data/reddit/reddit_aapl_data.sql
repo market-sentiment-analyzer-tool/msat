@@ -54,6 +54,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+55e857a7-03cd-11f1-bb8c-6afa8ce3b3f2:1-198,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
@@ -71,12 +72,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
+766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-a351ae8c-023b-11f1-bd2d-0a9c5e5a5815:1-169,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -139,7 +141,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,7 +150,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qw3va8','o3m9hhg','2026-02-04',3,0,'Long.'),(2,'AAPL','1qw3va8','o3m9we7','2026-02-04',3,-0.8105,'Damn. Really?  Space connectivity that completely excludes Elon Musk?  This is the killer app Iâ€™ve been waiting for.'),(3,'AAPL','1qw3va8','o3mss7o','2026-02-05',1,0,'Long af'),(4,'AAPL','1qvycey','o3laz1h','2026-02-04',2,0.4404,'ðŸ‘ðŸ»'),(5,'AAPL','1qvycey','o3m0sp1','2026-02-04',2,-0.555,'\"Apple is down again because it\'s being left behind in the AI race!\"\n\n\"Apple is climbing fast because it\'s not in the AI race!\"\n\nWho\'d be an investor eh?'),(6,'AAPL','1qvycey','o3mdu8a','2026-02-04',1,0.6174,'what does this chart mean? and what is this 9-13 thing? I should buy tomorrow?');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qxjcwc','o3xr890','2026-02-06',10,0.6249,'Great job genius you jinxed it'),(2,'AAPL','1qxjcwc','o3y55ef','2026-02-06',1,0,'Might not even finish green'),(3,'AAPL','1qxjcwc','o3zja4c','2026-02-06',1,0,'One day soon.'),(4,'AAPL','1qxjcwc','o3wrvh2','2026-02-06',1,0.0572,'It will not. Sorry. \n\nApril 18 th'),(5,'AAPL','1qxnqbn','o3xni3q','2026-02-06',3,0.5126,'Title refers to halving the share count via buybacks, not share price.'),(6,'AAPL','1qxnqbn','o3xr8nq','2026-02-06',1,0.886,'Curious, other than novelty, what is the significance of reaching a 50% reduction in outstanding share count?'),(7,'AAPL','1qxnqbn','o3y6aiy','2026-02-06',1,0.6652,'No real reason Iâ€™m sure. Prob just a number that they throw out to make it easier to calculate the effect. Also that number is arbitrary.  They donâ€™t HAVE to buy up that much. They say that is the plan but it is never set in stone.'),(8,'AAPL','1qxr8pe','o3yzz79','2026-02-06',1,0.6908,'Nice ðŸ‘');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -162,4 +164,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-05  2:39:39
+-- Dump completed on 2026-02-07  2:39:30
