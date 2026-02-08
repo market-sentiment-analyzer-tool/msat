@@ -54,10 +54,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
-55e857a7-03cd-11f1-bb8c-6afa8ce3b3f2:1-198,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
+5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a440b50-049c-11f1-aad6-be2700b4e4b8:1-164,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -141,7 +142,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,7 +151,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1qxjcwc','o3xr890','2026-02-06',10,0.6249,'Great job genius you jinxed it'),(2,'AAPL','1qxjcwc','o3y55ef','2026-02-06',1,0,'Might not even finish green'),(3,'AAPL','1qxjcwc','o3zja4c','2026-02-06',1,0,'One day soon.'),(4,'AAPL','1qxjcwc','o3wrvh2','2026-02-06',1,0.0572,'It will not. Sorry. \n\nApril 18 th'),(5,'AAPL','1qxnqbn','o3xni3q','2026-02-06',3,0.5126,'Title refers to halving the share count via buybacks, not share price.'),(6,'AAPL','1qxnqbn','o3xr8nq','2026-02-06',1,0.886,'Curious, other than novelty, what is the significance of reaching a 50% reduction in outstanding share count?'),(7,'AAPL','1qxnqbn','o3y6aiy','2026-02-06',1,0.6652,'No real reason Iâ€™m sure. Prob just a number that they throw out to make it easier to calculate the effect. Also that number is arbitrary.  They donâ€™t HAVE to buy up that much. They say that is the plan but it is never set in stone.'),(8,'AAPL','1qxr8pe','o3yzz79','2026-02-06',1,0.6908,'Nice ðŸ‘');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -164,4 +164,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-07  2:39:30
+-- Dump completed on 2026-02-08  3:18:42
