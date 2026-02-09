@@ -77,6 +77,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -142,7 +143,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +152,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jr research','...','2026-02-07',-0.56768,'Alphabet Is Back, But Elevated AI CapEx Risks Are Also Worrying','https://seekingalpha.com/article/4867442-alphabet-is-back-elevated-ai-capex-risks-also-worrying',4),(2,'newsfeedback@fool.com (danny vena, cpa)','The cloud landscape has always been dynamic, but current shifts are tightening the race.\nInvestors were watching closely when Amazon (AMZN 5.55%) released its latest financial report after the market ...','2026-02-06',0.71872,'Alphabet Investors Just Got Fantastic News From Amazon CEO Andy Jassy','https://www.fool.com/investing/2026/02/06/alphabet-investors-just-got-fantastic-news-from-am/',4),(3,'newsfeedback@fool.com (billy duberstein)','Gaming-related stocks were punished on AI disruption fears.\nShares of mobile game advertising engine Applovin (APP +8.39%) plunged this week, falling 14.9% this week through Friday as of 3:15 p.m. EDT...','2026-02-06',0.18786,'Why Applovin Fell Double-Digits This Week','https://www.fool.com/investing/2026/02/06/why-applovin-fell-double-digits-this-week/',4),(4,'wall street breakfast','...','2026-02-06',-0.21856,'Wall Street Roundup: Risk Off','https://seekingalpha.com/article/4867265-wall-street-roundup-risk-off-concerns',4),(5,'jabran kundi','...','2026-02-06',-0.2,'A $680 Billion Headwind Faces These 4 Tech Stocks. Should You Sell Them Now?','https://www.barchart.com/story/news/76226/a-680-billion-headwind-faces-these-4-tech-stocks-should-you-sell-them-now',2),(6,'yahoo finance','...','2026-02-06',0.48992,'Earnings live: Amazon stock sinks, Philip Morris retreats, Reddit spikes as Wall Street focuses on guidance','https://finance.yahoo.com/news/live/earnings-live-amazon-stock-sinks-philip-morris-retreats-reddit-spikes-as-wall-street-focuses-on-guidance-140858850.html',20),(7,'newsfeedback@fool.com (chris neiger)','Taiwan Semiconductor and Alphabet look like no-brainer buys right now.\nAmong all the great stocks out there to invest in, there are two tech companies today that I think stand above the rest: Taiwan S...','2026-02-06',0.91782,'The Smartest Growth Stocks to Buy With $500 Right Now','https://www.fool.com/investing/2026/02/06/the-smartest-growth-stocks-to-buy-with-500-right/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jr research','...','2026-02-07',-0.56768,'Alphabet Is Back, But Elevated AI CapEx Risks Are Also Worrying','https://seekingalpha.com/article/4867442-alphabet-is-back-elevated-ai-capex-risks-also-worrying',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -165,4 +166,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-08  3:49:40
+-- Dump completed on 2026-02-09  3:37:34
