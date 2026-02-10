@@ -107,6 +107,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
@@ -143,7 +144,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +153,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jr research','...','2026-02-07',-0.56768,'Alphabet Is Back, But Elevated AI CapEx Risks Are Also Worrying','https://seekingalpha.com/article/4867442-alphabet-is-back-elevated-ai-capex-risks-also-worrying',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The smartest investors pay attention to the major trends shaping the economy and markets.\nOne of the biggest themes in the stock market over the past decade has been the monster growth of the technolo...','2026-02-09',0.78708,'Got $5,000? 2 Tech Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2026/02/09/5000-2-tech-stocks-buy-and-hold-for-the-long-term/',4),(2,'pathikrit bose','...','2026-02-09',-0.02064,'Stop Worrying About the Software Armageddon and Buy These 5 Stocks Now','https://www.barchart.com/story/news/104160/stop-worrying-about-the-software-armageddon-and-buy-these-5-stocks-now',2),(3,'newsfeedback@fool.com (keithen drury)','Both companies are delivering impressive results.\nIn a battle of artificial intelligence (AI) hyperscalers, Alphabet (GOOG +0.45%) (GOOGL +0.45%) and Microsoft (MSFT +3.11%) are often brought up as tw...','2026-02-09',0.86156,'Best AI Stock to Buy Right Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/02/09/best-ai-stock-to-buy-right-now-alphabet-vs-microso/',4),(4,'newsfeedback@fool.com (keithen drury)','AI will produce a wide variety of winning stocks.\nArtificial intelligence (AI) is still the leading market theme. There has seldom been a greater investment opportunity than what AI presents, and many...','2026-02-09',0.6337,'The Ultimate AI Stocks to Buy With $10,000 Right Now','https://www.fool.com/investing/2026/02/09/the-ultimate-ai-stocks-to-buy-with-10000-right-now/',4),(5,'motley fool','...','2026-02-08',0.71472,'Google Cloud Revenue Just Surged 48%. Is Alphabet the Best AI Stock to Buy Now?','https://finance.yahoo.com/news/google-cloud-revenue-just-surged-185300737.html',200);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -166,4 +167,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-09  3:37:34
+-- Dump completed on 2026-02-10  3:45:55
