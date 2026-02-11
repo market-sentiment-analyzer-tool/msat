@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -144,7 +145,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -153,7 +154,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The smartest investors pay attention to the major trends shaping the economy and markets.\nOne of the biggest themes in the stock market over the past decade has been the monster growth of the technolo...','2026-02-09',0.78708,'Got $5,000? 2 Tech Stocks to Buy and Hold for the Long Term','https://www.fool.com/investing/2026/02/09/5000-2-tech-stocks-buy-and-hold-for-the-long-term/',4),(2,'pathikrit bose','...','2026-02-09',-0.02064,'Stop Worrying About the Software Armageddon and Buy These 5 Stocks Now','https://www.barchart.com/story/news/104160/stop-worrying-about-the-software-armageddon-and-buy-these-5-stocks-now',2),(3,'newsfeedback@fool.com (keithen drury)','Both companies are delivering impressive results.\nIn a battle of artificial intelligence (AI) hyperscalers, Alphabet (GOOG +0.45%) (GOOGL +0.45%) and Microsoft (MSFT +3.11%) are often brought up as tw...','2026-02-09',0.86156,'Best AI Stock to Buy Right Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/02/09/best-ai-stock-to-buy-right-now-alphabet-vs-microso/',4),(4,'newsfeedback@fool.com (keithen drury)','AI will produce a wide variety of winning stocks.\nArtificial intelligence (AI) is still the leading market theme. There has seldom been a greater investment opportunity than what AI presents, and many...','2026-02-09',0.6337,'The Ultimate AI Stocks to Buy With $10,000 Right Now','https://www.fool.com/investing/2026/02/09/the-ultimate-ai-stocks-to-buy-with-10000-right-now/',4),(5,'motley fool','...','2026-02-08',0.71472,'Google Cloud Revenue Just Surged 48%. Is Alphabet the Best AI Stock to Buy Now?','https://finance.yahoo.com/news/google-cloud-revenue-just-surged-185300737.html',200);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rick orford','    Getty Images\n \nGetty Images\nAlphabet Inc. (GOOGL/GOOG) released fourth-quarter and full-year 2025 earnings on Feb. 4, 2026, and the figures were solid.\nFourth quarter revenue came in at around $11...','2026-02-10',-0.02838,'Alphabet Stock Is Down... But Not For Long','https://seekingalpha.com/article/4868075-alphabet-stock-is-down-but-not-for-long',8),(2,'newsfeedback@fool.com (geoffrey seiler)','Alphabet is a leader in search and cloud computing, with nice advantages in each.\nAlphabet (GOOGL 1.77%) (GOOG 1.79%) is a stock most investors are at least somewhat familiar with. And given its perfo...','2026-02-10',0.19948,'4 Things Every Alphabet Investor Needs to Know','https://www.fool.com/investing/2026/02/10/4-things-every-alphabet-investor-needs-to-know/',4),(3,'wall street breakfast','...','2026-02-10',0.16184,'Wall Street Breakfast Podcast: BP Cuts The Flow On Buybacks','https://seekingalpha.com/article/4868038-wall-street-breakfast-podcast-bp-cuts-the-flow-on-buybacks',4),(4,'yiannis zourmpanos','...','2026-02-09',0,'This Analyst Has Finally Had Enough of AI CapEx at Microsoft. Should You Be Done with MSFT Stock Too?','https://www.barchart.com/story/news/113979/this-analyst-has-finally-had-enough-of-ai-capex-at-microsoft-should-you-be-done-with-msft-stock-too',2),(5,'brandon evans','...','2026-02-09',0.21856,'Autodesk sues Google for infringing on AI content creation software name: report','https://seekingalpha.com/news/4549121-autodesk-sues-google-for-infringing-on-ai-content-creation-software-name-report?feed_item_type=news',40),(6,'yiannis zourmpanos','...','2026-02-09',0.35232,'Alphabet: The $70B Profit Machine','https://seekingalpha.com/article/4867797-alphabet-the-70b-profit-machine',4),(7,'michael del monte','...','2026-02-09',-0.42136,'Alphabet Q4 Takeaway: Doubling Down On Cloud And AI Investments Should Pay Off','https://seekingalpha.com/article/4867783-alphabet-q4-takeaway-doubling-down-on-cloud-and-ai-investments-should-pay-off',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -167,4 +168,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-10  3:45:55
+-- Dump completed on 2026-02-11  3:42:29
