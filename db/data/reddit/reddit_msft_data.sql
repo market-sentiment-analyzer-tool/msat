@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2bc0a28b-07bd-11f1-b931-62b6299e57dd:1-107,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -79,9 +80,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-9b758188-06f4-11f1-81cb-62141fea162f:1-85,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -145,7 +146,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,7 +155,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'investing','1r1hq4a','o4pnf0u','2026-02-11',19,0.34,'Personally, Iâ€™ve been adding to my MSFT and GOOG positions over the past 18 months. I see them as being slow and steady, focused on the right things, and methodically taking on the AI market. \n\nI do not feel the same way about Meta. \n\nThese investments have been my insurance against all my other wild plays-'),(2,'investing','1r1hq4a','o4pv55o','2026-02-11',3,-0.0516,'FWIW, Iâ€™ve been buying, and I was overweight on MsFT to start with. I figure the capacity to train together with a delivery vehicle to consumers makes it worth it.'),(3,'investing','1r1hq4a','o4pq951','2026-02-11',6,-0.6457,'Personally, I think these massive Capex investments in AI are going to reap massive rewards in the future.Â  For every dollar spent now by the big 3 hyperscale providers, they will see double that in FCF in the future.Â  This panic is just Wall Street being short sighted.Â '),(4,'investing','1r1hq4a','o4po14m','2026-02-11',4,0.8819,'My thoughts is that the world is hell bent on an automation productivity gains and the only thing that will stop it is if the tech can not rise up to the challenge.Â Â \n\n\nEven an over build out would likely be temporary. The biggest risk may very well be political and rhe impact to jobs, but we would not see that for some time.\n\n\nI am with the idea that ai will never be your operating systems and just like humans it has to be trained, monitored, and feedback given. It will also be used in specialty ways as humans are. The microsofts can leverage it in their current and future offerings.Â  I think it is a good long term buy at this point.Â Â '),(5,'investing','1r1hq4a','o4pzd0l','2026-02-11',2,0.9022,'MSFT is a great company with outstanding earnings. It is such an unloved stock.\n\nAnd, please I need exit liquidity to empty my bags. :)'),(6,'investing','1r1hq4a','o4pzrxo','2026-02-11',3,-0.3818,'They lost France and theyâ€™re about to lose the other EU governmentsâ€™ as clients. That is giving me some pause.Â '),(7,'investing','1r1hq4a','o4pn6fr','2026-02-11',1,0.3802,'I am a fan of big Mike!'),(8,'investing','1r1hq4a','o4pr11y','2026-02-11',1,0,'Nvidia.  Thatâ€™s where the money goes'),(9,'investing','1r1hq4a','o4pn170','2026-02-11',-2,-0.2057,'Bubble. AI still hasnt demonstrated profitability'),(10,'investing','1r1hq4a','o4precv','2026-02-11',0,-0.4606,'If the spend looks like it\'s not paying off, they will reduce it.  It\'s not like they can\'t change course for 5 years.'),(11,'investing','1r1hq4a','o4ps0lh','2026-02-11',0,0.25,'AI isnâ€™t going away.  Somebody has to make the investment in infrastructure and only the large tech companies will be in position to prosper');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -168,4 +168,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-11  2:53:36
+-- Dump completed on 2026-02-12  2:49:21

@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2bc0a28b-07bd-11f1-b931-62b6299e57dd:1-107,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -79,9 +80,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-9b758188-06f4-11f1-81cb-62141fea162f:1-85,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -145,7 +146,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,6 +155,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r1txa0','o4t8oqc','2026-02-11',4,0.0826,'This all sounds like business as usual. Not quite sure what youâ€™re thinking are the next steps here that are different than what theyâ€™ve been talking about for the last 10 years.'),(2,'AAPL','1r1txa0','o4vpi96','2026-02-11',2,0.5789,'Apple will be the king when things go to AR and vision based systems, which seems to be the way things will evolve over the next 5-10 years.  Otherwise it would seem we just get faster smartphones with some new apps, but I could be wrong about this direction.  Their user interface has always been unbeatable with respect to ease of use and visual experience.'),(3,'AAPL','1r1txa0','o4tb8ik','2026-02-11',1,0.5577,'Itâ€™s more about card company in my opinion. Goldman sachs was not happy with Apple Card business (I donâ€™t know they issued the card too strictly).Â \nPossibly with Chase, Apple Card might be much easier to get. That does not mean Chase will make moneyâ€¦\nI donâ€™t see Apple Card with Chase will be significant benefit for Apple.Â '),(4,'AAPL','1r1txa0','o4uclyb','2026-02-11',1,0,'they need some AI breakthrough for next level otherwise the stock price will keep hovering around this level');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -167,4 +169,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-11  2:53:36
+-- Dump completed on 2026-02-12  2:49:21
