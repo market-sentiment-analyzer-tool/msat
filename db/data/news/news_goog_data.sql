@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -145,7 +146,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,7 +155,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rick orford','    Getty Images\n \nGetty Images\nAlphabet Inc. (GOOGL/GOOG) released fourth-quarter and full-year 2025 earnings on Feb. 4, 2026, and the figures were solid.\nFourth quarter revenue came in at around $11...','2026-02-10',-0.02838,'Alphabet Stock Is Down... But Not For Long','https://seekingalpha.com/article/4868075-alphabet-stock-is-down-but-not-for-long',8),(2,'newsfeedback@fool.com (geoffrey seiler)','Alphabet is a leader in search and cloud computing, with nice advantages in each.\nAlphabet (GOOGL 1.77%) (GOOG 1.79%) is a stock most investors are at least somewhat familiar with. And given its perfo...','2026-02-10',0.19948,'4 Things Every Alphabet Investor Needs to Know','https://www.fool.com/investing/2026/02/10/4-things-every-alphabet-investor-needs-to-know/',4),(3,'wall street breakfast','...','2026-02-10',0.16184,'Wall Street Breakfast Podcast: BP Cuts The Flow On Buybacks','https://seekingalpha.com/article/4868038-wall-street-breakfast-podcast-bp-cuts-the-flow-on-buybacks',4),(4,'yiannis zourmpanos','...','2026-02-09',0,'This Analyst Has Finally Had Enough of AI CapEx at Microsoft. Should You Be Done with MSFT Stock Too?','https://www.barchart.com/story/news/113979/this-analyst-has-finally-had-enough-of-ai-capex-at-microsoft-should-you-be-done-with-msft-stock-too',2),(5,'brandon evans','...','2026-02-09',0.21856,'Autodesk sues Google for infringing on AI content creation software name: report','https://seekingalpha.com/news/4549121-autodesk-sues-google-for-infringing-on-ai-content-creation-software-name-report?feed_item_type=news',40),(6,'yiannis zourmpanos','...','2026-02-09',0.35232,'Alphabet: The $70B Profit Machine','https://seekingalpha.com/article/4867797-alphabet-the-70b-profit-machine',4),(7,'michael del monte','...','2026-02-09',-0.42136,'Alphabet Q4 Takeaway: Doubling Down On Cloud And AI Investments Should Pay Off','https://seekingalpha.com/article/4867783-alphabet-q4-takeaway-doubling-down-on-cloud-and-ai-investments-should-pay-off',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-02-11',0.14232,'As Amazon â€˜Scrambles to Catch Up,â€™ 1 Analyst Is Jumping Ship on AMZN Stock','https://www.barchart.com/story/news/158716/as-amazon-scrambles-to-catch-up-1-analyst-is-jumping-ship-on-amzn-stock',2),(2,'newsfeedback@fool.com (anders bylund)','Is the SoundHound AI sell-off a red flag or a gift? The fundamentals tell an interesting story.\nSoundHound AI (SOUN 3.33%) can be a polarizing stock. Despite two decades of operating history and an or...','2026-02-11',0.63352,'Is SoundHound AI Stock a Buy Now?','https://www.fool.com/investing/2026/02/11/is-soundhound-ai-stock-a-buy-now/',4),(3,'newsfeedback@fool.com (john ballard)','Alphabet is experiencing strong demand for its AI cloud services.\nAlphabet (GOOG 2.29%) (GOOGL 2.42%) stock made a monster comeback in 2025, rocketing 107% after the sharp sell-off in April, and the r...','2026-02-11',0.7673,'Google Cloud Is Turning AI Demand Into Profits. Should You Buy the Stock?','https://www.fool.com/investing/2026/02/10/google-ai-demand-profits-should-you-buy-stock/',40),(4,'anushka dutta','...','2026-02-10',0.2368,'Is GoPro Stock a Buy, Sell, or Hold in February 2026?','https://www.barchart.com/story/news/141845/is-gopro-stock-a-buy-sell-or-hold-in-february-2026',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -168,4 +169,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-11  3:42:29
+-- Dump completed on 2026-02-12  3:37:37

@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -145,7 +146,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -154,7 +155,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'faizan farooque','Please enable JS and disable any ad blocker...','2026-02-10',0.38516,'Microsoft drops support for key devices','https://www.thestreet.com/technology/microsoft-drops-support-for-key-devices',4),(2,'semiconductor analyst','...','2026-02-10',0,'The Capex Cycle And Semiconductors','https://seekingalpha.com/article/4867835-the-capex-cycle-and-semiconductors',4),(3,'wall street breakfast','...','2026-02-10',-0.18104,'Delayed Data Deluge Set To Flood Markets','https://seekingalpha.com/article/4868017-delayed-data-deluge-set-to-flood-markets',4),(4,'abmn staff','\n					Posted by ABMN Staff on Feb 10th, 2026\n\nBailard Inc. grew its holdings in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 2.8% in the 3rd quarter, according to its most recent disclosure with the S...','2026-02-10',0.19986,'Bailard Inc. Increases Stock Position in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/02/10/bailard-inc-increases-stock-position-in-amazon-com-inc-amzn.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Feb 10th, 2026\n\nWindward Capital Management Co. CA lowered its holdings in  Amazon.com, Inc. (NASDAQ:AMZN) by 1.0% during the third quarter, HoldingsChannel.com reports. ...','2026-02-10',0.43668,'Amazon.com, Inc. $AMZN Shares Sold by Windward Capital Management Co. CA','https://www.americanbankingnews.com/2026/02/10/amazon-com-inc-amzn-shares-sold-by-windward-capital-management-co-ca.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Feb 10th, 2026\n\nAccredited Investors Inc. decreased its stake in  Amazon.com, Inc. (NASDAQ:AMZN) by 4.6% in the third quarter, according to its most recent filing with th...','2026-02-10',0.0975,'Amazon.com, Inc. $AMZN Holdings Lowered by Accredited Investors Inc.','https://www.americanbankingnews.com/2026/02/10/amazon-com-inc-amzn-holdings-lowered-by-accredited-investors-inc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Feb 10th, 2026\n\nBailard Inc. raised its stake in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 2.8% in the third quarter, according to its most recent filing with...','2026-02-10',0.19988,'Bailard Inc. Raises Stake in Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/02/10/bailard-inc-raises-stake-in-amazon-com-inc-amzn.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'gerelyn terzo','130,000 jobs were added last month while unemployment fell to 4.3%.\nShopify exceeded earnings estimates on both revenue and profit.\nRosenblatt set a $185 price target on Datadog reflecting 43.4% upsid...','2026-02-11',0.19852,'Live Nasdaq Composite: Stocks March Higher on Near Goldilocks Scenario','https://247wallst.com/investing/2026/02/11/live-nasdaq-composite-stocks-march-higher-on-near-goldilocks-scenario/',4),(2,'subhasree kar','...','2026-02-11',0.14232,'As Amazon â€˜Scrambles to Catch Up,â€™ 1 Analyst Is Jumping Ship on AMZN Stock','https://www.barchart.com/story/news/158716/as-amazon-scrambles-to-catch-up-1-analyst-is-jumping-ship-on-amzn-stock',20),(3,'nicole kennedy','\n					Posted by Nicole Kennedy on Feb 11th, 2026\n\nAmazon.com (NASDAQ:AMZN) had its price target lowered by stock analysts at Daiwa Securities Group  from $300.00 to $280.00 in a research note issued o...','2026-02-11',0.19984,'Daiwa Securities Group Cuts Amazon.com (NASDAQ:AMZN) Price Target to $280.00','https://www.watchlistnews.com/daiwa-securities-group-cuts-amazon-com-nasdaqamzn-price-target-to-280-00/10984512.html',4),(4,'luke lango','\n\n			Why fears of peak AI capex are creating opportunity		\nLast week, Big Tech reset the scoreboard for the 2026 fiscal year.Â \nCollectively, the â€œHyperscale Fiveâ€ â€“ Amazon (AMZN), Alphabet (GOOGL), Me...','2026-02-11',0.30148,'The Best AI Stocks Are Falling for the Wrong Reason','https://investorplace.com/hypergrowthinvesting/2026/02/the-best-ai-stocks-are-falling-for-the-wrong-reason/',4),(5,'trey thoelcke','Investing\nNetflix (NFLX) fell 12.32% year-to-date as EPS declined three consecutive quarters from $0.72 to $0.56.\nNetflix missed Q3 2025 earnings by 15.71% with $0.59 EPS versus $0.70 expected.\nNetfli...','2026-02-11',0.27992,'Is Netflixâ€™s 10% Dip a Buying Opportunity or a Warning Sign?','https://247wallst.com/investing/2026/02/11/is-netflixs-10-dip-a-buying-opportunity-or-a-warning-sign/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -168,4 +169,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-11  3:42:29
+-- Dump completed on 2026-02-12  3:37:37
