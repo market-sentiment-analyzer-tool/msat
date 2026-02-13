@@ -127,7 +127,8 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
-f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
+f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
 -- Table structure for table `NEWS_AMZN_DATA`
@@ -146,7 +147,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +156,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'gerelyn terzo','130,000 jobs were added last month while unemployment fell to 4.3%.\nShopify exceeded earnings estimates on both revenue and profit.\nRosenblatt set a $185 price target on Datadog reflecting 43.4% upsid...','2026-02-11',0.19852,'Live Nasdaq Composite: Stocks March Higher on Near Goldilocks Scenario','https://247wallst.com/investing/2026/02/11/live-nasdaq-composite-stocks-march-higher-on-near-goldilocks-scenario/',4),(2,'subhasree kar','...','2026-02-11',0.14232,'As Amazon â€˜Scrambles to Catch Up,â€™ 1 Analyst Is Jumping Ship on AMZN Stock','https://www.barchart.com/story/news/158716/as-amazon-scrambles-to-catch-up-1-analyst-is-jumping-ship-on-amzn-stock',20),(3,'nicole kennedy','\n					Posted by Nicole Kennedy on Feb 11th, 2026\n\nAmazon.com (NASDAQ:AMZN) had its price target lowered by stock analysts at Daiwa Securities Group  from $300.00 to $280.00 in a research note issued o...','2026-02-11',0.19984,'Daiwa Securities Group Cuts Amazon.com (NASDAQ:AMZN) Price Target to $280.00','https://www.watchlistnews.com/daiwa-securities-group-cuts-amazon-com-nasdaqamzn-price-target-to-280-00/10984512.html',4),(4,'luke lango','\n\n			Why fears of peak AI capex are creating opportunity		\nLast week, Big Tech reset the scoreboard for the 2026 fiscal year.Â \nCollectively, the â€œHyperscale Fiveâ€ â€“ Amazon (AMZN), Alphabet (GOOGL), Me...','2026-02-11',0.30148,'The Best AI Stocks Are Falling for the Wrong Reason','https://investorplace.com/hypergrowthinvesting/2026/02/the-best-ai-stocks-are-falling-for-the-wrong-reason/',4),(5,'trey thoelcke','Investing\nNetflix (NFLX) fell 12.32% year-to-date as EPS declined three consecutive quarters from $0.72 to $0.56.\nNetflix missed Q3 2025 earnings by 15.71% with $0.59 EPS versus $0.70 expected.\nNetfli...','2026-02-11',0.27992,'Is Netflixâ€™s 10% Dip a Buying Opportunity or a Warning Sign?','https://247wallst.com/investing/2026/02/11/is-netflixs-10-dip-a-buying-opportunity-or-a-warning-sign/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'logan wallace','\n					Posted by Logan Wallace on Feb 12th, 2026\n\nAmazon.com (NASDAQ:AMZN) had its price target lifted by Arete Research from $283.00 to $285.00 in a research note published on Wednesday,MarketScreener...','2026-02-12',0.6458,'Arete Research Issues Positive Forecast for Amazon.com (NASDAQ:AMZN) Stock Price','https://www.tickerreport.com/banking-finance/13344453/arete-research-issues-positive-forecast-for-amazon-com-nasdaqamzn-stock-price.html',4),(2,'gerelyn terzo','The Dow crossed the 50,000 threshold as markets advanced despite mixed labor market signals.\nUnemployment claims reached 227,000 last week, surpassing the 222,000 economist forecast.\nAnalysts downgrad...','2026-02-12',0.38728,'Live Nasdaq Composite: Tech Stock Volatility Persists on Mixed Economic Signals','https://247wallst.com/investing/2026/02/12/live-nasdaq-composite-tech-stock-volatility-persists-on-mixed-economic-signals/',4),(3,'anushka mukherji','...','2026-02-12',0.43384,'Buy This 1 â€˜VC-Styleâ€™ Stock Now for 74% Upside, According to Analysts','https://www.barchart.com/story/news/184682/buy-this-1-vc-style-stock-now-for-74-upside-according-to-analysts',2),(4,'newsfeedback@fool.com (james hires)','Amazon is a leader in cloud, AI, and quantum computing technology, but its latest results caused its shares to tumble. Should you buy the dip?\nAside from Google (through its parent company Alphabet), ...','2026-02-12',0.83352,'Forget D-Wave Quantum: This \"Magnificent Seven\" Icon Is the Cloud Play Worth Your Money','https://www.fool.com/investing/2026/02/12/forget-d-wave-quantum-this-magnificent-seven-icon/',4),(5,'wajeeh khan','...','2026-02-12',0.50952,'Should You Buy Beta Technologies Stock as Amazon Reveals Higher 5.3% Stake?','https://www.barchart.com/story/news/184376/should-you-buy-beta-technologies-stock-as-amazon-reveals-higher-5-3-stake',20),(6,'moz farooque','Please enable JS and disable any ad blocker...','2026-02-12',-0.3034,'JPMorgan doubles down on S&P 500 target for one key reason','https://www.thestreet.com/investing/jp-morgan-doubles-down-on-sp-500-target-for-one-key-reason',4),(7,'motley fool','...','2026-02-12',0.64592,'5 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade','https://finance.yahoo.com/news/5-artificial-intelligence-stocks-buy-135000501.html',20),(8,'alanna baker','\n					Posted by Alanna Baker on Feb 12th, 2026\n\nWestfuller Advisors LLC grew its position in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 11.6% in the third quarter, according to the company in it...','2026-02-12',0.45444,'Westfuller Advisors LLC Boosts Holdings in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/02/12/westfuller-advisors-llc-boosts-holdings-in-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -169,4 +170,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-12  3:37:37
+-- Dump completed on 2026-02-13  3:36:04

@@ -127,7 +127,8 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
-f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
+f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
 -- Table structure for table `NEWS_GOOG_DATA`
@@ -146,7 +147,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +156,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-02-11',0.14232,'As Amazon â€˜Scrambles to Catch Up,â€™ 1 Analyst Is Jumping Ship on AMZN Stock','https://www.barchart.com/story/news/158716/as-amazon-scrambles-to-catch-up-1-analyst-is-jumping-ship-on-amzn-stock',2),(2,'newsfeedback@fool.com (anders bylund)','Is the SoundHound AI sell-off a red flag or a gift? The fundamentals tell an interesting story.\nSoundHound AI (SOUN 3.33%) can be a polarizing stock. Despite two decades of operating history and an or...','2026-02-11',0.63352,'Is SoundHound AI Stock a Buy Now?','https://www.fool.com/investing/2026/02/11/is-soundhound-ai-stock-a-buy-now/',4),(3,'newsfeedback@fool.com (john ballard)','Alphabet is experiencing strong demand for its AI cloud services.\nAlphabet (GOOG 2.29%) (GOOGL 2.42%) stock made a monster comeback in 2025, rocketing 107% after the sharp sell-off in April, and the r...','2026-02-11',0.7673,'Google Cloud Is Turning AI Demand Into Profits. Should You Buy the Stock?','https://www.fool.com/investing/2026/02/10/google-ai-demand-profits-should-you-buy-stock/',40),(4,'anushka dutta','...','2026-02-10',0.2368,'Is GoPro Stock a Buy, Sell, or Hold in February 2026?','https://www.barchart.com/story/news/141845/is-gopro-stock-a-buy-sell-or-hold-in-february-2026',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-02-12',0.43384,'3 Stocks to Buy as Alphabet Forecasts Massive Spending','https://www.barchart.com/story/news/182996/3-stocks-to-buy-as-alphabet-forecasts-massive-spending',2),(2,'motley fool','...','2026-02-12',0.64592,'5 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade','https://finance.yahoo.com/news/5-artificial-intelligence-stocks-buy-135000501.html',20),(3,'gabe alpert','...','2026-02-12',0,'Five-Stocks-That-Helped-Will-Danoff-Beat-Market','https://www.morningstar.com/funds/five-stocks-that-helped-will-danoff-beat-market',2),(4,'newsfeedback@fool.com (neil patel)','If you focus on these kinds of companies, the quality of your portfolio will get an upgrade.\nLong-term investors should look for companies that have durable competitive advantages, which are also call...','2026-02-12',0.82746,'Meet 8 Stocks That Possess the Greatest Competitive Advantage on the Face of the Planet','https://www.fool.com/investing/2026/02/12/8-stocks-greatest-competitive-advantage-planet/',4),(5,'newsfeedback@fool.com (danny vena, cpa)','Demand for artificial intelligence (AI) has ignited cloud growth, but the competition is fierce.\nTechnology has been in the midst of a once-in-a-generation shift during the past few years. Cloud compu...','2026-02-12',0.93346,'Amazon, Microsoft, and Alphabet All Reported Robust Cloud Growth. 1 Was a Clear Winner','https://www.fool.com/investing/2026/02/12/amazon-microsoft-and-alphabet-all-reported-robust/',4),(6,'newsfeedback@fool.com (justin pope)','After initial concerns about AI disruption, this tech giant has become an AI winner in relatively short order.\nAlphabet (GOOG 0.63%)(GOOGL 0.62%) could be the hottest artificial intelligence (AI) stoc...','2026-02-11',0.7093,'Prediction: This Will Be the Best AI Stock to Own for the Next 5 Years','https://www.fool.com/investing/2026/02/11/predict-best-ai-stock-own-5-years-goog/',4),(7,'wajeeh khan','...','2026-02-11',0.47952,'Unity Software Stock Is Back in Oversold Territory. Is There Any End in Sight for the Bloodshed in U Shares?','https://www.barchart.com/story/news/165533/unity-software-stock-is-back-in-oversold-territory-is-there-any-end-in-sight-for-the-bloodshed-in-u-shares',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -169,4 +170,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-12  3:37:37
+-- Dump completed on 2026-02-13  3:36:04
