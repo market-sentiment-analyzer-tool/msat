@@ -24,6 +24,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -39,7 +40,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
-2bc0a28b-07bd-11f1-b931-62b6299e57dd:1-107,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -95,6 +95,7 @@ bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
+c057095e-094d-11f1-b403-767be2a7b51f:1-71,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -127,7 +128,8 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
-f9b01432-ee99-11f0-93b4-66973b524df7:1-62';
+f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
 -- Table structure for table `REDDIT_AAPL_DATA`
@@ -146,7 +148,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +157,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r1txa0','o4t8oqc','2026-02-11',4,0.0826,'This all sounds like business as usual. Not quite sure what youâ€™re thinking are the next steps here that are different than what theyâ€™ve been talking about for the last 10 years.'),(2,'AAPL','1r1txa0','o4vpi96','2026-02-11',2,0.5789,'Apple will be the king when things go to AR and vision based systems, which seems to be the way things will evolve over the next 5-10 years.  Otherwise it would seem we just get faster smartphones with some new apps, but I could be wrong about this direction.  Their user interface has always been unbeatable with respect to ease of use and visual experience.'),(3,'AAPL','1r1txa0','o4tb8ik','2026-02-11',1,0.5577,'Itâ€™s more about card company in my opinion. Goldman sachs was not happy with Apple Card business (I donâ€™t know they issued the card too strictly).Â \nPossibly with Chase, Apple Card might be much easier to get. That does not mean Chase will make moneyâ€¦\nI donâ€™t see Apple Card with Chase will be significant benefit for Apple.Â '),(4,'AAPL','1r1txa0','o4uclyb','2026-02-11',1,0,'they need some AI breakthrough for next level otherwise the stock price will keep hovering around this level');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r3e1jy','o54agst','2026-02-13',-1,0,'Lol go home day trader');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -169,4 +171,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-12  2:49:21
+-- Dump completed on 2026-02-14  2:36:09
