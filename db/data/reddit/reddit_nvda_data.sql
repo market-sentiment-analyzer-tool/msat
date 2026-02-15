@@ -57,6 +57,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
+56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
@@ -95,7 +96,6 @@ bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
-c057095e-094d-11f1-b403-767be2a7b51f:1-71,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -103,6 +103,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d20d7156-0a18-11f1-9015-def68b64f474:1-286,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -148,7 +149,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -157,7 +158,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1r3wyoy','o58a4bz','2026-02-13',26,-0.772,'If I bought every time it was 175 and sold every time it was 189 I might actually be a millionaire by now. But if I try to do it next time and sell, NVDA probably hits 250. So I\'ll just hold and cry quietly'),(2,'NVDA_Stock','1r3wyoy','o58cfcf','2026-02-13',8,0.34,'Going to take a long nap\nTill after earnings \n\nToo much bs noise here\n\nOnwards fellows'),(3,'NVDA_Stock','1r3wyoy','o57khd6','2026-02-13',6,0.6369,'Wish the market would agree'),(4,'NVDA_Stock','1r3wyoy','o582yab','2026-02-13',6,0.6862,'This time will be different. Nvidia will go over 200. Trusts me, I am always never wrong.'),(5,'NVDA_Stock','1r3wyoy','o587a7r','2026-02-13',5,0,'Too many people day trade this stock'),(6,'NVDA_Stock','1r3wyoy','o587ojm','2026-02-13',6,0.5574,'I just have to laugh at this anymore'),(7,'NVDA_Stock','1r3wyoy','o57kwbu','2026-02-13',4,0.1774,'Earlier this week UBS downgraded the entire US tech sector. Don\'t trust the Swiss in terms of ethics when it comes to finances.\n\nWe already know Nvidia is going to send earnings to Neptune.'),(8,'NVDA_Stock','1r3wyoy','o57wlqd','2026-02-13',8,-0.4576,'All these price targets are just fucking annoying.'),(9,'NVDA_Stock','1r3wyoy','o59dvq1','2026-02-14',5,-0.2714,'Big deal, we have been reading about this for months, and we only se declines, these analysts are a bunch of empty suits!'),(10,'NVDA_Stock','1r3wyoy','o57rj95','2026-02-13',3,-0.1263,'Sure. This has been a really bad year for us tech stocks so far. '),(11,'NVDA_Stock','1r3wyoy','o58mw82','2026-02-13',4,-0.4404,'These posts are meaningless in this market'),(12,'NVDA_Stock','1r3wyoy','o585nbv','2026-02-13',2,-0.7845,'Whatâ€™s the cause of the dump below 185 max pain? Lunacy for such a sustained duration of time with Nvidia. Meanwhile each quarter they are PRINTING money lowering PE. Market is demented'),(13,'NVDA_Stock','1r3wyoy','o592ta0','2026-02-13',3,0,'Nothing makes sense in the MM controlled casino'),(14,'NVDA_Stock','1r3wyoy','o57m7lj','2026-02-13',4,0.6597,'Everyone keeps raising their target numbers yet the stock keeps going down. Too many shares on the open market. Need to get the outstanding shares below 15 billion.'),(15,'NVDA_Stock','1r3wyoy','o58olgi','2026-02-13',1,0,'At least when options were weekly, there was a little bit of predictability to the swings. Now itâ€™s nearly constant hijinx.'),(16,'NVDA_Stock','1r3wyoy','o58wrui','2026-02-13',1,0.34,'$250 PT post earnings â†’ $191 morning after.'),(17,'NVDA_Stock','1r3wyoy','o59ddpl','2026-02-14',1,0,'Following'),(18,'NVDA_Stock','1r44lvl','o59r7c7','2026-02-14',4,0,'Can you imagine Walmartâ€™s forward PE is higher than Nvidiaâ€™s?'),(19,'NVDA_Stock','1r44lvl','o59mvbw','2026-02-14',3,-0.254,'Wait for the market to say NVDA won\'t be able to sustain their growth or another deepseek moment before you get in again. There\'s no more positive catalyst ATM since everyone knows Capex keeps going up.'),(20,'NVDA_Stock','1r44lvl','o59r50q','2026-02-14',3,0,'People are buying walmart stock instead');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -171,4 +171,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-14  2:36:09
+-- Dump completed on 2026-02-15  2:57:18
