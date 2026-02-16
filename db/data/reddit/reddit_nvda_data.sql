@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+50eec00b-0ae1-11f1-8c32-3acd0f2e84a0:1-76,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -71,6 +72,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
@@ -103,7 +105,6 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
-d20d7156-0a18-11f1-9015-def68b64f474:1-286,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -149,7 +150,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -158,6 +159,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'ValueInvesting','1r582bh','o5heo3v','2026-02-15',56,-0.6249,'**AI hardware is useless without software**\n\nIf the profitability is not proven, which currently is not, the capex will stop. And if investors keep on moving away capital from software companies they will 100% stop using overpriced ai infrastructure.'),(2,'ValueInvesting','1r582bh','o5hxfv1','2026-02-15',8,0.3182,'If they\'re right, natural gas producers or maybe power producers are about to win big. All that insane amount of money spent on power consuming infrastructure. You spend the money on the chips, but every year after that you need power.'),(3,'ValueInvesting','1r582bh','o5hy62s','2026-02-15',7,-0.25,'I think the big AI adoption is only in it\'s beginning stages. That\'s why so many posts with sceptic ideas are mostly \"I only use chat gpt and Google lens and that\'s about it\". The ideas of what to use it for and how to use it are only getting mainstream now.'),(4,'ValueInvesting','1r582bh','o5h0rfk','2026-02-15',9,0.5859,'Elaborate on sector rotation hitting biotech and software plz. Â Tyvm.'),(5,'ValueInvesting','1r582bh','o5i37sr','2026-02-15',5,-0.8964,'People are misreading what is spooking Wall Street: it is not just the increase in CapEx but the fear it is a massive increase in spending for similar equipment. If RAM and GPUs for instance are spiking by 2-3x or more, are companies just paying more for the same stuff? That is bad for everyone, including Nvidia, as that is just crushing margins. Nvidia is one of the biggest buyers of RAM on the planet for instance.'),(6,'ValueInvesting','1r582bh','o5hsmlm','2026-02-15',19,-0.6124,'Excuse my ignorance but the people who make it to the top of these hyper scaling companies making the decisions to spend hundreds of billions on AI infrastructure arenâ€™t stupid. They are planning for the long term. This isnâ€™t a bubble we are just getting started'),(7,'ValueInvesting','1r582bh','o5hv93s','2026-02-15',7,0.8271,'The bubble is in the money printing, hyper scalers are trying to catch up the wave throwing trucks money. That\'s why Google issued a century bond, they are leveraging the AI race with all the possible money now, and it will be profitable and easy to repay in the future because of the US dollar debasement.'),(8,'ValueInvesting','1r582bh','o5hzgeb','2026-02-15',3,0,'The question is whether nvidia can get the HBM it needs.'),(9,'ValueInvesting','1r582bh','o5h4lht','2026-02-15',9,0.8759,'The cycle of spending has just began, for a simple reason. Look at big tech spending and revenue before and after. The more money they invest, the larger their revenue becomes. This is not simply a race, but Internet 2.00 or the digital revolution 2.00 ( If you are a late 1900 baby, you remember the world before and after the Internet, and company wants to end up as Yahoo.)'),(10,'ValueInvesting','1r582bh','o5gyofi','2026-02-15',4,0,'https://medium.com/write-a-catalyst/nvidias-ceo-just-handed-investors-a-660-billion-warning-ai-spending-isn-t-a-bubble-it-s-a-floor-30828601dafb'),(11,'ValueInvesting','1r582bh','o5ir0zz','2026-02-15',2,0.9828,'Huang is 100% correct.  Let\'s consider for instance that white collar jobs in the U.S. ALONE are a $5 TRILLION per year expense.  $660 Billion quickly looks like a big nothing vs the jobs it can replace.  Now add on the entire world\'s white collar jobs.  Add in the many B2B expenses as all of these software service providers are now getting heat for.  Add in numerous businesses which will lose their revenue because AI can do it for them.  Add on to that the absolutely massive new opportunities it will directly create.  Everything from biotech drug discovery to robotics (now we\'re talking blue collar jobs/opportunities too) to new devices/technology to things none of us can even begin to imagine today.  \n  \nYes, there are some issues such as OpenAI getting ahead of itself on spending vs revenue, but the overall opportunity is simply massive, and unlike the Net bubble where we had dozens of new IPO\'s every week where anyone could create a Web site and call it a business, AI is a bit more challenging with some clear leaders (I.e. they all need the chips/infrastructure/data centers and only some are able to create the very expensive models).  In the overall picture, this is an absolutely massive economic transformation unlike any other.\n\nSide note: Many worry about jobs, but that is 100% BS... all of these soon to be \"old school jobs\" that AI/robotics will take over will simply free up labor and create economic changes akin to when PC\'s were introduced or when farming was replaced by machinery: entirely new industries, products, services and jobs will naturally develop.  Nobody imagined the Internet or the video games industry for instance when computer systems were first being developed in the 1940\'s to 60\'s.  These are very exciting times... sit back and enjoy the ride as it\'s absolutely just getting started.'),(12,'ValueInvesting','1r582bh','o5j6uzn','2026-02-15',2,0.34,'Exactly ai isnt going anywhere. GO ALL IN. opportunity of lifetime.\n\n\nGo hard or go home.'),(13,'ValueInvesting','1r582bh','o5ih934','2026-02-15',1,-0.4767,'Didnâ€™t the dot-com bubble peak just before infrastructure spending peaked? Itâ€™s impossible to predict when a bubble will burst, but this is a warning sign.'),(14,'ValueInvesting','1r582bh','o5jfltc','2026-02-15',1,0.4767,'I bet that in 7-8 years we\'ll find out there wasn\'t enough investment in it. We keep finding more and more uses for computing power.  \n  \nThe explosion in popularity from ChatGPT release happened less than 4 years ago and the rate of adoption for the technology is without precedent (specially when it comes to how it impacted people\'s work) all while there was hardly any time to refine the products.'),(15,'ValueInvesting','1r582bh','o5hvqbx','2026-02-15',0,-0.7944,'This shit is gonna hit so hard itâ€™s gonna shock the world.'),(16,'ValueInvesting','1r582bh','o5jeapq','2026-02-15',0,0.0258,'Nvdia backed out of openai'),(17,'ValueInvesting','1r582bh','o5igt2k','2026-02-15',-4,0.5919,'[https://www.optionsgex.com/](https://www.optionsgex.com/)  \nhey guys i found this free option gamma website but not sure legit  \ncan you guys check? thanks');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -171,4 +173,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-15  2:57:18
+-- Dump completed on 2026-02-16  2:45:10
