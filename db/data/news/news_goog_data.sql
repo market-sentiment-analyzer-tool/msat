@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
@@ -158,7 +159,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'motley fool','...','2026-02-14',0.55264,'Should You Forget Nvidia and Buy 2 Other Artificial Intelligence (AI) Stocks Instead?','https://finance.yahoo.com/news/forget-nvidia-buy-2-other-135000811.html',20),(2,'wall street breakfast','...','2026-02-13',0.272,'Wall Street Roundup: Economic Data, Earnings Updates','https://seekingalpha.com/article/4870282-wall-street-roundup-economic-data-earnings-updates',4),(3,'newsfeedback@fool.com (matthew benjamin)','Alphabet just tapped bond markets for billions to fund its AI spending plan.\nThis week, Alphabet (GOOG 1.08%) (GOOGL 1.08%), the parent company of Google and YouTube, issued $32 billion in new debt ov...','2026-02-13',-0.11984,'Why Is Google Parent Alphabet Taking on $32 Billion in New Debt?','https://www.fool.com/investing/2026/02/13/why-is-google-parent-alphabet-taking-on-32-billion/',40),(4,'newsfeedback@fool.com (anthony di pizio)','Artificial intelligence is driving an incredible amount of value for Alphabet and its shareholders.\nThere are 12 publicly listed companies around the world valued at $1 trillion or more, with some of ...','2026-02-13',0.19952,'Prediction: Alphabet Will Be a $5 Trillion Stock by the End of 2027','https://www.fool.com/investing/2026/02/13/prediction-alphabet-will-5-trillion-stock-end-2027/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 13th, 2026\n\nAppleton Partners Inc. MA trimmed its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 7.2% during the 3rd quarter, according to the com...','2026-02-13',-0.037,'Appleton Partners Inc. MA Cuts Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/13/appleton-partners-inc-ma-cuts-stock-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (patrick sanders)','These stocks have a lot of upside -- and much less downside risk than the crypto market.\n\nThe problem (or the opportunity, depending on your point of view) with cryptocurrencies is their massive volat...','2026-02-15',0.39986,'3 Tech Stocks With More Potential Than Any Cryptocurrency','https://www.fool.com/investing/2026/02/15/3-tech-stocks-with-more-potential-than-any-cryptoc/',4),(2,'newsfeedback@fool.com (john bromels)','This key AI stock got hit hard, and smart investors saw a big opportunity.\nWhen artificial intelligence (AI) company Anthropic released a new set of business-focused tools for its Claude large languag...','2026-02-15',0.57974,'1 Artificial Intelligence (AI) Stock Investors Are Buying on the Dip','https://www.fool.com/investing/2026/02/14/1-artificial-intelligence-ai-stock-investors-are-b/',4),(3,'motley fool','...','2026-02-14',0.50952,'What Is 1 of the Best AI Stocks to Own for the Next 10 Years?','https://finance.yahoo.com/news/1-best-ai-stocks-own-221700159.html',20),(4,'aditya raghunath','...','2026-02-14',0,'Why Wedbush Thinks Norway Could Be Key for This Quantum Computing Stock -- and the Entire Industry','https://www.barchart.com/story/news/225383/why-wedbush-thinks-norway-could-be-key-for-this-quantum-computing-stock-and-the-entire-industry',2),(5,'motley fool','...','2026-02-14',0.55264,'Should You Forget Nvidia and Buy 2 Other Artificial Intelligence (AI) Stocks Instead?','https://finance.yahoo.com/news/forget-nvidia-buy-2-other-135000811.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -172,4 +173,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-15  3:36:38
+-- Dump completed on 2026-02-16  3:35:43
