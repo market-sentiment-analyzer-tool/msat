@@ -111,6 +111,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
@@ -150,7 +151,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -159,7 +160,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (patrick sanders)','These stocks have a lot of upside -- and much less downside risk than the crypto market.\n\nThe problem (or the opportunity, depending on your point of view) with cryptocurrencies is their massive volat...','2026-02-15',0.39986,'3 Tech Stocks With More Potential Than Any Cryptocurrency','https://www.fool.com/investing/2026/02/15/3-tech-stocks-with-more-potential-than-any-cryptoc/',4),(2,'newsfeedback@fool.com (john bromels)','This key AI stock got hit hard, and smart investors saw a big opportunity.\nWhen artificial intelligence (AI) company Anthropic released a new set of business-focused tools for its Claude large languag...','2026-02-15',0.57974,'1 Artificial Intelligence (AI) Stock Investors Are Buying on the Dip','https://www.fool.com/investing/2026/02/14/1-artificial-intelligence-ai-stock-investors-are-b/',4),(3,'motley fool','...','2026-02-14',0.50952,'What Is 1 of the Best AI Stocks to Own for the Next 10 Years?','https://finance.yahoo.com/news/1-best-ai-stocks-own-221700159.html',20),(4,'aditya raghunath','...','2026-02-14',0,'Why Wedbush Thinks Norway Could Be Key for This Quantum Computing Stock -- and the Entire Industry','https://www.barchart.com/story/news/225383/why-wedbush-thinks-norway-could-be-key-for-this-quantum-computing-stock-and-the-entire-industry',2),(5,'motley fool','...','2026-02-14',0.55264,'Should You Forget Nvidia and Buy 2 Other Artificial Intelligence (AI) Stocks Instead?','https://finance.yahoo.com/news/forget-nvidia-buy-2-other-135000811.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (patrick sanders)','These stocks have a lot of upside -- and much less downside risk than the crypto market.\n\nThe problem (or the opportunity, depending on your point of view) with cryptocurrencies is their massive volat...','2026-02-15',0.39986,'3 Tech Stocks With More Potential Than Any Cryptocurrency','https://www.fool.com/investing/2026/02/15/3-tech-stocks-with-more-potential-than-any-cryptoc/',4),(2,'newsfeedback@fool.com (john bromels)','This key AI stock got hit hard, and smart investors saw a big opportunity.\nWhen artificial intelligence (AI) company Anthropic released a new set of business-focused tools for its Claude large languag...','2026-02-15',0.57974,'1 Artificial Intelligence (AI) Stock Investors Are Buying on the Dip','https://www.fool.com/investing/2026/02/14/1-artificial-intelligence-ai-stock-investors-are-b/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -173,4 +174,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-16  3:35:43
+-- Dump completed on 2026-02-17  3:30:21
