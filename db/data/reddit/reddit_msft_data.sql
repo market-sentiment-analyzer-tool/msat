@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '016cd97d-0baa-11f1-994e-8a7b05d7e71b:1-80,
+063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
@@ -55,7 +56,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
-50eec00b-0ae1-11f1-8c32-3acd0f2e84a0:1-76,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -74,6 +74,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
@@ -150,7 +151,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -159,6 +160,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'investing','1r69zgy','o5oltmn','2026-02-16',116,0.5423,'Youâ€™re comparing Microsoft to adobeâ€¦ I think you should buy the S&P 500 and chill my dude'),(2,'investing','1r69zgy','o5outca','2026-02-16',14,0,'Bro tried sneaking in adbe LOL'),(3,'investing','1r69zgy','o5ok5bl','2026-02-16',16,0.5423,'Buy all 3 and drink a Diet Coke'),(4,'investing','1r69zgy','o5op930','2026-02-16',4,0.7543,'while Adobe is a good buy, but in the long term their business seems to be most hit by AI and competitors like Canva and Figma. '),(5,'investing','1r69zgy','o5ovvi5','2026-02-16',5,0.5927,'Anything but Adobe.  Micron is the better pick right now, but longer term I\'d say MSFT.'),(6,'investing','1r69zgy','o5p8ztq','2026-02-16',5,-0.594,'Short term? 100% micron. They are sold out of memory for YEARS and can make their own prices. Once that subsides? Microsoft all day. Adobe is trash. And potentially might go out of business because of AI.'),(7,'investing','1r69zgy','o5oqb0p','2026-02-16',7,0.5732,'If youâ€™re asking these questions, it tells me youâ€™re better off with ETF investing. Generally you should not buy individual stocks unless you intend to research them properly and babysit the selections over time. Asking Reddit which one it likes isnâ€™t research.\n\nHere, Iâ€™ll give you an example. Iâ€™m a random person telling you not to buy Microsoft, Micron, or Adobe dawg, itâ€™s all about Lucid and Dogecoin to the moon! HODL! YOLO! See what Reddit gives you?'),(8,'investing','1r69zgy','o5oszyr','2026-02-16',4,0.0258,'I think the expectations are quite different. MU has high expectations priced in, while ADBE has AI disruption priced in. They have 8.95% free cash flow yield, which is crazy for a growing company . There is a detailed fundamental research in r/stockpickeranalysis'),(9,'investing','1r69zgy','o5ph223','2026-02-16',3,0,'MSFT and Micron'),(10,'investing','1r69zgy','o5qobxs','2026-02-16',3,0.2732,'Safest is MSFT. MU is a good choice short term, however it\'s very volatile.'),(11,'investing','1r69zgy','o5ouqh2','2026-02-16',6,0,'Microsoft is an ETF in itself.'),(12,'investing','1r69zgy','o5ovtob','2026-02-16',2,0.4215,'AI hype makes it tricky to choose between MSFT, ADBE, or Micron. Software feels expensive, chips are cyclical, and it\'s hard to tell if this is just another bubble or the start of something bigger. I\'m curious, do you think Micron is a safer bet than the software names, or is it still worth diving during the big tech wave?'),(13,'investing','1r69zgy','o5p0c2a','2026-02-16',2,0,'WDC'),(14,'investing','1r69zgy','o5qp76z','2026-02-16',2,-0.128,'ADBE has strong network effect and switching costs as a defense to gain traction in whatever the new AI landscape becomes. They have Firefly AI and competing AI models integrated into their workspace (and there will always be a workspace). To whatever extent gen AI replaces manual creating/editing, it will be based on paying for generative tokens. My view is that this will be more lucrative than base subscriptions. And if I am a large enterprise, I am doing this within Adobe rather than trying to migrate years of work to some other platform.\n\nADBE has risk, but all this doomsday sentiment is its opportunity.'),(15,'investing','1r69zgy','o5rev04','2026-02-16',2,0.9723,'It\'s tough to predict exactly how AI trends will impact these stocks, but each company has unique strengths: MSFT with its strong cloud business, ADBE\'s creative software dominance, and Micron\'s edge in memory chips amid AI demand. It\'s true that markets can be cyclical with AI potentially affecting various sectors differently, but long-term fundamentals should guide your decision. \n\n\n\nFor investors looking to cut through the noise and make informed decisions, MarketIntelPro offers immense value by providing clear insights tailored to your strategy. Whether you\'re just starting out and need an AI Copilot or are an advanced trader using our Alpha Scanner and 13F tracker, we\'ve got you covered. Check it out at https://www.marketintelpro.com.'),(16,'investing','1r69zgy','o5osh0y','2026-02-16',1,0.1124,'Not a fan of msft or adobe with me. If youâ€™re looking for quicker gains that require babysitting Iâ€™d go memory/storage. MU and SNDK move fast.Â '),(17,'investing','1r69zgy','o5oubk5','2026-02-16',1,0,'ADBE? Lol - do you even know what they do? Their lunch is eaten left right and center and that\'s before AI'),(18,'investing','1r69zgy','o5p55su','2026-02-16',1,0,'When you have these retail scrubs asking when the AI bubble is going to burst you know it\'s time to go even harder on AI'),(19,'investing','1r69zgy','o5ppjw9','2026-02-16',1,0,'NFLX or RDDT'),(20,'investing','1r69zgy','o5qsip9','2026-02-16',1,0,'As a micron shareholder for 2 years with average ~$80, i think microsoft currently'),(21,'investing','1r69zgy','o5sgznm','2026-02-17',1,0,'Micron'),(22,'investing','1r69zgy','o5olbun','2026-02-16',2,-0.1695,'not adobe\nthey have one product or suite that isnt worth talking about'),(23,'investing','1r69zgy','o5oldcd','2026-02-16',1,0.4939,'Buy the IGV and go back to bed'),(24,'investing','1r69zgy','o5omikb','2026-02-16',1,-0.5859,'Acrobat sucks shit.  Remember when pdf was easy and solved problems?  Not anymore, It isnâ€™t and it doesnâ€™t'),(25,'investing','1r69zgy','o5opj15','2026-02-16',1,0,'MU'),(26,'investing','1r69zgy','o5p3htx','2026-02-16',-2,0,'Dude we\'re literally in a banana republic right now, and you think that there\'s a way to assess stocks?');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -172,4 +174,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-16  2:45:10
+-- Dump completed on 2026-02-17  2:43:21
