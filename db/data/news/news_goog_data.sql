@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -151,7 +152,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,7 +161,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (patrick sanders)','These stocks have a lot of upside -- and much less downside risk than the crypto market.\n\nThe problem (or the opportunity, depending on your point of view) with cryptocurrencies is their massive volat...','2026-02-15',0.39986,'3 Tech Stocks With More Potential Than Any Cryptocurrency','https://www.fool.com/investing/2026/02/15/3-tech-stocks-with-more-potential-than-any-cryptoc/',4),(2,'newsfeedback@fool.com (john bromels)','This key AI stock got hit hard, and smart investors saw a big opportunity.\nWhen artificial intelligence (AI) company Anthropic released a new set of business-focused tools for its Claude large languag...','2026-02-15',0.57974,'1 Artificial Intelligence (AI) Stock Investors Are Buying on the Dip','https://www.fool.com/investing/2026/02/14/1-artificial-intelligence-ai-stock-investors-are-b/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Several big-time stocks are down from their highs.\nRight now is the perfect time to deploy some cash into some beaten-down stocks. The market has been poorly receiving most fourth-quarter earnings rep...','2026-02-17',0.55214,'3 Stocks to Double Up on Right Now','https://www.fool.com/investing/2026/02/17/3-stocks-to-double-up-on-right-now/',4),(2,'newsfeedback@fool.com (james brumley)','Investors are unfairly punishing too many stocks as part of a right-pricing of AI-related names. That spells opportunity for you.\nHas the volatile start to 2026 already disrupted plans for your portfo...','2026-02-17',0.86098,'2 Top Growth Stocks to Buy in the First Half of 2026','https://www.fool.com/investing/2026/02/17/2-top-growth-stocks-to-buy-in-the-first-half-of-20/',4),(3,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-02-16',0.1999,'10 AI Stocks to Watch: Broadcom, AMD, and More','https://www.insidermonkey.com/blog/10-ai-stocks-to-watch-broadcom-amd-and-more-1697068/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -174,4 +175,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-17  3:30:21
+-- Dump completed on 2026-02-18  3:32:54
