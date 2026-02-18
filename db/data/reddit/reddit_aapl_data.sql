@@ -21,8 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '016cd97d-0baa-11f1-994e-8a7b05d7e71b:1-80,
-063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
@@ -87,6 +86,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '016cd97d-0baa-11f1-994e-8a7b05d7e71b:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+9db27e19-0c73-11f1-a623-927b384fd71f:1-114,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -112,6 +112,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
@@ -151,7 +152,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,6 +161,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'ValueInvesting','1r7khie','o5y3767','2026-02-17',14,0,'Greg leaving his own prints.'),(2,'ValueInvesting','1r7khie','o5ykpgw','2026-02-17',13,0.5994,'I donâ€™t understand anything.\n\nBuys New York time at ATH, doesnâ€™t buy more o UHN, reforces Chubb ath when in October had a significant drop.\nSells Amazon when itâ€™s at ATL(almost).'),(3,'ValueInvesting','1r7khie','o5y46je','2026-02-17',18,0.3313,'Added 300 shares of lamar??? I couldâ€™ve done that  shit. Anybody else get that â€œBe sure to drink your Ovaltineâ€ feeling when Berkshire releases their 13f???'),(4,'ValueInvesting','1r7khie','o5y6h1u','2026-02-17',8,0.4576,'Very interesting. He bought New York Times and it is at 52-week high.'),(5,'ValueInvesting','1r7khie','o5ylmj7','2026-02-18',6,-0.4215,'4th quarter tax loss harvesting maybe?'),(6,'ValueInvesting','1r7khie','o5yowww','2026-02-18',6,-0.4019,'Dumping Amazon alarms me. As does buying Dominos, quite frankly.'),(7,'ValueInvesting','1r7khie','o5y26gu','2026-02-17',17,0.5466,'Nothing wrong with Amazons core business. As soon as they announce capex spending reduction their share price will go back.'),(8,'ValueInvesting','1r7khie','o5yto84','2026-02-18',3,-0.34,'Why even bother with a 40k position change in Lamar?'),(9,'ValueInvesting','1r7khie','o5y501n','2026-02-17',2,0.2732,'BofA is surprising and big.'),(10,'ValueInvesting','1r7khie','o5ygyh2','2026-02-17',2,0.8519,'Good thing I didnâ€™t know I could buy Atlanta Braves stock.'),(11,'ValueInvesting','1r7khie','o5yloy0','2026-02-18',2,-0.1531,'Amazon lost 12% ytd, so I guess they had some insider info'),(12,'ValueInvesting','1r7khie','o5you2o','2026-02-18',1,0.1779,'I canâ€™t imagine Amazon will not continue to grow.'),(13,'ValueInvesting','1r7khie','o5yv25f','2026-02-18',1,0.099,'Would be interesting to see if now post buffet they will trade in and out of positions more often. Selling amazon in q4 made some sense especially in the rear view. Iâ€™d be buying again.'),(14,'ValueInvesting','1r7khie','o5z1253','2026-02-18',1,-0.1531,'Dumping Amazon is wild to me. Apple makes sense lol'),(15,'ValueInvesting','1r7khie','o5z6ol2','2026-02-18',1,0.7579,'I did not know Berkshire owned a small portion of a sports team. I was just listening to one of the old annual meetings (2015?) and someone asked if Berkshire should buy a sports team.Warren and Charlie laughed at the guy saying that if he ever does then his mind is too far gone and he should probably be replaced.Â '),(16,'ValueInvesting','1r7khie','o5zdbrg','2026-02-18',1,-0.5859,'I don\'t get the AMZN sell. Price is bad right now, and the business is great. They have so many ways to make money, and can cut back on capex if needed.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -173,4 +175,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-17  2:43:21
+-- Dump completed on 2026-02-18  2:45:07
