@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -86,13 +87,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-9db27e19-0c73-11f1-a623-927b384fd71f:1-114,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b55d6d10-0d3c-11f1-a7b2-3abbd0861f4b:1-47,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -152,7 +153,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +162,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'ValueInvesting','1r7khie','o5y3767','2026-02-17',14,0,'Greg leaving his own prints.'),(2,'ValueInvesting','1r7khie','o5ykpgw','2026-02-17',13,0.5994,'I donâ€™t understand anything.\n\nBuys New York time at ATH, doesnâ€™t buy more o UHN, reforces Chubb ath when in October had a significant drop.\nSells Amazon when itâ€™s at ATL(almost).'),(3,'ValueInvesting','1r7khie','o5y46je','2026-02-17',18,0.3313,'Added 300 shares of lamar??? I couldâ€™ve done that  shit. Anybody else get that â€œBe sure to drink your Ovaltineâ€ feeling when Berkshire releases their 13f???'),(4,'ValueInvesting','1r7khie','o5y6h1u','2026-02-17',8,0.4576,'Very interesting. He bought New York Times and it is at 52-week high.'),(5,'ValueInvesting','1r7khie','o5ylmj7','2026-02-18',6,-0.4215,'4th quarter tax loss harvesting maybe?'),(6,'ValueInvesting','1r7khie','o5yowww','2026-02-18',6,-0.4019,'Dumping Amazon alarms me. As does buying Dominos, quite frankly.'),(7,'ValueInvesting','1r7khie','o5y26gu','2026-02-17',17,0.5466,'Nothing wrong with Amazons core business. As soon as they announce capex spending reduction their share price will go back.'),(8,'ValueInvesting','1r7khie','o5yto84','2026-02-18',3,-0.34,'Why even bother with a 40k position change in Lamar?'),(9,'ValueInvesting','1r7khie','o5y501n','2026-02-17',2,0.2732,'BofA is surprising and big.'),(10,'ValueInvesting','1r7khie','o5ygyh2','2026-02-17',2,0.8519,'Good thing I didnâ€™t know I could buy Atlanta Braves stock.'),(11,'ValueInvesting','1r7khie','o5yloy0','2026-02-18',2,-0.1531,'Amazon lost 12% ytd, so I guess they had some insider info'),(12,'ValueInvesting','1r7khie','o5you2o','2026-02-18',1,0.1779,'I canâ€™t imagine Amazon will not continue to grow.'),(13,'ValueInvesting','1r7khie','o5yv25f','2026-02-18',1,0.099,'Would be interesting to see if now post buffet they will trade in and out of positions more often. Selling amazon in q4 made some sense especially in the rear view. Iâ€™d be buying again.'),(14,'ValueInvesting','1r7khie','o5z1253','2026-02-18',1,-0.1531,'Dumping Amazon is wild to me. Apple makes sense lol'),(15,'ValueInvesting','1r7khie','o5z6ol2','2026-02-18',1,0.7579,'I did not know Berkshire owned a small portion of a sports team. I was just listening to one of the old annual meetings (2015?) and someone asked if Berkshire should buy a sports team.Warren and Charlie laughed at the guy saying that if he ever does then his mind is too far gone and he should probably be replaced.Â '),(16,'ValueInvesting','1r7khie','o5zdbrg','2026-02-18',1,-0.5859,'I don\'t get the AMZN sell. Price is bad right now, and the business is great. They have so many ways to make money, and can cut back on capex if needed.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r85sp8','o636mf9','2026-02-18',8,0.4404,'thanks for nothing'),(2,'ValueInvesting','1r7sk39','o60b4cw','2026-02-18',48,-0.1326,'They also slashed amazon by 77% [https://www.signalbloom.ai/13f/superinvestor-report/berkshire-hathaway-fortifies-insurance-bets-with-1-85b](https://www.signalbloom.ai/13f/superinvestor-report/berkshire-hathaway-fortifies-insurance-bets-with-1-85b)\n\n[https://www.signalbloom.ai/13f/filer/berkshire-hathaway-inc](https://www.signalbloom.ai/13f/filer/berkshire-hathaway-inc)\n\nDisclaimer: I built the above site'),(3,'ValueInvesting','1r7sk39','o61s32l','2026-02-18',24,0.0387,'I want to believe in the insider trading but I personally would never make these moves.'),(4,'ValueInvesting','1r7sk39','o61tylq','2026-02-18',10,-0.0258,'Anyone else see value in NYT?\n\nI don\'t understand that one as in this \'AI disruption phase\' is there not a headwind that more people learn about news from gen AI search vs. Browsing on the newspaper website'),(5,'ValueInvesting','1r7sk39','o5zvkiz','2026-02-18',11,0,'As the Washington post gets gutted.'),(6,'ValueInvesting','1r7sk39','o63f6l5','2026-02-18',4,0.6249,'Why invest in NYT? I donâ€™t really understand that one.'),(7,'ValueInvesting','1r7sk39','o61h34l','2026-02-18',5,-0.4721,'Never sell your winners. Especially when you have billions in cash and donâ€™t need to sell them.'),(8,'ValueInvesting','1r7sk39','o63f1z1','2026-02-18',6,0.5106,'NYT is so small it was probably a Ted investment.\n\n$375 million total.\n\nUnless Buffett just had some free time to do a tiny investment.'),(9,'ValueInvesting','1r7sk39','o64viaj','2026-02-18',1,0,'NYT has sticky subscriber base and games'),(10,'ValueInvesting','1r7sk39','o65ltok','2026-02-19',1,0.3612,'I thought Abel took over like a month or more ago?'),(11,'ValueInvesting','1r7sk39','o646eam','2026-02-18',0,0.8442,'NYT could be valuable data source that could be licensed to AI. Since original content is dying, this could increase in value');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -175,4 +176,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-18  2:45:07
+-- Dump completed on 2026-02-19  2:44:05

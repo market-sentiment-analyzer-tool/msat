@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
@@ -86,13 +87,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-9db27e19-0c73-11f1-a623-927b384fd71f:1-114,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b55d6d10-0d3c-11f1-a7b2-3abbd0861f4b:1-47,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -152,7 +153,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +162,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'investing','1r7pqb3','o5z60od','2026-02-18',13,0.5574,'I think $200 is a great price for the biggest cloud provider if you believe in the AI productivity boom and all of the demand for inference servers it will require.'),(2,'investing','1r7pqb3','o5z8iay','2026-02-18',4,0.3658,'I bought my 3 yr leaps before the last earnings call. Buying in now seems like a steal. Wish I wasn\'t already over exposed to so I could add more. Might do it anyway if we drop to $180.'),(3,'investing','1r7pqb3','o5zai9p','2026-02-18',3,0.5994,'Itâ€™s a good chance we see 220 by end of the month.  Just vibes and dreamsâ€¦'),(4,'investing','1r7pqb3','o5z8p95','2026-02-18',4,0,'My indicators have the bottom pegged at $177.14'),(5,'investing','1r7pqb3','o5z7gxy','2026-02-18',5,-0.7501,'Investors really hate these enormous cap ex budgets until they start paying off. Theyâ€™re fighting with hundreds of billions because their main livelihood could be at risk, just like Meta and Google. Throw in Open Ai, Anthropic, and the Chinese and who knows.Â \n\nDeepseek 2 is to be released later this week and shouldnâ€™t be underestimated.Â '),(6,'investing','1r7pqb3','o5zc597','2026-02-18',3,-0.296,'No one knows, any prediction is just a guess'),(7,'investing','1r7pqb3','o5zfy39','2026-02-18',1,0.3182,'Amazon has to deal with all the Washington State tax laws. Massive revenue cuts and employees will leave..... Goodluck tho.'),(8,'investing','1r7pqb3','o5z6fbh','2026-02-18',1,0,'Prob not but you shouldnâ€™t be trying to catch the bottom'),(9,'investing','1r7pqb3','o5z78ti','2026-02-18',-4,0.3033,'My bet is that we have a catastrophe coming that will drop the whole market another 10 to 20%. \n\nBut that will be short term, and Amazon is back up by 250 by end of the year no problem. 300 totally doable if they slow capex and show some return on the AI investment. \n\nSo if you like Amazon, I would DCA over the next few months.'),(10,'ValueInvesting','1r7khie','o5y3767','2026-02-17',14,0,'Greg leaving his own prints.'),(11,'ValueInvesting','1r7khie','o5ykpgw','2026-02-17',13,0.5994,'I donâ€™t understand anything.\n\nBuys New York time at ATH, doesnâ€™t buy more o UHN, reforces Chubb ath when in October had a significant drop.\nSells Amazon when itâ€™s at ATL(almost).'),(12,'ValueInvesting','1r7khie','o5y46je','2026-02-17',17,0.3313,'Added 300 shares of lamar??? I couldâ€™ve done that  shit. Anybody else get that â€œBe sure to drink your Ovaltineâ€ feeling when Berkshire releases their 13f???'),(13,'ValueInvesting','1r7khie','o5y6h1u','2026-02-17',7,0.4576,'Very interesting. He bought New York Times and it is at 52-week high.'),(14,'ValueInvesting','1r7khie','o5ylmj7','2026-02-18',6,-0.4215,'4th quarter tax loss harvesting maybe?'),(15,'ValueInvesting','1r7khie','o5yowww','2026-02-18',5,-0.4019,'Dumping Amazon alarms me. As does buying Dominos, quite frankly.'),(16,'ValueInvesting','1r7khie','o5y26gu','2026-02-17',17,0.5466,'Nothing wrong with Amazons core business. As soon as they announce capex spending reduction their share price will go back.'),(17,'ValueInvesting','1r7khie','o5yto84','2026-02-18',3,-0.34,'Why even bother with a 40k position change in Lamar?'),(18,'ValueInvesting','1r7khie','o5y501n','2026-02-17',2,0.2732,'BofA is surprising and big.'),(19,'ValueInvesting','1r7khie','o5ygyh2','2026-02-17',2,0.8519,'Good thing I didnâ€™t know I could buy Atlanta Braves stock.'),(20,'ValueInvesting','1r7khie','o5yloy0','2026-02-18',2,-0.1531,'Amazon lost 12% ytd, so I guess they had some insider info'),(21,'ValueInvesting','1r7khie','o5you2o','2026-02-18',1,0.1779,'I canâ€™t imagine Amazon will not continue to grow.'),(22,'ValueInvesting','1r7khie','o5yv25f','2026-02-18',1,0.099,'Would be interesting to see if now post buffet they will trade in and out of positions more often. Selling amazon in q4 made some sense especially in the rear view. Iâ€™d be buying again.'),(23,'ValueInvesting','1r7khie','o5z1253','2026-02-18',1,-0.1531,'Dumping Amazon is wild to me. Apple makes sense lol'),(24,'ValueInvesting','1r7khie','o5z6ol2','2026-02-18',1,0.7579,'I did not know Berkshire owned a small portion of a sports team. I was just listening to one of the old annual meetings (2015?) and someone asked if Berkshire should buy a sports team.Warren and Charlie laughed at the guy saying that if he ever does then his mind is too far gone and he should probably be replaced.Â '),(25,'ValueInvesting','1r7khie','o5zdbrg','2026-02-18',1,-0.5859,'I don\'t get the AMZN sell. Price is bad right now, and the business is great. They have so many ways to make money, and can cut back on capex if needed.');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -175,4 +175,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-18  2:45:07
+-- Dump completed on 2026-02-19  2:44:05
