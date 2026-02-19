@@ -66,6 +66,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
+5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -152,7 +153,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +162,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Several big-time stocks are down from their highs.\nRight now is the perfect time to deploy some cash into some beaten-down stocks. The market has been poorly receiving most fourth-quarter earnings rep...','2026-02-17',0.55214,'3 Stocks to Double Up on Right Now','https://www.fool.com/investing/2026/02/17/3-stocks-to-double-up-on-right-now/',4),(2,'newsfeedback@fool.com (james brumley)','Investors are unfairly punishing too many stocks as part of a right-pricing of AI-related names. That spells opportunity for you.\nHas the volatile start to 2026 already disrupted plans for your portfo...','2026-02-17',0.86098,'2 Top Growth Stocks to Buy in the First Half of 2026','https://www.fool.com/investing/2026/02/17/2-top-growth-stocks-to-buy-in-the-first-half-of-20/',4),(3,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-02-16',0.1999,'10 AI Stocks to Watch: Broadcom, AMD, and More','https://www.insidermonkey.com/blog/10-ai-stocks-to-watch-broadcom-amd-and-more-1697068/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nFinancial Advocates Investment Management trimmed its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 58.6% during the 3rd qu...','2026-02-18',-0.22156,'Financial Advocates Investment Management Reduces Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/financial-advocates-investment-management-reduces-stock-position-in-alphabet-inc-goog.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nPFG Private Wealth Management LLC raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 375.0% in the 3rd quarter, according to its m...','2026-02-18',0.59502,'PFG Private Wealth Management LLC Has $1.62 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/pfg-private-wealth-management-llc-has-1-62-million-position-in-alphabet-inc-goog.html',4),(3,'newsfeedback@fool.com (sean williams)','While Klarman was loading up on shares of e-commerce and cloud infrastructure service titan Amazon, he was sending shares of a trillion-dollar competitor to the chopping block.\nNothing is more valuabl...','2026-02-18',0.32198,'Billionaire Seth Klarman of Baupost Group Is Piling Into Dual Industry Leader Amazon and Dumping Shares of a High-Flying Chief Rival','https://www.fool.com/investing/2026/02/18/billionaire-seth-klarman-baupost-pile-into-amazon/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nDDD Partners LLC lifted its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.5% in the 3rd quarter, according to the company in...','2026-02-18',0.4367,'DDD Partners LLC Acquires 2,710 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/ddd-partners-llc-acquires-2710-shares-of-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nMay Barnhard Investments LLC lessened its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 51.5% in the third quarter, accordi...','2026-02-18',0.09748,'May Barnhard Investments LLC Lowers Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/may-barnhard-investments-llc-lowers-stock-position-in-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nAmeritas Advisory Services LLC lifted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 32.5% in the 3rd quarter, according to its most ...','2026-02-18',0.19984,'Ameritas Advisory Services LLC Grows Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/ameritas-advisory-services-llc-grows-position-in-alphabet-inc-goog.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nLongbow Finance SA reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 18.7% in the 3rd quarter, according to the company in its m...','2026-02-18',0.4367,'Longbow Finance SA Sells 38,851 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/18/longbow-finance-sa-sells-38851-shares-of-alphabet-inc-goog.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Feb 18th, 2026\n\nWJ Financial Advisors LLC bought a new position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 3rd quarter, according to its most recen...','2026-02-18',0.4367,'7,992 Shares in Alphabet Inc. $GOOG Acquired by WJ Financial Advisors LLC','https://www.defenseworld.net/2026/02/18/7992-shares-in-alphabet-inc-goog-acquired-by-wj-financial-advisors-llc.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -175,4 +176,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-18  3:32:54
+-- Dump completed on 2026-02-19  3:31:36
