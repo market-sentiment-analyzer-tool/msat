@@ -35,6 +35,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+2296777c-0e05-11f1-9fe8-42d21b8f1a45:1-58,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
@@ -66,6 +67,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
+5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -93,7 +95,6 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
-b55d6d10-0d3c-11f1-a7b2-3abbd0861f4b:1-47,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -153,7 +154,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -162,7 +163,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r85sp8','o636mf9','2026-02-18',8,0.4404,'thanks for nothing'),(2,'ValueInvesting','1r7sk39','o60b4cw','2026-02-18',48,-0.1326,'They also slashed amazon by 77% [https://www.signalbloom.ai/13f/superinvestor-report/berkshire-hathaway-fortifies-insurance-bets-with-1-85b](https://www.signalbloom.ai/13f/superinvestor-report/berkshire-hathaway-fortifies-insurance-bets-with-1-85b)\n\n[https://www.signalbloom.ai/13f/filer/berkshire-hathaway-inc](https://www.signalbloom.ai/13f/filer/berkshire-hathaway-inc)\n\nDisclaimer: I built the above site'),(3,'ValueInvesting','1r7sk39','o61s32l','2026-02-18',24,0.0387,'I want to believe in the insider trading but I personally would never make these moves.'),(4,'ValueInvesting','1r7sk39','o61tylq','2026-02-18',10,-0.0258,'Anyone else see value in NYT?\n\nI don\'t understand that one as in this \'AI disruption phase\' is there not a headwind that more people learn about news from gen AI search vs. Browsing on the newspaper website'),(5,'ValueInvesting','1r7sk39','o5zvkiz','2026-02-18',11,0,'As the Washington post gets gutted.'),(6,'ValueInvesting','1r7sk39','o63f6l5','2026-02-18',4,0.6249,'Why invest in NYT? I donâ€™t really understand that one.'),(7,'ValueInvesting','1r7sk39','o61h34l','2026-02-18',5,-0.4721,'Never sell your winners. Especially when you have billions in cash and donâ€™t need to sell them.'),(8,'ValueInvesting','1r7sk39','o63f1z1','2026-02-18',6,0.5106,'NYT is so small it was probably a Ted investment.\n\n$375 million total.\n\nUnless Buffett just had some free time to do a tiny investment.'),(9,'ValueInvesting','1r7sk39','o64viaj','2026-02-18',1,0,'NYT has sticky subscriber base and games'),(10,'ValueInvesting','1r7sk39','o65ltok','2026-02-19',1,0.3612,'I thought Abel took over like a month or more ago?'),(11,'ValueInvesting','1r7sk39','o646eam','2026-02-18',0,0.8442,'NYT could be valuable data source that could be licensed to AI. Since original content is dying, this could increase in value');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -176,4 +176,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-19  2:44:05
+-- Dump completed on 2026-02-20  2:38:55
