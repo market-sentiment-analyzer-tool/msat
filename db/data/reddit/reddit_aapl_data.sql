@@ -35,7 +35,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
-2296777c-0e05-11f1-9fe8-42d21b8f1a45:1-58,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
@@ -70,6 +69,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+6484fb29-0ecd-11f1-850e-4ee5c7f52404:1-54,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -132,6 +132,7 @@ efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
@@ -154,7 +155,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -163,6 +164,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1r9w82u','o6faj5r','2026-02-20',8,0.7906,'Itâ€™s always like this. Choose your own adventure my friend.'),(2,'AAPL','1r9w82u','o6fmypr','2026-02-20',5,0.4646,'I\'ve been holding for 25 years and not a single regret. '),(3,'AAPL','1r9w82u','o6ff8rc','2026-02-20',4,0.9136,'Half a trillion dollars in revenue, 13% y/y growth (38% in china), 2.5 BILLION active devices, brand alone is worth a trillion. Constant vertical integration, chipsets, basebands -- destined to control the entire stack. Services revenue already a fortune 40 company growing double digits y/y. Long AAPL'),(4,'AAPL','1r9w82u','o6fdb0x','2026-02-20',3,0.8778,'\'consumer saturation is real\'\n\nA very good reason to hold.  People f*cking love their iPhones.  I don\'t have one, but I do have a Mac laptop, and it is a wonderful thing.'),(5,'AAPL','1r9w82u','o6fefwn','2026-02-20',3,0.8176,'Do they make great products? Yes.   \nThen hold. '),(6,'AAPL','1r9w82u','o6fahlm','2026-02-20',2,0.2263,'Okay, now show me the seahorse emoji.'),(7,'AAPL','1r9w82u','o6fejbv','2026-02-20',2,-0.296,'If this wasn\'t written by AI then you should stop writing.'),(8,'AAPL','1r9w82u','o6fpep9','2026-02-20',2,-0.6369,'Another day another Apple is doomed postÂ '),(9,'AAPL','1r9w82u','o6fcg8o','2026-02-20',0,-0.2263,'Once Tim Apple stopped showing up, things went sideways.'),(10,'AAPL','1r9w82u','o6g1lqy','2026-02-20',0,0.4404,'spy could be a better choice');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -176,4 +178,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-20  2:38:55
+-- Dump completed on 2026-02-21  2:32:06
