@@ -121,6 +121,7 @@ deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
+e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
@@ -155,7 +156,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -164,7 +165,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (geoffrey seiler)','Broadcom is one of the top AI infrastructure stocks right now.\nOne of the most intriguing stocks to watch this year is Broadcom (AVGO 0.40%). The company has some of the best growth prospects of any s...','2026-02-20',0.19954,'3 Predictions for Broadcom in 2026','https://www.fool.com/investing/2026/02/20/3-predictions-for-broadcom-in-2026/',4),(2,'newsfeedback@fool.com (geoffrey seiler)','Market leaders Nvidia, Alphabet, and TSMC have long-term moats.\nGrowth stocks have been leading the market higher for much of the past two decades, and with artificial intelligence (AI) looking like o...','2026-02-19',0.76002,'3 Unstoppable Artificial Intelligence (AI) Stocks to Buy Right Now for Less Than $3,000','https://www.fool.com/investing/2026/02/19/3-unstoppable-artificial-intelligence-ai-stocks-to/',4),(3,'defense world staff','\n					Posted by Defense World Staff on Feb 19th, 2026\n\nNorthStar Asset Management LLC NJ grew its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 16.4% in the third quarter, accord...','2026-02-19',0.65738,'Alphabet Inc. $GOOG Shares Bought by NorthStar Asset Management LLC NJ','https://www.defenseworld.net/2026/02/19/alphabet-inc-goog-shares-bought-by-northstar-asset-management-llc-nj.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 19th, 2026\n\nDZ Bank upgraded shares of Alphabet (NASDAQ:GOOG â€“ Free Report) to a strong-buy rating in a research note released on Monday morning,Zacks.com re...','2026-02-19',0.1998,'Alphabet (NASDAQ:GOOG) Upgraded at DZ Bank','https://www.defenseworld.net/2026/02/19/alphabet-nasdaqgoog-upgraded-at-dz-bank.html',4),(5,'newsfeedback@fool.com (daniel sparks)','Both tech stocks trade at similar valuations, but one has greater upside potential.\nThe latest earnings season proved one thing with near certainty: the artificial intelligence (AI) boom is alive and ...','2026-02-19',0.83704,'Amazon vs. Alphabet: Which Is the Better AI Stock to Buy Now?','https://www.fool.com/investing/2026/02/18/amazon-vs-alphabet-which-is-the-better-ai-stock-to/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'deep value investing','...','2026-02-21',0.2368,'Alphabet Printed The Best Hyperscaler Quarter, And The Market Still Found A Reason To Sell','https://seekingalpha.com/article/4873161-alphabet-printed-the-best-hyperscaler-quarter-and-the-market-still-found-a-reason-to-sell',4),(2,'newsfeedback@fool.com (eric volkman)','Who says investors are wary of pricey AI investments these days?\nAs the stock trading week came to a close on Friday, investors were doing more with Google parent Alphabet (GOOG +3.66%)(GOOGL +4.00%) ...','2026-02-20',0.19878,'Why Alphabet Stock Topped the Market Today','https://www.fool.com/investing/2026/02/20/why-alphabet-stock-topped-the-market-today/',4),(3,'benzinga research team','A newsletter built for market enthusiasts by market enthusiasts. Top stories, top movers, and trade ideas delivered to your inbox every weekday before and after the market closes.\nAt first glance, Alp...','2026-02-20',0.8002,'3 Good Reasons to Buy Google Right Now','https://www.benzinga.com/news/26/02/50763941/3-good-reasons-to-buy-google-right-now',80),(4,'newsfeedback@fool.com (prosper junior bakiny)','Alphabet has what it takes to reach this milestone.\nNo publicly traded company has ever reached a market valuation of $6 trillion. However, that should happen over the next few years, and several majo...','2026-02-20',0.38078,'Meet the AI Stock That Could Be Worth $6 Trillion by 2030','https://www.fool.com/investing/2026/02/20/meet-the-ai-stock-that-could-be-worth-6-trillion/',4),(5,'newsfeedback@fool.com (patrick sanders)','Both companies are spending heavily on AI this year.\nThere are a lot of great artificial intelligence (AI) stocks. Despite a downturn in AI stocks in recent days, the build-out of AI clearly has a lon...','2026-02-20',0.81724,'Better Artificial Intelligence Stock: Alphabet vs. Amazon','https://www.fool.com/investing/2026/02/20/better-artificial-intelligence-stock-googl-amzn/',4),(6,'newsfeedback@fool.com (dan caplinger)','This turnaround is one of the biggest in stock market history.\nOnly a few companies become the undisputed leaders of their particular industries. Those few that achieve such greatness do so only by wo...','2026-02-20',-0.05506,'How This AI Stock Went From Lost Cause to Leading Force','https://www.fool.com/investing/2026/02/20/how-this-ai-stock-went-from-lost-cause-to-leading/',4),(7,'newsfeedback@fool.com (geoffrey seiler)','Broadcom is one of the top AI infrastructure stocks right now.\nOne of the most intriguing stocks to watch this year is Broadcom (AVGO 0.46%). The company has some of the best growth prospects of any s...','2026-02-20',0.19954,'3 Predictions for Broadcom in 2026','https://www.fool.com/investing/2026/02/20/3-predictions-for-broadcom-in-2026/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -178,4 +179,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-21  3:15:22
+-- Dump completed on 2026-02-22  3:31:47
