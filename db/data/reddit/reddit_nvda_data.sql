@@ -62,6 +62,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5a8bd9f7-0f98-11f1-9528-f24f8ee0f612:1-26,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
@@ -69,13 +70,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
-6484fb29-0ecd-11f1-850e-4ee5c7f52404:1-54,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
@@ -155,7 +156,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -164,7 +165,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1r9us33','o6fxqd1','2026-02-20',19,0,'Remember folks, what Jensen says will happen, eventually happens'),(2,'NVDA_Stock','1r9us33','o6hnrze','2026-02-20',7,0.4404,'I hope they start building memory modules too.'),(3,'NVDA_Stock','1r9us33','o6ezw3p','2026-02-20',11,0,'Whereâ€™s the news? NVIDIAâ€™s intention to enter the CPU market has been known since it attempted to acquire Arm in 2020.'),(4,'NVDA_Stock','1r9us33','o6fx1qe','2026-02-20',5,-0.3252,'It\'s not new.   Grace and many of a long line of SoCs are \"cpu territory.\"'),(5,'NVDA_Stock','1r9us33','o6gs50o','2026-02-20',3,0.5859,'Nvida invested 5 billion in intel which got Intels price back to life. Why would they invest in them when they probably could have just bought them and go into their market?'),(6,'NVDA_Stock','1r9us33','o6fifjk','2026-02-20',6,0,'this hardly moves the needle.'),(7,'NVDA_Stock','1r9us33','o6ffhh5','2026-02-20',5,0,'AI slop.'),(8,'NVDA_Stock','1r9us33','o6hyjup','2026-02-20',2,0,'$200 and beyooooonnndddd'),(9,'NVDA_Stock','1r9us33','o6iiahd','2026-02-20',1,0,'Schwab.com'),(10,'NVDA_Stock','1r9us33','o6jb5cz','2026-02-21',1,0,'Arm based cpu which will not compete with Intel or amd cpu.'),(11,'NVDA_Stock','1r9juba','o6e7s34','2026-02-20',8,0.5622,'Guys Jensen said UP TO 100bn. FT always picks the headline that gets the most clickthroughs'),(12,'NVDA_Stock','1r9juba','o6czl6j','2026-02-20',7,0.4404,'Thats good for NVDA anyway'),(13,'NVDA_Stock','1r9juba','o6f8lz2','2026-02-20',8,0,'way too much false information going around about this, especially in relation to the â€œup to $100Bâ€ investment story.'),(14,'NVDA_Stock','1r9juba','o6cxqea','2026-02-20',3,0,'Not putting all its eggs in one basket.'),(15,'NVDA_Stock','1r9juba','o6czmvt','2026-02-20',20,-0.4238,'They never said that. Stop quoting Financial Times. They\'re literally a retarded tabloid that couldn\'t figure out how to read a basic 13F.'),(16,'NVDA_Stock','1r9juba','o6e53sy','2026-02-20',3,-0.5984,'Total shit'),(17,'NVDA_Stock','1r9juba','o6d6j8d','2026-02-20',6,0,'hahahahaha'),(18,'NVDA_Stock','1r9juba','o6gm5ru','2026-02-20',2,0.605,'Here is the complete article, sans pay wall . . .\n\n[https://archive.is/20260220150408/https://www.ft.com/content/dea24046-0a73-40b2-8246-5ac7b7a54323#selection-1945.0-1953.115](https://archive.is/20260220150408/https://www.ft.com/content/dea24046-0a73-40b2-8246-5ac7b7a54323#selection-1945.0-1953.115)\n\nMost important part is this:\n\n\"Nvidia is close to finalising a $30bn investment into OpenAI that will replace the long-term $100bn commitment agreed by the companies last year, as part of a massive new funding round for the AI start-up. The worldâ€™s most valuable company is in the final stages of negotiations withÂ [OpenAI](https://archive.is/o/I9MoI/https://www.ft.com/stream/e3402603-d253-4aa1-ac4d-fc9bdbf4ccb8), and its investment could be concluded as early as this weekend, according to people with knowledge of the matter.\"\n\nand this:\n\n\"OpenAI will reinvest much of its new capital into Nvidia hardware, but the companies would not proceed with the $100bn multiyear investment partnership they announced in September, the people added.\"'),(19,'NVDA_Stock','1r9juba','o6fvfvg','2026-02-20',2,-0.4019,'The hedge funds have been building their war chest in Nvidia shares for months now, and they will make billions off of that'),(20,'NVDA_Stock','1r9juba','o6emr7s','2026-02-20',1,-0.8885,'Market will be probably red today due AI bubble fear and Iran war.'),(21,'NVDA_Stock','1r9juba','o6cw0y4','2026-02-20',-1,-0.6995,'I guess it\'s possible the original structure is abandoned as it was kinda complicated but it doesn\'t mean NVIDIA isn\'t going to invest a lot more.'),(22,'NVDA_Stock','1r9juba','o6d7bba','2026-02-20',-14,0.995,'not formatting, don\'t bitch.  \n  \nNvidia is close to finalising a $30bn investment into OpenAI that will replace the long-term $100bn commitment agreed by the companies last year, as part of a massive new funding round for the AI start-up. The worldâ€™s most valuable company is in the final stages of negotiations with OpenAI, and its investment could be concluded as early as this weekend, according to people with knowledge of the matter. The $30bn equity investment forms part of a larger funding round that is on track to raise more than $100bn and will value the ChatGPT maker at $730bn, not including the new money, the people said. OpenAI will reinvest much of its new capital into Nvidia hardware, but the companies would not proceed with the $100bn multiyear investment partnership they announced in September, the people added. The retreat from the agreement announced to much fanfare in September comes amid investor jitters about the health of the AI sector that have helped drive US tech stocks down 17 per cent since the start of the year. Last yearâ€™s deal, announced as a â€œletter of intentâ€, closely tied together the two companies at the heart of the AI boom â€” and helped to propel Nvidia above $5tn in market value a few weeks later. It accelerated a frenzied period of dealmaking for Sam Altmanâ€™s AI start-up, which forged complex deals with rival chipmakers AMD and Broadcom and cloud providers including Oracle. Although welcomed by stock market investors at the time, the spate of agreements tying together suppliers, customers and investors in the AI sector prompted concern among some analysts about their circular structure and a growing bubble in the space. Under the terms of the $100bn agreement, Nvidia would have invested ten increments of $10bn as OpenAIâ€™s demand for computing power grew over several years, in return for a significant stake in the AI start-up. OpenAI in turn planned to buy millions of Nvidiaâ€™s AI processors as part of plans to deploy up to 10 gigawatts of new computing capacity. But the deal never progressed from a memorandum of understanding to a formal agreement. In January, The Wall Street Journal reported the deal was â€œon iceâ€. It has now been replaced by a more straightforward arrangement in which Nvidia will invest up to $30bn in return for OpenAI stock. That funding will support the build-out of gigawatts of new computing capacity and will probably be followed by further deals over time, according to people close to the companies. OpenAI and Nvidia declined to comment.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rahooo','o6mkcip','2026-02-21',1,0,'Tagged as rumour'),(2,'NVDA_Stock','1rahooo','o6kutr9','2026-02-21',9,-0.516,'Just like with all the fake news FUD blasted from \"sources familiar with the matter\", I will not believe this until Nvidia comes out and confirms.'),(3,'NVDA_Stock','1rahooo','o6p0jum','2026-02-22',1,0.34,'This would be quite the announcement on their earnings call on Thursdayâ€¦'),(4,'NVDA_Stock','1rahooo','o6kr2zl','2026-02-21',0,0,'Excellentttttttttttttttttt');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -178,4 +179,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-21  2:32:07
+-- Dump completed on 2026-02-22  2:44:48
