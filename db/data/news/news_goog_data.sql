@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -156,7 +157,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -165,7 +166,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'deep value investing','...','2026-02-21',0.2368,'Alphabet Printed The Best Hyperscaler Quarter, And The Market Still Found A Reason To Sell','https://seekingalpha.com/article/4873161-alphabet-printed-the-best-hyperscaler-quarter-and-the-market-still-found-a-reason-to-sell',4),(2,'newsfeedback@fool.com (eric volkman)','Who says investors are wary of pricey AI investments these days?\nAs the stock trading week came to a close on Friday, investors were doing more with Google parent Alphabet (GOOG +3.66%)(GOOGL +4.00%) ...','2026-02-20',0.19878,'Why Alphabet Stock Topped the Market Today','https://www.fool.com/investing/2026/02/20/why-alphabet-stock-topped-the-market-today/',4),(3,'benzinga research team','A newsletter built for market enthusiasts by market enthusiasts. Top stories, top movers, and trade ideas delivered to your inbox every weekday before and after the market closes.\nAt first glance, Alp...','2026-02-20',0.8002,'3 Good Reasons to Buy Google Right Now','https://www.benzinga.com/news/26/02/50763941/3-good-reasons-to-buy-google-right-now',80),(4,'newsfeedback@fool.com (prosper junior bakiny)','Alphabet has what it takes to reach this milestone.\nNo publicly traded company has ever reached a market valuation of $6 trillion. However, that should happen over the next few years, and several majo...','2026-02-20',0.38078,'Meet the AI Stock That Could Be Worth $6 Trillion by 2030','https://www.fool.com/investing/2026/02/20/meet-the-ai-stock-that-could-be-worth-6-trillion/',4),(5,'newsfeedback@fool.com (patrick sanders)','Both companies are spending heavily on AI this year.\nThere are a lot of great artificial intelligence (AI) stocks. Despite a downturn in AI stocks in recent days, the build-out of AI clearly has a lon...','2026-02-20',0.81724,'Better Artificial Intelligence Stock: Alphabet vs. Amazon','https://www.fool.com/investing/2026/02/20/better-artificial-intelligence-stock-googl-amzn/',4),(6,'newsfeedback@fool.com (dan caplinger)','This turnaround is one of the biggest in stock market history.\nOnly a few companies become the undisputed leaders of their particular industries. Those few that achieve such greatness do so only by wo...','2026-02-20',-0.05506,'How This AI Stock Went From Lost Cause to Leading Force','https://www.fool.com/investing/2026/02/20/how-this-ai-stock-went-from-lost-cause-to-leading/',4),(7,'newsfeedback@fool.com (geoffrey seiler)','Broadcom is one of the top AI infrastructure stocks right now.\nOne of the most intriguing stocks to watch this year is Broadcom (AVGO 0.46%). The company has some of the best growth prospects of any s...','2026-02-20',0.19954,'3 Predictions for Broadcom in 2026','https://www.fool.com/investing/2026/02/20/3-predictions-for-broadcom-in-2026/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The Oracle of Omaha has historically stayed away from tech stocks, but this is a high-quality business regardless of its tech connections.\nFormer Berkshire Hathaway CEO Warren Buffett is famous for sh...','2026-02-22',0.45444,'1 Unstoppable Artificial Intelligence (AI) Stock That Berkshire Hathaway Bought When Warren Buffett Was Still CEO','https://www.fool.com/investing/2026/02/22/unstoppable-ai-stock-warren-buffett-ceo-goog/',4),(2,'newsfeedback@fool.com (keithen drury)','Alphabet and Nvidia are competing in processing units.\nNvidia (NVDA +0.94%) and Alphabet (GOOG +3.66%) (GOOGL +3.95%) are two giants competing in the artificial intelligence build-out. For the most pa...','2026-02-21',0.91604,'Nvidia vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?','https://www.fool.com/investing/2026/02/21/nvidia-vs-alphabet-which-is-the-best-artificial-in/',4),(3,'deep value investing','...','2026-02-21',0.2368,'Alphabet Printed The Best Hyperscaler Quarter, And The Market Still Found A Reason To Sell','https://seekingalpha.com/article/4873161-alphabet-printed-the-best-hyperscaler-quarter-and-the-market-still-found-a-reason-to-sell',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -179,4 +180,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-22  3:31:47
+-- Dump completed on 2026-02-23  3:36:48
