@@ -81,6 +81,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
+78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
@@ -157,7 +158,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -166,7 +167,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (neil patel)','The Oracle of Omaha has historically stayed away from tech stocks, but this is a high-quality business regardless of its tech connections.\nFormer Berkshire Hathaway CEO Warren Buffett is famous for sh...','2026-02-22',0.45444,'1 Unstoppable Artificial Intelligence (AI) Stock That Berkshire Hathaway Bought When Warren Buffett Was Still CEO','https://www.fool.com/investing/2026/02/22/unstoppable-ai-stock-warren-buffett-ceo-goog/',4),(2,'newsfeedback@fool.com (keithen drury)','Alphabet and Nvidia are competing in processing units.\nNvidia (NVDA +0.94%) and Alphabet (GOOG +3.66%) (GOOGL +3.95%) are two giants competing in the artificial intelligence build-out. For the most pa...','2026-02-21',0.91604,'Nvidia vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?','https://www.fool.com/investing/2026/02/21/nvidia-vs-alphabet-which-is-the-best-artificial-in/',4),(3,'deep value investing','...','2026-02-21',0.2368,'Alphabet Printed The Best Hyperscaler Quarter, And The Market Still Found A Reason To Sell','https://seekingalpha.com/article/4873161-alphabet-printed-the-best-hyperscaler-quarter-and-the-market-still-found-a-reason-to-sell',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (dan caplinger)','Will the tech giant be able to follow through on its aspirations?\nAlphabet (GOOGL 1.11%) (GOOG 1.12%) was slow out of the gate when it comes to artificial intelligence. Over the past year, though, the...','2026-02-22',0.36144,'Alphabet Has a Plan for Worldwide AI Dominance','https://www.fool.com/investing/2026/02/22/alphabet-has-a-plan-for-worldwide-ai-dominance/',4),(2,'newsfeedback@fool.com (neil patel)','The Oracle of Omaha has historically stayed away from tech stocks, but this is a high-quality business regardless of its tech connections.\nFormer Berkshire Hathaway CEO Warren Buffett is famous for sh...','2026-02-22',0.45444,'1 Unstoppable Artificial Intelligence (AI) Stock That Berkshire Hathaway Bought When Warren Buffett Was Still CEO','https://www.fool.com/investing/2026/02/22/unstoppable-ai-stock-warren-buffett-ceo-goog/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -180,4 +181,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-23  3:36:48
+-- Dump completed on 2026-02-24  3:33:37
