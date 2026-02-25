@@ -72,6 +72,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -158,7 +159,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,7 +168,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (dan caplinger)','Will the tech giant be able to follow through on its aspirations?\nAlphabet (GOOGL 1.11%) (GOOG 1.12%) was slow out of the gate when it comes to artificial intelligence. Over the past year, though, the...','2026-02-22',0.36144,'Alphabet Has a Plan for Worldwide AI Dominance','https://www.fool.com/investing/2026/02/22/alphabet-has-a-plan-for-worldwide-ai-dominance/',4),(2,'newsfeedback@fool.com (neil patel)','The Oracle of Omaha has historically stayed away from tech stocks, but this is a high-quality business regardless of its tech connections.\nFormer Berkshire Hathaway CEO Warren Buffett is famous for sh...','2026-02-22',0.45444,'1 Unstoppable Artificial Intelligence (AI) Stock That Berkshire Hathaway Bought When Warren Buffett Was Still CEO','https://www.fool.com/investing/2026/02/22/unstoppable-ai-stock-warren-buffett-ceo-goog/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (bram berkowitz)','Investors closely follow Bill Ackman and his fund, Pershing Square Capital Management, to see what the billionaire and his team are buying and selling.\nWhether due to his outspokenness on a range of t...','2026-02-24',0.5812,'Billionaire Investor Bill Ackman Has Nearly 40% of His Hedge Fund Invested in Just 3 Artificial Intelligence (AI) Stocks','https://www.fool.com/investing/2026/02/24/billionaire-investor-bill-ackman-has-over-39-of-hi/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nEmpirical Financial Services LLC d.b.a. Empirical Wealth Management increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report...','2026-02-24',0.59502,'Empirical Financial Services LLC d.b.a. Empirical Wealth Management Raises Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/empirical-financial-services-llc-d-b-a-empirical-wealth-management-raises-stake-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nChina Universal Asset Management Co. Ltd. increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.3% in the 3rd quarter, according...','2026-02-24',0.65742,'China Universal Asset Management Co. Ltd. Acquires 3,534 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/china-universal-asset-management-co-ltd-acquires-3534-shares-of-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nAMG National Trust Bank trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.4% during the third quarter, according ...','2026-02-24',0.60838,'AMG National Trust Bank Has $16.91 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/amg-national-trust-bank-has-16-91-million-stock-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s share price dropped 1% during mid-day trading on Monday following insider selling activity. The s...','2026-02-24',-0.2689,'Alphabet (NASDAQ:GOOG) Shares Down 1% on Insider Selling','https://www.defenseworld.net/2026/02/24/alphabet-nasdaqgoog-shares-down-1-on-insider-selling.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -181,4 +182,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-24  3:33:37
+-- Dump completed on 2026-02-25  3:32:19
