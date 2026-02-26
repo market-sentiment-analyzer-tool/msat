@@ -23,6 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+0983912b-12bc-11f1-a4b5-5695042c048b:1-193,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -57,7 +58,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
-5691eb63-112a-11f1-9ea0-1acc73cb4922:1-142,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -82,6 +83,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '063ee96c-bab8-11f0-846e-36fac19fdb38:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
+78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
@@ -158,7 +160,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,7 +169,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1rcsrd7','o70p6gr','2026-02-23',81,0,'Obviously PYPL will be the next $5T behemoth.'),(2,'ValueInvesting','1rcsrd7','o70jtgw','2026-02-23',166,-0.8335,'People talking about a crash coming but donâ€™t want to talk about software stocks (e-commerce, data analytics, cybersecurity, etc.) down 30-60% and Mag 7 down 15-20% after very strong earnings across the board and solid guidance. Hell, even crypto is down over 50%. Wake up people, we are in the middle of the crash with decade low valuations.'),(3,'ValueInvesting','1rcsrd7','o70kboc','2026-02-23',26,0.5574,'Nvidia has been used for AI applications for over a decade, it\'s just that it wasn\'t until 2022/2023 when OpenAI launched ChatGPT that the entire tech industry became laser focused on AI and compute demand skyrocketed.'),(4,'ValueInvesting','1rcsrd7','o70j8z4','2026-02-23',106,-0.5859,'>Not much more to say than that is crazy when you think about it.\n\nActually it\'s crazy only when you don\'t think about it.'),(5,'ValueInvesting','1rcsrd7','o70q5hd','2026-02-23',8,-0.5589,'Seems that way if you just started paying attention to it eh? which describes me. I recently read \"The Thinking Machine\" by Stephen Witt, which is basically a history of Nvidia/ Jensen Huang. \n\nThe company launched CUDA in 2006, the parallel computing platform that would eventually allow them to dominate in scientific computing, and which now powers 90%+ of AI training. This is a slam dunk in hindsight, but at the time, investors were pissed that they were wasting money on this. There was even an activist investor pressuring NVDA to stop developing CUDA and calling for Huang\'s head. They were spending money on a market that didn\'t exist. \n\nCUDA is indeed the key to NVIDIA\'s success; AMD actually makes some very good chips as well, but researchers don\'t prefer them as they don\'t have the moat of this platform. '),(6,'ValueInvesting','1rcsrd7','o70l6gg','2026-02-23',55,0.4939,'Microsoft is absolutely undervalued compared to the other, and it has more moat and lesser risk than the other.\n\nWe have an entire generation exclusively learn how to use Excel and Word, and they still heavily and almost the only program that supported world corporations and the financial systems.'),(7,'ValueInvesting','1rcsrd7','o70mad0','2026-02-23',25,0.273,'Nvidia is not a meaningless company. they run a monopoly on a highly advanced technology with an immense amount of demand. they have a license to print money'),(8,'ValueInvesting','1rcsrd7','o70thht','2026-02-23',5,0,'PYPL'),(9,'ValueInvesting','1rcsrd7','o70q81g','2026-02-23',3,-0.2732,'The way these 3 stocks are moving you can drop the â€œalmostâ€ any day.'),(10,'ValueInvesting','1rcsrd7','o70v30c','2026-02-23',3,0.8617,'Nvidia is the same as Apple story, 20 years ago, it was a cult fan base paying more money to use a PC with very little market share completely dominated by Intc based PC. Then the IPhone launchedâ€¦you know the rest of the story.\n\nItâ€™s crazy to think all these companies, Google, Apple, Nvidia, Amazon, were just up and comer and Microsoft and Intel were kings.\n\n20 years made a lot of people extremely rich'),(11,'ValueInvesting','1rcsrd7','o70r24q','2026-02-23',2,-0.4019,'Wait until Nvidia dumps Wednesday'),(12,'ValueInvesting','1rcsrd7','o7106tm','2026-02-23',2,0,'Walmart is the new driver of the economy.'),(13,'ValueInvesting','1rcsrd7','o70ov7z','2026-02-23',2,0,'And it will quadruple from here. '),(14,'ValueInvesting','1rcsrd7','o70onxn','2026-02-23',1,0.6705,'**Using Nvidia = Losing Market Cap**\n\nMicrosoft, Meta and Amazon are the largest customers of Nvidia. Yet, they are the biggest losers in the market. Not a single nvidia-powered AI is profitable.\n\nGoogle (TPU) and Apple (Apple Silicon) are the only ones who left nvidia, and the current market winners.'),(15,'ValueInvesting','1rcsrd7','o70u2qw','2026-02-23',1,0,'Picks and shovels'),(16,'ValueInvesting','1rcsrd7','o70ug2e','2026-02-23',1,0.4482,'Itâ€™s like asking this in 1980-1990 and someone answering Apple, a company that almost went bankrupt back then. Well I wish I knew that answer today..'),(17,'ValueInvesting','1rcsrd7','o70yn6t','2026-02-23',1,0.5719,'The bagholding here is delicious... cope'),(18,'ValueInvesting','1rcsrd7','o711jgw','2026-02-23',1,0.5499,'Not saying it *is* worth that much, but realistically they at least make a real product that you can\'t get anywhere else. MSFT just makes software that could easily be replaced if not for inertia, and AMZN is just using NVDA\'s products to provide a service.'),(19,'ValueInvesting','1rcsrd7','o71btec','2026-02-23',1,0.1027,'Basically all the top tier semis. It\'s too hard trying to pick whether one will stumble, or catch up.\n\nNVDA, AVGO, AMD, MRVL, MU.\n\nI don\'t put QCOM, INTC in the tier 1 category. '),(20,'ValueInvesting','1rcsrd7','o71e3ii','2026-02-23',1,0.3612,'Someone like you said basically the exact same thing when Nvidiaâ€™s market cap was below $1T.'),(21,'ValueInvesting','1rcsrd7','o71fgrz','2026-02-23',1,-0.5927,'I didn\'t buy it ages ago because I thought it was overvalued then\n\n\nThen I realized TSLA was growing while worth nothing forever too'),(22,'ValueInvesting','1rcsrd7','o71oxmg','2026-02-24',1,0,'Are they really so impossible to compete with?'),(23,'ValueInvesting','1rcsrd7','o71skbc','2026-02-24',1,0.5859,'You\'re on a value investing subreddit, not a vibes subreddit. Have you looked at earnings recently?'),(24,'ValueInvesting','1rcsrd7','o7210hq','2026-02-24',1,0.8691,'- OpenAI, Anthropic, SpaceX\n- AMD and Tesla - if they play their cards right\n- Companies in south-east asia and latin america - SEA, Meli, ByteDance, Tencent\n- Nvidia will continue to be at the top\n- Alphabet - yes I think it will be the] biggest company by market cap in 5 - 10 years\n\nThey are not meaningless companies of course, just like how Nvidia had graduated to being an AI company by 2015.'),(25,'ValueInvesting','1rcsrd7','o725d21','2026-02-24',1,0.128,'It\'s a profitable company but not a sustainable one.. only if they diversify quickly into the next big thing they might survive or else they will go back to the pre-ai era'),(26,'ValueInvesting','1rcsrd7','o725nze','2026-02-24',1,0.3612,'No idea but certainly not Archer aviation'),(27,'ValueInvesting','1rcsrd7','o72grxu','2026-02-24',1,0.34,'Now go look at earnings.'),(28,'ValueInvesting','1rcsrd7','o70uplx','2026-02-23',1,0.5267,'I may be speculating, but based on my experience fast growing stocks like NVIDIA will loose 50% of it\'s value and then recover all its losses and eventually they will stabilize on a certain level'),(29,'ValueInvesting','1rcsrd7','o71edwx','2026-02-23',1,-0.5766,'Duolingo will become a 10T dollar Goliath. ALL WILL BOW DOWN BEFORE THE BIRD');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -181,4 +182,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-24  2:46:34
+-- Dump completed on 2026-02-26  2:39:35
