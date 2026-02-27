@@ -107,6 +107,7 @@ bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
+c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -160,7 +161,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +170,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (bram berkowitz)','Investors closely follow Bill Ackman and his fund, Pershing Square Capital Management, to see what the billionaire and his team are buying and selling.\nWhether due to his outspokenness on a range of t...','2026-02-24',0.5812,'Billionaire Investor Bill Ackman Has Nearly 40% of His Hedge Fund Invested in Just 3 Artificial Intelligence (AI) Stocks','https://www.fool.com/investing/2026/02/24/billionaire-investor-bill-ackman-has-over-39-of-hi/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nEmpirical Financial Services LLC d.b.a. Empirical Wealth Management increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report...','2026-02-24',0.59502,'Empirical Financial Services LLC d.b.a. Empirical Wealth Management Raises Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/empirical-financial-services-llc-d-b-a-empirical-wealth-management-raises-stake-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nChina Universal Asset Management Co. Ltd. increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.3% in the 3rd quarter, according...','2026-02-24',0.65742,'China Universal Asset Management Co. Ltd. Acquires 3,534 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/china-universal-asset-management-co-ltd-acquires-3534-shares-of-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nAMG National Trust Bank trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.4% during the third quarter, according ...','2026-02-24',0.60838,'AMG National Trust Bank Has $16.91 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/24/amg-national-trust-bank-has-16-91-million-stock-position-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 24th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s share price dropped 1% during mid-day trading on Monday following insider selling activity. The s...','2026-02-24',-0.2689,'Alphabet (NASDAQ:GOOG) Shares Down 1% on Insider Selling','https://www.defenseworld.net/2026/02/24/alphabet-nasdaqgoog-shares-down-1-on-insider-selling.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'motley fool','...','2026-02-26',0.51888,'1 Top Quantum Computing Stock to Buy in 2026','https://finance.yahoo.com/news/1-top-quantum-computing-stock-150500649.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -183,4 +184,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-26  3:27:55
+-- Dump completed on 2026-02-27  3:24:57
