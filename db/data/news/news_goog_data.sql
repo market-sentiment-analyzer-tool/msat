@@ -29,6 +29,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -161,7 +162,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -170,7 +171,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'motley fool','...','2026-02-26',0.51888,'1 Top Quantum Computing Stock to Buy in 2026','https://finance.yahoo.com/news/1-top-quantum-computing-stock-150500649.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-02-27',-0.14232,'Tech stocks today: OpenAI raises $110 billion, Anthropic rejects Defense Department AI demands','https://ca.finance.yahoo.com/news/tech-stocks-today-openai-raises-110-billion-anthropic-rejects-defense-department-ai-demands-143452536.html',2),(2,'yahoo finance','...','2026-02-27',-0.14232,'Tech stocks today: Anthropic rejects Defense Department AI demands, OpenAI raises $110 billion','https://ca.finance.yahoo.com/news/tech-stocks-today-anthropic-rejects-defense-department-ai-demands-openai-raises-110-billion-143452606.html',2),(3,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nChase Investment Counsel Corp raised its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 145.9% in the 3rd quarter, according...','2026-02-27',0.43664,'Chase Investment Counsel Corp Acquires 1,974 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/chase-investment-counsel-corp-acquires-1974-shares-of-alphabet-inc-goog.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nDakota Wealth Management lowered its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.9% in the 3rd quarter, according to its most rec...','2026-02-27',0.59502,'Dakota Wealth Management Trims Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/dakota-wealth-management-trims-stake-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nCompound Planning Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 12.0% in the third quarter, according to the company in ...','2026-02-27',0.48882,'Alphabet Inc. $GOOG Holdings Boosted by Compound Planning Inc.','https://www.defenseworld.net/2026/02/27/alphabet-inc-goog-holdings-boosted-by-compound-planning-inc.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nDana Investment Advisors Inc. reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.4% during the 3rd quarter, according to its mo...','2026-02-27',0.19988,'Dana Investment Advisors Inc. Trims Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/dana-investment-advisors-inc-trims-stock-position-in-alphabet-inc-goog.html',4),(7,'yahoo finance','...','2026-02-26',0.08216,'Nvidia stock falls as Q4 beat, guidance fail to satisfy Wall Street','https://finance.yahoo.com/news/nvidia-stock-falls-as-q4-beat-guidance-fail-to-satisfy-wall-street-170306228.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -184,4 +185,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-27  3:24:57
+-- Dump completed on 2026-02-28  3:04:34
