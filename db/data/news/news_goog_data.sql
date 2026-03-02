@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -163,7 +164,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,7 +173,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (marc guberti)','Investing in Alphabet can set you up for more upside as the company continues to expand in multiple high-growth industries.\nChoosing the right stocks can help investors outperform the S&P 500. Paradox...','2026-02-28',0.78782,'Got $5,000? 1 Tech Stock to Buy and Hold for the Long Term.','https://www.fool.com/investing/2026/02/28/got-5000-1-tech-stock-to-buy-and-hold-for-the-long/',4),(2,'yahoo finance','...','2026-02-27',-0.14232,'Tech stocks today: OpenAI raises $110 billion, Anthropic rejects Defense Department AI demands','https://ca.finance.yahoo.com/news/tech-stocks-today-openai-raises-110-billion-anthropic-rejects-defense-department-ai-demands-143452536.html',2),(3,'yahoo finance','...','2026-02-27',-0.14232,'Tech stocks today: Anthropic rejects Defense Department AI demands, OpenAI raises $110 billion','https://ca.finance.yahoo.com/news/tech-stocks-today-anthropic-rejects-defense-department-ai-demands-openai-raises-110-billion-143452606.html',2),(4,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nChase Investment Counsel Corp raised its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 145.9% in the 3rd quarter, according...','2026-02-27',0.43664,'Chase Investment Counsel Corp Acquires 1,974 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/chase-investment-counsel-corp-acquires-1974-shares-of-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nDakota Wealth Management lowered its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.9% in the 3rd quarter, according to its most rec...','2026-02-27',0.59502,'Dakota Wealth Management Trims Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/dakota-wealth-management-trims-stake-in-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nCompound Planning Inc. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 12.0% in the third quarter, according to the company in ...','2026-02-27',0.48882,'Alphabet Inc. $GOOG Holdings Boosted by Compound Planning Inc.','https://www.defenseworld.net/2026/02/27/alphabet-inc-goog-holdings-boosted-by-compound-planning-inc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Feb 27th, 2026\n\nDana Investment Advisors Inc. reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.4% during the 3rd quarter, according to its mo...','2026-02-27',0.19988,'Dana Investment Advisors Inc. Trims Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/02/27/dana-investment-advisors-inc-trims-stock-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Microsoft stock is trading at a valuation low not seen since the depths of the 2023 sell-off.\nIt may seem like an odd question, asking if Microsoft (MSFT 2.17%) is the next Alphabet (GOOG +1.39%) (GOO...','2026-02-28',0.19978,'Is Microsoft the Next Alphabet?','https://www.fool.com/investing/2026/02/28/is-microsoft-the-next-alphabet/',4),(2,'newsfeedback@fool.com (marc guberti)','Investing in Alphabet can set you up for more upside as the company continues to expand in multiple high-growth industries.\nChoosing the right stocks can help investors outperform the S&P 500. Paradox...','2026-02-28',0.78782,'Got $5,000? 1 Tech Stock to Buy and Hold for the Long Term.','https://www.fool.com/investing/2026/02/28/got-5000-1-tech-stock-to-buy-and-hold-for-the-long/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -186,4 +187,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-01  3:36:46
+-- Dump completed on 2026-03-02  3:25:54
