@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '025e68d8-15e1-11f1-b273-763ff6e7998d:1-41,
+05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
@@ -86,7 +87,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7c10c7fe-1519-11f1-8e20-669bf1562f4d:1-34,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -108,6 +108,7 @@ be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
+c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -163,7 +164,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,7 +173,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rgsc67','o7tz285','2026-02-28',16,0.2732,'Great news? Down 5 percent'),(2,'NVDA_Stock','1rgsc67','o7twzzs','2026-02-28',14,0.34,'Jensen sorta said this on the earnings call'),(3,'NVDA_Stock','1rgsc67','o7tr46v','2026-02-28',14,0.3612,'A tweet today from Jonathan Ross, Groq founder:\n\n\"If it feels like things are moving fast, brace yourself. This is the slowest things will ever move ever again.\"\n\nhttps://x.com/i/status/2027428933185261959'),(4,'NVDA_Stock','1rgsc67','o7xn0jf','2026-02-28',5,0.6908,'I bought 1000 shares at $167 last July thinking this woukd be $250 by now hoping back over $1000 in 5 years.  I guess I can dream.'),(5,'NVDA_Stock','1rgsc67','o7ts2b7','2026-02-28',6,0.4926,'This was the good news we all needed after this week!'),(6,'NVDA_Stock','1rgsc67','o7w8pmw','2026-02-28',2,0,'I need a break from this stock'),(7,'NVDA_Stock','1rgsc67','o7trsyz','2026-02-28',3,0,'TO THE MOOOOOON, plzzz'),(8,'NVDA_Stock','1rgsc67','o7tr173','2026-02-28',3,0,'what we thinking? 200+ pre-GTC?'),(9,'NVDA_Stock','1rgsc67','o7tovqp','2026-02-28',1,0.508,'yes! fianlly! '),(10,'NVDA_Stock','1rgsc67','o7x52tz','2026-02-28',0,0.504,'Arent companies always planning to release new and better products? Why is this news?'),(11,'NVDA_Stock','1rgsc67','o7v7qri','2026-02-28',-3,0.8873,'I believe NVDA is sideways because market is looking for better opportunities. NVDA had its run, now its memory or companies that are a hedge like AMD, but AMD has nothing on NVDA and google is gaining traction on TPUs. Since there are bottle necks, I would expect NVDA to do another massive run like we\'ve seen. Guess we\'ll see though.'),(12,'NVDA_Stock','1rgsc67','o7tugw1','2026-02-28',-15,0.6529,'More manipulation. They knew the price would drop after earnings. Now good new to raise it. Losing morw and more respect for Jensen honestly. He\'s playing the big shot market mover game now. Not a fan');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ri0j9c','o82j1cc','2026-03-01',17,0.9001,'Brian Sozzi, the article writer, has been neutral to bearish on Nvidia since the beginning of chatGPT in November 2022. Â \n\n\nAlso, Nvidia was once a gaming company with 85% of its revenue coming from gaming in November 2022. Today, gaming is 6% of its revenue and data center is 91%. Â \nThis is a result of market expansion and entering new market. Data center prior to AI was dominated largely by Intel and AMD but nowhere close to the absolute amounts that AI hardware has brought in. Nvidia created its own market.\n\nAnd I am confident Nvidia, led by Jensen, will create the next market in physical AI and automotive and digital world simulations. Just wait for the announcements in GTC in 3 weeks.\n\n\nAlso, marketcap can absolutely go bigger if the earnings justify it\n'),(2,'NVDA_Stock','1ri0j9c','o82nc0f','2026-03-01',11,-0.7269,'The word possible by definition yes, but no that doesn\'t make sense.  If P/E goes down, down, down, to 1, then Nvidia could just issue the entire earnings as a dividend and you could double your money every year.  That\'s not going to be something that the market allows.\n\nSo no, it won\'t just stay the same MC \"no matter how low\" the multiple gets.  How low will the market allow is the question.'),(3,'NVDA_Stock','1ri0j9c','o831tez','2026-03-01',9,0.5574,'The reality is the rest of the market needs to catch up and the mag 7 needs to show real returns from their massive capex spending. \n\nIts a holding pattern until then'),(4,'NVDA_Stock','1ri0j9c','o83fr19','2026-03-01',8,0.3885,'FYI the amount of capital invested in Nvidia is no where near the market cap. It might be 10% of the market cap is actual cash held in the stock. This goes for all stocks. \n\nThe price of the stock represents the price last trade occurred at. It does not mean there is $4.5T currently sitting in there. That has nothing to do with market cap. It is interesting and worthwhile to look into this to understand.'),(5,'NVDA_Stock','1ri0j9c','o82jigy','2026-03-01',13,0.6767,'There have been multiple discussions on this, explaining why NVDA is range-bound in spite of stellar results.\n\nShort answer -\n\n1.	â Gamma Pinning by Options Market Makers\n2.	â Institutional rebalancing by passive index funds\n3.	â Massive covered call writing by institutions with large unrealized gains in NVIDIA stock\n\n\nGreat results are priced in, and there has to be a bigger catalyst than results to move the stock. \n\nItâ€™s anyoneâ€™s guess what that catalyst might be. Announcements at GTC about new inferencing capabilities that will leave custom silicon in the dust? Significant stock buy-backs?\n\nThe situation in Iran will probably dampen sentiment around equities for a while, anyway - at least until shipping safely resumes in the Strait of Hormuz.'),(6,'NVDA_Stock','1ri0j9c','o82qob9','2026-03-01',6,-0.6124,'AI disruption is key here. Weâ€™re in the embryonic stages of this. With new architecture comes further disruption and advancements in technology. Buckled in for the long term. 10 years'),(7,'NVDA_Stock','1ri0j9c','o82rf89','2026-03-01',3,0.4019,'It is an interesting question...  if a single company were to hit an absurd percentage of the total market, say 25% or more...   what happens to the market?'),(8,'NVDA_Stock','1ri0j9c','o850qtk','2026-03-01',5,0.0516,'No lol. It\'ll easily hit at least $350 this year. I bet a LOT of money on this.'),(9,'NVDA_Stock','1ri0j9c','o85hg2b','2026-03-02',2,-0.296,'Va a llegar a $250 en 25 aÃ±os mÃ¡s no te preocupes'),(10,'NVDA_Stock','1ri0j9c','o85du80','2026-03-02',1,0,'Give it 5 or 6 years when it hits 8 trillion market cap and the rest of mag 7 are 5-6 and people will be saying the same thing about nvda or some other big boy hitting 10 to 12 trillion market cap.Â '),(11,'NVDA_Stock','1ri0j9c','o8384um','2026-03-01',0,0.4588,'The reality is weâ€™re looking at max of 30$ per share downside in the near term if that even happens thatâ€™s worst case scenario and a great buying opportunity.'),(12,'NVDA_Stock','1ri0j9c','o835w8a','2026-03-01',-7,0.2268,'Iâ€™m concerned about the fact that Nvidia invested $30 billion in OpenAI, for a guarantee that OpenAI would buy $100 billion worth of Nvidia chips in the future. Thatâ€™s not growing revenue, thatâ€™s just passing money back and forth.'),(13,'NVDA_Stock','1riczsr','o85t4g7','2026-03-02',3,0.6133,'Folks should remember the huge financial resources Nvidia has to develop new technology, along a number of dimensions. A quick look shows that their R&D budget for last year was something like 18.5 billion. This makes it very hard for others to catch up or leapfrog, which is why the dominant platform typically is dominant for much longer than what you might expect.'),(14,'NVDA_Stock','1riczsr','o85b7mk','2026-03-02',2,0,'Feynman'),(15,'NVDA_Stock','1riczsr','o85c0hk','2026-03-02',-1,-0.4767,'Fake'),(16,'NVDA_Stock','1riczsr','o85b1at','2026-03-02',-1,0,'ai slop'),(17,'NVDA_Stock','1riczsr','o85afxh','2026-03-02',-3,0,'lol'),(18,'NVDA_Stock','1ri0w1a','o82kdue','2026-03-01',4,0.4404,'Agentic AI for telco ops is getting real fast. The blueprint approach feels like the missing piece to make agents reliable in production (clear tool boundaries, evals, and guardrails). If youre collecting patterns/lessons learned, this writeup had a few practical notes Ive been using for agent workflows: https://www.agentixlabs.com/blog/'),(19,'NVDA_Stock','1ri0w1a','o83nnom','2026-03-01',2,0.4404,'Sign me up for an N-Phone');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -186,4 +187,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-01  2:51:44
+-- Dump completed on 2026-03-02  2:40:46
