@@ -21,8 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '025e68d8-15e1-11f1-b273-763ff6e7998d:1-41,
-05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
@@ -72,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '025e68d8-15e1-11f1-b273-763ff6e7998d:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -90,6 +90,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '025e68d8-15e1-11f1-b273-763ff6e7998d:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8aea8d18-16aa-11f1-989a-f2b4db048e4f:1-47,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
@@ -164,7 +165,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -173,6 +174,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1rj8guh','o8blfdk','2026-03-02',27,0.4926,'I have been buying and will continue until we hit $480. Easy money!'),(2,'ValueInvesting','1rj8guh','o8bmhok','2026-03-02',24,0.7883,'In 12 to 24 months MSFT will approach 600. Itâ€™s not sexy, but itâ€™s one of the best long-term stocks to hold in my opinion.'),(3,'ValueInvesting','1rj8guh','o8bhx7r','2026-03-02',13,0.836,'Msft is not a bad choice to pick up at this price. Sure a pe of 25 might be â€œhighâ€ but that can be relative. Look at Tesla and Palantirâ€¦. The point is investing is really hard and Judging a stock by PE really doesnâ€™t give you the whole story. We have been in a ridiculous bull market the last few years so itâ€™s really difficult to find cheap companies. In fact consumer stables stocks are even really â€œexpensiveâ€ based on PE â€¦look at the PE of Walmart and Costco. But this is the market we have and you may as well play it. Dollar cost average and Iâ€™m sure in few years  ( 15-20) you will likely be happy'),(4,'ValueInvesting','1rj8guh','o8bo9j2','2026-03-03',10,0.8993,'The one thing I will never forget was Buffett explaining how Ben Graham use to teach. He would ask the class to value 2 different companies and they did and obviously came up with different values. The catch was that Graham gave them the same company just at different periods in their life cycle. I would advise looking at msft during the 2005 to 2015 period of time. I remember in business school (2006) listening to rich pzena pitch msft when it was trading at 11x cash. 25x was unthinkable back then. Just a thought.Â '),(5,'ValueInvesting','1rj8guh','o8bhgia','2026-03-02',31,0.3612,'Do you guys only know like 5 stocks?\n\n'),(6,'ValueInvesting','1rj8guh','o8bi98j','2026-03-02',10,0.4678,'Iâ€™m a big fan of insiders purchasing stock, hasnâ€™t been much of that with Microsoft. I think Google will be the winner in the AI market IMO, but time will tell.'),(7,'ValueInvesting','1rj8guh','o8bf52t','2026-03-02',6,0.7783,'Strong Buy'),(8,'ValueInvesting','1rj8guh','o8bxjq3','2026-03-03',2,0.5267,'MSFT is a relatively fast growing company with a deep moat. The PE is justified and even undervalued for this business on a qualitative basis.'),(9,'ValueInvesting','1rj8guh','o8c4e9s','2026-03-03',2,0.7072,'I have owned MSFT since 2010. This is a blip, but long term it will go up. It is one of the most profitable companies in the world! Just 365 is used by 345 million people!'),(10,'ValueInvesting','1rj8guh','o8ca6p7','2026-03-03',2,0.5055,'Tonight Jim Cramer was talking about selling all his Microsoft stock. Iâ€™m not sure how the inverse Cramer ETF is doing but for me , this a sign to buy. Not financial advice ok.'),(11,'ValueInvesting','1rj8guh','o8cb4at','2026-03-03',2,-0.1406,'Pretty much the same position as Google last year, short term there might be new lows but long termâ€¦ just look at what Google did.'),(12,'ValueInvesting','1rj8guh','o8bias6','2026-03-02',4,0.5994,'I just wrote a piece on Microsoft. I think itâ€™s a strong buy. It will suck out all the investment money VCs are putting into OpenAI. https://open.substack.com/pub/lukehammons/p/openai-is-bleeding-out-and-vcs-keep?r=g7kbu&utm_medium=ios'),(13,'ValueInvesting','1rj8guh','o8bmudy','2026-03-03',4,-0.4588,'Cramer just said sell it.'),(14,'ValueInvesting','1rj8guh','o8bhhvo','2026-03-02',2,0.8931,'It\'s finally at a fair value. It\'s been overvalued since early 2024 (except for liberation day). It\'s a decent pick for sure but I\'m not holding neither buying the company. There\'re so many opportunities for the moment with greater margin of safety.'),(15,'ValueInvesting','1rj8guh','o8bjcbu','2026-03-02',1,0.7783,'recently started a position at 390, just nibble, it may go lower this year, not something I would buy on leverage, pretty sure in a few years will at least keep pace with inflation. willing to add more.'),(16,'ValueInvesting','1rj8guh','o8bjl6u','2026-03-02',1,0.4389,'Dear OP,\n\nSince you are new, perhaps you can spend sometime and do some MSFT financial ratio comparison. \n\nHere is a suggestion: perhaps compare p/e of MSFT against its historical averages of 5 and 10 years. And update this post, it will add a lot more credibility to it. And add weight to your assertion that MSFT is cheap. \n\nTks!'),(17,'ValueInvesting','1rj8guh','o8c8zea','2026-03-03',1,0.9093,'25 isnâ€™t low. The last 5 or so year may make it feel low but thatâ€™s pretty efficiently priced in my opinion. If you want something to study for a good example of what it looks like when large companies are running at a low PE Google about a year ago was trading on a PE of 12 and thatâ€™s kind of crazy especially now that itâ€™s at almost 30'),(18,'ValueInvesting','1rj8guh','o8c9b7d','2026-03-03',1,0.5483,'I havenâ€™t bought since 250 and Iâ€™m buying again. Iâ€™m overweight in MSFT but itâ€™s the most attractive offer in the market to me right now.'),(19,'ValueInvesting','1rj8guh','o8cboap','2026-03-03',1,0,'Are we still in a bull market? NASDAQ has been in a range since October.'),(20,'ValueInvesting','1rj8guh','o8ccujf','2026-03-03',1,0.4062,'To be honest I would not be investing in this market right now. Things are very volatile, debt is high and circular, and all of the large tech companies have made large capital expenditures on uncertain future gains.\n\nThis seems to be a very pro-MSFT and AI sub. You should see the other side. Ed Zitron is probably one of the leading anti-ai people. [https://www.wheresyoured.at/premium-the-haters-guide-to-microsoft/](https://www.wheresyoured.at/premium-the-haters-guide-to-microsoft/)'),(21,'ValueInvesting','1rj8guh','o8bf4qs','2026-03-02',-4,0.4588,'Pe of 25 seems low to you? Oh my sweet summer child. You\'re gonna get so buttfucked when you actually see a bear market.'),(22,'ValueInvesting','1rj8guh','o8bmu7c','2026-03-03',0,0,'This is a shitpost, right?'),(23,'ValueInvesting','1rj8guh','o8bf288','2026-03-02',-1,0.7345,'It is in a tough spot overall. It is a great company available at a fair valuation, so just load it up!'),(24,'ValueInvesting','1rj8guh','o8bgm0k','2026-03-02',0,0.4404,'Googl is better'),(25,'ValueInvesting','1rj8guh','o8bm85n','2026-03-02',-5,0.2023,'Why do I see Microsoft post every day ? \n\nTop signal imo');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -186,4 +188,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-02  2:40:46
+-- Dump completed on 2026-03-03  2:42:56
