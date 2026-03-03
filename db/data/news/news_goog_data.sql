@@ -143,6 +143,7 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
@@ -164,7 +165,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -173,7 +174,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (keithen drury)','Microsoft stock is trading at a valuation low not seen since the depths of the 2023 sell-off.\nIt may seem like an odd question, asking if Microsoft (MSFT 2.17%) is the next Alphabet (GOOG +1.39%) (GOO...','2026-02-28',0.19978,'Is Microsoft the Next Alphabet?','https://www.fool.com/investing/2026/02/28/is-microsoft-the-next-alphabet/',4),(2,'newsfeedback@fool.com (marc guberti)','Investing in Alphabet can set you up for more upside as the company continues to expand in multiple high-growth industries.\nChoosing the right stocks can help investors outperform the S&P 500. Paradox...','2026-02-28',0.78782,'Got $5,000? 1 Tech Stock to Buy and Hold for the Long Term.','https://www.fool.com/investing/2026/02/28/got-5000-1-tech-stock-to-buy-and-hold-for-the-long/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'motley fool','...','2026-03-01',0.66168,'The 2 Best Quantum Computing Stocks to Buy in March','https://finance.yahoo.com/news/2-best-quantum-computing-stocks-202500096.html',20),(2,'newsfeedback@fool.com (robert izquierdo)','These companies are enjoying business growth despite share price drops.\nArtificial intelligence is poised to deliver transformative changes to many industries. That potent technological potential spar...','2026-03-01',0.8499,'2 Top Artificial Intelligence Stocks to Buy Right Now','https://www.fool.com/investing/2026/03/01/2-top-artificial-intelligence-stocks-to-buy-right/',4),(3,'newsfeedback@fool.com (brett schafer)','These companies are diversified technology players benefiting from the latest innovations in artificial intelligence (AI).\nAll anyone is talking about these days seems to be artificial intelligence (A...','2026-03-01',0.85,'2 Top Artificial Intelligence Stocks to Buy in March','https://www.fool.com/investing/2026/03/01/top-artificial-intelligence-ai-stocks-buy-march/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -187,4 +188,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-02  3:25:54
+-- Dump completed on 2026-03-03  3:28:47
