@@ -109,6 +109,7 @@ bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -165,7 +166,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -174,7 +175,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'motley fool','...','2026-03-01',0.66168,'The 2 Best Quantum Computing Stocks to Buy in March','https://finance.yahoo.com/news/2-best-quantum-computing-stocks-202500096.html',20),(2,'newsfeedback@fool.com (robert izquierdo)','These companies are enjoying business growth despite share price drops.\nArtificial intelligence is poised to deliver transformative changes to many industries. That potent technological potential spar...','2026-03-01',0.8499,'2 Top Artificial Intelligence Stocks to Buy Right Now','https://www.fool.com/investing/2026/03/01/2-top-artificial-intelligence-stocks-to-buy-right/',4),(3,'newsfeedback@fool.com (brett schafer)','These companies are diversified technology players benefiting from the latest innovations in artificial intelligence (AI).\nAll anyone is talking about these days seems to be artificial intelligence (A...','2026-03-01',0.85,'2 Top Artificial Intelligence Stocks to Buy in March','https://www.fool.com/investing/2026/03/01/top-artificial-intelligence-ai-stocks-buy-march/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-03-03',-0.18104,'Wall Street Breakfast Podcast: Tech Drags Futures Lower','https://seekingalpha.com/article/4877533-wall-street-breakfast-podcast-tech-drags-futures-lower',4),(2,'insider monkey staff','At Insider Monkey, we donâ€™t just â€œwatchâ€ the market; we command it by tracking over 1,000 of the worldâ€™s most successful billionaires and hedge fund managers. Every quarter, we strip away the noise to...','2026-03-02',0.58028,'10 Most Popular Stocks Among Hedge Funds: December 31, 2025 Rankings','https://www.insidermonkey.com/blog/10-most-popular-stocks-among-hedge-funds-december-31-2025-rankings-1707785/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -188,4 +189,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-03  3:28:47
+-- Dump completed on 2026-03-04  3:18:54
