@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+37bbaf43-183c-11f1-865c-c2ba4910c1d1:1-157,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
@@ -90,7 +91,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
-8aea8d18-16aa-11f1-989a-f2b4db048e4f:1-47,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
@@ -110,6 +110,7 @@ bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -144,6 +145,7 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
@@ -165,7 +167,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -174,6 +176,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rknni1','o8ls00x','2026-03-04',7,0.3612,'Need your login for article thx '),(2,'NVDA_Stock','1rknni1','o8lvfv8','2026-03-04',5,0,'paywallðŸ˜¡'),(3,'NVDA_Stock','1rknni1','o8mtv06','2026-03-04',4,0.3182,'Provide a summary or content please'),(4,'NVDA_Stock','1rknni1','o8nfp45','2026-03-04',2,-0.2732,'Wonder if this will drive down stock grants / refreshers for employees...'),(5,'NVDA_Stock','1rknni1','o8lt3zb','2026-03-04',2,-0.5423,'Is that what Michael burry short on nvda?'),(6,'wallstreetbets','1rkx43m','o8nsosm','2026-03-04',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 10 | **First Seen In WSB** | 1 year ago\n**Total Comments** | 571 | **Previous Best DD** | \n**Account Age** | 9 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(7,'wallstreetbets','1rkx43m','o8nund5','2026-03-04',443,-0.7553,'Jensen: This is the last $30 billion \n\nAlso Jensen: Furiously polishing more H100s to sell back to them for that same $30 billion. '),(8,'wallstreetbets','1rkx43m','o8nttwy','2026-03-04',1178,0,'Openai is a ponzi scheme for billionaires '),(9,'wallstreetbets','1rkx43m','o8ntt30','2026-03-04',431,0.34,'Feels like he is investing the minimum possible to coax other bagholders to finance OpenAI. He needs them to buy his chips as much as they can before they go bankrupt.'),(10,'wallstreetbets','1rkx43m','o8ntvlo','2026-03-04',134,-0.0772,'He always says some almost anti-OpenAI thing just to walk it back a little while later. I wonder what Sam Altboy tells him when he reads these headlines'),(11,'wallstreetbets','1rkx43m','o8ntdrl','2026-03-04',80,0,'So puts? '),(12,'wallstreetbets','1rkx43m','o8nvfm3','2026-03-04',71,-0.4019,'> The reason for that is because theyâ€™re going to go public\n\nMisleading headline'),(13,'wallstreetbets','1rkx43m','o8nugcv','2026-03-04',62,-0.561,'Sam Altman did this, terrible businessman '),(14,'wallstreetbets','1rkx43m','o8nuyf2','2026-03-04',61,-0.5719,'Even Jensen thinks Scam Altman is shady\n\nhttps://preview.redd.it/7y8s7i08e3ng1.jpeg?width=108&format=pjpg&auto=webp&s=4531a258cfd5da1ee10dec6ac17c5c3c261e1827'),(15,'wallstreetbets','1rkx43m','o8nwco3','2026-03-04',15,0,'Believe it or not, calls (aka I\'m a bot)'),(16,'wallstreetbets','1rkx43m','o8nue1f','2026-03-04',36,0,'Bubble about to burst big time when this circle of jerking ends'),(17,'wallstreetbets','1rkx43m','o8nvz72','2026-03-04',15,-0.3612,'Must be bad when you\'re running out of fake money to invest.'),(18,'wallstreetbets','1rkx43m','o8nuepk','2026-03-04',13,0,'Believe it or not, calls. '),(19,'wallstreetbets','1rkx43m','o8o1vgb','2026-03-04',11,-0.5565,'Why doesn\'t openAI just invest 30 billiion back in Nvidia?'),(20,'wallstreetbets','1rkx43m','o8nvjbv','2026-03-04',5,-0.34,'Cicle jerk end.'),(21,'wallstreetbets','1rkx43m','o8o5fsg','2026-03-04',3,0,'He pulling out of the scissor game '),(22,'wallstreetbets','1rkx43m','o8okz7n','2026-03-04',3,-0.0772,'Fuck lads, read even just the first sentence of the article..\n\n\"Nvidia CEO Jensen Huang said the companyâ€™s recent $30 billion investment in OpenAI â€œmight be the last timeâ€ it invests in the AI startup ***as it gears up to go public.***\"'),(23,'wallstreetbets','1rkx43m','o8nulet','2026-03-04',7,0.5575,'Is everyone getting cold feet now that ai is actually being used to k*\\\\ people. Kinda like everyone said it would?Â \nOh no, the thing that was basically promised to happen is happening and although I did everything I could to ensure it did, I\'m now not happy about it!'),(24,'wallstreetbets','1rkx43m','o8o66wo','2026-03-04',2,0.2023,'the top is in  \ntime for IPO exit liquidity'),(25,'wallstreetbets','1rkx43m','o8o8hlz','2026-03-04',3,-0.0258,'Wild how many people on this sub think that vertical integration is a Ponzi scheme. This is like being upset with Google because they both design chips and use them for their models.'),(26,'wallstreetbets','1rkx43m','o8ntwjn','2026-03-04',2,0,'believe it or not calls '),(27,'wallstreetbets','1rkx43m','o8nwxj5','2026-03-04',2,0,'Sam Altman should be hung'),(28,'wallstreetbets','1rkx43m','o8nufdv','2026-03-04',1,0.4404,'Good '),(29,'wallstreetbets','1rkx43m','o8nxb7j','2026-03-04',1,0,'Shouldnâ€™t give them anything '),(30,'wallstreetbets','1rkx43m','o8nz1kf','2026-03-04',1,0,'The last this month'),(31,'wallstreetbets','1rkx43m','o8oa2we','2026-03-04',1,0,'LOLLLLLLLLLLLLLLLLLLLLLLLLL'),(32,'wallstreetbets','1rkx43m','o8oaln6','2026-03-04',1,0.7701,'Good decision!!! Finally wake up'),(33,'wallstreetbets','1rkx43m','o8odctb','2026-03-04',1,0.3182,'These bricks sure are getting wiggly. '),(34,'wallstreetbets','1rkx43m','o8oeljx','2026-03-04',1,0.5574,'Just throwing OpenAI some loose change for good luck'),(35,'wallstreetbets','1rkx43m','o8oet9r','2026-03-04',1,0,'Breaking news: OpenAI offer $30 billion to Nvidia in new deal'),(36,'wallstreetbets','1rkx43m','o8oibl4','2026-03-04',1,0,'Until next round!'),(37,'wallstreetbets','1rkx43m','o8okoja','2026-03-04',1,0,'In case anyone heard the full interview it\'s clickbait he basically says they\'re going public before another investment round'),(38,'wallstreetbets','1rkx43m','o8ol9dy','2026-03-04',1,0,'Thats just him trying to recapture the narrative through fearmongering'),(39,'wallstreetbets','1rkx43m','o8oo62f','2026-03-04',1,0.3818,'Hereâ€™s cash to send me back later. Thanks '),(40,'wallstreetbets','1rkx43m','o8ovf3a','2026-03-05',1,-0.0772,'meh, not going to touch openAI being they will be data collecting everyone that touches it.'),(41,'wallstreetbets','1rkx43m','o8ovh8h','2026-03-05',1,0.4404,'This is cause open AI gonna go IPO, nvda investment gonna show up in balance sheet , bull for nvda'),(42,'wallstreetbets','1rkx43m','o8ovyy9','2026-03-05',1,0,'NVDA 200 by EOW'),(43,'wallstreetbets','1rkx43m','o8ovzfl','2026-03-05',1,-0.374,'\"make sure they lose it all in our casino\"\n\"And if that is not happening make sure they can only leave with chips\"'),(44,'wallstreetbets','1rkx43m','o8oz381','2026-03-05',1,-0.7845,'Waiting for other CEOs to realize they can back peddle the pump over the last 6 months, all the circular deals were the pump, force the dump to happen and let the war \"take the blame\".  \n\nNo it\'s not the time to buy yet. '),(45,'wallstreetbets','1rkx43m','o8p1qgy','2026-03-05',1,0,'The beginning of the end, of the beginning '),(46,'wallstreetbets','1rkx43m','o8p1zqk','2026-03-05',1,0.8591,'If some achieves artificial super intelligence then all algorithms will get adjusted for efficiency and they\'ll have all the processing power they\'ll need.'),(47,'wallstreetbets','1rkx43m','o8p5nhh','2026-03-05',1,0.296,'Ok bro lol '),(48,'wallstreetbets','1rkx43m','o8p8g7n','2026-03-05',1,0,'Last of this month?'),(49,'wallstreetbets','1rkx43m','o8p8n2j','2026-03-05',1,0,'Because of the uprising '),(50,'wallstreetbets','1rkx43m','o8phz86','2026-03-05',1,-0.5106,'When will rent go back down? '),(51,'wallstreetbets','1rkx43m','o8nuvxc','2026-03-04',1,0.5994,'why does his head look so tumescent. has the market cap gone to his head lmao');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -187,4 +190,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-03  2:42:57
+-- Dump completed on 2026-03-05  2:39:31
