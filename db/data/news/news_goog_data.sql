@@ -95,6 +95,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -166,7 +167,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -175,7 +176,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-03-03',-0.18104,'Wall Street Breakfast Podcast: Tech Drags Futures Lower','https://seekingalpha.com/article/4877533-wall-street-breakfast-podcast-tech-drags-futures-lower',4),(2,'insider monkey staff','At Insider Monkey, we donâ€™t just â€œwatchâ€ the market; we command it by tracking over 1,000 of the worldâ€™s most successful billionaires and hedge fund managers. Every quarter, we strip away the noise to...','2026-03-02',0.58028,'10 Most Popular Stocks Among Hedge Funds: December 31, 2025 Rankings','https://www.insidermonkey.com/blog/10-most-popular-stocks-among-hedge-funds-december-31-2025-rankings-1707785/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nCassaday & Co Wealth Management LLC boosted its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 7.7% in the 3rd quarter, accordi...','2026-03-04',0.59502,'Cassaday & Co Wealth Management LLC Grows Position in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/cassaday-co-wealth-management-llc-grows-position-in-alphabet-inc-googl.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nCrestwood Advisors Group LLC reduced its holdings in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 1.4% during the third quarter, accor...','2026-03-04',0.09748,'Crestwood Advisors Group LLC Lowers Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/crestwood-advisors-group-llc-lowers-holdings-in-alphabet-inc-googl.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nFirst National Bank of Omaha acquired a new position in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) during the third quarter, according ...','2026-03-04',0.43666,'101,157 Shares in Alphabet Inc. $GOOGL Purchased by First National Bank of Omaha','https://www.defenseworld.net/2026/03/04/101157-shares-in-alphabet-inc-googl-purchased-by-first-national-bank-of-omaha.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nColrain Capital LLC raised its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 20.8% in the third quarter, according to its most...','2026-03-04',0.43668,'Colrain Capital LLC Buys 7,925 Shares of Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/colrain-capital-llc-buys-7925-shares-of-alphabet-inc-googl.html',4),(5,'wall street breakfast','...','2026-03-03',-0.18104,'Wall Street Breakfast Podcast: Tech Drags Futures Lower','https://seekingalpha.com/article/4877533-wall-street-breakfast-podcast-tech-drags-futures-lower',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -189,4 +190,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-04  3:18:54
+-- Dump completed on 2026-03-05  3:24:01
