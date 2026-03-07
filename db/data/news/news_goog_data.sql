@@ -149,6 +149,7 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -168,7 +169,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -177,7 +178,6 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (john ballard)','These companies are competitively positioned in cloud, chips, and software.\nArtificial intelligence (AI) spending is not showing signs of slowing down. Gartner expects worldwide spending to increase 4...','2026-03-04',0.56686,'Gartner Says AI Spending Will Hit $2.5 Trillion in 2026. Here Are 3 Stocks That Could Benefit Most.','https://www.fool.com/investing/2026/03/04/ai-spending-25-trillion-2026-3-stocks-benefit/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nCassaday & Co Wealth Management LLC boosted its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 7.7% in the 3rd quarter, accordi...','2026-03-04',0.59502,'Cassaday & Co Wealth Management LLC Grows Position in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/cassaday-co-wealth-management-llc-grows-position-in-alphabet-inc-googl.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nCrestwood Advisors Group LLC reduced its holdings in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 1.4% during the third quarter, accor...','2026-03-04',0.09748,'Crestwood Advisors Group LLC Lowers Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/crestwood-advisors-group-llc-lowers-holdings-in-alphabet-inc-googl.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nFirst National Bank of Omaha acquired a new position in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) during the third quarter, according ...','2026-03-04',0.43666,'101,157 Shares in Alphabet Inc. $GOOGL Purchased by First National Bank of Omaha','https://www.defenseworld.net/2026/03/04/101157-shares-in-alphabet-inc-googl-purchased-by-first-national-bank-of-omaha.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Mar 4th, 2026\n\nColrain Capital LLC raised its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 20.8% in the third quarter, according to its most...','2026-03-04',0.43668,'Colrain Capital LLC Buys 7,925 Shares of Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/03/04/colrain-capital-llc-buys-7925-shares-of-alphabet-inc-googl.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -191,4 +191,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-06  3:22:28
+-- Dump completed on 2026-03-07  3:09:46
