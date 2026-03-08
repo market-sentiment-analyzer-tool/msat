@@ -54,11 +54,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
+4631bea7-1a98-11f1-880f-02abb13a382b:1-25,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
-56187816-19cd-11f1-824d-42b49dd79e40:1-166,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -150,6 +150,7 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -169,7 +170,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +179,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1rmdjp9','o8ykj4k','2026-03-06',22,0.7695,'BUY. HOLD 5+ YEARS. RETIRE.'),(2,'AAPL','1rmdjp9','o8ykfu2','2026-03-06',6,0,'Hodl?'),(3,'AAPL','1rmdjp9','o8yldrg','2026-03-06',7,0.9345,'Would you believe me if I told you that Apple was essentially stuck around $112 (pre-split) for nearly a year and a half when I first bought it? Thatâ€™s around $28 now btw\n\nAllowed me more time to save up cash to buy more. Now those are my first 160 post split shares and was the start of great things'),(4,'AAPL','1rmdjp9','o8z91bu','2026-03-06',2,0.2263,'I do believe itâ€™s a solid investment for a number of reasons '),(5,'AAPL','1rmdjp9','o8zghk7','2026-03-06',2,0,'Whatâ€™s old timer to you?'),(6,'AAPL','1rmdjp9','o8zip2z','2026-03-06',2,-0.3374,'Bought in 2008, never sold a share unless it was for real estate. Kept buying at every dip. Iâ€™ve been retired for two years, moved the lower cost basis into a DAF. Apple is a long-term hold. '),(7,'AAPL','1rmdjp9','o90ipjl','2026-03-06',2,0,'Keep buying '),(8,'AAPL','1rmdjp9','o8yt4d2','2026-03-06',3,0,'èµ¶å¿«å–å§ï¼Œä¸–ç•Œæœ«æ—¥è¦æ¥ä¸´äº†'),(9,'AAPL','1rmdjp9','o90eu89','2026-03-06',1,0.6858,'2000 or 2001 I was rolling a 401k into an IRA.  It was a terribly busy time and I didn\'t have time to  dive in. I needed to find a place to put that money.  Picked a few funds and decided to buy 200 shares of AAPL. Within a year they announced the iPod.\n\nI wish I could brag about my sharp investing skills but this was dumb luck akin to betting on a horse because you liked the name. \n\n\n'),(10,'AAPL','1rmdjp9','o90x0nq','2026-03-06',1,0,'Wait. '),(11,'AAPL','1rmdjp9','o918hh7','2026-03-06',1,0,'If you are addressing the â€œold timersâ€, then you already know the answer.'),(12,'AAPL','1rmdjp9','o8zx9g7','2026-03-06',1,0,'Should be trading 220'),(13,'AAPL','1rmdjp9','o8yva8g','2026-03-06',0,0.4019,'It appears you have entered the market for Apple stock at a relatively late stage. The company\'s clear shift towards AI in 2024 has already driven significant hype, which has been further amplified by the recent easing of political tensions in international courts and econimic policies...\n\n');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1rnnndn','o984dvz','2026-03-07',2,0.885,'Question for you. Can you suggest entry points as well? Like what price is a good buy?'),(2,'AAPL','1rnnndn','o985afa','2026-03-07',1,0.743,'still view AAPL primarily as a growth company, or has it effectively transitioned into a mega-cap cash flow compounder\n\nWhy not both?'),(3,'AAPL','1rnnndn','o98746s','2026-03-07',1,0.7391,'Just curious, is this like a Factor Analysis?  Been a long time, but had grad level stats. \n\nThanks. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -192,4 +193,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-07  2:33:27
+-- Dump completed on 2026-03-08  2:41:53
