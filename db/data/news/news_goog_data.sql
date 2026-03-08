@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
+65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -169,7 +170,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,6 +179,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'km capital','...','2026-03-06',-0.32152,'Alphabet: Apple AI Deal Is The Biggest Blind Spot','https://seekingalpha.com/article/4879478-alphabet-apple-ai-deal-is-the-biggest-blind-spot',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -191,4 +193,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-07  3:09:46
+-- Dump completed on 2026-03-08  3:25:57
