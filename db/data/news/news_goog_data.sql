@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
@@ -170,7 +171,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,7 +180,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'km capital','...','2026-03-06',-0.32152,'Alphabet: Apple AI Deal Is The Biggest Blind Spot','https://seekingalpha.com/article/4879478-alphabet-apple-ai-deal-is-the-biggest-blind-spot',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (courtney carlsen)','AST SpaceMobile stock has surged over the last couple of years.\nMany investors may know Alphabet (GOOG 0.87%)(GOOGL 0.75%) as the parent company of Google, YouTube, and its artificial intelligence (AI...','2026-03-07',0.75244,'Alphabet Owns 8.9 Million Shares of This Hot Space Stock. Is It a Buy?','https://www.fool.com/investing/2026/03/07/alphabet-owns-89-million-shares-of-this-hot-space/',4),(2,'newsfeedback@fool.com (geoffrey seiler)','With earnings season about over, now is a great time to buy shares of some leading tech stocks.\nWith earnings season in the first three months of 2026 winding down, March can be a great time to pick u...','2026-03-07',0.79426,'3 Top Tech Stocks to Buy in March','https://www.fool.com/investing/2026/03/07/3-top-tech-stocks-to-buy-in-march/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -193,4 +194,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-08  3:25:57
+-- Dump completed on 2026-03-09  3:29:52
