@@ -54,7 +54,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
-4631bea7-1a98-11f1-880f-02abb13a382b:1-25,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -74,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
+65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a430166a-1b61-11f1-9feb-0a4caca6a1c3:1-99,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -170,7 +171,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,7 +180,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1rnnndn','o984dvz','2026-03-07',2,0.885,'Question for you. Can you suggest entry points as well? Like what price is a good buy?'),(2,'AAPL','1rnnndn','o985afa','2026-03-07',1,0.743,'still view AAPL primarily as a growth company, or has it effectively transitioned into a mega-cap cash flow compounder\n\nWhy not both?'),(3,'AAPL','1rnnndn','o98746s','2026-03-07',1,0.7391,'Just curious, is this like a Factor Analysis?  Been a long time, but had grad level stats. \n\nThanks. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -193,4 +193,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-08  2:41:53
+-- Dump completed on 2026-03-09  2:44:23
