@@ -129,6 +129,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -171,7 +172,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,7 +181,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (courtney carlsen)','AST SpaceMobile stock has surged over the last couple of years.\nMany investors may know Alphabet (GOOG 0.87%)(GOOGL 0.75%) as the parent company of Google, YouTube, and its artificial intelligence (AI...','2026-03-07',0.75244,'Alphabet Owns 8.9 Million Shares of This Hot Space Stock. Is It a Buy?','https://www.fool.com/investing/2026/03/07/alphabet-owns-89-million-shares-of-this-hot-space/',4),(2,'newsfeedback@fool.com (geoffrey seiler)','With earnings season about over, now is a great time to buy shares of some leading tech stocks.\nWith earnings season in the first three months of 2026 winding down, March can be a great time to pick u...','2026-03-07',0.79426,'3 Top Tech Stocks to Buy in March','https://www.fool.com/investing/2026/03/07/3-top-tech-stocks-to-buy-in-march/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'erica kollmann','A newsletter built for market enthusiasts by market enthusiasts. Top stories, top movers, and trade ideas delivered to your inbox every weekday before and after the market closes.\nAs power becomes a l...','2026-03-09',-0.09738,'For Amazon, Alphabet, Microsoft, $119 Oil Could Be A Ticking Time Bomb','https://www.benzinga.com/markets/tech/26/03/51131406/for-amazon-alphabet-microsoft-119-oil-could-be-a-ticking-time-bomb',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -194,4 +195,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-09  3:29:52
+-- Dump completed on 2026-03-10  3:19:42
