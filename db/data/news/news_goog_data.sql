@@ -153,6 +153,7 @@ f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -172,7 +173,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,7 +182,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'erica kollmann','A newsletter built for market enthusiasts by market enthusiasts. Top stories, top movers, and trade ideas delivered to your inbox every weekday before and after the market closes.\nAs power becomes a l...','2026-03-09',-0.09738,'For Amazon, Alphabet, Microsoft, $119 Oil Could Be A Ticking Time Bomb','https://www.benzinga.com/markets/tech/26/03/51131406/for-amazon-alphabet-microsoft-119-oil-could-be-a-ticking-time-bomb',8);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Mar 10th, 2026\n\nBanque Cantonale Vaudoise increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.8% during the 3rd quarter, accordin...','2026-03-10',0.43668,'Banque Cantonale Vaudoise Purchases 1,678 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/10/banque-cantonale-vaudoise-purchases-1678-shares-of-alphabet-inc-goog.html',4),(2,'erica kollmann','As power becomes a larger share of hyperscale operating costs, a sustained spike in crude prices risks compressing margins just as big tech firms ramp up record capex for AI infrastructure.\nInvestment...','2026-03-09',-0.09424,'For Amazon, Alphabet, Microsoft, $119 Oil Could Be A Ticking Time Bomb','https://www.benzinga.com/markets/tech/26/03/51131406/for-amazon-alphabet-microsoft-119-oil-could-be-a-ticking-time-bomb',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -195,4 +196,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-10  3:19:42
+-- Dump completed on 2026-03-11  3:19:35
