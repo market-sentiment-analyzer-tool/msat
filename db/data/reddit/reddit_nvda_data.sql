@@ -91,7 +91,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
-86263f7f-1c29-11f1-afe6-369797c331c1:1-24,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -99,6 +98,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+9606f6a9-1cf2-11f1-931b-422a5a8556c9:1-33,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -130,6 +130,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -172,7 +173,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,7 +182,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rool87','o9fzesh','2026-03-09',5,0.0572,'This cannot be serious.'),(2,'NVDA_Stock','1rool87','o9jh0kp','2026-03-09',3,0,'Canâ€™t post this stuff on Reddit, the tds runs rampant here ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rq0nmd','o9oz0jg','2026-03-10',5,0,'https://www.nvidia.com/gtc/keynote\n'),(2,'NVDA_Stock','1rq0nmd','o9p1e2h','2026-03-10',8,-0.5279,'Shit more good news, stock will go down'),(3,'NVDA_Stock','1rq0nmd','o9plsah','2026-03-10',0,0.2168,'aight, what do you think the chances are that they bring a real robot on stage this year? And maybe have it actually doing something? I feel like many of these humanoid robots have been useless'),(4,'NVDA_Stock','1rqb1l1','o9r7gq9','2026-03-10',-1,0,'Where are you getting this information from? How do you know this is accurate'),(5,'NVDA_Stock','1rq3ger','o9pergf','2026-03-10',1,0,'1Gw maybe equivalent to 12B'),(6,'NVDA_Stock','1rq3ger','o9rhavx','2026-03-10',1,0.4404,'what has thinking machines accomplished again?'),(7,'NVDA_Stock','1rq3ger','o9pcfnr','2026-03-10',0,0.4363,'No number announced, my guess is that it\'s small... otherwise they would be proud of it.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -195,4 +196,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-10  2:34:17
+-- Dump completed on 2026-03-11  2:33:29

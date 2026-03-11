@@ -91,7 +91,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
-86263f7f-1c29-11f1-afe6-369797c331c1:1-24,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -99,6 +98,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+9606f6a9-1cf2-11f1-931b-422a5a8556c9:1-33,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -130,6 +130,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -172,7 +173,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,6 +182,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1rpx7k8','o9o9y05','2026-03-10',9,0.8751,'Glasses are next. Anyone who has used Vision Pro will tell you that once the form factor becomes like normal glasses, there is no doubt nearly everyone will use it. I use mine as a giant monitor and theater. It is absolutely awesome. '),(2,'AAPL','1rpx7k8','o9ppyop','2026-03-10',3,-0.5049,'I think the Apple car was one of their worst ideas in recent memory.\n\nThe market is highly competitive, lower margin, high barrier to entry and the only segment they would compete in is the high-end.  The high end being the segment of the market that has lots of players right now.  \n\nWhenever companies veer out of their lane like that, into areas that aren\'t their specialty - you often see huge fuck ups. There\'s a reason why most companies stick to their core competencies. \n\nI thought it was so crazy that I didn\'t even believe the rumors.  however, from what I can tell, it was actually happening.\n\nOn top of all of that, the Chinese are gung ho in that area and they can absorb low margins for a very long time Thanks to their subsidized \"stucture\"\n\nI thought perhaps it was simply an operating system, a car OS.  But from what I\'ve read, they actually were prototyping cars.  There\'s a reason why Tim Apple nuked it.'),(3,'AAPL','1rpx7k8','o9qv5pn','2026-03-10',1,0,'New iMac 27â€ or 32â€. Letâ€™s go!'),(4,'AAPL','1rpx7k8','o9ox6x8','2026-03-10',0,0.2263,'The Apple Car would have been a massive hit. Just look at what Xiaomi did with the SU7 and now the YU7. That could have been Apple but even bigger with worldwide sales, including the US, which Xiaomi doesn\'t have access to. A big missed opportunity imo.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -194,4 +196,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-10  2:34:16
+-- Dump completed on 2026-03-11  2:33:29
