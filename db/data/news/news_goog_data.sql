@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
+471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -173,7 +174,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,7 +183,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Mar 10th, 2026\n\nBanque Cantonale Vaudoise increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.8% during the 3rd quarter, accordin...','2026-03-10',0.43668,'Banque Cantonale Vaudoise Purchases 1,678 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/10/banque-cantonale-vaudoise-purchases-1678-shares-of-alphabet-inc-goog.html',4),(2,'erica kollmann','As power becomes a larger share of hyperscale operating costs, a sustained spike in crude prices risks compressing margins just as big tech firms ramp up record capex for AI infrastructure.\nInvestment...','2026-03-09',-0.09424,'For Amazon, Alphabet, Microsoft, $119 Oil Could Be A Ticking Time Bomb','https://www.benzinga.com/markets/tech/26/03/51131406/for-amazon-alphabet-microsoft-119-oil-could-be-a-ticking-time-bomb',8);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 11th, 2026\n\nSilvant Capital Management LLC increased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.2% during the 3rd quarter, according t...','2026-03-11',0.19984,'Silvant Capital Management LLC Has $11.19 Million Stock Position in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/11/silvant-capital-management-llc-has-11-19-million-stock-position-in-alphabet-inc-goog.html',4),(2,'mark dietrich','\n					Posted by Mark Dietrich on Mar 11th, 2026\n\nMackenzie Financial Corp boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.6% during the third quarter, according to it...','2026-03-11',0.43666,'Alphabet Inc. $GOOG Shares Bought by Mackenzie Financial Corp','https://www.watchlistnews.com/alphabet-inc-goog-shares-bought-by-mackenzie-financial-corp/11016682.html',4),(3,'shane hupp','\n					Posted by Shane Hupp on Mar 11th, 2026\n\nMackenzie Financial Corp lifted its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.6% during the 3rd quarter, according to its most...','2026-03-11',0.19988,'Mackenzie Financial Corp Has $184.74 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13375194/mackenzie-financial-corp-has-184-74-million-stock-holdings-in-alphabet-inc-goog.html',4),(4,'sarita garza','\n					Posted by Sarita Garza on Mar 11th, 2026\n\nGordian Capital Singapore Pte Ltd bought a new position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 3rd quarter, according to its most rece...','2026-03-11',0.43668,'Gordian Capital Singapore Pte Ltd Buys Shares of 10,810 Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/11/gordian-capital-singapore-pte-ltd-buys-shares-of-10810-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Mar 11th, 2026\n\nBarrow Hanley Mewhinney & Strauss LLC boosted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 46.7% during the 3rd quarter, according ...','2026-03-11',0.43666,'Barrow Hanley Mewhinney & Strauss LLC Buys 428,412 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/11/barrow-hanley-mewhinney-strauss-llc-buys-428412-shares-of-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Mar 10th, 2026\n\nBanque Cantonale Vaudoise increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.8% during the 3rd quarter, accordin...','2026-03-10',0.43668,'Banque Cantonale Vaudoise Purchases 1,678 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/10/banque-cantonale-vaudoise-purchases-1678-shares-of-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -196,4 +197,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-11  3:19:35
+-- Dump completed on 2026-03-12  3:27:33
