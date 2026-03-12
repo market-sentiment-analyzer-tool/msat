@@ -98,9 +98,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-9606f6a9-1cf2-11f1-931b-422a5a8556c9:1-33,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4c9d8ef-1dbc-11f1-8bb1-ee4b797c98c6:1-84,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -154,6 +154,7 @@ f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -173,7 +174,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,6 +183,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1rr3oug','o9xnsyp','2026-03-11',36,0,'Nobody Beats The Wiz should be their slogan. Can I work in their marketing department? '),(2,'stocks','1rr3oug','o9xhuw3','2026-03-11',115,0,'G-Wiz'),(3,'stocks','1rr3oug','o9xnvhi','2026-03-11',18,-0.7579,'wtf I just got deposited $32 billion in my bank account how do I pull it all out before they see the error?'),(4,'stocks','1rr3oug','o9xf970','2026-03-11',148,0.6249,'Gotta love the endless money funneling to Israel'),(5,'stocks','1rr3oug','o9x74gp','2026-03-11',33,0.9244,'$32 Billion for $1 Billion in ARR. That\'s a 32x price to Sales. Google really has great leadership getting a company at such a bargain. This is such a steal compared to the average price to sales of software companies of 2.1x.\n\n>Wiz hit $1billion annual recurring revenue in late 2025 with a projected 40% growth in 2026. 50% of Fortune 100 companies are Wiz customers.\n\n50% of largest companies are already Wiz customers, and they are projecting 40% growth. That would suggest 70% by end of 2026, 98% by end of 2027. But where does growth come from after that?'),(6,'stocks','1rr3oug','o9yvf42','2026-03-12',1,0,'Overpaid. Especially after the saas downturn'),(7,'stocks','1rr3oug','o9y9ote','2026-03-12',1,0.7964,'Easily overpaid 3x, SaaS value for 1B ARR is 10 billion tops '),(8,'stocks','1rr3oug','o9y3dxd','2026-03-11',-5,0.4767,'Everyone kissing the aipac cock of Israel, Google the highest bidder '),(9,'stocks','1rr3oug','o9yo229','2026-03-12',0,0.5095,'The multi-cloud angle is what makes this more defensible than the sticker price implies. Wiz staying available on Azure, AWS, and OCI means Google can collect security telemetry across competitor environments. That\'s insanely valuable data for training threat detection models and it creates a moat that pure Google Cloud customers alone couldn\'t generate. They\'re not just buying ARR, they\'re buying a cross-cloud data position that compounds with time.'),(10,'stocks','1rr3oug','o9ydxs2','2026-03-12',-2,0.5557,'Isn\'t Google expanding into more and more of a monopoly? They already own the world\'s biggest portal to the internet (Google Chrome), the world\'s biggest social media and information networks (YouTube and Gmail, Google Drive), and now they\'re cornering the cyber security market too?\n\nIsn\'t this bad?\n\nYou\'ll be the one paying out the nose for their services in the future to make back the $32B that Google just spent.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -195,4 +197,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-11  2:33:29
+-- Dump completed on 2026-03-12  2:42:17

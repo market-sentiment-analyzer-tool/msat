@@ -98,9 +98,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-9606f6a9-1cf2-11f1-931b-422a5a8556c9:1-33,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4c9d8ef-1dbc-11f1-8bb1-ee4b797c98c6:1-84,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -154,6 +154,7 @@ f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -173,7 +174,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,7 +183,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rq0nmd','o9oz0jg','2026-03-10',5,0,'https://www.nvidia.com/gtc/keynote\n'),(2,'NVDA_Stock','1rq0nmd','o9p1e2h','2026-03-10',8,-0.5279,'Shit more good news, stock will go down'),(3,'NVDA_Stock','1rq0nmd','o9plsah','2026-03-10',0,0.2168,'aight, what do you think the chances are that they bring a real robot on stage this year? And maybe have it actually doing something? I feel like many of these humanoid robots have been useless'),(4,'NVDA_Stock','1rqb1l1','o9r7gq9','2026-03-10',-1,0,'Where are you getting this information from? How do you know this is accurate'),(5,'NVDA_Stock','1rq3ger','o9pergf','2026-03-10',1,0,'1Gw maybe equivalent to 12B'),(6,'NVDA_Stock','1rq3ger','o9rhavx','2026-03-10',1,0.4404,'what has thinking machines accomplished again?'),(7,'NVDA_Stock','1rq3ger','o9pcfnr','2026-03-10',0,0.4363,'No number announced, my guess is that it\'s small... otherwise they would be proud of it.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rr4fyh','o9ww089','2026-03-11',23,-0.4588,'If OAI and others are coming for Nvidias chip business, Jensen will kill them with Open Source models that run efficiently on Nvidia hardware.\nMaster stroke from Nvidia'),(2,'NVDA_Stock','1rr4fyh','o9x8ghd','2026-03-11',5,0.0258,'The moneys in inference, OpenAI and the like canâ€™t jerk team green around. '),(3,'NVDA_Stock','1rr4fyh','o9xwcdr','2026-03-11',4,0,'The Chinese are making these open-weight models. Now they will make it for Huawei\'s chips or they can\'t at all. \n\nSo now Nvidia has to foot the bill themselves.'),(4,'NVDA_Stock','1rr4fyh','o9xn10p','2026-03-11',6,0,'Imagine thinking this company isnâ€™t going to be a part of everyoneâ€™s every day life.'),(5,'NVDA_Stock','1rr4fyh','o9x7793','2026-03-11',2,0.4215,'CUDA 2.0.   \n\nthe exec at Nvidia interviewed is the guy who pitched CUDA to Jensen years ago.  He was a middle manager who was promoted to VP. '),(6,'NVDA_Stock','1rr4fyh','o9yleul','2026-03-12',2,0.4019,'@ u/charuru\n\ngot your wish'),(7,'NVDA_Stock','1rr4fyh','o9ymfax','2026-03-12',2,0.4404,'\"The chip maker\'s customers must now decide whether they\'re partnering with their supplier or funding their future competitor.\"\n\nEvery other article calls these \"customers\" competitors.  ðŸ˜‚'),(8,'wallstreetbets','1rqs3ah','o9ua3md','2026-03-11',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 10 | **First Seen In WSB** | 5 years ago\n**Total Comments** | 56 | **Previous Best DD** | \n**Account Age** | 6 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(9,'wallstreetbets','1rqs3ah','o9ua7er','2026-03-11',281,-0.34,'NBIS bagholders finally got invited to the circle jerk wheel'),(10,'wallstreetbets','1rqs3ah','o9uahfn','2026-03-11',52,0.3612,'omg thank you Mr Huang - I actually own NBIS stock.'),(11,'wallstreetbets','1rqs3ah','o9ucsd3','2026-03-11',22,0,'Rip my 103 covered calls for this Friday'),(12,'wallstreetbets','1rqs3ah','o9ube2i','2026-03-11',60,0.4959,'2 weeks from now Jensen will be saying they got invited to invest and did not actually commit '),(13,'wallstreetbets','1rqs3ah','o9ui3nn','2026-03-11',18,0,'Nesbians unite'),(14,'wallstreetbets','1rqs3ah','o9ugcmt','2026-03-11',11,0,'Sold my calls yesterdayâ€¦. Your welcome everyone '),(15,'wallstreetbets','1rqs3ah','o9uar7l','2026-03-11',32,0.6369,'WHERE MA NBIS GANG LFG BOYZ LOVE YALL'),(16,'wallstreetbets','1rqs3ah','o9ues99','2026-03-11',8,0.6597,'Is it worth to buy shares...asking from level headed investors..'),(17,'wallstreetbets','1rqs3ah','o9uc41d','2026-03-11',4,0,'Lfgo'),(18,'wallstreetbets','1rqs3ah','o9uc8aa','2026-03-11',3,0,'Finally'),(19,'wallstreetbets','1rqs3ah','o9ud3l5','2026-03-11',5,-0.4805,'I hold 120USD calls for Dec 26. In the green now after weeks of red.\n\nWhat should I do ? \n\nI don\'t want this to crash again at market open like everything else these days'),(20,'wallstreetbets','1rqs3ah','o9ulirq','2026-03-11',2,0,'[deleted]'),(21,'wallstreetbets','1rqs3ah','o9v42ic','2026-03-11',2,0.2023,'And I sold at 98 yesterday, playing with knives.'),(22,'wallstreetbets','1rqs3ah','o9vtd44','2026-03-11',2,0.2869,'How much per share did they pay? $95-96?'),(23,'wallstreetbets','1rqs3ah','o9ud7bf','2026-03-11',6,-0.7691,'Will this bullshit ever end?? Itâ€™s ridiculous '),(24,'wallstreetbets','1rqs3ah','o9uaa27','2026-03-11',4,0,'Do you think it\'ll ever hit sub $90 again? ðŸ¤”'),(25,'wallstreetbets','1rqs3ah','o9umyso','2026-03-11',1,0.296,'SMCI bagholder here still waiting for the day yep'),(26,'wallstreetbets','1rqs3ah','o9v7d70','2026-03-11',1,0,'How many times has this been since last year until now?'),(27,'wallstreetbets','1rqs3ah','o9vaonq','2026-03-11',1,0,'FWIW: https://substack.com/profile/98325536-tarun-arora/note/c-226257882'),(28,'wallstreetbets','1rqs3ah','o9uaii3','2026-03-11',-3,-0.4588,'Time to double down on my shorts '),(29,'wallstreetbets','1rqs3ah','o9uvwq4','2026-03-11',0,0,'Will NBIS puts print?'),(30,'wallstreetbets','1rqs3ah','o9vithg','2026-03-11',0,-0.6428,'If they execute, this shit should be at $150.'),(31,'wallstreetbets','1rqs3ah','o9uct4q','2026-03-11',-7,0,'*Yandex*'),(32,'wallstreetbets','1rqs3ah','o9ufgmn','2026-03-11',-13,-0.4588,'I wouldn\'t jump on the hype train when the geopolitical tensions are in extreme levels. \"NBIS faces significant ongoing regulatory scrutiny due to its Russian origins and former Yandex association, with potential sanctions risks that could materially impact operations. \" See the report here: [https://www.thestockdossier.com/investigation/798d0eb7-a164-4d87-9b7f-2edc7160ce02](https://www.thestockdossier.com/investigation/798d0eb7-a164-4d87-9b7f-2edc7160ce02)'),(33,'wallstreetbets','1rqs3ah','o9ucvdk','2026-03-11',-7,0.4404,'Another data center company to prop up because Coreweave and SMCI dont make money.'),(34,'Wallstreetbetsnew','1rqqub4','o9umfwk','2026-03-11',2,0,'Op been living under a rock the last 6 months'),(35,'Wallstreetbetsnew','1rqqub4','o9u2wb4','2026-03-11',1,0.34,'Cls is the play. ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -196,4 +197,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-11  2:33:29
+-- Dump completed on 2026-03-12  2:42:17

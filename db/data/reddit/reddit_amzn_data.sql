@@ -98,9 +98,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-9606f6a9-1cf2-11f1-931b-422a5a8556c9:1-33,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4c9d8ef-1dbc-11f1-8bb1-ee4b797c98c6:1-84,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -154,6 +154,7 @@ f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
 --
@@ -173,7 +174,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -182,6 +183,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'stocks','1rquwye','o9uydtq','2026-03-11',63,0.802,'For sure it\'s CAPEX spend - during last quarter earnings they projected $200b spend in 2026, up from some $125-130 prior FY.  I\'d have to say that was the biggest driver in pushing the share price down after earnings.'),(2,'stocks','1rquwye','o9wca3l','2026-03-11',20,0.3182,'interest on debt is much lower than the margin on additional revenue from AWS'),(3,'stocks','1rquwye','o9w2zaf','2026-03-11',5,-0.0772,'When is Bezos coming back so he can deliver toilet paper with a drone?'),(4,'stocks','1rquwye','o9wd9v8','2026-03-11',10,0.8402,'50 year duration bonds on equipment that becomes obsolete pretty fast seems like it should reward more than 1.55% above treasury yields.'),(5,'stocks','1rquwye','o9v3dqj','2026-03-11',8,0.6258,'Interesting timing, right after yhr meeting with all other top tech companies.  All designed to take on more debt to become too big to fail.  Bailouts would have to happen due to loans.\n\nPlease, please, please do whatever it takes yo keep thr markets from plummeting, said \"The Simpsons\"...\n\nðŸ¤·â€â™€ï¸ '),(6,'stocks','1rquwye','o9vh72m','2026-03-11',4,0.6705,'Simply matching AI capex cashflow to AI revenue cashflow, just like a life insurance company.'),(7,'stocks','1rquwye','o9v72uy','2026-03-11',1,0.5423,'They might buy RIVN and supply their own delivery vansâ€¦'),(8,'stocks','1rquwye','o9wpm2s','2026-03-11',1,0.5803,'Pretty easily stitched together. Capex for AI, and their primary anchor customer is Anthropic, who is having outages every day from overutilization / too much demand.\n\nThis is a pattern used previously by companies who arent Tech companies too. (Corporate Bonds)\n'),(9,'stocks','1rquwye','o9wrdvt','2026-03-11',1,0,'don\'t they have over $100B on hand already?'),(10,'stocks','1rquwye','o9wv1nj','2026-03-11',1,0.7184,'They gonna buy ai companies just like NFLX bought an ai film firm.'),(11,'stocks','1rquwye','o9xglgc','2026-03-11',1,0,'Waiting for the day someone outdoes Google by issuing bonds with a 200-year maturity.'),(12,'stocks','1rquwye','o9xxdlv','2026-03-11',1,0,'Just SLA payouts from upcoming outages. '),(13,'stocks','1rquwye','o9y25nb','2026-03-11',1,0.2263,'Probably realizing that a dollar today is worth infinitely more than a dollar in 50 years and getting in front of that yo maximize their investmentÂ '),(14,'stocks','1rquwye','o9y4yzq','2026-03-11',1,0.3489,'didnt amazon datacenter get struck in iran? guess they also need some bucks to rebuild that when their insurance likely dont cover war risk'),(15,'stocks','1rquwye','o9wc6rb','2026-03-11',0,-0.4939,'it means they are broke from all the Capex spending. There you go i translated it for you. Who knew that spending 200B hard earned money can backfire.'),(16,'stocks','1rquwye','o9voe6z','2026-03-11',1,-0.7653,'I don\'t like how they are using debt to finance their buildout. But there may be no other option stuck in an AI capex arms race.'),(17,'stocks','1rquwye','o9w4hpj','2026-03-11',1,0.624,'Maybe they want to fully buy anthropic');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -195,4 +197,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-11  2:33:29
+-- Dump completed on 2026-03-12  2:42:17
