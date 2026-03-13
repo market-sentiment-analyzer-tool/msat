@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
+471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -87,6 +88,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
+78670417-1e85-11f1-9076-c2a65119fcc6:1-57,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -100,7 +102,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
-a4c9d8ef-1dbc-11f1-8bb1-ee4b797c98c6:1-84,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -174,7 +175,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +184,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1rr3oug','o9xnsyp','2026-03-11',36,0,'Nobody Beats The Wiz should be their slogan. Can I work in their marketing department? '),(2,'stocks','1rr3oug','o9xhuw3','2026-03-11',115,0,'G-Wiz'),(3,'stocks','1rr3oug','o9xnvhi','2026-03-11',18,-0.7579,'wtf I just got deposited $32 billion in my bank account how do I pull it all out before they see the error?'),(4,'stocks','1rr3oug','o9xf970','2026-03-11',148,0.6249,'Gotta love the endless money funneling to Israel'),(5,'stocks','1rr3oug','o9x74gp','2026-03-11',33,0.9244,'$32 Billion for $1 Billion in ARR. That\'s a 32x price to Sales. Google really has great leadership getting a company at such a bargain. This is such a steal compared to the average price to sales of software companies of 2.1x.\n\n>Wiz hit $1billion annual recurring revenue in late 2025 with a projected 40% growth in 2026. 50% of Fortune 100 companies are Wiz customers.\n\n50% of largest companies are already Wiz customers, and they are projecting 40% growth. That would suggest 70% by end of 2026, 98% by end of 2027. But where does growth come from after that?'),(6,'stocks','1rr3oug','o9yvf42','2026-03-12',1,0,'Overpaid. Especially after the saas downturn'),(7,'stocks','1rr3oug','o9y9ote','2026-03-12',1,0.7964,'Easily overpaid 3x, SaaS value for 1B ARR is 10 billion tops '),(8,'stocks','1rr3oug','o9y3dxd','2026-03-11',-5,0.4767,'Everyone kissing the aipac cock of Israel, Google the highest bidder '),(9,'stocks','1rr3oug','o9yo229','2026-03-12',0,0.5095,'The multi-cloud angle is what makes this more defensible than the sticker price implies. Wiz staying available on Azure, AWS, and OCI means Google can collect security telemetry across competitor environments. That\'s insanely valuable data for training threat detection models and it creates a moat that pure Google Cloud customers alone couldn\'t generate. They\'re not just buying ARR, they\'re buying a cross-cloud data position that compounds with time.'),(10,'stocks','1rr3oug','o9ydxs2','2026-03-12',-2,0.5557,'Isn\'t Google expanding into more and more of a monopoly? They already own the world\'s biggest portal to the internet (Google Chrome), the world\'s biggest social media and information networks (YouTube and Gmail, Google Drive), and now they\'re cornering the cyber security market too?\n\nIsn\'t this bad?\n\nYou\'ll be the one paying out the nose for their services in the future to make back the $32B that Google just spent.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -197,4 +197,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-12  2:42:17
+-- Dump completed on 2026-03-13  2:37:41
