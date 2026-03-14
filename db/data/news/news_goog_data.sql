@@ -97,6 +97,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -175,7 +176,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -184,7 +185,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','AI continues to be a good place to find attractive investments.\nEven as fourth-quarter earnings season winds down and the war in the Middle East rages on, investors remain focused on artificial intell...','2026-03-11',0.84994,'3 Top Artificial Intelligence Stocks to Buy in March','https://www.fool.com/investing/2026/03/11/top-artificial-intelligence-stocks-to-buy-march/',4),(2,'william temple','Investing\nAlphabet (GOOGL) reported Q4 revenue of $113.83B, up 18% year-over-year, with Google Cloud growing 48% to $17.664B and a backlog that exploded to $240B. The Gemini App reached 750 million mo...','2026-03-11',0.3616,'Googleâ€™s AI Dominance Is Being Tested. Hereâ€™s What Investors Need to Know','https://247wallst.com/investing/2026/03/11/googles-ai-dominance-is-being-tested-heres-what-investors-need-to-know/',4),(3,'james brumley','As always, taking a step back and looking at the bigger picture reveals an opportunity that most people are looking right past.\nIs your portfolio ready for a reset? Maybe you need to reload after the ...','2026-03-11',0.88118,'The Best Stocks to Invest $3,000 in Right Now','https://www.fool.com/investing/2026/03/11/the-best-stocks-to-invest-3000-in-right-now/',4),(4,'cpa','The media landscape continues to undergo a seismic secular shift.\nThe Walt Disney Company (DIS 1.34%) has long been a touchstone of pop culture in the U.S. and around the world. For more than 100 year...','2026-03-11',-0.26832,'Disney Investors Just Got Really Bad News from Alphabet','https://www.fool.com/investing/2026/03/11/disney-investors-just-got-really-bad-news-from-alp/',4),(5,'leo sun','The green energy leader is still a reliable long-term investment.\nBrookfield Renewable Partners (BEP 0.90%), a builder of hydroelectric dams, wind farms, solar power plants, and other utility-scale gr...','2026-03-11',0.1996,'Where Will Brookfield Renewable Corporation (BEPC) Be in 5 Years?','https://www.fool.com/investing/2026/03/11/where-will-bepc-be-in-5-years/',4),(6,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 11th, 2026\n\nSilvant Capital Management LLC increased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.2% during the 3rd quarter, according t...','2026-03-11',0.19984,'Silvant Capital Management LLC Has $11.19 Million Stock Position in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/11/silvant-capital-management-llc-has-11-19-million-stock-position-in-alphabet-inc-goog.html',4),(7,'mark dietrich','\n					Posted by Mark Dietrich on Mar 11th, 2026\n\nMackenzie Financial Corp boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.6% during the third quarter, according to it...','2026-03-11',0.43666,'Alphabet Inc. $GOOG Shares Bought by Mackenzie Financial Corp','https://www.watchlistnews.com/alphabet-inc-goog-shares-bought-by-mackenzie-financial-corp/11016682.html',4),(8,'shane hupp','\n					Posted by Shane Hupp on Mar 11th, 2026\n\nMackenzie Financial Corp lifted its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.6% during the 3rd quarter, according to its most...','2026-03-11',0.19988,'Mackenzie Financial Corp Has $184.74 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13375194/mackenzie-financial-corp-has-184-74-million-stock-holdings-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-03-13',0,'Wall Street Breakfast Podcast: Adobe Beats, CEO Exits','https://seekingalpha.com/article/4882153-wall-street-breakfast-podcast-adobe-beats-ceo-exits',4),(2,'arundhati sarkar','...','2026-03-13',-0.2368,'Meta delays rollout of new AI model â€˜Avocadoâ€™ amid performance concerns, NYT reports','https://seekingalpha.com/news/4564133-meta-delays-rollout-of-new-ai-model-avocado-amid-performance-concerns-nyt-reports?feed_item_type=news',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -198,4 +199,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-13  3:24:12
+-- Dump completed on 2026-03-14  3:20:07
