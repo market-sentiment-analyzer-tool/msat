@@ -72,6 +72,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -176,7 +177,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -185,7 +186,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-03-13',0,'Wall Street Breakfast Podcast: Adobe Beats, CEO Exits','https://seekingalpha.com/article/4882153-wall-street-breakfast-podcast-adobe-beats-ceo-exits',4),(2,'arundhati sarkar','...','2026-03-13',-0.2368,'Meta delays rollout of new AI model â€˜Avocadoâ€™ amid performance concerns, NYT reports','https://seekingalpha.com/news/4564133-meta-delays-rollout-of-new-ai-model-avocado-amid-performance-concerns-nyt-reports?feed_item_type=news',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBrown Brothers Harriman & Co. cut its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.1% during the third quarter, according to the c...','2026-03-14',0.43666,'Brown Brothers Harriman & Co. Sells 72,372 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/brown-brothers-harriman-co-sells-72372-shares-of-alphabet-inc-goog.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nGlenmede Investment Management LP cut its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.2% in the 3rd quarter, according to its most r...','2026-03-14',-0.22144,'Glenmede Investment Management LP Reduces Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/glenmede-investment-management-lp-reduces-holdings-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nFreeGulliver LLC acquired a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 3rd quarter, according to the company in its most rece...','2026-03-14',0.19986,'FreeGulliver LLC Takes $984,000 Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/freegulliver-llc-takes-984000-position-in-alphabet-inc-goog.html',4),(4,'newsfeedback@fool.com (keithen drury)','These companies are seeing their cloud computing business units boom.\nSeveral big tech stocks look promising, especially after this cohort has sold off a bit over the past few weeks.\nTwo stocks that h...','2026-03-14',0.88424,'Are Amazon and Alphabet Among the Best Stocks to Buy Now?','https://www.fool.com/investing/2026/03/14/are-amazon-and-alphabet-among-the-best-stocks-to-b/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBenchmark Investment Advisors LLC purchased a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the third quarter, acco...','2026-03-14',0.43672,'Benchmark Investment Advisors LLC Buys Shares of 2,264 Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/benchmark-investment-advisors-llc-buys-shares-of-2264-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBanque Transatlantique SA decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.5% in the 3rd quarter, according to...','2026-03-14',0.1999,'Banque Transatlantique SA Has $205.12 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/banque-transatlantique-sa-has-205-12-million-stock-holdings-in-alphabet-inc-goog.html',4),(7,'wall street breakfast','...','2026-03-13',0,'Wall Street Breakfast Podcast: Adobe Beats, CEO Exits','https://seekingalpha.com/article/4882153-wall-street-breakfast-podcast-adobe-beats-ceo-exits',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -199,4 +200,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-14  3:20:07
+-- Dump completed on 2026-03-15  3:46:10
