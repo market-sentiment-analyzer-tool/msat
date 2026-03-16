@@ -72,6 +72,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -88,7 +89,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
-786b250d-201a-11f1-b13b-7afda62947e6:1-243,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -104,6 +104,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a95bc1d2-20e3-11f1-a611-fe2c20456198:1-47,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -177,7 +178,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +187,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rtjed2','oafkll6','2026-03-14',14,0,'Its about to take off, strap in.'),(2,'NVDA_Stock','1rtjed2','oaf2iiw','2026-03-14',8,0.6908,'ur fine nvidia is undervalued tbh super obvious'),(3,'NVDA_Stock','1rtjed2','oaemjgr','2026-03-14',7,0,'Repost this in six months, then 12 months, then 2 years, then 5 years. '),(4,'NVDA_Stock','1rtjed2','oaezz4h','2026-03-14',7,0.0516,'People in these threads lose thousands consider yourself a good investor. '),(5,'NVDA_Stock','1rtjed2','oagt5pe','2026-03-14',7,-0.2714,'Youâ€™re complaining because you havenâ€™t received much return on an investment youâ€™ve had for 8 months.\n\n![gif](giphy|d4CnuaS1BQl7W5nowu)'),(6,'NVDA_Stock','1rtjed2','oaeluw7','2026-03-14',12,-0.3885,'Are you really whining about losing $50!?! ðŸ˜‚ Youâ€™ve got to be kidding me.\n\n![gif](giphy|wIxBzHWegpOUM)'),(7,'NVDA_Stock','1rtjed2','oafxthk','2026-03-14',5,-0.8344,'The stock hovered barely above 100 for months on end and the people holding felt the need to sell and missed out on the jump between 110 to 180, it\'s all about patience when you believe in a stock like this\n\nStocks make major jumps in short spurts of time, usually around earnings, maybe 3 times in a given year will nvda make a major jump in price, nothing would make me feel dumber than selling before that'),(8,'NVDA_Stock','1rtjed2','oag72n9','2026-03-14',6,0.7461,'So, you could have sold enough shares 3 months later in November to recoup your 5k and still have $1100+/- invested for the long haul on the houses money, but you decided to ride it out and if you stick it out for 10 years, you will most likely be very rewarded. '),(9,'NVDA_Stock','1rtjed2','oafa4vl','2026-03-14',4,0.4678,'I bought a similar amount back when the stock was 135. It then fell down to 103 in a couple of months, I doubled up and Iâ€™m still holding. This stock is all about timing, just whatever you do donâ€™t sell without bad news. Never know when it will finally ride up to 300. '),(10,'NVDA_Stock','1rtjed2','oaeu8w8','2026-03-14',3,0.4215,'You are lucky not msft'),(11,'NVDA_Stock','1rtjed2','oag575g','2026-03-14',3,0.2732,'IMHO, if you believe a stock is undervalued, it is way better to just keep buying it while it\'s being held down, because if you keep acquiring shares over that time, when it jumps in price, you make way more money.'),(12,'NVDA_Stock','1rtjed2','oaee6ul','2026-03-14',3,-0.3535,'So whatâ€™s the complaint?'),(13,'NVDA_Stock','1rtjed2','oael0o8','2026-03-14',3,-0.4588,'Majority of stocks are sideways or have went down. Do you track one stock?'),(14,'NVDA_Stock','1rtjed2','oaf0wao','2026-03-14',3,0.9287,'No worries. Hold those shares and buy the dips. We will be rewarded. \n\nMany of us have reaped the rewards the last few years and are not worried about little dips the last 6 months. '),(15,'NVDA_Stock','1rtjed2','oaff7od','2026-03-14',3,0.6808,'Looks like you are starting out on your journey of investing.  Low prices and sideways movement are terrific for building a portfolio. '),(16,'NVDA_Stock','1rtjed2','oafg8oz','2026-03-14',3,0.7339,'We have identical total value of nvda and I also have 34 shares. Just started investing hard last year at 25 yr old. All I heard is diamond hands!'),(17,'NVDA_Stock','1rtjed2','oaek6cn','2026-03-14',5,0.1779,'Just hold. Itâ€™s been 7 monthsâ€¦'),(18,'NVDA_Stock','1rtjed2','oagwqmq','2026-03-14',2,0,'What is FXAIX?'),(19,'NVDA_Stock','1rtjed2','oahvl0y','2026-03-15',2,0.2263,'it takes a company worth several trillions many years to double again..'),(20,'NVDA_Stock','1rtjed2','oaeia6v','2026-03-14',2,0.5574,'Just sold my 6 month 100 shares for a .05% loss ðŸ¥². I love getting absolutely nothing for my time. However, I needed the money for an unexpected move so câ€™est la vie.'),(21,'NVDA_Stock','1rtjed2','oahcywu','2026-03-14',1,0.9616,'Sideward movement stagnancy is not a bad thing. The company fundamentals are incredible. It is the number one stock to buy people had fear of missing out.  FOMO \n\nBut, they are passed that stage and Iâ€™ve debated, but I have made Nvidia my number one position 10% of my account and I feel extremely optimistic about the future of the company. I have it at doubling in the next three years.\n\nThey are essentially a monopoly in industry \n90 % \n\nThey will be number 1 company of decade and \nToo 10 next \n\nSimilar to Msft past 2 but with even more upside \n\nAi bubble is real - in that there will be a few small pops but with continual massive increases \n\nThere will be winners and losers. Nvda is going to be one of the winners.  \n\nIt is a steal at 180 a share and if we have a correction maybe you get opportunity to buy 165 but thatâ€™s it. Itâ€™s on its way to 300 400 and thatâ€™s simply by the revenue and margins and backlog and their only problem is going to be filling all the orders and producing and thatâ€™s a great problem to have.'),(22,'NVDA_Stock','1rtjed2','oaid1s9','2026-03-15',1,0.743,'To be honest , most of the market besides some defense and oil stocks , look all like this right now.'),(23,'NVDA_Stock','1rtjed2','oaelyjf','2026-03-14',-8,-0.8074,'Sell, it is dead company'),(24,'NVDA_Stock','1rtjed2','oaf1rve','2026-03-14',0,0.3142,'You are lucky not holding Avgoâ€¦'),(25,'NVDA_Stock','1rtf3pk','oaegsc8','2026-03-14',3,0,'Already priced in'),(26,'NVDA_Stock','1rtf3pk','oadtmyo','2026-03-14',3,0,'Its just Groq chip'),(27,'NVDA_Stock','1rtf3pk','oaev7gd','2026-03-14',2,0,'Believe it or not.. puts'),(28,'NVDA_Stock','1rtf3pk','oagq3p5','2026-03-14',2,0,'$400'),(29,'NVDA_Stock','1rtf3pk','oadmwl2','2026-03-14',4,-0.0516,'Not long ago Jensen said CPUs will be obsolete because of GPUs. Guess what, now they are pivoting right back to CPUs, because that\'s the flavor of the month.\n\nTake everything with a grain of salt. Every company always says whats good for them and even giants like Nvidia can be wrong.'),(30,'NVDA_Stock','1rtf3pk','oaf6ewq','2026-03-14',-1,0.4404,'Personally, I do not take it as a good sign that NVDA is planning to compete with their main customers. Something doesn\'t feel right about that. ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ru4oz1','oajrd4r','2026-03-15',9,0.4939,'At least that\'s one Black Swan taken care of.'),(2,'NVDA_Stock','1ru4oz1','oakzzsc','2026-03-15',7,-0.6908,'Realized from the comments that this is for the iran threat rather than anti AI activists lol'),(3,'NVDA_Stock','1ru4oz1','oajh7n9','2026-03-15',4,0,'When 6090?'),(4,'NVDA_Stock','1ru4oz1','oairn0o','2026-03-15',7,0.3612,'thank the orange cheeto'),(5,'NVDA_Stock','1ru4oz1','oamnkel','2026-03-15',1,0.4404,'A big thanks to Iran for hastening the adoption of private corporate owned militaries.'),(6,'NVDA_Stock','1ru4oz1','oaj5bkj','2026-03-15',-13,0,'[deleted]'),(7,'NVDA_Stock','1rus2s3','oangvwq','2026-03-15',7,0,'[remove paywall](https://archive.is/20260313170838/https://www.cnbc.com/2026/03/13/a-closer-look-at-nvidias-20-billion-bet-on-tech-for-a-new-ai-chip.html)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -200,4 +201,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-15  3:01:46
+-- Dump completed on 2026-03-16  2:56:52
