@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -177,7 +178,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +187,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBrown Brothers Harriman & Co. cut its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.1% during the third quarter, according to the c...','2026-03-14',0.43666,'Brown Brothers Harriman & Co. Sells 72,372 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/brown-brothers-harriman-co-sells-72372-shares-of-alphabet-inc-goog.html',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nGlenmede Investment Management LP cut its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.2% in the 3rd quarter, according to its most r...','2026-03-14',-0.22144,'Glenmede Investment Management LP Reduces Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/glenmede-investment-management-lp-reduces-holdings-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nFreeGulliver LLC acquired a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 3rd quarter, according to the company in its most rece...','2026-03-14',0.19986,'FreeGulliver LLC Takes $984,000 Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/freegulliver-llc-takes-984000-position-in-alphabet-inc-goog.html',4),(4,'newsfeedback@fool.com (keithen drury)','These companies are seeing their cloud computing business units boom.\nSeveral big tech stocks look promising, especially after this cohort has sold off a bit over the past few weeks.\nTwo stocks that h...','2026-03-14',0.88424,'Are Amazon and Alphabet Among the Best Stocks to Buy Now?','https://www.fool.com/investing/2026/03/14/are-amazon-and-alphabet-among-the-best-stocks-to-b/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBenchmark Investment Advisors LLC purchased a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the third quarter, acco...','2026-03-14',0.43672,'Benchmark Investment Advisors LLC Buys Shares of 2,264 Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/benchmark-investment-advisors-llc-buys-shares-of-2264-alphabet-inc-goog.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Mar 14th, 2026\n\nBanque Transatlantique SA decreased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.5% in the 3rd quarter, according to...','2026-03-14',0.1999,'Banque Transatlantique SA Has $205.12 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/14/banque-transatlantique-sa-has-205-12-million-stock-holdings-in-alphabet-inc-goog.html',4),(7,'wall street breakfast','...','2026-03-13',0,'Wall Street Breakfast Podcast: Adobe Beats, CEO Exits','https://seekingalpha.com/article/4882153-wall-street-breakfast-podcast-adobe-beats-ceo-exits',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (marc guberti)','Warren Buffett focuses on stocks with solid fundamentals and vast moats, which explains why these three picks made his list.\nWarren Buffett has shown that owning great businesses and holding them for ...','2026-03-15',0.77466,'3 Top Buffett Stocks to Buy and Hold for the Long Haul','https://www.fool.com/investing/2026/03/15/3-top-buffett-stocks-to-buy-and-hold-for-the-long/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAmeriprise Financial Inc. reduced its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 6.7% in the 3rd quarter, according to its most re...','2026-03-15',0.19988,'Ameriprise Financial Inc. Has $3.15 Billion Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/15/ameriprise-financial-inc-has-3-15-billion-stake-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAlliancebernstein L.P. lifted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.8% in the 3rd quarter, according to the company in its...','2026-03-15',0.19988,'Alphabet Inc. $GOOG Stock Position Lifted by Alliancebernstein L.P.','https://www.defenseworld.net/2026/03/15/alphabet-inc-goog-stock-position-lifted-by-alliancebernstein-l-p.html',4),(4,'newsfeedback@fool.com (keith speights)','If you want to bet big on tech stocks, these are arguably the best picks around.\nAn old investing saying might be especially relevant amid the current uncertainty: \"Stocks climb a wall of worry.\" We c...','2026-03-15',0.90624,'The Best Tech Stocks to Invest $50,000 in Right Now','https://www.fool.com/investing/2026/03/15/the-best-tech-stocks-to-invest-50000-in-right-now/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -200,4 +201,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-15  3:46:10
+-- Dump completed on 2026-03-16  3:50:14
