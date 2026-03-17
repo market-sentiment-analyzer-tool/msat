@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -91,6 +92,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7b2d50b9-21aa-11f1-93e5-5630bf2e01fd:1-113,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -104,7 +106,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
-a95bc1d2-20e3-11f1-a611-fe2c20456198:1-47,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -178,7 +179,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,7 +188,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1ru8b0l','oajf4rp','2026-03-15',31,0,'Apples to oranges'),(2,'ValueInvesting','1ru8b0l','oajfl4h','2026-03-15',42,-0.9202,'As a professional video editor, and graphic designer earlier in my career, itâ€™s very simple. Adobe is the industryâ€™s standard, and thereâ€™s not even a close second.\n\nSure in video you have Avid, but itâ€™s losing marketshare fast and is actually a lot more expensive. Then you have tools like photoshop and after effects and others that are the gold standard.\n\nAdobe is constantly using ai in its updates and I even hear a lot of colleagues say it forces too much of it on us. I personally disagree with that statement, but it shows that Adobe is on the ai innovation train and has not missed it, itâ€™s in fact one of the leaders.\n\nUs professionals also donâ€™t want to learn new software, and all the workflows are adobe based. So Adobe isnâ€™t going anywhere.\n\nMy stand? Yes Adobe is undervalued. BUT short term it can still go a lot lower thanks to market conditions. That doesnâ€™t mean Adobe is bad. It means US leaders are shit.'),(3,'ValueInvesting','1ru8b0l','oajisdq','2026-03-15',6,0.6725,'**Using NVIDIA = Losing Money**\n\nOpenAI lost 30% market share and has $100B debt. They will never reach profitability. The more you use NVIDIA the less profitable you get.\n\nAdobeâ€™s revenue and net margin increase over the last 3 years. There are countless tasks which AI canâ€™t do better than Adobe.\n\nAdobe is fine. Donâ€™t judge their business based on the stock price. Look at the fundamentals.'),(4,'ValueInvesting','1ru8b0l','oajhq9i','2026-03-15',4,0,'It\'s logical for Adobe to add generative AI capabilities in their products mixed with the possibility to manually edit parts that AI couldn\'t get right.'),(5,'ValueInvesting','1ru8b0l','oajgjig','2026-03-15',7,0.9121,'Google is not disrupted. While openai is burning cash like crazy, google integrated its solutions into existing products leveraging its network effect and simply added geminy to its search. Im looking foreward to see how will navigate out of it, but you know military and other goverment and corporate use cases might help them continue swimming.\n\nIn case of adobe, as an architect we quickly shifted from rendering engines and photoshop postproduction to using ai, as it is now capable of just enhancing the image and retain the detail. But there is a trade off because you give up a bit of controll.\n\nWhile google managed to plan and execute, adobe i think did it poorly. I really did not like ifs ai features and it has become super expensive. I think adobe is more likely being disrupted by others. Bit you see how very different the effect of this tech is to different kinds of companies.'),(6,'ValueInvesting','1ru8b0l','oajn0w3','2026-03-15',2,0.9521,'This is coming from somebody who has 12% of their portfolio in ADBE.\n\nIts easy to draw parallels because the sentiment seems familiar. However, ADBE is a much riskier option compared to GOOG in 2024. For GOOG; You could make the argument that even if search is disrupted by OpenAI and Perplexity (remember that threat), they still had profitable businesses under Google Cloud and YouTube while also a revenue growth potential from Waymo.\n\nYou can\'t make the same argument for ADBE. Creative cloud is their bread and butter; if that moat is impacted in any significant way that\'s it. So the risk is significantly higher. If you\'re expecting ADBE to trade back at 30x or 40x PE, that\'s not gonna happen in my opinion.  \n  \nMy expectation is that ADBE will keep growing top line 9-10% (maybe some good 12% quarters but we should be conservative). Their profit will be impacted as they have to spend on R&D while also pay a toll to models. This will be supplemented with buybacks so EPS continues to grow 12%+. Provided these two, and no multiple expansion that is 2x. With multiple expansion could be more but I\'m not banking on it.\n\nThe above hinges a lot on buy backs and ADBE being very efficient with their money. So its a considerable risk to own ADBE imo. GOOG was almost a no-brainer they had so many other things going for them.'),(7,'ValueInvesting','1ru8b0l','oajovep','2026-03-15',2,0.7921,'There are a lot of tutorials on Youtube about Adobe products, much more than for any of their competitors. It\'s very easy to learn them. Also they integrated AI, and it costs you credits to use the AI tools, so it doesn\'t matter the number of seats. The higher the AI process, the more credits it would cost you to use it. I don\'t see how any AI tools alone like Nano Banana or Chat GPT would be able to edit videos or make motion graphic designs. A lot of people that say Adobe is dying don\'t know what their software can do. Now with the crisis of oil prices and private equities, Adobe at a p/e of 15 is an excellent buying oportunity'),(8,'ValueInvesting','1ru8b0l','oakx3u3','2026-03-15',2,0.765,'Just because something looks cheap on paper doesn\'t mean it\'s a great investment. It could just be a mediocre business for the long run like PayPal. The story is flat, the CEO is getting replaced, it is getting disrupted. This is not Google Google is a unicorn. '),(9,'ValueInvesting','1ru8b0l','oajpwlq','2026-03-15',1,0.6124,'There are three clouds for Adobe. Document cloud , creative cloud and experience cloud.. and I donâ€™t understand why people dont think experience cloud is a moat as well.'),(10,'ValueInvesting','1ru8b0l','oalbrqg','2026-03-15',1,0.5423,'Iâ€™ve been eyeing Figma especially since adobe tried to buy them. Iâ€™ve seen they have connectors with MCPs (Claude specific) that could be a great workflow. I think there will be software winners but theyâ€™ll be more of the foundational building blocks firms use with their AI agents.'),(11,'ValueInvesting','1ru8b0l','oaolr4w','2026-03-16',1,0.6369,'I like the stock.  Made some money on it recently.  Think it is a long term winner.  DCA is the way to go usually because perception can hurt it sometimes.\n\nGoogle has had big drops too.  Iâ€™m a long term holder.  I just try to increase my holdings in it when it seems relatively cheaper.'),(12,'ValueInvesting','1ru8b0l','oamv2pz','2026-03-15',1,-0.5106,'don\'t even dare to desecrate Google by placing its name next to that failed photo editing softwareÂ '),(13,'ValueInvesting','1ru8b0l','oalkiy8','2026-03-15',1,-0.5563,'More bagholding posts.  It closed Friday under 250. More pain soon '),(14,'ValueInvesting','1ru8b0l','oajghjn','2026-03-15',-2,0,'Figma is the new standard. look at job posts and see how many of them mention Figma vs Adobe in the required skills'),(15,'ValueInvesting','1ru8b0l','oajggp4','2026-03-15',-3,0.2023,'If you compare a GOOG engineer to an ADBE engineer, you are essentially comparing a world renowned doctor to a kid playing Operation');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -201,4 +201,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-16  2:56:51
+-- Dump completed on 2026-03-17  2:44:02
