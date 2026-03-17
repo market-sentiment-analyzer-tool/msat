@@ -50,6 +50,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
@@ -178,7 +179,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,7 +188,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (marc guberti)','Warren Buffett focuses on stocks with solid fundamentals and vast moats, which explains why these three picks made his list.\nWarren Buffett has shown that owning great businesses and holding them for ...','2026-03-15',0.77466,'3 Top Buffett Stocks to Buy and Hold for the Long Haul','https://www.fool.com/investing/2026/03/15/3-top-buffett-stocks-to-buy-and-hold-for-the-long/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAmeriprise Financial Inc. reduced its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 6.7% in the 3rd quarter, according to its most re...','2026-03-15',0.19988,'Ameriprise Financial Inc. Has $3.15 Billion Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/15/ameriprise-financial-inc-has-3-15-billion-stake-in-alphabet-inc-goog.html',4),(3,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAlliancebernstein L.P. lifted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.8% in the 3rd quarter, according to the company in its...','2026-03-15',0.19988,'Alphabet Inc. $GOOG Stock Position Lifted by Alliancebernstein L.P.','https://www.defenseworld.net/2026/03/15/alphabet-inc-goog-stock-position-lifted-by-alliancebernstein-l-p.html',4),(4,'newsfeedback@fool.com (keith speights)','If you want to bet big on tech stocks, these are arguably the best picks around.\nAn old investing saying might be especially relevant amid the current uncertainty: \"Stocks climb a wall of worry.\" We c...','2026-03-15',0.90624,'The Best Tech Stocks to Invest $50,000 in Right Now','https://www.fool.com/investing/2026/03/15/the-best-tech-stocks-to-invest-50000-in-right-now/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'newsfeedback@fool.com (harsh chauhan)','Nvidia stock has been weighed down by factors outside its control in recent months, which is why investors could look at these two stocks to capitalize on AI adoption.\nNvidia (NVDA +1.63%) has been a ...','2026-03-16',0.75252,'Should You Forget Nvidia and Buy 2 Artificial Intelligence (AI) Stocks Instead?','https://www.fool.com/investing/2026/03/16/should-you-forget-nvidia-and-buy-2-artificial-inte/',4),(2,'newsfeedback@fool.com (geoffrey seiler)','Alphabet and Broadcom are two top AI stocks to own.\nWhile artificial intelligence (AI) has gained a lot of investor attention, the technology appears to still be in the very early innings. As such, it...','2026-03-15',0.84572,'2 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade','https://www.fool.com/investing/2026/03/15/2-artificial-intelligence-stocks-you-can-buy-and-h/',4),(3,'newsfeedback@fool.com (marc guberti)','Warren Buffett focuses on stocks with solid fundamentals and vast moats, which explains why these three picks made his list.\nWarren Buffett has shown that owning great businesses and holding them for ...','2026-03-15',0.77466,'3 Top Buffett Stocks to Buy and Hold for the Long Haul','https://www.fool.com/investing/2026/03/15/3-top-buffett-stocks-to-buy-and-hold-for-the-long/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAmeriprise Financial Inc. reduced its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 6.7% in the 3rd quarter, according to its most re...','2026-03-15',0.19988,'Ameriprise Financial Inc. Has $3.15 Billion Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/03/15/ameriprise-financial-inc-has-3-15-billion-stake-in-alphabet-inc-goog.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Mar 15th, 2026\n\nAlliancebernstein L.P. lifted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.8% in the 3rd quarter, according to the company in its...','2026-03-15',0.19988,'Alphabet Inc. $GOOG Stock Position Lifted by Alliancebernstein L.P.','https://www.defenseworld.net/2026/03/15/alphabet-inc-goog-stock-position-lifted-by-alliancebernstein-l-p.html',4),(6,'newsfeedback@fool.com (keith speights)','If you want to bet big on tech stocks, these are arguably the best picks around.\nAn old investing saying might be especially relevant amid the current uncertainty: \"Stocks climb a wall of worry.\" We c...','2026-03-15',0.90624,'The Best Tech Stocks to Invest $50,000 in Right Now','https://www.fool.com/investing/2026/03/15/the-best-tech-stocks-to-invest-50000-in-right-now/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -201,4 +202,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-16  3:50:14
+-- Dump completed on 2026-03-17  3:28:24
