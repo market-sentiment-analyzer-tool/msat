@@ -139,6 +139,7 @@ ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
+df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -180,7 +181,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +190,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'hanz christensen','\n					Posted by Hanz Christensen on Mar 17th, 2026\n\nMirabella Financial Services LLP raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 22.0% in the third quarter, Holdings Channel repo...','2026-03-17',0.19988,'Mirabella Financial Services LLP Has $3.51 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.watchlistnews.com/mirabella-financial-services-llp-has-3-51-million-stock-holdings-in-alphabet-inc-goog/11025245.html',4),(2,'joseph griffin','\n					Posted by Joseph Griffin on Mar 17th, 2026\n\nMirabella Financial Services LLP lifted its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 22.0% during the 3rd quarter, according to its m...','2026-03-17',0.1999,'Mirabella Financial Services LLP Has $3.51 Million Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13383754/mirabella-financial-services-llp-has-3-51-million-stake-in-alphabet-inc-goog.html',4),(3,'kyle jackson','\n					Posted by Kyle Jackson on Mar 17th, 2026\n\nICONIQ Capital LLC trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 82.0% during the 3rd quarter, HoldingsChannel.com rep...','2026-03-17',-0.22148,'ICONIQ Capital LLC Reduces Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/iconiq-capital-llc-reduces-position-in-alphabet-inc-goog/11025169.html',4),(4,'max byerly','\n					Posted by Max Byerly on Mar 17th, 2026\n\nICONIQ Capital LLC decreased its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 82.0% in the third quarter, according to the company in its mos...','2026-03-17',0.09748,'ICONIQ Capital LLC Lowers Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13383686/iconiq-capital-llc-lowers-holdings-in-alphabet-inc-goog.html',4),(5,'joseph griffin','\n					Posted by Joseph Griffin on Mar 17th, 2026\n\nLaird Norton Wetherby Wealth Management LLC increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 6.3% in the third quarter, HoldingsCh...','2026-03-17',0.72768,'Alphabet Inc. $GOOG Shares Acquired by Laird Norton Wetherby Wealth Management LLC','https://www.tickerreport.com/banking-finance/13383571/alphabet-inc-goog-shares-acquired-by-laird-norton-wetherby-wealth-management-llc.html',4),(6,'nicole kennedy','\n					Posted by Nicole Kennedy on Mar 17th, 2026\n\nGotham Asset Management LLC boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 92.1% during the 3rd quarter, according to...','2026-03-17',0.48886,'Gotham Asset Management LLC Grows Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/gotham-asset-management-llc-grows-position-in-alphabet-inc-goog/11024954.html',4),(7,'shane hupp','\n					Posted by Shane Hupp on Mar 17th, 2026\n\nGotham Asset Management LLC increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 92.1% during the 3rd quarter, according to t...','2026-03-17',0.66862,'Gotham Asset Management LLC Boosts Stock Position in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13383466/gotham-asset-management-llc-boosts-stock-position-in-alphabet-inc-goog.html',4),(8,'alanna baker','\n					Posted by Alanna Baker on Mar 17th, 2026\n\nHolocene Advisors LP lowered its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 83.9% in the third quarter, according to its most recent For...','2026-03-17',0.4367,'Alphabet Inc. $GOOGL Shares Sold by Holocene Advisors LP','https://www.thelincolnianonline.com/2026/03/17/alphabet-inc-googl-shares-sold-by-holocene-advisors-lp.html',4),(9,'dante gardener','\n					Posted by Dante Gardener on Mar 17th, 2026\n\nInsight Holdings Group LLC purchased a new stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) during the third quarter, according to its most recent...','2026-03-17',0.1999,'Insight Holdings Group LLC Invests $21.13 Million in Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/03/17/insight-holdings-group-llc-invests-21-13-million-in-alphabet-inc-googl.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','One company looks like a brilliant buy right now.\nAlphabet (GOOG 2.27%) (GOOGL 2.01%) and Microsoft (MSFT 1.92%) are two of the biggest names in artificial intelligence (AI), but investors may have a ...','2026-03-20',0.80038,'Better Buy Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/03/20/better-buy-now-alphabet-vs-microsoft/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-19',0.86132,'10 Best Stocks to Buy Now According to Warren Buffett','https://www.insidermonkey.com/blog/10-best-stocks-to-buy-now-according-to-warren-buffett-1720350/',4),(3,'keithen drury','...','2026-03-19',0.50952,'3 Stocks to Buy Now and Hold Forever','https://finance.yahoo.com/markets/stocks/articles/3-stocks-buy-now-hold-115200315.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -203,4 +204,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-18  3:35:24
+-- Dump completed on 2026-03-21  3:13:49

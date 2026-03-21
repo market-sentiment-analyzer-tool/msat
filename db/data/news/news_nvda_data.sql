@@ -139,6 +139,7 @@ ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
+df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -180,7 +181,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +190,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'javier correonero','...','2026-03-17',0.36704,'Nebius Signs $27 Billion Five-Year Revenue Deal With Meta','https://www.morningstar.com/stocks/nebius-signs-27-billion-five-year-revenue-deal-with-meta',2),(2,'danny vena','A proposed rule that would have marked a major setback for the AI chipmaker has been shelved.\nNvidia (NVDA 0.74%) has been the leading provider of specialized chips that underpin artificial intelligen...','2026-03-17',0.59922,'Nvidia Stock Investors Just Got Fantastic From the Trump Administration','https://www.fool.com/investing/2026/03/17/nvidia-stock-investors-just-got-fantastic-from-the/',40),(3,'david moadel','Investing\nUber (UBER) stock rose 5% following expanded partnerships with NVIDIA (NVDA) and Amazonâ€™s (AMZN) Zoox to deploy robotaxis across 28 cities by 2028.\nUberâ€™s robotaxi partnerships eliminate fle...','2026-03-17',0.34218,'Uber Jumps 5% on Robotaxi Expansion, NVIDIA and Amazon Partnerships','https://247wallst.com/investing/2026/03/17/uber-jumps-5-on-robotaxi-expansion-nvidia-and-amazon-partnerships/',40),(4,'wall street breakfast','...','2026-03-17',0.08216,'Wall Street Lunch: Nvidia Expands Agentic AI Push With OpenClaw Creator','https://seekingalpha.com/article/4883150-wall-street-lunch-nvidia-expands-agentic-ai-push-with-openclaw-creator',40),(5,'hanz christensen','\n					Posted by Hanz Christensen on Mar 17th, 2026\n\nNVIDIA (NASDAQ:NVDA â€“ Get Free Report)â€˜s stock had its â€œoverweightâ€ rating reaffirmed by equities researchers at KeyCorp in a research note issued o...','2026-03-17',-0.0892,'NVIDIA (NASDAQ:NVDA) Given Overweight Rating at KeyCorp','https://www.watchlistnews.com/nvidia-nasdaqnvda-given-overweight-rating-at-keycorp-2/11025306.html',40),(6,'michael walen','\n					Posted by Michael Walen on Mar 17th, 2026\n\nNVIDIA (NASDAQ:NVDA â€“ Get Free Report)â€˜s stock had its â€œbuyâ€ rating reaffirmed by Rosenblatt Securities in a note issued to investors on Tuesday,Benzin...','2026-03-17',0.43662,'Rosenblatt Securities Reiterates â€œBuyâ€ Rating for NVIDIA (NASDAQ:NVDA)','https://www.themarketsdaily.com/2026/03/17/rosenblatt-securities-reiterates-buy-rating-for-nvidia-nasdaqnvda.html',40),(7,'max byerly','\n					Posted by Max Byerly on Mar 17th, 2026\n\nNVIDIA (NASDAQ:NVDA â€“ Get Free Report)â€˜s stock had its â€œoverweightâ€ rating reissued by equities research analysts at KeyCorp in a report issued on Tuesday...','2026-03-17',-0.08914,'NVIDIAâ€™s (NVDA) Overweight Rating Reaffirmed at KeyCorp','https://www.tickerreport.com/banking-finance/13383817/nvidias-nvda-overweight-rating-reaffirmed-at-keycorp.html',4),(8,'will ashworth','...','2026-03-17',0.52776,'After a Bullish Surprise, Can Nokia Stock Sustain Its Move Toward Redemption?','https://www.barchart.com/story/news/797337/after-a-bullish-surprise-can-nokia-stock-sustain-its-move-toward-redemption',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'kara greenberg','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-03-20',-0.17982,'Supermicro Stock Drops Over 25% After Co-Founder Charged With Smuggling AI Tech to China','https://www.investopedia.com/supermicro-stock-plunges-after-co-founder-charged-with-smuggling-ai-tech-to-china-11930618',4),(2,'mohit oberoi','...','2026-03-20',0.24856,'Alibabaâ€™s Post-Earnings Woes Continue: Is BABA Stock a Buy Despite The Misses?','https://www.barchart.com/story/news/864769/alibabas-post-earnings-woes-continue-is-baba-stock-a-buy-despite-the-misses',2),(3,'michael williams','...','2026-03-20',-0.25456,'NVIDIA Is Unstoppable after a $68.1b Quarter, and A Moat That Wonâ€™t Stop Growing,','https://finance.yahoo.com/markets/stocks/articles/nvidia-unstoppable-68-1b-quarter-142438240.html',200),(4,'amit singh','...','2026-03-20',0.48992,'Super Micro Stock Is Getting Crushed â€”Time to Load Up or Stay Far Away?','https://www.barchart.com/story/news/864505/super-micro-stock-is-getting-crushed-time-to-load-up-or-stay-far-away',2),(5,'rich asplund','...','2026-03-20',-0.3372,'Stocks Decline as Bond Yields Climb on Inflation Fears','https://www.barchart.com/story/news/863862/stocks-decline-as-bond-yields-climb-on-inflation-fears',2),(6,'joey frenette','...','2026-03-20',0,'Is NVIDIA Really a â€œValue Stockâ€ at Under $200?','https://finance.yahoo.com/markets/stocks/articles/nvidia-really-value-stock-under-135626977.html',200),(7,'uttam dey','...','2026-03-20',0.32152,'Markets To Nvidia: You Have Something We Desire','https://seekingalpha.com/article/4884505-markets-to-nvidia-you-have-something-we-desire',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -203,4 +204,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-18  3:35:25
+-- Dump completed on 2026-03-21  3:13:49
