@@ -26,7 +26,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
-0ecb9171-24ce-11f1-ae3a-4ed813a30bbf:1-39,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -95,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7bf9a3b3-2599-11f1-833d-4aadf43fc710:1-24,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -140,6 +140,7 @@ ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
+df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -181,7 +182,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -190,7 +191,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ryzo5d','obib218','2026-03-20',12,0,'$10t market cap coming. \n\nMore inference = more pre/post training > more systems sold. \n\n'),(2,'NVDA_Stock','1ryzo5d','obklc59','2026-03-20',2,0.4404,'10k in right before split. $200 is 100% return, still doing good. '),(3,'NVDA_Stock','1ryzo5d','obk5ts7','2026-03-20',1,-0.6876,'Kicking ass at $172 !!!!!!'),(4,'NVDA_Stock','1ryzo5d','obial9i','2026-03-20',-3,-0.5423,'Doesnâ€™t matter when the world is going to shit.'),(5,'NVDA_Stock','1ryzo5d','obi8nnd','2026-03-20',0,0,'Puts it is '),(6,'NVDA_Stock','1rz04rj','objwuan','2026-03-20',5,0.4767,'Unbelievable employees. Why would the stock tank? It sounds like fundamentals are still good. The smuggling are not in the books anyway. Therefore not factored in the company books.'),(7,'NVDA_Stock','1rz04rj','objb02v','2026-03-20',2,0,'At least provide a [reference](https://www.justice.gov/opa/pr/three-charged-conspiring-unlawfully-divert-cutting-edge-us-artificial-intelligence).'),(8,'NVDA_Stock','1rz04rj','objnv56','2026-03-20',2,0.1095,'considered buying it this morning, but I figured that it had more to fall for a while. And I want to do more research on SMCI. So I\'m glad I didn\'t invest into it'),(9,'NVDA_Stock','1rz04rj','obixrva','2026-03-20',-1,0.6278,'Yeah no shit. Old news guy '),(10,'NVDA_Stock','1rzempa','obli7r3','2026-03-21',6,0,'believe it or not, flat'),(11,'NVDA_Stock','1rzempa','oblfy0t','2026-03-21',6,-0.3612,'What ridiculous article is this'),(12,'NVDA_Stock','1rzempa','oblg32u','2026-03-21',6,-0.2672,'Not going anywhere in the near future stuck between 170 and 190 no matter what happens. '),(13,'NVDA_Stock','1rzempa','oblgnqy','2026-03-21',6,0,'Whatevs'),(14,'NVDA_Stock','1rzempa','oblflm4','2026-03-21',3,-0.2732,'I could also 100x it could also half, it could also drop to 10$'),(15,'NVDA_Stock','1rzempa','obljjeo','2026-03-21',7,-0.7269,'Iâ€™m an NVDA bull.\n\nAnd I believe it could drop to $130-150 because of this stupid fucking administration we have in the White House and Pentagon.'),(16,'NVDA_Stock','1rzempa','oblnd3v','2026-03-21',1,-0.2732,'Assuming nukes donâ€™t drop anytime soon '),(17,'NVDA_Stock','1rzempa','oblo9e0','2026-03-21',1,0,'So a market cap of $12.60T if it triples.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rzkz53','obo7i46','2026-03-21',-9,-0.872,'Short NVDA - dead stock that will slowly go down like a falling feather'),(2,'NVDA_Stock','1rzkwdr','obo7ojd','2026-03-21',-4,-0.934,'Short NVDA and you will make a fortune.  The pump and dump\'s I am seeing say this will go to a flush of 183-184 then short this bad boy down to 160');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -204,4 +205,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-21  2:32:13
+-- Dump completed on 2026-03-22  2:48:14
