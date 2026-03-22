@@ -147,6 +147,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -181,7 +182,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -190,7 +191,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'kara greenberg','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-03-20',-0.17982,'Supermicro Stock Drops Over 25% After Co-Founder Charged With Smuggling AI Tech to China','https://www.investopedia.com/supermicro-stock-plunges-after-co-founder-charged-with-smuggling-ai-tech-to-china-11930618',4),(2,'mohit oberoi','...','2026-03-20',0.24856,'Alibabaâ€™s Post-Earnings Woes Continue: Is BABA Stock a Buy Despite The Misses?','https://www.barchart.com/story/news/864769/alibabas-post-earnings-woes-continue-is-baba-stock-a-buy-despite-the-misses',2),(3,'michael williams','...','2026-03-20',-0.25456,'NVIDIA Is Unstoppable after a $68.1b Quarter, and A Moat That Wonâ€™t Stop Growing,','https://finance.yahoo.com/markets/stocks/articles/nvidia-unstoppable-68-1b-quarter-142438240.html',200),(4,'amit singh','...','2026-03-20',0.48992,'Super Micro Stock Is Getting Crushed â€”Time to Load Up or Stay Far Away?','https://www.barchart.com/story/news/864505/super-micro-stock-is-getting-crushed-time-to-load-up-or-stay-far-away',2),(5,'rich asplund','...','2026-03-20',-0.3372,'Stocks Decline as Bond Yields Climb on Inflation Fears','https://www.barchart.com/story/news/863862/stocks-decline-as-bond-yields-climb-on-inflation-fears',2),(6,'joey frenette','...','2026-03-20',0,'Is NVIDIA Really a â€œValue Stockâ€ at Under $200?','https://finance.yahoo.com/markets/stocks/articles/nvidia-really-value-stock-under-135626977.html',200),(7,'uttam dey','...','2026-03-20',0.32152,'Markets To Nvidia: You Have Something We Desire','https://seekingalpha.com/article/4884505-markets-to-nvidia-you-have-something-we-desire',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'nash riggins','...','2026-03-21',0.28896,'Nvidia CEO Jensen Huang Promised to â€˜Surprise the World.â€™ GTC 2026 Delivered â€” With a Groq-Powered Twist','https://www.barchart.com/story/news/880957/nvidia-ceo-jensen-huang-promised-to-surprise-the-world-gtc-2026-delivered-with-a-groq-powered-twist',20),(2,'the asian investor','\n\nKanawatTH/iStock via Getty Images\n\nAI server maker Super Micro Computer (SMCI), which has had its fair share of self-created problems in the last few years as the company missed important reporting ...','2026-03-21',0.77976,'Super Micro: Another Perfect Storm','https://seekingalpha.com/article/4884749-super-micro-another-perfect-storm',8),(3,'sarita garza','\n					Posted by Sarita Garza on Mar 21st, 2026\n\nLindenwold Advisors INC boosted its holdings in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 33.0% in the 3rd quarter, according to its ...','2026-03-21',0.19986,'NVIDIA Corporation $NVDA Position Raised by Lindenwold Advisors INC','https://www.themarketsdaily.com/2026/03/21/nvidia-corporation-nvda-position-raised-by-lindenwold-advisors-inc.html',40),(4,'stephan jacobs','\n					Posted by Stephan Jacobs on Mar 21st, 2026\n\nMcAlister Sweet & Associates Inc. grew its stake in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 153.1% during the 4th quarter, HoldingsChannel....','2026-03-21',0.56688,'McAlister Sweet & Associates Inc. Has $1.57 Million Stake in NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/03/21/mcalister-sweet-associates-inc-has-1-57-million-stake-in-nvidia-corporation-nvda.html',40),(5,'rich duprey','...','2026-03-21',0.70672,'Is Dell Stock the Big Winner After Super Microâ€™s Stunning Implosion?','https://www.barchart.com/story/news/879634/is-dell-stock-the-big-winner-after-super-micros-stunning-implosion',2),(6,'danessa lincoln','\n					Posted by Danessa Lincoln on Mar 21st, 2026\n\nMirabella Financial Services LLP raised its holdings in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 101.6% during the third quarter, according...','2026-03-21',0.43666,'NVIDIA Corporation $NVDA Shares Bought by Mirabella Financial Services LLP','https://www.themarketsdaily.com/2026/03/21/nvidia-corporation-nvda-shares-bought-by-mirabella-financial-services-llp.html',40),(7,'omor ibne ehsan','Investing\nInvesco S&P 500 Momentum ETF (SPMO) returned 24% over the past year versus SPDR S&P 500 ETF Trust (SPY) at 16%, and over a decade SPMO gained 416% compared to SPYâ€™s 222%.\nSPMO systematically...','2026-03-21',-0.10572,'This 1 ETF Keeps Outrallying the SPY, While Also Losing Less During Downturns','https://247wallst.com/investing/2026/03/21/this-1-etf-keeps-outrallying-the-spy-while-also-losing-less-during-downturns/',4),(8,'dante gardener','\n					Posted by Dante Gardener on Mar 21st, 2026\n\nMainstay Capital Management LLC ADV decreased its position in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 48.6% during the third quar...','2026-03-21',0.43668,'Mainstay Capital Management LLC ADV Sells 30,865 Shares of NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/03/21/mainstay-capital-management-llc-adv-sells-30865-shares-of-nvidia-corporation-nvda.html',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -204,4 +205,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-21  3:13:49
+-- Dump completed on 2026-03-22  3:34:23

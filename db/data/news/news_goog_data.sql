@@ -147,6 +147,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -190,7 +191,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','One company looks like a brilliant buy right now.\nAlphabet (GOOG 2.27%) (GOOGL 2.01%) and Microsoft (MSFT 1.92%) are two of the biggest names in artificial intelligence (AI), but investors may have a ...','2026-03-20',0.80038,'Better Buy Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/03/20/better-buy-now-alphabet-vs-microsoft/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-19',0.86132,'10 Best Stocks to Buy Now According to Warren Buffett','https://www.insidermonkey.com/blog/10-best-stocks-to-buy-now-according-to-warren-buffett-1720350/',4),(3,'keithen drury','...','2026-03-19',0.50952,'3 Stocks to Buy Now and Hold Forever','https://finance.yahoo.com/markets/stocks/articles/3-stocks-buy-now-hold-115200315.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'neil patel','Shareholders in these two top technology companies have posted strong returns in the past.\nIt looks like the next big technological shift is underway. Artificial intelligence (AI) has kicked off a gol...','2026-03-21',0.5522,'Better AI Stock: Alphabet vs. Meta Platforms','https://www.fool.com/investing/2026/03/21/better-ai-stock-alphabet-vs-meta-platforms/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-20',0.70886,'Is Alphabet (GOOGL, GOOG) Still The Best Undervalued AI Stock in Warren Buffettâ€™s Latest Portfolio?','https://www.insidermonkey.com/blog/is-alphabet-googl-goog-still-the-best-undervalued-ai-stock-in-warren-buffetts-latest-portfolio-1720550/',4),(3,'keithen drury','One company looks like a brilliant buy right now.\nAlphabet (GOOG 2.27%) (GOOGL 2.00%) and Microsoft (MSFT 1.92%) are two of the biggest names in artificial intelligence (AI), but investors may have a ...','2026-03-20',0.80038,'Better Buy Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/03/20/better-buy-now-alphabet-vs-microsoft/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -204,4 +205,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-21  3:13:49
+-- Dump completed on 2026-03-22  3:34:23
