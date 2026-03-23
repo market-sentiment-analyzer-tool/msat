@@ -110,6 +110,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -182,7 +183,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -191,7 +192,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'neil patel','Shareholders in these two top technology companies have posted strong returns in the past.\nIt looks like the next big technological shift is underway. Artificial intelligence (AI) has kicked off a gol...','2026-03-21',0.5522,'Better AI Stock: Alphabet vs. Meta Platforms','https://www.fool.com/investing/2026/03/21/better-ai-stock-alphabet-vs-meta-platforms/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-20',0.70886,'Is Alphabet (GOOGL, GOOG) Still The Best Undervalued AI Stock in Warren Buffettâ€™s Latest Portfolio?','https://www.insidermonkey.com/blog/is-alphabet-googl-goog-still-the-best-undervalued-ai-stock-in-warren-buffetts-latest-portfolio-1720550/',4),(3,'keithen drury','One company looks like a brilliant buy right now.\nAlphabet (GOOG 2.27%) (GOOGL 2.00%) and Microsoft (MSFT 1.92%) are two of the biggest names in artificial intelligence (AI), but investors may have a ...','2026-03-20',0.80038,'Better Buy Now: Alphabet vs. Microsoft','https://www.fool.com/investing/2026/03/20/better-buy-now-alphabet-vs-microsoft/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'neil patel','Shareholders in these two top technology companies have posted strong returns in the past.\nIt looks like the next big technological shift is underway. Artificial intelligence (AI) has kicked off a gol...','2026-03-21',0.5522,'Better AI Stock: Alphabet vs. Meta Platforms','https://www.fool.com/investing/2026/03/21/better-ai-stock-alphabet-vs-meta-platforms/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -205,4 +206,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-22  3:34:23
+-- Dump completed on 2026-03-23  3:38:50
