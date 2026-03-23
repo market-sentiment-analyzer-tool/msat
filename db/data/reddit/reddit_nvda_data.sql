@@ -94,7 +94,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7bf9a3b3-2599-11f1-833d-4aadf43fc710:1-24,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -107,6 +106,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a5b61916-2662-11f1-b307-fe5d2763d315:1-94,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -148,6 +148,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -182,7 +183,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -191,7 +192,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1rzkz53','obo7i46','2026-03-21',-9,-0.872,'Short NVDA - dead stock that will slowly go down like a falling feather'),(2,'NVDA_Stock','1rzkwdr','obo7ojd','2026-03-21',-4,-0.934,'Short NVDA and you will make a fortune.  The pump and dump\'s I am seeing say this will go to a flush of 183-184 then short this bad boy down to 160');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s0ut1e','obw6feo','2026-03-22',6,0.8519,'I\'m big on NVDA.  But Dan Ives, he seems like a permabull on all of tech.  He doesn\'t say anything that\'s interesting or new.'),(2,'NVDA_Stock','1s0ut1e','obwpild','2026-03-22',2,0,'I Listened to the All-In Podcast ft. NVIDIA Jensen Huang (March \'26) So You Don\'t Have To https://misterparipassu.substack.com/p/i-listened-to-the-all-in-podcast?r=87pez&utm_campaign=post&utm_medium=web&triedRedirect=true'),(3,'NVDA_Stock','1s0ut1e','obxwecv','2026-03-23',1,0,'Yaaaa whatever ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -205,4 +206,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-22  2:48:14
+-- Dump completed on 2026-03-23  2:49:12
