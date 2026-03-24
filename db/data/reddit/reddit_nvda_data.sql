@@ -105,12 +105,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
+a38a7db3-272a-11f1-b738-920969a51748:1-29,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
-a5b61916-2662-11f1-b307-fe5d2763d315:1-94,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -183,7 +184,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +193,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s0ut1e','obw6feo','2026-03-22',6,0.8519,'I\'m big on NVDA.  But Dan Ives, he seems like a permabull on all of tech.  He doesn\'t say anything that\'s interesting or new.'),(2,'NVDA_Stock','1s0ut1e','obwpild','2026-03-22',2,0,'I Listened to the All-In Podcast ft. NVIDIA Jensen Huang (March \'26) So You Don\'t Have To https://misterparipassu.substack.com/p/i-listened-to-the-all-in-podcast?r=87pez&utm_campaign=post&utm_medium=web&triedRedirect=true'),(3,'NVDA_Stock','1s0ut1e','obxwecv','2026-03-23',1,0,'Yaaaa whatever ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s1m2lt','oc39aft','2026-03-23',5,0.7096,'Watching it now, about one hour in, talking about Vera Rubin pods, each containing 40 racks.  Jensen said they plan to \"crank out about 200 of these pods a week\". \n\nA VR pod contains about 16 gpu racks, 72 gpus per rack, 1152 gpus per pod. A pod also contains other racks for networking, cpus, lpus, storage, etc.\n\nSo that\'s 3200 gpu racks/week.  A year ago, he talked about making 1000 Grace Blackwell racks/week.\n\nThere\'s a ramp, but 3200 racks/week x 52 weeks x $3 million/rack gets you in the ballpark of $500B of 2027 GB + VR datacenter revenue Jensen talked about at GTC.'),(2,'NVDA_Stock','1s1m2lt','oc2mgrv','2026-03-23',5,0,'Mr Huang wills things into existence.'),(3,'NVDA_Stock','1s1m2lt','oc3hx9g','2026-03-23',5,0.4019,'Jensen at 1:30 mark - \"Is it possible for Nvidia to be a three trillion dollar revenues company in the near future?  The answer is of course yes\".'),(4,'NVDA_Stock','1s1m2lt','oc22oss','2026-03-23',3,0.1027,'Dude says we\'ve literally already reached agi'),(5,'NVDA_Stock','1s1m2lt','oc2oadn','2026-03-23',-6,0.25,'I have no clue what heâ€™s on about. I just want the stock to go up ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -206,4 +207,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-23  2:49:12
+-- Dump completed on 2026-03-24  2:39:55
