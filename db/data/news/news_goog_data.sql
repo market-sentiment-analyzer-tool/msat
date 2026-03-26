@@ -120,6 +120,7 @@ bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
+bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
@@ -185,7 +186,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,6 +195,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 25th, 2026\n\nUlland Investment Advisors LLC lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 24.0% in the 4th quarter, according to the compan...','2026-03-25',0.4367,'Ulland Investment Advisors LLC Sells 10,312 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/25/ulland-investment-advisors-llc-sells-10312-shares-of-alphabet-inc-goog.html',4),(2,'max byerly','\n					Posted by Max Byerly on Mar 25th, 2026\n\nWealth Enhancement Advisory Services LLC grew its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.4% in the 4th quarter, according to its most...','2026-03-25',0.59502,'Wealth Enhancement Advisory Services LLC Has $393.94 Million Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13390484/wealth-enhancement-advisory-services-llc-has-393-94-million-stake-in-alphabet-inc-goog.html',4),(3,'sinchita mitra','...','2026-03-25',-0.30544,'Alphabet slides to lowest since November, nears bear market territory','https://seekingalpha.com/news/4568340-alphabet-slides-to-lowest-since-november-nears-bear-market-territory?feed_item_type=news',4),(4,'lindsey winhoffer','\n					Posted by Lindsey Winhoffer on Mar 25th, 2026\n\nNorthCrest Asset Manangement LLC raised its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.2% in the fourth quarter, according to the ...','2026-03-25',0.65742,'Alphabet Inc. $GOOG Shares Bought by NorthCrest Asset Manangement LLC','https://www.watchlistnews.com/alphabet-inc-goog-shares-bought-by-northcrest-asset-manangement-llc/11031697.html',4),(5,'micah haroldson','\n					Posted by Micah Haroldson on Mar 25th, 2026\n\nSound View Wealth Advisors Group LLC decreased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.1% in the fourth quarter, according to th...','2026-03-25',0.72766,'Sound View Wealth Advisors Group LLC Sells 3,182 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/sound-view-wealth-advisors-group-llc-sells-3182-shares-of-alphabet-inc-goog/11031698.html',4),(6,'kim johansen','\n					Posted by Kim Johansen on Mar 25th, 2026\n\nMaridea Wealth Management LLC raised its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 13.3% in the 4th quarter, according to its most recen...','2026-03-25',0.83238,'Alphabet Inc. $GOOG is Maridea Wealth Management LLCâ€™s 9th Largest Position','https://www.themarketsdaily.com/2026/03/25/alphabet-inc-goog-is-maridea-wealth-management-llcs-9th-largest-position.html',4),(7,'stephan jacobs','\n					Posted by Stephan Jacobs on Mar 25th, 2026\n\nGradient Investments LLC reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 18.7% in the fourth quarter, according to the company in i...','2026-03-25',-0.03692,'Gradient Investments LLC Cuts Holdings in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/03/25/gradient-investments-llc-cuts-holdings-in-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Mar 25th, 2026\n\nChesapeake Asset Management LLC increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 803.0% in the 4th quarter, according to ...','2026-03-25',0.48886,'Chesapeake Asset Management LLC Has $1.34 Million Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/25/chesapeake-asset-management-llc-has-1-34-million-holdings-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -207,4 +209,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-25  3:33:13
+-- Dump completed on 2026-03-26  3:43:03
