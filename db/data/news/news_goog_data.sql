@@ -49,6 +49,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
+3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -186,7 +187,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -195,7 +196,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 25th, 2026\n\nUlland Investment Advisors LLC lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 24.0% in the 4th quarter, according to the compan...','2026-03-25',0.4367,'Ulland Investment Advisors LLC Sells 10,312 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/25/ulland-investment-advisors-llc-sells-10312-shares-of-alphabet-inc-goog.html',4),(2,'max byerly','\n					Posted by Max Byerly on Mar 25th, 2026\n\nWealth Enhancement Advisory Services LLC grew its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 2.4% in the 4th quarter, according to its most...','2026-03-25',0.59502,'Wealth Enhancement Advisory Services LLC Has $393.94 Million Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13390484/wealth-enhancement-advisory-services-llc-has-393-94-million-stake-in-alphabet-inc-goog.html',4),(3,'sinchita mitra','...','2026-03-25',-0.30544,'Alphabet slides to lowest since November, nears bear market territory','https://seekingalpha.com/news/4568340-alphabet-slides-to-lowest-since-november-nears-bear-market-territory?feed_item_type=news',4),(4,'lindsey winhoffer','\n					Posted by Lindsey Winhoffer on Mar 25th, 2026\n\nNorthCrest Asset Manangement LLC raised its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.2% in the fourth quarter, according to the ...','2026-03-25',0.65742,'Alphabet Inc. $GOOG Shares Bought by NorthCrest Asset Manangement LLC','https://www.watchlistnews.com/alphabet-inc-goog-shares-bought-by-northcrest-asset-manangement-llc/11031697.html',4),(5,'micah haroldson','\n					Posted by Micah Haroldson on Mar 25th, 2026\n\nSound View Wealth Advisors Group LLC decreased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 5.1% in the fourth quarter, according to th...','2026-03-25',0.72766,'Sound View Wealth Advisors Group LLC Sells 3,182 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/sound-view-wealth-advisors-group-llc-sells-3182-shares-of-alphabet-inc-goog/11031698.html',4),(6,'kim johansen','\n					Posted by Kim Johansen on Mar 25th, 2026\n\nMaridea Wealth Management LLC raised its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 13.3% in the 4th quarter, according to its most recen...','2026-03-25',0.83238,'Alphabet Inc. $GOOG is Maridea Wealth Management LLCâ€™s 9th Largest Position','https://www.themarketsdaily.com/2026/03/25/alphabet-inc-goog-is-maridea-wealth-management-llcs-9th-largest-position.html',4),(7,'stephan jacobs','\n					Posted by Stephan Jacobs on Mar 25th, 2026\n\nGradient Investments LLC reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 18.7% in the fourth quarter, according to the company in i...','2026-03-25',-0.03692,'Gradient Investments LLC Cuts Holdings in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/03/25/gradient-investments-llc-cuts-holdings-in-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Mar 25th, 2026\n\nChesapeake Asset Management LLC increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 803.0% in the 4th quarter, according to ...','2026-03-25',0.48886,'Chesapeake Asset Management LLC Has $1.34 Million Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/25/chesapeake-asset-management-llc-has-1-34-million-holdings-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia','...','2026-03-26',0,'Google unveils Gemini 3.1 Flash Live model for audio, visual needs','https://seekingalpha.com/news/4569411-google-unveils-gemini-31-flash-live-model-for-audio-visual-needs?feed_item_type=news',40),(2,'yahoo finance video','...','2026-03-26',0,'Google, Meta ruling could be a Tobacco Moment for social media cases','https://ca.finance.yahoo.com/video/google-meta-ruling-could-be-a-tobacco-moment-for-social-media-cases-150424623.html',2),(3,'barchart insights','...','2026-03-26',0.39512,'3 Top Strait of Hormuz Stocks, and How the FCC is Boosting SpaceX','https://www.barchart.com/story/news/983307/3-top-strait-of-hormuz-stocks-and-how-the-fcc-is-boosting-spacex',2),(4,'wall street breakfast','...','2026-03-26',0,'Wall Street Breakfast Podcast: Henkel Adds Shine With Olaplex','https://seekingalpha.com/article/4886093-wall-street-breakfast-podcast-henkel-adds-shine-with-olaplex',4),(5,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 25th, 2026\n\nUlland Investment Advisors LLC lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 24.0% in the 4th quarter, according to the compan...','2026-03-25',0.4367,'Ulland Investment Advisors LLC Sells 10,312 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/25/ulland-investment-advisors-llc-sells-10312-shares-of-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -209,4 +210,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-26  3:43:03
+-- Dump completed on 2026-03-27  3:44:59
