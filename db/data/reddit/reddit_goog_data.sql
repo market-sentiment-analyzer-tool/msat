@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
+24dc132d-2988-11f1-b573-ba4dc8a73c5a:1-142,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -114,13 +115,13 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
-b292d81b-28be-11f1-944b-923bca5ed3b0:1-103,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
+bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
@@ -186,7 +187,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -195,7 +196,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1s3ryee','ochpm9i','2026-03-26',217,0,'Where\'s my check? '),(2,'stocks','1s3ryee','ochpx2x','2026-03-26',98,-0.6361,'They will now add timed warnings for social media sites and making them even more annoying to use.'),(3,'stocks','1s3ryee','ochs5mw','2026-03-26',40,0,'Addicted to gooning, Iâ€™m going to sue the woman and the website for making me addicted! '),(4,'stocks','1s3ryee','ochqc0w','2026-03-26',27,-0.2732,'cut me my check reddit'),(5,'stocks','1s3ryee','ochqpu0','2026-03-26',15,0,'Let\'s see how the appeals go before anything is decided.Â '),(6,'stocks','1s3ryee','ochv7zp','2026-03-26',11,0.1337,'This feels less about the $6M and more about what it opens up. \n\nFor years, Meta and Google have basically said â€œwe just host content, weâ€™re not responsible for how people use it.â€ Their terms made them feel pretty bulletproof.\n\nThis case challenges that. Itâ€™s saying the platforms themselves are designed to keep people hookedâ€”and that design can cause harm.\n\nIf that idea sticks, it could mean: more lawsuits, tighter regulation, and real changes to how feeds and algorithms work. Feels like the first crack in the â€œweâ€™re just a platformâ€ defense. But who knows.  \n\nobviously everyone and their Nana is gonna want to come forward and try to take them to court now because I mean.. who isn\'t addicted to social media in one way shape or form'),(7,'stocks','1s3ryee','ocht3m6','2026-03-26',12,0,'That\'s insane..where the fuxk were the parents?.'),(8,'stocks','1s3ryee','ocidokz','2026-03-26',2,-0.5023,'I\'m sorry but the only one to blame for that is her parents'),(9,'stocks','1s3ryee','ochrt83','2026-03-26',5,0.6369,'You love to see itÂ '),(10,'stocks','1s3ryee','ochq33n','2026-03-26',8,-0.718,'It\'s so dumb. It has so many repercussions too like people don\'t have free will to just stop. Next someone will sue Nintendo for being addicted to the switch 2.'),(11,'stocks','1s3ryee','ochtndg','2026-03-26',5,0.584,'â€œLetâ€™s make a product thatâ€™s scientifically psychologically addicting for money! Hooray!â€ \n\nYears Later\n\nâ€œWhat?!? Itâ€™s not our fault someone became psychologically addicted!â€'),(12,'stocks','1s3ryee','ochs2p8','2026-03-26',4,0.959,'Study on study shows the detrimental effects of social media and their addictive algorithms but still there are those in here who would rather we bootlick for these corporations to protect their â€œshareholder valueâ€ over societal wellbeing. Someone posted a comment saying you have free will to stop using social mediaâ€¦. Like are you kidding me? You also have free will to stop being addicted to cigarettes and drugs but there is still addiction? Wow who woulda thunk that oneâ€¦.'),(13,'stocks','1s3ryee','ochsgh7','2026-03-26',3,-0.6674,'Absolutely fucking ridiculous. This will be appealed and overturned. This judge should resign. '),(14,'stocks','1s3ryee','ochwzf2','2026-03-26',2,-0.7906,'Can I sue Coke because they are addictive as hell to me and I am diabetic and I deny self control.'),(15,'stocks','1s3ryee','ochyw2k','2026-03-26',2,-0.5563,'Lol. Fucking dumb. '),(16,'stocks','1s3ryee','ochyrck','2026-03-26',1,0.0571,'Snap was smart as they made a plea deal in this case. So they avoid all the spotlight. '),(17,'stocks','1s3ryee','ochzr1i','2026-03-26',1,0,'How about Reddit?'),(18,'stocks','1s3ryee','ochzy4f','2026-03-26',1,0.4404,'Next up Tiktok, Twitter, Minecraft, and others. '),(19,'stocks','1s3ryee','oci49wn','2026-03-26',1,-0.936,'Nah bitch, my accounts are there but dead quiet/0 in activity - fuck social media. '),(20,'stocks','1s3ryee','oci57a6','2026-03-26',1,-0.2732,'Cut me in for a few million '),(21,'stocks','1s3ryee','oci7bwb','2026-03-26',1,0,'That lady\'s TV had an OFF button that SHE did not use.'),(22,'stocks','1s3ryee','oci7dh1','2026-03-26',1,-0.0258,'Video games are also designed to be as addicting as possible with stuff like battle passes and loot boxes, are they going to be sued next?'),(23,'stocks','1s3ryee','ocif15r','2026-03-26',1,0,'â€œA California juryâ€\n\nThis case will get tossed on appeal.'),(24,'stocks','1s3ryee','ocif775','2026-03-26',1,-0.7184,'If $6 mill is meant to be punitive, I don\'t think it will be. For mega corps, courts need to be thinking in the hundreds of billions at least. $6 mill is a rounding error for Meta.'),(25,'stocks','1s3ryee','ochtucq','2026-03-26',0,-0.8483,'The jury is full pathetic losers addicted to social media and they blame the apps. Control your kids, it\'s not that hard being parent'),(26,'stocks','1s3ryee','ocialvd','2026-03-26',1,-0.5775,'So why canâ€™t gamblers sue casinos?\n\nWhy canâ€™t alcoholics sue alcohol companies?\n\nIâ€™m confused, have we as a society just forgotten about personal responsibility and parenting?'),(27,'stocks','1s3ryee','ochrf75','2026-03-26',1,-0.34,'Damn I need to talk to a lawyer I want a check too '),(28,'stocks','1s3ryee','ochx9zg','2026-03-26',1,0,'Tik Tok and Reddit should give me $100 million for my addiction '),(29,'stocks','1s3ryee','ochz2qi','2026-03-26',1,-0.6298,'Can we sue FritoLay for obesity now? Oil companies for climate change? How come no one can sue gun manufacturers for all the shootings?'),(30,'stocks','1s3ryee','ochzf4f','2026-03-26',1,0.0772,'Bro what\n\nI want $6M '),(31,'stocks','1s3ryee','oci8peh','2026-03-26',1,-0.4767,'Terrible ruling and precedent. Judge should have thrown this garbage case out of courtroom.'),(32,'stocks','1s3ryee','ochq7ib','2026-03-26',-11,0,'Californiaâ€¦jury full of low iq people. Who would actually think this is the right call '),(33,'stocks','1s3ryee','ochu2y4','2026-03-26',-4,-0.5362,'Ridiculous. \n\nWhoâ€™s next?\n\nReddit? Netflix? The internet? Video game companies? Porn sites? Food & beverage companies? Coffee/tea  companies? TV broadcasters?\n\nBasically, anything that gives one a dopamine surge?\n\nðŸ™„'),(34,'stocks','1s3ryee','ochpn2e','2026-03-26',-7,-0.3261,'Ohhhh no! What will they do?  6 whole million doll hairs?!  Better sell the stock!  '),(35,'stocks','1s3ryee','oci070z','2026-03-26',-1,-0.6486,'Every media wants to keep viewers. Should we sue Disney for intentionally attracting kids? This is freaking stupid. Be a parent to your child and tell them no for a change.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -209,4 +209,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-26  2:54:30
+-- Dump completed on 2026-03-27  2:56:30
