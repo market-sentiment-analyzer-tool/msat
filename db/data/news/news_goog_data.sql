@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
+672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -187,7 +188,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -196,7 +197,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia','...','2026-03-26',0,'Google unveils Gemini 3.1 Flash Live model for audio, visual needs','https://seekingalpha.com/news/4569411-google-unveils-gemini-31-flash-live-model-for-audio-visual-needs?feed_item_type=news',40),(2,'yahoo finance video','...','2026-03-26',0,'Google, Meta ruling could be a Tobacco Moment for social media cases','https://ca.finance.yahoo.com/video/google-meta-ruling-could-be-a-tobacco-moment-for-social-media-cases-150424623.html',2),(3,'barchart insights','...','2026-03-26',0.39512,'3 Top Strait of Hormuz Stocks, and How the FCC is Boosting SpaceX','https://www.barchart.com/story/news/983307/3-top-strait-of-hormuz-stocks-and-how-the-fcc-is-boosting-spacex',2),(4,'wall street breakfast','...','2026-03-26',0,'Wall Street Breakfast Podcast: Henkel Adds Shine With Olaplex','https://seekingalpha.com/article/4886093-wall-street-breakfast-podcast-henkel-adds-shine-with-olaplex',4),(5,'mitch edgeman','\n					Posted by Mitch Edgeman on Mar 25th, 2026\n\nUlland Investment Advisors LLC lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 24.0% in the 4th quarter, according to the compan...','2026-03-25',0.4367,'Ulland Investment Advisors LLC Sells 10,312 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/03/25/ulland-investment-advisors-llc-sells-10312-shares-of-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','...','2026-03-27',0.35232,'Sandisk Stock Is Up 160% in 2026. Is There Room Left for It to Run?','https://www.barchart.com/story/news/1007679/sandisk-stock-is-up-160-in-2026-is-there-room-left-for-it-to-run',2),(2,'ian cooper','Futures are taking a hit after President Trump extended the Iran negotiations deadline to open the Strait of Hormuz by 10 days to April 6.\nâ€œAs per Iranian Government request, please let this statement...','2026-03-27',0.19556,'Stock Market Live March 27, 2026: S&P 500 (SPY) Slips Despite Trump Deadline Extension','https://247wallst.com/investing/2026/03/27/stock-market-live-march-27-2026-sp-500-spy-slips-despite-trump-deadline-extension/',4),(3,'wajeeh khan','...','2026-03-27',0.55264,'Snap Stock Hits New 52-Week Low as Social Media Shares Plunge. Should You Buy the Dip?','https://www.barchart.com/story/news/1004344/snap-stock-hits-new-52-week-low-as-social-media-shares-plunge-should-you-buy-the-dip',2),(4,'caroline horne','\n					Posted by Caroline Horne on Mar 27th, 2026\n\nWestwind Capital lowered its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.9% during the 4th quarter, HoldingsChannel reports. Th...','2026-03-27',0.09748,'Westwind Capital Lowers Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/03/27/westwind-capital-lowers-position-in-alphabet-inc-goog.html',4),(5,'mohit oberoi','...','2026-03-27',0,'Could Nvidia Stock Move Higher Again as Trump-Xi Meet in May?','https://www.barchart.com/story/news/1002366/could-nvidia-stock-move-higher-again-as-trump-xi-meet-in-may',2),(6,'daniel sparks','While all three of these tech giants are selling off sharply, one stands out as the clear winner.\nThe stocks of Microsoft (MSFT 2.44%), Meta Platforms (META 3.91%), and Alphabet (GOOG 2.45%)(GOOGL 2.3...','2026-03-27',0.46316,'Microsoft, Meta, and Alphabet Stocks Are All Getting Hammered. But I Think Only 1 Is Worth Buying','https://www.fool.com/investing/2026/03/26/microsoft-meta-and-alphabet-stocks-are-all-getting/',4),(7,'kyle jackson','\n					Posted by Kyle Jackson on Mar 26th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price dropped 3.3% on Tuesday . The stock traded as low as $288.86 and last traded at $289.20. App...','2026-03-26',0.038,'Alphabet (NASDAQ:GOOG) Shares Down 3.3% â€“ Hereâ€™s What Happened','https://www.watchlistnews.com/alphabet-nasdaqgoog-shares-down-3-3-heres-what-happened/11033598.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -210,4 +211,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-27  3:44:59
+-- Dump completed on 2026-03-28  3:30:52
