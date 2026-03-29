@@ -70,6 +70,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
@@ -188,7 +189,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,7 +198,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','...','2026-03-27',0.35232,'Sandisk Stock Is Up 160% in 2026. Is There Room Left for It to Run?','https://www.barchart.com/story/news/1007679/sandisk-stock-is-up-160-in-2026-is-there-room-left-for-it-to-run',2),(2,'ian cooper','Futures are taking a hit after President Trump extended the Iran negotiations deadline to open the Strait of Hormuz by 10 days to April 6.\nâ€œAs per Iranian Government request, please let this statement...','2026-03-27',0.19556,'Stock Market Live March 27, 2026: S&P 500 (SPY) Slips Despite Trump Deadline Extension','https://247wallst.com/investing/2026/03/27/stock-market-live-march-27-2026-sp-500-spy-slips-despite-trump-deadline-extension/',4),(3,'wajeeh khan','...','2026-03-27',0.55264,'Snap Stock Hits New 52-Week Low as Social Media Shares Plunge. Should You Buy the Dip?','https://www.barchart.com/story/news/1004344/snap-stock-hits-new-52-week-low-as-social-media-shares-plunge-should-you-buy-the-dip',2),(4,'caroline horne','\n					Posted by Caroline Horne on Mar 27th, 2026\n\nWestwind Capital lowered its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.9% during the 4th quarter, HoldingsChannel reports. Th...','2026-03-27',0.09748,'Westwind Capital Lowers Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/03/27/westwind-capital-lowers-position-in-alphabet-inc-goog.html',4),(5,'mohit oberoi','...','2026-03-27',0,'Could Nvidia Stock Move Higher Again as Trump-Xi Meet in May?','https://www.barchart.com/story/news/1002366/could-nvidia-stock-move-higher-again-as-trump-xi-meet-in-may',2),(6,'daniel sparks','While all three of these tech giants are selling off sharply, one stands out as the clear winner.\nThe stocks of Microsoft (MSFT 2.44%), Meta Platforms (META 3.91%), and Alphabet (GOOG 2.45%)(GOOGL 2.3...','2026-03-27',0.46316,'Microsoft, Meta, and Alphabet Stocks Are All Getting Hammered. But I Think Only 1 Is Worth Buying','https://www.fool.com/investing/2026/03/26/microsoft-meta-and-alphabet-stocks-are-all-getting/',4),(7,'kyle jackson','\n					Posted by Kyle Jackson on Mar 26th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price dropped 3.3% on Tuesday . The stock traded as low as $288.86 and last traded at $289.20. App...','2026-03-26',0.038,'Alphabet (NASDAQ:GOOG) Shares Down 3.3% â€“ Hereâ€™s What Happened','https://www.watchlistnews.com/alphabet-nasdaqgoog-shares-down-3-3-heres-what-happened/11033598.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'emily birnbaum and oma seddiq','...','2026-03-28',0.2,'AI Schism Grips Washington as Tech, Labor Vie for Upper Hand','https://ca.finance.yahoo.com/news/ai-schism-grips-washington-tech-130000063.html',2),(2,'chris ciaccia','...','2026-03-27',0,'Apple hires ex-Google marketing exec for AI push','https://seekingalpha.com/news/4569918-apple-hires-ex-google-marketing-exec-for-ai-push?feed_item_type=news',4),(3,'wall street breakfast','...','2026-03-27',0.1024,'Wall Street Roundup: Market Shifts To Defense','https://seekingalpha.com/article/4886685-wall-street-roundup-market-shifts-to-defense',4),(4,'jabran kundi','...','2026-03-27',0.35232,'Sandisk Stock Is Up 160% in 2026. Is There Room Left for It to Run?','https://www.barchart.com/story/news/1007679/sandisk-stock-is-up-160-in-2026-is-there-room-left-for-it-to-run',2),(5,'ian cooper','Futures are taking a hit after President Trump extended the Iran negotiations deadline to open the Strait of Hormuz by 10 days to April 6.\nâ€œAs per Iranian Government request, please let this statement...','2026-03-27',0.19634,'Stock Market Live March 27, 2026: S&P 500 (SPY) Slips Despite Trump Deadline Extension','https://247wallst.com/investing/2026/03/27/stock-market-live-march-27-2026-sp-500-spy-slips-despite-trump-deadline-extension/',4),(6,'wajeeh khan','...','2026-03-27',0.55264,'Snap Stock Hits New 52-Week Low as Social Media Shares Plunge. Should You Buy the Dip?','https://www.barchart.com/story/news/1004344/snap-stock-hits-new-52-week-low-as-social-media-shares-plunge-should-you-buy-the-dip',2),(7,'caroline horne','\n					Posted by Caroline Horne on Mar 27th, 2026\n\nWestwind Capital lowered its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.9% during the 4th quarter, HoldingsChannel reports. Th...','2026-03-27',0.09748,'Westwind Capital Lowers Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/03/27/westwind-capital-lowers-position-in-alphabet-inc-goog.html',4),(8,'mohit oberoi','...','2026-03-27',0,'Could Nvidia Stock Move Higher Again as Trump-Xi Meet in May?','https://www.barchart.com/story/news/1002366/could-nvidia-stock-move-higher-again-as-trump-xi-meet-in-may',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -211,4 +212,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-28  3:30:52
+-- Dump completed on 2026-03-29  3:50:47
