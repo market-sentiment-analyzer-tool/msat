@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
+0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -70,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
@@ -108,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-a0c762bf-2b1d-11f1-a4cc-c24b13ecd41a:1-133,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -117,6 +118,7 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b558fcb9-2cac-11f1-9129-ee59bf74ff20:1-135,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -189,7 +191,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -198,7 +200,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1s5q46s','ocwo7y3','2026-03-28',36,0,'I got into MSFT today at 356. Next week sub 300 fo sho. '),(2,'ValueInvesting','1s5q46s','ocx2dy2','2026-03-28',49,0.6652,'Yeah people are worried about openAI as it\'s hot topic but they just don\'t realize sheer scale of Microsoft.\n\n\nEven if openAI fails, it won\'t impact Microsoft money makers like azure, office subscriptions or long term gov contracts\n\n\nLike let\'s say they burn another 100 billion on openAI, what does this changes? World is running on excel and everybody seems to forget about it'),(3,'ValueInvesting','1s5q46s','ocwyv3r','2026-03-28',8,0.7845,'I bought my first parcel yesterday at $360. Hopefully can get more at $200-250. I love buying peoples bottom drawer stuff '),(4,'ValueInvesting','1s5q46s','ocx1myn','2026-03-28',11,0,'People should maybe start reading history books instead of Google Trends '),(5,'ValueInvesting','1s5q46s','ocwf57y','2026-03-28',7,-0.296,'Microsoft has licences \n\n\nIf AI reduce staff companies will need licences \n\n\nAlso Microsoft is invested in open AI which is assumed to be a cash blackhole.\n\nPersonal I\'m looking to potentially add under $300 sounds extreme but looks possible '),(6,'ValueInvesting','1s5q46s','ocwvo24','2026-03-28',2,0.9606,'Only 2 or 3% users pay for ai. Soon free ai will be useless as there\'s enough demand for paid services. We can see now openai did a first step killing sora to release capacity and move it to codex or their next business focused services\n\nAt my company we use AWS but everyone built their workflows and we\'ll be requesting bigger plans as use cases are there. Not sure if company will choose to pay more but even going from 20$ plans to 40$ is doubling AWS revenue. Im pretty sure many people in my team would benefit of 200$ plans and company too. But you can\'t see this benefit short term as this allows for better quality solutions and solving problems that been dragging for years. How to measure value of higher quality products in short term?\n\nMyself i burn 20$ plan in a week without losing pace of my work'),(7,'ValueInvesting','1s5q46s','ocxod9x','2026-03-28',2,-0.5859,'Europe countries is abandoning MSFT. I think no one is mentioning this fact here. France, Germany recently.'),(8,'ValueInvesting','1s5q46s','ocxtrtw','2026-03-28',2,0.9231,'Another 10% drop over a few months for the general market wouldnâ€™t surprise me. I expect more wild swings regardless of the true performance of any company. So if you believe in MSFT and th long term outlook best to buy when you can because who knows where the true bottom will be. '),(9,'ValueInvesting','1s5q46s','ocwpgp7','2026-03-28',5,-0.4416,'What if demand does not translate into profit?'),(10,'ValueInvesting','1s5q46s','ocwtslo','2026-03-28',3,0,'That\'s not the way stocks work'),(11,'ValueInvesting','1s5q46s','ocwq0vd','2026-03-28',2,0.2023,'Perhaps the demand increase is not for Azure'),(12,'ValueInvesting','1s5q46s','ocx561w','2026-03-28',1,0.4588,'google interest rates'),(13,'ValueInvesting','1s5q46s','ocxlv6x','2026-03-28',1,0,'something about past performace'),(14,'ValueInvesting','1s5q46s','ocxop5b','2026-03-28',1,0.4784,'It\'s a steal at these prices. Haven\'t been this cheap since years. I am loading up. Also the only AAA rated stock (besides JNJ), not tapping the debt market to fund capex. I think one of the best managed firms out there.'),(15,'ValueInvesting','1s5q46s','ocxw7w5','2026-03-28',1,-0.7798,'Everything is down. Panic selling has given us all sorts of opportunities.  Hopefully oeangeman will 180 on this war and we will have a nice u turn next week'),(16,'ValueInvesting','1s5q46s','oczplrq','2026-03-28',1,0,'Ya, they\'re all on GCP now. '),(17,'ValueInvesting','1s5q46s','od10h8v','2026-03-28',1,-0.2859,'Msft has more debt than equity in a world where rates are not only holding but possibly going up. Its going to be a rough year for msft'),(18,'ValueInvesting','1s5q46s','od1f2wf','2026-03-28',1,0,'I would say we see volume at 345. '),(19,'ValueInvesting','1s5q46s','ocws404','2026-03-28',1,0.1513,'Based on oil crisis in the 1970s and Iraq war, historically the index drops more than 20%.\n\nSo I am quite confident this will play out for MSFT near $300. \n\nDCA over 6months looks delicious. '),(20,'ValueInvesting','1s5q46s','ocx98ab','2026-03-28',1,0,'Did you ever consider potentially Msft was over priced in 2023 ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -212,4 +213,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-29  3:17:43
+-- Dump completed on 2026-03-31  2:56:11

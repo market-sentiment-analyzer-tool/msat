@@ -26,6 +26,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
+0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -70,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
@@ -108,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-a0c762bf-2b1d-11f1-a4cc-c24b13ecd41a:1-133,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -117,6 +118,7 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b558fcb9-2cac-11f1-9129-ee59bf74ff20:1-135,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -189,7 +191,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -198,6 +200,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s82vju','oddva2t','2026-03-30',8,0,'Itâ€™s relatively cheap to its own historical ratios and is now cheaper than S&P averages. Just DCA.'),(2,'NVDA_Stock','1s82vju','odeahm8','2026-03-30',8,0.5994,'Super cheap now...I keep adding slowly any day its under 175'),(3,'NVDA_Stock','1s82vju','odehxxk','2026-03-30',7,-0.5994,'U forgot the war lol'),(4,'NVDA_Stock','1s82vju','oddycoy','2026-03-30',13,-0.5204,'Has the fundamentals changed? No? Keep buying. \n\nA lot of the  market is down.'),(5,'NVDA_Stock','1s82vju','oddvmno','2026-03-30',6,0.4019,'Yes'),(6,'NVDA_Stock','1s82vju','ode9jfc','2026-03-30',5,0,'Nvidia\'s market cap is multiple times larger than Iran\'s.\n\nNobody is going to get in Jensen\'s way.'),(7,'NVDA_Stock','1s82vju','odebl96','2026-03-30',5,-0.0258,'No need to overthinkâ€¦. DCA sleep well'),(8,'NVDA_Stock','1s82vju','oddsf3k','2026-03-30',11,0.0644,'Holding, this situation with the whole stock market can be blamed on Trump being bipolar.\n\nThe sooner heâ€™s gone the better at this point, never seen so much corruption before, but here we are.'),(9,'NVDA_Stock','1s82vju','odeag60','2026-03-30',3,-0.4588,'Is it all the Mideast country funds selling? '),(10,'NVDA_Stock','1s82vju','oddxnyj','2026-03-30',6,-0.128,'I agree, been buying more on the way down '),(11,'NVDA_Stock','1s82vju','oddylf9','2026-03-30',2,0,'100%. Guys in the daily thread are not understanding this.'),(12,'NVDA_Stock','1s82vju','odexa9c','2026-03-31',2,-0.3736,'Does the war need chips and data centers to out think the opponent?  To coordinate drones?  To build data centers in space.  Yes to all.  '),(13,'NVDA_Stock','1s82vju','odf88s9','2026-03-31',2,0.743,'HOLD  .... HOLD ..... HOLD '),(14,'NVDA_Stock','1s82vju','ode8o78','2026-03-30',6,-0.8934,'This has nothing to do with NVDA. Just the moron at the head of the US going to war unprepared and destroying the global economy.'),(15,'NVDA_Stock','1s82vju','odds5io','2026-03-30',2,0,'ALL IN'),(16,'NVDA_Stock','1s82vju','odfaddj','2026-03-31',1,0.6326,'I just bought more today. Itâ€˜s Happy Hour. Who stops buying on discounts? PE is a bargain. '),(17,'NVDA_Stock','1s82vju','ode6j2h','2026-03-30',1,0.6476,'crazy to think we\'ve lost a trillion since the highs. Par for the course when you are the world\'s large company by market cap and we have an idiot in charge who is single handedly destroying the global economy. good times. Things are going to get worse before they get better. Not sure where the bottom is, but one thing is for sure, don\'t panic sell. '),(18,'NVDA_Stock','1s85hi8','odectrx','2026-03-30',4,0,'You mean put spread, right?'),(19,'NVDA_Stock','1s85hi8','odec99v','2026-03-30',2,0,'It\'s all priced in?');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -211,4 +214,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-29  3:17:44
+-- Dump completed on 2026-03-31  2:56:11
