@@ -164,6 +164,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
+f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -190,7 +191,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -199,7 +200,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anushka mukherji','...','2026-03-29',0.43384,'Should You Buy the Dip in Western Digital Stock as Google Launches TurboQuant?','https://www.barchart.com/story/news/1029804/should-you-buy-the-dip-in-western-digital-stock-as-google-launches-turboquant',20),(2,'emily birnbaum and oma seddiq','...','2026-03-28',0.2,'AI Schism Grips Washington as Tech, Labor Vie for Upper Hand','https://ca.finance.yahoo.com/news/ai-schism-grips-washington-tech-130000063.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-03-30',0.43384,'Wedbush Is Betting That This June Will Be a Huge Month for Apple. Should You Buy AAPL Stock First?','https://www.barchart.com/story/news/1043587/wedbush-is-betting-that-this-june-will-be-a-huge-month-for-apple-should-you-buy-aapl-stock-first',2),(2,'kaustubh bagalkote','Micron Technology Inc. (NASDAQ:MU) shares continued their downward trajectory Monday.\nAnalysts remain divided on the long-term impact. Wells Fargo analyst Andrew Rocha noted TurboQuant is directly att...','2026-03-30',0.42894,'Why Are Micron Technology Shares Sliding On Monday?','https://www.benzinga.com/trading-ideas/movers/26/03/51540859/why-are-micron-technology-shares-sliding-on-monday',8),(3,'the motley fool','...','2026-03-29',0.60048,'Is Now a Good Time to Buy Microsoft Stock?','https://finance.yahoo.com/markets/stocks/articles/now-good-time-buy-microsoft-235100624.html',20),(4,'anushka mukherji','...','2026-03-29',0.43384,'Should You Buy the Dip in Western Digital Stock as Google Launches TurboQuant?','https://www.barchart.com/story/news/1029804/should-you-buy-the-dip-in-western-digital-stock-as-google-launches-turboquant',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -213,4 +214,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-30  3:54:34
+-- Dump completed on 2026-03-31  3:45:29
