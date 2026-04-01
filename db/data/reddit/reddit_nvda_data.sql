@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+19d83783-2d7a-11f1-be77-12cf3cd7921d:1-44,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -118,7 +119,6 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
-b558fcb9-2cac-11f1-9129-ee59bf74ff20:1-135,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -165,6 +165,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
+f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -191,7 +192,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -200,7 +201,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s82vju','oddva2t','2026-03-30',8,0,'Itâ€™s relatively cheap to its own historical ratios and is now cheaper than S&P averages. Just DCA.'),(2,'NVDA_Stock','1s82vju','odeahm8','2026-03-30',8,0.5994,'Super cheap now...I keep adding slowly any day its under 175'),(3,'NVDA_Stock','1s82vju','odehxxk','2026-03-30',7,-0.5994,'U forgot the war lol'),(4,'NVDA_Stock','1s82vju','oddycoy','2026-03-30',13,-0.5204,'Has the fundamentals changed? No? Keep buying. \n\nA lot of the  market is down.'),(5,'NVDA_Stock','1s82vju','oddvmno','2026-03-30',6,0.4019,'Yes'),(6,'NVDA_Stock','1s82vju','ode9jfc','2026-03-30',5,0,'Nvidia\'s market cap is multiple times larger than Iran\'s.\n\nNobody is going to get in Jensen\'s way.'),(7,'NVDA_Stock','1s82vju','odebl96','2026-03-30',5,-0.0258,'No need to overthinkâ€¦. DCA sleep well'),(8,'NVDA_Stock','1s82vju','oddsf3k','2026-03-30',11,0.0644,'Holding, this situation with the whole stock market can be blamed on Trump being bipolar.\n\nThe sooner heâ€™s gone the better at this point, never seen so much corruption before, but here we are.'),(9,'NVDA_Stock','1s82vju','odeag60','2026-03-30',3,-0.4588,'Is it all the Mideast country funds selling? '),(10,'NVDA_Stock','1s82vju','oddxnyj','2026-03-30',6,-0.128,'I agree, been buying more on the way down '),(11,'NVDA_Stock','1s82vju','oddylf9','2026-03-30',2,0,'100%. Guys in the daily thread are not understanding this.'),(12,'NVDA_Stock','1s82vju','odexa9c','2026-03-31',2,-0.3736,'Does the war need chips and data centers to out think the opponent?  To coordinate drones?  To build data centers in space.  Yes to all.  '),(13,'NVDA_Stock','1s82vju','odf88s9','2026-03-31',2,0.743,'HOLD  .... HOLD ..... HOLD '),(14,'NVDA_Stock','1s82vju','ode8o78','2026-03-30',6,-0.8934,'This has nothing to do with NVDA. Just the moron at the head of the US going to war unprepared and destroying the global economy.'),(15,'NVDA_Stock','1s82vju','odds5io','2026-03-30',2,0,'ALL IN'),(16,'NVDA_Stock','1s82vju','odfaddj','2026-03-31',1,0.6326,'I just bought more today. Itâ€˜s Happy Hour. Who stops buying on discounts? PE is a bargain. '),(17,'NVDA_Stock','1s82vju','ode6j2h','2026-03-30',1,0.6476,'crazy to think we\'ve lost a trillion since the highs. Par for the course when you are the world\'s large company by market cap and we have an idiot in charge who is single handedly destroying the global economy. good times. Things are going to get worse before they get better. Not sure where the bottom is, but one thing is for sure, don\'t panic sell. '),(18,'NVDA_Stock','1s85hi8','odectrx','2026-03-30',4,0,'You mean put spread, right?'),(19,'NVDA_Stock','1s85hi8','odec99v','2026-03-30',2,0,'It\'s all priced in?');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s94urx','odm2hc3','2026-04-01',7,0.5267,'if I were a tech CEO, i\'d double my security. Can you imagine if jensen was assassinated, it\'d be a nightmare 0\\_0'),(2,'NVDA_Stock','1s94urx','odm9cl6','2026-04-01',5,-0.9216,'is it my lack of reading comprehension or is the headline completely misleading. they said that they will start attacking as retaliation for past assassinations, not if there are future assassinations. i feel like that makes a big difference'),(3,'NVDA_Stock','1s94urx','odlvfag','2026-04-01',4,0.4926,'This is funny!'),(4,'NVDA_Stock','1s94urx','odlurae','2026-04-01',2,0,'target how?'),(5,'NVDA_Stock','1s94urx','odlzmo0','2026-04-01',2,-0.3182,'Lost me at â€œ8pm Tehran timeâ€â€¦'),(6,'NVDA_Stock','1s94urx','odmknjp','2026-04-01',2,-0.3313,'Is there a reputable source for this? Or just the propaganda providedâ€¦â€¦?'),(7,'NVDA_Stock','1s94urx','odm5b2h','2026-04-01',2,0,'Oh no. The Iranians are priming their trebuchets and catapults. Whatever shall we do. '),(8,'NVDA_Stock','1s94urx','odm6x8q','2026-04-01',2,0.4404,'If someone offed Elon, many would rejoice'),(9,'NVDA_Stock','1s94urx','odm0xml','2026-04-01',1,0,'Oh boy. '),(10,'NVDA_Stock','1s94urx','odm6mwh','2026-04-01',1,-0.3291,'You can\'t make this shit up\n\nhttps://preview.redd.it/nkviwt5yghsg1.png?width=1080&format=png&auto=webp&s=98c2e87028ff1497d5e1e0756a283f511dbdc72b'),(11,'NVDA_Stock','1s94urx','odlx7ct','2026-04-01',1,-0.4939,'April fools');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -214,4 +215,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-31  2:56:11
+-- Dump completed on 2026-04-01  3:24:01
