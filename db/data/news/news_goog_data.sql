@@ -120,6 +120,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -191,7 +192,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -200,7 +201,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-03-30',0.43384,'Wedbush Is Betting That This June Will Be a Huge Month for Apple. Should You Buy AAPL Stock First?','https://www.barchart.com/story/news/1043587/wedbush-is-betting-that-this-june-will-be-a-huge-month-for-apple-should-you-buy-aapl-stock-first',2),(2,'kaustubh bagalkote','Micron Technology Inc. (NASDAQ:MU) shares continued their downward trajectory Monday.\nAnalysts remain divided on the long-term impact. Wells Fargo analyst Andrew Rocha noted TurboQuant is directly att...','2026-03-30',0.42894,'Why Are Micron Technology Shares Sliding On Monday?','https://www.benzinga.com/trading-ideas/movers/26/03/51540859/why-are-micron-technology-shares-sliding-on-monday',8),(3,'the motley fool','...','2026-03-29',0.60048,'Is Now a Good Time to Buy Microsoft Stock?','https://finance.yahoo.com/markets/stocks/articles/now-good-time-buy-microsoft-235100624.html',20),(4,'anushka mukherji','...','2026-03-29',0.43384,'Should You Buy the Dip in Western Digital Stock as Google Launches TurboQuant?','https://www.barchart.com/story/news/1029804/should-you-buy-the-dip-in-western-digital-stock-as-google-launches-turboquant',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ruchi gupta','...','2026-03-31',0.5364,'2 Reasons Why Wells Fargo Thinks You Should Buy Google Stock Now','https://www.barchart.com/story/news/1060137/2-reasons-why-wells-fargo-thinks-you-should-buy-google-stock-now',20),(2,'logan wallace','\n					Posted by Logan Wallace on Mar 31st, 2026\n\nWest Financial Advisors LLC trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 82.5% in the 4th quarter, Holdings Channel ...','2026-03-31',0.4367,'Alphabet Inc. $GOOG Shares Sold by West Financial Advisors LLC','https://www.tickerreport.com/banking-finance/13396053/alphabet-inc-goog-shares-sold-by-west-financial-advisors-llc.html',4),(3,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nNet Worth Advisory Group increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 39.2% during the fourth quarter, according to t...','2026-03-31',0.58126,'Net Worth Advisory Group Purchases 4,101 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/net-worth-advisory-group-purchases-4101-shares-of-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nGlobal X Japan Co. Ltd. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 266.9% during the fourth quarter, according to its most recent d...','2026-03-31',0.43666,'Global X Japan Co. Ltd. Buys 78,581 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/global-x-japan-co-ltd-buys-78581-shares-of-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nSherman Wealth Management LLC bought a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing...','2026-03-31',0.59502,'Sherman Wealth Management LLC Buys New Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/sherman-wealth-management-llc-buys-new-stake-in-alphabet-inc-goog.html',4),(6,'max byerly','\n					Posted by Max Byerly on Mar 31st, 2026\n\nQ Fund Management Hong Kong Ltd acquired a new stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 4th quarter, Holdings Channel.com ...','2026-03-31',0.19988,'Q Fund Management Hong Kong Ltd Invests $22.88 Million in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13395782/q-fund-management-hong-kong-ltd-invests-22-88-million-in-alphabet-inc-goog.html',4),(7,'fund letters','...','2026-03-31',0,'Andrew Hill Investment Advisors Q1 2026 Client Letter','https://seekingalpha.com/article/4887335-andrew-hill-investment-advisors-q1-2026-client-letter',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -214,4 +215,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-31  3:45:29
+-- Dump completed on 2026-04-01  3:57:12

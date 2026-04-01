@@ -120,6 +120,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -191,7 +192,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -200,7 +201,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-03-30',0.06364,'AMD stock sends valuation signal for first time in 3 years','https://www.thestreet.com/investing/stocks/amd-stock-sends-valuation-signal-for-first-time-in-3-years',2),(2,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-30',0.71526,'Goldman Sachs AI Stocks: Top 5 Stocks to Buy','https://www.insidermonkey.com/blog/goldman-sachs-ai-stocks-top-5-stocks-to-buy-1724145/',4),(3,'gerelyn terzo','Stocks: Rezolve AI (RZLV) delivered $46.8M in 2025 revenue with 543% H2 growth and raised 2026 guidance to $360M; Sigma Lithium (SGML) generated $31M operating cash flow at 47% margins and cut debt by...','2026-03-30',-0.12286,'Live Nasdaq Composite: Markets Adjust to New Normal as Mideast Tensions Escalate','https://247wallst.com/investing/2026/03/30/live-nasdaq-composite-markets-adjust-to-new-normal-as-mideast-tensions-escalate/',4),(4,'joey frenette','Investing\nNvidia (NVDA) trades below its $170 support level with a 34.1 P/E ratio, facing risks from competitors developing silicon as hyperscalers build their own chips.\nNvidiaâ€™s $4 trillion market c...','2026-03-30',0.19956,'Beyond the NVIDIA â€˜Sugar Highâ€™: Why Iâ€™d Pivot My Portfolio Toward the â€˜Boringâ€™ Side of AI','https://247wallst.com/investing/2026/03/30/beyond-the-nvidia-sugar-high-why-id-pivot-my-portfolio-toward-the-boring-side-of-ai/',40),(5,'abmn staff','\n					Posted by ABMN Staff on Mar 30th, 2026\n\nSwiss Life Asset Management Ltd grew its stake in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 5.3% during the 3rd quarter, HoldingsChanne...','2026-03-30',0.79428,'NVIDIA Corporation $NVDA is Swiss Life Asset Management Ltdâ€™s Largest Position','https://www.americanbankingnews.com/2026/03/30/nvidia-corporation-nvda-is-swiss-life-asset-management-ltds-largest-position.html',40),(6,'defense world staff','\n					Posted by Defense World Staff on Mar 30th, 2026\n\nSwiss Life Asset Management Ltd increased its holdings in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 5.3% in the 3rd quarter, according t...','2026-03-30',0.4888,'NVIDIA Corporation $NVDA Position Raised by Swiss Life Asset Management Ltd','https://www.defenseworld.net/2026/03/30/nvidia-corporation-nvda-position-raised-by-swiss-life-asset-management-ltd.html',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'yahoo finance video','...','2026-03-31',0.43384,'Nvidia invests $2B in Marvell, Eli Lilly to buy drugmaker Centessa','https://ca.finance.yahoo.com/video/nvidia-invests-2b-in-marvell-eli-lilly-to-buy-drugmaker-centessa-152754611.html',20),(2,'joey frenette','...','2026-03-31',-0.08216,'Why Iâ€™m Staying Cautious on NVIDIAâ€”and the Stocks I Prefer Instead','https://finance.yahoo.com/markets/stocks/articles/why-m-staying-cautious-nvidia-152153084.html',20),(3,'sushree mohanty','...','2026-03-31',0.63248,'Cathie Wood Adds 48K Shares to This Under-the-Radar Growth Play','https://www.barchart.com/story/news/1067605/cathie-wood-adds-48k-shares-to-this-under-the-radar-growth-play',2),(4,'rich asplund','...','2026-03-31',-0.21856,'Stocks Climb on Hopes for an End to Iran War','https://www.barchart.com/story/news/1067483/stocks-climb-on-hopes-for-an-end-to-iran-war',2),(5,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-03-31',0.6195,'5 Stocks That Can Make You Richer in 2026','https://www.insidermonkey.com/blog/5-stocks-that-can-make-you-richer-in-2026-1727950/',4),(6,'anushka mukherji','...','2026-03-31',0.65008,'Apple Is the Best-Performing Magnificent 7 Stock in 2026. Should You Buy It for Q2?','https://www.barchart.com/story/news/1067341/apple-is-the-best-performing-magnificent-7-stock-in-2026-should-you-buy-it-for-q2',2),(7,'ruchi gupta','...','2026-03-31',0.1024,'Down 24% in 2026, Should You Buy the Dip in Microsoft Stock?','https://www.barchart.com/story/news/1066961/down-24-in-2026-should-you-buy-the-dip-in-microsoft-stock',2),(8,'sarita garza','\n					Posted by Sarita Garza on Mar 31st, 2026\n\nTesla (NASDAQ:TSLA â€“ Get Free Report) had its price target decreased by research analysts at Canaccord Genuity Group  from $520.00 to $420.00 in a resea...','2026-03-31',-0.08922,'Canaccord Genuity Group Issues Pessimistic Forecast for Tesla (NASDAQ:TSLA) Stock Price','https://www.themarketsdaily.com/2026/03/31/canaccord-genuity-group-issues-pessimistic-forecast-for-tesla-nasdaqtsla-stock-price.html',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -214,4 +215,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-31  3:45:30
+-- Dump completed on 2026-04-01  3:57:12
