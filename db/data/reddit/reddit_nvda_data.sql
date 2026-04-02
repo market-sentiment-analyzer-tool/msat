@@ -32,7 +32,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
-19d83783-2d7a-11f1-be77-12cf3cd7921d:1-44,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -102,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
+85af2be3-2e3e-11f1-9e1a-e6a6b09f04fe:1-22,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -121,6 +121,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -192,7 +193,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -201,7 +202,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1s94urx','odm2hc3','2026-04-01',7,0.5267,'if I were a tech CEO, i\'d double my security. Can you imagine if jensen was assassinated, it\'d be a nightmare 0\\_0'),(2,'NVDA_Stock','1s94urx','odm9cl6','2026-04-01',5,-0.9216,'is it my lack of reading comprehension or is the headline completely misleading. they said that they will start attacking as retaliation for past assassinations, not if there are future assassinations. i feel like that makes a big difference'),(3,'NVDA_Stock','1s94urx','odlvfag','2026-04-01',4,0.4926,'This is funny!'),(4,'NVDA_Stock','1s94urx','odlurae','2026-04-01',2,0,'target how?'),(5,'NVDA_Stock','1s94urx','odlzmo0','2026-04-01',2,-0.3182,'Lost me at â€œ8pm Tehran timeâ€â€¦'),(6,'NVDA_Stock','1s94urx','odmknjp','2026-04-01',2,-0.3313,'Is there a reputable source for this? Or just the propaganda providedâ€¦â€¦?'),(7,'NVDA_Stock','1s94urx','odm5b2h','2026-04-01',2,0,'Oh no. The Iranians are priming their trebuchets and catapults. Whatever shall we do. '),(8,'NVDA_Stock','1s94urx','odm6x8q','2026-04-01',2,0.4404,'If someone offed Elon, many would rejoice'),(9,'NVDA_Stock','1s94urx','odm0xml','2026-04-01',1,0,'Oh boy. '),(10,'NVDA_Stock','1s94urx','odm6mwh','2026-04-01',1,-0.3291,'You can\'t make this shit up\n\nhttps://preview.redd.it/nkviwt5yghsg1.png?width=1080&format=png&auto=webp&s=98c2e87028ff1497d5e1e0756a283f511dbdc72b'),(11,'NVDA_Stock','1s94urx','odlx7ct','2026-04-01',1,-0.4939,'April fools');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -215,4 +215,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-01  3:24:01
+-- Dump completed on 2026-04-02  2:49:52

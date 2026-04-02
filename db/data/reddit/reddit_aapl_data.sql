@@ -32,7 +32,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
-19d83783-2d7a-11f1-be77-12cf3cd7921d:1-44,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -102,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
+85af2be3-2e3e-11f1-9e1a-e6a6b09f04fe:1-22,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -121,6 +121,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -192,7 +193,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -201,7 +202,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'ValueInvesting','1s8xu01','odka5v5','2026-03-31',63,0.6187,'Heâ€™s saying the price went higher, so he sold too soon. He wouldnâ€™t buy it at this price, but thinks the company itself has decent prospects.'),(2,'ValueInvesting','1s8xu01','odkb6ic','2026-03-31',47,-0.768,'\"Would you walk by a five dollar bill on the sidewalk? Of course not! And yet that\'s what you\'re doing every time you pass by a dead squirrel. The tail can be sold to make fishing lures. The skull can bring up to $2 on eBay. The meat is worth a few cents as well. So if you aren\'t picking up those dead squirrels, don\'t come crying to me that you\'re broke.\" - Warren Buffet '),(3,'ValueInvesting','1s8xu01','odkdprp','2026-03-31',13,0.3612,'A fellow regard like us'),(4,'ValueInvesting','1s8xu01','odkde6i','2026-03-31',4,-0.7579,'Buying when the stock is down is a bad idea?'),(5,'ValueInvesting','1s8xu01','odl19jt','2026-03-31',6,-0.395,'Berkshire is now sitting on 100â€™s of billions of dollars and still owns 226 million sharesâ€¦.. I mean they did own 900 million but letâ€™s not act like 226 million shares is fucking nothing. Buffet saying he sold too early is not the same as you selling too early. Buffet is the king of value investing.'),(6,'ValueInvesting','1s8xu01','odkup9c','2026-03-31',3,0,'He never should have sold'),(7,'ValueInvesting','1s8xu01','odl34vo','2026-03-31',3,0,'Lol that regard thinks he can time the market'),(8,'ValueInvesting','1s8xu01','odkr3he','2026-03-31',1,0,'What does that even mean '),(9,'ValueInvesting','1s8xu01','odl6xzs','2026-03-31',0,0.6124,'It sounded like he was saying something when he was clearing his throat. It sounded like was saying \"dogecoin.\"'),(10,'ValueInvesting','1s8xu01','odle499','2026-03-31',-1,0.7096,'\"Though not in this market\" is doing a lot of heavy lifting in that sentence. He trimmed Apple at $220+ and it\'s now around $200. The man is patient enough to wait for a better entry even on something he loves. Most retail investors could learn a lot from that discipline alone.'),(11,'ValueInvesting','1s8xu01','odk8wc0','2026-03-31',-29,-0.3182,'Buffet is a thing of the past. He would not be able to replicate what he did if he started today. He lost his edge. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -215,4 +215,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-01  3:24:01
+-- Dump completed on 2026-04-02  2:49:52
