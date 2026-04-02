@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -192,7 +193,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -201,7 +202,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ruchi gupta','...','2026-03-31',0.5364,'2 Reasons Why Wells Fargo Thinks You Should Buy Google Stock Now','https://www.barchart.com/story/news/1060137/2-reasons-why-wells-fargo-thinks-you-should-buy-google-stock-now',20),(2,'logan wallace','\n					Posted by Logan Wallace on Mar 31st, 2026\n\nWest Financial Advisors LLC trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 82.5% in the 4th quarter, Holdings Channel ...','2026-03-31',0.4367,'Alphabet Inc. $GOOG Shares Sold by West Financial Advisors LLC','https://www.tickerreport.com/banking-finance/13396053/alphabet-inc-goog-shares-sold-by-west-financial-advisors-llc.html',4),(3,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nNet Worth Advisory Group increased its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 39.2% during the fourth quarter, according to t...','2026-03-31',0.58126,'Net Worth Advisory Group Purchases 4,101 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/net-worth-advisory-group-purchases-4101-shares-of-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nGlobal X Japan Co. Ltd. raised its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 266.9% during the fourth quarter, according to its most recent d...','2026-03-31',0.43666,'Global X Japan Co. Ltd. Buys 78,581 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/global-x-japan-co-ltd-buys-78581-shares-of-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Mar 31st, 2026\n\nSherman Wealth Management LLC bought a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing...','2026-03-31',0.59502,'Sherman Wealth Management LLC Buys New Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/03/31/sherman-wealth-management-llc-buys-new-stake-in-alphabet-inc-goog.html',4),(6,'max byerly','\n					Posted by Max Byerly on Mar 31st, 2026\n\nQ Fund Management Hong Kong Ltd acquired a new stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 4th quarter, Holdings Channel.com ...','2026-03-31',0.19988,'Q Fund Management Hong Kong Ltd Invests $22.88 Million in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13395782/q-fund-management-hong-kong-ltd-invests-22-88-million-in-alphabet-inc-goog.html',4),(7,'fund letters','...','2026-03-31',0,'Andrew Hill Investment Advisors Q1 2026 Client Letter','https://seekingalpha.com/article/4887335-andrew-hill-investment-advisors-q1-2026-client-letter',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia',' \nGoogle is developing its own fitness band, aiming to compete with screenless wearable devices from companies such as Whoop and Oura Health, Bloomberg News reported.\nThe Alphabet (GOOG) (GOOGL) unit ...','2026-04-01',0.05464,'Google plans to launch new screenless Fitbit band later this year: report','https://seekingalpha.com/news/4571203-google-plans-to-launch-new-screenless-fitbit-band-later-this-year-report?feed_item_type=news',80),(2,'max byerly','\n					Posted by Max Byerly on Apr 1st, 2026\n\nWealthcare Advisory Partners LLC increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 12.1% during the fourth quarter, accordi...','2026-04-01',0.45446,'Wealthcare Advisory Partners LLC Boosts Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13397078/wealthcare-advisory-partners-llc-boosts-stake-in-alphabet-inc-goog.html',4),(3,'micah haroldson','\n					Posted by Micah Haroldson on Mar 31st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price was up 5% during trading on Tuesday . The company traded as high as $287.05 and last trad...','2026-03-31',0.55216,'Alphabet (NASDAQ:GOOG) Stock Price Up 5% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/alphabet-nasdaqgoog-stock-price-up-5-whats-next/11037929.html',4),(4,'ethan ryder','\n					Posted by Ethan Ryder on Mar 31st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price rose 5% during mid-day trading on Tuesday . The company traded as high as $287.05 and last tr...','2026-03-31',0.85782,'Alphabet (NASDAQ:GOOG) Shares Up 5% â€“ Time to Buy?','https://www.tickerreport.com/banking-finance/13396458/alphabet-nasdaqgoog-shares-up-5-time-to-buy.html',4),(5,'investing experts podcast','...','2026-03-31',0.2,'The Cure For FOMO With Tech Contrarians','https://seekingalpha.com/article/4887576-the-cure-for-fomo-with-tech-contrarians',4),(6,'nauman khan','...','2026-03-31',0.32152,'Bank of America Is Betting That Billionaires Could Help Take TripAdvisor Stock 50% Higher','https://www.barchart.com/story/news/1071980/bank-of-america-is-betting-that-billionaires-could-help-take-tripadvisor-stock-50-higher',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -215,4 +216,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-01  3:57:12
+-- Dump completed on 2026-04-02  3:38:38

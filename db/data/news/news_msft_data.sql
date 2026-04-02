@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -192,7 +193,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -201,7 +202,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'margaret giles','...','2026-03-31',0.68152,'The 10 Best Companies to Invest in Now','https://www.morningstar.com/stocks/10-best-companies-invest-now',2),(2,'rich asplund','...','2026-03-31',-0.21856,'Stocks Climb on Hopes for an End to Iran War','https://www.barchart.com/story/news/1067483/stocks-climb-on-hopes-for-an-end-to-iran-war',2),(3,'anushka mukherji','...','2026-03-31',0.65008,'Apple Is the Best-Performing Magnificent 7 Stock in 2026. Should You Buy It for Q2?','https://www.barchart.com/story/news/1067341/apple-is-the-best-performing-magnificent-7-stock-in-2026-should-you-buy-it-for-q2',2),(4,'ruchi gupta','...','2026-03-31',0.1024,'Down 24% in 2026, Should You Buy the Dip in Microsoft Stock?','https://www.barchart.com/story/news/1066961/down-24-in-2026-should-you-buy-the-dip-in-microsoft-stock',20),(5,'rich asplund','...','2026-03-31',-0.47952,'Stocks Rally as President Trump Considers Ending Iran War','https://www.barchart.com/story/news/1066108/stocks-rally-as-president-trump-considers-ending-iran-war',2),(6,'gerelyn terzo','The Stocks: Nvidia (NVDA), Marvell Technology (MRVL), and Delta Air Lines (DAL) are leading movers. Nvidia invested $2 billion in Marvell as part of a strategic partnership covering NVLink Fusion, sil...','2026-03-31',0.607,'Live Nasdaq Composite: Stocks Look to Finish Strong in Rocky Q1','https://247wallst.com/investing/2026/03/31/live-nasdaq-composite-stocks-look-to-finish-strong-in-rocky-q1/',4),(7,'tipranks','...','2026-03-31',0.63072,'MSFT vs. PLTR vs. CRWD: Down 25% or More, Which Beaten-Down Tech Stock Is the Best Buy Now?','https://finance.yahoo.com/sectors/technology/articles/msft-vs-pltr-vs-crwd-131359540.html',200);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'micah haroldson','\n					Posted by Micah Haroldson on Apr 1st, 2026\n\nMicrosoft (NASDAQ:MSFT â€“ Free Report) had its target price boosted by New Street Research from $670.00 to $675.00 in a report released on Tuesday morn...','2026-04-01',0.19984,'Microsoft (NASDAQ:MSFT) Price Target Raised to $675.00 at New Street Research','https://www.watchlistnews.com/microsoft-nasdaqmsft-price-target-raised-to-675-00-at-new-street-research/11038692.html',40),(2,'ruchi gupta','...','2026-04-01',0.46872,'Looking for the Next AI Winner? Expedia Stock Could Take the Cake.','https://www.barchart.com/story/news/1093199/looking-for-the-next-ai-winner-expedia-stock-could-take-the-cake',2),(3,'joel south','Investing\nBenchmark initiated coverage of Microsoft (MSFT) with a Buy rating and $450 price target, arguing that a 28% decline from October 2025 highs has created a compelling entry point despite the ...','2026-04-01',0.53614,'Microsoftâ€™s Pullback From October Highs Is a Buying Opportunity, According to Wall Street','https://247wallst.com/investing/2026/04/01/microsofts-pullback-from-october-highs-is-a-buying-opportunity-according-to-wall-street/',4),(4,'bella albrecht','...','2026-04-01',-0.3372,'These Stocks Drove the Marketâ€™s Losses in Q1 2026','https://www.morningstar.com/markets/these-stocks-drove-markets-losses-q1-2026',2),(5,'gerelyn terzo','Stocks: Tesla (TSLA), ASML (ASML), and Micron (MU) each gained 1-5% as big tech rallies amid a potential Iran ceasefire announcement, with Microsoft committing $5.5 billion to Singapore for cloud and ...','2026-04-01',0.84524,'Live Nasdaq Composite: Tech Sees Green on Mideast Peace Hopes','https://247wallst.com/investing/2026/04/01/live-nasdaq-composite-tech-sees-green-on-mideast-peace-hopes/',4),(6,'chris neiger','...','2026-04-01',0.04128,'Microsoft Just Reshuffled Its Entire AI Organization. Should Investors Be Worried -- or Excited?','https://finance.yahoo.com/sectors/technology/articles/microsoft-just-reshuffled-entire-ai-130500702.html',200),(7,'ian cooper','According to President Trump, the war could be over in two to three weeks. â€œWe have had regime change. Now, regime change was not one of the things I had as a goal. I had one goal: they will have no n...','2026-04-01',-0.01924,'Stock Market Live April 1, 2026: S&P 500 (SPY) Rockets on End of War Hopes','https://247wallst.com/investing/2026/04/01/stock-market-live-april-1-2026-sp-500-spy-rockets-on-end-of-war-hopes/',4),(8,'vandita jadeja','Investing\nMicrosoft (MSFT) posted $81.27B in revenue, up 16.7% year over year, with Azure growing 39% and a $625B commercial remaining performance obligation signaling accelerating enterprise AI commi...','2026-04-01',0.88358,'Microsoft vs Meta: Both AI Stocks Have Been Hit Hard, But One Is a Better Buy Now','https://247wallst.com/investing/2026/04/01/microsoft-vs-meta-both-ai-stocks-have-been-hit-hard-but-one-is-a-better-buy-now/',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -215,4 +216,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-01  3:57:12
+-- Dump completed on 2026-04-02  3:38:38
