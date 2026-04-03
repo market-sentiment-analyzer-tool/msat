@@ -130,6 +130,7 @@ bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -193,7 +194,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -202,7 +203,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia',' \nGoogle is developing its own fitness band, aiming to compete with screenless wearable devices from companies such as Whoop and Oura Health, Bloomberg News reported.\nThe Alphabet (GOOG) (GOOGL) unit ...','2026-04-01',0.05464,'Google plans to launch new screenless Fitbit band later this year: report','https://seekingalpha.com/news/4571203-google-plans-to-launch-new-screenless-fitbit-band-later-this-year-report?feed_item_type=news',80),(2,'max byerly','\n					Posted by Max Byerly on Apr 1st, 2026\n\nWealthcare Advisory Partners LLC increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 12.1% during the fourth quarter, accordi...','2026-04-01',0.45446,'Wealthcare Advisory Partners LLC Boosts Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13397078/wealthcare-advisory-partners-llc-boosts-stake-in-alphabet-inc-goog.html',4),(3,'micah haroldson','\n					Posted by Micah Haroldson on Mar 31st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price was up 5% during trading on Tuesday . The company traded as high as $287.05 and last trad...','2026-03-31',0.55216,'Alphabet (NASDAQ:GOOG) Stock Price Up 5% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/alphabet-nasdaqgoog-stock-price-up-5-whats-next/11037929.html',4),(4,'ethan ryder','\n					Posted by Ethan Ryder on Mar 31st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price rose 5% during mid-day trading on Tuesday . The company traded as high as $287.05 and last tr...','2026-03-31',0.85782,'Alphabet (NASDAQ:GOOG) Shares Up 5% â€“ Time to Buy?','https://www.tickerreport.com/banking-finance/13396458/alphabet-nasdaqgoog-shares-up-5-time-to-buy.html',4),(5,'investing experts podcast','...','2026-03-31',0.2,'The Cure For FOMO With Tech Contrarians','https://seekingalpha.com/article/4887576-the-cure-for-fomo-with-tech-contrarians',4),(6,'nauman khan','...','2026-03-31',0.32152,'Bank of America Is Betting That Billionaires Could Help Take TripAdvisor Stock 50% Higher','https://www.barchart.com/story/news/1071980/bank-of-america-is-betting-that-billionaires-could-help-take-tripadvisor-stock-50-higher',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'nash riggins','...','2026-04-02',0,'Elon Musk Says Relying on the Strait of Hormuz Is â€˜Lazyâ€™ but What Can We Really Do to Change?','https://www.barchart.com/story/news/1118343/elon-musk-says-relying-on-the-strait-of-hormuz-is-lazy-but-what-can-we-really-do-to-change',2),(2,'wajeeh khan','...','2026-04-02',-0.06176,'Should You Chase the Rally as Micron Stock Bounces Back?','https://www.barchart.com/story/news/1115182/should-you-chase-the-rally-as-micron-stock-bounces-back',2),(3,'trefis team','...','2026-04-02',0.14232,'How Amazon (AMZN) Stock Could Fall to $155','https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-stock-could-fall-120057418.html',20),(4,'kim johansen','\n					Posted by Kim Johansen on Apr 2nd, 2026\n\nUSA Financial Formulas purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing wi...','2026-04-02',0.43668,'6,026 Shares in Alphabet Inc. $GOOG Acquired by USA Financial Formulas','https://www.themarketsdaily.com/2026/04/02/6026-shares-in-alphabet-inc-goog-acquired-by-usa-financial-formulas.html',4),(5,'logan wallace','\n					Posted by Logan Wallace on Apr 2nd, 2026\n\nWaldron Private Wealth LLC reduced its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.7% during the 4th quarter, according to its mo...','2026-04-02',0.15864,'Waldron Private Wealth LLC Reduces Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13398007/waldron-private-wealth-llc-reduces-stake-in-alphabet-inc-goog.html',4),(6,'caroline horne','\n					Posted by Caroline Horne on Apr 1st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s share price was up 2.8% during mid-day trading on Wednesday . The company traded as high as $297.98 and...','2026-04-01',0.80034,'Alphabet (NASDAQ:GOOG) Stock Price Up 2.8% â€“ Time to Buy?','https://www.thelincolnianonline.com/2026/04/01/alphabet-nasdaqgoog-stock-price-up-2-8-time-to-buy.html',4),(7,'ravikash bakolia','...','2026-04-01',0,'Google plans to launch new screenless Fitbit band later this year: report','https://seekingalpha.com/news/4571203-google-plans-to-launch-new-screenless-fitbit-band-later-this-year-report?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -216,4 +217,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-02  3:38:38
+-- Dump completed on 2026-04-03  3:40:48
