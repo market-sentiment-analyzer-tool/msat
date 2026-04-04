@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -194,7 +195,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -203,7 +204,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'nash riggins','...','2026-04-02',0,'Elon Musk Says Relying on the Strait of Hormuz Is â€˜Lazyâ€™ but What Can We Really Do to Change?','https://www.barchart.com/story/news/1118343/elon-musk-says-relying-on-the-strait-of-hormuz-is-lazy-but-what-can-we-really-do-to-change',2),(2,'wajeeh khan','...','2026-04-02',-0.06176,'Should You Chase the Rally as Micron Stock Bounces Back?','https://www.barchart.com/story/news/1115182/should-you-chase-the-rally-as-micron-stock-bounces-back',2),(3,'trefis team','...','2026-04-02',0.14232,'How Amazon (AMZN) Stock Could Fall to $155','https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-stock-could-fall-120057418.html',20),(4,'kim johansen','\n					Posted by Kim Johansen on Apr 2nd, 2026\n\nUSA Financial Formulas purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing wi...','2026-04-02',0.43668,'6,026 Shares in Alphabet Inc. $GOOG Acquired by USA Financial Formulas','https://www.themarketsdaily.com/2026/04/02/6026-shares-in-alphabet-inc-goog-acquired-by-usa-financial-formulas.html',4),(5,'logan wallace','\n					Posted by Logan Wallace on Apr 2nd, 2026\n\nWaldron Private Wealth LLC reduced its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.7% during the 4th quarter, according to its mo...','2026-04-02',0.15864,'Waldron Private Wealth LLC Reduces Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13398007/waldron-private-wealth-llc-reduces-stake-in-alphabet-inc-goog.html',4),(6,'caroline horne','\n					Posted by Caroline Horne on Apr 1st, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s share price was up 2.8% during mid-day trading on Wednesday . The company traded as high as $297.98 and...','2026-04-01',0.80034,'Alphabet (NASDAQ:GOOG) Stock Price Up 2.8% â€“ Time to Buy?','https://www.thelincolnianonline.com/2026/04/01/alphabet-nasdaqgoog-stock-price-up-2-8-time-to-buy.html',4),(7,'ravikash bakolia','...','2026-04-01',0,'Google plans to launch new screenless Fitbit band later this year: report','https://seekingalpha.com/news/4571203-google-plans-to-launch-new-screenless-fitbit-band-later-this-year-report?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'max gottlich','...','2026-04-03',-0.28896,'Quantum risk to crypto is advancing, Google paper warns','https://seekingalpha.com/news/4572360-quantum-risk-to-crypto-is-advancing-google-paper-warns?feed_item_type=news',40),(2,'danessa lincoln','\n					Posted by Danessa Lincoln on Apr 2nd, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price was up 5% on Tuesday . The stock traded as high as $287.05 and last traded at $286.7050. A...','2026-04-02',0.69978,'Alphabet (NASDAQ:GOOG) Shares Up 5% â€“ Hereâ€™s Why','https://www.themarketsdaily.com/2026/04/02/alphabet-nasdaqgoog-shares-up-5-heres-why.html',4),(3,'nash riggins','...','2026-04-02',0,'Elon Musk Says Relying on the Strait of Hormuz Is â€˜Lazyâ€™ but What Can We Really Do to Change?','https://www.barchart.com/story/news/1118343/elon-musk-says-relying-on-the-strait-of-hormuz-is-lazy-but-what-can-we-really-do-to-change',2),(4,'wajeeh khan','...','2026-04-02',-0.06176,'Should You Chase the Rally as Micron Stock Bounces Back?','https://www.barchart.com/story/news/1115182/should-you-chase-the-rally-as-micron-stock-bounces-back',2),(5,'trefis team','...','2026-04-02',0.14232,'How Amazon (AMZN) Stock Could Fall to $155','https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-stock-could-fall-120057418.html',20),(6,'kim johansen','\n					Posted by Kim Johansen on Apr 2nd, 2026\n\nUSA Financial Formulas purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing wi...','2026-04-02',0.43668,'6,026 Shares in Alphabet Inc. $GOOG Acquired by USA Financial Formulas','https://www.themarketsdaily.com/2026/04/02/6026-shares-in-alphabet-inc-goog-acquired-by-usa-financial-formulas.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -217,4 +218,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-03  3:40:48
+-- Dump completed on 2026-04-04  3:28:23
