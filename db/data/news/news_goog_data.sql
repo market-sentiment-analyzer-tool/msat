@@ -87,6 +87,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
+699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -195,7 +196,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +205,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'max gottlich','...','2026-04-03',-0.28896,'Quantum risk to crypto is advancing, Google paper warns','https://seekingalpha.com/news/4572360-quantum-risk-to-crypto-is-advancing-google-paper-warns?feed_item_type=news',40),(2,'danessa lincoln','\n					Posted by Danessa Lincoln on Apr 2nd, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report)â€™s stock price was up 5% on Tuesday . The stock traded as high as $287.05 and last traded at $286.7050. A...','2026-04-02',0.69978,'Alphabet (NASDAQ:GOOG) Shares Up 5% â€“ Hereâ€™s Why','https://www.themarketsdaily.com/2026/04/02/alphabet-nasdaqgoog-shares-up-5-heres-why.html',4),(3,'nash riggins','...','2026-04-02',0,'Elon Musk Says Relying on the Strait of Hormuz Is â€˜Lazyâ€™ but What Can We Really Do to Change?','https://www.barchart.com/story/news/1118343/elon-musk-says-relying-on-the-strait-of-hormuz-is-lazy-but-what-can-we-really-do-to-change',2),(4,'wajeeh khan','...','2026-04-02',-0.06176,'Should You Chase the Rally as Micron Stock Bounces Back?','https://www.barchart.com/story/news/1115182/should-you-chase-the-rally-as-micron-stock-bounces-back',2),(5,'trefis team','...','2026-04-02',0.14232,'How Amazon (AMZN) Stock Could Fall to $155','https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-stock-could-fall-120057418.html',20),(6,'kim johansen','\n					Posted by Kim Johansen on Apr 2nd, 2026\n\nUSA Financial Formulas purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent 13F filing wi...','2026-04-02',0.43668,'6,026 Shares in Alphabet Inc. $GOOG Acquired by USA Financial Formulas','https://www.themarketsdaily.com/2026/04/02/6026-shares-in-alphabet-inc-goog-acquired-by-usa-financial-formulas.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','Artificial intelligence has been a game changer for both companies. But which one is the better long-term bet?\nIt is hard to find two companies that have benefited more from the artificial intelligenc...','2026-04-04',0.92,'Nvidia and Alphabet Both Have Amazing Potential in an AI Era. But Which Stock Is the Better Buy Right Now?','https://www.fool.com/investing/2026/04/03/nvidia-and-alphabet-both-have-amazing-potential-in/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-03',0.86164,'10 Best Stocks to Buy According to Billionaire Ken Griffin','https://www.insidermonkey.com/blog/10-best-stocks-to-buy-according-to-billionaire-ken-griffin-1731036/',4),(3,'max gottlich','...','2026-04-03',-0.28896,'Quantum risk to crypto is advancing, Google paper warns','https://seekingalpha.com/news/4572360-quantum-risk-to-crypto-is-advancing-google-paper-warns?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -218,4 +219,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-04  3:28:23
+-- Dump completed on 2026-04-05  3:50:06
