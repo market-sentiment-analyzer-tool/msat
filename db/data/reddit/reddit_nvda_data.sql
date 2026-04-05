@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0ca6e5b2-309e-11f1-b7cc-7605f3598d1b:1-132,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -52,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -151,7 +153,6 @@ de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
-e0b79ecd-2fcf-11f1-91e7-1e2aec6f2e5c:1-25,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -195,7 +196,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +205,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1sbwo9z','oe6nfh5','2026-04-04',2,0,'https://preview.redd.it/9l2cld6d03tg1.jpeg?width=1080&format=pjpg&auto=webp&s=f3c75ef610fa6986a409a41bb33c3a498ad7ef46'),(2,'NVDA_Stock','1sbwo9z','oe6oujy','2026-04-04',1,0.5709,'I also have tremendous growth potential, doesnâ€™t mean anything '),(3,'NVDA_Stock','1sbwo9z','oe6pphw','2026-04-04',0,0,'Research provided by the *Institute for Common Knowledge*. ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -218,4 +218,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-04  2:42:51
+-- Dump completed on 2026-04-05  3:20:05
