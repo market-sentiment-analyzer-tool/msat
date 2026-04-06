@@ -25,7 +25,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
-0ca6e5b2-309e-11f1-b7cc-7605f3598d1b:1-132,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -88,6 +87,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
+699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -116,6 +116,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+abb9c117-3167-11f1-9040-0e16477388a5:1-25,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -196,7 +197,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -205,7 +206,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1scfgvt','oeai1k9','2026-04-04',349,0,'It comes on the Google balance, you won\'t get it'),(2,'stocks','1scfgvt','oeakuy7','2026-04-04',75,0,'Why would anything besides 2 even be a possibility here '),(3,'stocks','1scfgvt','oeajmpr','2026-04-04',147,0.8126,'Just because Google owns SpaceX shares doesnâ€™t mean that you get it when it IPOs. Those shares stay with Google because they own it, not you. Google can do whatever they want with said shares, it stays with them.\n\nYou need to participate in the SpaceX IPO to get shares. You invested in Google, not SpaceX. Google can do whatever they want with the money you gave them.'),(4,'stocks','1scfgvt','oeal17c','2026-04-04',54,0,'What are you smoking? '),(5,'stocks','1scfgvt','oeapj2f','2026-04-04',11,0.5719,'Why would the IPO change anything? It is Google\'s investment, and if you have GOOG/GOOGL shares then you just get a small amount of indirect exposure. Just like it is today.'),(6,'stocks','1scfgvt','oeah5zv','2026-04-04',16,0.7269,'I hope they cash out and buy back stock. '),(7,'stocks','1scfgvt','oean845','2026-04-04',11,0,'What'),(8,'stocks','1scfgvt','oeawffs','2026-04-04',7,0,'How did you put any thought into thisÂ '),(9,'stocks','1scfgvt','oeb0l41','2026-04-04',6,0,'No. LOL'),(10,'stocks','1scfgvt','oeauef8','2026-04-04',5,-0.5106,'Some people are mean to be dumb'),(11,'stocks','1scfgvt','oeaotlq','2026-04-04',9,0,'Donâ€™t take drugs '),(12,'stocks','1scfgvt','oeavhqw','2026-04-04',8,0.5994,'This is easily answered by 15 seconds of googling or putting this question into an LLM. Why do people make posts like this?'),(13,'stocks','1scfgvt','oeckd5c','2026-04-05',3,0.296,'Reddit is a joke lol'),(14,'stocks','1scfgvt','oeasnrq','2026-04-04',2,0,'Google is the new etf'),(15,'stocks','1scfgvt','oeaws9q','2026-04-04',2,0.3612,'The optimal outcome for shareholders would likely be selling SpaceX at its peak valuation and then using the proceeds to fund a stock buyback.\n\n'),(16,'stocks','1scfgvt','oeazzhm','2026-04-04',2,0,'Do GOOG shareholders get a TPU for their home LLM?'),(17,'stocks','1scfgvt','oeaorgn','2026-04-04',2,0.743,'Elon is extorting Nasdaq to change the rules to get Spacex on the 100 Index nearly immediately upon the ipo so he can force shares on the public. Why would he do this if it was such a great deal? He wouldnâ€™t. '),(18,'stocks','1scfgvt','oeb6wv6','2026-04-04',3,0,'Google do not own SpaceX, so the answer is no.'),(19,'stocks','1scfgvt','oean8d9','2026-04-04',1,0.4669,'No its like an ETF holding shares. Berkshire owns stocks of so many companies including chunk of Apple but they wont \"issue\" them to their stockholders. Either it remains an investment or it gets sold for cash. I expect GOOG to exit SpaceX at some point. They are after all not Berkshire kind of companies. They make bets on startups as part of GOOG ventures and not as an investment. I agree with those who ask for these to be used for stock repurchase. GOOG wont be allowed to do any major acquistion and they anyway have cash for small ones. '),(20,'stocks','1scfgvt','oeaq4g9','2026-04-04',1,0.6124,'Not GOOG, but TSLA will eventually combine with SpaceX so TSLA shareholders will end up owning some SpaceX, *according to people familiar with the matter (TM)*.'),(21,'stocks','1scfgvt','oearu5t','2026-04-04',1,0.5719,'It stays on their balance sheet. Just like all the shares of companies Berkshire Hathaway owns stays with them.'),(22,'stocks','1scfgvt','oeazacu','2026-04-04',1,0.5267,'Howd you even come to this thought that alphabet would share the shares with shareholders?'),(23,'stocks','1scfgvt','oeazjin','2026-04-04',1,0.296,'Sadly it doesnâ€™t work that way. Buy it counts on googles balances sheet, depending on how it does it will help or hurt the share price'),(24,'stocks','1scfgvt','oeb0zjn','2026-04-04',1,-0.2047,'I dont like that spacex has such a large valuation that any volatile movement on spacex could eventually drag googleâ€™s share price along with it into volatility'),(25,'stocks','1scfgvt','oeb3z04','2026-04-04',1,0.8883,'Certain ETFs would likely include it as a holding, including index funds like VOO if itâ€™s listed in the S&P 500. You can also buy SATS which is tied into SpaceX and has already seen considerable gains recently. '),(26,'stocks','1scfgvt','oeb5emh','2026-04-04',1,0.0772,'What is the SpaceX ticker? Got mula ready for it to Launch. No pun intended '),(27,'stocks','1scfgvt','oeb6e3n','2026-04-04',1,0,'No.'),(28,'stocks','1scfgvt','oeb82m1','2026-04-04',1,0,'No, thereâ€™s no subsidiary to spin off for SpaceX. The only time you might get shares is if itâ€™s an internal spinoff of a part of a company.\n\nAn recent instance is GE when they spun out GE Vernova.'),(29,'stocks','1scfgvt','oebc9tv','2026-04-04',1,0.3182,'Most likely you wonâ€™t receive any direct SpaceX shares. Alphabet will probably just hold or partially sell its stake, and the value should get reflected in GOOG/GOOGL price.'),(30,'stocks','1scfgvt','oebj27z','2026-04-04',1,0.2732,'Well, no. '),(31,'stocks','1scfgvt','oebqm0o','2026-04-04',1,0.5267,'Ya ever shareholder will receive 1 spacex share for every share of Google held. '),(32,'stocks','1scfgvt','oecuzq7','2026-04-05',1,0.553,'That\'s wild about Artemis II. Tech glitches can really shake investor confidence, even if they\'re minor.'),(33,'stocks','1scfgvt','oeap3ff','2026-04-04',1,0.7269,'I love your enthusiasm. Sundar Pichai sent out an email asking every shareholder for their direct deposit information, you should have received it by now. If you havenâ€™t received it yet, donâ€™t worry. SpaceX isnâ€™t worth 2 trillion anyways'),(34,'stocks','1scfgvt','oeavedb','2026-04-04',1,0.4672,'I hope they cash out as soon as possible and jump into a couple of potential SpaceX competitors. SpaceX was a really good investment for google, but its time to get out. They can probably more or less repeat this with one of several potential SpaceX competitors if they put part of the money there.'),(35,'stocks','1scfgvt','oeauo5s','2026-04-04',0,0.6908,'when you buy a share of SPY do you directly own each individual stock in the sp500? thereâ€™s your answer'),(36,'stocks','1scfgvt','oeaupeh','2026-04-04',0,-0.4939,'Why would you want any itâ€™s gonna cost you in the short and long run'),(37,'stocks','1scfgvt','oearyot','2026-04-04',-3,0.3182,'GOOGL sure did nosedive from ATH. ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -219,4 +219,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-05  3:20:05
+-- Dump completed on 2026-04-06  3:21:54
