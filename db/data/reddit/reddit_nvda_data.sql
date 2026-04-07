@@ -29,7 +29,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+1695b3bb-322d-11f1-aaaf-be46b5f3367a:1-42,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
@@ -116,7 +118,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
-abb9c117-3167-11f1-9040-0e16477388a5:1-25,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -197,7 +198,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,6 +207,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1se5dvc','oeniiu7','2026-04-06',1,0,'I tagged this as misleading because Forward P/E is based on analysts\' estimates and forecasts. It is a subjective measure, not an objective one.'),(2,'NVDA_Stock','1se5dvc','oeoe94e','2026-04-06',9,0.5994,'Super cheap right now. '),(3,'NVDA_Stock','1se5dvc','oeoijv4','2026-04-06',4,0.9463,'This really is what has always made me comfortable investing in Nvidia.  \n\nThe raw fundamentals dictate the price will have a strong return over time, even with the premium shrinking, the price appreciation has been strong.\n\nWhile this is a real trend in part related to the high market cap, itâ€™s also only a matter of time before this also becomes a speculative play in my mind.  Once AI starts to really create some incredible breakthroughs, itâ€™s hard to imagine that doesnâ€™t create some kind of frenzy into Nvidia stock'),(4,'NVDA_Stock','1se5dvc','oep7ivy','2026-04-06',5,-0.4939,'Given that TSM is continuing to expand in the US with a total of 165 billion investment or 3 fabs, 2 packaging facilities and 1 RnD unit, I ignore the \"down on ai\" bs.'),(5,'NVDA_Stock','1se5dvc','oeoq5u7','2026-04-06',-9,-0.9745,'Stop using these metric the wrong way.\n\nMetrics like P/E ratio are completely useless if you compare with a company that is in a different industry...even more useless when you compare \n It with the S&P500... that is a stupid use of these metrics. You can compare Nvidia P/E with \nIntel P/E, AMD P/E, Google P/E etc...\n\n\nToday, Nvidia is not cheap. It is at an average price, or in investor language,  Nvidia is fairly priced at the current share price.\n\nWhy? Because when you get the P/E of all the main competitors and take the average, Nvidia is close to the average.\n\nWhos is actually cheap? Intel, probably with one of the lowest P/E in that Industry. Who is expensive? AMD, who\'s P/E is above the average in the industry.\n\nYou all should stop making these posts cause you only making yourselves look dumb with such ignorance.'),(6,'NVDA_Stock','1se5dvc','oenfzlw','2026-04-06',-5,0,'Cause Deepseek v4 is coming'),(7,'ValueInvesting','1sdy1fs','oelzsjr','2026-04-06',12,0.1779,'The 55% net margin on hardware at scale is the number that separates Nvidia from almost every other semiconductor company in history, and it reflects genuine pricing power that comes from CUDA lock in and the fact that their ecosystem is years ahead of any real competition. Nvidia may well be the permanent backbone of AI infrastructure, but permanent backbones tend to get regulated, commoditized, or disrupted eventually, and 74x FCF means the market has already priced in a long runway of that not happening.'),(8,'ValueInvesting','1sdy1fs','oelypo7','2026-04-06',19,0.6214,'With Nvidia the debate is about whether the revenue is real and - critically- durable. Msft, Google, Amazon etc capex is Nvidiaâ€™s revenue and Iâ€™m not confident that they are generating enough return on that capex to justify it in the long run. '),(9,'ValueInvesting','1sdy1fs','oem1gq9','2026-04-06',5,-0.5106,'Everything about growth stocks is the second derivative. Once these metrics start degrading, the rate of degredation becomes everything and the multiples will degrade much faster than the fundamentals.'),(10,'ValueInvesting','1sdy1fs','oelvaws','2026-04-06',8,0.8668,'YEP NVDA is a strong buy'),(11,'ValueInvesting','1sdy1fs','oem0obg','2026-04-06',6,0.6894,'More important number is where FCF is going. Nvidiaâ€™s FCF was $60.8B in FY2025, at 74x thatâ€™s a $4.5T implied valuation on todayâ€™s cash generation. \n\nFor that multiple to be rational, FCF needs to roughly double again to ~$120B within 3 years. Thatâ€™s not impossible cause data center revenue just hit $115B annually growing three digits YoY, but it requires hyperscaler capex to keep compounding AND Nvidia maintaining 70%+ gross margins as competitors (AMD, custom silicon (Google TPUs, Amazon Trainium), and eventually Chinese alternatives) close the gap. \n\nThe multiple is pricing Nvidia winning AI permanently.'),(12,'ValueInvesting','1sdy1fs','oeltqhk','2026-04-06',6,0,'FW PE of 21 looks cheap '),(13,'ValueInvesting','1sdy1fs','oen7all','2026-04-06',5,0.296,'This subs a joke. They should change the name to r/bluechipvalidation '),(14,'ValueInvesting','1sdy1fs','oenl7by','2026-04-06',2,0.1695,'Don\'t forget: PEG ratio hovering between 0.5 and 0.7\n\nNVDA is about as cheap as it\'s been in a decade'),(15,'ValueInvesting','1sdy1fs','oemewgs','2026-04-06',1,0.7621,'Yeah, NVIDIAâ€™s numbers are wild ngl. ROE over 100% screams â€œbuybacks inflating equityâ€ more than operational magic. I usually keep a spreadsheet with free cash flow projections and margin sanity checks, helps me not get too hyped. Definitely a stock where the narrative is baked into the price, so risk is real even if AI growth is huge.'),(16,'ValueInvesting','1sdy1fs','oemxu7h','2026-04-06',1,0.5267,'On a quantitative basis, yes it looks cheap. The real question is a) how long can the capex boom really go for given the hyperscalers are now going into debt, and b) will Nvidia successfully have their chips used for inference, not only training.'),(17,'ValueInvesting','1sdy1fs','oeo6stx','2026-04-06',1,-0.357,'spot gpus are all fully rented at all hyperscalers and neoclouds. scheduled capacity is already booked months out. can\'t tell me there\'s no revenue being generated right now. anything that is close to going online is already allocated. '),(18,'ValueInvesting','1sdy1fs','oenf1b7','2026-04-06',0,0,'Just wait for Deepseek v4 release, coming soon!'),(19,'ValueInvesting','1sdy1fs','oep5iar','2026-04-06',0,0.7836,'Everyone looks at the price. I look at whether management delivered on what they promised. Nvidia: of 3 commitments tracked, 2 delivered. Rated STRONG. Credibility has been declining. Annual reports don\'t lie; management commentary does sometimes.'),(20,'ValueInvesting','1sdy1fs','oenhjtx','2026-04-06',-1,0,'You can see more analysis here:\n\n\nhttps://www.stocksanalyzer.app');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -219,4 +221,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-06  3:21:54
+-- Dump completed on 2026-04-07  2:55:15
