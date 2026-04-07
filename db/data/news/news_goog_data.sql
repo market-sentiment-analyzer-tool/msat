@@ -175,6 +175,7 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
@@ -197,7 +198,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +207,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-04-05',0.04128,'Prediction: 1 Artificial Intelligence (AI) Stock Will Quietly Double While the Market Panics Over TurboQuant','https://finance.yahoo.com/markets/stocks/articles/prediction-1-artificial-intelligence-ai-155000815.html',20),(2,'dulan lokuwithana','...','2026-04-04',0.35232,'Anthropic scoops up biotech startup Coefficient Bio for $400M: report','https://seekingalpha.com/news/4572528-anthropic-scoops-up-biotech-startup-coefficient-bio-for-400m-report?feed_item_type=news',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia','...','2026-04-06',0.14232,'Intel in talks with Amazon, Google for packaging services: report','https://seekingalpha.com/news/4572736-intel-in-talks-with-amazon-google-for-packaging-services?feed_item_type=news',40),(2,'trevor jennewine','Druckenmiller, a former hedge fund manager with an incredible track record, sold Sandisk and bought Alphabet in the fourth quarter.\nBillionaire Stanley Druckenmiller ran Duquesne Capital Management be...','2026-04-06',0.19988,'Billionaire Stanley Druckenmiller Sells Sandisk Stock and Buys an AI Stock Wall Street Says Is Deeply Undervalued','https://www.fool.com/investing/2026/04/06/stan-druckenmiller-sell-sandisk-stock-buy-ai-stock/',4),(3,'the motley fool','...','2026-04-05',-0.52776,'2 Stocks About To Make a Killing on the SpaceX IPO','https://finance.yahoo.com/markets/stocks/articles/2-stocks-killing-spacex-ipo-173500357.html',20),(4,'the motley fool','...','2026-04-05',0.04128,'Prediction: 1 Artificial Intelligence (AI) Stock Will Quietly Double While the Market Panics Over TurboQuant','https://finance.yahoo.com/markets/stocks/articles/prediction-1-artificial-intelligence-ai-155000815.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -220,4 +221,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-06  3:53:47
+-- Dump completed on 2026-04-07  3:44:37
