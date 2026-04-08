@@ -95,6 +95,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
@@ -198,7 +199,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -207,7 +208,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia','...','2026-04-06',0.14232,'Intel in talks with Amazon, Google for packaging services: report','https://seekingalpha.com/news/4572736-intel-in-talks-with-amazon-google-for-packaging-services?feed_item_type=news',40),(2,'trevor jennewine','Druckenmiller, a former hedge fund manager with an incredible track record, sold Sandisk and bought Alphabet in the fourth quarter.\nBillionaire Stanley Druckenmiller ran Duquesne Capital Management be...','2026-04-06',0.19988,'Billionaire Stanley Druckenmiller Sells Sandisk Stock and Buys an AI Stock Wall Street Says Is Deeply Undervalued','https://www.fool.com/investing/2026/04/06/stan-druckenmiller-sell-sandisk-stock-buy-ai-stock/',4),(3,'the motley fool','...','2026-04-05',-0.52776,'2 Stocks About To Make a Killing on the SpaceX IPO','https://finance.yahoo.com/markets/stocks/articles/2-stocks-killing-spacex-ipo-173500357.html',20),(4,'the motley fool','...','2026-04-05',0.04128,'Prediction: 1 Artificial Intelligence (AI) Stock Will Quietly Double While the Market Panics Over TurboQuant','https://finance.yahoo.com/markets/stocks/articles/prediction-1-artificial-intelligence-ai-155000815.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-04-07',0.43384,'Intel Could Score Major Packaging Customers. Should You Buy INTC Stock Now?','https://www.barchart.com/story/news/1177783/intel-could-score-major-packaging-customers-should-you-buy-intc-stock-now',2),(2,'mikhail fedorov','...','2026-04-07',0.46872,'Amazon Stock Is Stuck in a Bubble of Digital Landlords: How to Skip the Middlemen and Invest the Right Way in AI','https://www.barchart.com/story/news/1173496/amazon-stock-is-stuck-in-a-bubble-of-digital-landlords-how-to-skip-the-middlemen-and-invest-the-right-way-in-ai',2),(3,'chris ciaccia','...','2026-04-07',0.272,'Broadcom gains after signing long-term deal with Google to develop AI chips','https://seekingalpha.com/news/4572930-broadcom-gains-after-signing-long-term-deal-with-google-to-develop-ai-chips?feed_item_type=news',40),(4,'ravikash bakolia','...','2026-04-07',0.06176,'Anthropic, Google, OpenAI team up to fight model copying in China: report','https://seekingalpha.com/news/4572880-anthropic-google-openai-team-up-to-fight-model-copying-in-china?feed_item_type=news',4),(5,'the motley fool','...','2026-04-07',-0.14232,'Nvidia, Apple, Alphabet, Amazon, and Microsoft Are Sending Shockwaves Through Wall Street With This $16 Billion Warning','https://finance.yahoo.com/markets/stocks/articles/nvidia-apple-alphabet-amazon-microsoft-082600521.html',20),(6,'arundhati sarkar','romanshashko/iStock via Getty Images\nAnthropic (ANTHRO) has struck a deal with Google (GOOG) (GOOGL) and Broadcom (AVGO) for multiple gigawatts of next-generation TPU capacity starting in 2027, as sur...','2026-04-07',0.39264,'Anthropic targets $30B revenue, signs TPU deal with Google and Broadcom','https://seekingalpha.com/news/4572848-anthropic-targets-30b-revenue-signs-tpu-deal-with-google-and-broadcom?feed_item_type=news',80),(7,'emily bary','Please enable JS and disable any ad blocker...','2026-04-06',0.22548,'Broadcomâ€™s stock is rising. Why its new Google, Anthropic deals are significant.','https://www.marketwatch.com/bulletins/redirect/go?g=5802ee79-5dbd-448c-84bb-94e346adaf80&mod=mw_rss_bulletins',4),(8,'emily bary','Please enable JS and disable any ad blocker...','2026-04-06',0.3298,'Broadcomâ€™s stock is rising. Hereâ€™s why its new Google and Anthropic deals are so significant.','https://www.marketwatch.com/story/broadcoms-stock-is-rising-heres-why-its-new-google-and-anthropic-deals-are-so-significant-6d98a067?mod=mw_rss_topstories',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -221,4 +222,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-07  3:44:37
+-- Dump completed on 2026-04-08  3:46:43
