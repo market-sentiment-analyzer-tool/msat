@@ -29,7 +29,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-1695b3bb-322d-11f1-aaaf-be46b5f3367a:1-42,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -97,6 +96,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
+702c5bd8-32f6-11f1-a217-163cd7df4e6e:1-46,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
@@ -176,6 +176,7 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
@@ -198,7 +199,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -207,6 +208,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1sfd4pf','oex1qmw','2026-04-08',1,-0.1581,'hope \'yall didn\'t sell.   close to 260 at 7:40 MST lol.\n\nNot gonna lie,  I was tempted.  Shit  is crazy.'),(2,'ValueInvesting','1sf65vx','oev3218','2026-04-07',17,0.3182,'No one is going to buy a foldable phone.'),(3,'ValueInvesting','1sf65vx','oex9tqe','2026-04-08',1,0.34,'Another lie propagated right before earnings. '),(4,'ValueInvesting','1sf65vx','oewn411','2026-04-08',1,0.8126,'Man and it\'s back up in the after market... surely people thought about it and realised it\'s a good idea.. /s'),(5,'ValueInvesting','1sf65vx','oev6lsu','2026-04-07',-3,0.1896,'Sure they do ?\n\nThe market is dragging them down like everyone else.\n\nAnd who wants a foldable phone ??   Not me\n\nI did not know they were working on it and 90% of investors did not either... No one cares '),(6,'ValueInvesting','1sf65vx','oevdre1','2026-04-07',-1,0.0516,'Damn, Apple is finished. Tim better pack it up.'),(7,'ValueInvesting','1sf65vx','oewh7rg','2026-04-07',0,0.7096,'It\'s still up vs just a week ago. Apple has a habit of making product lines that have the revenue of entire product categories.\n\nTransparency: AAPL shareholder');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -220,4 +222,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-07  2:55:14
+-- Dump completed on 2026-04-08  2:56:44
