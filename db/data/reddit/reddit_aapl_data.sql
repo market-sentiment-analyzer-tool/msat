@@ -95,8 +95,8 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
-702c5bd8-32f6-11f1-a217-163cd7df4e6e:1-46,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
@@ -143,6 +143,7 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d35c145d-33be-11f1-ba1a-eaf6f1936c97:1-98,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -199,7 +200,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,7 +209,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1sfd4pf','oex1qmw','2026-04-08',1,-0.1581,'hope \'yall didn\'t sell.   close to 260 at 7:40 MST lol.\n\nNot gonna lie,  I was tempted.  Shit  is crazy.'),(2,'ValueInvesting','1sf65vx','oev3218','2026-04-07',17,0.3182,'No one is going to buy a foldable phone.'),(3,'ValueInvesting','1sf65vx','oex9tqe','2026-04-08',1,0.34,'Another lie propagated right before earnings. '),(4,'ValueInvesting','1sf65vx','oewn411','2026-04-08',1,0.8126,'Man and it\'s back up in the after market... surely people thought about it and realised it\'s a good idea.. /s'),(5,'ValueInvesting','1sf65vx','oev6lsu','2026-04-07',-3,0.1896,'Sure they do ?\n\nThe market is dragging them down like everyone else.\n\nAnd who wants a foldable phone ??   Not me\n\nI did not know they were working on it and 90% of investors did not either... No one cares '),(6,'ValueInvesting','1sf65vx','oevdre1','2026-04-07',-1,0.0516,'Damn, Apple is finished. Tim better pack it up.'),(7,'ValueInvesting','1sf65vx','oewh7rg','2026-04-07',0,0.7096,'It\'s still up vs just a week ago. Apple has a habit of making product lines that have the revenue of entire product categories.\n\nTransparency: AAPL shareholder');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -222,4 +222,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-08  2:56:44
+-- Dump completed on 2026-04-09  2:54:14
