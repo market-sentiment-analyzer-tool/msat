@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -199,7 +200,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,7 +209,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-04-07',0.43384,'Intel Could Score Major Packaging Customers. Should You Buy INTC Stock Now?','https://www.barchart.com/story/news/1177783/intel-could-score-major-packaging-customers-should-you-buy-intc-stock-now',2),(2,'mikhail fedorov','...','2026-04-07',0.46872,'Amazon Stock Is Stuck in a Bubble of Digital Landlords: How to Skip the Middlemen and Invest the Right Way in AI','https://www.barchart.com/story/news/1173496/amazon-stock-is-stuck-in-a-bubble-of-digital-landlords-how-to-skip-the-middlemen-and-invest-the-right-way-in-ai',2),(3,'chris ciaccia','...','2026-04-07',0.272,'Broadcom gains after signing long-term deal with Google to develop AI chips','https://seekingalpha.com/news/4572930-broadcom-gains-after-signing-long-term-deal-with-google-to-develop-ai-chips?feed_item_type=news',40),(4,'ravikash bakolia','...','2026-04-07',0.06176,'Anthropic, Google, OpenAI team up to fight model copying in China: report','https://seekingalpha.com/news/4572880-anthropic-google-openai-team-up-to-fight-model-copying-in-china?feed_item_type=news',4),(5,'the motley fool','...','2026-04-07',-0.14232,'Nvidia, Apple, Alphabet, Amazon, and Microsoft Are Sending Shockwaves Through Wall Street With This $16 Billion Warning','https://finance.yahoo.com/markets/stocks/articles/nvidia-apple-alphabet-amazon-microsoft-082600521.html',20),(6,'arundhati sarkar','romanshashko/iStock via Getty Images\nAnthropic (ANTHRO) has struck a deal with Google (GOOG) (GOOGL) and Broadcom (AVGO) for multiple gigawatts of next-generation TPU capacity starting in 2027, as sur...','2026-04-07',0.39264,'Anthropic targets $30B revenue, signs TPU deal with Google and Broadcom','https://seekingalpha.com/news/4572848-anthropic-targets-30b-revenue-signs-tpu-deal-with-google-and-broadcom?feed_item_type=news',80),(7,'emily bary','Please enable JS and disable any ad blocker...','2026-04-06',0.22548,'Broadcomâ€™s stock is rising. Why its new Google, Anthropic deals are significant.','https://www.marketwatch.com/bulletins/redirect/go?g=5802ee79-5dbd-448c-84bb-94e346adaf80&mod=mw_rss_bulletins',4),(8,'emily bary','Please enable JS and disable any ad blocker...','2026-04-06',0.3298,'Broadcomâ€™s stock is rising. Hereâ€™s why its new Google and Anthropic deals are so significant.','https://www.marketwatch.com/story/broadcoms-stock-is-rising-heres-why-its-new-google-and-anthropic-deals-are-so-significant-6d98a067?mod=mw_rss_topstories',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ruchi gupta','...','2026-04-08',0.30544,'Dear Google Stock Fans, Mark Your Calendars for April 23','https://www.barchart.com/story/news/1198981/dear-google-stock-fans-mark-your-calendars-for-april-23',20),(2,'mikhail fedorov','...','2026-04-07',-0.25456,'As Bulls and Bears Battle Over AI, $350 Is the Key Number to Watch for Microsoft Stock','https://www.barchart.com/story/news/1183209/as-bulls-and-bears-battle-over-ai-350-is-the-key-number-to-watch-for-microsoft-stock',2),(3,'amit singh','...','2026-04-07',0.47952,'As Broadcom Expands AI Deals With Google and Anthropic, Should You Buy AVGO Stock?','https://www.barchart.com/story/news/1182658/as-broadcom-expands-ai-deals-with-google-and-anthropic-should-you-buy-avgo-stock',20),(4,'wall street breakfast','...','2026-04-07',-0.49496,'Wall Street Lunch: Mizuho Cuts Targets On Quantum Stocks, Not Optimism','https://seekingalpha.com/article/4888992-wall-street-lunch-mizuho-cuts-targets-on-quantum-stocks-not-optimism',4),(5,'cpa','The data center and semiconductor specialist is experiencing growing demand for custom artificial intelligence (AI) chip solutions.\nThe rise of artificial intelligence (AI) has sparked a data center b...','2026-04-07',0.19952,'Broadcom Inks Major AI Chip Deals With Google and Anthropic','https://www.fool.com/investing/2026/04/07/broadcom-inks-major-ai-chip-deals-with-google-and/',40),(6,'pathikrit bose','...','2026-04-07',0.43384,'Intel Could Score Major Packaging Customers. Should You Buy INTC Stock Now?','https://www.barchart.com/story/news/1177783/intel-could-score-major-packaging-customers-should-you-buy-intc-stock-now',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -222,4 +223,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-08  3:46:43
+-- Dump completed on 2026-04-09  3:44:30
