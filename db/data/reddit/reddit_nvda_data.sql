@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -100,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
+74134ee1-348c-11f1-bf5c-46e893d45390:1-226,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
@@ -143,7 +145,6 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
-d35c145d-33be-11f1-ba1a-eaf6f1936c97:1-98,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -200,7 +201,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -209,7 +210,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1sg43sc','of2gaeu','2026-04-08',7,0.2235,'Not a zero sum game. Jensen is not worried. '),(2,'NVDA_Stock','1sg43sc','of2etq4','2026-04-08',5,0.4939,'This was always going to happen regardless of Trump. The Chinese gov learned from the EUV restrictions. \n\nTheres no way they will allow one of their biggest tech companies being reliant on US tech stack. \n\nWhatâ€™s to say Trump or next US admin bans GPU exports again. '),(3,'NVDA_Stock','1sg43sc','of2z4g4','2026-04-08',11,0.8868,'LMAO so china is opening a data center with Temu developed AI chips rather than Nvidia? Sorry I mean Alibaba. ðŸ¤£ I wonder how these chips compare to Nvidia chips. ðŸ™„ You know there are restrictions on exports for good reasonâ€¦ '),(4,'NVDA_Stock','1sg43sc','of28619','2026-04-08',5,0.6249,'Make Alibaba Great Again (MAGA).'),(5,'NVDA_Stock','1sg43sc','of2i5gp','2026-04-08',14,-0.1027,'Nah, not all Trump. Restrictions started under Biden. '),(6,'NVDA_Stock','1sg43sc','of41gu7','2026-04-09',3,-0.0772,'You do realize that it was the Biden administration who imposed export controls?'),(7,'NVDA_Stock','1sg43sc','of3jfb3','2026-04-09',4,0.7351,'Wait, you mean putting a fat, 80 year old narcissist in charge of the free world wasnâ€™t a good idea?  Say it isnâ€™t so '),(8,'NVDA_Stock','1sg43sc','of2ot4v','2026-04-08',1,-0.4019,'Damn they should hire you to run the economy '),(9,'NVDA_Stock','1sg43sc','of2hits','2026-04-08',1,0.6705,'This is a boon for ROW waiting for NVDA GPUs to build apps.  Ty China ðŸ‘'),(10,'NVDA_Stock','1sg43sc','of2c7a9','2026-04-08',1,0.3634,'But once things get really bad, then Trump can make another winning deal, like allowing American businesses to freely sell their products. /Facepalm/');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1sgu3ua','of7p7no','2026-04-09',11,0.6124,'And the Dear Leader is certainly about to tweet something to keep this from happening.'),(2,'NVDA_Stock','1sgu3ua','of7z3v6','2026-04-09',16,-0.4767,'I predict that every prediction about NVDA will be wrong, as they have been the last 12-18 months consistently. This is a long game, patience grasshopper. '),(3,'NVDA_Stock','1sgu3ua','of8yyaf','2026-04-09',7,0,'![gif](giphy|2lbhL8dSGMh8I)\n\nNvda is a coiled snake'),(4,'NVDA_Stock','1sgu3ua','of7zy21','2026-04-09',12,0,'250 is inevitable this year'),(5,'NVDA_Stock','1sgu3ua','of7qv5j','2026-04-09',3,-0.5859,'Quick, we need another war to prevent this from happening'),(6,'NVDA_Stock','1sgu3ua','of7r31g','2026-04-09',5,0,'167 was bottom; will\nTest 222'),(7,'NVDA_Stock','1sgu3ua','ofapqhr','2026-04-10',2,0.9454,'I like the static price for now. DCF around 250 on intrinsic value and so much growth already ordered and on books for 2027-8. I think 250 is coming but NVDA solidified itself as not a FOMO and getting less volatile unlike say, an AMD.  THIS to ME is GOOD. Sleeping well at night with my NVDA- \n\nEverything you look for in solid investment strategies screams buy NVDA- \n\nWith patience 250 and 750 by 2031. '),(8,'NVDA_Stock','1sgu3ua','ofaq4a2','2026-04-10',2,-0.0263,'Lastly, I see NVDA as top company of decade and will be top list next decade if not top. \n\nLike Microsoft was past few decades.  '),(9,'NVDA_Stock','1sh3yp8','of9wda1','2026-04-09',13,0.5688,'I haven\'t sold a single share of my total 2000 shares. This Stock is massively undervalued '),(10,'NVDA_Stock','1sh3yp8','ofa3xbx','2026-04-09',10,0.8665,'Depends on what kind of investor/trader you are.  I am a Peter Lynch-esque value investor.  I could not be happier.  \n\nThis is where you build generational wealth.  \n\nWhen a great company with a great story and position has lost its favor/luster with the masses.  '),(11,'NVDA_Stock','1sh3yp8','of9vhx9','2026-04-09',9,-0.4588,'Itâ€™s going to break to 300 the minute we sell.'),(12,'NVDA_Stock','1sh3yp8','ofabl4z','2026-04-09',7,-0.128,'PE is insane right now. I do not understand how this doesnâ€™t skyrocket the share price. '),(13,'NVDA_Stock','1sh3yp8','ofauckl','2026-04-10',6,0.7009,'I got in April 2025 so not like the whales. But I work for tech company and the new thesis is about token usage. Jensen is talking about it, big consulting is talking about it. The new electricity and NVDA stands to benefit from all this token consumption. Weâ€™re still in the first quarter of the game.'),(14,'NVDA_Stock','1sh3yp8','of9wzt9','2026-04-09',4,0,'How long? Fabs are fully booked for 2027.\n\n/thread'),(15,'NVDA_Stock','1sh3yp8','ofame6a','2026-04-10',4,0.7121,'Itâ€™s a $4+ trillion dollar company! Of course itâ€™s not just gonna shoot up with 200-300% returns anymore. Itâ€™s still growing just not at the same rate'),(16,'NVDA_Stock','1sh3yp8','of9xnld','2026-04-09',5,-0.34,'They successfully got rid of the weak hands with the â€œAI Bubbleâ€ nonsense. \n\nTides are changing.'),(17,'NVDA_Stock','1sh3yp8','ofa9ga8','2026-04-09',4,-0.8481,'Needless worry.  Take advantage of senseless Trump-induced volatility selling puts at short term lows 30, 60, 90 days out or buying deep ITM 80 long term calls.  Do it in your Roth or IRA.  '),(18,'NVDA_Stock','1sh3yp8','ofa04bl','2026-04-09',2,0.0279,'Things change fast. They can\'t stay on top forever nor can they keep growing infinitely. However, digitizing and automating society is a long process. Think decades ahead.Â '),(19,'NVDA_Stock','1sh3yp8','ofafmen','2026-04-10',2,0.5307,'AI in general is going through some PR challenges.  I think many still think AI is little more than images of Jesus with 7 fingers.\n\nthis party has yet to begin '),(20,'NVDA_Stock','1sh3yp8','ofaos02','2026-04-10',2,-0.5267,'Trapped longs are overhead resistance.  When the last one sells, itâ€™ll be rocket time'),(21,'NVDA_Stock','1sh3yp8','ofb644u','2026-04-10',2,0,'The longer the base, the higher in space. '),(22,'NVDA_Stock','1sh3yp8','ofa32g5','2026-04-09',0,-0.9105,'I was an NVDA investor for a few months until it crashed from 200+ to 180. That got me thinking why an obviously rosy outlook was not rewarded by the market. One theory I found plausible is that with so many people knowing and owning NVDA, without new catalyst attracting new buyers, the stock stagnates. Another fear is a repeat of CSCO 25 years ago, when nothing could go wrong suddenly did. CSCO had orders from lots of startups that went bust and there are fears that NVDAâ€™s circular deals can have similar risk. I sold NVDA at a loss and switched to other stocks that have so far outperformed NVDA by far this year.'),(23,'NVDA_Stock','1sh3yp8','ofa80ui','2026-04-09',0,0.7003,'ðŸ¤¦ up 7X in just 8 years. What people think suppose to keep going up ðŸ›— ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -223,4 +224,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-09  2:54:15
+-- Dump completed on 2026-04-10  3:30:53

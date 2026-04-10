@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -100,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
+74134ee1-348c-11f1-bf5c-46e893d45390:1-226,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
@@ -143,7 +145,6 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
-d35c145d-33be-11f1-ba1a-eaf6f1936c97:1-98,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -200,7 +201,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -209,7 +210,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1sg21ks','of1rao7','2026-04-08',283,-0.5719,'Google is firing on all cylinders under sundar. I remember when he was hated on here two years ago. Iâ€™ll just hold my Google shares and add dips '),(2,'stocks','1sg21ks','of1w7s6','2026-04-08',39,0.0547,'Half the tickers are missing (vagf) for example, they don\'t allow you to select a specific exchange if it\'s listed on multiple exchanges (vusa/vuaa). It is insanely buggy, the one day chart barely works (crude oil continuous contracts right now is bugged). I hope they are going to fix it for the \"big rollout\".'),(3,'stocks','1sg21ks','of1t4cc','2026-04-08',32,0.7839,'I own google stock and i think the company is going to grow in the future. \nThat said, this is just too little to late?I mean what is this even good for if its not a platform where you can trade or buy stocks? Like theres so man fintech platforms out right now that have democratized investing in the last few years, id be all for if google had a investing account you could set up that you can fund through google wallet and so on. But this is just like, what exactly? As someone who just invested a monthly sum, I see no use case for myself with this.'),(4,'stocks','1sg21ks','of1xqfn','2026-04-08',32,0.2232,'Iâ€™m forever long Google\n\nOwn 150 shares and will never sell \n\nGoogle finance fucking sucks though lol. Iâ€™ve used Yahoo finance for the past 20 years and I probably still spend 2-3 hours a day on there.'),(5,'stocks','1sg21ks','of230yp','2026-04-08',10,0.9444,'>This expansion is definitely going to challenge existing financial data platforms, especially traditional providers like Bloomberg and Reuters.\n\n How will it possibly challenge Bloomberg? Bloomberg\'s core value is valuation of true OTC markets - corp, private and sovereign debt, credit and mortgage derivatives & structured products. Their security master includes the precise terms and cash flow schedules of every instrument of any issuer that an institution would invest in. Their valuation analytics of illiquid instruments are the industry standard. Calculations are available in all currencies. \n\nGoogle Finance is a run of the mill equity market monitor that someday hopes to compete with  Thinkorswim. Am I missing something?'),(6,'stocks','1sg21ks','of1tvgo','2026-04-08',35,0.0258,'Lol. I hate Google Finance with a passion. Its interface is an abomination designed by edgy UI/UX designers with no finance or trading experience. The whole \"clean\" look is opposite to what traders want. Compare their hideous interface to finviz, bloomberg, or even Yahoo Finance.'),(7,'stocks','1sg21ks','of1t3l7','2026-04-08',16,-0.6908,'Canâ€™t wait for them to kill Google Finance in 4-5 years\n\nhttps://killedbygoogle.com/'),(8,'stocks','1sg21ks','of20fhh','2026-04-08',2,0,'I only noticed that it changed its UI today. Didnâ€™t know it has not been available in lots of countries.'),(9,'stocks','1sg21ks','of24jle','2026-04-08',1,0.2869,'how is google AI compared to openai and anthropic? i dont know who will be the top?  '),(10,'stocks','1sg21ks','of26f0j','2026-04-08',1,0.6997,'Really nice release, just wish they had an Android app too.'),(11,'stocks','1sg21ks','of2k5vh','2026-04-08',1,0.3313,'How comprehensive is Google finance ? (Can it compete with cap iq)?'),(12,'stocks','1sg21ks','of2me31','2026-04-08',1,0.765,'Watch for how this affects $GOOGL\'s service revenue and if market share gains translate into sustained upward price momentum.'),(13,'stocks','1sg21ks','of2n4pu','2026-04-08',1,-0.5574,'I hate when I type \"<ticker> stock\" and it shows me some values in my currency\n\nlike, wtf, stop doing this shit just show me real values in their respective currencies'),(14,'stocks','1sg21ks','of2p0fs','2026-04-08',1,0,'didnâ€™t expect google vs yahoo in 2026'),(15,'stocks','1sg21ks','of2ysxl','2026-04-08',1,0.4121,'I am long GOOGL (231 shares bought 2021-25) and use Google Finance, but it has lagged behind Yahoo Finance for analysis until now. \n\nJust opened the new Google Finance Beta and it has so much cool stuff! Compares multiple tickers, shows moving average indicators and cash flow data. Still exploring!'),(16,'stocks','1sg21ks','of3dieh','2026-04-08',1,-0.5423,'My old ass still uses Yahoo finance '),(17,'stocks','1sg21ks','of3gdrm','2026-04-09',1,-0.3612,'The charting sucks. Only 3 indicators available. '),(18,'stocks','1sg21ks','of3u6h3','2026-04-09',1,0.7003,'Yes it can. Just need a better ux and it will slap hard.'),(19,'stocks','1sg21ks','of47e8k','2026-04-09',1,0.8107,'Wider distribution can matter a lot even if it doesnâ€™t immediately change the business. More users, more visibility, and stronger ecosystem reach can become meaningful over time if engagement follows.'),(20,'stocks','1sg21ks','of23m2q','2026-04-08',1,0.4404,'If itâ€™s better than Yahoo Iâ€™m switching to it. Totally forgot Google that.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -223,4 +223,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-09  2:54:14
+-- Dump completed on 2026-04-10  3:30:53
