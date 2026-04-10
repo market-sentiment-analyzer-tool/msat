@@ -167,6 +167,7 @@ e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
+ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -200,7 +201,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -209,7 +210,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ruchi gupta','...','2026-04-08',0.30544,'Dear Google Stock Fans, Mark Your Calendars for April 23','https://www.barchart.com/story/news/1198981/dear-google-stock-fans-mark-your-calendars-for-april-23',20),(2,'mikhail fedorov','...','2026-04-07',-0.25456,'As Bulls and Bears Battle Over AI, $350 Is the Key Number to Watch for Microsoft Stock','https://www.barchart.com/story/news/1183209/as-bulls-and-bears-battle-over-ai-350-is-the-key-number-to-watch-for-microsoft-stock',2),(3,'amit singh','...','2026-04-07',0.47952,'As Broadcom Expands AI Deals With Google and Anthropic, Should You Buy AVGO Stock?','https://www.barchart.com/story/news/1182658/as-broadcom-expands-ai-deals-with-google-and-anthropic-should-you-buy-avgo-stock',20),(4,'wall street breakfast','...','2026-04-07',-0.49496,'Wall Street Lunch: Mizuho Cuts Targets On Quantum Stocks, Not Optimism','https://seekingalpha.com/article/4888992-wall-street-lunch-mizuho-cuts-targets-on-quantum-stocks-not-optimism',4),(5,'cpa','The data center and semiconductor specialist is experiencing growing demand for custom artificial intelligence (AI) chip solutions.\nThe rise of artificial intelligence (AI) has sparked a data center b...','2026-04-07',0.19952,'Broadcom Inks Major AI Chip Deals With Google and Anthropic','https://www.fool.com/investing/2026/04/07/broadcom-inks-major-ai-chip-deals-with-google-and/',40),(6,'pathikrit bose','...','2026-04-07',0.43384,'Intel Could Score Major Packaging Customers. Should You Buy INTC Stock Now?','https://www.barchart.com/story/news/1177783/intel-could-score-major-packaging-customers-should-you-buy-intc-stock-now',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-04-09',0.46872,'1 Growth Stock Smart Money Is Buying Aggressively','https://www.barchart.com/story/news/1223300/1-growth-stock-smart-money-is-buying-aggressively',2),(2,'pathikrit bose','...','2026-04-09',-0.2,'Seaport Research Warns on AVGO Stock: Broadcom Is Confronting the â€˜Limits of the Industryâ€™','https://www.barchart.com/story/news/1222668/seaport-research-warns-on-avgo-stock-broadcom-is-confronting-the-limits-of-the-industry',2),(3,'anushka dutta','...','2026-04-09',0.43384,'Broadcom Is Making AI Chips with Google. Does That Make AVGO Stock a Buy Now?','https://www.barchart.com/story/news/1222047/broadcom-is-making-ai-chips-with-google-does-that-make-avgo-stock-a-buy-now',2),(4,'trevor jennewine','Investors should buy Alphabet for pre-IPO exposure to SpaceX, and hold the stock for exposure to the autonomous driving boom.\nSpaceX is an aerospace manufacturer and satellite-internet service provide...','2026-04-09',0.70936,'Buy This AI Stock to Own SpaceX Pre-IPO and Hold It Through the Robotaxi Boom','https://www.fool.com/investing/2026/04/09/buy-ai-stock-own-spacex-pre-ipo-hold-robotaxi-boom/',4),(5,'daniel sparks','Nvidia may be the AI stock everyone is talking about. But this stock offers AI upside through more profit streams at a lower valuation.\nThere is nothing wrong with Nvidia (NVDA +0.99%) as a business. ...','2026-04-09',0.96794,'Think Nvidia is the Best Artificial Intelligence (AI) Stock to Buy? Think Again. Buy This Growth Stock Instead.','https://www.fool.com/investing/2026/04/08/think-nvidia-is-the-best-artificial-intelligence-a/',4),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-08',0.86154,'Billionaire Ken Fisherâ€™s Latest Portfolio: 5 Best AI Stocks to Buy','https://www.insidermonkey.com/blog/billionaire-ken-fishers-latest-portfolio-5-best-ai-stocks-to-buy-1733880/',4),(7,'keithen drury','Agentic AI is the next big thing in the AI software race.\nAgentic artificial intelligence (AI) is the next major step in the AI revolution. It allows users to develop AI agents that can perform tasks ...','2026-04-08',0.65732,'3 Top Agentic AI Stocks Investors Should Be Loading Up on Now','https://www.fool.com/investing/2026/04/08/3-top-agentic-ai-stocks-investors-should-be-loadin/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -223,4 +224,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-09  3:44:30
+-- Dump completed on 2026-04-10  3:55:01
