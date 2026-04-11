@@ -101,7 +101,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
-74134ee1-348c-11f1-bf5c-46e893d45390:1-226,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
@@ -124,6 +123,7 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
+b05a95a8-3550-11f1-ae77-7ac5b5529090:1-134,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -168,6 +168,7 @@ e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
+ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -201,7 +202,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,7 +211,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1sgu3ua','of7p7no','2026-04-09',11,0.6124,'And the Dear Leader is certainly about to tweet something to keep this from happening.'),(2,'NVDA_Stock','1sgu3ua','of7z3v6','2026-04-09',16,-0.4767,'I predict that every prediction about NVDA will be wrong, as they have been the last 12-18 months consistently. This is a long game, patience grasshopper. '),(3,'NVDA_Stock','1sgu3ua','of8yyaf','2026-04-09',7,0,'![gif](giphy|2lbhL8dSGMh8I)\n\nNvda is a coiled snake'),(4,'NVDA_Stock','1sgu3ua','of7zy21','2026-04-09',12,0,'250 is inevitable this year'),(5,'NVDA_Stock','1sgu3ua','of7qv5j','2026-04-09',3,-0.5859,'Quick, we need another war to prevent this from happening'),(6,'NVDA_Stock','1sgu3ua','of7r31g','2026-04-09',5,0,'167 was bottom; will\nTest 222'),(7,'NVDA_Stock','1sgu3ua','ofapqhr','2026-04-10',2,0.9454,'I like the static price for now. DCF around 250 on intrinsic value and so much growth already ordered and on books for 2027-8. I think 250 is coming but NVDA solidified itself as not a FOMO and getting less volatile unlike say, an AMD.  THIS to ME is GOOD. Sleeping well at night with my NVDA- \n\nEverything you look for in solid investment strategies screams buy NVDA- \n\nWith patience 250 and 750 by 2031. '),(8,'NVDA_Stock','1sgu3ua','ofaq4a2','2026-04-10',2,-0.0263,'Lastly, I see NVDA as top company of decade and will be top list next decade if not top. \n\nLike Microsoft was past few decades.  '),(9,'NVDA_Stock','1sh3yp8','of9wda1','2026-04-09',13,0.5688,'I haven\'t sold a single share of my total 2000 shares. This Stock is massively undervalued '),(10,'NVDA_Stock','1sh3yp8','ofa3xbx','2026-04-09',10,0.8665,'Depends on what kind of investor/trader you are.  I am a Peter Lynch-esque value investor.  I could not be happier.  \n\nThis is where you build generational wealth.  \n\nWhen a great company with a great story and position has lost its favor/luster with the masses.  '),(11,'NVDA_Stock','1sh3yp8','of9vhx9','2026-04-09',9,-0.4588,'Itâ€™s going to break to 300 the minute we sell.'),(12,'NVDA_Stock','1sh3yp8','ofabl4z','2026-04-09',7,-0.128,'PE is insane right now. I do not understand how this doesnâ€™t skyrocket the share price. '),(13,'NVDA_Stock','1sh3yp8','ofauckl','2026-04-10',6,0.7009,'I got in April 2025 so not like the whales. But I work for tech company and the new thesis is about token usage. Jensen is talking about it, big consulting is talking about it. The new electricity and NVDA stands to benefit from all this token consumption. Weâ€™re still in the first quarter of the game.'),(14,'NVDA_Stock','1sh3yp8','of9wzt9','2026-04-09',4,0,'How long? Fabs are fully booked for 2027.\n\n/thread'),(15,'NVDA_Stock','1sh3yp8','ofame6a','2026-04-10',4,0.7121,'Itâ€™s a $4+ trillion dollar company! Of course itâ€™s not just gonna shoot up with 200-300% returns anymore. Itâ€™s still growing just not at the same rate'),(16,'NVDA_Stock','1sh3yp8','of9xnld','2026-04-09',5,-0.34,'They successfully got rid of the weak hands with the â€œAI Bubbleâ€ nonsense. \n\nTides are changing.'),(17,'NVDA_Stock','1sh3yp8','ofa9ga8','2026-04-09',4,-0.8481,'Needless worry.  Take advantage of senseless Trump-induced volatility selling puts at short term lows 30, 60, 90 days out or buying deep ITM 80 long term calls.  Do it in your Roth or IRA.  '),(18,'NVDA_Stock','1sh3yp8','ofa04bl','2026-04-09',2,0.0279,'Things change fast. They can\'t stay on top forever nor can they keep growing infinitely. However, digitizing and automating society is a long process. Think decades ahead.Â '),(19,'NVDA_Stock','1sh3yp8','ofafmen','2026-04-10',2,0.5307,'AI in general is going through some PR challenges.  I think many still think AI is little more than images of Jesus with 7 fingers.\n\nthis party has yet to begin '),(20,'NVDA_Stock','1sh3yp8','ofaos02','2026-04-10',2,-0.5267,'Trapped longs are overhead resistance.  When the last one sells, itâ€™ll be rocket time'),(21,'NVDA_Stock','1sh3yp8','ofb644u','2026-04-10',2,0,'The longer the base, the higher in space. '),(22,'NVDA_Stock','1sh3yp8','ofa32g5','2026-04-09',0,-0.9105,'I was an NVDA investor for a few months until it crashed from 200+ to 180. That got me thinking why an obviously rosy outlook was not rewarded by the market. One theory I found plausible is that with so many people knowing and owning NVDA, without new catalyst attracting new buyers, the stock stagnates. Another fear is a repeat of CSCO 25 years ago, when nothing could go wrong suddenly did. CSCO had orders from lots of startups that went bust and there are fears that NVDAâ€™s circular deals can have similar risk. I sold NVDA at a loss and switched to other stocks that have so far outperformed NVDA by far this year.'),(23,'NVDA_Stock','1sh3yp8','ofa80ui','2026-04-09',0,0.7003,'ðŸ¤¦ up 7X in just 8 years. What people think suppose to keep going up ðŸ›— ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1shz4rv','ofhzg2p','2026-04-11',1,0.1154,'Thank you for the insight.\nIâ€™m actually in the group that wants to keep adding to my position. I ended up buying in batches when the conflict pushed prices lower. I still have cash on the sidelines, so Iâ€™ve been thinking of continuing, but your post made me feel I should reconsider whether I need to adjust my approach.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -224,4 +225,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-10  3:30:53
+-- Dump completed on 2026-04-11  2:48:56
