@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
+4972039c-361f-11f1-a926-be7368432824:1-58,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -123,7 +124,6 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
-b05a95a8-3550-11f1-ae77-7ac5b5529090:1-134,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -211,7 +211,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1shz4rv','ofhzg2p','2026-04-11',1,0.1154,'Thank you for the insight.\nIâ€™m actually in the group that wants to keep adding to my position. I ended up buying in batches when the conflict pushed prices lower. I still have cash on the sidelines, so Iâ€™ve been thinking of continuing, but your post made me feel I should reconsider whether I need to adjust my approach.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1siu4dh','ofnhio6','2026-04-11',5,0.7427,'Love it. Thanks for doing the \"real math\". I can go though this in detail but it would be a tad boring for the reddit gang. My .02? This confirms my thesis but with far more mathematical rigor than most people apply. The key insight that resonates most with my original thesis â€” **NVDA is a platform business, not a chip company** â€” is validated throughout. The CUDA moat, NVLink lock-in, and software attach rate all point to Microsoft-like economics, not Cisco-like cyclicality.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -225,4 +225,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-11  2:48:56
+-- Dump completed on 2026-04-12  3:26:41
