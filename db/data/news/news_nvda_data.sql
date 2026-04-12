@@ -124,6 +124,7 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -201,7 +202,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,7 +211,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'benzinga insights','NVIDIA (NASDAQ:NVDA) has outperformed the market over the past 5 years by 53.07% on an annualized basis producing an average annual return of 63.43%. Currently, NVIDIA has a market capitalization of $...','2026-04-09',0.17868,'If You Invested $1000 In NVIDIA Stock 5 Years Ago, You Would Have This Much Today','https://www.benzinga.com/insights/news/26/04/51735515/if-you-invested-1000-in-nvidia-stock-5-years-ago-you-would-have-this-much-today',80),(2,'rich duprey','...','2026-04-09',0.1024,'Are Intel Investors Tired of Winning Yet? Chipmaker Bags Another Big Score','https://finance.yahoo.com/sectors/technology/articles/intel-investors-tired-winning-yet-154510162.html',20),(3,'sristi suman jayaswal','...','2026-04-09',0.71472,'Wedbush Is Bullish on Magnificent 7 Amid the 2-Week Ceasefire. Nvidia Is the Top-Rated Stock to Buy Now.','https://www.barchart.com/story/news/1224306/wedbush-is-bullish-on-magnificent-7-amid-the-2-week-ceasefire-nvidia-is-the-top-rated-stock-to-buy-now',20),(4,'caleb silver','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-04-09',0.1725,'Investors Cautiously Lean Into a Tenuous Stock Market','https://www.investopedia.com/investors-cautiously-lean-into-a-tenuous-stock-market-11946304',4),(5,'chris neiger','...','2026-04-09',0.72496,'The Great Repricing Is Creating Generational Opportunities in Agentic AI Growth Stocks','https://finance.yahoo.com/markets/stocks/articles/great-repricing-creating-generational-opportunities-143500804.html',20),(6,'david moadel','Investing\nBarclays upgraded Marvell Technology (MRVL) to Overweight on Thursday, citing the companyâ€™s dominant and expanding position in custom silicon and AI data-center infrastructure, bolstered by ...','2026-04-09',-0.08962,'Barclays Just Raised Marvell to Overweight. Hereâ€™s Why the AI Chip Race Is Far From Over','https://247wallst.com/investing/2026/04/09/barclays-just-raised-marvell-to-overweight-heres-why-the-ai-chip-race-is-far-from-over/',4),(7,'ebube jones','...','2026-04-09',0.32152,'Tech Stocks Are Experiencing Historic 50-Year Weakness. Should You Buy the Dip in This 1 ETF?','https://www.barchart.com/story/news/1221208/tech-stocks-are-experiencing-historic-50-year-weakness-should-you-buy-the-dip-in-this-1-etf',2),(8,'faisal humayun khan','...','2026-04-09',0.30544,'Dear Intel Stock Fans, Mark Your Calendars for April 23','https://www.barchart.com/story/news/1221204/dear-intel-stock-fans-mark-your-calendars-for-april-23',2),(9,'wajeeh khan','...','2026-04-09',0.43384,'Why Wedbush Says You Should Buy Nvidia Stock Now Amid the 2-Week Ceasefire','https://www.barchart.com/story/news/1220536/why-wedbush-says-you-should-buy-nvidia-stock-now-amid-the-2-week-ceasefire',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'maham fatima','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-11',0.86126,'9 Best QQQ Stocks to Buy Now','https://www.insidermonkey.com/blog/9-best-qqq-stocks-to-buy-now-1734994/',4),(2,'pathikrit bose','...','2026-04-11',0.43384,'While the Stock Market Was Rallying, Palantir Stock Sold Off. Should You Buy the Dip in PLTR?','https://www.barchart.com/story/news/1258008/while-the-stock-market-was-rallying-palantir-stock-sold-off-should-you-buy-the-dip-in-pltr',2),(3,'michael walen','\n					Posted by Michael Walen on Apr 11th, 2026\n\nNVIDIA Corporation (NASDAQ:NVDA â€“ Get Free Report) shares traded up 1% on Thursday . The stock traded as high as $184.08 and last traded at $183.91. 11...','2026-04-11',0.63366,'NVIDIA (NASDAQ:NVDA) Trading 1% Higher â€“ Time to Buy?','https://www.themarketsdaily.com/2026/04/11/nvidia-nasdaqnvda-trading-1-higher-time-to-buy.html',40),(4,'rich duprey','Investing\nNvidia (NVDA) posted its eighth consecutive session of gains through Friday, rising 14% over the span, its longest winning streak since November 2023, as Taiwan Semiconductor (TSM) reported ...','2026-04-11',0.62114,'Nvidia Just Posted Its Longest Winning Streak Since 2023. Is This Time for Real?','https://247wallst.com/investing/2026/04/11/nvidia-just-posted-its-longest-winning-streak-since-2023-is-this-time-for-real/',40),(5,'donna armstrong','...','2026-04-11',0,'Westmount Partners LLC Has $16.75 Million Stock Position in NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/04/11/westmount-partners-llc-has-16-75-million-stock-position-in-nvidia-corporation-nvda.html',20),(6,'defense world staff','...','2026-04-11',0.2368,'Carnegie Investment Counsel Sells 16,727 Shares of T-Mobile US, Inc. $TMUS','https://www.defenseworld.net/2026/04/11/carnegie-investment-counsel-sells-16727-shares-of-t-mobile-us-inc-tmus.html',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -224,4 +225,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-10  3:55:01
+-- Dump completed on 2026-04-12  3:58:07

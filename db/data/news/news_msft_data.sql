@@ -124,6 +124,7 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -201,7 +202,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,7 +211,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sristi suman jayaswal','...','2026-04-09',0.71472,'Wedbush Is Bullish on Magnificent 7 Amid the 2-Week Ceasefire. Nvidia Is the Top-Rated Stock to Buy Now.','https://www.barchart.com/story/news/1224306/wedbush-is-bullish-on-magnificent-7-amid-the-2-week-ceasefire-nvidia-is-the-top-rated-stock-to-buy-now',2),(2,'tristan rich','\n					Posted by Tristan Rich on Apr 9th, 2026\n\nRepresentative Gilbert Ray Cisneros, Jr. (Democratic-California) recently bought shares of Microsoft Corporation (NASDAQ:MSFT). In a filing disclosed on ...','2026-04-09',0.4366,'Rep. Gilbert Ray Cisneros, Jr. Buys Microsoft Corporation (NASDAQ:MSFT) Shares','https://www.themarketsdaily.com/2026/04/09/rep-gilbert-ray-cisneros-jr-buys-microsoft-corporation-nasdaqmsft-shares.html',40),(3,'caleb silver','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-04-09',0.1725,'Investors Cautiously Lean Into a Tenuous Stock Market','https://www.investopedia.com/investors-cautiously-lean-into-a-tenuous-stock-market-11946304',4),(4,'sushree mohanty','...','2026-04-09',0.46872,'1 Growth Stock Smart Money Is Buying Aggressively','https://www.barchart.com/story/news/1223300/1-growth-stock-smart-money-is-buying-aggressively',2),(5,'null','...','2026-04-09',0.35232,'Microsoft: The Selloff Looks Better Than The Story (NASDAQ:MSFT) - Seeking Alpha','https://news.google.com/rss/articles/CBMilAFBVV95cUxNdEVyMUE2RXBmbW9EQUNZQmtzal9yY0dsbk4weHZGUG12MlJlanJoVWVkMFI3T3U1NGV0T2FsZWJCYW5wQUNSUkY3UzFBYWlXclZ0MHpMTjFJSXZ4SHFyemlCdzhPUmozaHF2cl9EUG00Q0wxNDQwbVBKeWE5Z1QzOHJFcHVrV295eWNOWWE5VzVNaElQ?oc=5',1),(6,'ebube jones','...','2026-04-09',0.32152,'Tech Stocks Are Experiencing Historic 50-Year Weakness. Should You Buy the Dip in This 1 ETF?','https://www.barchart.com/story/news/1221208/tech-stocks-are-experiencing-historic-50-year-weakness-should-you-buy-the-dip-in-this-1-etf',2),(7,'null','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-09',0.36118,'Israel Englander Stock Portfolio: Top 10 Stock Picks','https://www.insidermonkey.com/blog/israel-englander-stock-portfolio-top-10-stock-picks-1734776/',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'bob karr','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-11',0.93082,'5 Best Long Term Growth Stocks to Invest In According to Billionaires','https://www.insidermonkey.com/blog/5-best-long-term-growth-stocks-to-invest-in-according-to-billionaires-1735945/',4),(2,'wall street breakfast','...','2026-04-11',0,'What Moved Markets This Week','https://seekingalpha.com/article/4890005-what-moved-markets-this-week',4),(3,'anthony miller','...','2026-04-11',0.2368,'Foster & Motley Inc. Acquires 5,427 Shares of Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/04/11/foster-motley-inc-acquires-5427-shares-of-microsoft-corporation-msft.html',20),(4,'abmn staff','...','2026-04-11',0.5944,'Microsoft Corporation $MSFT is Dock Street Asset Management Inc.â€™s 7th Largest Position','https://www.americanbankingnews.com/2026/04/11/microsoft-corporation-msft-is-dock-street-asset-management-inc-s-7th-largest-position.html',20),(5,'defense world staff','...','2026-04-11',0.45752,'Dock Street Asset Management Inc. Sells 9,143 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/04/11/dock-street-asset-management-inc-sells-9143-shares-of-microsoft-corporation-msft.html',20),(6,'max byerly','...','2026-04-11',0.43384,'YieldMax MSFT Option Income Strategy ETF (NYSEARCA:MSFO) Stock Price Up 0.3% â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13404042/yieldmax-msft-option-income-strategy-etf-nysearcamsfo-stock-price-up-0-3-heres-what-happened.html',20),(7,'eric trie','Palantir fell as rising competition in AI software weighed on its premium valuation, with recent commentary highlighting pressure on its ability to expand beyond long-cycle government contracts despit...','2026-04-10',-0.08574,'Stock Market Today, April 10: Palantir Falls as AI Competition Pressures Valuation','https://www.fool.com/coverage/stock-market-today/2026/04/10/stock-market-today-april-10-palantir-falls-as-ai-competition-pressures-valuation/',4),(8,'jeff remsburg','\n\n			A hidden signal that can reveal tomorrowâ€™s biggest winners before Wall Street catches onâ€¦		\nSource: Shutterstock\nMost investors focus on earnings, headlines, and price charts.\nBut what if the ear...','2026-04-10',0.6898,'When the Smartest People Start Leaving, This Might Be Why','https://investorplace.com/2026/04/when-smartest-people-leave-why/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -224,4 +225,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-10  3:55:01
+-- Dump completed on 2026-04-12  3:58:06
