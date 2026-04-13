@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
+459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
@@ -202,7 +203,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -211,7 +212,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'bob karr','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-11',0.93082,'5 Best Long Term Growth Stocks to Invest In According to Billionaires','https://www.insidermonkey.com/blog/5-best-long-term-growth-stocks-to-invest-in-according-to-billionaires-1735945/',4),(2,'wall street breakfast','...','2026-04-11',0,'What Moved Markets This Week','https://seekingalpha.com/article/4890005-what-moved-markets-this-week',4),(3,'anthony miller','...','2026-04-11',0.2368,'Foster & Motley Inc. Acquires 5,427 Shares of Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/04/11/foster-motley-inc-acquires-5427-shares-of-microsoft-corporation-msft.html',20),(4,'abmn staff','...','2026-04-11',0.5944,'Microsoft Corporation $MSFT is Dock Street Asset Management Inc.â€™s 7th Largest Position','https://www.americanbankingnews.com/2026/04/11/microsoft-corporation-msft-is-dock-street-asset-management-inc-s-7th-largest-position.html',20),(5,'defense world staff','...','2026-04-11',0.45752,'Dock Street Asset Management Inc. Sells 9,143 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/04/11/dock-street-asset-management-inc-sells-9143-shares-of-microsoft-corporation-msft.html',20),(6,'max byerly','...','2026-04-11',0.43384,'YieldMax MSFT Option Income Strategy ETF (NYSEARCA:MSFO) Stock Price Up 0.3% â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13404042/yieldmax-msft-option-income-strategy-etf-nysearcamsfo-stock-price-up-0-3-heres-what-happened.html',20),(7,'eric trie','Palantir fell as rising competition in AI software weighed on its premium valuation, with recent commentary highlighting pressure on its ability to expand beyond long-cycle government contracts despit...','2026-04-10',-0.08574,'Stock Market Today, April 10: Palantir Falls as AI Competition Pressures Valuation','https://www.fool.com/coverage/stock-market-today/2026/04/10/stock-market-today-april-10-palantir-falls-as-ai-competition-pressures-valuation/',4),(8,'jeff remsburg','\n\n			A hidden signal that can reveal tomorrowâ€™s biggest winners before Wall Street catches onâ€¦		\nSource: Shutterstock\nMost investors focus on earnings, headlines, and price charts.\nBut what if the ear...','2026-04-10',0.6898,'When the Smartest People Start Leaving, This Might Be Why','https://investorplace.com/2026/04/when-smartest-people-leave-why/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'subhasree kar','...','2026-04-12',0.43384,'As the Cybersecurity Selloff Continues, Palo Alto Just Scored a New Deal with Anthropic. Should You Buy the Dip in PANW Stock?','https://www.barchart.com/story/news/1263799/as-the-cybersecurity-selloff-continues-palo-alto-just-scored-a-new-deal-with-anthropic-should-you-buy-the-dip-in-panw-stock',2),(2,'sristi suman jayaswal','...','2026-04-12',0.6844,'3 Top Stocks to Buy to Invest in Anthropicâ€™s Project Glasswing','https://www.barchart.com/story/news/1263192/3-top-stocks-to-buy-to-invest-in-anthropics-project-glasswing',2),(3,'bram berkowitz','Robinhood is a popular online brokerage for retail investors.\nWith tens of millions of funded accounts, Robinhood is one of the most popular online brokerages for retail investors. Each month, the com...','2026-04-12',0.19954,'2 of the Most Owned Stocks on Robinhood Also Have at Least 50% Upside, According to Wall Street','https://www.fool.com/investing/2026/04/12/2-most-owned-stocks-on-robinhood-have-upside/',4),(4,'abmn staff','...','2026-04-12',0.5944,'Microsoft Corporation $MSFT is PineStone Asset Management Inc.â€™s 3rd Largest Position','https://www.americanbankingnews.com/2026/04/12/microsoft-corporation-msft-is-pinestone-asset-management-inc-s-3rd-largest-position.html',20),(5,'abmn staff','...','2026-04-12',-0.21856,'Microsoft Corporation $MSFT Stock Position Cut by Nisa Investment Advisors LLC','https://www.americanbankingnews.com/2026/04/12/microsoft-corporation-msft-stock-position-cut-by-nisa-investment-advisors-llc.html',20),(6,'abmn staff','...','2026-04-12',0.2368,'My Personal CFO LLC Acquires 45,044 Shares of Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/04/12/my-personal-cfo-llc-acquires-45044-shares-of-microsoft-corporation-msft.html',20),(7,'mitch edgeman','\n					Posted by Mitch Edgeman on Apr 12th, 2026\n\nPineStone Asset Management Inc. raised its holdings in shares of  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 0.8% in the 4th quarter, accordi...','2026-04-12',0.48886,'PineStone Asset Management Inc. Has $1.42 Billion Position in Microsoft Corporation $MSFT','https://www.themarketsdaily.com/2026/04/12/pinestone-asset-management-inc-has-1-42-billion-position-in-microsoft-corporation-msft.html',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -225,4 +226,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-12  3:58:06
+-- Dump completed on 2026-04-13  4:15:22
