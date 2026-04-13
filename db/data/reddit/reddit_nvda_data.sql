@@ -64,12 +64,12 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
-4972039c-361f-11f1-a926-be7368432824:1-58,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+55cdbfcc-36e9-11f1-8345-0abf456824e2:1-22,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -125,6 +125,7 @@ ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -202,7 +203,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -211,7 +212,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1siu4dh','ofnhio6','2026-04-11',5,0.7427,'Love it. Thanks for doing the \"real math\". I can go though this in detail but it would be a tad boring for the reddit gang. My .02? This confirms my thesis but with far more mathematical rigor than most people apply. The key insight that resonates most with my original thesis â€” **NVDA is a platform business, not a chip company** â€” is validated throughout. The CUDA moat, NVLink lock-in, and software attach rate all point to Microsoft-like economics, not Cisco-like cyclicality.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -225,4 +225,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-12  3:26:41
+-- Dump completed on 2026-04-13  3:32:36
