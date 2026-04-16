@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
+459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
@@ -68,8 +69,8 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+5112f432-3944-11f1-aba1-f294e4bbb7fe:1-50,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
-55cdbfcc-36e9-11f1-8345-0abf456824e2:1-22,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -143,6 +144,7 @@ c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
+cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
@@ -151,6 +153,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -203,7 +206,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -212,6 +215,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1smib3i','ogekqlw','2026-04-15',11,0.6249,'if we end the year at 250, it\'d be great and reasonable'),(2,'NVDA_Stock','1smib3i','ogetuxe','2026-04-15',8,0.3875,'Shh don\'t scare it away'),(3,'NVDA_Stock','1smib3i','ogf0h27','2026-04-15',7,0,'OP came over from the AMC sub'),(4,'NVDA_Stock','1smib3i','ogekxf2','2026-04-15',13,-0.8126,'Wtf is this shit post '),(5,'NVDA_Stock','1smib3i','ogepfhb','2026-04-15',6,-0.296,'No question. '),(6,'NVDA_Stock','1smib3i','ogf6m9x','2026-04-15',6,0.296,'Yeah probably by eod'),(7,'NVDA_Stock','1smib3i','ogemmuu','2026-04-15',5,0,'Equivalent to â€œNvidia stock to grow over time?â€'),(8,'NVDA_Stock','1smib3i','ogf27cp','2026-04-15',4,0.2023,'And that\'s our top signal.'),(9,'NVDA_Stock','1smib3i','ogfmz5d','2026-04-16',7,-0.0772,'After it goes back to 180 a few more times.'),(10,'NVDA_Stock','1smib3i','ogeyvou','2026-04-15',3,0.6948,'tis would make me so happy\n\n'),(11,'NVDA_Stock','1smib3i','ogf8qur','2026-04-15',3,0.3182,'Sure why not '),(12,'NVDA_Stock','1smib3i','ogfoxyf','2026-04-16',3,0,'If it stabilizes at 200 soon it will rip. If it drops another 6 months of zero'),(13,'NVDA_Stock','1smib3i','ogg05pr','2026-04-16',3,0.4019,'Yes. '),(14,'NVDA_Stock','1smib3i','ogf8vf6','2026-04-15',5,0.8802,'Nvidia is very diversified at this point , and AI boom is at\nThe beginning so yes 300 very easy , Now is the time to buy '),(15,'NVDA_Stock','1smib3i','ogg6jyf','2026-04-16',2,-0.5423,'In short order '),(16,'NVDA_Stock','1smib3i','ogf28k4','2026-04-15',3,-0.0772,'NVIDIA Stock back to $182.73?'),(17,'NVDA_Stock','1smib3i','ogefa3w','2026-04-15',-13,-0.4939,'I mean, seeing as the USD could collapse during the coming three years anything is possible.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -225,4 +229,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-13  3:32:36
+-- Dump completed on 2026-04-16  3:29:25

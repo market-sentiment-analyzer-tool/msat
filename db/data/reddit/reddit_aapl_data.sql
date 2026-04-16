@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
+459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
@@ -68,8 +69,8 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+5112f432-3944-11f1-aba1-f294e4bbb7fe:1-50,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
-55cdbfcc-36e9-11f1-8345-0abf456824e2:1-22,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -143,6 +144,7 @@ c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
+cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
@@ -151,6 +153,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -203,7 +206,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -212,6 +215,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1sm8y2r','ogcrtd9','2026-04-15',15,0.4404,'Foldable phone will be a huge hit, people been craving a new design for ages. Plus Google Gemini + Siri enhancement. Easy.'),(2,'AAPL','1sm8y2r','ogcluqy','2026-04-15',12,0,'Absolutely. '),(3,'AAPL','1sm8y2r','ogdbge6','2026-04-15',5,-0.3818,'I think it would be there already if it wasn\'t for all of the political and economic uncertainty we have right now. Problem is that I don\'t expect that to ease anytime soon. '),(4,'AAPL','1sm8y2r','ogfb3rg','2026-04-15',5,0.4404,'350 easy'),(5,'AAPL','1sm8y2r','ogfqna2','2026-04-16',3,0,'When the MacBook neos sales figures come out '),(6,'AAPL','1sm8y2r','ogdity7','2026-04-15',2,0,'It should be since mac mini/studio is sold out!'),(7,'AAPL','1sm8y2r','ogddwa2','2026-04-15',3,0.6369,'apple stock been stable af lol $200-$250 all fking years, while other faang company went up like crazy.'),(8,'AAPL','1sm8y2r','ogcsjhx','2026-04-15',1,0,'dont jinx it'),(9,'AAPL','1sm8y2r','ogdbtno','2026-04-15',1,-0.34,'Unfortunately, not in this current political/economic era. The Neo was a hit and didnâ€™t move the needle. '),(10,'AAPL','1sm8y2r','ogg33cc','2026-04-16',1,0.7424,'Yes! Neo sales will be extraordinarily strong.'),(11,'AAPL','1sm8y2r','ogck8zg','2026-04-15',-5,-0.3612,'Looks difficult as its hasnâ€™t done much movement in last 6 months and with the change of CEO almost impossible ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -225,4 +229,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-13  3:32:36
+-- Dump completed on 2026-04-16  3:29:24
