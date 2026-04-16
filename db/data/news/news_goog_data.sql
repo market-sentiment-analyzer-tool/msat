@@ -165,6 +165,7 @@ e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
@@ -205,7 +206,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -214,7 +215,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia',' ...','2026-04-14',0.43384,'Google expands Personal Intelligence to India','https://seekingalpha.com/news/4574850-google-expands-personal-intelligence-to-india?feed_item_type=news',40),(2,'wall street breakfast','...','2026-04-14',0,'Wall Street Lunch: Big Banks Open Earnigs Season With Mixed Results','https://seekingalpha.com/article/4890576-wall-street-lunch-big-banks-open-earnigs-season-with-mixed-results',4),(3,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-14',0.86144,'10 Best Stocks to Buy According to AI Bull Brad Gerstner','https://www.insidermonkey.com/blog/10-best-stocks-to-buy-according-to-ai-bull-brad-gerstner-1737384/',4),(4,'kyle jackson','...','2026-04-14',0.2368,'V2 Financial group LLC Purchases 8,295 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/v2-financial-group-llc-purchases-8295-shares-of-alphabet-inc-goog/11048373.html',2),(5,'mitch edgeman','\n					Posted by Mitch Edgeman on Apr 14th, 2026\n\nSouth Shore Capital Advisors bought a new stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the fourth quarter, according to the company...','2026-04-14',0.4367,'South Shore Capital Advisors Buys Shares of 8,020 Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/04/14/south-shore-capital-advisors-buys-shares-of-8020-alphabet-inc-goog.html',4),(6,'dante gardener','...','2026-04-14',0.28896,'Robinhood Asset Management LLC Makes New $20.34 Million Investment in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/14/robinhood-asset-management-llc-makes-new-20-34-million-investment-in-alphabet-inc-goog.html',2),(7,'defense world staff','...','2026-04-14',0,'Brooklyn FI LLC Increases Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/14/brooklyn-fi-llc-increases-stock-position-in-alphabet-inc-goog.html',2),(8,'jessica kuruthukulangara','Benjamas Deekam\nMeta (META) is on track to overtake Google (GOOG) (GOOGL) in terms of total digital advertising revenues by the end of the year, according to the latest forecast by market research fir...','2026-04-14',0.00516,'Meta set to overtake Google in digital ad revenues for the first time','https://seekingalpha.com/news/4574612-meta-set-to-overtake-google-in-digital-ad-revenues-for-the-first-time?feed_item_type=news',80);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'lindsey winhoffer','...','2026-04-15',0.2368,'Alphabet Inc. $GOOG Shares Sold by Yousif Capital Management LLC','https://www.watchlistnews.com/alphabet-inc-goog-shares-sold-by-yousif-capital-management-llc/11049445.html',2),(2,'wall street breakfast','...','2026-04-15',0.35232,'Wall Street Breakfast Podcast: CAT Powers Up Ag Automation','https://seekingalpha.com/article/4890826-wall-street-breakfast-podcast-cat-powers-up-ag-automation',4),(3,'michael walen','\n					Posted by Michael Walen on Apr 15th, 2026\n\nPerfromance Wealth Partners LLC cut its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.3% during the fourth quarter, Holdings Ch...','2026-04-15',0.72764,'Perfromance Wealth Partners LLC Sells 10,710 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/04/15/perfromance-wealth-partners-llc-sells-10710-shares-of-alphabet-inc-goog.html',4),(4,'paula ricardo','...','2026-04-15',0,'Jefferson Bridge Capital LLC Invests $3.11 Million in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/15/jefferson-bridge-capital-llc-invests-3-11-million-in-alphabet-inc-goog.html',2),(5,'paula ricardo','...','2026-04-15',0.46872,'Alphabet Inc. $GOOG is Snider Financial Groupâ€™s 9th Largest Position','https://www.thelincolnianonline.com/2026/04/15/alphabet-inc-goog-is-snider-financial-groups-9th-largest-position.html',2),(6,'wajeeh khan','...','2026-04-15',0,'Should You Chase the Rally in Oracle Stock?','https://www.barchart.com/story/news/1313716/should-you-chase-the-rally-in-oracle-stock',2),(7,'abmn staff','...','2026-04-15',0.52776,'BIP Wealth LLC Acquires 5,500 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/15/bip-wealth-llc-acquires-5500-shares-of-alphabet-inc-goog.html',2),(8,'defense world staff','...','2026-04-15',0.39512,'BIP Wealth LLC Has $4.69 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/15/bip-wealth-llc-has-4-69-million-position-in-alphabet-inc-goog.html',2),(9,'defense world staff','...','2026-04-15',0.21856,'Alphabet Inc. $GOOG Holdings Increased by Ervin Investment Management LLC','https://www.defenseworld.net/2026/04/15/alphabet-inc-goog-holdings-increased-by-ervin-investment-management-llc.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -228,4 +229,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-15  3:55:14
+-- Dump completed on 2026-04-16  4:02:06
