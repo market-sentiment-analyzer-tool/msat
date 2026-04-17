@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -206,7 +207,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -215,7 +216,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'lindsey winhoffer','...','2026-04-15',0.2368,'Alphabet Inc. $GOOG Shares Sold by Yousif Capital Management LLC','https://www.watchlistnews.com/alphabet-inc-goog-shares-sold-by-yousif-capital-management-llc/11049445.html',2),(2,'wall street breakfast','...','2026-04-15',0.35232,'Wall Street Breakfast Podcast: CAT Powers Up Ag Automation','https://seekingalpha.com/article/4890826-wall-street-breakfast-podcast-cat-powers-up-ag-automation',4),(3,'michael walen','\n					Posted by Michael Walen on Apr 15th, 2026\n\nPerfromance Wealth Partners LLC cut its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.3% during the fourth quarter, Holdings Ch...','2026-04-15',0.72764,'Perfromance Wealth Partners LLC Sells 10,710 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/04/15/perfromance-wealth-partners-llc-sells-10710-shares-of-alphabet-inc-goog.html',4),(4,'paula ricardo','...','2026-04-15',0,'Jefferson Bridge Capital LLC Invests $3.11 Million in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/15/jefferson-bridge-capital-llc-invests-3-11-million-in-alphabet-inc-goog.html',2),(5,'paula ricardo','...','2026-04-15',0.46872,'Alphabet Inc. $GOOG is Snider Financial Groupâ€™s 9th Largest Position','https://www.thelincolnianonline.com/2026/04/15/alphabet-inc-goog-is-snider-financial-groups-9th-largest-position.html',2),(6,'wajeeh khan','...','2026-04-15',0,'Should You Chase the Rally in Oracle Stock?','https://www.barchart.com/story/news/1313716/should-you-chase-the-rally-in-oracle-stock',2),(7,'abmn staff','...','2026-04-15',0.52776,'BIP Wealth LLC Acquires 5,500 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/15/bip-wealth-llc-acquires-5500-shares-of-alphabet-inc-goog.html',2),(8,'defense world staff','...','2026-04-15',0.39512,'BIP Wealth LLC Has $4.69 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/15/bip-wealth-llc-has-4-69-million-position-in-alphabet-inc-goog.html',2),(9,'defense world staff','...','2026-04-15',0.21856,'Alphabet Inc. $GOOG Holdings Increased by Ervin Investment Management LLC','https://www.defenseworld.net/2026/04/15/alphabet-inc-goog-holdings-increased-by-ervin-investment-management-llc.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-16',0.63254,'Is Alphabet (GOOGL) Still an Undervalued AI Stock to Buy Now?','https://www.insidermonkey.com/blog/is-alphabet-googl-still-an-undervalued-ai-stock-to-buy-now-1738228/',4),(2,'sarita garza','\n					Posted by Sarita Garza on Apr 16th, 2026\n\nOFI Invest Asset Management lifted its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 667.8% during the fourth quarter, according to i...','2026-04-16',0.86518,'OFI Invest Asset Management Buys 459,118 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/04/16/ofi-invest-asset-management-buys-459118-shares-of-alphabet-inc-goog.html',4),(3,'lee samaha','Equity analysts and bond analysts alike highly favor Alphabet.\nWall Street is almost unanimous: Of the 67 analysts covering Alphabet (GOOG 0.51%) (GOOGL 0.31%), 60 have buy or outperform ratings on th...','2026-04-16',0.63344,'If You Only Buy 1 AI Stock This Year, Wall Street Says Make It This One','https://www.fool.com/investing/2026/04/16/if-you-only-buy-1-ai-stock-this-year-wall-street-s/',4),(4,'alanna baker','...','2026-04-16',0.2368,'Alphabet Inc. $GOOG Shares Sold by Ledyard National Bank','https://www.thelincolnianonline.com/2026/04/16/alphabet-inc-goog-shares-sold-by-ledyard-national-bank.html',2),(5,'abmn staff','...','2026-04-16',0.39512,'Comprehensive Money Management Services LLC Purchases 4,110 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/comprehensive-money-management-services-llc-purchases-4110-shares-of-alphabet-inc-goog.html',2),(6,'abmn staff','...','2026-04-16',0.2368,'Alphabet Inc. $GOOG Shares Sold by Cache Advisors LLC','https://www.americanbankingnews.com/2026/04/16/alphabet-inc-goog-shares-sold-by-cache-advisors-llc.html',2),(7,'abmn staff','...','2026-04-16',0,'Greenberg Financial Group Invests $1.75 Million in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/greenberg-financial-group-invests-1-75-million-in-alphabet-inc-goog.html',2),(8,'abmn staff','...','2026-04-16',0.2368,'CCLA Investment Management Sells 43,976 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/ccla-investment-management-sells-43976-shares-of-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -229,4 +230,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-16  4:02:06
+-- Dump completed on 2026-04-17  3:58:49
