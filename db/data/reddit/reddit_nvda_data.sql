@@ -69,7 +69,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
-5112f432-3944-11f1-aba1-f294e4bbb7fe:1-50,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -139,6 +138,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
+c5314748-3a0c-11f1-af03-526c1a5c0fc2:1-32,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -166,6 +166,7 @@ e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
+e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
@@ -206,7 +207,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -215,7 +216,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1smib3i','ogekqlw','2026-04-15',11,0.6249,'if we end the year at 250, it\'d be great and reasonable'),(2,'NVDA_Stock','1smib3i','ogetuxe','2026-04-15',8,0.3875,'Shh don\'t scare it away'),(3,'NVDA_Stock','1smib3i','ogf0h27','2026-04-15',7,0,'OP came over from the AMC sub'),(4,'NVDA_Stock','1smib3i','ogekxf2','2026-04-15',13,-0.8126,'Wtf is this shit post '),(5,'NVDA_Stock','1smib3i','ogepfhb','2026-04-15',6,-0.296,'No question. '),(6,'NVDA_Stock','1smib3i','ogf6m9x','2026-04-15',6,0.296,'Yeah probably by eod'),(7,'NVDA_Stock','1smib3i','ogemmuu','2026-04-15',5,0,'Equivalent to â€œNvidia stock to grow over time?â€'),(8,'NVDA_Stock','1smib3i','ogf27cp','2026-04-15',4,0.2023,'And that\'s our top signal.'),(9,'NVDA_Stock','1smib3i','ogfmz5d','2026-04-16',7,-0.0772,'After it goes back to 180 a few more times.'),(10,'NVDA_Stock','1smib3i','ogeyvou','2026-04-15',3,0.6948,'tis would make me so happy\n\n'),(11,'NVDA_Stock','1smib3i','ogf8qur','2026-04-15',3,0.3182,'Sure why not '),(12,'NVDA_Stock','1smib3i','ogfoxyf','2026-04-16',3,0,'If it stabilizes at 200 soon it will rip. If it drops another 6 months of zero'),(13,'NVDA_Stock','1smib3i','ogg05pr','2026-04-16',3,0.4019,'Yes. '),(14,'NVDA_Stock','1smib3i','ogf8vf6','2026-04-15',5,0.8802,'Nvidia is very diversified at this point , and AI boom is at\nThe beginning so yes 300 very easy , Now is the time to buy '),(15,'NVDA_Stock','1smib3i','ogg6jyf','2026-04-16',2,-0.5423,'In short order '),(16,'NVDA_Stock','1smib3i','ogf28k4','2026-04-15',3,-0.0772,'NVIDIA Stock back to $182.73?'),(17,'NVDA_Stock','1smib3i','ogefa3w','2026-04-15',-13,-0.4939,'I mean, seeing as the USD could collapse during the coming three years anything is possible.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1smvj7i','oghk8kf','2026-04-16',7,-0.0516,'Damn, the CEO of a direct competitor with wildly unproven technology and barely any sales says they should be worried. I think we better listen, guys. This is like Elon Musk saying Apple or Samsung should be shaking in their boots because of brain-computer interface technology.'),(2,'NVDA_Stock','1smvj7i','oghayco','2026-04-16',7,0.7184,'He says, with a revenue of less than $5million and projected revenue of $13million while Nvidia did $212**billion** last year.'),(3,'NVDA_Stock','1smvj7i','oghchqi','2026-04-16',4,0.7506,'Jensen can simply buy D-Wave 3 times to shut him up lol'),(4,'NVDA_Stock','1smvj7i','oghec2s','2026-04-16',4,0,'Whatâ€™s d-wave?'),(5,'NVDA_Stock','1smvj7i','ogibdfw','2026-04-16',3,0.296,'yeah because Nvidia is sleeping on quantum ðŸ™„'),(6,'NVDA_Stock','1smvj7i','oghh954','2026-04-16',2,0.416,'I don\'t care, I have shares from them both ðŸ¤£'),(7,'NVDA_Stock','1smvj7i','ogjkkgw','2026-04-16',2,0.5106,'Jensen made about a two-hour video addressing this.  He stated that Nvidia\'s architecture and eco system involving CUDA is unbeatable because if you look at what you\'re getting Nvidia performs better.  He has even challenged those companies to come forward and compare.  As he put it they are a no show.  I\'ll go back and fine the video and post it so everyone can see for themselves.  I think it was like an hour and forty-three minutes.'),(8,'NVDA_Stock','1smvj7i','ogjo9o5','2026-04-16',2,0.8221,'Taiwan Semiconductor just raised 2026 revenue and earnings outlook according to SA.  Just more good news for Nvidia.  '),(9,'NVDA_Stock','1smvj7i','ogkfw2o','2026-04-16',1,-0.4767,'goog and tsm the future proof stocks right now. if quantum emerged then NVDA and AMD will die. goog and tsm will still be at top because they heavily rely on each other.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -229,4 +230,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-16  3:29:25
+-- Dump completed on 2026-04-17  3:23:58
