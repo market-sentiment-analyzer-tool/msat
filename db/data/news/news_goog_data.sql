@@ -124,6 +124,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -207,7 +208,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -216,7 +217,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-16',0.63254,'Is Alphabet (GOOGL) Still an Undervalued AI Stock to Buy Now?','https://www.insidermonkey.com/blog/is-alphabet-googl-still-an-undervalued-ai-stock-to-buy-now-1738228/',4),(2,'sarita garza','\n					Posted by Sarita Garza on Apr 16th, 2026\n\nOFI Invest Asset Management lifted its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 667.8% during the fourth quarter, according to i...','2026-04-16',0.86518,'OFI Invest Asset Management Buys 459,118 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/04/16/ofi-invest-asset-management-buys-459118-shares-of-alphabet-inc-goog.html',4),(3,'lee samaha','Equity analysts and bond analysts alike highly favor Alphabet.\nWall Street is almost unanimous: Of the 67 analysts covering Alphabet (GOOG 0.51%) (GOOGL 0.31%), 60 have buy or outperform ratings on th...','2026-04-16',0.63344,'If You Only Buy 1 AI Stock This Year, Wall Street Says Make It This One','https://www.fool.com/investing/2026/04/16/if-you-only-buy-1-ai-stock-this-year-wall-street-s/',4),(4,'alanna baker','...','2026-04-16',0.2368,'Alphabet Inc. $GOOG Shares Sold by Ledyard National Bank','https://www.thelincolnianonline.com/2026/04/16/alphabet-inc-goog-shares-sold-by-ledyard-national-bank.html',2),(5,'abmn staff','...','2026-04-16',0.39512,'Comprehensive Money Management Services LLC Purchases 4,110 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/comprehensive-money-management-services-llc-purchases-4110-shares-of-alphabet-inc-goog.html',2),(6,'abmn staff','...','2026-04-16',0.2368,'Alphabet Inc. $GOOG Shares Sold by Cache Advisors LLC','https://www.americanbankingnews.com/2026/04/16/alphabet-inc-goog-shares-sold-by-cache-advisors-llc.html',2),(7,'abmn staff','...','2026-04-16',0,'Greenberg Financial Group Invests $1.75 Million in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/greenberg-financial-group-invests-1-75-million-in-alphabet-inc-goog.html',2),(8,'abmn staff','...','2026-04-16',0.2368,'CCLA Investment Management Sells 43,976 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/04/16/ccla-investment-management-sells-43976-shares-of-alphabet-inc-goog.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dante gardener','...','2026-04-17',0.52776,'Portside Wealth Group LLC Buys 2,208 Shares of Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/04/17/portside-wealth-group-llc-buys-2208-shares-of-alphabet-inc-googl.html',2),(2,'ethan ryder','...','2026-04-17',0.2368,'Quilter Plc Buys 79,917 Shares of Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13409973/quilter-plc-buys-79917-shares-of-alphabet-inc-googl.html',2),(3,'keithen drury','More than half of the Magnificent Seven are excellent stock picks.\nThe \"Magnificent Seven\" group of stocks have been stock market leaders over the past five or so years. In no particular order, they a...','2026-04-17',0.68976,'I Ranked the \"Magnificent Seven\" Stocks From Best to Worst Buys Right Now','https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/',4),(4,'dante gardener','...','2026-04-17',0.2368,'Alphabet Inc. $GOOG Shares Bought by V Square Quantitative Management LLC','https://www.thelincolnianonline.com/2026/04/17/alphabet-inc-goog-shares-bought-by-v-square-quantitative-management-llc.html',2),(5,'tristan rich','\n					Posted by Tristan Rich on Apr 17th, 2026\n\nLockerman Financial Group Inc. cut its stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 67.8% in the fourth quarter, according to the company in ...','2026-04-17',0.19988,'Lockerman Financial Group Inc. Has $385,000 Holdings in Alphabet Inc. $GOOGL','https://www.themarketsdaily.com/2026/04/17/lockerman-financial-group-inc-has-385000-holdings-in-alphabet-inc-googl.html',4),(6,'abmn staff','...','2026-04-17',0.40848,'Country Trust Bank Has $68.67 Million Stock Position in Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/04/17/country-trust-bank-has-68-67-million-stock-position-in-alphabet-inc-googl.html',2),(7,'defense world staff','...','2026-04-17',0.40848,'Country Trust Bank Has $68.67 Million Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/04/17/country-trust-bank-has-68-67-million-holdings-in-alphabet-inc-googl.html',2),(8,'defense world staff','...','2026-04-17',0.45752,'Alphabet Inc. $GOOG Shares Sold by JCIC Asset Management Inc.','https://www.defenseworld.net/2026/04/17/alphabet-inc-goog-shares-sold-by-jcic-asset-management-inc.html',2),(9,'defense world staff','...','2026-04-17',0.08216,'Flagship Capital Management Inc. Makes New Investment in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/17/flagship-capital-management-inc-makes-new-investment-in-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -230,4 +231,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-17  3:58:49
+-- Dump completed on 2026-04-18  3:43:47
