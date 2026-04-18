@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
@@ -138,7 +139,6 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
-c5314748-3a0c-11f1-af03-526c1a5c0fc2:1-32,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -180,6 +180,7 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f5d7bf9c-3ad1-11f1-909d-022645454de1:1-54,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -207,7 +208,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -216,7 +217,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1snonka','ogn8a4x','2026-04-17',1,0.5267,'Thank you. People freaking out every other week, asking if itâ€™ll hit a certain number by the end of the year. Just buy and stop looking for a year or two. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -230,4 +230,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-17  3:23:57
+-- Dump completed on 2026-04-18  2:55:54
