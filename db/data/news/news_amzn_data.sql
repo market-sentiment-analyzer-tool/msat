@@ -93,6 +93,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
@@ -209,7 +210,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,7 +219,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-18',0.6686,'5 Best AI Stock Picks of Motley Fool Asset Management','https://www.insidermonkey.com/blog/5-best-ai-stock-picks-of-motley-fool-asset-management-1738954/',4),(2,'ali ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-18',0.19696,'5 Unrivaled Stocks of the Next 5 Years','https://www.insidermonkey.com/blog/5-unrivaled-stocks-of-the-next-5-years-1740263/',4),(3,'keith speights','These stocks are keepers.\nWarren Buffett once said that his \"favorite holding period is forever.\" I agree with his general sentiment -- especially given that his favorite holding period applied only t...','2026-04-18',0.34192,'3 Stocks I Plan to Hold for the Next 20 Years','https://www.fool.com/investing/2026/04/18/3-stocks-i-plan-to-hold-for-the-next-20-years/',4),(4,'abmn staff','...','2026-04-18',0.2368,'Amazon.comâ€™s (AMZN) â€œBuyâ€ Rating Reiterated at Rosenblatt Securities','https://www.americanbankingnews.com/2026/04/18/amazon-coms-amzn-buy-rating-reiterated-at-rosenblatt-securities.html',2),(5,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-18',0.86134,'5 Best Data Center Stocks to Buy for the Long Term','https://www.insidermonkey.com/blog/5-best-data-center-stocks-to-buy-for-the-long-term-1739959/',4),(6,'daniel sparks','A massive AI buildout and increasing competition highlight a changing landscape for the dominant software giant.\nShares of tech giant Microsoft (MSFT +0.60%) climbed about 14% this week, recovering so...','2026-04-18',0.58744,'Despite Rising 14% This Week, This \"Magnificent Seven\" Stock Remains My Least Favorite','https://www.fool.com/investing/2026/04/17/despite-rising-14-this-week-this-magnificent-seven/',4),(7,'brandon evans','...','2026-04-17',0,'AI chipmaker Cerebras files for IPO following mega deal with OpenAI','https://seekingalpha.com/news/4576308-ai-chipmaker-cerebras-files-for-ipo-following-mega-deal-with-openai?feed_item_type=news',4),(8,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-17',0.1945,'Jim Cramer Discussed AI â€œMojoâ€ & Commented On These 13 Stocks','https://www.insidermonkey.com/blog/jim-cramer-discussed-ai-mojo-commented-on-these-13-stocks-1738894/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-04-19',0.20596,'Goldman Sachsâ€™ blunt words for Amazon stock investors after big deal','https://www.thestreet.com/investing/stocks/goldman-sachs-blunt-words-for-amazon-stock-investors-after-big-deal',20),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.87034,'10 Best Major Stocks to Buy According to Wall Street Analysts','https://www.insidermonkey.com/blog/10-best-major-stocks-to-buy-according-to-wall-street-analysts-1739209/',4),(3,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.6963,'Jim Cramer Shares Why Amazon.com (AMZN) is Better Than Microsoft','https://www.insidermonkey.com/blog/jim-cramer-shares-why-amazon-com-amzn-is-better-than-microsoft-1740640/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -232,4 +233,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-19  4:02:19
+-- Dump completed on 2026-04-20  4:15:24

@@ -93,6 +93,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
@@ -209,7 +210,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,7 +219,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'paula ricardo','...','2026-04-18',0,'Massachusetts Financial Services Co. MA Has $142.22 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/18/massachusetts-financial-services-co-ma-has-142-22-million-stock-holdings-in-alphabet-inc-goog.html',2),(2,'nicole kennedy','...','2026-04-18',0.39512,'Triad Wealth Partners LLC Has $4.91 Million Stake in Alphabet Inc. $GOOG','https://www.watchlistnews.com/triad-wealth-partners-llc-has-4-91-million-stake-in-alphabet-inc-goog/11052820.html',2),(3,'stephan jacobs','...','2026-04-18',0.2368,'Sterneck Capital Management LLC Sells 1,710 Shares of Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/18/sterneck-capital-management-llc-sells-1710-shares-of-alphabet-inc-goog.html',2),(4,'trevor jennewine','Alphabet and Robinhood are poised for long-term growth.\nThe Nasdaq Composite (^IXIC +1.52%) closed in correction territory on March 26, but the index has historically bounced back quickly. Since 2010,...','2026-04-18',0.89502,'Nasdaq Rebound: Buy 2 Monster Growth Stocks Up 20% Since Late March','https://www.fool.com/investing/2026/04/18/nasdaq-rebound-buy-2-growth-stocks-up-20-since-mar/',4),(5,'abmn staff','...','2026-04-18',0,'Alphabet Inc. $GOOG Stock Holdings Lifted by Apollon Financial LLC','https://www.americanbankingnews.com/2026/04/18/alphabet-inc-goog-stock-holdings-lifted-by-apollon-financial-llc.html',2),(6,'abmn staff','...','2026-04-18',0.52776,'Alphabet Inc. $GOOG Shares Purchased by Apollon Wealth Management LLC','https://www.americanbankingnews.com/2026/04/18/alphabet-inc-goog-shares-purchased-by-apollon-wealth-management-llc.html',2),(7,'daniel sparks','A massive AI buildout and increasing competition highlight a changing landscape for the dominant software giant.\nShares of tech giant Microsoft (MSFT +0.60%) climbed about 14% this week, recovering so...','2026-04-18',0.58744,'Despite Rising 14% This Week, This \"Magnificent Seven\" Stock Remains My Least Favorite','https://www.fool.com/investing/2026/04/17/despite-rising-14-this-week-this-magnificent-seven/',4),(8,'ethan ryder','...','2026-04-17',0.35232,'Alphabet (NASDAQ:GOOG) Stock Price Up 1.2% â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13410724/alphabet-nasdaqgoog-stock-price-up-1-2-heres-why.html',2),(9,'paula ricardo','...','2026-04-17',0.35232,'Alphabet (NASDAQ:GOOG) Trading Up 2% â€“ Hereâ€™s Why','https://www.thelincolnianonline.com/2026/04/17/alphabet-nasdaqgoog-trading-up-2-heres-why.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','Alphabet has some key advantages that give it a leg up over other internet companies.\nThe aggressive spending on artificial intelligence (AI) infrastructure has shaken Wall Street this year. Alphabet ...','2026-04-19',-0.05508,'Alphabet Lost 10% in a Single Week Over Artificial Intelligence (AI) Spending Fears. Is This a Buying Opportunity or a Sign of Something Worse?','https://www.fool.com/investing/2026/04/19/alphabet-artificial-intelligence-ai-spend-buy/',4),(2,'joseph griffin','...','2026-04-19',0,'Alphabet (NASDAQ:GOOG) Trading 2% Higher â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13412187/alphabet-nasdaqgoog-trading-2-higher-heres-what-happened.html',2),(3,'marc guberti','Broadcom and AMD both have excellent business models and are at the center of the AI chip boom, making this a tough race to call.\nStock investors have been hearing about artificial intelligence (AI) c...','2026-04-18',0.80042,'Broadcom vs. AMD: Which AI Chipmaker Is the Better Buy?','https://www.fool.com/investing/2026/04/18/broadcom-vs-amd-which-ai-chipmaker-is-the-better-b/',4),(4,'paula ricardo','...','2026-04-18',0,'Massachusetts Financial Services Co. MA Has $142.22 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/18/massachusetts-financial-services-co-ma-has-142-22-million-stock-holdings-in-alphabet-inc-goog.html',2),(5,'nicole kennedy','...','2026-04-18',0.39512,'Triad Wealth Partners LLC Has $4.91 Million Stake in Alphabet Inc. $GOOG','https://www.watchlistnews.com/triad-wealth-partners-llc-has-4-91-million-stake-in-alphabet-inc-goog/11052820.html',2),(6,'stephan jacobs','...','2026-04-18',0.2368,'Sterneck Capital Management LLC Sells 1,710 Shares of Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/04/18/sterneck-capital-management-llc-sells-1710-shares-of-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -232,4 +233,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-19  4:02:19
+-- Dump completed on 2026-04-20  4:15:24
