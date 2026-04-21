@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -210,7 +211,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +220,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'recently heard','One of the big disappointments in the stock market lately has been Microsoft (NASDAQ: MSFT), which recently closed out its worst quarter since 2008. The stock is down over 17% in the past six months, ...','2026-04-19',0.63324,'Microsoft CEO Satya Nadella Is Reportedly Leading an Overhaul of Copilot. Should Investors Buy the Stock?','https://recentlyheard.com/microsoft-ceo-satya-nadella-is-reportedly-leading-an-overhaul-of-copilot-should-investors-buy-the-stock/',40),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.8701,'5 Best Major Stocks to Buy According to Wall Street Analysts','https://www.insidermonkey.com/blog/5-best-major-stocks-to-buy-according-to-wall-street-analysts-1740818/',4),(3,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.19962,'â€œWhere is Microsoft (MSFT)?â€ Wonders Jim Cramer','https://www.insidermonkey.com/blog/where-is-microsoft-msft-wonders-jim-cramer-1740639/',40),(4,'ali ahmed','...','2026-04-18',0.50952,'Is Microsoft (MSFT) One of the Best Unrivaled Stocks of the Next 5 Years?','https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-one-best-unrivaled-184144197.html',200),(5,'ethan ryder','...','2026-04-18',0.35232,'Microsoft (NASDAQ:MSFT) Trading Up 2.2% â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13411611/microsoft-nasdaqmsft-trading-up-2-2-heres-why.html',20),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-18',0.6686,'5 Best AI Stock Picks of Motley Fool Asset Management','https://www.insidermonkey.com/blog/5-best-ai-stock-picks-of-motley-fool-asset-management-1738954/',4),(7,'jared blikre','...','2026-04-18',-0.09232,'The software rebound is real, but not every big name is back: Chart of the Day','https://ca.finance.yahoo.com/news/the-software-rebound-is-real-but-not-every-big-name-is-back-chart-of-the-day-121425237.html',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'rich asplund','...','2026-04-20',0.3372,'Stocks Weaker as Middle East Peace Prospects Dim','https://www.barchart.com/story/news/1403207/stocks-weaker-as-middle-east-peace-prospects-dim',2),(2,'larry ramer','...','2026-04-20',0.30544,'Dear Apple Stock Fans, Mark Your Calendars for April 30','https://www.barchart.com/story/news/1402649/dear-apple-stock-fans-mark-your-calendars-for-april-30',2),(3,'soumya eswaran','Fred Alger Management, an investment management company, released its â€œAlger Capital Appreciation Fundâ€ first-quarter 2026 investor letter. A copy of the letter can be downloaded here. In the first qu...','2026-04-20',-0.00714,'Microsoft Corporation (MSFT) Slid Despite Delivering Robust Results','https://www.insidermonkey.com/blog/microsoft-corporation-msft-slid-despite-delivering-robust-results-1741821/',40),(4,'null','Investing\nMicrosoft (MSFT) has fallen 11% year to date but is positioned to dominate agentic AI through its entrenched Office suite and Azure cloud platform, which enterprises will increasingly use as...','2026-04-20',0.19978,'Microsoft is Being Thrown Out With the Bathwater. Hereâ€™s Why Iâ€™m Buying the Dip','https://247wallst.com/investing/2026/04/20/microsoft-is-being-thrown-out-with-the-bathwater-heres-why-im-buying-the-dip/',20),(5,'tyler durden','\nFutures are lower, but well off session lows,after a weekend of chaos in the Strait of Hormuz cast doubt over US-Iran peace talks ahead of Tuesdayâ€™s ceasefire expiration. On Saturday, Iran said the S...','2026-04-20',-0.38844,'Futures Slide As Oil Jumps On Ceasefire Setbacks, Nasdaq In Danger Of Ending 13-Day Streak','https://www.zerohedge.com/markets/futures-slide-oil-jumps-ceasefire-setbacks-nasdaq-danger-ending-13-day-streak',4),(6,'john ballard','Analysts see the dip as a buying opportunity.\nShares of Microsoft (MSFT 1.15%) fell as much as 36% in late March before rebounding. Even after the bounce, the stock is still down about 23% despite the...','2026-04-20',0.7024,'Why Wall Street Loves Microsoft Stock Despite It Falling 23%','https://www.fool.com/investing/2026/04/20/why-wall-street-loves-microsoft-stock-despite-it-f/',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -233,4 +234,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-20  4:15:24
+-- Dump completed on 2026-04-21  3:59:19

@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -210,7 +211,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +220,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-04-19',0.20596,'Goldman Sachsâ€™ blunt words for Amazon stock investors after big deal','https://www.thestreet.com/investing/stocks/goldman-sachs-blunt-words-for-amazon-stock-investors-after-big-deal',20),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.87034,'10 Best Major Stocks to Buy According to Wall Street Analysts','https://www.insidermonkey.com/blog/10-best-major-stocks-to-buy-according-to-wall-street-analysts-1739209/',4),(3,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-19',0.6963,'Jim Cramer Shares Why Amazon.com (AMZN) is Better Than Microsoft','https://www.insidermonkey.com/blog/jim-cramer-shares-why-amazon-com-amzn-is-better-than-microsoft-1740640/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-20',0.28184,'Motley Fool Asset Managementâ€™s Top AI Stock Pick: Amazon.com (AMZN)','https://www.insidermonkey.com/blog/motley-fool-asset-managements-top-ai-stock-pick-amazon-com-amzn-1741152/',4),(2,'david moadel','Investing\nAmazon (AMZN) received price target increases from BofA to $298 and KeyBanc to $325 ahead of Q1 earnings, with both firms forecasting AWS growth accelerating to 28-30% from Q4â€™s 24%, while t...','2026-04-20',0.58126,'Amazon Gets a Double Upgrade From BofA and KeyBanc Ahead of Earnings: Is $325 the New Floor?','https://247wallst.com/investing/2026/04/20/amazon-gets-a-double-upgrade-from-bofa-and-keybanc-ahead-of-earnings-is-325-the-new-floor/',40),(3,'gerelyn terzo','Fed chair nominee Kevin Warsh in prepared remarks before the Senate Banking Committee said the central bank must remain largely independent of political influence while staying focused on its core man...','2026-04-20',-0.07532,'Live Nasdaq Composite: Markets Mixed on Mideast Uncertainty as Apple Captures $4T Market Cap','https://247wallst.com/investing/2026/04/20/live-nasdaq-composite-markets-mixed-on-mideast-uncertainty-as-apple-captures-4t-market-cap/',4),(4,'rich smith','Amazon loves to fly, and it shows.\nDelta Air LinesÂ famously loves to fly, and it shows. So, too, does Amazon.com (AMZN 0.91%), which just signed up Delta as a customer for its new Amazon Leo satellite...','2026-04-20',0.34222,'Amazon Lands Its Biggest Airline Customer for In-Flight Satellite Internet','https://www.fool.com/investing/2026/04/20/amazon-lands-its-biggest-airline-customer-for-sate/',40),(5,'larry ramer','...','2026-04-20',0.30544,'Dear Apple Stock Fans, Mark Your Calendars for April 30','https://www.barchart.com/story/news/1402649/dear-apple-stock-fans-mark-your-calendars-for-april-30',2),(6,'amy thielen','...','2026-04-20',0,'Choice Hotels integrates AI across hotel ecosystem with AWS','https://seekingalpha.com/news/4576652-choice-hotel-integrates-ai-across-hotel-ecosystem-with-aws?feed_item_type=news',4),(7,'shane hupp','...','2026-04-20',0.612,'BMO Capital Markets Forecasts Strong Price Appreciation for Morgan Stanley (NYSE:MS) Stock','https://www.tickerreport.com/banking-finance/13412766/bmo-capital-markets-forecasts-strong-price-appreciation-for-morgan-stanley-nysems-stock.html',2),(8,'michael walen','\n					Posted by Michael Walen on Apr 20th, 2026\n\nAmazon.com (NASDAQ:AMZN) had its price objective hoisted by stock analysts at Bank of America  from $275.00 to $298.00 in a report released on Monday,B...','2026-04-20',0.19982,'Amazon.com (NASDAQ:AMZN) Given New $298.00 Price Target at Bank of America','https://www.themarketsdaily.com/2026/04/20/amazon-com-nasdaqamzn-given-new-298-00-price-target-at-bank-of-america.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -233,4 +234,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-20  4:15:24
+-- Dump completed on 2026-04-21  3:59:19
