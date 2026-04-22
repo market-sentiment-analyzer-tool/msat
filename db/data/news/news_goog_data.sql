@@ -191,6 +191,7 @@ f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
+fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
@@ -211,7 +212,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -220,7 +221,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'aditya raghunath','...','2026-04-20',-0.35232,'Ford and General Motors Could Become Weapons Makers. Does That Make F and GM Stocks Buys Here?','https://www.barchart.com/story/news/1402680/ford-and-general-motors-could-become-weapons-makers-does-that-make-f-and-gm-stocks-buys-here',2),(2,'chris ciaccia','...','2026-04-20',0.272,'Marvell gains, Broadcom, Celestica dip on Google report','https://seekingalpha.com/news/4576506-marvell-gains-broadcom-celestica-dip-on-google-report?feed_item_type=news',40),(3,'michael walen','\n					Posted by Michael Walen on Apr 20th, 2026\n\nAlphabet Inc. (NASDAQ:GOOG â€“ Get Free Report) Director John Hennessy sold 1,050 shares of the companyâ€™s stock in a transaction that occurred on Wednesd...','2026-04-20',0.43664,'Alphabet (NASDAQ:GOOG) Director John Hennessy Sells 1,050 Shares','https://www.themarketsdaily.com/2026/04/20/alphabet-nasdaqgoog-director-john-hennessy-sells-1050-shares.html',4),(4,'wall street breakfast','...','2026-04-20',0,'Wall Street Breakfast Podcast: Tariff Refund Rush Begins','https://seekingalpha.com/article/4891956-wall-street-breakfast-podcast-tariff-refund-rush-begins',4),(5,'patrick sanders','Alphabet has some key advantages that give it a leg up over other internet companies.\nThe aggressive spending on artificial intelligence (AI) infrastructure has shaken Wall Street this year. Alphabet ...','2026-04-19',-0.05508,'Alphabet Lost 10% in a Single Week Over Artificial Intelligence (AI) Spending Fears. Is This a Buying Opportunity or a Sign of Something Worse?','https://www.fool.com/investing/2026/04/19/alphabet-artificial-intelligence-ai-spend-buy/',4),(6,'joseph griffin','...','2026-04-19',0,'Alphabet (NASDAQ:GOOG) Trading 2% Higher â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13412187/alphabet-nasdaqgoog-trading-2-higher-heres-what-happened.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-04-21',0.35232,'As Google Allegedly Considers an AI Chip Deal with Marvell, Should You Load Up on MRVL Stock?','https://www.barchart.com/story/news/1425538/as-google-allegedly-considers-an-ai-chip-deal-with-marvell-should-you-load-up-on-mrvl-stock',20),(2,'adam spatacco','Growth investors have been moving capital away from technology stocks throughout 2026.\nThroughout 2026, there has been a pronounced shift on Wall Street away from technology stocks. The combination of...','2026-04-21',0.93018,'The \"Great Rotation\" Made These the Best AI Growth Stock Bargains on the Nasdaq','https://www.fool.com/investing/2026/04/21/the-great-rotation-made-these-the-best-ai-growth-s/',4),(3,'pamela kock','Known for its end-to-end DevOps platform, this software firm reported a notable insider sale amid a year of sharp share price declines.\nSytse Sijbrandij, co-founder, former CEO, and current Executive ...','2026-04-21',0.19856,'Co-Founder Trims His Position in GitLab in $2.4 Million Sale','https://www.fool.com/coverage/filings/2026/04/20/co-founder-trims-his-position-in-gitlab-in-usd2-4-million-sale/',4),(4,'daniel sparks','The three artificial intelligence giants have all seen strong momentum recently. But one arguably stands out as a clear winner.\nInvestors have flocked to artificial intelligence (AI) stocks over the p...','2026-04-20',0.86158,'Which AI Stock Is the Best Buy Today: Nvidia, Alphabet, or Palantir?','https://www.fool.com/investing/2026/04/20/which-ai-stock-is-the-best-buy-today-nvidia-alphab/',4),(5,'wajeeh khan','...','2026-04-20',0.43384,'Marvell Technology Stock Pops on Potential Google Deal. Should You Buy MRVL Here?','https://www.barchart.com/story/news/1407423/marvell-technology-stock-pops-on-potential-google-deal-should-you-buy-mrvl-here',20),(6,'cfa','...','2026-04-20',0.6844,'Is GOOG Stock a Buy Ahead of Q1 Earnings and Amid Fragile Peace in the Middle East?','https://www.barchart.com/story/news/1406365/is-goog-stock-a-buy-ahead-of-q1-earnings-and-amid-fragile-peace-in-the-middle-east',20),(7,'kaustubh bagalkote','The firm named the tech giant a â€œTop Pickâ€ just days before the Google Cloud Next event in Las Vegas.\nAnmuth highlighted Google Cloudâ€™s rising importance to Alphabetâ€™s bottom line. The segment is now ...','2026-04-20',0.35772,'Analyst Names Alphabet Top Pick Ahead Of Cloud Next 2026','https://www.benzinga.com/analyst-stock-ratings/reiteration/26/04/51922437/analyst-names-alphabet-top-pick-ahead-of-cloud-next-2026',8),(8,'amit singh','...','2026-04-20',0.44592,'Alphabet Q1 Earnings Preview: Is GOOGL Stock a Buy, Sell, or Hold?','https://www.barchart.com/story/news/1405778/alphabet-q1-earnings-preview-is-googl-stock-a-buy-sell-or-hold',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -234,4 +235,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-21  3:59:19
+-- Dump completed on 2026-04-22  3:55:32
