@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
@@ -107,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7dca0326-3dfa-11f1-a84c-96b603b8ece4:1-72,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -118,7 +121,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-97f96800-3c69-11f1-b39e-56cb5e9e1e34:1-84,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -210,7 +212,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,6 +221,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'investing','1srhm8d','ohf5zmt','2026-04-21',245,0,'I wonder if I am seeing ghosts, this is written by LLM or whether people\'s language just is inching closer and closer to LLM style... '),(2,'investing','1srhm8d','ohevhyq','2026-04-21',26,0.2732,'I think everyone already knows that the bottleneck of AI is hardware/infrastructure and energy costs.'),(3,'investing','1srhm8d','ohfqyyw','2026-04-21',11,0,'AI slop'),(4,'investing','1srhm8d','ohh84cy','2026-04-21',3,0.8104,'> What stands out is how tied the relationship is becoming.\n\nWhy is that surprising?\n\nOpenAI tied itself to Microsoft/Azure. OpenAI builds LLM software that has a very strong dependence on hardware. Who has enough hardware? Hyperscalers. Therefore a partnership between an LLM company and a hyperscaler doesn\'t just make sense but seems nearly mandatory.\n\nSame is true for Anthropic. Google/Gemini is the only one that is in both the software and hardware game and is vertically integrated.'),(5,'investing','1srhm8d','ohfk58r','2026-04-21',2,0,'the perpetual money machine continues'),(6,'investing','1srhm8d','ohhkr6j','2026-04-21',2,-0.4215,'Can mods start banning these useless ai posts? '),(7,'investing','1srhm8d','oherbol','2026-04-21',2,0,'Why do you assume there is going to be normal chip production with major supply chain issues currently?'),(8,'investing','1srhm8d','oher5x9','2026-04-21',1,0.6904,'I think this is more like betting on \"infrastructure\" than on the model itself.\n\nAmazon, through Amazon Web Services, has deeply integrated Anthropic into its ecosystem, essentially locking in long-term computing power and cloud revenue. Rather than betting on whose AI product will win, it\'s better to control the computing layer.\n\nIf AI continues to expand, this could be a very smart move.\n\nIf the hype cools down, it\'s a very expensive bet.\n\nThe key isn\'t the model, but who controls the computing power.'),(9,'investing','1srhm8d','ohg8owg','2026-04-21',1,0.9561,'I put some good money in at $205 and itâ€™s working. Anyone who thought AMZN, the company who makes their employees pee in bottles in the name of efficiency, would invest $200B in speculative capex is insane. Of course they are going to sell it for 35%+ margin just like the rest of AWS compute. People are only going to increase demand for AI inference.\n\nBut yeah, this move makes sense to me under that thesis. Anthropic has the demand, and I do believe the AI companies will make things much more efficient over time in order for their services to be profitable. Itâ€™s a good investment.'),(10,'investing','1srhm8d','ohgjnyy','2026-04-21',1,0.5859,'\\> Anthropic isnâ€™t just getting funding, theyâ€™re expected to spend over $100B on AWS over time, which basically anchors a big part of their future to Amazonâ€™s infrastructure.\n\n[https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/](https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/)\n\n  \nxD'),(11,'investing','1srhm8d','ohgpdci','2026-04-21',1,0,'It\'s not ___, it\'s ___! You are absolutely right.'),(12,'investing','1srhm8d','ohi0cvj','2026-04-21',1,0.1511,'How is this not another MSFT and OpenAI fruitful relationship at first then ends up a bitter divorce? Anthropic uses AMZN money to scale up and get big, doesn\'t like Bezos dick in its mouth and starts the divorce process from AMZN couple years down the line.'),(13,'investing','1srhm8d','ohg3w6b','2026-04-21',1,0,'And the AI circlejerk continues. '),(14,'investing','1srhm8d','ohgf7ac','2026-04-21',1,-0.5719,'But Burry said their infrastructure\'s will be useless in 3 years when their GPU depreciation runs out... /s'),(15,'investing','1srhm8d','ohg0z5a','2026-04-21',0,0,'[deleted]'),(16,'investing','1srhm8d','ohgincb','2026-04-21',0,-0.4019,'Well shit. Now I have to leave Anthropic');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -232,4 +235,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-20  3:34:13
+-- Dump completed on 2026-04-22  3:23:46

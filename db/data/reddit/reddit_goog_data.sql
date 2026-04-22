@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
@@ -107,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7dca0326-3dfa-11f1-a84c-96b603b8ece4:1-72,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -118,7 +121,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-97f96800-3c69-11f1-b39e-56cb5e9e1e34:1-84,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -210,7 +212,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +221,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1spx9yh','oh3kahi','2026-04-19',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 10 | **First Seen In WSB** | 1 year ago\n**Total Comments** | 12107 | **Previous Best DD** | \n**Account Age** | 1 year | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1spx9yh','oh3na37','2026-04-19',525,0.6369,'I sold MRVL at $90 because i knew it was gonna hit a new all time high\n\nI sold META at $98\n\nI sold GOOG at $168\n\nand I sold NBIS at $30\n\n  \nI\'m the best in this field '),(3,'wallstreetbets','1spx9yh','oh3kwnb','2026-04-19',412,0.3818,'Good for them, everything after Endgame sucked anyway. Smart move to shift to AI.Â '),(4,'wallstreetbets','1spx9yh','oh3pi5b','2026-04-19',65,0.7269,'I remember when I first opened a brokerage account with Scottrade, I bought marvell stock because I thought it was marvel, fun times.'),(5,'wallstreetbets','1spx9yh','oh3pjid','2026-04-19',28,0,'I own both Google and NVDA, am I delta neutral on this news??'),(6,'wallstreetbets','1spx9yh','oh3ljzh','2026-04-19',68,0.8807,'Google\'s been throwing everything at wall trying to break NVIDIA\'s stranglehold on AI chips. TPUs are decent but they\'re still playing catch-up in most scenarios. Competition is good though - maybe we\'ll finally see some price relief in this space instead of paying premium for every GPU that can handle decent AI workloads.'),(7,'wallstreetbets','1spx9yh','oh3l4q5','2026-04-19',25,0,'long google'),(8,'wallstreetbets','1spx9yh','oh3qc8n','2026-04-19',24,0,'Disney owns marvell? Buying at open tomorrow. Finally this stock may do something'),(9,'wallstreetbets','1spx9yh','oh3v0ss','2026-04-19',8,-0.7096,'Stock goes nowhere for 3 months and then moons when I sell another covered call :('),(10,'wallstreetbets','1spx9yh','oh3lgvi','2026-04-19',5,0.7925,'Superb ðŸ‘Œ '),(11,'wallstreetbets','1spx9yh','oh4yax2','2026-04-19',5,0.4404,'Bought 180 shares of MRVL 3 months ago when amazon released their FY ER capex numbers. Bought at 75$. May become my fastest +100% ever in a stock.'),(12,'wallstreetbets','1spx9yh','oh42uyh','2026-04-19',5,0.4215,'Marvel.  '),(13,'wallstreetbets','1spx9yh','oh45vg6','2026-04-19',4,-0.2732,'Amazon is also talking with Marvell. Iâ€™m selling a call for mrvl 115 and praying for a red day lol, itâ€™s pumping but it canâ€™t be topping out yet, on its way to 150-160\n\nIt just hit 152 Sunday night'),(14,'wallstreetbets','1spx9yh','oh4vnpi','2026-04-19',6,0.4588,'$poet will benefit '),(15,'wallstreetbets','1spx9yh','oh4oh1d','2026-04-19',3,0,'Phew, Broadcom and chill.Â '),(16,'wallstreetbets','1spx9yh','oh4v22a','2026-04-19',3,0.5588,'What is the nature of this relationship? What is Marvell being asked to do?\n\nMarvell is a fabless semiconductor design house. They cannot physically \"build\" chips designed by Google because they don\'t have their own fabrication capacity. That means Marvell is either being contracted to design some or all of a future TPU device.\n\nThe design work could be as narrow as Google outsourcing a mixed-signal subsystem to Marvell (an area of expertise for them). Marvell also have been asked to design an entire accelerator from scratch, but not necessarily for a flagship datacenter accelerator (it might be for a smaller, lower-power chip for specific applications). Another possibility is that Marvell was asked to work on a co-processor which attaches to TPUs to accelerate certain computations'),(17,'wallstreetbets','1spx9yh','oh3u33h','2026-04-19',2,0,'So is the expectation that this will be designed by Marvell and fabricated by Intel?'),(18,'wallstreetbets','1spx9yh','oh4d2by','2026-04-19',2,0.5106,'Unironically bullish for the entire sector'),(19,'wallstreetbets','1spx9yh','oh4f7e3','2026-04-19',2,0,'Same story every year'),(20,'wallstreetbets','1spx9yh','oh65l6g','2026-04-19',2,0.5719,'But POET for big upside if this is true'),(21,'wallstreetbets','1spx9yh','oh430ai','2026-04-19',4,0,'And TSM will make them '),(22,'wallstreetbets','1spx9yh','oh3lvny','2026-04-19',3,0.0516,'ahh how conveniently these data center stocks will have good news every other day and they keep pumping to insane valuations.. '),(23,'wallstreetbets','1spx9yh','oh3l7od','2026-04-19',2,0.8957,'People will be buying chips so you would have been wise to preemptively pick up the dip.\n\n\nHelluva good dip. It\'s helluva good.Â '),(24,'wallstreetbets','1spx9yh','oh4zz5r','2026-04-19',1,-0.5423,'>citing two â people â with knowledge of the discussions\n\nWho the fuck are these people?'),(25,'wallstreetbets','1spx9yh','oh5228a','2026-04-19',1,-0.044,'So marvel got sucked into the circlejerk'),(26,'wallstreetbets','1spx9yh','oh539xp','2026-04-19',1,-0.5423,'The MIS Information is not a credible source. They have some mole custodians roaming around with bad info.'),(27,'wallstreetbets','1spx9yh','oh5y5pj','2026-04-19',1,-0.2183,'Stark industries chips gonna go so hard'),(28,'wallstreetbets','1spx9yh','oh64a9v','2026-04-19',1,0.5106,'And that\'s why MRVL has been creeping higher even after a okay earnings report.'),(29,'wallstreetbets','1spx9yh','oh6nzhx','2026-04-20',1,0.4215,'Every time I hear about Marvell I have a moment where I think itâ€™s Marvel somehow pivoting to semiconductors for some reason '),(30,'wallstreetbets','1spx9yh','oh42yhv','2026-04-19',1,0,'The space lady? '),(31,'wallstreetbets','1spx9yh','oh3matd','2026-04-19',-10,0,'AI bubble keeps getting bigger n bigger.. ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -233,4 +234,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-20  3:34:13
+-- Dump completed on 2026-04-22  3:23:46

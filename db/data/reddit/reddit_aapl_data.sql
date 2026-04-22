@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
+6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
@@ -107,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7dca0326-3dfa-11f1-a84c-96b603b8ece4:1-72,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -118,7 +121,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-97f96800-3c69-11f1-b39e-56cb5e9e1e34:1-84,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -210,7 +212,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,6 +221,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1srqjvd','ohgmnc5','2026-04-21',284,0,'we could even say that Tim cooked'),(2,'stocks','1srqjvd','ohgh2dx','2026-04-21',195,0.8462,'He did what he was supposed to do and more. And now he has the wisdom to step aside when the company needs something different. Nobody is ever a perfect leader, but Tim Apple was pretty damn good.'),(3,'stocks','1srqjvd','ohgtgbk','2026-04-21',25,0.3089,'Amazing. When Jobs left, people expected the company to be doomed only for Cook to take it to next level as a business. Jobs might have taken more swing but Cook ensured it ran like a well oiled machine scaling where as expected. Of course failures of Apple Car/TV and many other swings meant they are not as exciting as Jobs era. But Cook did add Apple Watch, Air pods etc and took the Software revenue to next level. \n\nthe next CEO has a big shoe to fill. Need another Supply Chain person in his team. '),(4,'stocks','1srqjvd','ohgnwz1','2026-04-21',40,-0.508,'I was going to short Apple when Jobs died because I thought without Jobs all innovation would die and so would its market value. \n\nGlad I didnâ€™t. Not much innovation, but incredible brand management and market position dominance. '),(5,'stocks','1srqjvd','ohgyg3u','2026-04-21',6,0,'AAPL dropped today'),(6,'stocks','1srqjvd','ohgx41v','2026-04-21',5,-0.7471,'the criticism he typically gets is that apple wasn\'t as \"innovative\" under him as they were under steve jobs, but it\'s hard to fault him too much for that given steve jobs was a generational visionary and tim cook put up numbers (unlike the ceo the first time apple lost steve jobs in the 80\'s/90\'s and failed hard until he returned)'),(7,'stocks','1srqjvd','ohgq6xg','2026-04-21',8,0.8555,'you didn\'t adjust any of the numbers for general economy- and industry-specific trends. Microsoft\'s net income increased from $23B to $101B by end of 2025 or by 4.39 times (better than Apple). What if the industry has just been doing well and little of that can be attributed to Apple\'s CEO? As another point of comparison, Berkshire Hathaway\'s net income in the same period increased from $10.2B to $67B or by more than 6 times'),(8,'stocks','1srqjvd','ohhm4pg','2026-04-21',3,0.7088,'People complain about Tim Apple because he wasnâ€™t â€œinnovativeâ€ as Jobs. As Buffett once said Jobs did what Tim couldnâ€™t do but Tim did what Jobs couldnâ€™t do. He played a massive role in the development of the company. Thank you for everything Tim Apple! '),(9,'stocks','1srqjvd','ohggu45','2026-04-21',16,-0.8787,'Youâ€™re missing a huge part of how Apple fell very behind in the AI race. They no longer innovate and the new CEO is supposed to be more AI focused. Apple has huge upside potential if they develop their own AI all Apple users would pay to have an AI bot built into their phone. Iâ€™m sure Iâ€™ll get hate for this so donâ€™t destroy the downvote button too hard. '),(10,'stocks','1srqjvd','ohgixcv','2026-04-21',5,0.6478,'Tim Cook deserves more credit than the world is giving him for. Much more so than Steve Jobs.'),(11,'stocks','1srqjvd','ohgn7cm','2026-04-21',3,-0.6956,'He maintained a pre-existing artistic direction but otherwise failed to innovate. How are those his accomplishments as opposed to simply things that happened while he was CEO (possibly even in spite of him being CEO)? '),(12,'stocks','1srqjvd','ohhms1r','2026-04-21',1,0.714,'Good run but he left us a parting gift just to screw us - iOS Liquid Glass. And royally messed up the Photos app last year.'),(13,'stocks','1srqjvd','ohjn4ic','2026-04-22',1,0,'20x in my apple stock. He is the fucking goat. '),(14,'stocks','1srqjvd','ohjrhta','2026-04-22',1,0.9569,'Yes but the spark and magic and innovation is gone. Itâ€™s largely a phone company now. Most innovative new product is what, Apple Watch? AirPods? \n\nObviously heâ€™s been good for investors. No doubt. '),(15,'stocks','1srqjvd','ohghf7d','2026-04-21',-8,0,'A mouse could have been ceo.\n '),(16,'stocks','1srqjvd','ohiouzc','2026-04-21',0,0.5574,'Pretty sure any midwit could have achieved this. iPhones havenâ€™t changed in over a decade, theyâ€™re just a status symbol for normies. Women even consider it a red flag if you have an android. This is like congratulating the pilot for not crashing the plane while itâ€™s flying on autopilot.'),(17,'stocks','1srqjvd','ohhtynr','2026-04-21',-1,0.5256,'He turned the most innovative technology company in the world into a consumer products company. That isnâ€™t impressive. The next ten years of apple are going to look a lot worse than the last ten years. '),(18,'AAPL','1srj10r','ohf09hn','2026-04-21',2,-0.5423,'Such a bad take.'),(19,'AAPL','1srj10r','ohf7ssh','2026-04-21',2,0,'AI slop. '),(20,'AAPL','1srj10r','ohhcsvq','2026-04-21',2,0,'Why is this an ad for an app?'),(21,'AAPL','1ss35xs','ohj1oib','2026-04-21',8,0.3612,'Like who?'),(22,'AAPL','1ss35xs','ohj45lq','2026-04-21',5,0.7096,'Good luck with that, given the job market \n'),(23,'AAPL','1ss35xs','ohj4pz5','2026-04-21',3,0,'B/c they made their money and are in a position to do something new.'),(24,'AAPL','1ss35xs','ohj5h4x','2026-04-21',2,0.2263,'Please elaborate â€” this post is beyond vague. Are you basing this on news outlets/social media posts, etc.?'),(25,'AAPL','1ss35xs','ohj68tj','2026-04-21',2,0.3182,'There was a string of senior folks who announced their retirement last year, that was a sign they had not been chosen as the next CEO and decided to call it a day. From there the folks below them followed a similar route, didnâ€™t see a chance to go into the next level role OR not wanting to work under their new manager. Itâ€™s not uncommon and kind of normal honestly. If someone above you takes the next role up but youâ€™ve worked with that person for years and didnâ€™t necessarily like their vision would you want to stay once they establish themselves in their new role knowing what you know about them? Iâ€™ve gone under leadership change before and some of the folks who got promoted made me decide to go elsewhere bcs I knew it wasnâ€™t going to bode well for me, you can just tell that some people are power hungry for all the wrong reasons and their leadership style is just going to kill whatever was going at the time. Everyone wants to stand out but not everyone knows how to do it correctly. '),(26,'AAPL','1ss35xs','ohjcfw3','2026-04-21',2,0,'They arenâ€™t.'),(27,'AAPL','1ss35xs','ohjfnoe','2026-04-21',2,0.34,'The older executives were Timâ€™s guys, now the new guy needs his own guys.  Picking people and giving them direction is a big part of the job Iâ€™d assume.  Also if you made $10+ million and were 55+ would you stick around..?'),(28,'AAPL','1ss35xs','ohjb9aw','2026-04-21',1,0.1531,'Most employees have been with the company for decades and are likely nearing retirement. Apple has been in its prime for over 20 yearsâ€”so if someone was there during the early iPhone days, add 20 years to their age now. Theyâ€™re probably 50â€“60 years old. Same reason Jeff Williams left, and probably Cook stepping down as CEO. Cook is 65. Heâ€™s been CEO for 15 years. He became CEO at 50. Ternus is 50. Rinse and repeat. \n\nThere are exceptions to the rule, like Alan Dye, who left for/was poached by Meta. He probably got offered a ridiculous amount of money, and Iâ€™m sure Apple wasnâ€™t a huge fan of keeping a designer around for 7â€“8 figures.'),(29,'AAPL','1ss35xs','ohk12zv','2026-04-22',1,0,'Here is todayâ€™s article on it:\n\nhttps://www.bloomberg.com/news/articles/2026-04-21/apple-ceo-ternus-confronts-test-of-retaining-company-s-top-talent\n\nMike Rockwell, currently leading effort to overhaul Siri, was called out in particular today for potentially leaving.'),(30,'AAPL','1ss35xs','ohka19f','2026-04-22',1,0.6486,'There are better opportunities out there and some could be â€œpushâ€ to leave too. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -232,4 +235,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-20  3:34:13
+-- Dump completed on 2026-04-22  3:23:46
