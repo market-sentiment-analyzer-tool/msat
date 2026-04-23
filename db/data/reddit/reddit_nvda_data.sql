@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.6.0
+-- Server version	9.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -46,6 +46,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2d37c2d0-3ec4-11f1-811b-22e360fc857e:1-48,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -109,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7dca0326-3dfa-11f1-a84c-96b603b8ece4:1-72,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -192,6 +192,7 @@ f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
+fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63';
 
@@ -212,7 +213,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -221,7 +222,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1srxvx9','ohjfbam','2026-04-21',9,0.3182,'Crazy we\'ve been trading sideways for like 9 months now. Oh well, this is hitting 300 at some point, it\'s only a matter of when'),(2,'NVDA_Stock','1srxvx9','ohi0534','2026-04-21',9,0.5267,'I still think it will hit $210-$220 based on fundamentals, but since the dear leader is running the country entirely out of his fundament, who knows?'),(3,'NVDA_Stock','1srxvx9','ohj53hl','2026-04-21',4,0.2526,'Man $300 would be nice around now but until then I still am not selling any. Hope we see pre-split range $ one day'),(4,'NVDA_Stock','1srxvx9','ohiqhgh','2026-04-21',-6,-0.25,'How the f is SNDK @ $900 while NVDA is stuck at $200.  Donâ€™t need an explanation, just venting. ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1ssnzdm','ohn6dje','2026-04-22',137,0,'Memory stocks go brrrrrrrrrrrrrrrrrrr'),(2,'stocks','1ssnzdm','ohnby9w','2026-04-22',24,0,'Whatâ€™s AVGOâ€™s role in this ?'),(3,'stocks','1ssnzdm','ohn8em3','2026-04-22',49,0.5994,'Why not post the full story and not just the part that promotes your agenda? Like the part about their ongoing partnership and the purchase of all NVDAs Vera Ruben chips.'),(4,'stocks','1ssnzdm','ohn898c','2026-04-22',66,0.2866,'These annoucements are a bit misleading.  GOOGL TPU\'s aren\'t going to mass market and competing with NVDA\'s GPU sales.  They are proprietary to GOOGL\'s public cloud - so you need to be a GOOGL customer and you can only access the resource there.  For GOOGL itself, that\'s great.  They don\'t need to pay NVDA a huge markup for GPU\'s.\n\nBut for other customers, that\'s a major downside, in that you\'re locked to GOOGL cloud.  That\'s the benefit of NVDA in that their GPU\'s are ubiquitous to hyperscalers and neo clouds.  You have full redundancy across clouds and aren\'t locked into a single pricing structure.\n\nAll of the chips that AMZN and MSFT create internally never beat AMD or INTC - they exist to tackle the lowest performance loads.  That\'s going to be the same with their AI chips.\n\nDISCLOSURE: Long on AMZN MSFT GOOGL NVDA META - they are \"forever\" stocks for me.'),(5,'stocks','1ssnzdm','ohncalk','2026-04-22',5,0.795,'Goog and googl going to moon. The best company for a chance at AGI. PE ratio is still very reasonable for now. Get on board!!!'),(6,'stocks','1ssnzdm','ohpksbp','2026-04-22',5,-0.9218,'So much misinformation in the comments and some key things were left out in the post.\n\n- There are two new chips with one for training (8t) and the other for inference (8i)\n- The training chip will continue to use Broadcom for the bits Google does not do themselves.  Highly unlikely they will sell these chips.  This will be the lower volume unit.\n- The new inference chip will NOT use Broadcom.  instead Google will use Media Tek for the bits they do not do themselves.  This is the chip they will sell, IMO.   This chip should increase Google\'s margins when selling the chip and lower their cost.  This will be the high volume unit.   With agentic the amount of needed inference skyrockets.\n\nI suspect we will see the others follow the same path as Google.   It is just that Google is way out in front with all of this.  Google is on their eight generation TPUs and started 12 years ago.\n\nThere is also a number of comments that the TPUs are ONLY for Google\'s own stuff.  That is NOT true.   Mythos for example was train and being served on mostly Google TPUs.    The TPUs have been already sold to Meta and Anthropics.   \n\nBloomberg estimates that the TPUs could capture 20% to 25% of the AI chip market.\n\nhttps://www.bloomberg.com/news/features/2026-04-20/google-eyes-new-chips-to-speed-up-ai-results-challenging-nvidia?embedded-checkout=true'),(7,'stocks','1ssnzdm','ohnfh8o','2026-04-22',1,0,'I remember when they both disrupted the gaming market.'),(8,'stocks','1ssnzdm','oho80zi','2026-04-22',0,0,'[deleted]'),(9,'stocks','1ssnzdm','ohpbjey','2026-04-22',1,0.5927,'The top comment nails it,Google\'s TPUs are locked to Google Cloud customers, so this isn\'t really competing with Nvidia\'s mass-market GPU sales. The real play here is whether you own the memory and infrastructure stocks that benefit from the arms race, not whether Google suddenly takes Nvidia\'s market share. If you\'re tracking AI exposure across multiple holdings, it\'s easy to miss that you\'re actually betting on the same bottleneck (memory, power, cooling) through different tickers. The narrative shifts faster than portfolio overlap does.\n\nI use [Portfolio Manager](https://app.nc-np.com/?a=reddit&b=stocks&c=tool_replacement&p=1ssnzdm&lang=en) to catch that kind of hidden concentration when the thesis sounds different but the exposure isn\'t.'),(10,'stocks','1ssnzdm','oho6pkm','2026-04-22',-9,0.5719,'Google sucks ass value wise, Microsoft is the way to go for me imho and Microsoft is the most diversified stock. After Buffet bought this stock it\'s over for Google to be a value proposition unfortunately, they ruin every stock they buy value wise.'),(11,'stocks','1ssnzdm','ohnnjcv','2026-04-22',-2,0.482,'that they have own chips for AI is nothing new, amazon meta and microsoft have too  just microsoft has their only since january so is far behind.  only the split is new, i assume its related to efficiency since training requires more power, but inference is increasingly more important so as the shift happens it justifies that inference requires more attention'),(12,'stocks','1ssnzdm','ohnybdb','2026-04-22',-2,0,'Manufactured by Intel'),(13,'NVDA_Stock','1ssvp8o','ohp9vvy','2026-04-22',3,0,'Yawn '),(14,'NVDA_Stock','1ssvp8o','ohq41za','2026-04-22',1,0.7264,'China probably doesnâ€™t even need at this point. Distillation is much easier and less intensive than actual training. There is no way China is producing comparable models using significantly less resources without distilling American models. \n\nBy extension Anthropic pulling access of their most powerful models is actually a strategic move for national security.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -235,4 +236,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-22  3:23:46
+-- Dump completed on 2026-04-23  3:27:08
