@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.6.0
+-- Server version	9.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -158,6 +158,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
+d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -212,7 +213,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -221,7 +222,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'amit singh','...','2026-04-21',0.70456,'Is Microsoft Stock a Buy Before Q3? Cloud and AI Trends Point to Strong Growth','https://www.barchart.com/story/news/1427249/is-microsoft-stock-a-buy-before-q3-cloud-and-ai-trends-point-to-strong-growth',20),(2,'rich asplund','...','2026-04-21',-0.43384,'Stocks Erase Early Gains as Crude Prices Jump on Iran Concerns','https://www.barchart.com/story/news/1427178/stocks-erase-early-gains-as-crude-prices-jump-on-iran-concerns',2),(3,'null','1. Stocks: Microsoft (MSFT), Amazon (AMZN), and Apple (AAPL) lead trading action as Trump signals a possible U.S.-Iran deal, calming markets. Microsoft and Amazon gain with the Nasdaq up 0.35% on tech...','2026-04-21',0.62088,'Live Nasdaq Composite: Tech Gains Led by Amazonâ€™s AI Spending While Apple Falls From Highs','https://247wallst.com/investing/2026/04/21/live-nasdaq-composite-tech-gains-led-by-amazons-ai-spending-while-apple-falls-from-highs/',2),(4,'jake lerch','SPY and GLD are two of the largest ETFs by Assets Under Management (AUM), but there are more affordable options.\nSPDR Gold Shares (GLD 2.83%) serves as a specialized commodity play on physical gold, w...','2026-04-21',0.58018,'SPY and GLD: Are There More Affordable Alternatives to These Very Popular ETFs?','https://www.fool.com/coverage/etfs/2026/04/21/spy-and-gld-are-there-more-affordable-alternatives-to-these-very-popular-etfs/',4),(5,'rich duprey','Investing\nPalantir Technologies (PLTR) guided for 61% year-over-year revenue growth in fiscal 2026, with U.S. commercial revenue projected to rise 115% to over $3.14 billion, while adjusted operating ...','2026-04-21',0.62126,'Palantir Unlocked the Secret to Massive Growth. Its Stock Is Deeply Mispriced','https://247wallst.com/investing/2026/04/21/palantir-unlocked-the-secret-to-massive-growth-its-stock-is-deeply-mispriced/',4),(6,'marketbeat.com','...','2026-04-21',0,'Microsoft Targets Trimmed: What It Means for Investors','https://www.investing.com/analysis/microsoft-targets-trimmed-what-it-means-for-investors-200678876',20),(7,'adam spatacco','Growth investors have been moving capital away from technology stocks throughout 2026.\nThroughout 2026, there has been a pronounced shift on Wall Street away from technology stocks. The combination of...','2026-04-21',0.93018,'The \"Great Rotation\" Made These the Best AI Growth Stock Bargains on the Nasdaq','https://www.fool.com/investing/2026/04/21/the-great-rotation-made-these-the-best-ai-growth-s/',4),(8,'ainewswire','\n\n\nApril 21, 2026 08:30 ET\n\n\nÂ | Source:\r\n            \nAINewsWire\n\n\n\n\n\n\nAINewsWire\n\n\nAUSTIN, Texas, April  21, 2026  (GLOBE NEWSWIRE) -- AINewsWire Editorial Coverage: Artificial intelligence (AI) is n...','2026-04-21',0.1587,'The AI Power Surge: Why Energy Infrastructure Is Becoming the Next Critical Bottleneck','https://www.globenewswire.com/news-release/2026/04/21/3277947/0/en/The-AI-Power-Surge-Why-Energy-Infrastructure-Is-Becoming-the-Next-Critical-Bottleneck.html',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'null','Investing\nRoundhill MSFT WeeklyPay ETF (MSFW) has lost -36.21% since inception in July 2025, nearly double the -16.15% decline of Microsoft (MSFT) itself, due to 1.2x leverage amplifying losses as Mic...','2026-04-22',0.05728,'This Microsoft ETF Pays Weekly Income and Has Lost 34% Since Launch','https://247wallst.com/investing/2026/04/22/this-microsoft-etf-pays-weekly-income-and-has-lost-34-since-launch/',20),(2,'mohit oberoi','...','2026-04-22',-0.04128,'Can Ternus Come Up with the New Story That Apple Stock Badly Needs','https://www.barchart.com/story/news/1452065/can-ternus-come-up-with-the-new-story-that-apple-stock-badly-needs',2),(3,'james rogers','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-04-22',0.16824,'For Kevin Warsh, all-powerful AI equals â€˜American Ingenuityâ€™: This is what it means for advisors','https://www.investmentnews.com/equities/for-kevin-warsh-all-powerful-ai-equals-american-ingenuity-this-is-what-it-means-for-advisors/266258',4),(4,'rich asplund','...','2026-04-22',0.63248,'Stocks Supported by Iran Ceasefire Extension and Strong Earnings','https://www.barchart.com/story/news/1451894/stocks-supported-by-iran-ceasefire-extension-and-strong-earnings',2),(5,'anushka mukherji','...','2026-04-22',0,'Why April 30 Could Be a â€˜Clearing Eventâ€™ for Apple That Takes AAPL Stock to $300','https://www.barchart.com/story/news/1451590/why-april-30-could-be-a-clearing-event-for-apple-that-takes-aapl-stock-to-300',2),(6,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-22',0.1993,'Jim Cramer Rubbished Circular AI Deals & Commented On These 18 Stocks','https://www.insidermonkey.com/blog/jim-cramer-rubbished-circular-ai-deals-commented-on-these-18-stocks-1740454/',4),(7,'larry ramer','...','2026-04-22',0.43384,'Broadcom Breakup: AVGO Stock Slumps as Google Considers Its Rival for a Deal. Should You Buy the Dip?','https://www.barchart.com/story/news/1450332/broadcom-breakup-avgo-stock-slumps-as-google-considers-its-rival-for-a-deal-should-you-buy-the-dip',2),(8,'usman kabir','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-22',0.83174,'5 Safe Stocks to Invest In For Beginners','https://www.insidermonkey.com/blog/5-safe-stocks-to-invest-in-for-beginners-1743470/',4),(9,'luke lango','\n\n			Why Big Tech is replacing GPUs â€” and who wins next		\nListen to the audio version of this article (generated by AI).\nNvidia (NVDA) built a near-monopoly on AI compute.\nFor the past three years, ev...','2026-04-22',0.1999,'The Rise of Custom AI Chips Is Breaking Nvidiaâ€™s Grip','https://investorplace.com/hypergrowthinvesting/2026/04/the-rise-of-custom-ai-chips-is-breaking-nvidias-grip/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -235,4 +236,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-22  3:55:32
+-- Dump completed on 2026-04-23  4:01:07

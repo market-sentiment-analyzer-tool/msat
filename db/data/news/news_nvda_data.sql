@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.6.0
+-- Server version	9.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -158,6 +158,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
+d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -212,7 +213,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -221,7 +222,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jabran kundi','...','2026-04-21',-0.49992,'CFO David Kennedy Just Cut His Dell Stock Stake by Nearly 10%. Is That a Sign You Should Sell Too?','https://www.barchart.com/story/news/1426729/cfo-david-kennedy-just-cut-his-dell-stock-stake-by-nearly-10-is-that-a-sign-you-should-sell-too',2),(2,'john seetoo','Investing\n\n					Sending You to Google News in 3\n\nÂ© Cherdchai101 / Shutterstock.com\nBlackRock Science & Technology Term Trust (NYSE:BSTZ) is a closed-end fund with a fixed expiration date, a covered ca...','2026-04-21',0.19892,'BlackRockâ€™s BSTZ Expires in 2031 and Forces a Reckoning: What Happens to Your Pre-IPO Positions','https://247wallst.com/investing/2026/04/21/blackrocks-bstz-expires-in-2031-and-forces-a-reckoning-what-happens-to-your-pre-ipo-positions/',4),(3,'jake lerch','SPY and GLD are two of the largest ETFs by Assets Under Management (AUM), but there are more affordable options.\nSPDR Gold Shares (GLD 2.83%) serves as a specialized commodity play on physical gold, w...','2026-04-21',0.58018,'SPY and GLD: Are There More Affordable Alternatives to These Very Popular ETFs?','https://www.fool.com/coverage/etfs/2026/04/21/spy-and-gld-are-there-more-affordable-alternatives-to-these-very-popular-etfs/',4),(4,'adam levy','Both companies are growing fast on the back of massive contracts with big tech leaders.\nMeta Platforms (META 0.35%) is spending huge sums of cash to build out its artificial intelligence (AI) infrastr...','2026-04-21',0.80036,'Meta Is Spending $48 Billion With CoreWeave and Nebius. Which Neocloud Stock Is a Better Buy?','https://www.fool.com/investing/2026/04/21/meta-is-spending-48-billion-with-coreweave-nebius/',4),(5,'joey frenette','Investing\nNvidia (NVDA) has broken above $200 resistance and is expanding beyond AI chips, positioning itself across all five layers of the AI cake.\nVera Rubin platformâ€™s 10x efficiency gains and mult...','2026-04-21',0.65652,'Nvidia Looks Like Big Techâ€™s Most Compelling Breakout Setup Right Now','https://247wallst.com/investing/2026/04/21/nvidia-looks-like-big-techs-most-compelling-breakout-setup-right-now/',40),(6,'the motley fool','...','2026-04-21',0.7588,'The 3 Best Artificial Intelligence (AI) Growth Stocks to Buy on the Nasdaq Before Q1 Earnings Season','https://finance.yahoo.com/markets/stocks/articles/3-best-artificial-intelligence-ai-132300361.html',20),(7,'fred imbert','\nReference #18.4568dc17.1776830124.217a5baa\nhttps://errors.edgesuite.net/18.4568dc17.1776830124.217a5baa\n\nhttps://errors.edgesuite.net/18.4568dc17.1776830124.217a5baa...','2026-04-21',0,'JPMorgan raises S&P 500 target as Mythos model bolsters AI trade','https://www.cnbc.com/2026/04/21/jpmorgan-raises-sp-500-target-as-mythos-model-bolsters-ai-trade.html',40),(8,'jabran kundi','...','2026-04-21',0.56768,'CoreWeave Is Issuing Billions in Debt but Shares Are Up 64%. Whatâ€™s Going on With CRWV Stock?','https://www.barchart.com/story/news/1423118/coreweave-is-issuing-billions-in-debt-but-shares-are-up-64-whats-going-on-with-crwv-stock',2),(9,'ian cooper','President Trump says talks will be relatively quick, but also warned that he was under no pressure to deal. Iran says the U.S. Navy blockade is a violation of the ceasefire announced on April 7.\nWhile...','2026-04-21',0.22032,'Stock Market Live April 21, 2026: S&P 500 (SPY) is Back in the Green on Cease Fire Hopes Again','https://247wallst.com/investing/2026/04/21/stock-market-live-april-21-2026-sp-500-spy-is-back-in-the-green-on-cease-fire-hopes-again/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'mohit oberoi','...','2026-04-22',-0.04128,'Can Ternus Come Up with the New Story That Apple Stock Badly Needs','https://www.barchart.com/story/news/1452065/can-ternus-come-up-with-the-new-story-that-apple-stock-badly-needs',2),(2,'rich asplund','...','2026-04-22',0.63248,'Stocks Supported by Iran Ceasefire Extension and Strong Earnings','https://www.barchart.com/story/news/1451894/stocks-supported-by-iran-ceasefire-extension-and-strong-earnings',2),(3,'benzinga insights','A April filing shows that Representative Daniel Meuser reported a sale in NVIDIA (NASDAQ:NVDA), valued between $1,001 and $15,000. The transaction date is listed as March 25, 2026, with the report pub...','2026-04-22',0.17976,'Congressional Trading Report: Rep. Daniel Meuser Sold Over $1K In NVIDIA Stock','https://www.benzinga.com/insights/government/26/04/51972715/congressional-trading-report-rep-daniel-meuser-sold-over-1k-in-nvidia-stock',80),(4,'rich duprey','Investing\nNvidia (NVDA) publicly backed Adobe (ADBE) in a strategic partnership announced in March 2026 focused on accelerating Adobe Firefly models on Nvidia GPUs and building enterprise-grade creati...','2026-04-22',0.19972,'Why Nvidia Is Betting Big on Adobe in the AI Era','https://247wallst.com/investing/2026/04/22/why-nvidia-is-betting-big-on-adobe-in-the-ai-era/',40),(5,'pathikrit bose','...','2026-04-22',0.35232,'Should You Buy, Sell, or Hold AMZN Stock as Amazon Invests $5 Billion in Anthropic?','https://www.barchart.com/story/news/1451146/should-you-buy-sell-or-hold-amzn-stock-as-amazon-invests-5-billion-in-anthropic',2),(6,'motley fool transcribing','Image source: The Motley Fool.\nWednesday, October 23, 2024 at 11:00 a.m. ET\nNeed a quote from a Motley Fool analyst? Email [emailÂ protected]\nVertiv Holdings (VRT 2.19%) emphasized its leadership posit...','2026-04-22',0.472,'Vertiv (VRT) Q3 2024 Earnings Transcript','https://www.fool.com/earnings/call-transcripts/2026/04/22/vertiv-vrt-q3-2024-earnings-transcript/',4),(7,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-22',0.1993,'Jim Cramer Rubbished Circular AI Deals & Commented On These 18 Stocks','https://www.insidermonkey.com/blog/jim-cramer-rubbished-circular-ai-deals-commented-on-these-18-stocks-1740454/',4),(8,'douglas a. mcintyre','Investing\nHuge Backlog Good For Growth\nData Center Building Slowdown\nProblems That Could Last For Years\n\nThe analyst who called NVIDIA in 2010 just named his top 10 AI stocks. Get them here FREE.\n\n\n		...','2026-04-22',0.19926,'Nvidiaâ€™s Rally Is Over','https://247wallst.com/investing/2026/04/22/nvidias-rally-is-over/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -235,4 +236,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-22  3:55:33
+-- Dump completed on 2026-04-23  4:01:08

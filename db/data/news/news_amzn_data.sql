@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.6.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.6.0
+-- Server version	9.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -158,6 +158,7 @@ d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
+d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -212,7 +213,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -221,7 +222,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'uttam dey','...','2026-04-21',0.42136,'Credo, Astera Labs To Gain From $100B Amazon-Anthropic Deal','https://seekingalpha.com/article/4892386-credo-astera-labs-to-gain-from-100b-amazon-anthropic-deal',4),(2,'the arora report','Note the following:\nMost portfolios are now heavily concentrated in the Mag 7 stocks.Â  For this reason, it is important to pay attention to early money flows in the Mag 7 stocks on a daily basis.Â \nIn ...','2026-04-21',0.65084,'Investors Convinced Of Iran Deal But Oblivious To Power Struggle; New Apple Opportunity; Amazon Deeper In AI','https://www.benzinga.com/Opinion/26/04/51943951/investors-convinced-of-iran-deal-but-oblivious-to-power-struggle-new-apple-opportunity-amazon-deeper-in-a',80),(3,'null','1. Stocks: Microsoft (MSFT), Amazon (AMZN), and Apple (AAPL) lead trading action as Trump signals a possible U.S.-Iran deal, calming markets. Microsoft and Amazon gain with the Nasdaq up 0.35% on tech...','2026-04-21',0.62088,'Live Nasdaq Composite: Tech Gains Led by Amazonâ€™s AI Spending While Apple Falls From Highs','https://247wallst.com/investing/2026/04/21/live-nasdaq-composite-tech-gains-led-by-amazons-ai-spending-while-apple-falls-from-highs/',2),(4,'david moadel','Investing\nRBC Capital Markets raised its Marvell Technology (MRVL) stock price target to $170 from $115, citing Amazonâ€™s (AMZN) landmark Anthropic deal as a major tailwind for the custom silicon suppl...','2026-04-21',0.67908,'RBC Just Lifted Marvellâ€™s Target From $115 to $170 After Amazonâ€™s Blockbuster Anthropic Deal','https://247wallst.com/investing/2026/04/21/rbc-just-lifted-marvells-target-from-115-to-170-after-amazons-blockbuster-anthropic-deal/',4),(5,'adam spatacco','Growth investors have been moving capital away from technology stocks throughout 2026.\nThroughout 2026, there has been a pronounced shift on Wall Street away from technology stocks. The combination of...','2026-04-21',0.93018,'The \"Great Rotation\" Made These the Best AI Growth Stock Bargains on the Nasdaq','https://www.fool.com/investing/2026/04/21/the-great-rotation-made-these-the-best-ai-growth-s/',4),(6,'jabran kundi','...','2026-04-21',0.5944,'Oracle Just Strengthened Its Ties with AWS. Does That Make ORCL Stock a Buy Here?','https://www.barchart.com/story/news/1423125/oracle-just-strengthened-its-ties-with-aws-does-that-make-orcl-stock-a-buy-here',2),(7,'ainewswire','\n\n\nApril 21, 2026 08:30 ET\n\n\nÂ | Source:\r\n            \nAINewsWire\n\n\n\n\n\n\nAINewsWire\n\n\nAUSTIN, Texas, April  21, 2026  (GLOBE NEWSWIRE) -- AINewsWire Editorial Coverage: Artificial intelligence (AI) is n...','2026-04-21',0.1587,'The AI Power Surge: Why Energy Infrastructure Is Becoming the Next Critical Bottleneck','https://www.globenewswire.com/news-release/2026/04/21/3277947/0/en/The-AI-Power-Surge-Why-Energy-Infrastructure-Is-Becoming-the-Next-Critical-Bottleneck.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'eric kulisch','...','2026-04-22',0.14232,'Alaska Airlines upgrades Amazon cargo contract','https://www.freightwaves.com/news/alaska-airlines-upgrades-amazon-cargo-contract',20),(2,'vishal patel','...','2026-04-22',0.14232,'How Amazon Is Preparing For The Future','https://seekingalpha.com/article/4892866-amazon-stock-preparing-for-the-future',40),(3,'pathikrit bose','...','2026-04-22',0.35232,'Should You Buy, Sell, or Hold AMZN Stock as Amazon Invests $5 Billion in Anthropic?','https://www.barchart.com/story/news/1451146/should-you-buy-sell-or-hold-amzn-stock-as-amazon-invests-5-billion-in-anthropic',20),(4,'ian cooper','Personal Finance\n\n					Sending You to Google News in 3\n\nÂ© hapabapa / iStock Editorial via Getty Images\nOn The Investorâ€™s Podcast (formerly known as We Study Billionaires), investor Daniel Mahncke made...','2026-04-22',0.70912,'MercadoLibre Just Did What No Company Ever Has: 28 Consecutive Quarters of 30%+ Revenue Growth','https://247wallst.com/personal-finance/2026/04/22/mercadolibre-just-did-what-no-company-ever-has-28-consecutive-quarters-of-30-revenue-growth/',4),(5,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-22',0.1993,'Jim Cramer Rubbished Circular AI Deals & Commented On These 18 Stocks','https://www.insidermonkey.com/blog/jim-cramer-rubbished-circular-ai-deals-commented-on-these-18-stocks-1740454/',4),(6,'null','Investing\nAmazon (AMZN) delivered AWS revenue of $35.58B, growing 24% year-over-year in Q4 2025, prompting Baupost to double its position.\nFiserv (FISV) faces margin pressure from transformation costs...','2026-04-22',0.66856,'Billionaire Seth Klarman Is Buying These 2 Beaten-Down Stocks and 1 Long-Term Winner','https://247wallst.com/investing/2026/04/22/billionaire-seth-klarman-is-buying-these-2-beaten-down-stocks-and-1-long-term-winner/',2),(7,'larry ramer','...','2026-04-22',0.43384,'Broadcom Breakup: AVGO Stock Slumps as Google Considers Its Rival for a Deal. Should You Buy the Dip?','https://www.barchart.com/story/news/1450332/broadcom-breakup-avgo-stock-slumps-as-google-considers-its-rival-for-a-deal-should-you-buy-the-dip',2),(8,'white falcon capital','...','2026-04-22',0,'White Falcon Capital Q1 2026 Partner Letter','https://seekingalpha.com/article/4892808-white-falcon-capital-q1-2026-partner-letter',4),(9,'rob isbitts','...','2026-04-22',0,'Teslaâ€™s Business Is at a Historic Crossroads, but What About Its Stock Price?','https://www.barchart.com/story/news/1449712/teslas-business-is-at-a-historic-crossroads-but-what-about-its-stock-price',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -235,4 +236,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-22  3:55:32
+-- Dump completed on 2026-04-23  4:01:07
