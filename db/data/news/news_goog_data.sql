@@ -194,7 +194,8 @@ fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
-fe293631-088c-11f1-85d4-96f6319bc502:1-63';
+fe293631-088c-11f1-85d4-96f6319bc502:1-63,
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
 
 --
 -- Table structure for table `NEWS_GOOG_DATA`
@@ -213,7 +214,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -222,7 +223,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anushka dutta','...','2026-04-22',0,'Why Stifel Analysts Are Watching Intel Stock Closely Before April 23','https://www.barchart.com/story/news/1452199/why-stifel-analysts-are-watching-intel-stock-closely-before-april-23',2),(2,'akanksha bakshi','Vodafone Business and Google Cloud introduced new solutions, including a managed detection and response (MDR) service powered by Google Security Operations to help businesses detect and mitigate cyber...','2026-04-22',0.45234,'Vodafone Stock Climbs As Google Cloud Partnership Boosts AI Strategy','https://www.benzinga.com/markets/large-cap/26/04/51969705/vodafone-stock-climbs-as-google-cloud-partnership-boosts-ai-strategy',80),(3,'larry ramer','...','2026-04-22',0.43384,'Broadcom Breakup: AVGO Stock Slumps as Google Considers Its Rival for a Deal. Should You Buy the Dip?','https://www.barchart.com/story/news/1450332/broadcom-breakup-avgo-stock-slumps-as-google-considers-its-rival-for-a-deal-should-you-buy-the-dip',20),(4,'ravikash bakolia','...','2026-04-22',0.63248,'Google, McKinsey team up to help businesses adopt AI solutions','https://seekingalpha.com/news/4577749-google-mckinsey-team-up-to-help-businesses-adopt-ai-solutions?feed_item_type=news',4),(5,'chris ciaccia','...','2026-04-22',0.4992,'Google Cloud gets major win as Mars taps Gemini Enterprise for workforce','https://seekingalpha.com/news/4577709-google-cloud-gets-major-win-as-mars-taps-gemini-enterprise-for-workforce?feed_item_type=news',40),(6,'chris neiger','The public is skeptical of AI, but investors are all-in.\nOpenAI and Anthropic are both on the cusp of going public, with some investors anticipating their initial public offerings (IPOs) before the en...','2026-04-22',0.30216,'57% of Voters Believe AI Risks Outweigh the Benefits. What Does That Mean for the OpenAI and Anthropic IPOs?','https://www.fool.com/investing/2026/04/22/57-of-voters-believe-ai-risks-outweigh-the-benefit/',4),(7,'mohd haider','NetApp Inc. (NASDAQ:NTAP) shares are trending on Wednesday.\nNTAP edged higher in after-hours trading Tuesday, rising 0.22% to $112.05, after the company announced it received the 2026 Google Cloud Inf...','2026-04-22',0.19912,'Why Is NetApp (NTAP) Stock Trending Overnight','https://www.benzinga.com/markets/equities/26/04/51960367/why-is-netapp-ntap-stock-trending-overnight',8),(8,'keithen drury','Anthropic is expanding its usage of TPUs.\nIn the world of generative artificial intelligence (AI), few companies generate as much buzz as Anthropic. For example, its Claude platform is often the leadi...','2026-04-22',0.1993,'Anthropic Just Announced Huge News for Alphabet and Broadcom','https://www.fool.com/investing/2026/04/22/anthropic-just-announced-huge-news-for-alphabet-an/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wajeeh khan','...','2026-04-23',0.43384,'Google Is Taking on Nvidia With New AI Chips. Does This Make GOOGL Stock a Buy?','https://www.barchart.com/story/news/1479719/google-is-taking-on-nvidia-with-new-ai-chips-does-this-make-googl-stock-a-buy',20),(2,'avi kapoor','Supporting his view, BMO Capital analyst Brian Pitz, on Wednesday, maintained Alphabet with an Outperform rating and raised the price target from $400 to $410.\nJPMorgan analyst Doug Anmuth reiterated ...','2026-04-23',-0.15566,'Alphabet Gets Street Backing As Cramer Doubles Down On $400 Target','https://www.benzinga.com/trading-ideas/long-ideas/26/04/51994587/alphabet-gets-street-backing-as-cramer-doubles-down-on-400-target',8),(3,'null','Please enable JS and disable any ad blocker...','2026-04-23',0.06364,'UBS adjusts price target on Alphabet stock','https://www.thestreet.com/investing/ubs-adjusts-price-target-on-alphabet-stock',2),(4,'cpa','The search giant is vying for a bigger slice of the AI pie.\nNvidia (NVDA 1.41%) made a name for itself by pioneering the graphics processing units (GPUs) that became the gold standard for rendering im...','2026-04-22',0.1988,'Google Unveils 2 New AI Chips to Take on Nvidia','https://www.fool.com/investing/2026/04/22/google-unveils-2-new-ai-chips-to-take-on-nvidia/',40),(5,'investing experts podcast','...','2026-04-22',0.12248,'Ben Carlson: Long Term Investing Still Wins - Even When It Feels Wrong','https://seekingalpha.com/article/4893040-ben-carlson-long-term-investing-still-wins-even-when-it-feels-wrong',4),(6,'anushka dutta','...','2026-04-22',0,'Why Stifel Analysts Are Watching Intel Stock Closely Before April 23','https://www.barchart.com/story/news/1452199/why-stifel-analysts-are-watching-intel-stock-closely-before-april-23',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -236,4 +237,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-23  4:01:07
+-- Dump completed on 2026-04-24  4:15:07

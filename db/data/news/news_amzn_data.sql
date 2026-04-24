@@ -194,7 +194,8 @@ fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
-fe293631-088c-11f1-85d4-96f6319bc502:1-63';
+fe293631-088c-11f1-85d4-96f6319bc502:1-63,
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
 
 --
 -- Table structure for table `NEWS_AMZN_DATA`
@@ -213,7 +214,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -222,7 +223,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'eric kulisch','...','2026-04-22',0.14232,'Alaska Airlines upgrades Amazon cargo contract','https://www.freightwaves.com/news/alaska-airlines-upgrades-amazon-cargo-contract',20),(2,'vishal patel','...','2026-04-22',0.14232,'How Amazon Is Preparing For The Future','https://seekingalpha.com/article/4892866-amazon-stock-preparing-for-the-future',40),(3,'pathikrit bose','...','2026-04-22',0.35232,'Should You Buy, Sell, or Hold AMZN Stock as Amazon Invests $5 Billion in Anthropic?','https://www.barchart.com/story/news/1451146/should-you-buy-sell-or-hold-amzn-stock-as-amazon-invests-5-billion-in-anthropic',20),(4,'ian cooper','Personal Finance\n\n					Sending You to Google News in 3\n\nÂ© hapabapa / iStock Editorial via Getty Images\nOn The Investorâ€™s Podcast (formerly known as We Study Billionaires), investor Daniel Mahncke made...','2026-04-22',0.70912,'MercadoLibre Just Did What No Company Ever Has: 28 Consecutive Quarters of 30%+ Revenue Growth','https://247wallst.com/personal-finance/2026/04/22/mercadolibre-just-did-what-no-company-ever-has-28-consecutive-quarters-of-30-revenue-growth/',4),(5,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-22',0.1993,'Jim Cramer Rubbished Circular AI Deals & Commented On These 18 Stocks','https://www.insidermonkey.com/blog/jim-cramer-rubbished-circular-ai-deals-commented-on-these-18-stocks-1740454/',4),(6,'null','Investing\nAmazon (AMZN) delivered AWS revenue of $35.58B, growing 24% year-over-year in Q4 2025, prompting Baupost to double its position.\nFiserv (FISV) faces margin pressure from transformation costs...','2026-04-22',0.66856,'Billionaire Seth Klarman Is Buying These 2 Beaten-Down Stocks and 1 Long-Term Winner','https://247wallst.com/investing/2026/04/22/billionaire-seth-klarman-is-buying-these-2-beaten-down-stocks-and-1-long-term-winner/',2),(7,'larry ramer','...','2026-04-22',0.43384,'Broadcom Breakup: AVGO Stock Slumps as Google Considers Its Rival for a Deal. Should You Buy the Dip?','https://www.barchart.com/story/news/1450332/broadcom-breakup-avgo-stock-slumps-as-google-considers-its-rival-for-a-deal-should-you-buy-the-dip',2),(8,'white falcon capital','...','2026-04-22',0,'White Falcon Capital Q1 2026 Partner Letter','https://seekingalpha.com/article/4892808-white-falcon-capital-q1-2026-partner-letter',4),(9,'rob isbitts','...','2026-04-22',0,'Teslaâ€™s Business Is at a Historic Crossroads, but What About Its Stock Price?','https://www.barchart.com/story/news/1449712/teslas-business-is-at-a-historic-crossroads-but-what-about-its-stock-price',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'ebube jones','...','2026-04-23',0.50952,'A $100 Billion Reason to Buy Amazon Stock Here','https://www.barchart.com/story/news/1480264/a-100-billion-reason-to-buy-amazon-stock-here',20),(2,'patrick sanders','...','2026-04-23',0,'Cathie Wood Keeps Buying Netflix Stock. Should You?','https://www.barchart.com/story/news/1479375/cathie-wood-keeps-buying-netflix-stock-should-you',2),(3,'dave kovaleski','With valuations lower, investors can find some good opportunities in AI.\nThe artificial intelligence (AI) megatrend has been the primary driver of an incredible bull market over the three or so years....','2026-04-23',0.9557,'Why the Best Time to Buy Artificial Intelligence (AI) Growth Stocks Is When Everyone Else Is Rotating Out of Tech','https://www.fool.com/investing/2026/04/23/why-the-best-time-to-buy-artificial-intelligence-a/',4),(4,'josh enomoto','...','2026-04-23',-0.14232,'Is Walmart Stock in a Bubble? 1 Weird Signal Answers a Contrarian â€˜No.â€™','https://www.barchart.com/story/news/1479242/is-walmart-stock-in-a-bubble-1-weird-signal-answers-a-contrarian-no',2),(5,'investing experts podcast','...','2026-04-23',0.60048,'2 Dividend Plays, Taking Profits, And Dry Powder','https://seekingalpha.com/article/4893191-2-dividend-plays-taking-profits-and-dry-powder',4),(6,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-23',0.86016,'5 Best AI Stocks to Buy According to Billionaire Ken Griffin','https://www.insidermonkey.com/blog/5-best-ai-stocks-to-buy-according-to-billionaire-ken-griffin-1744320/',4),(7,'mark dietrich','...','2026-04-23',0,'Amazon.com (NASDAQ:AMZN) Price Target Raised to $325.00','https://www.watchlistnews.com/amazon-com-nasdaqamzn-price-target-raised-to-325-00/11056509.html',2),(8,'kyle jackson','...','2026-04-23',-0.16184,'Direxion Daily AMZN Bull 2X Shares (NASDAQ:AMZU) Trading Down 1.7% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/direxion-daily-amzn-bull-2x-shares-nasdaqamzu-trading-down-1-7-whats-next/11056442.html',20);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -236,4 +237,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-23  4:01:07
+-- Dump completed on 2026-04-24  4:15:07
