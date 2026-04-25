@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
@@ -214,7 +215,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -223,7 +224,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'ebube jones','...','2026-04-23',0.50952,'A $100 Billion Reason to Buy Amazon Stock Here','https://www.barchart.com/story/news/1480264/a-100-billion-reason-to-buy-amazon-stock-here',20),(2,'patrick sanders','...','2026-04-23',0,'Cathie Wood Keeps Buying Netflix Stock. Should You?','https://www.barchart.com/story/news/1479375/cathie-wood-keeps-buying-netflix-stock-should-you',2),(3,'dave kovaleski','With valuations lower, investors can find some good opportunities in AI.\nThe artificial intelligence (AI) megatrend has been the primary driver of an incredible bull market over the three or so years....','2026-04-23',0.9557,'Why the Best Time to Buy Artificial Intelligence (AI) Growth Stocks Is When Everyone Else Is Rotating Out of Tech','https://www.fool.com/investing/2026/04/23/why-the-best-time-to-buy-artificial-intelligence-a/',4),(4,'josh enomoto','...','2026-04-23',-0.14232,'Is Walmart Stock in a Bubble? 1 Weird Signal Answers a Contrarian â€˜No.â€™','https://www.barchart.com/story/news/1479242/is-walmart-stock-in-a-bubble-1-weird-signal-answers-a-contrarian-no',2),(5,'investing experts podcast','...','2026-04-23',0.60048,'2 Dividend Plays, Taking Profits, And Dry Powder','https://seekingalpha.com/article/4893191-2-dividend-plays-taking-profits-and-dry-powder',4),(6,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-23',0.86016,'5 Best AI Stocks to Buy According to Billionaire Ken Griffin','https://www.insidermonkey.com/blog/5-best-ai-stocks-to-buy-according-to-billionaire-ken-griffin-1744320/',4),(7,'mark dietrich','...','2026-04-23',0,'Amazon.com (NASDAQ:AMZN) Price Target Raised to $325.00','https://www.watchlistnews.com/amazon-com-nasdaqamzn-price-target-raised-to-325-00/11056509.html',2),(8,'kyle jackson','...','2026-04-23',-0.16184,'Direxion Daily AMZN Bull 2X Shares (NASDAQ:AMZU) Trading Down 1.7% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/direxion-daily-amzn-bull-2x-shares-nasdaqamzu-trading-down-1-7-whats-next/11056442.html',20);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'usman kabir','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-24',0.55106,'Amazon.com, Inc. (AMZN): Bill Ackman Is Loading Up on This Stock','https://www.insidermonkey.com/blog/amazon-com-inc-amzn-bill-ackman-is-loading-up-on-this-stock-1745584/',4),(2,'christine ji','Please enable JS and disable any ad blocker...','2026-04-24',0.56284,'Amazonâ€™s chip business scores another major win','https://www.marketwatch.com/story/amazons-chip-business-scores-another-major-win-6b65f2db?mod=mw_rss_topstories',4),(3,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nMicrosoft Corp. (ticker: MSFT) remains one of the top technology companies in the U.S. \nIts $3.1 trillion market cap ...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',4),(4,'itai levitan','\n          Join investingLive News Updates\n        \n\n          Join investingLive FX & Crypto\n        \n\n          Follow us on Twitter\n        \n\n          Follow Us on Facebook\n        \nThe U.S. stock...','2026-04-24',0.1159,'tech stocks rally as financials lag: What traders need to know today','https://investinglive.com/stock-market-update/tech-stocks-rally-as-financials-lag-what-traders-need-to-know-today-20260424/',4),(5,'aditya raghunath','...','2026-04-24',0.43384,'As GitLab Deepens Ties with AWS, Should You Buy GTLB Stock?','https://www.barchart.com/story/news/1501887/as-gitlab-deepens-ties-with-aws-should-you-buy-gtlb-stock',2),(6,'gerelyn terzo','Intel (INTC) surged nearly 28% after delivering non-GAAP EPS of $0.29, crushing consensus estimates, with Data Center and AI revenue growing 22% as CEO cited agentic AI driving structural demand for C...','2026-04-24',0.89242,'Live Nasdaq Composite: Tech Sentiment Buoyed by Intelâ€™s Super Gains and Iran Negotiation Hopes','https://247wallst.com/investing/2026/04/24/live-nasdaq-composite-tech-sentiment-buoyed-by-intels-super-gains-and-iran-negotiation-hopes/',4),(7,'adam spatacco','Druckenmiller, who said he sold Nvidia too early, recently dumped his stake in Meta Platforms and doubled down on two cloud computing giants.\nFor more than four decades, Stanley Druckenmiller has been...','2026-04-24',0.67934,'Billionaire Stanley Druckenmiller Sells Meta and Buys These 2 Other Magnificent AI Stocks Instead','https://www.fool.com/investing/2026/04/24/billionaire-stanley-druckenmiller-sells-meta-and-b/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -237,4 +238,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-24  4:15:07
+-- Dump completed on 2026-04-25  3:48:02

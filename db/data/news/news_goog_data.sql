@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
@@ -214,7 +215,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -223,7 +224,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wajeeh khan','...','2026-04-23',0.43384,'Google Is Taking on Nvidia With New AI Chips. Does This Make GOOGL Stock a Buy?','https://www.barchart.com/story/news/1479719/google-is-taking-on-nvidia-with-new-ai-chips-does-this-make-googl-stock-a-buy',20),(2,'avi kapoor','Supporting his view, BMO Capital analyst Brian Pitz, on Wednesday, maintained Alphabet with an Outperform rating and raised the price target from $400 to $410.\nJPMorgan analyst Doug Anmuth reiterated ...','2026-04-23',-0.15566,'Alphabet Gets Street Backing As Cramer Doubles Down On $400 Target','https://www.benzinga.com/trading-ideas/long-ideas/26/04/51994587/alphabet-gets-street-backing-as-cramer-doubles-down-on-400-target',8),(3,'null','Please enable JS and disable any ad blocker...','2026-04-23',0.06364,'UBS adjusts price target on Alphabet stock','https://www.thestreet.com/investing/ubs-adjusts-price-target-on-alphabet-stock',2),(4,'cpa','The search giant is vying for a bigger slice of the AI pie.\nNvidia (NVDA 1.41%) made a name for itself by pioneering the graphics processing units (GPUs) that became the gold standard for rendering im...','2026-04-22',0.1988,'Google Unveils 2 New AI Chips to Take on Nvidia','https://www.fool.com/investing/2026/04/22/google-unveils-2-new-ai-chips-to-take-on-nvidia/',40),(5,'investing experts podcast','...','2026-04-22',0.12248,'Ben Carlson: Long Term Investing Still Wins - Even When It Feels Wrong','https://seekingalpha.com/article/4893040-ben-carlson-long-term-investing-still-wins-even-when-it-feels-wrong',4),(6,'anushka dutta','...','2026-04-22',0,'Why Stifel Analysts Are Watching Intel Stock Closely Before April 23','https://www.barchart.com/story/news/1452199/why-stifel-analysts-are-watching-intel-stock-closely-before-april-23',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nMicrosoft Corp. (ticker: MSFT) remains one of the top technology companies in the U.S. \nIts $3.1 trillion market cap ...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',4),(2,'aditya raghunath','...','2026-04-24',0.43384,'As GitLab Deepens Ties with AWS, Should You Buy GTLB Stock?','https://www.barchart.com/story/news/1501887/as-gitlab-deepens-ties-with-aws-should-you-buy-gtlb-stock',2),(3,'adam spatacco','Druckenmiller, who said he sold Nvidia too early, recently dumped his stake in Meta Platforms and doubled down on two cloud computing giants.\nFor more than four decades, Stanley Druckenmiller has been...','2026-04-24',0.67934,'Billionaire Stanley Druckenmiller Sells Meta and Buys These 2 Other Magnificent AI Stocks Instead','https://www.fool.com/investing/2026/04/24/billionaire-stanley-druckenmiller-sells-meta-and-b/',4),(4,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nPresident Donald Trumpâ€™s critics often claim his policies will disrupt U.S. economic growth and undermine Americansâ€™ ...','2026-04-24',0.1998,'Donald Trump Stocks: 8 Stocks Owned by the President','https://wtop.com/news/2026/04/donald-trump-stocks-8-stocks-owned-by-the-president-3/',4),(5,'news team','\nIntel (INTC) stock rocketed more than 16% higher in after-hours trading following a first quarter earnings report that beat analystsâ€™ expectations on the top and bottom lines and provided better-than...','2026-04-24',0.75174,'Intel stock soars on Q1 earnings beat, strong outlook','https://equity-insider.com/intel-stock-soars-on-q1-earnings-beat-strong-outlook/',4),(6,'wajeeh khan','...','2026-04-23',0.2368,'As Microsoft Offers Employee Buyout, Is MSFT Stock a Buy, Sell, or Hold?','https://www.barchart.com/story/news/1483424/as-microsoft-offers-employee-buyout-is-msft-stock-a-buy-sell-or-hold',2),(7,'ebube jones','...','2026-04-23',0,'Will 8th-Generation TPUs Move the Needle for Google Stock?','https://www.barchart.com/story/news/1483201/will-8th-generation-tpus-move-the-needle-for-google-stock',20),(8,'kaustubh bagalkote','Broadcom Inc. (NASDAQ:AVGO) shares are trading slightly lower on Thursday. This follows a pivotal disclosure regarding the companyâ€™s hardware pipeline.\nThe Nasdaq is up 0.05% while the S&P 500 has she...','2026-04-23',-0.17228,'Why Is Broadcom Stock Down On Thursday?','https://www.benzinga.com/trading-ideas/movers/26/04/52010327/why-is-broadcom-stock-down-on-thursday',8),(9,'anushka mukherji','...','2026-04-23',0.55264,'Broadcom Stock Is Trading at New All-Time Highs. Should You Buy Shares Here?','https://www.barchart.com/story/news/1480937/broadcom-stock-is-trading-at-new-all-time-highs-should-you-buy-shares-here',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -237,4 +238,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-24  4:15:07
+-- Dump completed on 2026-04-25  3:48:02
