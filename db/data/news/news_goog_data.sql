@@ -175,6 +175,7 @@ e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -215,7 +216,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -224,7 +225,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nMicrosoft Corp. (ticker: MSFT) remains one of the top technology companies in the U.S. \nIts $3.1 trillion market cap ...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',4),(2,'aditya raghunath','...','2026-04-24',0.43384,'As GitLab Deepens Ties with AWS, Should You Buy GTLB Stock?','https://www.barchart.com/story/news/1501887/as-gitlab-deepens-ties-with-aws-should-you-buy-gtlb-stock',2),(3,'adam spatacco','Druckenmiller, who said he sold Nvidia too early, recently dumped his stake in Meta Platforms and doubled down on two cloud computing giants.\nFor more than four decades, Stanley Druckenmiller has been...','2026-04-24',0.67934,'Billionaire Stanley Druckenmiller Sells Meta and Buys These 2 Other Magnificent AI Stocks Instead','https://www.fool.com/investing/2026/04/24/billionaire-stanley-druckenmiller-sells-meta-and-b/',4),(4,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nPresident Donald Trumpâ€™s critics often claim his policies will disrupt U.S. economic growth and undermine Americansâ€™ ...','2026-04-24',0.1998,'Donald Trump Stocks: 8 Stocks Owned by the President','https://wtop.com/news/2026/04/donald-trump-stocks-8-stocks-owned-by-the-president-3/',4),(5,'news team','\nIntel (INTC) stock rocketed more than 16% higher in after-hours trading following a first quarter earnings report that beat analystsâ€™ expectations on the top and bottom lines and provided better-than...','2026-04-24',0.75174,'Intel stock soars on Q1 earnings beat, strong outlook','https://equity-insider.com/intel-stock-soars-on-q1-earnings-beat-strong-outlook/',4),(6,'wajeeh khan','...','2026-04-23',0.2368,'As Microsoft Offers Employee Buyout, Is MSFT Stock a Buy, Sell, or Hold?','https://www.barchart.com/story/news/1483424/as-microsoft-offers-employee-buyout-is-msft-stock-a-buy-sell-or-hold',2),(7,'ebube jones','...','2026-04-23',0,'Will 8th-Generation TPUs Move the Needle for Google Stock?','https://www.barchart.com/story/news/1483201/will-8th-generation-tpus-move-the-needle-for-google-stock',20),(8,'kaustubh bagalkote','Broadcom Inc. (NASDAQ:AVGO) shares are trading slightly lower on Thursday. This follows a pivotal disclosure regarding the companyâ€™s hardware pipeline.\nThe Nasdaq is up 0.05% while the S&P 500 has she...','2026-04-23',-0.17228,'Why Is Broadcom Stock Down On Thursday?','https://www.benzinga.com/trading-ideas/movers/26/04/52010327/why-is-broadcom-stock-down-on-thursday',8),(9,'anushka mukherji','...','2026-04-23',0.55264,'Broadcom Stock Is Trading at New All-Time Highs. Should You Buy Shares Here?','https://www.barchart.com/story/news/1480937/broadcom-stock-is-trading-at-new-all-time-highs-should-you-buy-shares-here',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'u.s. news & world report','\nBreaking News: A suspect is in custody following a shooting outside the White House correspondentsâ€™ dinner at the Washington Hilton Hotel on Saturday.\n\n\nBreaking News: WATCH: Jeannine Pirro, Mayor Bo...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',4),(2,'aditya raghunath','...','2026-04-24',0.43384,'As GitLab Deepens Ties with AWS, Should You Buy GTLB Stock?','https://www.barchart.com/story/news/1501887/as-gitlab-deepens-ties-with-aws-should-you-buy-gtlb-stock',2),(3,'adam spatacco','Druckenmiller, who said he sold Nvidia too early, recently dumped his stake in Meta Platforms and doubled down on two cloud computing giants.\nFor more than four decades, Stanley Druckenmiller has been...','2026-04-24',0.67934,'Billionaire Stanley Druckenmiller Sells Meta and Buys These 2 Other Magnificent AI Stocks Instead','https://www.fool.com/investing/2026/04/24/billionaire-stanley-druckenmiller-sells-meta-and-b/',4),(4,'u.s. news & world report','\nBreaking News: A suspect is in custody following a shooting outside the White House correspondentsâ€™ dinner at the Washington Hilton Hotel on Saturday.\n\n\nBreaking News: WATCH: Jeannine Pirro, Mayor Bo...','2026-04-24',0.1998,'Donald Trump Stocks: 8 Stocks Owned by the President','https://wtop.com/news/2026/04/donald-trump-stocks-8-stocks-owned-by-the-president-3/',4),(5,'news team','\nIntel (INTC) stock rocketed more than 16% higher in after-hours trading following a first quarter earnings report that beat analystsâ€™ expectations on the top and bottom lines and provided better-than...','2026-04-24',0.75174,'Intel stock soars on Q1 earnings beat, strong outlook','https://equity-insider.com/intel-stock-soars-on-q1-earnings-beat-strong-outlook/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -238,4 +239,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-25  3:48:02
+-- Dump completed on 2026-04-26  4:19:04

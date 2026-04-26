@@ -175,6 +175,7 @@ e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -215,7 +216,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -224,7 +225,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'cory renauer','Sector exposure and risk profiles set these two high-yield ETFs apart, shaping their appeal for income and growth-focused investors.\nThe iShares Core High Dividend ETF (HDV 0.67%) and Fidelity High Di...','2026-04-24',0.621,'The FDVV ETF Delivers Higher 5-Year Growth Than the HDV ETF','https://www.fool.com/coverage/etfs/2026/04/24/the-fdvv-etf-delivers-higher-5-year-growth-than-the-hdv-etf/',4),(2,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nApril 22, 2026, 8:00 PM\nMicrosoft Corp. (ticker: MSFT) remains one of the top technology companies in the U.S. \nIts $3.1 trillion market cap ...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',40),(3,'itai levitan','\n          Join investingLive News Updates\n        \n\n          Join investingLive FX & Crypto\n        \n\n          Follow us on Twitter\n        \n\n          Follow Us on Facebook\n        \nThe U.S. stock...','2026-04-24',0.1159,'tech stocks rally as financials lag: What traders need to know today','https://investinglive.com/stock-market-update/tech-stocks-rally-as-financials-lag-what-traders-need-to-know-today-20260424/',4),(4,'sarah holzmann','...','2026-04-24',0.16184,'Michael Burry Takes a Break from Warning on Hyperscalers to Buy Microsoft Stock, Signaling Shares Are Too Cheap to Ignore','https://www.barchart.com/story/news/1501878/michael-burry-takes-a-break-from-warning-on-hyperscalers-to-buy-microsoft-stock-signaling-shares-are-too-cheap-to-ignore',20),(5,'gerelyn terzo','Intel (INTC) surged nearly 28% after delivering non-GAAP EPS of $0.29, crushing consensus estimates, with Data Center and AI revenue growing 22% as CEO cited agentic AI driving structural demand for C...','2026-04-24',0.89242,'Live Nasdaq Composite: Tech Sentiment Buoyed by Intelâ€™s Super Gains and Iran Negotiation Hopes','https://247wallst.com/investing/2026/04/24/live-nasdaq-composite-tech-sentiment-buoyed-by-intels-super-gains-and-iran-negotiation-hopes/',4),(6,'usman kabir','...','2026-04-24',0.35232,'Microsoft Corporation (MSFT): A Must Have Safe Stock for Beginner Portfolios','https://finance.yahoo.com/markets/stocks/articles/microsoft-corporation-msft-must-safe-143634384.html',200);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wall street week ahead','...','2026-04-25',0.2,'Tech Heavyweights To Report Next Week, Fed Rate Decision Also In Focus','https://seekingalpha.com/article/4894081-tech-heavyweights-to-report-next-week-fed-rate-decision-also-in-focus',4),(2,'keithen drury','Microsoft has struggled in 2026.\n2026 has been an odd year for artificial intelligence (AI) investors. While some stocks have done well, others have flopped. However, after the recent rally in the mar...','2026-04-25',-0.08962,'Prediction: This Fallen AI Stock Could Be the Comeback Story of 2026','https://www.fool.com/investing/2026/04/25/prediction-this-fallen-ai-stock-could-be-the-comeb/',4),(3,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-25',0.01674,'Microsoft (MSFT) Must Face a UK lawsuit Over Cloud Computing Licenses','https://www.insidermonkey.com/blog/microsoft-msft-must-face-a-uk-lawsuit-over-cloud-computing-licenses-1746409/',40),(4,'yahoo finance video','...','2026-04-24',0.272,'Elon Musk vs. Sam Altman, Mag 7 earnings, Fed meeting: What to Watch','https://ca.finance.yahoo.com/video/elon-musk-vs-sam-altman-230000177.html',2),(5,'jillian moore','...','2026-04-24',0.21856,'Weekly Market Update: Stocks Flat as Energy Rises, Healthcare Falls','https://www.morningstar.com/economy/weekly-market-update-stocks-flat-energy-rises-healthcare-falls',2),(6,'rich asplund','...','2026-04-24',0.50952,'S&P 500 and Nasdaq Post Record Highs on Tech Stock Strength and Iran Diplomacy','https://www.barchart.com/story/news/1508778/s-p-500-and-nasdaq-post-record-highs-on-tech-stock-strength-and-iran-diplomacy',2),(7,'david dittman','From $107.88 $24.99\nSubscribe to Kiplinger\nThe leader of the AI revolution helped carry two of the three main U.S. equity indexes to new highs heading into the weekend.\n\nWhen you purchase through link...','2026-04-24',0.2203,'Nasdaq, S&P 500 Reach New All-Time Highs: Stock Market Today','https://www.kiplinger.com/investing/stocks/nasdaq-s-and-p-500-reach-new-all-time-highs-stock-market-today',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -238,4 +239,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-25  3:48:03
+-- Dump completed on 2026-04-26  4:19:04
