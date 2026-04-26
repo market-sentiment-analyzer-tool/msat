@@ -85,7 +85,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
-60c97808-4052-11f1-a67f-c6a1e33ab8a2:1-106,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -100,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
@@ -186,6 +186,7 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f76aa379-4120-11f1-a280-224509a92841:1-115,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -215,7 +216,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -224,7 +225,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1submcg','oi1lntp','2026-04-24',4,-0.5574,'Ban this user asapÂ '),(2,'AAPL','1submcg','ohzk3ls','2026-04-24',3,0.5859,'>Do you see the same positive long-term impact I do, or\n\nLmao. If you\'re gonna copy paste AI slop for a scam crypto ad at least paste the whole thing. '),(3,'AAPL','1submcg','ohzj03v','2026-04-24',-6,0.4201,'More like from Cook to Steve Balmer ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -238,4 +238,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-25  2:57:59
+-- Dump completed on 2026-04-26  3:37:21

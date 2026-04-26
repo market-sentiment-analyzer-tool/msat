@@ -85,7 +85,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
-60c97808-4052-11f1-a67f-c6a1e33ab8a2:1-106,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -100,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
+6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
 6f462e16-0ed3-11f1-9d0d-f2a10d2ca48c:1-66,
 70b6514f-0ae8-11f1-b896-1a143409235e:1-61,
@@ -186,6 +186,7 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f76aa379-4120-11f1-a280-224509a92841:1-115,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -215,7 +216,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -224,7 +225,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1suigb9','oi10tc7','2026-04-24',8,0.7717,'betting against nvidia is like betting you can survive in the heart of a star'),(2,'NVDA_Stock','1suigb9','oi13qmt','2026-04-24',9,0.7227,'Lol Burry is a classic contrarian investor. Betting against the chips/AI but loves software.'),(3,'NVDA_Stock','1suigb9','oi1jygl','2026-04-24',15,0.1779,'I sold 30 min before the pump after holding 7 months. You are welcome.'),(4,'NVDA_Stock','1suigb9','oi2yg2m','2026-04-24',7,0,'Finally breaking out,, next 220 before earning day. then.. '),(5,'NVDA_Stock','1suigb9','oi1aw4y','2026-04-24',5,0.6812,'Jensen said the shorts couldn\'t hold back the tide.  (and it helps when his CFO is doing buy backs)'),(6,'NVDA_Stock','1suigb9','oi1ldd7','2026-04-24',5,-0.4215,'Actually his shorts won\'t move much to delta since its already so far otm. Â \n\nIt will just slowly get eaten away by theta loss'),(7,'NVDA_Stock','1suigb9','oi1e5th','2026-04-24',3,0.3612,'Thank me guys, I partially sold at $202'),(8,'NVDA_Stock','1suigb9','oi1td3v','2026-04-24',3,0,'need to BLAST through'),(9,'NVDA_Stock','1suigb9','oi2h8cn','2026-04-24',3,-0.1326,'You\'re not holding for $600?'),(10,'NVDA_Stock','1suigb9','oi2q6y0','2026-04-24',1,0,'And .. thatâ€™s all because of Intel '),(11,'NVDA_Stock','1suigb9','oi3ow2f','2026-04-24',1,0.7783,'Why did we need intel to help us? Didnâ€™t we invest in intel lololÂ ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1svfnhk','oi7tzg0','2026-04-25',6,0.6249,'\"Nvidia called it precisely.\"  \n\nGreat testimonial'),(2,'NVDA_Stock','1svfnhk','oi86kag','2026-04-25',6,0,'Can someone translate ?'),(3,'NVDA_Stock','1svfnhk','oi81zyd','2026-04-25',2,0.6369,'Ah u/Warm-Spot2953 , always love when you post'),(4,'NVDA_Stock','1svfnhk','oi7v18e','2026-04-25',-8,0,'[removed]'),(5,'NVDA_Stock','1svdz4o','oi7t9go','2026-04-25',2,-0.4017,'90% GPU market is with Nvidia. And it is increasing.\nAlso, Nvidia will sell more number of CPUs than anyone this year!'),(6,'NVDA_Stock','1svtco9','oiau5qh','2026-04-26',2,0,'Serv about to blast off on Monday');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -238,4 +239,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-25  2:57:59
+-- Dump completed on 2026-04-26  3:37:22
