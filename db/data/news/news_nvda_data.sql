@@ -184,6 +184,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -216,7 +217,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jonathan rose','\n\n			Everyoneâ€™s watching Neuralink. Few are watching what makes it possible.		\nA few weeks ago, a research paper out of MIT (the college) crossed my desk that most investors would have ignored.It was ...','2026-04-25',0.22056,'Forget Neuralink: The Real Brain Tech Trade Has 10 Names Youâ€™ve Never Heard','https://investorplace.com/dailylive/2026/04/forget-neuralink-the-real-brain-tech-trade-has-10-names-youve-never-heard/',4),(2,'hector craigson','Looking for the next big thing in your investment portfolio? Itâ€™s that time of year again when everyone starts talking about the top growth stocks 2025. Figuring out where to put your money can feel l...','2026-04-25',0.7095,'Unveiling the Top Growth Stocks for 2025: Your Investment Guide','https://techannouncer.com/unveiling-the-top-growth-stocks-for-2025-your-investment-guide/',4),(3,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-25',0.3201,'Nvidiaâ€™s (NVDA) Solid Bond with Gamers is Fracturing over AI','https://www.insidermonkey.com/blog/nvidias-nvda-solid-bond-with-gamers-is-fracturing-over-ai-1746406/',4),(4,'jeremy bowman','Nvidia is down just 2% from its all-time high.\nSemiconductor stocks have skyrocketed in April as tensions in Iran have cooled, AI spending continues to surge, sector earnings reports have impressed, a...','2026-04-25',0.43654,'Nvidia at $5 Trillion: Buy, Sell, or Hold?','https://www.fool.com/investing/2026/04/24/nvidia-at-5-trillion-buy-sell-or-hold/',40),(5,'howard smith','AI-fueled earnings strength and fresh government backing put this chip giant at the center of the marketâ€™s focus, today, April 24, 2026.\nIntel (INTC +23.60%), pioneer of the microprocessor and produce...','2026-04-24',0.47122,'Stock Market Today, April 24: Intel Surges After Q1 Earnings Beat Expectations','https://www.fool.com/coverage/stock-market-today/2026/04/24/stock-market-today-april-24-intel-surges-after-q1-earnings-beat-expectations/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'seeking alpha analyst connect','...','2026-04-26',0,'Analyst Connect April 2026: A Guide For Conducting Investment Research','https://seekingalpha.com/article/4893679-analyst-connect-april-2026-a-guide-for-conducting-investment-research',4),(2,'adam spatacco','Nvidia invested $1 billion in Nokia back in October.\nFor the last three years, Nvidia (NVDA +4.30%) has been the most dominant force in the artificial intelligence (AI) data center boom. Some recent m...','2026-04-26',0.19944,'Nvidia Has 8% of Its Portfolio in This Under-the-Radar $10 Stock Set to Disrupt a $200 Billion Market','https://www.fool.com/investing/2026/04/26/nvidia-has-8-of-its-portfolio-in-this-under-the-ra/',40),(3,'null','Investing\nNvidia (NVDA) trades at a 22-25x forward P/E with 25-35% expected growth (PEG of 0.7-1.0), while AMD (AMD) commands 35-45x earnings with 30-40% projected growth (PEG of 1.0-1.5), making Nvid...','2026-04-26',-0.13724,'Nvidia Trades at Half AMDâ€™s Multiple â€” but Hereâ€™s the Real Story the Market Is Missing','https://247wallst.com/investing/2026/04/26/nvidia-trades-at-half-amds-multiple-but-heres-the-real-story-the-market-is-missing/',20),(4,'defense world staff','...','2026-04-26',0,'NVIDIA Corporation $NVDA Holdings Raised by Brookwood Investment Group LLC','https://www.defenseworld.net/2026/04/26/nvidia-corporation-nvda-holdings-raised-by-brookwood-investment-group-llc.html',20),(5,'defense world staff','...','2026-04-26',0.28896,'BOCHK Asset Management Ltd Grows Position in NVIDIA Corporation $NVDA','https://www.defenseworld.net/2026/04/26/bochk-asset-management-ltd-grows-position-in-nvidia-corporation-nvda.html',20),(6,'defense world staff','...','2026-04-26',0.39512,'NVIDIA Corporation $NVDA Stock Position Lifted by Bartlett & CO. Wealth Management LLC','https://www.defenseworld.net/2026/04/26/nvidia-corporation-nvda-stock-position-lifted-by-bartlett-co-wealth-management-llc.html',20),(7,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-26',0.53696,'Jim Cramer Discussed AI Circular Deals, Top Quantum Plays & These 22 Stocks','https://www.insidermonkey.com/blog/jim-cramer-discussed-ai-circular-deals-top-quantum-plays-these-22-stocks-1743937/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -239,4 +240,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-26  4:19:04
+-- Dump completed on 2026-04-27  4:25:06

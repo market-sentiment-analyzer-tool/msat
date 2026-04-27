@@ -184,6 +184,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -216,7 +217,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'u.s. news & world report','\nBreaking News: A suspect is in custody following a shooting outside the White House correspondentsâ€™ dinner at the Washington Hilton Hotel on Saturday.\n\n\nBreaking News: WATCH: Jeannine Pirro, Mayor Bo...','2026-04-24',0.6338,'Should You Buy Microsoft (MSFT) Stock?','https://wtop.com/news/2026/04/should-you-buy-microsoft-msft-stock/',4),(2,'aditya raghunath','...','2026-04-24',0.43384,'As GitLab Deepens Ties with AWS, Should You Buy GTLB Stock?','https://www.barchart.com/story/news/1501887/as-gitlab-deepens-ties-with-aws-should-you-buy-gtlb-stock',2),(3,'adam spatacco','Druckenmiller, who said he sold Nvidia too early, recently dumped his stake in Meta Platforms and doubled down on two cloud computing giants.\nFor more than four decades, Stanley Druckenmiller has been...','2026-04-24',0.67934,'Billionaire Stanley Druckenmiller Sells Meta and Buys These 2 Other Magnificent AI Stocks Instead','https://www.fool.com/investing/2026/04/24/billionaire-stanley-druckenmiller-sells-meta-and-b/',4),(4,'u.s. news & world report','\nBreaking News: A suspect is in custody following a shooting outside the White House correspondentsâ€™ dinner at the Washington Hilton Hotel on Saturday.\n\n\nBreaking News: WATCH: Jeannine Pirro, Mayor Bo...','2026-04-24',0.1998,'Donald Trump Stocks: 8 Stocks Owned by the President','https://wtop.com/news/2026/04/donald-trump-stocks-8-stocks-owned-by-the-president-3/',4),(5,'news team','\nIntel (INTC) stock rocketed more than 16% higher in after-hours trading following a first quarter earnings report that beat analystsâ€™ expectations on the top and bottom lines and provided better-than...','2026-04-24',0.75174,'Intel stock soars on Q1 earnings beat, strong outlook','https://equity-insider.com/intel-stock-soars-on-q1-earnings-beat-strong-outlook/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'joseph griffin','...','2026-04-26',0,'Alphabet (NASDAQ:GOOG) Trading 1.4% Higher â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13418491/alphabet-nasdaqgoog-trading-1-4-higher-heres-why.html',2),(2,'defense world staff','...','2026-04-26',0.2368,'Fisher Funds Management LTD Sells 4,605 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/fisher-funds-management-ltd-sells-4605-shares-of-alphabet-inc-goog.html',2),(3,'defense world staff','...','2026-04-26',0.5364,'CM Wealth Advisors LLC Boosts Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/cm-wealth-advisors-llc-boosts-holdings-in-alphabet-inc-goog.html',2),(4,'daniel sparks','When the Google parent reports earnings on Wednesday, these will be the two most important metrics to watch.\nAlphabet (GOOG +1.44%)(GOOGL +1.71%) is scheduled to report first-quarter 2026 results on W...','2026-04-26',0.7675,'Is Alphabet Stock a Buy Ahead of Earnings?','https://www.fool.com/investing/2026/04/25/is-alphabet-stock-a-buy-ahead-of-earnings/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -239,4 +240,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-26  4:19:04
+-- Dump completed on 2026-04-27  4:25:06

@@ -184,6 +184,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -216,7 +217,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'hector craigson','Looking for the next big thing in your investment portfolio? Itâ€™s that time of year again when everyone starts talking about the top growth stocks 2025. Figuring out where to put your money can feel l...','2026-04-25',0.7095,'Unveiling the Top Growth Stocks for 2025: Your Investment Guide','https://techannouncer.com/unveiling-the-top-growth-stocks-for-2025-your-investment-guide/',4),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-25',0.85718,'5 Best Stocks to Buy Before SpaceX IPO','https://www.insidermonkey.com/blog/5-best-stocks-to-buy-before-spacex-ipo-1746054/',4),(3,'ian cooper','Personal Finance\n\n					Sending You to Google News in 3\n\nÂ© U.S. Air Forces \nOn a recent episode of NerdWalletâ€™s Smart Money Podcast titled USPSâ€™ Cash Crisis Hits More Than Your Mailbox, Plus The Debt S...','2026-04-25',0.1981,'The USPS Got a â€˜Free Lunchâ€™ for Decades. Thatâ€™s Over Now','https://247wallst.com/personal-finance/2026/04/25/the-usps-got-a-free-lunch-for-decades-thats-over-now/',4),(4,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-04-25',0.54422,'California Claims that Amazonâ€™s (AMZN) Collusion Drove up Consumer Prices, Citing New Evidence','https://www.insidermonkey.com/blog/california-claims-that-amazons-amzn-collusion-drove-up-consumer-prices-citing-new-evidence-1746407/',4),(5,'yahoo finance video','...','2026-04-24',0.272,'Elon Musk vs. Sam Altman, Mag 7 earnings, Fed meeting: What to Watch','https://ca.finance.yahoo.com/video/elon-musk-vs-sam-altman-230000177.html',2),(6,'motley fool youtube','What does the future hold for Amazon stock? Join our experts as they dissect the strengths and weaknesses of AMZN and reveal their surprising ratings.\nExplore the exciting world of Amazon (AMZN +3.49%...','2026-04-24',0.17536,'Amazon Stock: A Surprising Rating From Motley Fool Experts','https://www.fool.com/investing/2026/04/24/amazon-stock-a-surprising-rating-from-motley-fool/',40),(7,'jillian moore','...','2026-04-24',0.21856,'Weekly Market Update: Stocks Flat as Energy Rises, Healthcare Falls','https://www.morningstar.com/economy/weekly-market-update-stocks-flat-energy-rises-healthcare-falls',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-04-26',0.06364,'Cathie Wood sells $75M of surging semiconductor stock','https://www.thestreet.com/investing/stocks/cathie-wood-sells-75-of-surging-semiconductor-stock-amd',2),(2,'daniel sparks','Shares have rallied sharply ahead of earnings.\nShares of Amazon (AMZN +3.47%) have come roaring back recently. The e-commerce and cloud computing giant is up about 14% year to date as of this writing,...','2026-04-26',0.5522,'Amazon Stock: Buy, Sell, or Hold?','https://www.fool.com/investing/2026/04/26/amazon-stock-buy-sell-or-hold/',40),(3,'defense world staff','...','2026-04-26',0.5944,'Amazon.com, Inc. $AMZN is BOCHK Asset Management Ltdâ€™s 8th Largest Position','https://www.defenseworld.net/2026/04/26/amazon-com-inc-amzn-is-bochk-asset-management-ltds-8th-largest-position.html',2),(4,'sarina trangle','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-04-26',0.7669,'What to Expect in Markets This Week: The Fed Meets, and Magnificent 7 Earnings Roll In','https://www.investopedia.com/what-to-expect-in-markets-this-week-the-fed-meets-and-magnificent-7-earnings-roll-in-11957248',4),(5,'defense world staff','...','2026-04-26',0.39512,'Bartlett & CO. Wealth Management LLC Has $212.21 Million Stock Position in Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/04/26/bartlett-co-wealth-management-llc-has-212-21-million-stock-position-in-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -239,4 +240,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-26  4:19:03
+-- Dump completed on 2026-04-27  4:25:06
