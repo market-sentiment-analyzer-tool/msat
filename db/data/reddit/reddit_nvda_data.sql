@@ -125,6 +125,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a6b21022-41ea-11f1-a85b-e23e92dacf0a:1-115,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -175,6 +176,7 @@ e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
+e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
@@ -186,7 +188,6 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
-f76aa379-4120-11f1-a280-224509a92841:1-115,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -216,7 +217,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +226,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1svfnhk','oi7tzg0','2026-04-25',6,0.6249,'\"Nvidia called it precisely.\"  \n\nGreat testimonial'),(2,'NVDA_Stock','1svfnhk','oi86kag','2026-04-25',6,0,'Can someone translate ?'),(3,'NVDA_Stock','1svfnhk','oi81zyd','2026-04-25',2,0.6369,'Ah u/Warm-Spot2953 , always love when you post'),(4,'NVDA_Stock','1svfnhk','oi7v18e','2026-04-25',-8,0,'[removed]'),(5,'NVDA_Stock','1svdz4o','oi7t9go','2026-04-25',2,-0.4017,'90% GPU market is with Nvidia. And it is increasing.\nAlso, Nvidia will sell more number of CPUs than anyone this year!'),(6,'NVDA_Stock','1svtco9','oiau5qh','2026-04-26',2,0,'Serv about to blast off on Monday');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1swpjlw','oihb14b','2026-04-27',13,0.4588,'Yeah.. he was right once and the trading world simps to this guy like some dollar store stock market messiah. It pleases me heâ€™s getting bent on stupid decisions. '),(2,'NVDA_Stock','1swpjlw','oiheitj','2026-04-27',11,0.5719,'I can\'t tell if Burry\'s on too many drugs or not enough. Been almost 2 decades since he got rich on \"shorting\" home mortgages.  \n\nHe needs an intelligence charger. He\'s down to 3%.'),(3,'NVDA_Stock','1swpjlw','oihghfo','2026-04-27',8,-0.4215,'Nobody wants to talk about it. He already got crushed early, semiconductor bull; guns, gold, semiconductor, pilgrims'),(4,'NVDA_Stock','1swpjlw','oihfaah','2026-04-27',13,-0.431,'Seriously.. I hate that guy. People still listen to him because he has that serious face. But thatâ€™s all he got. '),(5,'NVDA_Stock','1swpjlw','oihqai4','2026-04-27',4,-0.3182,'Burry comparing nvda to cisco shows how lost he is. '),(6,'NVDA_Stock','1swpjlw','oihoa6w','2026-04-27',3,0,'I should have bought more at 168'),(7,'NVDA_Stock','1swpjlw','oihlr0y','2026-04-27',3,0.4404,'He already cashed in a few months ago, prolly made some good money also'),(8,'NVDA_Stock','1swpjlw','oihoh7w','2026-04-27',1,0.5927,'Burry called  out Nvidia when it was above $190 . He might have covered his shorts when the stock dropped below $170, we donâ€™t know, but in any case the stock is only up 10% fm when he first wrote abt it.'),(9,'NVDA_Stock','1swpjlw','oiho0jh','2026-04-27',-2,-0.6488,'Pls show us where Michael Burry was not misleading in his thesis about Nvidia. Did u point it out when he first wrote about it ? Just bcoz the stock has risen along with numerous other tech names , does not in any way mean that he is misleading investors. Why not take a shot at the analysts who had ridiculous target prices for Tesla for so long ? How about the $1000 price target for Micron ? is that misleading ?'),(10,'NVDA_Stock','1sw7ls8','oiep0xu','2026-04-26',9,0.8598,'Hedges & market makers have almost a month to blast us to all new all-time high before earnings and for whatever reason at all, they will pull down after earnings to just a test a new support after it makes a new high. Iâ€™m looking for 235 to 240 by mid May, the problem is do we sell some and re-buy back in ?!? Imagine  the capital gains we have to pay on a long-term \\_\n\nhttps://preview.redd.it/4w1cfrithkxg1.jpeg?width=1179&format=pjpg&auto=webp&s=c4025e56e91c9c875d372da11c51732c5ccea472\n\nitâ€™s a hard decision but get ready for a brand new high within the next three weeks before earnings. I sold way too much in 2017 2025 as well.'),(11,'NVDA_Stock','1sw7ls8','oieiw4o','2026-04-26',5,0,'Long. '),(12,'NVDA_Stock','1sw7ls8','oifukt3','2026-04-26',4,0.7269,'NVDA is probably the most scrutinized company in the world and you should assume itâ€™s priced to perfection. It will be repriced after all earnings.'),(13,'NVDA_Stock','1sw7ls8','oidmow3','2026-04-26',3,0.7269,'Thatâ€™s great comprehensive analysis of NVDAâ€”thanks for posting the article. '),(14,'NVDA_Stock','1sw7ls8','oiewx7g','2026-04-26',3,0.6762,'I dont doubt the thesis but I doubt the convexity\nas being the largest marketcap company eventually has lower PE ratio assigned to it, and lesser flows from ETFs surging to it relatively than on its ascent up\n'),(15,'NVDA_Stock','1sw7ls8','oiej5pe','2026-04-26',6,0.9337,'Thank you for sharing . . . The I/O Fund analysis by Beth Kindig argues that NVIDIA is on a trajectory to reach a $20 trillion market cap by 2030, driven by a shift from being a mere component supplier to a full-stack AI systems provider. The core of this thesis is NVIDIA\'s aggressive move to a one-year product cycle (Blackwell, Blackwell Ultra, and Rubin), which creates a significant barrier to entry for custom silicon competitors that typically operate on three-to-five-year cycles. Kindig projects that NVIDIA can reach this valuation if its data center revenue achieves a 36% compound annual growth rate (CAGR), potentially hitting nearly $1 trillion in annual sales by the end of the decade.\n\nSheesh, to date - I am up 120.50% on my NVDA investment . . . Another 310% per Kindig\'s market cap projection would be wild (albeit, I am fairly certain, it wont happen). What do you guys think?'),(16,'NVDA_Stock','1sw7ls8','oie5olw','2026-04-26',2,0,'Very insightful.'),(17,'NVDA_Stock','1sw7ls8','oie6wrk','2026-04-26',2,0.3716,'This is a great analysis. Lots of factors but quite educational. '),(18,'NVDA_Stock','1sw7ls8','oienhk1','2026-04-26',2,0.6597,'If nvdia rule the world then yes .\nIf nvdia rule the virtual world then yes'),(19,'NVDA_Stock','1sw7ls8','oihbe8d','2026-04-27',1,0,'What are her picks outside of nvda? '),(20,'NVDA_Stock','1swks2n','oign073','2026-04-26',6,0,'And it will continue to not be for the foreseeable future. All AI roads lead to Nvidia. ðŸ¤– '),(21,'NVDA_Stock','1swks2n','oihbxjv','2026-04-27',2,0,'Green');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -239,4 +240,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-26  3:37:22
+-- Dump completed on 2026-04-27  3:43:41
