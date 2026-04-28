@@ -121,11 +121,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+98fa552a-42b4-11f1-98d9-6ecb0c840cf1:1-155,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
-a6b21022-41ea-11f1-a85b-e23e92dacf0a:1-115,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -185,6 +185,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -217,7 +218,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,6 +227,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1sx4u8n','oik8q0w','2026-04-27',211,0.5994,'Feel like this sub is the complete opposite of value investing at this point lol  '),(2,'ValueInvesting','1sx4u8n','oikc2ds','2026-04-27',41,0.765,'This is pretty big for whoever is facilitating these bond placements, underwriting fees are typically **0.25% to 0.75%** of the total deal size for investment-grade tech bonds. On a $400 billion annual volume, that represents a fee pool of \\*\\*$1 billion to $3 billion\\*\\* shared among the lead banks. JPM, GS, BAC, MS will all have a piece of the pie. Highly accretive to their net incomes.'),(3,'ValueInvesting','1sx4u8n','oikca10','2026-04-27',40,0.91,'This is truly insane amount of capex spending.\n\nIm finding it hard to see how itâ€™s justified.\n\nMaybe thats a point in favour of going long on Apple.\n\nIf we end up using AI on Apple devices than Apple gets a lot of the economic benefits of the AI societal transformation while spending nothing to get these benefits.'),(4,'ValueInvesting','1sx4u8n','oikes34','2026-04-27',7,-0.0191,'While GOOG may or may not reach ATH today.  '),(5,'ValueInvesting','1sx4u8n','oik851j','2026-04-27',26,0,'META to $1000\n\nMSFT to $700\n\nAMZN to $400'),(6,'ValueInvesting','1sx4u8n','oikm25w','2026-04-27',4,0.1779,'Combined 400b debt on all of them is pretty small. '),(7,'ValueInvesting','1sx4u8n','oikbn1b','2026-04-27',3,-0.2755,'uhh i dont like this'),(8,'ValueInvesting','1sx4u8n','oikcc87','2026-04-27',9,0.4939,'Folks will argue that these are value names ðŸ¤£'),(9,'ValueInvesting','1sx4u8n','oikff41','2026-04-27',8,0.3724,'This can\'t possibly end badly.'),(10,'ValueInvesting','1sx4u8n','oikis55','2026-04-27',3,0.1779,'You hold all these for a few years youâ€™ll do fineâ€¦'),(11,'ValueInvesting','1sx4u8n','oikxt82','2026-04-27',3,-0.8671,'That\'s insane. If a company invested only its own cash, that\'s not a problem, when it fails. Meta lost tons of its (mostly) own cash on the metaverse and still doing fine.\n\nIf they leverage investments with debt to the moon, this project gonna be too big to fail.'),(12,'ValueInvesting','1sx4u8n','oik82je','2026-04-27',9,0,'AI is the future'),(13,'ValueInvesting','1sx4u8n','oikgmou','2026-04-27',2,0,'With that pace, they will be spending around 10 trillion in 2032.'),(14,'ValueInvesting','1sx4u8n','oikm7l5','2026-04-27',2,0.6249,'Invest in shovels'),(15,'ValueInvesting','1sx4u8n','oikj8b3','2026-04-27',2,0,'Yawn, so?'),(16,'ValueInvesting','1sx4u8n','oikal72','2026-04-27',4,0.9488,'wow. AI is the race-to-the-bottom debt cancer that keeps being unprofitable.\n\nIâ€™m running Ollama locally, ON MY LAPTOP, with openCode, lmao. Iâ€™m opting to trail cutting edge perf by a tidbit and by payingâ€¦. absolutely nothing.\n\nOpen source models keep getting better. More energy efficient. Smaller. More tokens / second output.\n\nThere is a clear limit to the answer quality of LLMs. Proven by the very latest science, using â€œexpertâ€ subnetworks for getting better performance for specific answers.\n\nBut sure, mega cap capex keeps getting out of hand ðŸ˜‚\n\n[added later] also, take into account things such as these gems:\nhttps://www.reddit.com/r/ClaudeAI/s/9eviCJR4D2\n\nand things like this:\nhttps://www.reddit.com/r/LLMDevs/s/gQ70f3bDoD'),(17,'ValueInvesting','1sx4u8n','oikfamn','2026-04-27',2,-0.3404,'Mostly Goog and Amzn. Msft is not spending like those other two! '),(18,'ValueInvesting','1sx4u8n','oildwkj','2026-04-27',1,0,'Money printer goes burrr '),(19,'ValueInvesting','1sx4u8n','oinbl82','2026-04-27',1,-0.3182,'Why are they borrowing money when they can use the money they earn?  I\'m confused ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -239,4 +241,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-27  3:43:41
+-- Dump completed on 2026-04-28  3:47:14

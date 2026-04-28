@@ -121,11 +121,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+98fa552a-42b4-11f1-98d9-6ecb0c840cf1:1-155,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
-a6b21022-41ea-11f1-a85b-e23e92dacf0a:1-115,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -185,6 +185,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
+f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -217,7 +218,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,7 +227,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'investing','1sw2r6t','oictfho','2026-04-26',53,-0.6908,'The iPhone 17 is the biggest hit in years and then they just dropped the new biggest hit, the Neo. They are masters at managing supply chain issues and bullying suppliers. I think you underestimate their buying power for decades to come and their internal strategies they use to manage supply issues.\n\nPut it this way, the ROI on AI is slow and difficult, the ROI in their hardware (ie their margins) is great. I think we are finally about to see Google & msft start cashing in for their infra investment while apple doesnâ€™t need to, they run their own game.'),(2,'investing','1sw2r6t','oicqw0q','2026-04-26',24,0,'The Neo laptop is a huge hit.'),(3,'investing','1sw2r6t','oicxsps','2026-04-26',13,0.1655,'Simple. It will beat earnings. Whether it goes down or up is anyoneâ€™s guess in the current stock market. But Apple as a company. Everyone has an iPhone. I bought 2 last month and need a new laptop too. Itâ€™s not going anywhere for the foreseeable future '),(4,'investing','1sw2r6t','oicu10z','2026-04-26',6,0.9327,'Their services will make up for the margin hit. Also Chinese sales are way up. \n\nMy bet is Apple will crush earnings but once again be very conservative about its future earnings. The stock will take at least a 5% haircut immediately. It will start going up again in to WWDC and the stock will move depending on what they announce. Typically AAPL rallies into the last few months of the year. So you want to wait and see what happens during earnings call then buy on the dip, sell near the end of the year. '),(5,'investing','1sw2r6t','oie1bd9','2026-04-26',2,0.9866,'Apple will do well.  Stock buy backs will allow their stock price to move up indefinitely.  The focus on education and enterprise is going to be their next growth driver.  The lack of AI investment is a positive as AI in its current and future state will not generate an ROI (looking at the end game of open source models matching frontier models).  Apple might experience slower growth over the next year but as soon as everyone realizes AI has hit its limits, hardware margins will improve.  Also, just so you know, Apple does generate revenue via AI.  They get a piece of revenue from anyone signing up via a subscription on their App Store.\n\nIâ€™m actually surprised Apple hasnâ€™t rocketed off.  They have amazing chips and systems to run AI locally. '),(6,'investing','1sw2r6t','oid49aq','2026-04-26',8,-0.4767,'I think you are wrong.'),(7,'investing','1sw2r6t','oict0o2','2026-04-26',1,0,'Thoughts on QQQ vs. AIS (more semi/memory/hardware) in this market?'),(8,'investing','1sw2r6t','oidsiw9','2026-04-26',1,-0.0258,'I will happily baghold AAPL.  AI training->AI interence/agentic-> ?killer app.  I believe AAPL is in as good position as any to benefit from the AI killer app phase.  '),(9,'investing','1sw2r6t','oidy0e0','2026-04-26',1,-0.0258,'Good.  The M4 Mac Mini is still a hot seller and the Macbook NEOs are selling out.  '),(10,'investing','1sw2r6t','oig5c5c','2026-04-26',1,0.9184,'You buy AAPL on the near-annual 15-25 percent dip thatâ€™s driven by Gurman and analysts AAPL-related FUD.  Sometimes is more, sometimes itâ€™s less. The buyback will keep covering your gains, unless youâ€™re looking for greater gains.  Been an AAPL buyer following this since 2016 and Iâ€™m comfortable with my slow-growing portfolio. '),(11,'investing','1sw2r6t','oihrlqw','2026-04-27',1,0.8885,'Laughing about the fact youre trying to make sense of any earnings. I seen big tech or whatever go down on excellent earnings or up on bad earnings. This is a casino.'),(12,'investing','1sw2r6t','oihtupf','2026-04-27',1,0.9492,'AAPL did a great decision to wait what happens with this AI hype. Trillions dollars in AI market but so far only some rumors but not much tangible. YEs, ai is future, moving forward but its not gonna bring a real profit for many years. \n\nnot sure whether earnings are up or down, but im watching. If dips like 15-20%, Im in. Im ready to invest 10K 200-210, which brings down PE like mid 20\'. \n\nSaaS blowout will eventually work favor for companies those will survive and add ai features into business. AI is a tool, like internet, its not gonna solve real work tasks but enhances workflow.'),(13,'investing','1sw2r6t','oiddxvp','2026-04-26',1,0.7334,'Weak earnings growth, and more stock buybacks.  '),(14,'investing','1sw2r6t','oidghf1','2026-04-26',1,0.9382,'Apple doesnâ€™t need AI for good earnings, as always itâ€™s never a first mover in new spaces but when it does move it usually has the best solution because itâ€™s taken its time. \n\nEarnings are still driven by hardware sales and theyâ€™ve had a blowout quarter in that regard.'),(15,'investing','1sw2r6t','oicmi5t','2026-04-26',-1,0.9224,'This is actually a really well-thought-out take. The chip shortage angle on Apple is something most people are completely sleeping on right now.\n\nThe TSMC contract point is solid â€” Apple\'s been protected by long-term agreements but that buffer won\'t last forever. And you\'re right that they don\'t have the AI revenue cushion that Microsoft or Google has to absorb margin compression.\n\nThe one thing I\'d push back on slightly â€” Apple\'s services revenue has been carrying a lot of weight lately. Even if hardware margins take a hit, services could soften the blow more than people expect.\n\nBut overall â€” guidance is going to be the real story on April 30. If they get conservative on forward guidance given macro uncertainty and tariff exposure, the stock\'s going to get punished regardless of how clean the quarter looks.\n\nBeen watching AAPL for a while too. Cautiously agree with your 1-3 year outlook.'),(16,'investing','1sw2r6t','oid20b4','2026-04-26',-1,-0.6486,'Lame duck CEO might surface weaknesses, to position the incoming CEO. '),(17,'investing','1sw2r6t','oiczoj0','2026-04-26',0,0.4939,'Number go up'),(18,'investing','1sw2r6t','oid1gvr','2026-04-26',0,-0.4588,'Don\'t Apple make most their money from charging companies that sell software on Apple Store? '),(19,'investing','1sw2r6t','oiehee7','2026-04-26',0,-0.5423,'Bad'),(20,'investing','1sw2r6t','oiezuth','2026-04-26',0,0.1182,'There is no significant \"AI revenue\" coming in for anyone yet. Apple has simply saved money by not getting into the war. Its really silly to claim they\'re missing out on some AI income they could have had. Who do you think is out there paying for AI right now that Apple could have had a slice of??'),(21,'investing','1sw2r6t','oie86vn','2026-04-26',-1,0,'OP got puts. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -240,4 +240,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-27  3:43:41
+-- Dump completed on 2026-04-28  3:47:14
