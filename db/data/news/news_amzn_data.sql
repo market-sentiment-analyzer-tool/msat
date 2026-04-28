@@ -147,6 +147,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
@@ -217,7 +218,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,7 +227,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-04-26',0.06364,'Cathie Wood sells $75M of surging semiconductor stock','https://www.thestreet.com/investing/stocks/cathie-wood-sells-75-of-surging-semiconductor-stock-amd',2),(2,'daniel sparks','Shares have rallied sharply ahead of earnings.\nShares of Amazon (AMZN +3.47%) have come roaring back recently. The e-commerce and cloud computing giant is up about 14% year to date as of this writing,...','2026-04-26',0.5522,'Amazon Stock: Buy, Sell, or Hold?','https://www.fool.com/investing/2026/04/26/amazon-stock-buy-sell-or-hold/',40),(3,'defense world staff','...','2026-04-26',0.5944,'Amazon.com, Inc. $AMZN is BOCHK Asset Management Ltdâ€™s 8th Largest Position','https://www.defenseworld.net/2026/04/26/amazon-com-inc-amzn-is-bochk-asset-management-ltds-8th-largest-position.html',2),(4,'sarina trangle','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-04-26',0.7669,'What to Expect in Markets This Week: The Fed Meets, and Magnificent 7 Earnings Roll In','https://www.investopedia.com/what-to-expect-in-markets-this-week-the-fed-meets-and-magnificent-7-earnings-roll-in-11957248',4),(5,'defense world staff','...','2026-04-26',0.39512,'Bartlett & CO. Wealth Management LLC Has $212.21 Million Stock Position in Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/04/26/bartlett-co-wealth-management-llc-has-212-21-million-stock-position-in-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rich duprey','Investing\nNvidia (NVDA) shipped 2,957,362 H100-equivalent GPUs in Q4 2025, nearly two-thirds of all measured AI compute capacity, with Data Center revenue reaching $62.31B up 75% year over year and no...','2026-04-27',0.15414,'The 1 Number That Shows Why Nvidia Is Not Done Growing','https://247wallst.com/investing/2026/04/27/the-1-number-that-shows-why-nvidia-is-not-done-growing/',4),(2,'vandita jadeja','Investing\nAmazon (AMZN) trades at $263.99 with a 12-month price target of $287.67 (+8.9% upside); AWS grew 24% in Q4, its fastest pace in 13 quarters, with Trainium2 chips fully subscribed at 1.4M uni...','2026-04-27',0.9181,'Amazon Is a Strong Buy as Cloud Unit Reignites Growth Story','https://247wallst.com/investing/2026/04/27/amazon-is-a-strong-buy-as-cloud-unit-reignites-growth-story/',40),(3,'yahoo finance video','...','2026-04-27',0.38136,'Google, Meta, Microsoft, Amazon, Apple earnings: What to expect','https://ca.finance.yahoo.com/video/google-meta-microsoft-amazon-apple-earnings-what-to-expect-151248213.html',2),(4,'paulina likos','\nReference #18.47a7cb17.1777350594.38442c3f\nhttps://errors.edgesuite.net/18.47a7cb17.1777350594.38442c3f\n\nhttps://errors.edgesuite.net/18.47a7cb17.1777350594.38442c3f...','2026-04-27',-0.43384,'Amazonâ€™s bet on satellites is expensive and faces fierce competition. It also just might work','https://www.cnbc.com/2026/04/27/amazon-spacex-satellites-jim-cramer-investing-club.html',40),(5,'aditya raghunath','...','2026-04-27',-0.42136,'How Nvidia Stock Could Be the Biggest Loser From the SpaceX IPO','https://www.barchart.com/story/news/1538073/how-nvidia-stock-could-be-the-biggest-loser-from-the-spacex-ipo',2),(6,'null','Investing\nAlphabet (GOOGL), Microsoft (MSFT), Amazon (AMZN), and Meta (META) report this week with options markets pricing sizable post-earnings swings for these mega-caps, while semiconductor call pr...','2026-04-27',-0.68108,'VIX Fear Rising Toward 20 on Tech Earnings, Capex Risk, War Uncertainty','https://247wallst.com/investing/2026/04/27/vix-fear-rising-toward-20-on-tech-earnings-capex-risk-war-uncertainty/',2),(7,'sneha nahata','...','2026-04-27',0.06176,'Amazon Stock Surges Ahead of Q1 Earnings: What Lies Ahead?','https://www.barchart.com/story/news/1537502/amazon-stock-surges-ahead-of-q1-earnings-what-lies-ahead',20);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -240,4 +241,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-27  4:25:06
+-- Dump completed on 2026-04-28  4:30:06

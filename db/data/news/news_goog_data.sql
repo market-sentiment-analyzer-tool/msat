@@ -147,6 +147,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
@@ -217,7 +218,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,7 +227,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'joseph griffin','...','2026-04-26',0,'Alphabet (NASDAQ:GOOG) Trading 1.4% Higher â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13418491/alphabet-nasdaqgoog-trading-1-4-higher-heres-why.html',2),(2,'defense world staff','...','2026-04-26',0.2368,'Fisher Funds Management LTD Sells 4,605 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/fisher-funds-management-ltd-sells-4605-shares-of-alphabet-inc-goog.html',2),(3,'defense world staff','...','2026-04-26',0.5364,'CM Wealth Advisors LLC Boosts Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/cm-wealth-advisors-llc-boosts-holdings-in-alphabet-inc-goog.html',2),(4,'daniel sparks','When the Google parent reports earnings on Wednesday, these will be the two most important metrics to watch.\nAlphabet (GOOG +1.44%)(GOOGL +1.71%) is scheduled to report first-quarter 2026 results on W...','2026-04-26',0.7675,'Is Alphabet Stock a Buy Ahead of Earnings?','https://www.fool.com/investing/2026/04/25/is-alphabet-stock-a-buy-ahead-of-earnings/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'amit singh','...','2026-04-27',0,'Intel Stock Surges 130% So Far in 2026 â€” Can INTC Continue Its Bull Run?','https://www.barchart.com/story/news/1538912/intel-stock-surges-130-so-far-in-2026-can-intc-continue-its-bull-run',2),(2,'aditya raghunath','...','2026-04-27',-0.42136,'How Nvidia Stock Could Be the Biggest Loser From the SpaceX IPO','https://www.barchart.com/story/news/1538073/how-nvidia-stock-could-be-the-biggest-loser-from-the-spacex-ipo',2),(3,'geoffrey seiler','AMD and Alphabet are two top AI stocks to buy with this rally.\nThe rally in the Nasdaq is in full swing, with the tech-heavy index recently reaching a new all-time high after falling into correction t...','2026-04-27',0.96162,'The Best Artificial Intelligence (AI) Growth Stocks to Buy on the Nasdaq as the Rally Heats Up','https://www.fool.com/investing/2026/04/27/the-best-artificial-intelligence-ai-growth-stocks/',4),(4,'defense world staff','...','2026-04-27',-0.42136,'Chicago Capital LLC Reduces Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/27/chicago-capital-llc-reduces-stock-holdings-in-alphabet-inc-goog.html',2),(5,'defense world staff','...','2026-04-27',0,'Alphabet Inc. $GOOG Position Raised by Dupont Capital Management Corp','https://www.defenseworld.net/2026/04/27/alphabet-inc-goog-position-raised-by-dupont-capital-management-corp.html',2),(6,'adam spatacco','SpaceX is on course for an initial public offering in June, and its targeting a $1.75 trillion valuation.\nOver the last few years, growth investors have increasingly sought exposure to the final front...','2026-04-27',0.59458,'Forget Waiting Until June: Here Are 3 Ways to Invest in SpaceX Before Its IPO','https://www.fool.com/investing/2026/04/27/forget-waiting-until-june-here-are-3-other-ways-to/',4),(7,'joseph griffin','...','2026-04-26',0,'Alphabet (NASDAQ:GOOG) Trading 1.4% Higher â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13418491/alphabet-nasdaqgoog-trading-1-4-higher-heres-why.html',2),(8,'defense world staff','...','2026-04-26',0.2368,'Fisher Funds Management LTD Sells 4,605 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/fisher-funds-management-ltd-sells-4605-shares-of-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -240,4 +241,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-27  4:25:06
+-- Dump completed on 2026-04-28  4:30:06

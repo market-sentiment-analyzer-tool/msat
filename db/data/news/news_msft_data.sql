@@ -147,6 +147,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
@@ -217,7 +218,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,7 +227,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'defense world staff','...','2026-04-26',0,'Greenberg Financial Group Takes Position in Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/04/26/greenberg-financial-group-takes-position-in-microsoft-corporation-msft.html',20),(2,'defense world staff','...','2026-04-26',0.2368,'Financial Consulate Inc. Sells 7,877 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/04/26/financial-consulate-inc-sells-7877-shares-of-microsoft-corporation-msft.html',20),(3,'defense world staff','...','2026-04-26',0.52776,'Microsoft Corporation $MSFT Shares Purchased by Cliftonlarsonallen Wealth Advisors LLC','https://www.defenseworld.net/2026/04/26/microsoft-corporation-msft-shares-purchased-by-cliftonlarsonallen-wealth-advisors-llc.html',20),(4,'defense world staff','...','2026-04-26',0.2368,'Microsoft Corporation $MSFT Shares Sold by CCLA Investment Management','https://www.defenseworld.net/2026/04/26/microsoft-corporation-msft-shares-sold-by-ccla-investment-management.html',20),(5,'sarina trangle','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-04-26',0.7669,'What to Expect in Markets This Week: The Fed Meets, and Magnificent 7 Earnings Roll In','https://www.investopedia.com/what-to-expect-in-markets-this-week-the-fed-meets-and-magnificent-7-earnings-roll-in-11957248',4),(6,'defense world staff','...','2026-04-26',0.46872,'Microsoft Corporation $MSFT is Cache Advisors LLCâ€™s 7th Largest Position','https://www.defenseworld.net/2026/04/26/microsoft-corporation-msft-is-cache-advisors-llcs-7th-largest-position.html',20),(7,'defense world staff','...','2026-04-26',0,'Microsoftâ€™s (MSFT) â€œBuyâ€ Rating Reiterated at Guggenheim','https://www.defenseworld.net/2026/04/26/microsofts-msft-buy-rating-reiterated-at-guggenheim.html',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'null','Investing\nMicrosoft (MSFT) fell 23% in Q1 2026 to trade 22% below its July 2025 peak. But Q3 FY26 results on April 29 will test investor confidence in Azure growth (guidance 37%â€“38%), CapEx returns ($...','2026-04-27',0.38042,'Michael Burry Just Bought Microsoft. Itâ€™s a Genius Move Worth Following','https://247wallst.com/investing/2026/04/27/michael-burry-just-bought-microsoft-its-a-genius-move-worth-following/',2),(2,'ian cooper','Personal Finance\nApple (AAPL) generated $99 billion in FCF but paid only $15.4 billion in dividends; tracking corporate FCF alone ignores that buybacks donâ€™t fund bills today.\nThis framework works for...','2026-04-27',0.60832,'29-Year-Old Investorâ€™s Goal: Generate â€˜$1 Per Minuteâ€™ In Free Cash Flow','https://247wallst.com/personal-finance/2026/04/27/29-year-old-investors-goal-generate-1-per-minute-in-free-cash-flow/',4),(3,'chris ciaccia','...','2026-04-27',0.408,'Microsoft falls as OpenAI partnership evolves, says it will no longer pay revenue share','https://seekingalpha.com/news/4579947-microsoft-falls-as-openai-partnership-evolves-says-it-will-no-longer-pay-revenue-share?feed_item_type=news',40),(4,'yahoo finance video','...','2026-04-27',0.38136,'Google, Meta, Microsoft, Amazon, Apple earnings: What to expect','https://ca.finance.yahoo.com/video/google-meta-microsoft-amazon-apple-earnings-what-to-expect-151248213.html',2),(5,'american century investments','...','2026-04-27',0.658,'American Century Focused Dynamic Growth Fund Q1 2026 Portfolio Review','https://seekingalpha.com/article/4894614-american-century-focused-dynamic-growth-fund-q1-2026-portfolio-review',4),(6,'null','Please enable JS and disable any ad blocker...','2026-04-27',0.06364,'5-star analyst issues blunt warning on Microsoft stock before earnings','https://www.thestreet.com/investing/stocks/5-star-analyst-issues-blunt-warning-on-microsoft-stock-before-earnings',20),(7,'juan vasquez','...','2026-04-27',0,'Microsoft Hands Off OpenAI Exclusivity: AGI Clause Vanishes in Sweeping Deal Overhaul','https://www.webpronews.com/microsoft-hands-off-openai-exclusivity-agi-clause-vanishes-in-sweeping-deal-overhaul/',20),(8,'william gavin','Please enable JS and disable any ad blocker...','2026-04-27',-0.04988,'Microsoft and OpenAI arenâ€™t breaking up. But theyâ€™re not exclusive anymore.','https://www.marketwatch.com/story/microsoft-and-openai-arent-breaking-up-but-theyre-not-exclusive-anymore-47d17848?mod=mw_rss_topstories',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -240,4 +241,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-27  4:25:06
+-- Dump completed on 2026-04-28  4:30:06
