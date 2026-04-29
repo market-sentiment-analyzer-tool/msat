@@ -46,6 +46,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -218,7 +219,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,7 +228,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'amit singh','...','2026-04-27',0,'Intel Stock Surges 130% So Far in 2026 â€” Can INTC Continue Its Bull Run?','https://www.barchart.com/story/news/1538912/intel-stock-surges-130-so-far-in-2026-can-intc-continue-its-bull-run',2),(2,'aditya raghunath','...','2026-04-27',-0.42136,'How Nvidia Stock Could Be the Biggest Loser From the SpaceX IPO','https://www.barchart.com/story/news/1538073/how-nvidia-stock-could-be-the-biggest-loser-from-the-spacex-ipo',2),(3,'geoffrey seiler','AMD and Alphabet are two top AI stocks to buy with this rally.\nThe rally in the Nasdaq is in full swing, with the tech-heavy index recently reaching a new all-time high after falling into correction t...','2026-04-27',0.96162,'The Best Artificial Intelligence (AI) Growth Stocks to Buy on the Nasdaq as the Rally Heats Up','https://www.fool.com/investing/2026/04/27/the-best-artificial-intelligence-ai-growth-stocks/',4),(4,'defense world staff','...','2026-04-27',-0.42136,'Chicago Capital LLC Reduces Stock Holdings in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/27/chicago-capital-llc-reduces-stock-holdings-in-alphabet-inc-goog.html',2),(5,'defense world staff','...','2026-04-27',0,'Alphabet Inc. $GOOG Position Raised by Dupont Capital Management Corp','https://www.defenseworld.net/2026/04/27/alphabet-inc-goog-position-raised-by-dupont-capital-management-corp.html',2),(6,'adam spatacco','SpaceX is on course for an initial public offering in June, and its targeting a $1.75 trillion valuation.\nOver the last few years, growth investors have increasingly sought exposure to the final front...','2026-04-27',0.59458,'Forget Waiting Until June: Here Are 3 Ways to Invest in SpaceX Before Its IPO','https://www.fool.com/investing/2026/04/27/forget-waiting-until-june-here-are-3-other-ways-to/',4),(7,'joseph griffin','...','2026-04-26',0,'Alphabet (NASDAQ:GOOG) Trading 1.4% Higher â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13418491/alphabet-nasdaqgoog-trading-1-4-higher-heres-why.html',2),(8,'defense world staff','...','2026-04-26',0.2368,'Fisher Funds Management LTD Sells 4,605 Shares of Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/04/26/fisher-funds-management-ltd-sells-4605-shares-of-alphabet-inc-goog.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-04-28',0.44592,'Is Alphabet Stock a Buy, Sell, or Hold Ahead of Q1 Earnings?','https://www.barchart.com/story/news/1559826/is-alphabet-stock-a-buy-sell-or-hold-ahead-of-q1-earnings',2),(2,'ravikash bakolia','...','2026-04-28',0,'EU regulator proposes measures to Google for rival AI services on Android','https://seekingalpha.com/news/4580397-eu-regulator-proposes-measures-to-google-for-rival-ai-services-on-android?feed_item_type=news',40),(3,'keith speights','These stocks are great bets to profit from the next big AI advances.\nWhat are the greatest technological innovations of all time? The wheel certainly makes the list. So do the printing press, the ligh...','2026-04-28',0.63372,'3 AI Stocks Shaping the Future of Technology to Buy Now, According to Wall Street','https://www.fool.com/investing/2026/04/28/3-ai-stocks-shaping-the-future-of-technology-to-bu/',4),(4,'arundhati sarkar','...','2026-04-28',0,'Google signs classified AI deal with Pentagon: Information','https://seekingalpha.com/news/4580356-google-signs-classified-ai-deal-with-pentagon-information?feed_item_type=news',40),(5,'danny vena','Four of the Magnificent Seven -- worth a combined $12 trillion -- will report earnings, and investors will be watching closely.\nThis year has been a volatile one thus far for the stock market. The so-...','2026-04-27',0.199,'Why Thursday Could Be a Big Day for the Stock Market','https://www.fool.com/investing/2026/04/27/why-thursday-could-be-a-big-day-for-the-stock-mark/',4),(6,'amit singh','...','2026-04-27',0,'Intel Stock Surges 130% So Far in 2026 â€” Can INTC Continue Its Bull Run?','https://www.barchart.com/story/news/1538912/intel-stock-surges-130-so-far-in-2026-can-intc-continue-its-bull-run',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -241,4 +242,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-28  4:30:06
+-- Dump completed on 2026-04-29  4:24:21

@@ -46,6 +46,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -218,7 +219,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,7 +228,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rich duprey','Investing\nNvidia (NVDA) shipped 2,957,362 H100-equivalent GPUs in Q4 2025, nearly two-thirds of all measured AI compute capacity, with Data Center revenue reaching $62.31B up 75% year over year and no...','2026-04-27',0.15414,'The 1 Number That Shows Why Nvidia Is Not Done Growing','https://247wallst.com/investing/2026/04/27/the-1-number-that-shows-why-nvidia-is-not-done-growing/',4),(2,'vandita jadeja','Investing\nAmazon (AMZN) trades at $263.99 with a 12-month price target of $287.67 (+8.9% upside); AWS grew 24% in Q4, its fastest pace in 13 quarters, with Trainium2 chips fully subscribed at 1.4M uni...','2026-04-27',0.9181,'Amazon Is a Strong Buy as Cloud Unit Reignites Growth Story','https://247wallst.com/investing/2026/04/27/amazon-is-a-strong-buy-as-cloud-unit-reignites-growth-story/',40),(3,'yahoo finance video','...','2026-04-27',0.38136,'Google, Meta, Microsoft, Amazon, Apple earnings: What to expect','https://ca.finance.yahoo.com/video/google-meta-microsoft-amazon-apple-earnings-what-to-expect-151248213.html',2),(4,'paulina likos','\nReference #18.47a7cb17.1777350594.38442c3f\nhttps://errors.edgesuite.net/18.47a7cb17.1777350594.38442c3f\n\nhttps://errors.edgesuite.net/18.47a7cb17.1777350594.38442c3f...','2026-04-27',-0.43384,'Amazonâ€™s bet on satellites is expensive and faces fierce competition. It also just might work','https://www.cnbc.com/2026/04/27/amazon-spacex-satellites-jim-cramer-investing-club.html',40),(5,'aditya raghunath','...','2026-04-27',-0.42136,'How Nvidia Stock Could Be the Biggest Loser From the SpaceX IPO','https://www.barchart.com/story/news/1538073/how-nvidia-stock-could-be-the-biggest-loser-from-the-spacex-ipo',2),(6,'null','Investing\nAlphabet (GOOGL), Microsoft (MSFT), Amazon (AMZN), and Meta (META) report this week with options markets pricing sizable post-earnings swings for these mega-caps, while semiconductor call pr...','2026-04-27',-0.68108,'VIX Fear Rising Toward 20 on Tech Earnings, Capex Risk, War Uncertainty','https://247wallst.com/investing/2026/04/27/vix-fear-rising-toward-20-on-tech-earnings-capex-risk-war-uncertainty/',2),(7,'sneha nahata','...','2026-04-27',0.06176,'Amazon Stock Surges Ahead of Q1 Earnings: What Lies Ahead?','https://www.barchart.com/story/news/1537502/amazon-stock-surges-ahead-of-q1-earnings-what-lies-ahead',20);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'jillian moore','...','2026-04-28',0.60472,'Get Ready for Major Tech Earnings Starting April 29','https://www.morningstar.com/markets/get-ready-major-big-tech-earnings-releases-april-29',2),(2,'myles udland','...','2026-04-28',0.272,'Meta Q1 earnings to shine spotlight on spending, with capex nearly doubling from last year','https://finance.yahoo.com/sectors/technology/article/meta-q1-earnings-to-shine-spotlight-on-spending-with-capex-nearly-doubling-from-last-year-160136256.html',20),(3,'motley fool transcribing','Image source: The Motley Fool.\nTuesday, April 28, 2026 at 8:30 a.m. ET\nNeed a quote from a Motley Fool analyst? Email [emailÂ protected]\nUnited Parcel Service (UPS 3.97%) reported first quarter results...','2026-04-28',0.472,'UPS (UPS) Q1 2026 Earnings Call Transcript','https://www.fool.com/earnings/call-transcripts/2026/04/28/ups-ups-q1-2026-earnings-call-transcript/',4),(4,'david moadel','...','2026-04-28',0.5364,'Mizuho Raises Amazon Price Target to $325: Is AWS the Real AI Winner of 2026?','https://finance.yahoo.com/markets/stocks/articles/mizuho-raises-amazon-price-target-154009955.html',200),(5,'jabran kundi','...','2026-04-28',0.30544,'Amazon Is Now a Chip Company, and AMZN Stock Is Worth Buying Even at All-Time Highs','https://www.barchart.com/story/news/1562909/amazon-is-now-a-chip-company-and-amzn-stock-is-worth-buying-even-at-all-time-highs',20),(6,'gerelyn terzo','Oracle (ORCL) is sinking by 7% after its $300 billion data-center partnership with OpenAI came under scrutiny following the AI companyâ€™s missed 2026 sales and user targets. Microsoft (MSFT), Amazon (A...','2026-04-28',0.28492,'Live Nasdaq Composite: Tech Stocks Fumble Gains on OpenAI and Oil-Fueled Sell-Off','https://247wallst.com/investing/2026/04/28/live-nasdaq-composite-tech-stocks-fumble-gains-on-openai-and-oil-fueled-sell-off/',4),(7,'neha panjwani','...','2026-04-28',0.28896,'Do Wall Street Analysts Like Amazon.com Stock?','https://www.barchart.com/story/news/1561848/do-wall-street-analysts-like-amazon-com-stock',2),(8,'brian sozzi','...','2026-04-28',0.40848,'Jessica Alba founded the Honest Company. This CEO is taking it to the next level.','https://ca.finance.yahoo.com/news/jessica-alba-founded-the-honest-company-this-ceo-is-taking-it-to-the-next-level-133819053.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -241,4 +242,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-28  4:30:06
+-- Dump completed on 2026-04-29  4:24:21
