@@ -133,6 +133,7 @@ ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
+b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -219,7 +220,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -228,7 +229,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-04-28',0.44592,'Is Alphabet Stock a Buy, Sell, or Hold Ahead of Q1 Earnings?','https://www.barchart.com/story/news/1559826/is-alphabet-stock-a-buy-sell-or-hold-ahead-of-q1-earnings',2),(2,'ravikash bakolia','...','2026-04-28',0,'EU regulator proposes measures to Google for rival AI services on Android','https://seekingalpha.com/news/4580397-eu-regulator-proposes-measures-to-google-for-rival-ai-services-on-android?feed_item_type=news',40),(3,'keith speights','These stocks are great bets to profit from the next big AI advances.\nWhat are the greatest technological innovations of all time? The wheel certainly makes the list. So do the printing press, the ligh...','2026-04-28',0.63372,'3 AI Stocks Shaping the Future of Technology to Buy Now, According to Wall Street','https://www.fool.com/investing/2026/04/28/3-ai-stocks-shaping-the-future-of-technology-to-bu/',4),(4,'arundhati sarkar','...','2026-04-28',0,'Google signs classified AI deal with Pentagon: Information','https://seekingalpha.com/news/4580356-google-signs-classified-ai-deal-with-pentagon-information?feed_item_type=news',40),(5,'danny vena','Four of the Magnificent Seven -- worth a combined $12 trillion -- will report earnings, and investors will be watching closely.\nThis year has been a volatile one thus far for the stock market. The so-...','2026-04-27',0.199,'Why Thursday Could Be a Big Day for the Stock Market','https://www.fool.com/investing/2026/04/27/why-thursday-could-be-a-big-day-for-the-stock-mark/',4),(6,'amit singh','...','2026-04-27',0,'Intel Stock Surges 130% So Far in 2026 â€” Can INTC Continue Its Bull Run?','https://www.barchart.com/story/news/1538912/intel-stock-surges-130-so-far-in-2026-can-intc-continue-its-bull-run',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-04-29',0.39512,'Intel Is Back In the Game: Should You Buy INTC Now?','https://www.barchart.com/story/news/1593996/intel-is-back-in-the-game-should-you-buy-intc-now',2),(2,'mikhail fedorov','...','2026-04-29',-0.18104,'The 228% Reality Check: Why the Stock Market Is Demanding the Impossible from AI','https://www.barchart.com/story/news/1592117/the-228-reality-check-why-the-stock-market-is-demanding-the-impossible-from-ai',2),(3,'avi kapoor','Analysts expect the Mountain View, California-based company to report quarterly earnings of $2.67 per share. Thatâ€™s down from $2.81 per share in the year-ago period. The consensus estimate for Alphabe...','2026-04-29',0.58778,'Top Wall Street Forecasters Revamp Alphabet Expectations Ahead Of Q1 Earnings','https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52121871/top-wall-street-forecasters-revamp-alphabet-expectations-ahead-of-q1-earnings-',8),(4,'ananya gairola','Australia is moving to impose a new revenue-based tax on major digital platforms if they fail to pay news publishers for journalism content shared across their services.\nOfficials said the plan is des...','2026-04-29',0.51158,'Meta, Google, TikTok Face Australian Crackdown With New Revenue Tax Plan To Protect Struggling News Industry','https://www.benzinga.com/markets/tech/26/04/52119279/meta-google-tiktok-face-australian-crackdown-with-new-revenue-tax-plan-to-protect-struggling-news-in',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -242,4 +243,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-29  4:24:21
+-- Dump completed on 2026-04-30  4:27:07
