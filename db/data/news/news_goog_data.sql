@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
@@ -220,7 +221,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +230,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-04-29',0.39512,'Intel Is Back In the Game: Should You Buy INTC Now?','https://www.barchart.com/story/news/1593996/intel-is-back-in-the-game-should-you-buy-intc-now',2),(2,'mikhail fedorov','...','2026-04-29',-0.18104,'The 228% Reality Check: Why the Stock Market Is Demanding the Impossible from AI','https://www.barchart.com/story/news/1592117/the-228-reality-check-why-the-stock-market-is-demanding-the-impossible-from-ai',2),(3,'avi kapoor','Analysts expect the Mountain View, California-based company to report quarterly earnings of $2.67 per share. Thatâ€™s down from $2.81 per share in the year-ago period. The consensus estimate for Alphabe...','2026-04-29',0.58778,'Top Wall Street Forecasters Revamp Alphabet Expectations Ahead Of Q1 Earnings','https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52121871/top-wall-street-forecasters-revamp-alphabet-expectations-ahead-of-q1-earnings-',8),(4,'ananya gairola','Australia is moving to impose a new revenue-based tax on major digital platforms if they fail to pay news publishers for journalism content shared across their services.\nOfficials said the plan is des...','2026-04-29',0.51158,'Meta, Google, TikTok Face Australian Crackdown With New Revenue Tax Plan To Protect Struggling News Industry','https://www.benzinga.com/markets/tech/26/04/52119279/meta-google-tiktok-face-australian-crackdown-with-new-revenue-tax-plan-to-protect-struggling-news-in',8);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'amit singh','...','2026-04-30',0,'Alphabet Stock Prediction: AI Just Might Push GOOGL to New Highs','https://www.barchart.com/story/news/1624152/alphabet-stock-prediction-ai-just-might-push-googl-to-new-highs',20),(2,'oleksandr pylypenko','...','2026-04-30',0,'Options Traders Are Betting on Increasingly Diverging Paths for Intel Stock in 2026','https://www.barchart.com/story/news/1623614/options-traders-are-betting-on-increasingly-diverging-paths-for-intel-stock-in-2026',2),(3,'daniel howley','...','2026-04-30',0.272,'The AI earnings bonanza is splitting investors','https://ca.finance.yahoo.com/news/the-ai-earnings-bonanza-is-splitting-investors-152258508.html',2),(4,'nauman khan','...','2026-04-30',0.47952,'Broadcom Just Reached a 3-Year AI Chip Deal with Meta. Does That Make AVGO Stock a Buy?','https://www.barchart.com/story/news/1622487/broadcom-just-reached-a-3-year-ai-chip-deal-with-meta-does-that-make-avgo-stock-a-buy',2),(5,'tyler durden','\nFutures erase an overnight slide, and have resumed their ascent trading near all time highs, despite a hawkish Fed statement but stronger Mag7 earnings. The hawkish Fed followed by a less hawkish pre...','2026-04-30',0.19994,'Futures Jump After Overnight Rollercoaster Session As Oil Unexpectedly Tumbles, Yen Soars','https://www.zerohedge.com/markets/futures-jump-after-overnight-rollercoaster-session-oil-unexpectedly-tumbles-yen-soars',4),(6,'carl surran','...','2026-04-30',0,'OG&E signs deal to power three Google data centers in Oklahoma','https://seekingalpha.com/news/4582638-oge-signs-deal-to-power-three-google-data-centers-in-oklahoma?feed_item_type=news',40),(7,'aaron rennie','TIMOTHY A. CLARY / AFP via Getty Images\n Major stock indexes jumped on the final trading day of April, with the S&P 500 and Nasdaq hitting record highs, as investors digested a flurry of earnings repo...','2026-04-30',0.71886,'Stock Market Today: Futures Mixed as Stocks Conclude Strong Month; Investors Digest Big Tech Results With Apple on Tap; GDP, PCE Data Due','https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-04302026-11961883',4),(8,'mohd haider','â€œI fled socialism with my family in 1979 and know the devastating, oppressive society it created in the Soviet Union,â€ Brin said in a rare statement to The New York Times. â€œI donâ€™t want California to ...','2026-04-30',-0.15652,'Sergey Brin, Who Fled The Soviet Union, Now Warns California Could Head The Same Way As He Spends $57 Million Fighting Billionaire Tax','https://www.benzinga.com/markets/treasuries/26/04/52161131/sergey-brin-who-fled-the-soviet-union-now-warns-california-could-head-the-same-way-as-he-spend',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -243,4 +244,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-30  4:27:07
+-- Dump completed on 2026-05-01  4:43:06
