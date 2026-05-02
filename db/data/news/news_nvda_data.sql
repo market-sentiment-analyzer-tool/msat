@@ -67,6 +67,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
+498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -221,7 +222,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -230,7 +231,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'oleksandr pylypenko','...','2026-04-30',0,'Options Traders Are Betting on Increasingly Diverging Paths for Intel Stock in 2026','https://www.barchart.com/story/news/1623614/options-traders-are-betting-on-increasingly-diverging-paths-for-intel-stock-in-2026',2),(2,'daniel howley','...','2026-04-30',0.272,'The AI earnings bonanza is splitting investors','https://ca.finance.yahoo.com/news/the-ai-earnings-bonanza-is-splitting-investors-152258508.html',2),(3,'mikhail fedorov','...','2026-04-30',-0.3372,'Forget the Interest Rate: The Real War Is Over the Fedâ€™s Balance Sheet','https://www.barchart.com/story/news/1623320/forget-the-interest-rate-the-real-war-is-over-the-feds-balance-sheet',2),(4,'rich duprey','Investing\nThe Stocks: Nvidia (NVDA) achieved 78% revenue growth in its most recent fiscal year, Microsoft (MSFT) reported 29% year-over-year cloud revenue growth in Q1, and the Nasdaq-100 (QQQ) trades...','2026-04-30',-0.41578,'Forget Tariffs â€” These 3 Threats Could Trigger the First Major Trump-Era Market Crash','https://247wallst.com/investing/2026/04/30/forget-tariffs-these-3-threats-could-trigger-the-first-major-trump-era-market-crash/',4),(5,'nauman khan','...','2026-04-30',0.47952,'Broadcom Just Reached a 3-Year AI Chip Deal with Meta. Does That Make AVGO Stock a Buy?','https://www.barchart.com/story/news/1622487/broadcom-just-reached-a-3-year-ai-chip-deal-with-meta-does-that-make-avgo-stock-a-buy',2),(6,'anushka dutta','...','2026-04-30',0.55264,'AMD Stock Just Got a New Street-High Price Target. Should You Buy Shares Here?','https://www.barchart.com/story/news/1619169/amd-stock-just-got-a-new-street-high-price-target-should-you-buy-shares-here',2),(7,'luke lango','\n\n			And Qualcomm may power the next trillion-dollar platform shift		\nThe OpenAI-Qualcomm partnership points to a new class of AI devices that could replace the smartphone interface.\nAmbient AI comput...','2026-04-30',0.1998,'OpenAI Is Building What Comes After the iPhone','https://investorplace.com/hypergrowthinvesting/2026/04/openai-is-building-what-comes-after-the-iphone/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','Investing\nNvidia (NVDA) reported data-center revenue surging 75% year over year to $193.7B, driven by demand from hyperscalers deploying Hopper and Blackwell AI systems, while its CUDA platform remain...','2026-05-01',0.55172,'The Big 4 Hyperscalers Are Spending $710 Billion on AI. Hereâ€™s the Stock That Profits Most','https://247wallst.com/investing/2026/05/01/the-big-4-hyperscalers-are-spending-710-billion-on-ai-heres-the-stock-that-profits-most/',4),(2,'stockbros research','...','2026-05-01',0.272,'Sandisk Q3 Earnings: The Business Model Is Evolving, And It Changes The Story','https://seekingalpha.com/article/4897427-sandisk-q3-earnings-business-model-is-evolving-and-it-changes-the-story',4),(3,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-01',0.6332,'Bank of America Maintains Buy Rating on Nvidia Corp. (NVDA)','https://www.insidermonkey.com/blog/bank-of-america-maintains-buy-rating-on-nvidia-corp-nvda-1751781/',40),(4,'omor ibne ehsan','Investing\nNathan Peterson (Schwab) says to slow down on semiconductor stocks after the PHLX Semiconductor Index (NVDA, AMD, AVGO) soared nearly 50% in 18 sessions.\nTonightâ€™s earnings from Alphabet, Am...','2026-05-01',-0.1531,'Schwab Analyst: Chip Stocks Face â€˜Overhead Supplyâ€™ Risk After 50% Rally Off March Lows','https://247wallst.com/investing/2026/05/01/schwab-analyst-chip-stocks-face-overhead-supply-risk-after-50-rally-off-march-lows/',4),(5,'gerelyn terzo','Investing\nApple (AAPL) reported fiscal Q2 revenue of $111.184B, up 17% year-over-year, with EPS of $2.01 beating the $1.94 estimate.\nSanDisk (SNDK) posted Q3 revenue of roughly $6B, surging 251% year-...','2026-05-01',0.81608,'Nasdaq Composite Takes Off as Tech Bulls Retake Control on Strong Earnings, M&A','https://247wallst.com/investing/2026/05/01/nasdaq-composite-takes-off-as-tech-bulls-retake-control-on-strong-earnings-ma/',4),(6,'paula ricardo','...','2026-05-01',0,'Dell Technologies (NYSE:DELL) Price Target Raised to $230.00','https://www.thelincolnianonline.com/2026/05/01/dell-technologies-nysedell-price-target-raised-to-230-00.html',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -244,4 +245,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-01  4:43:06
+-- Dump completed on 2026-05-02  4:14:29
