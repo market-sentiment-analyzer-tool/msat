@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
@@ -43,6 +44,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
+246f6361-45d7-11f1-b51b-d6df20419e16:1-99,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -133,7 +135,7 @@ ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
-b4d75707-4446-11f1-83a0-76611cf14220:1-159,
+b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -220,7 +222,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +231,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1sz1sgt','oiyi983','2026-04-29',73,-0.0258,'They\'re all going to go up \n\nIf they all go down I\'m buying \n\nIt\'s quite simple really'),(2,'ValueInvesting','1sz1sgt','oiyeggw','2026-04-29',35,0.4939,'If AI CAPEX is still high, I think picks and shovels should go up. Semiconductors already rallied hard, so maybe other areas like energy and data centers?'),(3,'ValueInvesting','1sz1sgt','oiyi79h','2026-04-29',5,0,'drink responsibly '),(4,'ValueInvesting','1sz1sgt','oiyd8fy','2026-04-29',17,0,'Will inverse myself. Was thinking puts on MSFT earlier. Calls it is now'),(5,'ValueInvesting','1sz1sgt','oiygk33','2026-04-29',12,0.3818,'There is an agreed collusion to pump all of these stocks to the moon in the AH. Maybe a trump taco on top of that. Discussion is ongoing in the back room. Plebs are not invited. '),(6,'ValueInvesting','1sz1sgt','oiyripr','2026-04-29',3,-0.3851,'Why is everybody so paranoid around the market anymore? Crickey.'),(7,'ValueInvesting','1sz1sgt','oiynz55','2026-04-29',5,0.4215,'I am either gonna be drinking to celebrate or drinking to forget tonight '),(8,'ValueInvesting','1sz1sgt','oiyzu07','2026-04-29',2,0.9617,'I already hold a lot in these 4 companies (probably close to 25% of portfolio).  I\'ve debated selling off since I saw that last earnings caused about 10% drops in these companies, but I also am about 20% cash.  So, I\'m not gonna get cute.  If they go up, great, I\'m happy.  If they drop 10% great, I\'m also happy because I\'m gonna deploy cash.  '),(9,'ValueInvesting','1sz1sgt','oiz1tqc','2026-04-29',2,0,'Itâ€™s to send off Jerome Powell. '),(10,'ValueInvesting','1sz1sgt','oj04480','2026-04-29',2,0.9186,'We are just minutes away.  Biggest thing I will be looking at is cloud growth for the big three.  But mostly Google.\n\nThey did 48% last quarter.   It is a stretch but would love to see over $20 billion of cloud revenue for Google this quarter.'),(11,'ValueInvesting','1sz1sgt','oiyk6s9','2026-04-29',3,0.4019,'Hopefully you have some cash on hand in case thereâ€™s a dippity dip'),(12,'ValueInvesting','1sz1sgt','oiynz1e','2026-04-29',2,-0.1591,'It\'s possibly not a vast conspiracy, and may not even be a conspiracy at all.'),(13,'ValueInvesting','1sz1sgt','oiyfr70','2026-04-29',2,-0.3919,'I am heavy on MSFT and GOOGL but I think I\'ll cut by half before closing.'),(14,'ValueInvesting','1sz1sgt','oiykrub','2026-04-29',1,0,'Meta baby letâ€™s go '),(15,'ValueInvesting','1sz1sgt','oizalgf','2026-04-29',1,0,'I expect enough shifting market caps to basically end spy neutral lol'),(16,'ValueInvesting','1sz1sgt','oizcpr6','2026-04-29',1,0.2732,'These are half my holdings for stocks. I might get obliterated today after a full year of nice gains.'),(17,'ValueInvesting','1sz1sgt','oizhoyk','2026-04-29',1,0,'Another pointless post.'),(18,'ValueInvesting','1sz1sgt','oizhzxu','2026-04-29',1,0.1027,'They will all tank. They are reporting together so they don\'t continue to tank each other by separate filing.'),(19,'ValueInvesting','1sz1sgt','oj154yd','2026-04-29',1,0,'google to the moon'),(20,'ValueInvesting','1sz1sgt','oj1am88','2026-04-29',1,0,'MSFT to the moon'),(21,'ValueInvesting','1sz1sgt','oj1is1b','2026-04-30',1,0.5616,'not a conspiracy - it\'s just earnings season stacking. Q1 fiscal calendars for these companies all end around the same time, so they naturally cluster their reporting. the more interesting angle is what it means for the broader market when you have this much weight in a single session. if ALL FOUR miss or guide down at once, that\'s a significant multiple compression event across the whole index, not just the tech sector'),(22,'ValueInvesting','1sz1sgt','oiygcv1','2026-04-29',1,0.3382,'RDDT as well!'),(23,'ValueInvesting','1sz1sgt','oiyqfa8','2026-04-29',-2,0.7424,'Non câ€™Ã¨ nessuna cospirazione, Ã¨ semplicemente la coincidenza del calendario delle earnings trimestrali che ogni anno crea questi cluster â€” succede regolarmente con le big tech che chiudono il trimestre nello stesso periodo.\nQuello che Ã¨ interessante perÃ² non Ã¨ il fatto che riportano insieme, ma cosa stanno comunicando al mercato in questo preciso momento. Tutte e quattro hanno impegnato capitali astronomici sullâ€™AI nel 2026 â€” Meta 115-135 miliardi, Alphabet 175-185 miliardi, Amazon circa 200 miliardi, Microsoft sui 130 miliardi â€” e oggi gli investitori vogliono la prima risposta concreta a una domanda semplice: questi soldi stanno generando ricavi reali o stiamo assistendo alla piÃ¹ costosa scommessa della storia dei mercati?\nIl vero trade qui non Ã¨ long/short sulle singole, ma capire quale narrativa vince stasera. Se i numeri cloud di AWS e Google tengono e le guidance non esplodono ulteriormente in capex, il mercato prezza â€œlâ€™AI sta funzionandoâ€ e i titoli salgono. Se invece il capex cresce ancora senza che i ricavi tengano il passo, torna prepotente il dibattito sul ritorno degli investimenti e la volatilitÃ  post-earnings puÃ² essere significativa in entrambe le direzioni.\nPer i fondi pensione che citi, riportare insieme riduce effettivamente il rischio di essere sovrappesati su un singolo nome in un momento di volatilitÃ  concentrata â€” ma Ã¨ un effetto collaterale del calendario, non una strategia coordinata.â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹â€‹\nQuesta Ã¨ il pensiero che mi sono fatto io almeno!ðŸ¤·ðŸ»'),(24,'ValueInvesting','1sz1sgt','oiyzb70','2026-04-29',0,0.4199,'I donâ€™t like it.   Sim many days in the week yet all of them choose the same day!  ðŸ¤”'),(25,'ValueInvesting','1sz1sgt','oiz3btc','2026-04-29',-2,0,'But all dropped so much today !! What is the reason? ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -243,4 +244,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-30  3:47:30
+-- Dump completed on 2026-05-02  3:34:21

@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
@@ -43,6 +44,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
+246f6361-45d7-11f1-b51b-d6df20419e16:1-99,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -133,7 +135,7 @@ ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
-b4d75707-4446-11f1-83a0-76611cf14220:1-159,
+b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -220,7 +222,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +231,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1syy0y4','oixlyuc','2026-04-29',14,0.4019,'Bet? There is a 99.99% certainty that it will reach new ATHs. Fabs and manufacturing for the entire stack are booked for the entire YEAR and some fabs even reported 2027 is also booked solid. '),(2,'NVDA_Stock','1syy0y4','oixt5w9','2026-04-29',12,0.4939,'I mean it already has. Just enjoy the ride');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1t10j8z','oje60lf','2026-05-01',22,0.4404,'Jensen: \"We\'re now making four trillion dollars in profit every quarter.\"\n\nnvidia stock drops 4%'),(2,'NVDA_Stock','1t0srv6','ojbu35p','2026-05-01',3,0,'https://x.com/DoWCTO/status/2050175912134561977'),(3,'NVDA_Stock','1t0srv6','ojbrkma','2026-05-01',1,0.4404,'I hope nvdia doesn\'t get lazy like intel did once it started to get the big contracts. '),(4,'NVDA_Stock','1t0uw3q','ojc1wl5','2026-05-01',4,-0.1027,'The market will top when articles about the market topping stop coming.'),(5,'NVDA_Stock','1t0uw3q','ojc2lzn','2026-05-01',4,0.163,'I think if the earnings and revenue keep meeting expectations, nvda wont go down for long. But if they miss big, we can see a crash of all its suppliers as well.'),(6,'NVDA_Stock','1t0uw3q','ojc1hk7','2026-05-01',4,0.7925,'â€œWhile Nvidia is likely setting up for a larger period of volatility than most believe, the technical framework also supports a very large uptrend that should continue for years, with large bouts of volatility along the way. This perfectly aligns with our thesis that 2026 may not be Nvidiaâ€™s best year, yet the stock will likely still lead over the decade.â€\n\nWhere did you read from Beth Kindigâ€™s PM that Nvidia could go from $200 to $60? She just released a post thinking Nvidia is on track to hit $10T market cap by 2030.\n\nEdit: nevermind, I can see from your post history youâ€™re a permabear.'),(7,'NVDA_Stock','1t0uw3q','ojchrh6','2026-05-01',1,0.8225,'I saw this yesterday and was shocked. Beth Kindig is one of the first voices I heard predicting the NVDA boom. So when I read they sold off almost all their NVDA holdings and its now just 0.5% of their portfolio, I was surprised.\n\nI read their analysis and watch Knox\'s market webinar every week about NVDA.  NVIDIAâ€™s \"hardware moat\" is leaking as the market shifts toward cost-sensitive inference, and prefers to move capital to \"lesser-known\" AI winners until NVIDIA\'s software-driven phase begins in earnest.\n\nThey believe 2026-27 will be rocky time for NVDA but 2028-2030 will have big growth.'),(8,'NVDA_Stock','1t0uw3q','ojecmht','2026-05-01',1,0.7184,'How is it possible that king of ai tops when the party just got started'),(9,'NVDA_Stock','1t0uw3q','ojejn4f','2026-05-01',1,0.4404,'Nvda needs to work with msft on a video based AI    Good for both companies'),(10,'NVDA_Stock','1t0uw3q','ojfqsh6','2026-05-02',1,0.8294,'I had my gains from nvda; I did not exit on the top, but the gains were fat anyways. I wish my ADBE holdings could do the same. ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -243,4 +245,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-30  3:47:30
+-- Dump completed on 2026-05-02  3:34:22

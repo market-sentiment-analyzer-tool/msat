@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
@@ -43,6 +44,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
+246f6361-45d7-11f1-b51b-d6df20419e16:1-99,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -133,7 +135,7 @@ ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
-b4d75707-4446-11f1-83a0-76611cf14220:1-159,
+b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -220,7 +222,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,6 +231,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1t0ur7q','ojbpnli','2026-05-01',116,0.9001,'Future looks bright with Ternus. Heâ€™s a products guy much like Steve Jobs was. Tim Cook has set him up for success.'),(2,'stocks','1t0ur7q','ojbr5zt','2026-05-01',52,0.3036,'Iâ€™ve been an investor since 2000, I keep on seeing no compelling reason to trim my position and even loaded up on more last week.'),(3,'stocks','1t0ur7q','ojd09p2','2026-05-01',8,0.9827,'>  no AI\n\nPeople have not realized this yet despite apple literally saying it in the earnings report but apple silicon... yes they make their own chips remember, apple silicon is decent at running LLMs. They specifically said mac minis were being used for people using openclaw. They are the consumer option to run local LLMs right now and they\'re perfectly set up to be the consumer interface for AI. They\'re also selling like crazy in china, nvidia can\'t even sell to china because of sanctions, chinese people are buying up mac minis to run open source models. Also the fact that apple silicon is decent at running LLMs right now gives you every reason to believe their hardware is going to integrate AI really well, potentially even doing certain security tasks locally, etc, that\'s really appealing to people who can appreciate AI but don\'t want everything they do sent to a cloud'),(4,'stocks','1t0ur7q','ojbu0e7','2026-05-01',16,-0.6592,'Thereâ€™s two sides to this strategic, on one hand, AAPL doesnâ€™t need to drop hundreds of billions on AI infrastructure buildout and that cost are rising fast due to chip shortage and insane pricing ram is todayâ€¦ And they will just work with the one that is most compatible with their product. So thatâ€™s a really smart move to not join the rat race. On the other , they will lose out to their competitorsâ€¦ by not participating in this AI race. \n\nI would think they will do an â€œIntel to in-house chipâ€ kind of move with AI once the tech matures. '),(5,'stocks','1t0ur7q','ojbtxl4','2026-05-01',5,0.5423,'Apple\'s massive profits show it doesn\'t need to chase every AI trend to stay on top of the market. i tried using trylattice to see that while the stock is a cash-flow machine, its high price tag means its no longer a cheap hedge against the rest of the tech world.'),(6,'stocks','1t0ur7q','ojcba9o','2026-05-01',5,0,'Textbook example of a cash cow'),(7,'stocks','1t0ur7q','oje11iu','2026-05-01',2,0,'Tim Cook is still CEO until August 31 with plenty of Ai'),(8,'stocks','1t0ur7q','ojc929w','2026-05-01',3,0.4404,'The next wave of foldable iPhone upgrades over the next few cycles by itself is good enough. '),(9,'stocks','1t0ur7q','ojcey74','2026-05-01',3,0.0772,'I mean if Intel can go up 100% in a month while losing money hand over fist... why not?'),(10,'stocks','1t0ur7q','ojckgng','2026-05-01',1,0,'Apple AI rollout Q1 2027'),(11,'stocks','1t0ur7q','ojdezqw','2026-05-01',1,-0.1263,'Does apple run a risk of stagnating like Berkshire? Tons of cash but nowhere they want to deploy it?'),(12,'stocks','1t0ur7q','ojc10vn','2026-05-01',-5,0.6124,'AI will sooner or later become a new revenue stream for companies like Google, Microsoft or Amazon and Apple is missing it.'),(13,'stocks','1t0ur7q','ojcgen5','2026-05-01',0,0.2962,'Own AAPL.  Very bullish on AAPL.\n\nBut do realize this means Apple is just going to have to pay later.\n\nGoogle cloud margins are now 33% and increasing pretty quickly.\n\nApple when they move Siri to using Gemini will have to pay these margins to Google.\n\nSo there is no magic in not investing in the infrastructure now.'),(14,'stocks','1t0ur7q','ojdh0bm','2026-05-01',0,0.8395,'Killer analysis, man! You really nailed the resilience of AAPL, cutting through all the noise. It\'s a great reminder that sometimes the best plays are just rock-solid businesses consistently pumping out cash. Good stuff keeping it grounded!'),(15,'stocks','1t0ur7q','ojcwtiz','2026-05-01',-1,-0.825,'I think apple will be fine but probably continue to underperform for a while. Without AI there isn\'t much they can do to grow. Their market share is already high but has been falling. This is why their primary strategy has been targeting budget laptops. \n\nThey are also way behind the market on actual smartphone tech outside of contracts with tsmc. They focus on software and ecosystem and locking people in the ecosystem. They dont need enthusiasts but it has been slowly killing their high end offerings. '),(16,'stocks','1t0ur7q','ojde8t2','2026-05-01',-1,-0.4019,'Ternus has barely had any time to lead.  Let\'s see what he does in a full quarter at the helm. Problem is Cook is still on the board so he\'ll be looking over Ternus at all times. '),(17,'stocks','1t0ur7q','ojd3adk','2026-05-01',-5,0.5106,'Phone sales were BS. They were doing everything to give their new iPhone 17s away. I got a free one from Verizon. '),(18,'stocks','1t0ushp','ojbs714','2026-05-01',27,0,'4% is beast mode now ? '),(19,'stocks','1t0ushp','ojcg0g5','2026-05-01',5,0.2023,'Top signal'),(20,'stocks','1t0ushp','oje5njw','2026-05-01',3,0.3296,'protip Apple hasn\'t missed earnings for like 10 years.'),(21,'stocks','1t0ushp','oje1vx4','2026-05-01',1,0,'what lol Google is soaring, apple is rising'),(22,'stocks','1t0ushp','ojeg5zp','2026-05-01',1,0.6369,'Apple is up 9% in the last one month and Google is up 29%. This market is nuts and all I know is to keep holding.'),(23,'stocks','1t0ushp','ojefhc7','2026-05-01',0,-0.6361,'Idk.. Apple seems boring now tbh. They are very slow at innovating. '),(24,'AAPL','1t0ni3m','ojannfg','2026-05-01',15,0.6369,'New CEO gonna rock it. Heâ€™s gonna take their AI game to a place nobody else is going while Tim Apple continues to do what he does best.Â '),(25,'AAPL','1t0ni3m','ojc2vac','2026-05-01',-2,0,'Nope own lots of MSFT and NVDA and RKLB bro'),(26,'AAPL','1t0ig5c','ojc3x60','2026-05-01',3,0.4588,'i be glad if it closes green today'),(27,'AAPL','1t0ig5c','ojc2qei','2026-05-01',2,0.5106,'Luckily we\'ll see new ATH today ðŸ¤žðŸ¼'),(28,'AAPL','1t0ig5c','oj9gwv4','2026-05-01',-1,-0.6808,'You have to wait till September assuming they wonâ€™t delay the new flip phone or whatever new design it is. AAPL has been dead money compared to all AI and data center plays');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -242,4 +245,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-30  3:47:30
+-- Dump completed on 2026-05-02  3:34:21
