@@ -94,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
+67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -222,7 +223,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,7 +232,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','Investing\nNvidia (NVDA) reported data-center revenue surging 75% year over year to $193.7B, driven by demand from hyperscalers deploying Hopper and Blackwell AI systems, while its CUDA platform remain...','2026-05-01',0.55172,'The Big 4 Hyperscalers Are Spending $710 Billion on AI. Hereâ€™s the Stock That Profits Most','https://247wallst.com/investing/2026/05/01/the-big-4-hyperscalers-are-spending-710-billion-on-ai-heres-the-stock-that-profits-most/',4),(2,'stockbros research','...','2026-05-01',0.272,'Sandisk Q3 Earnings: The Business Model Is Evolving, And It Changes The Story','https://seekingalpha.com/article/4897427-sandisk-q3-earnings-business-model-is-evolving-and-it-changes-the-story',4),(3,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-01',0.6332,'Bank of America Maintains Buy Rating on Nvidia Corp. (NVDA)','https://www.insidermonkey.com/blog/bank-of-america-maintains-buy-rating-on-nvidia-corp-nvda-1751781/',40),(4,'omor ibne ehsan','Investing\nNathan Peterson (Schwab) says to slow down on semiconductor stocks after the PHLX Semiconductor Index (NVDA, AMD, AVGO) soared nearly 50% in 18 sessions.\nTonightâ€™s earnings from Alphabet, Am...','2026-05-01',-0.1531,'Schwab Analyst: Chip Stocks Face â€˜Overhead Supplyâ€™ Risk After 50% Rally Off March Lows','https://247wallst.com/investing/2026/05/01/schwab-analyst-chip-stocks-face-overhead-supply-risk-after-50-rally-off-march-lows/',4),(5,'gerelyn terzo','Investing\nApple (AAPL) reported fiscal Q2 revenue of $111.184B, up 17% year-over-year, with EPS of $2.01 beating the $1.94 estimate.\nSanDisk (SNDK) posted Q3 revenue of roughly $6B, surging 251% year-...','2026-05-01',0.81608,'Nasdaq Composite Takes Off as Tech Bulls Retake Control on Strong Earnings, M&A','https://247wallst.com/investing/2026/05/01/nasdaq-composite-takes-off-as-tech-bulls-retake-control-on-strong-earnings-ma/',4),(6,'paula ricardo','...','2026-05-01',0,'Dell Technologies (NYSE:DELL) Price Target Raised to $230.00','https://www.thelincolnianonline.com/2026/05/01/dell-technologies-nysedell-price-target-raised-to-230-00.html',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'stephan jacobs','...','2026-05-02',0.39512,'Wealth Science Advisors LLC Takes Position in Broadcom Inc. $AVGO','https://www.thelincolnianonline.com/2026/05/02/wealth-science-advisors-llc-takes-position-in-broadcom-inc-avgo.html',2),(2,'anthony miller','...','2026-05-02',0.2368,'NVIDIA Corporation $NVDA Shares Sold by ZWJ Investment Counsel Inc.','https://www.thelincolnianonline.com/2026/05/02/nvidia-corporation-nvda-shares-sold-by-zwj-investment-counsel-inc.html',20),(3,'hanz christensen','...','2026-05-02',0.2,'Tyche Wealth Partners LLC Cuts Holdings in NVIDIA Corporation $NVDA','https://www.watchlistnews.com/tyche-wealth-partners-llc-cuts-holdings-in-nvidia-corporation-nvda/11067275.html',20),(4,'joey frenette','Investing\nStocks: Nvidia (NVDA)Â launched NVQLink hardware, CUDA-Q software, and an open-sourced Ising AI model designed to accelerate quantum computing development and integrate GPUs with quantum proc...','2026-05-02',0.75984,'NVIDIAâ€™s New Quantumâ€AI Models Are Impressive â€” and the Market Doesnâ€™t Seem Ready to Price the Stepâ€Change','https://247wallst.com/investing/2026/05/02/nvidias-new-quantum%E2%80%91ai-models-are-impressive-and-the-market-doesnt-seem-ready-to-price-the-step%E2%80%91change/',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBSW Wealth Partners cut its holdings in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 3.8% during the 4th quarter, according to its most rec...','2026-05-02',0.52136,'BSW Wealth Partners Lowers Stock Holdings in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bsw-wealth-partners-lowers-stock-holdings-in-nvidia-corporation-nvda.html',40),(6,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBridgewater Advisors Inc. cut its holdings in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 9.4% in the fourth quarter, according to the company in it...','2026-05-02',0.19986,'Bridgewater Advisors Inc. Decreases Stock Position in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bridgewater-advisors-inc-decreases-stock-position-in-nvidia-corporation-nvda.html',40),(7,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBingham Private Wealth LLC bought a new stake in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) in the 4th quarter, according to its most recent 13F filin...','2026-05-02',0.595,'Bingham Private Wealth LLC Takes Position in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bingham-private-wealth-llc-takes-position-in-nvidia-corporation-nvda.html',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -245,4 +246,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-02  4:14:29
+-- Dump completed on 2026-05-03  4:35:41

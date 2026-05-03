@@ -94,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
+67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -222,7 +223,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,7 +232,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sean williams','This quartet of brand-name companies invested in Anthropic in 2023.\nThis is shaping up to be the year of the mega-initial public offering (IPO). Although SpaceX has put the wheels in motion for what s...','2026-05-01',0.26154,'Want in on AI Superstar Anthropic Before Its IPO? These 4 Companies Are Some of Its Earliest Investors.','https://www.fool.com/investing/2026/05/01/want-in-anthropic-ipo-4-companies-early-investors/',4),(2,'joe tenebruso','The search king is asserting its dominance in the AI race.\nShares of Alphabet (GOOGL +0.20%) (GOOG +0.34%) ascended to new highs on Thursday after the technology colossus reported staggering artificia...','2026-05-01',0.19948,'Why Alphabet Stock Surged to an All-Time High Today','https://www.fool.com/investing/2026/04/30/why-alphabet-stock-surged-to-all-time-high-today/',4),(3,'wajeeh khan','...','2026-04-30',0.43384,'Should You Buy the Dip in Nvidia Stock Today?','https://www.barchart.com/story/news/1628530/should-you-buy-the-dip-in-nvidia-stock-today',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ebube jones','...','2026-05-02',0.50952,'Google Just Warned of a Significant Increase in 2027 CapEx. Why GOOGL Stock Investors Donâ€™t Seem to Care.','https://www.barchart.com/story/news/1664867/google-just-warned-of-a-significant-increase-in-2027-capex-why-googl-stock-investors-dont-seem-to-care',20),(2,'britney nguyen','Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes\n(6 min)\n(6 min)\nGoogleâ€™s first-quarter earnings report reflected its position as an artificial-intelligence win...','2026-05-02',0.7801,'Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes','https://www.marketwatch.com/story/google-is-now-a-glorified-venture-capital-fund-thanks-to-its-spacex-and-anthropic-stakes-b13f3d56?mod=mw_rss_topstories',40),(3,'adam levy','This innovator has built a broad portfolio of market-leading products and investments.\nThere are a handful of major technological revolutions taking place right now that have the potential to attract ...','2026-05-02',0.19966,'This Investment Gives You Access to All the Hottest Market Trends: Generative AI, SpaceX, Quantum Computing, Robotaxis, and More','https://www.fool.com/investing/2026/05/02/this-investment-gives-you-access-to-all-the-hottes/',4),(4,'gav blaxberg','Apple beat at $111.2B with a $100B buyback. Meta got hit. Powellâ€™s last press conference brought the most divided Fed since 1992.\nThe S&P closed Friday at a fresh record 7,230 (+0.3%), the Nasdaq at a...','2026-05-02',0.41826,'Mag 7 Just Committed $710 Billion To AI Capex','https://www.benzinga.com/Opinion/26/05/52235838/mag-7-just-committed-710-billion-to-ai-capex',8),(5,'mohit oberoi','...','2026-05-01',0.43384,'3 Reasons to Buy the Dip in Meta Stock â€” And 3 Reasons to Stay Away','https://www.barchart.com/story/news/1654086/3-reasons-to-buy-the-dip-in-meta-stock-and-3-reasons-to-stay-away',2),(6,'wall street breakfast','...','2026-05-01',0.2,'Wall Street Roundup: Tech Reports','https://seekingalpha.com/article/4897566-wall-street-roundup-tech-reports',4),(7,'james brumley','They may suffer the occasional knee-jerk setback. By and large, though, investors understand these companies are capable of standing up to almost any challenge.\nStocks may have soared in April, but ju...','2026-05-01',0.34202,'Set It and Forget It: 3 Monster Stocks Worth Holding Through Whatever Comes Next','https://www.fool.com/investing/2026/05/01/set-it-and-forget-it-3-monster-stocks-worth-holdin/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -245,4 +246,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-02  4:14:29
+-- Dump completed on 2026-05-03  4:35:41
