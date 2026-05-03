@@ -44,7 +44,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
-246f6361-45d7-11f1-b51b-d6df20419e16:1-99,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
@@ -56,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+36183a48-46a3-11f1-ac1b-265979db6c14:1-290,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
+498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -222,7 +223,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,6 +232,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1t20u33','ojkua6p','2026-05-02',13,0.7003,'Have seen meta taste dust and comeback several times in last 5 years. 600 is good price. Any price below it is even better.Â '),(2,'ValueInvesting','1t20u33','ojku6ru','2026-05-02',11,0.6369,'Right now both Meta and MSFT have the best price amongst the MAG7, so you can wait for another correction or start DCA into them.'),(3,'ValueInvesting','1t20u33','ojkoczk','2026-05-02',21,0.0258,'My concern: if oil stays elevated, consumer discretionary spend gets squeezed. That hits return on ads spend for advertisers, which means ad budgets get cut first. $META is 95%+ ad revenue. Mark also admitted this in recent wsj article'),(4,'ValueInvesting','1t20u33','ojkwoto','2026-05-02',24,0.2556,'Let\'s be real: Meta\'s core advertising business (Facebook, Instagram, WhatsApp) is an absolute money-printing machine. The ad platform is one of the strongest and most resilient business models in tech.\n\nBut looking back at the last decade, their capital allocation has been a massive exercise in burning cash on unproven initiatives:\n\n* **The Metaverse Fiasco:** Reality Labs has burned through tens of billions of dollars for a VR/AR ecosystem that has yet to gain mass adoption.\n* **The AI Pivot:** Now, they are pivoting again, throwing hundreds of billions at AI infrastructure and compute power without a clear, immediate path to profitability.'),(5,'ValueInvesting','1t20u33','ojkfc6x','2026-05-02',18,-0.4215,'Full port meta and you wonâ€™t regret it'),(6,'ValueInvesting','1t20u33','ojkf2ir','2026-05-02',7,0.128,'Yes. Infact its lower than MSFT at $350'),(7,'ValueInvesting','1t20u33','ojlv6az','2026-05-03',3,-0.9069,'Their advertising business is built on scam ads and fraudulent ads which they knowingly turn a blind eye to unless someone complains.Â \n\n\nDon\'t forget what facebook and Cambridge analytical achieved together. No heads rolled, same people in charge.Â '),(8,'ValueInvesting','1t20u33','ojlvful','2026-05-03',3,0.9301,'Suckerborg ran out of other people\'s ideas 20 years ago. He doesn\'t know what he wants to do with AI. All he knows is he\'s got to be in it with the other kool kids or his stock will get hit. He renamed his entire company to a product move that completely failed. \"Meta\" as a concept doesn\'t even exist anymore. Basically, a multi-$Billion name change. It rankles him that his entire business is based on something as sordid as scraping users\' info for ad dollars but his every attempt to innovate his way out has gone off a cliff. Now, bereft of any means of increasing revenue with capex costs piling up, he\'s circling the wagons and cutting all the \"talent\" he blindly hired in the hope something magical would happen.'),(9,'ValueInvesting','1t20u33','ojlxswi','2026-05-03',2,0.4404,'At 600$ it\'s already better than MSFT at 350$'),(10,'ValueInvesting','1t20u33','ojku168','2026-05-02',2,0.836,'33% yoy ad growth on 55b q1 is the real tell. i got burned anchoring to a single price on amzn once, the multiple kept changing because eps kept outrunning the chart. meta should be priced on fcf and buybacks, not on how much msft at 350 feels like it.'),(11,'ValueInvesting','1t20u33','ojkw6pr','2026-05-02',2,0.4588,'I will never own this company. I\'m grateful for their investments. '),(12,'ValueInvesting','1t20u33','ojlcvgo','2026-05-02',2,0.9745,'Massive copiums in this post. Meta is not worth it- simply put, its race to AI is behind all other hyper scalers. Todayâ€™s hyperscaler valuation in stock market is NOT directly dependent on earnings/profit/revenue. Stock market puts valuation on it based on where they are to finish line in relation to their competitors. Itâ€™s fundamentally strong, but you dont always invest in good companies. You invest in good companies to invest in. Yes meta valuation will increase over time, but itâ€™s by far the WORST to invest in amongst msft, google, amazon, and apple'),(13,'ValueInvesting','1t20u33','ojl4p1j','2026-05-02',3,-0.7269,'Meta sucks shit'),(14,'ValueInvesting','1t20u33','ojkh5vz','2026-05-02',1,0.9356,'i didn\'t follow closely the earnings call, is there any info on how capex spending relates to ad growth? i read somewhere growth came from showing more ads - are these ads better targeted and is conversion and CTR improving?'),(15,'ValueInvesting','1t20u33','ojkno0d','2026-05-02',1,0.3612,'Anything below like 620'),(16,'ValueInvesting','1t20u33','ojl2ghs','2026-05-02',1,0.4588,'IV is 650$ in my excel sheet'),(17,'ValueInvesting','1t20u33','ojl36ei','2026-05-02',1,0.7717,'The key to META is that, thanks to investment in AI:\n\nâ€¢ Advertiser conversion rates are 3% higher\n\nâ€¢ From Q4 2025, both ad impressions and ad price grow in tandem\n\nâ€¢ As mentioned above, operating margins will improve\n\nEnd'),(18,'ValueInvesting','1t20u33','ojl4o39','2026-05-02',1,-0.296,'I am waiting for 580 or lower'),(19,'ValueInvesting','1t20u33','ojlb3mw','2026-05-02',1,0,'Dollar cost average into meta. '),(20,'ValueInvesting','1t20u33','ojlodro','2026-05-03',1,0,'$515 '),(21,'ValueInvesting','1t20u33','ojm0gfk','2026-05-03',1,0,'575-600'),(22,'ValueInvesting','1t20u33','ojmfut0','2026-05-03',1,0.7717,'600 is the bottom my friend. Buy now or try and catch it on the way up. '),(23,'ValueInvesting','1t20u33','ojmfz6c','2026-05-03',1,-0.431,'i wouldnt buy meta until zuck is not longer ceo. he just burns money with nothing to show for it'),(24,'ValueInvesting','1t20u33','ojkoxrf','2026-05-02',-1,0,'$420'),(25,'ValueInvesting','1t20u33','ojl3a3h','2026-05-02',0,-0.4019,'I have 410-370 range\n225 in a massive crash.'),(26,'ValueInvesting','1t20u33','ojlpel9','2026-05-03',0,0.2382,'Current price is good, but based on charts 575.5 could be a possibility'),(27,'ValueInvesting','1t20u33','ojkgzf9','2026-05-02',-6,0.6124,'It\'s good price now. I recommend buy 1 share just to start. It may drop 20% from here but It may bump 20% from here too');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -244,4 +246,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-02  3:34:22
+-- Dump completed on 2026-05-03  4:04:12
