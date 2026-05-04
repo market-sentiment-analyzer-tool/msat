@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -223,7 +224,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +233,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ebube jones','...','2026-05-02',0.50952,'Google Just Warned of a Significant Increase in 2027 CapEx. Why GOOGL Stock Investors Donâ€™t Seem to Care.','https://www.barchart.com/story/news/1664867/google-just-warned-of-a-significant-increase-in-2027-capex-why-googl-stock-investors-dont-seem-to-care',20),(2,'britney nguyen','Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes\n(6 min)\n(6 min)\nGoogleâ€™s first-quarter earnings report reflected its position as an artificial-intelligence win...','2026-05-02',0.7801,'Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes','https://www.marketwatch.com/story/google-is-now-a-glorified-venture-capital-fund-thanks-to-its-spacex-and-anthropic-stakes-b13f3d56?mod=mw_rss_topstories',40),(3,'adam levy','This innovator has built a broad portfolio of market-leading products and investments.\nThere are a handful of major technological revolutions taking place right now that have the potential to attract ...','2026-05-02',0.19966,'This Investment Gives You Access to All the Hottest Market Trends: Generative AI, SpaceX, Quantum Computing, Robotaxis, and More','https://www.fool.com/investing/2026/05/02/this-investment-gives-you-access-to-all-the-hottes/',4),(4,'gav blaxberg','Apple beat at $111.2B with a $100B buyback. Meta got hit. Powellâ€™s last press conference brought the most divided Fed since 1992.\nThe S&P closed Friday at a fresh record 7,230 (+0.3%), the Nasdaq at a...','2026-05-02',0.41826,'Mag 7 Just Committed $710 Billion To AI Capex','https://www.benzinga.com/Opinion/26/05/52235838/mag-7-just-committed-710-billion-to-ai-capex',8),(5,'mohit oberoi','...','2026-05-01',0.43384,'3 Reasons to Buy the Dip in Meta Stock â€” And 3 Reasons to Stay Away','https://www.barchart.com/story/news/1654086/3-reasons-to-buy-the-dip-in-meta-stock-and-3-reasons-to-stay-away',2),(6,'wall street breakfast','...','2026-05-01',0.2,'Wall Street Roundup: Tech Reports','https://seekingalpha.com/article/4897566-wall-street-roundup-tech-reports',4),(7,'james brumley','They may suffer the occasional knee-jerk setback. By and large, though, investors understand these companies are capable of standing up to almost any challenge.\nStocks may have soared in April, but ju...','2026-05-01',0.34202,'Set It and Forget It: 3 Monster Stocks Worth Holding Through Whatever Comes Next','https://www.fool.com/investing/2026/05/01/set-it-and-forget-it-3-monster-stocks-worth-holdin/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam levy','The leading AI lab may be feeling the pressure from competition.\nFew companies exert a bigger influence on the artificial intelligence (AI) industry than OpenAI. The AI lab is at the forefront of deve...','2026-05-03',0.67938,'OpenAI Reportedly Missed Revenue and User Targets -- These 2 Stocks Could Be Big Winners','https://www.fool.com/investing/2026/05/03/openai-reportedly-missed-revenue-and-user-targets/',4),(2,'ebube jones','...','2026-05-02',0.50952,'Google Just Warned of a Significant Increase in 2027 CapEx. Why GOOGL Stock Investors Donâ€™t Seem to Care.','https://www.barchart.com/story/news/1664867/google-just-warned-of-a-significant-increase-in-2027-capex-why-googl-stock-investors-dont-seem-to-care',20),(3,'britney nguyen','Please enable JS and disable any ad blocker...','2026-05-02',0.65172,'Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes','https://www.marketwatch.com/story/google-is-now-a-glorified-venture-capital-fund-thanks-to-its-spacex-and-anthropic-stakes-b13f3d56?mod=mw_rss_topstories',40),(4,'adam levy','This innovator has built a broad portfolio of market-leading products and investments.\nThere are a handful of major technological revolutions taking place right now that have the potential to attract ...','2026-05-02',0.19966,'This Investment Gives You Access to All the Hottest Market Trends: Generative AI, SpaceX, Quantum Computing, Robotaxis, and More','https://www.fool.com/investing/2026/05/02/this-investment-gives-you-access-to-all-the-hottes/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -246,4 +247,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-03  4:35:41
+-- Dump completed on 2026-05-04  4:35:27

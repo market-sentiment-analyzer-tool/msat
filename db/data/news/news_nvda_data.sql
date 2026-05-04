@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -223,7 +224,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +233,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'stephan jacobs','...','2026-05-02',0.39512,'Wealth Science Advisors LLC Takes Position in Broadcom Inc. $AVGO','https://www.thelincolnianonline.com/2026/05/02/wealth-science-advisors-llc-takes-position-in-broadcom-inc-avgo.html',2),(2,'anthony miller','...','2026-05-02',0.2368,'NVIDIA Corporation $NVDA Shares Sold by ZWJ Investment Counsel Inc.','https://www.thelincolnianonline.com/2026/05/02/nvidia-corporation-nvda-shares-sold-by-zwj-investment-counsel-inc.html',20),(3,'hanz christensen','...','2026-05-02',0.2,'Tyche Wealth Partners LLC Cuts Holdings in NVIDIA Corporation $NVDA','https://www.watchlistnews.com/tyche-wealth-partners-llc-cuts-holdings-in-nvidia-corporation-nvda/11067275.html',20),(4,'joey frenette','Investing\nStocks: Nvidia (NVDA)Â launched NVQLink hardware, CUDA-Q software, and an open-sourced Ising AI model designed to accelerate quantum computing development and integrate GPUs with quantum proc...','2026-05-02',0.75984,'NVIDIAâ€™s New Quantumâ€AI Models Are Impressive â€” and the Market Doesnâ€™t Seem Ready to Price the Stepâ€Change','https://247wallst.com/investing/2026/05/02/nvidias-new-quantum%E2%80%91ai-models-are-impressive-and-the-market-doesnt-seem-ready-to-price-the-step%E2%80%91change/',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBSW Wealth Partners cut its holdings in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 3.8% during the 4th quarter, according to its most rec...','2026-05-02',0.52136,'BSW Wealth Partners Lowers Stock Holdings in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bsw-wealth-partners-lowers-stock-holdings-in-nvidia-corporation-nvda.html',40),(6,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBridgewater Advisors Inc. cut its holdings in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 9.4% in the fourth quarter, according to the company in it...','2026-05-02',0.19986,'Bridgewater Advisors Inc. Decreases Stock Position in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bridgewater-advisors-inc-decreases-stock-position-in-nvidia-corporation-nvda.html',40),(7,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBingham Private Wealth LLC bought a new stake in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) in the 4th quarter, according to its most recent 13F filin...','2026-05-02',0.595,'Bingham Private Wealth LLC Takes Position in NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/05/02/bingham-private-wealth-llc-takes-position-in-nvidia-corporation-nvda.html',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ethan ryder','...','2026-05-03',-0.46872,'Leverage Shares 2x Long NVDA Daily ETF (NASDAQ:NVDG) Trading Down 1.6% â€“ Time to Sell?','https://www.tickerreport.com/banking-finance/13427687/leverage-shares-2x-long-nvda-daily-etf-nasdaqnvdg-trading-down-1-6-time-to-sell.html',20),(2,'don lair','Investing\nNVIDIA CEO Jensen Huang remains California-based despite facing an ~$8B wealth tax liability, betting Silicon Valleyâ€™s talent ecosystem justifies staying put.\n\nThe analyst who called NVIDIA ...','2026-05-03',0.19954,'8 billionaires who fled California before the â€œWealth Taxâ€ hit â€” and one who didnâ€™t','https://247wallst.com/investing/2026/05/03/8-billionaires-who-fled-california-before-the-wealth-tax-hit-and-one-who-didnt/',4),(3,'joseph griffin','...','2026-05-03',0.66168,'Broadcom Inc. $AVGO is Virtus Wealth Solutions LLCâ€™s 5th Largest Position','https://www.tickerreport.com/banking-finance/13427609/broadcom-inc-avgo-is-virtus-wealth-solutions-llcs-5th-largest-position.html',2),(4,'lindsey winhoffer','...','2026-05-03',0.60048,'Broadcom Inc. $AVGO Stake Boosted by Virtus Wealth Solutions LLC','https://www.watchlistnews.com/broadcom-inc-avgo-stake-boosted-by-virtus-wealth-solutions-llc/11068371.html',2),(5,'leo sun','Which of these high-growth tech stocks has a brighter future?\nThe artificial intelligence (AI) and quantum computing markets have both grown rapidly in recent years. AI companies are reshaping the wor...','2026-05-03',0.80032,'Nvidia vs. Infleqtion: Is the AI Giant or the Quantum Upstart the Better Buy Right Now?','https://www.fool.com/investing/2026/05/03/nvidia-vs-infleqtion-is-the-ai-giant-or-the-quantu/',40),(6,'abmn staff','\n					Posted by ABMN Staff on May 3rd, 2026\n\nDeLarme Wealth Management Inc. bought a new position in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) in the fourth quarter, according to the company in ...','2026-05-03',0.72766,'2,720 Shares in NVIDIA Corporation $NVDA Acquired by DeLarme Wealth Management Inc.','https://www.americanbankingnews.com/2026/05/03/2720-shares-in-nvidia-corporation-nvda-acquired-by-delarme-wealth-management-inc.html',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -246,4 +247,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-03  4:35:41
+-- Dump completed on 2026-05-04  4:35:27

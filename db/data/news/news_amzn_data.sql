@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -223,7 +224,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +233,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'joel south','Investing\nAllison Ellsworth, co-founder of Poppi, generated $100,000 in sales overnight with a single authentic TikTok video filmed after a shower that reached 300 million views.\nEarly-stage CPG found...','2026-05-02',0.19934,'Poppiâ€™s Allison Ellsworth: â€˜We Did $100,000 While We Were Sleepingâ€™ From 1 TikTok Video','https://247wallst.com/investing/2026/05/02/poppis-allison-ellsworth-we-did-100000-while-we-were-sleeping-from-1-tiktok-video/',4),(2,'luis hernandez','\n\n			Too many investors are distracted by the media		\nThe data seemed clear â€“ but that doesnâ€™t mean the conclusions were.\nDuring World War II, U.S. military analysts examined bombers that had safely r...','2026-05-02',-0.01868,'One Stock to Cut Through the AI Noise','https://investorplace.com/2026/05/one-stock-to-cut-through-the-ai-noise/',4),(3,'usman kabir','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-02',0.60772,'Amazon.com, Inc. (AMZN): Billionaire Tom Steyer Is Bullish on This Stock','https://www.insidermonkey.com/blog/amazon-com-inc-amzn-billionaire-tom-steyer-is-bullish-on-this-stock-1751859/',4),(4,'ebube jones','...','2026-05-02',0.50952,'Google Just Warned of a Significant Increase in 2027 CapEx. Why GOOGL Stock Investors Donâ€™t Seem to Care.','https://www.barchart.com/story/news/1664867/google-just-warned-of-a-significant-increase-in-2027-capex-why-googl-stock-investors-dont-seem-to-care',2),(5,'meghavi singh','mohd izzuan\nS&P 500 earnings accelerated this week, with over 178 companies from financial, healthcare, and industrial sectors reporting. Key companies included the \"Magnificent Seven\" giants such as ...','2026-05-02',0.87284,'Earnings Scoreboard: 82% of S&P 500 reporting firms top EPS estimates as 78% of firms post Y/Y earnings growth','https://seekingalpha.com/news/4583624-earnings-scoreboard-82-of-sp-500-reporting-firms-top-eps-estimates-as-78-of-firms-post-yy-earnings-growth?feed_item_type=news',8),(6,'abmn staff','\n					Posted by ABMN Staff on May 2nd, 2026\n\nBingham Private Wealth LLC purchased a new stake in  Amazon.com, Inc. (NASDAQ:AMZN) in the fourth quarter, according to its most recent disclosure with the...','2026-05-02',0.595,'Bingham Private Wealth LLC Invests $4.06 Million in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/05/02/bingham-private-wealth-llc-invests-4-06-million-in-amazon-com-inc-amzn.html',4),(7,'louis navellier','\n\n			Todayâ€™s winners may not survive the next phaseâ€¦		\nGreen up arrow and red down arrow on laptop\nEditorâ€™s Note: Iâ€™ve been telling my readers that the AI boom is entering a new phase â€“ not a collapse...','2026-05-02',-0.16732,'Todayâ€™s AI Giants Could Be Tomorrowâ€™s Disappointments','https://investorplace.com/market360/2026/05/todays-ai-giants-could-be-tomorrows-disappointments/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'syeda seirut javed','...','2026-05-03',0.14232,'Jim Cramer on Amazon: â€œI Think This Oneâ€™s Just Consolidatingâ€','https://finance.yahoo.com/markets/stocks/articles/jim-cramer-amazon-think-one-155121244.html',20),(2,'ethan ryder','...','2026-05-03',0.2368,'Valmark Advisers Inc. Acquires 1,945 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13427591/valmark-advisers-inc-acquires-1945-shares-of-amazon-com-inc-amzn.html',2),(3,'lindsey winhoffer','...','2026-05-03',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by Valmark Advisers Inc.','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-acquired-by-valmark-advisers-inc/11068350.html',2),(4,'adam levy','The leading AI lab may be feeling the pressure from competition.\nFew companies exert a bigger influence on the artificial intelligence (AI) industry than OpenAI. The AI lab is at the forefront of deve...','2026-05-03',0.67938,'OpenAI Reportedly Missed Revenue and User Targets -- These 2 Stocks Could Be Big Winners','https://www.fool.com/investing/2026/05/03/openai-reportedly-missed-revenue-and-user-targets/',4),(5,'lindsey winhoffer','...','2026-05-03',0.52776,'Amazon.com, Inc. $AMZN Shares Bought by Opal Wealth Advisors LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-bought-by-opal-wealth-advisors-llc/11067984.html',2),(6,'abmn staff','\n					Posted by ABMN Staff on May 3rd, 2026\n\nFinancial Plan Inc. bought a new stake in  Amazon.com, Inc. (NASDAQ:AMZN) during the fourth quarter, according to the company in its most recent filing wit...','2026-05-03',0.1999,'Financial Plan Inc. Makes New Investment in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/05/03/financial-plan-inc-makes-new-investment-in-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -246,4 +247,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-03  4:35:41
+-- Dump completed on 2026-05-04  4:35:27
