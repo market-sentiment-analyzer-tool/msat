@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -156,6 +157,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+cd4003c5-4832-11f1-b35e-2aae23f36fba:1-114,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
@@ -202,7 +204,6 @@ fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
-fc9da3a8-476b-11f1-addc-ca14b4ccb256:1-31,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -224,7 +225,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -233,7 +234,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1t2y5lr','ojsdtmx','2026-05-04',3,0,'AI garbage '),(2,'ValueInvesting','1t2y5lr','ojrf957','2026-05-03',3,0,'AI slop'),(3,'ValueInvesting','1t2y5lr','ojrq9ve','2026-05-03',-1,0.3818,'Another AI post trying to boost a MAG7. Hope your account gets banned soon.');
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'stocks','1t3r5im','ojxnypf','2026-05-04',33,0.765,'I remember not even 6 months ago this sub was calling for Jasseyâ€™s head (because the stock price had been stagnant). Now everyone loves him/amazon (the stock has gone up 35% in one month).'),(2,'stocks','1t3r5im','ojx93vd','2026-05-04',23,-0.3071,'I have 3k shares.  Luckily I have a very low cost basis, but the past 8 years of ownership have sucked.'),(3,'stocks','1t3r5im','ojx742c','2026-05-04',4,0.7582,'Don\'t worry, GME is going to buy EBAY and battle AMZN lmao. Yea this shipping news should be real good for them. Would have been good for UPS/FDX puts today or this week on this news but large dropped already happened. '),(4,'stocks','1t3r5im','ojxwmym','2026-05-04',2,0.296,'800 shares. ðŸ¥²'),(5,'stocks','1t3r5im','ojx5s1a','2026-05-04',3,0.1531,'And GPT-5.4 is live on Bedrock now, with GPT-5.5 and Codex coming online within the next few weeks.\n\nAWS should significantly increase OpenAI revenue as it did with Anthropic, which has inferior models, and OpenAI models on Bedrock will pull users still stuck on Azure for their models to AWS.'),(6,'stocks','1t3r5im','ojxnepv','2026-05-04',1,-0.0258,'You expect 100% return from amazons current price ($270). By the start of 2027 that is to say, around 8 months from now?'),(7,'stocks','1t3r5im','ojyg2nz','2026-05-04',1,0,'remindme! 7 months'),(8,'stocks','1t3r5im','ojx6qtc','2026-05-04',2,-0.4939,'keep pumping. we need a collapse first.'),(9,'stocks','1t3r5im','ojxeg5v','2026-05-04',1,0.3818,'I woudnt be surprised if Amazon buys a large chunk of Plug Power.Â '),(10,'stocks','1t3r5im','ojx5zsf','2026-05-04',-2,0.1779,'I think Amazon has had its run though '),(11,'stocks','1t3r5im','ojy7nx3','2026-05-04',-4,-0.1761,'They should be renamed to Ali Baba imports. Product quality has nose dived and their pricing is worse than Wal Mart. AWS and health care is their long term value, but not sure that\'s enough. '),(12,'stocks','1t3r5im','ojxtgqf','2026-05-04',-3,-0.8126,'Fuck the death star. '),(13,'stocks','1t3r5im','ojxckf3','2026-05-04',-5,-0.4019,'The problems of two little subreddits donâ€™t amount to a hill of beans in this worldâ€¦thatâ€™s why youâ€™re getting on that planeâ€¦');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  3:48:23
+-- Dump completed on 2026-05-05  3:35:04

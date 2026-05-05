@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -156,6 +157,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+cd4003c5-4832-11f1-b35e-2aae23f36fba:1-114,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
@@ -202,7 +204,6 @@ fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
-fc9da3a8-476b-11f1-addc-ca14b4ccb256:1-31,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -233,7 +234,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1t2zg7h','ojrjxhc','2026-05-03',8,-0.5719,'Let them, maybe it takes the unfounded hate off NVIDIA. '),(2,'NVDA_Stock','1t2zg7h','ojrl5le','2026-05-03',6,-0.7506,'They donâ€™t sell tpu. You stupid?'),(3,'NVDA_Stock','1t2zg7h','ojrms0m','2026-05-03',6,0.4978,'It\'s just challenging NVDA and won\'t really affect NVDA in the long run. TPU\'s can never take NVDA\'s place. '),(4,'NVDA_Stock','1t2zg7h','ojrp02f','2026-05-03',3,0,'Ya lets not talk about the fact that NVda still controls 80% of the ai market lol   They are thee KING by a MILE.  '),(5,'NVDA_Stock','1t2zg7h','ojrjayw','2026-05-03',5,0.4588,'Who cares? '),(6,'NVDA_Stock','1t2zg7h','ojrq7m8','2026-05-03',1,-0.7579,'No they won\'t, google has been losing marketshare for the last 2 years and will lose even more in 2026.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1t3n1fu','ojx34cn','2026-05-04',9,0,'Nvidia chips for Chinese EVs. Iâ€™m all for it.'),(2,'NVDA_Stock','1t3n1fu','ojwlw4u','2026-05-04',5,-0.4847,'The IV is average. It isn\'t super low on either 13w or 52w basis'),(3,'NVDA_Stock','1t3n1fu','ojx9z0m','2026-05-04',4,0.4404,'Could someone explain what IV is?  \n\nThanks'),(4,'NVDA_Stock','1t3n1fu','ojwahac','2026-05-04',5,-0.7783,'oh wonderful this is going to massively fuck up the pre-earnings positioning and might even be mega bearish for an anotherwise blow out earnings report. fuck I hate this timeline'),(5,'NVDA_Stock','1t3n1fu','ojwmjys','2026-05-04',2,-0.296,'I don\'t imagine NVDA or AMD will be high on their list of concerns...'),(6,'NVDA_Stock','1t3n1fu','ojzdm1l','2026-05-05',2,-0.4756,'lighting money on fire i guess, china news wont do shit, and even if it does nvda wont hold 200 ðŸ˜­');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  3:48:23
+-- Dump completed on 2026-05-05  3:35:04
