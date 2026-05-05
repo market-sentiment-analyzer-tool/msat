@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -224,7 +225,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ethan ryder','...','2026-05-03',-0.46872,'Leverage Shares 2x Long NVDA Daily ETF (NASDAQ:NVDG) Trading Down 1.6% â€“ Time to Sell?','https://www.tickerreport.com/banking-finance/13427687/leverage-shares-2x-long-nvda-daily-etf-nasdaqnvdg-trading-down-1-6-time-to-sell.html',20),(2,'don lair','Investing\nNVIDIA CEO Jensen Huang remains California-based despite facing an ~$8B wealth tax liability, betting Silicon Valleyâ€™s talent ecosystem justifies staying put.\n\nThe analyst who called NVIDIA ...','2026-05-03',0.19954,'8 billionaires who fled California before the â€œWealth Taxâ€ hit â€” and one who didnâ€™t','https://247wallst.com/investing/2026/05/03/8-billionaires-who-fled-california-before-the-wealth-tax-hit-and-one-who-didnt/',4),(3,'joseph griffin','...','2026-05-03',0.66168,'Broadcom Inc. $AVGO is Virtus Wealth Solutions LLCâ€™s 5th Largest Position','https://www.tickerreport.com/banking-finance/13427609/broadcom-inc-avgo-is-virtus-wealth-solutions-llcs-5th-largest-position.html',2),(4,'lindsey winhoffer','...','2026-05-03',0.60048,'Broadcom Inc. $AVGO Stake Boosted by Virtus Wealth Solutions LLC','https://www.watchlistnews.com/broadcom-inc-avgo-stake-boosted-by-virtus-wealth-solutions-llc/11068371.html',2),(5,'leo sun','Which of these high-growth tech stocks has a brighter future?\nThe artificial intelligence (AI) and quantum computing markets have both grown rapidly in recent years. AI companies are reshaping the wor...','2026-05-03',0.80032,'Nvidia vs. Infleqtion: Is the AI Giant or the Quantum Upstart the Better Buy Right Now?','https://www.fool.com/investing/2026/05/03/nvidia-vs-infleqtion-is-the-ai-giant-or-the-quantu/',40),(6,'abmn staff','\n					Posted by ABMN Staff on May 3rd, 2026\n\nDeLarme Wealth Management Inc. bought a new position in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) in the fourth quarter, according to the company in ...','2026-05-03',0.72766,'2,720 Shares in NVIDIA Corporation $NVDA Acquired by DeLarme Wealth Management Inc.','https://www.americanbankingnews.com/2026/05/03/2720-shares-in-nvidia-corporation-nvda-acquired-by-delarme-wealth-management-inc.html',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'daniel howley','...','2026-05-04',0.2368,'Nvidia CEO Jensen Huang says company now has zero market share in China','https://ca.finance.yahoo.com/news/nvidia-ceo-jensen-huang-says-company-now-has-zero-market-share-in-china-150805330.html',20),(2,'ian cooper','Personal Finance\nNvidia (NVDA) returned 221,833% since 2000, but a 90% drawdown requires a 900% gain to recoverâ€”a math that only works if you have decades of runway and can survive sequence risk.\n\n			...','2026-05-04',0.6193,'Nvidiaâ€™s Stock Plunged 90% Twice Before Becoming Most Valuable Company','https://247wallst.com/personal-finance/2026/05/04/nvidias-stock-plunged-90-twice-before-becoming-most-valuable-company/',4),(3,'piero cingari','After last week delivered $18.59 trillion in mega-cap earnings led by five Magnificent Seven names, this week shifts to a tighter, more volatile cohort: seven AI-linked stocks with combined market cap...','2026-05-04',0.46862,'Earnings Volatility Watch: 7 AI-Linked Stocks Are Set For Double-Digit Moves This Week','https://www.benzinga.com/markets/earnings/26/05/52251701/earnings-volatility-watch-arm-coreweave-applovin-may-2026',8),(4,'alex sirois','Investing\nNVIDIA (NVDA) dominates every portfolio conversation, but semiconductor cycles are predictable â€” and the peak crowding at peak valuations is the warning signal.\nMicrosoft (MSFT) runs a $37B ...','2026-05-04',-0.00012,'While NVDA Dominates Headlines, Hereâ€™s Where the Real AI Economics Are Hiding','https://247wallst.com/investing/2026/05/04/while-nvda-dominates-headlines-heres-where-the-real-ai-economics-are-hiding/',40),(5,'rich asplund','...','2026-05-04',0.06176,'Stocks Mixed on Middle East Tensions and Solid Corporate Earnings','https://www.barchart.com/story/news/1686028/stocks-mixed-on-middle-east-tensions-and-solid-corporate-earnings',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  4:35:27
+-- Dump completed on 2026-05-05  4:12:47

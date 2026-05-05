@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -224,7 +225,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'syeda seirut javed','...','2026-05-03',0.14232,'Jim Cramer on Amazon: â€œI Think This Oneâ€™s Just Consolidatingâ€','https://finance.yahoo.com/markets/stocks/articles/jim-cramer-amazon-think-one-155121244.html',20),(2,'ethan ryder','...','2026-05-03',0.2368,'Valmark Advisers Inc. Acquires 1,945 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13427591/valmark-advisers-inc-acquires-1945-shares-of-amazon-com-inc-amzn.html',2),(3,'lindsey winhoffer','...','2026-05-03',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by Valmark Advisers Inc.','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-acquired-by-valmark-advisers-inc/11068350.html',2),(4,'adam levy','The leading AI lab may be feeling the pressure from competition.\nFew companies exert a bigger influence on the artificial intelligence (AI) industry than OpenAI. The AI lab is at the forefront of deve...','2026-05-03',0.67938,'OpenAI Reportedly Missed Revenue and User Targets -- These 2 Stocks Could Be Big Winners','https://www.fool.com/investing/2026/05/03/openai-reportedly-missed-revenue-and-user-targets/',4),(5,'lindsey winhoffer','...','2026-05-03',0.52776,'Amazon.com, Inc. $AMZN Shares Bought by Opal Wealth Advisors LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-bought-by-opal-wealth-advisors-llc/11067984.html',2),(6,'abmn staff','\n					Posted by ABMN Staff on May 3rd, 2026\n\nFinancial Plan Inc. bought a new stake in  Amazon.com, Inc. (NASDAQ:AMZN) during the fourth quarter, according to the company in its most recent filing wit...','2026-05-03',0.1999,'Financial Plan Inc. Makes New Investment in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/05/03/financial-plan-inc-makes-new-investment-in-amazon-com-inc-amzn.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'tiyashi datta','Luis Alvarez\nRecent analyst actions have highlighted significant shifts in the technology and healthcare sectors, with Alphabet (GOOG) and Amazon (AMZN) receiving notable upgrades. Analysts Uttam Dey ...','2026-05-04',0.14006,'SA analyst upgrades/downgrades: AMZN, GOOG, TWLO, CNC','https://seekingalpha.com/news/4584902-sa-analyst-upgradesdowngrades-amzn-goog-twlo-cnc?feed_item_type=news',8),(2,'investing.com','...','2026-05-04',0.14232,'Why is Amazon stock rallying today?','https://www.investing.com/news/company-news/why-is-amazon-stock-rallying-today-93CH-4656821',20),(3,'rich asplund','...','2026-05-04',-0.47952,'Stocks Turn Lower as Middle East Tensions Rise','https://www.barchart.com/story/news/1687160/stocks-supported-by-corporate-earnings-optimism',2),(4,'rich asplund','...','2026-05-04',0.06176,'Stocks Mixed on Middle East Tensions and Solid Corporate Earnings','https://www.barchart.com/story/news/1686028/stocks-mixed-on-middle-east-tensions-and-solid-corporate-earnings',2),(5,'vandita jadeja','...','2026-05-04',0.65008,'Amazon Eyes $320 as AWS Growth Fuels Bullish Outlook','https://finance.yahoo.com/markets/stocks/articles/amazon-eyes-320-aws-growth-140829944.html',200),(6,'david moadel','...','2026-05-04',0.14232,'Etsy, Amazon, eBay, and Shopify in April: Why E-Commerce Stocks Diverged So Dramatically','https://finance.yahoo.com/markets/stocks/articles/etsy-amazon-ebay-shopify-april-140644978.html',20),(7,'wall street breakfast','...','2026-05-04',0,'Wall Street Lunch: AI Chipmaker Seeks $3.5B In IPO, Eyes $26.5B Valuation','https://seekingalpha.com/article/4898002-wall-street-lunch-ai-chipmaker-seeks-3-5b-in-ipo-eyes-26-5b-valuation',4),(8,'gerelyn terzo','Alphabet (GOOGL), Amazon (AMZN), and Microsoft together plan to spend nearly $380 billion in capex in 2026, with Google Cloud posting a $460 billion backlog and AWS growing 28%, while AMD (AMD) faces ...','2026-05-04',-0.12658,'Live Nasdaq Composite: Tech Holds Its Ground as M&A and AI Boom Drown Out Oil Noise','https://247wallst.com/investing/2026/05/04/live-nasdaq-composite-tech-holds-its-ground-as-ma-and-ai-boom-drown-out-oil-noise/',4),(9,'logan wallace','...','2026-05-04',0,'Amazon.com (NASDAQ:AMZN) Price Target Raised to $350.00 at New Street Research','https://www.tickerreport.com/banking-finance/13428405/amazon-com-nasdaqamzn-price-target-raised-to-350-00-at-new-street-research.html',2),(10,'mark dietrich','...','2026-05-04',0,'Amazon.com (NASDAQ:AMZN) Stock Price Expected to Rise, New Street Research Analyst Says','https://www.watchlistnews.com/amazon-com-nasdaqamzn-stock-price-expected-to-rise-new-street-research-analyst-says/11069172.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  4:35:27
+-- Dump completed on 2026-05-05  4:12:46

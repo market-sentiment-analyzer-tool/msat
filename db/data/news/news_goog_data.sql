@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam levy','The leading AI lab may be feeling the pressure from competition.\nFew companies exert a bigger influence on the artificial intelligence (AI) industry than OpenAI. The AI lab is at the forefront of deve...','2026-05-03',0.67938,'OpenAI Reportedly Missed Revenue and User Targets -- These 2 Stocks Could Be Big Winners','https://www.fool.com/investing/2026/05/03/openai-reportedly-missed-revenue-and-user-targets/',4),(2,'ebube jones','...','2026-05-02',0.50952,'Google Just Warned of a Significant Increase in 2027 CapEx. Why GOOGL Stock Investors Donâ€™t Seem to Care.','https://www.barchart.com/story/news/1664867/google-just-warned-of-a-significant-increase-in-2027-capex-why-googl-stock-investors-dont-seem-to-care',20),(3,'britney nguyen','Please enable JS and disable any ad blocker...','2026-05-02',0.65172,'Google is now a glorified venture-capital fund thanks to its SpaceX and Anthropic stakes','https://www.marketwatch.com/story/google-is-now-a-glorified-venture-capital-fund-thanks-to-its-spacex-and-anthropic-stakes-b13f3d56?mod=mw_rss_topstories',40),(4,'adam levy','This innovator has built a broad portfolio of market-leading products and investments.\nThere are a handful of major technological revolutions taking place right now that have the potential to attract ...','2026-05-02',0.19966,'This Investment Gives You Access to All the Hottest Market Trends: Generative AI, SpaceX, Quantum Computing, Robotaxis, and More','https://www.fool.com/investing/2026/05/02/this-investment-gives-you-access-to-all-the-hottes/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia','...','2026-05-04',0,'Google, Trump administration discussed compute power for AI: report','https://seekingalpha.com/news/4584660-google-trump-administration-discussed-compute-power-for-ai-report?feed_item_type=news',4),(2,'mohit oberoi','...','2026-05-04',0.14232,'Amazon Stock Forecast: Could AI and Chips Make AMZN a $4 Trillion Company?','https://www.barchart.com/story/news/1681473/amazon-stock-forecast-could-ai-and-chips-make-amzn-a-4-trillion-company',2),(3,'daniel foelber','It continues to lag its megacap peers as investors question its artificial intelligence (AI) spending plans.\nMicrosoft (MSFT 0.26%) has rallied from its 2026 lows in a similar fashion to its \"Magnific...','2026-05-04',0.80042,'Microsoft Is a Mess. Is the \"Magnificent Seven\" Stock a Buy in May or Better Avoided?','https://www.fool.com/investing/2026/05/04/microsoft-buy-avoid-growth-stock-may/',4),(4,'ben gran','Unless Meta gets more specific about AI products, it could lag behind other AI stocks.\nIn the past few days after the four biggest AI \"hyperscalers\" reported earnings April 29, Meta Platforms (META +0...','2026-05-04',-0.02046,'This Major Tech Stock Could Be the Biggest Loser From AI','https://www.fool.com/investing/2026/05/04/major-tech-stock-could-be-biggest-loser-ai/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  4:35:27
+-- Dump completed on 2026-05-05  4:12:46

@@ -117,6 +117,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
+885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -224,7 +225,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'syeda seirut javed','...','2026-05-03',-0.2368,'Jim Cramer Points to Elevated Capital Spending as a Concern for Microsoft Investors','https://finance.yahoo.com/markets/stocks/articles/jim-cramer-points-elevated-capital-155123995.html',200),(2,'adam levy','The leading AI lab may be feeling the pressure from competition.\nFew companies exert a bigger influence on the artificial intelligence (AI) industry than OpenAI. The AI lab is at the forefront of deve...','2026-05-03',0.67938,'OpenAI Reportedly Missed Revenue and User Targets -- These 2 Stocks Could Be Big Winners','https://www.fool.com/investing/2026/05/03/openai-reportedly-missed-revenue-and-user-targets/',4),(3,'simon mugo','...','2026-05-03',0,'AI could take capex to $1Tn in CY27','https://www.investing.com/news/economy-news/ai-could-take-capex-to-1tn-in-cy27-4654824',2),(4,'abmn staff','\n					Posted by ABMN Staff on May 3rd, 2026\n\nCalder Financial LLC purchased a new position in shares of  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) in the 4th quarter, according to the company ...','2026-05-03',0.19986,'Calder Financial LLC Invests $1.92 Million in Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/05/03/calder-financial-llc-invests-1-92-million-in-microsoft-corporation-msft.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'josh enomoto','...','2026-05-04',0.47952,'Why Microsoftâ€™s Misfires Could Create a Contrarian Opportunity in MSFT Stock','https://www.barchart.com/story/news/1687185/why-microsofts-misfires-could-create-a-contrarian-opportunity-in-msft-stock',20),(2,'joseph griffin','...','2026-05-04',-0.2368,'China Renaissance Cuts Microsoft (NASDAQ:MSFT) Price Target to $550.00','https://www.tickerreport.com/banking-finance/13428440/china-renaissance-cuts-microsoft-nasdaqmsft-price-target-to-550-00.html',20),(3,'alex sirois','Investing\nNVIDIA (NVDA) dominates every portfolio conversation, but semiconductor cycles are predictable â€” and the peak crowding at peak valuations is the warning signal.\nMicrosoft (MSFT) runs a $37B ...','2026-05-04',-0.00012,'While NVDA Dominates Headlines, Hereâ€™s Where the Real AI Economics Are Hiding','https://247wallst.com/investing/2026/05/04/while-nvda-dominates-headlines-heres-where-the-real-ai-economics-are-hiding/',4),(4,'rich asplund','...','2026-05-04',0.06176,'Stocks Mixed on Middle East Tensions and Solid Corporate Earnings','https://www.barchart.com/story/news/1686028/stocks-mixed-on-middle-east-tensions-and-solid-corporate-earnings',2),(5,'david sekera; cfa','...','2026-05-04',0.3372,'3 Overvalued Stocks to Take Profits In and 3 Undervalued Stocks to Buy Instead','https://www.morningstar.com/stocks/3-overvalued-stocks-take-profits-3-undervalued-stocks-buy-instead-2',2),(6,'nauman khan','...','2026-05-04',-0.56024,'Ignore the OpenAI Panic and Keep Buying Oracle Stock, Says Wedbush','https://www.barchart.com/story/news/1685335/ignore-the-openai-panic-and-keep-buying-oracle-stock-says-wedbush',2),(7,'brian sozzi','...','2026-05-04',0.47952,'Big Tech profits are being inflated by stakes in private startups','https://ca.finance.yahoo.com/news/big-tech-profits-are-being-inflated-by-stakes-in-private-startups-133330415.html',2);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -247,4 +248,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-04  4:35:27
+-- Dump completed on 2026-05-05  4:12:47
