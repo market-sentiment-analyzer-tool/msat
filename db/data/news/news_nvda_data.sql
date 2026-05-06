@@ -196,6 +196,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,7 +235,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'daniel howley','...','2026-05-04',0.2368,'Nvidia CEO Jensen Huang says company now has zero market share in China','https://ca.finance.yahoo.com/news/nvidia-ceo-jensen-huang-says-company-now-has-zero-market-share-in-china-150805330.html',20),(2,'ian cooper','Personal Finance\nNvidia (NVDA) returned 221,833% since 2000, but a 90% drawdown requires a 900% gain to recoverâ€”a math that only works if you have decades of runway and can survive sequence risk.\n\n			...','2026-05-04',0.6193,'Nvidiaâ€™s Stock Plunged 90% Twice Before Becoming Most Valuable Company','https://247wallst.com/personal-finance/2026/05/04/nvidias-stock-plunged-90-twice-before-becoming-most-valuable-company/',4),(3,'piero cingari','After last week delivered $18.59 trillion in mega-cap earnings led by five Magnificent Seven names, this week shifts to a tighter, more volatile cohort: seven AI-linked stocks with combined market cap...','2026-05-04',0.46862,'Earnings Volatility Watch: 7 AI-Linked Stocks Are Set For Double-Digit Moves This Week','https://www.benzinga.com/markets/earnings/26/05/52251701/earnings-volatility-watch-arm-coreweave-applovin-may-2026',8),(4,'alex sirois','Investing\nNVIDIA (NVDA) dominates every portfolio conversation, but semiconductor cycles are predictable â€” and the peak crowding at peak valuations is the warning signal.\nMicrosoft (MSFT) runs a $37B ...','2026-05-04',-0.00012,'While NVDA Dominates Headlines, Hereâ€™s Where the Real AI Economics Are Hiding','https://247wallst.com/investing/2026/05/04/while-nvda-dominates-headlines-heres-where-the-real-ai-economics-are-hiding/',40),(5,'rich asplund','...','2026-05-04',0.06176,'Stocks Mixed on Middle East Tensions and Solid Corporate Earnings','https://www.barchart.com/story/news/1686028/stocks-mixed-on-middle-east-tensions-and-solid-corporate-earnings',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'akanksha bakshi','Ouster is expected to report first-quarter earnings after the market closes on Tuesday, with estimates calling for a loss of 28 cents per share on revenue of $46.27 million.\nThe integration enhances 3...','2026-05-05',0.6443,'Why Ouster Shares Are Climbing Before Q1 Earnings Release','https://www.benzinga.com/markets/tech/26/05/52292883/why-ouster-shares-are-climbing-before-q1-earnings-release',8),(2,'daragh thomas','Alphabet (NASDAQ:GOOGL) posted a blockbuster Q1 last week, and the stock responded by closing out its best month since October 2004.\nThat has put Alphabet within $230 billion of Nvidia (NASDAQ:NVDA) f...','2026-05-05',0.19886,'Alphabet Is $230 Billion Away From Overtaking Nvidia: Will GOOGL Dethrone NVDA By June?','https://www.benzinga.com/markets/prediction-markets/26/05/52292000/alphabet-is-230-billion-away-from-overtaking-nvidia-will-googl-dethrone-nvda-by-june',80),(3,'omor ibne ehsan','Investing\nSeagate (STX) surged 717% in the past year and 151% in the past six months, beating earnings expectations with a 15% jump in 24 hours as HDD prices jumped 60% between November 2025 and Febru...','2026-05-05',0.1998,'The Best-Performing AI Stock Nobody Is Talking About Has Outrun Nvidia by a Mile','https://247wallst.com/investing/2026/05/05/the-best-performing-ai-stock-nobody-is-talking-about-has-outrun-nvidia-by-a-mile/',40),(4,'null','...','2026-05-05',0,'These 3 Telecom Stocks Rallied Over 1,000% In A Year: Nvidia Did 75%','https://www.benzinga.com/markets/tech/26/05/%2Ftelecom-stocks-rallied-1000-percent-nvidia-lumentum-ondas-applied-optoelectronics',20),(5,'mikhail fedorov','...','2026-05-05',0,'Why Meta Stock Is Objectively Cheap at Current Levels','https://www.barchart.com/story/news/1714636/why-meta-stock-is-objectively-cheap-at-current-levels',2),(6,'rich smith','Palantir grew sales and quadrupled earnings in Q1. So why are investors selling?\nPalantir (PLTR 6.93%) stock tumbled 5% through 10:25 a.m. ET Tuesday morning despite beating on top and bottom lines in...','2026-05-05',0.19916,'Why Palantir Stock Plunged Today','https://www.fool.com/investing/2026/05/05/why-palantir-stock-plunged-today/',4),(7,'alex sirois','...','2026-05-05',-0.18104,'Forget AMD: 4 AI Stocks That Could Beat the Crowd','https://finance.yahoo.com/markets/stocks/articles/forget-amd-4-ai-stocks-144943503.html',20),(8,'vardah gill','...','2026-05-05',0.2,'Nvidia Partnerships Fuel Surge in Asian Tech Suppliers, Bloomberg Reports','https://finance.yahoo.com/markets/stocks/articles/nvidia-partnerships-fuel-surge-asian-141655729.html',200);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -248,4 +249,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-05  4:12:47
+-- Dump completed on 2026-05-06  4:32:18

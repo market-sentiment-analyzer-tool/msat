@@ -196,6 +196,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,7 +235,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'tiyashi datta','Luis Alvarez\nRecent analyst actions have highlighted significant shifts in the technology and healthcare sectors, with Alphabet (GOOG) and Amazon (AMZN) receiving notable upgrades. Analysts Uttam Dey ...','2026-05-04',0.14006,'SA analyst upgrades/downgrades: AMZN, GOOG, TWLO, CNC','https://seekingalpha.com/news/4584902-sa-analyst-upgradesdowngrades-amzn-goog-twlo-cnc?feed_item_type=news',8),(2,'investing.com','...','2026-05-04',0.14232,'Why is Amazon stock rallying today?','https://www.investing.com/news/company-news/why-is-amazon-stock-rallying-today-93CH-4656821',20),(3,'rich asplund','...','2026-05-04',-0.47952,'Stocks Turn Lower as Middle East Tensions Rise','https://www.barchart.com/story/news/1687160/stocks-supported-by-corporate-earnings-optimism',2),(4,'rich asplund','...','2026-05-04',0.06176,'Stocks Mixed on Middle East Tensions and Solid Corporate Earnings','https://www.barchart.com/story/news/1686028/stocks-mixed-on-middle-east-tensions-and-solid-corporate-earnings',2),(5,'vandita jadeja','...','2026-05-04',0.65008,'Amazon Eyes $320 as AWS Growth Fuels Bullish Outlook','https://finance.yahoo.com/markets/stocks/articles/amazon-eyes-320-aws-growth-140829944.html',200),(6,'david moadel','...','2026-05-04',0.14232,'Etsy, Amazon, eBay, and Shopify in April: Why E-Commerce Stocks Diverged So Dramatically','https://finance.yahoo.com/markets/stocks/articles/etsy-amazon-ebay-shopify-april-140644978.html',20),(7,'wall street breakfast','...','2026-05-04',0,'Wall Street Lunch: AI Chipmaker Seeks $3.5B In IPO, Eyes $26.5B Valuation','https://seekingalpha.com/article/4898002-wall-street-lunch-ai-chipmaker-seeks-3-5b-in-ipo-eyes-26-5b-valuation',4),(8,'gerelyn terzo','Alphabet (GOOGL), Amazon (AMZN), and Microsoft together plan to spend nearly $380 billion in capex in 2026, with Google Cloud posting a $460 billion backlog and AWS growing 28%, while AMD (AMD) faces ...','2026-05-04',-0.12658,'Live Nasdaq Composite: Tech Holds Its Ground as M&A and AI Boom Drown Out Oil Noise','https://247wallst.com/investing/2026/05/04/live-nasdaq-composite-tech-holds-its-ground-as-ma-and-ai-boom-drown-out-oil-noise/',4),(9,'logan wallace','...','2026-05-04',0,'Amazon.com (NASDAQ:AMZN) Price Target Raised to $350.00 at New Street Research','https://www.tickerreport.com/banking-finance/13428405/amazon-com-nasdaqamzn-price-target-raised-to-350-00-at-new-street-research.html',2),(10,'mark dietrich','...','2026-05-04',0,'Amazon.com (NASDAQ:AMZN) Stock Price Expected to Rise, New Street Research Analyst Says','https://www.watchlistnews.com/amazon-com-nasdaqamzn-stock-price-expected-to-rise-new-street-research-analyst-says/11069172.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'eric kulisch','...','2026-05-05',0.21856,'Amazon expands same-day grocery delivery to businesses','https://www.freightwaves.com/news/amazon-expands-same-day-grocery-delivery-to-businesses',20),(2,'itai levitan','...','2026-05-05',-0.272,'Tech in turmoil: Microsoft and Meta drag, while semiconductors surge','https://investinglive.com/stock-market-update/tech-in-turmoil-microsoft-and-meta-drag-while-semiconductors-surge-20260505/',2),(3,'omor ibne ehsan','Investing\nAmazon (AMZN) reported trailing 12-month free cash flow fell to $1.2B from $26B due to $59.3B in AI infrastructure capital expenditure, while Q1 EPS of $2.78 beat consensus by 60.69% and AWS...','2026-05-05',0.43664,'Amazonâ€™s Free Cash Flow Just Collapsed From $26 Billion to $1.2 Billion. The Market Barely Blinked.','https://247wallst.com/investing/2026/05/05/amazons-free-cash-flow-just-collapsed-from-26-billion-to-1-2-billion-the-market-barely-blinked/',4),(4,'vardah gill','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-05',0.88054,'Is Amazon.com (AMZN) One of the Best Blue Chip Stocks to Invest in According to Billionaires?','https://www.insidermonkey.com/blog/is-amazon-com-amzn-one-of-the-best-blue-chip-stocks-to-invest-in-according-to-billionaires-1754162/',4),(5,'cision pr newswire','Searching for your content...\n\n                        In-Language News\n                    \n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\nMay 05, 2026, 10:07 ET\nShare this article\nThe collaborat...','2026-05-05',0.56656,'Amazon and Transaera to Expand Use of High-Efficiency Heat Pump Technology','https://www.prnewswire.com/news-releases/amazon-and-transaera-to-expand-use-of-high-efficiency-heat-pump-technology-302762449.html',40),(6,'max byerly','...','2026-05-05',0,'Amazon.com (NASDAQ:AMZN) Price Target Raised to $345.00 at BNP Paribas Exane','https://www.tickerreport.com/banking-finance/13429484/amazon-com-nasdaqamzn-price-target-raised-to-345-00-at-bnp-paribas-exane.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -248,4 +249,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-05  4:12:46
+-- Dump completed on 2026-05-06  4:32:18

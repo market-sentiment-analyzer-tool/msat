@@ -196,6 +196,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -225,7 +226,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,7 +235,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ravikash bakolia','...','2026-05-04',0,'Google, Trump administration discussed compute power for AI: report','https://seekingalpha.com/news/4584660-google-trump-administration-discussed-compute-power-for-ai-report?feed_item_type=news',4),(2,'mohit oberoi','...','2026-05-04',0.14232,'Amazon Stock Forecast: Could AI and Chips Make AMZN a $4 Trillion Company?','https://www.barchart.com/story/news/1681473/amazon-stock-forecast-could-ai-and-chips-make-amzn-a-4-trillion-company',2),(3,'daniel foelber','It continues to lag its megacap peers as investors question its artificial intelligence (AI) spending plans.\nMicrosoft (MSFT 0.26%) has rallied from its 2026 lows in a similar fashion to its \"Magnific...','2026-05-04',0.80042,'Microsoft Is a Mess. Is the \"Magnificent Seven\" Stock a Buy in May or Better Avoided?','https://www.fool.com/investing/2026/05/04/microsoft-buy-avoid-growth-stock-may/',4),(4,'ben gran','Unless Meta gets more specific about AI products, it could lag behind other AI stocks.\nIn the past few days after the four biggest AI \"hyperscalers\" reported earnings April 29, Meta Platforms (META +0...','2026-05-04',-0.02046,'This Major Tech Stock Could Be the Biggest Loser From AI','https://www.fool.com/investing/2026/05/04/major-tech-stock-could-be-biggest-loser-ai/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mikhail fedorov','...','2026-05-05',0,'Why Meta Stock Is Objectively Cheap at Current Levels','https://www.barchart.com/story/news/1714636/why-meta-stock-is-objectively-cheap-at-current-levels',2),(2,'hanz christensen','...','2026-05-05',0.45752,'Alphabet (NASDAQ:GOOG) Stock Rating Lowered by Freedom Capital','https://www.watchlistnews.com/alphabet-nasdaqgoog-stock-rating-lowered-by-freedom-capital/11069993.html',2),(3,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nRakuten Securities Inc. boosted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 161.5% in the fourth quarter, according to the company in its mo...','2026-05-05',0.4367,'Rakuten Securities Inc. Has $11.09 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/rakuten-securities-inc-has-11-09-million-stock-holdings-in-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nProVise Management Group LLC cut its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.5% during the 4th quarter, according to its most re...','2026-05-05',0.1999,'ProVise Management Group LLC Decreases Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/provise-management-group-llc-decreases-stake-in-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nDirectional Asset Management purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the fourth quarter, according to the company in its...','2026-05-05',0.48886,'Directional Asset Management Invests $8.96 Million in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/directional-asset-management-invests-8-96-million-in-alphabet-inc-goog.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nGolden Reserve Retirement LLC bought a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 4th quarter, according to the compan...','2026-05-05',0.1999,'Golden Reserve Retirement LLC Acquires New Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/golden-reserve-retirement-llc-acquires-new-stake-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -248,4 +249,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-05  4:12:46
+-- Dump completed on 2026-05-06  4:32:18
