@@ -139,8 +139,8 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
-b4de2e4c-48fd-11f1-a256-1eefcb31096a:1-177,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
+b9ea23b1-49c6-11f1-8953-e6fb4e9a76e1:1-95,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -197,6 +197,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -226,7 +227,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,7 +236,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1t494kc','ok1942q','2026-05-05',2,-0.6937,'Itâ€™s scary to think that the OpenAI phone might hit Apple so hard, as hard as the Facebook phone did..,');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1t5yud2','okdqqzo','2026-05-07',2,-0.3612,'Doubt it. Nvidiaâ€™s market cap is slightly over $5 trillion. Appleâ€™s market cap is a little over $4 trillion. I donâ€™t see an iPhone release adding $1 trillion in market cap within months. Now I do see a possibility where Apple overtakes Nvidia if A.I. spending decelerates, but at its current spending rate, Nvidia is just drowning in cash and demand for their products. '),(2,'AAPL','1t5yud2','okdqy8w','2026-05-07',2,0.8398,'No. I mean Iâ€™m not selling but I never really bet on a cycle or an earnings report. Just hold and hold and hold. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -249,4 +250,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-06  3:48:22
+-- Dump completed on 2026-05-07  3:44:07

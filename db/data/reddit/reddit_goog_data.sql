@@ -139,8 +139,8 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
-b4de2e4c-48fd-11f1-a256-1eefcb31096a:1-177,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
+b9ea23b1-49c6-11f1-8953-e6fb4e9a76e1:1-95,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -197,6 +197,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
@@ -226,7 +227,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,7 +236,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1t4rfw0','ok4k8bu','2026-05-05',1,0.7506,'\n**User Report**| | | |\n:--|:--|:--|:--\n**Total Submissions** | 10 | **First Seen In WSB** | 5 years ago\n**Total Comments** | 16802 | **Previous Best DD** | [x](https://www.reddit.com/r/wallstreetbets/comments/o9xjby/the_fintech_disrupter_that_everyone_is_talking/) \n**Account Age** | 7 years | | \n\n[**Join WSB Discord**](https://discord.gg/wsbverse)'),(2,'wallstreetbets','1t4rfw0','ok4kmo2','2026-05-05',1119,-0.5859,'Remember when ChatGPT launched and everyone thought Google was dead?'),(3,'wallstreetbets','1t4rfw0','ok4ls83','2026-05-05',187,0.4588,'Glad I sold at $303'),(4,'wallstreetbets','1t4rfw0','ok4kdoz','2026-05-05',438,0,'sundar did the needful'),(5,'wallstreetbets','1t4rfw0','ok4oa5g','2026-05-05',219,0,'GameStop is gonna make a bid for Google next'),(6,'wallstreetbets','1t4rfw0','ok4koqz','2026-05-05',152,0,'GOOG carrying my port rn after getting AMD puts kek'),(7,'wallstreetbets','1t4rfw0','ok4ki1x','2026-05-05',147,0,'Anthropic to spend $200B on Google Cloud '),(8,'wallstreetbets','1t4rfw0','ok4n99u','2026-05-05',29,0.5859,'Remember when MSFT was once the largest market cap? XDDDDDDDDDDD'),(9,'wallstreetbets','1t4rfw0','ok4kv6y','2026-05-05',42,-0.34,'the fire sundar crowd in shambles '),(10,'wallstreetbets','1t4rfw0','ok4pgw2','2026-05-05',21,0,'Itâ€™s on the website. '),(11,'wallstreetbets','1t4rfw0','ok57pn6','2026-05-05',18,0,'https://preview.redd.it/uhu14j8r9ezg1.jpeg?width=640&format=pjpg&auto=webp&s=cec1edc207be4c2da18c076ae48a0fe78e9c61ad'),(12,'wallstreetbets','1t4rfw0','ok4m1ei','2026-05-05',54,0,'Nvidia about to announce AI 2.0'),(13,'wallstreetbets','1t4rfw0','ok4v4lp','2026-05-05',14,0.8691,'Alphabet actually passing Nvidia is wild, but not that crazy if you look at the setup: Googleâ€™s AI/software monetization is catching up fast while NVDA is still the obvious â€œpicks and shovelsâ€ king. My tiny-brain take is the market keeps treating them like different trades, when really theyâ€™re both just different ways to bet on the same AI spend cycle. Hard to argue with either one, which is exactly how I end up buying neither and watching from the sidelines.'),(14,'wallstreetbets','1t4rfw0','ok4r1z1','2026-05-05',15,0.5994,'Remember, Sundar means beautiful '),(15,'wallstreetbets','1t4rfw0','ok4ucmk','2026-05-05',15,0.3724,'https://preview.redd.it/nkp4nvmjxdzg1.jpeg?width=179&format=pjpg&auto=webp&s=927f5b9e85b9a5e4322ead299e7729fc8651f794\n\n  \nNancy is never wrong, proven once again'),(16,'wallstreetbets','1t4rfw0','ok4kkc9','2026-05-05',24,0,'https://preview.redd.it/y8sfeh9lpdzg1.png?width=381&format=png&auto=webp&s=657728d90670c6f534fdb315fc805cfac594af56\n\n'),(17,'wallstreetbets','1t4rfw0','ok4s465','2026-05-05',27,0,'https://preview.redd.it/lb63qjzqvdzg1.jpeg?width=640&format=pjpg&auto=webp&s=8841815444f0281778ad92d9cfbcfa34981e9478'),(18,'wallstreetbets','1t4rfw0','ok4o1pf','2026-05-05',16,-0.5709,'See META and MSFT.. it can happen you fucking losers. '),(19,'wallstreetbets','1t4rfw0','ok54i5w','2026-05-05',7,-0.3612,'I am just going to leave this here, for shits and giggles\n\nhttps://finance.yahoo.com/news/jim-cramer-finally-sells-alphabet-174318740.html'),(20,'wallstreetbets','1t4rfw0','ok4okkq','2026-05-05',4,0,'And to think two months ago I switched out my Googl leaps for Nvidia leaps ðŸ™ƒ'),(21,'wallstreetbets','1t4rfw0','ok4lguj','2026-05-05',11,0.7319,'why is it going up in the after-hours? Any good news?'),(22,'wallstreetbets','1t4rfw0','ok4op0n','2026-05-05',3,0.4576,'hard to believe the company that sells ads is most valuable...'),(23,'wallstreetbets','1t4rfw0','ok4tf79','2026-05-05',3,0,'Just wait 2 weeks'),(24,'wallstreetbets','1t4rfw0','ok4o6qs','2026-05-05',2,-0.5423,'I bought 1DTEs holy fuck '),(25,'wallstreetbets','1t4rfw0','ok4rt68','2026-05-05',2,0,'Gene Munster in shambles'),(26,'wallstreetbets','1t4rfw0','ok62xw3','2026-05-06',2,0.4404,'Gemini is def better thatâ€™s why this happened '),(27,'wallstreetbets','1t4rfw0','ok64hqr','2026-05-06',2,-0.8779,'I went through a divorce in 2022. Feb 2022 I saw the Ukraine war and said take everything I have out and put everything in Google. So I did on the way down take losses plus constantly liquidated to pay off my ex wife. I remember being in at $135k. \n\nWhat could have been. '),(28,'wallstreetbets','1t4rfw0','ok4p0go','2026-05-05',1,0,' Anthropic to the moon '),(29,'wallstreetbets','1t4rfw0','ok4ta8t','2026-05-05',1,0,'Soo time for puts?'),(30,'wallstreetbets','1t4rfw0','ok520eo','2026-05-05',1,-0.6486,'Historic day. \n\nI was told Google was dead. '),(31,'wallstreetbets','1t4rfw0','ok5aa9o','2026-05-05',1,0,'Guh. Really needed to see this today lol'),(32,'wallstreetbets','1t4rfw0','ok5h78k','2026-05-05',1,-0.4939,'did claude steal jpow\'s printer?'),(33,'wallstreetbets','1t4rfw0','ok5o893','2026-05-05',1,0.8316,'Sundar means beautiful in Hindi. Ofcourse GOOGLE  chart is looking beautiful '),(34,'wallstreetbets','1t4rfw0','ok5uajy','2026-05-06',1,0.8475,'Well deserved!! Greatest company in the world for sure.'),(35,'wallstreetbets','1t4rfw0','ok5yr6c','2026-05-06',1,0,'When Chat gpt goes bust. That will be the burst of the AI bubble. We have a Open AI bubble!'),(36,'wallstreetbets','1t4rfw0','ok6dv3c','2026-05-06',1,0.296,'NVDA 4.78 trillion.  Google 4.71 trillion.  It is close but Nvidia remains on top.'),(37,'wallstreetbets','1t4rfw0','ok6phof','2026-05-06',1,-0.3736,'No cap? Fr?'),(38,'wallstreetbets','1t4rfw0','ok4zybf','2026-05-05',-1,0,'It pays to serve porn ads to children.'),(39,'wallstreetbets','1t4rfw0','ok4r4lf','2026-05-05',-10,-0.8979,'And the worst possible company to be number 1.\n\nSuch a shitty ass company. ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -249,4 +249,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-06  3:48:23
+-- Dump completed on 2026-05-07  3:44:07
