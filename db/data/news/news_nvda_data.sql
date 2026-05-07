@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -226,7 +227,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,7 +236,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'akanksha bakshi','Ouster is expected to report first-quarter earnings after the market closes on Tuesday, with estimates calling for a loss of 28 cents per share on revenue of $46.27 million.\nThe integration enhances 3...','2026-05-05',0.6443,'Why Ouster Shares Are Climbing Before Q1 Earnings Release','https://www.benzinga.com/markets/tech/26/05/52292883/why-ouster-shares-are-climbing-before-q1-earnings-release',8),(2,'daragh thomas','Alphabet (NASDAQ:GOOGL) posted a blockbuster Q1 last week, and the stock responded by closing out its best month since October 2004.\nThat has put Alphabet within $230 billion of Nvidia (NASDAQ:NVDA) f...','2026-05-05',0.19886,'Alphabet Is $230 Billion Away From Overtaking Nvidia: Will GOOGL Dethrone NVDA By June?','https://www.benzinga.com/markets/prediction-markets/26/05/52292000/alphabet-is-230-billion-away-from-overtaking-nvidia-will-googl-dethrone-nvda-by-june',80),(3,'omor ibne ehsan','Investing\nSeagate (STX) surged 717% in the past year and 151% in the past six months, beating earnings expectations with a 15% jump in 24 hours as HDD prices jumped 60% between November 2025 and Febru...','2026-05-05',0.1998,'The Best-Performing AI Stock Nobody Is Talking About Has Outrun Nvidia by a Mile','https://247wallst.com/investing/2026/05/05/the-best-performing-ai-stock-nobody-is-talking-about-has-outrun-nvidia-by-a-mile/',40),(4,'null','...','2026-05-05',0,'These 3 Telecom Stocks Rallied Over 1,000% In A Year: Nvidia Did 75%','https://www.benzinga.com/markets/tech/26/05/%2Ftelecom-stocks-rallied-1000-percent-nvidia-lumentum-ondas-applied-optoelectronics',20),(5,'mikhail fedorov','...','2026-05-05',0,'Why Meta Stock Is Objectively Cheap at Current Levels','https://www.barchart.com/story/news/1714636/why-meta-stock-is-objectively-cheap-at-current-levels',2),(6,'rich smith','Palantir grew sales and quadrupled earnings in Q1. So why are investors selling?\nPalantir (PLTR 6.93%) stock tumbled 5% through 10:25 a.m. ET Tuesday morning despite beating on top and bottom lines in...','2026-05-05',0.19916,'Why Palantir Stock Plunged Today','https://www.fool.com/investing/2026/05/05/why-palantir-stock-plunged-today/',4),(7,'alex sirois','...','2026-05-05',-0.18104,'Forget AMD: 4 AI Stocks That Could Beat the Crowd','https://finance.yahoo.com/markets/stocks/articles/forget-amd-4-ai-stocks-144943503.html',20),(8,'vardah gill','...','2026-05-05',0.2,'Nvidia Partnerships Fuel Surge in Asian Tech Suppliers, Bloomberg Reports','https://finance.yahoo.com/markets/stocks/articles/nvidia-partnerships-fuel-surge-asian-141655729.html',200);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-05-06',0.55264,'Wall Street Lunch: Disney Climbs On Strong Parks, Streaming Gains','https://seekingalpha.com/article/4899415-wall-street-lunch-disney-climbs-on-strong-parks-streaming-gains',4),(2,'vandana singh','     â€¢Â Simulations Plus stock is trading at depressed levels. Whatâ€™s the outlook for SLP shares?\nThe AI drug development company has launched a technical collaboration with Nvidia to improve simulatio...','2026-05-06',0.18038,'Simulations Plus Collaborates With Nvidia During AI Drug Modeling Push','https://www.benzinga.com/news/health-care/26/05/52331181/simulations-plus-collaborates-with-nvidia-during-ai-drug-modeling-push',80),(3,'rich asplund','...','2026-05-06',0.69264,'S&P 500 and Nasdaq 100 at Record Highs on Tech Earnings and US-Iran Peace Hopes','https://www.barchart.com/story/news/1745025/s-p-500-and-nasdaq-100-at-record-highs-on-tech-earnings-and-us-iran-peace-hopes',2),(4,'rich duprey','Investing\nAs AI replaces workers and reduces labor costs, consumer spending may suffer since nearly 70% of U.S. GDP depends on household income, creating a paradox where corporate profits rise while t...','2026-05-06',-0.08914,'Coinbase CEO Warns American Workers: Mass Layoffs Are Coming to â€˜Every Companyâ€™','https://247wallst.com/investing/2026/05/06/coinbase-ceo-warns-american-workers-mass-layoffs-are-coming-to-every-company/',4),(5,'subhasree kar','...','2026-05-06',0.272,'Why 1 Citi Analyst Is Betting Big on CoreWeave Stock Before Earnings on May 7','https://www.barchart.com/story/news/1744300/why-1-citi-analyst-is-betting-big-on-coreweave-stock-before-earnings-on-may-7',2),(6,'rich smith','The AI revolution is alive and well. AMD just proved it.\nAdvanced Micro Devices (AMD +18.37%) stock advanced 16.6% through 10:10 a.m. ET Wednesday morning after beating on sales and earnings last nigh...','2026-05-06',0.19954,'Why AMD Stock Exploded Higher Today','https://www.fool.com/investing/2026/05/06/why-amd-stock-exploded-higher-today/',4),(7,'investing.com','...','2026-05-06',0,'AMD, Arista Networks among market cap stock movers on Wednesday','https://www.investing.com/news/stock-market-news/amd-arista-networks-among-market-cap-stock-movers-on-wednesday-93CH-4663968',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -249,4 +250,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-06  4:32:18
+-- Dump completed on 2026-05-07  4:29:41

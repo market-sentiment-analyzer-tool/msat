@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -226,7 +227,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -235,7 +236,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mikhail fedorov','...','2026-05-05',0,'Why Meta Stock Is Objectively Cheap at Current Levels','https://www.barchart.com/story/news/1714636/why-meta-stock-is-objectively-cheap-at-current-levels',2),(2,'hanz christensen','...','2026-05-05',0.45752,'Alphabet (NASDAQ:GOOG) Stock Rating Lowered by Freedom Capital','https://www.watchlistnews.com/alphabet-nasdaqgoog-stock-rating-lowered-by-freedom-capital/11069993.html',2),(3,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nRakuten Securities Inc. boosted its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 161.5% in the fourth quarter, according to the company in its mo...','2026-05-05',0.4367,'Rakuten Securities Inc. Has $11.09 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/rakuten-securities-inc-has-11-09-million-stock-holdings-in-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nProVise Management Group LLC cut its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.5% during the 4th quarter, according to its most re...','2026-05-05',0.1999,'ProVise Management Group LLC Decreases Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/provise-management-group-llc-decreases-stake-in-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nDirectional Asset Management purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the fourth quarter, according to the company in its...','2026-05-05',0.48886,'Directional Asset Management Invests $8.96 Million in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/directional-asset-management-invests-8-96-million-in-alphabet-inc-goog.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on May 5th, 2026\n\nGolden Reserve Retirement LLC bought a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 4th quarter, according to the compan...','2026-05-05',0.1999,'Golden Reserve Retirement LLC Acquires New Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/05/golden-reserve-retirement-llc-acquires-new-stake-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'vandita jadeja','Investing\nEli Lilly (LLY) posted Q1 revenue of $19.8B with 56% growth and EPS up 170% to $8.26, while securing approval for Foundayo, a weight-loss pill expected to drive growth; Chevron (CVX) generat...','2026-05-06',0.26172,'If You Want to Beat the Market, Start With These 3 Stocks','https://247wallst.com/investing/2026/05/06/if-you-want-to-beat-the-market-start-with-these-3-stocks/',4),(2,'beth mckenna','Last month, shares of the custom AI chipmaker got a boost from a Nvidia partnership and investment, a potential collaboration with Google, and an acquisition.\nShares of Marvell Technology (MRVL +1.91%...','2026-05-05',0.19922,'Why Marvell Stock Soared 67% in April','https://www.fool.com/investing/2026/05/05/mtvl-stock-ai-chip-stocks-custom-ai-chips-nvidia/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -249,4 +250,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-06  4:32:18
+-- Dump completed on 2026-05-07  4:29:41
