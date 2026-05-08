@@ -202,6 +202,7 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
@@ -227,7 +228,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -236,7 +237,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'vandita jadeja','Investing\nEli Lilly (LLY) posted Q1 revenue of $19.8B with 56% growth and EPS up 170% to $8.26, while securing approval for Foundayo, a weight-loss pill expected to drive growth; Chevron (CVX) generat...','2026-05-06',0.26172,'If You Want to Beat the Market, Start With These 3 Stocks','https://247wallst.com/investing/2026/05/06/if-you-want-to-beat-the-market-start-with-these-3-stocks/',4),(2,'beth mckenna','Last month, shares of the custom AI chipmaker got a boost from a Nvidia partnership and investment, a potential collaboration with Google, and an acquisition.\nShares of Marvell Technology (MRVL +1.91%...','2026-05-05',0.19922,'Why Marvell Stock Soared 67% in April','https://www.fool.com/investing/2026/05/05/mtvl-stock-ai-chip-stocks-custom-ai-chips-nvidia/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','Investing\nAlphabet (GOOG, GOOGL) is deploying roughly $185 billion in 2026 capital expenditures to fund AI data centers, custom TPUs, cloud infrastructure, and Gemini model training, while quietly dow...','2026-05-07',0.19698,'Did Google Just Turn Chrome Users Into Its AI Data Center?','https://247wallst.com/investing/2026/05/07/did-google-just-turn-chrome-users-into-its-ai-data-center/',40),(2,'stefon walters','Meta Platforms is trading at a relatively low forward P/E ratio.\nThe \"Magnificent Seven\"Â collectively refers to Nvidia, Apple, Microsoft (MSFT +1.69%), Amazon (AMZN 1.40%), Alphabet (GOOG +0.05%) (GOO...','2026-05-07',0.84974,'This \"Magnificent Seven\" Stock Is the Cheapest of Them All. Is It a Buy Right Now?','https://www.fool.com/investing/2026/05/07/this-magnificent-seven-stock-is-the-cheapest-of-th/',4),(3,'john ballard','These tech behemoths are seeing impressive gains from their artificial intelligence (AI) investments.\nThere are several compelling stocks to consider buying for artificial intelligence (AI) growth, bu...','2026-05-06',0.92168,'The Best AI Stocks for Growth Investors to Buy in 2026','https://www.fool.com/investing/2026/05/06/best-ai-stocks-growth-investors-to-buy-2026/',4),(4,'vandita jadeja','Investing\nEli Lilly (LLY) posted Q1 revenue of $19.8B with 56% growth and EPS up 170% to $8.26, while securing approval for Foundayo, a weight-loss pill expected to drive growth; Chevron (CVX) generat...','2026-05-06',0.26172,'If You Want to Beat the Market, Start With These 3 Stocks','https://247wallst.com/investing/2026/05/06/if-you-want-to-beat-the-market-start-with-these-3-stocks/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -250,4 +251,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-07  4:29:41
+-- Dump completed on 2026-05-08  4:12:20
