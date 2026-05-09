@@ -62,6 +62,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
+3fccfd2c-4b58-11f1-99b0-4e674033a7fa:1-114,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -202,14 +203,14 @@ f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
+fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
-fe835252-3f93-11f1-8981-5ad8a6544702:1-60,
-fffe2342-4a8e-11f1-b1fc-7a92894f5e3a:1-77';
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
 
 --
 -- Table structure for table `REDDIT_NVDA_DATA`
@@ -228,7 +229,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +238,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1t6mty3','okj2tfb','2026-05-07',28,-0.5574,'lol that shit sold off really quick'),(2,'stocks','1t6mty3','okj3ay1','2026-05-07',20,0.9595,'\"As part of the partnership, IREN issued to NVIDIA a five-year right to purchase up to 30 million shares of ordinary stock at an exercise price of $70 per share, resulting in a right to invest up to $2.1 billion, subject to certain conditions including regulatory.\"\n\nHuge win for Nvidia.'),(3,'stocks','1t6mty3','okj69iw','2026-05-07',17,-0.6222,'More circular bullshit'),(4,'stocks','1t6mty3','okj606l','2026-05-07',8,0.2263,'At the beginning it looked nice. But then you realize it is a very different partnership than the one they had with NBIS. This one is just smoke.'),(5,'stocks','1t6mty3','okjkgoy','2026-05-07',1,-0.5859,'Wtf, why is it only 5% now ðŸ˜³ '),(6,'stocks','1t6mty3','okiu86i','2026-05-07',2,0,'The house of cards grows taller.'),(7,'stocks','1t6mty3','okj1mds','2026-05-07',-4,-0.6331,'Just passing money around!  Soon will come crashing down!!!   Lol\n\nAnybody see RackSpack?  Traded 27 tines average!  '),(8,'NVDA_Stock','1t6cnz2','okhz405','2026-05-07',7,0.357,'Resistance is me not selling it.'),(9,'NVDA_Stock','1t6cnz2','okgpi1w','2026-05-07',7,0,'it is going to close above 208 today... then before earning day it is going to be 220. '),(10,'NVDA_Stock','1t6cnz2','okh5e4l','2026-05-07',5,0,'![gif](giphy|iv80ZwyJ0ep0GU9jap)'),(11,'NVDA_Stock','1t6cnz2','okhq8wb','2026-05-07',8,0.6808,'I remember telling my dad to purchase more when it dropped to $140 a couple months ago. He laughed in my face and said I was a â€œfunny guyâ€ \n\nEvery Sunday I visit my parents and tell him Iâ€™m going to quit my job to become a comedian'),(12,'NVDA_Stock','1t6cnz2','okgnf81','2026-05-07',2,0.2263,'Okay.'),(13,'NVDA_Stock','1t6cnz2','okhguih','2026-05-07',2,0.3612,'Say it again ðŸ˜† '),(14,'NVDA_Stock','1t6cnz2','okicqx4','2026-05-07',2,0,'Thatâ€™s why just sold $100k at 213.50 average. '),(15,'NVDA_Stock','1t6cnz2','okgj46m','2026-05-07',5,0,'lol â€œresistanceâ€. Do people really believe this stuff? '),(16,'NVDA_Stock','1t6cnz2','okgxgll','2026-05-07',0,-0.2411,'I said it would oscillate between 198-215. #CalledIt\n\nEdit: you just can\'t handle the truth.'),(17,'NVDA_Stock','1t6cnz2','okha2wd','2026-05-07',-6,0.7198,'nvda was $212 last october, so i\'m not seeing why you are so excited about it.\n\nthat\'s six months of your money going nowhere, you\'d have been better off putting it in an etf.'),(18,'NVDA_Stock','1t6or4a','okj3du7','2026-05-07',2,0.4926,'This was late yesterday\'s news that pushed it up today. Lets go!');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -251,4 +251,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-08  3:37:01
+-- Dump completed on 2026-05-09  3:37:59
