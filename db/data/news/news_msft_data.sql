@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
@@ -228,7 +229,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +238,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wajeeh khan','...','2026-05-07',0.14232,'MSFT Stock Alert: Microsoft Weighs Abandoning Renewable Energy Target as AI Boom Continues','https://www.barchart.com/story/news/1776657/msft-stock-alert-microsoft-weighs-abandoning-renewable-energy-target-as-ai-boom-continues',20),(2,'syeda seirut javed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-07',0.79272,'5 Stocks on Jim Cramerâ€™s Radar Including AI Winners Like Amazon, GE Vernova, and More','https://www.insidermonkey.com/blog/5-stocks-on-jim-cramers-radar-including-ai-winners-like-amazon-ge-vernova-and-more-1755164/',4),(3,'stephan jacobs','...','2026-05-07',0.43384,'Microsoft (NASDAQ:MSFT) Receives Buy Rating from Barclays','https://www.thelincolnianonline.com/2026/05/07/microsoft-nasdaqmsft-receives-buy-rating-from-barclays.html',20),(4,'thomas richmond','Investing\nDevendra Hardawar argues Apple (AAPL) is demonstrating discipline by moving slowly on AI while Microsoft (MSFT) accelerates spending.\nApple delivered $111.2B in March-quarter revenue and $30...','2026-05-07',0.52096,'Appleâ€™s AI Restraint Looks Smart as Microsoft Spends $190B on AI Despite User Pushback','https://247wallst.com/investing/2026/05/07/apples-ai-restraint-looks-smart-as-microsoft-spends-190b-on-ai-despite-user-pushback/',40),(5,'steven fiorillo','...','2026-05-07',0.45752,'Microsoft: A Compelling Opportunity Emerging From The Downturn','https://seekingalpha.com/article/4900032-microsoft-stock-q3-compelling-opportunity-emerging-from-the-downturn',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'peace longe','Think buying an S&P 500 index fund means you own a piece of all 500 companies equally? Think again. The index you probably hold in your 401(k) or brokerage account has quietly become something very di...','2026-05-08',0.22042,'The S&P 500 Equal Weight Vs. Market Cap Weight Debate--Why It Matters For Your Portfolio','https://www.benzinga.com/Opinion/26/05/52416895/the-sp-500-equal-weight-vs-market-cap-weight-debate-why-it-matters-for-your-portfolio',8),(2,'keithen drury','...','2026-05-08',0.71656,'The Best Artificial Intelligence (AI) Stocks to Buy With $1,000 in May','https://finance.yahoo.com/markets/stocks/articles/best-artificial-intelligence-ai-stocks-153500361.html',20),(3,'rich asplund','...','2026-05-08',0.54464,'Earnings Strength Lifts S&P 500 and Nasdaq 100 to Record Highs','https://www.barchart.com/story/news/1805195/earnings-strength-lifts-s-p-500-and-nasdaq-100-to-record-highs',2),(4,'rich asplund','...','2026-05-08',0.6416,'Stocks Climb on Solid Tech Earnings and US Labor Market Strength','https://www.barchart.com/story/news/1803229/stocks-climb-on-solid-tech-earnings-and-us-labor-market-strength',2),(5,'micah haroldson','...','2026-05-08',0.272,'Erste Group Bank Predicts Higher Earnings for Microsoft','https://www.watchlistnews.com/erste-group-bank-predicts-higher-earnings-for-microsoft/11074423.html',20),(6,'keith noonan','...','2026-05-08',0,'Why Microsoft Stock Soared 10.2% Higher Last Month and Has Kept Rallying in May','https://finance.yahoo.com/markets/stocks/articles/why-microsoft-stock-soared-10-140720001.html',200),(7,'robert izquierdo','Expense ratios, sector weightings, and recent returns highlight key differences between these two fundsâ€™ approaches to growth and diversification.\nComparing the Vanguard Mega Cap Growth ETF (MGK +1.23...','2026-05-08',0.8922,'Which Is the Better Growth ETF, the Vanguard Mega Cap Growth ETF or iShares Russell 2000 ETF?','https://www.fool.com/coverage/etfs/2026/05/08/which-is-the-better-growth-etf-the-vanguard-mega-cap-growth-etf-or-ishares-russell-2000-etf/',4),(8,'bloomberg news','...','2026-05-08',0,'US Premarket Movers for May 8, 2026','https://financialpost.com/pmn/business-pmn/us-premarket-movers-for-may-8-2026',2);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -251,4 +252,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-08  4:12:20
+-- Dump completed on 2026-05-09  4:18:36
