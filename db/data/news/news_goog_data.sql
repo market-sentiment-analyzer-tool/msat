@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
@@ -238,7 +239,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','...','2026-05-08',0.71656,'The Best Artificial Intelligence (AI) Stocks to Buy With $1,000 in May','https://finance.yahoo.com/markets/stocks/articles/best-artificial-intelligence-ai-stocks-153500361.html',20),(2,'billy duberstein','The company inked a potentially game-changing deal with YouTube and reported earnings.\nShares of satellite radio company Sirius XM (SIRI +1.31%) rallied 16.7% in April, according to data from S&P Glob...','2026-05-08',0.1998,'Why Sirius XM Holdings Rallied in April','https://www.fool.com/investing/2026/05/08/why-sirius-xm-holdings-rallied-in-april/',4),(3,'ruchi gupta','...','2026-05-07',-0.21856,'Upstart Stock Plunged on Earnings but Executives Say Investors Are Missing the Bigger Picture','https://www.barchart.com/story/news/1779621/upstart-stock-plunged-on-earnings-but-executives-say-investors-are-missing-the-bigger-picture',2),(4,'rich duprey','Investing\nAlphabet (GOOG, GOOGL) is deploying roughly $185 billion in 2026 capital expenditures to fund AI data centers, custom TPUs, cloud infrastructure, and Gemini model training, while quietly dow...','2026-05-07',0.19698,'Did Google Just Turn Chrome Users Into Its AI Data Center?','https://247wallst.com/investing/2026/05/07/did-google-just-turn-chrome-users-into-its-ai-data-center/',40),(5,'stefon walters','Meta Platforms is trading at a relatively low forward P/E ratio.\nThe \"Magnificent Seven\"Â collectively refers to Nvidia, Apple, Microsoft (MSFT 1.33%), Amazon (AMZN +0.55%), Alphabet (GOOG +0.44%) (GOO...','2026-05-07',0.84974,'This \"Magnificent Seven\" Stock Is the Cheapest of Them All. Is It a Buy Right Now?','https://www.fool.com/investing/2026/05/07/this-magnificent-seven-stock-is-the-cheapest-of-th/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mohd haider','Bloomberg, citing sources, reported the deal on Friday.\nOn Thursday, Akamai announced its first-quarter financial results, where it stated a deal with a \"leading frontier model provider\" without discl...','2026-05-09',0.09638,'Anthropic Signs $1.8 Billion Akamai Cloud Deal Amid Surging Claude AI Demand: Report','https://www.benzinga.com/markets/tech/26/05/52434312/anthropic-signs-1-8-billion-akamai-cloud-deal-amid-surging-claude-ai-demand-report',8),(2,'thomas niel','These companies have what investors want.\nAfter years of anticipation, privately held SpaceX finally has plans to go public. The Elon Musk-backed space exploration company filed with the Securities an...','2026-05-08',0.39676,'Want SpaceX Stock Before the IPO? These 3 Plays Give You a Back Door In.','https://www.fool.com/investing/2026/05/08/want-spacex-stock-before-the-ipo-these-3-plays-giv/',4),(3,'wall street breakfast','...','2026-05-08',0,'Wall Street Roundup: Market Turning Lemons Into Limoncello','https://seekingalpha.com/article/4901604-wall-street-roundup-market-turning-lemons-into-limoncello',4),(4,'keithen drury','...','2026-05-08',0.71656,'The Best Artificial Intelligence (AI) Stocks to Buy With $1,000 in May','https://finance.yahoo.com/markets/stocks/articles/best-artificial-intelligence-ai-stocks-153500361.html',20),(5,'billy duberstein','The company inked a potentially game-changing deal with YouTube and reported earnings.\nShares of satellite radio company Sirius XM (SIRI +1.31%) rallied 16.7% in April, according to data from S&P Glob...','2026-05-08',0.1998,'Why Sirius XM Holdings Rallied in April','https://www.fool.com/investing/2026/05/08/why-sirius-xm-holdings-rallied-in-april/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -252,4 +253,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-09  4:18:36
+-- Dump completed on 2026-05-10  4:39:06
