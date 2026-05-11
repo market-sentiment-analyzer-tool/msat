@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
@@ -64,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
+45640c87-4cee-11f1-8d9f-96e910e9a955:1-22,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
@@ -134,7 +136,6 @@ a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
-ac1c64ed-4c23-11f1-a47b-967d290c00b2:1-32,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
@@ -230,7 +231,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -239,7 +240,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1t8fcay','okveq6g','2026-05-09',14,0,'Apple to 628'),(2,'AAPL','1t8fcay','okvfdoc','2026-05-09',7,0,'They probably bought it at 6.28 '),(3,'AAPL','1t8fcay','okvgdoo','2026-05-09',6,0.5423,'Is it a sign to buy?'),(4,'AAPL','1t8fcay','okvjnm9','2026-05-09',4,0,'Whatâ€™s 628 CAD to USD'),(5,'AAPL','1t8fcay','okvl0n8','2026-05-09',1,0.296,'Itâ€™s means itâ€™s $600 to $800 a share in CAD '),(6,'AAPL','1t8fcay','okvlxg0','2026-05-09',1,0,'Suddenly hungry for Vietnamese food â€¦'),(7,'AAPL','1t8fcay','okvr2lt','2026-05-09',1,0,'628 in 3 years'),(8,'AAPL','1t8fcay','okw1teo','2026-05-09',1,-0.3994,'628 Canadian dollars is about 450 US dollars now. But could vary over time. Who needs what this vanity plate means if it had to do with AAPL stock price'),(9,'AAPL','1t8fcay','okwbt38','2026-05-09',1,0.4215,'True millionaire '),(10,'AAPL','1t8fcay','okxh917','2026-05-10',1,0.7184,'You need to buy AAPL on 6.28 ðŸ˜†');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -253,4 +253,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-10  3:53:16
+-- Dump completed on 2026-05-11  4:03:26
