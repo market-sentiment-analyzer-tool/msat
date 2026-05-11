@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -230,7 +231,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -239,7 +240,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'luis hernandez','\n\n			The one thing AI struggles to duplicate		\nSide view of bearded stock market broker / trader in eyeglasses analyzing data and graphs on multiple computer screens while sitting in modern office. \nS...','2026-05-09',0.19984,'Wall Street Let AI Pick Stocks and Here Is What Happened','https://investorplace.com/2026/05/wall-street-ai-stocks-what-happened/',4),(2,'null','Please enable JS and disable any ad blocker...','2026-05-09',0.06364,'Analysts turn heads with AMD stock forecast after massive rally','https://www.thestreet.com/investing/stocks/analysts-turn-heads-with-amd-stock-forecast-after-massive-rally',2),(3,'adria cimino','Another company is also excelling in the AI chips business.\nNvidia (NVDA +1.73%) has long been considered the ultimate artificial intelligence (AI) stock to buy. Why? Because the company is the maker ...','2026-05-09',0.88218,'Is Nvidia Still the Best AI Stock to Buy in 2026, or Is This Challenger?','https://www.fool.com/investing/2026/05/09/is-nvidia-still-the-best-ai-stock-to-buy-in-2026/',40),(4,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-09',0.51994,'NVIDIA Corp. (NVDA) Partners with Corning to Boost Optical Connectivity Manufacturing Capacity','https://www.insidermonkey.com/blog/nvidia-corp-nvda-partners-with-corning-to-boost-optical-connectivity-manufacturing-capacity-1757445/',40),(5,'null','Please enable JS and disable any ad blocker...','2026-05-09',0.33564,'Goldman Sachs resets Nvidia stock forecast ahead of earnings','https://www.thestreet.com/investing/stocks/goldman-sachs-raises-nvidia-eps-forecast-ahead-of-earnings',20),(6,'kyle jackson','...','2026-05-09',0.2,'NVIDIA Corporation $NVDA Stake Lowered by US Asset Management LLC','https://www.watchlistnews.com/nvidia-corporation-nvda-stake-lowered-by-us-asset-management-llc/11075813.html',20),(7,'ethan ryder','...','2026-05-09',0.45752,'NVIDIA Corporation $NVDA Shares Purchased by Tokio Marine Asset Management Co. Ltd.','https://www.tickerreport.com/banking-finance/13435046/nvidia-corporation-nvda-shares-purchased-by-tokio-marine-asset-management-co-ltd.html',20),(8,'alanna baker','...','2026-05-09',-0.04128,'Summit Wealth Partners LLC Reduces Stake in NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/05/09/summit-wealth-partners-llc-reduces-stake-in-nvidia-corporation-nvda.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ben gran','...','2026-05-10',0.67848,'QQQM Is a Better Buy Than QQQ -- For 1 Powerful Reason','https://finance.yahoo.com/markets/stocks/articles/qqqm-better-buy-qqq-1-161800241.html',20),(2,'bob karr','...','2026-05-10',0.32152,'Here is Why NVIDIA (NVDA) Is Among the Unstoppable Stocks to Buy in 2026','https://finance.yahoo.com/markets/stocks/articles/why-nvidia-nvda-among-unstoppable-155343510.html',200),(3,'rich duprey','Investing\nNvidia (NVDA) is driving market gains through AI chip demand, but this growth masks broader economic weakness as consumers face squeezed budgets from elevated energy prices and tariffs. Exxo...','2026-05-10',0.19934,'What Saudi Aramcoâ€™s CEO Just Said Has Huge Implications for the Trump Bull Market','https://247wallst.com/investing/2026/05/10/what-saudi-aramcos-ceo-just-said-has-huge-implications-for-the-trump-bull-market/',4),(4,'cory renauer','Compare how these two tech ETFs stack up on diversification, recent returns, and riskâ€”plus which offers a broader slice of the technology sector.\nFidelity MSCI Information Technology Index ETF (FTEC +...','2026-05-10',0.17814,'The Fidelity Tech ETF Offers Lower Fees Broader Reach Than the iShares SOXX','https://www.fool.com/coverage/etfs/2026/05/10/fidelity-tech-etf-offers-lower-fees-broader-reach-than-ishares-soxx/',4),(5,'lekha gupta','TheÂ Donald TrumpÂ administration is reportedly inviting several tech and business leaders to accompany the President on his trip toÂ Beijing next week.\nU.S.-based employers announced 83,387 job cuts in ...','2026-05-10',0.88426,'Consumer Tech News (May 4- 8): Big Tech Gain On AI Momentum, Pentagon Awards $500M AI Contract & More','https://www.benzinga.com/markets/tech/26/05/52437057/consumer-tech-news-may-4-8-big-tech-gain-on-ai-momentum-pentagon-awards-500m-ai-contract-more',8),(6,'mark dietrich','...','2026-05-10',0.21856,'NVIDIA Corporation $NVDA Holdings Increased by Zurcher Kantonalbank Zurich Cantonalbank','https://www.watchlistnews.com/nvidia-corporation-nvda-holdings-increased-by-zurcher-kantonalbank-zurich-cantonalbank/11076840.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -253,4 +254,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-10  4:39:06
+-- Dump completed on 2026-05-11  4:54:29

@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -230,7 +231,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -239,7 +240,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mohd haider','Bloomberg, citing sources, reported the deal on Friday.\nOn Thursday, Akamai announced its first-quarter financial results, where it stated a deal with a \"leading frontier model provider\" without discl...','2026-05-09',0.09638,'Anthropic Signs $1.8 Billion Akamai Cloud Deal Amid Surging Claude AI Demand: Report','https://www.benzinga.com/markets/tech/26/05/52434312/anthropic-signs-1-8-billion-akamai-cloud-deal-amid-surging-claude-ai-demand-report',8),(2,'thomas niel','These companies have what investors want.\nAfter years of anticipation, privately held SpaceX finally has plans to go public. The Elon Musk-backed space exploration company filed with the Securities an...','2026-05-08',0.39676,'Want SpaceX Stock Before the IPO? These 3 Plays Give You a Back Door In.','https://www.fool.com/investing/2026/05/08/want-spacex-stock-before-the-ipo-these-3-plays-giv/',4),(3,'wall street breakfast','...','2026-05-08',0,'Wall Street Roundup: Market Turning Lemons Into Limoncello','https://seekingalpha.com/article/4901604-wall-street-roundup-market-turning-lemons-into-limoncello',4),(4,'keithen drury','...','2026-05-08',0.71656,'The Best Artificial Intelligence (AI) Stocks to Buy With $1,000 in May','https://finance.yahoo.com/markets/stocks/articles/best-artificial-intelligence-ai-stocks-153500361.html',20),(5,'billy duberstein','The company inked a potentially game-changing deal with YouTube and reported earnings.\nShares of satellite radio company Sirius XM (SIRI +1.31%) rallied 16.7% in April, according to data from S&P Glob...','2026-05-08',0.1998,'Why Sirius XM Holdings Rallied in April','https://www.fool.com/investing/2026/05/08/why-sirius-xm-holdings-rallied-in-april/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'james hires','...','2026-05-09',0.66168,'The Best AI Software Stock to Buy in 2026','https://finance.yahoo.com/markets/stocks/articles/best-ai-software-stock-buy-181000109.html',20),(2,'mohd haider','Bloomberg, citing sources, reported the deal on Friday.\nOn Thursday, Akamai announced its first-quarter financial results, where it stated a deal with a \"leading frontier model provider\" without discl...','2026-05-09',0.09638,'Anthropic Signs $1.8 Billion Akamai Cloud Deal Amid Surging Claude AI Demand: Report','https://www.benzinga.com/markets/tech/26/05/52434312/anthropic-signs-1-8-billion-akamai-cloud-deal-amid-surging-claude-ai-demand-report',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -253,4 +254,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-10  4:39:06
+-- Dump completed on 2026-05-11  4:54:28
