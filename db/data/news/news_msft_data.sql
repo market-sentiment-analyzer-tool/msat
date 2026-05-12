@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
+3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -231,7 +232,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -240,7 +241,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'ben gran','...','2026-05-10',0.67848,'QQQM Is a Better Buy Than QQQ -- For 1 Powerful Reason','https://finance.yahoo.com/markets/stocks/articles/qqqm-better-buy-qqq-1-161800241.html',20),(2,'jabran kundi','...','2026-05-10',-0.30544,'Broadcom Hits a Bottleneck as OpenAI Revenue Concerns Claim Their First Casualty','https://www.barchart.com/story/news/1837264/broadcom-hits-a-bottleneck-as-openai-revenue-concerns-claim-their-first-casualty',2),(3,'alanna baker','...','2026-05-10',0.5364,'Microsoft Corporation $MSFT Shares Sold by Whittier Trust Co. of Nevada Inc.','https://www.thelincolnianonline.com/2026/05/10/microsoft-corporation-msft-shares-sold-by-whittier-trust-co-of-nevada-inc.html',20),(4,'cory renauer','Compare how these two tech ETFs stack up on diversification, recent returns, and riskâ€”plus which offers a broader slice of the technology sector.\nFidelity MSCI Information Technology Index ETF (FTEC +...','2026-05-10',0.17814,'The Fidelity Tech ETF Offers Lower Fees Broader Reach Than the iShares SOXX','https://www.fool.com/coverage/etfs/2026/05/10/fidelity-tech-etf-offers-lower-fees-broader-reach-than-ishares-soxx/',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 10th, 2026\n\nMicrosoft (NASDAQ:MSFT â€“ Free Report) had its target price trimmed by Dbs Bank from $678.00 to $573.00 in a research note released on Thursday morning,Mar...','2026-05-10',-0.03728,'Dbs Bank Cuts Microsoft (NASDAQ:MSFT) Price Target to $573.00','https://www.americanbankingnews.com/2026/05/10/dbs-bank-cuts-microsoft-nasdaqmsft-price-target-to-573-00.html',40),(6,'mark dietrich','...','2026-05-10',0.2368,'Microsoft Corporation $MSFT Shares Purchased by Patriot Financial Group Insurance Agency LLC','https://www.watchlistnews.com/microsoft-corporation-msft-shares-purchased-by-patriot-financial-group-insurance-agency-llc/11076490.html',20),(7,'abmn staff','\n					Posted by ABMN Staff on May 10th, 2026\n\nPatriot Financial Group Insurance Agency LLC grew its position in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 6.8% during the 4th quarter, accor...','2026-05-10',0.41832,'Microsoft Corporation $MSFT Position Increased by Patriot Financial Group Insurance Agency LLC','https://www.americanbankingnews.com/2026/05/10/microsoft-corporation-msft-position-increased-by-patriot-financial-group-insurance-agency-llc.html',40),(8,'abmn staff','\n					Posted by ABMN Staff on May 10th, 2026\n\nDupont Capital Management Corp trimmed its stake in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 9.8% in the 4th quarter, according to its most r...','2026-05-10',0.19968,'Dupont Capital Management Corp Trims Holdings in Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/05/10/dupont-capital-management-corp-trims-holdings-in-microsoft-corporation-msft.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'oliver rodzianko','...','2026-05-11',0.2,'Microsoft: Look Out For More Upside Ahead, Just Respect Risks','https://seekingalpha.com/article/4902449-microsoft-stock-look-out-for-more-upside-ahead-just-respect-risks',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-11',0.3553,'Grokâ€™s Latest Stock Portfolio in 2026: Elon Muskâ€™s AI Chatbotâ€™s Top 5 Stock Picks','https://www.insidermonkey.com/blog/groks-latest-stock-portfolio-in-2026-elon-musks-ai-chatbots-top-5-stock-picks-1756298/',4),(3,'null','Please enable JS and disable any ad blocker...','2026-05-11',0.26364,'Apple delivers surprise win in Big Techâ€™s AI spending war','https://www.thestreet.com/investing/apple-delivers-surprise-win-in-big-techs-ai-spending-war',2),(4,'mark r. hake','...','2026-05-11',0,'Microsoft Stock Still Looks Undervalued Based on FCF Projections, Despite Higher Capex','https://www.barchart.com/story/news/1848567/microsoft-stock-still-looks-undervalued-based-on-fcf-projections-despite-higher-capex',20),(5,'luke lango','\n\n			Custom silicon is moving from side story to main event		\nListen to the audio version of this article (generated by AI).\nForty-thousand dollars â€” thatâ€™s roughly the price of one Nvidia (NVDA) H100...','2026-05-11',0.07728,'Donâ€™t Miss the Next Turn In the AI Trade','https://investorplace.com/hypergrowthinvesting/2026/05/dont-miss-the-next-turn-in-the-ai-trade/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -254,4 +255,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-11  4:54:28
+-- Dump completed on 2026-05-12  4:30:59

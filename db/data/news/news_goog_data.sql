@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
+3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -231,7 +232,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -240,7 +241,6 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'james hires','...','2026-05-09',0.66168,'The Best AI Software Stock to Buy in 2026','https://finance.yahoo.com/markets/stocks/articles/best-ai-software-stock-buy-181000109.html',20),(2,'mohd haider','Bloomberg, citing sources, reported the deal on Friday.\nOn Thursday, Akamai announced its first-quarter financial results, where it stated a deal with a \"leading frontier model provider\" without discl...','2026-05-09',0.09638,'Anthropic Signs $1.8 Billion Akamai Cloud Deal Amid Surging Claude AI Demand: Report','https://www.benzinga.com/markets/tech/26/05/52434312/anthropic-signs-1-8-billion-akamai-cloud-deal-amid-surging-claude-ai-demand-report',8);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -254,4 +254,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-11  4:54:28
+-- Dump completed on 2026-05-12  4:30:59
