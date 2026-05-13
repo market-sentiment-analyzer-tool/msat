@@ -48,7 +48,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
-25ca4c67-4db5-11f1-96ec-d2526f119870:1-183,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -65,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
+3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -130,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
+91cda39e-4e7f-11f1-a0ce-06b9b3fbf865:1-33,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
@@ -232,7 +233,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -241,6 +242,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tbd4hn','olg87pg','2026-05-12',15,0.3818,'Early retirement at age 48, paid off home, education tuitions for 2 kidsâ€¦all because some dumb luck apple investment made in 2012. Still holding on to 1/2 of the shares till this day. '),(2,'AAPL','1tbd4hn','olfss86','2026-05-12',12,0.6696,'Letâ€™s go!  93,109%.  This stock has created generational wealth. '),(3,'AAPL','1tbd4hn','olglkec','2026-05-12',2,0.3595,'Sold some shares today at $295! Have some limit orders set at $300 and $305. Been trying to trim my AAPL holdings to be less than 10% of my overall stock portfolio. '),(4,'AAPL','1tbd4hn','olft3cn','2026-05-12',3,0.9382,'Congrats on you 16,051 shares at 12.47 and 15,909.5 shares at 10.536. ðŸ‘ðŸ»ðŸ‘ðŸ»ðŸ‘ðŸ»'),(5,'AAPL','1tbd4hn','olhyh4g','2026-05-13',1,0,'Where do you guys think the Stock will be in 10 years '),(6,'AAPL','1tbd4hn','olhzeq6','2026-05-13',1,0.7884,'Hello...    Hoping for 300 so as to easily cover my RMD  ...   Possibility of soon?  Thank You');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -254,4 +256,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-12  3:49:24
+-- Dump completed on 2026-05-13  3:56:07

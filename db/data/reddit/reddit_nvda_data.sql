@@ -48,7 +48,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
-25ca4c67-4db5-11f1-96ec-d2526f119870:1-183,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -65,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
+3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -130,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
+91cda39e-4e7f-11f1-a0ce-06b9b3fbf865:1-33,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
@@ -232,7 +233,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -241,7 +242,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tafpv6','ol90hck','2026-05-11',-2,0.7105,'Why is it that? Itâ€™s always people who least need it get the most? For example, I remember Jay Leno talking about how when he visits gas station people are falling over their heels to give him free gas but then again he also recalls time when he was not that famous nobody cared.\n\nI ask because what is Jensen going to do with this Doctorate degree');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tbj63m','olh4ulh','2026-05-13',16,0.8747,'WSJ is late to this realization? The word is monopsony. They have a monopsony like power because they can buy the entire chain because they were there first and will always control the market. \n\nThey did it bigger and better than everyone and got the orders in. They are managing thousands of suppliers far ahead of anyone else. Nobody will be able to take Nvidia\'s majority market share away from them (which will shrink dramatically) but also generate more revenue on a yearly basis regardless due to JENSEN BEING RIGHT ABOUT EVERYTHING.'),(2,'NVDA_Stock','1tbj63m','olh5si4','2026-05-13',11,0,'its beyonD that.. theyâ€™re buying or developing the whole datacenter verticalâ€¦ networking, switxhes, hyperscalers, quantum computers, chip makers (INTC), the AI companies (openAI)\n\n'),(3,'NVDA_Stock','1tbj63m','olh0zbh','2026-05-13',10,0.9966,'Itâ€™s good to have Nvidiaâ€™s deep pockets these days. If you donâ€™t, getting memory and other necessary components for AI computing is going to keep getting harder.\n\nWhen the AI chip giant filed its last quarterly update three months ago, the company reported $95.2 billion in purchase commitments with its supply vendors. That dwarfed the $11.4 billion in commitments related to Nvidiaâ€™s many investments, and represented an 89% jump in just three monthsâ€™ time.\n\nThe reason isnâ€™t mysterious: key components like memory are surging in price and in short supply. Nvidia CFO Colette Kress said at the time that the company has â€œstrategically secured inventory and capacity to meet demand beyond the next several quarters.â€ \n\nPurchase commitments are an obscure-enough metric that most analysts donâ€™t make forecasts for them. So, unlike revenue, earnings and free cash flow, there isnâ€™t a consensus on where purchase commitments will land when Nvidia posts its fiscal first-quarter report next week.\n\nBut memory costs alone have jumped even more since the last report, and even staying static at $95 billion is no small matter. That is just over half of the companyâ€™s projected free cash flow for the current fiscal year, during which Nvidia expects the bulk of its purchase commitments will be paid out.\n\nNvidia isnâ€™t hurting for money, as evidenced by the worldâ€™s largest companies continuing to empty their own coffers on AI infrastructure. But the makers of that infrastructure also have to live in a world of scarcity.\n\nMemory chips, optical components and advanced manufacturing lines at TSMC are all in great demand. And all the money in the world canâ€™t grow the supply of those products and services quickly. A memory-chip factory alone takes years to build and get up and running. \n\nNvidia isnâ€™t the only one trying to lock down the necessary resources. Broadcom told investors during its last report in March that it has â€œsecured the supply chain requiredâ€ to hit $100 billion in AI chip revenue next year. That is a little over triple the current annual revenue of that business segment.\n\nAnd Nvidiaâ€™s smaller, direct rival AMD disclosed a little over $21 billion in purchase commitments through next year in its first-quarter filing last week. That was more than double what the company reported three months ago in commitments for that time period. \n\nUsing big pocketbooks to lay claim to the supply chain is all well and good for those who can afford it. But there are some who canâ€™t, raising questions about fairness and competition in a period of shortage. \n\nCerebras, for example, a maker of mega-sized chips that is set to go public later this week, boosted the price range of the offering by nearly 30% on Monday and plans to raise about $4.8 billion.\n\nThat is a good sign of demand for the offering. But even with that bounty, Cerebras will still be deep in a long line of bigger players who need components like memory and the manufacturing services of TSMC.\n\nThe companyâ€™s IPO filing includes a lengthy warning that it procures nearly all of its necessary services and components on a purchase-order basis without long-term agreements.\n\nThese days, the AI chip business is about the art of managing scarcity.\n\nSome of OpenAIâ€™s longtime employees got big payoutsâ€”up to $30 million eachâ€”after the company allowed them to sell shares to investors in an October financing round. The windfalls were unusual for Silicon Valley, where employees usually can only convert shares into cash after a company goes public or is sold. More money is likely to flow to employees of hot AI startups soon as OpenAI and Anthropic prepare for initial public offerings as soon as this year.\n\nThe unemployment rate among IT workers in March, according to the U.S. Bureau of Labor Statistics. The rate ticked up during the month as large tech companies including Meta Platforms announced large layoffsâ€”but tech-employee unemployment remains lower than its 7% peak around mid-2025.\n\nThe appetite for chips hasnâ€™t been this strong in a while. Tech giants are racing to get memory chips and central processors, in addition to the AI processing chips that have been the workhorses of the boom so far.\n\nTaiwan Semiconductor Manufacturing Co. is in prime position to benefit in this setup. The company, the largest contract chip maker in the world by revenue, is enjoying beefy gross profit margins, with sales rising faster than expenses. Margins reached more than 66% in its most recent quarterâ€”a huge number for a chip manufacturer.\n\nMargins are likely to compress in the coming few quarters because of the cost of introducing new cutting-edge chip-making in its factories. But its long-term outlook for revenue and profit growth looks bright. It has a diverse portfolio of customers, including Apple and Nvidia but also a big basket of other chip designers. And it is expanding geographically in the U.S. and Japan to help mitigate against its most significant risk: disruption caused by a conflict with China.\n\nThe Trump administrationâ€™s focus on border security is creating a miniboom in AI-driven surveillance. Companies are marketing cameras that try to identify people carrying weapons and drones that autonomously monitor border threats, among many other gizmos. And U.S. agencies that handle border security, principally Immigration and Customs Enforcement and Customs and Border Protection, have big budgets.'),(4,'NVDA_Stock','1tbj63m','olh87sj','2026-05-13',10,0.6486,'Stock to $500 after earnings ðŸ˜‚ '),(5,'NVDA_Stock','1tbj63m','olh8jmx','2026-05-13',8,0.3612,'It\'s the beat \'em and join/own them model.  I like it.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -255,4 +256,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-12  3:49:25
+-- Dump completed on 2026-05-13  3:56:07
