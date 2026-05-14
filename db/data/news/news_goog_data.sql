@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -232,7 +233,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -241,6 +242,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam spatacco','...','2026-05-13',0.43384,'460 Billion Reasons to Buy Alphabet Stock Hand Over Fist','https://finance.yahoo.com/news/460-billion-reasons-buy-alphabet-152000022.html',20),(2,'the motley fool','...','2026-05-13',0.60048,'Better Stock to Buy: Alphabet vs. Meta Platforms','https://finance.yahoo.com/news/better-stock-buy-alphabet-vs-145000684.html',20),(3,'danny vena','Cloud providers are scrambling to profit from the race to adopt AI. One was the runaway champ.\nAfter several years of deceleration, the advent of artificial intelligence (AI) has reignited cloud compu...','2026-05-12',0.80032,'The Q1 Cloud Face-off Is Over -- There Was 1 Clear Winner','https://www.fool.com/investing/2026/05/12/the-q1-cloud-face-off-is-over-there-was-1-clear-wi/',4),(4,'amy thielen','...','2026-05-12',0,'Google unveils next-generation laptop built around Gemini AI','https://seekingalpha.com/news/4591481-google-unveils-next-generation-laptop-built-around-gemini-ai?feed_item_type=news',40),(5,'vandita jadeja','Investing\nGoogle (GOOG) posted Q1 revenue of $109.90B, up 22% YoY, with Google Cloud surging 63% to $20.03B and a $460B backlog, while capital expenditures doubled to $35.67B and free cash flow collap...','2026-05-12',0.43918,'Google at 52-Week High: Buy, Sell or Hold?','https://247wallst.com/investing/2026/05/12/google-at-52-week-high-buy-sell-or-hold/',40),(6,'rick munarriz','...','2026-05-12',0.42136,'This Under-the-Radar Growth Stock Just Earned a Promotion','https://finance.yahoo.com/markets/stocks/articles/under-radar-growth-stock-just-134500401.html',20),(7,'liz kiesche','...','2026-05-12',0.35232,'Affirm Holdings teams up with Google on payments','https://seekingalpha.com/news/4591251-affirm-holdings-teams-up-with-google-on-payments?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -254,4 +256,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-12  4:30:59
+-- Dump completed on 2026-05-14  4:36:11

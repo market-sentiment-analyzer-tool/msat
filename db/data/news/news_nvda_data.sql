@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -232,7 +233,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -241,7 +242,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'motti sapir','    BING-JHEN HONG/iStock Editorial via Getty Images\n \nBING-JHEN HONG/iStock Editorial via Getty Images\nNvidia Corporation (NVDA) still looks like a strong bet heading into Q1 FY27 on May 20th. The se...','2026-05-11',0.22708,'Nvidia Looks Powerful Heading Into Q1 FY27','https://seekingalpha.com/article/4902518-nvidia-looks-powerful-heading-into-q1-fy27',80),(2,'andres cardenal','    BING-JHEN HONG/iStock Editorial via Getty Images\n \nBING-JHEN HONG/iStock Editorial via Getty Images\nTo put things in perspective, I am a long-term bull on Nvidia Corporation (NVDA) and have been c...','2026-05-11',0.46406,'Nvidia Stock: Reasons For Short-Term Caution Into Earnings','https://seekingalpha.com/article/4902501-nvidia-stock-reasons-for-short-term-caution-into-earnings',80),(3,'investing.com','...','2026-05-11',0.42136,'Onshoring Boom Could Drive US GDP Growth Above 5% This Year','https://www.investing.com/analysis/onshoring-boom-could-drive-us-gdp-growth-above-5-this-year-200680077',2),(4,'null','...','2026-05-11',-0.272,'Nvidia (NVDA) CEO Jensen Huang Excluded from Trumpâ€™s China Trip - TipRanks','https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXpuek5tdFE5MmhBXzRjeTBycU1KTFgzcmxyREgtb1QzMFR2RzIxWnk5WjRvVWwyYUxnOVV3V2dVTExlMmJ1SGlvcVBBb1EtWGlXcDBVN1k0a2VXMHN3VEgzWUN4c2NHekhsY3Mycld6NnhYajEzTXFpeU5lbXUydWdoYkxvOWp5c1c2Mm56OGJwUEkz?oc=5',10),(5,'rich asplund','...','2026-05-11',0.7108,'Stocks Supported by Strong Earnings and AI Optimism','https://www.barchart.com/story/news/1851931/stocks-supported-by-strong-earnings-and-ai-optimism',2),(6,'null','Please enable JS and disable any ad blocker...','2026-05-11',0.33564,'AMD and Intel lead 2026 gains as AI guard changes','https://www.thestreet.com/investing/stocks/amd-and-intel-lead-2026-gains-as-ai-guard-changes',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'sristi suman jayaswal','...','2026-05-13',0.36704,'As Revenue Surges Nearly 9,000%, the Quantum Computing Stock Story Is Still in the â€˜Early Stagesâ€™c','https://www.barchart.com/story/news/1909493/as-revenue-surges-nearly-9-000-the-quantum-computing-stock-story-is-still-in-the-early-stagesc',2),(2,'erica kollmann','...','2026-05-13',0,'Trump Lands In China With $16 Trillion Of CEO Power â€” And One Big Ask For Xi','https://finance.yahoo.com/news/trump-lands-china-16-trillion-161415279.html',20),(3,'subhasree kar','...','2026-05-13',0.43384,'A $3.4 Billion Reason to Buy IREN Stock Here','https://www.barchart.com/story/news/1908724/a-3-4-billion-reason-to-buy-iren-stock-here',2),(4,'rich duprey','Investing\nNvidia (NVDA) reached a $5.5 trillion market capitalization, surpassing every countryâ€™s GDP except the U.S. and China, and generated $216 billion in revenue and $96.6 billion in free cash fl...','2026-05-13',0.29222,'Nvidia Hits $5.5 Trillion â€” Itâ€™s Now Worth More Than the GDP of Every Country but the U.S. and China','https://247wallst.com/investing/2026/05/13/nvidia-hits-5-5-trillion-its-now-worth-more-than-the-gdp-of-every-country-but-the-u-s-and-china/',40),(5,'david moadel','...','2026-05-13',0,'BofA Hikes NVIDIA Price Target to $320 on Massive $1.7 Trillion AI Data Center Forecast','https://finance.yahoo.com/news/bofa-hikes-nvidia-price-target-153641107.html',200),(6,'ines ferrÃ©','...','2026-05-13',0.28896,'Nebius stock soars as revenue jumps 684% on booming data center demand','https://finance.yahoo.com/markets/article/nebius-stock-soars-as-revenue-jumps-684-on-booming-data-center-demand-152316937.html',20),(7,'ethan ryder','...','2026-05-13',0.43384,'REX NVDA Growth & Income ETF (BATS:NVII) Short Interest Update','https://www.tickerreport.com/banking-finance/13439596/rex-nvda-growth-income-etf-batsnvii-short-interest-update.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -255,4 +256,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-12  4:30:59
+-- Dump completed on 2026-05-14  4:36:12
