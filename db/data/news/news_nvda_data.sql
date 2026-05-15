@@ -85,6 +85,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,7 +243,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'sristi suman jayaswal','...','2026-05-13',0.36704,'As Revenue Surges Nearly 9,000%, the Quantum Computing Stock Story Is Still in the â€˜Early Stagesâ€™c','https://www.barchart.com/story/news/1909493/as-revenue-surges-nearly-9-000-the-quantum-computing-stock-story-is-still-in-the-early-stagesc',2),(2,'erica kollmann','...','2026-05-13',0,'Trump Lands In China With $16 Trillion Of CEO Power â€” And One Big Ask For Xi','https://finance.yahoo.com/news/trump-lands-china-16-trillion-161415279.html',20),(3,'subhasree kar','...','2026-05-13',0.43384,'A $3.4 Billion Reason to Buy IREN Stock Here','https://www.barchart.com/story/news/1908724/a-3-4-billion-reason-to-buy-iren-stock-here',2),(4,'rich duprey','Investing\nNvidia (NVDA) reached a $5.5 trillion market capitalization, surpassing every countryâ€™s GDP except the U.S. and China, and generated $216 billion in revenue and $96.6 billion in free cash fl...','2026-05-13',0.29222,'Nvidia Hits $5.5 Trillion â€” Itâ€™s Now Worth More Than the GDP of Every Country but the U.S. and China','https://247wallst.com/investing/2026/05/13/nvidia-hits-5-5-trillion-its-now-worth-more-than-the-gdp-of-every-country-but-the-u-s-and-china/',40),(5,'david moadel','...','2026-05-13',0,'BofA Hikes NVIDIA Price Target to $320 on Massive $1.7 Trillion AI Data Center Forecast','https://finance.yahoo.com/news/bofa-hikes-nvidia-price-target-153641107.html',200),(6,'ines ferrÃ©','...','2026-05-13',0.28896,'Nebius stock soars as revenue jumps 684% on booming data center demand','https://finance.yahoo.com/markets/article/nebius-stock-soars-as-revenue-jumps-684-on-booming-data-center-demand-152316937.html',20),(7,'ethan ryder','...','2026-05-13',0.43384,'REX NVDA Growth & Income ETF (BATS:NVII) Short Interest Update','https://www.tickerreport.com/banking-finance/13439596/rex-nvda-growth-income-etf-batsnvii-short-interest-update.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'opeyemi babalola','...','2026-05-14',-0.21856,'Cerebras Opens At $185. The Market Is Already Mispricing The Real Risk.','https://www.benzinga.com/Opinion/26/05/52569888/cerebras-opens-at-185-the-market-is-already-mispricing-the-real-risk',4),(2,'mikhail fedorov','...','2026-05-14',-0.08216,'Nvidia Stock Is the King of the AI Castle. History Tells Us It Will Fall Hard and Its Replacement Will Emerge from Thin Air.','https://www.barchart.com/story/news/1937019/nvidia-stock-is-the-king-of-the-ai-castle-history-tells-us-it-will-fall-hard-and-its-replacement-will-emerge-from-thin-air',20),(3,'null','Please enable JS and disable any ad blocker...','2026-05-14',0.06364,'Bank of America resets Nvidia stock price target for 2026','https://www.thestreet.com/investing/stocks/bank-of-america-resets-nvidia-stock-price-target-for-2026',20),(4,'rich duprey','Investing\nNvidia (NVDA) secured U.S. approval to sell H200 AI chips to 10 Chinese firms including Alibaba (BABA), JD.com (JD), and ByteDance, potentially unlocking access to a $50 billion annual Chine...','2026-05-14',0.1996,'Did Nvidia CEO Jensen Huang Just Unlock the $50 Billion China Market?','https://247wallst.com/investing/2026/05/14/did-nvidia-ceo-jensen-huang-just-unlock-the-50-billion-china-market/',40),(5,'leo sun','Both AI infrastructure companies are firing on all cylinders.\nCoreWeave (CRWV +2.58%) and Nebius (NBIS +6.57%), both providers of AI infrastructure services, have generated impressive returns over the...','2026-05-14',0.55156,'Better Datacenter Stock: CoreWeave (CRWV) or Nebius (NBIS)?','https://www.fool.com/investing/2026/05/14/better-datacenter-stock-coreweave-or-nebius/',4),(6,'rich duprey','Investing\nMicrosoft (MSFT), and Amazon (AMZN): The three hyperscalers are deploying roughly $400 billion toward AI infrastructure this year, with Nvidia (NVDA) benefiting as chips for training and inf...','2026-05-14',0.58124,'It Took Salesforce 20 Years to Reach $30 Billion in Revenue â€” Anthropic Did It in 3','https://247wallst.com/investing/2026/05/14/it-took-salesforce-20-years-to-reach-30-billion-in-revenue-anthropic-did-it-in-3/',4),(7,'rich smith','...','2026-05-14',-0.36704,'Why Does Sandisk Stock Keep Going Down?','https://finance.yahoo.com/markets/stocks/articles/why-does-sandisk-stock-keep-153910116.html',20),(8,'anusuya lahiri','Marvell shares gained alongside semiconductor peers as investors monitored fresh U.S.-China AI policy developments and their potential impact on the broader chip supply chain.\nChina contributed 36% of...','2026-05-14',0.39916,'What Is Going On With Marvell Tech Stock On Thursday?','https://www.benzinga.com/markets/tech/26/05/52567061/what-is-going-on-with-marvell-tech-stock-on-thursday',8);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -256,4 +257,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-14  4:36:12
+-- Dump completed on 2026-05-15  4:42:26

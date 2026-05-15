@@ -85,6 +85,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,7 +243,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david moadel','Investing\neBay (EBAY) received a price target raise to $127 from $114 by Citi analyst Ronald Josey, reflecting improving operational execution and momentum in focused categories like collectibles, ref...','2026-05-13',0.55208,'Citi Hikes eBay Price Target to $127: Better Execution Drives Q1 Beat','https://247wallst.com/investing/2026/05/13/citi-hikes-ebay-price-target-to-127-better-execution-drives-q1-beat/',4),(2,'kyle jackson','...','2026-05-13',0.2368,'Amazon.com (NASDAQ:AMZN) Upgraded at Phillip Securities','https://www.watchlistnews.com/amazon-com-nasdaqamzn-upgraded-at-phillip-securities/11080369.html',2),(3,'joseph griffin','...','2026-05-13',0.62264,'Amazon.com (NASDAQ:AMZN) Rating Increased to Buy at Phillip Securities','https://www.tickerreport.com/banking-finance/13439608/amazon-com-nasdaqamzn-rating-increased-to-buy-at-phillip-securities.html',2),(4,'vandita jadeja','Investing\nAmazon (AMZN) posted Q1 2026 EPS of $2.78 (58% above consensus) with AWS revenue at $37.59 billion growing 28% in its fastest pace in 15 quarters, driven by 2 GW of OpenAI Trainium commitmen...','2026-05-13',0.85396,'Prediction: Amazon Is a Strong Buy With 25% Upside This Year','https://247wallst.com/investing/2026/05/13/prediction-amazon-is-a-strong-buy-with-25-upside-this-year/',40),(5,'null','Please enable JS and disable any ad blocker...','2026-05-13',0.06364,'Dennyâ€™s wants remote workers to plug in at its restaurants','https://www.thestreet.com/restaurants/dennys-wants-remote-workers-to-use-its-restaurants-coworking',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'don lair','Investing\nTesla (TSLA) broke ground on a $55 billion to $119 billion semiconductor fab while automotive revenue fell 10%, forcing an orbital AI bet with unclear funding.\nIntel (INTC) shares surged 150...','2026-05-14',-0.2823,'Elon Musk vs. Jeff Bezos: The Three-Way War for the Future of Space-Based AI','https://247wallst.com/investing/2026/05/14/elon-musk-vs-jeff-bezos-the-three-way-war-for-the-future-of-space-based-ai/',4),(2,'mikhail fedorov','...','2026-05-14',-0.08216,'Nvidia Stock Is the King of the AI Castle. History Tells Us It Will Fall Hard and Its Replacement Will Emerge from Thin Air.','https://www.barchart.com/story/news/1937019/nvidia-stock-is-the-king-of-the-ai-castle-history-tells-us-it-will-fall-hard-and-its-replacement-will-emerge-from-thin-air',2),(3,'rich duprey','Investing\nMicrosoft (MSFT), and Amazon (AMZN): The three hyperscalers are deploying roughly $400 billion toward AI infrastructure this year, with Nvidia (NVDA) benefiting as chips for training and inf...','2026-05-14',0.58124,'It Took Salesforce 20 Years to Reach $30 Billion in Revenue â€” Anthropic Did It in 3','https://247wallst.com/investing/2026/05/14/it-took-salesforce-20-years-to-reach-30-billion-in-revenue-anthropic-did-it-in-3/',4),(4,'ines ferrÃ©','...','2026-05-14',0,'Cerebras stock set to start trading in biggest IPO of 2026','https://ca.finance.yahoo.com/news/cerebras-stock-set-to-start-trading-in-biggest-ipo-of-2026-130757842.html',2),(5,'aditya raghunath','...','2026-05-14',0.30544,'Dear Lumentum Stock Fans, Mark Your Calendars for May 18','https://www.barchart.com/story/news/1932165/dear-lumentum-stock-fans-mark-your-calendars-for-may-18',2),(6,'clark schultz','...','2026-05-14',0.36704,'Amazon continues to expand its smaller-format Whole Foods Market Daily Shop concept','https://seekingalpha.com/news/4592779-amazon-continues-to-expands-its-smaller-format-whole-foods-market-daily-shop-concept?feed_item_type=news',40),(7,'abmn staff','\n					Posted by ABMN Staff on May 14th, 2026\n\nHarbour Trust & Investment Management Co lifted its stake in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 26.5% during the fourth quarter, according to it...','2026-05-14',0.6082,'Harbour Trust & Investment Management Co Has $19.11 Million Stake in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/05/14/harbour-trust-investment-management-co-has-19-11-million-stake-in-amazon-com-inc-amzn.html',4),(8,'ethan ryder','...','2026-05-14',0,'Juno Financial Group LLC Invests $2.34 Million in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13440366/juno-financial-group-llc-invests-2-34-million-in-amazon-com-inc-amzn.html',2),(9,'lindsey winhoffer','...','2026-05-14',0,'Juno Financial Group LLC Makes New $2.34 Million Investment in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/juno-financial-group-llc-makes-new-2-34-million-investment-in-amazon-com-inc-amzn/11081132.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -256,4 +257,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-14  4:36:11
+-- Dump completed on 2026-05-15  4:42:26

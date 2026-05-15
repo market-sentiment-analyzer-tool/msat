@@ -85,6 +85,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -233,7 +234,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,7 +243,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam spatacco','...','2026-05-13',0.43384,'460 Billion Reasons to Buy Alphabet Stock Hand Over Fist','https://finance.yahoo.com/news/460-billion-reasons-buy-alphabet-152000022.html',20),(2,'the motley fool','...','2026-05-13',0.60048,'Better Stock to Buy: Alphabet vs. Meta Platforms','https://finance.yahoo.com/news/better-stock-buy-alphabet-vs-145000684.html',20),(3,'danny vena','Cloud providers are scrambling to profit from the race to adopt AI. One was the runaway champ.\nAfter several years of deceleration, the advent of artificial intelligence (AI) has reignited cloud compu...','2026-05-12',0.80032,'The Q1 Cloud Face-off Is Over -- There Was 1 Clear Winner','https://www.fool.com/investing/2026/05/12/the-q1-cloud-face-off-is-over-there-was-1-clear-wi/',4),(4,'amy thielen','...','2026-05-12',0,'Google unveils next-generation laptop built around Gemini AI','https://seekingalpha.com/news/4591481-google-unveils-next-generation-laptop-built-around-gemini-ai?feed_item_type=news',40),(5,'vandita jadeja','Investing\nGoogle (GOOG) posted Q1 revenue of $109.90B, up 22% YoY, with Google Cloud surging 63% to $20.03B and a $460B backlog, while capital expenditures doubled to $35.67B and free cash flow collap...','2026-05-12',0.43918,'Google at 52-Week High: Buy, Sell or Hold?','https://247wallst.com/investing/2026/05/12/google-at-52-week-high-buy-sell-or-hold/',40),(6,'rick munarriz','...','2026-05-12',0.42136,'This Under-the-Radar Growth Stock Just Earned a Promotion','https://finance.yahoo.com/markets/stocks/articles/under-radar-growth-stock-just-134500401.html',20),(7,'liz kiesche','...','2026-05-12',0.35232,'Affirm Holdings teams up with Google on payments','https://seekingalpha.com/news/4591251-affirm-holdings-teams-up-with-google-on-payments?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'faisal humayun khan','...','2026-05-14',0.60048,'As AI Revenue from Chips Swells, Broadcom Is Positioned to Accelerate Growth','https://www.barchart.com/story/news/1934627/as-ai-revenue-from-chips-swells-broadcom-is-positioned-to-accelerate-growth',2),(2,'investing experts podcast','...','2026-05-13',0,'Fundamentals Over Everything','https://seekingalpha.com/article/4904176-fundamentals-over-everything',4),(3,'daniel howley','...','2026-05-13',0.54464,'Nvidia to report Q1 earnings, as chip stocks soar on AI strength','https://ca.finance.yahoo.com/news/nvidia-to-report-q1-earnings-as-chip-stocks-soar-on-ai-strength-191200180.html',2),(4,'daniel sparks','Two cloud giants just delivered some of their strongest quarters in years, but their valuations are catching up with the story.\nThe frenzy around artificial intelligence (AI) infrastructure has reshap...','2026-05-13',0.92166,'The Best AI Infrastructure Stocks for Growth Investors to Buy in 2026','https://www.fool.com/investing/2026/05/13/the-best-ai-infrastructure-stocks-for-growth-inves/',4),(5,'adam spatacco','...','2026-05-13',0.43384,'460 Billion Reasons to Buy Alphabet Stock Hand Over Fist','https://finance.yahoo.com/news/460-billion-reasons-buy-alphabet-152000022.html',20),(6,'the motley fool','...','2026-05-13',0.60048,'Better Stock to Buy: Alphabet vs. Meta Platforms','https://finance.yahoo.com/news/better-stock-buy-alphabet-vs-145000684.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -256,4 +257,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-14  4:36:11
+-- Dump completed on 2026-05-15  4:42:26
