@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+60d9bebb-5012-11f1-911b-be79d5c19aae:1-294,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -130,7 +132,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
-91cda39e-4e7f-11f1-a0ce-06b9b3fbf865:1-33,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
@@ -233,7 +234,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,6 +243,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1td0qmf','olrw7kb','2026-05-14',175,0.6369,'I believe everyone in this sub is holding MSFT, but we are just posting every 20 minutes about the company just to feel better '),(2,'ValueInvesting','1td0qmf','ols6fg6','2026-05-14',20,0.2023,'I do custom software development and MSFT is ingrained in almost every business I talk to. They have a dependable, recurring source of Revenue that no one else (other than the government) can compete with.\n\n'),(3,'ValueInvesting','1td0qmf','ols5hav','2026-05-14',25,0.4173,'MSFT and NOW bit different scenarios. NOW is at like 5 year lows and is a $100B company whereas MSFT is just flirting with prices from 2 years ago and is a $3T company.\n\nNot saying either are bad just the NOW dip is much more substantial/screaming buy to me'),(4,'ValueInvesting','1td0qmf','ols72ld','2026-05-14',6,-0.3751,'Between snow, now, Msft, intu, adb which one has highest return potential? One with less disruption?'),(5,'ValueInvesting','1td0qmf','olsaf5m','2026-05-14',6,0.7825,'SaaS rebound will be insane.\n\nJust look at DDOG with the consumption model.\n\nPeople are freaking out about MCP+Claude.\n\nBut CRM/NOW holds the data. Claude canâ€™t work without data and these SaaS companies are integrating their own Agentic AI and charging the customers for it.\n\nTheyâ€™ll also allow API access but comes with a charge.\n\nAI is going to change SaaS model on the foundation level but itâ€™s not destroying it.\n\nNo one can vibe code an enterprise product out of nowhere without billions invested.\n\nMight as well pay the hundreds of thousands or millions a year to have CRM/NOW do it for you.'),(6,'ValueInvesting','1td0qmf','olrxjfu','2026-05-14',17,-0.1513,'I DECLARE BANKRUUUPPPTTTTCCCYYY\n\nOn a more serious note, I have bought $TRI with the same conviction as you do with $NOW'),(7,'ValueInvesting','1td0qmf','olry3ns','2026-05-14',4,-0.1793,'I think openAI doing deals with Amazon was not good news for the msft stans'),(8,'ValueInvesting','1td0qmf','olrz4jt','2026-05-14',17,0.9042,'If NOW didnt had stock based compansation which did equal 60% of net income then yeah, that company would be a buy for sure. True forward PE is at 40 (adjusted for SBC). Not close to a bargain imo'),(9,'ValueInvesting','1td0qmf','ols5bfq','2026-05-14',3,0,'Msft isnt really dipping atm'),(10,'ValueInvesting','1td0qmf','ols5ima','2026-05-14',2,0.4404,'Veeva systems will be good to me'),(11,'ValueInvesting','1td0qmf','olt6que','2026-05-14',2,0.5423,'People will buy when MSFT IS 500+'),(12,'ValueInvesting','1td0qmf','oltalpg','2026-05-14',2,0,'I just read Trump has invested in Service now, workday, adobe along with few others. Make of that what you will. '),(13,'ValueInvesting','1td0qmf','olruoh9','2026-05-14',2,-0.4829,'Low levels do not equal value, now is still at a 52 PE, and the market could be irrational longer than you can remain solvent... I actually want them to dip a bit more to get more msft and get some $now'),(14,'ValueInvesting','1td0qmf','olrvds3','2026-05-14',2,-0.378,'The sector is not trading like a bounce is coming. I did buy some NOW June $95 calls just to give me something. \n\nFRMI is really beaten down and could rip to $10-12 easily if they sign a tenant. I own June and December $10 calls which have doubled this week. '),(15,'ValueInvesting','1td0qmf','olrx347','2026-05-14',1,0.6573,'I tried to play a couple SAAS plays with Adobe and AutoDesk. Both took a hit the day NOW\'s earnings came out. What is frustrating is on paper tells me these companies are oversold. Yet anytime they make any gains, they get hit hard again shortly after. In my view they are toxic right now with the market not want anything to do with SAAS for some odd reason. You would think in the AI world it would have some appeal. '),(16,'ValueInvesting','1td0qmf','olscv3f','2026-05-14',1,0.0498,'I just keep buying NOW under 89-90, and selling at 92-95 range. Very good entry point'),(17,'ValueInvesting','1td0qmf','olsw2fb','2026-05-14',1,0.4201,'ServiceNow? More like ServiceNever.'),(18,'ValueInvesting','1td0qmf','olsx3zc','2026-05-14',1,0.9033,'Bought Service now yesterday after looking how far off from higher they are. Feels like a baked in gain if they even get back to 150. \n\nBeen buying a few shares of Salesforce over the last two months. \n\nHoping I\'m not wrong about Salesforce. '),(19,'ValueInvesting','1td0qmf','olt4b3v','2026-05-14',1,0.1027,'In this saas apocalypse DDOG reached ATH. I donâ€™t get it'),(20,'ValueInvesting','1td0qmf','olt9ecx','2026-05-14',1,0,'CRM, NOW, MSFT, ZS, ADBE, ADSK'),(21,'ValueInvesting','1td0qmf','olti2pa','2026-05-14',1,0,'CRM will outperform both.'),(22,'ValueInvesting','1td0qmf','oltqrjy','2026-05-14',1,0.2854,' I think SaaS is done. Was slightly positive beginning of the year. But it keeps crashing further'),(23,'ValueInvesting','1td0qmf','olutp9h','2026-05-14',1,-0.296,'No one is talking about Monday.com?'),(24,'ValueInvesting','1td0qmf','olv8ubg','2026-05-15',1,-0.6249,'Still too early. Money rather flow to Space sector than SaaS even ASTS ER is a disaster so the market still chasing hype for now. '),(25,'ValueInvesting','1td0qmf','olvisz3','2026-05-15',1,0.7987,'Msft is great but compare 5 year cagr with S&P, it returned only a 2-3% point above iirc. The risk vs reward is not good enough to hold for long term like it used to be. '),(26,'ValueInvesting','1td0qmf','olvl2k9','2026-05-15',1,-0.5719,'Wth it was my turn to post. Get back in line.'),(27,'ValueInvesting','1td0qmf','olvunrt','2026-05-15',1,-0.5423,'$NOW is around an 88% institution ownership.  Almost half the remaining public float is sold short so it wouldn\'t take much for a squeeze. '),(28,'ValueInvesting','1td0qmf','olsg6fp','2026-05-14',-1,0.2732,'I suggest waiting for MSFT to break $430 before putting significant capital into it, cause itâ€™s been a poor stock to own for like 2 years straight'),(29,'ValueInvesting','1td0qmf','olsnemg','2026-05-14',-1,0.6808,'Anyone talking about msft are bag holders ðŸ˜­ðŸ˜‚ðŸ˜‚ðŸ˜‚'),(30,'ValueInvesting','1td0qmf','olssxze','2026-05-14',-1,0.6966,'MSFT has a chance to regain AI leverage by making copilot integration with winblowz / GitHub/ azure / etc better.\n\nNOW will decay and small vibe-code firms will eat their lunch (=create competing products that implements some set of of features existing in NOW for certain brackets of organization sizes) \nAlso you guys know that itâ€™s possible export data from NOW??\n\nBuy MSFT, short NOW. '),(31,'ValueInvesting','1td0qmf','olryeef','2026-05-14',-2,0,'Secular SaaS bull market lasted decades and itâ€™s now over. '),(32,'ValueInvesting','1td0qmf','olsg71d','2026-05-14',-2,0.1938,'I just donâ€™t like NOW as a product. To me, itâ€™s not a very competitive company, so I donâ€™t touch it'),(33,'ValueInvesting','1td0qmf','olsgwnu','2026-05-14',-5,0.5859,'NOW is such a better buy than MSFT, microslop is unlimited losing money glitch'),(34,'ValueInvesting','1td0qmf','olsemu0','2026-05-14',-7,0,'Both MSFT and NOW are 100% finished and on their way to ZERO');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -255,4 +257,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-13  3:56:07
+-- Dump completed on 2026-05-15  4:09:51

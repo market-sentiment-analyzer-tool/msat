@@ -76,6 +76,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
+4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+60d9bebb-5012-11f1-911b-be79d5c19aae:1-294,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -130,7 +132,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
-91cda39e-4e7f-11f1-a0ce-06b9b3fbf865:1-33,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
@@ -233,7 +234,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,7 +243,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tbd4hn','olg87pg','2026-05-12',15,0.3818,'Early retirement at age 48, paid off home, education tuitions for 2 kidsâ€¦all because some dumb luck apple investment made in 2012. Still holding on to 1/2 of the shares till this day. '),(2,'AAPL','1tbd4hn','olfss86','2026-05-12',12,0.6696,'Letâ€™s go!  93,109%.  This stock has created generational wealth. '),(3,'AAPL','1tbd4hn','olglkec','2026-05-12',2,0.3595,'Sold some shares today at $295! Have some limit orders set at $300 and $305. Been trying to trim my AAPL holdings to be less than 10% of my overall stock portfolio. '),(4,'AAPL','1tbd4hn','olft3cn','2026-05-12',3,0.9382,'Congrats on you 16,051 shares at 12.47 and 15,909.5 shares at 10.536. ðŸ‘ðŸ»ðŸ‘ðŸ»ðŸ‘ðŸ»'),(5,'AAPL','1tbd4hn','olhyh4g','2026-05-13',1,0,'Where do you guys think the Stock will be in 10 years '),(6,'AAPL','1tbd4hn','olhzeq6','2026-05-13',1,0.7884,'Hello...    Hoping for 300 so as to easily cover my RMD  ...   Possibility of soon?  Thank You');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tdagq1','oltx9v6','2026-05-14',7,0.9377,'Nice. Same I am adding and front running  myself. It will be my largest holding in my portfolio before Sept launch.  Yeh itâ€™s not gonna climb mountains like MU but itâ€™s safe and a guaranteed win. I take that. '),(2,'AAPL','1tdagq1','olup4uk','2026-05-14',4,0.4588,'Iâ€™ve been buying for 15+ years, my only regret is I didnâ€™t buy more early on.  With fresh all time highs every purchase is in the green.   '),(3,'AAPL','1tdagq1','olvlvpj','2026-05-15',2,0.6908,'Everyone who is up in ORCL, NVDA, PLTR, etc are rotating into AAPL for safety.'),(4,'AAPL','1tdagq1','olvx0ug','2026-05-15',2,0.4404,'325 by July 30, 350 by Sept 30, 375 by Dec 30 â€” easy');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -256,4 +257,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-13  3:56:07
+-- Dump completed on 2026-05-15  4:09:51
