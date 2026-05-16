@@ -176,6 +176,7 @@ d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
+dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
@@ -243,7 +244,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'faisal humayun khan','...','2026-05-14',0.60048,'As AI Revenue from Chips Swells, Broadcom Is Positioned to Accelerate Growth','https://www.barchart.com/story/news/1934627/as-ai-revenue-from-chips-swells-broadcom-is-positioned-to-accelerate-growth',2),(2,'investing experts podcast','...','2026-05-13',0,'Fundamentals Over Everything','https://seekingalpha.com/article/4904176-fundamentals-over-everything',4),(3,'daniel howley','...','2026-05-13',0.54464,'Nvidia to report Q1 earnings, as chip stocks soar on AI strength','https://ca.finance.yahoo.com/news/nvidia-to-report-q1-earnings-as-chip-stocks-soar-on-ai-strength-191200180.html',2),(4,'daniel sparks','Two cloud giants just delivered some of their strongest quarters in years, but their valuations are catching up with the story.\nThe frenzy around artificial intelligence (AI) infrastructure has reshap...','2026-05-13',0.92166,'The Best AI Infrastructure Stocks for Growth Investors to Buy in 2026','https://www.fool.com/investing/2026/05/13/the-best-ai-infrastructure-stocks-for-growth-inves/',4),(5,'adam spatacco','...','2026-05-13',0.43384,'460 Billion Reasons to Buy Alphabet Stock Hand Over Fist','https://finance.yahoo.com/news/460-billion-reasons-buy-alphabet-152000022.html',20),(6,'the motley fool','...','2026-05-13',0.60048,'Better Stock to Buy: Alphabet vs. Meta Platforms','https://finance.yahoo.com/news/better-stock-buy-alphabet-vs-145000684.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'caroline horne','...','2026-05-15',0.49992,'Erste Group Bank Raises Earnings Estimates for Alphabet','https://www.thelincolnianonline.com/2026/05/15/erste-group-bank-raises-earnings-estimates-for-alphabet.html',2),(2,'chris neiger','As Alphabet (GOOGL 1.07%) (GOOG 1.03%) expands its artificial intelligence (AI) models and looks for more data center capacity, the company is reportedly in talks with SpaceX to explore the idea of de...','2026-05-15',0.19968,'SpaceX and Google Already Have a $100 Billion Connection. Their Next Project Could Propel Their Partnership Even Further','https://www.fool.com/investing/2026/05/15/spacex-and-google-already-have-a-100-billion-conne/',40),(3,'sean williams','For roughly three decades, investors have been waiting for a game-changing technology to rival what the internet was able to do for corporate America (and retail investors). Artificial intelligence (A...','2026-05-15',-0.12218,'Alphabet and Meta Delivered Worrisome News for Investors -- and It Has Trillion-Dollar Implications','https://www.fool.com/investing/2026/05/15/googl-meta-delivered-worrisome-news-for-investors/',4),(4,'investing experts podcast','...','2026-05-14',0,'Netflix, Disney, FuboTV, WBD And The Streaming Media Landscape','https://seekingalpha.com/article/4904850-netflix-disney-fubotv-wbd-and-the-streaming-media-landscape',4),(5,'vandita jadeja','Investing\nMicrosoft (MSFT) posted $82.88B in Q1 revenue with Azure growing 40%, while AI business surpassed a $37B annual run rate.\nAlphabet (GOOGL) reported $109.89B revenue with Google Cloud jumping...','2026-05-14',0.342,'Forget the AI Hype. Microsoft and Alphabet Just Showed Their Cards. Here Is Which Hand We Think Is Stronger','https://247wallst.com/investing/2026/05/14/forget-the-ai-hype-microsoft-and-alphabet-just-showed-their-cards-here-is-which-hand-we-think-is-stronger/',4),(6,'faisal humayun khan','...','2026-05-14',0.60048,'As AI Revenue from Chips Swells, Broadcom Is Positioned to Accelerate Growth','https://www.barchart.com/story/news/1934627/as-ai-revenue-from-chips-swells-broadcom-is-positioned-to-accelerate-growth',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -257,4 +258,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-15  4:42:26
+-- Dump completed on 2026-05-16  4:23:17
