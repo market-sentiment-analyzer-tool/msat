@@ -85,6 +85,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
+5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -94,7 +95,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
-60d9bebb-5012-11f1-911b-be79d5c19aae:1-294,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -188,6 +188,7 @@ e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
+e6f5c5d6-50d8-11f1-ad02-9ad7cc061387:1-145,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -234,7 +235,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -243,7 +244,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tdagq1','oltx9v6','2026-05-14',7,0.9377,'Nice. Same I am adding and front running  myself. It will be my largest holding in my portfolio before Sept launch.  Yeh itâ€™s not gonna climb mountains like MU but itâ€™s safe and a guaranteed win. I take that. '),(2,'AAPL','1tdagq1','olup4uk','2026-05-14',4,0.4588,'Iâ€™ve been buying for 15+ years, my only regret is I didnâ€™t buy more early on.  With fresh all time highs every purchase is in the green.   '),(3,'AAPL','1tdagq1','olvlvpj','2026-05-15',2,0.6908,'Everyone who is up in ORCL, NVDA, PLTR, etc are rotating into AAPL for safety.'),(4,'AAPL','1tdagq1','olvx0ug','2026-05-15',2,0.4404,'325 by July 30, 350 by Sept 30, 375 by Dec 30 â€” easy');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1te7l7f','om1bv20','2026-05-15',10,0.6597,'And we closed above $300 on a day the markets were significantly down.  Love to see that show of strength from the old fruit company.'),(2,'AAPL','1te7l7f','om16js7','2026-05-15',8,0.3612,'Thank you, Apple. You changed my life in many ways. '),(3,'AAPL','1te7l7f','om0g5h4','2026-05-15',5,-0.4215,'Onwards and upwards. The Empire Strikes Back. Tim Cook for US Ambassador to China. '),(4,'AAPL','1te7l7f','om0ilj7','2026-05-15',4,0.3612,'Itâ€™s like seeing your baby graduate from college. '),(5,'AAPL','1tdro5y','olxbhsc','2026-05-15',10,-0.395,'Apple will continue to be a grower, but it will not go parabolic like it\'s 3-5T peers has done.'),(6,'AAPL','1tdro5y','olylfkz','2026-05-15',5,0.2263,'AAPL is worth watching right now\n\n'),(7,'AAPL','1tdro5y','olyiov2','2026-05-15',4,0.4019,'If you believe in them, yes'),(8,'AAPL','1tdro5y','om07cqz','2026-05-15',4,0.069,'>iPhone growth is stalling in China,\n\nthat\'s not true anymore.  The LLM that this post was made by was trained on older data.'),(9,'AAPL','1tdro5y','olybul7','2026-05-15',3,0.4019,'Yes'),(10,'AAPL','1tdro5y','olxeiq0','2026-05-15',2,-0.4588,'Yea honestly donâ€™t know what to do here with NVDA. Itâ€™s grown to almost 50% of my portfolio but Iâ€™m too afraid to sell. '),(11,'AAPL','1tdro5y','om1xlc3','2026-05-16',2,0.8955,'AAPL - Buy, Buy, Buy!'),(12,'AAPL','1tdro5y','om26oj0','2026-05-16',2,0.7264,'Everyone should be buying up microsoft here its at a very good valuation.'),(13,'AAPL','1tdro5y','om03tle','2026-05-15',-2,-0.4588,'If the communists take over America, sell AAPL and everything else. Otherwise, it should return at least VOO over many years. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -257,4 +258,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-15  4:09:51
+-- Dump completed on 2026-05-16  3:46:43
