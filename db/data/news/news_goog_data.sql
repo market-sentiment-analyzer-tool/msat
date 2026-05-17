@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
@@ -235,7 +236,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +245,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'caroline horne','...','2026-05-15',0.49992,'Erste Group Bank Raises Earnings Estimates for Alphabet','https://www.thelincolnianonline.com/2026/05/15/erste-group-bank-raises-earnings-estimates-for-alphabet.html',2),(2,'chris neiger','As Alphabet (GOOGL 1.07%) (GOOG 1.03%) expands its artificial intelligence (AI) models and looks for more data center capacity, the company is reportedly in talks with SpaceX to explore the idea of de...','2026-05-15',0.19968,'SpaceX and Google Already Have a $100 Billion Connection. Their Next Project Could Propel Their Partnership Even Further','https://www.fool.com/investing/2026/05/15/spacex-and-google-already-have-a-100-billion-conne/',40),(3,'sean williams','For roughly three decades, investors have been waiting for a game-changing technology to rival what the internet was able to do for corporate America (and retail investors). Artificial intelligence (A...','2026-05-15',-0.12218,'Alphabet and Meta Delivered Worrisome News for Investors -- and It Has Trillion-Dollar Implications','https://www.fool.com/investing/2026/05/15/googl-meta-delivered-worrisome-news-for-investors/',4),(4,'investing experts podcast','...','2026-05-14',0,'Netflix, Disney, FuboTV, WBD And The Streaming Media Landscape','https://seekingalpha.com/article/4904850-netflix-disney-fubotv-wbd-and-the-streaming-media-landscape',4),(5,'vandita jadeja','Investing\nMicrosoft (MSFT) posted $82.88B in Q1 revenue with Azure growing 40%, while AI business surpassed a $37B annual run rate.\nAlphabet (GOOGL) reported $109.89B revenue with Google Cloud jumping...','2026-05-14',0.342,'Forget the AI Hype. Microsoft and Alphabet Just Showed Their Cards. Here Is Which Hand We Think Is Stronger','https://247wallst.com/investing/2026/05/14/forget-the-ai-hype-microsoft-and-alphabet-just-showed-their-cards-here-is-which-hand-we-think-is-stronger/',4),(6,'faisal humayun khan','...','2026-05-14',0.60048,'As AI Revenue from Chips Swells, Broadcom Is Positioned to Accelerate Growth','https://www.barchart.com/story/news/1934627/as-ai-revenue-from-chips-swells-broadcom-is-positioned-to-accelerate-growth',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mark dietrich','...','2026-05-16',0,'Alphabet (NASDAQ:GOOG) Price Target Raised to $445.00 at Oppenheimer','https://www.watchlistnews.com/alphabet-nasdaqgoog-price-target-raised-to-445-00-at-oppenheimer/11084787.html',2),(2,'shane hupp','...','2026-05-16',0,'RNC Capital Management LLC Decreases Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13443921/rnc-capital-management-llc-decreases-stake-in-alphabet-inc-goog.html',2),(3,'shane hupp','...','2026-05-16',0.45752,'Alphabet Inc. $GOOG Shares Bought by Sumitomo Mitsui DS Asset Management Company Ltd','https://www.tickerreport.com/banking-finance/13443776/alphabet-inc-goog-shares-bought-by-sumitomo-mitsui-ds-asset-management-company-ltd.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on May 16th, 2026\n\nCryder Capital Partners LLP lessened its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 16.8% in the fourth quarter, according to the company in i...','2026-05-16',0.66862,'Alphabet Inc. $GOOG is Cryder Capital Partners LLPâ€™s Largest Position','https://www.americanbankingnews.com/2026/05/16/alphabet-inc-goog-is-cryder-capital-partners-llps-largest-position.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 16th, 2026\n\nCredit Industriel ET Commercial lowered its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 61.8% during the fourth quarter, according to its mo...','2026-05-16',0.50534,'Alphabet Inc. $GOOG Stock Holdings Reduced by Credit Industriel ET Commercial','https://www.americanbankingnews.com/2026/05/16/alphabet-inc-goog-stock-holdings-reduced-by-credit-industriel-et-commercial.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on May 16th, 2026\n\nEquitable Trust Co. cut its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 7.0% during the 4th quarter, according to its most recent Form 13F fili...','2026-05-16',0.60838,'Alphabet Inc. $GOOG Stake Reduced by Equitable Trust Co.','https://www.americanbankingnews.com/2026/05/16/alphabet-inc-goog-stake-reduced-by-equitable-trust-co.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on May 16th, 2026\n\nBokf Na decreased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 9.6% in the 4th quarter, according to its most recent filing with the Secu...','2026-05-16',0.1999,'Bokf Na Has $84.55 Million Stock Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/16/bokf-na-has-84-55-million-stock-position-in-alphabet-inc-goog.html',4),(8,'logan wallace','...','2026-05-16',0.2368,'AssuredPartners Investment Advisors LLC Purchases 6,183 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13443295/assuredpartners-investment-advisors-llc-purchases-6183-shares-of-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -258,4 +259,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-16  4:23:17
+-- Dump completed on 2026-05-17  4:45:43
