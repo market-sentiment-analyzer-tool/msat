@@ -158,6 +158,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
+c4baeb40-51a4-11f1-a772-06f526df17e0:1-202,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -176,6 +177,7 @@ d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
+dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
@@ -188,7 +190,6 @@ e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
-e6f5c5d6-50d8-11f1-ad02-9ad7cc061387:1-145,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -235,7 +236,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +245,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1te7l7f','om1bv20','2026-05-15',10,0.6597,'And we closed above $300 on a day the markets were significantly down.  Love to see that show of strength from the old fruit company.'),(2,'AAPL','1te7l7f','om16js7','2026-05-15',8,0.3612,'Thank you, Apple. You changed my life in many ways. '),(3,'AAPL','1te7l7f','om0g5h4','2026-05-15',5,-0.4215,'Onwards and upwards. The Empire Strikes Back. Tim Cook for US Ambassador to China. '),(4,'AAPL','1te7l7f','om0ilj7','2026-05-15',4,0.3612,'Itâ€™s like seeing your baby graduate from college. '),(5,'AAPL','1tdro5y','olxbhsc','2026-05-15',10,-0.395,'Apple will continue to be a grower, but it will not go parabolic like it\'s 3-5T peers has done.'),(6,'AAPL','1tdro5y','olylfkz','2026-05-15',5,0.2263,'AAPL is worth watching right now\n\n'),(7,'AAPL','1tdro5y','olyiov2','2026-05-15',4,0.4019,'If you believe in them, yes'),(8,'AAPL','1tdro5y','om07cqz','2026-05-15',4,0.069,'>iPhone growth is stalling in China,\n\nthat\'s not true anymore.  The LLM that this post was made by was trained on older data.'),(9,'AAPL','1tdro5y','olybul7','2026-05-15',3,0.4019,'Yes'),(10,'AAPL','1tdro5y','olxeiq0','2026-05-15',2,-0.4588,'Yea honestly donâ€™t know what to do here with NVDA. Itâ€™s grown to almost 50% of my portfolio but Iâ€™m too afraid to sell. '),(11,'AAPL','1tdro5y','om1xlc3','2026-05-16',2,0.8955,'AAPL - Buy, Buy, Buy!'),(12,'AAPL','1tdro5y','om26oj0','2026-05-16',2,0.7264,'Everyone should be buying up microsoft here its at a very good valuation.'),(13,'AAPL','1tdro5y','om03tle','2026-05-15',-2,-0.4588,'If the communists take over America, sell AAPL and everything else. Otherwise, it should return at least VOO over many years. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -258,4 +258,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-16  3:46:43
+-- Dump completed on 2026-05-17  4:07:33

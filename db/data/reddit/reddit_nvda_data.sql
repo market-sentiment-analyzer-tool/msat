@@ -158,6 +158,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
+c4baeb40-51a4-11f1-a772-06f526df17e0:1-202,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
@@ -176,6 +177,7 @@ d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
+dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
@@ -188,7 +190,6 @@ e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
-e6f5c5d6-50d8-11f1-ad02-9ad7cc061387:1-145,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -235,7 +236,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +245,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1tdp9x4','olwtjlk','2026-05-15',499,0,'That\'s only about $700 per human living today!  '),(2,'stocks','1tdp9x4','olwusd0','2026-05-15',75,0.4137,'We can use AI to easily switch between software stacks, though, right? ... right?'),(3,'stocks','1tdp9x4','olwu3r6','2026-05-15',202,0,'Air Force One. The Oligarch Express.'),(4,'stocks','1tdp9x4','olwy97j','2026-05-15',110,0.2263,'Since when did we start comparing gdp to market cap and assume it means company is worth more than countries based on this figure?Â '),(5,'stocks','1tdp9x4','olwuujj','2026-05-15',198,-0.0772,'Can\'t wait for the day where people stop saying a company is worth more than a country, even tho we are talking about market cap vs GDP '),(6,'stocks','1tdp9x4','olwtqql','2026-05-15',13,0,'5.7 - 2 (SpaceXai) - 1 (openAI) - 1 (Anthropic) = 1.7'),(7,'stocks','1tdp9x4','olwzgps','2026-05-15',11,0,'So, is Elon buddies again with Trump?'),(8,'stocks','1tdp9x4','olwtg8f','2026-05-15',29,0,'I can\'t even afford to fix my car. '),(9,'stocks','1tdp9x4','olxvhvl','2026-05-15',12,0.9193,'The bear case about big tech building custom silicon (Google TPUs, Amazon Trainium, Microsoft Maia) is real but consistently underestimated how long CUDA lock-in buys NVDA time. Every ML engineer in the world has years of CUDA code they\'d have to rewrite. That\'s not a moat, that\'s a fortress. The China H200 approval is the wildcard - if Chinese firms get access, NVDA\'s revenue ceiling just moved up significantly. Jensen on Air Force One is the most Silicon Valley sentence ever written.'),(10,'stocks','1tdp9x4','olybjxc','2026-05-15',3,0.9231,'I sold off 310 shares of NVDA yesterday, happily claiming my profit.  The plan is to buy it back after they report stellar earnings and the stock craters as it seems to do every quarter.'),(11,'stocks','1tdp9x4','olx2z7h','2026-05-15',6,0.4404,'the china unlock is the real trade here.. if h200 export restrictions ease and 10+ firms get cleared, that\'s not priced in yet despite the run'),(12,'stocks','1tdp9x4','olxlrkb','2026-05-15',8,0.6808,'Nvidia was my first investment back in like 2013, I bought like $500 bucks worth it was around $14 at the time. Feelsgoodman'),(13,'stocks','1tdp9x4','olws50m','2026-05-15',20,0,'[deleted]'),(14,'stocks','1tdp9x4','olyo8mq','2026-05-15',3,-0.5423,'Let\'s make it an even $10 trillion because fuck it.'),(15,'stocks','1tdp9x4','olxqfy3','2026-05-15',2,0,'Musk is on Air Force One? Does Trump plan on throwing him out midflight or something?'),(16,'stocks','1tdp9x4','oly84j0','2026-05-15',2,0,'Yikes this post'),(17,'stocks','1tdp9x4','olwwp82','2026-05-15',7,-0.8635,'I cannot even imagine how absolutely is insufferably awful it would be to be stuck in a plane with those people. Jensen and Tim, fine, maybe. But the other two would be hell'),(18,'stocks','1tdp9x4','olws0uc','2026-05-15',4,0.6908,'Uh ummm.... take it easy on the pot ? \nðŸ¤­ðŸ¤—'),(19,'stocks','1tdp9x4','olws49m','2026-05-15',4,0.0253,'Itâ€™s always a concern when people hype companies based on them being larger than whole markets. Tesla has been massive for years larger than several of the car manufacturers (yes I know youâ€™re going to say theyâ€™re a tech company) and thatâ€™s not even a negative for the stock as it had years of price rises in that time.\n\nThe liquidity has to go somewhere and the market has been booming. Iâ€™m not even a bear, Ive made stupid returns in the last month alone.\n\nStill, these dizzying heights are going to have some large falls when the market eventually does correct, be that weeks or years from now.'),(20,'stocks','1tdp9x4','olwv7wg','2026-05-15',10,-0.6161,'Look at all these salty comments. lol they must have missed out on Nvidia and are now shitting on it thinking AMD or someone else will somehow render Nvidia useless. Half of these people canâ€™t even turn on a computer without some help but are quick to judge what technology is, where is it going as if they have all the answers. '),(21,'stocks','1tdp9x4','olx3dt3','2026-05-15',5,0,'Nvidia2026=cisco2000'),(22,'stocks','1tdp9x4','oly8eyz','2026-05-15',1,0.2838,'Really glad I sold those 100 shares at 19.00 when I was a kid. Took a trip and bought an xbox. Now ive got 50 shares at 124 but whos complaining..'),(23,'stocks','1tdp9x4','olym43k','2026-05-15',1,0,'So?'),(24,'stocks','1tdp9x4','olz3fbh','2026-05-15',1,0.4019,'Is it to late to get in on nvda lmao. When I think train will stop it doesn\'t. '),(25,'stocks','1tdp9x4','olzu27c','2026-05-15',1,0,'So monke trade banana for NVIDIA now or later?'),(26,'stocks','1tdp9x4','olwse0u','2026-05-15',1,0.5093,'>every single gpu powering every AI tool you use runs through nvidia like every chatgpt prompt, every claude conversation, every video generated through kling or magic hour, every image midjourney produces, every line of code cursor writes, every single ai computation burns nvidia silicon.\n\n\n>the bear case is that every major customer (google, amazon, microsoft, meta) is designing custom chips to reduce nvidia dependency but cuda lockin is real,\n\n\n\n\nThis is all quite wrong. AMD is gaining traction and the cuda lockin has already faded at this point\n\n\n\n\nEdit: as someone who has been invested and been following both nvda and amd quite intensely and in depth for quite some years I think the downvotes are hilarious and give a good idea of how clueless people on this board areÂ '),(27,'stocks','1tdp9x4','olwuev7','2026-05-15',-10,0.4033,'Just fyi that AMD will own inference and has hardware coming out that completely shits on NVIDIA in all of the important aspects that LLMs care about\n\nFor those that want in on the bottom ðŸ¤‘'),(28,'NVDA_Stock','1tdyma9','olzgxmg','2026-05-15',6,0.4939,'That.....that is not how that works. Look into Options Greeks, and Dealer Hedging. Open Interest is a small part of the formula, but important.'),(29,'NVDA_Stock','1tdyma9','olyoiu8','2026-05-15',3,0.7684,'Itâ€™s quite literally impossible for this to be true, a lot of these overlap, but yeah sure I think this could be partial cause for staying in the $220 range'),(30,'NVDA_Stock','1tdyma9','om0h3gb','2026-05-15',3,0,'Why is this NSFW'),(31,'NVDA_Stock','1tdyma9','olypicd','2026-05-15',5,0.6597,'Where is a good place to find information like this?'),(32,'NVDA_Stock','1tdyma9','olynyge','2026-05-15',0,0,'You donâ€™t think $200 calls will print?'),(33,'NVDA_Stock','1tdz93x','olyrufl','2026-05-15',2,0,'Most of his holdings just resemble the broad market index. This is a nothing-burger as it pertains to NVDA.'),(34,'NVDA_Stock','1tdz93x','olyzg9i','2026-05-15',2,0.4939,'Can I still buy it back now?'),(35,'NVDA_Stock','1tdz93x','om0ot81','2026-05-15',1,0.6249,'im seeing great moves on my setup');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -258,4 +258,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-16  3:46:44
+-- Dump completed on 2026-05-17  4:07:33
