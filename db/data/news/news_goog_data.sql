@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
+3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
@@ -238,7 +239,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -247,7 +248,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-05-17',0,'Wall Street Week Ahead','https://seekingalpha.com/article/4905805-wall-street-week-ahead',4),(2,'joseph griffin','...','2026-05-17',-0.42136,'Winch Advisory Services LLC Reduces Position in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13445151/winch-advisory-services-llc-reduces-position-in-alphabet-inc-goog.html',2),(3,'nicole kennedy','...','2026-05-17',0,'Winch Advisory Services LLC Has $19.59 Million Holdings in Alphabet Inc. $GOOG','https://www.watchlistnews.com/winch-advisory-services-llc-has-19-59-million-holdings-in-alphabet-inc-goog/11085886.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on May 17th, 2026\n\nIndivisible Partners purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 4th quarter, according to the company in its most rece...','2026-05-17',0.19992,'Indivisible Partners Takes $3.06 Million Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/17/indivisible-partners-takes-3-06-million-position-in-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on May 17th, 2026\n\nMA Private Wealth purchased a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the fourth quarter, according to the company in its most recent 1...','2026-05-17',0.59504,'MA Private Wealth Takes Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/17/ma-private-wealth-takes-position-in-alphabet-inc-goog.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on May 17th, 2026\n\nLmcg Investments LLC decreased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.2% in the 4th quarter, according to the company in its mos...','2026-05-17',0.1999,'Lmcg Investments LLC Has $30.04 Million Stock Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/17/lmcg-investments-llc-has-30-04-million-stock-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'prosper junior bakiny','Warren Buffett is no longer the CEO of Berkshire Hathaway (BRKA 1.29%) (BRKB 1.59%). However, during his last year at the head of the company he spent decades building and leading, the Oracle of Omaha...','2026-05-19',0.41848,'This Unstoppable AI Stock Is Up 97% Since Warren Buffett Bought It, and There Could Be More Upside Ahead','https://www.fool.com/investing/2026/05/19/this-unstoppable-ai-stock-is-up-97-since-warren-bu/',4),(2,'wall street breakfast','...','2026-05-19',0,'Wall Street Breakfast Podcast: Markets Eye Iran Pause','https://seekingalpha.com/article/4906387-wall-street-breakfast-podcast-markets-eye-iran-pause',4),(3,'daniel sparks','Nvidia (NVDA 0.79%) reports earnings on May 20, and the conversation around artificial intelligence (AI) tends to start and end with the chipmaker. But the companies funding the AI boom -- buying Nvid...','2026-05-19',0.1793,'Forget Nvidia. 1 of These 3 Hyperscalers Could Be the Top AI Stock Through 2030.','https://www.fool.com/investing/2026/05/19/forget-nvidia-1-of-these-3-hyperscalers-could-be-t/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -261,4 +262,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-19  4:53:21
+-- Dump completed on 2026-05-20  4:57:13
