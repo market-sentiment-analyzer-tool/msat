@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -239,7 +240,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -248,7 +249,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'omor ibne ehsan','Investing\nCredo (CRDO) posted Q3 revenue of $407M, up 201.5% year-over-year with non-GAAP EPS of $1.07 versus $0.94 consensus, and opened three new addressable markets (ZeroFlap optics, Active Line Ca...','2026-05-19',0.4366,'Buy, Sell or Hold Credo Technology After the Selloff to $150?','https://247wallst.com/investing/2026/05/19/buy-sell-or-hold-credo-technology-after-the-selloff-to-150/',4),(2,'rich duprey','Investing\nThe Stocks: Microsoft (MSFT), Alphabet (GOOG), and Amazon (AMZN) have committed hundreds of billions toward AI infrastructure and automation over the past two years, driving S&P 500 gains wh...','2026-05-19',-0.18322,'Trumpâ€™s Economy Is Worse Than It Looks â€” Key Economic Indicator Sinks to Pandemic-Era Levels','https://247wallst.com/investing/2026/05/19/trumps-economy-is-worse-than-it-looks-key-economic-indicator-sinks-to-pandemic-era-levels/',4),(3,'john ballard','After falling to around $199 at the end of March, Amazon (AMZN 2.08%) stock surged to new highs and currently trades at $264. A big reason for this is momentum in the cloud business. Management shared...','2026-05-19',0.38094,'A $10,000 Investment in This AI Stock Today Could Be Worth $20,000 by 2030','https://www.fool.com/investing/2026/05/19/investing-10000-ai-stock-20000-by-2030/',4),(4,'joseph griffin','...','2026-05-19',0.25456,'Verdence Capital Advisors LLC Boosts Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13447104/verdence-capital-advisors-llc-boosts-position-in-amazon-com-inc-amzn.html',2),(5,'abmn staff','\n					Posted by ABMN Staff on May 19th, 2026\n\nAmazon.com (NASDAQ:AMZN) had its price target hoisted by Arete Research from $301.00 to $310.00 in a research note issued to investors on Monday,MarketScr...','2026-05-19',0.19986,'Amazon.com (NASDAQ:AMZN) Given New $310.00 Price Target at Arete Research','https://www.americanbankingnews.com/2026/05/19/amazon-com-nasdaqamzn-given-new-310-00-price-target-at-arete-research.html',4),(6,'michael williams','Investing\nVanEck Retail ETF (RTH) is up 5.79% YTD 2026 and 60.78% over five years, holding ~25 mega-cap names weighted by market cap with Amazon and Walmart dominating; SPDR S&P Retail ETF (XRT) is do...','2026-05-19',0.60078,'RTH Owns Amazon and Walmart. XRT Owns Everything Else. That 12% Gap in 2026 Is No Accident','https://247wallst.com/investing/2026/05/19/rth-owns-amazon-and-walmart-xrt-owns-everything-else-that-12-gap-in-2026-is-no-accident/',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david moadel','Investing\nAmazon (AMZN) reported Q1 2026 AWS revenue of $37.6B, up 28% year-over-year with 38% operating margin, while AWS backlog reached $364B plus a $100B+ Anthropic commitment.\nWells Fargo cut Ama...','2026-05-20',0.52128,'Amazon Price Target Nudged to $312 at Wells Fargo: The AWS Cloud Monetization Story Just Got Bigger','https://247wallst.com/investing/2026/05/20/amazon-price-target-nudged-to-312-at-wells-fargo-the-aws-cloud-monetization-story-just-got-bigger/',40),(2,'anushka mukherji','...','2026-05-20',0.30544,'Dear Snowflake Stock Fans, Mark Your Calendars for May 27','https://www.barchart.com/story/news/2041320/dear-snowflake-stock-fans-mark-your-calendars-for-may-27',2),(3,'sinchita mitra','...','2026-05-20',-0.272,'Jeff Bezos backs eliminating taxes for lower earnersâ€”CNBC interview','https://seekingalpha.com/news/4595364-jeff-bezos-backs-eliminating-taxes-for-lower-earners--cnbc-interview?feed_item_type=news',4),(4,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-20',0.8608,'5 Best Pick and Shovel AI Stocks to Buy for the Long Term','https://www.insidermonkey.com/blog/5-best-pick-and-shovel-ai-stocks-to-buy-for-the-long-term-1756459/',4),(5,'brian sozzi','...','2026-05-20',-0.35232,'Billionaire Block founder Jack Dorsey suggests radically reshaping manager roles in the age of AI','https://finance.yahoo.com/sectors/technology/article/billionaire-block-founder-jack-dorsey-suggests-radically-reshaping-manager-roles-in-the-age-of-ai-131219450.html',20),(6,'trefis team','...','2026-05-20',0,'How META Stock Rises To $1,000','https://finance.yahoo.com/markets/stocks/articles/meta-stock-rises-1-000-125734220.html',20),(7,'douglas a. mcintyre','Investing\nAI Market Is Too Uneven To Predict\nQuarterly Earnings Donâ€™t Say Enough About The Future\nWinners And Losers Keep Changing Places\n\nThe analyst who called NVIDIA in 2010 just named his top 10 s...','2026-05-20',0.48818,'Nvidia Earnings Donâ€™t Matter This Time','https://247wallst.com/investing/2026/05/20/nvidia-earnings-dont-matter-this-time/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -262,4 +263,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-20  4:57:13
+-- Dump completed on 2026-05-21  5:02:33

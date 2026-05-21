@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -239,7 +240,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -248,7 +249,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'prosper junior bakiny','Warren Buffett is no longer the CEO of Berkshire Hathaway (BRKA 1.29%) (BRKB 1.59%). However, during his last year at the head of the company he spent decades building and leading, the Oracle of Omaha...','2026-05-19',0.41848,'This Unstoppable AI Stock Is Up 97% Since Warren Buffett Bought It, and There Could Be More Upside Ahead','https://www.fool.com/investing/2026/05/19/this-unstoppable-ai-stock-is-up-97-since-warren-bu/',4),(2,'wall street breakfast','...','2026-05-19',0,'Wall Street Breakfast Podcast: Markets Eye Iran Pause','https://seekingalpha.com/article/4906387-wall-street-breakfast-podcast-markets-eye-iran-pause',4),(3,'daniel sparks','Nvidia (NVDA 0.79%) reports earnings on May 20, and the conversation around artificial intelligence (AI) tends to start and end with the chipmaker. But the companies funding the AI boom -- buying Nvid...','2026-05-19',0.1793,'Forget Nvidia. 1 of These 3 Hyperscalers Could Be the Top AI Stock Through 2030.','https://www.fool.com/investing/2026/05/19/forget-nvidia-1-of-these-3-hyperscalers-could-be-t/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia','...','2026-05-20',0,'Google DeepMind workers to enter union recognition talks, CWU says','https://seekingalpha.com/news/4595423-google-deepmind-workers-to-enter-union-recognition-talks-cwu-says?feed_item_type=news',40),(2,'anushka mukherji','...','2026-05-20',0.30544,'Dear Snowflake Stock Fans, Mark Your Calendars for May 27','https://www.barchart.com/story/news/2041320/dear-snowflake-stock-fans-mark-your-calendars-for-may-27',2),(3,'jennifer saibil','News of the upcoming initial public offering (IPO) of SpaceX has lit up the investing community. Unusually, it is expected that some ordinary retail investors will be able to buy in at the offering pr...','2026-05-20',0.8814,'The Best Way to Invest in SpaceX Before Its IPO','https://www.fool.com/investing/2026/05/20/the-best-way-to-invest-in-spacex-before-its-ipo/',4),(4,'clark schultz','...','2026-05-19',0.32152,'Warby Parker slides as investors compare its smart glasses to the Meta Ray-Ban line','https://seekingalpha.com/news/4595041-warby-parker-slides-as-investors-compare-its-smart-glasses-to-the-meta-ray-ban-line?feed_item_type=news',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -262,4 +263,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-20  4:57:13
+-- Dump completed on 2026-05-21  5:02:33
