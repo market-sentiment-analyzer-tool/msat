@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
+3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -240,7 +241,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -249,7 +250,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'geoffrey seiler','...','2026-05-20',0.63248,'These Super Stocks Could Be the Biggest Winners in the AI Inference and Agentic AI Economy','https://finance.yahoo.com/markets/stocks/articles/super-stocks-could-biggest-winners-165000178.html',20),(2,'anusuya lahiri','PHLX Semiconductor Sector gained over 4% on Wednesday.\n       â€¢Â ARM Holdings stock is approaching key resistance levels. Whatâ€™s driving ARM to record levels?\nBernstein initiated coverage on Arm with a...','2026-05-20',0.1995,'What Is Going On With Arm Stock On Wednesday?','https://www.benzinga.com/markets/tech/26/05/52697994/what-is-going-on-with-arm-stock-on-wednesday',8),(3,'keithen drury','Advancved Micro Devices (AMD +8.04%) has been one of the best-performing artificial intelligence (AI) stocks in 2026 so far. It has basically doubled in 2026, but nearly all of that run started in Apr...','2026-05-20',0.63354,'AMD Stock Has Doubled This Year. Is It Still a Buy?','https://www.fool.com/investing/2026/05/20/amd-stock-has-doubled-this-year-is-it-still-a-buy/',4),(4,'investing.com','...','2026-05-20',-0.56024,'Nvidiaâ€™s China Strategy Faces New Pressure After RTX 5090D V2 Ban','https://www.investing.com/analysis/nvidias-china-strategy-faces-new-pressure-after-rtx-5090d-v2-ban-200680655',2),(5,'david moadel','Investing\nAdvanced Micro Devices (AMD) stock surged 8% intraday after Q1 2026 revenue reached $10.25B, up 38% year-over-year, with Data Center revenue jumping 57% to $5.78B and Q2 guidance at $11.2B i...','2026-05-20',0.72766,'AMD Is Up 8% Today: Is It Outperforming Other Chip Stocks Like Intel and NVIDIA?','https://247wallst.com/investing/2026/05/20/amd-is-up-8-today-is-it-outperforming-other-chip-stocks-like-intel-and-nvidia/',4),(6,'erica kollmann','Expectations remain high heading into the print. Consensus estimates call for adjusted earnings of $1.76 per share on revenue of $78.8 billion, according to Benzinga Pro data. \nBut for Nvidia, the que...','2026-05-20',0.3022,'Nvidia Options Traders Bet On A Big Move As Earnings Loom','https://www.benzinga.com/trading-ideas/previews/26/05/52697000/nvidia-options-traders-bet-on-a-big-move-as-earnings-loom',80),(7,'sushree mohanty','...','2026-05-20',0.36704,'Up 110% YTD, Why Nvidiaâ€™s Backing Could Keep Nokia Stock Rallying','https://www.barchart.com/story/news/2042732/up-110-ytd-why-nvidias-backing-could-keep-nokia-stock-rallying',2),(8,'rob isbitts','...','2026-05-20',0.28896,'Why the Earnings Report Reaction in Nvidia Stock Matters So Much More This Time','https://www.barchart.com/story/news/2041818/why-the-earnings-report-reaction-in-nvidia-stock-matters-so-much-more-this-time',20),(9,'andy gould','According to a recent SEC filing, Lido Advisors, LLC, increased its holding in the Invesco BulletShares 2027 Corporate Bond ETF (BSCR +0.05%) by 3,854,896 shares during the first quarter of 2026. Base...','2026-05-20',0.33876,'Lido Advisors Adds $76 Million to BSCR Stake, Making the Bond ETF Its Second-Largest Holding','https://www.fool.com/coverage/filings/2026/05/20/lido-advisors-adds-usd76-million-to-bscr-stake-making-the-bond-etf-its-second-largest-holding/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-05-21',0.36908,'Jensen Huang has bold new message after Nvidia Q1 beat','https://www.thestreet.com/investing/stocks/jensen-huang-has-bold-new-message-after-nvidia-q1-beat',20),(2,'investing.com','...','2026-05-21',0,'Data Center Order Backlogs Point to Continued AI Boom Through 2027','https://www.investing.com/analysis/data-center-order-backlogs-point-to-continued-ai-boom-through-2027-200680742',2),(3,'leo sun','The rapid growth of the artificial intelligence (AI) market has driven many tech stocks to their record highs over the past few years. One of the biggest catalysts for that market was the rapid adopti...','2026-05-21',0.19944,'The AI ETF Analysts Are Watching Closely Into June','https://www.fool.com/investing/2026/05/21/the-ai-etf-analysts-are-watching-clo/',4),(4,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-21',0.7673,'Marketâ€™s Tepid Reaction to Nvidia (NVDA) Earnings: Should You Buy The Stock Now?','https://www.insidermonkey.com/blog/markets-tepid-reaction-to-nvidia-nvda-earnings-should-you-buy-the-stock-now-1766209/',40),(5,'null','Please enable JS and disable any ad blocker...','2026-05-21',0.26364,'AMD makes a major $10 billion push in crucial tech hub','https://www.thestreet.com/investing/stocks/amd-makes-a-major-10-billion-push-in-crucial-tech-hub',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -263,4 +264,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-21  5:02:33
+-- Dump completed on 2026-05-22  4:54:45

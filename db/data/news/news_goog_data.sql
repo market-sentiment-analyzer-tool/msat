@@ -61,6 +61,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
+3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -240,7 +241,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -249,7 +250,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia','...','2026-05-20',0,'Google DeepMind workers to enter union recognition talks, CWU says','https://seekingalpha.com/news/4595423-google-deepmind-workers-to-enter-union-recognition-talks-cwu-says?feed_item_type=news',40),(2,'anushka mukherji','...','2026-05-20',0.30544,'Dear Snowflake Stock Fans, Mark Your Calendars for May 27','https://www.barchart.com/story/news/2041320/dear-snowflake-stock-fans-mark-your-calendars-for-may-27',2),(3,'jennifer saibil','News of the upcoming initial public offering (IPO) of SpaceX has lit up the investing community. Unusually, it is expected that some ordinary retail investors will be able to buy in at the offering pr...','2026-05-20',0.8814,'The Best Way to Invest in SpaceX Before Its IPO','https://www.fool.com/investing/2026/05/20/the-best-way-to-invest-in-spacex-before-its-ipo/',4),(4,'clark schultz','...','2026-05-19',0.32152,'Warby Parker slides as investors compare its smart glasses to the Meta Ray-Ban line','https://seekingalpha.com/news/4595041-warby-parker-slides-as-investors-compare-its-smart-glasses-to-the-meta-ray-ban-line?feed_item_type=news',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'juxtaposed ideas','    koyu/iStock via Getty Images\n \nkoyu/iStock via Getty Images\nI previously rated Alphabet Inc., aka Google (GOOG, GOOGL, GOOG:CA) as a Buy in March 2026, thanks to the improved risk/reward and the c...','2026-05-21',0.6253,'Google Nears All Time High - Melt Up Deserves Downgrade To Hold','https://seekingalpha.com/article/4907339-google-nears-all-time-high-melt-up-deserves-downgrade-to-hold',80),(2,'wajeeh khan','...','2026-05-20',0,'Arm Surges on New $300 Price Target: ARM Stock Is at the â€˜Center of the Renaissanceâ€™ in CPUs','https://www.barchart.com/story/news/2048345/arm-surges-on-new-300-price-target-arm-stock-is-at-the-center-of-the-renaissance-in-cpus',2),(3,'daniel sparks','Bill Ackman -- the billionaire investor and CEO of hedge fund Pershing Square -- made two big disclosures on X (formerly Twitter) last week. On Friday, May 15, he revealed that Pershing Square had qui...','2026-05-20',0.552,'This Famous Investor Just Sold All Of His Alphabet Stock and Loaded Up On Microsoft Stock. Should You?','https://www.fool.com/investing/2026/05/20/this-famous-investor-just-sold-all-of-his-alphabet/',4),(4,'chris ciaccia','...','2026-05-20',0,'Google DeepMind workers to enter union recognition talks, CWU says','https://seekingalpha.com/news/4595423-google-deepmind-workers-to-enter-union-recognition-talks-cwu-says?feed_item_type=news',40),(5,'anushka mukherji','...','2026-05-20',0.30544,'Dear Snowflake Stock Fans, Mark Your Calendars for May 27','https://www.barchart.com/story/news/2041320/dear-snowflake-stock-fans-mark-your-calendars-for-may-27',2),(6,'jennifer saibil','News of the upcoming initial public offering (IPO) of SpaceX has lit up the investing community. Unusually, it is expected that some ordinary retail investors will be able to buy in at the offering pr...','2026-05-20',0.8814,'The Best Way to Invest in SpaceX Before Its IPO','https://www.fool.com/investing/2026/05/20/the-best-way-to-invest-in-spacex-before-its-ipo/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -263,4 +264,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-21  5:02:33
+-- Dump completed on 2026-05-22  4:54:44
