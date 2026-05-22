@@ -48,12 +48,14 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+30dfd94c-5594-11f1-95f6-da6da4d4dcda:1-36,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
@@ -64,6 +66,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
+3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
@@ -110,6 +113,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
+6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
@@ -126,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
+8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -143,7 +148,6 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
-af827e55-526f-11f1-ba8d-fa88189f5b5f:1-71,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -237,7 +241,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -246,6 +250,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tjcqz4','on2cjfv','2026-05-21',6,-0.4404,'lol guess we didnâ€™t fly :('),(2,'NVDA_Stock','1tjcqz4','on0ic58','2026-05-21',3,0,'Algo tracking every Cramer\'s tweets\n\n![gif](giphy|uDwKGxTFrADvO)'),(3,'NVDA_Stock','1tjcqz4','on1wcgw','2026-05-21',3,0.9847,'Common sense on a stock like this and itâ€™s 20 X in the last 12 years or so that when a boosted dividend announcement ( which is very small for the St0ck!) though at this level percentage of a dividend, it will attract even more little institutions, though theyâ€™ll leave it on a plateau level _even Proven now after earnings it didnâ€™t drop 6% post earnings this time ~& in retro announcement of buyback is also holding this up ^expect steady growth on the stock now for the long-term, no massive up ticks, though nice steady Growth complemented by the new dividend and of course buybacks'),(4,'NVDA_Stock','1tjcqz4','on1k06j','2026-05-21',6,0,'At this point Cramer is just shitposting and trying to reverse psychology lol '),(5,'NVDA_Stock','1tjcqz4','on3f792','2026-05-21',4,-0.6249,'It means bearish right?'),(6,'NVDA_Stock','1tjcqz4','on1p72e','2026-05-21',2,0.4423,'It seems like every time a stock goes up, these financial reporters praise it for a short period and then, one day, do a complete reversal and dump on it. I\'ve seen this happen recently, despite the absolute and legit boom and I\'ve seen it happen uncountable times over the past many many years. What\'s up with that? I know there are people that outside of long term investing that stand to make money off these dips and spikes but why the absolute and illegitimate reversal? Is it the exposure they seek? Especially with this man? '),(7,'NVDA_Stock','1tjcqz4','on3e3pp','2026-05-21',2,0.4019,'This is all cool and stuff but WHY does this happen? It doesn\'t make any sense. The company announced a smashing earnings yet the stock drops. I\'m puzzled.'),(8,'NVDA_Stock','1tjcqz4','on0vpoc','2026-05-21',3,0.5255,'please please jim keep shitting on the stock please!  \n'),(9,'NVDA_Stock','1tjcqz4','on1dlpv','2026-05-21',2,0,'![gif](giphy|SWVF41fAxIrwIyUr8b)'),(10,'NVDA_Stock','1tjcqz4','on1xonv','2026-05-21',1,-0.4767,'What if the first move is a dip? Fake pump and false breakdown are two sides of the same coin'),(11,'NVDA_Stock','1tjcqz4','on6lzzg','2026-05-22',1,0.5423,'Yall buy stock not options?'),(12,'NVDA_Stock','1tjcqz4','on2ctex','2026-05-21',0,0,'Who is buying more at $215???'),(13,'NVDA_Stock','1tjcqz4','on27dg5','2026-05-21',-5,-0.7089,'He is probably the most embarrassing media figure to ever exist. What a legacy Jim Cramer will go down with. The biggest market bozo ever'),(14,'NVDA_Stock','1tjbri7','on12fpy','2026-05-21',6,0,'LFG ðŸš€');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -259,4 +264,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-18  4:13:05
+-- Dump completed on 2026-05-22  4:11:20

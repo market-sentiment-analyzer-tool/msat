@@ -48,12 +48,14 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+30dfd94c-5594-11f1-95f6-da6da4d4dcda:1-36,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
@@ -64,6 +66,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
+3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
@@ -110,6 +113,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
+6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
@@ -126,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
+8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -143,7 +148,6 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
-af827e55-526f-11f1-ba8d-fa88189f5b5f:1-71,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -237,7 +241,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -246,7 +250,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1tfk4cp','om9y3ox','2026-05-17',190,-0.4404,'Rotation from hot stocks to beaten down ones. The whole SaaS sector was up on friday.'),(2,'ValueInvesting','1tfk4cp','om9xhbg','2026-05-17',73,-0.4588,'Ackman and his fund Perishing Square announced they were selling GOOG and establishing a position in MSFT\n\nEdit: https://finance.yahoo.com/markets/stocks/articles/ackmans-pershing-square-takes-stake-092754300.html'),(3,'ValueInvesting','1tfk4cp','oma1epi','2026-05-17',24,0.4404,'\"bloodbath\", \"tanked\", QQQ has been up ~30% since mar 30; sometimes there might not a specific trigger for single digit % moves...'),(4,'ValueInvesting','1tfk4cp','oma85sf','2026-05-17',20,0.3612,'AI replacing software sounds a lot like chatgpt replacing google last year.'),(5,'ValueInvesting','1tfk4cp','omaic2s','2026-05-17',42,0.3182,'Please keep posting about MSFT daily its my only dopamine'),(6,'ValueInvesting','1tfk4cp','om9x85q','2026-05-17',36,0,'Iâ€™m buying it at $300, I am buying it at $600.\n\nIn fact, at this stage I am full port saas.\n\n# Period.'),(7,'ValueInvesting','1tfk4cp','oma16ic','2026-05-17',31,0,'Christ these AI posts are getting out of hand'),(8,'ValueInvesting','1tfk4cp','om9zvfd','2026-05-17',6,-0.2263,'trump n ackman bought and saas is beaten down. also figma has good earnings? idk thats basically wat happened friday'),(9,'ValueInvesting','1tfk4cp','oma3ftt','2026-05-17',10,-0.0772,'SaaS is back baby.\n\nMSFT, SHOP, NOW, CRM'),(10,'ValueInvesting','1tfk4cp','om9yl2g','2026-05-17',6,0.4404,'Igv also up'),(11,'ValueInvesting','1tfk4cp','oma64mx','2026-05-17',8,0.128,'Sooner or later the market will realize that most software companies will do just fine in the age of AI and investors will come back.'),(12,'ValueInvesting','1tfk4cp','om9zfbg','2026-05-17',5,0.4404,'lol all software was up on Friday. '),(13,'ValueInvesting','1tfk4cp','oma1eml','2026-05-17',4,0.3818,'Software stocks gained a bit on Friday.'),(14,'ValueInvesting','1tfk4cp','oma50fe','2026-05-17',3,-0.7311,'last time i saw some company being spammed on this sub was NOVO and then stock went down 20% after that so i expect the same with MSFT. inverse basement redditors always made me a lot of money. This sub is WSB but worse'),(15,'ValueInvesting','1tfk4cp','omaf019','2026-05-17',3,0.5423,'Azure has grown 30%+ for several quarters straight. Cloud is now $100B of revenue and still accelerating. Thats the gap â€” the ATH multiple was stretched, but the business kept growing into it.'),(16,'ValueInvesting','1tfk4cp','omajo5t','2026-05-17',3,-0.5423,'My guess is that a lot of hedge funds were long semis, short software and began to close their positionsâ€¦ just a guess though.'),(17,'ValueInvesting','1tfk4cp','omb4nr2','2026-05-17',3,-0.368,'Bill Gates sold all of his MSFT shares, PANICK and SELL'),(18,'ValueInvesting','1tfk4cp','oma0jjp','2026-05-17',2,0.6597,'My cybersecurity etf was up like 5%'),(19,'ValueInvesting','1tfk4cp','omac37s','2026-05-17',2,-0.0258,'Itâ€™s already been beaten down and fundamentals kept improving. Ita valuation has gotten attractive.'),(20,'ValueInvesting','1tfk4cp','omad5nk','2026-05-17',2,0.6369,'If windows is going to be replaced by some AI generated alternative then Microsoft is the best company in the world to make the alternative. I have been buying steadily.'),(21,'ValueInvesting','1tfk4cp','omahsys','2026-05-17',2,0,'Trump pushed it apparently and made a ton of buys on MSFY'),(22,'ValueInvesting','1tfk4cp','ombkoon','2026-05-17',2,0,'What are you doing man'),(23,'ValueInvesting','1tfk4cp','omdqr5v','2026-05-17',2,0,'Also news that Bill Ackman bought ~2B on MSFT in Q1 2026'),(24,'ValueInvesting','1tfk4cp','omaci9i','2026-05-17',3,-0.5574,'It\'s one day in the market of algos doing algo shit.'),(25,'ValueInvesting','1tfk4cp','omazlgx','2026-05-17',1,0.4877,'The orange turd bought MSFT recently. \n\nDo you think he would know something?\n\nThis administration hasnâ€™t really done a good job of keeping their insider trading a secret.'),(26,'ValueInvesting','1tfk4cp','ombydde','2026-05-17',2,-0.0772,'Iâ€™m sorry, â€œbloodbathâ€? Tell me youâ€™re 19 without telling me youâ€™re 19.'),(27,'ValueInvesting','1tfk4cp','oma7zv8','2026-05-17',2,0,'So obviously written by AI'),(28,'ValueInvesting','1tfk4cp','omb5hrm','2026-05-17',1,-0.296,'I think what youâ€™re missing is that single day price moves usually mean nothing for the longer view of any particular stock.  You are trying to figure out what MS will do based on one day ofâ€¦. Whatever'),(29,'ValueInvesting','1tfk4cp','ombcs5j','2026-05-17',1,0.8641,'What I am concerned about is everyone \"knows\" Microsoft is good value, everyone knows that it should run to catch up with others valuations, and yet it\'s still not near its highs. Makes me think there is still lower to go. But most of you may see it as a gift untill the reason for it\'s underperformance becomes clear.'),(30,'ValueInvesting','1tfk4cp','ombqa3l','2026-05-17',1,0.5927,'Ackmanâ€™s post brought real human buyers from the sidelines for MSFT, which also triggered algos to start buying. I heard there were a lot of shorts on MSFT but Iâ€™m guessing those are being liquidated as we see more upward momentum. Since MSFT is still considered a SaaS it moved the other SaaS players up too. My guess is that this is the beginning of the huge SaaS rotation I talked about in my other comments.'),(31,'ValueInvesting','1tfk4cp','ombrkp1','2026-05-17',1,0.4404,'People seen Trump loaded up on it, so they followed suit.'),(32,'ValueInvesting','1tfk4cp','ombtzc2','2026-05-17',1,0.802,'Figma had good earnings, pulling up the SaaS sector with it.'),(33,'ValueInvesting','1tfk4cp','ombux6p','2026-05-17',1,0.34,'Bill Ackman disclosed a major new position in his 13F and shared his thesis on X. That was the driver. '),(34,'ValueInvesting','1tfk4cp','omcj3e5','2026-05-17',1,0,'Itâ€™s underpriced. Simple as tha. '),(35,'ValueInvesting','1tfk4cp','omcjx7b','2026-05-17',1,0.3612,'You can thank Bill Assman, errr Ackman'),(36,'ValueInvesting','1tfk4cp','omcmvk1','2026-05-17',1,0.8442,'Nothing .. dotn try to analyze one day stock movement... Try to think how stable is msft moat in enterprise in the age of llms and how azure is competing with AWS and  gcp... Can their LLM or investments pay off wrt other hyperscaler and how much investment do they have to make to compete... You will be better off finding answers to these questions to decide if you want to invest or not .. not one day stock price movement.. Jesus'),(37,'ValueInvesting','1tfk4cp','omcq21g','2026-05-17',1,-0.5484,'Bloodbath? What bloodbath?  Were the index down 5%?'),(38,'ValueInvesting','1tfk4cp','omd0nfu','2026-05-17',1,0,'It\'s being thrown in with the saaspocolypse...'),(39,'ValueInvesting','1tfk4cp','ome2pk2','2026-05-17',1,0,'It doesn\'t have to make sense, it just has to make cents. GET IT'),(40,'ValueInvesting','1tfk4cp','ome4ima','2026-05-17',1,0,'What does your model say about NOW (ServiceNow)?'),(41,'ValueInvesting','1tfk4cp','omem82o','2026-05-18',1,0.6124,'MSFT is such an anomaly to me. It seems like Google is pulling away from the pack in the data server farm field but MSFT seems like it should have such an edge.'),(42,'ValueInvesting','1tfk4cp','oma5u3z','2026-05-17',2,0.743,'Msft baggers are the funniest monkeys ðŸ˜‚ðŸ˜‚ðŸ˜­'),(43,'ValueInvesting','1tfk4cp','oma7h2f','2026-05-17',0,0.2732,'Can everyone please help downvote this AI slop, report it to mods and then block the user?'),(44,'ValueInvesting','1tfk4cp','oma6pze','2026-05-17',0,0,'The over/under for posts about MSFT today stands at 51. Who wants this action?'),(45,'ValueInvesting','1tfk4cp','om9yks9','2026-05-17',-8,0.6492,'It was up on the Ackman news, don\'t worry it will give up those gains next week and continue to languish. Dead company.'),(46,'ValueInvesting','1tfk4cp','oma8rsl','2026-05-17',-1,0,'I think softwares are about to take off'),(47,'ValueInvesting','1tfk4cp','omaehh9','2026-05-17',-1,0.7096,'3% up while everything else tanked? everything else was up 40% silly bot'),(48,'ValueInvesting','1tfk4cp','ombcy9s','2026-05-17',-2,-0.8074,'Copilot is shit and only being used because itâ€™s bundled. Windows is trash and pushing ads to people. People hate Microsoft and now itâ€™s at the point where even Europe is making its government transition away from microsoft. '),(49,'ValueInvesting','1tfk4cp','oma1ste','2026-05-17',-5,-0.6369,'**Using NVIDIA = Losing AI Race**\n\nOpenAI and Microsoft lost the AI race. They spent all their money on expensive and slow NVIDIA chips. On the other side is Google. They started TPU in 2020. After Anthropic saw how slow and expensive the NVIDIA chips are they migrated 70% of their compute to TPU. Google earned $28B from Anthropic last quarter and secured $200B in contracts. Gemini, trained and inference-powered by TPU, is the worldâ€™s most used AI. Anthropic is the highest AI revenue and fastest growing AI.\n\nGoogle won the AI race. Microsoft is NVIDIAâ€™s cash-cow. The small stock price jump doesnâ€™t mean anything.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -260,4 +263,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-18  4:13:05
+-- Dump completed on 2026-05-22  4:11:20
