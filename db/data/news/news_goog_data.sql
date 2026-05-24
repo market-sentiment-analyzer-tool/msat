@@ -190,6 +190,7 @@ de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
+e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -242,7 +243,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -251,7 +252,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel foelber','The Dow Jones Industrial Average (^DJI +0.58%) will celebrate its 130th anniversary on May 26. But the historic index looks nothing like it did over a century ago.\nThe Dow of today is chock-full of te...','2026-05-22',0.43652,'Prediction: Alphabet Will Join the $5 Trillion Club and the Dow Jones Industrial Average in June','https://www.fool.com/investing/2026/05/22/alphabet-stock-5-trillion-club-dow-jones/',4),(2,'rob williams','...','2026-05-21',-0.272,'Pentagon is said to shop for new AI as Anthropic feud pushes Claude toward exit','https://seekingalpha.com/news/4596030-pentagon-is-said-to-shop-for-new-ai-as-anthropic-feud-pushes-claude-toward-exit?feed_item_type=news',4),(3,'juxtaposed ideas','...','2026-05-21',0.4756,'Google Nears All Time High - Melt Up Deserves Downgrade To Hold','https://seekingalpha.com/article/4907339-google-nears-all-time-high-melt-up-deserves-downgrade-to-hold',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ananya gairola','Google filed an appeal against a 2024 ruling by U.S. District Judge Amit Mehta, who concluded that the company violated antitrust law by using exclusive agreements to cement its position in the online...','2026-05-23',0.03704,'Google Appeals Landmark Monopoly Ruling That Targets Apple Default Deals','https://www.benzinga.com/news/legal/26/05/52761838/google-appeals-landmark-monopoly-ruling-that-targets-apple-default-deals',80),(2,'chris neiger','Alphabet (GOOGL 1.19%) (GOOG 1.04%) recently debuted at its I/O developer conference its long list of new AI services. The company also said that enterprise companies that switch from existing frontie...','2026-05-22',0.11748,'Google Just Triggered a $1 Billion AI Price War: Does It Make Alphabet Stock a Buy Right Now?','https://www.fool.com/investing/2026/05/22/google-just-triggered-a-1-billion-ai-price-war-doe/',40),(3,'amy thielen','...','2026-05-22',-0.1024,'Google challenges landmark antitrust decision over search engine monopoly','https://seekingalpha.com/news/4596428-google-challenges-landmark-antitrust-decision-over-search-engine-monopoly?feed_item_type=news',40),(4,'mohit oberoi','...','2026-05-22',0.43384,'Microsoft Stock Is a Buy as OpenAI Prepares for an IPO. Hereâ€™s Why.','https://www.barchart.com/story/news/2091494/microsoft-stock-is-a-buy-as-openai-prepares-for-an-ipo-heres-why',2),(5,'will healy','Massive stock price appreciation has often defined artificial intelligence (AI) investing in recent years. A considerable amount of investor dollars has flowed into such companies, particularly for so...','2026-05-22',0.19948,'The 1 Chart Every AI Investor Needs to See Before Buying Anything Right Now','https://www.fool.com/investing/2026/05/22/chart-every-ai-investor-needs-see-before-buy/',4),(6,'daniel foelber','The Dow Jones Industrial Average (^DJI +0.58%) will celebrate its 130th anniversary on May 26. But the historic index looks nothing like it did over a century ago.\nThe Dow of today is chock-full of te...','2026-05-22',0.43652,'Prediction: Alphabet Will Join the $5 Trillion Club and the Dow Jones Industrial Average in June','https://www.fool.com/investing/2026/05/22/alphabet-stock-5-trillion-club-dow-jones/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -265,4 +266,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-23  4:32:27
+-- Dump completed on 2026-05-24  4:56:56
