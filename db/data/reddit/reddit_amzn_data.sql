@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
+2124cc21-57f1-11f1-8ec7-22e5ed8efe41:1-163,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
@@ -100,7 +101,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
-5fca2d31-5726-11f1-8e8c-ce3e443710a3:1-175,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -191,6 +191,7 @@ de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
+e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -243,7 +244,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -252,7 +253,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1tlh7pc','onfips6','2026-05-23',101,0.34,'Anything is deep value compared to space x valuation'),(2,'ValueInvesting','1tlh7pc','onfif0i','2026-05-23',25,0.9081,'Amazon is the best company out there by a large margin. You have retail, AWS, Leo and theyâ€™re even making their own chips. I think itâ€™s at great value compared to other options.'),(3,'ValueInvesting','1tlh7pc','onfqtyx','2026-05-23',17,0.9053,'i used tryattice to looked into this and while Amazon remains an incredibly strong core value play fueled by its highly lucrative cloud and advertising segments, using its unproven space segment to claim it should be valued anywhere near SpaceX overstates its current technological moat.'),(4,'ValueInvesting','1tlh7pc','onfsz9e','2026-05-23',9,0,'> you can ask any AI to do research for you and even debate with it.\n\nðŸ¤¨'),(5,'ValueInvesting','1tlh7pc','onfr3wo','2026-05-23',12,0.5023,'AWS is 17% of Amazon revenue but ~60% of operating income. the retail arm is basically a customer acquisition machine that happens to fund a cloud empire'),(6,'ValueInvesting','1tlh7pc','onfizt6','2026-05-23',13,-0.5423,'Or, you know, SpaceX is just expensive... '),(7,'ValueInvesting','1tlh7pc','onfnsve','2026-05-23',6,0.5423,'Amazon is a company that underpays its employees relative to other faangs and is known for being rigid and bean counters. People donâ€™t price in growth as much for them as they do for spacex for obvious reasons. Of course maybe thatâ€™s too much growth for spacex priced in but thatâ€™s another story '),(8,'ValueInvesting','1tlh7pc','oni2z56','2026-05-23',2,0.5719,'Whole Foods books 2X the revenue Starlink (the money engine of the entire combined company). \n\nAmazon is so undervalued'),(9,'ValueInvesting','1tlh7pc','onfsauc','2026-05-23',1,0.4137,'FWD PE of 30? Â Whatâ€™s the value?');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -266,4 +266,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-24  4:18:15
+-- Dump completed on 2026-05-25  4:27:38
