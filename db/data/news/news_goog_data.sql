@@ -107,6 +107,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
+68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -243,7 +244,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -252,7 +253,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ananya gairola','Google filed an appeal against a 2024 ruling by U.S. District Judge Amit Mehta, who concluded that the company violated antitrust law by using exclusive agreements to cement its position in the online...','2026-05-23',0.03704,'Google Appeals Landmark Monopoly Ruling That Targets Apple Default Deals','https://www.benzinga.com/news/legal/26/05/52761838/google-appeals-landmark-monopoly-ruling-that-targets-apple-default-deals',80),(2,'chris neiger','Alphabet (GOOGL 1.19%) (GOOG 1.04%) recently debuted at its I/O developer conference its long list of new AI services. The company also said that enterprise companies that switch from existing frontie...','2026-05-22',0.11748,'Google Just Triggered a $1 Billion AI Price War: Does It Make Alphabet Stock a Buy Right Now?','https://www.fool.com/investing/2026/05/22/google-just-triggered-a-1-billion-ai-price-war-doe/',40),(3,'amy thielen','...','2026-05-22',-0.1024,'Google challenges landmark antitrust decision over search engine monopoly','https://seekingalpha.com/news/4596428-google-challenges-landmark-antitrust-decision-over-search-engine-monopoly?feed_item_type=news',40),(4,'mohit oberoi','...','2026-05-22',0.43384,'Microsoft Stock Is a Buy as OpenAI Prepares for an IPO. Hereâ€™s Why.','https://www.barchart.com/story/news/2091494/microsoft-stock-is-a-buy-as-openai-prepares-for-an-ipo-heres-why',2),(5,'will healy','Massive stock price appreciation has often defined artificial intelligence (AI) investing in recent years. A considerable amount of investor dollars has flowed into such companies, particularly for so...','2026-05-22',0.19948,'The 1 Chart Every AI Investor Needs to See Before Buying Anything Right Now','https://www.fool.com/investing/2026/05/22/chart-every-ai-investor-needs-see-before-buy/',4),(6,'daniel foelber','The Dow Jones Industrial Average (^DJI +0.58%) will celebrate its 130th anniversary on May 26. But the historic index looks nothing like it did over a century ago.\nThe Dow of today is chock-full of te...','2026-05-22',0.43652,'Prediction: Alphabet Will Join the $5 Trillion Club and the Dow Jones Industrial Average in June','https://www.fool.com/investing/2026/05/22/alphabet-stock-5-trillion-club-dow-jones/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'selena maranjian','At the end of 2025, Warren Buffett stepped down from the post of CEO of Berkshire Hathaway (BRKA +1.43%) (BRKB +1.33%) -- the company he helped build and run for more than 60 years. His long-planned s...','2026-05-24',0.53672,'Warren Buffett Successor Greg Abel Could Be Buying $14.2 Billion Worth of This Stock Right Now','https://www.fool.com/investing/2026/05/24/warren-buffett-successor-greg-abel-berkshire/',4),(2,'keithen drury','Alphabet (GOOG 1.04%) (GOOGL 1.19%) stock has had a strong rally since April began. The stock has risen more than 33% since then, which may have investors wondering if Alphabet stock is still a bargai...','2026-05-24',0.36104,'Is Alphabet Stock Still a Bargain?','https://www.fool.com/investing/2026/05/24/is-alphabet-stock-still-a-bargain/',4),(3,'geoffrey seiler','Artificial intelligence (AI) is changing the world we live in, and over the next decade, the world could look like a very different place than it does today. Technology is advancing rapidly, and with ...','2026-05-24',0.05744,'2 Stocks With Monster Potential to Hold Through the Next Decade of Uncertainty','https://www.fool.com/investing/2026/05/23/2-stocks-with-monster-potential-to-hold-through-th/',4),(4,'ananya gairola','Google filed an appeal against a 2024 ruling by U.S. District Judge Amit Mehta, who concluded that the company violated antitrust law by using exclusive agreements to cement its position in the online...','2026-05-23',0.03704,'Google Appeals Landmark Monopoly Ruling That Targets Apple Default Deals','https://www.benzinga.com/news/legal/26/05/52761838/google-appeals-landmark-monopoly-ruling-that-targets-apple-default-deals',80);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -266,4 +267,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-24  4:56:56
+-- Dump completed on 2026-05-25  5:14:03
