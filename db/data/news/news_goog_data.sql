@@ -30,6 +30,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
+13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -253,7 +254,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'selena maranjian','At the end of 2025, Warren Buffett stepped down from the post of CEO of Berkshire Hathaway (BRKA +1.43%) (BRKB +1.33%) -- the company he helped build and run for more than 60 years. His long-planned s...','2026-05-24',0.53672,'Warren Buffett Successor Greg Abel Could Be Buying $14.2 Billion Worth of This Stock Right Now','https://www.fool.com/investing/2026/05/24/warren-buffett-successor-greg-abel-berkshire/',4),(2,'keithen drury','Alphabet (GOOG 1.04%) (GOOGL 1.19%) stock has had a strong rally since April began. The stock has risen more than 33% since then, which may have investors wondering if Alphabet stock is still a bargai...','2026-05-24',0.36104,'Is Alphabet Stock Still a Bargain?','https://www.fool.com/investing/2026/05/24/is-alphabet-stock-still-a-bargain/',4),(3,'geoffrey seiler','Artificial intelligence (AI) is changing the world we live in, and over the next decade, the world could look like a very different place than it does today. Technology is advancing rapidly, and with ...','2026-05-24',0.05744,'2 Stocks With Monster Potential to Hold Through the Next Decade of Uncertainty','https://www.fool.com/investing/2026/05/23/2-stocks-with-monster-potential-to-hold-through-th/',4),(4,'ananya gairola','Google filed an appeal against a 2024 ruling by U.S. District Judge Amit Mehta, who concluded that the company violated antitrust law by using exclusive agreements to cement its position in the online...','2026-05-23',0.03704,'Google Appeals Landmark Monopoly Ruling That Targets Apple Default Deals','https://www.benzinga.com/news/legal/26/05/52761838/google-appeals-landmark-monopoly-ruling-that-targets-apple-default-deals',80);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-05-25',0.57472,'Berkshire Hathaway Just Loaded Up on This Genius Artificial Intelligence (AI) Stock','https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-just-loaded-genius-132000044.html',20),(2,'geoffrey seiler','...','2026-05-25',0.43384,'As Alphabet Makes Agentic AI Push, Is the Stock a Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-makes-agentic-ai-push-110400647.html',20),(3,'neil patel','Alphabet (GOOGL 1.19%) (GOOG 1.04%) has done nothing but prove the bears wrong. The business, which critics previously thought had lost the artificial intelligence (AI) race, has produced a stellar re...','2026-05-25',0.63372,'Prediction: Alphabet Stock Is a Buy Before June 2026','https://www.fool.com/investing/2026/05/25/prediction-alphabet-stock-is-buy-before-june-2026/',4),(4,'selena maranjian','At the end of 2025, Warren Buffett stepped down from the post of CEO of Berkshire Hathaway (BRKA +1.43%) (BRKB +1.33%) -- the company he helped build and run for more than 60 years. His long-planned s...','2026-05-24',0.53672,'Warren Buffett Successor Greg Abel Could Be Buying $14.2 Billion Worth of This Stock Right Now','https://www.fool.com/investing/2026/05/24/warren-buffett-successor-greg-abel-berkshire/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -267,4 +268,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-25  5:14:03
+-- Dump completed on 2026-05-26  4:56:06
