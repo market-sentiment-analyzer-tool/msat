@@ -165,6 +165,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -245,7 +246,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -254,7 +255,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-05-25',0.57472,'Berkshire Hathaway Just Loaded Up on This Genius Artificial Intelligence (AI) Stock','https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-just-loaded-genius-132000044.html',20),(2,'geoffrey seiler','...','2026-05-25',0.43384,'As Alphabet Makes Agentic AI Push, Is the Stock a Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-makes-agentic-ai-push-110400647.html',20),(3,'neil patel','Alphabet (GOOGL 1.19%) (GOOG 1.04%) has done nothing but prove the bears wrong. The business, which critics previously thought had lost the artificial intelligence (AI) race, has produced a stellar re...','2026-05-25',0.63372,'Prediction: Alphabet Stock Is a Buy Before June 2026','https://www.fool.com/investing/2026/05/25/prediction-alphabet-stock-is-buy-before-june-2026/',4),(4,'selena maranjian','At the end of 2025, Warren Buffett stepped down from the post of CEO of Berkshire Hathaway (BRKA +1.43%) (BRKB +1.33%) -- the company he helped build and run for more than 60 years. His long-planned s...','2026-05-24',0.53672,'Warren Buffett Successor Greg Abel Could Be Buying $14.2 Billion Worth of This Stock Right Now','https://www.fool.com/investing/2026/05/24/warren-buffett-successor-greg-abel-berkshire/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-05-26',-0.42136,'Federal Backing Triggered a Rally in IonQ Stock. A Short Squeeze Could Take It Even Higher.','https://www.barchart.com/story/news/2132837/federal-backing-triggered-a-rally-in-ionq-stock-a-short-squeeze-could-take-it-even-higher',2),(2,'baron capital','...','2026-05-26',0.2,'Baron Global Durable Advantage ETF Q1 2026 Shareholder Letter','https://seekingalpha.com/article/4908699-baron-global-durable-advantage-etf-q1-2026-shareholder-letter',4),(3,'the motley fool','...','2026-05-25',0.57472,'Berkshire Hathaway Just Loaded Up on This Genius Artificial Intelligence (AI) Stock','https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-just-loaded-genius-132000044.html',20),(4,'geoffrey seiler','...','2026-05-25',0.43384,'As Alphabet Makes Agentic AI Push, Is the Stock a Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-makes-agentic-ai-push-110400647.html',20),(5,'neil patel','Alphabet (GOOGL +1.52%) (GOOG +1.44%) has done nothing but prove the bears wrong. The business, which critics previously thought had lost the artificial intelligence (AI) race, has produced a stellar ...','2026-05-25',0.63372,'Prediction: Alphabet Stock Is a Buy Before June 2026','https://www.fool.com/investing/2026/05/25/prediction-alphabet-stock-is-buy-before-june-2026/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -268,4 +269,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-26  4:56:06
+-- Dump completed on 2026-05-27  5:06:57
