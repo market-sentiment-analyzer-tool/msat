@@ -30,6 +30,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
+13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -42,7 +43,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
-2124cc21-57f1-11f1-8ec7-22e5ed8efe41:1-163,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
@@ -83,6 +83,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+51096187-5983-11f1-8a62-d25c16007b55:1-97,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -108,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
+68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -244,7 +246,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -253,7 +255,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tmur4e','onpk7em','2026-05-25',17,0.25,'No need to say anything when youâ€™re laughing all the way to the bank'),(2,'AAPL','1tmur4e','onpmg1w','2026-05-25',12,-0.7841,'Last year I sold half that I bought around 2000.  It was completely dominating my portfolio and the tariff crap was freaking me out.  Turns out I shouldâ€™ve held. '),(3,'AAPL','1tmur4e','onpo7th','2026-05-25',6,0.6778,'Iâ€™m insanely fortunate to have held AAPL all these years, and I only got this way from ignoring what everyone was saying most of the time!  So now, yeah I donâ€™t care and donâ€™t engage with arguing or justifying my position, I just carry on with the plan.'),(4,'AAPL','1tmur4e','onpp62u','2026-05-25',4,-0.4341,'There are many ways to make money in the market. Been investing in AAPL since the iPod days and went all in after the initial iPhone release. There is no single stock that I understand better than AAPL. Also, I buy Apple products and go to Apple stores. But Iâ€™m also not beholden to holding AAPL irrationally. Of conditions change, I will absolutely sell. Until then I just ignore the noise and enjoy the gains. '),(5,'AAPL','1tmur4e','onpk377','2026-05-25',3,0,'\"You do you\"'),(6,'AAPL','1tmur4e','onpkluo','2026-05-25',3,0,'None of my business what others do with their money '),(7,'AAPL','1tmur4e','onpli4b','2026-05-25',2,-0.5267,'With this argument, why own any quality companies at all? Brb, selling my entire portfolio to yolo on some penny stocks.'),(8,'AAPL','1tmur4e','onpporz','2026-05-25',2,0.0859,'I donâ€™t care what other people think, so no need to discuss.   '),(9,'AAPL','1tmur4e','onpqm2t','2026-05-25',2,0.4404,'AAPL gives good returns and lets me sleep at night. Canâ€™t say the same thing about many quick sprouts'),(10,'AAPL','1tmur4e','onpu48j','2026-05-25',2,0.7351,'show them the latest AAPL jump and the increase over the past year. the past 1 year line graph is a beautiful thing to look at'),(11,'AAPL','1tmur4e','onpxsx3','2026-05-25',2,0.8689,'Nothing, everyone has their risk tolerance and goals in mind.  I have too much AAPL but I have had it since $47.12/ .  I also was late to the NVDA party and TSM but still managed to double up.  Donâ€™t listen to other peopleâ€™s you are confident in your own strategy.  That being said if you arenâ€™t seek a professional because small mistakes today can cost lots in the long run.\n\nCheers.'),(12,'AAPL','1tmur4e','onq2nih','2026-05-25',2,0.75,'The next 5 years is going to amazing for Apple.  We will witness the release of the folding phone, project J595 and the rise of their robot business and other cool stuff!    '),(13,'AAPL','1tmur4e','onpo3ip','2026-05-25',2,-0.1331,'Have had aapl since the 1980â€™s and added every mag7/mag10 along the way without selling. Nothing indicates any reason to sell now, so burn baby burnâ€¦');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tobuhu','onzywov','2026-05-26',14,0.4926,'yikes!  Honda Civic looks better'),(2,'AAPL','1tobuhu','oo04lq3','2026-05-26',6,0,'Absolutely atrocious. Plus, itâ€™s just not thin enoughâ€¦'),(3,'AAPL','1tobuhu','oo0j7wg','2026-05-26',6,0.8658,'Steve Jobs was influential to Jonyâ€™s creative vision at Apple and Ive even hinted that once Jobs was gone he felt a bit empty without that collaboration leading in part to his departure. The design success at Apple was because of the collaboration between Jobs and Ive. Take one away and that â€œmagicâ€ is gone. '),(4,'AAPL','1tobuhu','oo1fjoa','2026-05-26',3,0.6269,'Honestly it would be perfectly fine as an Apple car or a new Polestar or Lucid. This looks like a $75k car that honestly would have trouble selling at that price without incentives or good lease deals, like a lot of EVs on the market right now. Problem is that this is a fucking Ferrari that is selling for $600k+. Hard to imagine who would buy this. If you\'re rich as fuck, and you want some extra space, you\'d probably just buy a Range Rover or one of the Bentley or Rolls Royce SUVs at a fraction of the cost, but more luxurious. '),(5,'AAPL','1tobuhu','oo0h61p','2026-05-26',2,0.2975,'Itâ€™s becoming clear that Ive benefited creatively from working within Apple. His work lately has been quite crap. '),(6,'AAPL','1tobuhu','oo0je5f','2026-05-26',2,-0.5106,'Ugly'),(7,'AAPL','1tobuhu','oo0kp74','2026-05-26',2,0.1164,'Overall itâ€™s not a bad design and I rather like it. BUT, it is not in the design language of previous Ferraris so I can see why itâ€™s getting criticized. It doesnâ€™t fit in the Ferrari family. Color combo is not working as well. \n\nIf this was the Apple car design, I bet people would be fawning over it.'),(8,'AAPL','1tobuhu','oo019zy','2026-05-26',2,-0.3865,'Not very attractive '),(9,'AAPL','1tobuhu','oo1wtnt','2026-05-26',1,0,'this car looks quite decent if you stretch it sideway by about 25%.'),(10,'AAPL','1tobuhu','oo06s6x','2026-05-26',1,0,'This isnâ€™t meant for previous Ferrari drivers. Itâ€™s for a new crowd, especially in China.'),(11,'AAPL','1tobuhu','oo0x8r4','2026-05-26',0,0.4215,'Nice wheels. Literally. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -267,4 +269,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-25  4:27:38
+-- Dump completed on 2026-05-27  4:24:14
