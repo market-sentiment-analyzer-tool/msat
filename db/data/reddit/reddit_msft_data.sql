@@ -83,7 +83,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
-51096187-5983-11f1-8a62-d25c16007b55:1-97,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -166,6 +165,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -215,6 +215,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f628a870-5a4a-11f1-a0a9-6e1230f3ba16:1-64,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -246,7 +247,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -255,7 +256,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1tooq89','oo2qdg7','2026-05-27',15,0.9535,'Agreed, weâ€™re still in the early innings of AI, so the big hyperscalers like MSFT, META, AMZN, and GOOG wonâ€™t see the big payoff of their investments for years still. A lot of cyclical names are getting lots of love in the short term, leaving the first three names above at pretty decent valuations. If MSFT can get its own in-house AI to the level of Anthropic over the next few years, I think they will have a huge advantage, given that a huge percentage of computers run on Microsoft software and use its products regularly every single day, all that data and market share is extremely valuable. Their in-house models may be second-rate today, but they will only get better with time and investment, I think thereâ€™s a good chance they are properly competing with the bigger names in just a few years, if not sooner. '),(2,'ValueInvesting','1tooq89','oo2rk3t','2026-05-27',7,0.989,'Thanks for the write up. \n\nI\'m holding a portion (3-4%) long term, I dont think MSFT is going anywhere in the next 5-10 years. I believe software will rebound eventually. \n\nBut.\nI have heard about Copilot sucking, then my workplace annouced we were getting access to it through M365, great, I was delighted to finally ahe an integrates AI I could ask about emails or specific spreadsheets etc without having to upload everything. So I started using it in the last few weeks. \n\nMy god I\'ve never had such a bad user experience with any tech. Sometimes, a simple task can world well \"summarise all emails with mentions to X\" but just tonight I got so pissed off with it I actually filed a user report. I was working on an excel and asking it about some formula, long story short, it was giving me a response I knew was wrong, think \"heres a link to URI codes, how can I filll these cells with the codes based on those cells\", the codes it was giving me were just wrong, like very obviously. But ok, I\'m used to llm errors so did more careful prompting: double check your results, indicate any uncertainty, ensure links and codes are accurate etc, Copilot kept giving me very basic codes in very wrong ways. When I asked if it had high certainty that these codes related to those cells it said \"yes I am absolutely certain - I have no doubt that these are the correct codes\" I was shocked it would even give such high confidence, nevermind such high confidence on a blantantly wrong response, which it was asked to double check and be careful. \n\nWhen I asked it to explain where it went wrong it essentially went \"well the first three codes went 001, 002, 003, so I assumed the next 100 followed that pattern\" ðŸ˜µ like, the excel was on sharepoint and linked to the chat, I asked it to verify and confirm and when questioned it badically said it checked and verified its process (the assumption of a pattern) and yes it was absolutely certain that that process was what it did (not what it wss asked to do).\n\nI nearly slammed my laptop. This wasnt even the first case of such blantant misinformation, again I know LLMs hallucinate but it was the certainty that bothered me, I spent as much time geting it to double check its work as to do the work, amd it was still saying \"yes without a doubt this is the correct thing\" \n\nSo, now that I got that out. It needs a lot, a lot of improvement, total rehaul tbh. I\'ll never use it again unless its vastly different. \n\nI\'ll still hold MSFT, but long term, and not for its AI. '),(3,'ValueInvesting','1tooq89','oo3gjt6','2026-05-27',3,0.6908,'MSFT sucks. Work there and cant believe the stock is where its at still. The internal workings of the company and employee morale is at an absolute bottom last 2 yrs. No one in the company likes Satya anymore, and our best leaders are leaving. We only have few leaders still worthwhile left. One being Scott Guthrie. If he leaves everyone should get of this sinking ship. '),(4,'ValueInvesting','1tooq89','oo2u232','2026-05-27',5,-0.296,'Microsoft is a laggard in every category it operates in \n\nOS: macOS\n\nASIC: TPUs \n\nCloud: AWS/GCP\n\nsoftware: Google \n\nPersonal compute Hardware: Apple \n\nLLM: sugar daddy to OpenAI \n\nThey have no ai story.'),(5,'ValueInvesting','1tooq89','oo37g56','2026-05-27',4,0.9506,'I disagree that Copilot is an average product! It is the most user friendly and easy to access product, as it sits at the top of every microsoft product. It produces amazing results! I use it to create dynamic spreadsheets in minutes, articles and curriculum. It is better because it uses all the models! '),(6,'ValueInvesting','1tooq89','oo2upho','2026-05-27',2,-0.4201,'HDM memory stocks are sold out for 2026 and getting close to sold out for 2027.  Enough of a moat where inventory is very difficult to come online.  '),(7,'ValueInvesting','1tooq89','oo33cps','2026-05-27',2,0.7402,'MSFT has a $3 trillion market cap, maybe thatâ€™s high enoughâ€¦ the growth potential just doesnâ€™t seem there compared to other companies right now\n\n1.29 PEG Ratio makes it fairly valued, not particularly cheapâ€¦ just bcuz it was at 550 last year doesnâ€™t mean it has to go back'),(8,'ValueInvesting','1tooq89','oo3nchy','2026-05-27',1,0.5859,'iâ€™ve been holding MSFT since january and will be getting out. the 34% gain from here if it goes back to ATH of $555 isnâ€™t inticing to me'),(9,'ValueInvesting','1tooq89','oo3td6p','2026-05-27',1,0.4404,'When windows becomes good again so never '),(10,'ValueInvesting','1tooq89','oo2rewe','2026-05-27',-1,-0.7125,'MicroTRASH. \n\nA month ago, Amazon CEO Andy Jassy, came swinging at Wallstreet in profanity filled letter basically calling Wallstreet dumb for giving up on AMZN stock after the stock has been lagging for over the year. The stock rebounded 30% within 2 weeks prior to their ER. \n\nEnter MicroGARBAGE or MicroTRASHâ€¦. And the story is different . CEO is no where to be found when his stock is underperforming.  The stock has been red every single day since it peaked last year . Now the new thing for this TRASH is everyone morning , itâ€™s falls > 1% and recover half of it by the end of the trading day when when Markets are pumping . I will say it again â€¦. MSFT is DEAD MONEY . YOU better chasing chip stocks thank wasting your time HOLDing this GARBAGE .\n\nPS: I hold 1000 shares of MSFT '),(11,'ValueInvesting','1tooq89','oo2olf7','2026-05-27',-2,0.9235,'just keep dcaâ€™ing bro. good luck to you haha. mr bagholder. these posts will not do shit to a $3T company. it will eventually moon like the others have patience or rotate ur funds into something else'),(12,'ValueInvesting','1tooq89','oo312u3','2026-05-27',0,-0.1779,'MSFT has one of the least charismatic CEOs. What is the strategy to get out of this rut. OpenAI has abandoned msft. No real moat, just same old Asure, office and copilot wonâ€™t steer any new investors to buy. '),(13,'ValueInvesting','1tooq89','oo2t6t5','2026-05-27',-2,-0.6486,'Mag7 of software is dead. Semi is the future ');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -269,4 +269,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-27  4:24:14
+-- Dump completed on 2026-05-28  4:10:43

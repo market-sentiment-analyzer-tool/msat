@@ -83,7 +83,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
-51096187-5983-11f1-8a62-d25c16007b55:1-97,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -166,6 +165,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -215,6 +215,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f628a870-5a4a-11f1-a0a9-6e1230f3ba16:1-64,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -246,7 +247,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -255,7 +256,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tobuhu','onzywov','2026-05-26',14,0.4926,'yikes!  Honda Civic looks better'),(2,'AAPL','1tobuhu','oo04lq3','2026-05-26',6,0,'Absolutely atrocious. Plus, itâ€™s just not thin enoughâ€¦'),(3,'AAPL','1tobuhu','oo0j7wg','2026-05-26',6,0.8658,'Steve Jobs was influential to Jonyâ€™s creative vision at Apple and Ive even hinted that once Jobs was gone he felt a bit empty without that collaboration leading in part to his departure. The design success at Apple was because of the collaboration between Jobs and Ive. Take one away and that â€œmagicâ€ is gone. '),(4,'AAPL','1tobuhu','oo1fjoa','2026-05-26',3,0.6269,'Honestly it would be perfectly fine as an Apple car or a new Polestar or Lucid. This looks like a $75k car that honestly would have trouble selling at that price without incentives or good lease deals, like a lot of EVs on the market right now. Problem is that this is a fucking Ferrari that is selling for $600k+. Hard to imagine who would buy this. If you\'re rich as fuck, and you want some extra space, you\'d probably just buy a Range Rover or one of the Bentley or Rolls Royce SUVs at a fraction of the cost, but more luxurious. '),(5,'AAPL','1tobuhu','oo0h61p','2026-05-26',2,0.2975,'Itâ€™s becoming clear that Ive benefited creatively from working within Apple. His work lately has been quite crap. '),(6,'AAPL','1tobuhu','oo0je5f','2026-05-26',2,-0.5106,'Ugly'),(7,'AAPL','1tobuhu','oo0kp74','2026-05-26',2,0.1164,'Overall itâ€™s not a bad design and I rather like it. BUT, it is not in the design language of previous Ferraris so I can see why itâ€™s getting criticized. It doesnâ€™t fit in the Ferrari family. Color combo is not working as well. \n\nIf this was the Apple car design, I bet people would be fawning over it.'),(8,'AAPL','1tobuhu','oo019zy','2026-05-26',2,-0.3865,'Not very attractive '),(9,'AAPL','1tobuhu','oo1wtnt','2026-05-26',1,0,'this car looks quite decent if you stretch it sideway by about 25%.'),(10,'AAPL','1tobuhu','oo06s6x','2026-05-26',1,0,'This isnâ€™t meant for previous Ferrari drivers. Itâ€™s for a new crowd, especially in China.'),(11,'AAPL','1tobuhu','oo0x8r4','2026-05-26',0,0.4215,'Nice wheels. Literally. ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tpj842','oo9dth3','2026-05-27',1,0,'But not sorted by expiration?');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -269,4 +270,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-27  4:24:14
+-- Dump completed on 2026-05-28  4:10:43
