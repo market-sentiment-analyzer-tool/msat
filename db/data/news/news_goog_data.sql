@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
+5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
@@ -246,7 +247,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -255,7 +256,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-05-26',-0.42136,'Federal Backing Triggered a Rally in IonQ Stock. A Short Squeeze Could Take It Even Higher.','https://www.barchart.com/story/news/2132837/federal-backing-triggered-a-rally-in-ionq-stock-a-short-squeeze-could-take-it-even-higher',2),(2,'baron capital','...','2026-05-26',0.2,'Baron Global Durable Advantage ETF Q1 2026 Shareholder Letter','https://seekingalpha.com/article/4908699-baron-global-durable-advantage-etf-q1-2026-shareholder-letter',4),(3,'the motley fool','...','2026-05-25',0.57472,'Berkshire Hathaway Just Loaded Up on This Genius Artificial Intelligence (AI) Stock','https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-just-loaded-genius-132000044.html',20),(4,'geoffrey seiler','...','2026-05-25',0.43384,'As Alphabet Makes Agentic AI Push, Is the Stock a Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-makes-agentic-ai-push-110400647.html',20),(5,'neil patel','Alphabet (GOOGL +1.52%) (GOOG +1.44%) has done nothing but prove the bears wrong. The business, which critics previously thought had lost the artificial intelligence (AI) race, has produced a stellar ...','2026-05-25',0.63372,'Prediction: Alphabet Stock Is a Buy Before June 2026','https://www.fool.com/investing/2026/05/25/prediction-alphabet-stock-is-buy-before-june-2026/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anthony miller','...','2026-05-26',0.60048,'Alphabet (NASDAQ:GOOG) Stock Price Up 1.4% â€“ Should You Buy?','https://www.thelincolnianonline.com/2026/05/26/alphabet-nasdaqgoog-stock-price-up-1-4-should-you-buy.html',2),(2,'sristi suman jayaswal','...','2026-05-26',-0.42136,'Federal Backing Triggered a Rally in IonQ Stock. A Short Squeeze Could Take It Even Higher.','https://www.barchart.com/story/news/2132837/federal-backing-triggered-a-rally-in-ionq-stock-a-short-squeeze-could-take-it-even-higher',2),(3,'baron capital','...','2026-05-26',0.2,'Baron Global Durable Advantage ETF Q1 2026 Shareholder Letter','https://seekingalpha.com/article/4908699-baron-global-durable-advantage-etf-q1-2026-shareholder-letter',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -269,4 +270,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-27  5:06:57
+-- Dump completed on 2026-05-28  5:02:51
