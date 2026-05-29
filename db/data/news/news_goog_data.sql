@@ -146,6 +146,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
+a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -256,7 +257,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anthony miller','...','2026-05-26',0.60048,'Alphabet (NASDAQ:GOOG) Stock Price Up 1.4% â€“ Should You Buy?','https://www.thelincolnianonline.com/2026/05/26/alphabet-nasdaqgoog-stock-price-up-1-4-should-you-buy.html',2),(2,'sristi suman jayaswal','...','2026-05-26',-0.42136,'Federal Backing Triggered a Rally in IonQ Stock. A Short Squeeze Could Take It Even Higher.','https://www.barchart.com/story/news/2132837/federal-backing-triggered-a-rally-in-ionq-stock-a-short-squeeze-could-take-it-even-higher',2),(3,'baron capital','...','2026-05-26',0.2,'Baron Global Durable Advantage ETF Q1 2026 Shareholder Letter','https://seekingalpha.com/article/4908699-baron-global-durable-advantage-etf-q1-2026-shareholder-letter',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-05-28',0.35232,'Wall Street Breakfast Podcast: Snowflake Turns Up The Heat','https://seekingalpha.com/article/4909579-wall-street-breakfast-podcast-snowflake-turns-up-the-heat',4),(2,'john ballard','If you want to build serious retirement wealth, you need to invest in growing companies that are shaping the future. Artificial intelligence (AI) is driving change across the economy right now, creati...','2026-05-28',0.50536,'3 AI Stocks Worth Holding Until You Retire','https://www.fool.com/investing/2026/05/28/3-ai-stocks-worth-holding-until-you-retire/',4),(3,'aniket verma','Michele Spagnuolo, an Italian citizen residing in Switzerland, was charged with commodities fraud, wire fraud, and money laundering, according to a DOJ press release.\nThe complaint stated that Spagnuo...','2026-05-28',0.25718,'Google Engineer Faces Insider Trading Charges After Using Company Secrets To Profit More Than $1 Million On Polymarket','https://www.benzinga.com/markets/prediction-markets/26/05/52829551/google-engineer-insider-trading-polymarket-charges',80);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -270,4 +271,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-28  5:02:51
+-- Dump completed on 2026-05-29  5:03:56
