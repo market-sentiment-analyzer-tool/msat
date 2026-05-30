@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
+5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
@@ -144,7 +145,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+a126f7fb-5bdb-11f1-a310-aad1a8b948a7:1-102,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
+a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
@@ -215,7 +218,6 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
-f628a870-5a4a-11f1-a0a9-6e1230f3ba16:1-64,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -247,7 +249,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -256,6 +258,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1trehtw','oon0zek','2026-05-29',143,-0.4939,'Microsoft at 360$ was a steal indeed.'),(2,'ValueInvesting','1trehtw','oon1vpg','2026-05-29',46,0.34,'MSFT is the play after the SpaceX IPO and we shift to hyping OpenAI instead.'),(3,'ValueInvesting','1trehtw','oon3jbp','2026-05-29',57,0.9337,'Yes value investing is celebrating a 10% gain ðŸ‘'),(4,'ValueInvesting','1trehtw','oon76rp','2026-05-29',38,0,'Microsoft is 100% of my networth including my kids christmas budget\n\n  \nMy average price is $382 but i told my wife its $500 '),(5,'ValueInvesting','1trehtw','oon12go','2026-05-29',42,0.4404,'Good job, now wait until it hits $600, where it belongs. '),(6,'ValueInvesting','1trehtw','oonc3wn','2026-05-29',8,0.7783,'Iâ€™m waiting until next week to buy more. With the SpaceX IPO, itâ€™s possible that some investors/funds will sell other positions to participate in the IPO, creating an opportunity to buy at lower prices.'),(7,'ValueInvesting','1trehtw','oon1eem','2026-05-29',17,0.4404,'Yeah Microsoft is solid and it was just a matter of time. Predicting the same thing for Meta.'),(8,'ValueInvesting','1trehtw','oon1yei','2026-05-29',13,0.6459,'I\'m so happy. Finally I can rest my legs I\'ve been rain dancing for a freaking year...stuck in the 700s and TODAY finally hit 800! Thank you MSFT!'),(9,'ValueInvesting','1trehtw','oon4kl9','2026-05-29',6,-0.2057,'I think Mag 7 is going to not perform that well this year.Â  With SpaceX, OpenAi, and Anthropic to be added to lots of indexes the ATM for funding will be higher weighted stocks which is Mag 7.Â Â '),(10,'ValueInvesting','1trehtw','oonamuu','2026-05-29',5,-0.6774,'I\'m on the ride along with you OP.\n\nIt\'s funny that for months when Microsoft was languishing while other tech stocks surged almost every post on here justifies it as though there is obvious reason \"copilot is trash compared to gemini and claude. Their data center investment is just burning money on inferior AI models! They are invested in OpenAI which is a failed money-losing company getting lapped by Anthropic\". Everything was doom and gloom, people lamenting about Microsoft bag holders stuck in an outdated company that will never recover from the SaaSpocalypse. Then Microsoft starts surging and the narrative immediately changes to \"this was so obvious all along, everyone knew Microsoft was undervalued and well positioned to profit from AI because of their wide enterprise moat and unrivaled propensity for integration\".... lol. There\'s always such confident post hoc justification of stock movement on here, as though no matter what is happening to a stock it was always obvious all along.'),(11,'ValueInvesting','1trehtw','oon5oor','2026-05-29',18,-0.2204,'Letâ€™s calm down, it might fall back to 360. Nobody knows whatâ€™s going on in this silly casino market '),(12,'ValueInvesting','1trehtw','oon43jz','2026-05-29',9,0.8436,'Seemed so obvious below $400 and Iâ€™m glad we bought! 300 shares strong sir GL!'),(13,'ValueInvesting','1trehtw','oon2orx','2026-05-29',7,0.6276,'Yeah, f me for not getting back in on MSFT when it was down to $411, just a couple days ago. Figured it might test $400 again. Did buy NOW shares at $101.'),(14,'ValueInvesting','1trehtw','oon86nz','2026-05-29',3,0.4404,'$490 here ðŸ˜‚'),(15,'ValueInvesting','1trehtw','oongj7z','2026-05-29',3,-0.3802,'Been saying this. Company fundamentals hold strong and poor sentiment was overblown. Getting it cheap was a steal!'),(16,'ValueInvesting','1trehtw','oonguxf','2026-05-29',2,0.6115,'I have around 15% of my port into MSFT at 404USD I\'m totally happy ðŸ™ðŸ»'),(17,'ValueInvesting','1trehtw','ooobp9y','2026-05-30',2,-0.4215,'I sold some msft today and bought ASML, BE and NBISâ€¦i already regret it.'),(18,'ValueInvesting','1trehtw','oooidhc','2026-05-30',2,0.2732,'Agreed. Accumulated a bit below $400. I did the same when Google was $160. Didnâ€™t need to overthink it '),(19,'ValueInvesting','1trehtw','oop3qoq','2026-05-30',2,0.743,'I swear to god weâ€™re all gonna wake up to a headline in the next few months that BRK has been buying MSFT. This move just feels like when GOOG suddenly woke up. '),(20,'ValueInvesting','1trehtw','oop6qa7','2026-05-30',2,0.9528,'I bought 250 shares Msft in the mid 1990s. In a dividend reinvestment program before people were even selling stocks online. I have held it ever since and even forgot about it for many years. Itâ€™s a pretty nice profit obviously but I canâ€™t cash it out due to child support issues :-) and with a child going to college soon, I think I will just let it run for another six years or so before I ever take one penny from it. Donâ€™t want those profits to interfere with any student aid he may get   Now that is a long-term hold'),(21,'ValueInvesting','1trehtw','oon32x9','2026-05-29',3,0.3506,'long way to hold? Hasn\'t it been like 2 months?....\n\nThis post is too early and is like a facebook post or something'),(22,'ValueInvesting','1trehtw','ooofk7o','2026-05-30',2,0.7269,'My obvious strategy is simple. : to get  1 msft and meta every month ( I did the same last time with Google). Will do this until they hit 30pe.\nThis is value investing so I dont expect much and am  happy even with a 10% gain knowing the risk is low. \nWaiting for Meta to  do the same. \nWilling to do the same with  Amazon if it ever comes down to pe20 range.'),(23,'ValueInvesting','1trehtw','oonk9na','2026-05-29',1,0,'I sold my calls at 424, kick myself right now. '),(24,'ValueInvesting','1trehtw','oonoa42','2026-05-29',1,0,'Bought at $385 and waiting for $600'),(25,'ValueInvesting','1trehtw','ooo79yy','2026-05-30',1,0,'Iâ€™ve not seen it under $400 in a while'),(26,'ValueInvesting','1trehtw','oooqd6p','2026-05-30',1,0.5994,'~$58 in gains from below $400. ~$37 in gains for that same time period if you just went VTI and chill. But without the dip preceding it. \n\nI donâ€™t know. Betting on individual companies still feels like the lesser move unless you strike complete gold. '),(27,'ValueInvesting','1trehtw','oop0301','2026-05-30',1,0.1901,'Probably wouldâ€™ve made the same if not more if you just invested in an etf like Voo but hey what do I know '),(28,'ValueInvesting','1trehtw','oop23ma','2026-05-30',1,-0.9614,'Not sure MSFT is obvious, they do everything but theyâ€™re the absolute worst at everything they do. Even windows they have managed to turn into the worst OS that you only use if you have no other choice, cloud platform, gaming console, social media, business tools, all the absolute worst in their respective categories.'),(29,'ValueInvesting','1trehtw','oop5h26','2026-05-30',1,-0.8922,'I have some msft but Iâ€™m keeping an eye on the MS animosity in Europe (where I live). Governments no longer trust the US and are aggressively trying to replace US tech giants. Recently the French government replaced all Microsoft with European cloud and Linux. My own country is trying the same.'),(30,'ValueInvesting','1trehtw','oonad79','2026-05-29',1,-0.0772,'Just wait for the dial back from github copilot customersâ€¦'),(31,'ValueInvesting','1trehtw','oonazfg','2026-05-29',1,0,'I sold msft and jumped into nflxâ€¦. Letâ€™s see if I made a right move or not '),(32,'ValueInvesting','1trehtw','oon3n9m','2026-05-29',-4,0,'Hopefiully it crashes.'),(33,'ValueInvesting','1trehtw','oon0x1r','2026-05-29',-8,0.5023,'Yea but youâ€™ve made like 10% whilst everyone else has made 50+');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -269,4 +272,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-28  4:10:43
+-- Dump completed on 2026-05-30  3:58:27
