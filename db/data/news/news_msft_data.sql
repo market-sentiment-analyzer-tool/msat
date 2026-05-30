@@ -214,6 +214,7 @@ efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
+f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -248,7 +249,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -257,7 +258,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'piero cingari','U.S. stocks hit record highs Thursday after reports that Washington and Tehran agreed to a 60-day ceasefire extension and phased resumption of Strait of Hormuz tanker traffic. \nThe S&P 500 advanced 0....','2026-05-28',0.19976,'S&P 500 Hits Record Highs, Snowflake Jumps 37% On AI Boom: Stock Market Today','https://www.benzinga.com/markets/equities/26/05/52848870/sp-500-nasdaq-records-us-iran-truce-snowflake-surge-markets-thursday',8),(2,'david okoya','Coinbase Global Inc. (NASDAQ:COIN) users will soon be able to speculate on several market themes as the exchange says it is preparing to launch perpetual-style index futures.\nCoinbase said in a blog p...','2026-05-28',0.47188,'Coinbase Is Bringing Perp-Style Index Futures To Allow Traders To Speculate On AI, China And US Defense Industry','https://www.benzinga.com/news/topics/26/05/52848421/coinbase-is-bringing-perp-style-index-futures-to-allow-traders-to-speculate-on-ai-china-and-us-defens',8),(3,'daniel jones','...','2026-05-28',-0.26016,'Microsoft: Not Cheap, But Shares Can Still Move Higher','https://seekingalpha.com/article/4909700-microsoft-not-cheap-but-shares-can-still-move-higher',4),(4,'aditya raghunath','...','2026-05-28',0.43384,'The $43 Billion Reason to Buy Microsoft Stock Here','https://www.barchart.com/story/news/2180012/the-43-billion-reason-to-buy-microsoft-stock-here',20),(5,'syeda seirut javed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-05-28',0.48676,'Jim Cramer Talked About 5 Stocks Like NVIDIA and Micron and the Trillion Dollar Club','https://www.insidermonkey.com/blog/jim-cramer-talked-about-5-stocks-like-nvidia-and-micron-and-the-trillion-dollar-club-1769945/',4),(6,'investing.com','...','2026-05-28',0,'Arm and Snowflake among market cap stock movers on Thursday','https://www.investing.com/news/stock-market-news/arm-and-snowflake-among-market-cap-stock-movers-on-thursday-93CH-4714851',2),(7,'null','...','2026-05-28',-0.2368,'Microsoft Stock: Is MSFT Underperforming the Technology Sector?','https://www.barchart.com/story/news/2178592/microsoft-stock-is-msft-underperforming-the-technology-sector',10),(8,'jabran kundi','...','2026-05-28',0,'2 Reasons Why AMD Stock Is Guaranteed to Beat Nvidia','https://www.barchart.com/story/news/2178130/2-reasons-why-amd-stock-is-guaranteed-to-beat-nvidia',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'logan wallace','...','2026-05-29',0.2368,'Direxion Daily MSFT Bull 2X Shares (NASDAQ:MSFU) Sees Unusually-High Trading Volume â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13457658/direxion-daily-msft-bull-2x-shares-nasdaqmsfu-sees-unusually-high-trading-volume-heres-why.html',20),(2,'ravikash bakolia','...','2026-05-29',0,'OpenAI unveils Rosalind Biodefense program for biodefense, pandemic preparedness','https://seekingalpha.com/news/4598464-openai-unveils-rosalind-biodefense-program-for-biodefense-pandemic-preparedness?feed_item_type=news',4),(3,'rich asplund','...','2026-05-29',0.658,'Stocks Supported by Middle East Peace Hopes and AI Spending','https://www.barchart.com/story/news/2202692/stocks-supported-by-middle-east-peace-hopes-and-ai-spending',2),(4,'null','Please enable JS and disable any ad blocker...','2026-05-29',0.36908,'Kevin Hassett ties Iran deal to bold new Fed rate-cut path','https://www.thestreet.com/fed/kevin-hassett-ties-iran-deal-to-bold-new-fed-rate-cut-path',2),(5,'rich asplund','...','2026-05-29',0.5944,'Stock Indexes Rally to Record Highs on Peace Deal Hopes and AI Spending','https://www.barchart.com/story/news/2201213/stock-indexes-rally-to-record-highs-on-peace-deal-hopes-and-ai-spending',2),(6,'dane bowler','...','2026-05-29',0,'How To Build Yield On Invested Capital With Pareto Upgrades','https://seekingalpha.com/article/4910009-how-to-build-yield-on-invested-capital-with-pareto-upgrades',4),(7,'joey frenette','Investing\nSemiconductor stocks appear overheated despite relatively modest valuation multiples, with the sector possibly vulnerable to a correction if hyperscalers reduce AI CapEx spending in 2027 and...','2026-05-29',0.19954,'What If Chip Stocks Arenâ€™t in a Supercycle After All?','https://247wallst.com/investing/2026/05/29/what-if-chip-stocks-arent-in-a-supercycle-after-all/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -271,4 +272,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-29  5:03:56
+-- Dump completed on 2026-05-30  4:43:13

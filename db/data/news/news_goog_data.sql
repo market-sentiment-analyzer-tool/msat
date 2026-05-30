@@ -214,6 +214,7 @@ efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
+f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -257,7 +258,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-05-28',0.35232,'Wall Street Breakfast Podcast: Snowflake Turns Up The Heat','https://seekingalpha.com/article/4909579-wall-street-breakfast-podcast-snowflake-turns-up-the-heat',4),(2,'john ballard','If you want to build serious retirement wealth, you need to invest in growing companies that are shaping the future. Artificial intelligence (AI) is driving change across the economy right now, creati...','2026-05-28',0.50536,'3 AI Stocks Worth Holding Until You Retire','https://www.fool.com/investing/2026/05/28/3-ai-stocks-worth-holding-until-you-retire/',4),(3,'aniket verma','Michele Spagnuolo, an Italian citizen residing in Switzerland, was charged with commodities fraud, wire fraud, and money laundering, according to a DOJ press release.\nThe complaint stated that Spagnuo...','2026-05-28',0.25718,'Google Engineer Faces Insider Trading Charges After Using Company Secrets To Profit More Than $1 Million On Polymarket','https://www.benzinga.com/markets/prediction-markets/26/05/52829551/google-engineer-insider-trading-polymarket-charges',80);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','With Warren Buffett retired, Stanley Druckenmiller is now arguably one of the most closely watched money managers on Wall Street -- and his Duquesne Family Office just gave its followers plenty to che...','2026-05-28',0.43648,'Famed Investor Stanley Druckenmiller Sold Every Share of Alphabet. He Just Bought 5 AI Hardware Stocks Instead.','https://www.fool.com/investing/2026/05/28/famed-investor-stanley-druckenmiller-sold-every-sh/',4),(2,'john potter','AI-powered smart glasses shipments surged more than 300% last year as Meta Platforms Inc. (NASDAQ:META), Samsung Electronics and other tech companies race to scale the category, with optics emerging a...','2026-05-28',-0.1055,'AI Glasses Shipments Are Exploding â€” And The Real Battle May Be Over Optics','https://www.benzinga.com/news/topics/26/05/52850275/ai-glasses-shipments-are-exploding-and-the-real-battle-may-be-over-optics',8),(3,'wall street breakfast','...','2026-05-28',0.35232,'Wall Street Breakfast Podcast: Snowflake Turns Up The Heat','https://seekingalpha.com/article/4909579-wall-street-breakfast-podcast-snowflake-turns-up-the-heat',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -271,4 +272,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-29  5:03:56
+-- Dump completed on 2026-05-30  4:43:13
