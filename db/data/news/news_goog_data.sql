@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
+2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -249,7 +250,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -258,7 +259,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','With Warren Buffett retired, Stanley Druckenmiller is now arguably one of the most closely watched money managers on Wall Street -- and his Duquesne Family Office just gave its followers plenty to che...','2026-05-28',0.43648,'Famed Investor Stanley Druckenmiller Sold Every Share of Alphabet. He Just Bought 5 AI Hardware Stocks Instead.','https://www.fool.com/investing/2026/05/28/famed-investor-stanley-druckenmiller-sold-every-sh/',4),(2,'john potter','AI-powered smart glasses shipments surged more than 300% last year as Meta Platforms Inc. (NASDAQ:META), Samsung Electronics and other tech companies race to scale the category, with optics emerging a...','2026-05-28',-0.1055,'AI Glasses Shipments Are Exploding â€” And The Real Battle May Be Over Optics','https://www.benzinga.com/news/topics/26/05/52850275/ai-glasses-shipments-are-exploding-and-the-real-battle-may-be-over-optics',8),(3,'wall street breakfast','...','2026-05-28',0.35232,'Wall Street Breakfast Podcast: Snowflake Turns Up The Heat','https://seekingalpha.com/article/4909579-wall-street-breakfast-podcast-snowflake-turns-up-the-heat',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'oleksandr pylypenko','...','2026-05-30',-0.15208,'AI Hyperscalers Are Taking on Debt, But the Broader Market Looks More Leveraged','https://www.barchart.com/story/news/2217677/ai-hyperscalers-are-taking-on-debt-but-the-broader-market-looks-more-leveraged',2),(2,'abmn staff','\n					Posted by ABMN Staff on May 30th, 2026\n\nAdell Harriman & Carpenter Inc. trimmed its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.9% during the fourth quarter, according ...','2026-05-30',0.19992,'Adell Harriman & Carpenter Inc. Has $30.33 Million Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/30/adell-harriman-carpenter-inc-has-30-33-million-stake-in-alphabet-inc-goog.html',4),(3,'logan wallace','...','2026-05-30',0.52776,'Alphabet Inc. $GOOG Shares Sold by Pinkerton Wealth LLC','https://www.tickerreport.com/banking-finance/13458582/alphabet-inc-goog-shares-sold-by-pinkerton-wealth-llc.html',2),(4,'kyle jackson','...','2026-05-30',0.39512,'Pinkerton Wealth LLC Decreases Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/pinkerton-wealth-llc-decreases-position-in-alphabet-inc-goog/11099309.html',2),(5,'max byerly','...','2026-05-30',0.2368,'Lazard Freres Gestion S.A.S. Sells 1,525 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13458434/lazard-freres-gestion-s-a-s-sells-1525-shares-of-alphabet-inc-goog.html',2),(6,'stephan jacobs','...','2026-05-30',0.2368,'Little House Capital LLC Sells 3,272 Shares of Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/05/30/little-house-capital-llc-sells-3272-shares-of-alphabet-inc-goog.html',2),(7,'dante gardener','...','2026-05-30',0.2368,'Rathbones Group PLC Sells 195,042 Shares of Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/05/30/rathbones-group-plc-sells-195042-shares-of-alphabet-inc-goog.html',2),(8,'abmn staff','\n					Posted by ABMN Staff on May 30th, 2026\n\nCullen Frost Bankers Inc. cut its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.2% during the fourth quarter, according to its most recent 1...','2026-05-30',0.1999,'Cullen Frost Bankers Inc. Has $158.43 Million Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/30/cullen-frost-bankers-inc-has-158-43-million-holdings-in-alphabet-inc-goog.html',4),(9,'abmn staff','\n					Posted by ABMN Staff on May 30th, 2026\n\nBanque Cantonale Vaudoise lessened its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.5% in the fourth quarter, according to its most recent ...','2026-05-30',0.1999,'Banque Cantonale Vaudoise Has $27.70 Million Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/05/30/banque-cantonale-vaudoise-has-27-70-million-holdings-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -272,4 +273,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-30  4:43:13
+-- Dump completed on 2026-05-31  5:12:20
