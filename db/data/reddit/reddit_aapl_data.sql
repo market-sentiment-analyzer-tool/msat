@@ -84,6 +84,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+54b8f4a4-5ca8-11f1-a88e-561ea9c3a28a:1-88,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -145,7 +146,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
-a126f7fb-5bdb-11f1-a310-aad1a8b948a7:1-102,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -215,6 +215,7 @@ efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
+f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -249,7 +250,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -258,7 +259,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tr28r0','ooks0t7','2026-05-29',15,0.7096,'99,218%.  What started out as hopefully covering my kids college someday turned into early retirement and on way to generational wealth. '),(2,'AAPL','1tr28r0','ookj3az','2026-05-29',2,0,'Apple ðŸ of my ðŸ‘ï¸ '),(3,'AAPL','1tr28r0','ool1447','2026-05-29',2,0,'310.. don\'t do this..'),(4,'AAPL','1tr28r0','oolhopj','2026-05-29',1,0.6114,'You think Cupertino employees celebrate with apple pie orders today?!'),(5,'AAPL','1tr28r0','oolp1eg','2026-05-29',1,0,'Someone ate it already when I woke up. Â Â '),(6,'AAPL','1tqydwi','oojvc1v','2026-05-29',19,-0.2275,'Analyst price target is utterly useless. 1/4 of Appleâ€™s business is high margin recurring service subscription based on 2 billion installed devices. It should have a higher margin. This isnâ€™t 1998 where Apple should be compared to HP or Dell. \n\nBuffett fucked up by selling Apple too early. He thought that taxes would go up and that did not happen. He missed a huge run up the last year. '),(7,'AAPL','1tqydwi','ookvahj','2026-05-29',11,0.5106,'Soon, youâ€™ll be able to use Siri to generate these AI slop posts. Â BullishÂ '),(8,'AAPL','1tqydwi','ook7ine','2026-05-29',11,-0.0516,'Apple is going to 400 and soon. When they drop apple ai 1 in 5 people on the planet will have it in their pocket. Even 10% adoption to a paid sub will rerate the stock. Bought before their event next month ;)'),(9,'AAPL','1tqydwi','oolqdj9','2026-05-29',4,-0.75,'Apple is the slow and steady competitor that just keeps driving ahead.  Itâ€™s like when youâ€™re driving, you switch lanes because youâ€™re behind the slow driver, and somehow 10 miles down the highway there they are, and they PASS YOU!  Sometimes the speedy drivers also crash, but guess who keeps moving slow and steadily through the race, you got it, and if you donâ€™t, itâ€™s ï£¿'),(10,'AAPL','1tqydwi','oongv4j','2026-05-29',5,0.6234,'The largest position I own, since the 80â€™s too. I never worried about so many eggs in this basket.  Apple appears to lag behind others various times.   However, when their product releases they are the top of the line compared to competitors.  Canâ€™t wait to whatâ€™s  coming this fall when the new CEO begins'),(11,'AAPL','1tqydwi','ool77oo','2026-05-29',2,-0.128,'Buffett sold starting in the 150s. He has underperformed the SPX for the last 10 years. 13.5% vs 15.0%. '),(12,'AAPL','1tqydwi','oomg5rq','2026-05-29',1,-0.4019,'I have a $295 call expiring June 18. I want to sell around $315. Maybe should have done that this morning.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -272,4 +272,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-30  3:58:27
+-- Dump completed on 2026-05-31  4:23:45
