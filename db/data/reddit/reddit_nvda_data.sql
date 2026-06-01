@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
+2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -84,7 +85,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
-54b8f4a4-5ca8-11f1-a88e-561ea9c3a28a:1-88,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -145,6 +145,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+94c94e1f-5d75-11f1-9172-a670cb63649f:1-40,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -250,7 +251,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -259,7 +260,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ts269b','oot1dpr','2026-05-30',18,0,'https://preview.redd.it/hsvvfu74jb4h1.jpeg?width=1254&format=pjpg&auto=webp&s=87542e0db119d7fac6f7a55cf746a60c22c00e36'),(2,'NVDA_Stock','1ts269b','oosag20','2026-05-30',11,0.6249,'Bullish.\n\nNVDA is moving upstream.\n\nIt owns what your computer connects to (the data center), now itâ€™s pushing into the end-user equipment (CPUâ€™s).\n\nDominance in all directions, full ecosystem approach.Â \n'),(3,'NVDA_Stock','1ts269b','oosem5w','2026-05-30',5,0,'Niche'),(4,'NVDA_Stock','1ts269b','oosgit4','2026-05-30',6,0,'I think the PC CPUs are ARM architecture. The ARM based laptops and PCs havenâ€™t been able to meaningfully penetrate the market'),(5,'NVDA_Stock','1ts269b','oorykb7','2026-05-30',2,0,'Will it be a Vera-Rubin combo ? do we know any hardware specs? \n\n'),(6,'NVDA_Stock','1ts269b','oosrw2c','2026-05-30',2,0,'Looking forward to it as a consumer, but not as an investor. '),(7,'NVDA_Stock','1ts269b','ooty33e','2026-05-30',1,0.4019,'Hopefully will work with my 5080'),(8,'NVDA_Stock','1ts269b','ooup8ag','2026-05-30',-1,0.4404,'Not expecting this to go any better than that ARM surface launch did. '),(9,'NVDA_Stock','1ts269b','oorw0kj','2026-05-30',-4,0.4588,'Not moving the needle imho, revenue is marginal.   '),(10,'NVDA_Stock','1ts269b','ooutpx2','2026-05-31',0,0,'Is it going to be an nvidia engineered cpu or a mediatek arm cpu?'),(11,'NVDA_Stock','1ts269b','oosiwnd','2026-05-30',-5,0.4767,'Love to see a 10 for 1 NVDA split - then to the moon as new IPOs fail to keep pace with NVDA earnings.'),(12,'NVDA_Stock','1ts269b','oorwe7h','2026-05-30',-6,-0.4201,'OEMs are quite pessimistic on this - projections are quite lukewarm.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tsxn3t','ooyc9uy','2026-05-31',5,0,'Monday, June 1, 9am and 11am Taiwan time\n\nPRE-GAME SHOW LINEUP\n\nThe AI Server Boom\n- YJ Mii, TSMC\n- Barry Lam, Quanta Computern\n- Simon Lin, Wistron\n\nJourney From PCs to Embedded AI\n- Haw Chen, Techman Robot\n- Jonney Shih, Asus\n- Rick Tsai, MediaTek\n\nAgentic AI and Robotics Transforming Taiwan Industry\n- Simon Chang, Delta Electronics\n- T.H. Tung, Pegatron\n- Kathy Yang, Foxconn\n\nBuilding AI Infrastructure for Taiwan\n- Hung-yi Lee, NTU\n- Neo Yao, Visionbay.ai\n- Alex Yeh, GMI Cloud'),(2,'NVDA_Stock','1tsxn3t','op1e693','2026-06-01',4,0,'overnight green'),(3,'NVDA_Stock','1tsxn3t','ooycu4b','2026-05-31',2,0.5622,'4 versions of N1 series chip will be announced?\n\nhttps://videocardz.com/newz/nvidia-n1x-n1-laptop-chip-specifications'),(4,'NVDA_Stock','1tsxn3t','op1prdh','2026-06-01',1,0.4614,'Looks like the pre-game show panels are speaking Mandarin Chinese, not English.  Check back at 11pm EST!'),(5,'NVDA_Stock','1tsxn3t','ooyzv3w','2026-05-31',0,0,'hypege'),(6,'NVDA_Stock','1tt7g6a','op11jp3','2026-05-31',18,-0.4466,'This news is old news and just a sad attempt to spread FUD. Nvidia already pumps on 0% china revenue buddy,.'),(7,'NVDA_Stock','1tt7g6a','op0q0pd','2026-05-31',14,-0.34,'Getting real sick of NVDA getting cucked 9 months straight '),(8,'NVDA_Stock','1tt7g6a','op0n9ok','2026-05-31',9,-0.9209,'The first time these bullshit China articles came out NVDA dropped from 180 to 108 (thatâ€™s 10.80 split adjusted).\n\nWe have gone up 20x since then and every time another bullshit China article comes out all it does is create short term volatility.\n\nIgnore this dumbass noise and hold the godfather of AI.'),(9,'NVDA_Stock','1tt7g6a','op1btsn','2026-05-31',6,0.4215,'This is old news right, H200 were always approved although not shipping and the Blackwell and Vera Rubins were to be used domestically'),(10,'NVDA_Stock','1tt7g6a','op0l4y4','2026-05-31',3,0,'Why are they doing this? Isnâ€™t Trump on Jensen sideÂ '),(11,'NVDA_Stock','1tt7g6a','op0lnbu','2026-05-31',3,0,'Chinese firms outside of china? Is that not a non-Chinese firm at that point? lol.  Nothing burger.  '),(12,'NVDA_Stock','1tt7g6a','op0xgim','2026-05-31',3,0.1027,'Chinese-related third country firms buying nvidia GPUs actually stopped **last quarter** after the chinese government itself cracked down on firms buying nvidia chips to support their domestic industry. This is why Jensen is saying china sales have gone to zero, precisely because of this, because as of 2025 there was still china related revenue, but now there isn\'t.'),(13,'NVDA_Stock','1tt7g6a','op0hol8','2026-05-31',5,-0.25,'CNBC quoting Reuters.\n\nReuters is propaganda.'),(14,'NVDA_Stock','1tt7g6a','op0hs8d','2026-05-31',5,0.2732,'China is buying Nvidia GPUâ€™s using them and then saying how awesome their home brew chips are as a marketing strategy to sell their garbage.'),(15,'NVDA_Stock','1tt7g6a','op22403','2026-06-01',1,0.8251,'This may close a loophole, but it doesn\'t change the underlying reality: demand for advanced AI compute in China remains strong. The more restrictions expand, the more incentive there is for Chinese firms to accelerate domestic chip development and reduce reliance on foreign suppliers altogether.'),(16,'NVDA_Stock','1tt7g6a','op0nk0m','2026-05-31',-2,0.6369,'Everyone knows China gets nVidia chips via Singapore route. Lots of firms in Singapore who buy nVidia cards and ship it to China. Even Jensen knows this. Nvidia used to show Singapore sales breakup but they stopped it sometime back. Just google up.\n\nThe deal nVidia was trying to make with China was to just buy stuff directly from nVidia instead of going through Singapore route (which didn\'t work out). \n\nSo here we are now, many firms outside China will get black listed. Most from Singapore, Vietnam, etc.'),(17,'NVDA_Stock','1ttgei7','op2gcdx','2026-06-01',1,0,'Robots building robots lol, the idea they are going to be caught is absurd'),(18,'NVDA_Stock','1ttgei7','op2kc3r','2026-06-01',1,0.6369,'Best tldr');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -273,4 +274,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-31  4:23:45
+-- Dump completed on 2026-06-01  4:52:32
