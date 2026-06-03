@@ -144,9 +144,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+9385565b-5f07-11f1-b4f8-1221c795fa4f:1-160,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-94c94e1f-5d75-11f1-9172-a670cb63649f:1-40,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -220,6 +221,7 @@ f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -251,7 +253,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -260,6 +262,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1tv1hlg','opdmo4o','2026-06-02',13,0.7184,'Morgan Stanley says an upside potential reaching **$440** if Apple successfully delivers its agentic AI vision'),(2,'AAPL','1tv1hlg','opdp6ek','2026-06-02',7,0,'It was on sales of the MacBook Neo.'),(3,'AAPL','1tv1hlg','opdn7mo','2026-06-02',3,0.4404,'PE is getting up there. '),(4,'AAPL','1tv1hlg','opdqa4u','2026-06-02',3,0,'I think todayâ€™s move is more about their low AI capex spending which is why Google is moving opposite direction '),(5,'AAPL','1tv1hlg','ope5oqw','2026-06-02',2,0.8537,'I had $295 calls expiring June 18, I sold them today for about $8k profit. Might go higher but didnâ€™t want to give up any gains.'),(6,'AAPL','1tv1hlg','opeeu4n','2026-06-02',2,-0.2732,'Should I drop my Microsoft stock and just put it in Apple? '),(7,'AAPL','1tv1hlg','opdwkm2','2026-06-02',1,0.7003,'I have had 320 calls expiring in December for a while now, good deal I think. Up a ton now.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -273,4 +276,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-01  4:52:32
+-- Dump completed on 2026-06-03  4:56:41

@@ -144,9 +144,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+9385565b-5f07-11f1-b4f8-1221c795fa4f:1-160,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-94c94e1f-5d75-11f1-9172-a670cb63649f:1-40,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -220,6 +221,7 @@ f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -251,7 +253,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -260,6 +262,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1tuxvgd','opcvf3o','2026-06-02',182,0.2732,'msft had a great move today, sadly in the wrong directionðŸ˜‚'),(2,'stocks','1tuxvgd','opcwnju','2026-06-02',42,0.5837,'I\'d personally lean MSFT over NVDA here. MSFT\'s Project Solara is pretty solid with AI running directly on devices, more recurring revenue from software, and that healthcare angle is huge. Right now it\'s not looking great for MSFT though.'),(3,'stocks','1tuxvgd','opcyu7o','2026-06-02',30,0.5106,'Didn\'t read this garbage. Bullish'),(4,'stocks','1tuxvgd','opcxalu','2026-06-02',11,0.9489,'Iâ€™m not sure who they are targeting with this product (nvidia/Mediatek/MSFT partnership). Jensen suggests itâ€™s for everyone (retail).\n\nItâ€™s also purely concept based as there are no competent agents out there.\n\nPlus the cost, given the spec sheet on memory alone, is going to be absurd. \n\nThen the friction: if youâ€™re targeting â€˜The average personâ€™, how likely are they going to be in successfully setting this up alone AND being happy with the results â€” when businesses require FDEs to get any positive output from B2B model deployments.\n\nThis strikes me as another â€˜*throwing shit at a wall*â€™ product that should have remained as a concept / R&D / internal beta.\n\nThen finally, MSFT output quality since vibe-coding has gone to the dogs (*and it wasnâ€™t held in high regard before that*) â€” they would be the ***last*** agentic OS Iâ€™d trust to have agent privileges.\n(*If an AI agent concept even becomes a â€˜thingâ€™ to start with. I see no benefit as it stands based on described concepts and current performance.*)\n\nItâ€™s nice theyâ€™re looking at infrastructure optimization aspect, but as described itâ€™s a â€˜cart before a horseâ€™ thing. Jensen canâ€™t even describe a high value use case for what it would do for someone â€” as a parallel, Steve Jobs would do a demonstration of daily functions they would expect a user to perform and how their product would excel at that, adding value.'),(5,'stocks','1tuxvgd','opd4mk2','2026-06-02',15,-0.6369,'At this point it feels like nothing will get MSFT moving in the upward direction. 2 years of negative returns and down 4% today just because'),(6,'stocks','1tuxvgd','opczsnr','2026-06-02',3,0,'Donâ€™t jinx it'),(7,'stocks','1tuxvgd','opd4xlw','2026-06-02',2,-0.1531,'go long in a bull market. Shocker '),(8,'stocks','1tuxvgd','opds9dd','2026-06-02',1,0.3612,'And the vast majority of announcements like that, never see the light of day. Just go to any trade show. Most products you see you will never see again.'),(9,'stocks','1tuxvgd','ope4oj5','2026-06-02',1,0,'Judging by the stocks response today, it\'s a big hit with the public...'),(10,'stocks','1tuxvgd','opfivou','2026-06-03',1,0,'TSM > all of these tickers'),(11,'stocks','1tuxvgd','opgfmwi','2026-06-03',1,0,'Let\'s talk about the same 10 stocks more!'),(12,'stocks','1tuxvgd','opcya9m','2026-06-02',1,0,'Going to need some dip with these chips.'),(13,'stocks','1tuxvgd','opcxbwc','2026-06-02',0,0,'QCOM,How about it?'),(14,'stocks','1tuxvgd','opd7uae','2026-06-02',0,0.4404,'Good for nvda. Not much for msft '),(15,'stocks','1tuxvgd','opcziyz','2026-06-02',-2,-0.5106,'You\'re way underestimating the amount of incompetence Microsoft has been showing for the past couple of years');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -273,4 +276,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-01  4:52:32
+-- Dump completed on 2026-06-03  4:56:41
