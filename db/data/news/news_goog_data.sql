@@ -132,6 +132,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
+836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -253,7 +254,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -262,7 +263,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'bram berkowitz','Berkshire Hathaway CEO Greg Abel is keeping plenty busy in his new job.\nTwo days after Berkshire announced a $6.8 billion acquisition of the major homebuilder Taylor Morrison Homes, the company is now...','2026-06-02',0.58064,'New Berkshire Hathaway CEO Greg Abel Has Now Plowed $26.6 Billion Into This Artificial Intelligence (AI) Stock','https://www.fool.com/investing/2026/06/02/new-berkshire-hathaway-ceo-greg-abel-has-now-plowed-usd26-6-billion-into-this-artificial-intelligence-ai-stock/',4),(2,'aanchal sugandh','...','2026-06-02',0.43384,'Why Wall Street Thinks You Should Buy Broadcom Stock Before June 3','https://www.barchart.com/story/news/2261237/why-wall-street-thinks-you-should-buy-broadcom-stock-before-june-3',2),(3,'daily hodl staff','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-06-02',0.63696,'Warren Buffettâ€™s Berkshire Hathaway To Acquire $10,000,000,000 Worth of Alphabet Stock As Google Ramps Up AI Infrastructure Investment','https://dailyhodl.com/2026/06/02/warren-buffetts-berkshire-hathaway-to-acquire-10000000000-worth-of-alphabet-stock-as-google-ramps-up-ai-infrastructure-investment/',40),(4,'daniel foelber','The initial boom in artificial intelligence (AI) data center investment centered around hardware for training AI models -- workloads that demand massive parallel-processing capabilities. Graphics proc...','2026-06-02',0.56678,'Does the Surge in Demand for ASICs Make Broadcom a No-Brainer Buy Before June 3?','https://www.fool.com/investing/2026/06/02/asic-demand-broadcom-no-brainer-buy/',4),(5,'geoffrey seiler','The artificial intelligence (AI) market is booming, with both AI infrastructure and cloud computing providers seeing huge growth. Two of the companies at the forefront of this charge are Alphabet (GOO...','2026-06-02',0.8117,'These Linked Stocks Are 2 of the Best Ways to Play the Ongoing AI Boom','https://www.fool.com/investing/2026/06/01/these-linked-stocks-are-2-of-the-best-ways-to-play/',4),(6,'ethan ryder','...','2026-06-01',-0.16184,'Alphabet (NASDAQ:GOOG) Shares Down 1% â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13460619/alphabet-nasdaqgoog-shares-down-1-heres-why.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','...','2026-06-03',0.43384,'These 2 AI Software Stocks Are Through the Roof. Dan Ives Says Thereâ€™s Still Time to Buy.','https://www.barchart.com/story/news/2278394/these-2-ai-software-stocks-are-through-the-roof-dan-ives-says-theres-still-time-to-buy',2),(2,'keithen drury','Alphabet (GOOG 0.76%) (GOOGL 0.69%) and Microsoft (MSFT 3.15%) are two of the biggest artificial intelligence hyperscalers. Combined, they are nearly an $8 trillion entity and are competing in many of...','2026-06-03',0.92486,'Better AI Stock to Buy: Alphabet vs. Microsoft. (The Winner Might Surprise You)','https://www.fool.com/investing/2026/06/03/better-ai-stock-to-buy-alphabet-vs-microsoft-the-w/',4),(3,'bram berkowitz','Berkshire Hathaway CEO Greg Abel is keeping plenty busy in his new job.\nTwo days after Berkshire announced a $6.8 billion acquisition of the major homebuilder Taylor Morrison Homes, the company is now...','2026-06-02',0.58064,'New Berkshire Hathaway CEO Greg Abel Has Now Plowed $26.6 Billion Into This Artificial Intelligence (AI) Stock','https://www.fool.com/investing/2026/06/02/new-berkshire-hathaway-ceo-greg-abel-has-now-plowed-usd26-6-billion-into-this-artificial-intelligence-ai-stock/',4),(4,'aanchal sugandh','...','2026-06-02',0.43384,'Why Wall Street Thinks You Should Buy Broadcom Stock Before June 3','https://www.barchart.com/story/news/2261237/why-wall-street-thinks-you-should-buy-broadcom-stock-before-june-3',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -276,4 +277,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-03  5:54:08
+-- Dump completed on 2026-06-04  5:31:26
