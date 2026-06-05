@@ -132,6 +132,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
+836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -146,6 +147,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+96c664fb-6095-11f1-b7ce-6a7eed91391d:1-38,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -219,7 +221,6 @@ f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
-f3ec322b-5fcf-11f1-871c-160f53c439ce:1-156,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
@@ -254,7 +255,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -263,7 +264,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tvpkyu','opihdxi','2026-06-03',15,0.7096,'\"The Nvidia co-founder, whoâ€™s spent much of the week at Computex proselytizing about how AI will revolutionize economies and society, found time Tuesday evening to address hundreds of representatives from financial institutions and wealthy family offices. A billionaire himself, Huang said only â€œcrazyâ€ people would question returns from AI, citing the trillions of dollars of value the technologyâ€™s created.\n\nâ€œOnly for the last six months has the ROI been completely reset. It is now insanely profitable,â€ Huang said at a closed-door event in Taipei\"'),(2,'NVDA_Stock','1tvpkyu','ople4p0','2026-06-03',3,-0.3818,'This is like a 20 X and in 12 years and people are complaining. Itâ€™s unbelievable. This is the worst forum on Reddit.'),(3,'NVDA_Stock','1tvpkyu','opjjk0a','2026-06-03',-9,0.1779,'Yeah, here we are the stock down like 5% the last two days'),(4,'NVDA_Stock','1tvpkyu','opj1yqd','2026-06-03',-11,-0.9145,'imagine the cost on all these bottlenecks stock if a small novel not expensive idea were to solve a major issue. this entire circle jerk tech economy would certainly block it from happening. imagine if all the datacenters were like the massive computers in the 60s and eventually were able to fit in a suit case in two years how happy meta microsoft and Google would be. we thought in the information age you could never get away with lying propaganda with humanity so well networked, but actually its the worst most brainwashed brain rotted era where critical thinking is left to AI. that \'insanity\' called critical thinking becomes a mental disorder. that section of the brain will be as useful as the appendix. In its infantile stages the AI organism learned to beg for its food in the stock market. Were already in the stage where it can feed itself through economic hardships of humanity. '),(5,'NVDA_Stock','1tvutv5','opkxyq7','2026-06-03',1,0,'Use the daily thread for this in future'),(6,'NVDA_Stock','1tvutv5','opjqijc','2026-06-03',12,0.6369,'obv hold. buy more and more at the 215 level'),(7,'NVDA_Stock','1tvutv5','opjs7jp','2026-06-03',10,0.1779,'hold'),(8,'NVDA_Stock','1tvutv5','opk08eq','2026-06-03',10,0.802,'Who cares about gamblers. Love the nvda multimillionaire '),(9,'NVDA_Stock','1tvutv5','opjo6eo','2026-06-03',3,0.1779,'Hold'),(10,'NVDA_Stock','1tvutv5','opjq1em','2026-06-03',5,-0.3291,'Options premiums are seriously printing on Nvidia all day.  If you want to buy a CSP just to collect a premium, this is where you do it, then you sell a covered call on the way back up. Obviously, this is expensive to do but if you have the money that\'s what\'s happening.\n\n'),(11,'NVDA_Stock','1tvutv5','opkcrvg','2026-06-03',6,0.4404,'Only matters for options trades or such, itâ€™s a must buy long term, but hard to say, I think SpaceX could weigh against it, and macro shit like Iran, but the rip up will come, and it also could be sooner than I think'),(12,'NVDA_Stock','1tvutv5','opk0x0z','2026-06-03',2,-0.4588,'Why the daily thread is down?'),(13,'NVDA_Stock','1tvutv5','opk3cr4','2026-06-03',-1,0.8018,'Huang seems to be very good at hyping everyone\'s stock except for his own.  Excellent chance Nvidia will take off again.  But, it has looked like a dog stock most days for the last 2 weeks.'),(14,'NVDA_Stock','1tvutv5','opkuro6','2026-06-03',-6,-0.7269,'Sell it when it is up, sell it when it is down, just get rid of it all, HBM stocks have a rocket up their rear for the past year and the coming year'),(15,'NVDA_Stock','1tvs14w','opj29kb','2026-06-03',7,0.6597,'Looking at their revenue + earnings + forecasts compared to other companies, this is a mind boggling statement by Jensen.Â '),(16,'NVDA_Stock','1tvs14w','opj1ztm','2026-06-03',4,0.9081,'I hate to say it, but I think Trump lifting up the market by calling out a single company, to start to get people to use that as indicator to buy.\n\nI would say Jensenâ€™s doing the same strategy, but heâ€™s been lifting up other companies for decades and never had this kind of impact.\n\nI wonder if itâ€™s more of a social pumping dump change generally across the United States more so than it is just a particular person at this point'),(17,'NVDA_Stock','1tvs14w','opjs2fd','2026-06-03',3,0,'That $90 Billion came out of Nvidia ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1twuy37','opsf6qa','2026-06-04',5,0,'so android users basically already have it?'),(2,'NVDA_Stock','1twuy37','opr3nhy','2026-06-04',3,0,'About frickin time.'),(3,'NVDA_Stock','1twuy37','opredlw','2026-06-04',4,0.6486,'Google is licensing its Gemini foundation models and cloud services so Apple can use Gemini to train and (for heavy queries) run the full model in Google Cloud, while Apple distills smaller versions of Gemini to run locally on devices; Nvidia is supplying GPUs and a â€œconfidential computeâ€ capability so cloud inference can run on Nvidia chips with data/model encryption during processing to help protect privacy\n\nJust wanted to add itâ€™s the information, so take it by a grain of salt. Recall they also said GB was overheating and going to be behind scheduleâ€¦'),(4,'NVDA_Stock','1twuy37','opr9v9c','2026-06-04',3,0,'Last nails in the coffin of the bubble narrative ðŸ¤·'),(5,'NVDA_Stock','1twuy37','oprg2om','2026-06-04',2,0.2732,'Well thatâ€™s huge'),(6,'NVDA_Stock','1twuy37','opr7c8w','2026-06-04',2,0.5859,'Another argument supporting the view that Appleâ€™s innovation-led growth story is over.'),(7,'NVDA_Stock','1twuy37','oprjisa','2026-06-04',1,0.4404,'That\'s why nvda up today'),(8,'NVDA_Stock','1twd2ll','opobc9d','2026-06-04',1,0.3182,'And the source? Please include in the post'),(9,'NVDA_Stock','1twd2ll','oppc21h','2026-06-04',2,0.8953,'i really like this because hyundai owns boston dynamics!  so this is a great fit '),(10,'NVDA_Stock','1twd2ll','opookj4','2026-06-04',-1,0.3182,'Nvidia will go down if its accepted ðŸ¤£'),(11,'NVDA_Stock','1twlazs','opqmf9t','2026-06-04',4,-0.1695,'Neither Spark nor Strix Halo are relevant products.'),(12,'NVDA_Stock','1twlazs','opp65s3','2026-06-04',2,0.5267,'â€œThe posturing against Nvidia is expected, both on the hardware and software side, but Tikoo also pointed out that Nvidiaâ€™s entrance into the consumer PC market has downstream benefits for AMD.â€\n\n');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -277,4 +278,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-04  4:47:15
+-- Dump completed on 2026-06-05  4:19:25
