@@ -104,6 +104,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
+628d4812-609c-11f1-bd90-7a2b804301df:1-53,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -263,7 +264,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','...','2026-06-03',0.43384,'These 2 AI Software Stocks Are Through the Roof. Dan Ives Says Thereâ€™s Still Time to Buy.','https://www.barchart.com/story/news/2278394/these-2-ai-software-stocks-are-through-the-roof-dan-ives-says-theres-still-time-to-buy',2),(2,'keithen drury','Alphabet (GOOG 0.76%) (GOOGL 0.69%) and Microsoft (MSFT 3.15%) are two of the biggest artificial intelligence hyperscalers. Combined, they are nearly an $8 trillion entity and are competing in many of...','2026-06-03',0.92486,'Better AI Stock to Buy: Alphabet vs. Microsoft. (The Winner Might Surprise You)','https://www.fool.com/investing/2026/06/03/better-ai-stock-to-buy-alphabet-vs-microsoft-the-w/',4),(3,'bram berkowitz','Berkshire Hathaway CEO Greg Abel is keeping plenty busy in his new job.\nTwo days after Berkshire announced a $6.8 billion acquisition of the major homebuilder Taylor Morrison Homes, the company is now...','2026-06-02',0.58064,'New Berkshire Hathaway CEO Greg Abel Has Now Plowed $26.6 Billion Into This Artificial Intelligence (AI) Stock','https://www.fool.com/investing/2026/06/02/new-berkshire-hathaway-ceo-greg-abel-has-now-plowed-usd26-6-billion-into-this-artificial-intelligence-ai-stock/',4),(4,'aanchal sugandh','...','2026-06-02',0.43384,'Why Wall Street Thinks You Should Buy Broadcom Stock Before June 3','https://www.barchart.com/story/news/2261237/why-wall-street-thinks-you-should-buy-broadcom-stock-before-june-3',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-06-04',0.14232,'Broadcomâ€™s Q2 Results Brings Fails to Bring Optimism to AVGO Stock. Options Data Predicted It.','https://www.barchart.com/story/news/2308134/broadcoms-q2-results-brings-fails-to-bring-optimism-to-avgo-stock-options-data-predicted-it',2),(2,'amit singh','...','2026-06-04',0.56768,'Broadcom Stock Drops After Earnings. Buy the AVGO Dip.','https://www.barchart.com/story/news/2307846/broadcom-stock-drops-after-earnings-buy-the-avgo-dip',2),(3,'rick munarriz','Cathie Wood bought only three stocks on Wednesday. The co-founder, CEO, and chief investment officer at Ark Invest added to existing positions in Alphabet (GOOG +3.87%) (GOOGL +3.77%), Meta Platforms ...','2026-06-04',0.36178,'Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought','https://www.fool.com/investing/2026/06/04/cathie-wood-goes-bargain-hunting-3-stocks-she-just/',4),(4,'ravikash bakolia','...','2026-06-04',0.44592,'IBM, Google team up to provide agentic AI solutions to enterprises','https://seekingalpha.com/news/4600557-ibm-google-team-up-to-provide-agentic-ai-solutions-to-enterprises?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -277,4 +278,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-04  5:31:26
+-- Dump completed on 2026-06-05  5:07:54
