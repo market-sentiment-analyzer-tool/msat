@@ -105,6 +105,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -255,7 +256,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -264,7 +265,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'pathikrit bose','...','2026-06-04',0.14232,'Broadcomâ€™s Q2 Results Brings Fails to Bring Optimism to AVGO Stock. Options Data Predicted It.','https://www.barchart.com/story/news/2308134/broadcoms-q2-results-brings-fails-to-bring-optimism-to-avgo-stock-options-data-predicted-it',2),(2,'amit singh','...','2026-06-04',0.56768,'Broadcom Stock Drops After Earnings. Buy the AVGO Dip.','https://www.barchart.com/story/news/2307846/broadcom-stock-drops-after-earnings-buy-the-avgo-dip',2),(3,'rick munarriz','Cathie Wood bought only three stocks on Wednesday. The co-founder, CEO, and chief investment officer at Ark Invest added to existing positions in Alphabet (GOOG +3.87%) (GOOGL +3.77%), Meta Platforms ...','2026-06-04',0.36178,'Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought','https://www.fool.com/investing/2026/06/04/cathie-wood-goes-bargain-hunting-3-stocks-she-just/',4),(4,'ravikash bakolia','...','2026-06-04',0.44592,'IBM, Google team up to provide agentic AI solutions to enterprises','https://seekingalpha.com/news/4600557-ibm-google-team-up-to-provide-agentic-ai-solutions-to-enterprises?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'elizabeth h. volk','...','2026-06-05',0,'Barchartâ€™s Expert Stock Screener Explains Everything You Need to Know About Options Trading','https://www.barchart.com/story/news/2328701/barcharts-expert-stock-screener-explains-everything-you-need-to-know-about-options-trading',2),(2,'nauman khan','...','2026-06-05',-0.272,'A Veteran Research Firm Issues a Stark Dot-Com Warning for Nvidia Stock','https://www.barchart.com/story/news/2328479/a-veteran-research-firm-issues-a-stark-dot-com-warning-for-nvidia-stock',2),(3,'nauman khan','...','2026-06-05',0.3148,'Intel Just Landed a Major Foxconn AI Win. INTC Stock Needs Proof, Not Hope, to Climb Further.','https://www.barchart.com/story/news/2328031/intel-just-landed-a-major-foxconn-ai-win-intc-stock-needs-proof-not-hope-to-climb-further',2),(4,'sushree mohanty','...','2026-06-05',0.2,'Broadcomâ€™s AI Backlog Is Becoming Too Big to Ignore. Hereâ€™s Why AVGO Is a Buy Now.','https://www.barchart.com/story/news/2326806/broadcoms-ai-backlog-is-becoming-too-big-to-ignore-heres-why-avgo-is-a-buy-now',2),(5,'adam spatacco','Following in the footsteps of SpaceX and Cerebras, Anthropic recently filed an S-1 with the Securities and Exchange Commission, a key step on the road to an initial public offering (IPO). That move ha...','2026-06-05',0.84988,'3 Magnificent AI Stocks to Buy Before the Anthropic IPO','https://www.fool.com/investing/2026/06/05/3-magnificent-ai-stocks-to-buy-before-the-anthropi/',4),(6,'keithen drury','Finding artificial intelligence (AI) stocks that are strong choices to buy and hold for the next decade can be a bit tricky. There are many questions regarding how long some of these companies will be...','2026-06-04',0.92326,'3 Magnificent Artificial Intelligence (AI) Stocks to Buy and Hold for the Next Decade','https://www.fool.com/investing/2026/06/04/3-magnificent-artificial-intelligence-ai-stocks-to/',4),(7,'jeff remsburg','\n\n			One tech giant. One brokerage. One infrastructure empire. All saying the same thing about AI right now.		\nSource: shutterstock.com/Leonid Sorokin\nListen to the audio version of this article (gene...','2026-06-04',0.19988,'Is Broadcom the First Crack in the AI Bull Market?','https://investorplace.com/2026/06/broadcom-first-crack-in-ai-bull-market/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -278,4 +279,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-05  5:07:54
+-- Dump completed on 2026-06-06  4:45:19
