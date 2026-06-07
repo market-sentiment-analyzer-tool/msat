@@ -45,6 +45,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+227fe531-6229-11f1-a047-0e9461a21a4b:1-22,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
@@ -71,7 +72,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
-415731c2-615c-11f1-b255-8600c53e75ce:1-171,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -106,6 +106,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
@@ -256,7 +257,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -265,7 +266,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'Wallstreetbetsnew','1txpjja','opy3ecb','2026-06-05',3,-0.2263,'You bought the top and youâ€™re in big trouble for the next few months pal.'),(2,'Wallstreetbetsnew','1txpjja','opyybi7','2026-06-05',2,0,'Hmm little late to that game wouldnt you say?'),(3,'Wallstreetbetsnew','1txpjja','opz9rfa','2026-06-05',2,0.5106,'Youâ€™ll be fine just get ready for the ride.'),(4,'Wallstreetbetsnew','1txpjja','opzr641','2026-06-05',1,-0.6369,'Lower highs, lower lows '),(5,'Wallstreetbetsnew','1txpjja','oq0bh9y','2026-06-06',1,0,'You should just all in on soxx'),(6,'Wallstreetbetsnew','1txpjja','oq0dj02','2026-06-06',1,-0.9019,'Non of you have a clue! And all of you bears! This is not the top! NVIDIA keeps killing it with ERs! Same happened 2023 and rallied for the next 6 weeks straight right after! Not arguing but dont believe or listen to this negativity! It will be back within a month! Ai will rally! Theres no bubble thats a made up crap! Ai is future!\n\nhttps://preview.redd.it/b8j0z3t0bk5h1.jpeg?width=1290&format=pjpg&auto=webp&s=b387b4b2472d80ab48d3700ecc6239e14b36bf8e'),(7,'Wallstreetbetsnew','1txpjja','oq0i972','2026-06-06',1,-0.6705,'I\'m all in on since 2023. I believe on a red day similar to today I liquidated everything in 401k ( I had shit like ARKK, and bunch of other loser stocks and ETFs) and bought NVDA.  I recovered well. So I think you will do fine long term as long as NVDA fundamentals and future guidance continue to set new highs.\nBut short term anything can happen, that\'s why I shares and LEAPs (2028 December)'),(8,'Wallstreetbetsnew','1txpjja','oq0knwl','2026-06-06',1,0,'80 CRWD, 25\nAAPL, 100 RKLB, 12  MRVL, 335 MSTY, 500 DX, 4100 OSXQ, 28 DRAM, 10 AVLV, 400 DVLT.'),(9,'Wallstreetbetsnew','1txpjja','oq0l21h','2026-06-06',1,0,'Ride it out baby, add on the dipps!'),(10,'Wallstreetbetsnew','1txpjja','oq0w0g7','2026-06-06',1,0.6908,'Did you buy options or shares? '),(11,'Wallstreetbetsnew','1txpjja','oq1337k','2026-06-06',1,0.4019,'Clearly. '),(12,'Wallstreetbetsnew','1txpjja','oq163qd','2026-06-06',1,0.8327,'You are so so late to this party friend. In a month, it is quite unlikely you look like a genius. The stock already mooned man. '),(13,'Wallstreetbetsnew','1txooho','opyz547','2026-06-05',3,0.3612,'Get the k-y ready '),(14,'Wallstreetbetsnew','1txooho','opy2rxg','2026-06-05',2,0.6996,'MU and NVDIA big trouble next month or two. Hope you didnâ€™t buy the top!'),(15,'Wallstreetbetsnew','1txooho','oq1556t','2026-06-06',1,0.8591,'Well if this is anything like the last 10 times itâ€™s happened itâ€™s a decent time to buy. Maybe it chops out over the next couple weeks and consolidates. I can tell you where stuff will be by next earnings unless the economy nukes '),(16,'Wallstreetbetsnew','1txooho','opxavpk','2026-06-05',1,-0.1326,'I bought. How could you not if you\'re holding long term. This is a 5% discount.'),(17,'Wallstreetbetsnew','1txooho','opza73x','2026-06-05',0,0,'I bought.Â '),(18,'Wallstreetbetsnew','1txooho','opzhja3','2026-06-05',0,0,'Google is spending 980 million a month to use Spacexâ€™s 110,000 Nvidia chips. Iâ€™m buying.'),(19,'Wallstreetbetsnew','1txooho','opzo6db','2026-06-05',0,0.4939,'The question is â€¦ will the Institutional Giants save us on Monday? Barchart has the QQQ passed the 20 and headed for the 50. It will be a rough weekend. '),(20,'Wallstreetbetsnew','1txooho','opzyec2','2026-06-05',0,0.4404,'Holding 850 shares, bought around 213'),(21,'TradingEdge','1txidhl','opwvtck','2026-06-05',2,0.6597,'Hard to find good buys in this market. Thanks for bringing attention to these lesser known names.'),(22,'TradingEdge','1txidhl','opvw0nv','2026-06-05',1,0.4515,'Thousands of paid subscribers is validation of my proficiency as a stock picker, specialising in thematic SMID caps. I post all my picks and research/DD on emerging SMID caps on my trading site first. If you want my alpha before anyone else, feel free to try it out for a month, you can cancel any time so it will set you back $40 to potentially discover a research platform that will change the trajectory of your investing.. Â I have a 15% off coupon running. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -279,4 +279,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-06  4:08:02
+-- Dump completed on 2026-06-07  4:27:43
