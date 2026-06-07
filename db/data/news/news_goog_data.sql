@@ -185,6 +185,7 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -256,7 +257,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -265,7 +266,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'elizabeth h. volk','...','2026-06-05',0,'Barchartâ€™s Expert Stock Screener Explains Everything You Need to Know About Options Trading','https://www.barchart.com/story/news/2328701/barcharts-expert-stock-screener-explains-everything-you-need-to-know-about-options-trading',2),(2,'nauman khan','...','2026-06-05',-0.272,'A Veteran Research Firm Issues a Stark Dot-Com Warning for Nvidia Stock','https://www.barchart.com/story/news/2328479/a-veteran-research-firm-issues-a-stark-dot-com-warning-for-nvidia-stock',2),(3,'nauman khan','...','2026-06-05',0.3148,'Intel Just Landed a Major Foxconn AI Win. INTC Stock Needs Proof, Not Hope, to Climb Further.','https://www.barchart.com/story/news/2328031/intel-just-landed-a-major-foxconn-ai-win-intc-stock-needs-proof-not-hope-to-climb-further',2),(4,'sushree mohanty','...','2026-06-05',0.2,'Broadcomâ€™s AI Backlog Is Becoming Too Big to Ignore. Hereâ€™s Why AVGO Is a Buy Now.','https://www.barchart.com/story/news/2326806/broadcoms-ai-backlog-is-becoming-too-big-to-ignore-heres-why-avgo-is-a-buy-now',2),(5,'adam spatacco','Following in the footsteps of SpaceX and Cerebras, Anthropic recently filed an S-1 with the Securities and Exchange Commission, a key step on the road to an initial public offering (IPO). That move ha...','2026-06-05',0.84988,'3 Magnificent AI Stocks to Buy Before the Anthropic IPO','https://www.fool.com/investing/2026/06/05/3-magnificent-ai-stocks-to-buy-before-the-anthropi/',4),(6,'keithen drury','Finding artificial intelligence (AI) stocks that are strong choices to buy and hold for the next decade can be a bit tricky. There are many questions regarding how long some of these companies will be...','2026-06-04',0.92326,'3 Magnificent Artificial Intelligence (AI) Stocks to Buy and Hold for the Next Decade','https://www.fool.com/investing/2026/06/04/3-magnificent-artificial-intelligence-ai-stocks-to/',4),(7,'jeff remsburg','\n\n			One tech giant. One brokerage. One infrastructure empire. All saying the same thing about AI right now.		\nSource: shutterstock.com/Leonid Sorokin\nListen to the audio version of this article (gene...','2026-06-04',0.19988,'Is Broadcom the First Crack in the AI Bull Market?','https://investorplace.com/2026/06/broadcom-first-crack-in-ai-bull-market/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'manali pradhan','Alphabet (GOOG 0.95%) (GOOGL 0.82%) may be one of the most practical public-market ways to get indirect exposure to SpaceX before its IPO. But SpaceX is not the only or even the main reason to buy the...','2026-06-06',0.70942,'Buy This AI Stock to Own SpaceX Pre-IPO and Hold It Through the Robotaxi Boom','https://www.fool.com/investing/2026/06/06/buy-this-ai-stock-to-own-spacex-pre-ipo-and-hold-i/',4),(2,'caleb naysmith','...','2026-06-06',-0.51888,'AI Data Centersâ€™ Water Consumption Breaks 264 Billion Gallons in 2025 as Devastating Drought Hits Nearly 63% of U.S.','https://www.barchart.com/story/news/2339834/ai-data-centers-water-consumption-breaks-264-billion-gallons-in-2025-as-devastating-drought-hits-nearly-63-of-u-s',2),(3,'mohd haider','Under the agreement outlined in a regulatory filing on Friday, capacity ramps to full rate by September 2026 at a reduced fee, with an exit clause allowing Google to terminate immediately if SpaceX fa...','2026-06-06',0.6748,'SpaceX Signs $920 Million Monthly AI Deal With Google Days Before Blockbuster IPOâ€” 110,000 Nvidia GPUs Locked In Through 2029','https://www.benzinga.com/markets/tech/26/06/53046171/spacex-signs-920-million-monthly-ai-deal-with-google-days-before-blockbuster-ipo-110000-nvidia-gpus-',80),(4,'wajeeh khan','...','2026-06-05',-0.16184,'GOOGL Stock Alert: The $85 Billion Reason Alphabet Is Down Today','https://www.barchart.com/story/news/2333056/googl-stock-alert-the-85-billion-reason-alphabet-is-down-today',20),(5,'joy wiltermuth','Please enable JS and disable any ad blocker...','2026-06-05',-0.13636,'First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.','https://www.marketwatch.com/story/first-google-then-meta-big-tech-may-increasingly-sell-stock-to-bankroll-820-billion-ai-boom-83c69030?mod=mw_rss_topstories',4),(6,'aditya raghunath','...','2026-06-05',0.02064,'Palantir Partners with Google Cloud to Integrate Gemini AI Tools. Why the Deal Matters for PLTR Stock Investors.','https://www.barchart.com/story/news/2331559/palantir-partners-with-google-cloud-to-integrate-gemini-ai-tools-why-the-deal-matters-for-pltr-stock-investors',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -279,4 +280,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-06  4:45:19
+-- Dump completed on 2026-06-07  5:15:50
