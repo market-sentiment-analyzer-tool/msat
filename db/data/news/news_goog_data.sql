@@ -222,6 +222,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
+f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -257,7 +258,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,7 +267,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'manali pradhan','Alphabet (GOOG 0.95%) (GOOGL 0.82%) may be one of the most practical public-market ways to get indirect exposure to SpaceX before its IPO. But SpaceX is not the only or even the main reason to buy the...','2026-06-06',0.70942,'Buy This AI Stock to Own SpaceX Pre-IPO and Hold It Through the Robotaxi Boom','https://www.fool.com/investing/2026/06/06/buy-this-ai-stock-to-own-spacex-pre-ipo-and-hold-i/',4),(2,'caleb naysmith','...','2026-06-06',-0.51888,'AI Data Centersâ€™ Water Consumption Breaks 264 Billion Gallons in 2025 as Devastating Drought Hits Nearly 63% of U.S.','https://www.barchart.com/story/news/2339834/ai-data-centers-water-consumption-breaks-264-billion-gallons-in-2025-as-devastating-drought-hits-nearly-63-of-u-s',2),(3,'mohd haider','Under the agreement outlined in a regulatory filing on Friday, capacity ramps to full rate by September 2026 at a reduced fee, with an exit clause allowing Google to terminate immediately if SpaceX fa...','2026-06-06',0.6748,'SpaceX Signs $920 Million Monthly AI Deal With Google Days Before Blockbuster IPOâ€” 110,000 Nvidia GPUs Locked In Through 2029','https://www.benzinga.com/markets/tech/26/06/53046171/spacex-signs-920-million-monthly-ai-deal-with-google-days-before-blockbuster-ipo-110000-nvidia-gpus-',80),(4,'wajeeh khan','...','2026-06-05',-0.16184,'GOOGL Stock Alert: The $85 Billion Reason Alphabet Is Down Today','https://www.barchart.com/story/news/2333056/googl-stock-alert-the-85-billion-reason-alphabet-is-down-today',20),(5,'joy wiltermuth','Please enable JS and disable any ad blocker...','2026-06-05',-0.13636,'First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.','https://www.marketwatch.com/story/first-google-then-meta-big-tech-may-increasingly-sell-stock-to-bankroll-820-billion-ai-boom-83c69030?mod=mw_rss_topstories',4),(6,'aditya raghunath','...','2026-06-05',0.02064,'Palantir Partners with Google Cloud to Integrate Gemini AI Tools. Why the Deal Matters for PLTR Stock Investors.','https://www.barchart.com/story/news/2331559/palantir-partners-with-google-cloud-to-integrate-gemini-ai-tools-why-the-deal-matters-for-pltr-stock-investors',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-06-07',-0.12248,'Google Stock Fell on CapEx Plans. Donâ€™t Miss the Silver Lining in Berkshire Hathawayâ€™s Big Bet.','https://www.barchart.com/story/news/2347133/google-stock-fell-on-capex-plans-dont-miss-the-silver-lining-in-berkshire-hathaways-big-bet',20),(2,'null','Please enable JS and disable any ad blocker...','2026-06-06',0.40084,'Cathie Wood buys $99 million of popular megacap stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-99-million-alphabet-googl',2),(3,'manali pradhan','Alphabet (GOOG 0.95%) (GOOGL 0.82%) may be one of the most practical public-market ways to get indirect exposure to SpaceX before its IPO. But SpaceX is not the only or even the main reason to buy the...','2026-06-06',0.70942,'Buy This AI Stock to Own SpaceX Pre-IPO and Hold It Through the Robotaxi Boom','https://www.fool.com/investing/2026/06/06/buy-this-ai-stock-to-own-spacex-pre-ipo-and-hold-i/',4),(4,'caleb naysmith','...','2026-06-06',-0.51888,'AI Data Centersâ€™ Water Consumption Breaks 264 Billion Gallons in 2025 as Devastating Drought Hits Nearly 63% of U.S.','https://www.barchart.com/story/news/2339834/ai-data-centers-water-consumption-breaks-264-billion-gallons-in-2025-as-devastating-drought-hits-nearly-63-of-u-s',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -280,4 +281,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-07  5:15:50
+-- Dump completed on 2026-06-08  5:22:41
