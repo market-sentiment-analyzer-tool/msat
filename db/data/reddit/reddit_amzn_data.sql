@@ -45,7 +45,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
-227fe531-6229-11f1-a047-0e9461a21a4b:1-22,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
@@ -134,6 +133,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7c919c4f-62f4-11f1-b5ad-4a03481c408b:1-259,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -186,6 +186,7 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -257,7 +258,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,6 +267,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'investing','1tzv2qh','oqdo2q1','2026-06-08',135,-0.2732,'Amazon also didnâ€™t IPO at $1.78T, while simultaneously calling itself an AI company, fueling bubble fears '),(2,'investing','1tzv2qh','oqdor5e','2026-06-08',53,0.1779,'Amazon was an online book store.'),(3,'investing','1tzv2qh','oqdrxmo','2026-06-08',12,0.3794,'Amazon was not space x? No way'),(4,'investing','1tzv2qh','oqdtj0b','2026-06-08',4,0.34,'Does anybody actually care about the profitability part?  Itâ€™s the Float and the Seasoning portions that worry me. '),(5,'investing','1tzv2qh','oqdu42c','2026-06-08',3,-0.0675,'Amazon started as just a book seller, not sure anyone saw it as a future deliver to your door \'everything store\''),(6,'investing','1tzv2qh','oqdzhee','2026-06-08',1,0.1045,'Lmao the companies listed aren\'t even similar enough to each other much less Amazon to make this point. Hell, Amazon at the time want similar enough to Amazon at the time. They fundamentally changed as a company. You\'d basically have to compare it to kindle alone i guess '),(7,'investing','1tzv2qh','oqe3trd','2026-06-08',1,0.25,'What a troll comment. Pick one success story and extrapolate to justify your preconceived notions. While ignoring all the rest of the unprofitable companies that was not included in the index, most of which would have gone bust eventually. '),(8,'investing','1tzv2qh','oqe5125','2026-06-08',1,0,'Itâ€™s not comparable ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -279,4 +281,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-07  4:27:43
+-- Dump completed on 2026-06-08  4:52:34
