@@ -154,6 +154,7 @@ a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -258,7 +259,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -267,7 +268,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-07',0.19738,'5 AI Stocks Making Headlines on Wall Street: Qualcomm, Microsoft, and More','https://www.insidermonkey.com/blog/5-ai-stocks-making-headlines-on-wall-street-qualcomm-microsoft-and-more-1776765/',4),(2,'tristan rich','...','2026-06-07',-0.57472,'Microsoft (NASDAQ:MSFT) Stock Price Down 2.7% â€“ Time to Sell?','https://www.themarketsdaily.com/2026/06/07/microsoft-nasdaqmsft-stock-price-down-2-7-time-to-sell.html',20),(3,'ebube jones','...','2026-06-07',0,'Microsoft Announces Majorana 2 Quantum Chip as Wedbush Calls It Another â€˜Validationâ€™ for the Industry','https://www.barchart.com/story/news/2346995/microsoft-announces-majorana-2-quantum-chip-as-wedbush-calls-it-another-validation-for-the-industry',20),(4,'anushka dutta','...','2026-06-07',0.30544,'Dear Future ERock Stock Fans, Mark Your Calendars for June 10','https://www.barchart.com/story/news/2346834/dear-future-erock-stock-fans-mark-your-calendars-for-june-10',2),(5,'nicole kennedy','...','2026-06-07',0.2368,'White Lighthouse Investment Management Inc. Buys 1,757 Shares of Microsoft Corporation $MSFT','https://www.watchlistnews.com/white-lighthouse-investment-management-inc-buys-1757-shares-of-microsoft-corporation-msft/11107282.html',20),(6,'mark dietrich','...','2026-06-07',0.2368,'Microsoft Corporation $MSFT Shares Acquired by Tiff Advisory Services LLC','https://www.watchlistnews.com/microsoft-corporation-msft-shares-acquired-by-tiff-advisory-services-llc/11107267.html',20),(7,'micah haroldson','...','2026-06-07',0.28896,'Microsoft Corporation $MSFT Stake Boosted by Jefferies Financial Group Inc.','https://www.watchlistnews.com/microsoft-corporation-msft-stake-boosted-by-jefferies-financial-group-inc/11107266.html',20),(8,'shane hupp','...','2026-06-07',0.46872,'Microsoft Corporation $MSFT is General Pension Society PZU Joint Stock Coâ€™s 7th Largest Position','https://www.tickerreport.com/banking-finance/13466565/microsoft-corporation-msft-is-general-pension-society-pzu-joint-stock-cos-7th-largest-position.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'financialcontent','\nSchwab clients were net buyers as the markets notched new highs, though signs of caution remain\n\n\nKey Takeaways:\n\n\n\nÂ \n\n\n\nThe Schwab Trading Activity Indexâ„¢ (STAX) increased to 55.08 in May, up from i...','2026-06-08',0.19918,'Schwab Trading Activity IndexTM: STAX Score Rebounds in May','https://www.financialcontent.com/article/bizwire-2026-6-8-schwab-trading-activity-index-stax-score-rebounds-in-may',4),(2,'abdul rahman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-08',0.81626,'5 Most Profitable Crypto-Exposed Stocks to Buy Now','https://www.insidermonkey.com/blog/5-most-profitable-crypto-exposed-stocks-to-buy-now-1771901/',4),(3,'investing.com','...','2026-06-08',0.32152,'Microsoft in sharp downtrend near $408 support: Live levels','https://www.investing.com/news/stock-market-news/microsoft-in-sharp-downtrend-near-408-support-live-levels-93CH-4731055',20),(4,'null','Please enable JS and disable any ad blocker...','2026-06-08',0.06364,'Microsoft and Copilot just hit a jackpot in healthcare','https://www.thestreet.com/health/microsoft-and-copilot-just-hit-a-jackpot-in-healthcare-ai-nhs',20),(5,'the motley fool','...','2026-06-08',0,'Why Microsoft Stock Surged 10.4% Last Month But Is Sinking in June','https://finance.yahoo.com/markets/stocks/articles/why-microsoft-stock-surged-10-132826652.html',200),(6,'admin','\nWeâ€™re booking some profits in two hot stocks. Shortly after open, weâ€™ll sell 20 shares of Goldman Sachs at roughly $1,051 each, leaving Jim Cramerâ€™s Charitable Trust with 150 shares of GS and reducin...','2026-06-08',0.74382,'Weâ€™re trimming 2 recent winners to raise cash in case of another day like Friday','https://www.nytimesnewstoday.com/were-trimming-2-recent-winners-to-raise-cash-in-case-of-another-day-like-friday/',4),(7,'luke lango','\n\n			One AI-enhanced test produced results that even surprised Louis Navellier		\nListen to the audio version of this article (generated by AI).\nEditorâ€™s Note: There are people on Wall Street who say t...','2026-06-08',0.19992,'The Nobel Prize-Winning AI Thatâ€™s Coming for the Stock Market','https://investorplace.com/hypergrowthinvesting/2026/06/the-nobel-prize-winning-ai-thats-coming-for-the-stock-market/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -281,4 +282,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-08  5:22:41
+-- Dump completed on 2026-06-09  4:57:51

@@ -154,6 +154,7 @@ a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -258,7 +259,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -267,7 +268,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-06-07',-0.12248,'Google Stock Fell on CapEx Plans. Donâ€™t Miss the Silver Lining in Berkshire Hathawayâ€™s Big Bet.','https://www.barchart.com/story/news/2347133/google-stock-fell-on-capex-plans-dont-miss-the-silver-lining-in-berkshire-hathaways-big-bet',20),(2,'null','Please enable JS and disable any ad blocker...','2026-06-06',0.40084,'Cathie Wood buys $99 million of popular megacap stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-99-million-alphabet-googl',2),(3,'manali pradhan','Alphabet (GOOG 0.95%) (GOOGL 0.82%) may be one of the most practical public-market ways to get indirect exposure to SpaceX before its IPO. But SpaceX is not the only or even the main reason to buy the...','2026-06-06',0.70942,'Buy This AI Stock to Own SpaceX Pre-IPO and Hold It Through the Robotaxi Boom','https://www.fool.com/investing/2026/06/06/buy-this-ai-stock-to-own-spacex-pre-ipo-and-hold-i/',4),(4,'caleb naysmith','...','2026-06-06',-0.51888,'AI Data Centersâ€™ Water Consumption Breaks 264 Billion Gallons in 2025 as Devastating Drought Hits Nearly 63% of U.S.','https://www.barchart.com/story/news/2339834/ai-data-centers-water-consumption-breaks-264-billion-gallons-in-2025-as-devastating-drought-hits-nearly-63-of-u-s',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'hannah pedone','Please enable JS and disable any ad blocker...','2026-06-08',0.20596,'Intelâ€™s stock soars as the companyâ€™s â€˜blue-chip rosterâ€™ of customers looks to be growing','https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2?mod=mw_rss_topstories',4),(2,'ravikash bakolia','...','2026-06-08',0,'Intel leads AI and chip stocks higher after report that Nvidia, Google considering it as backup chipmaker','https://seekingalpha.com/news/4601397-intel-leads-ai-and-chip-stocks-higher-after-report-that-nvidia-google-considering-it-as-backup-chipmaker?feed_item_type=news',40),(3,'ricardo pillai','Is GOOGL a good stock to buy? We came across aÂ bullish thesisÂ on Alphabet Inc. on r/ValueInvesting by JoLagoni. In this article, we will summarize the bullsâ€™ thesis on GOOGL. Alphabet Inc.â€™s share was...','2026-06-08',0.79938,'Is Alphabet Inc. (GOOGL) A Good Stock To Buy Now?','https://www.insidermonkey.com/blog/is-alphabet-inc-googl-a-good-stock-to-buy-now-3-1777103/',4),(4,'rich smith','Intel (INTC +11.19%) stock got caught up in an epic sell-off last week as semiconductor chip stocks lost $1 trillion in market capitalization. Intel stock, in particular, lost 13.5% by the close of th...','2026-06-08',0.1373,'Why Intel Stock Bounced Back Today','https://www.fool.com/investing/2026/06/08/why-intel-stock-bounced-back-today/',4),(5,'wall street breakfast','...','2026-06-08',0,'Wall Street Breakfast Podcast: Pfizer Chases Monthly Edge','https://seekingalpha.com/article/4912833-wall-street-breakfast-podcast-pfizer-chases-monthly-edge',4),(6,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-06-07',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(7,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-06-07',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -281,4 +282,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-08  5:22:41
+-- Dump completed on 2026-06-09  4:57:51
