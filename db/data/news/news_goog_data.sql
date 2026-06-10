@@ -133,6 +133,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -259,7 +260,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -268,7 +269,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'hannah pedone','Please enable JS and disable any ad blocker...','2026-06-08',0.20596,'Intelâ€™s stock soars as the companyâ€™s â€˜blue-chip rosterâ€™ of customers looks to be growing','https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2?mod=mw_rss_topstories',4),(2,'ravikash bakolia','...','2026-06-08',0,'Intel leads AI and chip stocks higher after report that Nvidia, Google considering it as backup chipmaker','https://seekingalpha.com/news/4601397-intel-leads-ai-and-chip-stocks-higher-after-report-that-nvidia-google-considering-it-as-backup-chipmaker?feed_item_type=news',40),(3,'ricardo pillai','Is GOOGL a good stock to buy? We came across aÂ bullish thesisÂ on Alphabet Inc. on r/ValueInvesting by JoLagoni. In this article, we will summarize the bullsâ€™ thesis on GOOGL. Alphabet Inc.â€™s share was...','2026-06-08',0.79938,'Is Alphabet Inc. (GOOGL) A Good Stock To Buy Now?','https://www.insidermonkey.com/blog/is-alphabet-inc-googl-a-good-stock-to-buy-now-3-1777103/',4),(4,'rich smith','Intel (INTC +11.19%) stock got caught up in an epic sell-off last week as semiconductor chip stocks lost $1 trillion in market capitalization. Intel stock, in particular, lost 13.5% by the close of th...','2026-06-08',0.1373,'Why Intel Stock Bounced Back Today','https://www.fool.com/investing/2026/06/08/why-intel-stock-bounced-back-today/',4),(5,'wall street breakfast','...','2026-06-08',0,'Wall Street Breakfast Podcast: Pfizer Chases Monthly Edge','https://seekingalpha.com/article/4912833-wall-street-breakfast-podcast-pfizer-chases-monthly-edge',4),(6,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-06-07',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(7,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-06-07',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'kim johansen','...','2026-06-09',0,'Alphabet (NASDAQ:GOOG) Stock Price Expected to Rise, TD Cowen Analyst Says','https://www.themarketsdaily.com/2026/06/09/alphabet-nasdaqgoog-stock-price-expected-to-rise-td-cowen-analyst-says-2.html',2),(2,'caleb naysmith','...','2026-06-09',0,'Former Google CEO Eric Schmidt Booed by University of Arizona Graduates After Telling Them â€˜AI Will Touch Every Profession, Every Personâ€™','https://www.barchart.com/story/news/2380567/former-google-ceo-eric-schmidt-booed-by-university-of-arizona-graduates-after-telling-them-ai-will-touch-every-profession-every-person',20),(3,'sushree mohanty','...','2026-06-09',0.62264,'MongoDB vs. Datadog: Only 1 Growth Stock Could Make Investors Richer','https://www.barchart.com/story/news/2380490/mongodb-vs-datadog-only-1-growth-stock-could-make-investors-richer',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -282,4 +283,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-09  4:57:51
+-- Dump completed on 2026-06-10  5:09:53

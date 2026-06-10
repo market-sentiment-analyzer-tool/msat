@@ -133,6 +133,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -259,7 +260,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -268,7 +269,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'ian cooper','Personal Finance\n\n							Cramer warned parabolic AI stocks without earnings acceleration risk a 50% drop and could take years to recover.													\n\nMU EPS surged from $4.78 to $12.20 with $19.15 g...','2026-06-08',-0.429,'Jim Cramer Warns: AI Stocks Face 50% Crash Without Earnings Growth','https://247wallst.com/personal-finance/2026/06/08/jim-cramer-warns-ai-stocks-face-50-crash-without-earnings-growth/',4),(2,'hannah pedone','Please enable JS and disable any ad blocker...','2026-06-08',0.20596,'Intelâ€™s stock soars as the companyâ€™s â€˜blue-chip rosterâ€™ of customers looks to be growing','https://www.marketwatch.com/story/intels-stock-soars-as-the-companys-blue-chip-roster-of-customers-looks-to-be-growing-264cd9d2?mod=mw_rss_topstories',4),(3,'financialcontent','\nSchwab clients were net buyers as the markets notched new highs, though signs of caution remain\n\n\nKey Takeaways:\n\n\n\nÂ \n\n\n\nThe Schwab Trading Activity Indexâ„¢ (STAX) increased to 55.08 in May, up from i...','2026-06-08',0.19918,'Schwab Trading Activity IndexTM: STAX Score Rebounds in May','https://www.financialcontent.com/article/bizwire-2026-6-8-schwab-trading-activity-index-stax-score-rebounds-in-may',4),(4,'max gottlich','...','2026-06-08',0.28896,'Is the market treating Jensen Huang like Warren Buffett now?','https://seekingalpha.com/news/4601423-is-the-market-treating-jensen-huang-like-warren-buffett-now?feed_item_type=news',4),(5,'vandita jadeja','Investing\n\n							NVDA hit $82B in Q1 revenue, up 85% YoY, with net income surging 210% and Q2 guidance of $91B that already excludes China.													\n\n							NVIDIA raised its dividend 25-fold, au...','2026-06-08',0.1997,'This Stock Is My Biggest Bet For June','https://247wallst.com/investing/2026/06/08/this-stock-is-my-biggest-bet-for-june/',4),(6,'ravikash bakolia','...','2026-06-08',0,'Intel leads AI and chip stocks higher after report that Nvidia, Google considering it as backup chipmaker','https://seekingalpha.com/news/4601397-intel-leads-ai-and-chip-stocks-higher-after-report-that-nvidia-google-considering-it-as-backup-chipmaker?feed_item_type=news',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'aanchal sugandh','...','2026-06-09',0.42136,'Why Needham Analysts Think Cerebras Stock Can Gain Another 25% After Historic IPO','https://www.barchart.com/story/news/2383011/why-needham-analysts-think-cerebras-stock-can-gain-another-25-after-historic-ipo',2),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.36004,'Harvard University Stock Portfolio 2026: Top 10 Picks','https://www.insidermonkey.com/blog/harvard-university-stock-portfolio-2026-top-10-picks-1774453/',4),(3,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.85376,'Top 5 Unstoppable Growth Stocks to Invest In','https://www.insidermonkey.com/blog/top-5-unstoppable-growth-stocks-to-invest-in-1777717/',4),(4,'natasha abellard','\nReference #18.6e18d017.1781068186.7d628844\nhttps://errors.edgesuite.net/18.6e18d017.1781068186.7d628844\n\nhttps://errors.edgesuite.net/18.6e18d017.1781068186.7d628844...','2026-06-09',0.2,'Jim Cramer debates trimming 2 stocks â€” one struggling name, the other a winner','https://www.cnbc.com/2026/06/09/jim-cramer-debates-trimming-2-stocks-one-struggling-name-the-other-a-winner.html',40),(5,'ruchi gupta','...','2026-06-09',0.39512,'This AI Fiber Play Is Backed by Amazon, Meta, and Nvidia and Has Long-Term Potential','https://www.barchart.com/story/news/2381744/this-ai-fiber-play-is-backed-by-amazon-meta-and-nvidia-and-has-long-term-potential',20),(6,'kenio fontes','    vzphotos/iStock Editorial via Getty Images\n \nvzphotos/iStock Editorial via Getty Images\nIn my last Buy rating on Micron Technology, Inc. (MU), the stock was at $820 (check it here). Less than 15 d...','2026-06-09',0.1056,'Micron: Dancing Near The Exit (Downgrade)','https://seekingalpha.com/article/4913324-micron-dancing-near-the-exit-downgrade',8),(7,'rich asplund','...','2026-06-09',0.04128,'Stocks Erase Early Gains as Chipmakers Turn Lower','https://www.barchart.com/story/news/2381403/stocks-erase-early-gains-as-chipmakers-turn-lower',2),(8,'will ashworth','...','2026-06-09',0,'From Penny Stock to $100 Million in One Day: The Ultimate Meme Stock Has Arrived','https://www.barchart.com/story/news/2381393/from-penny-stock-to-100-million-in-one-day-the-ultimate-meme-stock-has-arrived',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -282,4 +283,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-09  4:57:51
+-- Dump completed on 2026-06-10  5:09:54
