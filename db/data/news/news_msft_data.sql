@@ -217,6 +217,7 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
@@ -260,7 +261,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,7 +270,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'alex sirois','Investing\n\n							MSFT delivered an 805% return over 10 years, tripling the S&P 500, as AI revenue hit a $37 billion annualized run rate.													\n\n							Bears question whether 84% capex growth a...','2026-06-09',-0.15824,'Microsoftâ€™s $9K Return on $1K Crushes The Market','https://247wallst.com/investing/2026/06/09/microsofts-9k-return-on-1k-crushes-the-market/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.35956,'Harvard University Stock Portfolio 2026: Top 5 Picks','https://www.insidermonkey.com/blog/harvard-university-stock-portfolio-2026-top-5-picks-1774452/',4),(3,'rich asplund','...','2026-06-09',0.04128,'Stocks Erase Early Gains as Chipmakers Turn Lower','https://www.barchart.com/story/news/2381403/stocks-erase-early-gains-as-chipmakers-turn-lower',2),(4,'soumya eswaran','Sands Capital Management, LLC released its Q1 2026 investor letter for its â€œSelect Growth Strategyâ€.Â A copy of the letter is available to download here. Select Growth mainly targets leading U.S. busin...','2026-06-09',0.19974,'Unrealized Potential of Microsoft Corporationâ€™s (MSFT) Role in Advancing Agentic AI','https://www.insidermonkey.com/blog/unrealized-potential-of-microsofts-msft-role-in-advancing-agentic-ai-1777903/',40),(5,'sushree mohanty','...','2026-06-09',0.62264,'MongoDB vs. Datadog: Only 1 Growth Stock Could Make Investors Richer','https://www.barchart.com/story/news/2380490/mongodb-vs-datadog-only-1-growth-stock-could-make-investors-richer',2),(6,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.86064,'Is Microsoft (MSFT) One of the Best AI Stocks to Buy in June?','https://www.insidermonkey.com/blog/is-microsoft-msft-one-of-the-best-ai-stocks-to-buy-in-june-1777758/',40),(7,'lindsey winhoffer','...','2026-06-09',0,'Summitry LLC Has $74.68 Million Holdings in Microsoft Corporation $MSFT','https://www.watchlistnews.com/summitry-llc-has-74-68-million-holdings-in-microsoft-corporation-msft/11108939.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'vandita jadeja','...','2026-06-10',0,'Microsoft Stock Price Prediction: A New Record High on the Horizon?','https://finance.yahoo.com/markets/stocks/articles/microsoft-stock-price-prediction-record-163637737.html',200),(2,'brendan coffey','S&P 500 funds are likely a core holding for any investor. There are plenty of options out there for gaining exposure to the index. We look at two of the largest, the Vanguard S&P 500 ETF (VOO 1.57%) a...','2026-06-10',0.19914,'Vanguard and iShares S&P 500 ETFs Compared: Is There Really a Difference?','https://www.fool.com/coverage/etfs/2026/06/10/vanguard-and-ishares-s-and-p-500-etfs-compared-is-there-really-a-difference/',4),(3,'ruchi gupta','...','2026-06-10',-0.66168,'Mizuho Doubles Down on WDC Stock as AI Storage Demand Shows No Signs of Slowing Down','https://www.barchart.com/story/news/2402785/mizuho-doubles-down-on-wdc-stock-as-ai-storage-demand-shows-no-signs-of-slowing-down',2),(4,'larry ramer','...','2026-06-10',0,'After UK Deal, Nebius Stock Is Still Too Expensive to Buy','https://www.barchart.com/story/news/2402312/after-uk-deal-nebius-stock-is-still-too-expensive-to-buy',2),(5,'soumya eswaran','Dodge & Cox Fund, an investment management company, released its first-quarter 2026 investor letter for â€œDodge and Cox Stock Fundâ€. A copy of the letter is available to download here. U.S. equities de...','2026-06-10',0.53656,'Microsoft Corporation (MSFT): Valuation Gap Signals Opportunity?','https://www.insidermonkey.com/blog/microsoft-corporation-msft-valuation-gap-signals-opportunity-1778811/',40),(6,'tyler durden','\nMarkets continue to trade with a risk-off bias this morning, with equity futures and macro credit weaker, rates selling across the curve, as the USD and oil sensitive currencies outperform.Â Itâ€™s set ...','2026-06-10',-0.54274,'Futures Slide Amid Renewed Tech Selling, Geopolitical Chaos Ahead Of Key CPI Print','https://www.zerohedge.com/markets/futures-slide-amid-renewed-tech-selling-geopolitical-chaos-ahead-key-cpi-print',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -283,4 +284,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-10  5:09:54
+-- Dump completed on 2026-06-11  5:19:08

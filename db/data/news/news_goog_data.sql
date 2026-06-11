@@ -217,6 +217,7 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
@@ -260,7 +261,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -269,7 +270,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'kim johansen','...','2026-06-09',0,'Alphabet (NASDAQ:GOOG) Stock Price Expected to Rise, TD Cowen Analyst Says','https://www.themarketsdaily.com/2026/06/09/alphabet-nasdaqgoog-stock-price-expected-to-rise-td-cowen-analyst-says-2.html',2),(2,'caleb naysmith','...','2026-06-09',0,'Former Google CEO Eric Schmidt Booed by University of Arizona Graduates After Telling Them â€˜AI Will Touch Every Profession, Every Personâ€™','https://www.barchart.com/story/news/2380567/former-google-ceo-eric-schmidt-booed-by-university-of-arizona-graduates-after-telling-them-ai-will-touch-every-profession-every-person',20),(3,'sushree mohanty','...','2026-06-09',0.62264,'MongoDB vs. Datadog: Only 1 Growth Stock Could Make Investors Richer','https://www.barchart.com/story/news/2380490/mongodb-vs-datadog-only-1-growth-stock-could-make-investors-richer',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yiannis zourmpanos','...','2026-06-10',0.2,'Intelâ€™s AI Foundry Dream Is Becoming Reality. What That Means for INTC Stock.','https://www.barchart.com/story/news/2403336/intels-ai-foundry-dream-is-becoming-reality-what-that-means-for-intc-stock',2),(2,'ruchi gupta','...','2026-06-10',-0.66168,'Mizuho Doubles Down on WDC Stock as AI Storage Demand Shows No Signs of Slowing Down','https://www.barchart.com/story/news/2402785/mizuho-doubles-down-on-wdc-stock-as-ai-storage-demand-shows-no-signs-of-slowing-down',2),(3,'patrick sanders','One of the biggest investment themes in recent years has been the build-out of artificial intelligence (AI). The overall AI market is expected to grow from $390.9 billion in 2025 to nearly $3.5 trilli...','2026-06-10',0.66816,'Alphabet Is Raising $80 Billion for AI Infrastructure. These 4 Semiconductor Stocks Win the Most.','https://www.fool.com/investing/2026/06/10/alphabet-is-raising-80-billion-for-ai-infrastructu/',4),(4,'brandon evans','...','2026-06-09',0.1024,'Apple extends Private Cloud Compute through collaboration with Google and Nvidia','https://seekingalpha.com/news/4601876-apple-extends-private-cloud-compute-through-collaboration-with-google-and-nvidia?feed_item_type=news',40),(5,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.8615,'13 Best Stocks to Buy According to Billionaire Ken Griffin','https://www.insidermonkey.com/blog/13-best-stocks-to-buy-according-to-billionaire-ken-griffin-1775329/',4),(6,'kim johansen','...','2026-06-09',0,'Alphabet (NASDAQ:GOOG) Stock Price Expected to Rise, TD Cowen Analyst Says','https://www.themarketsdaily.com/2026/06/09/alphabet-nasdaqgoog-stock-price-expected-to-rise-td-cowen-analyst-says-2.html',2),(7,'caleb naysmith','...','2026-06-09',0,'Former Google CEO Eric Schmidt Booed by University of Arizona Graduates After Telling Them â€˜AI Will Touch Every Profession, Every Personâ€™','https://www.barchart.com/story/news/2380567/former-google-ceo-eric-schmidt-booed-by-university-of-arizona-graduates-after-telling-them-ai-will-touch-every-profession-every-person',20),(8,'sushree mohanty','...','2026-06-09',0.62264,'MongoDB vs. Datadog: Only 1 Growth Stock Could Make Investors Richer','https://www.barchart.com/story/news/2380490/mongodb-vs-datadog-only-1-growth-stock-could-make-investors-richer',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -283,4 +284,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-10  5:09:53
+-- Dump completed on 2026-06-11  5:19:08
