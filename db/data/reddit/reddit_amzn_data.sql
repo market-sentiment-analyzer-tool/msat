@@ -112,6 +112,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
+6862607e-654f-11f1-839d-1e6f884721fe:1-148,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -133,7 +134,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7c919c4f-62f4-11f1-b5ad-4a03481c408b:1-259,
+7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -155,6 +156,7 @@ a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -223,6 +225,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
+f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -258,7 +261,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -267,7 +270,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'investing','1tzv2qh','oqdo2q1','2026-06-08',135,-0.2732,'Amazon also didnâ€™t IPO at $1.78T, while simultaneously calling itself an AI company, fueling bubble fears '),(2,'investing','1tzv2qh','oqdor5e','2026-06-08',53,0.1779,'Amazon was an online book store.'),(3,'investing','1tzv2qh','oqdrxmo','2026-06-08',12,0.3794,'Amazon was not space x? No way'),(4,'investing','1tzv2qh','oqdtj0b','2026-06-08',4,0.34,'Does anybody actually care about the profitability part?  Itâ€™s the Float and the Seasoning portions that worry me. '),(5,'investing','1tzv2qh','oqdu42c','2026-06-08',3,-0.0675,'Amazon started as just a book seller, not sure anyone saw it as a future deliver to your door \'everything store\''),(6,'investing','1tzv2qh','oqdzhee','2026-06-08',1,0.1045,'Lmao the companies listed aren\'t even similar enough to each other much less Amazon to make this point. Hell, Amazon at the time want similar enough to Amazon at the time. They fundamentally changed as a company. You\'d basically have to compare it to kindle alone i guess '),(7,'investing','1tzv2qh','oqe3trd','2026-06-08',1,0.25,'What a troll comment. Pick one success story and extrapolate to justify your preconceived notions. While ignoring all the rest of the unprofitable companies that was not included in the index, most of which would have gone bust eventually. '),(8,'investing','1tzv2qh','oqe5125','2026-06-08',1,0,'Itâ€™s not comparable ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -281,4 +283,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-08  4:52:34
+-- Dump completed on 2026-06-11  4:41:15

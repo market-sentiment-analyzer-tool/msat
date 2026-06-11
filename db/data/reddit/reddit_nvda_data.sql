@@ -112,6 +112,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
+6862607e-654f-11f1-839d-1e6f884721fe:1-148,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -133,7 +134,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7c919c4f-62f4-11f1-b5ad-4a03481c408b:1-259,
+7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -155,6 +156,7 @@ a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
+a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -223,6 +225,7 @@ f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
+f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -258,7 +261,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -267,7 +270,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1tzj3bl','oqb9899','2026-06-07',1,0,'Calls on GPU and Memory stocks?'),(2,'NVDA_Stock','1tznbvw','oqclrvc','2026-06-07',0,0.4404,'I think this is a lot of hope');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1u1w8b2','oqt29nc','2026-06-10',76,-0.8045,'So let me guess how the market will react to this:\n\n\nApple is wasting cap ex on AI. Appl goes down.\n\n\nNvdia is getting money from Apple, but AI is a bubble, so NVDA goes down.Â \n\n\nGoogle and is part of the AI bubble, but it isn\'t NVDA, so GOOG will go up.Â \n\n'),(2,'stocks','1u1w8b2','oqtalx1','2026-06-10',16,-0.4767,'No, they are a google customer. How nice of them to take zero risk and offload it all to google. \n\nLong term risk avoidance leads fo senility'),(3,'stocks','1u1w8b2','oqt6ghs','2026-06-10',2,0.2846,'Temporarily.   The new V8 Inference TPUs also have the data in use encryption.   I would expect Google to move the new Gemini Siri to those processors once they start implementing them.\n\nGoogle has seen their margins increase for the last 11 straight quarters and now have some pretty decent margins.  Which is even worse when they use Nvidia instead of their own chips.  So this is all going to cost Apple a ton of money.\n\nBut damn is Google smart.   Having Apple offer the new Gemini Siri and paying the cost and Google is the one that makes the money.'),(4,'stocks','1u1w8b2','oquzgkj','2026-06-10',1,0.5423,'Buy MU'),(5,'stocks','1u1w8b2','oqteu8j','2026-06-10',0,0.6588,'LOOONG NVDA and Jensen the Great!'),(6,'stocks','1u1w8b2','oqunhz3','2026-06-10',0,0.3818,'Apple pivoting to Google AI must have been a huge turn off to Apple investors. What happened to their innovation?'),(7,'stocks','1u1w8b2','oqtll5z','2026-06-10',0,0,'Each kettle and iron is already included in the price of NVDA.'),(8,'stocks','1u1w8b2','oqu30fw','2026-06-10',-1,0,'I mean full port NVDA at this point ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -281,4 +284,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-08  4:52:34
+-- Dump completed on 2026-06-11  4:41:15
