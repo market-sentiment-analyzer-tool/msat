@@ -185,6 +185,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
@@ -261,7 +262,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -270,7 +271,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yiannis zourmpanos','...','2026-06-10',0.2,'Intelâ€™s AI Foundry Dream Is Becoming Reality. What That Means for INTC Stock.','https://www.barchart.com/story/news/2403336/intels-ai-foundry-dream-is-becoming-reality-what-that-means-for-intc-stock',2),(2,'ruchi gupta','...','2026-06-10',-0.66168,'Mizuho Doubles Down on WDC Stock as AI Storage Demand Shows No Signs of Slowing Down','https://www.barchart.com/story/news/2402785/mizuho-doubles-down-on-wdc-stock-as-ai-storage-demand-shows-no-signs-of-slowing-down',2),(3,'patrick sanders','One of the biggest investment themes in recent years has been the build-out of artificial intelligence (AI). The overall AI market is expected to grow from $390.9 billion in 2025 to nearly $3.5 trilli...','2026-06-10',0.66816,'Alphabet Is Raising $80 Billion for AI Infrastructure. These 4 Semiconductor Stocks Win the Most.','https://www.fool.com/investing/2026/06/10/alphabet-is-raising-80-billion-for-ai-infrastructu/',4),(4,'brandon evans','...','2026-06-09',0.1024,'Apple extends Private Cloud Compute through collaboration with Google and Nvidia','https://seekingalpha.com/news/4601876-apple-extends-private-cloud-compute-through-collaboration-with-google-and-nvidia?feed_item_type=news',40),(5,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-09',0.8615,'13 Best Stocks to Buy According to Billionaire Ken Griffin','https://www.insidermonkey.com/blog/13-best-stocks-to-buy-according-to-billionaire-ken-griffin-1775329/',4),(6,'kim johansen','...','2026-06-09',0,'Alphabet (NASDAQ:GOOG) Stock Price Expected to Rise, TD Cowen Analyst Says','https://www.themarketsdaily.com/2026/06/09/alphabet-nasdaqgoog-stock-price-expected-to-rise-td-cowen-analyst-says-2.html',2),(7,'caleb naysmith','...','2026-06-09',0,'Former Google CEO Eric Schmidt Booed by University of Arizona Graduates After Telling Them â€˜AI Will Touch Every Profession, Every Personâ€™','https://www.barchart.com/story/news/2380567/former-google-ceo-eric-schmidt-booed-by-university-of-arizona-graduates-after-telling-them-ai-will-touch-every-profession-every-person',20),(8,'sushree mohanty','...','2026-06-09',0.62264,'MongoDB vs. Datadog: Only 1 Growth Stock Could Make Investors Richer','https://www.barchart.com/story/news/2380490/mongodb-vs-datadog-only-1-growth-stock-could-make-investors-richer',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anders bylund','After getting knocked around for three days, Wall Street decided it was time to get back up on Thursday morning.\nThe Dow Jones Industrial Average (^DJI +1.86%) climbed 0.7% by noon, while the S&P 500 ...','2026-06-11',0.19684,'Dow Jones and S&P 500 Climb Thursday as Wall Street Shakes Off Three-Day Slump Before SpaceX IPO','https://www.fool.com/investing/2026/06/11/dow-jones-and-sp-500-climb-thursday-as-wall-street/',4),(2,'aanchal sugandh','...','2026-06-11',-0.36704,'Waymo Is Doubling Down on Self-Driving Car Ambitions. What That Means for GOOGL Stock.','https://www.barchart.com/story/news/2424468/waymo-is-doubling-down-on-self-driving-car-ambitions-what-that-means-for-googl-stock',20),(3,'anushka dutta','...','2026-06-11',0,'Cathie Wood Is Buying the Dip in Broadcom Stock','https://www.barchart.com/story/news/2423699/cathie-wood-is-buying-the-dip-in-broadcom-stock',2),(4,'sarita garza','...','2026-06-11',0,'Clifford Swan Investment Counsel LLC Has $48.83 Million Holdings in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/06/11/clifford-swan-investment-counsel-llc-has-48-83-million-holdings-in-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -284,4 +285,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-11  5:19:08
+-- Dump completed on 2026-06-12  5:24:09
