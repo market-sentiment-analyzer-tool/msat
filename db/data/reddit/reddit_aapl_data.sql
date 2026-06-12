@@ -112,7 +112,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
-6862607e-654f-11f1-839d-1e6f884721fe:1-148,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -205,6 +204,7 @@ de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
+e0051206-6618-11f1-a17b-d6414b4c8391:1-151,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
@@ -218,6 +218,7 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
@@ -261,7 +262,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -270,7 +271,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1u1w8b2','oqt29nc','2026-06-10',80,-0.8045,'So let me guess how the market will react to this:\n\n\nApple is wasting cap ex on AI. Appl goes down.\n\n\nNvdia is getting money from Apple, but AI is a bubble, so NVDA goes down.Â \n\n\nGoogle and is part of the AI bubble, but it isn\'t NVDA, so GOOG will go up.Â \n\n'),(2,'stocks','1u1w8b2','oqtalx1','2026-06-10',17,-0.4767,'No, they are a google customer. How nice of them to take zero risk and offload it all to google. \n\nLong term risk avoidance leads fo senility'),(3,'stocks','1u1w8b2','oqt6ghs','2026-06-10',2,0.2846,'Temporarily.   The new V8 Inference TPUs also have the data in use encryption.   I would expect Google to move the new Gemini Siri to those processors once they start implementing them.\n\nGoogle has seen their margins increase for the last 11 straight quarters and now have some pretty decent margins.  Which is even worse when they use Nvidia instead of their own chips.  So this is all going to cost Apple a ton of money.\n\nBut damn is Google smart.   Having Apple offer the new Gemini Siri and paying the cost and Google is the one that makes the money.'),(4,'stocks','1u1w8b2','oquzgkj','2026-06-10',1,0.5423,'Buy MU'),(5,'stocks','1u1w8b2','oqteu8j','2026-06-10',1,0.6588,'LOOONG NVDA and Jensen the Great!'),(6,'stocks','1u1w8b2','oqunhz3','2026-06-10',0,0.3818,'Apple pivoting to Google AI must have been a huge turn off to Apple investors. What happened to their innovation?'),(7,'stocks','1u1w8b2','oqtll5z','2026-06-10',0,0,'Each kettle and iron is already included in the price of NVDA.'),(8,'stocks','1u1w8b2','oqu30fw','2026-06-10',-1,0,'I mean full port NVDA at this point ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -284,4 +284,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-11  4:41:14
+-- Dump completed on 2026-06-12  4:46:59
