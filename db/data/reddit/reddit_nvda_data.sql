@@ -27,6 +27,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0ab6dcae-66df-11f1-b79a-ee5955d480b3:1-127,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -185,6 +186,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
@@ -204,7 +206,6 @@ de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
-e0051206-6618-11f1-a17b-d6414b4c8391:1-151,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
@@ -262,7 +263,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -271,7 +272,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1u3cp7b','or4bnry','2026-06-11',7,0.3612,'Ai slop analysis are impossible to read, they feel pointless. Itâ€™s funny because for the user who summoned them, it may well feel very accurate, and we all would probably get more or less the same answersâ€¦ but take them out of the frame where YOU asked for it, and it feels randomâ€¦ '),(2,'NVDA_Stock','1u3cp7b','or4dtyj','2026-06-11',2,0.5859,'Needs more time to base build. Astute investors need to take and hold shares from the non-astute and impatient investors. That takes time. Lately it\'s been punished for success after every earnings report. '),(3,'NVDA_Stock','1u3cp7b','or4bp7t','2026-06-11',4,0,'https://preview.redd.it/6hcvcnzb8q6h1.jpeg?width=749&format=pjpg&auto=webp&s=53ba2e78abc995666fd90948b882b37f35fb6bae'),(4,'NVDA_Stock','1u3cp7b','or4a2d0','2026-06-11',1,0,'Google');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1u3pae8','or6w8hz','2026-06-12',8,0,'Huge if allowed.'),(2,'NVDA_Stock','1u3pae8','or7wpzd','2026-06-12',6,0.6486,'\"A single Vera processor will cost \"well north\" of $20,000 before bulk discounts, and a fully configured rack of 256 chips would run to around $10 million\"\n\nThat\'s a pretty eye watering cost for a CPU.'),(3,'NVDA_Stock','1u3pae8','or7mitj','2026-06-12',2,-0.104,'I think NVDA need to have stable export rules negotiations. No matter how good Vera is, everyone knows already the ecosystem transition risk is very concerning. Nobody like to depend on something not reliable not because of the product but the unstable policy just turns off China buyers. '),(4,'NVDA_Stock','1u3pae8','orbmgcj','2026-06-12',2,0.4404,'If itâ€™s good the state department will issue rules against it, thatâ€™s the us these days'),(5,'NVDA_Stock','1u3pae8','or8oktw','2026-06-12',0,0.4003,'We don\'t need China! They\'re not even forecasted in earnings.'),(6,'NVDA_Stock','1u3pae8','or78p7n','2026-06-12',0,0,'NVDA collaborating with so many companies but still cant see the future yet.'),(7,'NVDA_Stock','1u3pae8','or6wd6h','2026-06-12',-15,0.7968,'They donâ€™t want them, Jensen.  You see, one of the consequences of doubling down and playing with fire (Taiwan via TSMC), is that you lose China.  They do not want to strengthen the â€œSilicon Shieldâ€.  So, by not purchasing NVDA chips, and instead, buying Intel, they help to dismantle the â€œSilicon Shieldâ€ and further their reunification efforts.\n\nYou could have kept your mouth shut and continued to use TSMC and be smart about your geopolitics.  But instead, you wanted to play Mr. Taiwan Celebrity Hero.'),(8,'NVDA_Stock','1u3nk8x','or6w22o','2026-06-12',3,0,'Customers are already testing it'),(9,'NVDA_Stock','1u3nk8x','or6o0ts','2026-06-12',1,0,'Ohhh');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -285,4 +286,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-12  4:46:59
+-- Dump completed on 2026-06-13  4:24:50
