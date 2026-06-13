@@ -131,6 +131,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
+76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
@@ -262,7 +263,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -271,7 +272,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'lekha gupta','The deal covers services and devices, including Amazon Prime Video.\n       â€¢Â InterDigital shares are powering higher. Why is IDCC stock surging?\nThis agreement is a significant step in InterDigitalâ€™s ...','2026-06-11',0.5644,'InterDigital Rises On Major Amazon Patent License For Streaming Tech','https://www.benzinga.com/markets/mid-cap/26/06/53148779/interdigital-rises-on-major-amazon-patent-license-for-streaming-tech',80),(2,'amy thielen','...','2026-06-11',0.39512,'InterDigital and Amazon reach agreement to end litigation','https://seekingalpha.com/news/4602624-interdigital-and-amazon-reach-agreement-to-end-litigation?feed_item_type=news',40),(3,'joseph griffin','...','2026-06-11',0.52776,'Amazon.com, Inc. $AMZN Shares Bought by Vista Cima Wealth Management LLC','https://www.tickerreport.com/banking-finance/13470872/amazon-com-inc-amzn-shares-bought-by-vista-cima-wealth-management-llc.html',2),(4,'ali hassan','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-11',0.68926,'Analysts Remain Bullish on Amazon (AMZN) As It Reveals New Advertising Formats','https://www.insidermonkey.com/blog/analysts-remain-bullish-on-amazon-amzn-as-it-reveals-new-advertising-formats-1779408/',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rich duprey','Investing\n\n							Oppenheimer initiated SpaceX with an Outperform rating and $190 price target, implying roughly 40% upside from its $135 IPO price.													\n\n							SpaceX generated $48 billion i...','2026-06-12',0.19978,'SpaceX Has 40% Upside from IPO per Wall Street Analyst. Hereâ€™s How','https://247wallst.com/investing/2026/06/12/spacex-has-40-upside-from-ipo-per-wall-street-analyst-heres-how/',4),(2,'donald scott','...','2026-06-12',0.21856,'Amazon.com, Inc. $AMZN Stock Holdings Increased by Xponance LLC','https://www.thelincolnianonline.com/2026/06/12/amazon-com-inc-amzn-stock-holdings-increased-by-xponance-llc.html',2),(3,'investing.com','...','2026-06-12',0,'AMD, SanDisk among market cap stock movers on Friday','https://ca.investing.com/news/stock-market-news/amd-sandisk-among-market-cap-stock-movers-on-friday-93CH-4688678',2),(4,'paula ricardo','...','2026-06-12',-0.2368,'Parnassus Investments LLC Cuts Holdings in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/06/12/parnassus-investments-llc-cuts-holdings-in-amazon-com-inc-amzn.html',2),(5,'joseph griffin','...','2026-06-12',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by UniSuper Management Pty Ltd','https://www.tickerreport.com/banking-finance/13472260/amazon-com-inc-amzn-shares-acquired-by-unisuper-management-pty-ltd.html',2),(6,'nicole kennedy','...','2026-06-12',0,'Meiji Yasuda America Inc Makes New $21.27 Million Investment in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/meiji-yasuda-america-inc-makes-new-21-27-million-investment-in-amazon-com-inc-amzn/11112971.html',2),(7,'mark dietrich','...','2026-06-12',0,'TCTC Holdings LLC Decreases Stock Position in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/tctc-holdings-llc-decreases-stock-position-in-amazon-com-inc-amzn/11112859.html',2),(8,'nicole kennedy','...','2026-06-12',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by Sumitomo Mitsui Financial Group Inc.','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-acquired-by-sumitomo-mitsui-financial-group-inc/11112759.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -285,4 +286,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-12  5:24:09
+-- Dump completed on 2026-06-13  5:13:07
