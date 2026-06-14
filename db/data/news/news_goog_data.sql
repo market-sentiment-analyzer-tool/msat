@@ -27,6 +27,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
+0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -263,7 +264,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -272,7 +273,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-06-12',0.49992,'SpaceX Stock Starts Trading Today. BlackRock Already Gobbled Up $5 Billion in SPCX Shares.','https://www.barchart.com/story/news/2443246/spacex-stock-starts-trading-today-blackrock-already-gobbled-up-5-billion-in-spcx-shares',2),(2,'jabran kundi','...','2026-06-12',0.32152,'McDonaldâ€™s Is Letting AI Take Your Orders Again. A Million Orders Later, the Results Look Promising.','https://www.barchart.com/story/news/2443086/mcdonalds-is-letting-ai-take-your-orders-again-a-million-orders-later-the-results-look-promising',2),(3,'ruchi gupta','...','2026-06-12',0.25456,'From Underperform to Buy. Here Is Why BofA Just Changed Its Mind on INTC.','https://www.barchart.com/story/news/2442845/from-underperform-to-buy-here-is-why-bofa-just-changed-its-mind-on-intc',2),(4,'manali pradhan','Wall Street is no longer blindly rewarding all artificial intelligence (AI) stocks. According to a recent Reuters poll, most economists now expect the Federal Reserve to keep the federal funds rate at...','2026-06-12',0.9215,'2 Best AI Stocks to Buy Now as the Market Looks for Real Growth','https://www.fool.com/investing/2026/06/12/2-best-ai-stocks-to-buy-now-as-market-looks-for/',4),(5,'sushree mohanty','...','2026-06-12',0.31808,'Apple Just Gave Investors a Glimpse of Is AI Future at WWDC. It May Take More to Revive AAPL Stock.','https://www.barchart.com/story/news/2441244/apple-just-gave-investors-a-glimpse-of-is-ai-future-at-wwdc-it-may-take-more-to-revive-aapl-stock',2),(6,'preeti singh','...','2026-06-12',0,'OpenAI, Anthropic, and Google executives to attend G7 summit','https://seekingalpha.com/news/4602855-openai-anthropic-and-google-executives-to-attend-g7-summit?feed_item_type=news',40),(7,'adria cimino','Investors study the moves of Warren Buffett for one good reason: The billionaire has proven his investing strengths over 60 years. At the helm of Berkshire Hathaway, he delivered market-beating return...','2026-06-12',0.63376,'2 Warren Buffett Wide-Moat Stocks to Buy Now','https://www.fool.com/investing/2026/06/12/2-warren-buffett-wide-moat-stocks-to-buy-now/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-06-13',0.38136,'SpaceX Just Went Public. These 5 Other Publicly Traded Companies Could Be the Biggest Winners.','https://finance.yahoo.com/markets/stocks/articles/spacex-just-went-public-5-122800972.html',20),(2,'sristi suman jayaswal','...','2026-06-12',0.49992,'SpaceX Stock Starts Trading Today. BlackRock Already Gobbled Up $5 Billion in SPCX Shares.','https://www.barchart.com/story/news/2443246/spacex-stock-starts-trading-today-blackrock-already-gobbled-up-5-billion-in-spcx-shares',2),(3,'jabran kundi','...','2026-06-12',0.32152,'McDonaldâ€™s Is Letting AI Take Your Orders Again. A Million Orders Later, the Results Look Promising.','https://www.barchart.com/story/news/2443086/mcdonalds-is-letting-ai-take-your-orders-again-a-million-orders-later-the-results-look-promising',2),(4,'ruchi gupta','...','2026-06-12',0.25456,'From Underperform to Buy. Here Is Why BofA Just Changed Its Mind on INTC.','https://www.barchart.com/story/news/2442845/from-underperform-to-buy-here-is-why-bofa-just-changed-its-mind-on-intc',2),(5,'manali pradhan','Wall Street is no longer blindly rewarding all artificial intelligence (AI) stocks. According to a recent Reuters poll, most economists now expect the Federal Reserve to keep the federal funds rate at...','2026-06-12',0.9215,'2 Best AI Stocks to Buy Now as the Market Looks for Real Growth','https://www.fool.com/investing/2026/06/12/2-best-ai-stocks-to-buy-now-as-market-looks-for/',4),(6,'sushree mohanty','...','2026-06-12',0.31808,'Apple Just Gave Investors a Glimpse of Is AI Future at WWDC. It May Take More to Revive AAPL Stock.','https://www.barchart.com/story/news/2441244/apple-just-gave-investors-a-glimpse-of-is-ai-future-at-wwdc-it-may-take-more-to-revive-aapl-stock',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -286,4 +287,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-13  5:13:07
+-- Dump completed on 2026-06-14  5:23:24
