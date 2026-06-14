@@ -27,8 +27,8 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
-0ab6dcae-66df-11f1-b79a-ee5955d480b3:1-127,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
+0e25749c-67ac-11f1-a80a-4e3273cf861d:1-188,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -132,6 +132,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
+76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
@@ -263,7 +264,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -272,7 +273,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1u3pae8','or6w8hz','2026-06-12',8,0,'Huge if allowed.'),(2,'NVDA_Stock','1u3pae8','or7wpzd','2026-06-12',6,0.6486,'\"A single Vera processor will cost \"well north\" of $20,000 before bulk discounts, and a fully configured rack of 256 chips would run to around $10 million\"\n\nThat\'s a pretty eye watering cost for a CPU.'),(3,'NVDA_Stock','1u3pae8','or7mitj','2026-06-12',2,-0.104,'I think NVDA need to have stable export rules negotiations. No matter how good Vera is, everyone knows already the ecosystem transition risk is very concerning. Nobody like to depend on something not reliable not because of the product but the unstable policy just turns off China buyers. '),(4,'NVDA_Stock','1u3pae8','orbmgcj','2026-06-12',2,0.4404,'If itâ€™s good the state department will issue rules against it, thatâ€™s the us these days'),(5,'NVDA_Stock','1u3pae8','or8oktw','2026-06-12',0,0.4003,'We don\'t need China! They\'re not even forecasted in earnings.'),(6,'NVDA_Stock','1u3pae8','or78p7n','2026-06-12',0,0,'NVDA collaborating with so many companies but still cant see the future yet.'),(7,'NVDA_Stock','1u3pae8','or6wd6h','2026-06-12',-15,0.7968,'They donâ€™t want them, Jensen.  You see, one of the consequences of doubling down and playing with fire (Taiwan via TSMC), is that you lose China.  They do not want to strengthen the â€œSilicon Shieldâ€.  So, by not purchasing NVDA chips, and instead, buying Intel, they help to dismantle the â€œSilicon Shieldâ€ and further their reunification efforts.\n\nYou could have kept your mouth shut and continued to use TSMC and be smart about your geopolitics.  But instead, you wanted to play Mr. Taiwan Celebrity Hero.'),(8,'NVDA_Stock','1u3nk8x','or6w22o','2026-06-12',3,0,'Customers are already testing it'),(9,'NVDA_Stock','1u3nk8x','or6o0ts','2026-06-12',1,0,'Ohhh');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -286,4 +286,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-13  4:24:50
+-- Dump completed on 2026-06-14  4:49:39
