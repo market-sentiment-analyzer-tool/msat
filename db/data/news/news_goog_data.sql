@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
+1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
@@ -264,7 +265,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -273,7 +274,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-06-13',0.38136,'SpaceX Just Went Public. These 5 Other Publicly Traded Companies Could Be the Biggest Winners.','https://finance.yahoo.com/markets/stocks/articles/spacex-just-went-public-5-122800972.html',20),(2,'sristi suman jayaswal','...','2026-06-12',0.49992,'SpaceX Stock Starts Trading Today. BlackRock Already Gobbled Up $5 Billion in SPCX Shares.','https://www.barchart.com/story/news/2443246/spacex-stock-starts-trading-today-blackrock-already-gobbled-up-5-billion-in-spcx-shares',2),(3,'jabran kundi','...','2026-06-12',0.32152,'McDonaldâ€™s Is Letting AI Take Your Orders Again. A Million Orders Later, the Results Look Promising.','https://www.barchart.com/story/news/2443086/mcdonalds-is-letting-ai-take-your-orders-again-a-million-orders-later-the-results-look-promising',2),(4,'ruchi gupta','...','2026-06-12',0.25456,'From Underperform to Buy. Here Is Why BofA Just Changed Its Mind on INTC.','https://www.barchart.com/story/news/2442845/from-underperform-to-buy-here-is-why-bofa-just-changed-its-mind-on-intc',2),(5,'manali pradhan','Wall Street is no longer blindly rewarding all artificial intelligence (AI) stocks. According to a recent Reuters poll, most economists now expect the Federal Reserve to keep the federal funds rate at...','2026-06-12',0.9215,'2 Best AI Stocks to Buy Now as the Market Looks for Real Growth','https://www.fool.com/investing/2026/06/12/2-best-ai-stocks-to-buy-now-as-market-looks-for/',4),(6,'sushree mohanty','...','2026-06-12',0.31808,'Apple Just Gave Investors a Glimpse of Is AI Future at WWDC. It May Take More to Revive AAPL Stock.','https://www.barchart.com/story/news/2441244/apple-just-gave-investors-a-glimpse-of-is-ai-future-at-wwdc-it-may-take-more-to-revive-aapl-stock',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'justin pope','Tech giant and Google parent company Alphabet (GOOGL +0.53%)(GOOG +0.45%) has spent billions of dollars buying back its stock over the past decade. But Alphabet is reversing course in a big way, annou...','2026-06-14',0.39958,'Alphabet is Raising $84.75 Billion to Win the AI Wars. Should Investors Celebrate or Worry?','https://www.fool.com/investing/2026/06/14/alphabet-is-raising-8475-billion-to-win-the-ai-war/',4),(2,'the motley fool','...','2026-06-13',0.38136,'SpaceX Just Went Public. These 5 Other Publicly Traded Companies Could Be the Biggest Winners.','https://finance.yahoo.com/markets/stocks/articles/spacex-just-went-public-5-122800972.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -287,4 +288,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-14  5:23:24
+-- Dump completed on 2026-06-15  6:12:57
