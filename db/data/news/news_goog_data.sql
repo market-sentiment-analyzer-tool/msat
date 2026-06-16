@@ -105,6 +105,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
@@ -265,7 +266,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -274,7 +275,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'justin pope','Tech giant and Google parent company Alphabet (GOOGL +0.53%)(GOOG +0.45%) has spent billions of dollars buying back its stock over the past decade. But Alphabet is reversing course in a big way, annou...','2026-06-14',0.39958,'Alphabet is Raising $84.75 Billion to Win the AI Wars. Should Investors Celebrate or Worry?','https://www.fool.com/investing/2026/06/14/alphabet-is-raising-8475-billion-to-win-the-ai-war/',4),(2,'the motley fool','...','2026-06-13',0.38136,'SpaceX Just Went Public. These 5 Other Publicly Traded Companies Could Be the Biggest Winners.','https://finance.yahoo.com/markets/stocks/articles/spacex-just-went-public-5-122800972.html',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','...','2026-06-15',-0.25456,'Supermicro Stock Is Down 30% in Days. Investor Skepticism Is Justified.','https://www.barchart.com/story/news/2477344/supermicro-stock-is-down-30-in-days-investor-skepticism-is-justified',2),(2,'ebube jones','...','2026-06-15',0.2,'Famed Short Seller Jim Chanos Calls SpaceX IPO Fueled by Hopes and Dreams, Not Reality','https://www.barchart.com/story/news/2476855/famed-short-seller-jim-chanos-calls-spacex-ipo-fueled-by-hopes-and-dreams-not-reality',2),(3,'the motley fool','...','2026-06-15',-0.36704,'Down 53%, Can Zillow Make a Comeback?','https://finance.yahoo.com/markets/stocks/articles/down-53-zillow-comeback-162000774.html',20),(4,'daniel sparks','On June 12, SpaceX (SPCX +19.79%) completed the largest initial public offering (IPO) in history, raising about $75 billion at a valuation of about $1.75 trillion -- more than double the size of any s...','2026-06-15',0.19942,'The SpaceX IPO Has Wall Street Debating Whether the AI Boom Is a Bubble. Both Sides Have a Point.','https://www.fool.com/investing/2026/06/14/the-spacex-ipo-has-wall-street-debating-whether-th/',4),(5,'justin pope','Tech giant and Google parent company Alphabet (GOOGL +2.56%)(GOOG +2.38%) has spent billions of dollars buying back its stock over the past decade. But Alphabet is reversing course in a big way, annou...','2026-06-14',0.39958,'Alphabet is Raising $84.75 Billion to Win the AI Wars. Should Investors Celebrate or Worry?','https://www.fool.com/investing/2026/06/14/alphabet-is-raising-8475-billion-to-win-the-ai-war/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -288,4 +289,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-15  6:12:57
+-- Dump completed on 2026-06-16  6:20:47
