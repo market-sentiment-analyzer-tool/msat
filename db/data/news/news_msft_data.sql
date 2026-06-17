@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.0
+-- Server version	9.7.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
+4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -266,7 +267,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -275,7 +276,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wajeeh khan','...','2026-06-15',0.32152,'Nebius Stock Gets a Boost From Nasdaq-100 Inclusion. What to Know.','https://www.barchart.com/story/news/2478078/nebius-stock-gets-a-boost-from-nasdaq-100-inclusion-what-to-know',2),(2,'bnnbloomberg.ca staff','Published:Â June 15, 2026 at 1:39PM EDT\nGordon Reid, President & CEO, Goodreid Investment Counsel \nFocus: U.S. Equities\nTop Picks: Booking Holdings, Meta Platforms, Microsoft \nMARKET OUTLOOK:\nArtificia...','2026-06-15',0.36124,'Gordon Reidâ€™s Top Picks for June 15, 2026','https://www.bnnbloomberg.ca/markets/2026/06/15/gordon-reids-top-picks-for-june-15-2026/',4),(3,'patrick sanders','...','2026-06-15',-0.25456,'Supermicro Stock Is Down 30% in Days. Investor Skepticism Is Justified.','https://www.barchart.com/story/news/2477344/supermicro-stock-is-down-30-in-days-investor-skepticism-is-justified',2),(4,'business wire','\nNEW YORK--(BUSINESS WIRE)--Jun 15, 2026--\nRosen Law Firm, a global investor rights law firm, announces a class action lawsuit on behalf of purchasers of common stock of Microsoft Corporation (NASDAQ:...','2026-06-15',0.19598,'Rosen Law Firm Urges Microsoft Corporation (NASDAQ: MSFT) Stockholders to Contact the Firm for Information About Their Rights','https://www.postregister.com/businessreport/technology/rosen-law-firm-urges-microsoft-corporation-nasdaq-msft-stockholders-to-contact-the-firm-for-information/article_d67ec5f2-d0ce-535d-82f1-455d2b416d1b.html',40),(5,'anusuya lahiri','Microsoft Corp (NASDAQ:MSFT) stock gained on Monday as investors favored artificial intelligence-related technology stocks during a broad market rally.\nMicrosoft traded higher as major U.S. indexes ad...','2026-06-15',0.19618,'What Is Going On With Microsoft Stock On Monday?','https://www.benzinga.com/markets/tech/26/06/53203624/what-is-going-on-with-microsoft-stock-on-monday',80),(6,'omor ibne ehsan','Investing\n\n							Monthly $500 investments in SMH since 2016 grew $60,500 in contributions to ~$495,000, fueled by a 2,269% price gain.													\n\n							Leopold Aschenbrenner built an ~$8 billion ...','2026-06-15',0.44322,'If You Put $500 a Month into This Tech ETF Since 2016, You Could Retire Tomorrow','https://247wallst.com/investing/2026/06/15/if-you-put-500-a-month-into-this-tech-etf-since-2016-you-could-retire-tomorrow/',4),(7,'rich asplund','...','2026-06-15',0.43384,'Stocks Rally as US-Iran Peace Deal Sinks Oil and Bond Yields','https://www.barchart.com/story/news/2474936/stocks-rally-as-us-iran-peace-deal-sinks-oil-and-bond-yields',2),(8,'brian sozzi','...','2026-06-15',0.47952,'Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them','https://ca.finance.yahoo.com/news/why-the-biggest-magnificent-7-stocks-have-one-giant-headwind-coming-right-at-them-142228430.html',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'natasha abellard','\nReference #18.4ea7cb17.1781675814.1f326bc0\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675814.1f326bc0\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675814.1f326bc0...','2026-06-16',-0.30544,'Jim Cramer debates his next move on a software stock on an 11 day losing streak','https://www.cnbc.com/2026/06/16/jim-cramer-debates-his-next-move-on-a-software-stock-on-an-11-day-losing-streak.html',40),(2,'soumya eswaran','Sustainable Growth AdvisersÂ (SGA), an investment management company, released its first-quarter 2026 investor letter for its â€œGlobal Growth Strategy.â€Â A copy of the letter can beÂ downloaded here. The ...','2026-06-16',0.76744,'SGA Global Growth Strategy Holds Firm on Microsoftâ€™s (MSFT) Long-Term Advantages','https://www.insidermonkey.com/blog/sga-global-growth-holds-firm-on-microsofts-msft-long-term-advantages-1782694/',4),(3,'soumya eswaran','Columbia Threadneedle Investments, an investment management company, released its first-quarter 2026 investor letter for the â€œColumbia Global Technology Growth Fundâ€.Â A copy of the letter is available...','2026-06-16',0.62066,'Microsoft (MSFT) Fell on Heavy AI Capex and Softer Azure Growth','https://www.insidermonkey.com/blog/microsoft-msft-fell-on-heavy-ai-capex-and-softer-azure-growth-1782657/',40),(4,'rich asplund','...','2026-06-16',-0.04128,'Broader Market Weakens as Energy and Software Stocks Fall','https://www.barchart.com/story/news/2496862/broader-market-weakens-as-energy-and-software-stocks-fall',2),(5,'yahoo finance video','...','2026-06-16',0.56768,'The Mag 7 plus these three AI companies make up the new Fab 10','https://ca.finance.yahoo.com/video/mag-7-plus-three-ai-150000435.html',2),(6,'the arora report','Note the following:\nBank of Japan (BOJ) raised its key interest rate by 25 bps to 1.0%.Â  This was inline with our expectations.Â  BOJ is open to further hikes.Â  Prudent investors need to keep an eye on...','2026-06-16',0.62202,'SpaceX Crypto Squeeze; Bonds Do Not Share Stock Market Euphoria; Warsh Era Begins','https://www.benzinga.com/Opinion/26/06/53226823/spacex-crypto-squeeze-bonds-do-not-share-stock-market-euphoria-warsh-era-begins',8);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -289,4 +290,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-16  6:20:47
+-- Dump completed on 2026-06-17  5:57:03

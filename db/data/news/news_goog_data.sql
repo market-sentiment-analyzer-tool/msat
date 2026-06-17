@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.0
+-- Server version	9.7.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
+4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -266,7 +267,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -275,7 +276,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','...','2026-06-15',-0.25456,'Supermicro Stock Is Down 30% in Days. Investor Skepticism Is Justified.','https://www.barchart.com/story/news/2477344/supermicro-stock-is-down-30-in-days-investor-skepticism-is-justified',2),(2,'ebube jones','...','2026-06-15',0.2,'Famed Short Seller Jim Chanos Calls SpaceX IPO Fueled by Hopes and Dreams, Not Reality','https://www.barchart.com/story/news/2476855/famed-short-seller-jim-chanos-calls-spacex-ipo-fueled-by-hopes-and-dreams-not-reality',2),(3,'the motley fool','...','2026-06-15',-0.36704,'Down 53%, Can Zillow Make a Comeback?','https://finance.yahoo.com/markets/stocks/articles/down-53-zillow-comeback-162000774.html',20),(4,'daniel sparks','On June 12, SpaceX (SPCX +19.79%) completed the largest initial public offering (IPO) in history, raising about $75 billion at a valuation of about $1.75 trillion -- more than double the size of any s...','2026-06-15',0.19942,'The SpaceX IPO Has Wall Street Debating Whether the AI Boom Is a Bubble. Both Sides Have a Point.','https://www.fool.com/investing/2026/06/14/the-spacex-ipo-has-wall-street-debating-whether-th/',4),(5,'justin pope','Tech giant and Google parent company Alphabet (GOOGL +2.56%)(GOOG +2.38%) has spent billions of dollars buying back its stock over the past decade. But Alphabet is reversing course in a big way, annou...','2026-06-14',0.39958,'Alphabet is Raising $84.75 Billion to Win the AI Wars. Should Investors Celebrate or Worry?','https://www.fool.com/investing/2026/06/14/alphabet-is-raising-8475-billion-to-win-the-ai-war/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anthony di pizio','Had you invested $1,000 in the Berkshire Hathaway (BRKA +0.05%)(BRKB 0.15%) holding company when Warren Buffett became chief executive in 1965, it would have turned into a staggering $48 million by th...','2026-06-16',0.22046,'Berkshire Hathaway Has Plowed Over $21 Billion Into This Artificial Intelligence (AI) Stock Since Warren Buffett Stepped Down','https://www.fool.com/investing/2026/06/16/berkshire-hathaway-21-billion-stock-warren-buffett/',4),(2,'joseph griffin','...','2026-06-16',0.2368,'RFP Financial Group LLC Sells 1,653 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13477121/rfp-financial-group-llc-sells-1653-shares-of-alphabet-inc-goog.html',2),(3,'max byerly','...','2026-06-16',0,'Piedmont Capital Management LLC NC Acquires New Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13476873/piedmont-capital-management-llc-nc-acquires-new-stake-in-alphabet-inc-goog.html',2),(4,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-16',0.14296,'Jim Cramer Called SpaceX A Meme Stock & Discussed These 5 Stocks','https://www.insidermonkey.com/blog/jim-cramer-called-spacex-a-meme-stock-discussed-these-5-stocks-1782540/',4),(5,'sarita garza','...','2026-06-16',0.2368,'Alphabet Inc. $GOOG Shares Acquired by Mariner LLC','https://www.themarketsdaily.com/2026/06/16/alphabet-inc-goog-shares-acquired-by-mariner-llc.html',2),(6,'wajeeh khan','...','2026-06-15',0.2368,'ROKU Stock Alert: What to Know as Fox Buys Roku in $22 Billion Deal','https://www.barchart.com/story/news/2481117/roku-stock-alert-what-to-know-as-fox-buys-roku-in-22-billion-deal',2),(7,'amit singh','...','2026-06-15',0,'Why GOOGL Stock May Have More Room to Run Even After a 100% Rally','https://www.barchart.com/story/news/2480945/why-googl-stock-may-have-more-room-to-run-even-after-a-100-rally',20),(8,'anushka dutta','...','2026-06-15',0,'Why Wedbush Says WWDC Was the First Step for Apple to Add $100 to Its Stock','https://www.barchart.com/story/news/2480719/why-wedbush-says-wwdc-was-the-first-step-for-apple-to-add-100-to-its-stock',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -289,4 +290,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-16  6:20:47
+-- Dump completed on 2026-06-17  5:57:03

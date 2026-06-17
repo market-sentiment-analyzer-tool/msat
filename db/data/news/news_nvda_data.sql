@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.0
+-- Server version	9.7.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
+4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -275,7 +276,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'patrick sanders','...','2026-06-15',-0.25456,'Supermicro Stock Is Down 30% in Days. Investor Skepticism Is Justified.','https://www.barchart.com/story/news/2477344/supermicro-stock-is-down-30-in-days-investor-skepticism-is-justified',2),(2,'anders bylund','Wall Street rallied Monday as investors digested news of a preliminary peace agreement between the U.S. and Iran.\nThe Dow Jones Industrial Average (^DJI +0.92%) rose 1.4% just before 1 p.m. ET, hittin...','2026-06-15',0.19954,'Dow Jones Hits Record, Nasdaq Jumps 3% as Iran Deal Lifts Markets','https://www.fool.com/investing/2026/06/15/headline-ideas-related-to-market-indexes-either-as/',4),(3,'nauman khan','...','2026-06-15',-0.28896,'Oklo Stock Has Fallen 15% YTD. This DOE Breakthrough Could Start to Change Everything.','https://www.barchart.com/story/news/2477128/oklo-stock-has-fallen-15-ytd-this-doe-breakthrough-could-start-to-change-everything',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jun 15th, 2026\n\nAigen Investment Management LP cut its holdings in  Micron Technology, Inc. (NASDAQ:MU â€“ Free Report) by 80.6% in the fourth quarter, according to its mos...','2026-06-15',0.43672,'Aigen Investment Management LP Sells 12,069 Shares of Micron Technology, Inc. $MU','https://www.americanbankingnews.com/2026/06/15/aigen-investment-management-lp-sells-12069-shares-of-micron-technology-inc-mu.html',4),(5,'rich smith','Sandisk (SNDK +6.26%) stock surged 6.6% through 12:05 p.m. Monday -- and for a reason that may surprise you.\nIn a note out this morning, Canadian private equity shop Lynx Equity told investors that ev...','2026-06-15',0.19874,'Why Sandisk Stock Popped After the SpaceX IPO','https://www.fool.com/investing/2026/06/15/why-sandisk-stock-popped-after-the-spacex-ipo/',4),(6,'piero cingari','U.S. stocks rallied sharply on Monday after the United States and Iran signed a peace agreement that ends their war and reopens the Strait of Hormuz, sending crude oil tumbling roughly 5% to two-month...','2026-06-15',0.19884,'Stock Market Today: Nasdaq 100 Rallies, Oil Sinks 5% As U.S.-Iran Deal Reopens Hormuz','https://www.benzinga.com/markets/equities/26/06/53203303/stocks-rally-oil-sinks-us-iran-deal-reopens-hormuz-markets-monday',8),(7,'britney nguyen','Please enable JS and disable any ad blocker...','2026-06-15',0.36908,'The chip-stock rally is back in full force â€” thanks to two big geopolitical developments','https://www.marketwatch.com/story/the-chip-stock-rally-is-back-in-full-force-thanks-to-two-big-geopolitical-developments-4e3ec21d?mod=mw_rss_topstories',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'erica kollmann','Experts expect high implied volatility from the start. Analysts at SpotGamma point out there is no positioning history, no IV anchor and no established gamma exposure profile â€” meaning options will pr...','2026-06-16',-0.05568,'SpaceX Options Frenzy Sparks Talk Of Gamma Squeeze To $400','https://www.benzinga.com/trading-ideas/movers/26/06/53233089/spacex-options-frenzy-gamma-squeeze-400-stock-price',8),(2,'danielle liverance','...','2026-06-16',0.28896,'Famed Venture Capital Fund Says this Stock is Like Buying Nvidia in 2023','https://finance.yahoo.com/markets/stocks/articles/famed-venture-capital-fund-says-170914349.html',200),(3,'natasha abellard','\nReference #18.4ea7cb17.1781675816.1f3287c5\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675816.1f3287c5\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675816.1f3287c5...','2026-06-16',-0.30544,'Jim Cramer debates his next move on a software stock on an 11 day losing streak','https://www.cnbc.com/2026/06/16/jim-cramer-debates-his-next-move-on-a-software-stock-on-an-11-day-losing-streak.html',40),(4,'douglas a. mcintyre','...','2026-06-16',0.42136,'Who Is The Worldâ€™s Second Richest Person?','https://finance.yahoo.com/markets/stocks/articles/world-second-richest-person-161345862.html',20),(5,'rich duprey','...','2026-06-16',-0.12248,'You Missed Micronâ€™s 811% Run â€” but Thereâ€™s Still 40% More Upside, According to Wall Street','https://247wallst.com/investing/2026/06/16/you-missed-microns-811-run-but-theres-still-40-more-upside-according-to-wall-street/',2),(6,'ian cooper','...','2026-06-16',0.272,'Paying 50x Earnings Can Still Be Cheap â€” If You Know This One Thing','https://247wallst.com/investing/2026/06/16/paying-50x-earnings-can-still-be-cheap-if-you-know-this-one-thing/',2),(7,'yahoo finance video','...','2026-06-16',0.56768,'The Mag 7 plus these three AI companies make up the new Fab 10','https://ca.finance.yahoo.com/video/mag-7-plus-three-ai-150000435.html',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -289,4 +290,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-16  6:20:48
+-- Dump completed on 2026-06-17  5:57:04

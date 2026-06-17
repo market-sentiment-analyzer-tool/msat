@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.0
+-- Server version	9.7.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -73,6 +73,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
+4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -266,7 +267,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -275,7 +276,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'patrick sanders','...','2026-06-15',-0.25456,'Supermicro Stock Is Down 30% in Days. Investor Skepticism Is Justified.','https://www.barchart.com/story/news/2477344/supermicro-stock-is-down-30-in-days-investor-skepticism-is-justified',2),(2,'ebube jones','...','2026-06-15',0.2,'Famed Short Seller Jim Chanos Calls SpaceX IPO Fueled by Hopes and Dreams, Not Reality','https://www.barchart.com/story/news/2476855/famed-short-seller-jim-chanos-calls-spacex-ipo-fueled-by-hopes-and-dreams-not-reality',2),(3,'null','...','2026-06-15',0.65008,'Amazon strengthens its investment in Missouri to bring new community programs, new jobs, and hundreds of millions in tax revenue - About Amazon','https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3dCUkFveXEzdTV2S2hlbmZ1UUdFOTIyQnU1a09ETnRjV2JqZlZXOVkzb2xfX25Bb0U1aEJJb0dxZ3ZQX2s5dm1HUXRjcVREaTV6S3N5Zm1kMVZnNzlZbHY5ZnRQUlcxN0xaTWxhaDR6dnVWRE1PeVp6cDF5MHpvNmFfTDJwRG5Ma1E?oc=5',10),(4,'alexa lomonaco','\nReference #18.4ea7cb17.1781590825.cf939b2\nhttps://errors.edgesuite.net/18.4ea7cb17.1781590825.cf939b2\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781590825.cf939b2...','2026-06-15',0.29384,'These 4 stocks could be major winners from falling oil prices','https://www.cnbc.com/2026/06/15/these-4-stocks-could-be-major-winners-from-falling-oil-prices.html',40),(5,'brian sozzi','...','2026-06-15',0.47952,'Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them','https://ca.finance.yahoo.com/news/why-the-biggest-magnificent-7-stocks-have-one-giant-headwind-coming-right-at-them-142228430.html',2),(6,'bella albrecht','...','2026-06-15',0,'9 New 4-Star Stocks This Week','https://www.morningstar.com/stocks/9-new-4-star-stocks-this-week-2',2),(7,'null','Please enable JS and disable any ad blocker...','2026-06-15',0.06364,'Goldman Sachs has blunt message for AI stock investors','https://www.thestreet.com/investing/goldman-sachs-forecast-ai-stock-investors',2),(8,'luke lango','\n\n			Every AI agent pays a hidden infrastructure tax. A few companies collect it all.		\nEditorâ€™s note: â€œThe Agentic AI Tax: Who Pays and Who Profitsâ€ was previously published in May 2026 with the titl...','2026-06-15',0.5487,'The Agentic AI Tax: Who Pays and Who Profits','https://investorplace.com/hypergrowthinvesting/2026/06/why-the-smartest-ai-investors-are-ignoring-the-model-race/',4),(9,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-15',0.77384,'Top 5 Stocks to Buy and Hold for the Long Term','https://www.insidermonkey.com/blog/top-5-stocks-to-buy-and-hold-for-the-long-term-1781576/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'alex sirois','...','2026-06-16',0.30544,'Here Is the 1 Unstoppable $70 Billion Growth Machine I Keep Buying Hand Over Fist','https://247wallst.com/investing/2026/06/16/here-is-the-1-unstoppable-70-billion-growth-machine-i-keep-buying-hand-over-fist/',2),(2,'jason capul','...','2026-06-16',0.14232,'SpaceX overtakes Amazon as worldâ€™s fifth-largest company and closes in on Microsoft','https://seekingalpha.com/news/4604110-spacex-overtakes-amazon-as-worlds-fifth-largest-company-and-closes-in-on-microsoft?feed_item_type=news',40),(3,'investing.com','...','2026-06-16',0,'S&P 500 Rally Faces Its First Real Test From the Fed','https://www.investing.com/analysis/sp-500-rally-faces-its-first-real-test-from-the-fed-200682267',2),(4,'natasha abellard','\nReference #18.4ea7cb17.1781675810.1f322f54\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675810.1f322f54\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675810.1f322f54...','2026-06-16',-0.30544,'Jim Cramer debates his next move on a software stock on an 11 day losing streak','https://www.cnbc.com/2026/06/16/jim-cramer-debates-his-next-move-on-a-software-stock-on-an-11-day-losing-streak.html',40),(5,'eric bleeker','...','2026-06-16',0.21856,'Jeff Bezos Just Raised $12 Billion. Heâ€™s Betting His Newest Business Will Create the Next Elon Musk or Henry Ford','https://247wallst.com/investing/2026/06/16/jeff-bezos-just-raised-12-billion-hes-betting-his-newest-business-will-create-the-next-elon-musk-or-henry-ford/',2),(6,'yahoo finance video','...','2026-06-16',0.56768,'The Mag 7 plus these three AI companies make up the new Fab 10','https://ca.finance.yahoo.com/video/mag-7-plus-three-ai-150000435.html',2),(7,'the arora report','Note the following:\nBank of Japan (BOJ) raised its key interest rate by 25 bps to 1.0%.Â  This was inline with our expectations.Â  BOJ is open to further hikes.Â  Prudent investors need to keep an eye on...','2026-06-16',0.62202,'SpaceX Crypto Squeeze; Bonds Do Not Share Stock Market Euphoria; Warsh Era Begins','https://www.benzinga.com/Opinion/26/06/53226823/spacex-crypto-squeeze-bonds-do-not-share-stock-market-euphoria-warsh-era-begins',8),(8,'itai levitan','\n          Join investingLive News Updates\n        \n\n          Join investingLive FX & Crypto\n        \n\n          Follow us on Twitter\n        \n\n          Follow Us on Facebook\n        \nThe U.S. stock...','2026-06-16',-0.0743,'Semiconductors struggle as financial and consumer sectors shine','https://investinglive.com/stock-market-update/semiconductors-struggle-as-financial-and-consumer-sectors-shine-20260616/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -289,4 +290,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-16  6:20:47
+-- Dump completed on 2026-06-17  5:57:03
