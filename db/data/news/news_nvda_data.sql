@@ -74,6 +74,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -267,7 +268,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +277,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'erica kollmann','Experts expect high implied volatility from the start. Analysts at SpotGamma point out there is no positioning history, no IV anchor and no established gamma exposure profile â€” meaning options will pr...','2026-06-16',-0.05568,'SpaceX Options Frenzy Sparks Talk Of Gamma Squeeze To $400','https://www.benzinga.com/trading-ideas/movers/26/06/53233089/spacex-options-frenzy-gamma-squeeze-400-stock-price',8),(2,'danielle liverance','...','2026-06-16',0.28896,'Famed Venture Capital Fund Says this Stock is Like Buying Nvidia in 2023','https://finance.yahoo.com/markets/stocks/articles/famed-venture-capital-fund-says-170914349.html',200),(3,'natasha abellard','\nReference #18.4ea7cb17.1781675816.1f3287c5\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675816.1f3287c5\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675816.1f3287c5...','2026-06-16',-0.30544,'Jim Cramer debates his next move on a software stock on an 11 day losing streak','https://www.cnbc.com/2026/06/16/jim-cramer-debates-his-next-move-on-a-software-stock-on-an-11-day-losing-streak.html',40),(4,'douglas a. mcintyre','...','2026-06-16',0.42136,'Who Is The Worldâ€™s Second Richest Person?','https://finance.yahoo.com/markets/stocks/articles/world-second-richest-person-161345862.html',20),(5,'rich duprey','...','2026-06-16',-0.12248,'You Missed Micronâ€™s 811% Run â€” but Thereâ€™s Still 40% More Upside, According to Wall Street','https://247wallst.com/investing/2026/06/16/you-missed-microns-811-run-but-theres-still-40-more-upside-according-to-wall-street/',2),(6,'ian cooper','...','2026-06-16',0.272,'Paying 50x Earnings Can Still Be Cheap â€” If You Know This One Thing','https://247wallst.com/investing/2026/06/16/paying-50x-earnings-can-still-be-cheap-if-you-know-this-one-thing/',2),(7,'yahoo finance video','...','2026-06-16',0.56768,'The Mag 7 plus these three AI companies make up the new Fab 10','https://ca.finance.yahoo.com/video/mag-7-plus-three-ai-150000435.html',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'joel south','Investing\n\n							AI capex is growing at 70% annually against 23% cash flow growth, pushing aggregate hyperscaler free cash flow below zero by Q3 2026.													\n\n							Amazon spent $44 billion on...','2026-06-17',-0.29178,'Bad News for NVIDIA, Amazon, and Microsoft: Thereâ€™s No Longer Enough Cash for AI','https://247wallst.com/investing/2026/06/17/bad-news-for-nvidia-amazon-and-microsoft-theres-no-longer-enough-cash-for-ai/',4),(2,'logan wallace','...','2026-06-17',0.28896,'L2 Asset Management LLC Grows Position in NVIDIA Corporation $NVDA','https://www.tickerreport.com/banking-finance/13478940/l2-asset-management-llc-grows-position-in-nvidia-corporation-nvda.html',20),(3,'donna armstrong','...','2026-06-17',0,'RBF Capital LLC Has $7.46 Million Holdings in NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/06/17/rbf-capital-llc-has-7-46-million-holdings-in-nvidia-corporation-nvda.html',20),(4,'logan wallace','...','2026-06-17',0.52776,'57,087 Shares in NVIDIA Corporation $NVDA Acquired by LFG Wealth Partners LLC','https://www.tickerreport.com/banking-finance/13478900/57087-shares-in-nvidia-corporation-nvda-acquired-by-lfg-wealth-partners-llc.html',20),(5,'rich smith','ASML Holding (ASML +3.72%) stock got a modest 1.6% bump on Monday, lost it all on Tuesday, but is up again even more on Wednesday -- 6.1% through 11:25 a.m. ET. And why?\nIt may surprise you to learn t...','2026-06-17',0.55178,'Why Is ASML Stock Up Again Today?','https://www.fool.com/investing/2026/06/17/why-is-asml-stock-up-again-today/',4),(6,'aditya raghunath','...','2026-06-17',0.30544,'Dear Nebius Stock Fans, Mark Your Calendars for June 22','https://www.barchart.com/story/news/2518527/dear-nebius-stock-fans-mark-your-calendars-for-june-22',2),(7,'rich asplund','...','2026-06-17',0,'Stocks Mixed Ahead of FOMC Meeting Results','https://www.barchart.com/story/news/2518246/stocks-mixed-ahead-of-fomc-meeting-results',2),(8,'dane bowler','...','2026-06-17',-0.32152,'AI Has An Overlapping TAM Problem','https://seekingalpha.com/article/4915699-ai-has-an-overlapping-tam-problem',4),(9,'kim johansen','...','2026-06-17',0.52776,'2,696 Shares in NVIDIA Corporation $NVDA Purchased by Stark Wealth Management LLC','https://www.themarketsdaily.com/2026/06/17/2696-shares-in-nvidia-corporation-nvda-purchased-by-stark-wealth-management-llc.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -290,4 +291,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-17  5:57:04
+-- Dump completed on 2026-06-18  5:27:22

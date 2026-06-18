@@ -74,6 +74,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -267,7 +268,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +277,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'natasha abellard','\nReference #18.4ea7cb17.1781675814.1f326bc0\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675814.1f326bc0\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1781675814.1f326bc0...','2026-06-16',-0.30544,'Jim Cramer debates his next move on a software stock on an 11 day losing streak','https://www.cnbc.com/2026/06/16/jim-cramer-debates-his-next-move-on-a-software-stock-on-an-11-day-losing-streak.html',40),(2,'soumya eswaran','Sustainable Growth AdvisersÂ (SGA), an investment management company, released its first-quarter 2026 investor letter for its â€œGlobal Growth Strategy.â€Â A copy of the letter can beÂ downloaded here. The ...','2026-06-16',0.76744,'SGA Global Growth Strategy Holds Firm on Microsoftâ€™s (MSFT) Long-Term Advantages','https://www.insidermonkey.com/blog/sga-global-growth-holds-firm-on-microsofts-msft-long-term-advantages-1782694/',4),(3,'soumya eswaran','Columbia Threadneedle Investments, an investment management company, released its first-quarter 2026 investor letter for the â€œColumbia Global Technology Growth Fundâ€.Â A copy of the letter is available...','2026-06-16',0.62066,'Microsoft (MSFT) Fell on Heavy AI Capex and Softer Azure Growth','https://www.insidermonkey.com/blog/microsoft-msft-fell-on-heavy-ai-capex-and-softer-azure-growth-1782657/',40),(4,'rich asplund','...','2026-06-16',-0.04128,'Broader Market Weakens as Energy and Software Stocks Fall','https://www.barchart.com/story/news/2496862/broader-market-weakens-as-energy-and-software-stocks-fall',2),(5,'yahoo finance video','...','2026-06-16',0.56768,'The Mag 7 plus these three AI companies make up the new Fab 10','https://ca.finance.yahoo.com/video/mag-7-plus-three-ai-150000435.html',2),(6,'the arora report','Note the following:\nBank of Japan (BOJ) raised its key interest rate by 25 bps to 1.0%.Â  This was inline with our expectations.Â  BOJ is open to further hikes.Â  Prudent investors need to keep an eye on...','2026-06-16',0.62202,'SpaceX Crypto Squeeze; Bonds Do Not Share Stock Market Euphoria; Warsh Era Begins','https://www.benzinga.com/Opinion/26/06/53226823/spacex-crypto-squeeze-bonds-do-not-share-stock-market-euphoria-warsh-era-begins',8);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'logan wallace','...','2026-06-17',-0.16184,'Direxion Daily MSFT Bull 2X Shares (NASDAQ:MSFU) Stock Price Down 4.4% â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13478975/direxion-daily-msft-bull-2x-shares-nasdaqmsfu-stock-price-down-4-4-heres-what-happened.html',20),(2,'aditya raghunath','...','2026-06-17',0.30544,'Dear Nebius Stock Fans, Mark Your Calendars for June 22','https://www.barchart.com/story/news/2518527/dear-nebius-stock-fans-mark-your-calendars-for-june-22',2),(3,'khaveen investments','...','2026-06-17',0.56024,'Microsoft: Growth Outlook Still Robust Without OpenAI Exclusivity','https://seekingalpha.com/article/4915705-microsoft-growth-outlook-still-robust-without-openai-exclusivity',4),(4,'rich asplund','...','2026-06-17',0,'Stocks Mixed Ahead of FOMC Meeting Results','https://www.barchart.com/story/news/2518246/stocks-mixed-ahead-of-fomc-meeting-results',2),(5,'dane bowler','...','2026-06-17',-0.32152,'AI Has An Overlapping TAM Problem','https://seekingalpha.com/article/4915699-ai-has-an-overlapping-tam-problem',4),(6,'itai levitan','\n          Join investingLive News Updates\n        \n\n          Join investingLive FX & Crypto\n        \n\n          Follow us on Twitter\n        \n\n          Follow Us on Facebook\n        \nThe US stock m...','2026-06-17',0.3993,'Tech stocks face mixed fortunes: Broadcom surges while Microsoft tumbles','https://investinglive.com/stock-market-update/tech-stocks-face-mixed-fortunes-broadcom-surges-while-microsoft-tumbles-20260617/',40),(7,'jake lerch','The iShares Core S&P Total U.S. Stock Market ETF (ITOT 1.18%) and the State Street SPDR Portfolio S&P 1500 Composite Stock Market ETF (SPTM 1.26%) provide nearly identical broad-market exposure at ide...','2026-06-17',0.19868,'iShares and SPDR ETFs Offer Similar Exposure With Different Scale','https://www.fool.com/coverage/etfs/2026/06/17/ishares-and-spdr-etfs-offer-similar-exposure-with-different-scale/',4),(8,'jake lerch','Vanguard FTSE Emerging Markets ETF (VWO 0.58%) offers low-cost, specialized exposure to emerging markets, while State Street SPDR Portfolio MSCI Global Stock Market ETF (SPGM 0.98%) provides a broad, ...','2026-06-17',0.55146,'Global ETFs: Which is Better, SPGM or VWO?','https://www.fool.com/coverage/etfs/2026/06/17/global-etfs-which-is-better-spgm-or-vwo/',4),(9,'paula ricardo','...','2026-06-17',0.28896,'Torque Asset Management LLC Increases Position in Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/06/17/torque-asset-management-llc-increases-position-in-microsoft-corporation-msft.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -290,4 +291,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-17  5:57:03
+-- Dump completed on 2026-06-18  5:27:22
