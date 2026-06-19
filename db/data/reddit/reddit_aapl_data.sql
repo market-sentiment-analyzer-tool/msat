@@ -74,6 +74,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -152,6 +153,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+91730d90-6b9b-11f1-9a83-02707cd62863:1-171,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -195,7 +197,6 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
-d4cf2a87-6acf-11f1-8665-a2825d8c9f52:1-211,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -268,7 +269,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -277,7 +278,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1u8lt1h','os9ayuf','2026-06-17',3,0.34,'Return on equity is 140%\n\nQuality of earnings');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1u9i1kz','osgi57m','2026-06-18',45,-0.6652,'Imagine not even capitalizing on AI but still being affected negatively by it. That Annoying Intellgence rebrand coming soon.'),(2,'stocks','1u9i1kz','osgfko4','2026-06-18',12,0.3314,'Honestly annoying but expected. Iphones have only slightly increased over the years due to new technology.'),(3,'stocks','1u9i1kz','osiecs2','2026-06-19',1,0.1779,'How about apple stop fyuckin up iPhone 15 max with their bs updates that make my phone overheat and not charge to 100. How bout that'),(4,'stocks','1u9i1kz','osimwro','2026-06-19',1,0,'Bracing for high spec mac studios to nearly double in price in my uneducated opinion.'),(5,'stocks','1u9i1kz','osgha0e','2026-06-18',1,0.6597,'Everyday all these tech companies make dumb flip phones seem like the best thing to go to lol'),(6,'AAPL','1u98o5e','oseh9i0','2026-06-18',2,0,'this isn\'t new information [https://www.wsj.com/tech/apple-intel-have-reached-preliminary-chip-making-agreement-69eb9370](https://www.wsj.com/tech/apple-intel-have-reached-preliminary-chip-making-agreement-69eb9370)'),(7,'AAPL','1u98o5e','osgqpap','2026-06-18',1,0.4019,'The pop on a Trump post is an interesting sign of how people are making investment decisions today.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -291,4 +292,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-18  4:50:06
+-- Dump completed on 2026-06-19  5:05:02

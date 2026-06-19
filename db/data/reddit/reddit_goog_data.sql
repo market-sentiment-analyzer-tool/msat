@@ -74,6 +74,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
@@ -152,6 +153,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+91730d90-6b9b-11f1-9a83-02707cd62863:1-171,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -195,7 +197,6 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
-d4cf2a87-6acf-11f1-8665-a2825d8c9f52:1-211,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -268,7 +269,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -277,7 +278,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1u8ma34','os9c4ap','2026-06-17',84,0.128,'I\'m gonna sell my 2001 Toyota Camry to buy more Microsoft tomorrow '),(2,'ValueInvesting','1u8ma34','os9z6th','2026-06-17',44,0.7906,'The best generational buying opportunity of the past 3 weeks'),(3,'ValueInvesting','1u8ma34','os9c84p','2026-06-17',81,-0.2023,'Generational?  We arenâ€™t even at 52 wk lows lol'),(4,'ValueInvesting','1u8ma34','os9c71h','2026-06-17',119,0,'Generational?'),(5,'ValueInvesting','1u8ma34','os9bwdc','2026-06-17',82,-0.9081,'already own tons of googl and msft. waiting for amazon to dip lower. i hate META. i dont think itâ€™s a bad investment, i just hate it'),(6,'ValueInvesting','1u8ma34','os9gr1x','2026-06-17',8,0,'Google, yea. I donâ€™t know about the others.'),(7,'ValueInvesting','1u8ma34','os9d49i','2026-06-17',8,0.4215,'Thereâ€™s at least one generational buying opportunity every year it seems '),(8,'ValueInvesting','1u8ma34','os9fjgw','2026-06-17',12,-0.3412,'The market is probably realizing they won\'t see good returns on all their massive capex spend. '),(9,'ValueInvesting','1u8ma34','os9cdun','2026-06-17',15,0,'[deleted]'),(10,'ValueInvesting','1u8ma34','osa8l99','2026-06-17',4,0.8674,'Generational is a bit of a stretch, but yes, attractive valuations worth consideration from long term investors. Iâ€™m especially in on MSFT right now.'),(11,'ValueInvesting','1u8ma34','osa25da','2026-06-17',3,0.3612,'2008 was generational. This is like buying 10% upside.'),(12,'ValueInvesting','1u8ma34','os9fgod','2026-06-17',9,0.9129,'Cheap is not the same as â€œvalueâ€. Firstly show us your portfolio and how much you have in these stocks, before you tell us to buy. Secondly share your analysis of one of these thatâ€™s not â€œFOMO. Also itâ€™ll be big, just trust meâ€. Man.. I donâ€™t even know your name, why would I trust your investment advice??'),(13,'ValueInvesting','1u8ma34','os9caqu','2026-06-17',3,-0.7164,'So much doom around these companies and AI and what not. Perfect time to be lining that retirement account'),(14,'ValueInvesting','1u8ma34','osaa9tv','2026-06-17',3,0.7506,'lmao generational for ants? These types of valuations were hit like every year. 2023, 2024, 2025 for the most recent'),(15,'ValueInvesting','1u8ma34','os9g09z','2026-06-17',2,-0.1779,'Theyll likely go lower as indexes are forced to buy and usually wait until the last seconds.'),(16,'ValueInvesting','1u8ma34','os9suwo','2026-06-17',2,0,'Google!?!?'),(17,'ValueInvesting','1u8ma34','osag10p','2026-06-18',2,-0.2732,'As someone who has red positions in most of these companies, I appreciate the confirmation bias'),(18,'ValueInvesting','1u8ma34','osakuz3','2026-06-18',2,-0.0798,'One is not like the others..\n\n$MSFT should be at the top of everyone\'s list.'),(19,'ValueInvesting','1u8ma34','os9hwot','2026-06-17',2,0.3612,'Their free cashflow is also at all time lows.'),(20,'ValueInvesting','1u8ma34','os9pxpv','2026-06-17',1,0.5984,'Picked up more Amazon at 240'),(21,'ValueInvesting','1u8ma34','os9q4vz','2026-06-17',1,0.4215,'i yoloed into msft at 500 and meta at 650 last yearâ€¦ im hoping youâ€™re right'),(22,'ValueInvesting','1u8ma34','osa98x8','2026-06-17',1,-0.4198,'This post is so misleading and it belong to WSB. Lows like Apr 2025 fr'),(23,'ValueInvesting','1u8ma34','osa9hox','2026-06-17',1,0.5994,'Meta earning coming on end july. This might be a gd chance to load up before the announcements'),(24,'ValueInvesting','1u8ma34','osa9pp3','2026-06-17',1,-0.34,'You\'re swimming against the tide if that\'s what you think because a lot of people think those companies are massively overvalued and due for a correction.\n\nI suspect that we\'re seeing a soft correction as growth of the megacaps seems to have flatlined, while in the last year small caps (e.g. AVUV) and midcaps (e.g. VXF) have outperformed large/mega cap funds (e.g. VUG).'),(25,'ValueInvesting','1u8ma34','osabnqw','2026-06-17',1,0.2263,'Apr 2025 was not that long ago. 2022 could have been considered a generational buying opportunity but not this. '),(26,'ValueInvesting','1u8ma34','osai8pv','2026-06-18',1,0.34,'These stocks will soon take a hit to earnings from depreciation of the recent capital expenditures.'),(27,'ValueInvesting','1u8ma34','osaqg5b','2026-06-18',1,-0.2617,'Generational investment?  I own these stocks but letâ€™s everyone calm down '),(28,'ValueInvesting','1u8ma34','osatate','2026-06-18',1,0.1027,'Iâ€™ve been thinking hard about meta, I lost so much money on it in 2022 that itâ€™s hard for me to buy it again â€¦'),(29,'ValueInvesting','1u8ma34','osaw1xp','2026-06-18',1,0,'Buying all'),(30,'ValueInvesting','1u8ma34','osawq8l','2026-06-18',1,0,'I DCA and chill so I guess I am.Â '),(31,'ValueInvesting','1u8ma34','osb2sc1','2026-06-18',1,0.128,'What if you exclude the round-tripping from their earnings?'),(32,'ValueInvesting','1u8ma34','osbieo7','2026-06-18',1,0.12,'Second generational buying opportunity in 14 months, eh? Workers aren\'t we lucky'),(33,'ValueInvesting','1u8ma34','osbjh06','2026-06-18',1,-0.8399,'Only a few stocks, mostly semis seems to trading back and forth in this market. Everything is either flat or down. Mag7 is totally destroyed right now. Market makes no sense right now. '),(34,'ValueInvesting','1u8ma34','osbjhg5','2026-06-18',1,0.5859,'Don\'t think Google is in any value territory. Value territory was $160 last year.'),(35,'ValueInvesting','1u8ma34','os9ewgr','2026-06-17',1,0,'follow FNGU when it dips below $18 thats the time to swoop in '),(36,'ValueInvesting','1u8ma34','osa3pt9','2026-06-17',1,-0.765,'Iâ€™d rather own anything than these piece of shit stocks that only go down while market rips to ATHs'),(37,'ValueInvesting','1u8ma34','os9n4g5','2026-06-17',0,-0.1027,'Nah. Waiting for the other two IPOs... Then we\'ll see'),(38,'ValueInvesting','1u8ma34','osajcag','2026-06-18',0,0.2023,'Google is up like 100%+ since april 25 you are full of shit'),(39,'ValueInvesting','1u8ma34','osas12o','2026-06-18',0,0.6908,'Google is up about 15% YTD. How exactly is that a generational buying opportunity?'),(40,'ValueInvesting','1u8ma34','os9c250','2026-06-17',-8,-0.2584,'These are not value stocks, these are AI meme stocks.'),(41,'ValueInvesting','1u8ma34','os9s1n0','2026-06-17',-6,0.9565,'I think spcx is the best bet.  If they can keep the current p/e and double earnings, the stock can easily double.  It could even easily triple.  Better than something like Nvidia which market cap too big.  That\'s why you never see Nvidia go up anymore. '),(42,'ValueInvesting','1u8ma34','os9fy79','2026-06-17',-5,-0.2593,'Guys, come on. You keep obsessing over the same 3-4 trillion market cap names. Are you serious, or just joking when you say these companies are going to 3x or 4x in a couple of years? Seriously, what does that even mean? Are they supposed to hit a $10â€“$20 trillion market cap? This endless bull market has clearly gone to your heads. I\'m no permabear, but you\'ll realize the reality of the situation soon enough we are in a full-blown dot-com bubble style market.\n');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -291,4 +291,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-18  4:50:06
+-- Dump completed on 2026-06-19  5:05:03
