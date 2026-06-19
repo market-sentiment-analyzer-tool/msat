@@ -173,6 +173,7 @@ b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
@@ -268,7 +269,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -277,7 +278,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'abmn staff','\n					Posted by ABMN Staff on Jun 17th, 2026\n\nCodex Capital Asset Management L.L.C. lowered its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 6.0% in the fourth quarter, according to its most...','2026-06-17',0.65742,'Codex Capital Asset Management L.L.C. Sells 2,290 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/17/codex-capital-asset-management-l-l-c-sells-2290-shares-of-alphabet-inc-goog.html',4),(2,'max byerly','...','2026-06-17',0.39512,'LFG Wealth Partners LLC Purchases New Stake in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13478868/lfg-wealth-partners-llc-purchases-new-stake-in-alphabet-inc-goog.html',2),(3,'danessa lincoln','...','2026-06-17',0.28896,'Codex Capital Asset Management L.L.C. Has $11.18 Million Stake in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/06/17/codex-capital-asset-management-l-l-c-has-11-18-million-stake-in-alphabet-inc-goog.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jun 17th, 2026\n\nAster Capital Management DIFC Ltd acquired a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the fourth quarter, according to ...','2026-06-17',0.19988,'Aster Capital Management DIFC Ltd Invests $3.04 Million in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/17/aster-capital-management-difc-ltd-invests-3-04-million-in-alphabet-inc-goog.html',4),(5,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-17',0.19736,'Jim Cramer Discusses Alphabet Inc. (GOOGL)â€™s AI Chips','https://www.insidermonkey.com/blog/jim-cramer-discusses-alphabet-inc-googls-ai-chips-1783010/',4),(6,'danessa lincoln','...','2026-06-17',0,'Militia Capital Partners LP Purchases New Position in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/06/17/militia-capital-partners-lp-purchases-new-position-in-alphabet-inc-goog.html',2),(7,'sarita garza','...','2026-06-17',0.2368,'Opal Capital LLC Buys Shares of 8,740 Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/06/17/opal-capital-llc-buys-shares-of-8740-alphabet-inc-goog.html',2),(8,'joseph griffin','...','2026-06-17',0.39512,'Rothschild Wealth LLC Raises Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13478772/rothschild-wealth-llc-raises-holdings-in-alphabet-inc-goog.html',2),(9,'marc guberti','Amazon (AMZN 3.47%) and Alphabet (GOOG 2.42%) (GOOGL 2.52%) are two of the most iconic companies that defined how consumers use the internet. They both branched off into multiple business opportunitie...','2026-06-17',0.92004,'Amazon vs. Alphabet: Which Magnificent Stock Is the Better Buy?','https://www.fool.com/investing/2026/06/17/amazon-vs-alphabet-which-magnificent-stock-is-the/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-06-18',0,'Wall Street Lunch: Toy Story 5 Eyes $280M Global Debut','https://seekingalpha.com/article/4916088-wall-street-lunch-toy-story-5-eyes-280m-global-debut',4),(2,'hanz christensen','...','2026-06-18',-0.1024,'Ardsley Advisory Partners LP Lowers Stake in Alphabet Inc. $GOOG','https://www.watchlistnews.com/ardsley-advisory-partners-lp-lowers-stake-in-alphabet-inc-goog/11121114.html',2),(3,'abmn staff','...','2026-06-18',0.39512,'BNB Wealth Management LLC Makes New Investment in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/18/bnb-wealth-management-llc-makes-new-investment-in-alphabet-inc-goog.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jun 18th, 2026\n\nArdsley Advisory Partners LP trimmed its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 61.5% during the 4th quarter, according to th...','2026-06-18',0.43652,'Ardsley Advisory Partners LP Sells 91,000 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/18/ardsley-advisory-partners-lp-sells-91000-shares-of-alphabet-inc-goog.html',4),(5,'hanz christensen','...','2026-06-18',0,'Alphabet Inc. $GOOG Stake Raised by Janus Henderson Group PLC','https://www.watchlistnews.com/alphabet-inc-goog-stake-raised-by-janus-henderson-group-plc/11120954.html',2),(6,'ethan ryder','...','2026-06-18',0,'Janus Henderson Group PLC Has $7.69 Billion Position in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13480225/janus-henderson-group-plc-has-7-69-billion-position-in-alphabet-inc-goog.html',2),(7,'donald scott','...','2026-06-18',0.55264,'Asset One Wealth Management LLC Makes New Investment in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/06/18/asset-one-wealth-management-llc-makes-new-investment-in-alphabet-inc-goog.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -291,4 +292,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-18  5:27:22
+-- Dump completed on 2026-06-19  6:05:25
