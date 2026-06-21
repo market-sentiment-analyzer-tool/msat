@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
+2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
@@ -107,6 +108,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+6079a248-6d2d-11f1-b1fa-8e6c1e52a9ad:1-141,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -153,7 +155,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
-91730d90-6b9b-11f1-9a83-02707cd62863:1-171,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -174,6 +175,7 @@ b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
@@ -269,7 +271,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -278,7 +280,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1u9i1kz','osgi57m','2026-06-18',45,-0.6652,'Imagine not even capitalizing on AI but still being affected negatively by it. That Annoying Intellgence rebrand coming soon.'),(2,'stocks','1u9i1kz','osgfko4','2026-06-18',12,0.3314,'Honestly annoying but expected. Iphones have only slightly increased over the years due to new technology.'),(3,'stocks','1u9i1kz','osiecs2','2026-06-19',1,0.1779,'How about apple stop fyuckin up iPhone 15 max with their bs updates that make my phone overheat and not charge to 100. How bout that'),(4,'stocks','1u9i1kz','osimwro','2026-06-19',1,0,'Bracing for high spec mac studios to nearly double in price in my uneducated opinion.'),(5,'stocks','1u9i1kz','osgha0e','2026-06-18',1,0.6597,'Everyday all these tech companies make dumb flip phones seem like the best thing to go to lol'),(6,'AAPL','1u98o5e','oseh9i0','2026-06-18',2,0,'this isn\'t new information [https://www.wsj.com/tech/apple-intel-have-reached-preliminary-chip-making-agreement-69eb9370](https://www.wsj.com/tech/apple-intel-have-reached-preliminary-chip-making-agreement-69eb9370)'),(7,'AAPL','1u98o5e','osgqpap','2026-06-18',1,0.4019,'The pop on a Trump post is an interesting sign of how people are making investment decisions today.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ub39vv','osszaes','2026-06-20',20,-0.2869,'Hate you for what ? Â Drawing a line? ðŸ˜‚'),(2,'AAPL','1ub39vv','ost6l4k','2026-06-20',10,0.4404,'Zoom out couple of years you will find similar patterns and the stock still goes up'),(3,'AAPL','1ub39vv','ost8o1l','2026-06-20',8,0.7436,'Charts are excellent at explaining a stocks history. Theyâ€™re much less useful at telling you where itâ€™s going.'),(4,'AAPL','1ub39vv','ost4hs0','2026-06-20',5,-0.6114,'oh no! bro drew a line...i hate him for that.'),(5,'AAPL','1ub39vv','ostdi0l','2026-06-20',3,-0.1154,'In the short-term - maybe.  But Appleâ€™s moat will bring people back after AI matures.  Local inference will change the game.  Thatâ€™s when privacy becomes suddenly crucial'),(6,'AAPL','1ub39vv','ost9vnx','2026-06-20',3,0.2732,'My god a line '),(7,'AAPL','1ub39vv','osth7sd','2026-06-20',2,-0.0772,'I see the July monthly exp reflecting this sentiment on the tape. I can believe it with the macro right now. Iâ€™m riding some puts down short term and then loading up on bullish leaps for September releases. Iâ€™m also targeting 260 range.'),(8,'AAPL','1ub39vv','ost9j2j','2026-06-20',1,-0.4588,'https://reddit.com/link/ost9j2j/video/jcyvrm0ljh8h1/player\n\nFWIW, my fib retracements show more or less the same thing.. we might test the 50% this week and find sellers there and go down.'),(9,'AAPL','1ub39vv','ostzhrf','2026-06-20',1,0,'A troll who can draw a line , is still a troll. '),(10,'AAPL','1ub39vv','osv40mc','2026-06-21',1,0.7882,'Ok? I honestly want this to happen, I need more shares!!!!!!!!!!'),(11,'AAPL','1ub39vv','ost29cy','2026-06-20',0,-0.8773,'There is nothing wrong in sharing a prediction chart.. if market correction or a short term crash (or bear market etc) happens aapl can go as low as 247 in worst case scenario, as per the charts');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -292,4 +294,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-19  5:05:02
+-- Dump completed on 2026-06-21  4:56:44

@@ -55,6 +55,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
+2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
@@ -107,6 +108,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+6079a248-6d2d-11f1-b1fa-8e6c1e52a9ad:1-141,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -153,7 +155,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
-91730d90-6b9b-11f1-9a83-02707cd62863:1-171,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -174,6 +175,7 @@ b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
+baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
@@ -269,7 +271,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -278,7 +280,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1u96lz0','osdt9jc','2026-06-18',10,-0.6808,'Bigger than Core business of AVGO  \nThere is no AI data center without Networking. It is the core along with compute. No one has both Networking + Compute. And hence, no one can do this level of co-design except Nvidia'),(2,'NVDA_Stock','1u96lz0','ose39rn','2026-06-18',-4,-0.296,'No use for the stock price ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -292,4 +293,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-19  5:05:03
+-- Dump completed on 2026-06-21  4:56:45
