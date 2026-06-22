@@ -37,6 +37,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
@@ -108,7 +109,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
-6079a248-6d2d-11f1-b1fa-8e6c1e52a9ad:1-141,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -159,6 +159,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9cb44b56-6df7-11f1-9b5d-86c43246beab:1-47,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -271,7 +272,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -280,7 +281,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ub39vv','osszaes','2026-06-20',20,-0.2869,'Hate you for what ? Â Drawing a line? ðŸ˜‚'),(2,'AAPL','1ub39vv','ost6l4k','2026-06-20',10,0.4404,'Zoom out couple of years you will find similar patterns and the stock still goes up'),(3,'AAPL','1ub39vv','ost8o1l','2026-06-20',8,0.7436,'Charts are excellent at explaining a stocks history. Theyâ€™re much less useful at telling you where itâ€™s going.'),(4,'AAPL','1ub39vv','ost4hs0','2026-06-20',5,-0.6114,'oh no! bro drew a line...i hate him for that.'),(5,'AAPL','1ub39vv','ostdi0l','2026-06-20',3,-0.1154,'In the short-term - maybe.  But Appleâ€™s moat will bring people back after AI matures.  Local inference will change the game.  Thatâ€™s when privacy becomes suddenly crucial'),(6,'AAPL','1ub39vv','ost9vnx','2026-06-20',3,0.2732,'My god a line '),(7,'AAPL','1ub39vv','osth7sd','2026-06-20',2,-0.0772,'I see the July monthly exp reflecting this sentiment on the tape. I can believe it with the macro right now. Iâ€™m riding some puts down short term and then loading up on bullish leaps for September releases. Iâ€™m also targeting 260 range.'),(8,'AAPL','1ub39vv','ost9j2j','2026-06-20',1,-0.4588,'https://reddit.com/link/ost9j2j/video/jcyvrm0ljh8h1/player\n\nFWIW, my fib retracements show more or less the same thing.. we might test the 50% this week and find sellers there and go down.'),(9,'AAPL','1ub39vv','ostzhrf','2026-06-20',1,0,'A troll who can draw a line , is still a troll. '),(10,'AAPL','1ub39vv','osv40mc','2026-06-21',1,0.7882,'Ok? I honestly want this to happen, I need more shares!!!!!!!!!!'),(11,'AAPL','1ub39vv','ost29cy','2026-06-20',0,-0.8773,'There is nothing wrong in sharing a prediction chart.. if market correction or a short term crash (or bear market etc) happens aapl can go as low as 247 in worst case scenario, as per the charts');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -294,4 +294,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-21  4:56:44
+-- Dump completed on 2026-06-22  5:03:34
