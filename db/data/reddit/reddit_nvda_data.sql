@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
+5a1d5cfa-6eb8-11f1-b37b-46d387ff2224:1-201,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -159,7 +160,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
-9cb44b56-6df7-11f1-9b5d-86c43246beab:1-47,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -226,6 +226,7 @@ e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
+e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
@@ -272,7 +273,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -281,6 +282,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1uckvyx','ot4szvc','2026-06-22',4,0,'And the stock will tank '),(2,'NVDA_Stock','1uckvyx','ot4ytji','2026-06-22',3,-0.3182,'800 exaflops is about ~2 billion dollars or 5-600 B300 racks, over 2 quarters for a whole continent? Europe... smh.'),(3,'NVDA_Stock','1uckvyx','ot50fn7','2026-06-22',-5,0.6025,'Europe unveiled? \n\nTitle should be \"europe gets cucked by american tech as usual and cant afford shit\"'),(4,'NVDA_Stock','1ucsx55','ot6lsrb','2026-06-22',10,0.6626,'i have 0 evidence but strongly believe that it is not simply\nbeing manipulated, but being suppressed \n'),(5,'NVDA_Stock','1ucsx55','ot6kklj','2026-06-22',2,0.5688,'this could be partially why, if you look at volume volume is really low today. currently only 80 million which is below the average of 173 mill. So where is the other 100 million sales going to? Prob other high beta growth names. '),(6,'NVDA_Stock','1ucsx55','ot6zp9l','2026-06-22',2,0.5023,'Money is spreading among other stocks which were penny stocks before but changed to AI story like Allbirds.'),(7,'NVDA_Stock','1ucsx55','ot72wzq','2026-06-22',2,-0.4091,'The only thing that would scare me is hyperscalers reducing CapEx. Nvidia still has insane margins. Looking to get back in, when physical AI starts to become more relevant in revenue compared to datacenters. Even if that means missing some gains along the way.'),(8,'NVDA_Stock','1ucsx55','ot70vtz','2026-06-22',5,-0.6705,'Intel and AMD are not bottlenecks. So your theory is wrong. \n\nThis is a momentum driven market right now. They are pushing all sorts of smaller cap companies. Itâ€™s hard to shove nvda around at the same magnitude that you can these smaller market caps. \n\nItâ€™s entirely momentum driven. Once the music stops, these companies will correct hard. '),(9,'NVDA_Stock','1ucsx55','ot7b9n7','2026-06-22',2,-0.6486,'I see it more as itâ€™s being held down. It will run after these other stocks stop shooting up so much \n\nThe question I have is when do I sell my ALAB and Marvell '),(10,'NVDA_Stock','1ucsx55','ot6wv41','2026-06-22',2,0.4588,'Yeah nvda at 5 trillion market cap is lagging behind others. Good one'),(11,'NVDA_Stock','1ucsx55','ot83po9','2026-06-22',0,0.6486,'Memory chips have no moat. If it really becomes an issue for NVIDIA, I bet NVIDIA can optimize their architecture around alternative memory solutions, for example use cheaper LPDDR5Xs instead of HBM, heavy software optimization, that allows less bottlenecked technologies, or technologies that can be manufactured cheaply from China. I really think this is what will happen for the next generation of nvidia chips.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -294,4 +296,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-22  5:03:35
+-- Dump completed on 2026-06-23  4:09:37
