@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
@@ -273,7 +274,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,7 +283,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'the asian investor','...','2026-06-22',0.42136,'SCHG: A Bet On Massive AI CapEx Growth','https://seekingalpha.com/article/4916747-schg-a-bet-on-massive-ai-capex-growth',4),(2,'christine ji','Please enable JS and disable any ad blocker...','2026-06-22',0.78372,'Super Microâ€™s stock is seeing its best run in a year thanks to Nvidia partnership','https://www.marketwatch.com/story/super-micros-stock-is-seeing-its-best-run-in-a-year-thanks-to-nvidia-partnership-f619e58e?mod=mw_rss_topstories',40),(3,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-22',0.70764,'5 Fastest Growing High-Bandwidth Memory Stocks to Buy','https://www.insidermonkey.com/blog/5-fastest-growing-high-bandwidth-memory-stocks-to-buy-1786523/',4),(4,'rich duprey','Investing\n\n							Nebius (NBIS) grew Q1 revenue 684% year over year and holds a $50 billion contracted backlog anchored by deals with Microsoft and Meta.													\n\n							North American data cente...','2026-06-22',-0.3009,'Nebius Has 40% Upside in 2026 as Global AI Data Center Shortage Worsens','https://247wallst.com/investing/2026/06/22/nebius-has-40-upside-in-2026-as-global-ai-data-center-shortage-worsens/',4),(5,'nash riggins','...','2026-06-22',0.35232,'1 Company, 1.4 Billion People: How Nvidiaâ€™s Record Run Has Made the Company Higher Valued Than the Entire Country of India','https://www.barchart.com/story/news/2584746/1-company-1-4-billion-people-how-nvidias-record-run-has-made-the-company-higher-valued-than-the-entire-country-of-india',2),(6,'jake lerch','Schwab U.S. Dividend Equity ETF (SCHD +0.06%) offers lower expenses and a higher dividend yield with reduced volatility, whereas Fidelity High Dividend ETF (FDVV 0.33%) provides higher historical grow...','2026-06-22',0.7274,'Dividend ETFs: How SCHD and FDVV Measure Up','https://www.fool.com/coverage/etfs/2026/06/22/dividend-etfs-how-schd-and-fdvv-measure-up/',4),(7,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-22',0.59272,'OpenAI in Talks to Lease 10 GW Data Center in Ohio, Nvidia (NVDA) To Play an Important Role â€“ Reuters','https://www.insidermonkey.com/blog/openai-in-talks-to-lease-10-gw-data-center-in-ohio-nvidia-nvda-to-play-an-important-role-reuters-1786489/',40),(8,'ravikash bakolia','...','2026-06-22',0.3372,'Nvidia launches full-stack safety system Halos for robotics','https://seekingalpha.com/news/4605502-nvidia-launches-full-stack-safety-system-halos-for-robotics?feed_item_type=news',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'aanchal sugandh','...','2026-06-23',0.35232,'SanDisk Says AI Is â€˜Fundamentallyâ€™ Changing the NAND Market. Why Thatâ€™s Good News for SNDK Stock.','https://www.barchart.com/story/news/2608984/sandisk-says-ai-is-fundamentally-changing-the-nand-market-why-thats-good-news-for-sndk-stock',2),(2,'habib ur rehman','...','2026-06-23',0.46872,'How NVIDIAâ€™s (NVDA) GB300 Benchmark Win Highlights the Memory Demands Behind Agentic AI','https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-gb300-benchmark-win-160944497.html',20),(3,'yiannis zourmpanos','...','2026-06-23',0.43384,'Nvidia Just Claimed a New AI Crown. That Means NVDA Stock Investors Have a New Reason to Buy.','https://www.barchart.com/story/news/2607993/nvidia-just-claimed-a-new-ai-crown-that-means-nvda-stock-investors-have-a-new-reason-to-buy',20),(4,'mikhail fedorov','...','2026-06-23',-0.272,'â€˜Black Tuesdayâ€™ in South Korea Is a Geopolitical Warning for an Overheated Wall Street','https://www.barchart.com/story/news/2607957/black-tuesday-in-south-korea-is-a-geopolitical-warning-for-an-overheated-wall-street',2),(5,'null','Please enable JS and disable any ad blocker...','2026-06-23',0.02236,'Anthropic doubles down on safety with Claude ID checks','https://www.thestreet.com/technology/anthropic-doubles-down-on-safety-claude-id-checks',2),(6,'pathikrit bose','...','2026-06-23',0.51888,'Wedbush Gives a Thumbs Up to Cerebras Ahead of Its First Quarterly Earnings. What This Means for CBRS Stock Investors.','https://www.barchart.com/story/news/2607225/wedbush-gives-a-thumbs-up-to-cerebras-ahead-of-its-first-quarterly-earnings-what-this-means-for-cbrs-stock-investors',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -296,4 +297,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-23  4:53:29
+-- Dump completed on 2026-06-24  4:57:34

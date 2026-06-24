@@ -34,6 +34,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
@@ -273,7 +274,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,7 +283,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'nash riggins','...','2026-06-22',0.35232,'1 Company, 1.4 Billion People: How Nvidiaâ€™s Record Run Has Made the Company Higher Valued Than the Entire Country of India','https://www.barchart.com/story/news/2584746/1-company-1-4-billion-people-how-nvidias-record-run-has-made-the-company-higher-valued-than-the-entire-country-of-india',2),(2,'nicole kennedy','...','2026-06-22',0,'Winthrop Partners WNY LLC Takes $5.34 Million Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/winthrop-partners-wny-llc-takes-5-34-million-position-in-alphabet-inc-goog/11124082.html',2),(3,'abmn staff','\n					Posted by ABMN Staff on Jun 22nd, 2026\n\nRedwood Family Wealth LLC bought a new stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most recent disc...','2026-06-22',0.72764,'Redwood Family Wealth LLC Buys Shares of 1,676 Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/22/redwood-family-wealth-llc-buys-shares-of-1676-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on Jun 22nd, 2026\n\nHsbc Holdings PLC trimmed its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.4% in the 4th quarter, according to the company in its most rece...','2026-06-22',-0.01866,'Alphabet Inc. $GOOG Holdings Cut by Hsbc Holdings PLC','https://www.americanbankingnews.com/2026/06/22/alphabet-inc-goog-holdings-cut-by-hsbc-holdings-plc.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Jun 22nd, 2026\n\nFarmers National Bank boosted its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 11.4% in the fourth quarter, HoldingsChannel.com reports. The ...','2026-06-22',0.4367,'Alphabet Inc. $GOOG Shares Bought by Farmers National Bank','https://www.americanbankingnews.com/2026/06/22/alphabet-inc-goog-shares-bought-by-farmers-national-bank.html',4),(6,'abmn staff','...','2026-06-22',0.2368,'47,156 Shares in Alphabet Inc. $GOOG Bought by AG Campbell Advisory LLC','https://www.americanbankingnews.com/2026/06/22/47156-shares-in-alphabet-inc-goog-bought-by-ag-campbell-advisory-llc.html',2),(7,'abmn staff','\n					Posted by ABMN Staff on Jun 22nd, 2026\n\nFund Advisors of America Inc FL acquired a new stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, Holdings Channel.com reports. The i...','2026-06-22',0.1999,'Fund Advisors of America Inc FL Makes New Investment in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/06/22/fund-advisors-of-america-inc-fl-makes-new-investment-in-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Jun 22nd, 2026\n\nGreen Ridge Wealth Planning LLC purchased a new stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) in the 4th quarter, according to its most re...','2026-06-22',0.72766,'7,003 Shares in Alphabet Inc. $GOOG Purchased by Green Ridge Wealth Planning LLC','https://www.americanbankingnews.com/2026/06/22/7003-shares-in-alphabet-inc-goog-purchased-by-green-ridge-wealth-planning-llc.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'larry ramer','...','2026-06-23',-0.56664,'Amid Pivot to AI Infrastructure, Rumble Stock Looks Very Risky and Extremely Expensive','https://www.barchart.com/story/news/2608588/amid-pivot-to-ai-infrastructure-rumble-stock-looks-very-risky-and-extremely-expensive',2),(2,'caleb naysmith','...','2026-06-23',0,'Mark Cuban Says OpenAI Is â€˜Sh*tting Awayâ€™ Its Money on AI Infrastructure: Says â€˜Theyâ€™ll Never Getâ€™ a Return on Their Trillion-Dollar Spending Spree','https://www.barchart.com/story/news/2603502/mark-cuban-says-openai-is-sh-tting-away-its-money-on-ai-infrastructure-says-theyll-never-get-a-return-on-their-trillion-dollar-spending-spree',2),(3,'nauman khan','...','2026-06-23',0,'This Tiny AI Memory Stock Is Taking on Samsung, Google, and Nvidia','https://www.barchart.com/story/news/2600115/this-tiny-ai-memory-stock-is-taking-on-samsung-google-and-nvidia',2),(4,'matt frankel','Space Exploration Technologies (SPCX +1.61%) has taken investors on quite a roller coaster ride since its highly successful IPO. Just four days after raising $85 billion at a share price of $135, Spac...','2026-06-23',0.07724,'SpaceX Stock Has Plunged 3 Days in a Row. Is This a Red Flag or a Buying Opportunity?','https://www.fool.com/investing/2026/06/23/spacex-stock-has-plunged-3-days-in-a-row-is-this-a/',4),(5,'alanna baker','...','2026-06-22',-0.57472,'Alphabet (NASDAQ:GOOG) Trading Down 5.1% â€“ Should You Sell?','https://www.thelincolnianonline.com/2026/06/22/alphabet-nasdaqgoog-trading-down-5-1-should-you-sell.html',2),(6,'anders bylund','...','2026-06-22',-0.49992,'Alphabet and SpaceX Drag the Nasdaq Lower; Dow Stands Alone','https://finance.yahoo.com/markets/stocks/articles/alphabet-spacex-drag-nasdaq-lower-173359258.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -296,4 +297,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-23  4:53:29
+-- Dump completed on 2026-06-24  4:57:34
