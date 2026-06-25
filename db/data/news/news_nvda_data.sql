@@ -37,6 +37,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
+187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
@@ -274,7 +275,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -283,7 +284,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'aanchal sugandh','...','2026-06-23',0.35232,'SanDisk Says AI Is â€˜Fundamentallyâ€™ Changing the NAND Market. Why Thatâ€™s Good News for SNDK Stock.','https://www.barchart.com/story/news/2608984/sandisk-says-ai-is-fundamentally-changing-the-nand-market-why-thats-good-news-for-sndk-stock',2),(2,'habib ur rehman','...','2026-06-23',0.46872,'How NVIDIAâ€™s (NVDA) GB300 Benchmark Win Highlights the Memory Demands Behind Agentic AI','https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-gb300-benchmark-win-160944497.html',20),(3,'yiannis zourmpanos','...','2026-06-23',0.43384,'Nvidia Just Claimed a New AI Crown. That Means NVDA Stock Investors Have a New Reason to Buy.','https://www.barchart.com/story/news/2607993/nvidia-just-claimed-a-new-ai-crown-that-means-nvda-stock-investors-have-a-new-reason-to-buy',20),(4,'mikhail fedorov','...','2026-06-23',-0.272,'â€˜Black Tuesdayâ€™ in South Korea Is a Geopolitical Warning for an Overheated Wall Street','https://www.barchart.com/story/news/2607957/black-tuesday-in-south-korea-is-a-geopolitical-warning-for-an-overheated-wall-street',2),(5,'null','Please enable JS and disable any ad blocker...','2026-06-23',0.02236,'Anthropic doubles down on safety with Claude ID checks','https://www.thestreet.com/technology/anthropic-doubles-down-on-safety-claude-id-checks',2),(6,'pathikrit bose','...','2026-06-23',0.51888,'Wedbush Gives a Thumbs Up to Cerebras Ahead of Its First Quarterly Earnings. What This Means for CBRS Stock Investors.','https://www.barchart.com/story/news/2607225/wedbush-gives-a-thumbs-up-to-cerebras-ahead-of-its-first-quarterly-earnings-what-this-means-for-cbrs-stock-investors',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-24',0.8611,'5 Best AI Chip Stocks to Buy for the Long Term','https://www.insidermonkey.com/blog/5-best-ai-chip-stocks-to-buy-for-the-long-term-1786904/',4),(2,'null','Please enable JS and disable any ad blocker...','2026-06-24',0.06364,'5-star analyst sets jaw-dropping AMD stock price target','https://www.thestreet.com/investing/stocks/ubs-raises-amd-stock-price-target',2),(3,'jabran kundi','...','2026-06-24',-0.13,'Hereâ€™s Why Iâ€™m Selling Micron Before Earnings. Itâ€™s a Matter of Risk Control, Not Lack of Conviction.','https://www.barchart.com/story/news/2629658/heres-why-im-selling-micron-before-earnings-its-a-matter-of-risk-control-not-lack-of-conviction',2),(4,'vandita jadeja','Investing\n\n							NVIDIA (NVDA) posts accelerating revenue growth of 85% year-over-year, guides Q2 to $91B, and holds $119B in supply commitments as a structural AI toll booth.													\n\n							NV...','2026-06-24',0.19964,'This Stock Is My Biggest Bet For The Second Half of 2026','https://247wallst.com/investing/2026/06/24/this-stock-is-my-biggest-bet-for-the-second-half-of-2026/',4),(5,'omor ibne ehsan','...','2026-06-24',0,'How Applied Materials Could Become the Next $1 Trillion Chip Stock','https://www.barchart.com/story/news/2628679/how-applied-materials-could-become-the-next-1-trillion-chip-stock',2),(6,'geoffrey seiler','Nvidia (NVDA 0.93%) has been the best-performing artificial intelligence (AI) infrastructure stock over the past decade, which has propelled it to become the largest company in the world. The chipmake...','2026-06-24',0.58022,'This Artificial Intelligence (AI) Infrastructure Stock Could Be Bigger Than Nvidia Over the Next Decade','https://www.fool.com/investing/2026/06/24/this-artificial-intelligence-ai-infrastructure-sto/',40),(7,'dr. robert castellano','Investing\n\n							IonQ gained ground while D-Wave, Rigetti, and Quantum Computing Inc. all declined as investors began rewarding commercialization over scientific promise.													\n\n							Jensen ...','2026-06-24',0.13816,'Why Investors Are Finally Separating Quantum Computing Winners From Losers','https://247wallst.com/investing/2026/06/24/why-investors-are-finally-separating-quantum-computing-winners-from-losers/',4),(8,'sheryar siddiq','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-24',0.89062,'5 Best Tech Stocks to Buy Now for the â€œVera Rubinâ€ Chip Cycle','https://www.insidermonkey.com/blog/5-best-tech-stocks-to-buy-now-for-the-vera-rubin-chip-cycle-1787309/',4),(9,'larry ramer','...','2026-06-24',0,'Appleâ€™ s AI Upgrade Probably Wonâ€™t Be a Game Changer for AAPL Stock','https://www.barchart.com/story/news/2627959/apple-s-ai-upgrade-probably-wont-be-a-game-changer-for-aapl-stock',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -297,4 +298,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-24  4:57:34
+-- Dump completed on 2026-06-25  4:56:18

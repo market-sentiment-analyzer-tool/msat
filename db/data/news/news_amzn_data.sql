@@ -37,6 +37,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
+187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
@@ -274,7 +275,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -283,7 +284,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'larry ramer','...','2026-06-23',-0.56664,'Amid Pivot to AI Infrastructure, Rumble Stock Looks Very Risky and Extremely Expensive','https://www.barchart.com/story/news/2608588/amid-pivot-to-ai-infrastructure-rumble-stock-looks-very-risky-and-extremely-expensive',2),(2,'mikhail fedorov','...','2026-06-23',-0.272,'â€˜Black Tuesdayâ€™ in South Korea Is a Geopolitical Warning for an Overheated Wall Street','https://www.barchart.com/story/news/2607957/black-tuesday-in-south-korea-is-a-geopolitical-warning-for-an-overheated-wall-street',2),(3,'karen gilchrist','...','2026-06-23',-0.2,'US Stocks Down as Global Tech Selloff Deepens','https://www.morningstar.com/markets/us-stocks-down-sharply-global-tech-selloff-deepens',2),(4,'null','Please enable JS and disable any ad blocker...','2026-06-23',0.02236,'Anthropic doubles down on safety with Claude ID checks','https://www.thestreet.com/technology/anthropic-doubles-down-on-safety-claude-id-checks',2),(5,'oliver rodzianko','...','2026-06-23',0.14232,'I See Amazon Bringing Manufacturing To Prime (Rating Upgrade)','https://seekingalpha.com/article/4916968-i-see-amazon-bringing-manufacturing-to-prime-rating-upgrade',40),(6,'jabran kundi','...','2026-06-23',0.25456,'Michael Burry Just Refused to Buy the SpaceX IPO. Here Are 3 Companies He Is Buying Instead.','https://www.barchart.com/story/news/2603479/michael-burry-just-refused-to-buy-the-spacex-ipo-here-are-3-companies-he-is-buying-instead',2),(7,'caleb naysmith','...','2026-06-23',0,'Mark Cuban Says OpenAI Is â€˜Sh*tting Awayâ€™ Its Money on AI Infrastructure: Says â€˜Theyâ€™ll Never Getâ€™ a Return on Their Trillion-Dollar Spending Spree','https://www.barchart.com/story/news/2603502/mark-cuban-says-openai-is-sh-tting-away-its-money-on-ai-infrastructure-says-theyll-never-get-a-return-on-their-trillion-dollar-spending-spree',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'catherine talavera','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-24',0.8611,'5 Best AI Chip Stocks to Buy for the Long Term','https://www.insidermonkey.com/blog/5-best-ai-chip-stocks-to-buy-for-the-long-term-1786904/',4),(2,'null','Please enable JS and disable any ad blocker...','2026-06-24',0.24468,'Oracle stock analyst reboots outlook as costs spark debate','https://www.thestreet.com/investing/stocks/oracle-stock-analyst-reboots-outlook-as-costs-spark-debate',2),(3,'dr. robert castellano','Investing\n\n							IonQ gained ground while D-Wave, Rigetti, and Quantum Computing Inc. all declined as investors began rewarding commercialization over scientific promise.													\n\n							Jensen ...','2026-06-24',0.13816,'Why Investors Are Finally Separating Quantum Computing Winners From Losers','https://247wallst.com/investing/2026/06/24/why-investors-are-finally-separating-quantum-computing-winners-from-losers/',4),(4,'larry ramer','...','2026-06-24',0,'Appleâ€™ s AI Upgrade Probably Wonâ€™t Be a Game Changer for AAPL Stock','https://www.barchart.com/story/news/2627959/apple-s-ai-upgrade-probably-wont-be-a-game-changer-for-aapl-stock',2),(5,'tiyashi datta','...','2026-06-24',0,'SA analyst upgrades/downgrades: TSLA, AMZN, AAPL, AVGO','https://seekingalpha.com/news/4606774-sa-analyst-upgrades-downgrades-tsla-amzn-aapl-avgo?feed_item_type=news',4),(6,'bob karr','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-24',0.84044,'5 Most Promising AI Stocks to Buy and Hold for the Next 2 Years','https://www.insidermonkey.com/blog/5-most-promising-ai-stocks-to-buy-and-hold-for-the-next-2-years-1787191/',4),(7,'jason capul','...','2026-06-24',0.14232,'ETFs in focus as Amazon Prime Day looks to ignite consumer activity','https://seekingalpha.com/news/4606775-etfs-in-focus-as-amazon-prime-day-looks-to-ignite-consumer-activity?feed_item_type=news',40),(8,'josh enomoto','...','2026-06-24',0,'Hereâ€™s How to Test Drive Rivian Stock Without Going All-In','https://www.barchart.com/story/news/2627479/heres-how-to-test-drive-rivian-stock-without-going-all-in',2),(9,'daniel howley','...','2026-06-24',-0.1024,'OpenAI and Broadcom announce first custom AI chip, in strike at Nvidia','https://ca.finance.yahoo.com/news/openai-and-broadcom-announce-first-custom-ai-chip-in-strike-at-nvidia-140518150.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -297,4 +298,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-24  4:57:34
+-- Dump completed on 2026-06-25  4:56:18
