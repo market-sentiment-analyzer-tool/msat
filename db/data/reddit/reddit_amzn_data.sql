@@ -34,9 +34,11 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1c51b1a2-704b-11f1-ba75-7a2d3abc9e1c:1-165,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -210,7 +212,6 @@ d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
-dca1143c-6f81-11f1-a103-cefd204ce18e:1-114,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
@@ -274,7 +275,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -283,7 +284,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1udw26i','otfda4b','2026-06-23',9,0.3087,'GCP\'s growth is so high because it includes chip sales.\n\nMeta has been monetizing AI internally for years. Thats how they were able to overcome the ios privacy changes so fast. And why revenue is growing 20%+.\n\nI agree Copilot sucks compared to Gemini or Claude, but im not sure if it matters given MSFT\'s distribution.'),(2,'ValueInvesting','1udw26i','otf4zvy','2026-06-23',65,0,'Ainâ€™t gonna read thatâ€¦! \n\nCalls?'),(3,'ValueInvesting','1udw26i','otf6abv','2026-06-23',39,0.7726,'Anyone who has worked in IT knows that MSFT will come out a winner no matter what, could be alongside google and amazon but overall it doesnâ€™t matter. Upper management in Fortune 500 companies are just gonna choose MSFT again and again and again. openAI being 50% of their backlog was a choice, they could just show the middle finger to oai and the backlog will still fill up from other companies. Iâ€™ll keep buying at that price point.'),(4,'ValueInvesting','1udw26i','otf8jho','2026-06-23',10,0.4404,'You dont see many bringing up META or MSFT'),(5,'ValueInvesting','1udw26i','otfcqvz','2026-06-23',3,0.5859,'MAG(YTD rtn) -4.3% , RSP(YTD rtn) +9.1% (still got all 7 stocks there).  S&P(YTD return): +7.75%\n\nIf you can guess the next 7 after rotation you are the winner.'),(6,'ValueInvesting','1udw26i','otf5us0','2026-06-23',10,0,'META is insanely undervalued at these prices'),(7,'ValueInvesting','1udw26i','otfidqi','2026-06-23',2,-0.0708,'I disagree with pretty much all of this. Â It seems poorly researched and leverages selective logic. Â I donâ€™t see how anyone takes this seriously'),(8,'ValueInvesting','1udw26i','otfkawc','2026-06-24',2,0.8176,'I think Google is going to be fine and both a recipient of AI tech improvement and a supplier of compute. They have the right ecosystem. MSFT as well. META is trying to become something beside an advertising company. Ai will help them more in targeting little girls who feel bad about themselves than it will be a pick and shovel company. The problem is Zuckerberg is unchecked and spending billions on a strategy that doesnâ€™t have enough upside. Just like he did with Metaverse. If he focused on being a cash cow and milking it- this would be a $1000 stock. '),(9,'ValueInvesting','1udw26i','otfpkkv','2026-06-24',2,0.977,'I didn\'t read that whole rant but it\'s a pretty simple narrative. They\'re all acting like growth stocks, but they\'re way too big and have too much price history to carry growth PEs. So they\'re kind of just strangling themselves. I expect this malaise to continue until they can prove the benefits from their AI capex. Basically they\'re all acting like Amazon now'),(10,'ValueInvesting','1udw26i','otflfon','2026-06-24',1,0.8741,'Thanks for writing this! As someone on team Amazon (long term AMZN holder) your explanation made a lot of sense. It explains why GOOG is doing so much better than AMZN. Didnâ€™t realize Google cloud is doing better than AWS.Â '),(11,'ValueInvesting','1udw26i','otfs20t','2026-06-24',1,0.9836,'The problem isnâ€™t Google vs Meta vs MSFT vs AMZN. They will all win in their own right. The issue is valuations. Can you justify buying at todayâ€™s prices and which has the biggest upside relative to risk.\n\nGoogle is great and if it keeps dropping, Iâ€™ll be interested but it is priced to perfection more than the others. Google has lots of multi billion dollar revenue opportunities but they are also in an area of extreme competition for each one.\n\nMSFT is about them using their enterprise network to lock in. It could be the wrapper to enterprise allowing people to use multiple frontier labs and taking a toll.\n\nMETA is the worldâ€™s biggest media business. They have 3.5b eyeballs daily. If they do nothing else they are cheap but they are dabbling in creating the next major revenue stream. They also have a history of being excellent capital allocators. At this valuation they are the pick for the next 5-7 years.'),(12,'ValueInvesting','1udw26i','otfs884','2026-06-24',1,0,'Too long'),(13,'ValueInvesting','1udw26i','otfub0u','2026-06-24',1,0.8555,'Youâ€™re underestimating amazons retail business. They are officially the worldâ€™s best logistics expert and have tens of thousands of warehouses ready to same day delivery to anyone. Once ai robotics come into play and ai efficiencies the margins will no longer be low. '),(14,'ValueInvesting','1udw26i','otfxpbx','2026-06-24',1,-0.4019,'The problem is now they spend money instead of earn it'),(15,'ValueInvesting','1udw26i','otgb51h','2026-06-24',1,0.5719,'Wonderful '),(16,'ValueInvesting','1udw26i','otfanhx','2026-06-23',1,-0.4019,'i thought you said price targets instead of average cost and damn near had a stroke'),(17,'ValueInvesting','1udw26i','otf6l02','2026-06-23',0,0.7234,'Have you used Copilot? I hate Gemini. I use Copilot exclusively now! I do not like the demeanor of Gemini! Copilot is more human and has a much better demeanor. I used them side by side for a month recently and always chose Copilot over Gemini. I hate that Google search is dominated by Gemini now! I think Copilot will win in the end! It is on every computer in the world! It will be discovered and will get the love it deserves soon enough. I like that is a mix of all the LLLMs! '),(18,'ValueInvesting','1udw26i','otf6y4q','2026-06-23',0,-0.4788,'Didnâ€™t they all take on debt? Maybe nothing to be concerned about, using the general ratios (debt to equity, etc).'),(19,'ValueInvesting','1udw26i','otfsx3e','2026-06-24',0,-0.1207,'Google core search business is still disrupted by AI. It is like ADBE situation. Market overlook this issue now because Gemini advancement but it is not solved and Gemini begins to fall behind ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -297,4 +297,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-24  4:06:48
+-- Dump completed on 2026-06-25  4:08:05
