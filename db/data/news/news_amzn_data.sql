@@ -168,6 +168,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -276,7 +277,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -285,7 +286,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'eric fry','\n\n			A piece of tape cost Denny Hamlin his championship. The same problem that blew his engine is now one of the biggest profit opportunities in AI.		\nSource: Shutterstock\nListen to the audio version ...','2026-06-25',0.7174,'NASCAR Lost a Championship Over Heat, but Investors Can Benefit','https://investorplace.com/smartmoney/2026/06/nascar-lost-championship-investors-can-benefit/',4),(2,'john kingston','\n\n\nThe Teamsters have won a key victory over Amazon at the National Labor Relations Board (NLRB) before an administrative law judge, but the next step in the battle over what it takes to organize work...','2026-06-25',0.50284,'Teamsters claim victory over Amazon at NLRB, next step likely more challenging','https://www.freightwaves.com/news/teamsters-claim-victory-over-amazon-at-nlrb-next-step-likely-more-challenging',40),(3,'wall street breakfast','...','2026-06-25',0.32152,'Wall Street Lunch: Nordstrom Taps FAO Schwarz To Boost Toy Selection And Store Traffic','https://seekingalpha.com/article/4917749-wall-street-lunch-nordstrom-taps-fao-schwarz-to-boost-toy-selection-and-store-traffic',4),(4,'oleksandr pylypenko','...','2026-06-25',0.08216,'The First Test for SpaceX Stock Was in the Debt Market, Not on the Launchpad. It May Have Scored Better Than You Think.','https://www.barchart.com/story/news/1121/the-first-test-for-spacex-stock-was-in-the-debt-market-not-on-the-launchpad-it-may-have-scored-better-than-you-think',2),(5,'ebube jones','...','2026-06-25',0.28896,'SpaceXâ€™s Move Into Neocloud Operations Is Raising Expectations for Its Valuation and Partners Like Nvidia and Intel.','https://www.barchart.com/story/news/2649218/spacexs-move-into-neocloud-operations-is-raising-expectations-for-its-valuation-and-partners-like-nvidia-and-intel',2),(6,'patrick sanders','...','2026-06-25',0,'4 Stocks Powering the AI Revolution Behind the Scenes','https://www.barchart.com/story/news/2648514/4-stocks-powering-the-ai-revolution-behind-the-scenes',2),(7,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-25',0.63094,'5 Trending US Stocks to Buy Now','https://www.insidermonkey.com/blog/5-trending-us-stocks-to-buy-now-1787194/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'jeff lewis','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.8652,'15 Best AI Stocks That Will Make You Rich in 10 Years','https://www.insidermonkey.com/blog/15-best-ai-stocks-that-will-make-you-rich-in-10-years-1789746/',4),(2,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.79918,'5 Safe Stocks for Beginners to Buy in 2026','https://www.insidermonkey.com/blog/5-safe-stocks-for-beginners-to-buy-in-2026-1789506/',4),(3,'manika premsingh','...','2026-06-26',0.42136,'Amazon: Macros Support Further Uptick (Rating Upgrade)','https://seekingalpha.com/article/4918041-amazon-macros-support-further-uptick-rating-upgrade',4),(4,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.70856,'5 Best Trending AI Stocks to Watch in 2026','https://www.insidermonkey.com/blog/5-best-trending-ai-stocks-to-watch-in-2026-1789271/',4),(5,'geoffrey seiler','With the latest dip in the tech sector, several top growth stocks have fallen back to lows from two months ago. With nothing fundamentally changing with their long-term stories, this could be a great ...','2026-06-26',0.3023,'3 Growth Stocks Down to 2-Month Lows Worth Buying on the Dip','https://www.fool.com/investing/2026/06/26/3-growth-stocks-down-to-2-month-lows-worth-buying/',4),(6,'donna armstrong','...','2026-06-26',0.2368,'Waystone Advisors LLC Sells 2,479 Shares of Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/06/26/waystone-advisors-llc-sells-2479-shares-of-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -299,4 +300,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-26  5:01:38
+-- Dump completed on 2026-06-27  4:43:51

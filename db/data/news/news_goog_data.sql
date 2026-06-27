@@ -168,6 +168,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -276,7 +277,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -285,7 +286,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-06-25',0.30544,'Dear Verizon Stock Fans, Mark Your Calendars for June 29','https://www.barchart.com/story/news/2618/dear-verizon-stock-fans-mark-your-calendars-for-june-29',2),(2,'pathikrit bose','...','2026-06-25',0.30544,'Dear Google Stock Fans, Mark Your Calendars for June 29','https://www.barchart.com/story/news/1152/dear-google-stock-fans-mark-your-calendars-for-june-29',20),(3,'oleksandr pylypenko','...','2026-06-25',0.08216,'The First Test for SpaceX Stock Was in the Debt Market, Not on the Launchpad. It May Have Scored Better Than You Think.','https://www.barchart.com/story/news/1121/the-first-test-for-spacex-stock-was-in-the-debt-market-not-on-the-launchpad-it-may-have-scored-better-than-you-think',2),(4,'aditya raghunath','...','2026-06-25',0,'SpaceX Could Soon Build Another Colossus Data Center. What That Means for SPCX Stock.','https://www.barchart.com/story/news/1105/spacex-could-soon-build-another-colossus-data-center-what-that-means-for-spcx-stock',2),(5,'a.j. button','  Microsoft\"s headquarters in Bucharest, Romania lcva2/iStock Editorial via Getty Images\nMicrosoft\"s headquarters in Bucharest, Romania\nlcva2/iStock Editorial via Getty Images\nMicrosoft (MSFT) stock s...','2026-06-25',0.09074,'Microsoft: A Pullback Without Reason','https://seekingalpha.com/article/4917654-microsoft-a-pullback-without-reason',8),(6,'larry ramer','...','2026-06-24',0.02064,'NVDA Stock Alert: The Prices of Nvidiaâ€™s Chips Could Drop for Some Time Amid Intensifying Competition','https://www.barchart.com/story/news/2635255/nvda-stock-alert-the-prices-of-nvidias-chips-could-drop-for-some-time-amid-intensifying-competition',2),(7,'wajeeh khan','...','2026-06-24',0.06176,'How a $4 Billion Acquisition Could Be Just What Qualcomm Stock Needs to Challenge Nvidia','https://www.barchart.com/story/news/2634873/how-a-4-billion-acquisition-could-be-just-what-qualcomm-stock-needs-to-challenge-nvidia',2),(8,'wajeeh khan','...','2026-06-24',0.2368,'GOOGL Stock Alert: What to Know as Alphabet Joins the Dow Jones Industrial Average','https://www.barchart.com/story/news/2633619/googl-stock-alert-what-to-know-as-alphabet-joins-the-dow-jones-industrial-average',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','With the latest dip in the tech sector, several top growth stocks have fallen back to lows from two months ago. With nothing fundamentally changing with their long-term stories, this could be a great ...','2026-06-26',0.3023,'3 Growth Stocks Down to 2-Month Lows Worth Buying on the Dip','https://www.fool.com/investing/2026/06/26/3-growth-stocks-down-to-2-month-lows-worth-buying/',4),(2,'cfpÂ®','Now that the dust has settled on the massive IPO of Space Exploration Technologies (SPCX +0.15%), better known as SpaceX, another trillion-dollar listing could be just around the corner.\nAnthropic, th...','2026-06-26',0.66808,'If Anthropic Goes Public at $1 Trillion Or More, This Company Could Be a Big Winner','https://www.fool.com/investing/2026/06/26/if-anthropic-goes-public-at-1-trillion-or-more-thi/',4),(3,'adam levy','Many of the leading artificial intelligence companies are stuck between a rock and a hard place when it comes to pleasing investors. On one hand, the market has punished stocks of the leading hypersca...','2026-06-25',0.9437,'Investors Are Getting Another Great Opportunity to Buy This Incredible Artificial Intelligence (AI) Stock Right Now','https://www.fool.com/investing/2026/06/25/investors-are-getting-another-great-opportunity-to/',4),(4,'geoffrey seiler','Shares of Alphabet (GOOGL 1.73%) (GOOG 2.15%) took a hit to start the week after it was revealed that the company had recently lost some high-profile employees. Last week, the co-lead on its Gemini mo...','2026-06-25',0.71856,'Why the Alphabet Stock Dip Looks Like a Golden Buying Opportunity','https://www.fool.com/investing/2026/06/25/alphabet-stock-dip-looks-like-golden-opportunity/',4),(5,'sristi suman jayaswal','...','2026-06-25',0.30544,'Dear Verizon Stock Fans, Mark Your Calendars for June 29','https://www.barchart.com/story/news/2618/dear-verizon-stock-fans-mark-your-calendars-for-june-29',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -299,4 +300,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-26  5:01:38
+-- Dump completed on 2026-06-27  4:43:51

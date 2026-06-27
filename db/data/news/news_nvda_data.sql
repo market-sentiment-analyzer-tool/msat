@@ -168,6 +168,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -276,7 +277,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -285,7 +286,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'eric fry','\n\n			A piece of tape cost Denny Hamlin his championship. The same problem that blew his engine is now one of the biggest profit opportunities in AI.		\nSource: Shutterstock\nListen to the audio version ...','2026-06-25',0.7174,'NASCAR Lost a Championship Over Heat, but Investors Can Benefit','https://investorplace.com/smartmoney/2026/06/nascar-lost-championship-investors-can-benefit/',4),(2,'sristi suman jayaswal','...','2026-06-25',0.30544,'Dear Verizon Stock Fans, Mark Your Calendars for June 29','https://www.barchart.com/story/news/2618/dear-verizon-stock-fans-mark-your-calendars-for-june-29',2),(3,'sa transcripts','...','2026-06-25',0,'NVIDIA Corporation (NVDA) Shareholder/Analyst Call - Slideshow','https://seekingalpha.com/article/4917789-nvidia-corporation-nvda-shareholder-analyst-call-slideshow',40),(4,'keithen drury','In the artificial intelligence (AI) investing sector, several stocks look like great buys right now. There is still massive demand for AI computing power, and companies are racing to build infrastruct...','2026-06-25',0.84988,'Got $3,000? Here Are My Top 3 Artificial Intelligence (AI) Stocks to Buy Right Now','https://www.fool.com/investing/2026/06/25/got-3000-here-are-my-top-3-artificial-intelligence/',4),(5,'tristan rich','...','2026-06-25',0.2368,'Rep. Matthew Robert Van Epps Sells Off Shares of NVIDIA Corporation (NASDAQ:NVDA)','https://www.themarketsdaily.com/2026/06/25/rep-matthew-robert-van-epps-sells-off-shares-of-nvidia-corporation-nasdaqnvda.html',20),(6,'will healy','In June 2022, I made what was likely a mistake by choosing to buy Advanced Micro Devices (AMD +2.18%) stock over Nvidia (NVDA 1.86%). It was a cheaper stock in terms of valuation, and this was before ...','2026-06-25',0.1999,'Why I Continue to Prioritize AMD Stock Over Nvidia','https://www.fool.com/investing/2026/06/25/why-i-continue-to-prioritize-amd-stock-over-nvidia/',40),(7,'aditya raghunath','...','2026-06-25',0,'SpaceX Could Soon Build Another Colossus Data Center. What That Means for SPCX Stock.','https://www.barchart.com/story/news/1105/spacex-could-soon-build-another-colossus-data-center-what-that-means-for-spcx-stock',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'natasha abellard','\nReference #18.47a7cb17.1782535422.23bdbf7b\nhttps://errors.edgesuite.net/18.47a7cb17.1782535422.23bdbf7b\n\nhttps://errors.edgesuite.net/18.47a7cb17.1782535422.23bdbf7b...','2026-06-26',0.25456,'Honeywell Aerospace lands an analyst endorsement ahead of its debut. This is our plan for the stock','https://www.cnbc.com/2026/06/26/honeywell-aerospace-lands-an-analyst-endorsement-ahead-of-its-debut-this-is-our-plan-for-the-stock.html',40),(2,'jeff lewis','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.8652,'15 Best AI Stocks That Will Make You Rich in 10 Years','https://www.insidermonkey.com/blog/15-best-ai-stocks-that-will-make-you-rich-in-10-years-1789746/',4),(3,'josh enomoto','...','2026-06-26',0,'Nvidia Stock Is Trading at a Discount, But It Wonâ€™t Be for Long','https://www.barchart.com/story/news/3002360/nvidia-stock-is-trading-at-a-discount-but-it-wont-be-for-long',20),(4,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.79918,'5 Safe Stocks for Beginners to Buy in 2026','https://www.insidermonkey.com/blog/5-safe-stocks-for-beginners-to-buy-in-2026-1789506/',4),(5,'ruchi gupta','...','2026-06-26',0.50952,'Micron Stock Emerges as Wall Streetâ€™s Top Growth Pick','https://www.barchart.com/story/news/18021/micron-stock-emerges-as-wall-streets-top-growth-pick',2),(6,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-26',0.70856,'5 Best Trending AI Stocks to Watch in 2026','https://www.insidermonkey.com/blog/5-best-trending-ai-stocks-to-watch-in-2026-1789271/',4),(7,'jabran kundi','...','2026-06-26',-0.32152,'Palantirâ€™s â€˜Too Expensiveâ€™ Excuse No Longer Valid at 52-Week Lows: Hereâ€™s Why I Am Buying PLTR Stock','https://www.barchart.com/story/news/17681/palantirs-too-expensive-excuse-no-longer-valid-at-52-week-lows-heres-why-i-am-buying-pltr-stock',2),(8,'geoffrey seiler','With the latest dip in the tech sector, several top growth stocks have fallen back to lows from two months ago. With nothing fundamentally changing with their long-term stories, this could be a great ...','2026-06-26',0.3023,'3 Growth Stocks Down to 2-Month Lows Worth Buying on the Dip','https://www.fool.com/investing/2026/06/26/3-growth-stocks-down-to-2-month-lows-worth-buying/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -299,4 +300,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-26  5:01:39
+-- Dump completed on 2026-06-27  4:43:52
