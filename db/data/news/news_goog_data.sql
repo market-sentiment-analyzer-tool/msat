@@ -161,6 +161,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -277,7 +278,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -286,7 +287,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','With the latest dip in the tech sector, several top growth stocks have fallen back to lows from two months ago. With nothing fundamentally changing with their long-term stories, this could be a great ...','2026-06-26',0.3023,'3 Growth Stocks Down to 2-Month Lows Worth Buying on the Dip','https://www.fool.com/investing/2026/06/26/3-growth-stocks-down-to-2-month-lows-worth-buying/',4),(2,'cfpÂ®','Now that the dust has settled on the massive IPO of Space Exploration Technologies (SPCX +0.15%), better known as SpaceX, another trillion-dollar listing could be just around the corner.\nAnthropic, th...','2026-06-26',0.66808,'If Anthropic Goes Public at $1 Trillion Or More, This Company Could Be a Big Winner','https://www.fool.com/investing/2026/06/26/if-anthropic-goes-public-at-1-trillion-or-more-thi/',4),(3,'adam levy','Many of the leading artificial intelligence companies are stuck between a rock and a hard place when it comes to pleasing investors. On one hand, the market has punished stocks of the leading hypersca...','2026-06-25',0.9437,'Investors Are Getting Another Great Opportunity to Buy This Incredible Artificial Intelligence (AI) Stock Right Now','https://www.fool.com/investing/2026/06/25/investors-are-getting-another-great-opportunity-to/',4),(4,'geoffrey seiler','Shares of Alphabet (GOOGL 1.73%) (GOOG 2.15%) took a hit to start the week after it was revealed that the company had recently lost some high-profile employees. Last week, the co-lead on its Gemini mo...','2026-06-25',0.71856,'Why the Alphabet Stock Dip Looks Like a Golden Buying Opportunity','https://www.fool.com/investing/2026/06/25/alphabet-stock-dip-looks-like-golden-opportunity/',4),(5,'sristi suman jayaswal','...','2026-06-25',0.30544,'Dear Verizon Stock Fans, Mark Your Calendars for June 29','https://www.barchart.com/story/news/2618/dear-verizon-stock-fans-mark-your-calendars-for-june-29',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mohit oberoi','...','2026-06-27',-0.19984,'Alphabet Stock Falls Below Berkshireâ€™s Buying Price, but GOOG Is Not a Screaming Buy Yet','https://www.barchart.com/story/news/3015980/alphabet-stock-falls-below-berkshires-buying-price-but-goog-is-not-a-screaming-buy-yet',20),(2,'bay area ideas','...','2026-06-27',0.18104,'Alphabet: This Is A Dip Worth Buying','https://seekingalpha.com/article/4918244-alphabet-this-is-a-dip-worth-buying',4),(3,'joseph griffin','...','2026-06-27',0,'Novare Capital Management LLC Decreases Stake in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13487468/novare-capital-management-llc-decreases-stake-in-alphabet-inc-googl.html',2),(4,'mark dietrich','...','2026-06-27',0,'Webster Bank N. A. Has $37.26 Million Stake in Alphabet Inc. $GOOGL','https://www.watchlistnews.com/webster-bank-n-a-has-37-26-million-stake-in-alphabet-inc-googl/11128195.html',2),(5,'michael walen','...','2026-06-27',0.52776,'Summit Wealth Partners LLC Purchases 6,677 Shares of Alphabet Inc. $GOOGL','https://www.themarketsdaily.com/2026/06/27/summit-wealth-partners-llc-purchases-6677-shares-of-alphabet-inc-googl.html',2),(6,'max byerly','...','2026-06-27',0.5364,'Rainier Family Wealth Inc. Boosts Holdings in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13487465/rainier-family-wealth-inc-boosts-holdings-in-alphabet-inc-googl.html',2),(7,'kim johansen','...','2026-06-27',0,'Telos Capital Management Inc. Has $25.50 Million Position in Alphabet Inc. $GOOGL','https://www.themarketsdaily.com/2026/06/27/telos-capital-management-inc-has-25-50-million-position-in-alphabet-inc-googl.html',2),(8,'micah haroldson','...','2026-06-27',0.52776,'Alphabet Inc. $GOOGL Shares Acquired by Rainier Family Wealth Inc.','https://www.watchlistnews.com/alphabet-inc-googl-shares-acquired-by-rainier-family-wealth-inc/11128192.html',2),(9,'max byerly','...','2026-06-27',0.2368,'Alphabet Inc. $GOOGL Shares Sold by Telos Capital Management Inc.','https://www.tickerreport.com/banking-finance/13487463/alphabet-inc-googl-shares-sold-by-telos-capital-management-inc.html',2),(10,'abmn staff','\n					Posted by ABMN Staff on Jun 27th, 2026\n\nClear Trail Advisors LLC lifted its holdings in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 34.2% during the 1st quarter, according to the co...','2026-06-27',0.50532,'Clear Trail Advisors LLC Has $2.56 Million Stock Holdings in Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/06/27/clear-trail-advisors-llc-has-2-56-million-stock-holdings-in-alphabet-inc-googl.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -300,4 +301,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-27  4:43:51
+-- Dump completed on 2026-06-28  5:10:41
