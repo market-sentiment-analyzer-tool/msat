@@ -161,7 +161,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9c6cc7a6-7374-11f1-97e0-1693fa78f524:1-167,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -188,7 +190,6 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
-c3893d47-72a8-11f1-9a8a-92e80ab4ce14:1-145,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
@@ -278,7 +279,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -287,7 +288,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ugzzc9','ou4983m','2026-06-27',32,0.6588,'Great news! -3% Monday open'),(2,'NVDA_Stock','1ugzzc9','ou7k0hw','2026-06-27',3,-0.4767,'Punished for success by maniacal faders and short sellers '),(3,'NVDA_Stock','1ugzzc9','ou8nueo','2026-06-28',1,0.5106,'easily worth a trillion');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'ValueInvesting','1ui0rtf','oucawdd','2026-06-28',12,0.6486,'Understated TAM is the comfiest bull thesis there is. It\'s like standing on the beach arguing the ocean is bigger than people realize. Probably true and almost entirely beside the point, because your revenue is the bucket you can actually fill and keep refilling, and at the moment about five guys are doing all the pouring.'),(2,'ValueInvesting','1ui0rtf','oucsg26','2026-06-28',7,-0.7719,'There is some serious cognitive dissonance with nvda and HBM numbers, and the associated bullishness.  You cannot be bullish MU, and bearish any other part of the AI trade.    Really nvda is just a better buisness all around.  Another thing, if saas were really about to be disrupted I would expect intel/amd to be the ones getting annihilated because x86 disruption would be guaranteed '),(3,'ValueInvesting','1ui0rtf','ouc1v0o','2026-06-28',7,0,'NVDA on a downward dog trajectory. '),(4,'ValueInvesting','1ui0rtf','oucpfi6','2026-06-28',1,0.4404,'Funnily enough I was just looking into NVDA this morning and thought I might start a position for a swing trade around here.'),(5,'ValueInvesting','1ui0rtf','ouefdhk','2026-06-28',1,0.25,'It was like at some point in 24, when people were pondering in a post here at what price will nvidiaâ€™s stock start going down. And I said: when forward pe is like 10.\n\nI guess weâ€™re getting there.'),(6,'ValueInvesting','1ui0rtf','ouc0ebb','2026-06-28',-5,-0.9273,'I think all of this is pretty much meaningless.\n\nLook at the hyperscaler capex, is it sustainable? hell no. Bonds market and CDS have risen and they are forecasted to have to spend even more capex in 2027 while actual cashflow are close to none and with no clear ROI on capex. Equity sales can carry this a bit longer but I don\'t believe for a second that it will be enough.\n\n90% of NVDA revenue are from data centers and 30% of accounts receivable from MSFT... \n\nMsft can\'t build data center fast enough to put in all the Gpus they bought. Probably around 1/2 of all GPUs they bought since 2024 are sitting in warehouses.\n\nThe second an hyperscaler cuts capex the entire semiconductor sector and NVDA will crash hard... Furthermore, if a single one cut capex they will all follow to cut capex... \n\nI expect Nvda to go down to around 80$ a share in q1 2027.'),(7,'ValueInvesting','1ui0rtf','oue3w54','2026-06-28',0,0.5318,'I think you\'re overstating the TAM.  Nvidia has dominated because there were no alternatives.  The Nvidia tax was too high and the value of custom chips have become too important.  We can see how desperate the hyperscalers are to convert to XPUs.  Google has demonstrated the importance of the XPU market with their TPU and Broadcom\'s business (Google and Meta) is set to explode in 2027.  The other hyperscalers are still limited by TSM production (Microsoft and Amazon) but Marvell has still shown a big increase in XPU revenue in 2027 and it doubling in 2028.  This timeline could accelerate if Intel provides a reasonable alternative to TSM.  \n\nNvidia is still the king and will always have a place for frontier models.  However, I think their bet on Marvell and the NV Fusion is a sign that they know the GPU gravy train won\'t last forever.  Also, I don\'t think we can expect a massive capex increase in 2027 as balance sheets are getting weaker and just maintaining 2026 numbers might be difficult for everyone not named Google and Microsoft. \n\nNvidia\'s goal is to remain the leader and pivot into physical AI.  If they can\'t do that, I think their TAM is a lot smaller than you think.  \n\n');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -301,4 +302,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-28  4:26:40
+-- Dump completed on 2026-06-29  4:47:52
