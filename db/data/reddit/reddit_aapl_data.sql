@@ -67,6 +67,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+345834b6-7439-11f1-a8d3-de40618d6192:1-93,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
@@ -101,6 +102,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
+59f85302-737a-11f1-9054-16636e789c5d:1-64,
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
@@ -163,7 +165,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
-9c6cc7a6-7374-11f1-97e0-1693fa78f524:1-167,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -279,7 +280,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -288,7 +289,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1uiehcu','ouf3of1','2026-06-29',4,0.4404,'Whatâ€™s the chance the government okay this?  '),(2,'AAPL','1uiehcu','oufkrh0','2026-06-29',3,0.4404,'This selloff is the typical money grab on known news. Next leg up starts soon. '),(3,'AAPL','1uiehcu','oufawv8','2026-06-29',2,0.4404,'Buckle up July on deckðŸš€'),(4,'AAPL','1uiehcu','oufr40u','2026-06-29',1,0.4404,'Good lord, what\'s your cost basis?'),(5,'AAPL','1ui64cd','oude4x1','2026-06-28',8,-0.7184,'TLDR: if Apple doesnâ€™t go down it might go up. Or it could go both down and up. '),(6,'AAPL','1ui64cd','oudq6d7','2026-06-28',2,0.7717,'The thing with Apple stock is that sometimes it will increase in price, but then it drops.  Youâ€™ll see what are called fluctuations in price.  Itâ€™s hard to tell like a week, or a month, or a year out.  Some people think it will go up in the future, but others believe it will go down.  Itâ€™s hard to tell, so you kinda have to monitor it.  Some people buy shares, others sell them, some donâ€™t do anything at all.  People on Reddit will say things like, I think it will drop, other people say, I think it will go up.  Itâ€™s complicated, you know?'),(7,'AAPL','1ui64cd','oud7wu6','2026-06-28',1,0.5106,'July is also seasonal bullish too'),(8,'AAPL','1ui2wv7','oucmge8','2026-06-28',3,0,'On Thursday or Friday?'),(9,'AAPL','1ui2wv7','oufaim9','2026-06-29',2,0,'July is coming ðŸš€'),(10,'AAPL','1uhqw69','ou9wxlb','2026-06-28',4,0,'Lol'),(11,'AAPL','1uhqw69','ou9x21h','2026-06-28',1,0.4404,'Troll better'),(12,'AAPL','1uhqw69','oua22np','2026-06-28',1,0.296,'Oh yeah firm-ambition2904 Apple should hire you as the next CEO'),(13,'AAPL','1uhqw69','oudrjv1','2026-06-28',1,0.2263,'Apple is worth about 7 times the entire Singapore stock market.   '),(14,'AAPL','1uhqw69','oufaktv','2026-06-29',1,0,'Micron will choose making money over diplomacy. Keep dreaming '),(15,'AAPL','1uhqw69','oua2fj4','2026-06-28',0,0,'AAPL is the second biggest company in the history of the world. I think you bumped your head or something. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -302,4 +302,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-29  4:47:52
+-- Dump completed on 2026-06-30  4:09:03
