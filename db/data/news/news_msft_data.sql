@@ -170,6 +170,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -280,7 +281,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,7 +290,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'natasha abellard','\nReference #18.e86ac917.1782795397.4b403dca\nhttps://errors.edgesuite.net/18.e86ac917.1782795397.4b403dca\n\nhttps://errors.edgesuite.net/18.e86ac917.1782795397.4b403dca...','2026-06-29',0.2,'Why our cybersecurity stocks are soaring, plus Big Tech tries to rebound','https://www.cnbc.com/2026/06/29/why-our-cybersecurity-stocks-are-soaring-plus-big-tech-tries-to-rebound.html',40),(2,'oleksandr pylypenko','...','2026-06-29',0.5944,'Micron Stock Jumps After Blockbuster Earnings. Its Long-Term Supply Deals Could Be a Game Changer.','https://www.barchart.com/story/news/3035821/micron-stock-jumps-after-blockbuster-earnings-its-long-term-supply-deals-could-be-a-game-changer',2),(3,'rich asplund','...','2026-06-29',0.2,'Stock Indexes Push Higher as Megacap Tech Stocks Rally','https://www.barchart.com/story/news/3035683/stock-indexes-push-higher-as-megacap-tech-stocks-rally',2),(4,'cision pr newswire','Searching for your content...\n\n                        In-Language News\n                    \n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\nJun 29, 2026, 11:00 ET\nShare this article\nNEW YORK, June...','2026-06-29',0.52124,'Candy Crush Turns NYC Into One Big Pregame with Free Candy Cabs for Soccer Season 2026','https://www.prnewswire.com/news-releases/candy-crush-turns-nyc-into-one-big-pregame-with-free-candy-cabs-for-soccer-season-2026-302813339.html',4),(5,'sushree mohanty','...','2026-06-29',0.2,'Microsoft Stock Hitting New Lows Could Be a Long-Term Opportunity','https://www.barchart.com/story/news/3035369/microsoft-stock-hitting-new-lows-could-be-a-long-term-opportunity',20),(6,'marketbeat','...','2026-06-29',0.42136,'QualcommaÌ‚Â€Â™s Investor Day Just Changed the Growth Story Forever','https://www.bundle.app/en/finance/qualcomms-investor-day-just-changed-the-growth-story-forever-229AAA47-0594-41FF-8F3E-B48B7A2574EF',2),(7,'rich asplund','...','2026-06-29',0.60632,'Stock Indexes Supported by Strength in Megacap Tech Stocks','https://www.barchart.com/story/news/3034727/stock-indexes-supported-by-strength-in-megacap-tech-stocks',2),(8,'cfpÂ®','Space Exploration Technologies (SPCX +7.18%), better known as SpaceX, has three distinct parts of its business -- rocket launches, satellite internet, and the xAI artificial intelligence business. Whi...','2026-06-29',0.63362,'SpaceX Has Three AI Customers Paying $27.8 Billion a Year. How Big Can This Revenue Stream Get?','https://www.fool.com/investing/2026/06/29/spacex-has-three-ai-customers-paying-278-billion-a/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'adam levy','...','2026-06-30',-0.36704,'Billionaires Bill Ackman, Jeremy Grantham, and Cliff Asness Are Piling Into This AI Stock the Market Is Severely Undervaluing','https://finance.yahoo.com/markets/stocks/articles/billionaires-bill-ackman-jeremy-grantham-153500732.html',20),(2,'rick orford','...','2026-06-30',0.43384,'Microsoft Stock Hasnâ€™t Been This Cheap in Nearly a Decade. Hereâ€™s How to Buy the Dip for Less.','https://www.barchart.com/story/news/3055996/microsoft-stock-hasnt-been-this-cheap-in-nearly-a-decade-heres-how-to-buy-the-dip-for-less',20),(3,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-30',0.80374,'5 Most Promising Future Stocks to Buy Right Now','https://www.insidermonkey.com/blog/5-most-promising-future-stocks-to-buy-right-now-1791288/',4),(4,'aanchal sugandh','...','2026-06-30',-0.25456,'OpenAI Could Delay Its IPO Until 2027. What That Means for Microsoft Stock.','https://www.barchart.com/story/news/3054328/openai-could-delay-its-ipo-until-2027-what-that-means-for-microsoft-stock',20),(5,'douglas a. mcintyre','Investing\n\n							The Magnificent Seven shed $2.3 trillion in market cap in June, driving investors into semiconductor stocks with the Philadelphia chip index up 93%.													\n\n							MSFT has fal...','2026-06-30',0.79404,'Magnificent Seven Value Drops $2.3 Trillion In June','https://247wallst.com/investing/2026/06/30/magnificent-seven-value-drops-2-3-trillion-in-june/',4),(6,'erin kennedy','State Street Technology Select Sector SPDR ETF (XLK +2.76%) provides low-cost U.S. technology exposure, while Roundhill Generative AI & Technology ETF (CHAT +3.41%) focuses on higher-cost, research-dr...','2026-06-30',0.39808,'State Street Tech ETF Faces Off With Roundhill Generative AI Fund','https://www.fool.com/coverage/etfs/2026/06/30/state-street-tech-etf-faces-off-with-roundhill-generative-ai-fund/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -303,4 +304,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-30  4:56:52
+-- Dump completed on 2026-07-01  5:14:48

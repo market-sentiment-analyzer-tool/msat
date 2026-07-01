@@ -170,6 +170,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -280,7 +281,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,7 +290,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich asplund','...','2026-06-29',0.2,'Stock Indexes Push Higher as Megacap Tech Stocks Rally','https://www.barchart.com/story/news/3035683/stock-indexes-push-higher-as-megacap-tech-stocks-rally',2),(2,'rich asplund','...','2026-06-29',0.60632,'Stock Indexes Supported by Strength in Megacap Tech Stocks','https://www.barchart.com/story/news/3034727/stock-indexes-supported-by-strength-in-megacap-tech-stocks',2),(3,'tyler durden','\nUS equity futures are higher led by Tech as Mag7 leads the group higher and points to a reversal of last weekâ€™s profit-taking, as traders position for the end of the first half. A shortened week will...','2026-06-29',0.39982,'Futures Rise As Dip-Buyers Lift Tech Stocks','https://www.zerohedge.com/markets/futures-rise-dip-buyers-lift-tech-stocks',4),(4,'ainewswire','\n\n\nJune 29, 2026 08:30 ET\n\n\nÂ | Source:\r\n            \nAINewsWire\n\n\n\n\n\n\nAINewsWire\n\n\nAUSTIN, Texas, June  29, 2026  (GLOBE NEWSWIRE) -- AINewsWire Editorial Coverage: A tectonic shift is reshaping globa...','2026-06-29',0.7095,'AI Infrastructure Spending Creates New Wave of Semiconductor Ecosystem Winners','https://www.globenewswire.com/news-release/2026/06/29/3318947/0/en/AI-Infrastructure-Spending-Creates-New-Wave-of-Semiconductor-Ecosystem-Winners.html',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-06-30',-0.01852,'Nvidiaâ€™s workplace culture sends Big Tech a warning','https://www.thestreet.com/technology/nvidias-workplace-culture-sends-big-tech-a-warning',2),(2,'rich smith','Intel (INTC +6.13%) stock jumped 4.2% through 11 a.m. ET on Tuesday after Wells Fargo analyst Aaron Rakers raised his price target on rival Advanced Micro Devices (AMD +7.89%) stock to $615 per share ...','2026-06-30',0.19974,'Why Intel Stock Just Popped','https://www.fool.com/investing/2026/06/30/why-intel-stock-just-popped/',4),(3,'wajeeh khan','...','2026-06-30',0.35232,'PLTR Stock Watch: What to Know as Palantir Teams Up With Nvidia','https://www.barchart.com/story/news/3057556/pltr-stock-watch-what-to-know-as-palantir-teams-up-with-nvidia',20),(4,'rich smith','Advanced Micro Devices (AMD +7.89%) stock skipped 3.5% higher through 10:30 a.m. ET Tuesday, and you can thank Wells Fargo for that.\nIn a note this morning, Wells analyst Aaron Rakers raised his price...','2026-06-30',0.19968,'Why AMD Stock Just Popped','https://www.fool.com/investing/2026/06/30/why-amd-stock-just-popped/',4),(5,'rick munarriz','Nvidia (NVDA +2.66%) is capping off another successful quarter of trading. The global leader in artificial intelligence (AI) is trading 12% higher heading into the final trading day of the calendar qu...','2026-06-30',0.63364,'3 Reasons to Buy Nvidia Stock in July','https://www.fool.com/investing/2026/06/30/3-reasons-to-buy-nvidia-stock-in-july/',40),(6,'daniel schÃ¶nberger','    NicoElNino/iStock via Getty Images\n \nNicoElNino/iStock via Getty Images\nI have been rather bearish about Nvidia Corporation (NVDA) for a long time now, and my last articles were all rated as Sell....','2026-06-30',-0.0424,'Nvidia: Strong Growth Story, But Risks Grow Faster','https://seekingalpha.com/article/4918833-nvidia-strong-growth-story-but-risks-grow-faster',8);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -303,4 +304,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-30  4:56:52
+-- Dump completed on 2026-07-01  5:14:48
