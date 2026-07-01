@@ -67,7 +67,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
-345834b6-7439-11f1-a8d3-de40618d6192:1-93,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
@@ -163,6 +162,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+96238c96-7504-11f1-a19f-72dc7c3ce201:1-25,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
@@ -250,6 +250,7 @@ f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
+f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f91b7d1c-711b-11f1-9531-026bf641fa89:1-59,
@@ -280,7 +281,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,7 +290,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1uivj8t','ouisllr','2026-06-29',9,0,'I bought December 15, 2028 $700 LEAPS this morning lfgggg'),(2,'ValueInvesting','1uivj8t','ouj5nai','2026-06-29',7,0.9818,'> Are you holding or buying Microsoft\n\nSold for 430, looking to hop back in (this time for good lol) Missed the $360 unfortunately, looks like local bottom idk, no powder and not best time to cash out other things so will have to take whatever market gives me thu/fri hope it doesn\'t fly above 390-400\n\nI\'m bullish for the very reason that\'s frightening you lol, OpenAi and MSFT deep connection and it runs real deep, not as simple as here\'s some cash so you buy my compute later: they, both of them, invest in 3rd parties that can accelerate both. Like OpenAi has fingers in few very specialised AI firms which can help them overcome \"just a chatbot\" image and get a real foothold in robotics, health care, scientific research, AI infra even. Sam Altman plays on energy with Oklo (small modular power plants aimed before all to data centres) and Helion (new ideas about fusion, contract with surprise surprise msft)\n\n2029-2030 is just around the corner, hope you are right lol and OpenAi is profitable by then'),(3,'ValueInvesting','1uivj8t','ouj2044','2026-06-29',6,0.3781,'buying no\n\nholding the shares in my retirement account? I sold off 90% of shares when josh g (politician) calls hitand MSFT hit 450$ at the beginning of the month. I\'ll start to add back around $300'),(4,'ValueInvesting','1uivj8t','ouiw1zl','2026-06-29',7,0.4939,'Caring about fcf during a cap ex cycle is mega tarded. You either believe in the return or you dont.'),(5,'ValueInvesting','1uivj8t','oumylll','2026-06-30',1,-0.1406,'> For two decades Amazon looked expensive on FCF while it poured money into data centers and logistics. FCF metric never saw it, because FCF subtracts every dollar of capex. \n\nAmazon did not look expensive on other metrics, though. Amazon was 2x p/sales in 2012 and now it\'s 3.5x. Microsoft was 2.7x sales in 2012 and now it\'s 8.6x (down from 14.5x).');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -303,4 +303,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-30  4:09:03
+-- Dump completed on 2026-07-01  4:23:58
