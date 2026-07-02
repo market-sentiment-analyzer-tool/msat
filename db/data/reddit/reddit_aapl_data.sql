@@ -162,7 +162,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
-96238c96-7504-11f1-a19f-72dc7c3ce201:1-25,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
@@ -171,6 +170,7 @@ a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
+a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -213,6 +213,7 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
+da1b071d-75ca-11f1-99dc-f27277da7af2:1-233,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
@@ -281,7 +282,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -290,7 +291,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1uk1e8r','ous7wz2','2026-06-30',3,-0.6705,'This is dumb. Did you stop driving since the 90s when gas was $1?'),(2,'TradingEdge','1ujolc0','oup7ozm','2026-06-30',-3,0.4515,'Thousands of paid subscribers is validation of my proficiency as a stock picker, specialising in thematic SMID caps. I post all my picks and research/DD on emerging SMID caps on my trading site first. If you want my alpha before anyone else, feel free to try it out for a month, you can cancel any time so it will set you back $40 to potentially discover a research platform that will change the trajectory of your investing.. Â I have a 15% off coupon running. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)\n\n');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -304,4 +304,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-01  4:23:58
+-- Dump completed on 2026-07-02  4:11:15
