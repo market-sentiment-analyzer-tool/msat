@@ -163,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
+971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -281,7 +282,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -290,7 +291,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'adam levy','...','2026-06-30',-0.36704,'Billionaires Bill Ackman, Jeremy Grantham, and Cliff Asness Are Piling Into This AI Stock the Market Is Severely Undervaluing','https://finance.yahoo.com/markets/stocks/articles/billionaires-bill-ackman-jeremy-grantham-153500732.html',20),(2,'rick orford','...','2026-06-30',0.43384,'Microsoft Stock Hasnâ€™t Been This Cheap in Nearly a Decade. Hereâ€™s How to Buy the Dip for Less.','https://www.barchart.com/story/news/3055996/microsoft-stock-hasnt-been-this-cheap-in-nearly-a-decade-heres-how-to-buy-the-dip-for-less',20),(3,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-06-30',0.80374,'5 Most Promising Future Stocks to Buy Right Now','https://www.insidermonkey.com/blog/5-most-promising-future-stocks-to-buy-right-now-1791288/',4),(4,'aanchal sugandh','...','2026-06-30',-0.25456,'OpenAI Could Delay Its IPO Until 2027. What That Means for Microsoft Stock.','https://www.barchart.com/story/news/3054328/openai-could-delay-its-ipo-until-2027-what-that-means-for-microsoft-stock',20),(5,'douglas a. mcintyre','Investing\n\n							The Magnificent Seven shed $2.3 trillion in market cap in June, driving investors into semiconductor stocks with the Philadelphia chip index up 93%.													\n\n							MSFT has fal...','2026-06-30',0.79404,'Magnificent Seven Value Drops $2.3 Trillion In June','https://247wallst.com/investing/2026/06/30/magnificent-seven-value-drops-2-3-trillion-in-june/',4),(6,'erin kennedy','State Street Technology Select Sector SPDR ETF (XLK +2.76%) provides low-cost U.S. technology exposure, while Roundhill Generative AI & Technology ETF (CHAT +3.41%) focuses on higher-cost, research-dr...','2026-06-30',0.39808,'State Street Tech ETF Faces Off With Roundhill Generative AI Fund','https://www.fool.com/coverage/etfs/2026/06/30/state-street-tech-etf-faces-off-with-roundhill-generative-ai-fund/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'the motley fool','...','2026-07-01',0.42136,'Forget Apple: Why Microsoft Is a Far Better Value Today','https://finance.yahoo.com/markets/stocks/articles/forget-apple-why-microsoft-far-162200930.html',200),(2,'sheryar siddiq','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-01',0.73172,'JMP Securities Reaffirms Bullish Outlook on Microsoft Corporation (MSFT) Following Copilot Cowork Launch','https://www.insidermonkey.com/blog/jmp-securities-reaffirms-bullish-outlook-on-microsoft-corporation-msft-following-copilot-cowork-launch-1793098/',40),(3,'rich asplund','...','2026-07-01',-0.38136,'Stocks Mixed on Chipmaker Weakness and Easing US Price Pressures','https://www.barchart.com/story/news/3080387/stocks-mixed-on-chipmaker-weakness-and-easing-us-price-pressures',2),(4,'pras subramanian','...','2026-07-01',0.2,'Tech bull Ives initiates SpaceX with Outperform rating, $190 price target','https://finance.yahoo.com/markets/stocks/article/tech-bull-ives-initiates-spacex-with-outperform-rating-190-price-target-145826109.html',20),(5,'tyler durden','\nMicrosoft shares are on track for one of their worst starts to a year in two decades, down roughly 21% year to date as of Tuesdayâ€™s close, as a cloud and sales hiring freeze and a broader â€œresetâ€ of ...','2026-07-01',-0.8347,'Microsoft Plans Thousands Of Job Cuts As Stock Suffers Worst Start In Years','https://www.zerohedge.com/markets/microsoft-plans-thousands-job-cuts-stock-suffers-worst-start-years',40),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-01',0.45304,'Avoid SpaceX and Buy These 5 Stocks Instead','https://www.insidermonkey.com/blog/avoid-spacex-and-buy-these-5-stocks-instead-1788919/',4),(7,'null','Please enable JS and disable any ad blocker...','2026-07-01',-0.33148,'Alphabet stock rally exposes Googleâ€™s unusual AI problem','https://www.thestreet.com/investing/alphabet-stock-rally-exposes-googles-unusual-ai-problem',2),(8,'rameen kasana','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-01',0.81614,'5 Most Profitable Software Stocks to Buy Right Now','https://www.insidermonkey.com/blog/5-most-profitable-software-stocks-to-buy-right-now-1792881/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -304,4 +305,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-01  5:14:48
+-- Dump completed on 2026-07-02  4:51:53
