@@ -97,6 +97,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
@@ -282,7 +283,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,7 +292,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sarita garza','...','2026-07-01',0.2368,'Sen. Jerry Moran Sells Alphabet Inc. (NASDAQ:GOOG) Shares','https://www.themarketsdaily.com/2026/07/01/sen-jerry-moran-sells-alphabet-inc-nasdaqgoog-shares.html',2),(2,'rick orford','Amazon (AMZN +1.48%) and Alphabet (GOOGL +1.11%)(GOOG +1.30%) are two of the largest companies in the \"Magnificent Seven,\" and both leverage artificial intelligence (AI) to grow revenue. Aside from th...','2026-06-30',0.7445,'\"Magnificent Seven\" Showdown: Amazon or Alphabet for Long-Term Investors?','https://www.fool.com/investing/2026/06/30/magnificent-seven-showdown-amazon-or-alphabet-for/',4),(3,'ethan ryder','...','2026-06-30',0,'Alphabet (NASDAQ:GOOGL) Director Sells $39,343.36 in Stock','https://www.tickerreport.com/banking-finance/13490617/alphabet-nasdaqgoogl-director-sells-39343-36-in-stock.html',2),(4,'wall street breakfast','...','2026-06-30',0,'Wall Street Lunch: Buffett Delays Gates Foundation Donation Amid Epstein Review','https://seekingalpha.com/article/4918904-wall-street-lunch-buffett-delays-gates-foundation-donation-amid-epstein-review',4),(5,'rich duprey','...','2026-06-30',-0.2368,'SpaceXâ€™s AI Ambitions Could Rewrite Its Future â€” If It Can Stop the Bleeding','https://www.barchart.com/story/news/3057077/spacexs-ai-ambitions-could-rewrite-its-future-if-it-can-stop-the-bleeding',2),(6,'nicole kennedy','...','2026-06-30',0.48992,'Erste Group Bank Forecasts Stronger Earnings for Alphabet','https://www.watchlistnews.com/erste-group-bank-forecasts-stronger-earnings-for-alphabet/11131012.html',2),(7,'max byerly','...','2026-06-30',0.49992,'Erste Group Bank Raises Earnings Estimates for Alphabet','https://www.tickerreport.com/banking-finance/13490285/erste-group-bank-raises-earnings-estimates-for-alphabet.html',2),(8,'patrick sanders','Alphabet (GOOG +1.30%) (GOOGL +1.11%) is shaking up the Dow Jones Industrial Average. The Google parent joined the famed index on June 29, replacing Verizon Communications and providing additional exp...','2026-06-30',0.77466,'Alphabet Just Joined the Dow Jones Industrial Average. 3 Dow Dividend Stocks to Buy Now.','https://www.fool.com/investing/2026/06/30/alphabet-just-joined-the-dow-jones-industrial-aver/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-07-02',0.16184,'Wall Street Breakfast Podcast: EU Locks In Google Fine','https://seekingalpha.com/article/4919456-wall-street-breakfast-podcast-eu-locks-in-google-fine',40),(2,'marc guberti','Artificial intelligence (AI) stocks have produced some of the most compelling returns in the stock market this year. However, those stocks also come with volatility, which can cause anxiety for people...','2026-07-02',0.84578,'1 Artificial Intelligence Stock You Can Buy and Hold for the Next Decade','https://www.fool.com/investing/2026/07/02/1-artificial-intelligence-stock-you-can-buy-and-ho/',4),(3,'stephan jacobs','...','2026-07-01',0,'Alphabet (NASDAQ:GOOG) Trading 1.3% Higher â€“ Whatâ€™s Next?','https://www.thelincolnianonline.com/2026/07/01/alphabet-nasdaqgoog-trading-1-3-higher-whats-next.html',2),(4,'pathikrit bose','...','2026-07-01',0,'A Cybersecurity Breach Rattles Appleâ€™s Partner In India. What This Means for AAPL Stock Here.','https://www.barchart.com/story/news/3083593/a-cybersecurity-breach-rattles-apples-partner-in-india-what-this-means-for-aapl-stock-here',2),(5,'sarita garza','...','2026-07-01',0.2368,'Sen. Jerry Moran Sells Alphabet Inc. (NASDAQ:GOOG) Shares','https://www.themarketsdaily.com/2026/07/01/sen-jerry-moran-sells-alphabet-inc-nasdaqgoog-shares.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -305,4 +306,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-02  4:51:53
+-- Dump completed on 2026-07-03  4:34:18

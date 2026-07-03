@@ -97,6 +97,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
@@ -282,7 +283,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,7 +292,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'anders bylund','Wall Street is having a split personality on the first trading day of July. As of 11:29 a.m. ET, the S&P 500 (^GSPC 0.22%) gained 0.1% and the Dow Jones Industrial Average (^DJI 0.03%) added 0.2%. At ...','2026-07-01',0.38248,'Market Indexes Start July With a Tale of Two Tech Stories','https://www.fool.com/investing/2026/07/01/market-indexes-start-july-with-mixed-tech-message/',4),(2,'aditya raghunath','...','2026-07-01',0.40848,'Dear Amazon Stock Fans, Mark Your Calendars for July 2','https://www.barchart.com/story/news/3081506/dear-amazon-stock-fans-mark-your-calendars-for-july-2',20),(3,'tom lauricella','...','2026-07-01',0,'7 Charts on Q2 Markets Highlights: The Big AI Rally Gets Even Bigger','https://www.morningstar.com/markets/7-charts-q2-markets-highlights-big-ai-rally-gets-even-bigger',2),(4,'will ashworth','...','2026-07-01',0.19056,'Ulta Beauty Stock Hits a New 52-Week Low: If Itâ€™s Not in the Buy Zone, Itâ€™s Awfully Close','https://www.barchart.com/story/news/3080230/ulta-beauty-stock-hits-a-new-52-week-low-if-its-not-in-the-buy-zone-its-awfully-close',2),(5,'pras subramanian','...','2026-07-01',0.2,'Tech bull Ives initiates SpaceX with Outperform rating, $190 price target','https://finance.yahoo.com/markets/stocks/article/tech-bull-ives-initiates-spacex-with-outperform-rating-190-price-target-145826109.html',20),(6,'null','Please enable JS and disable any ad blocker...','2026-07-01',-0.33148,'Alphabet stock rally exposes Googleâ€™s unusual AI problem','https://www.thestreet.com/investing/alphabet-stock-rally-exposes-googles-unusual-ai-problem',2),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 1st, 2026\n\nRitholtz Wealth Management lifted its stake in  Amazon.com, Inc. (NASDAQ:AMZN) by 7.5% during the first quarter, according to the company in its most recen...','2026-07-01',0.72752,'Ritholtz Wealth Management Acquires 18,717 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/01/ritholtz-wealth-management-acquires-18717-shares-of-amazon-com-inc-amzn.html',4),(8,'katie brockman','The market has been wobbly lately, with the S&P 500 (^GSPC 0.22%) and Nasdaq Composite (^IXIC 0.66%) dipping by nearly 3% and 6%, respectively, over the past month.\nSome stock market indicators are al...','2026-07-01',0.41742,'If a Stock Market Crash Is Coming, History Says Investors Who Do This 1 Thing Will Win Out','https://www.fool.com/investing/2026/07/01/if-a-stock-market-crash-is-coming-history-says-inv/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'apac research','...','2026-07-02',-0.2368,'Instacart Rattled By Kroger Acquisition: Should Investors Be Concerned?','https://seekingalpha.com/article/4919506-instacart-rattled-by-kroger-acquisition-should-investors-be-concerned',4),(2,'anthony miller','...','2026-07-02',0.2368,'Amazon.com, Inc. $AMZN Shares Sold by Barton Investment Management','https://www.thelincolnianonline.com/2026/07/02/amazon-com-inc-amzn-shares-sold-by-barton-investment-management.html',2),(3,'abmn staff','\n					Posted by ABMN Staff on Jul 2nd, 2026\n\nFairvoy Private Wealth LLC trimmed its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 12.8% during the first quarter, according to the company in...','2026-07-02',0.72766,'Fairvoy Private Wealth LLC Sells 5,222 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/02/fairvoy-private-wealth-llc-sells-5222-shares-of-amazon-com-inc-amzn.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on Jul 2nd, 2026\n\nCardano Risk Management B.V. lowered its holdings in  Amazon.com, Inc. (NASDAQ:AMZN) by 89.6% in the first quarter, according to the company in its most re...','2026-07-02',-0.20864,'Cardano Risk Management B.V. Cuts Position in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/02/cardano-risk-management-b-v-cuts-position-in-amazon-com-inc-amzn.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Jul 2nd, 2026\n\nBarton Investment Management reduced its stake in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 1.7% during the 1st quarter, according to the company in...','2026-07-02',0.19982,'Barton Investment Management Has $103.56 Million Holdings in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/02/barton-investment-management-has-103-56-million-holdings-in-amazon-com-inc-amzn.html',4),(6,'bloomberg news','...','2026-07-02',0,'US Premarket Movers for July 2, 2026','https://financialpost.com/pmn/business-pmn/us-premarket-movers-for-july-2-2026',2),(7,'syeda seirut javed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-02',0.48552,'5 Stocks on Jim Cramerâ€™s Radar Like Microsoft, Apple and a Wave of Takeovers','https://www.insidermonkey.com/blog/5-stocks-on-jim-cramers-radar-like-microsoft-apple-and-a-wave-of-takeovers-1793945/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -305,4 +306,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-02  4:51:53
+-- Dump completed on 2026-07-03  4:34:17
