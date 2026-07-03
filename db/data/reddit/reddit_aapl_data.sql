@@ -30,6 +30,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1120e926-7692-11f1-a779-ae53c669ef0c:1-89,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
@@ -163,6 +164,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
+971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -213,7 +215,6 @@ d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
-da1b071d-75ca-11f1-99dc-f27277da7af2:1-233,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
@@ -282,7 +283,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,6 +292,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ulvols','ov7kkvp','2026-07-02',16,0.765,'Honestly yâ€™all should feel good about yourselves for holding through that bs selloff a few days ago.Â '),(2,'AAPL','1ulvols','ov81e2b','2026-07-03',11,0.357,'My average cost is around $15. Iâ€™m never selling. My children will inherit my stock . '),(3,'AAPL','1ulvols','ov80r8g','2026-07-03',7,0.1779,'AAPL is a hold for generations to come. It is an ETF in itself. '),(4,'AAPL','1ulvols','ov85kkt','2026-07-03',6,-0.7964,'My average cost basis is $12.95. Iâ€™m only selling to fund my retirement (no kids, no inheritance to worry about). '),(5,'AAPL','1ulvols','ov7md5c','2026-07-02',3,-0.3382,'What happened! It was shit and now itâ€™s golden ðŸ˜…'),(6,'AAPL','1ulvols','ov8zn70','2026-07-03',3,0,'It\'s also within spitting distance of NVDA\'s market cap.'),(7,'AAPL','1ulvols','ov8p6i8','2026-07-03',2,0.714,'Been holding since the original iPod days. Went all in 2007 @$5 a share. Still holding a significant amount although I sold a lot to diversify a few years ago as we FIREâ€™d. \n\nWith around 2 billion installed devices and everyone upgrading every few years, whatâ€™s not to like? What is going to replace iPhones even when AI becomes ubiquitous? ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -304,4 +306,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-02  4:11:15
+-- Dump completed on 2026-07-03  3:49:52
