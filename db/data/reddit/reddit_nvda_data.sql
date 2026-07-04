@@ -30,10 +30,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
-1120e926-7692-11f1-a779-ae53c669ef0c:1-89,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+16b661bf-775a-11f1-9082-6ab23b437b45:1-28,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -98,6 +98,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
@@ -283,7 +284,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -292,7 +293,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ulkj14','ov4z2ub','2026-07-02',9,0.4168,'Believe it or not, stock go red for this news. '),(2,'NVDA_Stock','1ulkj14','ov69jdd','2026-07-02',2,0.25,'Wow that is a waste  of money. '),(3,'NVDA_Stock','1ulkj14','ov7p0xu','2026-07-02',2,-0.4588,'Itâ€™ll go down even more'),(4,'NVDA_Stock','1ulkj14','ov6j19x','2026-07-02',1,-0.1348,'Don\'t really like this, would prefer to just take shares in those companies. This is just a price increase essentially and sets up the seeds of them wanting to dump you down the road...'),(5,'NVDA_Stock','1ulkj14','ov84ow4','2026-07-03',1,0,'![gif](giphy|qmfpjpAT2fJRK)'),(6,'NVDA_Stock','1ulkj14','ov8wl8y','2026-07-03',1,0,'I\'d rather shovel company not go own gold digging company itself.'),(7,'NVDA_Stock','1ulkj14','ov63qzf','2026-07-02',-4,-0.8402,'Something smells stinky. Maybe the chips are too expensive to sell '),(8,'NVDA_Stock','1ulkj14','ov5596y','2026-07-02',-2,-0.6588,'Worst stock ever!'),(9,'NVDA_Stock','1ulfyl0','ov3wdcr','2026-07-02',7,-0.1406,'You first point goes much deeper as most people don\'t quite get what the CUDA moat actually means. It\'s not just a deeply developed, integrated ecosystem. For years Nvidia seeded academia hard: CUDA grants, funded research labs, teaching hardware, and getting CUDA baked into university curricula. A whole generation of researchers learned parallel computing in CUDA first, and that\'s the part that\'s hard to replicate. Anyone can try to build custom AI ASICs, and some will even succeed, but most are tightly coupled to transformers alone. What\'s tough to emulate is that decades-deep R&D and mindshare penetration. It goes well beyond AI, and it will keep doing so.'),(10,'NVDA_Stock','1ulfyl0','ov3rmao','2026-07-02',2,0.9297,'I have no nvidia position - long or short. only giving some sort of balanced bear case commentary because it\'s interesting...\n\n1. cuda lock-in is real, but the biggest nvidia buyers (google, amazon, microsoft etc.) are the ones building their own chips to get out. the cheaper inference work coming next is easier to move. 2. the software revenue is way too small to cushion a chip slowdown. 3. this cuts both ways - selling whole systems is also why nvidia has had to lock in huge future orders with tsmc etc. 4. as above. to grab the supply nvidia has had to commit like 180bn in orders it can\'t cancel... more than a years cashflow. 5. a big possible market isn\'t a moat, it\'s a bet. 6. this can also backfire... microsoft ceo said that this makes him not want to overbuild as chips go stale fast. 7. real. but this is about making great chips, not about people buying them.\n\nfor me, the main moats you missed are:\n\n1. it can fund it\'s own demand... nvidia\'s cash and stock has allowed it to take equity stakes in the very customers who buys its chips.\n2. brand. beyond developer lock-in, there\'s that sort of executive reflex that nvidia is safe. hard to measure, but real.'),(11,'NVDA_Stock','1ulfyl0','ov3nxfn','2026-07-02',2,0,'Mellanox and networking technology to scale compute for supercomputers '),(12,'NVDA_Stock','1ulfyl0','ov3qmuo','2026-07-02',2,0.4939,'At the end of the day the stock doesnâ€™t care about any of that '),(13,'NVDA_Stock','1ulfyl0','ov6bwlx','2026-07-02',0,0.6597,'People  like to take profits after the run up.'),(14,'NVDA_Stock','1ulfyl0','ov4ielt','2026-07-02',-3,0.2732,'Do people know what a \"moat\" is, it\'s not every single little thing the company does well, or even just does at all.'),(15,'NVDA_Stock','1ulfyl0','ov46w2a','2026-07-02',-4,-0.4519,'Nice AI slop. Only CUDA point is somewhat relevant, but when you account for most of that 20+ years being developed by a skeleton crew compared to how much resources are now being poured into these frameworks, it\'s not quite as impressive.'),(16,'NVDA_Stock','1ulfyl0','ov4rl7b','2026-07-02',-1,0,'Nvidia is asking employees to retire. '),(17,'NVDA_Stock','1ul8d9o','ov2cz88','2026-07-02',5,0.3226,'Jensen is not stopping!  \nNvidia will now get cloud revenues!!'),(18,'NVDA_Stock','1ul8d9o','ov45iz8','2026-07-02',1,0,'https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/?linkId=100000428953969'),(19,'NVDA_Stock','1ulg4jq','ov3o2qs','2026-07-02',8,0.7181,'from the article:\n\n> In plain English, this is not another vague AI announcement. Palantir supplies the ontology layer that structures messy data into usable intelligence, plus deployment tools via AIP, Foundry, and Apollo. Nvidia brings the hardware acceleration and open models. Together they create a secure, on-premises or air-gapped stack that closed labs like OpenAI and Anthropic struggle to match on data sovereignty.'),(20,'NVDA_Stock','1ulg4jq','ov4xqfd','2026-07-02',3,0.0258,'Sovereign AI now, because erecting compute clusters capable of running frontier models costs a fortune. In a year or two, a regular server rack found in any midsize companyâ€™s server closet can run models equal to current frontier model. Under the desk workstations can run quantized models. Thatâ€™s a multi-trillion dollar TAM locked into Nvidia ecosystem. Large pharmaceutical companies already all-in betting on Nvidia from hardware, network, AI model, software, to support. On-prem is going to be the next wave. Thereâ€™s no way sovereign governments and some companies will upload their sensitive data to any cloud AI platform. Especially when the US government can shut you down anytime.'),(21,'NVDA_Stock','1ulg4jq','ov6s0bz','2026-07-02',1,0.6597,'PLTR is basically the GTM partner for governments, like $NOW is for smaller enterprises and ASUS is for gamers. This is good, it\'s another capability that NVDA gets to outsource.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -306,4 +306,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-03  3:49:52
+-- Dump completed on 2026-07-04  3:41:02

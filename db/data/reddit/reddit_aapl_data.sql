@@ -30,10 +30,10 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
-1120e926-7692-11f1-a779-ae53c669ef0c:1-89,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+16b661bf-775a-11f1-9082-6ab23b437b45:1-28,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -98,6 +98,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
+575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
@@ -283,7 +284,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -292,7 +293,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1ulvols','ov7kkvp','2026-07-02',16,0.765,'Honestly yâ€™all should feel good about yourselves for holding through that bs selloff a few days ago.Â '),(2,'AAPL','1ulvols','ov81e2b','2026-07-03',11,0.357,'My average cost is around $15. Iâ€™m never selling. My children will inherit my stock . '),(3,'AAPL','1ulvols','ov80r8g','2026-07-03',7,0.1779,'AAPL is a hold for generations to come. It is an ETF in itself. '),(4,'AAPL','1ulvols','ov85kkt','2026-07-03',6,-0.7964,'My average cost basis is $12.95. Iâ€™m only selling to fund my retirement (no kids, no inheritance to worry about). '),(5,'AAPL','1ulvols','ov7md5c','2026-07-02',3,-0.3382,'What happened! It was shit and now itâ€™s golden ðŸ˜…'),(6,'AAPL','1ulvols','ov8zn70','2026-07-03',3,0,'It\'s also within spitting distance of NVDA\'s market cap.'),(7,'AAPL','1ulvols','ov8p6i8','2026-07-03',2,0.714,'Been holding since the original iPod days. Went all in 2007 @$5 a share. Still holding a significant amount although I sold a lot to diversify a few years ago as we FIREâ€™d. \n\nWith around 2 billion installed devices and everyone upgrading every few years, whatâ€™s not to like? What is going to replace iPhones even when AI becomes ubiquitous? ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1umtxfu','ovezyvm','2026-07-04',3,0,'possibly. '),(2,'AAPL','1umtxfu','ovf7bvj','2026-07-04',3,-0.5,'No not this earnings however aapl will be #1 in December once the entire world decides to upgrade to the ifold. Numbers will record breaking and the stock follows..'),(3,'AAPL','1umtxfu','ovf0mw1','2026-07-04',4,-0.0516,'I think NVDA is a one trick pony.'),(4,'AAPL','1umtxfu','ovf0ce9','2026-07-04',2,0.4019,'Yes '),(5,'AAPL','1umtxfu','ovf6wob','2026-07-04',2,-0.3269,'AAPL needs to hit the ground running with R&D.  I won\'t besmirch Cook, but this chapter of Apple needs to be more aggressive in the trenches'),(6,'AAPL','1umtxfu','ovffr1a','2026-07-04',1,0,'My  covered calls all triggered 2 minutes before close on Thursday so probably. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -306,4 +307,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-03  3:49:52
+-- Dump completed on 2026-07-04  3:41:02
