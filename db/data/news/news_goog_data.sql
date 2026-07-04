@@ -147,6 +147,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -283,7 +284,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -292,7 +293,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-07-02',0.16184,'Wall Street Breakfast Podcast: EU Locks In Google Fine','https://seekingalpha.com/article/4919456-wall-street-breakfast-podcast-eu-locks-in-google-fine',40),(2,'marc guberti','Artificial intelligence (AI) stocks have produced some of the most compelling returns in the stock market this year. However, those stocks also come with volatility, which can cause anxiety for people...','2026-07-02',0.84578,'1 Artificial Intelligence Stock You Can Buy and Hold for the Next Decade','https://www.fool.com/investing/2026/07/02/1-artificial-intelligence-stock-you-can-buy-and-ho/',4),(3,'stephan jacobs','...','2026-07-01',0,'Alphabet (NASDAQ:GOOG) Trading 1.3% Higher â€“ Whatâ€™s Next?','https://www.thelincolnianonline.com/2026/07/01/alphabet-nasdaqgoog-trading-1-3-higher-whats-next.html',2),(4,'pathikrit bose','...','2026-07-01',0,'A Cybersecurity Breach Rattles Appleâ€™s Partner In India. What This Means for AAPL Stock Here.','https://www.barchart.com/story/news/3083593/a-cybersecurity-breach-rattles-apples-partner-in-india-what-this-means-for-aapl-stock-here',2),(5,'sarita garza','...','2026-07-01',0.2368,'Sen. Jerry Moran Sells Alphabet Inc. (NASDAQ:GOOG) Shares','https://www.themarketsdaily.com/2026/07/01/sen-jerry-moran-sells-alphabet-inc-nasdaqgoog-shares.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-07-03',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 22','https://www.barchart.com/story/news/3117520/dear-google-stock-fans-mark-your-calendars-for-july-22',20),(2,'jeff santoro','Autonomous driving has been a hot topic for stock market investors for several years. As more cities approve driverless vehicles, what was once science fiction is rapidly becoming reality. Naturally, ...','2026-07-03',0.63284,'1 Incredible Autonomous Vehicle Stock to Buy Instead of Tesla','https://www.fool.com/investing/2026/07/03/autonomous-vehicle-stock-buy-tesla-googl/',4),(3,'arundhati sarkar','...','2026-07-03',0,'Google, FBI disrupt NetNut malware proxy network','https://seekingalpha.com/news/4609814-google-fbi-disrupt-netnut-malware-proxy-network?feed_item_type=news',4),(4,'wall street breakfast','...','2026-07-02',0.16184,'Wall Street Breakfast Podcast: EU Locks In Google Fine','https://seekingalpha.com/article/4919456-wall-street-breakfast-podcast-eu-locks-in-google-fine',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -306,4 +307,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-03  4:34:18
+-- Dump completed on 2026-07-04  4:27:12
