@@ -33,7 +33,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-16b661bf-775a-11f1-9082-6ab23b437b45:1-28,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -148,6 +147,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -227,6 +227,7 @@ df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
+e30f1e5c-7825-11f1-b934-82f7e9fe0442:1-81,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
@@ -284,7 +285,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -293,7 +294,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1umtxfu','ovezyvm','2026-07-04',3,0,'possibly. '),(2,'AAPL','1umtxfu','ovf7bvj','2026-07-04',3,-0.5,'No not this earnings however aapl will be #1 in December once the entire world decides to upgrade to the ifold. Numbers will record breaking and the stock follows..'),(3,'AAPL','1umtxfu','ovf0mw1','2026-07-04',4,-0.0516,'I think NVDA is a one trick pony.'),(4,'AAPL','1umtxfu','ovf0ce9','2026-07-04',2,0.4019,'Yes '),(5,'AAPL','1umtxfu','ovf6wob','2026-07-04',2,-0.3269,'AAPL needs to hit the ground running with R&D.  I won\'t besmirch Cook, but this chapter of Apple needs to be more aggressive in the trenches'),(6,'AAPL','1umtxfu','ovffr1a','2026-07-04',1,0,'My  covered calls all triggered 2 minutes before close on Thursday so probably. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -307,4 +307,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-04  3:41:02
+-- Dump completed on 2026-07-05  4:02:37
