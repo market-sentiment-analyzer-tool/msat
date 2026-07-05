@@ -160,6 +160,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
+9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -284,7 +285,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -293,7 +294,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-07-03',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 22','https://www.barchart.com/story/news/3117520/dear-google-stock-fans-mark-your-calendars-for-july-22',20),(2,'jeff santoro','Autonomous driving has been a hot topic for stock market investors for several years. As more cities approve driverless vehicles, what was once science fiction is rapidly becoming reality. Naturally, ...','2026-07-03',0.63284,'1 Incredible Autonomous Vehicle Stock to Buy Instead of Tesla','https://www.fool.com/investing/2026/07/03/autonomous-vehicle-stock-buy-tesla-googl/',4),(3,'arundhati sarkar','...','2026-07-03',0,'Google, FBI disrupt NetNut malware proxy network','https://seekingalpha.com/news/4609814-google-fbi-disrupt-netnut-malware-proxy-network?feed_item_type=news',4),(4,'wall street breakfast','...','2026-07-02',0.16184,'Wall Street Breakfast Podcast: EU Locks In Google Fine','https://seekingalpha.com/article/4919456-wall-street-breakfast-podcast-eu-locks-in-google-fine',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ebube jones','...','2026-07-04',0.35232,'Kyndryl and Microsoft Team Up on Cloud Sovereignty. Donâ€™t Count on This Being a Game-Changer for KD Stock.','https://www.barchart.com/story/news/3127588/kyndryl-and-microsoft-team-up-on-cloud-sovereignty-dont-count-on-this-being-a-game-changer-for-kd-stock',2),(2,'pardeep sharma','Alphabet stock trades near $356â€“367, with nearly 20% gains in 2026.\nStrong quarterly revenue of $109.9 billion and 63% cloud growth continue to support investor confidence.\nAI expansion remains the bi...','2026-07-04',0.8226,'Alphabet Stock at $356: Is Google Still a Strong Buy in July 2026?','https://www.analyticsinsight.net/stocks/alphabet-stock-at-356-is-google-still-a-strong-buy-in-july-2026',40),(3,'keithen drury','In the artificial intelligence (AI) investing sector, there are several ways to play the trend. You can invest in legacy tech companies like Alphabet (GOOG 0.48%) (GOOGL 0.23%) that are integrating AI...','2026-07-03',0.9182,'Better Artificial Intelligence (AI) Stock: Alphabet vs. Micron Technology (the Winner May Surprise You)','https://www.fool.com/investing/2026/07/03/better-artificial-intelligence-ai-stock-alphabet-v/',4),(4,'subhasree kar','...','2026-07-03',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 22','https://www.barchart.com/story/news/3117520/dear-google-stock-fans-mark-your-calendars-for-july-22',20),(5,'jeff santoro','Autonomous driving has been a hot topic for stock market investors for several years. As more cities approve driverless vehicles, what was once science fiction is rapidly becoming reality. Naturally, ...','2026-07-03',0.63284,'1 Incredible Autonomous Vehicle Stock to Buy Instead of Tesla','https://www.fool.com/investing/2026/07/03/autonomous-vehicle-stock-buy-tesla-googl/',4),(6,'arundhati sarkar','...','2026-07-03',0,'Google, FBI disrupt NetNut malware proxy network','https://seekingalpha.com/news/4609814-google-fbi-disrupt-netnut-malware-proxy-network?feed_item_type=news',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -307,4 +308,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-04  4:27:12
+-- Dump completed on 2026-07-05  4:47:52
