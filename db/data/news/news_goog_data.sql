@@ -184,6 +184,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -285,7 +286,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -294,7 +295,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ebube jones','...','2026-07-04',0.35232,'Kyndryl and Microsoft Team Up on Cloud Sovereignty. Donâ€™t Count on This Being a Game-Changer for KD Stock.','https://www.barchart.com/story/news/3127588/kyndryl-and-microsoft-team-up-on-cloud-sovereignty-dont-count-on-this-being-a-game-changer-for-kd-stock',2),(2,'pardeep sharma','Alphabet stock trades near $356â€“367, with nearly 20% gains in 2026.\nStrong quarterly revenue of $109.9 billion and 63% cloud growth continue to support investor confidence.\nAI expansion remains the bi...','2026-07-04',0.8226,'Alphabet Stock at $356: Is Google Still a Strong Buy in July 2026?','https://www.analyticsinsight.net/stocks/alphabet-stock-at-356-is-google-still-a-strong-buy-in-july-2026',40),(3,'keithen drury','In the artificial intelligence (AI) investing sector, there are several ways to play the trend. You can invest in legacy tech companies like Alphabet (GOOG 0.48%) (GOOGL 0.23%) that are integrating AI...','2026-07-03',0.9182,'Better Artificial Intelligence (AI) Stock: Alphabet vs. Micron Technology (the Winner May Surprise You)','https://www.fool.com/investing/2026/07/03/better-artificial-intelligence-ai-stock-alphabet-v/',4),(4,'subhasree kar','...','2026-07-03',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 22','https://www.barchart.com/story/news/3117520/dear-google-stock-fans-mark-your-calendars-for-july-22',20),(5,'jeff santoro','Autonomous driving has been a hot topic for stock market investors for several years. As more cities approve driverless vehicles, what was once science fiction is rapidly becoming reality. Naturally, ...','2026-07-03',0.63284,'1 Incredible Autonomous Vehicle Stock to Buy Instead of Tesla','https://www.fool.com/investing/2026/07/03/autonomous-vehicle-stock-buy-tesla-googl/',4),(6,'arundhati sarkar','...','2026-07-03',0,'Google, FBI disrupt NetNut malware proxy network','https://seekingalpha.com/news/4609814-google-fbi-disrupt-netnut-malware-proxy-network?feed_item_type=news',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-07-05',0.1024,'Google Just Launched 2 New AI Models. What That Means for GOOGL Stock.','https://www.barchart.com/story/news/3132690/google-just-launched-2-new-ai-models-what-that-means-for-googl-stock',20),(2,'ebube jones','...','2026-07-04',0.35232,'Kyndryl and Microsoft Team Up on Cloud Sovereignty. Donâ€™t Count on This Being a Game-Changer for KD Stock.','https://www.barchart.com/story/news/3127588/kyndryl-and-microsoft-team-up-on-cloud-sovereignty-dont-count-on-this-being-a-game-changer-for-kd-stock',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -308,4 +309,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-05  4:47:52
+-- Dump completed on 2026-07-06  5:02:00
