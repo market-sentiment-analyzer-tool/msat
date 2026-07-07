@@ -253,6 +253,7 @@ f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
+f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
@@ -286,7 +287,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,7 +296,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'subhasree kar','...','2026-07-05',0.1024,'Google Just Launched 2 New AI Models. What That Means for GOOGL Stock.','https://www.barchart.com/story/news/3132690/google-just-launched-2-new-ai-models-what-that-means-for-googl-stock',20),(2,'ebube jones','...','2026-07-04',0.35232,'Kyndryl and Microsoft Team Up on Cloud Sovereignty. Donâ€™t Count on This Being a Game-Changer for KD Stock.','https://www.barchart.com/story/news/3127588/kyndryl-and-microsoft-team-up-on-cloud-sovereignty-dont-count-on-this-being-a-game-changer-for-kd-stock',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adria cimino','The \"Magnificent Seven\" stocks have become household names over the past few years. They are tech giants powering many of the things we use daily, from Google Search to the top-selling iPhone. These p...','2026-07-06',0.48872,'The \"Magnificent Seven\" Just Delivered a $2.2 Trillion Warning to Wall Street. Should You Listen?','https://www.fool.com/investing/2026/07/06/the-magnificent-seven-just-delivered-a-22-trillion/',4),(2,'aditya raghunath','...','2026-07-05',-0.32152,'Mark Zuckerberg Doubles Down on Raw Computing Power to Challenge AWS and Microsoft. What That Means for META Stock.','https://www.barchart.com/story/news/3133814/mark-zuckerberg-doubles-down-on-raw-computing-power-to-challenge-aws-and-microsoft-what-that-means-for-meta-stock',2),(3,'the motley fool','...','2026-07-05',0.43384,'Alphabet Stock Has Doubled in a Year. Is It Too Late to Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-stock-doubled-too-buy-181400031.html',20),(4,'subhasree kar','...','2026-07-05',0.1024,'Google Just Launched 2 New AI Models. What That Means for GOOGL Stock.','https://www.barchart.com/story/news/3132690/google-just-launched-2-new-ai-models-what-that-means-for-googl-stock',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -309,4 +310,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-06  5:02:00
+-- Dump completed on 2026-07-07  4:41:16

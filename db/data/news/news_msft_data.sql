@@ -253,6 +253,7 @@ f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
+f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
@@ -286,7 +287,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,7 +296,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'thomas niel','OpenAI, the artificial intelligence (AI) company behind ChatGPT, has hopped on the initial public offering (IPO) bandwagon. Like Anthropic, the company behind Claude, it is also planning to start sell...','2026-07-05',0.19944,'How to Get Exposure to OpenAI Before Its IPO','https://www.fool.com/investing/2026/07/05/how-to-get-exposure-to-openai-before-its-ipo/',4),(2,'joel south','Investing\n\n							MSFT sits 25% below its 52-week high despite 40% Azure growth, while AAPL just posted its best March quarter ever with $111B in revenue and 8 straight earnings beats.													\n\n	...','2026-07-05',0.70898,'3 No-Brainer Stocks to Buy in July and Hold Forever','https://247wallst.com/investing/2026/07/05/3-no-brainer-stocks-to-buy-in-july-and-hold-forever/',4),(3,'nicole kennedy','...','2026-07-05',0.2368,'Wesbanco Bank Inc. Purchases 1,512 Shares of Microsoft Corporation $MSFT','https://www.watchlistnews.com/wesbanco-bank-inc-purchases-1512-shares-of-microsoft-corporation-msft/11136979.html',20),(4,'mitch edgeman','...','2026-07-05',0,'Microsoft Corporation $MSFT Stock Position Lifted by WMS Group LLC','https://www.themarketsdaily.com/2026/07/05/microsoft-corporation-msft-stock-position-lifted-by-wms-group-llc.html',20),(5,'max byerly','...','2026-07-05',0.32152,'Microsoft Corporation $MSFT Holdings Lowered by Pinnacle Wealth Management Advisory Group LLC','https://www.tickerreport.com/banking-finance/13495886/microsoft-corporation-msft-holdings-lowered-by-pinnacle-wealth-management-advisory-group-llc.html',20),(6,'tristan rich','...','2026-07-05',0.39512,'VCI Wealth Management LLC Has $12.82 Million Holdings in Microsoft Corporation $MSFT','https://www.themarketsdaily.com/2026/07/05/vci-wealth-management-llc-has-12-82-million-holdings-in-microsoft-corporation-msft.html',20),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 5th, 2026\n\nMaridea Wealth Management LLC lowered its position in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 33.4% during the first quarter, according to it...','2026-07-05',0.72762,'Maridea Wealth Management LLC Sells 4,847 Shares of Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/07/05/maridea-wealth-management-llc-sells-4847-shares-of-microsoft-corporation-msft.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'marketbeat.com','...','2026-07-06',0.66168,'Why Microsoft Looks Like the Best Big Tech Trade for H2 2026','https://www.investing.com/analysis/why-microsoft-looks-like-the-best-big-tech-trade-for-h2-2026-200683394',20),(2,'yahoo finance video','...','2026-07-06',-0.21856,'Microsoft plans to cut 3,200 jobs from its Xbox division','https://ca.finance.yahoo.com/video/microsoft-plans-to-cut-3200-jobs-from-its-xbox-division-150002796.html',20),(3,'keithen drury','There are a handful of artificial intelligence (AI) stocks that trade for ridiculously high prices that should be avoided. Likewise, there are several that are trading for bargain valuations, and thos...','2026-07-06',0.73606,'2 Genius Artificial Intelligence (AI) Stocks Trading at Irresistible Prices','https://www.fool.com/investing/2026/07/06/2-genius-ai-stocks-trading-at-irresistible-prices/',4),(4,'rick orford','Palantir (PLTR +2.51%) and Microsoft (MSFT 0.94%) are both AI leaders, but the investment cases could not be more different. Palantir offers faster growth and bigger upside potential if AIP becomes a ...','2026-07-06',0.77204,'Better Artificial Intelligence (AI) Stock: Palantir vs. Microsoft','https://www.fool.com/investing/2026/07/06/better-artificial-intelligence-ai-stock-palantir-v/',40),(5,'selena maranjian','It can be a bummer buying into great stocks after a big market rally, as you might focus on having missed out on a lot of gains. Many people might therefore try to buy before the next market rally.\nBu...','2026-07-06',0.52146,'3 Unstoppable Stocks to Buy Before the Next Market Rally -- Including Netflix (NFLX) Stock','https://www.fool.com/investing/2026/07/06/3-unstoppable-stocks-buy-next-market-rally/',4),(6,'soumendra mukherjee','...','2026-07-06',-0.37824,'Microsoft to cut 4,800 jobs globally, including major Xbox restructuring','https://seekingalpha.com/news/4611717-microsoft-to-cut-4800-jobs-globally-including-major-xbox-restructuring?feed_item_type=news',40),(7,'mark r. hake','...','2026-07-06',-0.21856,'Is Microsoft Stock Too Cheap Here? One Play is to Short Cash-Secured MSFT Puts','https://www.barchart.com/story/news/3141773/is-microsoft-stock-too-cheap-here-one-play-is-to-short-cash-secured-msft-puts',20),(8,'joseph griffin','...','2026-07-06',0.52776,'Microsoft Corporation $MSFT Shares Sold by WT Wealth Management','https://www.tickerreport.com/banking-finance/13496426/microsoft-corporation-msft-shares-sold-by-wt-wealth-management.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -309,4 +310,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-06  5:02:00
+-- Dump completed on 2026-07-07  4:41:17
