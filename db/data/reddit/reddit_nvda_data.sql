@@ -184,6 +184,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -210,6 +211,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d3e49a82-79b7-11f1-9a0b-aaf3e6c22a8a:1-58,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -242,7 +244,6 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
-ef23237f-78ef-11f1-a238-d6e588d11b56:1-61,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -286,7 +287,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,6 +296,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1up9akt','ovz33tb','2026-07-06',25,0,'They say financing is how car dealerships make a lot of their money.'),(2,'stocks','1up9akt','ovyz6c7','2026-07-06',5,0.3612,'I thought they were like sold out for the next 20 years.  '),(3,'stocks','1up9akt','ovzg1m6','2026-07-06',8,0.4215,'I think big part of the reason is to keep the CUDA moat that everyone tries to drain.\n\nStartups using Nvidia chips, likely using CUDA is the easiest path, less effort in tinkering. Built something with CUDA, and they will have high switching cost.'),(4,'stocks','1up9akt','ovyinok','2026-07-06',30,0.8555,'Circular Spending\n\nâ€œYou buy GPU from me - I buy the same GPU from youâ€\n\nâ€œYou spent $100B on me, I spent $100B on you, we both have $100B revenue, stock upâ€\n\nNVIDIA is 100% overvalued. The least diversified business - 7 customers accounted for 90% of the revenue.'),(5,'stocks','1up9akt','ovyez2c','2026-07-06',5,0,'Tldr'),(6,'stocks','1up9akt','ovyuwd2','2026-07-06',3,0.0378,'This is actually very good for NVDA.  As they get a cut of the services sold it will create a recurring revenue stream, something they are sorely lacking and now filling the void of what DGX Cloud could have been.\n\nNVDA sells GPU rack servers to the big hyperscalers and the smaller neo clouds.  Those companies then wrap it up under their own proprietary software stacks and sell the product to create their own margin.  Imagine if NVDA took a slice of all those sales.  \n\nWell that\'s what will be happening with these smaller players.  But NVDA doesn\'t bear the cost of building and maintaining athe datacenter, or selling the product.  \n\nSharon AI recently raised $1.6b and Firmus did $500m.  That\'s not circular financing, it\'s capital injection.'),(7,'stocks','1up9akt','ovzh9tz','2026-07-07',1,0.1531,'One could argue these are upstream/downstream sales and should be eliminated since they artificially lift revenue sales '),(8,'stocks','1up9akt','ow04w5j','2026-07-07',1,0.3612,'utter AI slop\n\nall of your posts are walls of texts that end with a question phrased like \"is this X, or it it just Y\"'),(9,'stocks','1up9akt','ow0kv1r','2026-07-07',1,0.3182,'NVDA stock is stagnant for sure and they need something new to bump that up. \n\nLet\'s see. '),(10,'stocks','1up9akt','ow0pefr','2026-07-07',1,0.69,'I remember Nortel and guys like that doing this with networking equipment in 2000. 200% vendor financing, baby! Good times.'),(11,'stocks','1up9akt','ovycyuw','2026-07-06',-6,-0.1027,'Time is ticking. Everyone seams like panicking. '),(12,'stocks','1up9akt','ovyc7cg','2026-07-06',-14,-0.7845,'it is a red flag, demand for chips is basically going down, and stock will tank soon'),(13,'NVDA_Stock','1up2cym','ovx7c74','2026-07-06',15,0,'Is \"rises\" in the room with us?'),(14,'NVDA_Stock','1up2cym','ovwu6ye','2026-07-06',8,-0.5423,'Shorts gonna short'),(15,'NVDA_Stock','1up2cym','ovwyzk4','2026-07-06',8,-0,'Someone just lost a lot of money producing a fud article congrats'),(16,'NVDA_Stock','1up2cym','ovwsmw9','2026-07-06',5,-0.6369,'Semi-Anal isis needs to be banned for stock manipulation.'),(17,'NVDA_Stock','1up2cym','ovwy1yc','2026-07-06',6,0.296,'There are some people on X suspecting they are being funded by AMD ðŸ˜‚ '),(18,'NVDA_Stock','1up2cym','ovxzsn8','2026-07-06',5,-0.3182,'semianalysis has lost all credibility'),(19,'NVDA_Stock','1up2cym','ovwtd3z','2026-07-06',4,-0.7579,'SemiTabloid continues to destroy it\'s own credibility.\n\nI am going to write a letter to Nvidia\'s board of directors today asking them to sever any business w/ SemiAnalysis as they are destroying Nvidia\'s repuation and causing harm to shareholders. \n\nI urge you all to write back to Nvidia as well. \n\nYou can email here: [shareholdermeeting@nvidia.com](mailto:shareholdermeeting@nvidia.com) and write to Tim Teter.\n\n# Stockholder Communications with the Board of Directors\n\nStockholders who wish to communicate with the Board may do so by sending written communications addressed to Tim Teter, our Secretary, at NVIDIA Corporation, 2788 San Tomas Express Way, Santa Clara, CA 95051 or by email to shareholdermeeting@nvidia.com. All stockholder communications we receive that are addressed to the Board will be compiled by our Secretary. If no particular director is named, letters will be forwarded, depending on the subject matter, to the Chair of the Audit, Compensation or Nominating and Corporate Governance Committee. Matters put forth by our stockholders will be reviewed by the NCGC, which will determine whether these matters should be presented to the Board. The NCGC will give serious consideration to all such matters and will make its determination in accordance with its charter and applicable laws.  \n[https://investor.nvidia.com/governance/contact-the-board/default.aspx](https://investor.nvidia.com/governance/contact-the-board/default.aspx)'),(20,'NVDA_Stock','1up2cym','ovx2x7i','2026-07-06',2,0.3612,'Check the article credits ... \n\nSomewhere you gonna see DingleBerry_practical'),(21,'NVDA_Stock','1up2cym','ow0kxwv','2026-07-07',2,-0.1531,'Same shit happened with Blackwell. Zero revenue impact.'),(22,'NVDA_Stock','1up2cym','ovy7mk6','2026-07-06',1,0.822,'Honestly, \"Our Roadmap is intact\", given by a spokesperson at Nvidia does not sound like a solid refute. Every Roadmap slide deck has a safe harbor and fine print that states details, timing, heck the whole thing could change, this is true of every roadmap in every major corporation. If you wanted a solid refute it would be someone saying the rumors set forth by SemiAnalysis is false and we are still on track for our same target date. What you got was \"Our Roadmap is intact\"....to me that actually sounds concerning.  '),(23,'NVDA_Stock','1up2cym','ovwrww0','2026-07-06',1,0.4019,'interesting '),(24,'NVDA_Stock','1up2cym','ovwsgbs','2026-07-06',1,0.9317,'https://preview.redd.it/4kksm2a52nbh1.jpeg?width=1179&format=pjpg&auto=webp&s=26a2b2ede3a82e1056e75f3333dbeb955ddf289a\n\n  \nBut what about this analyst!! He is the best there on wall street :D ðŸ¤¡'),(25,'NVDA_Stock','1up2cym','ovy63ra','2026-07-06',1,0.3228,'GURU states that there is NO Delay according to Nvidia.  Product roadmap remains intact!'),(26,'NVDA_Stock','1up2cym','ovx4z15','2026-07-06',0,-0.2585,'More Burry bs holding us down. '),(27,'NVDA_Stock','1up2cym','ovxcyom','2026-07-06',-1,0.25,'**NVIDIA itself hasnâ€™t done itself any favors either, has it?**'),(28,'NVDA_Stock','1up2cym','ovx4ium','2026-07-06',-4,-0.6249,'Told you guys, it\'s the worst stock ever'),(29,'NVDA_Stock','1upimb3','ow0jj04','2026-07-07',2,0,'As if this wasn\'t already known for a year lol');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -308,4 +310,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-06  4:06:33
+-- Dump completed on 2026-07-07  3:57:38

@@ -184,6 +184,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -210,6 +211,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d3e49a82-79b7-11f1-9a0b-aaf3e6c22a8a:1-58,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -242,7 +244,6 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
-ef23237f-78ef-11f1-a238-d6e588d11b56:1-61,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -286,7 +287,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,7 +296,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1uo3zlu','ovp0q5o','2026-07-05',269,0.2023,'These are plays that deserve posts. Enough with the assholes showing 10% gains on 1m in shares. '),(2,'wallstreetbets','1uo3zlu','ovozbyd','2026-07-05',64,0,'Big balls'),(3,'wallstreetbets','1uo3zlu','ovozm9g','2026-07-05',45,-0.1027,'I have the same expirationdate for my goog calls. We\'re in the same boat. \nIt will pay out'),(4,'wallstreetbets','1uo3zlu','ovp4wl5','2026-07-05',49,0,'https://preview.redd.it/sltzded1hfbh1.jpeg?width=1290&format=pjpg&auto=webp&s=36e6eb026b848bd02899965415389d436287c09d'),(5,'wallstreetbets','1uo3zlu','ovp3gll','2026-07-05',13,-0.5859,'You son of a bitch, i am in '),(6,'wallstreetbets','1uo3zlu','ovp8hof','2026-07-05',12,0.7845,'The strong bounce off $350 on a down day like last friday was great to see.'),(7,'wallstreetbets','1uo3zlu','ovozjca','2026-07-05',8,0.2942,'Nice. Been trading ATMs about that far out but nowhere near the size. 400+ is coming!'),(8,'wallstreetbets','1uo3zlu','ovrs583','2026-07-05',10,0,'Now this is a real wsb trade'),(9,'wallstreetbets','1uo3zlu','ovp2wmv','2026-07-05',6,0.5994,'if it does that will be a nice payday for me as well.  '),(10,'wallstreetbets','1uo3zlu','ovp3u9z','2026-07-05',5,0.7096,'Good luck'),(11,'wallstreetbets','1uo3zlu','ovpb4dq','2026-07-05',4,-0.2462,'Hell yes!  Let\'s go!  This is what we like to see'),(12,'wallstreetbets','1uo3zlu','ovpppuv','2026-07-05',3,-0.7642,'You could also sell the 450c call and get back 39k.  Caps your upside but it\'s highly doubtful googl blasts from 360 to 450 in two months. Or goore aggressive with 425c and get double the premium.  '),(13,'wallstreetbets','1uo3zlu','ovsbenh','2026-07-06',3,0.8356,'Iâ€™m holding some August lottos OP and wish you the best on this trade!'),(14,'wallstreetbets','1uo3zlu','ovpihlo','2026-07-05',7,-0.6188,'a Jan27 500 strike gives you a very similar upside curve but a lot less downside? why would you buy this with that much capital? is there something I am missing here? \n\nThe cost per contract is also very similar, the spread seems a lot worse tho on the 500c'),(15,'wallstreetbets','1uo3zlu','ovpm7ji','2026-07-05',2,0,'https://preview.redd.it/4mtxlm77vfbh1.jpeg?width=1125&format=pjpg&auto=webp&s=f84a91ab084f7b525357ae67a2a3fac4ae9a93f2'),(16,'wallstreetbets','1uo3zlu','ovqdl78','2026-07-05',2,0.4404,'Macd just crossed over so the astrology lines up'),(17,'wallstreetbets','1uo3zlu','ovqm2h7','2026-07-05',2,0.2144,'Iâ€™ve been feeling this way for weeks and have been buying shares â€¦ but fuk it Iâ€™m in tomorrow calls it is '),(18,'wallstreetbets','1uo3zlu','ovrqs5j','2026-07-05',2,-0.2645,'Mine expire the same day!\n\nIm quite far down on them currently.Â  Also hoping for a bump.Â  A massive bump!'),(19,'wallstreetbets','1uo3zlu','ovtaatt','2026-07-06',2,0.4404,'I hope so..\n\n'),(20,'wallstreetbets','1uo3zlu','ovp3qjf','2026-07-05',1,0,'where did you get the information about what contracts are being bought?'),(21,'wallstreetbets','1uo3zlu','ovp5bvc','2026-07-05',1,0,'Use some Google '),(22,'wallstreetbets','1uo3zlu','ovp8h6y','2026-07-05',1,0.765,'Congratulations ðŸŽ‰'),(23,'wallstreetbets','1uo3zlu','ovpayp8','2026-07-05',1,0,'!remindme 08/21/26'),(24,'wallstreetbets','1uo3zlu','ovpdsbk','2026-07-05',1,-0.34,'Can\'t wait for Gemini 3.5 pro to flop'),(25,'wallstreetbets','1uo3zlu','ovq4ps1','2026-07-05',1,0.5204,'I got 2 questions   \n1. How are you seeing the 58k contracts of open interest?   \n2. How big is it? '),(26,'wallstreetbets','1uo3zlu','ovq89h9','2026-07-05',1,0,'IFL'),(27,'wallstreetbets','1uo3zlu','ovqp3cl','2026-07-05',1,0.842,'I sold half my August calls at 360 ish that I picked  \nup at 337. From my experience the pre earning running up never reaches near  ath. Hope I am wrong since I still have a sizable position and July is on the most bullish month '),(28,'wallstreetbets','1uo3zlu','ovr49do','2026-07-05',1,0,'And if Google crashes then what'),(29,'wallstreetbets','1uo3zlu','ovryp1l','2026-07-05',1,0,'Ho Lee Fuk. '),(30,'wallstreetbets','1uo3zlu','ovs6duh','2026-07-05',1,0,'What site is this? Costco Brokerage?'),(31,'wallstreetbets','1uo3zlu','ovsk7sy','2026-07-06',1,-0.4939,'You could sell now and be up $35k ðŸ˜­'),(32,'wallstreetbets','1uo3zlu','ovsujaz','2026-07-06',1,0.6249,'Taking half off early locks in gains. Letting the rest ride is just smart.'),(33,'wallstreetbets','1uo3zlu','ovt8i4u','2026-07-06',1,-0.5994,'How u got options in chaseðŸ’€ those fuckers only gave me margin'),(34,'wallstreetbets','1uo3zlu','ovozwc9','2026-07-05',1,0,'RemindMe! 08/22/2026'),(35,'wallstreetbets','1uo3zlu','ovqb2ii','2026-07-05',0,0.5775,'What do I do ? I follow you with 10$ ? Can I do that ? Sorry I am just a newbie, just buy sp500 every month '),(36,'wallstreetbets','1uo3zlu','ovsr5px','2026-07-06',0,0,'Not to be that guy. But the class C is the same but cheaper '),(37,'wallstreetbets','1uo3zlu','ovp0c3e','2026-07-05',-9,-0.0772,'Sorry trying to learn. Explain in football terms?'),(38,'wallstreetbets','1uo3zlu','ovp3rw0','2026-07-05',-8,0,'[deleted]'),(39,'wallstreetbets','1uo3zlu','ovp10z1','2026-07-05',-13,-0.5204,'I\'m new to options trading. you\'re allowed to sell anytime until Aug 21? so Google needs to cross $400 until then?');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -309,4 +309,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-06  4:06:32
+-- Dump completed on 2026-07-07  3:57:38

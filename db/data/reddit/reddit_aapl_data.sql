@@ -184,6 +184,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -210,6 +211,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d3e49a82-79b7-11f1-9a0b-aaf3e6c22a8a:1-58,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
@@ -242,7 +244,6 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
-ef23237f-78ef-11f1-a238-d6e588d11b56:1-61,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -286,7 +287,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -295,6 +296,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1upfmmu','ow03jb5','2026-07-07',11,0,'$1.1 million AAPL holder here. I ainâ€™t going nowhere. All in.'),(2,'AAPL','1upfmmu','ow0625j','2026-07-07',8,0,'Apple = triple M (money making machine)'),(3,'AAPL','1upfmmu','ovzvdqq','2026-07-07',8,0.8777,'Nice!  Getting close to 100,000% for me again. Enjoying my Galapagos & Amazon vacation thanks to Apple and paid for it a few times over since I got here. '),(4,'AAPL','1upfmmu','ovzyxlc','2026-07-07',3,0.7351,'>the new Siri + Apple Intelligence and shipped it at WWDC\n\nTechnically nothing shipped at WWDC, they just announced it would be in forthcoming betas of MacOS 27 (and iOS, etc.)\n\nThis means we have a forward catalyst as they cash in with higher pricing and the upgrade cycle starts for devices with the \'new\' Apple Intelligence.'),(5,'AAPL','1upfmmu','ow0d45w','2026-07-07',0,0.5499,'I am with you man but Apple is NOT using Googles Gemini. That wouldnâ€™t provide the privacy needed.  Google did help with some of the models and used Gemini to provide Apple AI with some training. \n\nThis is one of many videos that talk about thisâ€¦  \n[https://youtube.com/shorts/fXQ7mnZqdZ4](https://youtube.com/shorts/fXQ7mnZqdZ4)'),(6,'AAPL','1up1683','ovwgh6o','2026-07-06',2,0,'â€œExcellentâ€ -Mr. Burns'),(7,'AAPL','1up1683','ovws5in','2026-07-06',1,0.4019,'Exactlyâ€¦ I wish I grabbed more years agoâ€¦ ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -308,4 +310,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-06  4:06:32
+-- Dump completed on 2026-07-07  3:57:38
