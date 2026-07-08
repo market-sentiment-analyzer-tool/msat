@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
+870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
@@ -287,7 +288,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -296,7 +297,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adria cimino','The \"Magnificent Seven\" stocks have become household names over the past few years. They are tech giants powering many of the things we use daily, from Google Search to the top-selling iPhone. These p...','2026-07-06',0.48872,'The \"Magnificent Seven\" Just Delivered a $2.2 Trillion Warning to Wall Street. Should You Listen?','https://www.fool.com/investing/2026/07/06/the-magnificent-seven-just-delivered-a-22-trillion/',4),(2,'aditya raghunath','...','2026-07-05',-0.32152,'Mark Zuckerberg Doubles Down on Raw Computing Power to Challenge AWS and Microsoft. What That Means for META Stock.','https://www.barchart.com/story/news/3133814/mark-zuckerberg-doubles-down-on-raw-computing-power-to-challenge-aws-and-microsoft-what-that-means-for-meta-stock',2),(3,'the motley fool','...','2026-07-05',0.43384,'Alphabet Stock Has Doubled in a Year. Is It Too Late to Buy?','https://finance.yahoo.com/markets/stocks/articles/alphabet-stock-doubled-too-buy-181400031.html',20),(4,'subhasree kar','...','2026-07-05',0.1024,'Google Just Launched 2 New AI Models. What That Means for GOOGL Stock.','https://www.barchart.com/story/news/3132690/google-just-launched-2-new-ai-models-what-that-means-for-googl-stock',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nDB Fitzpatrick & Co Inc trimmed its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 46.6% during the first quarter, according to the company in i...','2026-07-07',-0.22148,'DB Fitzpatrick & Co Inc Reduces Stock Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/07/07/db-fitzpatrick-co-inc-reduces-stock-position-in-alphabet-inc-goog.html',4),(2,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nGeneral Pension Society PZU Joint Stock Co boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 34.4% in the first quarter, acco...','2026-07-07',0.6686,'Alphabet Inc. $GOOG is General Pension Society PZU Joint Stock Coâ€™s 4th Largest Position','https://www.americanbankingnews.com/2026/07/07/alphabet-inc-goog-is-general-pension-society-pzu-joint-stock-cos-4th-largest-position.html',4),(3,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nCapelight Capital Asset Management LP decreased its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 60.0% during the first quarter, HoldingsChann...','2026-07-07',0.26164,'Capelight Capital Asset Management LP Cuts Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/07/07/capelight-capital-asset-management-lp-cuts-position-in-alphabet-inc-goog.html',4),(4,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nFjarde AP Fonden Fourth Swedish National Pension Fund lifted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 60.9% in the first qua...','2026-07-07',0.6686,'Alphabet Inc. $GOOG is Fjarde AP Fonden Fourth Swedish National Pension Fundâ€™s 7th Largest Position','https://www.americanbankingnews.com/2026/07/07/alphabet-inc-goog-is-fjarde-ap-fonden-fourth-swedish-national-pension-funds-7th-largest-position.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nFideuram Intesa Sanpaolo Private Banking S.P.A. grew its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 12.4% during the 1st quarter, according to ...','2026-07-07',0.4367,'Alphabet Inc. $GOOG Shares Bought by Fideuram Intesa Sanpaolo Private Banking S.P.A.','https://www.americanbankingnews.com/2026/07/07/alphabet-inc-goog-shares-bought-by-fideuram-intesa-sanpaolo-private-banking-s-p-a.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 7th, 2026\n\nElevation Point Wealth Partners LLC grew its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 281.4% during the first quarter, HoldingsChannel rep...','2026-07-07',0.59502,'Elevation Point Wealth Partners LLC Has $33.95 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/07/07/elevation-point-wealth-partners-llc-has-33-95-million-stock-holdings-in-alphabet-inc-goog.html',4),(7,'jack delaney','On June 1, the artificial intelligence (AI) start-up Anthropic announced it had confidentially submitted its draft registration statement for an initial public offering to the Securities and Exchange ...','2026-07-07',0.41842,'Forget the Anthropic IPO: These 2 Stocks Could Benefit First','https://www.fool.com/investing/2026/07/07/forget-the-anthropic-ipo-these-2-stocks-could-bene/',4),(8,'patrick sanders','Artificial intelligence (AI) has been one of the biggest drivers of the stock market. Over the past year, the Nasdaq CTA Artificial Intelligence Index, which tracks AI stocks in a variety of sectors, ...','2026-07-07',0.63354,'5 AI Stocks to Buy Before the Next Leg of the Rally','https://www.fool.com/investing/2026/07/07/5-ai-stocks-to-buy-before-the-next-leg-of-the-rall/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -310,4 +311,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-07  4:41:16
+-- Dump completed on 2026-07-08  4:01:15
