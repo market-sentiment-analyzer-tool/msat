@@ -182,6 +182,7 @@ ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
+aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -289,7 +290,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -298,7 +299,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-07-08',0.1024,'Broadcomâ€™s $30 Billion Jackpot: Why Apple Admitting Defeat Makes This Stock an Automatic Buy','https://www.barchart.com/story/news/3188176/broadcoms-30-billion-jackpot-why-apple-admitting-defeat-makes-this-stock-an-automatic-buy',2),(2,'wall street breakfast','...','2026-07-08',-0.28896,'Wall Street Breakfast Podcast: Oil Futures Surge On Strikes','https://seekingalpha.com/article/4920557-wall-street-breakfast-podcast-oil-futures-surge-on-strikes',4),(3,'geoffrey seiler','Space Exploration TechnologiesÂ (SPCX 0.78%), also known as SpaceX, was one of the most hotly anticipated IPOs of the year. But while the stock got off to a strong start, it is now trading about 30% of...','2026-07-08',0.07724,'SpaceX Is Down 30% From Its Peak. These 3 Stocks Let You Play the Same Themes.','https://www.fool.com/investing/2026/07/08/spacex-is-down-30-from-its-peak-these-3-stocks-let/',4),(4,'yiannis zourmpanos','...','2026-07-07',0.30544,'HSBC Just Issued Wall Streetâ€™s Boldest Call on Intel Stock','https://www.barchart.com/story/news/3170252/hsbc-just-issued-wall-streets-boldest-call-on-intel-stock',2),(5,'marc guberti','Looking downstream beyond artificial intelligence (AI) chips like those NvidiaÂ provides can reveal investment opportunities that most investors are overlooking. Software, physical AI, and memory stora...','2026-07-07',0.63376,'The New AI Revolution Is Here: Buy These 3 Stocks Before They Surge','https://www.fool.com/investing/2026/07/07/the-new-ai-revolution-is-here-buy-these-3-stocks-b/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'donald scott','...','2026-07-09',0,'GM Advisory Group LLC Trims Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/07/09/gm-advisory-group-llc-trims-position-in-alphabet-inc-goog.html',2),(2,'caroline horne','...','2026-07-09',0,'Integral Investment Advisors Inc. Has $2.75 Million Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/07/09/integral-investment-advisors-inc-has-2-75-million-position-in-alphabet-inc-goog.html',2),(3,'max byerly','...','2026-07-09',0.2368,'Walter Public Investments Inc. Sells 42,079 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13498737/walter-public-investments-inc-sells-42079-shares-of-alphabet-inc-goog.html',2),(4,'tristan rich','...','2026-07-09',0.2368,'Alphabet Inc. $GOOG Shares Sold by NBT Bank N A NY','https://www.themarketsdaily.com/2026/07/09/alphabet-inc-goog-shares-sold-by-nbt-bank-n-a-ny.html',2),(5,'abmn staff','\n					Posted by ABMN Staff on Jul 9th, 2026\n\nUSS Investment Management Ltd raised its stake in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 2.2% in the 1st quarter, according to the compan...','2026-07-09',0.43666,'Alphabet Inc. $GOOGL Shares Purchased by USS Investment Management Ltd','https://www.americanbankingnews.com/2026/07/09/alphabet-inc-googl-shares-purchased-by-uss-investment-management-ltd.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 9th, 2026\n\nTrinity Street Asset Management LLP cut its holdings in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 1.9% during the 1st quarter, according to ...','2026-07-09',0.26164,'Trinity Street Asset Management LLP Cuts Holdings in Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/07/09/trinity-street-asset-management-llp-cuts-holdings-in-alphabet-inc-googl.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 9th, 2026\n\nVertrix Wealth Management LLC purchased a new stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) in the first quarter, according to its most recent filin...','2026-07-09',0.595,'Vertrix Wealth Management LLC Invests $3.35 Million in Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/07/09/vertrix-wealth-management-llc-invests-3-35-million-in-alphabet-inc-googl.html',4),(8,'sarita garza','...','2026-07-09',0.5364,'Alphabet Inc. $GOOG Shares Bought by Nixon Peabody Trust Co.','https://www.themarketsdaily.com/2026/07/09/alphabet-inc-goog-shares-bought-by-nixon-peabody-trust-co.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -312,4 +313,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-09  4:40:45
+-- Dump completed on 2026-07-10  4:42:44
