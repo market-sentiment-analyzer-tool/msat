@@ -193,6 +193,7 @@ baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
+bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -290,7 +291,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -299,7 +300,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'chris macdonald','...','2026-07-09',-0.02064,'Watch Out NVDA Stock Investors: Michael Burry of Big Short Fame Isnâ€™t Feeling the Chip Rally Anymore.','https://www.barchart.com/story/news/3208298/watch-out-nvda-stock-investors-michael-burry-of-big-short-fame-isnt-feeling-the-chip-rally-anymore',20),(2,'pathikrit bose','...','2026-07-09',-0.47416,'Michael Burry Is Shorting Micron Stock, But His Bear Case Looks Weak','https://www.barchart.com/story/news/3208114/michael-burry-is-shorting-micron-stock-but-his-bear-case-looks-weak',2),(3,'rick munarriz','The artificial intelligence (AI) bellwether has had its bell rung lately. Is the ding a dinner bell for opportunistic investors? Nvidia (NVDA 0.62%) may have kicked off the AI revolution a couple of y...','2026-07-09',-0.08918,'Is Nvidia Stock Too Cheap to Ignore Right Now?','https://www.fool.com/investing/2026/07/09/is-nvidia-stock-too-cheap-to-ignore-right-now/',40),(4,'syeda seirut javed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-09',0.01808,'5 Stocks Like NVIDIA and FedEx and the Threat of Oversupply in the Market','https://www.insidermonkey.com/blog/5-stocks-like-nvidia-and-fedex-and-the-threat-of-oversupply-in-the-market-1798851/',40),(5,'omor ibne ehsan','...','2026-07-09',0,'There Are 100 Trillion Reasons to Watch the Upcoming U.S. Debut of SK Hynix Stock','https://www.barchart.com/story/news/3207253/there-are-100-trillion-reasons-to-watch-the-upcoming-u-s-debut-of-sk-hynix-stock',2),(6,'anushka mukherji','...','2026-07-09',0.35232,'Intel Stock Is â€˜Too Good to Ignoreâ€™ as HSBC Sets a New Street-High Price Target','https://www.barchart.com/story/news/3207084/intel-stock-is-too-good-to-ignore-as-hsbc-sets-a-new-street-high-price-target',2),(7,'david moadel','Investing\n\n							Tom Lee cited a rare Momentum Index signal that has marked every chip selloff bottom in 3 years, sending AMD up 7% and Intel up 5% while Broadcom ticked up 2%.													\n\n							M...','2026-07-09',0.53698,'AMD Jumps 7%, Intel Climbs 5%, Broadcom Rises 2% as Tom Lee Calls the Chip Selloff a Buying Opportunity','https://247wallst.com/investing/2026/07/09/amd-jumps-7-intel-climbs-5-broadcom-rises-2-as-tom-lee-calls-the-chip-selloff-a-buying-opportunity/',4),(8,'ramish cheema','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-09',0.18916,'Jim Cramer Insisted Recent AI Chip Selloff Wasnâ€™t A Bottom & Discussed These 5 Stocks','https://www.insidermonkey.com/blog/jim-cramer-insisted-recent-ai-chip-selloff-wasnt-a-bottom-discussed-these-5-stocks-1798805/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','...','2026-07-10',0.60048,'SK Hynix Debuts on the Nasdaq Today. Waiting to Buy SKHY Stock May Be the Better Bet.','https://www.barchart.com/story/news/3225241/sk-hynix-debuts-on-the-nasdaq-today-waiting-to-buy-skhy-stock-may-be-the-better-bet',2),(2,'null','Please enable JS and disable any ad blocker...','2026-07-10',-0.17316,'Elon Musk pulls no punches with AI rivals as Grok 4.5 debuts','https://www.thestreet.com/technology/elon-musk-tells-ai-rivals-grok-45-cheaper-good-enough',2),(3,'maham fatima','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-10',0.19864,'Fervo (FRVO), NVIDIA (NVDA) Announce EGS-Twin Geothermal Platform Partnership (NVDA)','https://www.insidermonkey.com/blog/fervo-frvo-nvidia-nvda-announce-egs-twin-geothermal-platform-partnership-nvda-1799407/',40),(4,'brian sozzi','...','2026-07-10',0.43384,'A record number of tech stock insiders are buying their own shares in 2026','https://ca.finance.yahoo.com/news/a-record-number-of-tech-stock-insiders-are-buying-their-own-shares-in-2026-133810825.html',2),(5,'will healy','The sheer amount of capital expenditures (capex) spending on artificial intelligence (AI) has made investors nervous. So high is the spending that cash-rich companies such as Amazon will spend $200 bi...','2026-07-10',0.62112,'Nervous About AI Spending? Buy the Stocks of These 3 Tech Giants.','https://www.fool.com/investing/2026/07/10/nervous-about-ai-spending-buy-the-stocks-of-these/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -313,4 +314,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-10  4:42:45
+-- Dump completed on 2026-07-11  3:59:09
