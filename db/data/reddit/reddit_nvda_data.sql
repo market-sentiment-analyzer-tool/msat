@@ -33,7 +33,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-14c610df-7cd7-11f1-b67b-169ce34aff24:1-213,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
@@ -194,6 +193,7 @@ baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
+bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -243,6 +243,7 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
+e9b059b7-7da1-11f1-a7de-a20bb0906959:1-30,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -291,7 +292,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -300,7 +301,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1usx5ge','owtev75','2026-07-11',4,0.3919,'â€œNvidiaâ€™s chart has stabilized, but the stock needs to reclaim the $210 area before the technical picture turns bullish.â€   Well here we are.  Now what?'),(2,'NVDA_Stock','1usx5ge','ows6j38','2026-07-10',4,-0.5574,'While all true, somehow we have to suffer through another round of contenders to the throne\'s foreskins of deception being vanquished by the wire brush of enlightenment. And we\'ll do it all again in a couple years.'),(3,'NVDA_Stock','1usx5ge','owtu7nd','2026-07-11',0,0.6218,'Current stock valuation is still vastly overpriced. NVidia has been playing with itâ€™s earning by investing into other companies on the condition that these companies would return all the money back by buying NVidia cards. This boosted NVidia earnings artificially to the levels not seen in the pre-boom market. So to say that current valuation to earnings is the same as in 2019 is just plain wrong.  '),(4,'NVDA_Stock','1uszfna','owtalz5','2026-07-11',2,0.9134,'Itâ€™s about fucking time. This stock should have peaked at 325 and retraced to high 200â€™s if it was appreciated even half as much as the rest of the AI plays. \n\nThis is a deep value cash machine with growth in high double digits still. If it werenâ€™t for the â€œderrr AI SLoPâ€ pervasive mindset youâ€™d see more fair valuations here.'),(5,'NVDA_Stock','1uszfna','owrt7ez','2026-07-10',1,0,'https://share.gemini.google/qrbTBcu3H3iv');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -314,4 +314,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-11  3:21:50
+-- Dump completed on 2026-07-12  3:30:45
