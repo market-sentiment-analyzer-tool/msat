@@ -21,7 +21,8 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '02fbe23e-7db2-11f1-86ae-7e6bab6c1cfc:1-22,
+0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
@@ -216,6 +217,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
+d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
@@ -250,7 +252,6 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
-f19b0984-7ce6-11f1-931d-b200f19f6f9f:1-22,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
@@ -312,4 +313,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-11  5:11:47
+-- Dump completed on 2026-07-12  5:25:31
