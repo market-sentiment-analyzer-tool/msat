@@ -149,6 +149,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
+81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -292,7 +293,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -301,7 +302,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-07-10',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(2,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-07-10',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4),(3,'michael walen','...','2026-07-10',0.5364,'Whittier Trust Co. Sells 75,259 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/07/10/whittier-trust-co-sells-75259-shares-of-alphabet-inc-goog.html',2),(4,'nicole kennedy','...','2026-07-10',0.40848,'Whittier Trust Co. of Nevada Inc. Trims Stock Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/whittier-trust-co-of-nevada-inc-trims-stock-position-in-alphabet-inc-goog/11140921.html',2),(5,'shane hupp','...','2026-07-10',0.2368,'Westfuller Advisors LLC Sells 1,808 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13499954/westfuller-advisors-llc-sells-1808-shares-of-alphabet-inc-goog.html',2),(6,'mark dietrich','...','2026-07-10',0,'Westfuller Advisors LLC Has $2.66 Million Stock Holdings in Alphabet Inc. $GOOG','https://www.watchlistnews.com/westfuller-advisors-llc-has-2-66-million-stock-holdings-in-alphabet-inc-goog/11140820.html',2),(7,'tristan rich','...','2026-07-10',0,'Kathmere Capital Management LLC Raises Holdings in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/07/10/kathmere-capital-management-llc-raises-holdings-in-alphabet-inc-goog.html',2),(8,'abmn staff','\n					Posted by ABMN Staff on Jul 10th, 2026\n\nDGS Capital Management LLC reduced its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 14.6% in the first quarter, according to its mo...','2026-07-10',0.0975,'Alphabet Inc. $GOOG Stock Holdings Lowered by DGS Capital Management LLC','https://www.americanbankingnews.com/2026/07/10/alphabet-inc-goog-stock-holdings-lowered-by-dgs-capital-management-llc.html',4),(9,'abmn staff','\n					Posted by ABMN Staff on Jul 10th, 2026\n\nIntrinsic Value Partners LLC lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 4.9% in the 1st quarter, according to the company in i...','2026-07-10',0.2412,'Intrinsic Value Partners LLC Cuts Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/07/10/intrinsic-value-partners-llc-cuts-stake-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','The stocks of the big three cloud computing companies, Amazon (AMZN 0.73%), Microsoft (MSFT +0.15%), and Alphabet (GOOGL 0.50%) (GOOG 0.34%), have had mixed performances in 2026 thus far. Alphabet has...','2026-07-12',0.88428,'Alphabet vs. Amazon vs. Microsoft: Which Is the Best Cloud Computing Stock to Buy Today?','https://www.fool.com/investing/2026/07/12/alphabet-vs-amazon-vs-microsoft-which-is-the-best/',4),(2,'justin pope','Popular online brokerage Robinhood Markets does a very good job of providing public data that offers investors insights into its massive base of over 27.7 million funded customers. One example is its ...','2026-07-12',0.36152,'The 3 Top Chip Stocks Investors Own on Robinhood','https://www.fool.com/investing/2026/07/12/the-3-top-chip-stocks-investors-own-on-robinhood/',4),(3,'oleksandr pylypenko','...','2026-07-11',0,'Broadcom Lands $30 Billion Chip Deal With Apple. Why Itâ€™s a Win-Win for AAPL and AVGO.','https://www.barchart.com/story/news/3239883/broadcom-lands-30-billion-chip-deal-with-apple-why-its-a-win-win-for-aapl-and-avgo',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -315,4 +316,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-12  4:20:09
+-- Dump completed on 2026-07-13  4:23:38
