@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+419f1cd1-7f2f-11f1-9faa-a2ca03100f8a:1-51,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
@@ -149,6 +150,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
+81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -216,6 +218,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
+d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
@@ -243,7 +246,6 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
-e9b059b7-7da1-11f1-a7de-a20bb0906959:1-30,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -292,7 +294,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -301,6 +303,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1uviebc','oxbcdh1','2026-07-13',123,0.4404,'The day this sub doesn\'t mention MSFT it\'s gonna go up 15%'),(2,'ValueInvesting','1uviebc','oxbczev','2026-07-13',26,-0.1761,'The market is starting to be more cautious about debt/leverage. Especially obvious in the case of Oracle.'),(3,'ValueInvesting','1uviebc','oxbja2n','2026-07-13',21,0.5071,'The fact that ORCL, META, and MSFT are getting punished for heavy capex and financial leverage is actually evidence that the market has not completely lost its connection to fundamentals, because a truly euphoric bubble does not discriminate between companies spending rationally and companies spending recklessly. If it were actually a bubble popping everything would be taken down with it'),(4,'ValueInvesting','1uviebc','oxc7ydz','2026-07-13',8,0.2975,'Mentioning TSM and SPCX together seems like a very odd pairing.\n\nOne is a space exploration company with a satellite internet business, a launch business, a social media segment, and a frontier AI lab. It just IPO\'d and trades at >100x sales and is currently unprofitable on a GAAP basis. \n\nThe other manufactures semiconductors. It trades at a forward P/E in the mid twenties and routinely grows >20%.\n\nThese are not comparable, either by business models or valuation.'),(5,'ValueInvesting','1uviebc','oxbizvq','2026-07-13',6,0,'A bubble is never the whole market. It\'s always a subsection. The day the internet bubble burst Berkshire Hathaway was at a multi year low'),(6,'ValueInvesting','1uviebc','oxbc6hj','2026-07-13',14,-0.6705,'Where Msft and Meta are getting punished? They are recovering.\n\nIt\'s just Oracle who is funding It\'s datacenters on debt which is big gamble.'),(7,'ValueInvesting','1uviebc','oxbiz98','2026-07-13',7,-0.296,'Oracle will be past $200 in no timeÂ '),(8,'ValueInvesting','1uviebc','oxbh0a5','2026-07-13',3,0.34,'because all of them are spending large amounts of money on infrastructure.  orcl is highly leveraged, and dependent on openai for a large chunk of their so-called order backlog.\n\nthey will all come around eventually though.  let\'s see what they say during their earnings calls over the next 6 weeks.'),(9,'ValueInvesting','1uviebc','oxbuv9y','2026-07-13',3,-0.7335,'I wouldn\'t say people are piling into SPCX when it almost dipped below its IPO price today; but for the people that are buying into SPCX and other space or ai stocks, they are buying in on future potential just like the dot com era. That\'s where the bubble coversation comes into play.\n\nStocks like ORCL, META, and MSFT aren\'t going down directly because of capex numbers. It\'s more the fear of them issuing more stock to fund the capex, so people are getting out before the price drops which...causes the price to drop. Stop losses being triggered causes even more of a selloff and price drop. Current headlines for each specific company and in the macroeconomic space isn\'t helping.\n\nAs far as datacenter oversupply, most of the companies building data centers are the ones who can afford to build them and can stay afloat even if some of those datacenters are found to be useless in the future. Those companies have other revenue streams to fall back on in case those data centers don\'t work out and there is in fact an oversupply of them.\n\nJust my opinion and point of view.'),(10,'ValueInvesting','1uviebc','oxbcnux','2026-07-13',4,-0.2168,'Wdym meta is punished? I\'m like +15% in two weeks?'),(11,'ValueInvesting','1uviebc','oxbhdfb','2026-07-13',2,0.5927,'I still like the idea of oracle.  I think its risk has increased but is a bit of a over reaction and lumped into the rest so I think there is value there.   I want to say the 24th or something is the div date so im not familiar with how the markets treat that in general.  Id imagine if someone was planning to sell they would wait till after that date unless they thought it was really going to tank before that.'),(12,'ValueInvesting','1uviebc','oxc7h8a','2026-07-13',2,-0.5499,'The downslope started in jun 2007, but the crash dodnt happen until sept 2008.'),(13,'ValueInvesting','1uviebc','oxdjguj','2026-07-13',2,0.296,'Investing purely on numbers and PE sounds like actual way to underperform.\n\nI feel bad for traditional value investors, honestly.\n\nImagine not buying META because graham and buffet say the PE is just not low enough.'),(14,'ValueInvesting','1uviebc','oxdtqpy','2026-07-14',2,0.4106,'The data center oversupply bit is the one nobody wants to talk about. If half these buildouts are pre-leased to startups that burn cash, the lease stack is only as good as the next funding round. Market\'s pricing hyperscaler capex like it\'s a utility, but it\'s more like venture debt.'),(15,'ValueInvesting','1uviebc','oxbjee6','2026-07-13',3,0,'We\'re not in a bubble'),(16,'ValueInvesting','1uviebc','oxdhsn2','2026-07-13',1,0.431,'Market Fwd-PE is not high. The marjet is not expensive and we are not at the end of a cycle.'),(17,'ValueInvesting','1uviebc','oxdmo4k','2026-07-13',1,0.3612,'it is going below 50, and soon be delisted. puts ready to print money.'),(18,'ValueInvesting','1uviebc','oxdz3vv','2026-07-14',1,-0.731,'Because they are the biggest bubbles of the entire market.\n\nMicrosoft is so short on cash they are firing Xbox employees. They are going to pull the plug on windows 11 in a few months since they won\'t have enough people to push for updates.\n\nEvery single dollar is going into capex. \n\nLook at SpaceX, they know this AI buildout doesn\'t provide real ROI so they\'re straight up selling the compute they\'ve hoarded at a massive premium.\n\nElon stocks deserve to trade at over 100x P/S, MSFT on the other hand should be below 10 PE for falling for this Ponzi.'),(19,'ValueInvesting','1uviebc','oxe05wa','2026-07-14',1,-0.296,'the upwards flow of money will stop one day'),(20,'ValueInvesting','1uviebc','oxe2s11','2026-07-14',1,-0.6705,'Nothing to do with that. Itâ€™s a pair trade. People short igv (software) and go long semi, short hyerperscalers and go long memory.\n\nMSFT is both and is the index punching bag.\n\nNotice how itâ€™s been acting like an inverse qqq etf?'),(21,'ValueInvesting','1uviebc','oxe57nz','2026-07-14',1,0.4404,'Because i have RSUs from them both ðŸ˜‚'),(22,'ValueInvesting','1uviebc','oxbcshx','2026-07-13',1,-0.7096,'Market always projects forward in the short term. Market has always been irrational. 2 facts there.'),(23,'ValueInvesting','1uviebc','oxboq4z','2026-07-13',1,0,'[deleted]');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -314,4 +317,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-12  3:30:45
+-- Dump completed on 2026-07-14  2:55:04

@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+419f1cd1-7f2f-11f1-9faa-a2ca03100f8a:1-51,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
@@ -149,6 +150,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
+81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -216,6 +218,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
+d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
@@ -243,7 +246,6 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
-e9b059b7-7da1-11f1-a7de-a20bb0906959:1-30,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -292,7 +294,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -301,6 +303,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1uvi9rh','oxbk2h1','2026-07-13',6,-0.4278,'Ah, another shot at nvidia from the finest source of FUD.   Whoâ€™d thunk?'),(2,'NVDA_Stock','1uvi9rh','oxcknfx','2026-07-13',3,0,'lol @ theMISinformation'),(3,'NVDA_Stock','1uvi9rh','oxbbizo','2026-07-13',2,0.9145,'> Google\'s pitch to Nscale and other neoclouds on why they should buy TPUs in addition to GPUs comes down to economics.\n> Google told them TPUs are more efficient, reliable and stable than GPUs, especially given the various changes Nvidia has made to its chip hardware systems between different generations. Such changes have caused problems for buyers, most notably last year when they were trying to get Nvidia\'s Grace Blackwell systems up and running at scale, as we have reported in detail.\n> \n> But we do know Nvidia heard about the talks with Google and has since discussed some financial incentives with the neocloud. One person close to the deal said these incentives appeared aimed at getting Nscale less interested in working with Google. The Nscale spokesperson disputed that characterization, saying \"Nvidia did not offer Nscale any financial incentives in exchange for not using TPUs.\" (An Nvidia spokesperson declined to comment.)\n> The episode reminded us of when Nvidia CEO Jensen Huang sprung to action after finding out OpenAI was talking to Google about using TPUs.'),(4,'NVDA_Stock','1uvi9rh','oxeaqfw','2026-07-14',1,0,'TPU is less flexibile and they will not be able to find buyers for TPUs when the hardware is 5 years old.\n\nLook at the Gaming market, Nvidia GPUs 5 years old still go for a lot of money.'),(5,'NVDA_Stock','1uvi9rh','oxc9c3c','2026-07-13',-4,0.98,'The TPUs are now v.8 since launching in 2015. Good reporting that OpenAI, Anthropic, Apple and Meta are all commited to the TPU as a big savings on inference. The GPUs are awesome for current tasks but a lot of baggage for inference. This accelerated with the ridiculouos speculative HBM market which had led to three SK companies representing 30% of their stock market. Can you say bubble? Alphabet with the specialized v8i (inference focused) TPUs architected a solution dependent on SRAM which further accentuates the pricing differential. Even NVDA has no choice but to raise prices to cover the HBM components. If you architecture is general and it REQUIRES HBM this is just another reason to at least run the numbers with TPUs. A big jackpot for BroadCom also! Alphabet profitability in GCP has led to a $462B backlog. When the economics are this good for GCP even buying excess compute from xAI has become sensible. TPUs are a golden goose. It will be interesting in Q2 earnings whether Alphabet makes some progress on the  GCP backlog which all by itself nears 5 years of TSLA revenue! If it drops a lot then maybe it is time to temper expectations -- we will see.'),(6,'NVDA_Stock','1uvi9rh','oxbupqn','2026-07-13',-2,-0.5859,'Meh, bad stock');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -314,4 +317,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-12  3:30:45
+-- Dump completed on 2026-07-14  2:55:04

@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+419f1cd1-7f2f-11f1-9faa-a2ca03100f8a:1-51,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
@@ -149,6 +150,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
+81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
@@ -216,6 +218,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
+d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
@@ -243,7 +246,6 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
-e9b059b7-7da1-11f1-a7de-a20bb0906959:1-30,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -292,7 +294,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -301,7 +303,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1utkjk4','owypl0a','2026-07-11',3,-0.4404,'That was a crazy dip down to like $275.  seemed to be triggered by news they would have to raise prices due to memory chips'),(2,'AAPL','1utkjk4','oww8yvz','2026-07-11',4,0.4939,'AAPL above 317 will go to 320 and 325. Those are the trading levels. Options and prediction market has a high probability it will surpass 320 in September. However my massive $$$ is saying it will do it weeks. AAPL will be crown #1 once again late this year and will stay there for many years to come. Enjoy the ride then eat wagyu steak'),(3,'AAPL','1utkjk4','owxf9nx','2026-07-11',1,0.3612,'I like market profile '),(4,'AAPL','1utlibu','owx0i7c','2026-07-11',10,0.9086,'Apple has NEVER been a tech leader.  Instead what it is superb at, and why it is so successful, is grouping together technologies invented by others and packaging them in an attractive piece of hardware that â€˜just worksâ€™.   I believe this will be exactly what they will do around AI, theyâ€™ll find a way to make it properly useful, appealing and not hot garbage.\n\nRemember, Appleâ€™s business is selling hardware, not software.'),(5,'AAPL','1utlibu','owwny0v','2026-07-11',5,0.6908,'They are winning the local AI race severely. Â And I think thereâ€™s a strong chance the future will be very local considering the escalating prices and abysmal privacy of the cloud'),(6,'AAPL','1utlibu','owyt0ym','2026-07-11',2,0.9571,'I need to buy AAPL but itâ€™s pretty much at ATH. Missed the $275 pullback. But I do believe their AI application will be a game changer especially with iOS 27. They really need to release a meta glasses equivalent that is lightweight and maybe share/offload compute with iPhones that most people already own anyway. Itâ€™s great for days where youâ€™ll have a phone but donâ€™t necessarily need to handle it. \n\nApple will continue to gain market share against windows and android based OS. '),(7,'AAPL','1utlibu','owwnlph','2026-07-11',1,0,'>Just a realization and my Q3 reporting notes I had as we head into earrings at the end of the month.\n\nby \"earrings\" do you mean the forthcoming AirPods with a camera or are you suggesting apple is getting into fashion accessories? '),(8,'AAPL','1utlibu','owwfhk9','2026-07-11',0,0.8176,'Iâ€™d like a dip below $300 again to load up with my Â£30k. Currently only holding 16.5 shares, but will be building it up as i canâ€™t see Apple fading away any time in the next decade +');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -315,4 +316,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-12  3:30:44
+-- Dump completed on 2026-07-14  2:55:04
