@@ -30,6 +30,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
@@ -293,7 +294,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -302,7 +303,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'hanz christensen','...','2026-07-12',0,'Eagle Bay Advisors LLC Grows Position in NVIDIA Corporation $NVDA','https://www.watchlistnews.com/eagle-bay-advisors-llc-grows-position-in-nvidia-corporation-nvda/11142349.html',20),(2,'abmn staff','\n					Posted by ABMN Staff on Jul 12th, 2026\n\nEagle Bay Advisors LLC grew its holdings in  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 35.4% in the 1st quarter, according to the company in its m...','2026-07-12',0.4367,'Eagle Bay Advisors LLC Acquires 3,479 Shares of NVIDIA Corporation $NVDA','https://www.americanbankingnews.com/2026/07/12/eagle-bay-advisors-llc-acquires-3479-shares-of-nvidia-corporation-nvda.html',40),(3,'anushka mukherji','...','2026-07-12',-0.42136,'Taiwan Just Waved a Red Flag for Nvidia Stock','https://www.barchart.com/story/news/3244369/taiwan-just-waved-a-red-flag-for-nvidia-stock',20),(4,'logan wallace','...','2026-07-12',0.2368,'NVIDIA Corporation $NVDA Shares Acquired by DSG Capital Advisors LLC','https://www.tickerreport.com/banking-finance/13501363/nvidia-corporation-nvda-shares-acquired-by-dsg-capital-advisors-llc.html',20),(5,'hanz christensen','...','2026-07-12',0.39512,'Elevation Point Wealth Partners LLC Has $87.16 Million Stock Holdings in NVIDIA Corporation $NVDA','https://www.watchlistnews.com/elevation-point-wealth-partners-llc-has-87-16-million-stock-holdings-in-nvidia-corporation-nvda/11142310.html',20),(6,'tristan rich','...','2026-07-12',-0.42136,'Heritage Investors Management Corp Reduces Stock Holdings in NVIDIA Corporation $NVDA','https://www.themarketsdaily.com/2026/07/12/heritage-investors-management-corp-reduces-stock-holdings-in-nvidia-corporation-nvda.html',20),(7,'abmn staff','...','2026-07-12',0.43384,'Short Interest in REX NVDA Growth & Income ETF (BATS:NVII) Drops By 89.7%','https://www.americanbankingnews.com/2026/07/12/short-interest-in-rex-nvda-growth-income-etf-batsnvii-drops-by-89-7.html',20),(8,'abmn staff','\n					Posted by ABMN Staff on Jul 12th, 2026\n\nBoston Trust Walden Corp cut its stake in shares of  NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 1.2% in the 1st quarter, according to its most rece...','2026-07-12',0.73632,'NVIDIA Corporation $NVDA Shares Sold by Boston Trust Walden Corp','https://www.americanbankingnews.com/2026/07/12/nvidia-corporation-nvda-shares-sold-by-boston-trust-walden-corp.html',40),(9,'rich duprey','Nothing found for the requested page. Try a search instead?...','2026-07-12',-0.38136,'Just a Handful of AI Stocks Are Carrying Everything. History Says It Doesnâ€™t Have to End Badly','https://247wallst.com/investing/2026/07/12/just-a-handful-of-ai-stocks-are-carrying-everything-history-says-it-doesnt-have-to-end-badly/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'tom lauricella','...','2026-07-13',0.16184,'Stock Sector Outlooks: Morningstarâ€™s Top Q3 Picks Across the Market','https://www.morningstar.com/stocks/stock-sector-outlooks-morningstars-top-q3-picks-across-market',2),(2,'ian cooper','Investing\n\n							Meuser sold NVIDIA five times and Jacobs sold up to $1 million in QUALCOMM while sitting on committees that directly oversee both companies.													\n\n							More than half of 11...','2026-07-13',0.74992,'Congress Is Trading on Laws Theyâ€™re About to Pass â€” And Itâ€™s Perfectly Legal','https://247wallst.com/investing/2026/07/13/congress-is-trading-on-laws-theyre-about-to-pass-and-its-perfectly-legal/',4),(3,'aditya raghunath','...','2026-07-13',-0.1024,'SK Hynix Just Sent a Huge AI Demand Signal With Historic U.S. Listing for SKHY Stock','https://www.barchart.com/story/news/3255149/sk-hynix-just-sent-a-huge-ai-demand-signal-with-historic-u-s-listing-for-skhy-stock',2),(4,'douglas a. mcintyre','Investing\n\n							Tech giants have issued nearly $250 billion in debt for AI this year, as investors question whether hypergrowth assumptions will ever pay off.													\n\n							Amazon plans $200 ...','2026-07-13',0.19886,'Is AI Running Out Of Money?','https://247wallst.com/investing/2026/07/13/is-ai-running-out-of-money/',4),(5,'patrick sanders','...','2026-07-13',-0.08216,'AMD Is Following Nvidiaâ€™s Playbook. Hereâ€™s Why Investors Should Pay Attention.','https://www.barchart.com/story/news/3254916/amd-is-following-nvidias-playbook-heres-why-investors-should-pay-attention',2),(6,'vision capital','...','2026-07-13',0.2,'Vision Capital Fund Q2 2026 Quarterly Letter','https://seekingalpha.com/article/4921560-vision-capital-fund-q2-2026-quarterly-letter',4),(7,'rttnews',' The major U.S. index futures are currently pointing to a lower open on Monday, with stocks likely to give back ground after turning in a strong performance last week.\nThe downward momentum on Wall St...','2026-07-13',-0.26032,'Surging Crude Oil Prices May Weigh On Wall Street','https://www.rttnews.com/3666389/surging-crude-oil-prices-may-weigh-on-wall-street.aspx',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -316,4 +317,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-13  4:23:39
+-- Dump completed on 2026-07-14  3:50:46

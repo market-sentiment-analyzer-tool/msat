@@ -30,6 +30,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
@@ -293,7 +294,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -302,7 +303,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','The stocks of the big three cloud computing companies, Amazon (AMZN 0.73%), Microsoft (MSFT +0.15%), and Alphabet (GOOGL 0.50%) (GOOG 0.34%), have had mixed performances in 2026 thus far. Alphabet has...','2026-07-12',0.88428,'Alphabet vs. Amazon vs. Microsoft: Which Is the Best Cloud Computing Stock to Buy Today?','https://www.fool.com/investing/2026/07/12/alphabet-vs-amazon-vs-microsoft-which-is-the-best/',4),(2,'justin pope','Popular online brokerage Robinhood Markets does a very good job of providing public data that offers investors insights into its massive base of over 27.7 million funded customers. One example is its ...','2026-07-12',0.36152,'The 3 Top Chip Stocks Investors Own on Robinhood','https://www.fool.com/investing/2026/07/12/the-3-top-chip-stocks-investors-own-on-robinhood/',4),(3,'oleksandr pylypenko','...','2026-07-11',0,'Broadcom Lands $30 Billion Chip Deal With Apple. Why Itâ€™s a Win-Win for AAPL and AVGO.','https://www.barchart.com/story/news/3239883/broadcom-lands-30-billion-chip-deal-with-apple-why-its-a-win-win-for-aapl-and-avgo',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-07-13',0.272,'A New Report Says Meta Platforms Could Overtake Google AI. How to Play META Stock Here.','https://www.barchart.com/story/news/3255712/a-new-report-says-meta-platforms-could-overtake-google-ai-how-to-play-meta-stock-here',20),(2,'sushree mohanty','...','2026-07-13',0.45752,'Upcoming Q2 Earnings for GOOG Stock: Hereâ€™s Why Bulls Are Optimistic','https://www.barchart.com/story/news/3255395/upcoming-q2-earnings-for-goog-stock-heres-why-bulls-are-optimistic',20),(3,'aanchal sugandh','...','2026-07-13',0.30544,'Dear Microsoft Stock Fans, Mark Your Calendars for July 13','https://www.barchart.com/story/news/3255080/dear-microsoft-stock-fans-mark-your-calendars-for-july-13',2),(4,'anushka mukherji','...','2026-07-13',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 13','https://www.barchart.com/story/news/3254673/dear-google-stock-fans-mark-your-calendars-for-july-13',20),(5,'justin pope','Microsoft (MSFT +1.68%), Alphabet (GOOG 1.16%)(GOOGL 1.23%), Amazon (AMZN +0.86%), and Meta Platforms (META 1.79%) are pouring hundreds of billions of dollars into data centers, chips, and other infra...','2026-07-13',0.67938,'Ranking the \"Magnificent 7\" Stocks by Free-Cash-Flow Yield','https://www.fool.com/investing/2026/07/13/rank-magnificent-7-stocks-free-cash-flow-yield/',4),(6,'geoffrey seiler','The stocks of the big three cloud computing companies, Amazon (AMZN +0.80%), Microsoft (MSFT +1.68%), and Alphabet (GOOGL 1.23%) (GOOG 1.16%), have had mixed performances in 2026 thus far. Alphabet ha...','2026-07-12',0.88428,'Alphabet vs. Amazon vs. Microsoft: Which Is the Best Cloud Computing Stock to Buy Today?','https://www.fool.com/investing/2026/07/12/alphabet-vs-amazon-vs-microsoft-which-is-the-best/',4),(7,'justin pope','Popular online brokerage Robinhood Markets does a very good job of providing public data that offers investors insights into its massive base of over 27.7 million funded customers. One example is its ...','2026-07-12',0.36152,'The 3 Top Chip Stocks Investors Own on Robinhood','https://www.fool.com/investing/2026/07/12/the-3-top-chip-stocks-investors-own-on-robinhood/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -316,4 +317,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-13  4:23:38
+-- Dump completed on 2026-07-14  3:50:45
