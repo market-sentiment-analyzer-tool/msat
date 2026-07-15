@@ -116,6 +116,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5ce47231-6ebf-11f1-b124-363d7c5d329b:1-63,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+60c87aea-8000-11f1-990c-fac789fd9aab:1-58,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -294,7 +295,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -303,7 +304,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'omor ibne ehsan','...','2026-07-13',0.35232,'Wall Streetâ€™s Bar for Big Tech Is on the Floor, and That Could Spark the Next Rally','https://finance.yahoo.com/markets/stocks/articles/wall-street-bar-big-tech-154512015.html',20),(2,'aanchal sugandh','...','2026-07-13',0.30544,'Dear Microsoft Stock Fans, Mark Your Calendars for July 13','https://www.barchart.com/story/news/3255080/dear-microsoft-stock-fans-mark-your-calendars-for-july-13',2),(3,'douglas a. mcintyre','Investing\n\n							Tech giants have issued nearly $250 billion in debt for AI this year, as investors question whether hypergrowth assumptions will ever pay off.													\n\n							Amazon plans $200 ...','2026-07-13',0.19764,'Is AI Running Out Of Money?','https://247wallst.com/investing/2026/07/13/is-ai-running-out-of-money/',4),(4,'anushka mukherji','...','2026-07-13',0.30544,'Dear Google Stock Fans, Mark Your Calendars for July 13','https://www.barchart.com/story/news/3254673/dear-google-stock-fans-mark-your-calendars-for-july-13',2),(5,'brian sozzi','...','2026-07-13',0.272,'Earnings season is about to kick off â€” 2 charts reveal how it may go','https://finance.yahoo.com/markets/article/earnings-season-is-about-to-kick-off--2-charts-reveal-how-it-may-go-135222405.html',20),(6,'yahoo finance','...','2026-07-13',0.272,'Earnings season is about to kick off aÌ‚Â€Â” 2 charts reveal how it may go','https://www.bundle.app/en/finance/earnings-season-is-about-to-kick-off-2-charts-reveal-how-it-may-go-633FC2F2-AF1A-426C-86B2-B4CA87E4DD06',2),(7,'tyler durden','\nUS equity futures are lower on a combination of US/Iran escalation (which is feeding inflationary concerns)Â and a violent crash in South Korean stocks (which saw SK Hynix plunge by 15% overnight, the...','2026-07-13',-0.48708,'Futures Slide, Oil Surges As Iran War Returns, Chip Stocks Tumble As Korea, SK Hynix Crash','https://www.zerohedge.com/markets/futures-slide-oil-surges-iran-war-returns-chip-stocks-tumble-korea-sk-hynix-crash',4),(8,'mitch edgeman','...','2026-07-13',0.2368,'Y Intercept Hong Kong Ltd Sells 36,982 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/13/y-intercept-hong-kong-ltd-sells-36982-shares-of-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'chris macdonald','Investing\n\n							Amazon (AMZN) CEO Andy Jassy committed $200B to AI infrastructure in 2026, saying the company monetizes capacity as fast as it can install it.													\n\n							AWS grew 28% YoY t...','2026-07-14',0.64586,'Amazon Is Spending 200M In AI This Year: Is that Good News For Investors?','https://247wallst.com/investing/2026/07/14/amazon-is-spending-200m-in-ai-this-year-is-that-good-news-for-investors/',40),(2,'douglas a. mcintyre','...','2026-07-14',-0.25456,'Larry Ellison Loses $60 Billion','https://finance.yahoo.com/technology/ai/articles/larry-ellison-loses-60-billion-124604580.html',20),(3,'ian cooper','\n							June CPI printed 3.5% annually, below the 3.8% forecast, easing inflation fears even as oil surges past $80 and Iran tensions escalate.													\n\n							IBM cratered 22% on a Q2 miss after...','2026-07-14',-0.05968,'Stock Market Live July 14, 2026: S&P 500 (SPY) Regaining Lost Ground on Inflation Report','https://247wallst.com/investing/2026/07/14/stock-market-live-july-14-2026-sp-500-spy-regaining-lost-ground-on-inflation-report/',4),(4,'jonathan schramm','By\nWith the boom in AI, all the attention of investors regarding computing hardware has been focused on ultra-advanced chips, GPUs, and memory.\nHowever, to connect these components together in machine...','2026-07-14',0.19934,'New AWS AI Hardware Company is Teaching AI to Think in Physics','https://www.securities.io/new-aws-ai-hardware-company-is-teaching-ai-to-think-in-physics/',4),(5,'anthony miller','...','2026-07-14',0,'Osborne Partners Capital Management LLC Has $37.28 Million Stock Position in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/07/14/osborne-partners-capital-management-llc-has-37-28-million-stock-position-in-amazon-com-inc-amzn.html',2),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 14th, 2026\n\nCapelight Capital Asset Management LP increased its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 69.1% in the 1st quarter, accor...','2026-07-14',0.48884,'Capelight Capital Asset Management LP Has $5.21 Million Stake in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/14/capelight-capital-asset-management-lp-has-5-21-million-stake-in-amazon-com-inc-amzn.html',4),(7,'versus trade','...','2026-07-14',0.14232,'Amazon Vs. Alibaba: The Tariff Economy Returns to Global E-Commerce','https://www.investing.com/analysis/amazon-vs-alibaba-the-tariff-economy-returns-to-global-ecommerce-200683887',20);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -317,4 +318,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-14  3:50:45
+-- Dump completed on 2026-07-15  3:51:44

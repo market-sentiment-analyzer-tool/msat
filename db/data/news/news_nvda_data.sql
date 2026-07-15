@@ -116,6 +116,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5ce47231-6ebf-11f1-b124-363d7c5d329b:1-63,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+60c87aea-8000-11f1-990c-fac789fd9aab:1-58,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -294,7 +295,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -303,7 +304,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'tom lauricella','...','2026-07-13',0.16184,'Stock Sector Outlooks: Morningstarâ€™s Top Q3 Picks Across the Market','https://www.morningstar.com/stocks/stock-sector-outlooks-morningstars-top-q3-picks-across-market',2),(2,'ian cooper','Investing\n\n							Meuser sold NVIDIA five times and Jacobs sold up to $1 million in QUALCOMM while sitting on committees that directly oversee both companies.													\n\n							More than half of 11...','2026-07-13',0.74992,'Congress Is Trading on Laws Theyâ€™re About to Pass â€” And Itâ€™s Perfectly Legal','https://247wallst.com/investing/2026/07/13/congress-is-trading-on-laws-theyre-about-to-pass-and-its-perfectly-legal/',4),(3,'aditya raghunath','...','2026-07-13',-0.1024,'SK Hynix Just Sent a Huge AI Demand Signal With Historic U.S. Listing for SKHY Stock','https://www.barchart.com/story/news/3255149/sk-hynix-just-sent-a-huge-ai-demand-signal-with-historic-u-s-listing-for-skhy-stock',2),(4,'douglas a. mcintyre','Investing\n\n							Tech giants have issued nearly $250 billion in debt for AI this year, as investors question whether hypergrowth assumptions will ever pay off.													\n\n							Amazon plans $200 ...','2026-07-13',0.19886,'Is AI Running Out Of Money?','https://247wallst.com/investing/2026/07/13/is-ai-running-out-of-money/',4),(5,'patrick sanders','...','2026-07-13',-0.08216,'AMD Is Following Nvidiaâ€™s Playbook. Hereâ€™s Why Investors Should Pay Attention.','https://www.barchart.com/story/news/3254916/amd-is-following-nvidias-playbook-heres-why-investors-should-pay-attention',2),(6,'vision capital','...','2026-07-13',0.2,'Vision Capital Fund Q2 2026 Quarterly Letter','https://seekingalpha.com/article/4921560-vision-capital-fund-q2-2026-quarterly-letter',4),(7,'rttnews',' The major U.S. index futures are currently pointing to a lower open on Monday, with stocks likely to give back ground after turning in a strong performance last week.\nThe downward momentum on Wall St...','2026-07-13',-0.26032,'Surging Crude Oil Prices May Weigh On Wall Street','https://www.rttnews.com/3666389/surging-crude-oil-prices-may-weigh-on-wall-street.aspx',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'pratyush thakur','...','2026-07-14',0,'US official says H200 chip shipments to China have begun; Reuters names ZTE among licensed buyers','https://seekingalpha.com/news/4613652-us-official-says-h200-chip-shipments-to-china-have-begun-reuters-names-zte-among-licensed-buyers?feed_item_type=news',4),(2,'null','Please enable JS and disable any ad blocker...','2026-07-14',-0.20836,'Oppenheimer has a warning for investors before the fall','https://www.thestreet.com/investing/oppenheimer-market-warning-for-investors',2),(3,'bob karr','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-14',0.81044,'NVIDIA (NVDA): One of the Best Monopoly Stocks to Buy According to Hedge Funds','https://www.insidermonkey.com/blog/nvidia-nvda-one-of-the-best-monopoly-stocks-to-buy-according-to-hedge-funds-1799733/',40),(4,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-14',0.8836,'5 Best Quantum Computing Stocks to Buy and Hold Forever','https://www.insidermonkey.com/blog/5-best-quantum-computing-stocks-to-buy-and-hold-forever-1800810/',4),(5,'mike zaccardi','...','2026-07-14',0,'TOPT: U.S. Mega Caps Drift Collectively Toward GARP Territory','https://seekingalpha.com/article/4921925-topt-us-mega-caps-drift-collectively-toward-garp-territory',4),(6,'null','Please enable JS and disable any ad blocker...','2026-07-14',-0.3034,'Vanguard doubles down on U.S. stocks with 4 new ETFs','https://www.thestreet.com/investing/vanguard-us-stocks-4-new-etfs',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -317,4 +318,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-14  3:50:46
+-- Dump completed on 2026-07-15  3:51:44
