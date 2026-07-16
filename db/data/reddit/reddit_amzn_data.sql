@@ -70,7 +70,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
-38fb738a-7ff8-11f1-9a6c-9ea82c1db352:1-54,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -117,6 +116,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5ce47231-6ebf-11f1-b124-363d7c5d329b:1-63,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
+60c87aea-8000-11f1-990c-fac789fd9aab:1-58,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -134,6 +134,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
+6c2c62ba-80c4-11f1-a828-5af8b4eaa45f:1-49,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -295,7 +296,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -304,6 +305,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'Wallstreetbetsnew','1uxgamm','oxt3rsq','2026-07-16',1,-0.4843,'AMZN hasnâ€™t been leading my dogâ€™s potty route for at least 4 years. Neither a growth nor wealth stock. â€œAlexa! When is this fucking stock going to make me money?â€ â€¦ â€œIâ€™m sorry but if youâ€™d invested in INTC instead youâ€™d be retired by now lololâ€. ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -317,4 +319,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-15  2:53:32
+-- Dump completed on 2026-07-16  3:15:29
