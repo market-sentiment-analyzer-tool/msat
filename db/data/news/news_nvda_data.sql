@@ -247,6 +247,7 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
+e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
@@ -295,7 +296,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -304,7 +305,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'pratyush thakur','...','2026-07-14',0,'US official says H200 chip shipments to China have begun; Reuters names ZTE among licensed buyers','https://seekingalpha.com/news/4613652-us-official-says-h200-chip-shipments-to-china-have-begun-reuters-names-zte-among-licensed-buyers?feed_item_type=news',4),(2,'null','Please enable JS and disable any ad blocker...','2026-07-14',-0.20836,'Oppenheimer has a warning for investors before the fall','https://www.thestreet.com/investing/oppenheimer-market-warning-for-investors',2),(3,'bob karr','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-14',0.81044,'NVIDIA (NVDA): One of the Best Monopoly Stocks to Buy According to Hedge Funds','https://www.insidermonkey.com/blog/nvidia-nvda-one-of-the-best-monopoly-stocks-to-buy-according-to-hedge-funds-1799733/',40),(4,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-14',0.8836,'5 Best Quantum Computing Stocks to Buy and Hold Forever','https://www.insidermonkey.com/blog/5-best-quantum-computing-stocks-to-buy-and-hold-forever-1800810/',4),(5,'mike zaccardi','...','2026-07-14',0,'TOPT: U.S. Mega Caps Drift Collectively Toward GARP Territory','https://seekingalpha.com/article/4921925-topt-us-mega-caps-drift-collectively-toward-garp-territory',4),(6,'null','Please enable JS and disable any ad blocker...','2026-07-14',-0.3034,'Vanguard doubles down on U.S. stocks with 4 new ETFs','https://www.thestreet.com/investing/vanguard-us-stocks-4-new-etfs',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'pathikrit bose','...','2026-07-15',0.272,'Nebius Just Bagged a Billion-Dollar Deal With Reflection AI. How to Play NBIS Stock Here.','https://www.barchart.com/story/news/3299561/nebius-just-bagged-a-billion-dollar-deal-with-reflection-ai-how-to-play-nbis-stock-here',2),(2,'danielle liverance','Investing\n\n							Jim Farley warned China holds enough existing factory capacity to serve the entire North American auto market and eliminate Ford.													\n\n							Rockwell Automation (ROK) and N...','2026-07-15',-0.29016,'American CEOs Were Terrified Of Chinaâ€™s Dark Factories. Now The Race Is On To Build One In The U.S.','https://247wallst.com/investing/2026/07/15/american-ceos-were-terrified-of-chinas-dark-factories-now-the-race-is-on-to-build-one-in-the-u-s/',4),(3,'anushka mukherji','...','2026-07-15',0.2368,'MU Stock Alert: What to Watch as Micron Takes a Stake in GlobalWafers','https://www.barchart.com/story/news/3299072/mu-stock-alert-what-to-watch-as-micron-takes-a-stake-in-globalwafers',2),(4,'logan wallace','...','2026-07-15',0,'NVIDIA (NASDAQ:NVDA) Stock Sold Sen. Sheldon Whitehouse','https://www.tickerreport.com/banking-finance/13504750/nvidia-nasdaqnvda-stock-sold-sen-sheldon-whitehouse.html',20),(5,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-15',0.3409,'Nvidia (NVDA) Has an Unprecedented Competitive Edge, Says TD Cowen','https://www.insidermonkey.com/blog/nvidia-nvda-has-an-unprecedented-competitive-edge-says-td-cowen-1801882/',40),(6,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-15',0.36044,'Morgan Stanley Reiterates Nvidia (NVDA) As its Top Semiconductor Pick','https://www.insidermonkey.com/blog/morgan-stanley-reiterates-nvidia-nvda-as-its-top-semiconductor-pick-1801922/',40),(7,'aditya raghunath','...','2026-07-15',0.43384,'Alphabet Sends Huge Market Signal with Surprise Hardware Push. How to Play GOOGL Stock Here.','https://www.barchart.com/story/news/3297760/alphabet-sends-huge-market-signal-with-surprise-hardware-push-how-to-play-googl-stock-here',2),(8,'aditya raghunath','...','2026-07-15',0.42136,'Why KeyBanc Thinks Intel Stock Can Gain 45% from Here','https://www.barchart.com/story/news/3297391/why-keybanc-thinks-intel-stock-can-gain-45-from-here',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -318,4 +319,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-15  3:51:44
+-- Dump completed on 2026-07-16  3:54:25
