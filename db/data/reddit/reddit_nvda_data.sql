@@ -134,7 +134,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
-6c2c62ba-80c4-11f1-a828-5af8b4eaa45f:1-49,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -248,11 +247,13 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
+e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f0a42cf9-818d-11f1-9ea2-e606a6df4281:1-38,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -296,7 +297,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +306,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ux1y3a','oxnt7g0','2026-07-15',8,0,'As a NOK bagholder, I know this will pump a 4T market cap stock more than it will pump a 70B market cap stock'),(2,'NVDA_Stock','1ux1y3a','oxns417','2026-07-15',1,0,'ðŸŽ™ï¸ðŸŽ¶Fly me to the moonnnnðŸŽ¶ðŸŽ¶'),(3,'NVDA_Stock','1uwyjcy','oxpczj0','2026-07-15',13,0,'Look at it go'),(4,'NVDA_Stock','1uwyjcy','oxn2vv1','2026-07-15',7,0,'You would think. But not necessarily. '),(5,'NVDA_Stock','1uwyjcy','oxn0tnx','2026-07-15',11,0.8658,'ASML is a critical upstream supplier â€” Itâ€™s the monopoly provider of EUV (and High-NA EUV) lithography machines needed to make the cutting-edge chips that power NVIDIAâ€™s GPUs (via TSMC). Strong ASML results/guidance signal that AI-related fab buildouts and chip demand remain robust, which supports NVDAâ€™s growth outlook.'),(6,'NVDA_Stock','1uwyjcy','oxmzag0','2026-07-15',10,0.7783,'This is on the wrong end of the supply chain to pump nvidia. The demand for ASML equipment trickles down top to bottom, not bottom up. It just shows that chip manufacturers are still scaling up their capacity (as we\'vealready seen time and time again in report from samsung, sk hynix, intel, tsmc, micron). The real proof for the AI success story is hyperscalers and AI companies making profit and keeping up capex.'),(7,'NVDA_Stock','1uwyjcy','oxo93a9','2026-07-15',4,0.7992,'They are all down premarket. \n\nBut I like your positive thinking. '),(8,'NVDA_Stock','1uwyjcy','oxnywqu','2026-07-15',2,0.8807,'At this point, the company is too large for rapid price fluctuations, so I suppose Iâ€™ll just fly and land back. However, I see it as a no-brainer future investment. I expect at least a 30-35% return by the next five years. This makes the stock a great candidate for wheel strategy, keeping it simple, and achieving significant wins. And also more people buying and selling this stock will also have its benefits in the long-run for the overall price increase.'),(9,'NVDA_Stock','1uwyjcy','oxovm43','2026-07-15',0,0.802,'Impossible.  As long as Agent ðŸŠ is driving the ship - up is down and vice versa\n\nGood earnings that would shoot ðŸš€anyone into the stratosphere is met with a preplanned/timed announcement regarding tariffs (that was true the first half the year), an announcement that naval blockade is back on and U.S. wiped Iran\'s navy out (for the 15th time) etc.... etc... rinse repeat.   You won\'t be able to profit as normal in the market these days.\n\nYou aren\'t part of the secret cabal that gets advance notice.'),(10,'NVDA_Stock','1uwyjcy','oxn2lm2','2026-07-15',-5,-0.7579,'Yeah if ASML is making sick money, then that means Nvidia, SNDK, MU are the ones who are paying ASML. How the hell is it great for a company if one of their critical suppliers is suddenly making a lot more money? It means those companies are losing that same money.Â '),(11,'NVDA_Stock','1uwyjcy','oxmwo0l','2026-07-15',-14,0.8271,'6% sequential growth is anemic in this AI age. Everyone else is seeing 20-50% sequential growth. \n\nThe only thing insane about these earnings is how slow their growth is');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -319,4 +319,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-16  3:15:29
+-- Dump completed on 2026-07-17  3:17:39

@@ -134,7 +134,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
-6c2c62ba-80c4-11f1-a828-5af8b4eaa45f:1-49,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -248,11 +247,13 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
+e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f0a42cf9-818d-11f1-9ea2-e606a6df4281:1-38,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -296,7 +297,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +306,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1uxef2p','oxqufxp','2026-07-15',11,0,'Also Citi just upgraded their 12-month target to $365. Â '),(2,'AAPL','1uxef2p','oxr3u41','2026-07-15',9,-0.2824,'Anyone remember a couple weeks ago when the sky was falling because they were raising prices on Macâ€™s and iPads???Â '),(3,'AAPL','1uxef2p','oxqdyza','2026-07-15',9,0.128,'Thatâ€™s a beautiful ðŸŽ '),(4,'AAPL','1uxef2p','oxqleop','2026-07-15',9,0.6369,'Love green AAPL'),(5,'AAPL','1uxef2p','oxs37dt','2026-07-15',2,0,'Yet again, AAPL becoming the safe-haven stock as the AI trade hits headwindsâ€¦.'),(6,'AAPL','1uxef2p','oxra52u','2026-07-15',3,0.3412,'I bought in at $11 \n\nNothing can wreck my mood'),(7,'AAPL','1uxef2p','oxqoulq','2026-07-15',1,-0.5423,'What you think the short term price target is for end of this week nd next?'),(8,'AAPL','1uxef2p','oxslafd','2026-07-16',1,0.1779,'Thatâ€™s been the story of AAPL stock. Hold it for as long as you can. Itâ€™s an ETF within itself.  ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1uxut4n','oxw1xwu','2026-07-16',3,0.8016,'Nice infographic!\n\nHe is a great business leader. Big accomplishments without any drama.'),(2,'AAPL','1uxut4n','oxuq5my','2026-07-16',4,0,'Legend!'),(3,'AAPL','1uxut4n','oy0mfyp','2026-07-17',2,0.9565,'People like to harp on Tim that he isn\'t a product guy like SJ and I was genuinely surprised the market response was so muted when he announced his retirement, but to navigate the amount of ops shenanigans and politics so flawlessly during his tenure while managing to consistently grow the revenue quarter after quarter to the point where it\'s several fold where it was a decade ago is frankly a business miracle for a tech giant of this kind of size and IMO will be something that\'s studied in business schools for decades to come.'),(4,'AAPL','1uxut4n','oxx005u','2026-07-16',2,-0.25,'Shame Siri is incapable of creating something like this.'),(5,'AAPL','1uxuxqe','oxuq2ir','2026-07-16',9,0.68,'There are more buyers than sellers. The safe haven to AI bubble. A moderate play to the AI hype. Upgrade!'),(6,'AAPL','1uxuxqe','oxu9x7m','2026-07-16',4,0.6956,'Or downgrade, but I do agree with the higher chance for upgrades.'),(7,'AAPL','1uxuxqe','oxx3svd','2026-07-16',2,0,'The two \"bear cases\" with target at $250 are smoking crack....\n\n'),(8,'AAPL','1uxuxqe','oxxm0nu','2026-07-16',2,-0.2732,'If it hits 400 I\'m posing a nude selfie and getting banned from the subreddit ;) hahahahah'),(9,'AAPL','1uxuxqe','oxy7y53','2026-07-16',1,0.3612,'Thank you Sydney Sweeney'),(10,'AAPL','1uxuxqe','oy0ievm','2026-07-17',1,0,'Apple, once again, showing whoâ€™s boss'),(11,'AAPL','1uxuxqe','oxwq0uf','2026-07-16',0,-0.1655,'This company can loose, but itâ€™s very unlikely. The new ceo being an actual engineer is bigger to the company than many think. '),(12,'AAPL','1uxuxqe','oxvvcqz','2026-07-16',-4,-0.7579,'They can upgrade and stock can still sell off. Will be eyeing a short'),(13,'AAPL','1uy4lxn','oxwesql','2026-07-16',6,0.0382,'Whenever I look at AAPL options the premium is never worth the risk.'),(14,'AAPL','1uy4lxn','oxwyfpg','2026-07-16',3,0.9007,'AAPL is tricky to do more than simple buy and hold or LEAP calls, without covered calls. Iâ€™ve tried CCs with them a few times and they are a sleepy ticker until one day they arenâ€™t and then you get steam rolled.  Happily collected premium for months on .25 delta strikes and then got bonked and had them called away. \n\nThere are better tickers with similar volatility but better premium. AAPL prices premium like theyâ€™re going nowhere.'),(15,'AAPL','1uy4lxn','oxxl95u','2026-07-16',1,-0.5423,'Did you also factor in the taxes for the short term hedges?'),(16,'AAPL','1uy4lxn','oxzn86x','2026-07-16',1,-0.0772,'Have friends that sell calls profitably on Apple and have done so for years. And sell puts.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -319,4 +320,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-16  3:15:29
+-- Dump completed on 2026-07-17  3:17:38

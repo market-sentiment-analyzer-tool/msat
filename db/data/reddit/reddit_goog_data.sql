@@ -134,7 +134,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
-6c2c62ba-80c4-11f1-a828-5af8b4eaa45f:1-49,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
@@ -248,11 +247,13 @@ e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
 e8775469-259f-11f1-b10c-c6dc73b80aab:1-61,
 e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
+e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f0a42cf9-818d-11f1-9ea2-e606a6df4281:1-38,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -296,7 +297,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +306,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1ux5oc1','oxofeht','2026-07-15',28,-0.3182,'Great to see him, but also painful to see him aging ....\n\n'),(2,'ValueInvesting','1ux5oc1','oxpevfg','2026-07-15',29,0.5859,'\"Dude is one of us. FOMO\'d in at ATH\"\n\nTo be clear, Berkshire Hathaway $BRK.B bought their latest Alphabet $GOOG shares at $351.81 and $348.20, while the All-Time-High is currently \\~$400. So they bought at >10% below ATH.'),(3,'ValueInvesting','1ux5oc1','oxsaq7b','2026-07-15',3,0,'GOOGL AND APPPL. \n\nMETA, MSFT'),(4,'ValueInvesting','1ux5oc1','oxs1q7a','2026-07-15',3,0.8225,'Watched the entire hour long interview, he said he liked 4 or 5 companies more and wouldn\'t answer why Google over the other mag 7.\n\nIt was clear Greg made the decision when Warren followed it up by saying Greg is the decision maker.\n\nThis was greg\'s move, warren was uncomfortable with it, but tried to hide it as best he could.'),(5,'ValueInvesting','1ux5oc1','oxszaio','2026-07-16',3,-0.1779,'Does anyone think Berkshire was feeling pressure from their shareholders for not being more involved with AI and so somewhat capitulated by buying into Alphabet?'),(6,'ValueInvesting','1ux5oc1','oxq6myt','2026-07-15',-10,0.7101,'This is quite surprising. In the past, he\'s said he avoids investing in technology stocks because he does not understand them.\n\nThe fact that even Buffett bought into the Google bubble/FOMO despite his lack of knowledge of their industry is quite telling of how strong the FOMO is becoming.\n\nGoogle is one of those stocks that on the surface, looks really easy to value if you just look at their financials. But it takes a deeper understanding of their risks(AI) to really make forecasts about the future.'),(7,'Wallstreetbetsnew','1uxgamm','oxt3rsq','2026-07-16',1,-0.4843,'AMZN hasnâ€™t been leading my dogâ€™s potty route for at least 4 years. Neither a growth nor wealth stock. â€œAlexa! When is this fucking stock going to make me money?â€ â€¦ â€œIâ€™m sorry but if youâ€™d invested in INTC instead youâ€™d be retired by now lololâ€. ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -319,4 +319,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-16  3:15:29
+-- Dump completed on 2026-07-17  3:17:39
