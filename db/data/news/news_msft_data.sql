@@ -29,6 +29,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
+0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -296,7 +297,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +306,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'ethan ryder','...','2026-07-15',0,'Microsoft (NASDAQ:MSFT) Given New $570.00 Price Target at Citigroup','https://www.tickerreport.com/banking-finance/13504781/microsoft-nasdaqmsft-given-new-570-00-price-target-at-citigroup.html',20),(2,'nicole kennedy','...','2026-07-15',-0.2368,'Citigroup Cuts Microsoft (NASDAQ:MSFT) Price Target to $570.00','https://www.watchlistnews.com/citigroup-cuts-microsoft-nasdaqmsft-price-target-to-570-00/11145732.html',20),(3,'pathikrit bose','...','2026-07-15',0.272,'Nebius Just Bagged a Billion-Dollar Deal With Reflection AI. How to Play NBIS Stock Here.','https://www.barchart.com/story/news/3299561/nebius-just-bagged-a-billion-dollar-deal-with-reflection-ai-how-to-play-nbis-stock-here',2),(4,'rich asplund','...','2026-07-15',0.06176,'Stocks Mixed on Favorable Inflation News and Chipmaker Weakness','https://www.barchart.com/story/news/3299081/stocks-mixed-on-favorable-inflation-news-and-chipmaker-weakness',2),(5,'talha qureshi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-15',0.3608,'Citi Finds Microsoft (MSFT) as One of the Top AI Vendors','https://www.insidermonkey.com/blog/citi-finds-microsoft-msft-as-one-of-the-top-ai-vendors-1801924/',40),(6,'rich asplund','...','2026-07-15',0.52776,'Stocks Supported By Favorable Inflation News','https://www.barchart.com/story/news/3297947/stocks-supported-by-favorable-inflation-news',2),(7,'aditya raghunath','...','2026-07-15',0.42136,'Why KeyBanc Thinks Intel Stock Can Gain 45% from Here','https://www.barchart.com/story/news/3297391/why-keybanc-thinks-intel-stock-can-gain-45-from-here',2),(8,'rttnews',' 3M Company (MMM) and Microsoft Corporation (MSFT) on Wednesday announced a strategic partnership to support AI data center infrastructure and enterprise transformation initiatives.\nUnder the agreemen...','2026-07-15',0.19928,'Microsoft, 3M Partner To Advance AI Infrastructure','https://www.rttnews.com/3667258/microsoft-3m-partner-to-advance-ai-infrastructure.aspx',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'logan wallace','...','2026-07-16',0,'Microsoft Corporation $MSFT Stock Position Lifted by New York State Teachers Retirement System','https://www.tickerreport.com/banking-finance/13505804/microsoft-corporation-msft-stock-position-lifted-by-new-york-state-teachers-retirement-system.html',20),(2,'dante gardener','...','2026-07-16',0.52776,'Turtle Creek Wealth Advisors LLC Acquires 10,027 Shares of Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/07/16/turtle-creek-wealth-advisors-llc-acquires-10027-shares-of-microsoft-corporation-msft.html',20),(3,'danessa lincoln','...','2026-07-16',0.46872,'Microsoft Corporation $MSFT is HS Management Partners LLCâ€™s 6th Largest Position','https://www.themarketsdaily.com/2026/07/16/microsoft-corporation-msft-is-hs-management-partners-llcs-6th-largest-position.html',20),(4,'millennial dividends','    Hwangdaesung/iStock via Getty Images\n \nHwangdaesung/iStock via Getty Images\nMicrosoft Corporation (MSFT) currently trades at $395/share, not too far from its 52-week low of $350/share. The stock i...','2026-07-16',0.01402,'Microsoft: The Inflection Point May Finally Be Here','https://seekingalpha.com/article/4922566-microsoft-the-inflection-point-may-finally-be-here',8);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -319,4 +320,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-16  3:54:24
+-- Dump completed on 2026-07-17  3:54:14
