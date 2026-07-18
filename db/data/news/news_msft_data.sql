@@ -121,6 +121,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -297,7 +298,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'logan wallace','...','2026-07-16',0,'Microsoft Corporation $MSFT Stock Position Lifted by New York State Teachers Retirement System','https://www.tickerreport.com/banking-finance/13505804/microsoft-corporation-msft-stock-position-lifted-by-new-york-state-teachers-retirement-system.html',20),(2,'dante gardener','...','2026-07-16',0.52776,'Turtle Creek Wealth Advisors LLC Acquires 10,027 Shares of Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/07/16/turtle-creek-wealth-advisors-llc-acquires-10027-shares-of-microsoft-corporation-msft.html',20),(3,'danessa lincoln','...','2026-07-16',0.46872,'Microsoft Corporation $MSFT is HS Management Partners LLCâ€™s 6th Largest Position','https://www.themarketsdaily.com/2026/07/16/microsoft-corporation-msft-is-hs-management-partners-llcs-6th-largest-position.html',20),(4,'millennial dividends','    Hwangdaesung/iStock via Getty Images\n \nHwangdaesung/iStock via Getty Images\nMicrosoft Corporation (MSFT) currently trades at $395/share, not too far from its 52-week low of $350/share. The stock i...','2026-07-16',0.01402,'Microsoft: The Inflection Point May Finally Be Here','https://seekingalpha.com/article/4922566-microsoft-the-inflection-point-may-finally-be-here',8);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'rich asplund','...','2026-07-17',-0.45752,'Stocks Pressured by Global Slide in Chipmakers','https://www.barchart.com/story/news/3337759/stocks-pressured-by-global-slide-in-chipmakers',2),(3,'vandita jadeja','Investing\n\n							Despite an 18% YTD selloff and active securities lawsuits, 54 analysts rate MSFT a Buy, with our model targeting $503 and implying 26% upside.													\n\n							MSFT trades at a t...','2026-07-17',0.6337,'Over 60 Analysts Say Buy Microsoft. Hereâ€™s Our Price Target','https://247wallst.com/investing/2026/07/17/over-60-analysts-say-buy-microsoft-heres-our-price-target/',4),(4,'vandita jadeja','Investing\n\n							Oracle (ORCL) shares cratered 35% while RPO surged 363% to $638 billion, a fundamental dislocation that rarely lasts.													\n\n							Oracle trades at a forward P/E of 16 versus...','2026-07-17',0.1958,'Price Prediction: Two Big Reasons Oracle Stock Could Surge 60% This Year','https://247wallst.com/investing/2026/07/17/price-prediction-two-big-reasons-oracle-stock-could-surge-60-this-year/',4),(5,'rich asplund','...','2026-07-17',0,'Stocks Tumble as the Rout in Chipmakers Deepens','https://www.barchart.com/story/news/3336835/stocks-tumble-as-the-rout-in-chipmakers-deepens',2),(6,'soumya eswaran','Wedgewood Partners, an investment management company, released its first-quarter 2026 investor letter.Â A copy of the letter can be downloaded here. Wedgewood Composite delivered a net return of 9.4% i...','2026-07-17',0.19958,'Wedgewood Partnersâ€™ Views on Microsoftâ€™s (MSFT) Capital Expenditure','https://www.insidermonkey.com/blog/wedgewood-partners-views-on-microsofts-msft-capital-expenditure-1802569/',4),(7,'jonathan schramm','...','2026-07-17',0,'General Fusion IPO: Inside the First Public Fusion Stock','https://www.securities.io/general-fusion-gfuz-ipo-nuclear-energy-investment/',2),(8,'sarita garza','...','2026-07-17',0.60048,'Microsoft (NASDAQ:MSFT) Trading Up 2.8% â€“ Should You Buy?','https://www.themarketsdaily.com/2026/07/17/microsoft-nasdaqmsft-trading-up-2-8-should-you-buy.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -320,4 +321,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-17  3:54:14
+-- Dump completed on 2026-07-18  3:48:11

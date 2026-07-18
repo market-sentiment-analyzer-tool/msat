@@ -121,6 +121,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -297,7 +298,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'wajeeh khan','...','2026-07-16',0.49992,'GME Stock Alert: What to Know as GameStop Teams Up With Uber Eats','https://www.barchart.com/story/news/3319415/gme-stock-alert-what-to-know-as-gamestop-teams-up-with-uber-eats',2),(2,'rick orford','Amazon (AMZN 1.92%) and Shopify (SHOP +1.21%) are attacking the AI commerce revolution from opposite sides. One controls a powerful physical retail ecosystem built around logistics, Prime, AWS, and ad...','2026-07-16',0.81326,'Better Buy: Amazon Stock or Shopify Stock?','https://www.fool.com/investing/2026/07/16/better-buy-amazon-stock-or-shopify-stock/',40),(3,'anthony miller','...','2026-07-16',0.2368,'Walmart Inc. $WMT Shares Sold by Illinois Municipal Retirement Fund','https://www.thelincolnianonline.com/2026/07/16/walmart-inc-wmt-shares-sold-by-illinois-municipal-retirement-fund.html',2),(4,'paula ricardo','...','2026-07-16',0,'Navigation Group LLC Makes New $662,000 Investment in Walmart Inc. $WMT','https://www.thelincolnianonline.com/2026/07/16/navigation-group-llc-makes-new-662000-investment-in-walmart-inc-wmt.html',2),(5,'jabran kundi','...','2026-07-16',0.30544,'Investors Are Undervaluing Amazon Stock After the SpaceX IPO. Its Space Business Is Definitely Worth More Than $0.','https://www.barchart.com/story/news/3316992/investors-are-undervaluing-amazon-stock-after-the-spacex-ipo-its-space-business-is-definitely-worth-more-than-0',20),(6,'mitch edgeman','...','2026-07-16',0,'Wealthfront Advisers LLC Raises Holdings in Walmart Inc. $WMT','https://www.themarketsdaily.com/2026/07/16/wealthfront-advisers-llc-raises-holdings-in-walmart-inc-wmt.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'kim johansen','...','2026-07-17',0.5364,'Whittier Trust Co. Buys 56,923 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/17/whittier-trust-co-buys-56923-shares-of-amazon-com-inc-amzn.html',2),(3,'logan wallace','...','2026-07-17',0.658,'Amazon.com (NASDAQ:AMZN) Shares Up 3% â€“ Still a Buy?','https://www.tickerreport.com/banking-finance/13507074/amazon-com-nasdaqamzn-shares-up-3-still-a-buy.html',2),(4,'justin purohit','Yuriy T/iStock Editorial via Getty Images\nYuriy T/iStock Editorial via Getty Images\nSentiment in Amazon.com, Inc. (AMZN) ahead of its Q2 release on July 30 is incredibly strong. Among the analyst comm...','2026-07-17',0.45298,'Amazon Q2 Earnings Preview: Powering The AI Race With Massive Advantage','https://seekingalpha.com/article/4922963-amazon-q2-earnings-preview-powering-ai-race-with-massive-advantage',80),(5,'tyler durden','A surprise breakthrough from Chinese AI startup Moonshot (which is now at the top of the Frontend code benchmark on Arena) rumbled through global markets,Â sending chip stocks reeling, as queasiness re...','2026-07-17',0.1993,'Futures Tumble As Latest Chinese \"DeepSeek Moment\" Sparks Chip Meltdown','https://www.zerohedge.com/markets/futures-tumble-latest-chinese-deepseek-moment-sparks-chip-meltdown',4),(6,'xnake','\n					Posted by _ _xnake on Jul 17th, 2026\n\nWedbush initiated coverage on shares of Amazon.com (NASDAQ:AMZN) in a report published on Thursday, MarketBeat.com reports. The firm issued an outperform ra...','2026-07-17',0.19988,'Amazon.com (NASDAQ:AMZN) Now Covered by Analysts at Wedbush','https://www.defenseworld.net/2026/07/17/amazon-com-nasdaqamzn-now-covered-by-analysts-at-wedbush.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nAmazon.com, Inc. (NASDAQ:AMZN) has received an average rating of â€œModerate Buyâ€ from the sixty ratings firms that are  covering the firm, Marketbeat.com r...','2026-07-17',0.19978,'Amazon.com, Inc. (NASDAQ:AMZN) Receives $312.79 Average PT from Analysts','https://www.americanbankingnews.com/2026/07/17/amazon-com-inc-nasdaqamzn-receives-312-79-average-pt-from-analysts.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -320,4 +321,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-17  3:54:13
+-- Dump completed on 2026-07-18  3:48:10

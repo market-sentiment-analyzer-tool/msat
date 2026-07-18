@@ -121,6 +121,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -297,7 +298,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'barchart insights','...','2026-07-16',0,'The Nasdaq-100 Squeeze is On. Here Are the Technical Signals to Watch Now.','https://www.barchart.com/story/news/3320766/the-nasdaq-100-squeeze-is-on-here-are-the-technical-signals-to-watch-now',2),(2,'kara greenberg','Daniel Ceng / Anadolu / Getty Images\nChip stocks slid Thursday, extending whatâ€™s been a tough few weeks for the sector and the broader AI trade.\nSome experts have suggested a pullback could be healthy...','2026-07-16',-0.29796,'The Chip-Stock Slide Isnâ€™t Overâ€”and the AI Trade Is Still Under Pressure','https://www.investopedia.com/chip-stocks-slide-despite-solid-results-adding-pressure-on-the-ai-trade-12020486',4),(3,'summit research','    Robert Way/iStock Editorial via Getty Images\n \nRobert Way/iStock Editorial via Getty Images\nNvidia Corporation (NVDA) has continued to sustain a strong recovery in the past week following pressure...','2026-07-16',0.0342,'Nvidia: The TSMC Earnings Release Was A Warning Shot','https://seekingalpha.com/article/4922631-nvidia-the-tsmc-earnings-release-was-a-warning-shot',8),(4,'keithen drury','\nIntel (INTC 5.84%) has had a great run over the past year, rising by around 370%. However, it has sold off in recent days and is now down by more than 25% from its all-time high. \nThat may be a bit d...','2026-07-16',-0.15278,'Intel Stock Looks Beaten Down Today, but Here Is Where It Could Be Headed in 5 Years','https://www.fool.com/investing/2026/07/16/intel-stock-looks-beaten-down-today-but-here-is-wh/',4),(5,'marc guberti','The memory boom has seen stocks like Micron (MU 5.97%) and Sandisk (SNDK 12.63%) produce generational returns in a single year. Those two have delivered higher returns in a year than benchmarks like t...','2026-07-16',0.81138,'These 3 AI ETFs Are the Best Ways to Play the Memory Boom','https://www.fool.com/investing/2026/07/16/these-3-ai-etfs-are-the-best-ways-to-play-the-memo/',4),(6,'uttam dey','...','2026-07-16',0.58152,'Nvidia: Jensen Huang Just Blessed His Own Shares','https://seekingalpha.com/article/4922610-nvidia-jensen-huang-just-blessed-his-own-shares',4),(7,'danessa lincoln','...','2026-07-16',0.60048,'GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) Trading Up 7.7% â€“ Still a Buy?','https://www.themarketsdaily.com/2026/07/16/graniteshares-2x-long-nvda-daily-etf-nasdaqnvdl-trading-up-7-7-still-a-buy.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'rich asplund','...','2026-07-17',-0.45752,'Stocks Pressured by Global Slide in Chipmakers','https://www.barchart.com/story/news/3337759/stocks-pressured-by-global-slide-in-chipmakers',2),(3,'rich duprey','Investing\n\n							U.S. leveraged ETFs have doubled to 700 funds and now control roughly $500 billion in notional market exposure through 2x and 3x leverage multipliers.													\n\n							These fund...','2026-07-17',-0.18178,'The Fastest-Growing Corner of Wall Street Could Make the Next Market Sell-Off Even Worse','https://247wallst.com/investing/2026/07/17/the-fastest-growing-corner-of-wall-street-could-make-the-next-market-sell-off-even-worse/',4),(4,'mitch edgeman','...','2026-07-17',0.16184,'Top Technology Stocks To Research â€“ July 16th','https://www.themarketsdaily.com/2026/07/17/top-technology-stocks-to-research-july-16th.html',2),(5,'rich asplund','...','2026-07-17',0,'Stocks Tumble as the Rout in Chipmakers Deepens','https://www.barchart.com/story/news/3336835/stocks-tumble-as-the-rout-in-chipmakers-deepens',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -320,4 +321,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-17  3:54:14
+-- Dump completed on 2026-07-18  3:48:11

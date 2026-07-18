@@ -121,6 +121,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -297,7 +298,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'shane hupp','...','2026-07-16',0.2368,'Alphabet Inc. $GOOG Shares Sold by Associated Banc Corp','https://www.tickerreport.com/banking-finance/13505719/alphabet-inc-goog-shares-sold-by-associated-banc-corp.html',2),(2,'danessa lincoln','...','2026-07-16',0.2368,'Anchor Investment Management LLC Sells 19,717 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/07/16/anchor-investment-management-llc-sells-19717-shares-of-alphabet-inc-goog.html',2),(3,'paula ricardo','...','2026-07-16',0,'General American Investors Co. Inc. Grows Stock Holdings in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/07/16/general-american-investors-co-inc-grows-stock-holdings-in-alphabet-inc-goog.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jul 16th, 2026\n\nCommonwealth of Pennsylvania Public School Empls Retrmt SYS increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 0.7% in the ...','2026-07-16',0.66864,'Alphabet Inc. $GOOG is Commonwealth of Pennsylvania Public School Empls Retrmt SYSâ€™s 9th Largest Position','https://www.americanbankingnews.com/2026/07/16/alphabet-inc-goog-is-commonwealth-of-pennsylvania-public-school-empls-retrmt-syss-9th-largest-position.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Jul 16th, 2026\n\nAssociated Banc Corp trimmed its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.5% in the 1st quarter, according to the company in its most r...','2026-07-16',0.1999,'Associated Banc Corp Decreases Holdings in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/07/16/associated-banc-corp-decreases-holdings-in-alphabet-inc-goog.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 16th, 2026\n\nCarnegie Investment Counsel lessened its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 1.0% in the 1st quarter, according to the com...','2026-07-16',0.4367,'Alphabet Inc. $GOOG Shares Sold by Carnegie Investment Counsel','https://www.americanbankingnews.com/2026/07/16/alphabet-inc-goog-shares-sold-by-carnegie-investment-counsel.html',4),(7,'nicole kennedy','...','2026-07-16',-0.42136,'Carnegie Investment Counsel Reduces Holdings in Alphabet Inc. $GOOG','https://www.watchlistnews.com/carnegie-investment-counsel-reduces-holdings-in-alphabet-inc-goog/11146680.html',2),(8,'amit singh','...','2026-07-16',0.55264,'2 Reasons to Feel Bullish on GOOGL Stock Ahead of Alphabetâ€™s Q2 Earnings','https://www.barchart.com/story/news/3314304/2-reasons-to-feel-bullish-on-googl-stock-ahead-of-alphabets-q2-earnings',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mohit oberoi','...','2026-07-17',-0.35976,'Warren Buffett Might Prefer Apple Over Alphabet Stock, But Wall Street Disagrees','https://www.barchart.com/story/news/3333629/warren-buffett-might-prefer-apple-over-alphabet-stock-but-wall-street-disagrees',2),(2,'micah haroldson','...','2026-07-17',0.2368,'Alphabet Inc. $GOOGL Shares Sold by WealthPLAN Partners LLC','https://www.watchlistnews.com/alphabet-inc-googl-shares-sold-by-wealthplan-partners-llc/11147835.html',2),(3,'logan wallace','...','2026-07-17',0,'Rep. Thomas H. Kean, Jr. Unloads Alphabet Inc. (NASDAQ:GOOGL) Stock','https://www.tickerreport.com/banking-finance/13506750/rep-thomas-h-kean-jr-unloads-alphabet-inc-nasdaqgoogl-stock.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nFishman Jay A Ltd. MI cut its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 1.8% in the 1st quarter, according to its most recent Form 13F fi...','2026-07-17',0.43664,'Alphabet Inc. $GOOGL Shares Sold by Fishman Jay A Ltd. MI','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-shares-sold-by-fishman-jay-a-ltd-mi.html',4),(5,'stephan jacobs','...','2026-07-17',0.39512,'Flatrock Wealth Partners LLC Purchases New Position in Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/07/17/flatrock-wealth-partners-llc-purchases-new-position-in-alphabet-inc-googl.html',2),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nDuncker Streett & Co. Inc. cut its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 2.5% in the first quarter, according to the company in its m...','2026-07-17',0.19988,'Alphabet Inc. $GOOGL Stake Trimmed by Duncker Streett & Co. Inc.','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-stake-trimmed-by-duncker-streett-co-inc.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nCairn Investment Group Inc. lessened its stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 45.9% in the first quarter, according to the company in i...','2026-07-17',0.4367,'Alphabet Inc. $GOOGL Shares Sold by Cairn Investment Group Inc.','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-shares-sold-by-cairn-investment-group-inc.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -320,4 +321,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-17  3:54:13
+-- Dump completed on 2026-07-18  3:48:11
