@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -298,7 +299,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'rich asplund','...','2026-07-17',-0.45752,'Stocks Pressured by Global Slide in Chipmakers','https://www.barchart.com/story/news/3337759/stocks-pressured-by-global-slide-in-chipmakers',2),(3,'vandita jadeja','Investing\n\n							Despite an 18% YTD selloff and active securities lawsuits, 54 analysts rate MSFT a Buy, with our model targeting $503 and implying 26% upside.													\n\n							MSFT trades at a t...','2026-07-17',0.6337,'Over 60 Analysts Say Buy Microsoft. Hereâ€™s Our Price Target','https://247wallst.com/investing/2026/07/17/over-60-analysts-say-buy-microsoft-heres-our-price-target/',4),(4,'vandita jadeja','Investing\n\n							Oracle (ORCL) shares cratered 35% while RPO surged 363% to $638 billion, a fundamental dislocation that rarely lasts.													\n\n							Oracle trades at a forward P/E of 16 versus...','2026-07-17',0.1958,'Price Prediction: Two Big Reasons Oracle Stock Could Surge 60% This Year','https://247wallst.com/investing/2026/07/17/price-prediction-two-big-reasons-oracle-stock-could-surge-60-this-year/',4),(5,'rich asplund','...','2026-07-17',0,'Stocks Tumble as the Rout in Chipmakers Deepens','https://www.barchart.com/story/news/3336835/stocks-tumble-as-the-rout-in-chipmakers-deepens',2),(6,'soumya eswaran','Wedgewood Partners, an investment management company, released its first-quarter 2026 investor letter.Â A copy of the letter can be downloaded here. Wedgewood Composite delivered a net return of 9.4% i...','2026-07-17',0.19958,'Wedgewood Partnersâ€™ Views on Microsoftâ€™s (MSFT) Capital Expenditure','https://www.insidermonkey.com/blog/wedgewood-partners-views-on-microsofts-msft-capital-expenditure-1802569/',4),(7,'jonathan schramm','...','2026-07-17',0,'General Fusion IPO: Inside the First Public Fusion Stock','https://www.securities.io/general-fusion-gfuz-ipo-nuclear-energy-investment/',2),(8,'sarita garza','...','2026-07-17',0.60048,'Microsoft (NASDAQ:MSFT) Trading Up 2.8% â€“ Should You Buy?','https://www.themarketsdaily.com/2026/07/17/microsoft-nasdaqmsft-trading-up-2-8-should-you-buy.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'ebube jones','...','2026-07-18',-0.59752,'Multiple Compression Is a Real Threat to Microsoft Stock, But Its Core Story Isnâ€™t Broken','https://www.barchart.com/story/news/3349264/multiple-compression-is-a-real-threat-to-microsoft-stock-but-its-core-story-isnt-broken',20),(2,'oleksandr pylypenko','...','2026-07-18',0.56768,'14 S&P 500 Stocks Are Up Over 100% in 2026. Why Micron Is My Favorite for the Rest of the Year.','https://www.barchart.com/story/news/3349214/14-s-p-500-stocks-are-up-over-100-in-2026-why-micron-is-my-favorite-for-the-rest-of-the-year',2),(3,'mitch edgeman','...','2026-07-18',0.658,'Microsoft (NASDAQ:MSFT) Shares Up 1.4% â€“ Should You Buy?','https://www.themarketsdaily.com/2026/07/18/microsoft-nasdaqmsft-shares-up-1-4-should-you-buy.html',20),(4,'alex sirois','...','2026-07-18',0.2,'Amazonâ€™s $25 Billion Bond Sale Created 3 More Reasons for Me to Keep Buying','https://finance.yahoo.com/markets/stocks/articles/amazon-25-billion-bond-sale-132610706.html',20),(5,'logan wallace','...','2026-07-18',0,'Microsoft Corporation $MSFT Stake Reduced by Walter Public Investments Inc.','https://www.tickerreport.com/banking-finance/13507933/microsoft-corporation-msft-stake-reduced-by-walter-public-investments-inc.html',20),(6,'hanz christensen','...','2026-07-18',0,'Walter Public Investments Inc. Has $13.94 Million Stake in Microsoft Corporation $MSFT','https://www.watchlistnews.com/walter-public-investments-inc-has-13-94-million-stake-in-microsoft-corporation-msft/11148882.html',20),(7,'logan wallace','...','2026-07-18',0,'Microsoft Corporation $MSFT Stock Holdings Lessened by Lee Danner & Bass Inc.','https://www.tickerreport.com/banking-finance/13507740/microsoft-corporation-msft-stock-holdings-lessened-by-lee-danner-bass-inc.html',20),(8,'shane hupp','...','2026-07-18',0,'K.J. Harrison & Partners Inc Has $12.57 Million Stock Position in Microsoft Corporation $MSFT','https://www.tickerreport.com/banking-finance/13507741/k-j-harrison-partners-inc-has-12-57-million-stock-position-in-microsoft-corporation-msft.html',20),(9,'shane hupp','...','2026-07-18',0.2368,'Microsoft Corporation $MSFT Shares Bought by St. Johns Investment Management Company LLC','https://www.tickerreport.com/banking-finance/13507738/microsoft-corporation-msft-shares-bought-by-st-johns-investment-management-company-llc.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -321,4 +322,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-18  3:48:11
+-- Dump completed on 2026-07-19  4:16:27

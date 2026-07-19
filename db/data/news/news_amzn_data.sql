@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -298,7 +299,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'kim johansen','...','2026-07-17',0.5364,'Whittier Trust Co. Buys 56,923 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/17/whittier-trust-co-buys-56923-shares-of-amazon-com-inc-amzn.html',2),(3,'logan wallace','...','2026-07-17',0.658,'Amazon.com (NASDAQ:AMZN) Shares Up 3% â€“ Still a Buy?','https://www.tickerreport.com/banking-finance/13507074/amazon-com-nasdaqamzn-shares-up-3-still-a-buy.html',2),(4,'justin purohit','Yuriy T/iStock Editorial via Getty Images\nYuriy T/iStock Editorial via Getty Images\nSentiment in Amazon.com, Inc. (AMZN) ahead of its Q2 release on July 30 is incredibly strong. Among the analyst comm...','2026-07-17',0.45298,'Amazon Q2 Earnings Preview: Powering The AI Race With Massive Advantage','https://seekingalpha.com/article/4922963-amazon-q2-earnings-preview-powering-ai-race-with-massive-advantage',80),(5,'tyler durden','A surprise breakthrough from Chinese AI startup Moonshot (which is now at the top of the Frontend code benchmark on Arena) rumbled through global markets,Â sending chip stocks reeling, as queasiness re...','2026-07-17',0.1993,'Futures Tumble As Latest Chinese \"DeepSeek Moment\" Sparks Chip Meltdown','https://www.zerohedge.com/markets/futures-tumble-latest-chinese-deepseek-moment-sparks-chip-meltdown',4),(6,'xnake','\n					Posted by _ _xnake on Jul 17th, 2026\n\nWedbush initiated coverage on shares of Amazon.com (NASDAQ:AMZN) in a report published on Thursday, MarketBeat.com reports. The firm issued an outperform ra...','2026-07-17',0.19988,'Amazon.com (NASDAQ:AMZN) Now Covered by Analysts at Wedbush','https://www.defenseworld.net/2026/07/17/amazon-com-nasdaqamzn-now-covered-by-analysts-at-wedbush.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nAmazon.com, Inc. (NASDAQ:AMZN) has received an average rating of â€œModerate Buyâ€ from the sixty ratings firms that are  covering the firm, Marketbeat.com r...','2026-07-17',0.19978,'Amazon.com, Inc. (NASDAQ:AMZN) Receives $312.79 Average PT from Analysts','https://www.americanbankingnews.com/2026/07/17/amazon-com-inc-nasdaqamzn-receives-312-79-average-pt-from-analysts.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'logan wallace','...','2026-07-18',-0.16184,'Amazon.com (NASDAQ:AMZN) Shares Down 2% â€“ Whatâ€™s Next?','https://www.tickerreport.com/banking-finance/13508150/amazon-com-nasdaqamzn-shares-down-2-whats-next.html',2),(2,'alex sirois','...','2026-07-18',0.2,'Amazonâ€™s $25 Billion Bond Sale Created 3 More Reasons for Me to Keep Buying','https://finance.yahoo.com/markets/stocks/articles/amazon-25-billion-bond-sale-132610706.html',20),(3,'aditya raghunath','...','2026-07-18',0,'OpenAI Hardware Pivot Sends Blunt Warning to Audio Giant. How to Play Hard-Hit Sonos Stock Here.','https://www.barchart.com/story/news/3348545/openai-hardware-pivot-sends-blunt-warning-to-audio-giant-how-to-play-hard-hit-sonos-stock-here',2),(4,'max byerly','...','2026-07-18',0.50952,'Best Retail Stocks To Watch Today â€“ July 17th','https://www.tickerreport.com/banking-finance/13508077/best-retail-stocks-to-watch-today-july-17th.html',2),(5,'tristan rich','...','2026-07-18',0.51888,'United Asset Strategies Inc. Has $50.02 Million Holdings in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/18/united-asset-strategies-inc-has-50-02-million-holdings-in-amazon-com-inc-amzn.html',2),(6,'joseph griffin','...','2026-07-18',0,'Resonant Capital Advisors LLC Increases Holdings in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13507926/resonant-capital-advisors-llc-increases-holdings-in-amazon-com-inc-amzn.html',2),(7,'dante gardener','...','2026-07-18',0.2368,'Hapanowicz & Associates Financial Services Inc Purchases 4,775 Shares of Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/07/18/hapanowicz-associates-financial-services-inc-purchases-4775-shares-of-amazon-com-inc-amzn.html',2),(8,'michael walen','...','2026-07-18',0,'Sage Rhino Capital LLC Raises Stock Holdings in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/18/sage-rhino-capital-llc-raises-stock-holdings-in-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -321,4 +322,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-18  3:48:10
+-- Dump completed on 2026-07-19  4:16:27

@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -298,7 +299,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mohit oberoi','...','2026-07-17',-0.35976,'Warren Buffett Might Prefer Apple Over Alphabet Stock, But Wall Street Disagrees','https://www.barchart.com/story/news/3333629/warren-buffett-might-prefer-apple-over-alphabet-stock-but-wall-street-disagrees',2),(2,'micah haroldson','...','2026-07-17',0.2368,'Alphabet Inc. $GOOGL Shares Sold by WealthPLAN Partners LLC','https://www.watchlistnews.com/alphabet-inc-googl-shares-sold-by-wealthplan-partners-llc/11147835.html',2),(3,'logan wallace','...','2026-07-17',0,'Rep. Thomas H. Kean, Jr. Unloads Alphabet Inc. (NASDAQ:GOOGL) Stock','https://www.tickerreport.com/banking-finance/13506750/rep-thomas-h-kean-jr-unloads-alphabet-inc-nasdaqgoogl-stock.html',2),(4,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nFishman Jay A Ltd. MI cut its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 1.8% in the 1st quarter, according to its most recent Form 13F fi...','2026-07-17',0.43664,'Alphabet Inc. $GOOGL Shares Sold by Fishman Jay A Ltd. MI','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-shares-sold-by-fishman-jay-a-ltd-mi.html',4),(5,'stephan jacobs','...','2026-07-17',0.39512,'Flatrock Wealth Partners LLC Purchases New Position in Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/07/17/flatrock-wealth-partners-llc-purchases-new-position-in-alphabet-inc-googl.html',2),(6,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nDuncker Streett & Co. Inc. cut its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 2.5% in the first quarter, according to the company in its m...','2026-07-17',0.19988,'Alphabet Inc. $GOOGL Stake Trimmed by Duncker Streett & Co. Inc.','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-stake-trimmed-by-duncker-streett-co-inc.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Jul 17th, 2026\n\nCairn Investment Group Inc. lessened its stake in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 45.9% in the first quarter, according to the company in i...','2026-07-17',0.4367,'Alphabet Inc. $GOOGL Shares Sold by Cairn Investment Group Inc.','https://www.americanbankingnews.com/2026/07/17/alphabet-inc-googl-shares-sold-by-cairn-investment-group-inc.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anushka dutta','...','2026-07-18',0.30544,'Dear Intel Stock Fans, Mark Your Calendars for July 23','https://www.barchart.com/story/news/3348636/dear-intel-stock-fans-mark-your-calendars-for-july-23',2),(2,'null','Please enable JS and disable any ad blocker...','2026-07-17',-0.1174,'Warren Buffettâ€™s Alphabet bet eases bigger Berkshire fear','https://www.thestreet.com/investing/warren-buffett-alphabet-google-bet-greg-abel',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -321,4 +322,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-18  3:48:11
+-- Dump completed on 2026-07-19  4:16:27

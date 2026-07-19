@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -298,7 +299,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jake conley','...','2026-07-17',0.40848,'US dollar set for a strong second half of the year, Bank of America says','https://ca.finance.yahoo.com/news/us-dollar-set-for-a-strong-second-half-of-the-year-bank-of-america-says-154650544.html',2),(2,'rich asplund','...','2026-07-17',-0.45752,'Stocks Pressured by Global Slide in Chipmakers','https://www.barchart.com/story/news/3337759/stocks-pressured-by-global-slide-in-chipmakers',2),(3,'rich duprey','Investing\n\n							U.S. leveraged ETFs have doubled to 700 funds and now control roughly $500 billion in notional market exposure through 2x and 3x leverage multipliers.													\n\n							These fund...','2026-07-17',-0.18178,'The Fastest-Growing Corner of Wall Street Could Make the Next Market Sell-Off Even Worse','https://247wallst.com/investing/2026/07/17/the-fastest-growing-corner-of-wall-street-could-make-the-next-market-sell-off-even-worse/',4),(4,'mitch edgeman','...','2026-07-17',0.16184,'Top Technology Stocks To Research â€“ July 16th','https://www.themarketsdaily.com/2026/07/17/top-technology-stocks-to-research-july-16th.html',2),(5,'rich asplund','...','2026-07-17',0,'Stocks Tumble as the Rout in Chipmakers Deepens','https://www.barchart.com/story/news/3336835/stocks-tumble-as-the-rout-in-chipmakers-deepens',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-18',0.7802,'Louis Navellier reveals best tech, energy stocks to buy now','https://www.thestreet.com/investing/stocks/louis-navellier-reveals-best-tech-energy-stocks-to-buy-now',2),(2,'anushka mukherji','...','2026-07-18',-0.2368,'No Delays for Nvidia: Jensen Huang Says Rubin Is Right on Track','https://www.barchart.com/story/news/3348452/no-delays-for-nvidia-jensen-huang-says-rubin-is-right-on-track',2),(3,'yiannis zourmpanos','    .shock/iStock via Getty Images\n \n.shock/iStock via Getty Images\nSince my last coverage, Nvidia (NVDA) is down about 6% due to a drop in the AI narrative owing to fears regarding custom silicon, CU...','2026-07-18',-0.1877,'Nvidia: The AI Stack Is Changing','https://seekingalpha.com/article/4923225-nvidia-ai-stack-changing',8),(4,'louis navellier','\n\n			Stocks have tended to rise and fall in the past with remarkable accuracy during specific windows of timeâ€¦		\nSource: PopTika / Shutterstock.com\nListen to the audio version of this article (generat...','2026-07-18',0.19934,'The Market Leaves Clues. Hereâ€™s How to Find Them...','https://investorplace.com/market360/2026/07/the-market-leaves-clues-heres-how-to-find-them/',4),(5,'catie hogan','Across the country, municipalities and states are passing legislation that limits or even bans data centers. This is in response to growing concerns that the artificial intelligence (AI) industry is g...','2026-07-18',0.34022,'Amid Growing Data Center Backlash, Nvidia Could Have the Answer','https://www.fool.com/investing/2026/07/18/growing-data-center-backlash-nvidia-answer/',40),(6,'anthony miller','...','2026-07-18',0,'WealthPLAN Partners LLC Has $10.27 Million Holdings in NVIDIA Corporation $NVDA','https://www.thelincolnianonline.com/2026/07/18/wealthplan-partners-llc-has-10-27-million-holdings-in-nvidia-corporation-nvda.html',20),(7,'tristan rich','...','2026-07-18',0.28896,'NVIDIA Corporation $NVDA Stake Lessened by McLaughlin Asset Management Inc.','https://www.themarketsdaily.com/2026/07/18/nvidia-corporation-nvda-stake-lessened-by-mclaughlin-asset-management-inc.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -321,4 +322,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-18  3:48:11
+-- Dump completed on 2026-07-19  4:16:27
