@@ -29,6 +29,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
+0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
@@ -120,6 +121,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
+62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
@@ -159,6 +161,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
+8978659f-8321-11f1-8c27-ea1be6fd9fbd:1-34,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
@@ -253,7 +256,6 @@ ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
-f0a42cf9-818d-11f1-9ea2-e606a6df4281:1-38,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -297,7 +299,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -306,7 +308,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1uxut4n','oxw1xwu','2026-07-16',3,0.8016,'Nice infographic!\n\nHe is a great business leader. Big accomplishments without any drama.'),(2,'AAPL','1uxut4n','oxuq5my','2026-07-16',4,0,'Legend!'),(3,'AAPL','1uxut4n','oy0mfyp','2026-07-17',2,0.9565,'People like to harp on Tim that he isn\'t a product guy like SJ and I was genuinely surprised the market response was so muted when he announced his retirement, but to navigate the amount of ops shenanigans and politics so flawlessly during his tenure while managing to consistently grow the revenue quarter after quarter to the point where it\'s several fold where it was a decade ago is frankly a business miracle for a tech giant of this kind of size and IMO will be something that\'s studied in business schools for decades to come.'),(4,'AAPL','1uxut4n','oxx005u','2026-07-16',2,-0.25,'Shame Siri is incapable of creating something like this.'),(5,'AAPL','1uxuxqe','oxuq2ir','2026-07-16',9,0.68,'There are more buyers than sellers. The safe haven to AI bubble. A moderate play to the AI hype. Upgrade!'),(6,'AAPL','1uxuxqe','oxu9x7m','2026-07-16',4,0.6956,'Or downgrade, but I do agree with the higher chance for upgrades.'),(7,'AAPL','1uxuxqe','oxx3svd','2026-07-16',2,0,'The two \"bear cases\" with target at $250 are smoking crack....\n\n'),(8,'AAPL','1uxuxqe','oxxm0nu','2026-07-16',2,-0.2732,'If it hits 400 I\'m posing a nude selfie and getting banned from the subreddit ;) hahahahah'),(9,'AAPL','1uxuxqe','oxy7y53','2026-07-16',1,0.3612,'Thank you Sydney Sweeney'),(10,'AAPL','1uxuxqe','oy0ievm','2026-07-17',1,0,'Apple, once again, showing whoâ€™s boss'),(11,'AAPL','1uxuxqe','oxwq0uf','2026-07-16',0,-0.1655,'This company can loose, but itâ€™s very unlikely. The new ceo being an actual engineer is bigger to the company than many think. '),(12,'AAPL','1uxuxqe','oxvvcqz','2026-07-16',-4,-0.7579,'They can upgrade and stock can still sell off. Will be eyeing a short'),(13,'AAPL','1uy4lxn','oxwesql','2026-07-16',6,0.0382,'Whenever I look at AAPL options the premium is never worth the risk.'),(14,'AAPL','1uy4lxn','oxwyfpg','2026-07-16',3,0.9007,'AAPL is tricky to do more than simple buy and hold or LEAP calls, without covered calls. Iâ€™ve tried CCs with them a few times and they are a sleepy ticker until one day they arenâ€™t and then you get steam rolled.  Happily collected premium for months on .25 delta strikes and then got bonked and had them called away. \n\nThere are better tickers with similar volatility but better premium. AAPL prices premium like theyâ€™re going nowhere.'),(15,'AAPL','1uy4lxn','oxxl95u','2026-07-16',1,-0.5423,'Did you also factor in the taxes for the short term hedges?'),(16,'AAPL','1uy4lxn','oxzn86x','2026-07-16',1,-0.0772,'Have friends that sell calls profitably on Apple and have done so for years. And sell puts.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1v042ms','oyd3c88','2026-07-18',1,0,'Wonâ€™t last even for a couple of days. Usual rotation. '),(2,'AAPL','1v039uv','oycalzt','2026-07-18',12,0.5574,'Lol. This is just hopium. I am up about 1200% on my AAPL, and only 850% on Nvidia. Holding both for a long time. '),(3,'AAPL','1v039uv','oyc9la5','2026-07-18',2,0,'put your money where your mouth is then'),(4,'AAPL','1v039uv','oyckjs1','2026-07-18',2,0.3182,'Heard an analogy... while all the other guys were flocking to dig for oil, Rockefeller decided to go the other direction with refineries and distribution. Same here, everyone else is racing to build LLMs and data centers, while Apple quietly (and to Wall Street\'s chagrin) focuses on ecosystem and distribution, waiting for the best AI models to emerge. If history repeats itself, we know where this is going.'),(5,'AAPL','1v039uv','oydffyp','2026-07-18',2,-0.6553,'AI bubble. . .  Is the spending not real?  Are the products being sold not real?  Is the technology not real?  Are company earnings not real?  Is AI revolutionizing the World?  That answer is â€œyesâ€.  Are some of the companies way overvalued?  That answer is â€œyesâ€ too.\n\nCompanies have not even started to reap the rewards of their investment.  Unless u view this investment as money flushed down the toilet, it is going to produce returns.  Some time before that, the market will correct, and weâ€™ll see cos fall to the wayside.  \n\nNow eventually the chip guys are going to slow down and we see the market currently adjusting due to high valuations along with profit taking.\n\nI never expected AAPL to enter this AI spend contest.  Why would they?  They will let the others do it and work it into the Apple ecosystem.  '),(6,'AAPL','1v039uv','oydn8sq','2026-07-18',2,0,' Semis, on the bench. AAPL, suit up!'),(7,'AAPL','1v039uv','oyc5y8e','2026-07-18',1,0,'Maybe'),(8,'AAPL','1v039uv','oycbuem','2026-07-18',1,0.7184,'Not spending is one thing. The potential revenue streams, upgrade cycles and Enterprise hardware and ecosystem adoptions will double their revenue within a few years. I think they are the new Nvidia. Disclosure: I am all-in Apple'),(9,'AAPL','1v039uv','oycg0g3','2026-07-18',1,0,'Fingers-crossed. '),(10,'AAPL','1v039uv','oyd4fxu','2026-07-18',1,0,'Cost basis $2.61 Iâ€™m going nowhere lol'),(11,'AAPL','1v039uv','oyd6jcf','2026-07-18',1,-0.2023,'Right now the focus is on Hyperscalers CAPEX and geopolitics (Iran war) . During these times , Apple is a safe tech stock to own. Wallstreet will soon change the narrative on Apple when they start reporting than Apple has not ai strategy and and china sales are down . Thatâ€™s when you will see Apple marching towards $180 per share. So far the only mag7 company that is getting a pass in this environment is Apple '),(12,'AAPL','1v039uv','oyec7un','2026-07-19',1,0,'\"The bubble popping is inevitable, even if what I just predicted doesn\'t come to pass!\"');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -320,4 +322,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-17  3:17:38
+-- Dump completed on 2026-07-19  3:26:33
