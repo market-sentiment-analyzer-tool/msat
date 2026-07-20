@@ -152,6 +152,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -161,7 +162,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
-8978659f-8321-11f1-8c27-ea1be6fd9fbd:1-34,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
@@ -177,6 +177,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
+a225ce52-83ec-11f1-9d79-ae30cf6713e1:1-84,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -299,7 +300,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -308,7 +309,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1v042ms','oyd3c88','2026-07-18',1,0,'Wonâ€™t last even for a couple of days. Usual rotation. '),(2,'AAPL','1v039uv','oycalzt','2026-07-18',12,0.5574,'Lol. This is just hopium. I am up about 1200% on my AAPL, and only 850% on Nvidia. Holding both for a long time. '),(3,'AAPL','1v039uv','oyc9la5','2026-07-18',2,0,'put your money where your mouth is then'),(4,'AAPL','1v039uv','oyckjs1','2026-07-18',2,0.3182,'Heard an analogy... while all the other guys were flocking to dig for oil, Rockefeller decided to go the other direction with refineries and distribution. Same here, everyone else is racing to build LLMs and data centers, while Apple quietly (and to Wall Street\'s chagrin) focuses on ecosystem and distribution, waiting for the best AI models to emerge. If history repeats itself, we know where this is going.'),(5,'AAPL','1v039uv','oydffyp','2026-07-18',2,-0.6553,'AI bubble. . .  Is the spending not real?  Are the products being sold not real?  Is the technology not real?  Are company earnings not real?  Is AI revolutionizing the World?  That answer is â€œyesâ€.  Are some of the companies way overvalued?  That answer is â€œyesâ€ too.\n\nCompanies have not even started to reap the rewards of their investment.  Unless u view this investment as money flushed down the toilet, it is going to produce returns.  Some time before that, the market will correct, and weâ€™ll see cos fall to the wayside.  \n\nNow eventually the chip guys are going to slow down and we see the market currently adjusting due to high valuations along with profit taking.\n\nI never expected AAPL to enter this AI spend contest.  Why would they?  They will let the others do it and work it into the Apple ecosystem.  '),(6,'AAPL','1v039uv','oydn8sq','2026-07-18',2,0,' Semis, on the bench. AAPL, suit up!'),(7,'AAPL','1v039uv','oyc5y8e','2026-07-18',1,0,'Maybe'),(8,'AAPL','1v039uv','oycbuem','2026-07-18',1,0.7184,'Not spending is one thing. The potential revenue streams, upgrade cycles and Enterprise hardware and ecosystem adoptions will double their revenue within a few years. I think they are the new Nvidia. Disclosure: I am all-in Apple'),(9,'AAPL','1v039uv','oycg0g3','2026-07-18',1,0,'Fingers-crossed. '),(10,'AAPL','1v039uv','oyd4fxu','2026-07-18',1,0,'Cost basis $2.61 Iâ€™m going nowhere lol'),(11,'AAPL','1v039uv','oyd6jcf','2026-07-18',1,-0.2023,'Right now the focus is on Hyperscalers CAPEX and geopolitics (Iran war) . During these times , Apple is a safe tech stock to own. Wallstreet will soon change the narrative on Apple when they start reporting than Apple has not ai strategy and and china sales are down . Thatâ€™s when you will see Apple marching towards $180 per share. So far the only mag7 company that is getting a pass in this environment is Apple '),(12,'AAPL','1v039uv','oyec7un','2026-07-19',1,0,'\"The bubble popping is inevitable, even if what I just predicted doesn\'t come to pass!\"');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1v0ri05','oyhij7u','2026-07-19',2,-0.4215,'Another useless post'),(2,'AAPL','1v0ri05','oyhb3ke','2026-07-19',1,0.8658,'Every iPhone is a better version of the previous model. Loving the 17 right now. Have had the Pro Max forever and this one is just as good except for the camera. '),(3,'AAPL','1v0ri05','oyhbk4w','2026-07-19',1,0.0129,'Yeah iPhone 5c was so premium ðŸ˜‚ but that was really the only not premium iPhone after that they stuck with premium'),(4,'AAPL','1v0ri05','oyhf1re','2026-07-19',1,-0.7845,'Cry bitch');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -322,4 +323,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-19  3:26:33
+-- Dump completed on 2026-07-20  3:43:33
