@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -308,7 +309,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anushka dutta','...','2026-07-18',0.30544,'Dear Intel Stock Fans, Mark Your Calendars for July 23','https://www.barchart.com/story/news/3348636/dear-intel-stock-fans-mark-your-calendars-for-july-23',2),(2,'null','Please enable JS and disable any ad blocker...','2026-07-17',-0.1174,'Warren Buffettâ€™s Alphabet bet eases bigger Berkshire fear','https://www.thestreet.com/investing/warren-buffett-alphabet-google-bet-greg-abel',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','Throughout his storied career at Berkshire Hathaway, Warren Buffett has not been a big investor in tech stocks. However, the famed investor helped Berkshire build two tech positions, which the insuran...','2026-07-19',0.88414,'Alphabet vs. Apple: Which Warren Buffett Favorite Is the Better Stock to Buy Today?','https://www.fool.com/investing/2026/07/19/alphabet-vs-apple-which-warren-buffett-favorite-is/',4),(2,'anushka dutta','...','2026-07-18',0.30544,'Dear Intel Stock Fans, Mark Your Calendars for July 23','https://www.barchart.com/story/news/3348636/dear-intel-stock-fans-mark-your-calendars-for-july-23',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -322,4 +323,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-19  4:16:27
+-- Dump completed on 2026-07-20  4:34:02
