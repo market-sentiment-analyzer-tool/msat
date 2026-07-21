@@ -220,6 +220,7 @@ cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
+d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -300,7 +301,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -309,7 +310,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'geoffrey seiler','Throughout his storied career at Berkshire Hathaway, Warren Buffett has not been a big investor in tech stocks. However, the famed investor helped Berkshire build two tech positions, which the insuran...','2026-07-19',0.88414,'Alphabet vs. Apple: Which Warren Buffett Favorite Is the Better Stock to Buy Today?','https://www.fool.com/investing/2026/07/19/alphabet-vs-apple-which-warren-buffett-favorite-is/',4),(2,'anushka dutta','...','2026-07-18',0.30544,'Dear Intel Stock Fans, Mark Your Calendars for July 23','https://www.barchart.com/story/news/3348636/dear-intel-stock-fans-mark-your-calendars-for-july-23',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-07-20',0.55264,'Alphabet Reports Q2 Earnings on July 22. Hereâ€™s Why Analysts Remain Bullish.','https://www.barchart.com/story/news/3365351/alphabet-reports-q2-earnings-on-july-22-heres-why-analysts-remain-bullish',2),(2,'dave kovaleski','It has been about five years since Amazon (AMZN +1.13%) founder and CEO Jeff Bezos stepped down from his role as CEO and handed over the reins to Andy Jassy.\nThose five years were pretty favorable for...','2026-07-20',-0.07214,'Should You Buy Amazon Stock, Even Though It Has Badly Underperformed the S&P 500 and Nasdaq-100 Since Jeff Bezos Stepped Down as CEO?','https://www.fool.com/investing/2026/07/20/should-you-buy-amazon-stock-even-though-it-has-bad/',4),(3,'geoffrey seiler','Throughout his storied career at Berkshire Hathaway, Warren Buffett has not been a big investor in tech stocks. However, the famed investor helped Berkshire build two tech positions, which the insuran...','2026-07-19',0.88414,'Alphabet vs. Apple: Which Warren Buffett Favorite Is the Better Stock to Buy Today?','https://www.fool.com/investing/2026/07/19/alphabet-vs-apple-which-warren-buffett-favorite-is/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -323,4 +324,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-20  4:34:02
+-- Dump completed on 2026-07-21  4:09:23
