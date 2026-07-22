@@ -84,6 +84,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
+4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
@@ -301,7 +302,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -310,7 +311,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-07-20',0.55264,'Alphabet Reports Q2 Earnings on July 22. Hereâ€™s Why Analysts Remain Bullish.','https://www.barchart.com/story/news/3365351/alphabet-reports-q2-earnings-on-july-22-heres-why-analysts-remain-bullish',2),(2,'dave kovaleski','It has been about five years since Amazon (AMZN +1.13%) founder and CEO Jeff Bezos stepped down from his role as CEO and handed over the reins to Andy Jassy.\nThose five years were pretty favorable for...','2026-07-20',-0.07214,'Should You Buy Amazon Stock, Even Though It Has Badly Underperformed the S&P 500 and Nasdaq-100 Since Jeff Bezos Stepped Down as CEO?','https://www.fool.com/investing/2026/07/20/should-you-buy-amazon-stock-even-though-it-has-bad/',4),(3,'geoffrey seiler','Throughout his storied career at Berkshire Hathaway, Warren Buffett has not been a big investor in tech stocks. However, the famed investor helped Berkshire build two tech positions, which the insuran...','2026-07-19',0.88414,'Alphabet vs. Apple: Which Warren Buffett Favorite Is the Better Stock to Buy Today?','https://www.fool.com/investing/2026/07/19/alphabet-vs-apple-which-warren-buffett-favorite-is/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'lawrence nga','When Berkshire Hathaway buys a stock, investors notice. After all, Warren Buffett has spent decades building one of the greatest investing records in history by buying exceptional businesses and holdi...','2026-07-21',0.1999,'Berkshire Hathaway Just Made a Massive Bet on Alphabet Stock. Should You Follow?','https://www.fool.com/investing/2026/07/21/berkshire-hathaway-made-a-massive-bet-on-alphabet/',4),(2,'anthony miller','...','2026-07-21',0,'Alphabet (NASDAQ:GOOGL) Stock Unloaded Rep. Dan Newhouse','https://www.thelincolnianonline.com/2026/07/21/alphabet-nasdaqgoogl-stock-unloaded-rep-dan-newhouse.html',2),(3,'christine ji','Please enable JS and disable any ad blocker...','2026-07-21',0.33564,'Alphabet is pouring record cash into data centers, and earnings will show if thatâ€™s paying off','https://www.marketwatch.com/story/alphabet-is-pouring-record-cash-into-data-centers-and-earnings-will-show-if-thats-paying-off-fad38a2c?mod=mw_rss_topstories',4),(4,'danessa lincoln','...','2026-07-21',0.2368,'Alphabet (NASDAQ:GOOGL) Shares Sold Off Rep. Dan Newhouse','https://www.themarketsdaily.com/2026/07/21/alphabet-nasdaqgoogl-shares-sold-off-rep-dan-newhouse.html',2),(5,'shane hupp','...','2026-07-21',0,'Sovran Advisors LLC Has $8.36 Million Stock Holdings in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13510211/sovran-advisors-llc-has-8-36-million-stock-holdings-in-alphabet-inc-googl.html',2),(6,'kim johansen','...','2026-07-21',0,'WealthShield Partners LLC Has $8.51 Million Holdings in Alphabet Inc. $GOOGL','https://www.themarketsdaily.com/2026/07/21/wealthshield-partners-llc-has-8-51-million-holdings-in-alphabet-inc-googl.html',2),(7,'trevor jennewine','...','2026-07-21',0.58152,'Should You Buy Alphabet Stock Before July 22? Wall Street Has a Clear Answer.','https://finance.yahoo.com/markets/stocks/articles/buy-alphabet-stock-july-22-092200674.html',20),(8,'kyle jackson','...','2026-07-21',0.2368,'Alphabet Inc. $GOOGL Shares Acquired by Sequoia Financial Advisors LLC','https://www.watchlistnews.com/alphabet-inc-googl-shares-acquired-by-sequoia-financial-advisors-llc/11151055.html',2),(9,'ethan ryder','...','2026-07-21',0,'Independence Bank of Kentucky Has $24.29 Million Stock Position in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13510106/independence-bank-of-kentucky-has-24-29-million-stock-position-in-alphabet-inc-googl.html',2),(10,'defense world staff','\n					Posted by Defense World Staff on Jul 21st, 2026\n\nFifth Third Bancorp boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 30.7% during the first quarter, according to...','2026-07-21',0.19992,'Fifth Third Bancorp Has $1.44 Billion Stock Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/07/21/fifth-third-bancorp-has-1-44-billion-stock-holdings-in-alphabet-inc-googl.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -324,4 +325,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-21  4:09:23
+-- Dump completed on 2026-07-22  4:11:25
