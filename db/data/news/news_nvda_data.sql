@@ -31,6 +31,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1217054e-864b-11f1-bc26-12f59257621f:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -302,7 +303,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -311,7 +312,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'anders bylund','If Monday was a tale of divergence, Tuesday brought something rarer: agreement. All three major indexes climbed together, powered by a semiconductor rally that showed no signs of fading.\nBy 11:31 a.m....','2026-07-21',0.64478,'Memory Stocks Spark a Market Rebound; Dow Jones Joins the Party','https://www.fool.com/investing/2026/07/21/memory-stocks-spark-a-market-rebound/',4),(2,'pzena investment management','...','2026-07-21',0,'Pzena Investment Management Q2 2026 Letter','https://seekingalpha.com/article/4923786-pzena-investment-management-q2-2026-letter',4),(3,'michael walen','...','2026-07-21',0.2368,'Rep. Dan Newhouse Sells Off NVIDIA Corporation (NASDAQ:NVDA) Shares','https://www.themarketsdaily.com/2026/07/21/rep-dan-newhouse-sells-off-nvidia-corporation-nasdaqnvda-shares.html',20),(4,'andy gould','Comparing the iShares Core MSCI Total International Stock ETF (IXUS +1.83%) and the State Street SPDR MSCI ACWI Climate Paris Aligned ETF (NZAC +1.03%) comes down to a choice between ultra-low-cost, e...','2026-07-21',0.80002,'IXUS vs. NZAC: Broad International Exposure or Climate-Focused Investing -- Which ETF Is the Better Buy?','https://www.fool.com/coverage/etfs/2026/07/21/ixus-vs-nzac-broad-international-exposure-or-climate-focused-investing-which-etf-is-the-better-buy/',4),(5,'u.s. news & world report','\n\n							\n							U.S. News & World Report\n															\n\nJuly 19, 2026, 8:00 PM\nWhile most investors associate exchange-traded funds, or ETFs, with diversified stock portfolios, the structure can ho...','2026-07-21',0.19964,'What Is a Single-Stock ETF? 7 Options to Consider','https://wtop.com/news/2026/07/what-is-a-single-stock-etf-7-options-to-consider/',4),(6,'yiannis zourmpanos','...','2026-07-21',0.3372,'HSBC Says Apple Is Entering a Powerful New Upgrade Cycle. What That Means for AAPL Stock.','https://www.barchart.com/story/news/3385018/hsbc-says-apple-is-entering-a-powerful-new-upgrade-cycle-what-that-means-for-aapl-stock',2),(7,'soumya eswaran','...','2026-07-21',-0.06176,'Rationale for Adding Back NVIDIA (NVDA)','https://finance.yahoo.com/markets/stocks/articles/rationale-adding-back-nvidia-nvda-141602562.html',200),(8,'ian cooper','...','2026-07-21',0.43384,'TSMCâ€™s AI Boom Is Just Getting Started: Why Investors Should Buy the Pullback in TSM Stock Now','https://www.barchart.com/story/news/3382278/tsmcs-ai-boom-is-just-getting-started-why-investors-should-buy-the-pullback-in-tsm-stock-now',2),(9,'sushree mohanty','...','2026-07-21',0.68728,'Microsoft vs. Amazon: 1 AI Giant Is the Better Buy Ahead of Earnings','https://www.barchart.com/story/news/3379481/microsoft-vs-amazon-1-ai-giant-is-the-better-buy-ahead-of-earnings',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-22',0.16604,'Analyst sends chilling Oracle stock verdict','https://www.thestreet.com/investing/stocks/clsa-oracle-orcl-hold-rating-price-target-ai-debt',2),(2,'ruchi gupta','...','2026-07-22',0.43384,'A $19 Billion Reason to Buy Hut 8 Stock Here','https://www.barchart.com/story/news/3406627/a-19-billion-reason-to-buy-hut-8-stock-here',2),(3,'aditya raghunath','...','2026-07-22',0.54464,'Wedbush Delivers Bold Verdict on Intel Stock Ahead of Earnings','https://www.barchart.com/story/news/3405668/wedbush-delivers-bold-verdict-on-intel-stock-ahead-of-earnings',2),(4,'coindesk','Franklin Templetonâ€™s Sandy Kaul and Circle CEO Jeremy Allaire argue that as autonomous AI agents start spending money on their own, blockchain networks will power the next big AI trade.\nFranklin Templ...','2026-07-22',0.01784,'Forget Nvidia (NVDA): The next big AI trade could be crypto and blockchain','https://us.headtopics.com/news/forget-nvidia-nvda-the-next-big-ai-trade-could-be-crypto-85838493',40),(5,'subhasree kar','...','2026-07-22',0.43384,'A $2.8 Billion Reason to Buy IREN Stock Here','https://www.barchart.com/story/news/3404900/a-2-8-billion-reason-to-buy-iren-stock-here',2),(6,'nauman khan','...','2026-07-22',-0.36704,'Taiwan Semiconductor Just Doubled Down on the AI Megatrend. Why TSMC Still Has Room to Run.','https://www.barchart.com/story/news/3403389/taiwan-semiconductor-just-doubled-down-on-the-ai-megatrend-why-tsmc-still-has-room-to-run',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -325,4 +326,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-22  4:11:25
+-- Dump completed on 2026-07-23  4:01:34

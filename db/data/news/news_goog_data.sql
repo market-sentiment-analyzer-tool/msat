@@ -31,6 +31,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1217054e-864b-11f1-bc26-12f59257621f:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -302,7 +303,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -311,7 +312,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'lawrence nga','When Berkshire Hathaway buys a stock, investors notice. After all, Warren Buffett has spent decades building one of the greatest investing records in history by buying exceptional businesses and holdi...','2026-07-21',0.1999,'Berkshire Hathaway Just Made a Massive Bet on Alphabet Stock. Should You Follow?','https://www.fool.com/investing/2026/07/21/berkshire-hathaway-made-a-massive-bet-on-alphabet/',4),(2,'anthony miller','...','2026-07-21',0,'Alphabet (NASDAQ:GOOGL) Stock Unloaded Rep. Dan Newhouse','https://www.thelincolnianonline.com/2026/07/21/alphabet-nasdaqgoogl-stock-unloaded-rep-dan-newhouse.html',2),(3,'christine ji','Please enable JS and disable any ad blocker...','2026-07-21',0.33564,'Alphabet is pouring record cash into data centers, and earnings will show if thatâ€™s paying off','https://www.marketwatch.com/story/alphabet-is-pouring-record-cash-into-data-centers-and-earnings-will-show-if-thats-paying-off-fad38a2c?mod=mw_rss_topstories',4),(4,'danessa lincoln','...','2026-07-21',0.2368,'Alphabet (NASDAQ:GOOGL) Shares Sold Off Rep. Dan Newhouse','https://www.themarketsdaily.com/2026/07/21/alphabet-nasdaqgoogl-shares-sold-off-rep-dan-newhouse.html',2),(5,'shane hupp','...','2026-07-21',0,'Sovran Advisors LLC Has $8.36 Million Stock Holdings in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13510211/sovran-advisors-llc-has-8-36-million-stock-holdings-in-alphabet-inc-googl.html',2),(6,'kim johansen','...','2026-07-21',0,'WealthShield Partners LLC Has $8.51 Million Holdings in Alphabet Inc. $GOOGL','https://www.themarketsdaily.com/2026/07/21/wealthshield-partners-llc-has-8-51-million-holdings-in-alphabet-inc-googl.html',2),(7,'trevor jennewine','...','2026-07-21',0.58152,'Should You Buy Alphabet Stock Before July 22? Wall Street Has a Clear Answer.','https://finance.yahoo.com/markets/stocks/articles/buy-alphabet-stock-july-22-092200674.html',20),(8,'kyle jackson','...','2026-07-21',0.2368,'Alphabet Inc. $GOOGL Shares Acquired by Sequoia Financial Advisors LLC','https://www.watchlistnews.com/alphabet-inc-googl-shares-acquired-by-sequoia-financial-advisors-llc/11151055.html',2),(9,'ethan ryder','...','2026-07-21',0,'Independence Bank of Kentucky Has $24.29 Million Stock Position in Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13510106/independence-bank-of-kentucky-has-24-29-million-stock-position-in-alphabet-inc-googl.html',2),(10,'defense world staff','\n					Posted by Defense World Staff on Jul 21st, 2026\n\nFifth Third Bancorp boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 30.7% during the first quarter, according to...','2026-07-21',0.19992,'Fifth Third Bancorp Has $1.44 Billion Stock Holdings in Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/07/21/fifth-third-bancorp-has-1-44-billion-stock-holdings-in-alphabet-inc-googl.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'joel south','Investing\n\n							Ackman, Tepper, Buffett, and Li Lu each hold AMZN or GOOGL as top positions, converging on AI infrastructure and platform dominance.													\n\n							Buffett reversed his long-st...','2026-07-22',0.50264,'The Boldest Bets on Wall Street Right Now Are in the Same Handful of Stocks','https://247wallst.com/investing/2026/07/22/the-boldest-bets-on-wall-street-right-now-are-in-the-same-handful-of-stocks/',4),(2,'daniel howley','...','2026-07-22',-0.08216,'Intel to report Q2 earnings as chip stocks bounce off recent losses','https://ca.finance.yahoo.com/news/intel-to-report-q2-earnings-as-chip-stocks-bounce-off-recent-losses-121538508.html',2),(3,'tyler durden','US futures are lowerÂ following a chipmaker-powered jump in Tuesdayâ€™s session, with Nasdaq 100 futures falling by 0.8%, which appears to be more of a retracement to yesterdayâ€™s strength than a move tie...','2026-07-22',0.11778,'Futures Slide Ahead Of Google Earnings As Brent Surges Above $95','https://www.zerohedge.com/markets/futures-slide-ahead-google-earnings-brent-surges-above-95',40),(4,'pathikrit bose','...','2026-07-21',0,'Google Is Developing a Chip for Its Own AI Models. What This Means for GOOGL Stock.','https://www.barchart.com/story/news/3389256/google-is-developing-a-chip-for-its-own-ai-models-what-this-means-for-googl-stock',20),(5,'lawrence nga','When Berkshire Hathaway buys a stock, investors notice. After all, Warren Buffett has spent decades building one of the greatest investing records in history by buying exceptional businesses and holdi...','2026-07-21',0.1999,'Berkshire Hathaway Just Made a Massive Bet on Alphabet Stock. Should You Follow?','https://www.fool.com/investing/2026/07/21/berkshire-hathaway-made-a-massive-bet-on-alphabet/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -325,4 +326,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-22  4:11:25
+-- Dump completed on 2026-07-23  4:01:34
