@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
+124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -312,7 +313,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-22',0.16604,'Analyst sends chilling Oracle stock verdict','https://www.thestreet.com/investing/stocks/clsa-oracle-orcl-hold-rating-price-target-ai-debt',2),(2,'ruchi gupta','...','2026-07-22',0.43384,'A $19 Billion Reason to Buy Hut 8 Stock Here','https://www.barchart.com/story/news/3406627/a-19-billion-reason-to-buy-hut-8-stock-here',2),(3,'aditya raghunath','...','2026-07-22',0.54464,'Wedbush Delivers Bold Verdict on Intel Stock Ahead of Earnings','https://www.barchart.com/story/news/3405668/wedbush-delivers-bold-verdict-on-intel-stock-ahead-of-earnings',2),(4,'coindesk','Franklin Templetonâ€™s Sandy Kaul and Circle CEO Jeremy Allaire argue that as autonomous AI agents start spending money on their own, blockchain networks will power the next big AI trade.\nFranklin Templ...','2026-07-22',0.01784,'Forget Nvidia (NVDA): The next big AI trade could be crypto and blockchain','https://us.headtopics.com/news/forget-nvidia-nvda-the-next-big-ai-trade-could-be-crypto-85838493',40),(5,'subhasree kar','...','2026-07-22',0.43384,'A $2.8 Billion Reason to Buy IREN Stock Here','https://www.barchart.com/story/news/3404900/a-2-8-billion-reason-to-buy-iren-stock-here',2),(6,'nauman khan','...','2026-07-22',-0.36704,'Taiwan Semiconductor Just Doubled Down on the AI Megatrend. Why TSMC Still Has Room to Run.','https://www.barchart.com/story/news/3403389/taiwan-semiconductor-just-doubled-down-on-the-ai-megatrend-why-tsmc-still-has-room-to-run',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'aditya raghunath','...','2026-07-23',-0.38136,'This Surging AI Server Stock Jumps 20% as Gross Margin Doubles','https://www.barchart.com/story/news/3430424/this-surging-ai-server-stock-jumps-20-as-gross-margin-doubles',2),(2,'subhasree kar','...','2026-07-23',0.46872,'How Micron Stock Could Be the Biggest Winner from Nvidia Product Delays','https://www.barchart.com/story/news/3430347/how-micron-stock-could-be-the-biggest-winner-from-nvidia-product-delays',20),(3,'natasha abellard','\nReference #18.d0623017.1784865622.7ba7ba21\nhttps://errors.edgesuite.net/18.d0623017.1784865622.7ba7ba21\n\nhttps://errors.edgesuite.net/18.d0623017.1784865622.7ba7ba21...','2026-07-23',-0.56024,'Intel stock is down 27% from June record highs. How the chipmaker can reverse the slide','https://www.cnbc.com/2026/07/23/intel-is-down-27percent-from-june-record-highs-how-it-can-reverse-the-slide.html',40),(4,'john bromels','By most metrics, Nvidia (NVDA -1.56%) looks like a screaming buy right now. Its stock is down by 12% from its high, but its price-to-earnings (P/E) ratio is at a five-year low. Its price-to-free-cash-...','2026-07-23',0.87776,'Nvidia Stock: Buy Right Now or Wait for a Better Opportunity?','https://www.fool.com/investing/2026/07/23/hot-ticker-stock-buy-right-now-or-wait-for-a-bette/',40),(5,'mitch edgeman','...','2026-07-23',0.49992,'NVIDIA (NASDAQ:NVDA) Shares Up 2% After Analyst Upgrade','https://www.themarketsdaily.com/2026/07/23/nvidia-nasdaqnvda-shares-up-2-after-analyst-upgrade.html',20),(6,'josh enomoto','...','2026-07-23',0.06176,'Why Nvidia (NVDA) Stock Faces Sell-the-News Risk Following Its Q2 Earnings Report','https://www.barchart.com/story/news/3427854/why-nvidia-nvda-stock-faces-sell-the-news-risk-following-its-q2-earnings-report',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -326,4 +327,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-23  4:01:34
+-- Dump completed on 2026-07-24  4:00:29

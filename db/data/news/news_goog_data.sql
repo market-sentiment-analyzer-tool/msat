@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
+124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -303,7 +304,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -312,7 +313,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'joel south','Investing\n\n							Ackman, Tepper, Buffett, and Li Lu each hold AMZN or GOOGL as top positions, converging on AI infrastructure and platform dominance.													\n\n							Buffett reversed his long-st...','2026-07-22',0.50264,'The Boldest Bets on Wall Street Right Now Are in the Same Handful of Stocks','https://247wallst.com/investing/2026/07/22/the-boldest-bets-on-wall-street-right-now-are-in-the-same-handful-of-stocks/',4),(2,'daniel howley','...','2026-07-22',-0.08216,'Intel to report Q2 earnings as chip stocks bounce off recent losses','https://ca.finance.yahoo.com/news/intel-to-report-q2-earnings-as-chip-stocks-bounce-off-recent-losses-121538508.html',2),(3,'tyler durden','US futures are lowerÂ following a chipmaker-powered jump in Tuesdayâ€™s session, with Nasdaq 100 futures falling by 0.8%, which appears to be more of a retracement to yesterdayâ€™s strength than a move tie...','2026-07-22',0.11778,'Futures Slide Ahead Of Google Earnings As Brent Surges Above $95','https://www.zerohedge.com/markets/futures-slide-ahead-google-earnings-brent-surges-above-95',40),(4,'pathikrit bose','...','2026-07-21',0,'Google Is Developing a Chip for Its Own AI Models. What This Means for GOOGL Stock.','https://www.barchart.com/story/news/3389256/google-is-developing-a-chip-for-its-own-ai-models-what-this-means-for-googl-stock',20),(5,'lawrence nga','When Berkshire Hathaway buys a stock, investors notice. After all, Warren Buffett has spent decades building one of the greatest investing records in history by buying exceptional businesses and holdi...','2026-07-21',0.1999,'Berkshire Hathaway Just Made a Massive Bet on Alphabet Stock. Should You Follow?','https://www.fool.com/investing/2026/07/21/berkshire-hathaway-made-a-massive-bet-on-alphabet/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'bram berkowitz','Alphabet (GOOG -6.89%)(GOOGL -7.12%), the parent company of Google, once again delivered strong earnings growth in the second quarter of the year, but the stock sank after management announced plans t...','2026-07-23',0.90658,'15 Billion Reasons Alphabet Shares Are Sinking After Reporting Strong Earnings Growth','https://www.fool.com/investing/2026/07/23/15-billion-reasons-alphabet-shares-are-sinking-after-reporting-strong-earnings-growth/',4),(2,'david moadel','Investing\n\n							Alphabet (GOOGL) dropped 6% as a capex hike to $205 billion erased the impact of its 82% Cloud surge, dragging Meta Platforms (META) and Snap (SNAP) lower too.													\n\n							C...','2026-07-23',0.19976,'Alphabet Drops 6% on Soaring AI Capex Despite 82% Cloud Surge; Meta Platforms, Snap Follow','https://247wallst.com/investing/2026/07/23/alphabet-drops-6-on-soaring-ai-capex-despite-82-cloud-surge-meta-platforms-snap-follow/',4),(3,'news team','\nGoogle parent Alphabet (GOOG, GOOGL) reported its second quarter earnings after the bell on Wednesday, beating Wall Streetâ€™s expectations on the top and bottom lines as cloud revenue increased 82% ye...','2026-07-23',0.86098,'Google Q2 earnings top expectations, cloud revenue grows 82%, but stock falls on capex growth','https://equity-insider.com/google-q2-earnings-top-expectations-cloud-revenue-grows-82-but-stock-falls-on-capex-growth/',40),(4,'null','...','2026-07-23',0.66528,'Alphabet Inc (GOOG) Q2 2026 Earnings Call Highlights: Record Revenue Growth and AI Innovations ... - Yahoo Finance','https://news.google.com/rss/articles/CBMikwFBVV95cUxQSC1Cel91YWt3aWJFRi1BdFF2OUNSU24za19HeENCeFNXeTgzZVoyWjI2bi1PSWIteHloeS1fMUlkbDFSV2ZmZ1RUek1keUt1bEFzM0tuc0I5SXRNaDNraVpJRDJ0MkRkbnRENTdyS3ZNcTdla2pQU3BQMGJURlhUQjNmUk5LM1hrakJrWFZnYllXdWc?oc=5',1);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -326,4 +327,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-23  4:01:34
+-- Dump completed on 2026-07-24  4:00:29
