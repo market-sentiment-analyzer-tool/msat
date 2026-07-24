@@ -31,6 +31,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+1217054e-864b-11f1-bc26-12f59257621f:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -84,6 +85,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
+4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
@@ -130,6 +132,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
+67fa35d8-870e-11f1-96de-3a56235217e1:1-301,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -254,7 +257,6 @@ e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
-ea9bcc87-857b-11f1-b02b-02b6c6263396:1-26,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
@@ -302,7 +304,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -311,7 +313,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1v2rt0w','oyxgb8r','2026-07-21',7,0,'Vera Rubin is 6 months ahead of MI455'),(2,'NVDA_Stock','1v2rt0w','oyz3das','2026-07-21',6,0.5106,'Trust Jensen. '),(3,'NVDA_Stock','1v2rt0w','oyz681w','2026-07-21',7,-0.3595,'![gif](giphy|FWp7aO1GMiOwzKOgSO)  \nNo other game in town. All AI roads lead to Nvidia ðŸ¤– '),(4,'NVDA_Stock','1v2pzc1','oyx1x51','2026-07-21',3,0.4364,'\"Agents have made CPUs â€œmuch more integral,â€ Ian Buck, Nvidiaâ€™s vice president of hyperscale, said at a presentation last week. â€œParticularly how fast a CPU can answer one question.â€\n\nNvidia said the whole server CPU market could eventually be worth $200 billion, while a Bernstein estimate from earlier this year said the mature server CPU market in total was worth about $37 billion in 2025.\n\nWolfe Research said in May that it expected the average selling price to be about $5,000 per Vera chip, and forecast that Nvidia would ship about 1.3 million of them this year. Nvidia declined to comment on pricing.\"');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1v4prs7','ozcw1gt','2026-07-23',6,0.2294,'>Intel jumping after earnings is actually a huge sign for Nvidia\n\ni wondered about that myself, but intel is not a hyperscaler and afaik they aren\'t buying nvidia chips.\n\nthe INTC afterhours pump has dropped by $4/share, and it didn\'t move nvda pricing.\n\nnvidia has repeatedly posted phenomenal earnings and forecasts, the stock goes nowhere despite that, it was $212 last october... if nvidia can\'t move it\'s own stock, INTC isn\'t going to help.'),(2,'NVDA_Stock','1v4prs7','oze4sc2','2026-07-24',2,-0.2263,'ok but why stock stuck at 200'),(3,'NVDA_Stock','1v4prs7','ozd24du','2026-07-23',2,0,'That won\'t move the stock, we are going to be sideways for sometime as it has been for months.'),(4,'NVDA_Stock','1v4prs7','ozcxvqv','2026-07-23',2,0.7003,'Helios better, Venice better. Own both AMD and NVDA'),(5,'NVDA_Stock','1v4prs7','ozddn7n','2026-07-23',1,0,',ðŸ™ƒ'),(6,'NVDA_Stock','1v4prs7','ozecviy','2026-07-24',1,0.8402,'Massive for AMD honestly. I am heavily in both AMD and NVDA for reference.Â \n\nI think AMD in Feb 2027 when Q4 results are announced will have the \"Nvidia Moment\". Helios will be ramped and revenue numbers will hit along with massive CPU revenue.Â '),(7,'NVDA_Stock','1v4prs7','ozehsff','2026-07-24',-4,-0.1426,'Why do people waste time posting this stuff. Not convincing anyone to buy.'),(8,'NVDA_Stock','1v4teoz','ozedqbz','2026-07-24',1,0,'i didnt know nvidia made hardware');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -325,4 +327,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-22  3:18:29
+-- Dump completed on 2026-07-24  3:33:36
