@@ -201,6 +201,7 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
+bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
@@ -304,7 +305,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -313,7 +314,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'bram berkowitz','Alphabet (GOOG -6.89%)(GOOGL -7.12%), the parent company of Google, once again delivered strong earnings growth in the second quarter of the year, but the stock sank after management announced plans t...','2026-07-23',0.90658,'15 Billion Reasons Alphabet Shares Are Sinking After Reporting Strong Earnings Growth','https://www.fool.com/investing/2026/07/23/15-billion-reasons-alphabet-shares-are-sinking-after-reporting-strong-earnings-growth/',4),(2,'david moadel','Investing\n\n							Alphabet (GOOGL) dropped 6% as a capex hike to $205 billion erased the impact of its 82% Cloud surge, dragging Meta Platforms (META) and Snap (SNAP) lower too.													\n\n							C...','2026-07-23',0.19976,'Alphabet Drops 6% on Soaring AI Capex Despite 82% Cloud Surge; Meta Platforms, Snap Follow','https://247wallst.com/investing/2026/07/23/alphabet-drops-6-on-soaring-ai-capex-despite-82-cloud-surge-meta-platforms-snap-follow/',4),(3,'news team','\nGoogle parent Alphabet (GOOG, GOOGL) reported its second quarter earnings after the bell on Wednesday, beating Wall Streetâ€™s expectations on the top and bottom lines as cloud revenue increased 82% ye...','2026-07-23',0.86098,'Google Q2 earnings top expectations, cloud revenue grows 82%, but stock falls on capex growth','https://equity-insider.com/google-q2-earnings-top-expectations-cloud-revenue-grows-82-but-stock-falls-on-capex-growth/',40),(4,'null','...','2026-07-23',0.66528,'Alphabet Inc (GOOG) Q2 2026 Earnings Call Highlights: Record Revenue Growth and AI Innovations ... - Yahoo Finance','https://news.google.com/rss/articles/CBMikwFBVV95cUxQSC1Cel91YWt3aWJFRi1BdFF2OUNSU24za19HeENCeFNXeTgzZVoyWjI2bi1PSWIteHloeS1fMUlkbDFSV2ZmZ1RUek1keUt1bEFzM0tuc0I5SXRNaDNraVpJRDJ0MkRkbnRENTdyS3ZNcTdla2pQU3BQMGJURlhUQjNmUk5LM1hrakJrWFZnYllXdWc?oc=5',1);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'oleksandr pylypenko','...','2026-07-24',0,'Investors Keep Buying the DRAM ETF Despite the Selloff. They Might Be Right About Memory Stocks.','https://www.barchart.com/story/news/3445267/investors-keep-buying-the-dram-etf-despite-the-selloff-they-might-be-right-about-memory-stocks',2),(2,'jeremy bowman','Alphabetâ€™s (GOOG +0.21%) (GOOGL +0.58%) YouTube has long been the leading user-created video platform, but the Google parent is so big that YouTube doesnâ€™t get the same level of attention it would if ...','2026-07-24',0.19984,'Alphabet-Owned YouTube Ad Sales Hit a Record $11.06 Billion. Is YouTube Dangerously Close to Surpassing Netflix in Revenue?','https://www.fool.com/investing/2026/07/24/alphabet-owned-youtube-ad-sales-hit-a-record-1106-billion-is-youtube-dangerously-close-to-surpassing-netflix-in-revenue/',4),(3,'amit singh','...','2026-07-23',0.49992,'CapEx Fears Eclipse Alphabetâ€™s Strong Q2, but GOOGL Stock Still Looks Attractive','https://www.barchart.com/story/news/3438521/capex-fears-eclipse-alphabets-strong-q2-but-googl-stock-still-looks-attractive',20),(4,'patrick sanders','Big tech companies and spending on artificial intelligence and its infrastructure have been one of the biggest stories in the stock market this year, ever since Amazon (AMZN -0.70%), Alphabet (GOOG +0...','2026-07-23',0.50524,'Alphabet Just Tied Amazonâ€™s $200 Billion Capex Guidance. Could Amazon Raise the Bar Even Higher on July 30?','https://www.fool.com/investing/2026/07/23/alphabet-just-tied-amazons-200-billion-capex-guidance-could-amazon-raise-the-bar-even-higher-on-july-30/',4),(5,'anders bylund','The major indexes are under broad pressure on Thursday. Investors process what it actually costs to build the AI future everyone keeps talking about, and the Iranian conflict is driving oil prices hig...','2026-07-23',0.6072,'Market Indexes Sink as Oil Tops $100 Amid Rising AI Costs','https://www.fool.com/investing/2026/07/23/market-indexes-sink-as-oil-price-and-ai-costs-rise/',4),(6,'rich smith','...','2026-07-23',0,'Why Alphabet Stock Crashed Today','https://finance.yahoo.com/markets/stocks/articles/why-alphabet-stock-crashed-today-164430809.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -327,4 +328,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-24  4:00:29
+-- Dump completed on 2026-07-25  3:56:49
