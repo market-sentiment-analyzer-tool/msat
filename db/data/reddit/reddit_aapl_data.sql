@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
+124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -100,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
+560563f2-87d7-11f1-a652-225f71724126:1-101,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -132,7 +134,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
-67fa35d8-870e-11f1-96de-3a56235217e1:1-301,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -304,7 +305,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -313,6 +314,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1v5rpds','ozlgqo7','2026-07-25',10,0.765,'The only thing I find surprising is that most didnâ€™t see this coming. Over and over again, Apple starts the race a bit late but always wins. '),(2,'AAPL','1v5rpds','ozlgp6k','2026-07-25',4,0.4576,'That was a very interesting read'),(3,'AAPL','1v5rpds','ozlvbuw','2026-07-25',2,0.0798,'\"The endgame is intelligence as a commodity â€” models good enough for 95% of everything, free to download, running on hardware you own, answering to nobody.\"\n\nIt is true, and everybody, including Nvidia, knows it. But one thing I guarantee you, Apple would absolutely hate anything that they don\'t have direct control over. Their execs really don\'t want Apple to be a hardware company.'),(4,'AAPL','1v5rpds','ozm56ra','2026-07-25',1,-0.5709,'Siri is literally the dumbest most worthless thing Iâ€™ve ever used (adjusted for respective modern times) '),(5,'AAPL','1v5rpds','ozlqw8i','2026-07-25',0,-0.5806,'Meh. I\'m utterly unconvinced. I can run plenty on my Mac, but the wait time is long per prompt response and the ecosystem is nothing like my subscription ai services. So I continue to use subscriptions. '),(6,'AAPL','1v5imyu','ozjixnw','2026-07-24',9,-0.3612,'I have 2800 shares that I have been holding since I was employed at Apple from 1991 to 2000.  Average share cost was less than $1 per share.  The taxes to sell the stock scare the crap out of me ðŸ«¨'),(7,'AAPL','1v5imyu','ozjewsv','2026-07-24',8,0.5023,'Do you really need the money? Iâ€™m similarly positioned, and feel no need to do anything but hold my shares and watch them grow. '),(8,'AAPL','1v5imyu','ozjana2','2026-07-24',15,0.4054,'So you are hoping for people to lose money on Apple just so you can buy your covered calls back?\n\nNo sympathy for you'),(9,'AAPL','1v5imyu','ozkhkv8','2026-07-24',3,0.3062,'My mother has 15,600 shares with gains of over 1k percent and had even more but Schwab convinced her to â€œdiversify â€œ a little.  She learned her lesson about that and isnâ€™t selling anymore anytime soon'),(10,'AAPL','1v5imyu','ozjo5mb','2026-07-24',2,-0.8969,'I started my options selling â€œside hustleâ€ by selling calls against my AAPL shares. Quickly realized I hated it (donâ€™t like rooting against the price to go up, holder since 2004 so taxes would kill me). Pivoted to selling puts instead utilizing margin backed by my AAPL shares.\n\nI still sell some covered calls here and there after a big run up and stay far OTM, although my $355s expiring next month will hopefully be tested!'),(11,'AAPL','1v5imyu','ozj85d1','2026-07-24',1,0.6597,'Itâ€™s honestly a pretty decent approach to selling when youâ€™ve got a lot of shares. If the options arenâ€™t exercised, you keep the contract price.'),(12,'AAPL','1v5imyu','ozk9fsh','2026-07-24',1,0,'I have a similar position but have spent the last two years buying long out of the money calls and cashing in premiums. '),(13,'AAPL','1v5imyu','ozkm1d5','2026-07-24',1,0.8537,'I will say, i have started trimming quite a bit. Not that Iâ€™m not bullish, but how big can the market cap actually get. I just donâ€™t see how itâ€™s possible to go past the 10T mark. Iâ€™m going to liquidate 1k shares at 350, another 1k at 400  and the remaining 3k shares at 500. But if they come out with something over the next couple of years that i see massive potential in then i will be happy to hop back in. '),(14,'AAPL','1v5imyu','ozkqlep','2026-07-24',1,-0.7446,'Damn, the tax implications alone are brutal. I have a concentrated position in a stock and would never consider selling covered calls against it. First, I have a multi-decade thesis. Second, my cost basis is so low that getting assigned would trigger a massive tax bill.'),(15,'AAPL','1v5imyu','ozlhq93','2026-07-25',1,-0.1899,'I too have a large AAPL position. Avg price is $23. I have sold covered CALLs (similarly MSFT & AMZN) The income is good,but the stress of potential assignment is too much. I donâ€™t want to lose my old friends, I donâ€™t want to knee cap my old friends and the tax implications are dangerously high. So this week I bought to close all of those short CALLs. I will not use those for income any longer. Itâ€™s easy income, but not worth it'),(16,'AAPL','1v5imyu','ozj6otc','2026-07-24',1,0.296,'Ok '),(17,'AAPL','1v5imyu','ozjg2qz','2026-07-24',1,-0.4926,'Keep rollin\', rollin\', rollin\', rollin\', WHAAAAAT?\n\nKeep rollin\', rollin\', rollin\', rollin\' C\'MONNNN!\n\nCause if you get called away, those taxes are gonna fuggen suck brah lol'),(18,'AAPL','1v5fu78','ozirm9e','2026-07-24',2,0.6369,'Buy. And. Hold. '),(19,'AAPL','1v5fu78','ozl8y3x','2026-07-24',1,0.5859,'Holding.. holding.. holding.. holding');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -326,4 +328,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-24  3:33:36
+-- Dump completed on 2026-07-25  3:18:44

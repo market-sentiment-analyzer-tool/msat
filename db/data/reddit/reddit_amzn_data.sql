@@ -32,6 +32,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
+124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
@@ -100,6 +101,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
+560563f2-87d7-11f1-a652-225f71724126:1-101,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -132,7 +134,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
-67fa35d8-870e-11f1-96de-3a56235217e1:1-301,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
@@ -304,7 +305,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -313,6 +314,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1v5j1et','ozjl1y3','2026-07-24',16,-0.5574,'SPVs, obscured leverage, circular capital and demand loopsâ€¦ what could go wrong?'),(2,'ValueInvesting','1v5j1et','ozjfwuh','2026-07-24',36,0.5868,'Look, I understand the concern with the capex, but the capex is going into high margin, very high growth areas of these massive companies. They are competing with one another on market share, and have massive backlogs of this. Do we expect them to just say â€œwe are capping or freezing our capexâ€ in this environment? The answer is no, and the debt they are taking on, while high, is still a small fraction of the overall size of these companies. Let them cook.'),(3,'ValueInvesting','1v5j1et','ozkfi1e','2026-07-24',3,-0.0772,'Only company at real risk is Oracle (of the big 5 spenders) and they\'ll probably be fine in the long run'),(4,'ValueInvesting','1v5j1et','ozkgthz','2026-07-24',3,0.1779,'Itâ€™s a very complex circle of opposing forces. Wallstreet wants endless profits. Hyperscalers want to win the AI race. OpenAI and Anthropic are both fear mongering everyone to fool investors to pour their money into their pockets instead of buying GOOG stock. People are forced to reluctantly use AI otherwise lose their jobs. Many lose their jobs regardless. I think the environment is heating up for sure. But nobody knows for sure how all this will look when the dust settles and all dimensions are pushed beyond their maximum edges.'),(5,'ValueInvesting','1v5j1et','ozl3nxm','2026-07-24',2,0,'Microsoft is the least involved in the jerk-circle-of-funding '),(6,'ValueInvesting','1v5j1et','ozjtq90','2026-07-24',2,0,'Gotta pump the bubble.'),(7,'ValueInvesting','1v5j1et','ozjc8ei','2026-07-24',1,0.3612,'just like it did for Oracle.'),(8,'ValueInvesting','1v5j1et','ozjslmj','2026-07-24',1,0.9625,'Looking at the hardware side, as recent examples; AEHR 40% daily spike, IBM largest drop in a century, DELL blowing out expectations, INTC pump on surprise margin projections.  These are very visible companies within possibly the most heavily monitored sector of the global economy, and the numbers precipitating this price action were already flowing and viewable before each particular announcement.  I don\'t think that legacy valuation models are working even at defining where money is already flowing, let alone where it will flow in the future.    \n  \nThe chip/server ecosystem is accelerating its expansion while already maxing out power grids and existing manufacturing capacity of some components, both of which can take years to steer into another direction effectively.   Some forms of this tech (the ones needed to protect critical assets from the attack/defense asymmetry and increased attack surfaces brought about by drone warfare and AI-enabled hacking) are of an existential nature, just look at Hormuz and Ukraine/Russia, legacy energy supply chains are never going to be the same.  That is I believe a part of why we are seeing an onshoring of critical tech supply chains through government mandates, increased public funding for domestic chip manufacturing and foundries, government taking direct stake in INTC, etc.)  It is not just SaaS moats involved; it is banking-level encryption and the difficulty of defending systemically against new proliferating low-input-cost threats.  What is the value of X, regardless of what X is, if banking is disrupted, or if the entire power grid of localized distribution substations must be hardened to maintain any systemic operability?\n\nIt is possible that hyperscalers (whether they are confident or just hedging on a massive scale) believe that the near-term implications of AI rollout are going to fuck up the economy, and that their hardware cache will be a highly leverageable commodity in un-fucking the economy (as well as helping to defend it and keep it holding together to allow the system time to digest this transition), perhaps more valuable in that setting than access to fiat currency or credit.'),(9,'ValueInvesting','1v5j1et','ozm1ca1','2026-07-25',1,0.8481,'Only google and meta are the hyperscalers that benefits from AI. The ecosystem they created will dominate the AI space in the future. \nIf one of these big tech stopped investing in AI infra and innovate, it will be the first to fail and squeezed out by the rest. From a monetizing perspective, i only see meta and google churning huge growth and profits from it. \n'),(10,'ValueInvesting','1v5j1et','ozliud2','2026-07-25',0,0,'Apple sends their regards');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -326,4 +328,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-24  3:33:36
+-- Dump completed on 2026-07-25  3:18:44
