@@ -101,7 +101,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
-560563f2-87d7-11f1-a652-225f71724126:1-101,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -180,6 +179,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+9a4d8aed-88a2-11f1-a22f-dadadbfa5fb6:1-32,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -202,6 +202,7 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
+bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
@@ -305,7 +306,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -314,7 +315,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1v52e86','ozhujqm','2026-07-24',6,-0.1027,'Consensus is around $310.\n\nAMD is pushing TAM up, all the mem / storage makers don\'t see the crunch alleviating, Intel, TSMC, all same. We are constrained in many ways right now.'),(2,'NVDA_Stock','1v52e86','ozfkae3','2026-07-24',5,0.7053,'buy more? hold for how long more? '),(3,'NVDA_Stock','1v52e86','ozfyfgy','2026-07-24',4,0.9455,'Yeah, all the recent news about open models is just more good news for nvidia, it may shake up software and AI model makers but it\'s positive for NVIDIA. Being able to deploy more models means you need more hardware, and the cheaper the models are the more usage they will get which also means we\'re hardware. \nIt\'s a little counterintuitive but AI is at its infancy, so at this point the cheaper the models are the more people will use them. There could be a point sometime in the future it would probably be many years where making the models more efficient could mean less hardware like kind of how computers and smartphones don\'t need to be upgraded so quickly anymore cuz what we use them for isn\'t expanding rapidly like AI, so if they become more efficient we don\'t need to upgrade as quickly. the capability of AI is still growing, and it\'s mostly being held back by not being efficient enough and not having enough hardware.'),(4,'NVDA_Stock','1v52e86','ozl3aia','2026-07-24',3,0,'itâ€™s not called brute force, itâ€™s called scaling law.'),(5,'NVDA_Stock','1v52e86','ozh8qi1','2026-07-24',0,0.8225,'Yeah and itâ€™s going to keep going up. While it might be in our interest as a species to stop improving, we are too afraid of the other clans outperforming us, so that wonâ€™t happen, and they can keep improving with larger models for a very long time.'),(6,'NVDA_Stock','1v52e86','ozkb013','2026-07-24',-4,-0.5761,'I would not buy any at this price because realistically by this time next year it will not have reached $250!!Â \n\n'),(7,'TradingEdge','1v58vpx','ozguqc9','2026-07-24',-2,0.7622,'Thousands of paid subscribers is validation of my proficiency as a stock picker, specialising in thematic SMID caps. I post all my picks and research/DD on emerging SMID caps on my trading site first as well as daily analysis pieces like this. If you want my alpha before anyone else, feel free to try it out for a month, you can cancel any time so it will set you back $40 to potentially discover a research platform that will change the trajectory of your investing.. Â I have a 15% off coupon running. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1v6e8pa','ozpsva1','2026-07-25',16,0,'Nvidia is making it rain this weekend '),(2,'stocks','1v6e8pa','ozq1kpm','2026-07-25',10,0,'For those that don\'t know, Naver is a massive IT company around LG Electronics scale and is Korea\'s Google + most used search engine in Korea, ahead of Google Search.'),(3,'stocks','1v6e8pa','ozqob9f','2026-07-25',10,-0.4019,'Damn everyone wants to get in on the AI money laundering space'),(4,'stocks','1v6e8pa','ozqesg6','2026-07-25',4,0.4019,'Lmao. No one uses their cloud and AI in Korea. They just needed to find a reason to keep the circular investment going. '),(5,'stocks','1v6e8pa','ozqt762','2026-07-25',1,-0.128,'Why cant nvdia just build it out themselves by hiring the same people and cutting out the middle man then.'),(6,'stocks','1v6e8pa','ozsqdzw','2026-07-26',1,0.3612,'Seems like Nvidia is just making partnerships with everyone '),(7,'NVDA_Stock','1v5ysj4','ozngf8a','2026-07-25',17,0.2008,'These sums are just madness for the normal people or even small countries lol. \n\nEven though people like to complain all the time when nvidia does not go up every single day, I think our investment choice long term is pretty good.'),(8,'NVDA_Stock','1v5ysj4','ozmv96r','2026-07-25',10,0.4404,'I guess we gap up MondayÂ '),(9,'NVDA_Stock','1v5ysj4','ozmq3fe','2026-07-25',5,-0.1915,'Did you guys notice, that many good deals or bad are revealed on Friday nights or either after market closed? So retail barely gets a chance to buy or sell to make profit or avoid losses!'),(10,'NVDA_Stock','1v5ysj4','ozmsd5v','2026-07-25',-10,-0.4792,'more empty speculative headline-grabbing nonsense.\n\nthe end is near.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -328,4 +329,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-25  3:18:44
+-- Dump completed on 2026-07-26  3:33:16
