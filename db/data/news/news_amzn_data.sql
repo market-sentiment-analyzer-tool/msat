@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
@@ -305,7 +306,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -314,7 +315,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'noi mahoney','\n\nCompanies across the freight economy disclosed plans to eliminate at least 1,222 jobs as warehouse operators, delivery providers and manufacturers continued to consolidate facilities and adjust thei...','2026-07-24',-0.33762,'Freight Distress Report: Supply chain providers cut more than 1,200 jobs','https://www.freightwaves.com/news/freight-distress-report-supply-chain-providers-cut-more-than-1200-jobs',4),(2,'douglas a. mcintyre','Investing\n\n							Uber cut 10% of its customer service workforce, with VP Megha Yethatika blaming organizational complexity and a push to embrace AI.													\n\n							Block eliminated 4,000 jobs (...','2026-07-24',-0.26394,'Do Uber AI Layoffs More American Jobs At Risk?','https://247wallst.com/investing/2026/07/24/do-uber-ai-layoffs-more-american-jobs-at-risk/',4),(3,'investing.com','...','2026-07-24',0.38136,'Amazon CapEx outlook ahead of July 30 earnings and the AI infrastructure race','https://ca.investing.com/news/stock-market-news/amazon-capex-outlook-ahead-of-july-30-earnings-and-the-ai-infrastructure-race-93CH-4752395',20),(4,'dhierin bechai','...','2026-07-24',0.65408,'Amazon: Strong Buy On An Expanding Ecosystem','https://seekingalpha.com/article/4925274-amazon-strong-buy-on-an-expanding-ecosystem',4),(5,'colin laidley','Angela Weiss / AFP / Getty Images\n Stock futures are higher this morning as investors look to recover from yesterdayâ€™s punishing sell-off sparked by AI spending fears and soaring oil prices; Intel sto...','2026-07-24',0.19748,'5 Things To Know Before the Stock Market Opens','https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-on-friday-july-24-2026-12026098',4),(6,'erin kennedy','As consumer spending patterns evolve in 2026, many investors are choosing between two titans of the retail landscape. Deciding between Home Depot (HD +2.55%) and Walmart (WMT +0.97%) requires understa...','2026-07-24',0.80012,'Home Depot vs. Walmart: Which Consumer Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/07/24/home-depot-vs-walmart-which-consumer-stock-is-a-better-buy-in-2026/',4),(7,'oleksandr pylypenko','...','2026-07-24',0,'Investors Keep Buying the DRAM ETF Despite the Selloff. They Might Be Right About Memory Stocks.','https://www.barchart.com/story/news/3445267/investors-keep-buying-the-dram-etf-despite-the-selloff-they-might-be-right-about-memory-stocks',2),(8,'ethan ryder','...','2026-07-24',0.52776,'Granite Bay Wealth Management LLC Buys 4,648 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13514038/granite-bay-wealth-management-llc-buys-4648-shares-of-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'kyle jackson','...','2026-07-25',-0.16184,'Amazon.com (NASDAQ:AMZN) Shares Down 4.6% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/amazon-com-nasdaqamzn-shares-down-4-6-whats-next/11156598.html',2),(2,'anthony miller','...','2026-07-25',0.2368,'Welch & Forbes LLC Purchases 4,800 Shares of Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/07/25/welch-forbes-llc-purchases-4800-shares-of-amazon-com-inc-amzn.html',2),(3,'null','Please enable JS and disable any ad blocker...','2026-07-25',-0.25788,'Mark Cuban sees a problem with the AI spending spree','https://www.thestreet.com/technology/mark-cuban-sees-a-problem-with-the-ai-spending-spree',2),(4,'jared blikre','...','2026-07-25',-0.25456,'Google and Tesla lost half a trillion dollars this week as their suppliers cashed in: Chart of the Day','https://ca.finance.yahoo.com/news/google-and-tesla-lost-half-a-trillion-dollars-this-week-as-their-suppliers-cashed-in-chart-of-the-day-121403846.html',2),(5,'max byerly','...','2026-07-25',0.25456,'LGT Fund Management Co Ltd. Boosts Stock Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13515549/lgt-fund-management-co-ltd-boosts-stock-position-in-amazon-com-inc-amzn.html',2),(6,'clark schultz','...','2026-07-25',0.38136,'Amazon earnings preview: Will AWS reacceleration justify the capex binge?','https://seekingalpha.com/news/4618117-amazon-earnings-preview-will-aws-reacceleration-justify-the-capex-binge?feed_item_type=news',40),(7,'hanz christensen','...','2026-07-25',0.612,'Amazon.com, Inc. $AMZN is United Bankâ€™s 9th Largest Position','https://www.watchlistnews.com/amazon-com-inc-amzn-is-united-banks-9th-largest-position/11156424.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -328,4 +329,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-25  3:56:49
+-- Dump completed on 2026-07-26  4:20:19
