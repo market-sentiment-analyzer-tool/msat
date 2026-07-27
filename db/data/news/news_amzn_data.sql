@@ -203,6 +203,7 @@ b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
+bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -315,7 +316,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'kyle jackson','...','2026-07-25',-0.16184,'Amazon.com (NASDAQ:AMZN) Shares Down 4.6% â€“ Whatâ€™s Next?','https://www.watchlistnews.com/amazon-com-nasdaqamzn-shares-down-4-6-whats-next/11156598.html',2),(2,'anthony miller','...','2026-07-25',0.2368,'Welch & Forbes LLC Purchases 4,800 Shares of Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/07/25/welch-forbes-llc-purchases-4800-shares-of-amazon-com-inc-amzn.html',2),(3,'null','Please enable JS and disable any ad blocker...','2026-07-25',-0.25788,'Mark Cuban sees a problem with the AI spending spree','https://www.thestreet.com/technology/mark-cuban-sees-a-problem-with-the-ai-spending-spree',2),(4,'jared blikre','...','2026-07-25',-0.25456,'Google and Tesla lost half a trillion dollars this week as their suppliers cashed in: Chart of the Day','https://ca.finance.yahoo.com/news/google-and-tesla-lost-half-a-trillion-dollars-this-week-as-their-suppliers-cashed-in-chart-of-the-day-121403846.html',2),(5,'max byerly','...','2026-07-25',0.25456,'LGT Fund Management Co Ltd. Boosts Stock Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13515549/lgt-fund-management-co-ltd-boosts-stock-position-in-amazon-com-inc-amzn.html',2),(6,'clark schultz','...','2026-07-25',0.38136,'Amazon earnings preview: Will AWS reacceleration justify the capex binge?','https://seekingalpha.com/news/4618117-amazon-earnings-preview-will-aws-reacceleration-justify-the-capex-binge?feed_item_type=news',40),(7,'hanz christensen','...','2026-07-25',0.612,'Amazon.com, Inc. $AMZN is United Bankâ€™s 9th Largest Position','https://www.watchlistnews.com/amazon-com-inc-amzn-is-united-banks-9th-largest-position/11156424.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'sarina trangle','Jose Sarmento Matos / Bloomberg / Getty Images\n Americaâ€™s AI buildout will be in the spotlight this week, with some of the worldâ€™s biggest tech companies due to hand in their latest results and Federa...','2026-07-26',0.7802,'What to Expect in Markets This Week: Amazon, Apple, Meta and Microsoft Earnings; Fed Interest Rate Decision','https://www.investopedia.com/what-to-expect-in-markets-this-week-amazon-apple-meta-microsoft-earnings-fed-interest-rate-decision-12025525',4),(2,'wall street breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nalexsl/iStock via Getty Images\n \nUp for a challenge? Test your knowledge on...','2026-07-26',0.19742,'Wall Street Week Ahead','https://seekingalpha.com/article/4925673-wall-street-week-ahead',8),(3,'mark dietrich','...','2026-07-26',0.35232,'Amazon.com, Inc. $AMZN Shares Sold by J. Safra Sarasin Holding AG','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-sold-by-j-safra-sarasin-holding-ag/11156955.html',2),(4,'null','...','2026-07-26',0.2368,'CORDA Investment Management LLC. Acquires 5,856 Shares of Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/07/26/corda-investment-management-llc-acquires-5856-shares-of-amazon-com-inc-amzn.html',1),(5,'null','...','2026-07-26',0.2368,'Amazon.com, Inc. $AMZN Shares Sold by Del Sette Capital Management LLC','https://www.defenseworld.net/2026/07/26/amazon-com-inc-amzn-shares-sold-by-del-sette-capital-management-llc.html',1),(6,'abmn staff','...','2026-07-26',0.2368,'CORDA Investment Management LLC. Buys 5,856 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/07/26/corda-investment-management-llc-buys-5856-shares-of-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -329,4 +330,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-26  4:20:19
+-- Dump completed on 2026-07-27  4:30:21

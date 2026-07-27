@@ -203,6 +203,7 @@ b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
+bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
@@ -306,7 +307,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -315,7 +316,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-25',-0.25788,'Mark Cuban sees a problem with the AI spending spree','https://www.thestreet.com/technology/mark-cuban-sees-a-problem-with-the-ai-spending-spree',2),(2,'jared blikre','...','2026-07-25',-0.25456,'Google and Tesla lost half a trillion dollars this week as their suppliers cashed in: Chart of the Day','https://ca.finance.yahoo.com/news/google-and-tesla-lost-half-a-trillion-dollars-this-week-as-their-suppliers-cashed-in-chart-of-the-day-121403846.html',2),(3,'shane hupp','...','2026-07-25',-0.57472,'Microsoft (NASDAQ:MSFT) Stock Price Down 2.2% â€“ Should You Sell?','https://www.tickerreport.com/banking-finance/13515558/microsoft-nasdaqmsft-stock-price-down-2-2-should-you-sell.html',20),(4,'logan wallace','...','2026-07-25',0.2368,'Relyea Zuckerberg Hanson LLC Sells 3,890 Shares of Microsoft Corporation $MSFT','https://www.tickerreport.com/banking-finance/13515312/relyea-zuckerberg-hanson-llc-sells-3890-shares-of-microsoft-corporation-msft.html',20),(5,'danessa lincoln','...','2026-07-25',0,'Manning & Napier Advisors LLC Raises Holdings in Microsoft Corporation $MSFT','https://www.themarketsdaily.com/2026/07/25/manning-napier-advisors-llc-raises-holdings-in-microsoft-corporation-msft.html',20),(6,'nicole kennedy','...','2026-07-25',0.46872,'Microsoft Corporation $MSFT is Ramsay Stattman Vela & Price Inc.â€™s 2nd Largest Position','https://www.watchlistnews.com/microsoft-corporation-msft-is-ramsay-stattman-vela-price-inc-s-2nd-largest-position/11156103.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'alex carchidi','Folksy wisdom holds that the surest way to make money during a gold rush was to sell shovels rather than swing picks. As with many emerging industries, quantum computing could be reviving that old dyn...','2026-07-26',0.81136,'Best Quantum Computing Pick-and-Shovel Play: Nvidia, Microsoft, or Alphabet?','https://www.fool.com/investing/2026/07/26/best-quantum-computing-pick-and-shovel-play-nvidia/',4),(2,'anushka mukherji','...','2026-07-26',0,'What a Major Anthropic Chip Deal Really Means for AMD Stock','https://www.barchart.com/story/news/3469164/what-a-major-anthropic-chip-deal-really-means-for-amd-stock',2),(3,'sarina trangle','Jose Sarmento Matos / Bloomberg / Getty Images\n Americaâ€™s AI buildout will be in the spotlight this week, with some of the worldâ€™s biggest tech companies due to hand in their latest results and Federa...','2026-07-26',0.7802,'What to Expect in Markets This Week: Amazon, Apple, Meta and Microsoft Earnings; Fed Interest Rate Decision','https://www.investopedia.com/what-to-expect-in-markets-this-week-amazon-apple-meta-microsoft-earnings-fed-interest-rate-decision-12025525',40),(4,'wall street breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nalexsl/iStock via Getty Images\n \nUp for a challenge? Test your knowledge on...','2026-07-26',0.19742,'Wall Street Week Ahead','https://seekingalpha.com/article/4925673-wall-street-week-ahead',8),(5,'null','Please enable JS and disable any ad blocker...','2026-07-26',0.06364,'UBS hurries to reset AMD stock target on key AI Day signals','https://www.thestreet.com/investing/stocks/ubs-raises-amd-stock-price-target-730-advancing-ai-server-cpu',2),(6,'paula ricardo','...','2026-07-26',0.25456,'Markel Group Inc. Boosts Holdings in Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/07/26/markel-group-inc-boosts-holdings-in-microsoft-corporation-msft.html',20),(7,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-26',0.20102,'International Business Machines Corporation (IBM) Survived One AI Scare in February. This One Might Be Different.','https://www.insidermonkey.com/blog/international-business-machines-corporation-ibm-survived-one-ai-scare-in-february-this-one-might-be-different-1803493/',4),(8,'defense world staff','\n					Posted by Defense World Staff on Jul 26th, 2026\n\nCandriam S.C.A. boosted its position in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 3.4% in the 1st quarter, according to the company i...','2026-07-26',0.66856,'Microsoft Corporation $MSFT is Candriam S.C.A.â€™s 2nd Largest Position','https://www.defenseworld.net/2026/07/26/microsoft-corporation-msft-is-candriam-s-c-a-s-2nd-largest-position.html',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -329,4 +330,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-26  4:20:20
+-- Dump completed on 2026-07-27  4:30:21
