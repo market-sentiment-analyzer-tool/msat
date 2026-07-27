@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
@@ -179,7 +180,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
-9a4d8aed-88a2-11f1-a22f-dadadbfa5fb6:1-32,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -198,6 +198,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b4a06532-896c-11f1-807c-9a86f10f7e58:1-192,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -306,7 +307,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -315,6 +316,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1v7g2vm','ozxxkhd','2026-07-26',9,0.1779,'People will need devices to run AI on, and no device maker is better positioned than Apple to provide the device.'),(2,'AAPL','1v7g2vm','ozxuk7x','2026-07-26',3,0.7003,'They will not rock the boat on existing apps (I hope), the apps are printing money. I expect new AI Kits to be used by the apps, integration with the iPhone (calendar, notifications etc) \n\nThat iPhone will know you better than you know yourself. '),(3,'AAPL','1v7g2vm','ozy1ofi','2026-07-26',3,0.8166,'They will monetize by selling more agented AI devices, pushing their ecosystem to be even wider and deeper, edge AI servers such as Mac Studio, and more AI ready apps. Â Service revenues will explode even more and the App Store profit will rise. Â Thatâ€™s how Apple makes money.\n\nI just today needed to find an old photo and also set up a reminder based on a text I received a few days ago and all I could think of was how I needed Siri AI. Â  Â I think itâ€™s going to change how people live and work when your phone knows so much about you and become a better personal assistant than your spouse. Â '),(4,'AAPL','1v7g2vm','ozy4o7j','2026-07-26',2,0.5106,'Bullish '),(5,'AAPL','1v7g2vm','ozylbuo','2026-07-26',2,0.7964,'Apple will become the leader in the AI that goes forward after the bubble bursts. It will train on the userâ€™s info and be on device for most instances. Apple didnâ€™t need to throw a ton of money at getting here, they let the tech mature and is here to take it to the next, usable level that people will be comfortable with. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -328,4 +330,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-26  3:33:15
+-- Dump completed on 2026-07-27  3:46:19
