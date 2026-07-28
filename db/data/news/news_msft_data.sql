@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.1
+-- Server version	26.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -235,6 +235,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d8e109f2-8a37-11f1-9fbe-ee5f719dc0c0:1-57,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -316,7 +317,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'alex carchidi','Folksy wisdom holds that the surest way to make money during a gold rush was to sell shovels rather than swing picks. As with many emerging industries, quantum computing could be reviving that old dyn...','2026-07-26',0.81136,'Best Quantum Computing Pick-and-Shovel Play: Nvidia, Microsoft, or Alphabet?','https://www.fool.com/investing/2026/07/26/best-quantum-computing-pick-and-shovel-play-nvidia/',4),(2,'anushka mukherji','...','2026-07-26',0,'What a Major Anthropic Chip Deal Really Means for AMD Stock','https://www.barchart.com/story/news/3469164/what-a-major-anthropic-chip-deal-really-means-for-amd-stock',2),(3,'sarina trangle','Jose Sarmento Matos / Bloomberg / Getty Images\n Americaâ€™s AI buildout will be in the spotlight this week, with some of the worldâ€™s biggest tech companies due to hand in their latest results and Federa...','2026-07-26',0.7802,'What to Expect in Markets This Week: Amazon, Apple, Meta and Microsoft Earnings; Fed Interest Rate Decision','https://www.investopedia.com/what-to-expect-in-markets-this-week-amazon-apple-meta-microsoft-earnings-fed-interest-rate-decision-12025525',40),(4,'wall street breakfast','Listen on the go! A daily podcast of Wall Street Breakfast will be available by 8:00 a.m. on Seeking Alpha, iTunes, Spotify.\nalexsl/iStock via Getty Images\n \nUp for a challenge? Test your knowledge on...','2026-07-26',0.19742,'Wall Street Week Ahead','https://seekingalpha.com/article/4925673-wall-street-week-ahead',8),(5,'null','Please enable JS and disable any ad blocker...','2026-07-26',0.06364,'UBS hurries to reset AMD stock target on key AI Day signals','https://www.thestreet.com/investing/stocks/ubs-raises-amd-stock-price-target-730-advancing-ai-server-cpu',2),(6,'paula ricardo','...','2026-07-26',0.25456,'Markel Group Inc. Boosts Holdings in Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/07/26/markel-group-inc-boosts-holdings-in-microsoft-corporation-msft.html',20),(7,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-26',0.20102,'International Business Machines Corporation (IBM) Survived One AI Scare in February. This One Might Be Different.','https://www.insidermonkey.com/blog/international-business-machines-corporation-ibm-survived-one-ai-scare-in-february-this-one-might-be-different-1803493/',4),(8,'defense world staff','\n					Posted by Defense World Staff on Jul 26th, 2026\n\nCandriam S.C.A. boosted its position in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 3.4% in the 1st quarter, according to the company i...','2026-07-26',0.66856,'Microsoft Corporation $MSFT is Candriam S.C.A.â€™s 2nd Largest Position','https://www.defenseworld.net/2026/07/26/microsoft-corporation-msft-is-candriam-s-c-a-s-2nd-largest-position.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'ld investments','...','2026-07-27',0,'Microsoft: Azure Skies, Premium Altitude','https://seekingalpha.com/article/4925894-microsoft-azure-skies-premium-altitude',4),(3,'rich asplund','...','2026-07-27',0.16184,'Stocks Fall from Early Highs as Chipmakers Retreat','https://www.barchart.com/story/news/3481805/stocks-fall-from-early-highs-as-chipmakers-retreat',2),(4,'null','Please enable JS and disable any ad blocker...','2026-07-27',-0.25788,'Jim Cramer has terrifying one-word message for tech stock investors','https://www.thestreet.com/investing/stocks/jim-cramer-warns-tech-investors-trim-ai-chip-stocks',2),(5,'rich asplund','...','2026-07-27',-0.04128,'Stocks Rally as Middle East Tensions Ease','https://www.barchart.com/story/news/3480783/stocks-rally-as-middle-east-tensions-ease',2),(6,'yahoo finance','...','2026-07-27',0.52776,'Tech stocks today: Big Tech earnings this week mark a pivotal moment for the AI trade','https://ca.finance.yahoo.com/news/tech-stocks-today-big-tech-earnings-134611080.html',2),(7,'yahoo finance video','...','2026-07-27',-0.1024,'Is AI spending actually a sore spot for Big Tech margins?','https://ca.finance.yahoo.com/video/is-ai-spending-actually-a-sore-spot-for-big-tech-margins-134333155.html',2),(8,'mitch edgeman','...','2026-07-27',0,'Microsoftâ€™s (MSFT) â€œBuyâ€ Rating Reiterated at Guggenheim','https://www.themarketsdaily.com/2026/07/27/microsofts-msft-buy-rating-reiterated-at-guggenheim.html',2),(9,'shailja sharma','    tupungato/iStock Editorial via Getty Images\n \ntupungato/iStock Editorial via Getty Images\nMicrosoft Corporation (MSFT) has spent the past year being punished, and now the punishment appears to be ...','2026-07-27',-0.18098,'Microsoft: The Market Is Right To Discount The $190 Billion Bet - For Now','https://seekingalpha.com/article/4925851-microsoft-the-market-is-right-to-discount-the-190-billion-bet-for-now',8);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -330,4 +331,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-27  4:30:21
+-- Dump completed on 2026-07-28  3:54:00

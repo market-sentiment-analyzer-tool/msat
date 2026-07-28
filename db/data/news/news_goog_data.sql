@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 9.7.1, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	9.7.1
+-- Server version	26.7.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -235,6 +235,7 @@ d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
+d8e109f2-8a37-11f1-9fbe-ee5f719dc0c0:1-57,
 d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
@@ -307,7 +308,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -316,7 +317,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'alex carchidi','Folksy wisdom holds that the surest way to make money during a gold rush was to sell shovels rather than swing picks. As with many emerging industries, quantum computing could be reviving that old dyn...','2026-07-26',0.81136,'Best Quantum Computing Pick-and-Shovel Play: Nvidia, Microsoft, or Alphabet?','https://www.fool.com/investing/2026/07/26/best-quantum-computing-pick-and-shovel-play-nvidia/',4),(2,'bill peters','Please enable JS and disable any ad blocker...','2026-07-26',0.72532,'The S&P 500â€™s earnings growth has gone bonkers thanks to one company','https://www.marketwatch.com/story/the-s-p-500s-earnings-growth-has-gone-bonkers-thanks-to-one-company-1c45b2ba?mod=mw_rss_topstories',4),(3,'anthony di pizio','Alphabet (GOOG +0.24%)(GOOGL +0.58%) released its operating results for the second quarter of 2026 (ended June 30) after the market closed on Wednesday. Once again, artificial intelligence (AI) fueled...','2026-07-26',0.63294,'Alphabet Just Delivered a Piece of AI-Related News That Sent Its Stock Tumbling. Should You Buy the Dip, or Run for the Hills?','https://www.fool.com/investing/2026/07/26/alphabet-ai-news-stock-tumbling-buy-dip-run-hills/',4),(4,'mohit oberoi','...','2026-07-25',0.38136,'Alphabet Is Getting â€˜Ambitiousâ€™ With AI. Donâ€™t Get Ambitious With GOOGL Stock.','https://www.barchart.com/story/news/3464735/alphabet-is-getting-ambitious-with-ai-dont-get-ambitious-with-googl-stock',20),(5,'juxtaposed ideas','...','2026-07-25',0.00536,'Alphabet: No FCF Pain, No Compute/Advertising Gain; SpaceX Gains Create Noise','https://seekingalpha.com/article/4925598-alphabet-no-fcf-pain-no-computeadvertising-gain-spacex-gains-create-noise',4),(6,'sristi suman jayaswal','...','2026-07-25',0.56768,'2 Neocloud Stocks to Buy Now After Google Earnings','https://www.barchart.com/story/news/3462434/2-neocloud-stocks-to-buy-now-after-google-earnings',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'alex carchidi','Folksy wisdom holds that the surest way to make money during a gold rush was to sell shovels rather than swing picks. As with many emerging industries, quantum computing could be reviving that old dyn...','2026-07-26',0.81136,'Best Quantum Computing Pick-and-Shovel Play: Nvidia, Microsoft, or Alphabet?','https://www.fool.com/investing/2026/07/26/best-quantum-computing-pick-and-shovel-play-nvidia/',4),(3,'bill peters','Please enable JS and disable any ad blocker...','2026-07-26',0.72532,'The S&P 500â€™s earnings growth has gone bonkers thanks to one company','https://www.marketwatch.com/story/the-s-p-500s-earnings-growth-has-gone-bonkers-thanks-to-one-company-1c45b2ba?mod=mw_rss_topstories',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -330,4 +331,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-27  4:30:21
+-- Dump completed on 2026-07-28  3:54:00
