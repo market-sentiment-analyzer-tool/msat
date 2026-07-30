@@ -163,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
+851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -308,7 +309,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,7 +318,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'ld investments','...','2026-07-27',0,'Microsoft: Azure Skies, Premium Altitude','https://seekingalpha.com/article/4925894-microsoft-azure-skies-premium-altitude',4),(3,'rich asplund','...','2026-07-27',0.16184,'Stocks Fall from Early Highs as Chipmakers Retreat','https://www.barchart.com/story/news/3481805/stocks-fall-from-early-highs-as-chipmakers-retreat',2),(4,'null','Please enable JS and disable any ad blocker...','2026-07-27',-0.25788,'Jim Cramer has terrifying one-word message for tech stock investors','https://www.thestreet.com/investing/stocks/jim-cramer-warns-tech-investors-trim-ai-chip-stocks',2),(5,'rich asplund','...','2026-07-27',-0.04128,'Stocks Rally as Middle East Tensions Ease','https://www.barchart.com/story/news/3480783/stocks-rally-as-middle-east-tensions-ease',2),(6,'yahoo finance','...','2026-07-27',0.52776,'Tech stocks today: Big Tech earnings this week mark a pivotal moment for the AI trade','https://ca.finance.yahoo.com/news/tech-stocks-today-big-tech-earnings-134611080.html',2),(7,'yahoo finance video','...','2026-07-27',-0.1024,'Is AI spending actually a sore spot for Big Tech margins?','https://ca.finance.yahoo.com/video/is-ai-spending-actually-a-sore-spot-for-big-tech-margins-134333155.html',2),(8,'mitch edgeman','...','2026-07-27',0,'Microsoftâ€™s (MSFT) â€œBuyâ€ Rating Reiterated at Guggenheim','https://www.themarketsdaily.com/2026/07/27/microsofts-msft-buy-rating-reiterated-at-guggenheim.html',2),(9,'shailja sharma','    tupungato/iStock Editorial via Getty Images\n \ntupungato/iStock Editorial via Getty Images\nMicrosoft Corporation (MSFT) has spent the past year being punished, and now the punishment appears to be ...','2026-07-27',-0.18098,'Microsoft: The Market Is Right To Discount The $190 Billion Bet - For Now','https://seekingalpha.com/article/4925851-microsoft-the-market-is-right-to-discount-the-190-billion-bet-for-now',8);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'rich asplund','...','2026-07-29',0,'Stocks Tumble Ahead of FOMC as Chipmakers Plunge','https://www.barchart.com/story/news/3528866/stocks-tumble-ahead-of-fomc-as-chipmakers-plunge',2),(2,'wajeeh khan','...','2026-07-29',0,'What Comes Next for AAPL Stock After Apple Hits $5 Trillion Market Cap','https://www.barchart.com/story/news/3528455/what-comes-next-for-aapl-stock-after-apple-hits-5-trillion-market-cap',2),(3,'rich asplund','...','2026-07-29',-0.48992,'Stocks Pressured by Renewed US-Iran Hostilities','https://www.barchart.com/story/news/3527305/stocks-pressured-by-renewed-us-iran-hostilities',2),(4,'max byerly','...','2026-07-29',0.35232,'Microsoft (NASDAQ:MSFT) Stock Price Up 1.9% â€“ Whatâ€™s Next?','https://www.tickerreport.com/banking-finance/13520818/microsoft-nasdaqmsft-stock-price-up-1-9-whats-next.html',20),(5,'investinglive','The broader US stock indices are trading lower on the day with clearly defined support resistance levels. In the video above I take a look at the NASDAQ and the S&P indices, outline the short-term sup...','2026-07-29',-0.07288,'Broader US indices lower. What are the key levels in play for the Nasdaq and the S&P','https://investinglive.com/technical-analysis/broader-us-indices-lower-what-are-the-key-levels-in-play-for-the-nasdaq-and-the-s-p/',4),(6,'bryan mena','\n            â€¢ After one of the most unpredictable meetings in years, the Federal Reserve left its key interest rate unchanged Wednesday.\n    \n\n            â€¢ That uncertainty ahead of the outcome was ...','2026-07-29',-0.27986,'Fed to announce pivotal rate decision as inflation and war with Iran cloud outlook','https://www.cnn.com/2026/07/29/business/live-news/federal-reserve-interest-rate-07-29-26',4),(7,'aaron mcdade','David Paul Morris / Bloomberg / Getty Images\n Microsoft is scheduled to report earnings after the closing bell today, with traders anticipating a big move from the software giantâ€™s stock.\n\n Based on r...','2026-07-29',0.46922,'Hereâ€™s How Much Microsoft Stock Is Expected to Move After Earnings','https://www.investopedia.com/here-is-how-much-microsoft-stock-is-expected-to-move-after-earnings-msft-q4-fy2026-update-12027207',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +332,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-28  3:54:00
+-- Dump completed on 2026-07-30  3:49:28

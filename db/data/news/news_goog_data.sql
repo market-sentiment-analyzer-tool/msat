@@ -163,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
+851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -308,7 +309,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,7 +318,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'alex carchidi','Folksy wisdom holds that the surest way to make money during a gold rush was to sell shovels rather than swing picks. As with many emerging industries, quantum computing could be reviving that old dyn...','2026-07-26',0.81136,'Best Quantum Computing Pick-and-Shovel Play: Nvidia, Microsoft, or Alphabet?','https://www.fool.com/investing/2026/07/26/best-quantum-computing-pick-and-shovel-play-nvidia/',4),(3,'bill peters','Please enable JS and disable any ad blocker...','2026-07-26',0.72532,'The S&P 500â€™s earnings growth has gone bonkers thanks to one company','https://www.marketwatch.com/story/the-s-p-500s-earnings-growth-has-gone-bonkers-thanks-to-one-company-1c45b2ba?mod=mw_rss_topstories',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'stephan jacobs','...','2026-07-29',0.46872,'Alphabet Inc. $GOOG is Turim 21 Investimentos Ltda.â€™s 6th Largest Position','https://www.thelincolnianonline.com/2026/07/29/alphabet-inc-goog-is-turim-21-investimentos-ltda-s-6th-largest-position.html',2),(2,'rick orford','...','2026-07-29',0,'Tesla is Betting Robots Are The Next Nvidia. This Could Be the Biggest Shift Since the AI Boom.','https://www.barchart.com/story/news/3528105/tesla-is-betting-robots-are-the-next-nvidia-this-could-be-the-biggest-shift-since-the-ai-boom',2),(3,'ethan ryder','...','2026-07-29',0.2368,'Soroban Capital Partners LP Sells 1,444,082 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13520858/soroban-capital-partners-lp-sells-1444082-shares-of-alphabet-inc-goog.html',2),(4,'kyle jackson','...','2026-07-29',0,'Alphabet Inc. $GOOG Position Lifted by Quantinno Capital Management LP','https://www.watchlistnews.com/alphabet-inc-goog-position-lifted-by-quantinno-capital-management-lp/11161786.html',2),(5,'danessa lincoln','...','2026-07-29',-0.21856,'Alphabet Inc. $GOOG Holdings Cut by Maverick Capital Ltd.','https://www.themarketsdaily.com/2026/07/29/alphabet-inc-goog-holdings-cut-by-maverick-capital-ltd.html',2),(6,'daniel howley','...','2026-07-29',0.60632,'Amazon Q2 earnings to put spotlight on AWS growth amid AI spending','https://finance.yahoo.com/news/amazon-q2-earnings-to-put-spotlight-on-aws-growth-amid-ai-spending-115622323.html',20),(7,'nicole kennedy','...','2026-07-29',0.52776,'Elite Wealth Management Inc. Sells 3,184 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/elite-wealth-management-inc-sells-3184-shares-of-alphabet-inc-goog/11161460.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +332,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-28  3:54:00
+-- Dump completed on 2026-07-30  3:49:28

@@ -163,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
+851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -308,7 +309,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,7 +318,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'rich asplund','...','2026-07-27',0.16184,'Stocks Fall from Early Highs as Chipmakers Retreat','https://www.barchart.com/story/news/3481805/stocks-fall-from-early-highs-as-chipmakers-retreat',2),(3,'brian sozzi','...','2026-07-27',-0.67056,'Semiconductor stock charts just formed this bearish shape that signals more potential losses','https://ca.finance.yahoo.com/news/semiconductor-stock-charts-just-formed-this-bearish-shape-that-signals-more-potential-losses-145440205.html',2),(4,'louis juricic','...','2026-07-27',0.47952,'Nvidia slips 4% as blockbuster AI spending spree triggers balance sheet jitters','https://www.investing.com/news/stock-market-news/nvidia-slips-4-as-blockbuster-ai-spending-spree-triggers-balance-sheet-jitters-4814594',20),(5,'gerelyn terzo','\n							Oil prices fell 6%, lifting stocks at the open, but a heavy earnings slate and an incoming Fed meeting are keeping conviction thin.													\n\n							ASML and Nvidia reversed early gains af...','2026-07-27',-0.39146,'Live Nasdaq Composite: Markets Rise as Oil Prices Fall But Chip Stocks Drop on Chinaâ€™s Competitive Threat','https://247wallst.com/investing/2026/07/27/live-nasdaq-composite-markets-rise-as-oil-prices-fall-but-chip-stocks-drop-on-chinas-competitive-threat/',4),(6,'aj tiarsmith','Investing\n\n							Dan Ives cites a 12-to-1 demand-to-supply ratio for NVIDIA chips, backed by $82B in Q1 revenue and $91B Q2 guidance.													\n\n							Meta raised its 2026 capex guidance to a ran...','2026-07-27',0.53658,'Dan Ives Is Still Bullish on Nvidia: â€˜Weâ€™re in the 3rd Inning of the AI Revolution,â€™ and Demand Is Outpacing Supply â€œ12 to 1â€','https://247wallst.com/investing/2026/07/27/dan-ives-is-still-bullish-on-nvidia-were-in-the-3rd-inning-of-the-ai-revolution-and-demand-is-outpacing-supply-12-to-1/',4),(7,'rich asplund','...','2026-07-27',-0.04128,'Stocks Rally as Middle East Tensions Ease','https://www.barchart.com/story/news/3480783/stocks-rally-as-middle-east-tensions-ease',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich asplund','...','2026-07-29',0,'Stocks Tumble Ahead of FOMC as Chipmakers Plunge','https://www.barchart.com/story/news/3528866/stocks-tumble-ahead-of-fomc-as-chipmakers-plunge',2),(2,'null','Please enable JS and disable any ad blocker...','2026-07-29',0.06364,'Nvidia makes revealing bet on secretive lab','https://www.thestreet.com/technology/nvidia-makes-revealing-bet-on-secretive-lab',20),(3,'wajeeh khan','...','2026-07-29',0,'What Comes Next for AAPL Stock After Apple Hits $5 Trillion Market Cap','https://www.barchart.com/story/news/3528455/what-comes-next-for-aapl-stock-after-apple-hits-5-trillion-market-cap',2),(4,'vandita jadeja','Investing\n\n							NVDA earns a BUY rating with a $262.81 price target, representing 27% upside, backed by $81.6 billion in Q1 revenue, up 85% year over year.													\n\n							NVDA trades at a P/E ...','2026-07-29',0.19982,'The AI Trade Is Still On: Why Nvidia Remains at the Center of It','https://247wallst.com/investing/2026/07/29/the-ai-trade-is-still-on-why-nvidia-remains-at-the-center-of-it/',40),(5,'rick orford','...','2026-07-29',0,'Tesla is Betting Robots Are The Next Nvidia. This Could Be the Biggest Shift Since the AI Boom.','https://www.barchart.com/story/news/3528105/tesla-is-betting-robots-are-the-next-nvidia-this-could-be-the-biggest-shift-since-the-ai-boom',2),(6,'alanna baker','...','2026-07-29',-0.57472,'NVIDIA (NASDAQ:NVDA) Trading Down 5% â€“ Time to Sell?','https://www.thelincolnianonline.com/2026/07/29/nvidia-nasdaqnvda-trading-down-5-time-to-sell.html',20),(7,'ines ferrÃ©','...','2026-07-29',-0.12248,'Nvidia, Micron, AMD sink as SK Hynix results fail to impress, AI trade unwinds','https://finance.yahoo.com/markets/article/nvidia-micron-amd-sink-as-sk-hynix-results-fail-to-impress-ai-trade-unwinds-130352334.html',20),(8,'mark dietrich','...','2026-07-29',0.49992,'Erste Group Bank Increases Earnings Estimates for NVIDIA','https://www.watchlistnews.com/erste-group-bank-increases-earnings-estimates-for-nvidia/11161643.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +332,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-28  3:54:00
+-- Dump completed on 2026-07-30  3:49:28

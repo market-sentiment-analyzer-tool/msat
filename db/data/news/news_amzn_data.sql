@@ -163,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
+851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -308,7 +309,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,7 +318,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'sushree mohanty','...','2026-07-27',0.56768,'Arm Holdings Earnings Preview: AI Optimism Faces Its Next Big Test','https://www.barchart.com/story/news/3482286/arm-holdings-earnings-preview-ai-optimism-faces-its-next-big-test',2),(2,'yahoo finance','...','2026-07-27',0.52776,'Tech stocks today: Big Tech earnings this week mark a pivotal moment for the AI trade','https://ca.finance.yahoo.com/news/tech-stocks-today-big-tech-earnings-134611080.html',2),(3,'yahoo finance video','...','2026-07-27',-0.1024,'Is AI spending actually a sore spot for Big Tech margins?','https://ca.finance.yahoo.com/video/is-ai-spending-actually-a-sore-spot-for-big-tech-margins-134333155.html',2),(4,'danessa lincoln','...','2026-07-27',0,'WJ Financial Advisors LLC Raises Stake in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/07/27/wj-financial-advisors-llc-raises-stake-in-amazon-com-inc-amzn.html',2),(5,'wall street breakfast','...','2026-07-27',0.35232,'Hiring Plans May Ramp Up','https://seekingalpha.com/article/4925802-hiring-plans-may-ramp-up',4),(6,'mohit oberoi','...','2026-07-27',0.272,'Mag 7 Q2 Earnings Havenâ€™t Been So â€˜Magnificent.â€™ What META, MSFT, and AMZN Need to Report to Turn the Tide.','https://www.barchart.com/story/news/3476568/mag-7-q2-earnings-havent-been-so-magnificent-what-meta-msft-and-amzn-need-to-report-to-turn-the-tide',20),(7,'gavin mcmaster','...','2026-07-27',0.272,'Option Volatility And Earnings Report For July 27-31','https://www.barchart.com/story/news/3475999/option-volatility-and-earnings-report-for-july-27-31',2),(8,'aaron rennie','Spencer Platt / Getty Images\n Major indexes logged mixed results to start the busiest week of the corporate earnings season, as chip stocks weighed on the Nasdaq Composite.\n\n The blue-chip Dow Jones I...','2026-07-27',-0.18144,'Stock Market Today: Futures Soar as Oil Prices Plunge on Pause in US-Iran Hostilities','https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-07272026-12027190',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'vandita jadeja','Investing\n\n							AMZN earns a BUY rating with a $308 target and 32% upside, backed by AWS hitting its fastest growth rate in 15 quarters.													\n\n							AMZN trades at 28x, which is the same mu...','2026-07-29',0.34224,'Can Amazon Continue Its Rally? Analysts Weigh In','https://247wallst.com/investing/2026/07/29/can-amazon-continue-its-rally-analysts-weigh-in/',40),(2,'wajeeh khan','...','2026-07-29',0,'What Comes Next for AAPL Stock After Apple Hits $5 Trillion Market Cap','https://www.barchart.com/story/news/3528455/what-comes-next-for-aapl-stock-after-apple-hits-5-trillion-market-cap',2),(3,'caroline horne','...','2026-07-29',0.14232,'Short Interest in Direxion Daily AMZN Bear 1X Shares (NASDAQ:AMZD) Grows By 97.0%','https://www.thelincolnianonline.com/2026/07/29/short-interest-in-direxion-daily-amzn-bear-1x-shares-nasdaqamzd-grows-by-97-0.html',20),(4,'sheryar siddiq','...','2026-07-29',0.14232,'Anthropicâ€™s IPO Could Be a $240 Billion Moment for Amazon (AMZN)','https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-could-240-billion-143820086.html',200),(5,'null','Please enable JS and disable any ad blocker...','2026-07-29',0.20596,'Amazon just made a major move to reshape its entire AI strategy','https://www.thestreet.com/technology/amazon-reshapes-ai-strategy-deprecating-aws-nova-premier-gemini-models',20),(6,'ines ferrÃ©','...','2026-07-29',-0.12248,'Nvidia, Micron, AMD sink as SK Hynix results fail to impress, AI trade unwinds','https://finance.yahoo.com/markets/article/nvidia-micron-amd-sink-as-sk-hynix-results-fail-to-impress-ai-trade-unwinds-130352334.html',20),(7,'joel south','Investing\n\n							Ackman and Tepper independently allocated over 15% of their portfolios to AMZN in Q1 2026, with Tepper nearly doubling his share count quarter-over-quarter.													\n\n							AWS ...','2026-07-29',0.34196,'2 Billionaires, 1 Stock: Both Have More Than 15% of Their Portfolios in Amazon','https://247wallst.com/investing/2026/07/29/2-billionaires-1-stock-both-have-more-than-15-of-their-portfolios-in-amazon/',40),(8,'aaron mcdade','News of the day for July 29, 2026\nAngela Weiss / AFP / Getty Images\n Stock futures are pointing to a mixed open for major indexes as investors await a Federal Reserve decision on interest rates and ea...','2026-07-29',0.19972,'5 Things to Know Before the Stock Market Opens on Wednesday','https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-on-wednesday-july-29-2026-12029106',4),(9,'daniel howley','...','2026-07-29',0.60632,'Amazon Q2 earnings to put spotlight on AWS growth amid AI spending','https://finance.yahoo.com/news/amazon-q2-earnings-to-put-spotlight-on-aws-growth-amid-ai-spending-115622323.html',200);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +332,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-28  3:54:00
+-- Dump completed on 2026-07-30  3:49:28
