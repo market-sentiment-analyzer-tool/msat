@@ -182,7 +182,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
-a21c1d67-8afb-11f1-a924-3e8b3e3c3b74:1-183,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
@@ -285,6 +284,7 @@ f91b7d1c-711b-11f1-9531-026bf641fa89:1-59,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
+fb033aa5-8bc0-11f1-9352-86f0388e954e:1-110,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
@@ -309,7 +309,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,6 +318,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1va7kxp','p0jf5rs','2026-07-29',215,0.4753,'Capex 41b vs 42b expected, we\'re saved!\n\nJokes aside, good report, should continue to move higher when the market calms down from this bond yield scare'),(2,'stocks','1va7kxp','p0jdurp','2026-07-29',448,-0.0516,'Record earnings? Cant wait for the dump'),(3,'stocks','1va7kxp','p0jfjyr','2026-07-29',188,0.7783,'MSFT the solid steady Juggernaut. I feel good and can sleep well with my 100 shares'),(4,'stocks','1va7kxp','p0jgk6t','2026-07-29',72,0.1779,'Azure growth is insane '),(5,'stocks','1va7kxp','p0jg8c9','2026-07-29',16,0.2716,'What\'s their forecast is more important '),(6,'stocks','1va7kxp','p0jezxh','2026-07-29',25,0.2263,'Did they give 2027 capex guidanceÂ '),(7,'stocks','1va7kxp','p0jj20q','2026-07-29',13,-0.3182,'The dumbasses of the market will still be dumping this stock btw'),(8,'stocks','1va7kxp','p0jmzbn','2026-07-29',6,0,'Their cash ROIC is 22% BTW '),(9,'stocks','1va7kxp','p0jnuuw','2026-07-29',6,0.7814,'Revenue, Azure, EPS, Copilot: excellent.  \nFree cash flow after capex: still compressed.\n\nSo far it all looks excellent news for the stock, but let\'s wait for the call to end and see what the management says.'),(10,'stocks','1va7kxp','p0jfro7','2026-07-29',18,-0.4389,'Here comes the dump! Stock market hasnâ€™t made sense for a few years now. '),(11,'stocks','1va7kxp','p0jdq9b','2026-07-29',67,0,'Who is actually using copilot? Is this just companies paying for the employee seats? My organizations gives us copilot, but I don\'t see anyone ever using it.'),(12,'stocks','1va7kxp','p0jjzyt','2026-07-29',10,0.4585,'Theyâ€™ll never make me hate you Microsoft'),(13,'stocks','1va7kxp','p0kbn1p','2026-07-29',5,0.3182,'MSFT jumped as high as it did because they realized I sold covered calls and wanted to make sure they were in the money. '),(14,'stocks','1va7kxp','p0jiers','2026-07-29',2,0,'Anything about capex?'),(15,'stocks','1va7kxp','p0jnhte','2026-07-29',2,0.6249,'Regardless of the stock movement the next day I feel good about this latest report. If it does fall tomorrow itâ€™s another day to add shares.'),(16,'stocks','1va7kxp','p0jshsc','2026-07-29',2,0.5423,'Buy the dip'),(17,'stocks','1va7kxp','p0kj110','2026-07-29',2,0,'30,000 paid co-pilot seats is an enormous signal. Thatâ€™s only 6% of their existing ecosystem potential. Huge runway there. \n\nPrediction: Theyâ€™ll be the core business layer for accessing AI enterprise and theyâ€™re gonna rake. '),(18,'stocks','1va7kxp','p0km73z','2026-07-29',2,0.5481,'I think the 3 surviving juggernauts are:\n\n* Microsoft: Locked in Enterprise customers.\n* Google: So much distribution and human data dominance.\n* Amazon: A little of both, plus robotics dominance.\n\nFacebook I\'m not sure about.'),(19,'stocks','1va7kxp','p0kyg3k','2026-07-30',2,-0.5423,'Gonna see short squeeze tomorrow'),(20,'stocks','1va7kxp','p0jgfia','2026-07-29',3,0,'ho-lee-she-it'),(21,'stocks','1va7kxp','p0k7asi','2026-07-29',2,0.2023,'So now that Microsoft has shown that increased capex spending does have a tangible return, will this mean money will rotate back into semis and memory?'),(22,'stocks','1va7kxp','p0jef4l','2026-07-29',1,0.7717,'Yeah, now tell me what the numbers are when you exclude the profits from an increased value of Anthropic.'),(23,'stocks','1va7kxp','p0k44ze','2026-07-29',2,0.1027,'Inverse Reddit (everyone said it was guaranteed to drop like alphabet)'),(24,'stocks','1va7kxp','p0jhb5j','2026-07-29',1,0.2263,'Did they announce FY27 guidance yet? '),(25,'stocks','1va7kxp','p0jhoxd','2026-07-29',1,-0.6124,'But all markets are zooming down.\n\nMicrosoft performance is not being regarded'),(26,'stocks','1va7kxp','p0jmn4h','2026-07-29',1,0,'My(!'),(27,'stocks','1va7kxp','p0k30qo','2026-07-29',1,0.5106,'Free cashflow is dropping. AI Capex is likely to continue to rise faster than revenues. '),(28,'stocks','1va7kxp','p0k4sho','2026-07-29',1,-0.5859,'At least this will cancel out my Meta losses'),(29,'stocks','1va7kxp','p0kya99','2026-07-30',1,0,'One of the MmAGA'),(30,'stocks','1va7kxp','p0ju0ri','2026-07-29',1,-0.4019,'the problem at this point is trump'),(31,'stocks','1va7kxp','p0ji251','2026-07-29',-1,0.569,'Bought many years ago at $2.20 a share.  Not selling, gonna give to my kids someday.  '),(32,'stocks','1va7kxp','p0k66cu','2026-07-29',-1,-0.5622,'Crazy how msft is up 7% AH yet GOOG was down after they CRUSHED their earnings. '),(33,'stocks','1va7kxp','p0k8krr','2026-07-29',-1,-0.4588,'Willl be down 10% at open '),(34,'stocks','1va7kxp','p0l8caj','2026-07-30',-1,0.128,'Time to sell and buy Space-X then? '),(35,'stocks','1va7kxp','p0jr1am','2026-07-29',-3,0.7579,'Great earnings and yet they laid off so many people. This world is so unserious');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +332,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-29  3:18:44
+-- Dump completed on 2026-07-30  2:49:19
