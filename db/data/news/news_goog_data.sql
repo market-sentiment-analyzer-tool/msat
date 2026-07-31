@@ -135,6 +135,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
+69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -309,7 +310,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,7 +319,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'stephan jacobs','...','2026-07-29',0.46872,'Alphabet Inc. $GOOG is Turim 21 Investimentos Ltda.â€™s 6th Largest Position','https://www.thelincolnianonline.com/2026/07/29/alphabet-inc-goog-is-turim-21-investimentos-ltda-s-6th-largest-position.html',2),(2,'rick orford','...','2026-07-29',0,'Tesla is Betting Robots Are The Next Nvidia. This Could Be the Biggest Shift Since the AI Boom.','https://www.barchart.com/story/news/3528105/tesla-is-betting-robots-are-the-next-nvidia-this-could-be-the-biggest-shift-since-the-ai-boom',2),(3,'ethan ryder','...','2026-07-29',0.2368,'Soroban Capital Partners LP Sells 1,444,082 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13520858/soroban-capital-partners-lp-sells-1444082-shares-of-alphabet-inc-goog.html',2),(4,'kyle jackson','...','2026-07-29',0,'Alphabet Inc. $GOOG Position Lifted by Quantinno Capital Management LP','https://www.watchlistnews.com/alphabet-inc-goog-position-lifted-by-quantinno-capital-management-lp/11161786.html',2),(5,'danessa lincoln','...','2026-07-29',-0.21856,'Alphabet Inc. $GOOG Holdings Cut by Maverick Capital Ltd.','https://www.themarketsdaily.com/2026/07/29/alphabet-inc-goog-holdings-cut-by-maverick-capital-ltd.html',2),(6,'daniel howley','...','2026-07-29',0.60632,'Amazon Q2 earnings to put spotlight on AWS growth amid AI spending','https://finance.yahoo.com/news/amazon-q2-earnings-to-put-spotlight-on-aws-growth-amid-ai-spending-115622323.html',20),(7,'nicole kennedy','...','2026-07-29',0.52776,'Elite Wealth Management Inc. Sells 3,184 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/elite-wealth-management-inc-sells-3184-shares-of-alphabet-inc-goog/11161460.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'michael walen','...','2026-07-30',0.46872,'Alphabet Inc. $GOOG is Redwood Grove Capital LLCâ€™s 2nd Largest Position','https://www.themarketsdaily.com/2026/07/30/alphabet-inc-goog-is-redwood-grove-capital-llcs-2nd-largest-position.html',2),(2,'michael walen','...','2026-07-30',0.39512,'Talon Private Wealth LLC Invests $527,000 in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/07/30/talon-private-wealth-llc-invests-527000-in-alphabet-inc-goog.html',2),(3,'alanna baker','...','2026-07-30',-0.2368,'MSA Advisors LLC Cuts Stake in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/07/30/msa-advisors-llc-cuts-stake-in-alphabet-inc-goog.html',2),(4,'mark dietrich','...','2026-07-30',0,'Alphabet Inc. $GOOG Stake Reduced by Ruane Cunniff & Goldfarb L.P.','https://www.watchlistnews.com/alphabet-inc-goog-stake-reduced-by-ruane-cunniff-goldfarb-l-p/11163625.html',2),(5,'kyle jackson','...','2026-07-30',0.5944,'Alphabet Inc. $GOOG is Oddo BHF Asset Management Sasâ€™ 7th Largest Position','https://www.watchlistnews.com/alphabet-inc-goog-is-oddo-bhf-asset-management-sas-7th-largest-position/11163589.html',2),(6,'joseph griffin','...','2026-07-30',0.2368,'Claris Financial LLC Sells 6,137 Shares of Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13522263/claris-financial-llc-sells-6137-shares-of-alphabet-inc-goog.html',2),(7,'kyle jackson','...','2026-07-30',-0.42136,'Claris Financial LLC Reduces Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/claris-financial-llc-reduces-position-in-alphabet-inc-goog/11163192.html',2),(8,'defense world staff','\n					Posted by Defense World Staff on Jul 30th, 2026\n\nAmundi boosted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 22.9% during the 1st quarter, according to the company in ...','2026-07-30',0.19988,'Alphabet Inc. $GOOG Position Lifted by Amundi','https://www.defenseworld.net/2026/07/30/alphabet-inc-goog-position-lifted-by-amundi.html',4),(9,'abmn staff','...','2026-07-30',0.46872,'Alphabet Inc. $GOOG is Amundiâ€™s 10th Largest Position','https://www.americanbankingnews.com/2026/07/30/alphabet-inc-goog-is-amundis-10th-largest-position.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -332,4 +333,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-30  3:49:28
+-- Dump completed on 2026-07-31  4:15:59

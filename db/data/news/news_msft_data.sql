@@ -135,6 +135,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
+69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -309,7 +310,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,7 +319,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'rich asplund','...','2026-07-29',0,'Stocks Tumble Ahead of FOMC as Chipmakers Plunge','https://www.barchart.com/story/news/3528866/stocks-tumble-ahead-of-fomc-as-chipmakers-plunge',2),(2,'wajeeh khan','...','2026-07-29',0,'What Comes Next for AAPL Stock After Apple Hits $5 Trillion Market Cap','https://www.barchart.com/story/news/3528455/what-comes-next-for-aapl-stock-after-apple-hits-5-trillion-market-cap',2),(3,'rich asplund','...','2026-07-29',-0.48992,'Stocks Pressured by Renewed US-Iran Hostilities','https://www.barchart.com/story/news/3527305/stocks-pressured-by-renewed-us-iran-hostilities',2),(4,'max byerly','...','2026-07-29',0.35232,'Microsoft (NASDAQ:MSFT) Stock Price Up 1.9% â€“ Whatâ€™s Next?','https://www.tickerreport.com/banking-finance/13520818/microsoft-nasdaqmsft-stock-price-up-1-9-whats-next.html',20),(5,'investinglive','The broader US stock indices are trading lower on the day with clearly defined support resistance levels. In the video above I take a look at the NASDAQ and the S&P indices, outline the short-term sup...','2026-07-29',-0.07288,'Broader US indices lower. What are the key levels in play for the Nasdaq and the S&P','https://investinglive.com/technical-analysis/broader-us-indices-lower-what-are-the-key-levels-in-play-for-the-nasdaq-and-the-s-p/',4),(6,'bryan mena','\n            â€¢ After one of the most unpredictable meetings in years, the Federal Reserve left its key interest rate unchanged Wednesday.\n    \n\n            â€¢ That uncertainty ahead of the outcome was ...','2026-07-29',-0.27986,'Fed to announce pivotal rate decision as inflation and war with Iran cloud outlook','https://www.cnn.com/2026/07/29/business/live-news/federal-reserve-interest-rate-07-29-26',4),(7,'aaron mcdade','David Paul Morris / Bloomberg / Getty Images\n Microsoft is scheduled to report earnings after the closing bell today, with traders anticipating a big move from the software giantâ€™s stock.\n\n Based on r...','2026-07-29',0.46922,'Hereâ€™s How Much Microsoft Stock Is Expected to Move After Earnings','https://www.investopedia.com/here-is-how-much-microsoft-stock-is-expected-to-move-after-earnings-msft-q4-fy2026-update-12027207',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'caroline horne','...','2026-07-30',0,'Microsoft (NASDAQ:MSFT) Earns â€œBuyâ€ Rating from TD Cowen','https://www.thelincolnianonline.com/2026/07/30/microsoft-nasdaqmsft-earns-buy-rating-from-td-cowen.html',20),(2,'patrick sanders','Microsoft (MSFT +15.51%) stock is up 13% today as I write this on the strength of quarterly earnings that saw revenue increase 18% and cloud computing revenue exceed $100 billion for the first time.\nB...','2026-07-30',0.53708,'$19.6 Billion: The Microsoft Earnings Number That Matters Most','https://www.fool.com/investing/2026/07/30/196-billion-the-microsoft-earnings-number-that-matters-most/',40),(3,'julia ostian','...','2026-07-30',-0.21856,'Why Microsoft Is Winning The AI War And Alphabet Is Falling Behind','https://seekingalpha.com/article/4927794-why-microsoft-is-winning-the-ai-war-and-alphabet-is-falling-behind',40),(4,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-30',0.19968,'Microsoft (MSFT) Soars, Meta (META) Sinks After Earningsâ€”Hereâ€™s Why','https://www.insidermonkey.com/blog/microsoft-msft-soars-meta-meta-sinks-after-earnings-heres-why-1805951/',40),(5,'aaron mcdade','Matthias Balk / picture alliance via Getty Images\nMicrosoft shares surged after its quarterly earnings exceeded expectations.\nAnalysts praised Microsoftâ€™s ability to balance revenue growth and profit ...','2026-07-30',0.32202,'Microsoft Stock Soars on Solid Q4 Results','https://www.investopedia.com/market-update-microsoft-stock-soars-on-solid-q4-results-msft-12030797',40),(6,'logan wallace','...','2026-07-30',0.60632,'Microsoft (NASDAQ:MSFT) Shares Gap Up Following Better-Than-Expected Earnings','https://www.tickerreport.com/banking-finance/13522746/microsoft-nasdaqmsft-shares-gap-up-following-better-than-expected-earnings.html',20),(7,'yahoo finance video','...','2026-07-30',0.272,'Microsoft stock surges on earnings: A closer look at Copilot, Azure, and capex','https://ca.finance.yahoo.com/video/microsoft-stock-surges-earnings-closer-142000679.html',20),(8,'cision pr newswire','Searching for your content...\n\n                        In-Language News\n                    \n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\nJul 30, 2026, 10:07 ET\nShare this article\nAlert: Microso...','2026-07-30',0.17756,'Lost Money on Microsoft Corporation (MSFT)? Join Class Action Suit Seeking Recovery - Contact SueWallSt','https://www.prnewswire.com/news-releases/lost-money-on-microsoft-corporation-msft-join-class-action-suit-seeking-recovery---contact-suewallst-302839039.html',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -332,4 +333,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-30  3:49:28
+-- Dump completed on 2026-07-31  4:15:59

@@ -135,6 +135,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
+69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -309,7 +310,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,7 +319,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich asplund','...','2026-07-29',0,'Stocks Tumble Ahead of FOMC as Chipmakers Plunge','https://www.barchart.com/story/news/3528866/stocks-tumble-ahead-of-fomc-as-chipmakers-plunge',2),(2,'null','Please enable JS and disable any ad blocker...','2026-07-29',0.06364,'Nvidia makes revealing bet on secretive lab','https://www.thestreet.com/technology/nvidia-makes-revealing-bet-on-secretive-lab',20),(3,'wajeeh khan','...','2026-07-29',0,'What Comes Next for AAPL Stock After Apple Hits $5 Trillion Market Cap','https://www.barchart.com/story/news/3528455/what-comes-next-for-aapl-stock-after-apple-hits-5-trillion-market-cap',2),(4,'vandita jadeja','Investing\n\n							NVDA earns a BUY rating with a $262.81 price target, representing 27% upside, backed by $81.6 billion in Q1 revenue, up 85% year over year.													\n\n							NVDA trades at a P/E ...','2026-07-29',0.19982,'The AI Trade Is Still On: Why Nvidia Remains at the Center of It','https://247wallst.com/investing/2026/07/29/the-ai-trade-is-still-on-why-nvidia-remains-at-the-center-of-it/',40),(5,'rick orford','...','2026-07-29',0,'Tesla is Betting Robots Are The Next Nvidia. This Could Be the Biggest Shift Since the AI Boom.','https://www.barchart.com/story/news/3528105/tesla-is-betting-robots-are-the-next-nvidia-this-could-be-the-biggest-shift-since-the-ai-boom',2),(6,'alanna baker','...','2026-07-29',-0.57472,'NVIDIA (NASDAQ:NVDA) Trading Down 5% â€“ Time to Sell?','https://www.thelincolnianonline.com/2026/07/29/nvidia-nasdaqnvda-trading-down-5-time-to-sell.html',20),(7,'ines ferrÃ©','...','2026-07-29',-0.12248,'Nvidia, Micron, AMD sink as SK Hynix results fail to impress, AI trade unwinds','https://finance.yahoo.com/markets/article/nvidia-micron-amd-sink-as-sk-hynix-results-fail-to-impress-ai-trade-unwinds-130352334.html',20),(8,'mark dietrich','...','2026-07-29',0.49992,'Erste Group Bank Increases Earnings Estimates for NVIDIA','https://www.watchlistnews.com/erste-group-bank-increases-earnings-estimates-for-nvidia/11161643.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-30',0.24468,'Mark Cuban, Michael Burry send strong warning on Nvidia, AI stocks','https://www.thestreet.com/investing/stocks/mark-cuban-michael-burry-send-strong-warning-on-nvidia-ai-stocks',2),(2,'alanna baker','...','2026-07-30',0.14232,'Short Interest in Direxion Daily NVDA Bear 1X Shares (NASDAQ:NVDD) Increases By 120.5%','https://www.thelincolnianonline.com/2026/07/30/short-interest-in-direxion-daily-nvda-bear-1x-shares-nasdaqnvdd-increases-by-120-5.html',20),(3,'sristi suman jayaswal','...','2026-07-30',-0.44592,'Nvidia Stock Warning: Why Wedbush Is Worried About Rising Memory Prices','https://www.barchart.com/story/news/3556123/nvidia-stock-warning-why-wedbush-is-worried-about-rising-memory-prices',20),(4,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-30',0.17408,'Nvidia (NVDA) Reportedly Anchors Hut 8â€™s (HUT) $19.6 Billion AI Lease Bet','https://www.insidermonkey.com/blog/nvidia-nvda-reportedly-anchors-hut-8s-hut-19-6-billion-ai-lease-bet-1805372/',40),(5,'stuart chirls','\n\nCan the worldâ€™s newest technology give a boost to one of transportationâ€™s oldest? A plan by leading Asia companies wants to find out.\nNvidia and Kawasaki Heavy Industries announced a joint effort to...','2026-07-30',0.19794,'Chips to ships: Nvidia plans new shipbuilding investment with Kawasaki','https://www.freightwaves.com/news/chips-to-ships-nvidia-plans-new-shipbuilding-investment-with-kawasaki',40),(6,'aaron mcdade','CFOTO / Future Publishing / Getty Images\nGet personalized, AI-powered answers built on 27+ years of trusted expertise.\n Apple is set to report earnings after the closing bell today, with traders expec...','2026-07-30',0.47116,'Hereâ€™s How Much Traders Expect Apple Stock to Move After Earnings','https://www.investopedia.com/here-is-how-much-traders-expect-apple-stock-to-move-after-earnings-aapl-tim-cook-q3-fy2026-update-12028587',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -332,4 +333,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-30  3:49:28
+-- Dump completed on 2026-07-31  4:15:59
