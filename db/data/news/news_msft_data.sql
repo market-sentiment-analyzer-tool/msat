@@ -159,6 +159,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
+7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -310,7 +311,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -319,7 +320,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'caroline horne','...','2026-07-30',0,'Microsoft (NASDAQ:MSFT) Earns â€œBuyâ€ Rating from TD Cowen','https://www.thelincolnianonline.com/2026/07/30/microsoft-nasdaqmsft-earns-buy-rating-from-td-cowen.html',20),(2,'patrick sanders','Microsoft (MSFT +15.51%) stock is up 13% today as I write this on the strength of quarterly earnings that saw revenue increase 18% and cloud computing revenue exceed $100 billion for the first time.\nB...','2026-07-30',0.53708,'$19.6 Billion: The Microsoft Earnings Number That Matters Most','https://www.fool.com/investing/2026/07/30/196-billion-the-microsoft-earnings-number-that-matters-most/',40),(3,'julia ostian','...','2026-07-30',-0.21856,'Why Microsoft Is Winning The AI War And Alphabet Is Falling Behind','https://seekingalpha.com/article/4927794-why-microsoft-is-winning-the-ai-war-and-alphabet-is-falling-behind',40),(4,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-30',0.19968,'Microsoft (MSFT) Soars, Meta (META) Sinks After Earningsâ€”Hereâ€™s Why','https://www.insidermonkey.com/blog/microsoft-msft-soars-meta-meta-sinks-after-earnings-heres-why-1805951/',40),(5,'aaron mcdade','Matthias Balk / picture alliance via Getty Images\nMicrosoft shares surged after its quarterly earnings exceeded expectations.\nAnalysts praised Microsoftâ€™s ability to balance revenue growth and profit ...','2026-07-30',0.32202,'Microsoft Stock Soars on Solid Q4 Results','https://www.investopedia.com/market-update-microsoft-stock-soars-on-solid-q4-results-msft-12030797',40),(6,'logan wallace','...','2026-07-30',0.60632,'Microsoft (NASDAQ:MSFT) Shares Gap Up Following Better-Than-Expected Earnings','https://www.tickerreport.com/banking-finance/13522746/microsoft-nasdaqmsft-shares-gap-up-following-better-than-expected-earnings.html',20),(7,'yahoo finance video','...','2026-07-30',0.272,'Microsoft stock surges on earnings: A closer look at Copilot, Azure, and capex','https://ca.finance.yahoo.com/video/microsoft-stock-surges-earnings-closer-142000679.html',20),(8,'cision pr newswire','Searching for your content...\n\n                        In-Language News\n                    \n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\nJul 30, 2026, 10:07 ET\nShare this article\nAlert: Microso...','2026-07-30',0.17756,'Lost Money on Microsoft Corporation (MSFT)? Join Class Action Suit Seeking Recovery - Contact SueWallSt','https://www.prnewswire.com/news-releases/lost-money-on-microsoft-corporation-msft-join-class-action-suit-seeking-recovery---contact-suewallst-302839039.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'michael khouw','\nReference #18.64c83017.1785557713.5845c3aa\nhttps://errors.edgesuite.net/18.64c83017.1785557713.5845c3aa\n\nhttps://errors.edgesuite.net/18.64c83017.1785557713.5845c3aa...','2026-07-31',0.2368,'Microsoft shares are surging. Hereâ€™s how to still make money, says Mike Khouw','https://www.cnbc.com/2026/07/31/microsoft-shares-are-surging-heres-how-to-still-make-money-says-mike-khouw.html',400),(2,'insider monkey team','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-31',-0.10664,'Meta Dropped, Amazon and Microsoft Rallied: Donâ€™t Panic, Accumulate','https://www.insidermonkey.com/blog/meta-dropped-amazon-and-microsoft-rallied-dont-panic-accumulate-1806085/',40),(3,'the gross law firm','Cloudy with occasional showers this afternoon. High 79F. Winds light and variable. Chance of rain 40%..\r\n                                \nRain showers this evening with mostly clear conditions overnig...','2026-07-31',0.1761,'Lost Money on Microsoft Corporation (MSFT)? Join Class Action Suit Seeking Recovery - Contact ...','https://www.eagletribune.com/region/lost-money-on-microsoft-corporation-msft-join-class-action-suit-seeking-recovery---contact/article_13405cf8-d309-5def-b09b-9a9e12b99161.html',40),(4,'vandita jadeja','Investing\n\n							Azure crossed $100B in annual revenue and grew 43%, yet MSFT shares are down 19% YTD as full-year capex doubled to $116B.													\n\n							At 19x forward earnings with a 46.3% op...','2026-07-31',0.5669,'Microsoft Posts Record Revenue as Cloud Services Cross $100 Billion. Hereâ€™s Our New Price Target','https://247wallst.com/investing/2026/07/31/microsoft-posts-record-revenue-as-cloud-services-cross-100-billion-heres-our-new-price-target/',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -333,4 +334,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-31  4:15:59
+-- Dump completed on 2026-08-01  4:15:25

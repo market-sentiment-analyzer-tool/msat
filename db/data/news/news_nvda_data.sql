@@ -159,6 +159,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
+7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -310,7 +311,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -319,7 +320,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-07-30',0.24468,'Mark Cuban, Michael Burry send strong warning on Nvidia, AI stocks','https://www.thestreet.com/investing/stocks/mark-cuban-michael-burry-send-strong-warning-on-nvidia-ai-stocks',2),(2,'alanna baker','...','2026-07-30',0.14232,'Short Interest in Direxion Daily NVDA Bear 1X Shares (NASDAQ:NVDD) Increases By 120.5%','https://www.thelincolnianonline.com/2026/07/30/short-interest-in-direxion-daily-nvda-bear-1x-shares-nasdaqnvdd-increases-by-120-5.html',20),(3,'sristi suman jayaswal','...','2026-07-30',-0.44592,'Nvidia Stock Warning: Why Wedbush Is Worried About Rising Memory Prices','https://www.barchart.com/story/news/3556123/nvidia-stock-warning-why-wedbush-is-worried-about-rising-memory-prices',20),(4,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-07-30',0.17408,'Nvidia (NVDA) Reportedly Anchors Hut 8â€™s (HUT) $19.6 Billion AI Lease Bet','https://www.insidermonkey.com/blog/nvidia-nvda-reportedly-anchors-hut-8s-hut-19-6-billion-ai-lease-bet-1805372/',40),(5,'stuart chirls','\n\nCan the worldâ€™s newest technology give a boost to one of transportationâ€™s oldest? A plan by leading Asia companies wants to find out.\nNvidia and Kawasaki Heavy Industries announced a joint effort to...','2026-07-30',0.19794,'Chips to ships: Nvidia plans new shipbuilding investment with Kawasaki','https://www.freightwaves.com/news/chips-to-ships-nvidia-plans-new-shipbuilding-investment-with-kawasaki',40),(6,'aaron mcdade','CFOTO / Future Publishing / Getty Images\nGet personalized, AI-powered answers built on 27+ years of trusted expertise.\n Apple is set to report earnings after the closing bell today, with traders expec...','2026-07-30',0.47116,'Hereâ€™s How Much Traders Expect Apple Stock to Move After Earnings','https://www.investopedia.com/here-is-how-much-traders-expect-apple-stock-to-move-after-earnings-aapl-tim-cook-q3-fy2026-update-12028587',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rayliant','...','2026-07-31',0,'Why This Bubble Is Different (And Why It Could Get Bigger)','https://seekingalpha.com/article/4928804-why-this-bubble-is-different-why-it-could-get-bigger',4),(2,'null','...','2026-07-31',0,'NVIDIA Stock Price Today | Will NVDA Stock Price Today â†‘ or â†“ (Live Polymarket Odds for July 31, 2026)','https://www.actionnetwork.com/news/nvidia-stock-price-today-will-nvda-stock-price-today-up-or-down-live-polymarket-odds-for-july-31-2026',10),(3,'dante gardener','...','2026-07-31',-0.57472,'NVIDIA (NASDAQ:NVDA) Trading Down 3.6% â€“ Should You Sell?','https://www.thelincolnianonline.com/2026/07/31/nvidia-nasdaqnvda-trading-down-3-6-should-you-sell.html',20),(4,'lee jackson','Investing\n\n							Five dividend stocks under $10 deliver yields from 3% to 8%, offering steady income while letting investors build larger share positions.													\n\n							Gray Media (GTN) leads ...','2026-07-31',0.60842,'We Found 5 Hot Summer Bargain Dividend Stocks Trading Under $10 Everyone Knows','https://247wallst.com/investing/2026/07/31/we-found-5-hot-summer-bargain-dividend-stocks-trading-under-10-everyone-knows/',4),(5,'keithen drury','The stock market is full of excellent investment opportunities, and there is no shortage of them right now. I think investors must stay ready to buy at all times, as the market is always offering a de...','2026-07-31',0.80624,'Here Are My 4 Favorite Stocks to Buy in the Market','https://www.fool.com/investing/2026/07/31/here-are-my-4-favorite-stocks-to-buy-in-the-market/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -333,4 +334,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-31  4:15:59
+-- Dump completed on 2026-08-01  4:15:25
