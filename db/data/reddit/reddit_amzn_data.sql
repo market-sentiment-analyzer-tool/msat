@@ -75,6 +75,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
+38ad7643-8d59-11f1-ab55-d6a75f6c32d1:1-172,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -135,6 +136,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
+69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
@@ -163,6 +165,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
 848134d1-1068-11f1-bdc4-324e140e5083:1-61,
+851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
@@ -284,7 +287,6 @@ f91b7d1c-711b-11f1-9531-026bf641fa89:1-59,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
-fb033aa5-8bc0-11f1-9352-86f0388e954e:1-110,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
@@ -309,7 +311,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -318,6 +320,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1vbqntp','p0vl2mr','2026-07-31',26,0.9358,'A big portion of the deferred income tax was because of the gain on Anthropic investment. The investment caused their income to be higher which caused their tax liability to also be higher. If weâ€™re excluding the benefit to the Anthropic gain letâ€™s also exclude the applicable taxes associated with it. Operating Income grew by 43%, so if we were to use very rough estimates we can guess that taxes would have also increased by fairly close to 43%. exclude the Anthropic investment other income and assume that income tax grew by 43% Y/Y that would have put EPS at $2.16/share. '),(2,'ValueInvesting','1vbqntp','p0xj2jg','2026-07-31',5,0.9111,'The eps miscalculation aside I agree with you. The people acting like aws growth is so incredible are seriously overlooking how that growth is occurring. They are benefitting from circular deals, and they are throwing an absolutely nutty amount of money into expansion. Itâ€™s not surprising that they are expanding when they are dumping historic amounts of money into expanding. \n\nAll the while their major aws growth segments (ai compute focused datacenters) are being propped up by companies that are lowering the price of their own services to attract more business. Infinite demand never, not once, has ever resulted in the service provider lowering their costs. Like are memory makers lowering their prices because of the demand surge? No. Because that would be lunacy. That is such a huge red flagâ€¦ I donâ€™t get how people donâ€™t see this for what it is. US ai has already hit peak demand, and now the major players are starting a price war. Oh well, glad to see you get it at least lol '),(3,'ValueInvesting','1vbqntp','p0xmusk','2026-07-31',2,0.6486,'Thank you for sharing this deep dive'),(4,'ValueInvesting','1vbqntp','p0wam1r','2026-07-31',2,0.9703,'On the tax point, Dstein99 and civil_politics have you. If you strip the Anthropic gain out of income you have to strip the tax that came with it, and the estimates included the gain anyway. That part of the argument doesn\'t survive.\n\nBut civil_politics said the thing I\'d actually want to pull on: that real value is being generated even if the money Anthropic spends is money Amazon gave them. I think that\'s right, and it\'s exactly why the disclosure matters here.\n\nWhen a company invests in a customer and the customer spends it back, the same dollar shows up twice. Once as an investing outflow, once as revenue. Both entries are correct, nothing is being falsified. What\'s missing is any line on any of the three statements that tells you how big that loop is.\n\nSo the honest position isn\'t \"AWS growth is fake\". It\'s that nothing in this filing separates demand that arrived on its own from demand Amazon funded, and the size of that gap is exactly the thing both sides of this thread are assuming they already know.\n\nWhat would settle it: AI revenue by counterparty, or segment margins for the AI business. Neither is disclosed, and a run rate is a number you can produce from any single good month.\n\nThat\'s not a bear case. It\'s a claim about what the filings currently let anyone see, which is less than either side here is claiming.'),(5,'ValueInvesting','1vbqntp','p0yictj','2026-07-31',1,0.4588,'I added when it dipped into mid 120s before ER.  One of my favorite stocks tbh'),(6,'ValueInvesting','1vbqntp','p0yijn8','2026-07-31',1,0.4019,'Interesting analysis'),(7,'ValueInvesting','1vbqntp','p0vn0nv','2026-07-31',1,0.9696,'You make some good points but youre really glossing over the positive. Aws generated 16.6B in operating income with an almost 40% margin. Thats a great sign that the initial capex is converting into high margin rev. \n\nAlso the negative fcf isnâ€™t an accident. Itâ€™s a choice. I feel like youre suggesting that its a sign that the company is weak.\n\nAlso youre acting like all their capex is going right to anthropic. They are buying land, physical servers, power and trainium chips.\n\nThe idea that amazon needs to raise equity is hilarious considering they have 161.4B in ttm operating cash flow and beautiful balance sheet liquidity. \n\nThey def are taking a gamble but the early returns are promising. '),(8,'ValueInvesting','1vbqntp','p0vnst4','2026-07-31',1,0.9756,'Iâ€™ll call out you removing gains on investments (mainly anthropic) from the EPS number and then comparing it to the estimated EPS is not apples to apples, as the estimates certainly included anthropic returns.\n\nAlso while there is certainly circular investments going on in the AI space and dollars are getting double or triple counted, itâ€™s not as if there isnâ€™t real value being generated for Amazon with their bets on Anthropic even if the money Anthropic is paying is just money secured from Amazon. \n\nThe fact that North America retail continues to grow is incredible to me but the drop in international is concerning. \n\nI think that Amazon like Google and Meta have realized they can only grow so much in their current form and are looking for moonshots that they can hitch their wagon to and they have the cash flow to sink into it. I think Zoox and Leo and Amazon Pharmacy are all massive growth opportunities, but I get wanting Amazon to just grow their bottom line and start looking at ways to return capital to investors if only through significant buybacks. '),(9,'ValueInvesting','1vbqntp','p0wlmym','2026-07-31',-4,0.4404,'The amount people nit pick fucking financial reports when a company generates 200 billion dollars in sales up 20 percent YOY if fucking wild. '),(10,'ValueInvesting','1vbqntp','p0vc04e','2026-07-31',0,0.5155,'Wall Street doesn\'t care. They just want to see the growth continuing without insane amounts of AI spending. Thats the story they\'ve settled on now to justify the investments for at least a little while.');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -331,4 +334,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-07-30  2:49:19
+-- Dump completed on 2026-08-01  3:38:07
