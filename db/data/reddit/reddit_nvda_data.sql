@@ -75,7 +75,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
-38ad7643-8d59-11f1-ab55-d6a75f6c32d1:1-172,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -108,6 +107,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
+57ea624c-8e22-11f1-a99f-1e6f68dc3d96:1-35,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
@@ -160,6 +160,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
+7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
@@ -311,7 +312,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -320,7 +321,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vc1okl','p0yh0je','2026-07-31',16,0.0772,'Awwwww crap\n\nIt\'s been a good run boys\n\nWe tanking'),(2,'NVDA_Stock','1vc1okl','p0yg0vm','2026-07-31',7,-0.0516,'Look at the bright side, she\'s been wrong so many times in the past 5 years, she\'s due.'),(3,'NVDA_Stock','1vc1okl','p0zljif','2026-08-01',7,-0.5574,'Shit'),(4,'NVDA_Stock','1vc1okl','p0yc0ts','2026-07-31',6,0.4404,'Welp it was a good run guys'),(5,'NVDA_Stock','1vc1okl','p0yoxp2','2026-07-31',7,0,'oh boy....'),(6,'NVDA_Stock','1vc1okl','p0zhe36','2026-08-01',6,0,'Thought she was an anti-indicator '),(7,'NVDA_Stock','1vc1okl','p0y0h5y','2026-07-31',5,0,'Ah fukâ€¦ we just started to recoverâ€¦ not again. '),(8,'NVDA_Stock','1vc1okl','p0yeu55','2026-07-31',5,0,'oh no...'),(9,'NVDA_Stock','1vc1okl','p0ynu5n','2026-07-31',6,0.5777,'This woman is so good at nonstop buying and burning cash I stg '),(10,'NVDA_Stock','1vc1okl','p0yxid7','2026-07-31',6,0,'Nooo!!!'),(11,'NVDA_Stock','1vc1okl','p0xxupb','2026-07-31',3,-0.6249,'bearish signal'),(12,'NVDA_Stock','1vc1okl','p0y43k1','2026-07-31',4,-0.4939,'where did she steal 14mil?'),(13,'NVDA_Stock','1vc1okl','p0y8pf9','2026-07-31',5,-0.4588,'Time to sell'),(14,'NVDA_Stock','1vc1okl','p0y8vfg','2026-07-31',3,-0.3268,'ðŸ¤£ Her funds sold most of their NVDA shares right before ChatGPT was announced and then sold a little more a month or so after ChatGPT hit the streets saying it was [overpriced ](https://x.com/CathieDWood/status/1663268289944928263)with too much gaming GPU inventory still on store shelves.  And that post was after Jensen guided for > 50% greater revenues due to the AI boom and NVDA started it\'s massive march upwards.  I think she missed out on over $150M of upside on those sold shares.  ðŸ¤¦ðŸ»â€â™‚ï¸ðŸ¤·ðŸ»â€â™‚ï¸\n\nShe bought some back later, but she **TOTALLY** missed the forest for the trees.  Data center revenues had already surpassed gaming the year prior and was still growing at a good clip, but ChatGPT was what blew NVDA\'s datacenter demand to the moon.  Listening to her defend her selling of NVDA back then while NVDA kept ðŸš€was cringe-worthy.'),(15,'NVDA_Stock','1vc1okl','p0yzqft','2026-07-31',3,0,'She knows what\'s coming with OpenAi '),(16,'NVDA_Stock','1vc1okl','p0ycy9e','2026-07-31',6,-0.5848,'Oh fuck!\n\nKathie Woods - Jim Cramer in skirt'),(17,'NVDA_Stock','1vc1okl','p0xy43k','2026-07-31',2,-0.6087,'So freaking what, she will most likely sell it all in a month right before earnings and make $400k.Â '),(18,'NVDA_Stock','1vc1okl','p0xz8u7','2026-07-31',2,0.0772,'oh no shes negatve like 40% this year lol'),(19,'NVDA_Stock','1vc1okl','p0y8dxl','2026-07-31',2,0,'RIP '),(20,'NVDA_Stock','1vc1okl','p0yfcvi','2026-07-31',2,0,'Oh boy '),(21,'NVDA_Stock','1vc1okl','p0yfxmw','2026-07-31',2,0.2023,'Nooo top is in.'),(22,'NVDA_Stock','1vc1okl','p0zsbir','2026-08-01',4,-0.6597,'She also bought SPCXâ€¦ soâ€¦. weâ€™re fucked'),(23,'NVDA_Stock','1vc1okl','p0xz52f','2026-07-31',1,0,'Cathie Woods?\n\nHaven\'t heard that name in awhile'),(24,'NVDA_Stock','1vc1okl','p0y1ctc','2026-07-31',1,-0.5423,'Fuck balls'),(25,'NVDA_Stock','1vc1okl','p0y2wuh','2026-07-31',1,-0.4588,'Time to sell?'),(26,'NVDA_Stock','1vc1okl','p0y3i0k','2026-07-31',1,-0.5267,'Damnit'),(27,'NVDA_Stock','1vc1okl','p0y3lus','2026-07-31',1,0,'Now itâ€™s gonna tank even more ðŸ™„'),(28,'NVDA_Stock','1vc1okl','p0y7zps','2026-07-31',1,-0.5255,'oooww man. here comes the tiiimbbeeeeeeerrr! ðŸ˜¢'),(29,'NVDA_Stock','1vc1okl','p0ybqcs','2026-07-31',1,-0.4019,'Damn, its jover'),(30,'NVDA_Stock','1vc1okl','p0yg0au','2026-07-31',1,-0.4389,'Oh no not again. ðŸ¤¦ðŸ»â€â™‚ï¸ Hopefully, this time she is correct! Canâ€™t be wrong all the time ðŸ¤”'),(31,'NVDA_Stock','1vc1okl','p0y54tu','2026-07-31',0,-0.765,'Shit- now I have to sell. ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -334,4 +334,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-01  3:38:08
+-- Dump completed on 2026-08-02  3:30:38
