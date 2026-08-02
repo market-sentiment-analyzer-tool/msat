@@ -38,6 +38,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -311,7 +312,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -320,7 +321,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'logan wallace','...','2026-07-31',0.2368,'Alphabet (NASDAQ:GOOG) Director Frances Arnold Sells 82 Shares of Stock','https://www.tickerreport.com/banking-finance/13524564/alphabet-nasdaqgoog-director-frances-arnold-sells-82-shares-of-stock.html',2),(2,'micah zimmerman','The Magnificent Seven are the most scrutinized stocks on the market, so calling any of them underrated feels strange. Yet Alphabet (GOOGL +6.73%) (GOOG +6.88%) fits the description. Even after posting...','2026-07-31',0.70724,'3 Reasons Alphabet Is the Most Underrated \"Magnificent Seven\" Stock','https://www.fool.com/investing/2026/07/30/3-reasons-why-alphabet-is-the-most-underrated-magn/',4),(3,'sushree mohanty','...','2026-07-30',0.49992,'Hereâ€™s Why Verizon Stock Is a Buy for Income Investors in August','https://www.barchart.com/story/news/3564863/heres-why-verizon-stock-is-a-buy-for-income-investors-in-august',2),(4,'keithen drury','Alphabet (GOOG +6.88%) (GOOGL +6.73%) has been a strong stock pick over the last few years, but I think investors just got another reason why it can continue to deliver incredible performance over the...','2026-07-30',0.69958,'Alphabet Just Gave Investors 514 Billion Reasons to Load Up on Shares','https://www.fool.com/investing/2026/07/30/alphabet-just-gave-investors-514-billion-reasons-t/',4),(5,'robert izquierdo','Investors were so excited to own a piece of Space Exploration Technologies Corporation (SPCX -3.41%), better known as SpaceX, that it instantly became one of the top-10 biggest companies in the world ...','2026-07-30',0.1998,'Space Investors Take Note: Rocket Lab or SpaceX Before 2026 Runs Out','https://www.fool.com/investing/2026/07/30/space-investors-take-note-rocket-lab-or-spacex-bef/',4),(6,'michael walen','...','2026-07-30',0.46872,'Alphabet Inc. $GOOG is Redwood Grove Capital LLCâ€™s 2nd Largest Position','https://www.themarketsdaily.com/2026/07/30/alphabet-inc-goog-is-redwood-grove-capital-llcs-2nd-largest-position.html',2),(7,'michael walen','...','2026-07-30',0.39512,'Talon Private Wealth LLC Invests $527,000 in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/07/30/talon-private-wealth-llc-invests-527000-in-alphabet-inc-goog.html',2),(8,'alanna baker','...','2026-07-30',-0.2368,'MSA Advisors LLC Cuts Stake in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/07/30/msa-advisors-llc-cuts-stake-in-alphabet-inc-goog.html',2),(9,'mark dietrich','...','2026-07-30',0,'Alphabet Inc. $GOOG Stake Reduced by Ruane Cunniff & Goldfarb L.P.','https://www.watchlistnews.com/alphabet-inc-goog-stake-reduced-by-ruane-cunniff-goldfarb-l-p/11163625.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-01',-0.21856,'Google Piles On Off-Balance-Sheet Risk to Fuel Its AI Chip Push','https://www.barchart.com/story/news/3595044/google-piles-on-off-balance-sheet-risk-to-fuel-its-ai-chip-push',20),(2,'prosper junior bakiny','Earnings season is in full swing, and recently, the three largest hyperscalers released their quarterly updates. Of course, we are talking about the \"Big Three\" in the cloud computing industry: Amazon...','2026-08-01',0.88418,'Amazon vs. Microsoft vs. Alphabet: Which Is the Best Cloud Stock to Buy Now?','https://www.fool.com/investing/2026/08/01/amazon-vs-microsoft-vs-alphabet-which-is-the-best/',4),(3,'rich duprey','...','2026-07-31',0.2368,'Reddit Stock Collapses 23% as AI Eats Away at User Growth','https://www.barchart.com/story/news/3584357/reddit-stock-collapses-23-as-ai-eats-away-at-user-growth',2),(4,'jabran kundi','...','2026-07-31',0,'Anthropic Is Only Part of the Story. Cognizant Has a Much Bigger AI Plan.','https://www.barchart.com/story/news/3580153/anthropic-is-only-part-of-the-story-cognizant-has-a-much-bigger-ai-plan',2),(5,'logan wallace','...','2026-07-31',0.2368,'Alphabet (NASDAQ:GOOG) Director Frances Arnold Sells 82 Shares of Stock','https://www.tickerreport.com/banking-finance/13524564/alphabet-nasdaqgoog-director-frances-arnold-sells-82-shares-of-stock.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -334,4 +335,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-01  4:15:25
+-- Dump completed on 2026-08-02  4:18:28
