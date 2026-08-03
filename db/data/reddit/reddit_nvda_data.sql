@@ -38,6 +38,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -107,7 +108,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
-57ea624c-8e22-11f1-a99f-1e6f68dc3d96:1-35,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
@@ -222,6 +222,7 @@ c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
+c62c4469-8eeb-11f1-89b2-3a4f0e0b6dc6:1-79,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -312,7 +313,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,6 +322,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ve0qzl','p1dgs4z','2026-08-03',5,0,'Imagine thinking Ai has peaked'),(2,'NVDA_Stock','1ve0qzl','p1djldz','2026-08-03',1,0,'Can anyone explain EMIB versus CoWoS? '),(3,'NVDA_Stock','1ve0qzl','p1djytw','2026-08-03',1,0.3595,'Yeah gogo TPU!'),(4,'NVDA_Stock','1ve0qzl','p1dnrmt','2026-08-03',1,0.5204,'Why do they always write Google orders TPUs from Intel when Google have to use either Broadcom to Mediatek to complete the chip? Isn\'t it Broadcom or Mediatek that send the orders to the fab after their input has been completed?'),(5,'NVDA_Stock','1ve0qzl','p1dgq15','2026-08-03',-1,0.9517,'This sub wonâ€™t like hearing this, but ASICâ€™s are the future.  Nvidia can sell IP and help with designing, like Broadcom, and focus more on local inference and consumer hardware again for their products.  Iâ€™m sure their accelerators will remain popular for quite some time, as well.  But ASICs are going to grow in popularity.  Nvidiaâ€™s marketshare will fall, while volume is the bigger question.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -334,4 +336,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-02  3:30:38
+-- Dump completed on 2026-08-03  3:33:18

@@ -38,6 +38,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
+17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -107,7 +108,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
 575286de-7698-11f1-86eb-d60012c7fed1:1-57,
 576818cb-e9e3-11f0-8278-ea908f6530ef:1-62,
-57ea624c-8e22-11f1-a99f-1e6f68dc3d96:1-35,
 5893488d-03d3-11f1-950b-02d2e61d2f2c:1-61,
 590fb2d0-d182-11f0-841e-225f6ad14cba:1-66,
 5922b22a-5018-11f1-9dc2-e633070405d7:1-61,
@@ -222,6 +222,7 @@ c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
+c62c4469-8eeb-11f1-89b2-3a4f0e0b6dc6:1-79,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -312,7 +313,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,7 +322,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vcqpsg','p136ssu','2026-08-01',31,0.636,'Stupid post of the day award winner!'),(2,'AAPL','1vcqpsg','p136otj','2026-08-01',14,0.4939,'Why do you care? This is a $400 stock in 12-18 months. Get in or get left behind. DCA if it drops.'),(3,'AAPL','1vcqpsg','p136kpe','2026-08-01',7,0.5423,'294.96 get outta here with your wild optimism'),(4,'AAPL','1vcqpsg','p1374r7','2026-08-01',7,0.5423,'I buy every month regardless of price.  '),(5,'AAPL','1vcqpsg','p13e1id','2026-08-01',4,-0.8126,'lol at missing out on a fire deal because the price didnâ€™t hit some bullshit arbitrary level for you. '),(6,'AAPL','1vcqpsg','p13ge3t','2026-08-01',4,0.3297,'I added at $311, $305. If it drops below $300 then the level is $290. DCA if you are a new investor. Donâ€™t trade but invest in aapl. I highly doubt it will drop below but support level $288 and $277. Iâ€™m buying every dip. This is a no brainer!'),(7,'AAPL','1vcqpsg','p13fcsw','2026-08-01',2,0.9423,'How big a position are you thinking? If 295-296 is your entire thatâ€™s fine did you grab on the memory price increase sticker shock and the stock dropped to 275? I was adding around then I think about two to three days of below 300 pricesâ€¦ I sold two days before earning trimming from the 320-340 mark and now adding back into around 301 ish glad my trade worked and yes I do want apples for long term but I felt like last earning it was going to drop so I slow trimmed about 10% and added about 2% so far and plan to go up and beyond my previous amount if I see more weakness Mondayâ€¦ long term I mean I wish I added more when I was buying around 40 a share and when I added 150 a share and it drop to the bottom around 120 I wish I added more.. if Apple drops below 275 I am adding 10% more. Unless I hear something I donâ€™t like from the ceo himself I will probably hold very very long term '),(8,'AAPL','1vcqpsg','p13fz1l','2026-08-01',1,0,'What are you referring to when you say MM zone?'),(9,'AAPL','1vcqpsg','p13hkp2','2026-08-01',1,0.1739,'Market already saw your buy order and will comply first thing on Monday morning. Stupid!! '),(10,'AAPL','1vcqpsg','p143747','2026-08-01',1,0.6834,'If you in for long game, it doesnt matter. Time in Apple stocks matters more than timing it.\n\nI put few hundred k into apple stocks in 2015 and itâ€™s been awarded me handsomely. '),(11,'AAPL','1vcqpsg','p15hzme','2026-08-01',1,-0.1043,'Appl is not an innovative company. One trick pony operating on Steve Jobsâ€™s legacy.\n\nThis is coming from an aapl share holder. '),(12,'AAPL','1vcqpsg','p138il5','2026-08-01',1,0.9706,'Apple should be a invest and hold till retirement, on a yearly average it goes up 30%-ish.  I expect it to go back down to $280s. But if your just gonna buy and hold just donâ€™t buy at top for now. My average cost is $184. So Iâ€™ll buy a little more at $290-$300 '),(13,'AAPL','1vcqpsg','p137y32','2026-08-01',-1,-0.5046,'I\'m think it\'s going to Mid 200s. It\'s P/E is way too high and they\'ve missed the boat on updating Siri to use AI. I\'m probably gonna sell my remaining shares next week.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vdw7h0','p1ce4yp','2026-08-02',1,0,'And then? '),(2,'AAPL','1vdeycm','p18qsdf','2026-08-02',8,-0.6808,'What in the hell is this '),(3,'AAPL','1vdeycm','p194ovf','2026-08-02',2,0.1531,'Respectfully...all of my AI slop alarm bells are going off.\n\nIf you want to support AAPL, you gotta not do that.'),(4,'AAPL','1vdeycm','p195cjh','2026-08-02',1,-0.3182,'Whose AI got loose?'),(5,'AAPL','1vdeycm','p19amp1','2026-08-02',1,-0.296,'Blah blah blah ðŸ«¨ðŸ«¨ðŸ«¨'),(6,'AAPL','1vdeycm','p1aijlq','2026-08-02',1,0,'ai:dr');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -335,4 +336,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-02  3:30:37
+-- Dump completed on 2026-08-03  3:33:18
