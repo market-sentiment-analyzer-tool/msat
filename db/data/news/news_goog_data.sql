@@ -291,6 +291,7 @@ fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
+fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -312,7 +313,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,7 +322,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-01',-0.21856,'Google Piles On Off-Balance-Sheet Risk to Fuel Its AI Chip Push','https://www.barchart.com/story/news/3595044/google-piles-on-off-balance-sheet-risk-to-fuel-its-ai-chip-push',20),(2,'prosper junior bakiny','Earnings season is in full swing, and recently, the three largest hyperscalers released their quarterly updates. Of course, we are talking about the \"Big Three\" in the cloud computing industry: Amazon...','2026-08-01',0.88418,'Amazon vs. Microsoft vs. Alphabet: Which Is the Best Cloud Stock to Buy Now?','https://www.fool.com/investing/2026/08/01/amazon-vs-microsoft-vs-alphabet-which-is-the-best/',4),(3,'rich duprey','...','2026-07-31',0.2368,'Reddit Stock Collapses 23% as AI Eats Away at User Growth','https://www.barchart.com/story/news/3584357/reddit-stock-collapses-23-as-ai-eats-away-at-user-growth',2),(4,'jabran kundi','...','2026-07-31',0,'Anthropic Is Only Part of the Story. Cognizant Has a Much Bigger AI Plan.','https://www.barchart.com/story/news/3580153/anthropic-is-only-part-of-the-story-cognizant-has-a-much-bigger-ai-plan',2),(5,'logan wallace','...','2026-07-31',0.2368,'Alphabet (NASDAQ:GOOG) Director Frances Arnold Sells 82 Shares of Stock','https://www.tickerreport.com/banking-finance/13524564/alphabet-nasdaqgoog-director-frances-arnold-sells-82-shares-of-stock.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-01',-0.21856,'Google Piles On Off-Balance-Sheet Risk to Fuel Its AI Chip Push','https://www.barchart.com/story/news/3595044/google-piles-on-off-balance-sheet-risk-to-fuel-its-ai-chip-push',20),(2,'prosper junior bakiny','Earnings season is in full swing, and recently, the three largest hyperscalers released their quarterly updates. Of course, we are talking about the \"Big Three\" in the cloud computing industry: Amazon...','2026-08-01',0.88418,'Amazon vs. Microsoft vs. Alphabet: Which Is the Best Cloud Stock to Buy Now?','https://www.fool.com/investing/2026/08/01/amazon-vs-microsoft-vs-alphabet-which-is-the-best/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -335,4 +336,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-02  4:18:28
+-- Dump completed on 2026-08-03  4:24:18
