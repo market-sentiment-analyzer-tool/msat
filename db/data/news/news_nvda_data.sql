@@ -144,6 +144,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
+6d9f8713-8fb8-11f1-9650-7a48b512b4f2:1-60,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
@@ -313,7 +314,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,7 +323,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'vandita jadeja','Investing\n\n							NVDA posted 85% revenue growth to $82B while GOOG grew 24% to $120B, exposing two distinct AI business models from the same tailwind.													\n\n							Alphabet suspended buybacks...','2026-08-02',0.56672,'Nvidia vs. Alphabet: What Revenue Trends Reveal About the AI Leaders','https://247wallst.com/investing/2026/08/02/nvidia-vs-alphabet-what-revenue-trends-reveal-about-the-ai-leaders/',40),(2,'alex sirois','Investing\n\n							NVIDIA sits 20% below its 52-week high yet posts 85% revenue growth with a PEG ratio of just 0.54.													\n\n							Wall Street consensus targets NVDA at $303, implying 59% upsid...','2026-08-02',0.89472,'Nvidia at $190: A Clear Evolution and a Reasonable Entry Point Create a Bullish Opportunity','https://247wallst.com/investing/2026/08/02/nvidia-at-190-a-clear-evolution-and-a-reasonable-entry-point-create-a-bullish-opportunity/',40),(3,'ebube jones','...','2026-08-02',0.272,'After a More Than 20% Sell-Off on Earnings, Corning Stock Is Still a â€˜Buyâ€™ for the AI Infrastructure Trade','https://www.barchart.com/story/news/3602144/after-a-more-than-20-sell-off-on-earnings-corning-stock-is-still-a-buy-for-the-ai-infrastructure-trade',2),(4,'ebube jones','...','2026-08-02',0.12248,'Wedbush Flags Near-Term Risks From Nvidiaâ€™s Alleged OpenAI Data Center Support','https://www.barchart.com/story/news/3602028/wedbush-flags-near-term-risks-from-nvidias-alleged-openai-data-center-support',2),(5,'erin kennedy','Deciding between Advanced Micro Devices (AMD -1.90%) and Arm (ARM -0.77%) requires understanding their roles in the hardware ecosystem. One builds the chips, while the other provides the blueprint for...','2026-08-02',0.88422,'Advanced Micro Devices vs. Arm: Which Tech Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/08/02/advanced-micro-devices-vs-arm-which-tech-stock-is-a-better-buy-in-2026/',4),(6,'will healy','Investors have long been bullish on Nvidia (NVDA +2.93%) for many reasons, but one that may not get a lot of direct attention is its backlog. Amid the massive demand for its AI accelerators, it accumu...','2026-08-02',0.68962,'Nvidia Has $500 Billion in AI Chip Bookings Covering 2025 and 2026, a Backlog Investors Can Track for Future Revenue','https://www.fool.com/investing/2026/08/02/nvidia-has-500-billion-in-ai-chip-bookings-coverin/',40),(7,'mitch edgeman','...','2026-08-02',0.35232,'NVIDIA (NASDAQ:NVDA) Trading Up 2.9% â€“ Hereâ€™s Why','https://www.themarketsdaily.com/2026/08/02/nvidia-nasdaqnvda-trading-up-2-9-heres-why.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'andy gould','The State Street SPDR MSCI ACWI Climate Paris Aligned ETF (NZAC +1.08%) and the iShares MSCI World ETF (URTH +1.22%) both offer investors a simple way to buy global stocks in a single fund. But while ...','2026-08-03',0.79836,'NZAC vs. URTH: Which Global ETF Is the Better Buy?','https://www.fool.com/coverage/etfs/2026/08/03/nzac-vs-urth-which-global-etf-is-the-better-buy/',4),(2,'rich asplund','...','2026-08-03',0.38136,'Stocks Rally on Easing Geopolitical Risks and US Economic Strength','https://www.barchart.com/story/news/3615302/stocks-rally-on-easing-geopolitical-risks-and-us-economic-strength',2),(3,'sushree mohanty','...','2026-08-03',0.55264,'ARM Stock: A $1 Billion AGI CPU Opportunity Could End Up Being Much Bigger Than Wall Street Expects','https://www.barchart.com/story/news/3614792/arm-stock-a-1-billion-agi-cpu-opportunity-could-end-up-being-much-bigger-than-wall-street-expects',2),(4,'jabran kundi','...','2026-08-03',0,'AMDâ€™s Helios Is Coming for Nvidiaâ€™s Rack, Not Just Its GPU','https://www.barchart.com/story/news/3614407/amds-helios-is-coming-for-nvidias-rack-not-just-its-gpu',2),(5,'brian sozzi','...','2026-08-03',0.2,'This valuation signal shows how investors are rethinking tech stocks','https://finance.yahoo.com/markets/article/this-valuation-signal-shows-how-investors-are-rethinking-tech-stocks-144411798.html',20),(6,'null','Nvidia (NVDA +2.93%) is starting to get lost in the crowd. The artificial intelligence (AI) bellwether remains on top of the market cap list, but its performance lately has been underwhelming.\nNvidia ...','2026-08-03',0.63366,'3 Reasons to Buy Nvidia Stock in August','https://www.fool.com/investing/2026/08/03/3-reasons-to-buy-nvidia-stock-in-august/',20),(7,'omor ibne ehsan','...','2026-08-03',0.28896,'Analysts Say Data Storage Stocks Like WDC Are Set to Make a Turnaround','https://www.barchart.com/story/news/3613526/analysts-say-data-storage-stocks-like-wdc-are-set-to-make-a-turnaround',2),(8,'horizon kinetics','...','2026-08-03',0.04128,'Horizon Kinetics Q2 2026 Commentary','https://seekingalpha.com/article/4929474-horizon-kinetics-q2-2026-commentary',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -336,4 +337,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-03  4:24:18
+-- Dump completed on 2026-08-04  3:57:14

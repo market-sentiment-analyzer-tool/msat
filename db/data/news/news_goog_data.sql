@@ -144,6 +144,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
 6bd76e91-c038-11f0-9c58-4e4de1a36d45:1-70,
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
+6d9f8713-8fb8-11f1-9650-7a48b512b4f2:1-60,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
@@ -313,7 +314,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,7 +323,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-01',-0.21856,'Google Piles On Off-Balance-Sheet Risk to Fuel Its AI Chip Push','https://www.barchart.com/story/news/3595044/google-piles-on-off-balance-sheet-risk-to-fuel-its-ai-chip-push',20),(2,'prosper junior bakiny','Earnings season is in full swing, and recently, the three largest hyperscalers released their quarterly updates. Of course, we are talking about the \"Big Three\" in the cloud computing industry: Amazon...','2026-08-01',0.88418,'Amazon vs. Microsoft vs. Alphabet: Which Is the Best Cloud Stock to Buy Now?','https://www.fool.com/investing/2026/08/01/amazon-vs-microsoft-vs-alphabet-which-is-the-best/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-08-03',0.30044,'Alphabetâ€™s stock splits: History & prospects explained','https://www.thestreet.com/investing/stocks/alphabet-stock-splits',2),(2,'wall street breakfast','...','2026-08-03',0,'Wall Street Breakfast Podcast: Say Hello To Qwen3.8-Max','https://seekingalpha.com/article/4929405-wall-street-breakfast-podcast-say-hello-to-qwen3-8-max',4),(3,'keith speights','Space Exploration Technologies (SPCX +5.68%), better known as SpaceX, is having several firsts in 2026. The company listed its shares on a public stock exchange for the first time in June, becoming th...','2026-08-03',0.47158,'SpaceX Reports Its First-Ever Earnings Tuesday. Here Are the 5 Numbers That Will Define Whether the $1.4 Trillion Valuation Makes Any Sense.','https://www.fool.com/investing/2026/08/03/spacex-reports-its-first-ever-earnings-tuesday-her/',4),(4,'marc guberti','The recent AI stock meltdown was primarily driven by a margin unwind instead of weak fundamentals. More than 3% of South Korean adults received margin calls in July, with commonplace 500% margin loans...','2026-08-02',0.53686,'3 AI Stocks to Buy as the Margin Unwind Calms Down','https://www.fool.com/investing/2026/08/02/3-ai-stocks-to-buy-as-the-margin-unwind-calms-down/',4),(5,'rob williams','...','2026-08-02',-0.2,'Google pulls AI feature after users create fake satellite images','https://seekingalpha.com/news/4623153-google-pulls-ai-feature-after-users-create-fake-satellite-images?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -336,4 +337,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-03  4:24:18
+-- Dump completed on 2026-08-04  3:57:14
