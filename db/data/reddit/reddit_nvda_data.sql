@@ -175,6 +175,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
+8cbe15d1-8fb2-11f1-a3cd-8e574d974ecb:1-115,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
@@ -222,7 +223,6 @@ c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
-c62c4469-8eeb-11f1-89b2-3a4f0e0b6dc6:1-79,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
@@ -292,6 +292,7 @@ fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
+fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -313,7 +314,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -322,7 +323,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1ve0qzl','p1dgs4z','2026-08-03',5,0,'Imagine thinking Ai has peaked'),(2,'NVDA_Stock','1ve0qzl','p1djldz','2026-08-03',1,0,'Can anyone explain EMIB versus CoWoS? '),(3,'NVDA_Stock','1ve0qzl','p1djytw','2026-08-03',1,0.3595,'Yeah gogo TPU!'),(4,'NVDA_Stock','1ve0qzl','p1dnrmt','2026-08-03',1,0.5204,'Why do they always write Google orders TPUs from Intel when Google have to use either Broadcom to Mediatek to complete the chip? Isn\'t it Broadcom or Mediatek that send the orders to the fab after their input has been completed?'),(5,'NVDA_Stock','1ve0qzl','p1dgq15','2026-08-03',-1,0.9517,'This sub wonâ€™t like hearing this, but ASICâ€™s are the future.  Nvidia can sell IP and help with designing, like Broadcom, and focus more on local inference and consumer hardware again for their products.  Iâ€™m sure their accelerators will remain popular for quite some time, as well.  But ASICs are going to grow in popularity.  Nvidiaâ€™s marketshare will fall, while volume is the bigger question.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vehp54','p1h3cf2','2026-08-03',16,0,'![gif](giphy|XhaeG5lvcHZIs)'),(2,'NVDA_Stock','1vehp54','p1h01nf','2026-08-03',7,0.6808,'Im winning. 5000 shares at $189 last week'),(3,'NVDA_Stock','1vehp54','p1gzfdw','2026-08-03',6,0.7096,'Yep. I rotated big wins on Friday.'),(4,'NVDA_Stock','1vehp54','p1ihm6k','2026-08-03',3,0.5719,'Gonna rotate those msft wins in Nvda '),(5,'NVDA_Stock','1vehp54','p1kunta','2026-08-04',1,0,'It is break out time!'),(6,'NVDA_Stock','1ve4mui','p1g69tf','2026-08-03',1,0.4939,'quantum computing plus pharma r and d is a combo that sounds exciting until you actually look at that timeline'),(7,'NVDA_Stock','1ve2la4','p1dvjn6','2026-08-03',1,0,'Benchmarks?'),(8,'NVDA_Stock','1ve2la4','p1e0mx9','2026-08-03',1,0.3182,'Cool story bro. Now do Vera Rubin. '),(9,'NVDA_Stock','1ve2la4','p1dshlk','2026-08-03',-7,0.9245,'Wow I\'m actually so impressed by this, gj china. New fangled memory innovation too.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -336,4 +337,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-03  3:33:18
+-- Dump completed on 2026-08-04  3:15:37
