@@ -258,6 +258,7 @@ e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
+e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -314,7 +315,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -323,7 +324,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'null','Please enable JS and disable any ad blocker...','2026-08-03',0.30044,'Alphabetâ€™s stock splits: History & prospects explained','https://www.thestreet.com/investing/stocks/alphabet-stock-splits',2),(2,'wall street breakfast','...','2026-08-03',0,'Wall Street Breakfast Podcast: Say Hello To Qwen3.8-Max','https://seekingalpha.com/article/4929405-wall-street-breakfast-podcast-say-hello-to-qwen3-8-max',4),(3,'keith speights','Space Exploration Technologies (SPCX +5.68%), better known as SpaceX, is having several firsts in 2026. The company listed its shares on a public stock exchange for the first time in June, becoming th...','2026-08-03',0.47158,'SpaceX Reports Its First-Ever Earnings Tuesday. Here Are the 5 Numbers That Will Define Whether the $1.4 Trillion Valuation Makes Any Sense.','https://www.fool.com/investing/2026/08/03/spacex-reports-its-first-ever-earnings-tuesday-her/',4),(4,'marc guberti','The recent AI stock meltdown was primarily driven by a margin unwind instead of weak fundamentals. More than 3% of South Korean adults received margin calls in July, with commonplace 500% margin loans...','2026-08-02',0.53686,'3 AI Stocks to Buy as the Margin Unwind Calms Down','https://www.fool.com/investing/2026/08/02/3-ai-stocks-to-buy-as-the-margin-unwind-calms-down/',4),(5,'rob williams','...','2026-08-02',-0.2,'Google pulls AI feature after users create fake satellite images','https://seekingalpha.com/news/4623153-google-pulls-ai-feature-after-users-create-fake-satellite-images?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'zach parkes','...','2026-08-04',0,'Google Stock Price Today | GOOG Stock Predictions for Aug 4, 2026 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-goog-stock-predictions-for-aug-4-2026-live-polymarket-odds',20),(2,'wall street breakfast','...','2026-08-04',0.16184,'Wall Street Breakfast Podcast: Palantir To Top Microsoft?','https://seekingalpha.com/article/4929845-wall-street-breakfast-podcast-palantir-to-top-microsoft',4),(3,'ebube jones','...','2026-08-03',0.69744,'Microsoft Just Posted the Largest One-Day Market Cap Gain in U.S. History. More Gains Are Likely Still Ahead.','https://www.barchart.com/story/news/3617503/microsoft-just-posted-the-largest-one-day-market-cap-gain-in-u-s-history-more-gains-are-likely-still-ahead',2),(4,'anders bylund','The stock market spent July panicking about oil prices, chip valuations, and AI spending. It showed up Monday morning in a completely different mood.\nAll three major indexes are up more than 1% as of ...','2026-08-03',0.1991,'The Dow Adds 560 Points as Oil Prices Fall Off a Cliff','https://www.fool.com/investing/2026/08/03/the-dow-adds-560-points-as-oil-prices-plunge/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -337,4 +338,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-04  3:57:14
+-- Dump completed on 2026-08-05  3:52:05

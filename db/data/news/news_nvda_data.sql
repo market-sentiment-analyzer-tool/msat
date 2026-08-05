@@ -258,6 +258,7 @@ e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
+e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -314,7 +315,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -323,7 +324,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'andy gould','The State Street SPDR MSCI ACWI Climate Paris Aligned ETF (NZAC +1.08%) and the iShares MSCI World ETF (URTH +1.22%) both offer investors a simple way to buy global stocks in a single fund. But while ...','2026-08-03',0.79836,'NZAC vs. URTH: Which Global ETF Is the Better Buy?','https://www.fool.com/coverage/etfs/2026/08/03/nzac-vs-urth-which-global-etf-is-the-better-buy/',4),(2,'rich asplund','...','2026-08-03',0.38136,'Stocks Rally on Easing Geopolitical Risks and US Economic Strength','https://www.barchart.com/story/news/3615302/stocks-rally-on-easing-geopolitical-risks-and-us-economic-strength',2),(3,'sushree mohanty','...','2026-08-03',0.55264,'ARM Stock: A $1 Billion AGI CPU Opportunity Could End Up Being Much Bigger Than Wall Street Expects','https://www.barchart.com/story/news/3614792/arm-stock-a-1-billion-agi-cpu-opportunity-could-end-up-being-much-bigger-than-wall-street-expects',2),(4,'jabran kundi','...','2026-08-03',0,'AMDâ€™s Helios Is Coming for Nvidiaâ€™s Rack, Not Just Its GPU','https://www.barchart.com/story/news/3614407/amds-helios-is-coming-for-nvidias-rack-not-just-its-gpu',2),(5,'brian sozzi','...','2026-08-03',0.2,'This valuation signal shows how investors are rethinking tech stocks','https://finance.yahoo.com/markets/article/this-valuation-signal-shows-how-investors-are-rethinking-tech-stocks-144411798.html',20),(6,'null','Nvidia (NVDA +2.93%) is starting to get lost in the crowd. The artificial intelligence (AI) bellwether remains on top of the market cap list, but its performance lately has been underwhelming.\nNvidia ...','2026-08-03',0.63366,'3 Reasons to Buy Nvidia Stock in August','https://www.fool.com/investing/2026/08/03/3-reasons-to-buy-nvidia-stock-in-august/',20),(7,'omor ibne ehsan','...','2026-08-03',0.28896,'Analysts Say Data Storage Stocks Like WDC Are Set to Make a Turnaround','https://www.barchart.com/story/news/3613526/analysts-say-data-storage-stocks-like-wdc-are-set-to-make-a-turnaround',2),(8,'horizon kinetics','...','2026-08-03',0.04128,'Horizon Kinetics Q2 2026 Commentary','https://seekingalpha.com/article/4929474-horizon-kinetics-q2-2026-commentary',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jabran kundi','...','2026-08-04',0.2368,'AMD vs. ARM: AMD Is Winning Today, But Arm May Be Building Something Even Bigger','https://www.barchart.com/story/news/3640012/amd-vs-arm-amd-is-winning-today-but-arm-may-be-building-something-even-bigger',2),(2,'gerelyn terzo','Investing\n\n							NVDA CFO Colette Kress disclosed $1 trillion in Blackwell and Rubin revenue visibility through 2027, backed by $145 billion in supply commitments.													\n\n							H100 rental pr...','2026-08-04',-0.03042,'The 1 Number Behind Nvidiaâ€™s Chip Scarcity That Most Investors Are Missing','https://247wallst.com/investing/2026/08/04/the-1-number-behind-nvidias-chip-scarcity-that-most-investors-are-missing/',4),(3,'joseph e. jones','The VistaShares Artificial Intelligence Supercycle ETF targets AI infrastructure suppliers, weighting holdings by supply chain importance. Memory makers currently dominate.\nAIS is actively managed and...','2026-08-04',0.58112,'AIS: A Primer On The VistaShares Artificial Intelligence Supercycle ETF','https://seekingalpha.com/article/4929872-ais-a-primer-on-the-vistashares-artificial-intelligence-supercycle-etf',8),(4,'brian sozzi','...','2026-08-04',0,'Why AMD is a Yahoo Finance AlphaSpace rockstar','https://ca.finance.yahoo.com/news/why-amd-is-a-yahoo-finance-alphaspace-rockstar-131746048.html',2),(5,'joel south','Investing\n\n							NVIDIA released three open-source Omniverse libraries embedding its simulation stack inside Houdini, Onshape, and Blender to become the default physical AI runtime.													\n\n			...','2026-08-04',0.52128,'This 1 Number Will Be NVIDIAâ€™s Catalyst Before It Reports Earnings in August','https://247wallst.com/investing/2026/08/04/nvidia-stock-the-1-number-behind-its-omniverse-agent-toolkit-that-shows-its-physical-ai-ambition/',4),(6,'elizabeth pramila','...','2026-08-04',-0.40848,'AI CapEx: A Grossly Misunderstood Narrative','https://seekingalpha.com/article/4929822-ai-capex-a-grossly-misunderstood-narrative',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -337,4 +338,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-04  3:57:14
+-- Dump completed on 2026-08-05  3:52:05
