@@ -220,6 +220,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
@@ -315,7 +316,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -324,7 +325,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jabran kundi','...','2026-08-04',0.2368,'AMD vs. ARM: AMD Is Winning Today, But Arm May Be Building Something Even Bigger','https://www.barchart.com/story/news/3640012/amd-vs-arm-amd-is-winning-today-but-arm-may-be-building-something-even-bigger',2),(2,'gerelyn terzo','Investing\n\n							NVDA CFO Colette Kress disclosed $1 trillion in Blackwell and Rubin revenue visibility through 2027, backed by $145 billion in supply commitments.													\n\n							H100 rental pr...','2026-08-04',-0.03042,'The 1 Number Behind Nvidiaâ€™s Chip Scarcity That Most Investors Are Missing','https://247wallst.com/investing/2026/08/04/the-1-number-behind-nvidias-chip-scarcity-that-most-investors-are-missing/',4),(3,'joseph e. jones','The VistaShares Artificial Intelligence Supercycle ETF targets AI infrastructure suppliers, weighting holdings by supply chain importance. Memory makers currently dominate.\nAIS is actively managed and...','2026-08-04',0.58112,'AIS: A Primer On The VistaShares Artificial Intelligence Supercycle ETF','https://seekingalpha.com/article/4929872-ais-a-primer-on-the-vistashares-artificial-intelligence-supercycle-etf',8),(4,'brian sozzi','...','2026-08-04',0,'Why AMD is a Yahoo Finance AlphaSpace rockstar','https://ca.finance.yahoo.com/news/why-amd-is-a-yahoo-finance-alphaspace-rockstar-131746048.html',2),(5,'joel south','Investing\n\n							NVIDIA released three open-source Omniverse libraries embedding its simulation stack inside Houdini, Onshape, and Blender to become the default physical AI runtime.													\n\n			...','2026-08-04',0.52128,'This 1 Number Will Be NVIDIAâ€™s Catalyst Before It Reports Earnings in August','https://247wallst.com/investing/2026/08/04/nvidia-stock-the-1-number-behind-its-omniverse-agent-toolkit-that-shows-its-physical-ai-ambition/',4),(6,'elizabeth pramila','...','2026-08-04',-0.40848,'AI CapEx: A Grossly Misunderstood Narrative','https://seekingalpha.com/article/4929822-ai-capex-a-grossly-misunderstood-narrative',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'sristi suman jayaswal','...','2026-08-05',0.30544,'Dear Coherent Stock Fans, Mark Your Calendars for August 12','https://www.barchart.com/story/news/3666653/dear-coherent-stock-fans-mark-your-calendars-for-august-12',2),(2,'subhasree kar','...','2026-08-05',0.30544,'Dear CoreWeave Stock Fans, Mark Your Calendars for August 11','https://www.barchart.com/story/news/3665784/dear-coreweave-stock-fans-mark-your-calendars-for-august-11',2),(3,'yahoo finance video','...','2026-08-05',0.36704,'AMD sinks on revenue forecasts as competition with Nvidia grows more apparent','https://ca.finance.yahoo.com/video/amd-sinks-revenue-forecasts-competition-134557567.html',20),(4,'anushka mukherji','...','2026-08-05',0.30544,'Dear Nebius Stock Fans, Mark Your Calendars for August 5','https://www.barchart.com/story/news/3664089/dear-nebius-stock-fans-mark-your-calendars-for-august-5',2),(5,'gerelyn terzo','\n							ADP private payrolls missed at 44K versus 68K expected, pulling the 10-year yield to 4.61% and lifting S&P 500 futures 0.4%.													\n\n							Elon Musk confirmed SpaceX (SPCX) directed $15...','2026-08-05',0.2409,'Live Nasdaq Composite: AI Earnings Keep Market Rally on Track as Softer Payrolls Pull Yields Lower','https://247wallst.com/investing/2026/08/05/live-nasdaq-composite-ai-earnings-keep-market-rally-on-track-as-softer-payrolls-pull-yields-lower/',4),(6,'sushree mohanty','...','2026-08-05',-0.38832,'This Nvidia-Backed AI Play Is Booming, But the Valuation Is Hard to Ignore','https://www.barchart.com/story/news/3663764/this-nvidia-backed-ai-play-is-booming-but-the-valuation-is-hard-to-ignore',2),(7,'ebube jones','...','2026-08-05',-0.12088,'Apple Acquires PlasmaSolve in a Quiet Materials Science Deal. Itâ€™s Probably Not Strategically Significant.','https://www.barchart.com/story/news/3663231/apple-acquires-plasmasolve-in-a-quiet-materials-science-deal-its-probably-not-strategically-significant',2),(8,'logan wallace','...','2026-08-05',0,'Public Employees Retirement System of Ohio Has $1.72 Billion Stock Position in NVIDIA Corporation $NVDA','https://www.tickerreport.com/banking-finance/13530853/public-employees-retirement-system-of-ohio-has-1-72-billion-stock-position-in-nvidia-corporation-nvda.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -338,4 +339,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-05  3:52:05
+-- Dump completed on 2026-08-06  3:57:07

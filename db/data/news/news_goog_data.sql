@@ -220,6 +220,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
@@ -324,7 +325,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'zach parkes','...','2026-08-04',0,'Google Stock Price Today | GOOG Stock Predictions for Aug 4, 2026 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-goog-stock-predictions-for-aug-4-2026-live-polymarket-odds',20),(2,'wall street breakfast','...','2026-08-04',0.16184,'Wall Street Breakfast Podcast: Palantir To Top Microsoft?','https://seekingalpha.com/article/4929845-wall-street-breakfast-podcast-palantir-to-top-microsoft',4),(3,'ebube jones','...','2026-08-03',0.69744,'Microsoft Just Posted the Largest One-Day Market Cap Gain in U.S. History. More Gains Are Likely Still Ahead.','https://www.barchart.com/story/news/3617503/microsoft-just-posted-the-largest-one-day-market-cap-gain-in-u-s-history-more-gains-are-likely-still-ahead',2),(4,'anders bylund','The stock market spent July panicking about oil prices, chip valuations, and AI spending. It showed up Monday morning in a completely different mood.\nAll three major indexes are up more than 1% as of ...','2026-08-03',0.1991,'The Dow Adds 560 Points as Oil Prices Fall Off a Cliff','https://www.fool.com/investing/2026/08/03/the-dow-adds-560-points-as-oil-prices-plunge/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-08-05',0.65008,'Got $500? 2 Magnificent AI Stocks to Buy Hand Over Fist Before the Anthropic IPO','https://finance.yahoo.com/markets/stocks/articles/got-500-2-magnificent-ai-111100300.html',20),(2,'wall street breakfast','...','2026-08-04',-0.44592,'Wall Street Lunch: Ban Talk Lifts Networking Names','https://seekingalpha.com/article/4930045-wall-street-lunch-ban-talk-lifts-networking-names',4),(3,'keithen drury','In the artificial intelligence (AI) investing world, the cloud computing providers are one of the primary beneficiaries. These are the companies spending hundreds of billions of dollars on data center...','2026-08-04',0.92324,'3 Magnificent Artificial Intelligence (AI) Stocks to Buy Right Now and Hold for the Next Decade','https://www.fool.com/investing/2026/08/04/3-magnificent-artificial-intelligence-ai-stocks-to/',4),(4,'zach parkes','...','2026-08-04',0,'Google Stock Price Today | GOOG Stock Predictions for Aug 4, 2026 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-goog-stock-predictions-for-aug-4-2026-live-polymarket-odds',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -338,4 +339,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-05  3:52:05
+-- Dump completed on 2026-08-06  3:57:07
