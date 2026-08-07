@@ -280,6 +280,7 @@ f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
@@ -316,7 +317,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'juxtaposed ideas','...','2026-08-05',0.72848,'Microsoft Is Winning Without FCF/Debt Pains - Reiterated Strong Buy','https://seekingalpha.com/article/4930806-microsoft-is-winning-without-fcfdebt-pains-reiterated-strong-buy',40),(2,'douglas a. mcintyre','...','2026-08-05',-0.25456,'SpaceX Has Already Lost AI Race','https://finance.yahoo.com/technology/ai/articles/spacex-already-lost-ai-race-145354737.html',20),(3,'ruchi gupta','...','2026-08-05',0.18104,'Palantir Just Reported a Blowout Quarter and Raised Its Guidance. Wall Street Is Blown Away by PLTR Stock.','https://www.barchart.com/story/news/3664544/palantir-just-reported-a-blowout-quarter-and-raised-its-guidance-wall-street-is-blown-away-by-pltr-stock',2),(4,'sushree mohanty','...','2026-08-05',-0.38832,'This Nvidia-Backed AI Play Is Booming, But the Valuation Is Hard to Ignore','https://www.barchart.com/story/news/3663764/this-nvidia-backed-ai-play-is-booming-but-the-valuation-is-hard-to-ignore',2),(5,'donna armstrong','...','2026-08-05',0.2368,'Microsoft Corporation $MSFT Shares Purchased by World Equity Group Inc.','https://www.thelincolnianonline.com/2026/08/05/microsoft-corporation-msft-shares-purchased-by-world-equity-group-inc.html',20),(6,'russel kinnel','...','2026-08-05',0,'3 Funds That Focus on Wide-Moat Stocks','https://www.morningstar.com/funds/3-funds-that-focus-wide-moat-stocks-2',2),(7,'geoffrey seiler','When it comes to the tech industry, history can provide some important lessons. One of the biggest is that while hardware companies are often the early winners, software companies historically capture...','2026-08-05',0.81178,'History Says Software-as-a-Service (SaaS) Stocks Will Be the Ultimate AI Winners. 3 SaaS Stocks to Buy Now.','https://www.fool.com/investing/2026/08/05/history-says-software-as-a-service-saas-stocks-wil/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'marc guberti','Microsoft (MSFT +2.54%) flipped the script pretty quickly. The beleaguered tech stock briefly fell below $350 per share after trading above $553 per share less than one year ago. Then earnings came ou...','2026-08-06',0.19968,'Is Microsoft Still Undervalued After Its 25% Post-Earnings Rally?','https://www.fool.com/investing/2026/08/06/microsoft-undervalued-after-earnings-rally/',40),(2,'jason kephart','...','2026-08-06',-0.28896,'Has This Managerâ€™s Star Fallen?','https://www.morningstar.com/funds/has-this-managers-star-fallen',2),(3,'dan romanoff; cpa','...','2026-08-06',0.56024,'After Earnings, Is Microsoft Stock a Buy, a Sell, or Fairly Valued?','https://www.morningstar.com/stocks/after-earnings-is-microsoft-stock-buy-sell-or-fairly-valued-11',20),(4,'mark dietrich','...','2026-08-06',0.2368,'Bango (LON:BGO) Shares Cross Above 50 Day Moving Average â€“ Whatâ€™s Next?','https://www.watchlistnews.com/bango-lonbgo-shares-cross-above-50-day-moving-average-whats-next/11172974.html',2),(5,'micah haroldson','...','2026-08-06',0.45752,'Microsoft Corporation $MSFT Shares Sold by Meeder Asset Management Inc.','https://www.watchlistnews.com/microsoft-corporation-msft-shares-sold-by-meeder-asset-management-inc/11172953.html',20),(6,'danessa lincoln','...','2026-08-06',0,'WCM Investment Management LLC Trims Holdings in Microsoft Corporation $MSFT','https://www.themarketsdaily.com/2026/08/06/wcm-investment-management-llc-trims-holdings-in-microsoft-corporation-msft.html',20),(7,'tristan rich','...','2026-08-06',0.2368,'Kapitalo Investimentos Ltda Sells 32,652 Shares of Microsoft Corporation $MSFT','https://www.themarketsdaily.com/2026/08/06/kapitalo-investimentos-ltda-sells-32652-shares-of-microsoft-corporation-msft.html',20),(8,'humpy adepu','Humpy Adepu...','2026-08-06',0.40848,'Top-Performing US Stocks Delivering Strong Market Momentum','https://www.analyticsinsight.net/ampstories/stocks/top-performing-us-stocks-delivering-strong-market-momentum',4),(9,'defense world staff','\n					Posted by Defense World Staff on Aug 6th, 2026\n\nAldebaran Capital LLC increased its stake in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 12.2% in the 1st quarter, according to its most...','2026-08-06',0.43658,'Microsoft Corporation $MSFT Shares Acquired by Aldebaran Capital LLC','https://www.defenseworld.net/2026/08/06/microsoft-corporation-msft-shares-acquired-by-aldebaran-capital-llc.html',40),(10,'defense world staff','\n					Posted by Defense World Staff on Aug 6th, 2026\n\nEarned Wealth Advisors LLC raised its stake in shares of  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 16.2% during the first quarter, acc...','2026-08-06',0.72754,'Earned Wealth Advisors LLC Acquires 5,143 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/08/06/earned-wealth-advisors-llc-acquires-5143-shares-of-microsoft-corporation-msft.html',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +340,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-06  3:57:07
+-- Dump completed on 2026-08-07  3:43:00

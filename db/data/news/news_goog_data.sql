@@ -280,6 +280,7 @@ f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
@@ -316,7 +317,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-08-05',0.65008,'Got $500? 2 Magnificent AI Stocks to Buy Hand Over Fist Before the Anthropic IPO','https://finance.yahoo.com/markets/stocks/articles/got-500-2-magnificent-ai-111100300.html',20),(2,'wall street breakfast','...','2026-08-04',-0.44592,'Wall Street Lunch: Ban Talk Lifts Networking Names','https://seekingalpha.com/article/4930045-wall-street-lunch-ban-talk-lifts-networking-names',4),(3,'keithen drury','In the artificial intelligence (AI) investing world, the cloud computing providers are one of the primary beneficiaries. These are the companies spending hundreds of billions of dollars on data center...','2026-08-04',0.92324,'3 Magnificent Artificial Intelligence (AI) Stocks to Buy Right Now and Hold for the Next Decade','https://www.fool.com/investing/2026/08/04/3-magnificent-artificial-intelligence-ai-stocks-to/',4),(4,'zach parkes','...','2026-08-04',0,'Google Stock Price Today | GOOG Stock Predictions for Aug 4, 2026 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-goog-stock-predictions-for-aug-4-2026-live-polymarket-odds',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john bromels','...','2026-08-06',0,'Greg Abel Sold 15 Buffett Stock Positions in His First Quarter as Berkshire CEO. What His Early Portfolio Moves Signal for Shareholders.','https://finance.yahoo.com/markets/stocks/articles/greg-abel-sold-15-buffett-142000319.html',20),(2,'marc guberti','Alphabet (GOOG -0.97%) (GOOGL -1.29%) has almost doubled over the past year, and its shares have handily outperformed the S&P 500 year to date. The online advertising giant continues to post high reve...','2026-08-06',0.19936,'3 Reasons Alphabet Stock Has Investors Buzzing Right Now','https://www.fool.com/investing/2026/08/06/3-reasons-alphabet-stock-has-investors-buzzing-rig/',4),(3,'keithen drury','Alphabet (GOOG -0.97%) (GOOGL -1.29%) is the largest AI hyperscaler, sitting at a $4.35 trillion market cap. It is a major player in the AI realm, as it has a dominant cloud computing service and is a...','2026-08-06',0.55218,'Alphabet CEO Sundar Pichai Just Made a $200 Billion Infrastructure Move. Nvidia, Micron, and Broadcom Investors Should Rejoice.','https://www.fool.com/investing/2026/08/05/alphabet-ceo-sundar-pichai-just-made-a-200-billion/',4),(4,'keithen drury','Both Amazon (AMZN -0.14%) and Alphabet (GOOG -0.97%) (GOOGL -1.29%) just posted unbelievable quarters that sent shares soaring. While the one-time pop is nice, there are also several reasons to believ...','2026-08-05',0.71884,'Amazon and Alphabet Just Crushed Expectations. Which Is the Better Buy Now?','https://www.fool.com/investing/2026/08/05/amazon-and-alphabet-just-crushed-expectations-whic/',4),(5,'daniel howley','...','2026-08-05',0,'Google stock drops amid DeepMind leadership shake-up','https://ca.finance.yahoo.com/news/google-stock-drops-amid-deepmind-leadership-shake-up-170219204.html',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +340,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-06  3:57:07
+-- Dump completed on 2026-08-07  3:43:00

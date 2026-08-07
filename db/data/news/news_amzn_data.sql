@@ -280,6 +280,7 @@ f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
@@ -316,7 +317,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'douglas a. mcintyre','...','2026-08-05',-0.25456,'SpaceX Has Already Lost AI Race','https://finance.yahoo.com/technology/ai/articles/spacex-already-lost-ai-race-145354737.html',20),(2,'mitch edgeman','...','2026-08-05',0,'Recent Investment Analystsâ€™ Ratings Changes for Amazon.com (AMZN)','https://www.themarketsdaily.com/2026/08/05/recent-investment-analysts-ratings-changes-for-amazon-com-amzn.html',2),(3,'sarita garza','...','2026-08-05',0,'Westpac Banking Corp Has $45.48 Million Stock Holdings in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/05/westpac-banking-corp-has-45-48-million-stock-holdings-in-amazon-com-inc-amzn.html',2),(4,'ethan ryder','...','2026-08-05',0,'PNC Financial Services Group Inc. Raises Stock Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13530761/pnc-financial-services-group-inc-raises-stock-position-in-amazon-com-inc-amzn.html',2),(5,'the motley fool','...','2026-08-05',0.65008,'Got $500? 2 Magnificent AI Stocks to Buy Hand Over Fist Before the Anthropic IPO','https://finance.yahoo.com/markets/stocks/articles/got-500-2-magnificent-ai-111100300.html',20),(6,'russel kinnel','...','2026-08-05',0,'3 Funds That Focus on Wide-Moat Stocks','https://www.morningstar.com/funds/3-funds-that-focus-wide-moat-stocks-2',2),(7,'alanna baker','...','2026-08-05',-0.2368,'Insight Advisors LLC PA Cuts Stock Holdings in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/08/05/insight-advisors-llc-pa-cuts-stock-holdings-in-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'john bromels','...','2026-08-06',0,'Greg Abel Sold 15 Buffett Stock Positions in His First Quarter as Berkshire CEO. What His Early Portfolio Moves Signal for Shareholders.','https://finance.yahoo.com/markets/stocks/articles/greg-abel-sold-15-buffett-142000319.html',20),(2,'joey frenette','Investing\n\n							Amazon raised its 2026 CapEx target to $220 billion, supported by a swollen contracted backlog proving the spend is demand-driven, not speculative.													\n\n							AWS revenue s...','2026-08-06',-0.00122,'Is Amazonâ€™s Massive Capex Expansion a Drag, or Did They Just Win the Cloud Infrastructure War?','https://247wallst.com/investing/2026/08/06/is-amazons-massive-capex-expansion-a-drag-or-did-they-just-win-the-cloud-infrastructure-war/',4),(3,'the motley fool','...','2026-08-06',0.14232,'Amazon vs. Alibaba: Two AI Giants Building Very Different Futures','https://finance.yahoo.com/technology/ai/articles/amazon-vs-alibaba-two-ai-135000152.html',200),(4,'lindsey winhoffer','...','2026-08-06',0,'Amazon.com (NASDAQ:AMZN) Upgraded to â€œStrong-Buyâ€ at Zacks Research','https://www.watchlistnews.com/amazon-com-nasdaqamzn-upgraded-to-strong-buy-at-zacks-research/11173427.html',2),(5,'kim johansen','...','2026-08-06',0.45752,'Lombard Odier Asset Management Europe Ltd Sells 142,841 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/06/lombard-odier-asset-management-europe-ltd-sells-142841-shares-of-amazon-com-inc-amzn.html',2),(6,'lee jackson','Investing\n\n							Five Buy-rated dividend stocks yielding 5% to 7% have dipped on earnings misses or weak guidance, creating compelling entry points for income investors.													\n\n							Altria (...','2026-08-06',0.7747,'Boomers Should Buy These High-Yield Dividend August Bargains Hand-Over-Fist','https://247wallst.com/investing/2026/08/06/boomers-should-buy-these-high-yield-dividend-bargain-gems-hand-over-fist/',4),(7,'kenio fontes','...','2026-08-06',0.30544,'MercadoLibre Q2: The Latin American Flywheel Is Getting Stronger','https://seekingalpha.com/article/4931684-mercadolibre-q2-the-latin-american-flywheel-is-getting-stronger',4),(8,'lindsey winhoffer','...','2026-08-06',0.39512,'Monograph Wealth Advisors LLC Trims Stake in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/monograph-wealth-advisors-llc-trims-stake-in-amazon-com-inc-amzn/11173320.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +340,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-06  3:57:07
+-- Dump completed on 2026-08-07  3:42:59
