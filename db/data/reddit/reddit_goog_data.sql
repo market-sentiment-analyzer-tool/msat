@@ -94,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+47b8a5cc-920b-11f1-aed6-fefb67bc667d:1-48,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
@@ -193,7 +194,6 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
-a9aedeaf-9144-11f1-82bd-76cb53dde54e:1-53,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -221,6 +221,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
@@ -316,7 +317,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1vgituq','p1xet8f','2026-08-05',559,-0.34,'Leaving to start a Google funded company that will use Google cloud. Yes it sounds like the relationship is ruined forever and he left in on horrible terms /s '),(2,'stocks','1vgituq','p1xo4tc','2026-08-05',127,-0.4019,'Misleading title. Hassabis is remaining as DeepMindâ€™s chairman and Alphabetâ€™s chief scientist. Dean and the other three arenâ€™t â€œstepping downâ€- theyâ€™re leaving to found a new AI company.'),(3,'stocks','1vgituq','p1xvx31','2026-08-05',111,0.9732,'The \"four other AI leaders\" should be the headline. Jeff Dean especially, but also Sanjay as his long-time collaborator, built most of the key infrastructure inside Google for its first two decades. \n\nHis accomplishments include:\n\n* MapReduce\n* TensorFlow\n* TPU program\n* BigTable\n* Spanner\n* DistBelief\n* Pathways\n* word2vec\n* Google Brain\n* Gemma\n* Gemini, Search, Ads, Content Ads, News, Translate\n\nThese are each industry-transforming innovations, and creating any one of them would make you a luminary. To produce a new seminal work every two years or so, that every computer scientist or software engineer can only dream of doing once in their lifetime? Just mind boggling. Easily the GOAT programmer.\n\nThat doesn\'t even account for the fact that while working on these various large projects, he wrote or improved countless low level shared code libraries that are used by every engineer at Google. When code runs on millions of computers, making a small tweak to speed it up by 0.1% can save a million dollars. Jeff Dean has done that sort of thing hundreds of times.'),(4,'stocks','1vgituq','p1xhkor','2026-08-05',45,-0.4003,'Holy smokes! Dean leaving the company is crazyÂ '),(5,'stocks','1vgituq','p1ycfcm','2026-08-05',7,-0.2617,'A similar scenario unfolded with Musa (deep mind co founder) around 2020. Pinchar wanted to absorb Musaâ€™s deep mind applied sciences division into google but Musa and Demis didnâ€™t want that and things got messy. Musa walked and Demis stayed. Lots of that scenario also had to do with an ai governance group that both Musa and Demis wanted, so Iâ€™m thinking this new exodus may have to do with the ai governance deadlock.   \nAll the above comes from The Infiniti Machine book. Good read and strikingly relevant in relation to this latest exodus. '),(6,'stocks','1vgituq','p1xh069','2026-08-05',35,-0.0772,'Everyone is replacable. The resources that Google has are unmatched. They announced they are taking a stake in the company with Google as anchor investors.'),(7,'stocks','1vgituq','p1z0rqs','2026-08-06',5,0.4404,'\"CEO of DeepMind gets promotion to lead the scientific strategy for all of Google\" would have been a better title.  '),(8,'stocks','1vgituq','p1y0uej','2026-08-05',3,0.5562,'Bullish!'),(9,'stocks','1vgituq','p1y26ao','2026-08-05',2,-0.5106,'It\'s because they can earn ungodly amounts with their new companies and then sell it back to google, et al. Google isn\'t going to given them hundreds of millions to stay. '),(10,'stocks','1vgituq','p1xp6jy','2026-08-05',3,-0.4588,'Okay, if they are start a new businese using Google\'s services, buying data center usage, using AWS...yet another loop investment to hide the debt off the balance sheet. \n\nTho, so far it looks like a different reason than this, but the trend is worrying '),(11,'stocks','1vgituq','p1z1iry','2026-08-06',1,0.6597,'Sounds like Google AI isnâ€™t keeping up and someone got fired/promoted.'),(12,'stocks','1vgituq','p1z61sh','2026-08-06',1,0,'Have to keep them close. They know too much'),(13,'stocks','1vgituq','p1zhj4k','2026-08-06',1,0.3612,'Google has a deep bench - just natural turnover.\n\n'),(14,'stocks','1vgituq','p1xxi6k','2026-08-05',-11,-0.5739,'This is kinda nuts.  Idk what the fuck google is doing over there to their AI talent, but they need to stop it right now.  $200B in capex and everyone is walking out the door.  Meta and spacex are both going to pass them at this rate'),(15,'stocks','1vgituq','p1z1fr8','2026-08-06',-1,0.8807,'This is a multi-trillion dollar company with tens of thousands of customers and billions in revenue, do people think it depends on a couple of people just cuz they were employee nr 30 etc, shall I laugh or shall I laugh.Â ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +339,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-06  3:13:30
+-- Dump completed on 2026-08-07  2:55:10

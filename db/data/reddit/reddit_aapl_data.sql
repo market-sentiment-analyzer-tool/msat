@@ -94,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+47b8a5cc-920b-11f1-aed6-fefb67bc667d:1-48,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
@@ -193,7 +194,6 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
-a9aedeaf-9144-11f1-82bd-76cb53dde54e:1-53,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
@@ -221,6 +221,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
@@ -316,7 +317,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +326,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1vge84q','p1wcvdg','2026-08-05',75,-0.128,'Why would they, demand is increasing exponentially.'),(2,'stocks','1vge84q','p1wen10','2026-08-05',77,-0.6597,'Seems like after blaming Micron, Apple has gone to all memory players and been rejected. I guess they\'ll just have to pay.'),(3,'stocks','1vge84q','p1wpkhl','2026-08-05',15,-0.1531,'How did Samsungâ€™s pricing become known? The situation stems from India, where authorities issued Apple a substantial fine. Apple refused to comply, leading to a leak of Appleâ€™s internal credential filesâ€”which included quotations from Samsung and SK for Apple products. Suppliers are now demanding equal treatment, and we therefore anticipate a price increase for Apple products.'),(4,'stocks','1vge84q','p1xai80','2026-08-05',15,-0.4041,'The idea that CXMT was just gonna sell for $50 what Micron sells for $500 was dumb af. CXMT can\'t even meet Chinese domestic demand and their yields are poor to begin with so they love the high pricing just as much as the big 3 do but they\'re gonna give Apple a deal?'),(5,'stocks','1vge84q','p1wduch','2026-08-05',35,0.2263,'Could we ask for price cuts when we buy goods from these companies? No, instead they tell us to pay up. So Apple will have to do the same.'),(6,'stocks','1vge84q','p1wpzag','2026-08-05',9,0,'\"No low balls. I know what I have.\"\n\n\\-CXMT'),(7,'stocks','1vge84q','p1wg85w','2026-08-05',7,0.9124,'Banning chinese from importing tech stuff is a good thing supposedly, the unintended effect is spurring the tech advancement that led to CXMT growth and Huawei & Xiaomi to solely depend on them. \n\nNow it is coming back to bite the americans in the iPhone sector since Apple cannot generate the same amount of profits unless they raise prices of the iPhone. \n\ntldr. Win for all the RAM makers, losers are the laptop and iPhones. The Tech slumlords is making us pay more with his stupid AI hype. \n\nDisclaimer: Long time Apple shareholder. Buying iPhones is only making me richer.'),(8,'stocks','1vge84q','p1z6wd7','2026-08-06',2,0.1372,'The horrors -- Apple may have to accept less than 50% profits on every iPhone'),(9,'stocks','1vge84q','p1wdrsk','2026-08-05',3,0.34,'Good luck. You know Trump is going to shut US investment to this down'),(10,'stocks','1vge84q','p1yks0y','2026-08-05',1,0,'On the other hand I wonder how the price of memory is going to affect Xiaomi OPPO or Huaweiâ€™s profit margins. I suppose their devices have thinner margins than Apple, with a group of more price-sensitive consumers.\n\nAnyway long MU.'),(11,'stocks','1vge84q','p1zkfxv','2026-08-06',1,0.25,'I thought Chinese tech comes with CCP backdoors?'),(12,'AAPL','1vgk3fq','p1y7lqd','2026-08-05',4,0.0516,'No one can predict that with any certainty. No one should trust Mr. market. All that matters is that Apple  \nPrints cash, and because of that. You will be able to sell your shares years from now for substantially more than you can today'),(13,'AAPL','1vgk3fq','p1yd7sa','2026-08-05',3,0.8519,'I have no idea what Apple shares will do tomorrow or next year, and neither does anyone else. But if Apple continues to produce mountains of cash and intelligently allocates that capital, patient owners are likely to be rewarded. In the long run, itâ€™s the performance of the businessâ€”not the opinions of Mr. Marketâ€”that determines your return.'),(14,'AAPL','1vgk3fq','p1xplnr','2026-08-05',2,0.7783,'Iâ€™m hoping we see another large leg down in memory and AI that frees up money for Apple which is a good ai bubble safehaven'),(15,'AAPL','1vgk3fq','p1xygs7','2026-08-05',1,0.6369,'i love that the core contributors are more conservative with their expectations. we\'ve been in this company a long time.'),(16,'AAPL','1vgk3fq','p1z573k','2026-08-06',1,0.2755,'Never doubt apple');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vhcq46','p24qy16','2026-08-06',2,0,'Bounce to 317 fill the gap then to 323 '),(2,'AAPL','1vh7kde','p22y14m','2026-08-06',10,-0.3736,'Why not draw another line? Why stop now?'),(3,'AAPL','1vh7kde','p22vuas','2026-08-06',9,0.4939,'Thatâ€™s because it doesnâ€™t care about your crayons'),(4,'AAPL','1vh7kde','p23p4rs','2026-08-06',5,0.25,'Oh, well you better sell then. Bye.ðŸ‘‹ '),(5,'AAPL','1vh7kde','p23wg14','2026-08-06',3,-0.6003,'As someone who is decently high up in private equity, nobody knows shit about fuck.'),(6,'AAPL','1vh7kde','p22vlzj','2026-08-06',2,0,'ðŸ¥´'),(7,'AAPL','1vh7kde','p23zh9a','2026-08-06',2,0,'Have you considered making the line purpler?'),(8,'AAPL','1vh7kde','p24lg4x','2026-08-06',1,0.6218,'Testing resistance is a good sign.\n\nedit:   \n  This supports my theory that a lot of people made a lot of money in the recent (since last April) rally, and the correction in chip and AI stocks means that money needs to go somewhere. AAPL is a company with solid results and actual, non-AI-related products they are selling more of every quarter.  \n  Meanwhile, forward PE is way too high for people who focus on AAPL and a lot of value investors. We have also seen significant gains since Liberation Day and the start of the Iran \"war\" that people are (likely to be) locking in.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +340,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-06  3:13:30
+-- Dump completed on 2026-08-07  2:55:09
