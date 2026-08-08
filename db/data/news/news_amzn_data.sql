@@ -155,6 +155,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 7220ecd4-e462-11f0-86f2-0e6d86f997a9:1-62,
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
+751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
@@ -317,7 +318,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -326,7 +327,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'john bromels','...','2026-08-06',0,'Greg Abel Sold 15 Buffett Stock Positions in His First Quarter as Berkshire CEO. What His Early Portfolio Moves Signal for Shareholders.','https://finance.yahoo.com/markets/stocks/articles/greg-abel-sold-15-buffett-142000319.html',20),(2,'joey frenette','Investing\n\n							Amazon raised its 2026 CapEx target to $220 billion, supported by a swollen contracted backlog proving the spend is demand-driven, not speculative.													\n\n							AWS revenue s...','2026-08-06',-0.00122,'Is Amazonâ€™s Massive Capex Expansion a Drag, or Did They Just Win the Cloud Infrastructure War?','https://247wallst.com/investing/2026/08/06/is-amazons-massive-capex-expansion-a-drag-or-did-they-just-win-the-cloud-infrastructure-war/',4),(3,'the motley fool','...','2026-08-06',0.14232,'Amazon vs. Alibaba: Two AI Giants Building Very Different Futures','https://finance.yahoo.com/technology/ai/articles/amazon-vs-alibaba-two-ai-135000152.html',200),(4,'lindsey winhoffer','...','2026-08-06',0,'Amazon.com (NASDAQ:AMZN) Upgraded to â€œStrong-Buyâ€ at Zacks Research','https://www.watchlistnews.com/amazon-com-nasdaqamzn-upgraded-to-strong-buy-at-zacks-research/11173427.html',2),(5,'kim johansen','...','2026-08-06',0.45752,'Lombard Odier Asset Management Europe Ltd Sells 142,841 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/06/lombard-odier-asset-management-europe-ltd-sells-142841-shares-of-amazon-com-inc-amzn.html',2),(6,'lee jackson','Investing\n\n							Five Buy-rated dividend stocks yielding 5% to 7% have dipped on earnings misses or weak guidance, creating compelling entry points for income investors.													\n\n							Altria (...','2026-08-06',0.7747,'Boomers Should Buy These High-Yield Dividend August Bargains Hand-Over-Fist','https://247wallst.com/investing/2026/08/06/boomers-should-buy-these-high-yield-dividend-bargain-gems-hand-over-fist/',4),(7,'kenio fontes','...','2026-08-06',0.30544,'MercadoLibre Q2: The Latin American Flywheel Is Getting Stronger','https://seekingalpha.com/article/4931684-mercadolibre-q2-the-latin-american-flywheel-is-getting-stronger',4),(8,'lindsey winhoffer','...','2026-08-06',0.39512,'Monograph Wealth Advisors LLC Trims Stake in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/monograph-wealth-advisors-llc-trims-stake-in-amazon-com-inc-amzn/11173320.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rick munarriz','...','2026-08-07',0.68152,'The Best Stock to Invest $1,000 in Right Now','https://finance.yahoo.com/markets/stocks/articles/best-stock-invest-1-000-144300274.html',20),(2,'dan romanoff; cpa','...','2026-08-07',0.60632,'After Earnings, Is Amazon Stock a Buy, a Sell, or Fairly Valued?','https://www.morningstar.com/stocks/after-earnings-is-amazon-stock-buy-sell-or-fairly-valued-12',20),(3,'beth mckenna','Shares of e-commerce and cloud computing leader Amazon.com (AMZN +0.81%) jumped 14% in July, according to data from S&P Global Market Intelligence.\nFor context, the S&P 500 index was essentially flat ...','2026-08-07',0.34192,'Why Amazon Stock Jumped 14% in July While the Market Was Flat','https://www.fool.com/investing/2026/08/07/amzn-stock-earnings-cloud-ai/',40),(4,'anthony di pizio','Had you invested in an S&P 500 (^GSPC +0.62%) index fund at the beginning of 2026, you would have had a 9.5% gain during the first half of the year. But had you parked your money in the Vanguard S&P 5...','2026-08-07',-0.07222,'Prediction: This Unstoppable Vanguard ETF Will Crush the S&P 500 in the Remainder of 2026','https://www.fool.com/investing/2026/08/07/prediction-vanguard-etf-will-crush-sp-500-in-2026/',4),(5,'ethan ryder','...','2026-08-07',0.2368,'Amazon.com, Inc. $AMZN Shares Sold by Oak Associates Ltd. OH','https://www.tickerreport.com/banking-finance/13533400/amazon-com-inc-amzn-shares-sold-by-oak-associates-ltd-oh.html',2),(6,'max byerly','...','2026-08-07',0,'Noked Israel Ltd Grows Stake in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13533399/noked-israel-ltd-grows-stake-in-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -340,4 +341,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-07  3:42:59
+-- Dump completed on 2026-08-08  2:48:11
