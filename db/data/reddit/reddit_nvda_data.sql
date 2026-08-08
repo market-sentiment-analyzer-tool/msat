@@ -94,7 +94,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
-47b8a5cc-920b-11f1-aed6-fefb67bc667d:1-48,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
@@ -204,6 +203,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b528c3be-92cc-11f1-a110-72204c59893f:1-31,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -281,6 +281,7 @@ f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
+f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
@@ -317,7 +318,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -326,6 +327,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vhrm3o','p27m7st','2026-08-07',11,-0.1779,'Leapfrogging a top tier nvda chip is going to be difficult for a long time. '),(2,'NVDA_Stock','1vhrm3o','p27jib0','2026-08-07',9,-0.3649,'Of course it is not competitive. Google TPU performance is on par with H200, nowhere near Blackwell/Blackwell Ultra, let alone Vera Rubin. '),(3,'NVDA_Stock','1vhrm3o','p2b950t','2026-08-07',5,-0.0772,'Hmm the title on this thread is a bit aggressive but after some effort I did find a quote which seems to suggest it.\n\nhttps://www.reddit.com/r/singularity/comments/1vi857m/semianalysis_on_gemini_35_pro/'),(4,'NVDA_Stock','1vhrm3o','p27l51x','2026-08-07',3,-0.3098,'Not sure anyone has more data collected than Google... seems like a waste that they are not using it to the full potential.'),(5,'NVDA_Stock','1vhrm3o','p29jrob','2026-08-07',4,-0.9116,'Gemini is becoming dumber and dumber day by day. \n\nIt provides wrong information, lie constantly and tries to deflect. \n\nCalculations are so bad, I would rather do it on a piece of paper than ask Gemini. '),(6,'NVDA_Stock','1vhrm3o','p28b4m7','2026-08-07',2,0.7527,'cmiiw, ai model\'s capability basically depends on the training hardware capacity.  \nand currently no model can hold top position for more than 1 year.\n\nthat means there won\'t be single winner like google does in web search.  \nswitching coding assistance model is also easy and feels seamless to users,  \nunlike switching from google search to bing.\n\ncurrent ai biggest winner is nvidia because it sells most ai hardware.  \nso it is very correct for google to pursue ai hardware business.'),(7,'NVDA_Stock','1vhrm3o','p27nn1o','2026-08-07',1,0.4891,'Gemini Pro was starting to impress me around 6 months ago but man it really is tough to deal with sometimes too often. I really appreciate where it is, but it feels so nerfed. I started to pay for OAI finally.'),(8,'NVDA_Stock','1vhrm3o','p28adj2','2026-08-07',1,0.1877,'3.5 pro is not cancelled ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -339,4 +341,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-07  2:55:10
+-- Dump completed on 2026-08-08  1:59:40
