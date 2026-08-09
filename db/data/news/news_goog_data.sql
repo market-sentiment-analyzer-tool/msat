@@ -198,6 +198,7 @@ a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+ae800644-939d-11f1-84c0-2696fb02c49a:1-58,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
@@ -318,7 +319,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -327,7 +328,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'oleksandr pylypenko','...','2026-08-06',0.62264,'The Data Center Boom Is Powering Utility Earnings. Here Is My Favorite Way to Play the Trend.','https://www.barchart.com/story/news/3707230/the-data-center-boom-is-powering-utility-earnings-here-is-my-favorite-way-to-play-the-trend',2),(2,'zach parkes','...','2026-08-06',-0.02064,'Google Stock Price Today Up or Down (NASDAQ: GOOGL) | Alphabet Stock News & Odds (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-up-down-alphabet-stock-nasdaq-googl-news-odds-for-aug-6-2026',20),(3,'john bromels','...','2026-08-06',0,'Greg Abel Sold 15 Buffett Stock Positions in His First Quarter as Berkshire CEO. What His Early Portfolio Moves Signal for Shareholders.','https://finance.yahoo.com/markets/stocks/articles/greg-abel-sold-15-buffett-142000319.html',20),(4,'marc guberti','Alphabet (GOOG -0.88%) (GOOGL -0.96%) has almost doubled over the past year, and its shares have handily outperformed the S&P 500 year to date. The online advertising giant continues to post high reve...','2026-08-06',0.19936,'3 Reasons Alphabet Stock Has Investors Buzzing Right Now','https://www.fool.com/investing/2026/08/06/3-reasons-alphabet-stock-has-investors-buzzing-rig/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sarah holzmann','...','2026-08-07',0.35232,'Tim Cook Says Thereâ€™s â€˜No Better Personâ€™ to Take Over at Apple â€“ Hereâ€™s What AAPL Investors Need to Know About the CEO Transition','https://www.barchart.com/story/news/3723576/tim-cook-says-theres-no-better-person-to-take-over-at-apple-heres-what-aapl-investors-need-to-know-about-the-ceo-transition',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -341,4 +342,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-08  2:48:11
+-- Dump completed on 2026-08-09  2:55:36

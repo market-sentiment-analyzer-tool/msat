@@ -198,6 +198,7 @@ a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+ae800644-939d-11f1-84c0-2696fb02c49a:1-58,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
@@ -318,7 +319,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -327,7 +328,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rick munarriz','...','2026-08-07',0.68152,'The Best Stock to Invest $1,000 in Right Now','https://finance.yahoo.com/markets/stocks/articles/best-stock-invest-1-000-144300274.html',20),(2,'dan romanoff; cpa','...','2026-08-07',0.60632,'After Earnings, Is Amazon Stock a Buy, a Sell, or Fairly Valued?','https://www.morningstar.com/stocks/after-earnings-is-amazon-stock-buy-sell-or-fairly-valued-12',20),(3,'beth mckenna','Shares of e-commerce and cloud computing leader Amazon.com (AMZN +0.81%) jumped 14% in July, according to data from S&P Global Market Intelligence.\nFor context, the S&P 500 index was essentially flat ...','2026-08-07',0.34192,'Why Amazon Stock Jumped 14% in July While the Market Was Flat','https://www.fool.com/investing/2026/08/07/amzn-stock-earnings-cloud-ai/',40),(4,'anthony di pizio','Had you invested in an S&P 500 (^GSPC +0.62%) index fund at the beginning of 2026, you would have had a 9.5% gain during the first half of the year. But had you parked your money in the Vanguard S&P 5...','2026-08-07',-0.07222,'Prediction: This Unstoppable Vanguard ETF Will Crush the S&P 500 in the Remainder of 2026','https://www.fool.com/investing/2026/08/07/prediction-vanguard-etf-will-crush-sp-500-in-2026/',4),(5,'ethan ryder','...','2026-08-07',0.2368,'Amazon.com, Inc. $AMZN Shares Sold by Oak Associates Ltd. OH','https://www.tickerreport.com/banking-finance/13533400/amazon-com-inc-amzn-shares-sold-by-oak-associates-ltd-oh.html',2),(6,'max byerly','...','2026-08-07',0,'Noked Israel Ltd Grows Stake in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13533399/noked-israel-ltd-grows-stake-in-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'tom lauricella','...','2026-08-08',0.74192,'Smart Investor: Stocks With Dividend Increases, Warshâ€™s New Approach, and Earnings Where Great Wasnâ€™t Good Enough','https://www.morningstar.com/markets/smart-investor-stocks-with-dividend-increases-warshs-new-approach-earnings-where-great-wasnt-good-enough',2),(2,'kyle jackson','...','2026-08-08',0.5364,'Healthcare of Ontario Pension Plan Trust Fund Purchases 48,857 Shares of Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/healthcare-of-ontario-pension-plan-trust-fund-purchases-48857-shares-of-amazon-com-inc-amzn/11175931.html',2),(3,'abmn staff','...','2026-08-08',0,'Aristides Capital LLC Purchases New Position in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/08/08/aristides-capital-llc-purchases-new-position-in-amazon-com-inc-amzn.html',2),(4,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nEmpirical Finance LLC grew its position in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 9.9% during the first quarter, according to its most r...','2026-08-08',0.43668,'Amazon.com, Inc. $AMZN Shares Purchased by Empirical Finance LLC','https://www.defenseworld.net/2026/08/08/amazon-com-inc-amzn-shares-purchased-by-empirical-finance-llc.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nCourage Capital Management LLC bought a new position in  Amazon.com, Inc. (NASDAQ:AMZN) in the first quarter, according to its most recent disclos...','2026-08-08',0.72768,'Courage Capital Management LLC Acquires Shares of 4,000 Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/08/08/courage-capital-management-llc-acquires-shares-of-4000-amazon-com-inc-amzn.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nEpoch Investment Partners Inc. cut its position in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 4.4% in the 1st quarter, according to its most...','2026-08-08',0.4367,'Amazon.com, Inc. $AMZN Shares Sold by Epoch Investment Partners Inc.','https://www.defenseworld.net/2026/08/08/amazon-com-inc-amzn-shares-sold-by-epoch-investment-partners-inc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nBoreal Capital Management LLC grew its stake in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 21.0% in the 1st quarter, according to its most r...','2026-08-08',0.38092,'Boreal Capital Management LLC Buys 4,450 Shares of Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/08/08/boreal-capital-management-llc-buys-4450-shares-of-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -341,4 +342,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-08  2:48:11
+-- Dump completed on 2026-08-09  2:55:36
