@@ -198,6 +198,7 @@ a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
+ae800644-939d-11f1-84c0-2696fb02c49a:1-58,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
@@ -221,6 +222,7 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
+c40d67e8-9460-11f1-bf39-725e92282e4f:1-22,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -293,7 +295,6 @@ f91b7d1c-711b-11f1-9531-026bf641fa89:1-59,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
-faebad70-9396-11f1-b515-9e74e6faee0b:1-33,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
@@ -319,7 +320,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -328,7 +329,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vj7q62','p2jeqyk','2026-08-08',1,0.4019,'Yes, I seeâ€¦'),(2,'AAPL','1vjbqqz','p2k9c9t','2026-08-09',10,0.1779,'Honestly, if you need someone else to give you reasons to stay in, you should sell.  Iâ€™ve been â€œall inâ€ AAPL since 1991, and my biggest financial problem now is how to get the profits out while paying the least amount of taxes that is legal.'),(3,'AAPL','1vjbqqz','p2k73pd','2026-08-09',3,0,'I wonder what your DD is on this full port lol'),(4,'AAPL','1vjbqqz','p2kc27a','2026-08-09',3,-0.4767,'Because Android is for poor people '),(5,'AAPL','1vjbqqz','p2k6q0d','2026-08-09',2,0,'Why not'),(6,'AAPL','1vjbqqz','p2k7th1','2026-08-09',2,-0.3612,'you can ride the nag to the bottom'),(7,'AAPL','1vjbqqz','p2kbef9','2026-08-09',2,0,'10 reasons? We donâ€™t work for you. And why are you asking for reasons AFTER investing $250,000.'),(8,'AAPL','1vjbqqz','p2ka2jn','2026-08-09',1,0.3321,'Leave the market on Monday so we can buy at a lower price.'),(9,'AAPL','1vjbqqz','p2kbhmh','2026-08-09',1,0,'AAPL covered call ETF? What? Do you have a symbol for that?'),(10,'AAPL','1vjbqqz','p2kgcbc','2026-08-09',1,-0.34,'What concerns do you have and what would you do with the funds if you were to leave?'),(11,'AAPL','1vjbqqz','p2kjzt3','2026-08-09',1,-0.4588,'This will turn into millions if you keep it invested and meditate whenever there is an itch to sell. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -342,4 +342,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-09  2:07:36
+-- Dump completed on 2026-08-10  2:11:55
