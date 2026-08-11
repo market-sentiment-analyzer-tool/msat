@@ -130,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
@@ -319,7 +320,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -328,7 +329,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'tom lauricella','...','2026-08-08',0.74192,'Smart Investor: Stocks With Dividend Increases, Warshâ€™s New Approach, and Earnings Where Great Wasnâ€™t Good Enough','https://www.morningstar.com/markets/smart-investor-stocks-with-dividend-increases-warshs-new-approach-earnings-where-great-wasnt-good-enough',2),(2,'kyle jackson','...','2026-08-08',0.5364,'Healthcare of Ontario Pension Plan Trust Fund Purchases 48,857 Shares of Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/healthcare-of-ontario-pension-plan-trust-fund-purchases-48857-shares-of-amazon-com-inc-amzn/11175931.html',2),(3,'abmn staff','...','2026-08-08',0,'Aristides Capital LLC Purchases New Position in Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/08/08/aristides-capital-llc-purchases-new-position-in-amazon-com-inc-amzn.html',2),(4,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nEmpirical Finance LLC grew its position in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 9.9% during the first quarter, according to its most r...','2026-08-08',0.43668,'Amazon.com, Inc. $AMZN Shares Purchased by Empirical Finance LLC','https://www.defenseworld.net/2026/08/08/amazon-com-inc-amzn-shares-purchased-by-empirical-finance-llc.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nCourage Capital Management LLC bought a new position in  Amazon.com, Inc. (NASDAQ:AMZN) in the first quarter, according to its most recent disclos...','2026-08-08',0.72768,'Courage Capital Management LLC Acquires Shares of 4,000 Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/08/08/courage-capital-management-llc-acquires-shares-of-4000-amazon-com-inc-amzn.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nEpoch Investment Partners Inc. cut its position in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 4.4% in the 1st quarter, according to its most...','2026-08-08',0.4367,'Amazon.com, Inc. $AMZN Shares Sold by Epoch Investment Partners Inc.','https://www.defenseworld.net/2026/08/08/amazon-com-inc-amzn-shares-sold-by-epoch-investment-partners-inc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Aug 8th, 2026\n\nBoreal Capital Management LLC grew its stake in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 21.0% in the 1st quarter, according to its most r...','2026-08-08',0.38092,'Boreal Capital Management LLC Buys 4,450 Shares of Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/08/08/boreal-capital-management-llc-buys-4450-shares-of-amazon-com-inc-amzn.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david jagielski','...','2026-08-10',0.50952,'Amazon Stock Hits a New All-Time High: Is It Still a Buy?','https://finance.yahoo.com/markets/stocks/articles/amazon-stock-hits-time-high-121433063.html',200),(2,'shane hupp','...','2026-08-10',0.2368,'Hound Partners LLC Purchases 36,679 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13537448/hound-partners-llc-purchases-36679-shares-of-amazon-com-inc-amzn.html',2),(3,'donna armstrong','...','2026-08-10',0.28896,'Lazard Asset Management LLC Grows Stake in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/08/10/lazard-asset-management-llc-grows-stake-in-amazon-com-inc-amzn.html',2),(4,'kim johansen','...','2026-08-10',0,'SummitTX Capital L.P. Decreases Stake in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/10/summittx-capital-l-p-decreases-stake-in-amazon-com-inc-amzn.html',2),(5,'micah haroldson','...','2026-08-10',0.2368,'Hound Partners LLC Buys 36,679 Shares of Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/hound-partners-llc-buys-36679-shares-of-amazon-com-inc-amzn/11178386.html',2),(6,'danessa lincoln','...','2026-08-10',0.52776,'Steelhead Wealth Management LLC Purchases Shares of 2,551 Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/10/steelhead-wealth-management-llc-purchases-shares-of-2551-amazon-com-inc-amzn.html',2),(7,'defense world staff','\n					Posted by Defense World Staff on Aug 10th, 2026\n\nElite Wealth Management Inc. boosted its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 16.6% in the first quarter, accor...','2026-08-10',0.7525,'Amazon.com, Inc. $AMZN Stake Boosted by Elite Wealth Management Inc.','https://www.defenseworld.net/2026/08/10/amazon-com-inc-amzn-stake-boosted-by-elite-wealth-management-inc.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Aug 10th, 2026\n\nFamily Manage LLC boosted its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 37.5% during the 1st quarter, Holdings Channel reports. The institu...','2026-08-10',0.4367,'Family Manage LLC Buys 17,646 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/08/10/family-manage-llc-buys-17646-shares-of-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -342,4 +343,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-09  2:55:36
+-- Dump completed on 2026-08-11  2:58:27

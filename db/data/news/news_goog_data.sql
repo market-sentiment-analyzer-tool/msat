@@ -130,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
@@ -319,7 +320,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -328,7 +329,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sarah holzmann','...','2026-08-07',0.35232,'Tim Cook Says Thereâ€™s â€˜No Better Personâ€™ to Take Over at Apple â€“ Hereâ€™s What AAPL Investors Need to Know About the CEO Transition','https://www.barchart.com/story/news/3723576/tim-cook-says-theres-no-better-person-to-take-over-at-apple-heres-what-aapl-investors-need-to-know-about-the-ceo-transition',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-08-09',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(2,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-08-09',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -342,4 +343,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-09  2:55:36
+-- Dump completed on 2026-08-11  2:58:27
