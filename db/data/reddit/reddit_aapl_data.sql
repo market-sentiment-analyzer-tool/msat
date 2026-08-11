@@ -69,6 +69,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
+3078b289-9529-11f1-84aa-a61ad2edf37e:1-119,
 31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -222,7 +223,6 @@ c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
-c40d67e8-9460-11f1-bf39-725e92282e4f:1-22,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
 c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
@@ -320,7 +320,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -329,6 +329,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vkfq1c','p2tbca3','2026-08-10',10,0.3612,'Aged like milk'),(2,'AAPL','1vkfq1c','p2tqqio','2026-08-10',9,-0.3818,'Jeffries downgraded them today. Although Jeffâ€™s always crap. '),(3,'AAPL','1vkfq1c','p2t9kug','2026-08-10',4,0.34,'My play is to ignore people promoting tea leaf readers.'),(4,'AAPL','1vkfq1c','p2vw9cu','2026-08-10',3,-0.296,'Stop posting'),(5,'AAPL','1vkfq1c','p2svrrt','2026-08-10',2,-0.4404,'Sorry full port or dump?'),(6,'AAPL','1vkfq1c','p2tzmz5','2026-08-10',2,0,'Welp'),(7,'AAPL','1vkfq1c','p2y1lap','2026-08-11',2,-0.2057,'whoops.... that didn\'t work out well..'),(8,'AAPL','1vkfq1c','p2ueohq','2026-08-10',1,0.6249,'Apple is great now. They look at new memories for iPhone in China. To talk about iPhone glass is a rumor. '),(9,'AAPL','1vkfq1c','p2uohr8','2026-08-10',1,-0.17,'and then down 2% as of now.  aapl never fails to do aapl thing'),(10,'AAPL','1vkfq1c','p2y80tr','2026-08-11',1,0,'The stock is a dog.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -342,4 +343,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-10  2:11:55
+-- Dump completed on 2026-08-11  2:07:59
