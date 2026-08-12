@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
+1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -320,7 +321,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -329,7 +330,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-08-09',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(2,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-08-09',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'zach parkes','...','2026-08-11',-0.02064,'Google Stock Price Today: GOOGL Up or Down on August 11 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-googl-up-or-down-on-august-11-live-polymarket-odds',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -343,4 +344,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-11  2:58:27
+-- Dump completed on 2026-08-12  3:16:51

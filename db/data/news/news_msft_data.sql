@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
+1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -320,7 +321,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -329,7 +330,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'pratyush thakur','...','2026-08-10',0,'Microsoft plans Maia 300 chip launch as early as next month - The Information','https://seekingalpha.com/news/4629925-microsoft-plans-maia-300-chip-launch-as-early-as-next-month---the-information?feed_item_type=news',40),(2,'tyler durden','With AI capital expenditures exploding to $1 trillion this year, the financing mix is beginning to shift from free cash flow and debt toward equity.\nAmong the megacap hyperscalers, Alphabet has been t...','2026-08-10',-0.16936,'Intel Selling $15 Billion In Stock To Fund AI Boom','https://www.zerohedge.com/markets/intel-selling-15-billion-stock-fund-ai-boom',4),(3,'mark hake','These five stocks have consistent dividend and share repurchase programs that can significantly enhance your total return over the long term\nI like to write about stocks and cryptos. One reason is tha...','2026-08-10',0.6687,'5 Dividend-Paying Stocks With Significant Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/5-dividend-paying-stocks-with-significant-stock-buybacks',4),(4,'abmn staff','\n					Posted by ABMN Staff on Aug 10th, 2026\n\nInfusive Asset Management Inc. lifted its holdings in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 277.5% in the 1st quarter, according to the co...','2026-08-10',0.48882,'Microsoft Corporation $MSFT Stake Raised by Infusive Asset Management Inc.','https://www.americanbankingnews.com/2026/08/10/microsoft-corporation-msft-stake-raised-by-infusive-asset-management-inc.html',40),(5,'abmn staff','\n					Posted by ABMN Staff on Aug 10th, 2026\n\nSpear Holdings RSC Ltd lifted its stake in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 10.1% in the first quarter, according to the company in i...','2026-08-10',0.19986,'Spear Holdings RSC Ltd Grows Stock Holdings in Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/08/10/spear-holdings-rsc-ltd-grows-stock-holdings-in-microsoft-corporation-msft.html',40),(6,'dante gardener','...','2026-08-10',0.2368,'Microsoft Corporation $MSFT Shares Sold by Sei Investments Co.','https://www.thelincolnianonline.com/2026/08/10/microsoft-corporation-msft-shares-sold-by-sei-investments-co.html',20),(7,'dante gardener','...','2026-08-10',0,'PBCay One RSC Ltd Raises Stock Position in Microsoft Corporation $MSFT','https://www.thelincolnianonline.com/2026/08/10/pbcay-one-rsc-ltd-raises-stock-position-in-microsoft-corporation-msft.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'rich asplund','...','2026-08-11',0.56024,'Stocks Supported by Renewed Middle East Optimism','https://www.barchart.com/story/news/3780744/stocks-supported-by-renewed-middle-east-optimism',2),(2,'forward analytics','...','2026-08-11',-0.38136,'Microsoft Vs. AMD: Investors May Be Watching The Wrong Variables (Panel Regression)','https://seekingalpha.com/article/4934637-microsoft-vs-amd-investors-may-be-watching-the-wrong-variables-panel-regression',40),(3,'brian sozzi','...','2026-08-11',0.04128,'Microsoft stock just cleared a big hurdle but still trails the S&P 500','https://ca.finance.yahoo.com/news/microsoft-stock-just-cleared-a-big-hurdle-but-still-trails-the-sp-500-130843662.html',20),(4,'kim johansen','...','2026-08-11',0.2368,'Rep. Michael A. Rulli Sells Microsoft Corporation (NASDAQ:MSFT) Shares','https://www.themarketsdaily.com/2026/08/11/rep-michael-a-rulli-sells-microsoft-corporation-nasdaqmsft-shares.html',20),(5,'abmn staff','\n					Posted by ABMN Staff on Aug 11th, 2026\n\nAristides Capital LLC raised its stake in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 14.4% during the 1st quarter, Holdings Channel.com reports...','2026-08-11',0.43666,'Aristides Capital LLC Buys 2,567 Shares of Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/08/11/aristides-capital-llc-buys-2567-shares-of-microsoft-corporation-msft.html',40),(6,'laura grande and vishesh raisinghani','...','2026-08-11',0.56024,'Larry Fink says Americansâ€™ retirement savings need to fund $10 trillion AI infrastructure demands. Protect your wealth','https://finance.yahoo.com/technology/ai/articles/larry-fink-says-americans-retirement-101500090.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -343,4 +344,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-11  2:58:27
+-- Dump completed on 2026-08-12  3:16:51

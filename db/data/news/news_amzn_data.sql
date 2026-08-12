@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
+1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -320,7 +321,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -329,7 +330,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david jagielski','...','2026-08-10',0.50952,'Amazon Stock Hits a New All-Time High: Is It Still a Buy?','https://finance.yahoo.com/markets/stocks/articles/amazon-stock-hits-time-high-121433063.html',200),(2,'shane hupp','...','2026-08-10',0.2368,'Hound Partners LLC Purchases 36,679 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13537448/hound-partners-llc-purchases-36679-shares-of-amazon-com-inc-amzn.html',2),(3,'donna armstrong','...','2026-08-10',0.28896,'Lazard Asset Management LLC Grows Stake in Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/08/10/lazard-asset-management-llc-grows-stake-in-amazon-com-inc-amzn.html',2),(4,'kim johansen','...','2026-08-10',0,'SummitTX Capital L.P. Decreases Stake in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/10/summittx-capital-l-p-decreases-stake-in-amazon-com-inc-amzn.html',2),(5,'micah haroldson','...','2026-08-10',0.2368,'Hound Partners LLC Buys 36,679 Shares of Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/hound-partners-llc-buys-36679-shares-of-amazon-com-inc-amzn/11178386.html',2),(6,'danessa lincoln','...','2026-08-10',0.52776,'Steelhead Wealth Management LLC Purchases Shares of 2,551 Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/10/steelhead-wealth-management-llc-purchases-shares-of-2551-amazon-com-inc-amzn.html',2),(7,'defense world staff','\n					Posted by Defense World Staff on Aug 10th, 2026\n\nElite Wealth Management Inc. boosted its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 16.6% in the first quarter, accor...','2026-08-10',0.7525,'Amazon.com, Inc. $AMZN Stake Boosted by Elite Wealth Management Inc.','https://www.defenseworld.net/2026/08/10/amazon-com-inc-amzn-stake-boosted-by-elite-wealth-management-inc.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Aug 10th, 2026\n\nFamily Manage LLC boosted its position in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 37.5% during the 1st quarter, Holdings Channel reports. The institu...','2026-08-10',0.4367,'Family Manage LLC Buys 17,646 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/08/10/family-manage-llc-buys-17646-shares-of-amazon-com-inc-amzn.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'kyle jackson','...','2026-08-11',0.2368,'Rep. Michael A. Rulli Sells Shares of Amazon.com, Inc. (NASDAQ:AMZN)','https://www.watchlistnews.com/rep-michael-a-rulli-sells-shares-of-amazon-com-inc-nasdaqamzn/11179699.html',2),(2,'sarah holzmann','...','2026-08-11',0.45752,'Nvidia AI Chips Are Now an Asset Class. BlackRock CEO Larry Fink Just Compared Them to Mortgage-Backed Securities.','https://www.barchart.com/story/news/3781740/nvidia-ai-chips-are-now-an-asset-class-blackrock-ceo-larry-fink-just-compared-them-to-mortgage-backed-securities',2),(3,'zabih ullah','UBS raised its price target on Intel (NASDAQ: INTC) to $52 from $49 while maintaining a â€œNeutralâ€ rating, according to its latest research note.\nThe firmâ€™s revision reflects growing confidence in Inte...','2026-08-11',0.01868,'UBS Raises Intel Target as Supply Bottlenecks and Soft Outlook Drag Stock','https://abbonews.com/ubs-raises-intel-target-as-supply-bottlenecks-and-soft-outlook-drag-stock/',4),(4,'mitch edgeman','...','2026-08-11',0,'Amazon.com (NASDAQ:AMZN) Stock Sold Rep. Michael A. Rulli','https://www.themarketsdaily.com/2026/08/11/amazon-com-nasdaqamzn-stock-sold-rep-michael-a-rulli.html',2),(5,'sarita garza','...','2026-08-11',0,'Guardian Partners Inc. Grows Stake in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/11/guardian-partners-inc-grows-stake-in-amazon-com-inc-amzn.html',2),(6,'logan wallace','...','2026-08-11',0.39512,'Kanen Wealth Management LLC Takes Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13538518/kanen-wealth-management-llc-takes-position-in-amazon-com-inc-amzn.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -343,4 +344,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-11  2:58:27
+-- Dump completed on 2026-08-12  3:16:50
