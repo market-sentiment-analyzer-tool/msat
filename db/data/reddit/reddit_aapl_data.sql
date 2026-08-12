@@ -69,7 +69,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
-3078b289-9529-11f1-84aa-a61ad2edf37e:1-119,
 31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -131,6 +130,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 62e7dee2-825b-11f1-90e2-5670fdf78be5:1-55,
 62f5b5e7-6162-11f1-99df-d663a9218c42:1-65,
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
+64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
@@ -221,6 +221,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c2c7351c-95f4-11f1-a688-0e1ef98c69e3:1-94,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -320,7 +321,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -329,7 +330,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vkfq1c','p2tbca3','2026-08-10',10,0.3612,'Aged like milk'),(2,'AAPL','1vkfq1c','p2tqqio','2026-08-10',9,-0.3818,'Jeffries downgraded them today. Although Jeffâ€™s always crap. '),(3,'AAPL','1vkfq1c','p2t9kug','2026-08-10',4,0.34,'My play is to ignore people promoting tea leaf readers.'),(4,'AAPL','1vkfq1c','p2vw9cu','2026-08-10',3,-0.296,'Stop posting'),(5,'AAPL','1vkfq1c','p2svrrt','2026-08-10',2,-0.4404,'Sorry full port or dump?'),(6,'AAPL','1vkfq1c','p2tzmz5','2026-08-10',2,0,'Welp'),(7,'AAPL','1vkfq1c','p2y1lap','2026-08-11',2,-0.2057,'whoops.... that didn\'t work out well..'),(8,'AAPL','1vkfq1c','p2ueohq','2026-08-10',1,0.6249,'Apple is great now. They look at new memories for iPhone in China. To talk about iPhone glass is a rumor. '),(9,'AAPL','1vkfq1c','p2uohr8','2026-08-10',1,-0.17,'and then down 2% as of now.  aapl never fails to do aapl thing'),(10,'AAPL','1vkfq1c','p2y80tr','2026-08-11',1,0,'The stock is a dog.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vlokp2','p32z4us','2026-08-11',9,0,'Hang in there mate '),(2,'AAPL','1vlokp2','p33041j','2026-08-11',4,0.2023,'Need this as well. Back to 330 LEGGO'),(3,'AAPL','1vlokp2','p3396rn','2026-08-11',3,0.867,'I am looking for 344.99 by Aug 21.  the price increase expected on the iPhone 18 should make owners happy -as long as it doesnt kill sales.'),(4,'AAPL','1vlokp2','p34i9lb','2026-08-11',3,0.0387,'â€œLet things flow naturally forward in whatever way they like. The river cuts through rock not because of its power, but because of its persistence.â€ - Zen proverb '),(5,'AAPL','1vlokp2','p35lu0a','2026-08-12',2,0.6249,'I bought in \'09 at about 5 bucks a share.  It goes up over time.'),(6,'AAPL','1vlokp2','p33qcn4','2026-08-11',1,0.4588,'Waiting for the SPCX lock-up to expire, and owners to get calls from investment advisors recommending that they diversify.\n\nTech bros (and non-bros) are gonna stay in tech.'),(7,'AAPL','1vlokp2','p356xjh','2026-08-12',-1,-0.5574,'shit stock');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -343,4 +344,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-11  2:07:59
+-- Dump completed on 2026-08-12  2:24:34
