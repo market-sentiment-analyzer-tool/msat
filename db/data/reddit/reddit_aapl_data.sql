@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
+1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -62,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+296d8ab9-96be-11f1-8173-e63f3a27c12b:1-61,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -221,7 +223,6 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
-c2c7351c-95f4-11f1-a688-0e1ef98c69e3:1-94,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -321,7 +322,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vlokp2','p32z4us','2026-08-11',9,0,'Hang in there mate '),(2,'AAPL','1vlokp2','p33041j','2026-08-11',4,0.2023,'Need this as well. Back to 330 LEGGO'),(3,'AAPL','1vlokp2','p3396rn','2026-08-11',3,0.867,'I am looking for 344.99 by Aug 21.  the price increase expected on the iPhone 18 should make owners happy -as long as it doesnt kill sales.'),(4,'AAPL','1vlokp2','p34i9lb','2026-08-11',3,0.0387,'â€œLet things flow naturally forward in whatever way they like. The river cuts through rock not because of its power, but because of its persistence.â€ - Zen proverb '),(5,'AAPL','1vlokp2','p35lu0a','2026-08-12',2,0.6249,'I bought in \'09 at about 5 bucks a share.  It goes up over time.'),(6,'AAPL','1vlokp2','p33qcn4','2026-08-11',1,0.4588,'Waiting for the SPCX lock-up to expire, and owners to get calls from investment advisors recommending that they diversify.\n\nTech bros (and non-bros) are gonna stay in tech.'),(7,'AAPL','1vlokp2','p356xjh','2026-08-12',-1,-0.5574,'shit stock');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vmkdeu','p3a1oau','2026-08-12',9,0.7935,'Stocks go up and stocks go down, but mostly up for big names like aapl'),(2,'AAPL','1vmkdeu','p3abnp2','2026-08-12',4,-0.539,'If it closes above $300 you should feel the same way. Seriously, even if it drops below, waiting this very normal drop is going to pay off. '),(3,'AAPL','1vmkdeu','p3bjisj','2026-08-12',2,-0.6705,'Stop with ur dumb pics about nothing bro'),(4,'AAPL','1vmkdeu','p3bsq01','2026-08-12',1,-0.4404,':('),(5,'AAPL','1vmkdeu','p3b1ubk','2026-08-12',-1,-0.1027,'Nah bro this thingâ€™s going test sub $300 very soon');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  2:24:34
+-- Dump completed on 2026-08-13  2:26:05

@@ -52,6 +52,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
+1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -62,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+296d8ab9-96be-11f1-8173-e63f3a27c12b:1-61,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -221,7 +223,6 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
-c2c7351c-95f4-11f1-a688-0e1ef98c69e3:1-94,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -321,7 +322,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vlorgw','p33p1nr','2026-08-11',12,0.886,'Tsm already reported great growth for July so that is a good sign for Nvda to beat and raise again '),(2,'NVDA_Stock','1vlorgw','p33kmre','2026-08-11',5,0,'Every time though'),(3,'NVDA_Stock','1vlorgw','p35knxx','2026-08-12',3,0.7596,'Yeah no shit Sherlock. they do that every earnings report '),(4,'NVDA_Stock','1vlorgw','p337puc','2026-08-11',2,0,'![gif](giphy|hXPd38V8kCQqr04JdP)\n\n'),(5,'NVDA_Stock','1vlorgw','p35egzb','2026-08-12',2,-0.0516,'It will get to around 229 before earnings, then dump '),(6,'NVDA_Stock','1vlorgw','p33ap86','2026-08-11',4,0.9287,'OP - your handle aligns to the quality of this post. Please forgive the cheap joke at your expense. Itâ€™s truly all in good fun. '),(7,'NVDA_Stock','1vlzaak','p35hvwy','2026-08-12',3,0.9678,'NVIDIA is doing two things that will ultimately create an incentive to buy GPUs:\n\n\\- Giving its potential customers a low-friction path to financing AI infrastructure, by identifying finance partners who will allow borrowing on the basis of GPUs as collateral\n\n\\- giving their finance partners a residual-value guarantee on the GPUs, which gives them confidence in treating GPUs as collateral\n\nItâ€™s no different than manufacturer financing when you buy a new car, based on your credit-worthiness. What makes it possible is the fact that a new car has a residual value backed by the manufacturer, and what you finance is the depreciation on the car.'),(8,'NVDA_Stock','1vlzaak','p35lkzw','2026-08-12',2,-0.3415,'It allows Nvidia to very smartly build their infrastructure, vs others, as you say, in a slow and scalable way. It also gets them out of the vendor financing loop negative used by the bears. \n\nMore people making money off Nvidia solutions means Nvidis making money for longer. Win-Win. '),(9,'NVDA_Stock','1vlzaak','p35ma9e','2026-08-12',2,0.296,'ok claude'),(10,'NVDA_Stock','1vlzaak','p35oc9p','2026-08-12',2,0.9557,'I explained how this works 3 weeks ago. It\'s basically a wealth transfer from people with less conviction to people with more. https://www.reddit.com/r/NVDA_Stock/comments/1v58we1/conviction_profit/ Sweet arbitrage that wins wins wins all around.'),(11,'NVDA_Stock','1vlzaak','p35kzzg','2026-08-12',1,0.3612,'This is basically the standardized mortgage of cookie cutter AI factories whereas before you always had to go to private investors to finance a custom build.\n\nThey\'re ironing out the details into a fungible and reliable asset class.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vmavqk','p38jpce','2026-08-12',15,0.9672,'I explained how this works 3 weeks ago. I\'m just reposting this time over and over now... https://www.reddit.com/r/NVDA_Stock/comments/1v58we1/conviction_profit/\n\nTLDR: The financiers aren\'t sure how much GPUs will be worth in 4 years, Nvidia is sure, and is willing to guarantee it to the banks. So they make a deal for a set value, if it\'s worth less than that, Nvidia will cover 25% of the difference, if it\'s worth MORE than that, Nvidia profits. This gives lenders confidence to lend at massive scale and Nvidia makes money on their lack of uncertainty. This is great arbitrage that both boosts income for basically no effort while reinforcing the ecosystem and creating new lock-in. Amazing.'),(2,'NVDA_Stock','1vmavqk','p38094m','2026-08-12',8,0.9577,'Basically?\n\n\nThe issue with securatizing these loans compared to old-school capital goods/homes/cars is that the future value is really hard to model.\n\n\nToken costs, token demand, and compute efficiency are all moving by incredibly large amounts compared to analogous metrics for other industries/financed assets. Even for a single gpu architecture, these metrics can move substantially over time, from below with software improvements or from above with model architecture shifts (with codesign somewhat allowing the tail to wag the dog).\n\n\nAnd consequently, the modeling of these assets is intricately linked to the asset manufacturer\'s (nvda) strategy/execution/R&D. \n\n\nSo Nvidia basically comes in and says \"yea, we know our product is complicated, used in complicated ways in a complicated landscape. I can make my new product 5x more efficient, producing 3x more output, cost 2x more to buy, running models 4x larger, which are (insert impossible metric) smarter/more useful for end users, yet my 5 year old chip rental rates stay fairly stable. So let me make it easy - I\'ll always buy it back for 25% sticker price within x years\"\n\nIn a landscape that shifts as much and as fast as this, that is a substantial guarantee, and one only nvidia can make because only they know exactly what they can do with their chips over time. \n\nAnd it sets the upper bound on risk to the lender, meaning these loans are fully defined for the tail that concerns the lender. If it turns out that residual value maths out to be better than 25%, the value of the debt will go up/yields will go down as markets try not to leave any free lunches hanging around, nvidia will be spared the draw downs of being the buyer of last resort, but they will keep all the revenue sharing rewards for their foresight. If its worse than 25%, its not, cause nvidia has a standing 25% offer.\n\n\nHmm, 25% residual value offer, on goods sold with 75% gross margin. Isn\'t that neat.'),(3,'NVDA_Stock','1vmavqk','p38jfuz','2026-08-12',2,0.3657,'â€œBig Shortâ€ investor Michael Burry on Wednesday launched a scathing critique of Nvidia\'s ([NVDA](https://seekingalpha.com/symbol/NVDA#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)) $500B infrastructure financing deal. Comparing the complex web of private credit and asset-backed securities to the systemic risks that preceded the 2008 financial crisis, Burry called theÂ arrangement a â€œWall Street stunt.â€\n\n...............\n\nHowever, Burry is alleging a highly leveraged and circular pipeline underlying these deals. Per his infographic, U.S. retiree annuity premiums paid to Apollo\'s ([APO](https://seekingalpha.com/symbol/APO#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)) Athene are funneled through an offshore Bermuda reinsurer and leveraged by Apollo into asset-backed debt. Apollo reportedly issues $3.5B in debt to a special purpose vehicle named Valor, paired with a $1.9B equity injection directly from Nvidia ([NVDA](https://seekingalpha.com/symbol/NVDA#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)). VCI then purchases $5.4B in Nvidia GB200 GPUs to lease to xAI for its Grok supercomputer cluster.\n\nFor skeptics, this complex structure artificially boosts revenue while pushing depreciation risks onto unsuspecting retirees.\"\n\n==============================\n\nHowever, at this point, Burry is a strong foe of continued Nvidia success so some skepticism is not unwarranted, imho.'),(4,'NVDA_Stock','1vmavqk','p389rfv','2026-08-12',-1,0.5994,'i think NVDA / Jensen actually knows some of these companies won\'t be able to make a profit, they will have to EXECUTE the data centers and end up getting payed basically with their own money. It will take a market value hit when that happens and then bussiness as usual, but this time NVDA rents GPU power. They sell, somebody else does the work they swoop in and \"Save the data center\". '),(5,'NVDA_Stock','1vmcfmf','p3cet8d','2026-08-12',1,0,'[removed]');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  2:24:34
+-- Dump completed on 2026-08-13  2:26:05
