@@ -288,6 +288,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -321,7 +322,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'investing.com','...','2026-08-11',0,'What Intelâ€™s $20 billion raise mean for the foundry race?','https://www.investing.com/news/stock-market-news/what-intels-20-billion-raise-mean-for-the-foundry-race-93CH-4852157',2),(2,'sarah holzmann','...','2026-08-11',0.45752,'Nvidia AI Chips Are Now an Asset Class. BlackRock CEO Larry Fink Just Compared Them to Mortgage-Backed Securities.','https://www.barchart.com/story/news/3781740/nvidia-ai-chips-are-now-an-asset-class-blackrock-ceo-larry-fink-just-compared-them-to-mortgage-backed-securities',20),(3,'yahoo finance video','...','2026-08-11',-0.1024,'Nvidia is becoming the â€˜central bank of AIâ€™ as demand explodes','https://ca.finance.yahoo.com/video/nvidia-becoming-central-bank-ai-141700463.html',20),(4,'maisha shahid','Please enable JS and disable any ad blocker...','2026-08-11',0.72892,'Best Brokerage Account Bonuses Of 2026','https://www.forbes.com/advisor/investing/best-brokerage-account-bonuses/',4),(5,'rich asplund','...','2026-08-11',0.56024,'Stocks Supported by Renewed Middle East Optimism','https://www.barchart.com/story/news/3780744/stocks-supported-by-renewed-middle-east-optimism',2),(6,'ravikash bakolia','...','2026-08-11',0,'Nvidia launches open model Nemotron 3.5 Lightning; working on bigger Nemotron 4: report','https://seekingalpha.com/news/4630702-nvidia-launches-open-model-nemotron-35-lightning-working-on-bigger-nemotron-4?feed_item_type=news',40),(7,'motley fool transcribing','Image source: The Motley Fool.\nTuesday, Aug. 4, 2026 at 8:00 a.m. ET\nNeed a quote from a Motley Fool analyst? Email [emailÂ protected]\nManagement reported that a healthy demand recovery is taking shape...','2026-08-11',0.472,'ON Semiconductor (ON) Q2 2026 Earnings Call Transcript','https://www.fool.com/earnings/call-transcripts/2026/08/11/on-semiconductor-on-q2-2026-earnings-call-transcript/',4),(8,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-08-11',0.19836,'The Crown Keeps Switching Hands: Apple Inc. (AAPL) vs NVIDIA Corporation (NVDA)','https://www.insidermonkey.com/blog/the-crown-keeps-switching-hands-apple-inc-aapl-vs-nvidia-corporation-nvda-1806152/',40),(9,'tiyashi datta','...','2026-08-11',0.36704,'QumulusAI signs GPU-as-a-Service deal with DRW for dedicated Nvidia Blackwell B300 cluster','https://seekingalpha.com/news/4630693-qumulusai-signs-gpu-as-a-service-deal-with-drw-for-dedicated-nvidia-blackwell-b300-cluster?feed_item_type=news',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-08-12',0.06364,'Bank of America sends blunt message to Nvidia stock investors','https://www.thestreet.com/investing/stocks/bank-of-america-sends-blunt-message-to-nvidia-stock-investors',40),(2,'rich asplund','...','2026-08-12',0.61736,'Stocks Trading Higher on Favorable CPI Report and Positive AI News','https://www.barchart.com/story/news/3805178/stocks-trading-higher-on-favorable-cpi-report-and-positive-ai-news',2),(3,'donna armstrong','...','2026-08-12',-0.36704,'NVIDIA (NASDAQ:NVDA) Trading Down 2.9% â€“ Whatâ€™s Next?','https://www.thelincolnianonline.com/2026/08/12/nvidia-nasdaqnvda-trading-down-2-9-whats-next.html',20),(4,'alex sirois','...','2026-08-12',0.65008,'Broadcom Wins If AI Wins So I Keep Buying','https://finance.yahoo.com/technology/ai/articles/broadcom-wins-ai-wins-keep-134348774.html',20),(5,'gerelyn terzo','\n							Cooler July CPI of 3.4% annually pushed September Fed pause odds to 68%, lifting Nasdaq-100 futures nearly 1% and boosting growth stocks.													\n\n							CoreWeave (CRWV) surged 14% after...','2026-08-12',0.65736,'Live Nasdaq Composite: Market Sentiment Remains Hopeful on Cooling Inflation Signals, AI Earnings','https://247wallst.com/investing/2026/08/12/live-nasdaq-composite-market-sentiment-remains-hopeful-on-cooling-inflation-signals-ai-earnings/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  3:16:51
+-- Dump completed on 2026-08-13  3:21:47

@@ -288,6 +288,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -321,7 +322,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'zach parkes','...','2026-08-11',-0.02064,'Google Stock Price Today: GOOGL Up or Down on August 11 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-googl-up-or-down-on-august-11-live-polymarket-odds',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris ciaccia',' \nAhead of Apple (AAPL), Google (GOOG) (GOOGL) on Wednesday unveiled the latest version of its Pixel smartphone and wearables, with the smartphones getting a price hike due to the unprecedented rise i...','2026-08-12',-0.46792,'Ahead of Apple, Google unveils new wearables, more expensive Pixel phones','https://seekingalpha.com/news/4631524-ahead-of-apple-google-unveils-new-wearables-more-expensive-pixel-phones?feed_item_type=news',80),(2,'zach parkes','...','2026-08-12',-0.02064,'Google Stock Price Today: GOOGL Up or Down on August 12 (Live Polymarket Odds)','https://www.actionnetwork.com/news/google-stock-price-today-googl-up-or-down-on-august-12-live-polymarket-odds',20),(3,'sarita garza','...','2026-08-12',0,'Magnolia Capital Management Ltd. Has $5.14 Million Stake in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/08/12/magnolia-capital-management-ltd-has-5-14-million-stake-in-alphabet-inc-goog.html',2),(4,'sarita garza','...','2026-08-12',0.2368,'Tema ETFs LLC Buys 2,755 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/08/12/tema-etfs-llc-buys-2755-shares-of-alphabet-inc-goog.html',2),(5,'wall street breakfast','...','2026-08-12',0,'Wall Street Breakfast Podcast: NYC Delivery Model Detour','https://seekingalpha.com/article/4935259-wall-street-breakfast-podcast-nyc-delivery-model-detour',4),(6,'caroline horne','...','2026-08-12',0.2368,'Fiduciary Financial Group LLC Acquires 7,713 Shares of Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/08/12/fiduciary-financial-group-llc-acquires-7713-shares-of-alphabet-inc-goog.html',2),(7,'abmn staff','\n					Posted by ABMN Staff on Aug 12th, 2026\n\nDagco Inc. lifted its position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 79.5% during the 2nd quarter, according to its most recent discl...','2026-08-12',0.1999,'Dagco Inc. Grows Position in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/12/dagco-inc-grows-position-in-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Aug 12th, 2026\n\nCanvas Wealth Advisors LLC lowered its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 18.4% during the 2nd quarter, according to the company in it...','2026-08-12',0.72764,'Canvas Wealth Advisors LLC Sells 2,072 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/12/canvas-wealth-advisors-llc-sells-2072-shares-of-alphabet-inc-goog.html',4),(9,'abmn staff','\n					Posted by ABMN Staff on Aug 12th, 2026\n\nDiversified Management Inc. lessened its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 88.6% during the second quarter, according to the compa...','2026-08-12',0.43666,'Diversified Management Inc. Sells 11,561 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/12/diversified-management-inc-sells-11561-shares-of-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  3:16:51
+-- Dump completed on 2026-08-13  3:21:47

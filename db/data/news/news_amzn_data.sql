@@ -288,6 +288,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -321,7 +322,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'kyle jackson','...','2026-08-11',0.2368,'Rep. Michael A. Rulli Sells Shares of Amazon.com, Inc. (NASDAQ:AMZN)','https://www.watchlistnews.com/rep-michael-a-rulli-sells-shares-of-amazon-com-inc-nasdaqamzn/11179699.html',2),(2,'sarah holzmann','...','2026-08-11',0.45752,'Nvidia AI Chips Are Now an Asset Class. BlackRock CEO Larry Fink Just Compared Them to Mortgage-Backed Securities.','https://www.barchart.com/story/news/3781740/nvidia-ai-chips-are-now-an-asset-class-blackrock-ceo-larry-fink-just-compared-them-to-mortgage-backed-securities',2),(3,'zabih ullah','UBS raised its price target on Intel (NASDAQ: INTC) to $52 from $49 while maintaining a â€œNeutralâ€ rating, according to its latest research note.\nThe firmâ€™s revision reflects growing confidence in Inte...','2026-08-11',0.01868,'UBS Raises Intel Target as Supply Bottlenecks and Soft Outlook Drag Stock','https://abbonews.com/ubs-raises-intel-target-as-supply-bottlenecks-and-soft-outlook-drag-stock/',4),(4,'mitch edgeman','...','2026-08-11',0,'Amazon.com (NASDAQ:AMZN) Stock Sold Rep. Michael A. Rulli','https://www.themarketsdaily.com/2026/08/11/amazon-com-nasdaqamzn-stock-sold-rep-michael-a-rulli.html',2),(5,'sarita garza','...','2026-08-11',0,'Guardian Partners Inc. Grows Stake in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/11/guardian-partners-inc-grows-stake-in-amazon-com-inc-amzn.html',2),(6,'logan wallace','...','2026-08-11',0.39512,'Kanen Wealth Management LLC Takes Position in Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13538518/kanen-wealth-management-llc-takes-position-in-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david beren','Investing\n\n							AMZN surged 13% after AWS posted 37% revenue growth, and AMZW matched that gain while delivering weekly distributions at roughly a 40% annualized rate.													\n\n							Unlike ty...','2026-08-12',0.34188,'Amazon Just Exploded 13% on Its AWS Quarter. This Fund Pays You Every Friday to Own It','https://247wallst.com/investing/2026/08/12/amazon-just-exploded-13-on-its-aws-quarter-this-fund-pays-you-every-friday-to-own-it/',40),(2,'erin kennedy','Comparing ARK Space & Defense Innovation ETF (ARKX +0.81%) and Tema Space Innovators ETF (NASA +4.82%) reveals two high-growth strategies with identical management fees but differing approaches to the...','2026-08-12',0.19986,'ARKX vs. NASA ETF: Identical Fees, Different Space Strategies','https://www.fool.com/coverage/etfs/2026/08/12/arkx-vs-nasa-etf-identical-fees-different-space-strategies/',4),(3,'bloomberg news','...','2026-08-12',0,'US Premarket Movers for August 12, 2026','https://financialpost.com/pmn/business-pmn/us-premarket-movers-for-august-12-2026',2),(4,'investing.com','...','2026-08-12',0.14232,'Three Q4 stock picks: Amazon, Las Vegas Sands, and Carnival','https://www.investing.com/news/stock-market-news/three-q4-stock-picks-amazon-las-vegas-sands-and-carnival-93CH-4854561',2),(5,'geoffrey seiler','Hyperscalers, which are companies that own large data centers, have been spending aggressively to build out artificial intelligence (AI) infrastructure. Although the market has been concerned about th...','2026-08-12',0.56648,'1 Hyperscaler Stock to Buy, 1 to Hold, and 1 to Avoid','https://www.fool.com/investing/2026/08/12/1-hyperscaler-stock-to-buy-1-to-hold-and-1-to-avoi/',4),(6,'wall street breakfast','...','2026-08-12',0,'Wall Street Breakfast Podcast: NYC Delivery Model Detour','https://seekingalpha.com/article/4935259-wall-street-breakfast-podcast-nyc-delivery-model-detour',4),(7,'kim johansen','...','2026-08-12',0.2368,'RBF Capital LLC Purchases 15,000 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/08/12/rbf-capital-llc-purchases-15000-shares-of-amazon-com-inc-amzn.html',2),(8,'stephan jacobs','...','2026-08-12',0.52776,'Amazon.com, Inc. $AMZN Shares Purchased by Hamilton Wealth LLC','https://www.thelincolnianonline.com/2026/08/12/amazon-com-inc-amzn-shares-purchased-by-hamilton-wealth-llc.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  3:16:50
+-- Dump completed on 2026-08-13  3:21:47

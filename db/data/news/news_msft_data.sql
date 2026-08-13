@@ -288,6 +288,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -321,7 +322,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -330,7 +331,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'rich asplund','...','2026-08-11',0.56024,'Stocks Supported by Renewed Middle East Optimism','https://www.barchart.com/story/news/3780744/stocks-supported-by-renewed-middle-east-optimism',2),(2,'forward analytics','...','2026-08-11',-0.38136,'Microsoft Vs. AMD: Investors May Be Watching The Wrong Variables (Panel Regression)','https://seekingalpha.com/article/4934637-microsoft-vs-amd-investors-may-be-watching-the-wrong-variables-panel-regression',40),(3,'brian sozzi','...','2026-08-11',0.04128,'Microsoft stock just cleared a big hurdle but still trails the S&P 500','https://ca.finance.yahoo.com/news/microsoft-stock-just-cleared-a-big-hurdle-but-still-trails-the-sp-500-130843662.html',20),(4,'kim johansen','...','2026-08-11',0.2368,'Rep. Michael A. Rulli Sells Microsoft Corporation (NASDAQ:MSFT) Shares','https://www.themarketsdaily.com/2026/08/11/rep-michael-a-rulli-sells-microsoft-corporation-nasdaqmsft-shares.html',20),(5,'abmn staff','\n					Posted by ABMN Staff on Aug 11th, 2026\n\nAristides Capital LLC raised its stake in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 14.4% during the 1st quarter, Holdings Channel.com reports...','2026-08-11',0.43666,'Aristides Capital LLC Buys 2,567 Shares of Microsoft Corporation $MSFT','https://www.americanbankingnews.com/2026/08/11/aristides-capital-llc-buys-2567-shares-of-microsoft-corporation-msft.html',40),(6,'laura grande and vishesh raisinghani','...','2026-08-11',0.56024,'Larry Fink says Americansâ€™ retirement savings need to fund $10 trillion AI infrastructure demands. Protect your wealth','https://finance.yahoo.com/technology/ai/articles/larry-fink-says-americans-retirement-101500090.html',20);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-08-12',0.19952,'Microsoft Corporation (MSFT) vs. Meta Platforms, Inc. (META): Two Different Bets Behind Big Techâ€™s $1 Trillion Lease Bill','https://www.insidermonkey.com/blog/microsoft-corporation-msft-vs-meta-platforms-inc-meta-two-different-bets-behind-big-techs-1-trillion-lease-bill-1807357/',40),(2,'alanna baker','...','2026-08-12',0.44592,'Direxion Daily MSFT Bear 1X Shares (NASDAQ:MSFD) Short Interest Up 1,064.9% in July','https://www.thelincolnianonline.com/2026/08/12/direxion-daily-msft-bear-1x-shares-nasdaqmsfd-short-interest-up-1064-9-in-july.html',20),(3,'ravikash bakolia','...','2026-08-12',0.49992,'Open model advancement favorable for Microsoft, ServiceNow: Wells Fargo','https://seekingalpha.com/news/4631523-open-model-advancement-favorable-for-microsoft-servicenow-wells-fargo?feed_item_type=news',4),(4,'rich asplund','...','2026-08-12',0.61736,'Stocks Trading Higher on Favorable CPI Report and Positive AI News','https://www.barchart.com/story/news/3805178/stocks-trading-higher-on-favorable-cpi-report-and-positive-ai-news',2),(5,'vandita jadeja','Investing\n\n							All 54 analysts covering MSFT rate it a Buy, with our $604 target implying 20% upside backed by $678B in locked commercial commitments.													\n\n							GOOGL trades at 15x earni...','2026-08-12',0.3223,'54 Analysts, One Verdict: Microsoftâ€™s Upside Isnâ€™t Done Yet','https://247wallst.com/investing/2026/08/12/54-analysts-one-verdict-microsofts-upside-isnt-done-yet/',4),(6,'caroline horne','...','2026-08-12',0.2,'Microsoft (NASDAQ:MSFT) Price Target Raised to $700.00 at Wells Fargo & Company','https://www.thelincolnianonline.com/2026/08/12/microsoft-nasdaqmsft-price-target-raised-to-700-00-at-wells-fargo-company.html',20),(7,'bloomberg news','...','2026-08-12',0,'US Premarket Movers for August 12, 2026','https://financialpost.com/pmn/business-pmn/us-premarket-movers-for-august-12-2026',2),(8,'geoffrey seiler','Hyperscalers, which are companies that own large data centers, have been spending aggressively to build out artificial intelligence (AI) infrastructure. Although the market has been concerned about th...','2026-08-12',0.56648,'1 Hyperscaler Stock to Buy, 1 to Hold, and 1 to Avoid','https://www.fool.com/investing/2026/08/12/1-hyperscaler-stock-to-buy-1-to-hold-and-1-to-avoi/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -344,4 +345,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-12  3:16:51
+-- Dump completed on 2026-08-13  3:21:47
