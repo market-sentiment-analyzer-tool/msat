@@ -45,6 +45,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
+1c484334-9787-11f1-b383-6241b6f37796:1-35,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -63,7 +64,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
-296d8ab9-96be-11f1-8173-e63f3a27c12b:1-61,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -289,6 +289,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -322,7 +323,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -331,7 +332,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1vmocdx','p3azlq9','2026-08-12',178,0.6239,'Positive Microsoft commentary is NOT allowed on Reddit. Come on!'),(2,'stocks','1vmocdx','p3b1dta','2026-08-12',41,0.8402,'>OpenAI\'s private valuation has reached roughly $852 billion. Microsoft stake is valued at approximately $230 billion.Â \n\nEven if this is true - and it would imply a doubling of OpenAI\'s valuation from October 2025\\* - it only moves the needle modestly for Microsoft\'s $3,670 billion market cap.\n\n\\* \"Following the recapitalization, Microsoft holds an investment in OpenAI Group PBC valued at approximately $135 billion, representing roughly 27 percent on an as-converted diluted basis\"  \n[https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/](https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/)'),(3,'stocks','1vmocdx','p3b3bfw','2026-08-12',36,-0.2335,'Let me tell you story of a company called yahoo and their alibaba stake. Despite massive value of alibaba, yahoo stock never recovered. Market value business growth not 3rd party stake ownership'),(4,'stocks','1vmocdx','p3b0l6v','2026-08-12',34,0.34,'What if OpenAI value drops in half?'),(5,'stocks','1vmocdx','p3b7mdp','2026-08-12',16,0,'Isnâ€™t Google even cheaper based on spaceX stake?'),(6,'stocks','1vmocdx','p3b8u1u','2026-08-12',10,0.3818,'Iâ€™m positive on MSFT but super negative on OpenAIâ€™s outlook '),(7,'stocks','1vmocdx','p3b5x64','2026-08-12',19,-0.6597,'The unprofitable company with no moat run by a lunatic?'),(8,'stocks','1vmocdx','p3b5y15','2026-08-12',20,-0.1813,'$850 billion with massive net losses.  \n\nSurely this won\'t end well '),(9,'stocks','1vmocdx','p3b56ej','2026-08-12',4,0.2617,'Microsoft gave up exclusive access to all models a few months back. New models will launch first on azure but theyâ€™ll be available very quickly on AWS, oracle, etc. they '),(10,'stocks','1vmocdx','p3b0z1r','2026-08-12',11,0.5209,'What makes you think that OpenAI has any value? Itâ€™s a cash burning business that is a liability more than an asset.'),(11,'stocks','1vmocdx','p3b3e29','2026-08-12',4,-0.2263,'One red day, and you guys come up with confirmation bias'),(12,'stocks','1vmocdx','p3cbdhm','2026-08-12',2,0,'Softbank is even cheaper then.'),(13,'stocks','1vmocdx','p3bhicj','2026-08-12',3,-0.0516,'I\'m losing 20k per year, how much would you value me '),(14,'stocks','1vmocdx','p3bofej','2026-08-12',2,-0.6625,'MSFT fundamentals have always been fine, but look at the last couple years, man, this shit is allergic to staying up '),(15,'stocks','1vmocdx','p3b3ggs','2026-08-12',4,0.7127,'Models are going become a commodity. In the end there is going to be 10+ model companies with models that are all neck and neck and all more than capable of doing the same shit. \n\nIâ€™m a Microsoft holder, but I hold no value in openAI. Or even the best model company - Anthropic.'),(16,'stocks','1vmocdx','p3c2qer','2026-08-12',1,0,'Nope!'),(17,'stocks','1vmocdx','p3chay5','2026-08-12',1,0.4019,'Ran out of boost juice this round. '),(18,'stocks','1vmocdx','p3cw9zj','2026-08-13',1,-0.0387,'I think Msft on last couple week was already price in. But rumor sell news.\n\nUp 25% in last 12 days and that was more then 200B market cap'),(19,'stocks','1vmocdx','p3d2pnp','2026-08-13',1,0,'Iâ€™m not into paying a huge NAV premium to get exposure to AI labs or other private investments. '),(20,'stocks','1vmocdx','p3d4woa','2026-08-13',1,-0.1511,'Bring back Clippy!'),(21,'stocks','1vmocdx','p3azcn2','2026-08-12',1,0.7506,'good point, but to be honest, google\'s spaceX investment is not fully reflected, amazon\'s anthropic investment is not fully reflected'),(22,'stocks','1vmocdx','p3b1c9u','2026-08-12',1,-0.6908,'damn time to sell'),(23,'stocks','1vmocdx','p3b3kxl','2026-08-12',1,-0.4588,'Then openai goes down the ðŸ’© drain .. '),(24,'stocks','1vmocdx','p3b3ugk','2026-08-12',1,0.4404,'sold one share that i have been holding since 2024.. today'),(25,'stocks','1vmocdx','p3b69vk','2026-08-12',1,0.4703,'You\'re ignoring that the money is entirely circular here. Pretty sure everyone else sees right through it.'),(26,'stocks','1vmocdx','p3bg0t6','2026-08-12',1,0,'You know you\'re in a bubble when this type of stuff becomes normal fundamental analysis'),(27,'stocks','1vmocdx','p3b4v30','2026-08-12',-4,0.4995,'Alphabet is just advertising company.\n\nAmazon is just online shop.\n\nApple just sells smartphones.\n\nMeta is just social network.\n\nMICROSOFT SERVES 99% OF TOP 10K COMPANIES WORLDWIDE WITH SOFTWARE AND AI.'),(28,'stocks','1vmocdx','p3azuj1','2026-08-12',-3,0,'Always â€˜based onâ€™ never â€˜based offâ€™'),(29,'stocks','1vmocdx','p3b7x9z','2026-08-12',-6,0,'Microsoft is a dead stock, pumps around the middle of the year and then gives up its gains the rest of the year, every time');
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1vncf3z','p3gaw4n','2026-08-13',22,0,'This massively de-risked their thesis now. '),(2,'stocks','1vncf3z','p3gflfg','2026-08-13',6,0,'If the remaing 3 are due by the end of 2026 then how is this a 5-year contract? '),(3,'stocks','1vncf3z','p3gkd4m','2026-08-13',-6,0,'Was that delivered by UPS or Fedex?'),(4,'ValueInvesting','1vnpasq','p3jbowj','2026-08-13',12,0.5423,'I sold my 2001 Toyota Camry to buy Microsoft before BRK.B \n\n  \nI\'m something of a genius myself '),(5,'ValueInvesting','1vnpasq','p3jbdmu','2026-08-13',3,-0.4215,'ill just wait until tomorrow...thanks Barron'),(6,'ValueInvesting','1vnpasq','p3jehop','2026-08-13',3,0,'Increasing alphabet makes sense, but equities has never been the core focus, they probably should make some acquistions, '),(7,'ValueInvesting','1vnpasq','p3jj5or','2026-08-13',1,0.745,'Buffet isnâ€™t even giving BRK to bill gates and he said he would never buy Microsoft due to his friendship with bill. He has privately bought shares of Microsoft. Maybeâ€¦ but he did buyback and Taylor home and Googleâ€¦ I dunno how many billions are unaccounted '),(8,'ValueInvesting','1vnpasq','p3jgbw6','2026-08-13',-7,0.2023,'If Berkshire bought MSFT they waited until it ran up a bunch and bought because fomo like they did with GOOG\n\nBerkshire is such a crappy mismanaged company');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -345,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-13  2:26:05
+-- Dump completed on 2026-08-14  2:24:05

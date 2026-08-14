@@ -45,6 +45,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
+1c484334-9787-11f1-b383-6241b6f37796:1-35,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -63,7 +64,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
-296d8ab9-96be-11f1-8173-e63f3a27c12b:1-61,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -289,6 +289,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -322,7 +323,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -331,7 +332,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vmavqk','p38jpce','2026-08-12',15,0.9672,'I explained how this works 3 weeks ago. I\'m just reposting this time over and over now... https://www.reddit.com/r/NVDA_Stock/comments/1v58we1/conviction_profit/\n\nTLDR: The financiers aren\'t sure how much GPUs will be worth in 4 years, Nvidia is sure, and is willing to guarantee it to the banks. So they make a deal for a set value, if it\'s worth less than that, Nvidia will cover 25% of the difference, if it\'s worth MORE than that, Nvidia profits. This gives lenders confidence to lend at massive scale and Nvidia makes money on their lack of uncertainty. This is great arbitrage that both boosts income for basically no effort while reinforcing the ecosystem and creating new lock-in. Amazing.'),(2,'NVDA_Stock','1vmavqk','p38094m','2026-08-12',8,0.9577,'Basically?\n\n\nThe issue with securatizing these loans compared to old-school capital goods/homes/cars is that the future value is really hard to model.\n\n\nToken costs, token demand, and compute efficiency are all moving by incredibly large amounts compared to analogous metrics for other industries/financed assets. Even for a single gpu architecture, these metrics can move substantially over time, from below with software improvements or from above with model architecture shifts (with codesign somewhat allowing the tail to wag the dog).\n\n\nAnd consequently, the modeling of these assets is intricately linked to the asset manufacturer\'s (nvda) strategy/execution/R&D. \n\n\nSo Nvidia basically comes in and says \"yea, we know our product is complicated, used in complicated ways in a complicated landscape. I can make my new product 5x more efficient, producing 3x more output, cost 2x more to buy, running models 4x larger, which are (insert impossible metric) smarter/more useful for end users, yet my 5 year old chip rental rates stay fairly stable. So let me make it easy - I\'ll always buy it back for 25% sticker price within x years\"\n\nIn a landscape that shifts as much and as fast as this, that is a substantial guarantee, and one only nvidia can make because only they know exactly what they can do with their chips over time. \n\nAnd it sets the upper bound on risk to the lender, meaning these loans are fully defined for the tail that concerns the lender. If it turns out that residual value maths out to be better than 25%, the value of the debt will go up/yields will go down as markets try not to leave any free lunches hanging around, nvidia will be spared the draw downs of being the buyer of last resort, but they will keep all the revenue sharing rewards for their foresight. If its worse than 25%, its not, cause nvidia has a standing 25% offer.\n\n\nHmm, 25% residual value offer, on goods sold with 75% gross margin. Isn\'t that neat.'),(3,'NVDA_Stock','1vmavqk','p38jfuz','2026-08-12',2,0.3657,'â€œBig Shortâ€ investor Michael Burry on Wednesday launched a scathing critique of Nvidia\'s ([NVDA](https://seekingalpha.com/symbol/NVDA#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)) $500B infrastructure financing deal. Comparing the complex web of private credit and asset-backed securities to the systemic risks that preceded the 2008 financial crisis, Burry called theÂ arrangement a â€œWall Street stunt.â€\n\n...............\n\nHowever, Burry is alleging a highly leveraged and circular pipeline underlying these deals. Per his infographic, U.S. retiree annuity premiums paid to Apollo\'s ([APO](https://seekingalpha.com/symbol/APO#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)) Athene are funneled through an offshore Bermuda reinsurer and leveraged by Apollo into asset-backed debt. Apollo reportedly issues $3.5B in debt to a special purpose vehicle named Valor, paired with a $1.9B equity injection directly from Nvidia ([NVDA](https://seekingalpha.com/symbol/NVDA#source=section%3Amain_content%7Cbutton%3Abody_link%7Cfirst_level_url%3Anews)). VCI then purchases $5.4B in Nvidia GB200 GPUs to lease to xAI for its Grok supercomputer cluster.\n\nFor skeptics, this complex structure artificially boosts revenue while pushing depreciation risks onto unsuspecting retirees.\"\n\n==============================\n\nHowever, at this point, Burry is a strong foe of continued Nvidia success so some skepticism is not unwarranted, imho.'),(4,'NVDA_Stock','1vmavqk','p389rfv','2026-08-12',-1,0.5994,'i think NVDA / Jensen actually knows some of these companies won\'t be able to make a profit, they will have to EXECUTE the data centers and end up getting payed basically with their own money. It will take a market value hit when that happens and then bussiness as usual, but this time NVDA rents GPU power. They sell, somebody else does the work they swoop in and \"Save the data center\". '),(5,'NVDA_Stock','1vmcfmf','p3cet8d','2026-08-12',1,0,'[removed]');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'TradingEdge','1vn91sh','p3fiowi','2026-08-13',-3,0.7622,'Thousands of paid subscribers is validation of my proficiency as a stock picker, specialising in thematic SMID caps. I post all my picks and research/DD on emerging SMID caps on my trading site first as well as daily analysis pieces like this. If you want my alpha before anyone else, feel free to try it out for a month, you can cancel any time so it will set you back $40 to potentially discover a research platform that will change the trajectory of your investing.. Â I have a 15% off coupon running. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -345,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-13  2:26:05
+-- Dump completed on 2026-08-14  2:24:05

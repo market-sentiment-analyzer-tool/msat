@@ -45,6 +45,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
+1c484334-9787-11f1-b383-6241b6f37796:1-35,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -63,7 +64,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
-296d8ab9-96be-11f1-8173-e63f3a27c12b:1-61,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -289,6 +289,7 @@ f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
+f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
 f82bc5c1-b46e-11f0-9635-e623e7eb8c8c:1-70,
 f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
@@ -322,7 +323,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -331,7 +332,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vmkdeu','p3a1oau','2026-08-12',9,0.7935,'Stocks go up and stocks go down, but mostly up for big names like aapl'),(2,'AAPL','1vmkdeu','p3abnp2','2026-08-12',4,-0.539,'If it closes above $300 you should feel the same way. Seriously, even if it drops below, waiting this very normal drop is going to pay off. '),(3,'AAPL','1vmkdeu','p3bjisj','2026-08-12',2,-0.6705,'Stop with ur dumb pics about nothing bro'),(4,'AAPL','1vmkdeu','p3bsq01','2026-08-12',1,-0.4404,':('),(5,'AAPL','1vmkdeu','p3b1ubk','2026-08-12',-1,-0.1027,'Nah bro this thingâ€™s going test sub $300 very soon');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vnlpaq','p3iiba8','2026-08-13',3,0.8268,'Pretty Christmas tree! I love it when people post their drawings here.'),(2,'AAPL','1vnlpaq','p3ipfsr','2026-08-13',3,0.296,'Yeah I think we may start filling the gap here next week. '),(3,'AAPL','1vnlpaq','p3ihnxm','2026-08-13',2,-0.5023,'We all hoping but short term watching aapl just sucks. Always buy and look a week, a month, a year later. Iâ€™ll have more hair instead of follicles falling out of my scalp '),(4,'AAPL','1vnlpaq','p3jiozl','2026-08-13',1,0,'we know....');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -345,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-13  2:26:05
+-- Dump completed on 2026-08-14  2:24:05
