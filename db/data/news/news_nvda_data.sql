@@ -222,6 +222,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c18fe19a-978e-11f1-8a24-ae491ea6b9d2:1-57,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -331,7 +332,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-08-12',0.06364,'Bank of America sends blunt message to Nvidia stock investors','https://www.thestreet.com/investing/stocks/bank-of-america-sends-blunt-message-to-nvidia-stock-investors',40),(2,'rich asplund','...','2026-08-12',0.61736,'Stocks Trading Higher on Favorable CPI Report and Positive AI News','https://www.barchart.com/story/news/3805178/stocks-trading-higher-on-favorable-cpi-report-and-positive-ai-news',2),(3,'donna armstrong','...','2026-08-12',-0.36704,'NVIDIA (NASDAQ:NVDA) Trading Down 2.9% â€“ Whatâ€™s Next?','https://www.thelincolnianonline.com/2026/08/12/nvidia-nasdaqnvda-trading-down-2-9-whats-next.html',20),(4,'alex sirois','...','2026-08-12',0.65008,'Broadcom Wins If AI Wins So I Keep Buying','https://finance.yahoo.com/technology/ai/articles/broadcom-wins-ai-wins-keep-134348774.html',20),(5,'gerelyn terzo','\n							Cooler July CPI of 3.4% annually pushed September Fed pause odds to 68%, lifting Nasdaq-100 futures nearly 1% and boosting growth stocks.													\n\n							CoreWeave (CRWV) surged 14% after...','2026-08-12',0.65736,'Live Nasdaq Composite: Market Sentiment Remains Hopeful on Cooling Inflation Signals, AI Earnings','https://247wallst.com/investing/2026/08/12/live-nasdaq-composite-market-sentiment-remains-hopeful-on-cooling-inflation-signals-ai-earnings/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','...','2026-08-13',-0.272,'Michael Burry Sounds the Alarm Again: AI Is a Circular Financing Web With Nvidia In the Middle','https://finance.yahoo.com/technology/ai/articles/michael-burry-sounds-alarm-again-144154784.html',200),(2,'money morning','Last week the Mag 7 told one story with two punch lines. Microsoft (MSFT) and Amazon (AMZN) got paid for cloud growth. Apple (AAPL) ate the hangover. This week the group did something quieter and more...','2026-08-13',0.17788,'Mag 7 Weekly: Digestion After the Cloud Blowout. Nvidia Builds Into Aug. 26.','https://moneymorning.com/2026/08/13/magnificent-7-weekly-report-august-13-2026',40),(3,'luke lango','\n\n			Models, agents, chips, and infrastructure are advancing at once. Finding the winners is only the beginning.		\nSource: Shabbir - stock.adobe.com\nListen to the audio version of this article (genera...','2026-08-13',0.74396,'AI Is Creating More Winners Than Investors Can Track','https://investorplace.com/hypergrowthinvesting/2026/08/ai-is-creating-more-winners-than-investors-can-track/',4),(4,'tyler durden','Futures are higher again, although trading in a narrow range for the past week just below all time highs, with Tech flat following disappointing earnings from CSCO. As of 8:00am ET, S&P 500 futures ad...','2026-08-13',0.19998,'Futures Rise, Just Under Record High Ahead Of PPI Report','https://www.zerohedge.com/markets/futures-rise-just-under-record-high-ahead-ppi-report',4),(5,'capital minded','...','2026-08-13',-0.25456,'Nvidia: The Concentration Bear Case Has Lost Half Its Footing','https://seekingalpha.com/article/4935952-nvidia-the-concentration-bear-case-has-lost-half-its-footing',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -345,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-13  3:21:47
+-- Dump completed on 2026-08-14  3:19:05

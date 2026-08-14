@@ -222,6 +222,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c18fe19a-978e-11f1-8a24-ae491ea6b9d2:1-57,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -322,7 +323,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -331,7 +332,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'fatima gulzar','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-08-12',0.19952,'Microsoft Corporation (MSFT) vs. Meta Platforms, Inc. (META): Two Different Bets Behind Big Techâ€™s $1 Trillion Lease Bill','https://www.insidermonkey.com/blog/microsoft-corporation-msft-vs-meta-platforms-inc-meta-two-different-bets-behind-big-techs-1-trillion-lease-bill-1807357/',40),(2,'alanna baker','...','2026-08-12',0.44592,'Direxion Daily MSFT Bear 1X Shares (NASDAQ:MSFD) Short Interest Up 1,064.9% in July','https://www.thelincolnianonline.com/2026/08/12/direxion-daily-msft-bear-1x-shares-nasdaqmsfd-short-interest-up-1064-9-in-july.html',20),(3,'ravikash bakolia','...','2026-08-12',0.49992,'Open model advancement favorable for Microsoft, ServiceNow: Wells Fargo','https://seekingalpha.com/news/4631523-open-model-advancement-favorable-for-microsoft-servicenow-wells-fargo?feed_item_type=news',4),(4,'rich asplund','...','2026-08-12',0.61736,'Stocks Trading Higher on Favorable CPI Report and Positive AI News','https://www.barchart.com/story/news/3805178/stocks-trading-higher-on-favorable-cpi-report-and-positive-ai-news',2),(5,'vandita jadeja','Investing\n\n							All 54 analysts covering MSFT rate it a Buy, with our $604 target implying 20% upside backed by $678B in locked commercial commitments.													\n\n							GOOGL trades at 15x earni...','2026-08-12',0.3223,'54 Analysts, One Verdict: Microsoftâ€™s Upside Isnâ€™t Done Yet','https://247wallst.com/investing/2026/08/12/54-analysts-one-verdict-microsofts-upside-isnt-done-yet/',4),(6,'caroline horne','...','2026-08-12',0.2,'Microsoft (NASDAQ:MSFT) Price Target Raised to $700.00 at Wells Fargo & Company','https://www.thelincolnianonline.com/2026/08/12/microsoft-nasdaqmsft-price-target-raised-to-700-00-at-wells-fargo-company.html',20),(7,'bloomberg news','...','2026-08-12',0,'US Premarket Movers for August 12, 2026','https://financialpost.com/pmn/business-pmn/us-premarket-movers-for-august-12-2026',2),(8,'geoffrey seiler','Hyperscalers, which are companies that own large data centers, have been spending aggressively to build out artificial intelligence (AI) infrastructure. Although the market has been concerned about th...','2026-08-12',0.56648,'1 Hyperscaler Stock to Buy, 1 to Hold, and 1 to Avoid','https://www.fool.com/investing/2026/08/12/1-hyperscaler-stock-to-buy-1-to-hold-and-1-to-avoi/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'daniel howley','...','2026-08-13',0.18104,'Google becomes latest company to raise prices thanks to memory shortage','https://ca.finance.yahoo.com/news/google-becomes-latest-company-to-raise-prices-thanks-to-memory-shortage-151004099.html',2),(2,'rich asplund','...','2026-08-13',0.56024,'Stocks See Support from Favorable PPI Report','https://www.barchart.com/story/news/3831041/stocks-see-support-from-favorable-ppi-report',2),(3,'brian sozzi','...','2026-08-13',0,'Why this analyst sees another 30% rip in Microsoft stock','https://finance.yahoo.com/markets/stocks/article/why-this-analyst-sees-another-30-rip-in-microsoft-stock-132716702.html',200),(4,'money morning','Last week the Mag 7 told one story with two punch lines. Microsoft (MSFT) and Amazon (AMZN) got paid for cloud growth. Apple (AAPL) ate the hangover. This week the group did something quieter and more...','2026-08-13',0.17788,'Mag 7 Weekly: Digestion After the Cloud Blowout. Nvidia Builds Into Aug. 26.','https://moneymorning.com/2026/08/13/magnificent-7-weekly-report-august-13-2026',4),(5,'luke lango','\n\n			Models, agents, chips, and infrastructure are advancing at once. Finding the winners is only the beginning.		\nSource: Shabbir - stock.adobe.com\nListen to the audio version of this article (genera...','2026-08-13',0.74396,'AI Is Creating More Winners Than Investors Can Track','https://investorplace.com/hypergrowthinvesting/2026/08/ai-is-creating-more-winners-than-investors-can-track/',4),(6,'alex sirois','Investing\n\n							MSFT fell 6% over the past year despite 5 consecutive EPS beats, with capex surging 80% to $116 billion and squeezing free cash flow lower.													\n\n							Arete Research set a ...','2026-08-13',-0.30998,'Microsoft Is Still Negative 1 Year Later: 76% Increase Lies Ahead According to This Analyst','https://247wallst.com/investing/2026/08/13/microsoft-is-still-negative-1-year-later-76-increase-lies-ahead-according-to-this-analyst/',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -345,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-13  3:21:47
+-- Dump completed on 2026-08-14  3:19:05
