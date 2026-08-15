@@ -45,7 +45,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
-1c484334-9787-11f1-b383-6241b6f37796:1-35,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
@@ -184,6 +183,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+9162e82d-9849-11f1-9c31-9acc16e915fa:1-42,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -223,6 +223,7 @@ bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
 bfc43a0b-28c5-11f1-93de-62d9ac5d1df9:1-66,
 c075c672-b9ee-11f0-ace0-ba3ac7869236:1-67,
 c0b97c20-151f-11f1-98b8-6692b1f263c7:1-66,
+c18fe19a-978e-11f1-8a24-ae491ea6b9d2:1-57,
 c3af7800-5989-11f1-b11d-a2471fd12bae:1-61,
 c3b87b52-1778-11f1-85a0-b6ae855d4b2c:1-62,
 c418b3d7-914a-11f1-ad3b-06a3680cf3f9:1-54,
@@ -323,7 +324,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -332,7 +333,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'TradingEdge','1vn91sh','p3fiowi','2026-08-13',-3,0.7622,'Thousands of paid subscribers is validation of my proficiency as a stock picker, specialising in thematic SMID caps. I post all my picks and research/DD on emerging SMID caps on my trading site first as well as daily analysis pieces like this. If you want my alpha before anyone else, feel free to try it out for a month, you can cancel any time so it will set you back $40 to potentially discover a research platform that will change the trajectory of your investing.. Â I have a 15% off coupon running. If you want to try it, just enterÂ **15OFF**Â on checkout:\n\n[https://tradingedge.club/plans/1873590?bundle\\_token=e7282ddaffc9cb98e860165d82ef1ba3&utm\\_source=manual](https://tradingedge.club/plans/1873590?bundle_token=e7282ddaffc9cb98e860165d82ef1ba3&utm_source=manual)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -346,4 +346,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-14  2:24:05
+-- Dump completed on 2026-08-15  1:36:12
