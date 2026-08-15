@@ -254,6 +254,7 @@ dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
@@ -323,7 +324,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -332,7 +333,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','...','2026-08-13',-0.272,'Michael Burry Sounds the Alarm Again: AI Is a Circular Financing Web With Nvidia In the Middle','https://finance.yahoo.com/technology/ai/articles/michael-burry-sounds-alarm-again-144154784.html',200),(2,'money morning','Last week the Mag 7 told one story with two punch lines. Microsoft (MSFT) and Amazon (AMZN) got paid for cloud growth. Apple (AAPL) ate the hangover. This week the group did something quieter and more...','2026-08-13',0.17788,'Mag 7 Weekly: Digestion After the Cloud Blowout. Nvidia Builds Into Aug. 26.','https://moneymorning.com/2026/08/13/magnificent-7-weekly-report-august-13-2026',40),(3,'luke lango','\n\n			Models, agents, chips, and infrastructure are advancing at once. Finding the winners is only the beginning.		\nSource: Shabbir - stock.adobe.com\nListen to the audio version of this article (genera...','2026-08-13',0.74396,'AI Is Creating More Winners Than Investors Can Track','https://investorplace.com/hypergrowthinvesting/2026/08/ai-is-creating-more-winners-than-investors-can-track/',4),(4,'tyler durden','Futures are higher again, although trading in a narrow range for the past week just below all time highs, with Tech flat following disappointing earnings from CSCO. As of 8:00am ET, S&P 500 futures ad...','2026-08-13',0.19998,'Futures Rise, Just Under Record High Ahead Of PPI Report','https://www.zerohedge.com/markets/futures-rise-just-under-record-high-ahead-ppi-report',4),(5,'capital minded','...','2026-08-13',-0.25456,'Nvidia: The Concentration Bear Case Has Lost Half Its Footing','https://seekingalpha.com/article/4935952-nvidia-the-concentration-bear-case-has-lost-half-its-footing',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'adam spatacco','The artificial intelligence (AI) revolution started with a scramble for processing power, as graphics processing units (GPUs) from Nvidia (NVDA -0.06%) powered large language model training. Although ...','2026-08-14',0.58118,'Not Micron, Not Sandisk. This Artificial Intelligence (AI) Memory Stock Could Be the Next Nvidia.','https://www.fool.com/investing/2026/08/14/not-micron-not-sandisk-this-artificial-intelligenc/',4),(2,'marc guberti','Meta Platforms (META -0.86%) Chief Executive Officer Mark Zuckerberg recently released a manifesto that outlines how the company will harness artificial intelligence (AI) and where he believes the ind...','2026-08-14',0.76686,'Mark Zuckerberg Just Said That Everyone Will Have \"An Exceptionally Capable Personal Agent.\" These 3 AI Stocks Will Benefit','https://www.fool.com/investing/2026/08/14/mark-zuckerberg-just-said-that-everyone-will-have/',4),(3,'dave kovaleski','Oracle (ORCL -3.65%) was one of the most shorted stocks by hedge funds in the first half of 2026, according to the Data Insights Crowding Report.\nThis meant that a lot of investors were betting that t...','2026-08-14',0.73534,'This Tech Stock Is 1 of the Most Shorted Stocks of 2026: Is Now the Time to Buy?','https://www.fool.com/investing/2026/08/14/this-tech-stock-was-one-of-the-most-shorted-stocks/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -346,4 +347,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-14  3:19:05
+-- Dump completed on 2026-08-15  2:07:03
