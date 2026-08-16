@@ -183,13 +183,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
-9162e82d-9849-11f1-9c31-9acc16e915fa:1-42,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9f7ded05-9913-11f1-8fe8-8e9142a47794:1-123,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -255,6 +255,7 @@ dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
@@ -324,7 +325,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,7 +334,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'stocks','1vnwbfw','p3loi4y','2026-08-14',94,-0.7063,'I feel bamboozled to have read such an utterly pointless post. Shame on me.'),(2,'stocks','1vnwbfw','p3l2j7j','2026-08-14',327,0.296,'That\'s about 1.6% of his shares.'),(3,'stocks','1vnwbfw','p3l69m8','2026-08-14',88,0.2023,'Itâ€™s 2% of his net worth and he owns multiple $100m homes and multiple $200m+ yacht. It isnâ€™t surprising heâ€™s gotta sell some shares at some point to diversify or just to pay for luxurious things.  '),(4,'stocks','1vnwbfw','p3l3pxb','2026-08-14',158,0.8074,'Its wild how billionaires are just playing with their money. I want to buy 1/3 of Liverpool FC, sell 1% of my shares and buy it.'),(5,'stocks','1vnwbfw','p3lgv3e','2026-08-14',28,-0.5267,'This is partially why Amazons stock price has been depressed. Mackenzie and Jeff offload a lot. And they will continue to do so.'),(6,'stocks','1vnwbfw','p3lftlr','2026-08-14',35,0.6808,'Funny how we still have a large group of people saying we cant tax billionaires because they dont have cash. And here he is selling 1,6 percent of his shares to buy one of the most Football clubs in the world '),(7,'stocks','1vnwbfw','p3l680v','2026-08-14',7,-0.5204,'Why is he selling? I thought he sold a couple of billion in the past year. What did he do with that money lol?'),(8,'stocks','1vnwbfw','p3matyt','2026-08-14',3,0.3919,'15 million shares sounds huge, but relative to Bezos\' overall Amazon position it\'s not exactly him hitting the eject button'),(9,'stocks','1vnwbfw','p3n67ai','2026-08-14',2,-0.8316,'Everyone buying sports teams now.\n\nIts all about catering to and selling to dumb people now, thats why everything sucks.'),(10,'stocks','1vnwbfw','p3lhkxp','2026-08-14',2,0.7783,'He doesnâ€™t invest his money to make money anymore clearly '),(11,'stocks','1vnwbfw','p3lb1aa','2026-08-14',3,-0.3382,'Again?! There goes another drop of my vesting RSUs. '),(12,'stocks','1vnwbfw','p3nk6i5','2026-08-14',1,0.296,'Ok chatgpt'),(13,'stocks','1vnwbfw','p3oe6w5','2026-08-14',1,0.3384,'Buying Liverpool for up to $8 billion, heâ€™s going to need to sell more shares '),(14,'stocks','1vnwbfw','p3oo1xe','2026-08-14',1,0.1779,'bezos is a parasite on the amazon shareholder now'),(15,'stocks','1vnwbfw','p3qqdpg','2026-08-14',1,0,'Isn\'t it just for funding Blue Origin? '),(16,'stocks','1vnwbfw','p3qvlm0','2026-08-14',1,0.7074,'My boy is going to bring Liverpool games to Amazon Prime and in turn get them to promote Amazon!!!'),(17,'stocks','1vnwbfw','p3r3a1m','2026-08-15',1,0.4019,'Hopefully this finally gets Barcola over the line'),(18,'stocks','1vnwbfw','p3oq7kx','2026-08-14',0,0.4588,'He learned that Iran will be targeting Amazon warehouses :-)'),(19,'stocks','1vnwbfw','p3p89ax','2026-08-14',0,0.6679,'EAT THE RICH!!!'),(20,'stocks','1vnwbfw','p3mrgeu','2026-08-14',-1,0.6804,'so does he pay tax on that?  like the 38%  the powerball winner has to pay?');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -347,4 +347,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-15  1:36:12
+-- Dump completed on 2026-08-16  1:45:33

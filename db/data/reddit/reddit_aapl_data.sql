@@ -183,13 +183,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
-9162e82d-9849-11f1-9c31-9acc16e915fa:1-42,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9f7ded05-9913-11f1-8fe8-8e9142a47794:1-123,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -255,6 +255,7 @@ dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
@@ -324,7 +325,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,6 +334,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1vpaowi','p3w1b36','2026-08-15',98,0.296,'Simple buyout Micron for $5k a share '),(2,'stocks','1vpaowi','p3w2d72','2026-08-15',84,-0.4588,'CXMT already told Apple they donâ€™t sell their RAM below market price '),(3,'stocks','1vpaowi','p3wmqpb','2026-08-15',10,0.8225,'CXMT are already the largest supplier to Adata, the second largest RAM based company in the world. Don\'t ask me how I know. I just do. '),(4,'stocks','1vpaowi','p3wbdw2','2026-08-15',23,-0.128,'Trump just wants a shakedown donation. Itâ€™ll get resolved in a few weeks '),(5,'stocks','1vpaowi','p3w42bk','2026-08-15',11,-0.4019,'Damn Tim apple needs to make another campaign donation '),(6,'stocks','1vpaowi','p3wa59b','2026-08-15',12,-0.765,'AAPL been jacking consumers for years. $29 lightning cable? Now they are crying and wants China to bail them out. Fuck aapl '),(7,'stocks','1vpaowi','p3y3klj','2026-08-16',2,0.0772,'Apple has acted like thugs before and bullied other memory makers. \n\nNow the table has turned and they are scrambling. \n\nKarma, betches. \n\nðŸ˜‚ '),(8,'stocks','1vpaowi','p3w14tv','2026-08-15',7,0,'How about only for Chinese market?'),(9,'stocks','1vpaowi','p3w7qpr','2026-08-15',5,0.0772,'The first time YMTC NAND or CXMT DRAM is seen in an iPhone, the staggering number of patent litigations that will follow will be absolutely dizzying. '),(10,'stocks','1vpaowi','p3w6xsh','2026-08-15',3,0.8271,'Good. whatâ€™s good for apple isnâ€™t good for the US or Europe in the medium run. '),(11,'stocks','1vpaowi','p3xqxt5','2026-08-16',1,-0.2732,'Lutnick is ignorant and knows nothing about anything a modern engineering firm does. '),(12,'stocks','1vpaowi','p3xyqp4','2026-08-16',1,0.3818,'Clear llm post'),(13,'stocks','1vpaowi','p3y0s0y','2026-08-16',1,-0.7003,'Make memory upgradable by the consumer ðŸ˜± '),(14,'stocks','1vpaowi','p3y26vx','2026-08-16',1,0,'Doesnâ€™t Apple consume enough memory annually to build their own memory chip plant?'),(15,'stocks','1vpaowi','p3w15ql','2026-08-15',-1,-0.5023,'Sucks for the stock, but Apple needs to start looking near shore for production and stop building Chinaâ€™s industry for them. Â \n\nMight be turbulent times ahead if they donâ€™t, doubt things change much once the other party gets into office .Â \n\n'),(16,'stocks','1vpaowi','p3w1wf9','2026-08-15',1,0.8807,'I thought Apple were committed to the US administrationâ€™s idea of using USA supply chains and manufacturing, to help support US jobs and create working opportunities.'),(17,'stocks','1vpaowi','p3w3euo','2026-08-15',-1,-0.6249,'Apple screwed so many businesses around the world. Now a lawsuit against OpenAIâ€¦ It is possibly their downfall. '),(18,'stocks','1vpaowi','p3w3o92','2026-08-15',-3,0.4939,'Apple is trying to cut corners and put profits before national security. '),(19,'stocks','1vpaowi','p3w6a7w','2026-08-15',1,-0.7579,'Last I read this would have been for the Chinese market only, and China also has a memory shortage, and the stuff they make is several generations behind, only really suitable for consumer electronics anyway, security and supply chain concerns aside. \n\nThere is no cheap memory to be had anywhere. This story is just narrative building from the media to clickbait boomers into reading about how tech and ai are gonna crash because there\'s some hidden trove of memory sitting in Chinese warehouses (there\'s not).'),(20,'stocks','1vpaowi','p3w30vs','2026-08-15',-4,-0.0572,'you dont want to rely on china. china wants you to rely on them\n\n'),(21,'stocks','1vpaowi','p3w4xeh','2026-08-15',-2,0,'[deleted]'),(22,'stocks','1vpaowi','p3wdycr','2026-08-15',-1,0,'Since when does the american government dictate what a private company is allowed to purchase?'),(23,'stocks','1vpaowi','p3wirk9','2026-08-15',-1,-0.1027,'You can smell the bribes money that Timmy Boy is glitz have to pay to Pedo Trump'),(24,'stocks','1vpaowi','p3wapuk','2026-08-15',0,-0.5365,'Maybe another golden statue of the fascist Golgothan needs to be offered. \n\n\nApple is dead to me, and so is Google. The day the GrapheneOS Razr us available I\'m saying fuck you to both. \n\nAnd when I retire, no phone no Internet, no computer and I will drive a car with zero tech. \n\nI\'ll live in my city I love but I will be a ghost.'),(25,'stocks','1vpaowi','p3wf40m','2026-08-15',-2,0,'Big brother government at work. Whiff of USSR.'),(26,'stocks','1vpaowi','p3wpzbr','2026-08-15',-1,-0.3089,'Trump owns MU. \n\nHe is not going to help Apple and tank MU stock by allowing Chinese memory to flood US market.'),(27,'stocks','1vpaowi','p3xdc23','2026-08-15',-2,0.1866,'CXMT and YMTC are built on blatantly stolen tech from Samsung and SK Hynix. Imo, the US should absolutely put both on the Entity List and ban all US companies from using them inside or outside of China. China is going to use their stolen tech anyway, but the US and other decent countries shouldn\'t be shitting on Korea like that. Korea has been a good and decent trading partner while China has essentially engaged in economic and cyber warfare with the entire world.    \n   \nYMTC is already on the Entity List. It\'s shocking that CXMT isn\'t on there yet.    \n     \nOh, and this ignores the obvious security and privacy risks involved in using any Chinese memory products. There are tons of vulnerabilities that can be built into memory product firmware, and China\'s military is deeply involved in YMTC and CXMT. Anyone using any of their products is risking CCP having direct access to their machines. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -346,4 +348,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-15  1:36:12
+-- Dump completed on 2026-08-16  1:45:33
