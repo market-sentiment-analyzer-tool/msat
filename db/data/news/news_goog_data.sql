@@ -36,6 +36,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
+1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -324,7 +325,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,7 +334,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Alphabet (GOOG -0.12%) (GOOGL -0.13%) and Microsoft (MSFT -0.30%) are two of the biggest tech giants on the market, and the third and fourth-largest companies in the world. Each has posted terrific re...','2026-08-14',0.67946,'Better Tech Behemoth: Alphabet vs. Microsoft Stock','https://www.fool.com/investing/2026/08/14/better-tech-behemoth-alphabet-versus-microsoft-sto/',4),(2,'rasmus tolppanen','...','2026-08-14',0,'Alphabet: This Is How YouTube Changes Business And Society','https://seekingalpha.com/article/4936678-alphabet-this-is-how-youtube-changes-business-and-society',4),(3,'yahoo finance','...','2026-08-13',0.35232,'Tech stocks today: Shares climb higher with AI trade back on','https://www.bundle.app/en/finance/tech-stocks-today-shares-climb-higher-with-ai-trade-back-on-8C77D34D-9732-43C7-9542-C0EF56EF34CA',2),(4,'ebube jones','...','2026-08-13',0,'Citizens Just Upgraded OKTA Ahead of Upcoming Catalysts. How to View OKTA Stock Now.','https://www.barchart.com/story/news/3837022/citizens-just-upgraded-okta-ahead-of-upcoming-catalysts-how-to-view-okta-stock-now',2),(5,'daniel howley','...','2026-08-13',0.18104,'Google becomes latest company to raise prices thanks to memory shortage','https://ca.finance.yahoo.com/news/google-becomes-latest-company-to-raise-prices-thanks-to-memory-shortage-151004099.html',20),(6,'wall street breakfast','...','2026-08-13',0.45752,'Wall Street Breakfast Podcast: Google Trots Out Legend To Inspire Gemini Devs','https://seekingalpha.com/article/4935931-wall-street-breakfast-podcast-google-trots-out-legend-to-inspire-gemini-devs',40),(7,'abmn staff','\n					Posted by ABMN Staff on Aug 13th, 2026\n\nBallast Inc. grew its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 15.5% during the 2nd quarter, Holdings Channel reports. The firm owned 15,...','2026-08-13',0.43672,'Ballast Inc. Buys 2,034 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/13/ballast-inc-buys-2034-shares-of-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'donald scott','...','2026-08-15',0.2368,'Alphabet Inc. $GOOG Shares Bought by Massachusetts Financial Services Co. MA','https://www.thelincolnianonline.com/2026/08/15/alphabet-inc-goog-shares-bought-by-massachusetts-financial-services-co-ma.html',2),(2,'logan wallace','...','2026-08-15',-0.02064,'Fire Capital Management LLC Boosts Stock Position in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13543973/fire-capital-management-llc-boosts-stock-position-in-alphabet-inc-goog.html',2),(3,'wajeeh khan','...','2026-08-14',0.30544,'Dear Reddit Stock Fans, Mark Your Calendars for August 18','https://www.barchart.com/story/news/3858793/dear-reddit-stock-fans-mark-your-calendars-for-august-18',2),(4,'nauman khan','...','2026-08-14',0,'GOOGL Stock Alert: Google Unleashes Its Biggest Weapon Against Apple','https://www.barchart.com/story/news/3857424/googl-stock-alert-google-unleashes-its-biggest-weapon-against-apple',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -347,4 +348,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-15  2:07:02
+-- Dump completed on 2026-08-16  2:14:19
