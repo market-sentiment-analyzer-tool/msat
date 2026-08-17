@@ -304,6 +304,7 @@ fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
+fdb48e4d-99e0-11f1-aeec-7608ecc01936:1-67,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -325,7 +326,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -334,7 +335,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'donald scott','...','2026-08-15',0.2368,'Alphabet Inc. $GOOG Shares Bought by Massachusetts Financial Services Co. MA','https://www.thelincolnianonline.com/2026/08/15/alphabet-inc-goog-shares-bought-by-massachusetts-financial-services-co-ma.html',2),(2,'logan wallace','...','2026-08-15',-0.02064,'Fire Capital Management LLC Boosts Stock Position in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13543973/fire-capital-management-llc-boosts-stock-position-in-alphabet-inc-goog.html',2),(3,'wajeeh khan','...','2026-08-14',0.30544,'Dear Reddit Stock Fans, Mark Your Calendars for August 18','https://www.barchart.com/story/news/3858793/dear-reddit-stock-fans-mark-your-calendars-for-august-18',2),(4,'nauman khan','...','2026-08-14',0,'GOOGL Stock Alert: Google Unleashes Its Biggest Weapon Against Apple','https://www.barchart.com/story/news/3857424/googl-stock-alert-google-unleashes-its-biggest-weapon-against-apple',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'shane hupp','...','2026-08-16',-0.42136,'Mill Capital Management LLC Reduces Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13545641/mill-capital-management-llc-reduces-holdings-in-alphabet-inc-goog.html',2),(2,'shane hupp','...','2026-08-16',-0.2368,'Pinnacle Associates Ltd. Cuts Stock Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13545520/pinnacle-associates-ltd-cuts-stock-holdings-in-alphabet-inc-goog.html',2),(3,'danessa lincoln','...','2026-08-16',0.2368,'Summit Global Investments Purchases 1,683 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/08/16/summit-global-investments-purchases-1683-shares-of-alphabet-inc-goog.html',2),(4,'donald scott','...','2026-08-16',0,'Hussman Strategic Advisors Inc. Makes New $1.48 Million Investment in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/08/16/hussman-strategic-advisors-inc-makes-new-1-48-million-investment-in-alphabet-inc-goog.html',2),(5,'michael walen','...','2026-08-16',0,'ProVise Management Group LLC Trims Position in Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/08/16/provise-management-group-llc-trims-position-in-alphabet-inc-goog.html',2),(6,'kyle jackson','...','2026-08-16',0.39512,'Osprey Private Wealth LLC Decreases Stake in Alphabet Inc. $GOOG','https://www.watchlistnews.com/osprey-private-wealth-llc-decreases-stake-in-alphabet-inc-goog/11186348.html',2),(7,'ethan ryder','...','2026-08-16',0.28896,'Smith Group Asset Management LLC Has $6.98 Million Holdings in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13545410/smith-group-asset-management-llc-has-6-98-million-holdings-in-alphabet-inc-goog.html',2),(8,'sarita garza','...','2026-08-16',0.2368,'Oppenheimer & Co. Inc. Purchases 10,484 Shares of Alphabet Inc. $GOOG','https://www.themarketsdaily.com/2026/08/16/oppenheimer-co-inc-purchases-10484-shares-of-alphabet-inc-goog.html',2),(9,'abmn staff','\n					Posted by ABMN Staff on Aug 16th, 2026\n\nDaytona Street Capital LLC reduced its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 9.8% during the second quarter, according to the company in ...','2026-08-16',0.66848,'Alphabet Inc. $GOOG is Daytona Street Capital LLCâ€™s Largest Position','https://www.americanbankingnews.com/2026/08/16/alphabet-inc-goog-is-daytona-street-capital-llcs-largest-position.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -348,4 +349,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-16  2:14:19
+-- Dump completed on 2026-08-17  2:12:33
