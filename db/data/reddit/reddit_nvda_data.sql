@@ -36,6 +36,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
+1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -177,6 +178,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
+8ac887f7-99dc-11f1-bd68-5ac4b81fcc12:1-78,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -189,7 +191,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
-9f7ded05-9913-11f1-8fe8-8e9142a47794:1-123,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -325,7 +326,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -334,7 +335,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vp44kb','p3v72iu','2026-08-15',15,0.4019,'If Nvidiaâ€™s forward P/E ratio matched Teslaâ€™s (roughly 170x to 200x) instead of its own ~25x, Nvidiaâ€™s market cap would skyrocket from about $5.4 trillion to roughly $36.8 trillion to $43.2 trillion, making it worth more than the entire U.S. stock market\'s top tier combined.'),(2,'NVDA_Stock','1vp44kb','p3wenei','2026-08-15',14,0.7577,'And the forward P/E is only at 25\n\nhttps://finance.yahoo.com/quote/NVDA/key-statistics/\n\nThis is why I laugh anytime someone says \"it\'s just like the Dot Com bubble!\"... some companies forward P/E\'s back then were 200+ and they had almost no revenue and zero profits.'),(3,'NVDA_Stock','1vp44kb','p3x0vmb','2026-08-15',4,0,'mind boggling\n'),(4,'NVDA_Stock','1vp44kb','p3xxboi','2026-08-16',4,0.6908,'Thatâ€™s what happens when itâ€™s been mostly sideways for the past 9-10 months. Hopefully this can only mean thereâ€™s nowhere to go but up relative to the rest of the sector'),(5,'NVDA_Stock','1vp44kb','p3uh1km','2026-08-15',6,0,'Return to the mean!!ðŸš€ðŸš€ðŸš€ðŸš€'),(6,'NVDA_Stock','1vp44kb','p3ugvgk','2026-08-15',3,0,'![gif](giphy|FOuIZIAdCFUSrPkcyp)'),(7,'NVDA_Stock','1vp44kb','p3uk4h2','2026-08-15',3,0.0248,'And it may continue to trade lower. Looking at P/E in this market dominated by tech is pointless, and especially with cyclical semiconductor names(don\'t pretend NVDA isn\'t)'),(8,'NVDA_Stock','1vp44kb','p3vemlt','2026-08-15',2,0.5622,'Only 38x years to pay you :D'),(9,'NVDA_Stock','1vp44kb','p3wzn89','2026-08-15',-1,-0.1531,'That\'s because earnings will come down significantly '),(10,'NVDA_Stock','1vp44kb','p3ujqvs','2026-08-15',-8,-0.4215,'Uh, these PE numbers are inflated lol. It\'s sitting at ~32-33 PE and had been for a while.'),(11,'NVDA_Stock','1vou4qj','p3ubfvs','2026-08-15',3,0.7902,'Wow look, an extremely profitable application of AI and quantum compute. Who would have thought?'),(12,'NVDA_Stock','1vou4qj','p3uq1hd','2026-08-15',2,0.7579,'This is the paragraph that got me.  That\'s wow.\n\n> **Orders-of-Magnitude Acceleration**: The AI-synthesized circuits achieved or exceeded the ground-state accuracy of reference ADAPT-VQE training data while reducing circuit generation time by 3 to 4 orders of magnitude across 12-, 14-, and 16-qubit active spaces.'),(13,'NVDA_Stock','1vou4qj','p3tto2v','2026-08-15',1,0.9825,'Nvidia is King ðŸ‘‘\n\nThis is a good leap in the quantum-led drug discovery future, but we still have some room to run. Quantum chemistry algorithms such as the one mentioned here (ADAPT-VQE) can spend enormous amounts of computation repeatedly searching for the right quantum circuit for different versions of a molecule. In this case the subject was the antidepressant, imipramine. Across the 12â€“16-qubit problems they studied, the AI generated circuits approached or sometimes exceeded the quality of the ADAPT-VQE circuits used to train the model. The article says the generation-time improvements ranging from roughly 14Ã—â€“41Ã— for Nemotron and roughly 930Ã—â€“8,800Ã— for the smaller Gemma model. So one day we can go from (Molecule to enormous optimization search to quantum circuit and finally to QPU) to becoming more efficient by simply going from (Molecule to AI to quantum circuit and then to QPU). If we prefect the AI framework, this process will not only accelerate drug discovery but also discoveries in other areas like battery chemistry, catalysts, fertilizers  \nadvanced materials, semiconductor materials, and energy storage. The bad news is that Quantiniumâ€™s QPU are trash as the article points out â€œthe hardware demonstration does not yet achieve sufficient accuracy for chemistry usageâ€. Sounds like Nvidia better start developing their own QPUâ€™s and not rely on these partners to lead us into the future. This experiment is like having a relay race with best runners in the beginning only for the baton to be handed to an average American in the end to finish off the race. Itâ€™s going to be an exciting start, but a very sad ending.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -348,4 +348,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-16  1:45:33
+-- Dump completed on 2026-08-17  1:43:11
