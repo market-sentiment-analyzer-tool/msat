@@ -38,6 +38,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+16dd2372-9aa5-11f1-b47e-1a0831123d0b:1-41,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -178,7 +179,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
-8ac887f7-99dc-11f1-bd68-5ac4b81fcc12:1-78,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
@@ -305,6 +305,7 @@ fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
+fdb48e4d-99e0-11f1-aeec-7608ecc01936:1-67,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
 fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
@@ -326,7 +327,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -335,6 +336,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'investing','1vqx9nf','p491q38','2026-08-17',41,0,'Part of a larger amount they previously announced.'),(2,'investing','1vqx9nf','p49uiik','2026-08-17',32,0,'The Financial centipede.'),(3,'investing','1vqx9nf','p4askxh','2026-08-17',11,-0.4939,'Man this is leading to a scary implosion '),(4,'investing','1vqx9nf','p49dyzb','2026-08-17',26,0,'Meanwhile Nvidia discloses 21B stake in Space X.  https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/\n\nI\'m working on decreasing the amount of Nvidia in my mix.   It\'s too big and too involved with other things that are too big for my allocation strategy.'),(5,'investing','1vqx9nf','p4aopc2','2026-08-17',3,0.3204,'NVIDIA got a lot of money. Money flows better than water or so it seems these days for A-I bosses. But will there be enough water make the data flow and data-center grow?  What do you think bros?'),(6,'investing','1vqx9nf','p490e36','2026-08-17',3,0.504,'Is this better for NVIDIA or openAI? Or both?'),(7,'investing','1vqx9nf','p4byacx','2026-08-18',1,0.69,'There is something that isn\'t sitting right with me here.\n\nNvidia is spending $105 billion to open a data center for another company? That is a lot of money to give to...another company. Open AI isn\'t even making any money...So isn\'t this just burnt money? Paying for the center and then giving them the chips...? When does Nvidia get paid?'),(8,'investing','1vqx9nf','p4bqmfc','2026-08-18',0,0,'boo'),(9,'investing','1vqx9nf','p4at28b','2026-08-17',-3,0.25,'The 105 billion isnâ€™t an investment, itâ€™s a financial guarantee. Not that this sub would know the difference.'),(10,'investing','1vqx9nf','p4a4api','2026-08-17',-1,-0.438,'don\'t have nvidia, but have quite a big chunk of amd and other semiconductors. the sole chip supplier doesn\'t seem promising, working on reducing my ai exposure ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -348,4 +350,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-17  1:43:11
+-- Dump completed on 2026-08-18  1:36:18
