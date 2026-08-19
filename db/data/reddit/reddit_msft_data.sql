@@ -38,7 +38,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-16dd2372-9aa5-11f1-b47e-1a0831123d0b:1-41,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -164,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7b0e8f69-9b6e-11f1-9f73-828505d18e83:1-30,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
@@ -199,6 +199,7 @@ a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
+aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -327,7 +328,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -336,6 +337,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1vrs0h3','p4fod55','2026-08-18',48,0.3313,'Maia? Is this another Tolkien inspiration? I wonder how he would feel about big tech\'s obsession with his works. '),(2,'stocks','1vrs0h3','p4fowxr','2026-08-18',41,0.2732,'Are the chips gonna come preloaded with copilot bloat as well '),(3,'stocks','1vrs0h3','p4fuf25','2026-08-18',9,0.4404,'They are all still using NVIDIA. This is good for everyone'),(4,'stocks','1vrs0h3','p4fup5m','2026-08-18',7,0.2975,'Itâ€™s almost like chips are a commodity or something.Â '),(5,'stocks','1vrs0h3','p4h6338','2026-08-18',2,0.9108,'I mean this is great and all but I wish we had more investment in chip fabs and fab technology so that Microsoft\'s orders don\'t just delay when somebody else can get their chips due to production capacities.'),(6,'stocks','1vrs0h3','p4fp6hj','2026-08-18',-15,0,'[deleted]'),(7,'stocks','1vrs0h3','p4g8r4m','2026-08-18',-5,0.4596,'Msft should focus on their strong point not weak point. Chips is not their strong point.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -349,4 +351,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-18  1:36:18
+-- Dump completed on 2026-08-19  1:37:50

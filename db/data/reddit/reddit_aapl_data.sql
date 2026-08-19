@@ -38,7 +38,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-16dd2372-9aa5-11f1-b47e-1a0831123d0b:1-41,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -164,6 +163,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
+7b0e8f69-9b6e-11f1-9f73-828505d18e83:1-30,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
@@ -199,6 +199,7 @@ a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
+aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -327,7 +328,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -336,7 +337,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vr2t4h','p4awfod','2026-08-17',4,0.743,'The next leg up is coming. The gap has to be filled back to 340 and then the new product cycle will drive upgrades and profits. \n\nHard to be totally objective when you hold 16k shares of AAPL but oddly, you and I have the same amount. This sub is full of negative people who hold 200 shares. Nice to see a solid post here. '),(2,'AAPL','1vr2t4h','p4b42e6','2026-08-17',3,0.357,'I have over 12 and I don\'t plan on selling anytime soon'),(3,'AAPL','1vr2t4h','p4am7sx','2026-08-17',3,0.705,'16k shares wow. I thought I was doing ok with about 2000 shares.\n\nI think the multiple is the problem here. What is the growth strategy? Services, clearly. iPhone sales will likely slow due to rising costs. Their margins are tightened. Iâ€™m sure weâ€™ll see AAPL $400 in the next 2-3 years pending no larger macro slowdown, but $250-350 is probably where we sit for a while.'),(4,'AAPL','1vr2t4h','p4adx00','2026-08-17',1,0,'Is that a street high? Or is Dan Ives still higher?'),(5,'AAPL','1vr2t4h','p4aw6oh','2026-08-17',1,0,'Got a link to that CNBC segment?'),(6,'AAPL','1vr2t4h','p4biiai','2026-08-17',1,0.5267,'Thatâ€™s when itâ€™s time to get out. Absurd price target considering the slowdown in growth that Apple themselves guided with. '),(7,'AAPL','1vr2t4h','p4bsrr0','2026-08-18',1,0.4404,'>\"Disclaimer: I hold 16.1K shares of AAPL\"\n\nthat\'s not what \"disclaimer\" means.\n\nwe don\'t need to know this ðŸ¤·â€â™‚ï¸'),(8,'AAPL','1vr2t4h','p4bvf9j','2026-08-18',1,0,'Cost basis?'),(9,'AAPL','1vr2t4h','p4by9y4','2026-08-18',1,0,'AAPL at 400 would require a 2029 P/E of around 30, and that is never going to happen unless something drastic happens - which it might, with the new CEO.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -350,4 +350,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-18  1:36:17
+-- Dump completed on 2026-08-19  1:37:50
