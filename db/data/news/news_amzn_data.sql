@@ -75,6 +75,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
+342f40e7-9b73-11f1-b03c-5afb066f576b:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
@@ -327,7 +328,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -336,7 +337,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'editorial staff','Amazon crossed a $3 trillion market value and slipped back, with a $4 billion insider sale landing in the same window as the fastest AWS growth in 18 quarters.\nAmazon briefly reached a $3 trillion mar...','2026-08-17',0.28172,'Amazon Touched $3 Trillion, Then Gave It Back','https://equity-insider.com/amazon-touched-3-trillion-then-gave-it-back/',40),(2,'eric kulisch','\n\nAmazon has been delivering packages by drone since February from a large fulfillment center in Darlington, England, the first location outside the United States where Amazon has expanded the Prime A...','2026-08-17',0.34134,'Amazon deploys drones outside U.S. for 1st time','https://www.freightwaves.com/news/amazon-deploys-drones-outside-u-s-for-1st-time',40),(3,'ainewswire','\n\n\nAugust 17, 2026 08:30 ET\n\n\nÂ | Source:\r\n            \nAINewsWire\n\n\n\n\n\n\nAINewsWire\n\n\nAUSTIN, Texas, Aug.  17, 2026  (GLOBE NEWSWIRE) -- AINewsWire Editorial Coverage: Billions of dollars have poured i...','2026-08-17',-0.38154,'Industrial Robot Installations Hit Record Highs Amid Labor Shortage Crisis','https://www.globenewswire.com/news-release/2026/08/17/3346097/0/en/industrial-robot-installations-hit-record-highs-amid-labor-shortage-crisis.html',4),(4,'alex sirois','...','2026-08-17',-0.2,'Two Squeezed Hyperscalers: Does Meta or Amazon Have The Bigger Cash Flow Problem?','https://finance.yahoo.com/markets/stocks/articles/two-squeezed-hyperscalers-does-meta-111035405.html',200),(5,'james brumley','...','2026-08-17',0.67616,'Google, Amazon, and Meta All Just Raised Capex Guidance Again. This Boring Industrial Wins No Matter Whose AI Infrastructure Is Best.','https://finance.yahoo.com/technology/ai/articles/google-amazon-meta-just-raised-105000386.html',20),(6,'mitch edgeman','...','2026-08-17',0.36704,'Direxion Daily AMZN Bull 2X Shares (NASDAQ:AMZU) Sees Large Increase in Short Interest','https://www.themarketsdaily.com/2026/08/17/direxion-daily-amzn-bull-2x-shares-nasdaqamzu-sees-large-increase-in-short-interest.html',20),(7,'ethan ryder','...','2026-08-17',0.65008,'Amazon.com, Inc. $AMZN Shares Bought by Pacific Excel Wealth Advisors Inc.','https://www.tickerreport.com/banking-finance/13546570/amazon-com-inc-amzn-shares-bought-by-pacific-excel-wealth-advisors-inc.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'ebube jones','...','2026-08-18',0,'Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock.','https://www.barchart.com/story/news/3907191/renaissance-technologies-has-taken-a-new-position-in-crowdstrike-what-this-means-for-crwd-stock',2),(2,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-08-18',0.06364,'Ackman just walked away from Google','https://www.thestreet.com/investing/ackman-closed-alphabet-google-position',4),(3,'globenewswire','...','2026-08-18',0.38136,'The Biggest Winners Donâ€™t Compete in a Category. They Rewrite It. One Company Is Betting It Can Too.','https://financialpost.com/globe-newswire/the-biggest-winners-dont-compete-in-a-category-they-rewrite-it-one-company-is-betting-it-can-too',2),(4,'hanz christensen','...','2026-08-18',0.14232,'Direxion Daily AMZN Bull 2X Shares (NASDAQ:AMZU) Short Interest Update','https://www.watchlistnews.com/direxion-daily-amzn-bull-2x-shares-nasdaqamzu-short-interest-update/11189389.html',20),(5,'joel south','Investing\n\n							Tepper holds AMZN as his top position at 15% of his portfolio while slashing MU by 41%, booking gains before the stock fell nearly 16%.													\n\n							Tepper exited Microsoft e...','2026-08-18',0.36156,'Billionaire David Tepperâ€™s Top 5 Holdings Just Revealed','https://247wallst.com/investing/2026/08/18/billionaire-david-teppers-top-5-holdings-just-revealed/',4),(6,'wall street breakfast','...','2026-08-18',0,'The State Of The American Consumer','https://seekingalpha.com/article/4937647-the-state-of-the-american-consumer',4),(7,'donald scott','...','2026-08-18',0.2368,'Systrade AG Buys Shares of 10,100 Amazon.com, Inc. $AMZN','https://www.thelincolnianonline.com/2026/08/18/systrade-ag-buys-shares-of-10100-amazon-com-inc-amzn.html',2),(8,'kyle jackson','...','2026-08-18',0.2368,'Amazon.com, Inc. $AMZN Shares Bought by Mirador Capital Partners LP','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-bought-by-mirador-capital-partners-lp/11188834.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -350,4 +351,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-18  2:09:29
+-- Dump completed on 2026-08-19  2:11:46
