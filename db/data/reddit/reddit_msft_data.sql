@@ -75,6 +75,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
+342f40e7-9b73-11f1-b03c-5afb066f576b:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
@@ -163,7 +164,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7b0e8f69-9b6e-11f1-9f73-828505d18e83:1-30,
+7c811291-9c37-11f1-b606-028d446fccc8:1-35,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
@@ -328,7 +329,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -337,7 +338,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1vrs0h3','p4fod55','2026-08-18',48,0.3313,'Maia? Is this another Tolkien inspiration? I wonder how he would feel about big tech\'s obsession with his works. '),(2,'stocks','1vrs0h3','p4fowxr','2026-08-18',41,0.2732,'Are the chips gonna come preloaded with copilot bloat as well '),(3,'stocks','1vrs0h3','p4fuf25','2026-08-18',9,0.4404,'They are all still using NVIDIA. This is good for everyone'),(4,'stocks','1vrs0h3','p4fup5m','2026-08-18',7,0.2975,'Itâ€™s almost like chips are a commodity or something.Â '),(5,'stocks','1vrs0h3','p4h6338','2026-08-18',2,0.9108,'I mean this is great and all but I wish we had more investment in chip fabs and fab technology so that Microsoft\'s orders don\'t just delay when somebody else can get their chips due to production capacities.'),(6,'stocks','1vrs0h3','p4fp6hj','2026-08-18',-15,0,'[deleted]'),(7,'stocks','1vrs0h3','p4g8r4m','2026-08-18',-5,0.4596,'Msft should focus on their strong point not weak point. Chips is not their strong point.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -351,4 +351,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-19  1:37:50
+-- Dump completed on 2026-08-20  1:36:47
