@@ -65,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
@@ -329,7 +330,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,7 +339,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'emily bary','Please enable JS and disable any ad blocker...','2026-08-19',0.06364,'Marvellâ€™s stock surges on news of Google chip deal â€” and Broadcomâ€™s falls','https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559?mod=mw_rss_topstories',40),(2,'joseph griffin','...','2026-08-19',0.2368,'Alphabet Inc. $GOOG Shares Sold by USA Financial Formulas','https://www.tickerreport.com/banking-finance/13549683/alphabet-inc-goog-shares-sold-by-usa-financial-formulas.html',2),(3,'micah haroldson','...','2026-08-19',0.2368,'North Dakota State Investment Board Purchases 3,034 Shares of Alphabet Inc. $GOOG','https://www.watchlistnews.com/north-dakota-state-investment-board-purchases-3034-shares-of-alphabet-inc-goog/11190609.html',2),(4,'shane hupp','...','2026-08-19',0,'Alphabet Inc. $GOOG Stock Position Lessened by Synergy Financial Group LTD','https://www.tickerreport.com/banking-finance/13549549/alphabet-inc-goog-stock-position-lessened-by-synergy-financial-group-ltd.html',2),(5,'shane hupp','...','2026-08-19',0,'Sacks & Associates LLC Invests $1.39 Million in Alphabet Inc. $GOOG','https://www.tickerreport.com/banking-finance/13549547/sacks-associates-llc-invests-1-39-million-in-alphabet-inc-goog.html',2),(6,'mark dietrich','...','2026-08-19',-0.42136,'R Squared Ltd Reduces Position in Alphabet Inc. $GOOG','https://www.watchlistnews.com/r-squared-ltd-reduces-position-in-alphabet-inc-goog/11190485.html',2),(7,'defense world staff','\n					Posted by Defense World Staff on Aug 19th, 2026\n\nCaitong International Asset Management Co. Ltd purchased a new position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the 2nd quarter, acc...','2026-08-19',0.65744,'Caitong International Asset Management Co. Ltd Buys Shares of 17,081 Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/08/19/caitong-international-asset-management-co-ltd-buys-shares-of-17081-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Aug 19th, 2026\n\nCaitong International Asset Management Co. Ltd bought a new position in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) during the second quarter, ac...','2026-08-19',0.48886,'Caitong International Asset Management Co. Ltd Makes New Investment in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/19/caitong-international-asset-management-co-ltd-makes-new-investment-in-alphabet-inc-goog.html',4),(9,'defense world staff','\n					Posted by Defense World Staff on Aug 19th, 2026\n\nGolden Reserve Retirement LLC increased its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 69.3% during the 2nd quarter, accord...','2026-08-19',0.1999,'Golden Reserve Retirement LLC Has $2.97 Million Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/08/19/golden-reserve-retirement-llc-has-2-97-million-stake-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'ryne mauck','ETF\n\n							Alphabet gained 10% year-to-date, but its 2X leveraged ETF returned just 8%, which is half the expected 20%, because daily resets let volatility drag compound.													\n\n							GGLL re...','2026-08-20',0.24094,'Google Is Up 10% This Year. This 2X ETF Has Returned 8%. Hereâ€™s the Decay Math That Explains the Difference','https://247wallst.com/investing/etf/2026/08/20/google-is-up-10-this-year-this-2x-etf-has-returned-8-heres-the-decay-math-that-explains-the-difference/',40),(2,'joe tenebruso','Shares of Marvell Technology (MRVL +5.79%) climbed on Wednesday after the semiconductor designer struck a deal to supply Alphabet (GOOGL -1.18%)(GOOG -1.02%) with custom artificial intelligence (AI) c...','2026-08-20',0.1988,'Why Marvell Stock Surged Today','https://www.fool.com/investing/2026/08/19/why-marvell-stock-surged-today/',4),(3,'anushka dutta','...','2026-08-19',0,'Google Is Betting a Whopping $94 Billion on SpaceX Stock','https://www.barchart.com/story/news/3936146/google-is-betting-a-whopping-94-billion-on-spacex-stock',20),(4,'wajeeh khan','...','2026-08-19',0.30544,'MRVL Stock Alert: What to Know as Marvell Technology Expands Chip Deal With Google','https://www.barchart.com/story/news/3935932/mrvl-stock-alert-what-to-know-as-marvell-technology-expands-chip-deal-with-google',20),(5,'anders bylund','Yesterday, a handful of giant stocks dragged the market down while everything else held steady. Today, the script flipped again. The broad market is rallying, and a cluster of tech names is the thing ...','2026-08-19',0.05424,'Broadcom Drags the Nasdaq While the Dow and S&P 500 Climb','https://www.fool.com/investing/2026/08/19/broadcom-holds-back-nasdaq-amid-broad-gains/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -352,4 +353,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-20  2:09:51
+-- Dump completed on 2026-08-21  2:16:20
