@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
+18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
@@ -104,6 +105,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+4f96ba41-9d01-11f1-a285-0eb2a8d70ee5:1-43,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -164,7 +166,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7c811291-9c37-11f1-b606-028d446fccc8:1-35,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
@@ -329,7 +330,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,6 +339,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1vtd6qz','p4tnl03','2026-08-20',7,0.5267,'100% YTY growth is not enough. Go figure. '),(2,'NVDA_Stock','1vtd6qz','p4s8c2k','2026-08-20',4,0.6691,' Costco generate billions of dollars a quarter without having to sell anything. They generate almost free money by simply existing. '),(3,'NVDA_Stock','1vtd6qz','p4s8zk2','2026-08-20',4,0.4998,'I think the people that think Costco is overvalued don\'t understand the retailer or how it works at all. It has a completely unique business model that it executes on with perfect consistency which means it will continue to grow indefinitely until it has a location everywhere. It\'s the only brick and mortar retailer that can work in every single country. Costco has looked expensive for an incredibly long time and it continues to get more and more richly valued.Â '),(4,'NVDA_Stock','1vtd6qz','p4vkbkw','2026-08-20',3,0.2263,'we would be worth 40 trillion at tesla valuation'),(5,'NVDA_Stock','1vtd6qz','p4t5sib','2026-08-20',5,-0.046,'If you want to compare it to an overvalued with barely any growth, just look at TSLA. So far, that stock has not made sense.'),(6,'NVDA_Stock','1vtd6qz','p4s8je3','2026-08-20',4,0.2484,'Yes, costco is overvalued by a huge margin. A lot of retail tends to favor stocks which products or services they use themself. They ignore the valuation and keeps buying. The stocks have been flat for 2 years and I donÂ´t see that changing going forward for several years.\n\nNvidia is obviously much more value here.'),(7,'NVDA_Stock','1vtd6qz','p4u5j5e','2026-08-20',4,0,'Market does not know how to evaluate it yet.'),(8,'NVDA_Stock','1vtd6qz','p4s7hao','2026-08-20',2,-0.5423,'Because you don\'t follow those stocks. Tons of people say Costco is expensive, among others. '),(9,'NVDA_Stock','1vtd6qz','p4sagcr','2026-08-20',5,0.5423,'Everybodyâ€™s been saying this, just buy more, itâ€™ll skyrocket in due time '),(10,'NVDA_Stock','1vtd6qz','p4tq6pe','2026-08-20',2,0.8519,'Good things come to those who wait.\n\nEventually the price will catch up to earnings. Those are the fundamentals of investing. Fundamentals are what win in the end over all the flashiness/wsb reckless behavior.'),(11,'NVDA_Stock','1vtd6qz','p4tndu4','2026-08-20',2,0.7951,'Nvidia has a more cyclical earnings profile and is trading near peak earnings so the multiple should come down as the earnings continue to grow. Walmart is just at a high multiple because people expected stable consistent earnings profile '),(12,'NVDA_Stock','1vtd6qz','p4umt22','2026-08-20',2,-0.7026,'Institutional investor investors doesnt care about the technical chart now. They want more money so selling nvdia which the bought earlier and buying fast growing stocks . '),(13,'NVDA_Stock','1vtd6qz','p4u2vnb','2026-08-20',2,0.807,'You can\'t evaluate a stock by pe ratio only...\n\nThe quality of revenue is also highly important. \n\nThat being said us stock overall are pretty much overpriced.'),(14,'NVDA_Stock','1vtd6qz','p4xuiuw','2026-08-21',1,0.3182,'sure i cannot figure the bubble they said in the news'),(15,'NVDA_Stock','1vtd6qz','p4u3qwn','2026-08-20',1,0,'NVDA has been a lot lately, but history may repeat itself. A reset phase incoming i think'),(16,'NVDA_Stock','1vtd6qz','p4sl11v','2026-08-20',0,0,'Which company\'s business model do you think is more durable?'),(17,'NVDA_Stock','1vtd6qz','p4snu0c','2026-08-20',1,-0.1546,'Investors are looking closely at future growth. There are concerns with â€˜bottleneckingâ€™ and their accounting practices have been questioned.  Thatâ€™s never a good thing.'),(18,'NVDA_Stock','1vtd6qz','p4uvupo','2026-08-20',0,0.9037,'the valuations across the board are pretty insane.  But agree that p/e is not the only or even most compelling metric. P/FCF is equally if not more important since it shows how much cash a firm can actually print to give back to shareholders as either stock buy back or dividend '),(19,'NVDA_Stock','1vte273','p4w73yx','2026-08-20',3,-0.6597,'This article quotes an MIT survey that was published in August 2025, to â€œproveâ€ that enterprise AI spending doesnâ€™t produce a return on investment, and presumably this will lead to the collapse of the bubble. AI token usage has grown about 1000% since that survey was published. \n\nThis article is a bunch of the usual â€œAI is a bubbleâ€ fear-mongering talking points with no new insights.'),(20,'NVDA_Stock','1vte273','p4snoq5','2026-08-20',2,0.9732,'â€œRepublicans will get the blame and the populist impulse that has been fueling\nTrump will energize the radical socialists that run the Democrat Party. PE titans, who\nissued but are not exposed to the toxic debt, will buy the surviving assets at pennies\non the dollar, and societal wealth will concentrate further. For the rest, gold may not\nbe the only safe haven, but it is certainly the clearest and the simplest and the best.â€\n\nThis makes it sound like they are not entirely objective and lean to the right. '),(21,'NVDA_Stock','1vte273','p4uaboj','2026-08-20',2,-0.5632,'Financially good view but technically very poor.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -351,4 +353,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-20  1:36:47
+-- Dump completed on 2026-08-21  1:41:37

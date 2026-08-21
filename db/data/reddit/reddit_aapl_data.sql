@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
+18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
@@ -104,6 +105,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+4f96ba41-9d01-11f1-a285-0eb2a8d70ee5:1-43,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -164,7 +166,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
-7c811291-9c37-11f1-b606-028d446fccc8:1-35,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
@@ -329,7 +330,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,7 +339,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vsg6uk','p4liduj','2026-08-19',7,0.5399,'Aapl this year will be based on whether you think apple can pass all the price increase to their end consumer without losing volume. What you think of this should determine how you trade'),(2,'AAPL','1vsg6uk','p4l7zrl','2026-08-19',2,0.4404,'Thanks ChatGPTÂ '),(3,'AAPL','1vsg6uk','p4latr2','2026-08-19',2,-0.4588,'It will go up. Or down. '),(4,'AAPL','1vsg6uk','p4me7td','2026-08-19',2,0.2481,'Aaand we still hold!'),(5,'AAPL','1vsg6uk','p4n2qtj','2026-08-19',2,0.2006,'Itâ€™s so easy.   It will roam around in a range until a month out from next quarter.  Then it will start to creep up, peaking maybe 20% above today before the results.  Then it will drop, likely back to maybe 10% above where it is today.   Rinse and repeat.\n\nThis has been the pattern since dinosaurs were unafraid of the sky.'),(6,'AAPL','1vsg6uk','p4l3ija','2026-08-19',1,0,'Mixed technicals, waiting for AAPL to pick a direction.'),(7,'AAPL','1vsg6uk','p4l3kdo','2026-08-19',1,0,'Which level are you watching most closely for AAPLâ€™s next big move?'),(8,'AAPL','1vsg6uk','p4lsia9','2026-08-19',1,0,'Going forward, it will be the other ventures such as a kitchen robot they are developing.  I am assuming Apple as a company is returning to their roots and R&D will be rapidly expanding '),(9,'AAPL','1vsg6uk','p4ltngp','2026-08-19',1,-0.6124,'Here is the trend. After hours and pre market it is mostly red. At open it always dips and later in the day it climbs back up. I want it to just steadily climb higher and higher with green candles during the session. Miss those days'),(10,'AAPL','1vsg6uk','p4m1qd8','2026-08-19',1,0.802,'Waiting for it to go up to 318 at least by this week so I could make a quick profit on a deep ITM 330 Dec 26 put that I sold on the post earnings sell-off. '),(11,'AAPL','1vsg6uk','p4nmk0c','2026-08-19',1,0.3612,'That iphone fold is the first â€œinnovativeâ€ phone they released in like 10 years. Everyone i going to upgrade.'),(12,'AAPL','1vsg6uk','p4p3hu4','2026-08-19',1,0.7881,'AAPL has been so weird lately. Doing better when rest of tech, chips, memory are crashing while crashes when everything else is up. Easily one of my only good holdings today'),(13,'AAPL','1vsg6uk','p4pjvmm','2026-08-19',1,0,'Appl doesnâ€™t do shitâ€¦ ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -352,4 +352,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-20  1:36:46
+-- Dump completed on 2026-08-21  1:41:36
