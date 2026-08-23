@@ -193,6 +193,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -331,7 +332,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -340,7 +341,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sean williams','Although earnings season helps investors understand the nuts and bolts of what makes businesses tick, the quarterly filing of Form 13Fs can be equally important. A 13F provides investors with a concis...','2026-08-21',0.36168,'I Examined the Top Holdings of 17 Billionaire Money Managers, and These 3 Stocks Were the Common Denominators','https://www.fool.com/investing/2026/08/21/examine-top-holding-17-billionaire-3-common-stocks/',4),(2,'keithen drury','While Warren Buffett mayÂ no longer be the CEO ofÂ Berkshire HathawayÂ (BRKA -0.15%) (BRKB -0.21%), it remains a very popular company to follow because it still adheres to his principles. Furthermore, Bu...','2026-08-21',0.86932,'Berkshire Hathaway Just Bought More of This Brilliant Artificial Intelligence (AI) Stock','https://www.fool.com/investing/2026/08/20/berkshire-hathaway-just-bought-more-of-this-brilli/',4),(3,'the motley fool','...','2026-08-20',0,'Alphabet Just Made a $200 Billion Infrastructure Move: Here Is What It Means for Investors','https://finance.yahoo.com/technology/ai/articles/alphabet-just-made-200-billion-174600771.html',20),(4,'ryne mauck','ETF\n\n							Alphabet gained 10% year-to-date, but its 2X leveraged ETF returned just 8%, which is half the expected 20%, because daily resets let volatility drag compound.													\n\n							GGLL re...','2026-08-20',0.24096,'Google Is Up 10% This Year. This 2X ETF Has Returned 8%. Hereâ€™s the Decay Math That Explains the Difference','https://247wallst.com/investing/etf/2026/08/20/google-is-up-10-this-year-this-2x-etf-has-returned-8-heres-the-decay-math-that-explains-the-difference/',40),(5,'joe tenebruso','Shares of Marvell Technology (MRVL -5.57%) climbed on Wednesday after the semiconductor designer struck a deal to supply Alphabet (GOOGL +1.22%)(GOOG +1.05%) with custom artificial intelligence (AI) c...','2026-08-20',0.1988,'Why Marvell Stock Surged Today','https://www.fool.com/investing/2026/08/19/why-marvell-stock-surged-today/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-21',-0.2368,'Broadcomâ€™s Secret Weapon Against Nvidia Isnâ€™t Chips â€” Itâ€™s a Massive Off-Balance-Sheet Financing Machine','https://www.barchart.com/story/news/3975609/broadcoms-secret-weapon-against-nvidia-isnt-chips-its-a-massive-off-balance-sheet-financing-machine',2),(2,'caleb naysmith','...','2026-08-21',-0.05152,'Google Lost About $186 Billion After 4 of Its Top AI Researchers Left, but Sundar Pichai Says Google Will Be â€˜A Founding Investorâ€™ Anyway','https://www.barchart.com/story/news/3972348/google-lost-about-186-billion-after-4-of-its-top-ai-researchers-left-but-sundar-pichai-says-google-will-be-a-founding-investor-anyway',20),(3,'sean williams','Although earnings season helps investors understand the nuts and bolts of what makes businesses tick, the quarterly filing of Form 13Fs can be equally important. A 13F provides investors with a concis...','2026-08-21',0.36168,'I Examined the Top Holdings of 17 Billionaire Money Managers, and These 3 Stocks Were the Common Denominators','https://www.fool.com/investing/2026/08/21/examine-top-holding-17-billionaire-3-common-stocks/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -354,4 +355,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-22  2:07:49
+-- Dump completed on 2026-08-23  2:17:06
