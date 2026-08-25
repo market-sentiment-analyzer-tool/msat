@@ -146,6 +146,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
 699d064f-30a2-11f1-acf0-c61880e099e4:1-60,
 6b6cfbde-b07f-11f0-85fa-3a18d442e117:1-66,
+6b74ebf7-a025-11f1-a303-2aeeb7b8a70e:1-37,
 6b967b51-edce-11f0-9543-4a39b87bcb1a:1-59,
 6ba0ba61-3c6f-11f1-b53a-de9ca26f7eb3:1-52,
 6bd6b872-11fa-11f1-acd7-ea2ebe98ee02:1-63,
@@ -273,7 +274,6 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
-e7172cb5-9f5c-11f1-a465-86e4bd33dca0:1-48,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -333,7 +333,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -342,7 +342,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vwdl47','p5gc642','2026-08-23',18,0.7096,'Just another day holding the best company on earth '),(2,'AAPL','1vwdl47','p5g90cf','2026-08-23',9,0,'ðŸš€ '),(3,'AAPL','1vwdl47','p5grjzq','2026-08-23',16,0.7405,'wtf?   nice click bait garbage. \n\nThere is NO new stock buy back announced.  This article says during Cook\'s tenure apple had it\'s largest stock buy back.  \n\nThis is OLD \"news\". Not new news. '),(4,'AAPL','1vwdl47','p5gerq5','2026-08-23',1,0,'$320 open tmrw? ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -356,4 +355,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-24  1:42:21
+-- Dump completed on 2026-08-25  1:37:27
