@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
+1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
@@ -332,7 +333,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -341,7 +342,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-21',-0.2368,'Broadcomâ€™s Secret Weapon Against Nvidia Isnâ€™t Chips â€” Itâ€™s a Massive Off-Balance-Sheet Financing Machine','https://www.barchart.com/story/news/3975609/broadcoms-secret-weapon-against-nvidia-isnt-chips-its-a-massive-off-balance-sheet-financing-machine',2),(2,'caleb naysmith','...','2026-08-21',-0.05152,'Google Lost About $186 Billion After 4 of Its Top AI Researchers Left, but Sundar Pichai Says Google Will Be â€˜A Founding Investorâ€™ Anyway','https://www.barchart.com/story/news/3972348/google-lost-about-186-billion-after-4-of-its-top-ai-researchers-left-but-sundar-pichai-says-google-will-be-a-founding-investor-anyway',20),(3,'sean williams','Although earnings season helps investors understand the nuts and bolts of what makes businesses tick, the quarterly filing of Form 13Fs can be equally important. A 13F provides investors with a concis...','2026-08-21',0.36168,'I Examined the Top Holdings of 17 Billionaire Money Managers, and These 3 Stocks Were the Common Denominators','https://www.fool.com/investing/2026/08/21/examine-top-holding-17-billionaire-3-common-stocks/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'saga partners','...','2026-08-24',0.45752,'The Growth Of Knowledge: What Progress, Disruption, And AI Mean For Investors','https://seekingalpha.com/article/4939506-the-growth-of-knowledge-what-progress-disruption-and-ai-mean-for-investors',4),(2,'daniel sparks','Marvell Technology (MRVL +4.84%) disclosed an expanded custom chip agreement with Google on Aug. 19, complete with a warrant tied to as much as $120 billion of future purchases -- and investors in Bro...','2026-08-24',-0.01882,'Broadcom Has Seen Its Biggest Customer Drop a Key Chip Before. History Says What the Stock Did Next.','https://www.fool.com/investing/2026/08/23/broadcom-has-seen-its-biggest-customer-drop-a-key-chip-before-history-says-what-the-stock-did-next/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -355,4 +356,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-23  2:17:06
+-- Dump completed on 2026-08-26  2:17:15
