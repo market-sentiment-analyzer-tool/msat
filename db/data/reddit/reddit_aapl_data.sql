@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
+1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
@@ -89,7 +90,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c467b2d-7b50-11f1-95a7-9e03efdf431c:1-57,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
-3da8d37c-a0ef-11f1-ba20-621b73f5b3c1:1-71,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
@@ -188,6 +188,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
+90a73de0-a1f2-11f1-bd1e-6aba4c8ca4ac:1-206,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -333,7 +334,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -342,7 +343,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vy2uyz','p5tkp9o','2026-08-25',10,0,'Those are going to fly off the shelves'),(2,'AAPL','1vy2uyz','p5tl59c','2026-08-25',4,0.7156,'I expected the cost increase to be more. Some ppl will talk about the increase in percentage (6%), but $100 more seems like nothing these days.'),(3,'AAPL','1vy2uyz','p5u8kj3','2026-08-25',3,-0.1295,'I am surprised we aren\'t up today. '),(4,'AAPL','1vy2uyz','p5tq6qx','2026-08-25',1,0.3261,'nice and clean\n\nbut looks like that aint helping the share price....ðŸ¥º'),(5,'AAPL','1vy2uyz','p5wyma5','2026-08-26',1,0,'MAC MINI THE GOAT!!!'),(6,'AAPL','1vy2uyz','p5tip7c','2026-08-25',0,-0.0516,'I hope they will be able to build and actually deliver ðŸ˜­'),(7,'AAPL','1vy2uyz','p5tu3ys','2026-08-25',0,0,'The memory price rocketed and this studio also ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vzdfzy','p649qjn','2026-08-27',9,0.765,'And both up on the long term. My favorite mega cap duo to hold forever. '),(2,'AAPL','1vzdfzy','p646iw4','2026-08-27',7,0.8126,'Apple is a defensive AI play. They are behind, but also not making investments.   \nWhen AI ROI seems in favor, they are going to inverse. \n\nThe catalyst for Apple will be on device AI.   \nThe catalyst for hyperscalers will be reduced capex and software adoption.   \nThe catalyst for hardware will be earnings calls, until itâ€™s not. '),(3,'AAPL','1vzdfzy','p64z90u','2026-08-27',3,0.1779,'Hold both and chill.'),(4,'AAPL','1vzdfzy','p652f8l','2026-08-27',2,0.6124,'Makes sense since Nvidia is a pure AI play while Apple is the opposite at the moment. Once Apple shows on device AI and how they can monetize it, the stock should go up. Nvidia will continue to reap the benefits of AI infrastructure build out for the next few years. '),(5,'AAPL','1vzdfzy','p6439el','2026-08-26',2,0.34,'Apple is the inverse AI play.'),(6,'AAPL','1vzdfzy','p643fw2','2026-08-26',2,-0.7506,'Sadly aapl will now have a harder time since ai is still in play. Money shifting from safety aapl and back to nvda. Musical chairs until the trend stops. Sadly I think itâ€™s going to be awhile boys. The shortage in chips and prices hurts aapl. '),(7,'AAPL','1vzdfzy','p64c3e2','2026-08-27',1,0,'Key for Apple is Siri AI.. 2 more weeks. '),(8,'AAPL','1vzdfzy','p64e7vs','2026-08-27',1,0.6369,'So many traders own both I bet the plays to sell some profit to try and buy some of the other, a juggling act.  I was actually pleasantly surprised NVidia didnâ€™t drop more during trading and after hours, that has been the trend the past few quarters.  We will see how AAPL announcing the phone launch date and the new desktop will move the stock.  I refuse to sell either yet, and have started buying dips in their suppliers as well.'),(9,'AAPL','1vzdfzy','p64z5rp','2026-08-27',1,0,'They\'re not the same company. Not even in the same sector.'),(10,'AAPL','1vzdfzy','p656fhg','2026-08-27',1,-0.7184,'Market up, Apple down. Apple up, Market down'),(11,'AAPL','1vzdfzy','p65ipwj','2026-08-27',1,0.6249,'Great for trading in my non core portfolio. Long time holder of both stocks in my core  \npositions. '),(12,'AAPL','1vzdfzy','p65vj1s','2026-08-27',1,-0.296,'You need to own both. That\'s the answer.  There should always be a part of your portfolio both over and underperforming. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -356,4 +357,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-26  1:42:55
+-- Dump completed on 2026-08-27  8:42:38
