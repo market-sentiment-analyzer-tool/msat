@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+09563136-a204-11f1-80ca-5eca850e79d9:1-61,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
@@ -333,7 +334,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -342,7 +343,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'saga partners','...','2026-08-24',0.45752,'The Growth Of Knowledge: What Progress, Disruption, And AI Mean For Investors','https://seekingalpha.com/article/4939506-the-growth-of-knowledge-what-progress-disruption-and-ai-mean-for-investors',4),(2,'daniel sparks','Marvell Technology (MRVL +4.84%) disclosed an expanded custom chip agreement with Google on Aug. 19, complete with a warrant tied to as much as $120 billion of future purchases -- and investors in Bro...','2026-08-24',-0.01882,'Broadcom Has Seen Its Biggest Customer Drop a Key Chip Before. History Says What the Stock Did Next.','https://www.fool.com/investing/2026/08/23/broadcom-has-seen-its-biggest-customer-drop-a-key-chip-before-history-says-what-the-stock-did-next/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'mark dietrich','...','2026-08-26',-0.57472,'Alphabet (NASDAQ:GOOG) Trading Down 1.2% â€“ Should You Sell?','https://www.watchlistnews.com/alphabet-nasdaqgoog-trading-down-1-2-should-you-sell/11201088.html',2),(2,'max byerly','...','2026-08-26',-0.36704,'Alphabet (NASDAQ:GOOG) Stock Price Down 1.2% â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13560177/alphabet-nasdaqgoog-stock-price-down-1-2-heres-why.html',2),(3,'keithen drury','Alphabet (GOOG -1.24%) (GOOGL -1.43%) has become one of the most popular artificial intelligence (AI) investments among major hedge funds. It was one of the last stocks that legendary CEO Warren Buffe...','2026-08-26',0.5521,'Berkshire Hathaway and Billionaire David Tepper Are Piling Into Alphabet Stock. Here Is Why the Tech Giant Is a Screaming Buy.','https://www.fool.com/investing/2026/08/26/berkshire-hathaway-and-billionaire-david-tepper/',4),(4,'sushree mohanty','...','2026-08-26',0,'Broadcomâ€™s Next $100 Billion AI Business Is Taking Shape. Hereâ€™s What It Means for AVGO Stock','https://www.barchart.com/story/news/4112936/broadcoms-next-100-billion-ai-business-is-taking-shape-heres-what-it-means-for-avgo-stock',2),(5,'ebube jones','...','2026-08-26',0,'SpaceX Intends to Launch Its First Nvidia-Powered AI Satellites in Late 2027. What This Means for SPCX and NVDA.','https://www.barchart.com/story/news/4111722/spacex-intends-to-launch-its-first-nvidia-powered-ai-satellites-in-late-2027-what-this-means-for-spcx-and-nvda',2),(6,'aditya raghunath','...','2026-08-26',-0.35232,'Nvidiaâ€™s Biggest Customers Face a Painful New AI Bill','https://www.barchart.com/story/news/4109677/nvidias-biggest-customers-face-a-painful-new-ai-bill',2),(7,'abmn staff','\n					Posted by ABMN Staff on Aug 26th, 2026\n\nAct Two Investors LLC cut its holdings in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 11.6% in the 2nd quarter, according to the company in its most rec...','2026-08-26',0.1999,'Act Two Investors LLC Has $73.92 Million Stake in Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/08/26/act-two-investors-llc-has-73-92-million-stake-in-alphabet-inc-goog.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Aug 26th, 2026\n\nAct Two Investors LLC reduced its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 11.6% during the 2nd quarter, according to the...','2026-08-26',0.19988,'Act Two Investors LLC Has $73.92 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/08/26/act-two-investors-llc-has-73-92-million-position-in-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -356,4 +357,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-26  2:17:15
+-- Dump completed on 2026-08-27 10:43:53
