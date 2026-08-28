@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+09563136-a204-11f1-80ca-5eca850e79d9:1-61,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
@@ -93,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+414750b0-a2ce-11f1-9a4d-969971c0f625:1-214,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -188,7 +190,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
-90a73de0-a1f2-11f1-bd1e-6aba4c8ca4ac:1-206,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -334,7 +335,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -343,7 +344,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1vzdfzy','p649qjn','2026-08-27',9,0.765,'And both up on the long term. My favorite mega cap duo to hold forever. '),(2,'AAPL','1vzdfzy','p646iw4','2026-08-27',7,0.8126,'Apple is a defensive AI play. They are behind, but also not making investments.   \nWhen AI ROI seems in favor, they are going to inverse. \n\nThe catalyst for Apple will be on device AI.   \nThe catalyst for hyperscalers will be reduced capex and software adoption.   \nThe catalyst for hardware will be earnings calls, until itâ€™s not. '),(3,'AAPL','1vzdfzy','p64z90u','2026-08-27',3,0.1779,'Hold both and chill.'),(4,'AAPL','1vzdfzy','p652f8l','2026-08-27',2,0.6124,'Makes sense since Nvidia is a pure AI play while Apple is the opposite at the moment. Once Apple shows on device AI and how they can monetize it, the stock should go up. Nvidia will continue to reap the benefits of AI infrastructure build out for the next few years. '),(5,'AAPL','1vzdfzy','p6439el','2026-08-26',2,0.34,'Apple is the inverse AI play.'),(6,'AAPL','1vzdfzy','p643fw2','2026-08-26',2,-0.7506,'Sadly aapl will now have a harder time since ai is still in play. Money shifting from safety aapl and back to nvda. Musical chairs until the trend stops. Sadly I think itâ€™s going to be awhile boys. The shortage in chips and prices hurts aapl. '),(7,'AAPL','1vzdfzy','p64c3e2','2026-08-27',1,0,'Key for Apple is Siri AI.. 2 more weeks. '),(8,'AAPL','1vzdfzy','p64e7vs','2026-08-27',1,0.6369,'So many traders own both I bet the plays to sell some profit to try and buy some of the other, a juggling act.  I was actually pleasantly surprised NVidia didnâ€™t drop more during trading and after hours, that has been the trend the past few quarters.  We will see how AAPL announcing the phone launch date and the new desktop will move the stock.  I refuse to sell either yet, and have started buying dips in their suppliers as well.'),(9,'AAPL','1vzdfzy','p64z5rp','2026-08-27',1,0,'They\'re not the same company. Not even in the same sector.'),(10,'AAPL','1vzdfzy','p656fhg','2026-08-27',1,-0.7184,'Market up, Apple down. Apple up, Market down'),(11,'AAPL','1vzdfzy','p65ipwj','2026-08-27',1,0.6249,'Great for trading in my non core portfolio. Long time holder of both stocks in my core  \npositions. '),(12,'AAPL','1vzdfzy','p65vj1s','2026-08-27',1,-0.296,'You need to own both. That\'s the answer.  There should always be a part of your portfolio both over and underperforming. ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w000mm','p691req','2026-08-27',20,0.7351,'My take, Apple is a fantastic business that is worth holding long term. With that being said, the stock is not currently undervalued. '),(2,'AAPL','1w000mm','p69a4r1','2026-08-27',22,0.4767,'Just buy it and forget. Iâ€™m at 100,000% and was told a 1,000x to sell. No. You just buy Nvidia and Apple and wait. '),(3,'AAPL','1w000mm','p691l43','2026-08-27',11,0.5423,'No, buy after. Itâ€™s always drops after the news. '),(4,'AAPL','1w000mm','p699q5s','2026-08-27',12,0.8674,'Yes, buy and hold. Itâ€™s not a short term gamble. '),(5,'AAPL','1w000mm','p6ac1pq','2026-08-27',10,0.2486,'Apple is a stock to hold, not trade. Iâ€™m up 837% by using this one simple trick. ðŸ˜‚'),(6,'AAPL','1w000mm','p69je0n','2026-08-27',5,0.3612,'Sell Puts at the strike where you like to buy AAPL. '),(7,'AAPL','1w000mm','p692r2j','2026-08-27',3,0.128,'\"Buy on the rumor sell on the news\"'),(8,'AAPL','1w000mm','p69672e','2026-08-27',3,-0.7172,'Probably better to wait if you\'re going to make one buy. It usually goes down on the announcement days. Also, the excitement/anticipation over the foldable iPhone means if they say it\'s going to roll out later, or in more limited numbers, or more expensive than predicted, or say nothing at all about it, that will hurt the stock. Potentially a lot. \n\niPhone 16 or 17 --> 18: probably not a big difference\n\niPhone 16 or 17 ---> Ultra (foldable) is a potentially huge difference'),(9,'AAPL','1w000mm','p69h3bn','2026-08-27',3,0.1531,'Solid long term stock, i cant see people not buying iphones.'),(10,'AAPL','1w000mm','p6a284x','2026-08-27',2,0,'Maybe. '),(11,'AAPL','1w000mm','p6awjok','2026-08-27',2,0.9371,'The biggest advantage with Apple is that it did not spend a penny on the AI Infrastructure while companies like FB and others have spent over a trillion. Apple will easily be able to do SaaS and not have to pay for all the cost to maintain. For this one reason, I think Apple is a great solid long term buy.'),(12,'AAPL','1w000mm','p6amvs2','2026-08-27',1,0.0258,'It doesnâ€™t matter unless you are trading'),(13,'AAPL','1w000mm','p6bgfh1','2026-08-27',1,0.1779,'You should always be buying and holding $AAPL in my experience.'),(14,'AAPL','1w000mm','p6ce7ts','2026-08-28',1,-0.5719,'On the day Apple releases a new iPhone, AAPL usually drops slightly â€” about â€“0.4% on average, with negative movement over 70% of the time.'),(15,'AAPL','1w000mm','p6cts8t','2026-08-28',1,0.4019,'Yes of course'),(16,'AAPL','1w000mm','p6dn1vw','2026-08-28',1,0.7003,'Buy AFTER the release. AAPL always builds up from hype and goes down after the actual announcement, at least from what I\'ve seen. WWDC, earnings report... they were all the same.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -357,4 +358,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-27  8:42:38
+-- Dump completed on 2026-08-28 11:00:18
