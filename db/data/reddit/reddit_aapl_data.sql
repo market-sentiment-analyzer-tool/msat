@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
+17e64b43-a374-11f1-ab2f-b6a52f58e70b:1-57,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -94,7 +95,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-414750b0-a2ce-11f1-9a4d-969971c0f625:1-214,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -250,6 +250,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -335,7 +336,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -344,7 +345,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w000mm','p691req','2026-08-27',20,0.7351,'My take, Apple is a fantastic business that is worth holding long term. With that being said, the stock is not currently undervalued. '),(2,'AAPL','1w000mm','p69a4r1','2026-08-27',22,0.4767,'Just buy it and forget. Iâ€™m at 100,000% and was told a 1,000x to sell. No. You just buy Nvidia and Apple and wait. '),(3,'AAPL','1w000mm','p691l43','2026-08-27',11,0.5423,'No, buy after. Itâ€™s always drops after the news. '),(4,'AAPL','1w000mm','p699q5s','2026-08-27',12,0.8674,'Yes, buy and hold. Itâ€™s not a short term gamble. '),(5,'AAPL','1w000mm','p6ac1pq','2026-08-27',10,0.2486,'Apple is a stock to hold, not trade. Iâ€™m up 837% by using this one simple trick. ðŸ˜‚'),(6,'AAPL','1w000mm','p69je0n','2026-08-27',5,0.3612,'Sell Puts at the strike where you like to buy AAPL. '),(7,'AAPL','1w000mm','p692r2j','2026-08-27',3,0.128,'\"Buy on the rumor sell on the news\"'),(8,'AAPL','1w000mm','p69672e','2026-08-27',3,-0.7172,'Probably better to wait if you\'re going to make one buy. It usually goes down on the announcement days. Also, the excitement/anticipation over the foldable iPhone means if they say it\'s going to roll out later, or in more limited numbers, or more expensive than predicted, or say nothing at all about it, that will hurt the stock. Potentially a lot. \n\niPhone 16 or 17 --> 18: probably not a big difference\n\niPhone 16 or 17 ---> Ultra (foldable) is a potentially huge difference'),(9,'AAPL','1w000mm','p69h3bn','2026-08-27',3,0.1531,'Solid long term stock, i cant see people not buying iphones.'),(10,'AAPL','1w000mm','p6a284x','2026-08-27',2,0,'Maybe. '),(11,'AAPL','1w000mm','p6awjok','2026-08-27',2,0.9371,'The biggest advantage with Apple is that it did not spend a penny on the AI Infrastructure while companies like FB and others have spent over a trillion. Apple will easily be able to do SaaS and not have to pay for all the cost to maintain. For this one reason, I think Apple is a great solid long term buy.'),(12,'AAPL','1w000mm','p6amvs2','2026-08-27',1,0.0258,'It doesnâ€™t matter unless you are trading'),(13,'AAPL','1w000mm','p6bgfh1','2026-08-27',1,0.1779,'You should always be buying and holding $AAPL in my experience.'),(14,'AAPL','1w000mm','p6ce7ts','2026-08-28',1,-0.5719,'On the day Apple releases a new iPhone, AAPL usually drops slightly â€” about â€“0.4% on average, with negative movement over 70% of the time.'),(15,'AAPL','1w000mm','p6cts8t','2026-08-28',1,0.4019,'Yes of course'),(16,'AAPL','1w000mm','p6dn1vw','2026-08-28',1,0.7003,'Buy AFTER the release. AAPL always builds up from hype and goes down after the actual announcement, at least from what I\'ve seen. WWDC, earnings report... they were all the same.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -358,4 +358,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-28 11:00:18
+-- Dump completed on 2026-08-29  6:38:23

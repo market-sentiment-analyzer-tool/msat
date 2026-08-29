@@ -42,6 +42,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
+17e64b43-a374-11f1-ab2f-b6a52f58e70b:1-57,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -94,7 +95,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-414750b0-a2ce-11f1-9a4d-969971c0f625:1-214,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -250,6 +250,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
@@ -335,7 +336,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -344,7 +345,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1w034sk','p6a23ro','2026-08-27',33,0.8313,'GOOG is just temporarily out of favor. Itâ€™s growing at a 24% clip with 34% margins, and both of those numbers will probably go higher as demand for GCP keeps climbing. Both GOOG and NVDA have a strong chance of crossing the $10T mark in the next 2-3 years. Iâ€™m never selling my shares. These companies are cash printing machines. '),(2,'stocks','1w034sk','p69xu6j','2026-08-27',33,0.3182,'why are you angry when the market gives you a gift like discounted GOOG?'),(3,'stocks','1w034sk','p69v9kv','2026-08-27',15,0.2629,'All I know is that goog is a long term hold. Don\'t really care much for the noise. Microsoft was in the dumps for several months before rocking upwards, and google is even better positioned than Microsoft to benefit from and contribute to the AI phase. '),(4,'stocks','1w034sk','p6as76v','2026-08-27',5,0,'Iâ€™m a big buyer at these prices. Google trades at a 17ish PE ratio. Holy cow what a deal!!'),(5,'stocks','1w034sk','p6ccvq3','2026-08-28',4,-0.4678,'It\'s a potential sign of internal dysfunction / political infighting among different AI groups and leaders. In the tech industry Google has long had reputation for bureaucracy and political dysfunction and unfortunately yet another AI re-org would appear to confirm that. Again, internally the story could be completely benign but this is all opaque to us.\n\nAlso, drug discovery isn\'t really the bottleneck in biotech, the bottleneck is in clinical trials and in the regulatory process, so moving a top AI guy there isn\'t that exciting.'),(6,'stocks','1w034sk','p6az4zg','2026-08-27',3,0.4736,'Isomorphic Labs is a fine moonshot, but Google used to aspire to become the third company with a frontier AI model, and it kinda seems like they\'re being forced to give up on that.'),(7,'stocks','1w034sk','p69vxhq','2026-08-27',5,0.8885,'just load up and be happy when it moons to 450 this is reminding me a microsoft. extremely low volume and consolidating around 340 poised for a large gap up'),(8,'stocks','1w034sk','p6b52fj','2026-08-27',2,0,'rotation, rotation, rotation. It\'s all just narratives to get things cheaper.'),(9,'stocks','1w034sk','p6dft8j','2026-08-28',2,0.3612,'People are acting like he left Google or something'),(10,'stocks','1w034sk','p69tb03','2026-08-27',-3,-0.0258,'You have no clue and probably everbody else here as well me included. ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -358,4 +358,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-28 11:00:18
+-- Dump completed on 2026-08-29  6:38:23
