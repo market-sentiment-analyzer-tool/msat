@@ -185,6 +185,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
+8c530a4c-a37b-11f1-a317-1a21ce6c66a5:1-62,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
@@ -335,7 +336,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -344,7 +345,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sristi suman jayaswal','...','2026-08-27',0.36704,'Spicy Stocks: Why BNP Thinks JalapenÌƒo Could Benefit Broadcom Stock','https://www.barchart.com/story/news/4246124/spicy-stocks-why-bnp-thinks-jalapeno-could-benefit-broadcom-stock',2),(2,'jabran kundi','...','2026-08-27',0,'The Market and UBS Saw Celesticaâ€™s $3 Billion Raise Very Differently. Hereâ€™s Who I Think Is Right.','https://www.barchart.com/story/news/4239902/the-market-and-ubs-saw-celesticas-3-billion-raise-very-differently-heres-who-i-think-is-right',2),(3,'sarah holzmann','...','2026-08-27',0.48992,'Nvidia Could Spend $12.9B to Buy a Company That Just Launched a $399 Robot. Hereâ€™s Why.','https://www.barchart.com/story/news/4213817/nvidia-could-spend-12-9b-to-buy-a-company-that-just-launched-a-399-robot-heres-why',2),(4,'rich duprey','Wolfe Research just made a bold call that Alphabet will be the stock of 2027, and the argument rests on something most AI investors have overlooked entirely about how Google is quietly positioning its...','2026-08-27',0.7094,'This Analyst Just Called Alphabet 2027â€™s Best Stock. She Might Be Right','https://247wallst.com/investing/2026/08/27/this-analyst-just-called-alphabet-2027s-best-stock-she-might-be-right/',4),(5,'daniel sparks','Alphabet (GOOG -0.41%)(GOOGL -0.40%) will pay its next dividend on Sept. 14 -- $0.22 per share, a rate the company raised 5% in April. The payout works out to about $10.8 billion a year across about 1...','2026-08-27',0.0969,'Alphabet Is Paying a Dividend While Selling $85 Billion of New Stock','https://www.fool.com/investing/2026/08/27/alphabet-is-paying-a-dividend-while-selling-usd85-billion-of-new-stock/',4),(6,'mark dietrich','...','2026-08-26',-0.57472,'Alphabet (NASDAQ:GOOG) Trading Down 1.2% â€“ Should You Sell?','https://www.watchlistnews.com/alphabet-nasdaqgoog-trading-down-1-2-should-you-sell/11201088.html',2),(7,'max byerly','...','2026-08-26',-0.36704,'Alphabet (NASDAQ:GOOG) Stock Price Down 1.2% â€“ Hereâ€™s Why','https://www.tickerreport.com/banking-finance/13560177/alphabet-nasdaqgoog-stock-price-down-1-2-heres-why.html',2),(8,'keithen drury','Alphabet (GOOG -0.41%) (GOOGL -0.40%) has become one of the most popular artificial intelligence (AI) investments among major hedge funds. It was one of the last stocks that legendary CEO Warren Buffe...','2026-08-26',0.5521,'Berkshire Hathaway and Billionaire David Tepper Are Piling Into Alphabet Stock. Here Is Why the Tech Giant Is a Screaming Buy.','https://www.fool.com/investing/2026/08/26/berkshire-hathaway-and-billionaire-david-tepper/',4),(9,'sushree mohanty','...','2026-08-26',0,'Broadcomâ€™s Next $100 Billion AI Business Is Taking Shape. Hereâ€™s What It Means for AVGO Stock','https://www.barchart.com/story/news/4112936/broadcoms-next-100-billion-ai-business-is-taking-shape-heres-what-it-means-for-avgo-stock',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich duprey','...','2026-08-28',0.35232,'Marvellâ€™s AI Business Is Accelerating. The Stock Sell-Off Is a Gift.','https://www.barchart.com/story/news/4326602/marvells-ai-business-is-accelerating-the-stock-sell-off-is-a-gift',2),(2,'nauman khan','...','2026-08-28',0.50952,'MSFT Stock Alert: Moonshot Could Give Microsoft Another AI Revenue Stream','https://www.barchart.com/story/news/4326332/msft-stock-alert-moonshot-could-give-microsoft-another-ai-revenue-stream',2),(3,'wall street breakfast','...','2026-08-28',0,'Wall Street Breakfast Podcast: Marvell Beats, Street Shrugs','https://seekingalpha.com/article/4941158-wall-street-breakfast-podcast-marvell-beats-street-shrugs',4),(4,'sristi suman jayaswal','...','2026-08-27',0.36704,'Spicy Stocks: Why BNP Thinks JalapenÌƒo Could Benefit Broadcom Stock','https://www.barchart.com/story/news/4246124/spicy-stocks-why-bnp-thinks-jalapeno-could-benefit-broadcom-stock',2),(5,'jabran kundi','...','2026-08-27',0,'The Market and UBS Saw Celesticaâ€™s $3 Billion Raise Very Differently. Hereâ€™s Who I Think Is Right.','https://www.barchart.com/story/news/4239902/the-market-and-ubs-saw-celesticas-3-billion-raise-very-differently-heres-who-i-think-is-right',2),(6,'sarah holzmann','...','2026-08-27',0.48992,'Nvidia Could Spend $12.9B to Buy a Company That Just Launched a $399 Robot. Hereâ€™s Why.','https://www.barchart.com/story/news/4213817/nvidia-could-spend-12-9b-to-buy-a-company-that-just-launched-a-399-robot-heres-why',2),(7,'rich duprey','Wolfe Research just made a bold call that Alphabet will be the stock of 2027, and the argument rests on something most AI investors have overlooked entirely about how Google is quietly positioning its...','2026-08-27',0.70942,'This Analyst Just Called Alphabet 2027â€™s Best Stock. She Might Be Right','https://247wallst.com/investing/2026/08/27/this-analyst-just-called-alphabet-2027s-best-stock-she-might-be-right/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -358,4 +359,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-28 12:21:14
+-- Dump completed on 2026-08-29  7:31:43
