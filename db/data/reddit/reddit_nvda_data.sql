@@ -42,7 +42,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
-17e64b43-a374-11f1-ab2f-b6a52f58e70b:1-57,
 17f4f634-316c-11f1-930c-02a5007a6599:1-61,
 18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
@@ -95,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+42ae6eb5-a42e-11f1-82a3-329bc672379d:1-44,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -186,6 +186,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
+8c530a4c-a37b-11f1-a317-1a21ce6c66a5:1-62,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
@@ -336,7 +337,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -345,7 +346,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'investing','1w1curm','p6k2qal','2026-08-29',6,0.2023,'AMD\'s high p/e ratio is mostly attributed to their all-stock acquisition of Xilinx which is being amortized over 10 years or so'),(2,'investing','1w1curm','p6ka953','2026-08-29',5,0.3818,'Nvidia is at a discount because they became the go to bank for ai build out. They finance startups and companies, that are not investment grade, to keep the ai wheel spinning. Their credit default swaps doubled. '),(3,'investing','1w1curm','p6jy3gp','2026-08-29',6,-0.5574,'maybe AMD is just overvalued man'),(4,'investing','1w1curm','p6k4ava','2026-08-29',2,0.7435,'Nvidia market cap reached 750B (current AMD evaluation) mid 2023. Their Q2 2024 (2023 August report) was 13B revenue and profit is $2.48 per share and their trailing PE was about 100x as well.\n\n\nDon\'t invest with your emotion. '),(5,'investing','1w1curm','p6k2byv','2026-08-29',1,0,'I think your right! Monday putting everything in NVDL...'),(6,'investing','1w1curm','p6k095b','2026-08-29',-1,-0.4874,'I think AMD is wayyyy ahead of its self, 3xx P/E. Like wtf. NVDA valuation is reasonable, and now that NVDA is stepping into personal computer CPU play. Not sure what are they missing. One concern tho, sophisticated financing circulation as it may conceal weaknesses.'),(7,'NVDA_Stock','1w0uesg','p6g1e7r','2026-08-28',17,0.4767,'What is the fascination for regards with this clown? The only reason heâ€™s still relevant is because crap like this.'),(8,'NVDA_Stock','1w0uesg','p6gi9u0','2026-08-28',13,0.5574,'He is not buying the nvda calls because he wants a net positive delta exposure.  He is using options the way options were actually intended, as a tool for hedging.'),(9,'NVDA_Stock','1w0uesg','p6fuf6d','2026-08-28',5,-0.68,'That dead horse wasn\'t just going to beat itself!'),(10,'NVDA_Stock','1w0uesg','p6hympr','2026-08-28',5,0.4939,'The guy has had as many insightful positions as he has eyes. Why again do we care about this grifters opinion ?'),(11,'NVDA_Stock','1w0uesg','p6fvogm','2026-08-28',3,-0.3818,'Now that he\'s hedged with a huge nearer-term call position to re-fund his even heavier longer - term put bags, the stock of course needs to dump to cook \'em. '),(12,'NVDA_Stock','1w0uesg','p6j54ck','2026-08-29',4,0,'cassandra margin called'),(13,'NVDA_Stock','1w0uesg','p6ihvg6','2026-08-28',3,-0.2732,'He gets off on manipulating the market and having his prognostications plastered on major media outlets. Iâ€™ve watched this guys demeanor and he clearly gets excited by the misery of others.Â '),(14,'NVDA_Stock','1w0uesg','p6j1v7e','2026-08-29',3,0,'This guy influences my decisions as much as Kathie Woods, NOT AT ALL'),(15,'NVDA_Stock','1w0uesg','p6fwep0','2026-08-28',9,0,'It\'s called hedging'),(16,'NVDA_Stock','1w0uesg','p6i3snv','2026-08-28',2,0.4215,'He is playing word games.\nHe lost confidence with his puts.'),(17,'NVDA_Stock','1w0uesg','p6ick1z','2026-08-28',2,0,'Inverse Burry!'),(18,'NVDA_Stock','1w0uesg','p6fzrff','2026-08-28',2,0,'Weâ€™re not '),(19,'NVDA_Stock','1w0uesg','p6ghflz','2026-08-28',1,-0.8934,'Dead, Taxes and NVDA going down the day after a quarterly report.  This is getting old and stupid at this point. '),(20,'NVDA_Stock','1w0uesg','p6k7yrd','2026-08-29',1,-0.434,'This guy is no longer worth mentioning . He made a good call in 08. After that heâ€™s been a fool '),(21,'NVDA_Stock','1w0uesg','p6g3028','2026-08-28',-1,-0.3818,'Dump it'),(22,'NVDA_Stock','1w0uesg','p6hqtn1','2026-08-28',0,0.836,'If that helps you with your confidence in the bull case have at it. I would however point to the fact that a bit over half the revenue in Q2 resulted in accounts receivable and not actually cash. '),(23,'NVDA_Stock','1w0uesg','p6gcau5','2026-08-28',-4,0.296,'Yeah I jumped off the sinking ship '),(24,'NVDA_Stock','1w0p52i','p6hvhgg','2026-08-28',14,0,'check today'),(25,'NVDA_Stock','1w0p52i','p6hpwsl','2026-08-28',6,-0.6124,'But the next day, it lost most of the previous dayâ€™s gains.  Sad'),(26,'NVDA_Stock','1w0p52i','p6i910o','2026-08-28',5,0,'Itâ€™s doing exactly what it always does.   '),(27,'NVDA_Stock','1w0p52i','p6jpflj','2026-08-29',3,0,'How about now?'),(28,'NVDA_Stock','1w0p52i','p6hv4px','2026-08-28',2,0.9325,'Most of the buyers of the stock for the past year are not investors. They are day traders or swing traders. In other words they have zero intention of keeping it long term. Like OP said, every institution who can own it owns it already and many are overweight or restricted by fund rules from buying more.\n\nWith 24+ billion shares outstanding, the stock has excessive liquidity that is killing the share price. Buy back 20% of the stock and it will hit 300 in a couple years. Not much left that they can do. Apple is an excellent example of how buybacks have boosted share price. '),(29,'NVDA_Stock','1w0p52i','p6jcawt','2026-08-29',3,0.5106,'Be honest, which slop machine did your homework?'),(30,'NVDA_Stock','1w109ld','p6hdjua','2026-08-28',11,0.3418,'Wow I can\'t believe Jensen is so blind to this. It\'s a shame BIGTIDYLUVER is not at the helm of the world\'s greatest company.'),(31,'NVDA_Stock','1w109ld','p6hatow','2026-08-28',9,0.9211,'my god where are you guys coming up with those nonsense fantasies? \n\nAMAZON just LOADED THE BOAT on NVIDIA chips. So did google and MSFT. \n\nNvidia probably *again* TOOK MARKET SHARE from it\'s competitors. It definitely did take from reddit\'s darling AMD (it grew it\'s data center revenue more)\n\nso this much for the \"competition is coming\" thesis. By the time hyperscalers MAYBE start buying less nvidia - neoclouds may be the serious counterparty to them in the cloud computing space'),(32,'NVDA_Stock','1w109ld','p6ha0zn','2026-08-28',4,0,'Nvidiaâ€™s moat is systems software/hardware integration. Essentially the ecosystem. Your entire thesis is incorrect.'),(33,'NVDA_Stock','1w109ld','p6h99ie','2026-08-28',3,-0.4215,'Keep in mind that even if demand from new data center fall to 0 , they will still need to replace hold chips and dead one from existing ones to keep them as efficient as they can.\nThis mean that ,if current chip last 10 year until they have to be replace , in 10 year the demand will at least be Ã©quivalent to this year .\n'),(34,'NVDA_Stock','1w109ld','p6h9c4n','2026-08-28',3,0.0498,'A big piece of nvidiaâ€™s moat is their relationship with TSMC, a more efficient chip is meaningless without massive production capacity'),(35,'NVDA_Stock','1w109ld','p6h8ec6','2026-08-28',1,0.4404,'Thanks, BigTidyLuver');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1w24555','p6q0eu9','2026-08-30',1,0,'![gif](giphy|55itGuoAJiZEEen9gg)');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -359,4 +360,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-29  6:38:24
+-- Dump completed on 2026-08-30  4:51:29
