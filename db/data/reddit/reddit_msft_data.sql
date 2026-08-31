@@ -25,7 +25,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+09369342-a4f8-11f1-899f-8220b20711ee:1-37,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
+09d76395-a438-11f1-b26e-325f5f0cf259:1-59,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
@@ -94,7 +96,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-42ae6eb5-a42e-11f1-82a3-329bc672379d:1-44,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -337,7 +338,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +347,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'ValueInvesting','1w1mocq','p6mk08q','2026-08-29',1,0.9728,'Nice template - the FLAT vs FADE capex distinction is the most interesting part. Most people just slap a terminal multiple on and call it a day. The 10-year abnormal growth period for MSFT/META/GOOGL is aggressive though. These companies are massive already; expecting 10 years of moat-driven outperformance is a bold assumption. The 9% discount rate and 3% terminal growth are defensible, but the real value is in the sensitivity. I\'d stress-test the FADE scenario harder - if capex efficiency doesn\'t materialize, the valuation changes a lot. Good share, but remember: the output is only as good as the assumptions you\'re willing to defend.\n');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +360,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-30  4:51:29
+-- Dump completed on 2026-08-31  4:55:18

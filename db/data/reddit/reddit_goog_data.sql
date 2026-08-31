@@ -25,7 +25,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+09369342-a4f8-11f1-899f-8220b20711ee:1-37,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
+09d76395-a438-11f1-b26e-325f5f0cf259:1-59,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
@@ -94,7 +96,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-42ae6eb5-a42e-11f1-82a3-329bc672379d:1-44,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -337,7 +338,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +347,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1w23tdd','p6pqrv7','2026-08-30',110,0.9221,'I would buy Meta if Zuck leaves for good. They donâ€™t care about shareholders. Itâ€™s like his personal project and he uses all the earnings to buy more toys. No serious company of this size has market swings this wild. Except tesla. But thats a cult. They have burned huge amounts of money on vibes and have nothing to show for it. The products are good though.'),(2,'stocks','1w23tdd','p6ptpzh','2026-08-30',43,-0.6486,'Not Google quality - as an industry vet, people actually like Google, and like working there, while Meta is known for \"pay is insane but the job kills you\".\n\nTake that for what you will.'),(3,'stocks','1w23tdd','p6pytj4','2026-08-30',11,-0.0516,'Google is far more diversified. Metaface is a one trick pony. '),(4,'stocks','1w23tdd','p6pqzm3','2026-08-30',11,0.5423,'Meta is an obvious buy at 550. Just gotta wait half a week to a week and it\'s there again'),(5,'stocks','1w23tdd','p6psnoy','2026-08-30',18,0.7964,'Meta is cheapest quality stock in market imo. \n\nKey here being word \"quality\". \n\nIt is my largest position. Ultra bullish at this price. '),(6,'stocks','1w23tdd','p6pyg9t','2026-08-30',8,-0.6505,'All they need now is a functional model and a non-toxic brand image so people will use it.\n\nAny day now.\n\nAlso, motivated AI scientists? lol.\n\nTheyâ€™re selling on vest every RSU drop after their inflated initial offering, cashing out until they hit their number where they can return to honest productive research without worrying about money.\n\nThe stock is cheap because FCF is being burnt for near zero returns, ie, their P/E is extremely misleading. They will also have very little in the way of IP either to even litigate or license after their catastrophic failed spending spree.\n\nSelling compute because your model is so uncompetitive that thereâ€™s zero utilization is a band aid of a solution to the sink hole being created. Itâ€™s highly indicative of how big of a fuckup this is. Would any company use servers from Meta given how theyâ€™ve historically behaved with IP theft and copying to stay competitive?\n\nMetaverse 2.0, Internet 4.0, chess 5.0'),(7,'stocks','1w23tdd','p6pw6cv','2026-08-30',3,0.0286,'okay now do FCF for late â€˜26, â€˜27 and probably â€˜28â€¦thatâ€™s why the valuation is compressed. Investors donâ€™t like that so they sell. Personally, I think we see $400s next year and if they can start projecting positive FCF again it will go up. This isnâ€™t the lows unfortunately. I think Meta is a great company long term and wouldnâ€™t short it, but investors care about these things in the short term '),(8,'stocks','1w23tdd','p6pwb40','2026-08-30',2,0,'I bought a position a few weeks ago in for the long term. We will see what happens but this is why I donâ€™t go all in with one stock and working out for me. '),(9,'stocks','1w23tdd','p6q6830','2026-08-30',2,0.3612,'I agree with you. Itâ€™s a money printing machine and incredibly undervalued. Walmart and Costco have twice the PE ratio. The market is not making sense right now.'),(10,'stocks','1w23tdd','p6pyqlg','2026-08-30',1,-0.5251,'I bought it because itâ€™s â€œcheapâ€ this year and because I had too much concentration in Ai semi stocks\n\nBut i struggle with holding vs loss harvesting\n\nFrontier labs got folks like cherny and karpathy\n\nAnd at meta you got a young guy Alexander wang whoâ€™s arguably overcompensated \n\nSo forget ai lets rent out capacity then you got xAI and the neoclouds like NBIS\n\nHow much money was burned on the metaverse and whatâ€™s the ROI on that?'),(11,'stocks','1w23tdd','p6q4kds','2026-08-30',1,0,'Someone watches Couch Investor'),(12,'stocks','1w23tdd','p6qcl38','2026-08-30',1,-0.296,'no competitors? TikTok, Rednote, even Applovin is making their own app'),(13,'stocks','1w23tdd','p6qd90d','2026-08-30',1,0,'Heavy bags?'),(14,'stocks','1w23tdd','p6qfkko','2026-08-30',1,0.5859,'Basically everyoneâ€™s bull thesis for meta right now is either they stop capex or use it for cloud business. Itâ€™s a big gamble since Zuck is not known to give up easy for his projects. \n\nThe bull case for their ai to be frontier is unfortunately not looking likely at the moment since anyone serious about it and good can just start their own'),(15,'stocks','1w23tdd','p6qi9sq','2026-08-30',1,0.5106,'the business looks cheap, I just donâ€™t trust the capex to stay sane'),(16,'stocks','1w23tdd','p6pv89q','2026-08-30',1,0.8066,'I\'ve owned it for 8 years now but very nervous. Every time I think it might have a chance to be fair value it drops heavily. I want to agree with you but market sentiment is likely to keep it between 400-500 for the next few years unless they can get another stream of income on the books, and they\'re not focused on that.'),(17,'stocks','1w23tdd','p6q05r9','2026-08-30',1,-0.8225,'Facebook is cancer of internet. It destroyed social media. I am not touching this thing.'),(18,'stocks','1w23tdd','p6qhhz6','2026-08-30',0,-0.652,'Ya remember Google, ya remember Microsoft, letâ€™s not get cute, buy the dip. '),(19,'stocks','1w23tdd','p6prbpu','2026-08-30',-4,-0.2263,'no. too much lawsuit'),(20,'ValueInvesting','1w1mocq','p6mk08q','2026-08-29',1,0.9728,'Nice template - the FLAT vs FADE capex distinction is the most interesting part. Most people just slap a terminal multiple on and call it a day. The 10-year abnormal growth period for MSFT/META/GOOGL is aggressive though. These companies are massive already; expecting 10 years of moat-driven outperformance is a bold assumption. The 9% discount rate and 3% terminal growth are defensible, but the real value is in the sensitivity. I\'d stress-test the FADE scenario harder - if capex efficiency doesn\'t materialize, the valuation changes a lot. Good share, but remember: the output is only as good as the assumptions you\'re willing to defend.\n');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +360,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-30  4:51:29
+-- Dump completed on 2026-08-31  4:55:18

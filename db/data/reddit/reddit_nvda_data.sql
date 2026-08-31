@@ -25,7 +25,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
+09369342-a4f8-11f1-899f-8220b20711ee:1-37,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
+09d76395-a438-11f1-b26e-325f5f0cf259:1-59,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
@@ -94,7 +96,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-42ae6eb5-a42e-11f1-82a3-329bc672379d:1-44,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -337,7 +338,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +347,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1w24555','p6q0eu9','2026-08-30',1,0,'![gif](giphy|55itGuoAJiZEEen9gg)');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1w2utze','p6viv1y','2026-08-30',10,0,'These bars will grow higher next year.'),(2,'NVDA_Stock','1w2utze','p6vm2h4','2026-08-30',4,0.6792,'I\'m convinced the market doesn\'t know how to price the stock. Definitely needs EPS revisions and revised forward 2028 model for sure! It is a monster comparable to the first electric companies 130 years ago!'),(3,'NVDA_Stock','1w2utze','p6vvwro','2026-08-30',4,0.431,'Nvidia is not expensive   \nI donâ€™t understand why they would split '),(4,'NVDA_Stock','1w2utze','p6vopon','2026-08-30',11,0,'Tesla is a dogshit meme stock '),(5,'NVDA_Stock','1w2utze','p6vhnjl','2026-08-30',3,0,'The company is a Monster, the stock was a monster and still can be but currently the stock is more of a sloth ðŸ¦¥'),(6,'NVDA_Stock','1w2utze','p6vw74z','2026-08-30',3,0,'Tesla   Industrial robots. '),(7,'NVDA_Stock','1w2utze','p6wtoif','2026-08-31',4,0,'And TSLA still goes up. '),(8,'NVDA_Stock','1w2utze','p6wd7ik','2026-08-31',2,0,'Post this in r/teslainvestorsclub'),(9,'NVDA_Stock','1w2utze','p6vx0fi','2026-08-30',5,-0.5719,'Tesla is just pathetic.'),(10,'NVDA_Stock','1w2utze','p6vhq73','2026-08-30',5,0.8912,'Seriously? You comparing Nvda with a car company? Man i do love NVDA but some of you really need validation every day. Nvda can win any fight with any company, but comparing it to the shit that Tesla is is like you comparing yourself with a human without 2 legs that beat his wife, fell down the stairs and you want to see who could run faster'),(11,'NVDA_Stock','1w2utze','p6vk2iy','2026-08-30',2,0.5994,'TSLA sh price was always way way head of their potential.  That trend inexplicably continue with SPCX.  A bunch of do do brains want to make Elon rich apparently.'),(12,'NVDA_Stock','1w2utze','p6w7fau','2026-08-31',4,0,'can\'t wait for Elon\'s next jawbone'),(13,'NVDA_Stock','1w2utze','p6vvpoj','2026-08-30',2,0.6705,'My largest holding and Apple is second '),(14,'NVDA_Stock','1w2utze','p6vwd8b','2026-08-30',-5,0,'[deleted]'),(15,'NVDA_Stock','1w2yusb','p6wfluc','2026-08-31',5,0.8441,'\"They\'re pretty much designing their chips to run one model,\" according to Mr. Dally.   Exactly what I said the other day, OAI presented their best case  They\'ve optimized for one thing.  lol  That\'s not hard.  Let\'s see them run a full featured suite.\n\nThey go on to have a short benchmark and hardware design philosophy discussion which is worth a listen for the uninitiated.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +361,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-30  4:51:29
+-- Dump completed on 2026-08-31  4:55:19
