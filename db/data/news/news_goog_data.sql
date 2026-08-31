@@ -22,6 +22,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
@@ -337,7 +338,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +347,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sneha nahata','...','2026-08-29',0.43384,'Alphabet Stock: 3 Reasons to Buy Before It Hits a New All-Time High','https://www.barchart.com/story/news/4338968/alphabet-stock-3-reasons-to-buy-before-it-hits-a-new-all-time-high',2),(2,'sushree mohanty','...','2026-08-29',0.3448,'Nvidia Is Getting Bigger Without Getting Expensive','https://www.barchart.com/story/news/4338037/nvidia-is-getting-bigger-without-getting-expensive',2),(3,'keithen drury','While investors may think of Alphabet (GOOG +1.53%) (GOOGL +1.74%) as an artificial intelligence (AI) stock, Space Exploration Technologies (SPCX +0.45%) could also be considered one as well. SpaceX h...','2026-08-29',0.91644,'SpaceX vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?','https://www.fool.com/investing/2026/08/29/spacex-vs-alphabet-which-is-the-best-artificial-in/',4),(4,'josh kohn-lindquist','Marvell Technology (MRVL -10.28%), a data-center networking and custom AI semiconductor solutions provider, closed at $216.62, down 10.28%. The stock fell after the fiscal second-quarter results beat ...','2026-08-28',0.3767,'Stock Market Today, Aug. 28: Marvell Slides 10% on Softer Fiscal 2028 Guidance and Google Deal Timing','https://www.fool.com/coverage/stock-market-today/2026/08/28/stock-market-today-aug-28-marvell-slides-10-on-softer-fiscal-2028-guidance-and-google-deal-timing/',40),(5,'rich duprey','...','2026-08-28',0.35232,'Marvellâ€™s AI Business Is Accelerating. The Stock Sell-Off Is a Gift.','https://www.barchart.com/story/news/4326602/marvells-ai-business-is-accelerating-the-stock-sell-off-is-a-gift',2),(6,'nauman khan','...','2026-08-28',0.50952,'MSFT Stock Alert: Moonshot Could Give Microsoft Another AI Revenue Stream','https://www.barchart.com/story/news/4326332/msft-stock-alert-moonshot-could-give-microsoft-another-ai-revenue-stream',2),(7,'yahoo finance','...','2026-08-28',-0.12248,'Tim Cookâ€™s biggest hits and miss as Apple CEO','https://www.bundle.app/en/finance/tim-cooks-biggest-hits-and-miss-as-apple-ceo-D29A78C4-87F0-4250-A396-2DDA7F3B5238',2),(8,'wall street breakfast','...','2026-08-28',0,'Wall Street Breakfast Podcast: Marvell Beats, Street Shrugs','https://seekingalpha.com/article/4941158-wall-street-breakfast-podcast-marvell-beats-street-shrugs',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','...','2026-08-29',-0.04128,'Intel vs. AMD: Why the Market Share Number Is Misleading','https://www.barchart.com/story/news/4339639/intel-vs-amd-why-the-market-share-number-is-misleading',2),(2,'sneha nahata','...','2026-08-29',0.43384,'Alphabet Stock: 3 Reasons to Buy Before It Hits a New All-Time High','https://www.barchart.com/story/news/4338968/alphabet-stock-3-reasons-to-buy-before-it-hits-a-new-all-time-high',2),(3,'sushree mohanty','...','2026-08-29',0.3448,'Nvidia Is Getting Bigger Without Getting Expensive','https://www.barchart.com/story/news/4338037/nvidia-is-getting-bigger-without-getting-expensive',2),(4,'keithen drury','While investors may think of Alphabet (GOOG +1.53%) (GOOGL +1.74%) as an artificial intelligence (AI) stock, Space Exploration Technologies (SPCX +0.45%) could also be considered one as well. SpaceX h...','2026-08-29',0.91644,'SpaceX vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?','https://www.fool.com/investing/2026/08/29/spacex-vs-alphabet-which-is-the-best-artificial-in/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +361,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-30  6:00:58
+-- Dump completed on 2026-08-31  6:20:59

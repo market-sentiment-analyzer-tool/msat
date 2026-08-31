@@ -22,6 +22,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
@@ -337,7 +338,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +347,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'dulan lokuwithana','...','2026-08-29',0.16048,'Nvidia CEO excluded in TIMEâ€™s 100 most influential people in AI','https://seekingalpha.com/news/4638042-nvidia-ceo-missing-times-100-ai-influencers?feed_item_type=news',40),(2,'sushree mohanty','...','2026-08-29',0.3448,'Nvidia Is Getting Bigger Without Getting Expensive','https://www.barchart.com/story/news/4338037/nvidia-is-getting-bigger-without-getting-expensive',20),(3,'faizan farooque','Please enable JS and disable any ad blocker...','2026-08-29',0.06364,'Nvidiaâ€™s AI boom just ran into a new $96B question','https://www.thestreet.com/investing/nvidia-costs-face-new-tariff-risks',4),(4,'logan wallace','...','2026-08-29',0.5944,'Leverage Shares 2x Long NVDA Daily ETF (NASDAQ:NVDG) Shares Up 16.5% â€“ Whatâ€™s Next?','https://www.tickerreport.com/banking-finance/13565350/leverage-shares-2x-long-nvda-daily-etf-nasdaqnvdg-shares-up-16-5-whats-next.html',20),(5,'tiyashi datta','...','2026-08-29',0.2,'Notable tech headlines for the week: Nvidia, Salesforce, Marvell in focus','https://seekingalpha.com/news/4638009-notable-tech-headlines-for-the-week-nvidia-salesforce-marvell-in-focus?feed_item_type=news',4),(6,'joel south','Jim Cramer dumped one AI chipmaker over an $80 billion debt raise, then turned around and shrugged off the identical financing practice at NVIDIA. Whether that double standard holds up depends entirel...','2026-08-29',0.04612,'Jim Cramer Sold 1 AI Chipmaker Over $80 Billion in Debt. But He Defended NVIDIA','https://247wallst.com/investing/2026/08/29/jim-cramer-sold-1-ai-chipmaker-over-80-billion-in-debt-but-he-defended-nvidia/',40),(7,'eric sprague','...','2026-08-29',0.29952,'Nvidia: The Space Matters More Than The Share','https://seekingalpha.com/article/4941484-nvidia-the-space-matters-more-than-the-share',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jabran kundi','...','2026-08-30',0.1024,'SpaceX Has an Emerging Challenger in Space. Hereâ€™s the One Thing Rivals Canâ€™t Copy.','https://www.barchart.com/story/news/4345560/spacex-has-an-emerging-challenger-in-space-heres-the-one-thing-rivals-cant-copy',2),(2,'tristan rich','...','2026-08-30',-0.48992,'Short Interest in GraniteShares 2x Short NVDA Daily ETF (NASDAQ:NVD) Rises By 87.7%','https://www.themarketsdaily.com/2026/08/30/short-interest-in-graniteshares-2x-short-nvda-daily-etf-nasdaqnvd-rises-by-87-7.html',20),(3,'damon judd','...','2026-08-30',0.12248,'NVDW: Collect High-Yield Income From Nvidia Swaps','https://seekingalpha.com/article/4941570-nvdw-collect-high-yield-income-from-nvidia-swaps',40),(4,'hillary remy','Please enable JS and disable any ad blocker...','2026-08-30',0.18612,'Michael Burry sends another Nvidia stock verdict to investors','https://www.thestreet.com/investing/stocks/michael-burry-sends-another-nvidia-stock-verdict-to-investors',40),(5,'daily hodl agent','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-08-30',0.16824,'â€˜Remarkably Resilientâ€™ US Equities Add Nearly $12,000,000,000,000 in Market Cap Since March Bottom','https://dailyhodl.com/2026/08/30/remarkably-resilient-us-equities-add-nearly-12000000000000-in-market-cap-since-march-bottom/',4),(6,'wall street breakfast','...','2026-08-30',0.272,'Wall Street Brunch: Jobs And More AI Litmus Test Earnings','https://seekingalpha.com/article/4941567-wall-street-brunch-jobs-and-more-ai-litmus-test-earnings',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +361,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-30  6:00:58
+-- Dump completed on 2026-08-31  6:21:00
