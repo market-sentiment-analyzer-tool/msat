@@ -22,10 +22,10 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
-09369342-a4f8-11f1-899f-8220b20711ee:1-37,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
 09d76395-a438-11f1-b26e-325f5f0cf259:1-59,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
@@ -84,6 +84,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 342f40e7-9b73-11f1-b03c-5afb066f576b:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
+35b3a697-a5be-11f1-8443-b2bd23427d3e:1-112,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
@@ -338,7 +339,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -347,6 +348,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w3i3so','p70bkp6','2026-08-31',8,0,'so long!\n\naapl ATH soon '),(2,'AAPL','1w3i3so','p70e3q6','2026-08-31',3,-0.4062,'Is this a reason AAPL is almost 2% down?'),(3,'AAPL','1w3i3so','p744nt3','2026-09-01',1,0.5859,'He grew Apple\'s market valuation from roughly **$350** to $4.6 trillion - just wow'),(4,'AAPL','1w3i3so','p70bpv4','2026-08-31',-1,-0.2263,'PHIL SCHILLER STEPS DOWN AS WELL'),(5,'AAPL','1w3i3so','p70jtwa','2026-08-31',-1,-0.5908,'Geez no follow through with aapl. Loss all the gains it on Friday and some more. He got promoted not leaving and we down 2%. Smh '),(6,'AAPL','1w3o7pd','p73y4cm','2026-09-01',-1,-0.5267,'Bye loser');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -360,4 +362,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-31  4:55:18
+-- Dump completed on 2026-09-01  4:35:00
