@@ -228,6 +228,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -338,7 +339,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -347,7 +348,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jabran kundi','...','2026-08-30',0.1024,'SpaceX Has an Emerging Challenger in Space. Hereâ€™s the One Thing Rivals Canâ€™t Copy.','https://www.barchart.com/story/news/4345560/spacex-has-an-emerging-challenger-in-space-heres-the-one-thing-rivals-cant-copy',2),(2,'tristan rich','...','2026-08-30',-0.48992,'Short Interest in GraniteShares 2x Short NVDA Daily ETF (NASDAQ:NVD) Rises By 87.7%','https://www.themarketsdaily.com/2026/08/30/short-interest-in-graniteshares-2x-short-nvda-daily-etf-nasdaqnvd-rises-by-87-7.html',20),(3,'damon judd','...','2026-08-30',0.12248,'NVDW: Collect High-Yield Income From Nvidia Swaps','https://seekingalpha.com/article/4941570-nvdw-collect-high-yield-income-from-nvidia-swaps',40),(4,'hillary remy','Please enable JS and disable any ad blocker...','2026-08-30',0.18612,'Michael Burry sends another Nvidia stock verdict to investors','https://www.thestreet.com/investing/stocks/michael-burry-sends-another-nvidia-stock-verdict-to-investors',40),(5,'daily hodl agent','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-08-30',0.16824,'â€˜Remarkably Resilientâ€™ US Equities Add Nearly $12,000,000,000,000 in Market Cap Since March Bottom','https://dailyhodl.com/2026/08/30/remarkably-resilient-us-equities-add-nearly-12000000000000-in-market-cap-since-march-bottom/',4),(6,'wall street breakfast','...','2026-08-30',0.272,'Wall Street Brunch: Jobs And More AI Litmus Test Earnings','https://seekingalpha.com/article/4941567-wall-street-brunch-jobs-and-more-ai-litmus-test-earnings',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'harsh chauhan','Nvidia (NVDA +1.49%) stock has underperformed the broader semiconductor sector index so far in 2026, gaining just 16% as of this writing, compared to the 62% spike in the PHLX Semiconductor Sector ind...','2026-08-31',0.19984,'Prediction: This Is Where Nvidia Stock Will Be When September Ends','https://www.fool.com/investing/2026/08/31/prediction-this-is-where-nvidia-stock-will-be-when/',40),(2,'vandita jadeja','Marvell just posted blowout earnings and locked in a landmark Google deal, yet shares fell 10% in a single session. Whether that selloff is a trap or a warning sign depends on what you believe about o...','2026-08-31',0.1998,'Could Marvell Be the Next $100 Billion AI Stock?','https://247wallst.com/investing/2026/08/31/could-marvell-be-the-next-100-billion-ai-stock/',4),(3,'peter gratton','Kevin Dietsch / Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Tim Cookâ€™s run as Appleâ€™s CEO ends today as one of among the most profitable in corporate ...','2026-08-31',0.19936,'Tim Cookâ€™s Final Day as Apple CEO: How His 15-Year Tenure Transformed the Companyâ€™s Stock','https://www.investopedia.com/tim-cook-s-final-day-as-apple-ceo-how-his-15-year-tenure-transformed-the-company-s-stock-12073775',4),(4,'natasha abellard','\nReference #18.ccab3717.1788241743.a2b1ea63\nhttps://errors.edgesuite.net/18.ccab3717.1788241743.a2b1ea63\n\nhttps://errors.edgesuite.net/18.ccab3717.1788241743.a2b1ea63...','2026-08-31',-0.02064,'Why Nvidia and CrowdStrike are up in an otherwise down stock market','https://www.cnbc.com/2026/08/31/why-nvidia-and-crowdstrike-are-up-in-an-otherwise-down-stock-market.html',400),(5,'pathikrit bose','...','2026-08-31',0.60048,'Nvidia Projects 70% Revenue Growth Next Year. What This Means for NVDA Stock Investors.','https://www.barchart.com/story/news/4357645/nvidia-projects-70-revenue-growth-next-year-what-this-means-for-nvda-stock-investors',20),(6,'jabran kundi','...','2026-08-31',-0.58152,'Say No to Tokenmaxxing. How Alex Karpâ€™s War on the â€˜Token Industrial Complexâ€™ Is Fueling the Next NVDA and PLTR Bull Run.','https://www.barchart.com/story/news/4357201/say-no-to-tokenmaxxing-how-alex-karps-war-on-the-token-industrial-complex-is-fueling-the-next-nvda-and-pltr-bull-run',20),(7,'patrick sanders','...','2026-08-31',0.272,'Cisco and Supermicro Are Joining Forces in the AI Data Center Boom. How to Play Their Stocks Now.','https://www.barchart.com/story/news/4356352/cisco-and-supermicro-are-joining-forces-in-the-ai-data-center-boom-how-to-play-their-stocks-now',2),(8,'null','...','2026-08-31',0,'AWS to Open First Saudi Arabia Cloud Region in December 2026','https://www.securities.io/aws-to-open-first-saudi-arabia-cloud-region-in-december-2026/',1),(9,'david sekera; cfa','...','2026-08-31',0.1024,'3 Stocks to Sell and 3 Stocks to Buy for September','https://www.morningstar.com/podcasts/the-morning-filter/3-stocks-sell-3-stocks-buy-september',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -361,4 +362,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-31  6:21:00
+-- Dump completed on 2026-09-01  5:49:11

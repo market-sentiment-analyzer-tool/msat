@@ -228,6 +228,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -338,7 +339,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -347,7 +348,6 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','...','2026-08-29',-0.04128,'Intel vs. AMD: Why the Market Share Number Is Misleading','https://www.barchart.com/story/news/4339639/intel-vs-amd-why-the-market-share-number-is-misleading',2),(2,'sneha nahata','...','2026-08-29',0.43384,'Alphabet Stock: 3 Reasons to Buy Before It Hits a New All-Time High','https://www.barchart.com/story/news/4338968/alphabet-stock-3-reasons-to-buy-before-it-hits-a-new-all-time-high',2),(3,'sushree mohanty','...','2026-08-29',0.3448,'Nvidia Is Getting Bigger Without Getting Expensive','https://www.barchart.com/story/news/4338037/nvidia-is-getting-bigger-without-getting-expensive',2),(4,'keithen drury','While investors may think of Alphabet (GOOG +1.53%) (GOOGL +1.74%) as an artificial intelligence (AI) stock, Space Exploration Technologies (SPCX +0.45%) could also be considered one as well. SpaceX h...','2026-08-29',0.91644,'SpaceX vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?','https://www.fool.com/investing/2026/08/29/spacex-vs-alphabet-which-is-the-best-artificial-in/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -361,4 +361,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-31  6:20:59
+-- Dump completed on 2026-09-01  5:49:11
