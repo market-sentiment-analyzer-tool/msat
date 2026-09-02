@@ -84,7 +84,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 342f40e7-9b73-11f1-b03c-5afb066f576b:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
-35b3a697-a5be-11f1-8443-b2bd23427d3e:1-112,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
@@ -110,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
+4cdaa16c-a682-11f1-95f4-caa5a68f67ab:1-75,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
@@ -229,6 +229,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -339,7 +340,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,6 +349,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1w4l34c','p78dsvz','2026-09-01',77,0,'20m? Google made that much money faster than it took you to make this post.'),(2,'stocks','1w4l34c','p79s84z','2026-09-01',8,0.3612,'It\'s like I got fined 2â‚¬'),(3,'stocks','1w4l34c','p78ghk2','2026-09-01',22,0,'Cost of doing business Europe. '),(4,'stocks','1w4l34c','p78x920','2026-09-01',13,0.4939,'Europe is so far behind American tech that their revenue model is litigation over domestic development. Many such cases'),(5,'stocks','1w4l34c','p79irc1','2026-09-01',2,0.6908,'Seznam are like okay... Can you copy Googles bug bounty scheme and payouts Seznam please. '),(6,'stocks','1w4l34c','p78eq4m','2026-09-01',-7,0,'Heureka are just leeches man'),(7,'stocks','1w4l34c','p78pa2f','2026-09-01',-8,-0.1531,'Why do the headlines keep reporting on these Europoor lawsuits as if they\'re actually gonna mean something');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -361,4 +363,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-01  4:35:00
+-- Dump completed on 2026-09-02  3:58:05

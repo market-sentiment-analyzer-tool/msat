@@ -84,7 +84,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3425022f-298f-11f1-8e1d-b2c4246b1c92:1-54,
 342f40e7-9b73-11f1-b03c-5afb066f576b:1-65,
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
-35b3a697-a5be-11f1-8443-b2bd23427d3e:1-112,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
@@ -110,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
+4cdaa16c-a682-11f1-95f4-caa5a68f67ab:1-75,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
@@ -229,6 +229,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
 bf9bc61c-ef62-11f0-9649-ea83a52585c9:1-63,
@@ -339,7 +340,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,7 +349,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w3i3so','p70bkp6','2026-08-31',8,0,'so long!\n\naapl ATH soon '),(2,'AAPL','1w3i3so','p70e3q6','2026-08-31',3,-0.4062,'Is this a reason AAPL is almost 2% down?'),(3,'AAPL','1w3i3so','p744nt3','2026-09-01',1,0.5859,'He grew Apple\'s market valuation from roughly **$350** to $4.6 trillion - just wow'),(4,'AAPL','1w3i3so','p70bpv4','2026-08-31',-1,-0.2263,'PHIL SCHILLER STEPS DOWN AS WELL'),(5,'AAPL','1w3i3so','p70jtwa','2026-08-31',-1,-0.5908,'Geez no follow through with aapl. Loss all the gains it on Friday and some more. He got promoted not leaving and we down 2%. Smh '),(6,'AAPL','1w3o7pd','p73y4cm','2026-09-01',-1,-0.5267,'Bye loser');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w4iqik','p78en0n','2026-09-01',3,0,'We got another uncapitalized CEO boys!'),(2,'AAPL','1w4iqik','p78sjtd','2026-09-01',2,0,'hardware guy, bring us more gear! Apple car, Apple glasses, Apple wear, ......'),(3,'AAPL','1w4iqik','p7929k3','2026-09-01',2,0,'Should have said, â€œHello, World!â€'),(4,'AAPL','1w4iqik','p79kjy7','2026-09-01',2,0,'John Apple'),(5,'AAPL','1w4iqik','p78o3j6','2026-09-01',1,0,'John TanusÂ '),(6,'AAPL','1w4iqik','p78logr','2026-09-01',-1,-0.4215,'Lame turnip'),(7,'AAPL','1w4iqik','p77wb5z','2026-09-01',-11,0.3612,'Iâ€™d like to know more about him. Â Can anyone give us a synopsis?'),(8,'AAPL','1w4jmrs','p79g9nd','2026-09-01',11,0.296,'In 2014, I decided to buy $50k Apple stocks for each of my kids for their future college funds. Until this day, they (both teenagers) dont know about their secret accounts. They will be shocked when I reveal in couple of years.'),(9,'AAPL','1w4jmrs','p79jurc','2026-09-01',6,0.6369,'It made me a millionaire, worked at Apple for 10 years on the 90â€™s, still hold all the original shares'),(10,'AAPL','1w4jmrs','p7a15ea','2026-09-01',1,0,'How old are you ?'),(11,'AAPL','1w4jmrs','p7afqdz','2026-09-02',1,0.6908,'bless her shes doing good everywhere'),(12,'AAPL','1w4jmrs','p7apt9a','2026-09-02',1,0.5994,'Yes. AAPL made me a millionaire off just 100 shares purchased in 2008.'),(13,'AAPL','1w4jmrs','p7b2v8s','2026-09-02',1,-0.3182,'Too bad it wasnâ€™t 5000 shares ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -362,4 +363,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-01  4:35:00
+-- Dump completed on 2026-09-02  3:58:04
