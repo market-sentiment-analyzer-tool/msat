@@ -228,6 +228,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -339,7 +340,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,7 +349,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'pathikrit bose','...','2026-08-31',0.60048,'Nvidia Projects 70% Revenue Growth Next Year. What This Means for NVDA Stock Investors.','https://www.barchart.com/story/news/4357645/nvidia-projects-70-revenue-growth-next-year-what-this-means-for-nvda-stock-investors',2),(2,'alex sirois','Wall Street keeps punishing Amazon every time AI capex headlines hit, and one investor keeps buying the dip. The reason has nothing to do with quarterly earnings and everything to do with a number mos...','2026-08-31',-0.1968,'Amazonâ€™s Appeal Is More About This Than The AI Capex Fear Discount','https://247wallst.com/investing/2026/08/31/amazons-appeal-is-more-about-this-than-the-ai-capex-fear-discount/',4),(3,'null','...','2026-08-31',0,'AWS to Open First Saudi Arabia Cloud Region in December 2026','https://www.securities.io/aws-to-open-first-saudi-arabia-cloud-region-in-december-2026/',1),(4,'nauman khan','...','2026-08-31',0,'Cathie Wood Just Bought $17 Million of Cerebras Stock. Wall Street Sees 59% Upside.','https://www.barchart.com/story/news/4355427/cathie-wood-just-bought-17-million-of-cerebras-stock-wall-street-sees-59-upside',2),(5,'joseph e. jones','...','2026-08-31',0.42136,'RPG: A Primer On The Invesco S&P 500 Pure Growth ETF','https://seekingalpha.com/article/4941753-rpg-primer-on-invesco-sp500-pure-growth-etf',4),(6,'alex sirois','Amazon and Alphabet both broke cloud growth records in Q2 while burning through historic levels of capital, but their funding strategies and margin runways point in starkly different directions for in...','2026-08-31',0.64576,'Will Amazon or Alphabet Better Digest AI Capex This Quarter?','https://247wallst.com/investing/2026/08/31/will-amazon-or-alphabet-better-digest-ai-capex-this-quarter/',40),(7,'wall street breakfast','...','2026-08-31',-0.42136,'AI Threat To Global Financial System','https://seekingalpha.com/article/4941644-ai-threat-to-global-financial-system',4),(8,'defense world staff','\n					Posted by Defense World Staff on Aug 31st, 2026\n\nCommerzbank Aktiengesellschaft FI lowered its position in  Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 5.3% in the second quarter, according to...','2026-08-31',0.43646,'Commerzbank Aktiengesellschaft FI Sells 49,555 Shares of Alphabet Inc. $GOOGL','https://www.defenseworld.net/2026/08/31/commerzbank-aktiengesellschaft-fi-sells-49555-shares-of-alphabet-inc-googl.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'aditya raghunath','...','2026-09-01',0.21856,'Nvidia Expands AI Partnership With Amazon Web Services','https://www.barchart.com/story/news/4379542/nvidia-expands-ai-partnership-with-amazon-web-services',20),(2,'prosper junior bakiny','Amazon (AMZN -1.87%) has underperformed the broader market over the past five years. Over this period, the company has dealt with a CEO change (which was technically slightly over five years ago), a r...','2026-09-01',0.50528,'Prediction: Amazon Could Be Worth This Much in 5 Years','https://www.fool.com/investing/2026/09/01/prediction-amazon-could-be-worth-this-much-in-5-years/',40),(3,'micah zimmerman','Alibaba (BABA -1.03%) closed below $115 on Aug. 31, putting it about 60% below its all-time closing high of $298.65 set in October 2020. The math on that drawdown may look like a gift. I do not think ...','2026-09-01',-0.16844,'Alibaba Is Down 60% From Its All-Time High. Is This the Once-in-a-Decade Setup That Patient Investors Wait For?','https://www.fool.com/investing/2026/09/01/alibaba-is-down-60-from-its-all-time-high-is-this/',4),(4,'wall street breakfast','    AegeanBlue/E+ via Getty Images\n \nAegeanBlue/E+ via Getty Images\nDownload this episode on Apple Podcasts/Spotify or listen below:\n\n\n\n\n\n\n\n\n\n\nOne legislative move sent utility stocks (PCG) (EIX) from...','2026-09-01',-0.10006,'Wall Street Breakfast Podcast: Liability Sparks Downgrades','https://seekingalpha.com/article/4942050-wall-street-breakfast-podcast-liability-sparks-downgrades',8),(5,'wall street breakfast','...','2026-09-01',0.35232,'California Wildfire Bill Up For Vote','https://seekingalpha.com/article/4942008-california-wildfire-bill-up-for-vote',4),(6,'aaron rennie','Michael Nagle / Bloomberg via Getty Images\n The U.S. stock market kicked off September on a down note after posting solid gains last month, as surging oil prices and rising Treasury yields weighed on ...','2026-09-01',0.36174,'Stock Market Today: Futures Fall to Begin New Trading Month; Oil Prices, Treasury Yields Jump','https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-09012026-12075046',4),(7,'brian sozzi','...','2026-09-01',0.59264,'How you can quickly tell Wall Street still really loves tech stocks','https://finance.yahoo.com/markets/stocks/article/how-you-can-quickly-tell-wall-street-still-really-loves-tech-stocks-102324025.html',20);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -362,4 +363,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-01  5:49:11
+-- Dump completed on 2026-09-02  5:12:18

@@ -228,6 +228,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -339,7 +340,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,6 +349,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-09-01',-0.26328,'Marvell Stock: The AI Growth Story Is Getting Bigger, But the Google Deal Is Still a Problem','https://www.barchart.com/story/news/4378315/marvell-stock-the-ai-growth-story-is-getting-bigger-but-the-google-deal-is-still-a-problem',20),(2,'omor ibne ehsan','The EU handed Google an ultimatum that carried a penalty tall enough to erase tens of billions in revenue, and what Google gave up to make the threat disappear may cost it more than any fine would hav...','2026-08-31',0.47142,'How Google Avoided a 10% Revenue Fine by Changing European Search Rules','https://247wallst.com/investing/2026/08/31/how-google-avoided-a-10-revenue-fine-by-changing-european-search-rules/',40),(3,'pathikrit bose','...','2026-08-31',0,'Marvell Stock Set Several New Records in Q2. What It Will Take for MRVL to Hit New Highs.','https://www.barchart.com/story/news/4359334/marvell-stock-set-several-new-records-in-q2-what-it-will-take-for-mrvl-to-hit-new-highs',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -361,4 +363,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-01  5:49:11
+-- Dump completed on 2026-09-02  5:12:18
