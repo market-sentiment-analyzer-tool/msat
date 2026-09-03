@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+2731b236-a74b-11f1-bf79-c2e7a9fae8d0:1-77,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -109,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
-4cdaa16c-a682-11f1-95f4-caa5a68f67ab:1-75,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
@@ -229,6 +229,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -340,7 +341,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -349,7 +350,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w4iqik','p78en0n','2026-09-01',3,0,'We got another uncapitalized CEO boys!'),(2,'AAPL','1w4iqik','p78sjtd','2026-09-01',2,0,'hardware guy, bring us more gear! Apple car, Apple glasses, Apple wear, ......'),(3,'AAPL','1w4iqik','p7929k3','2026-09-01',2,0,'Should have said, â€œHello, World!â€'),(4,'AAPL','1w4iqik','p79kjy7','2026-09-01',2,0,'John Apple'),(5,'AAPL','1w4iqik','p78o3j6','2026-09-01',1,0,'John TanusÂ '),(6,'AAPL','1w4iqik','p78logr','2026-09-01',-1,-0.4215,'Lame turnip'),(7,'AAPL','1w4iqik','p77wb5z','2026-09-01',-11,0.3612,'Iâ€™d like to know more about him. Â Can anyone give us a synopsis?'),(8,'AAPL','1w4jmrs','p79g9nd','2026-09-01',11,0.296,'In 2014, I decided to buy $50k Apple stocks for each of my kids for their future college funds. Until this day, they (both teenagers) dont know about their secret accounts. They will be shocked when I reveal in couple of years.'),(9,'AAPL','1w4jmrs','p79jurc','2026-09-01',6,0.6369,'It made me a millionaire, worked at Apple for 10 years on the 90â€™s, still hold all the original shares'),(10,'AAPL','1w4jmrs','p7a15ea','2026-09-01',1,0,'How old are you ?'),(11,'AAPL','1w4jmrs','p7afqdz','2026-09-02',1,0.6908,'bless her shes doing good everywhere'),(12,'AAPL','1w4jmrs','p7apt9a','2026-09-02',1,0.5994,'Yes. AAPL made me a millionaire off just 100 shares purchased in 2008.'),(13,'AAPL','1w4jmrs','p7b2v8s','2026-09-02',1,-0.3182,'Too bad it wasnâ€™t 5000 shares ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w4zg0c','p7cof5l','2026-09-02',7,-0.3612,'Iâ€™ll say it again..never doubt apple '),(2,'AAPL','1w4zg0c','p7btdol','2026-09-02',2,0,'Apple\'s price still fluctuates quite a bit.'),(3,'AAPL','1w4zg0c','p7ehzpr','2026-09-02',2,0,'lets see if Ternus can take AAPL to ATH'),(4,'AAPL','1w4zg0c','p7esamp','2026-09-02',1,0.5859,'A by-the-book launch will probably reflect in market underwhelment. If they do have genuine surprises in store then I believe that the market will overreact with delight. '),(5,'AAPL','1w4zg0c','p7fgc6b','2026-09-02',1,0.2382,'Ternus is a good pick, but we all know the drill for the Sept 9 event and it has very little to do with long term expectations.'),(6,'AAPL','1w5cvu3','p7glp94','2026-09-02',1,0.8047,'>*The \"why\" is a decent investing lesson: markets tend to reward a smooth, well-telegraphed handover.*\n\nAnother example of the old maxim, \'The market hates uncertainty.\'\n\n>*A one-week pop tells you nothing about the next decade*\n\nNice AI-writing trope, there.\n\nBut in reality, the one-week pop probably has a lot more to do with (finally) releasing Mac Studio with M5 Ultra (for pre-order) â€” another example of rewards for certainty.\n\nNot to mention millions of investment dollars looking to diversify with the SpaceX lockup expiration.'),(7,'AAPL','1w5cvu3','p7ig3l6','2026-09-03',1,0,'With the amount Tim Cook will still be paid, itâ€™s more they are adding another CEO, not replacing one.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -363,4 +364,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-02  3:58:04
+-- Dump completed on 2026-09-03  3:55:40

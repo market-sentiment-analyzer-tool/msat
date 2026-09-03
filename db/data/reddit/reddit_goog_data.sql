@@ -68,6 +68,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+2731b236-a74b-11f1-bf79-c2e7a9fae8d0:1-77,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -109,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
-4cdaa16c-a682-11f1-95f4-caa5a68f67ab:1-75,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
@@ -229,6 +229,7 @@ bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
+bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -340,7 +341,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -349,7 +350,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1w4l34c','p78dsvz','2026-09-01',77,0,'20m? Google made that much money faster than it took you to make this post.'),(2,'stocks','1w4l34c','p79s84z','2026-09-01',8,0.3612,'It\'s like I got fined 2â‚¬'),(3,'stocks','1w4l34c','p78ghk2','2026-09-01',22,0,'Cost of doing business Europe. '),(4,'stocks','1w4l34c','p78x920','2026-09-01',13,0.4939,'Europe is so far behind American tech that their revenue model is litigation over domestic development. Many such cases'),(5,'stocks','1w4l34c','p79irc1','2026-09-01',2,0.6908,'Seznam are like okay... Can you copy Googles bug bounty scheme and payouts Seznam please. '),(6,'stocks','1w4l34c','p78eq4m','2026-09-01',-7,0,'Heureka are just leeches man'),(7,'stocks','1w4l34c','p78pa2f','2026-09-01',-8,-0.1531,'Why do the headlines keep reporting on these Europoor lawsuits as if they\'re actually gonna mean something');
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1w5b792','p7e2pz2','2026-09-02',311,0.5267,'https://preview.redd.it/25osqtewh4nh1.png?width=1309&format=png&auto=webp&s=54b68b8e124010d076d826ce215692e0e68e9e8b\n\n  \nCongrats anyway '),(2,'wallstreetbets','1w5b792','p7dxkxx','2026-09-02',123,0,'https://preview.redd.it/cl0hlp9wd4nh1.jpeg?width=890&format=pjpg&auto=webp&s=89b2346e4829226c504f46abb3518b2e7286ab0e\n\nmade with gemini'),(3,'wallstreetbets','1w5b792','p7du2o4','2026-09-02',94,0.8689,'According to Morgan Stanley, GCP alone could hit $308 billion in revenue and $132 billion in operating profit by 2028. If that happens, GOOG will likely cross $800 billion in revenue and around $300 billion in operating profit. This is a $10+ trillion company soon if MS is correct.'),(4,'wallstreetbets','1w5b792','p7drrb4','2026-09-02',46,0,'https://preview.redd.it/m7j6th3994nh1.jpeg?width=320&format=pjpg&auto=webp&s=4a9799dd31b7aba1ede36dbc636ab6e5ce27c841\n\n'),(5,'wallstreetbets','1w5b792','p7e0th0','2026-09-02',23,0.9758,'Buy buy buy buyâ™¬\n\nNever sell! Never sell! ðŸŽ¶\n\nBuy buy buy buy â™«\n\nI ainâ€™t hearing no bell ðŸ›Žï¸ '),(6,'wallstreetbets','1w5b792','p7dttik','2026-09-02',13,0.5423,'Buying GOOG for the fundamentals? Sir, this is a casino. We only buy 0DTE options on companies whose CEO wears a leather jacket or invents anime chatbots.'),(7,'wallstreetbets','1w5b792','p7dwrr9','2026-09-02',13,0.6369,'I wish I knew how to stonk like op'),(8,'wallstreetbets','1w5b792','p7dol0z','2026-09-02',55,-0.9325,'Iâ€™m bearish on GOOG short term based on how shitty Gemini is. Iâ€™ll wait for the inevitable headline of it failing against Claude and ChatGPT in some important benchmark, then Iâ€™ll consider buying back in.'),(9,'wallstreetbets','1w5b792','p7enmtr','2026-09-02',4,0,'[deleted]'),(10,'wallstreetbets','1w5b792','p7fad4y','2026-09-02',4,-0.3612,'when in doubt \n\ntime in the market beats timing the market.'),(11,'wallstreetbets','1w5b792','p7g692t','2026-09-02',3,0.2023,'OH SURE YEAH LEMME JUST SPEND 15K EVERY COUPLE OF WEEKS ON STOCKS\n\n#NO PROBLEM'),(12,'wallstreetbets','1w5b792','p7fg4qi','2026-09-02',2,0,'https://preview.redd.it/ysaqepqij5nh1.png?width=320&format=png&auto=webp&s=2e9dfe52a2b0a7bd8964023b36e39b110a6926ee\n\n'),(13,'wallstreetbets','1w5b792','p7fnf7r','2026-09-02',2,0,'Should have gotten in \'04'),(14,'wallstreetbets','1w5b792','p7erw8x','2026-09-02',4,0.7003,'lol so you made a little money and were right in 2025 and went all in after the run up and have been flat in 2026.Â \n\nShouldnâ€™t have been a puss and loaded up when your guy said to in 2025.'),(15,'wallstreetbets','1w5b792','p7eoajd','2026-09-02',1,0.4404,'You truly belong here with the rest of us'),(16,'wallstreetbets','1w5b792','p7ev6ix','2026-09-02',1,-0.3182,'boring & working'),(17,'wallstreetbets','1w5b792','p7fw1f0','2026-09-02',1,0.4215,'This is the advice I was given 2004 and I think it still holds true '),(18,'wallstreetbets','1w5b792','p7gmp1t','2026-09-02',1,0,'How are you buying that much per month? '),(19,'wallstreetbets','1w5b792','p7gugim','2026-09-02',1,0.296,'Shares or LEAP?'),(20,'wallstreetbets','1w5b792','p7fvvj6','2026-09-02',-1,0,'Why Google?');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -363,4 +364,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-02  3:58:05
+-- Dump completed on 2026-09-03  3:55:40
