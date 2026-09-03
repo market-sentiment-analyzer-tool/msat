@@ -169,6 +169,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
+78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
@@ -340,7 +341,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -349,7 +350,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sushree mohanty','...','2026-09-01',-0.26328,'Marvell Stock: The AI Growth Story Is Getting Bigger, But the Google Deal Is Still a Problem','https://www.barchart.com/story/news/4378315/marvell-stock-the-ai-growth-story-is-getting-bigger-but-the-google-deal-is-still-a-problem',20),(2,'omor ibne ehsan','The EU handed Google an ultimatum that carried a penalty tall enough to erase tens of billions in revenue, and what Google gave up to make the threat disappear may cost it more than any fine would hav...','2026-08-31',0.47142,'How Google Avoided a 10% Revenue Fine by Changing European Search Rules','https://247wallst.com/investing/2026/08/31/how-google-avoided-a-10-revenue-fine-by-changing-european-search-rules/',40),(3,'pathikrit bose','...','2026-08-31',0,'Marvell Stock Set Several New Records in Q2. What It Will Take for MRVL to Hit New Highs.','https://www.barchart.com/story/news/4359334/marvell-stock-set-several-new-records-in-q2-what-it-will-take-for-mrvl-to-hit-new-highs',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','There are few companies in the artificial intelligence (AI) space that can be considered to \"do it all.\" Some focus on making hardware, like Nvidia (NVDA +3.21%) (although it has stepped into the larg...','2026-09-01',0.8274,'Not Nvidia. Not OpenAI. This Artificial Intelligence (AI) Stock Will Be the Ultimate Winner.','https://www.fool.com/investing/2026/09/01/not-nvidia-not-openai-this-artificial-intelligence/',4),(2,'josh kohn-lindquist','Fervo Energy (FRVO -8.96%), an enhanced geothermal power developer and independent power producer, closed at $19.75, up 28.41%. Pre-market, the company said it signed a 396-megawatt power purchase agr...','2026-09-01',0.41786,'Stock Market Today, Sept. 1: Fervo Energy Surges 28% on 396-Megawatt Google Power Deal','https://www.fool.com/coverage/stock-market-today/2026/09/01/stock-market-today-sept-1-fervo-energy-surges-28-on-396-megawatt-google-power-deal/',40),(3,'null','...','2026-09-01',0.3372,'Exclusive | New Google AI Model Said to Narrow Gap on Coding Ability - WSJ','https://news.google.com/rss/articles/CBMimAFBVV95cUxPemN2WTNNcVZ4QnRJT2IzQzNqZXR4NGlhY3R4UXhvbEptNDcxcUJ5X3hrbnRkcjRaalNkQmVuN3N3MXFjQzRkN2pXSU83OThtT0xPOU81aEIxaWlxUTlZX1Y3eFpFX2IyWU5sM0I3ajF1d0pmSTBfTGFvbGpzUmxXdDZMR25hekZFbjlLQmhNenZrcV9yRmVBZA?oc=5',10),(4,'neha chamaria','Fervo Energy (FRVO -8.96%), a young company that went public only in May 2026, just signed a massive geothermal deal with Google, owned by Alphabet (GOOGL +0.63%)(GOOG +0.53%), to supply power to a da...','2026-09-01',0.81712,'Google Just Locked Up the Largest Geothermal Power Deal Ever Made.','https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/',40),(5,'barchart insights','...','2026-09-01',0.12104,'Iâ€™ve Been Taking a Beating on This AI Energy Stock. Hereâ€™s Where Iâ€™m Looking to Add More Shares â€“ and Why.','https://www.barchart.com/story/news/4382211/ive-been-taking-a-beating-on-this-ai-energy-stock-heres-where-im-looking-to-add-more-shares-and-why',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -363,4 +364,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-02  5:12:18
+-- Dump completed on 2026-09-03  5:16:21
