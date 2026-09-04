@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -341,7 +342,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +351,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','There are few companies in the artificial intelligence (AI) space that can be considered to \"do it all.\" Some focus on making hardware, like Nvidia (NVDA +3.21%) (although it has stepped into the larg...','2026-09-01',0.8274,'Not Nvidia. Not OpenAI. This Artificial Intelligence (AI) Stock Will Be the Ultimate Winner.','https://www.fool.com/investing/2026/09/01/not-nvidia-not-openai-this-artificial-intelligence/',4),(2,'josh kohn-lindquist','Fervo Energy (FRVO -8.96%), an enhanced geothermal power developer and independent power producer, closed at $19.75, up 28.41%. Pre-market, the company said it signed a 396-megawatt power purchase agr...','2026-09-01',0.41786,'Stock Market Today, Sept. 1: Fervo Energy Surges 28% on 396-Megawatt Google Power Deal','https://www.fool.com/coverage/stock-market-today/2026/09/01/stock-market-today-sept-1-fervo-energy-surges-28-on-396-megawatt-google-power-deal/',40),(3,'null','...','2026-09-01',0.3372,'Exclusive | New Google AI Model Said to Narrow Gap on Coding Ability - WSJ','https://news.google.com/rss/articles/CBMimAFBVV95cUxPemN2WTNNcVZ4QnRJT2IzQzNqZXR4NGlhY3R4UXhvbEptNDcxcUJ5X3hrbnRkcjRaalNkQmVuN3N3MXFjQzRkN2pXSU83OThtT0xPOU81aEIxaWlxUTlZX1Y3eFpFX2IyWU5sM0I3ajF1d0pmSTBfTGFvbGpzUmxXdDZMR25hekZFbjlLQmhNenZrcV9yRmVBZA?oc=5',10),(4,'neha chamaria','Fervo Energy (FRVO -8.96%), a young company that went public only in May 2026, just signed a massive geothermal deal with Google, owned by Alphabet (GOOGL +0.63%)(GOOG +0.53%), to supply power to a da...','2026-09-01',0.81712,'Google Just Locked Up the Largest Geothermal Power Deal Ever Made.','https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/',40),(5,'barchart insights','...','2026-09-01',0.12104,'Iâ€™ve Been Taking a Beating on This AI Energy Stock. Hereâ€™s Where Iâ€™m Looking to Add More Shares â€“ and Why.','https://www.barchart.com/story/news/4382211/ive-been-taking-a-beating-on-this-ai-energy-stock-heres-where-im-looking-to-add-more-shares-and-why',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Defense and artificial intelligence stock Palantir Technologies (PLTR +7.71%) soared 9.1% through 10:10 a.m. ET Thursday on no obvious good news. Rather, investors appear to be reevaluating precisely ...','2026-09-03',0.13654,'Why Palantir Stock Bounced Back Today','https://www.fool.com/investing/2026/09/03/why-palantir-stock-bounced-back-today/',4),(2,'keithen drury','The artificial intelligence (AI) build-out is providing some generational investment opportunities that investors cannot afford to miss. The returns you can earn in this time frame will be unavailable...','2026-09-03',0.91644,'A Once-in-a-Lifetime Investment Opportunity: The 3 Best Stocks to Take Advantage of the AI Build-Out','https://www.fool.com/investing/2026/09/03/a-once-in-a-lifetime-investment-opportunity-the-3/',4),(3,'sarah holzmann','...','2026-09-02',0.04128,'Broadcom Stock Trades Lower After Earnings. Hereâ€™s What Traders Need to Know.','https://www.barchart.com/story/news/4410373/broadcom-stock-trades-lower-after-earnings-heres-what-traders-need-to-know',2),(4,'josh kohn-lindquist','The Dow Jones Industrial Average (^DJI +1.18%) gained 0.56% to 53,062, the S&P 500 (^GSPC +1.06%) rose 0.47% to 7,667, and the Nasdaq Composite (^IXIC +1.40%) added 0.45% to 26,218, as the major index...','2026-09-02',0.67054,'Stock Market Today, Sept. 2: Dell Helps Stocks Edge Higher Despite Geopolitical Tensions','https://www.fool.com/coverage/stock-market-today/2026/09/02/stock-market-today-sept-2-dell-helps-stocks-edge-higher-despite-geopolitical-tensions/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -364,4 +365,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-03  5:16:21
+-- Dump completed on 2026-09-04  5:12:26

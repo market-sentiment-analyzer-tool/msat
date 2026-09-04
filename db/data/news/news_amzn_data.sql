@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -341,7 +342,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +351,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'danny vena','Shares of The Trade Desk (TTD +5.59%) charged higher on Wednesday, surging as much as 5.2%. As of 12:31 p.m. ET, the stock was still up 4.7%.\nThe catalyst that sent the digital advertising stock highe...','2026-09-02',0.1965,'Why The Trade Desk Stock Rallied Today','https://www.fool.com/investing/2026/09/02/why-the-trade-desk-stock-rallied-today/',4),(2,'vandita jadeja','AWS just posted its fastest growth in 18 quarters, Amazon is pouring $200 billion into AI infrastructure, and analysts keep lifting their targets. So what would it actually take to push AMZN from here...','2026-09-02',-0.08958,'The Bull Case for This Stock Is Getting Harder to Ignore','https://247wallst.com/investing/2026/09/02/the-bull-case-for-this-stock-is-getting-harder-to-ignore/',4),(3,'vandita jadeja','AWS just posted its fastest growth in 18 quarters while Amazon burns through billions in capex, and that tension is exactly what makes the next 12 months so pivotal for shareholders.\nRead More: Learn ...','2026-09-02',0.53708,'Amazon Stock Could Surprise Investors Over the Next 12 Months','https://247wallst.com/investing/2026/09/02/amazon-stock-could-surprise-investors-over-the-next-12-months/',40),(4,'luke lango','\n\n			SpaceX generated $2.6 billion from its AI segment last quarter â€“ and Musk says the business is about to become larger than everything else		\nSource: Mudassir | stock.adobe.com\nListen to the audio...','2026-09-02',0.19966,'Elon Musk Says AI Will Overtake Rockets at SpaceX... This Month','https://investorplace.com/hypergrowthinvesting/2026/09/elon-musk-says-ai-will-overtake-rockets-at-spacex-this-month/',4),(5,'jeff siegel','The nuclear energy boom is no longer just about promises. As the third quarter draws to a close and we look ahead to the fourth quarter of 2026, retired nuclear plants are moving toward restarts, smal...','2026-09-02',0.41834,'The Nuclear Energy Boom: Where the Industry Really Stands Heading Into Q4 2026','https://www.fool.com/investing/2026/09/02/the-nuclear-energy-boom-where-the-industry-really/',4),(6,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-02',0.45234,'Billionaire Philippe Laffont Increased Micron 19-Fold and Added 49% to Amazon. Is This One Giant AI Demand Bet?','https://www.insidermonkey.com/blog/billionaire-philippe-laffont-increased-micron-19-fold-and-added-49-to-amazon-is-this-one-giant-ai-demand-bet-1826232/',4),(7,'kim johansen','...','2026-09-02',0.45752,'Amazon.com, Inc. $AMZN Shares Sold by Securian Asset Management Inc.','https://www.themarketsdaily.com/2026/09/02/amazon-com-inc-amzn-shares-sold-by-securian-asset-management-inc.html',2),(8,'brian sozzi','...','2026-09-02',-0.32152,'Amazon stock just entered the danger zone','https://ca.finance.yahoo.com/news/amazon-stock-just-entered-the-danger-zone-104050035.html',20),(9,'yashu gola','...','2026-09-02',-0.32152,'Filecoin Price Jumps 15% as Shorts Lose $1.5M','https://www.fxempire.com/forecasts/article/filecoin-shorts-lose-1-5m-as-ai-capex-narrative-fuels-fil-rally-1621698',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david sekera; cfa','...','2026-09-03',-0.16184,'September Stock Market Outlook: How to Position Your Portfolio During a Risky Stage','https://www.morningstar.com/stocks/september-stock-market-outlook-how-position-your-portfolio-during-risky-stage',2),(2,'pamela kock','Should you invest in a cloud and retail powerhouse or a fast-growing digital gaming leader? Choosing between Amazon.com (AMZN +1.54%) and DraftKings (DKNG -0.08%) depends on your preference for stabil...','2026-09-03',0.80038,'Amazon.com vs. DraftKings: Which Consumer Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/03/amazoncom-vs-draftkings-which-consumer-stock-is-a-better-buy-in-2026/',4),(3,'brian sozzi','...','2026-09-03',0.272,'For all their talk about AI, few companies are quantifying gains','https://ca.finance.yahoo.com/news/for-all-their-talk-about-ai-few-companies-are-quantifying-gains-122132208.html',2),(4,'hanz christensen','...','2026-09-03',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by Symmetry Partners LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-acquired-by-symmetry-partners-llc/11212431.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -364,4 +365,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-03  5:16:21
+-- Dump completed on 2026-09-04  5:12:26
