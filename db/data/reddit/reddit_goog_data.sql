@@ -68,7 +68,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
-2731b236-a74b-11f1-bf79-c2e7a9fae8d0:1-77,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -170,6 +169,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
+78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
@@ -210,6 +210,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
+aa8f7d16-a814-11f1-a20d-5286e5368942:1-81,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -341,7 +342,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +351,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'wallstreetbets','1w5b792','p7e2pz2','2026-09-02',311,0.5267,'https://preview.redd.it/25osqtewh4nh1.png?width=1309&format=png&auto=webp&s=54b68b8e124010d076d826ce215692e0e68e9e8b\n\n  \nCongrats anyway '),(2,'wallstreetbets','1w5b792','p7dxkxx','2026-09-02',123,0,'https://preview.redd.it/cl0hlp9wd4nh1.jpeg?width=890&format=pjpg&auto=webp&s=89b2346e4829226c504f46abb3518b2e7286ab0e\n\nmade with gemini'),(3,'wallstreetbets','1w5b792','p7du2o4','2026-09-02',94,0.8689,'According to Morgan Stanley, GCP alone could hit $308 billion in revenue and $132 billion in operating profit by 2028. If that happens, GOOG will likely cross $800 billion in revenue and around $300 billion in operating profit. This is a $10+ trillion company soon if MS is correct.'),(4,'wallstreetbets','1w5b792','p7drrb4','2026-09-02',46,0,'https://preview.redd.it/m7j6th3994nh1.jpeg?width=320&format=pjpg&auto=webp&s=4a9799dd31b7aba1ede36dbc636ab6e5ce27c841\n\n'),(5,'wallstreetbets','1w5b792','p7e0th0','2026-09-02',23,0.9758,'Buy buy buy buyâ™¬\n\nNever sell! Never sell! ðŸŽ¶\n\nBuy buy buy buy â™«\n\nI ainâ€™t hearing no bell ðŸ›Žï¸ '),(6,'wallstreetbets','1w5b792','p7dttik','2026-09-02',13,0.5423,'Buying GOOG for the fundamentals? Sir, this is a casino. We only buy 0DTE options on companies whose CEO wears a leather jacket or invents anime chatbots.'),(7,'wallstreetbets','1w5b792','p7dwrr9','2026-09-02',13,0.6369,'I wish I knew how to stonk like op'),(8,'wallstreetbets','1w5b792','p7dol0z','2026-09-02',55,-0.9325,'Iâ€™m bearish on GOOG short term based on how shitty Gemini is. Iâ€™ll wait for the inevitable headline of it failing against Claude and ChatGPT in some important benchmark, then Iâ€™ll consider buying back in.'),(9,'wallstreetbets','1w5b792','p7enmtr','2026-09-02',4,0,'[deleted]'),(10,'wallstreetbets','1w5b792','p7fad4y','2026-09-02',4,-0.3612,'when in doubt \n\ntime in the market beats timing the market.'),(11,'wallstreetbets','1w5b792','p7g692t','2026-09-02',3,0.2023,'OH SURE YEAH LEMME JUST SPEND 15K EVERY COUPLE OF WEEKS ON STOCKS\n\n#NO PROBLEM'),(12,'wallstreetbets','1w5b792','p7fg4qi','2026-09-02',2,0,'https://preview.redd.it/ysaqepqij5nh1.png?width=320&format=png&auto=webp&s=2e9dfe52a2b0a7bd8964023b36e39b110a6926ee\n\n'),(13,'wallstreetbets','1w5b792','p7fnf7r','2026-09-02',2,0,'Should have gotten in \'04'),(14,'wallstreetbets','1w5b792','p7erw8x','2026-09-02',4,0.7003,'lol so you made a little money and were right in 2025 and went all in after the run up and have been flat in 2026.Â \n\nShouldnâ€™t have been a puss and loaded up when your guy said to in 2025.'),(15,'wallstreetbets','1w5b792','p7eoajd','2026-09-02',1,0.4404,'You truly belong here with the rest of us'),(16,'wallstreetbets','1w5b792','p7ev6ix','2026-09-02',1,-0.3182,'boring & working'),(17,'wallstreetbets','1w5b792','p7fw1f0','2026-09-02',1,0.4215,'This is the advice I was given 2004 and I think it still holds true '),(18,'wallstreetbets','1w5b792','p7gmp1t','2026-09-02',1,0,'How are you buying that much per month? '),(19,'wallstreetbets','1w5b792','p7gugim','2026-09-02',1,0.296,'Shares or LEAP?'),(20,'wallstreetbets','1w5b792','p7fvvj6','2026-09-02',-1,0,'Why Google?');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -364,4 +364,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-03  3:55:40
+-- Dump completed on 2026-09-04  3:58:24

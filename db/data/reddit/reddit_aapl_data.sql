@@ -68,7 +68,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
-2731b236-a74b-11f1-bf79-c2e7a9fae8d0:1-77,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -170,6 +169,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
+78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
@@ -210,6 +210,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
+aa8f7d16-a814-11f1-a20d-5286e5368942:1-81,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -341,7 +342,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +351,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w4zg0c','p7cof5l','2026-09-02',7,-0.3612,'Iâ€™ll say it again..never doubt apple '),(2,'AAPL','1w4zg0c','p7btdol','2026-09-02',2,0,'Apple\'s price still fluctuates quite a bit.'),(3,'AAPL','1w4zg0c','p7ehzpr','2026-09-02',2,0,'lets see if Ternus can take AAPL to ATH'),(4,'AAPL','1w4zg0c','p7esamp','2026-09-02',1,0.5859,'A by-the-book launch will probably reflect in market underwhelment. If they do have genuine surprises in store then I believe that the market will overreact with delight. '),(5,'AAPL','1w4zg0c','p7fgc6b','2026-09-02',1,0.2382,'Ternus is a good pick, but we all know the drill for the Sept 9 event and it has very little to do with long term expectations.'),(6,'AAPL','1w5cvu3','p7glp94','2026-09-02',1,0.8047,'>*The \"why\" is a decent investing lesson: markets tend to reward a smooth, well-telegraphed handover.*\n\nAnother example of the old maxim, \'The market hates uncertainty.\'\n\n>*A one-week pop tells you nothing about the next decade*\n\nNice AI-writing trope, there.\n\nBut in reality, the one-week pop probably has a lot more to do with (finally) releasing Mac Studio with M5 Ultra (for pre-order) â€” another example of rewards for certainty.\n\nNot to mention millions of investment dollars looking to diversify with the SpaceX lockup expiration.'),(7,'AAPL','1w5cvu3','p7ig3l6','2026-09-03',1,0,'With the amount Tim Cook will still be paid, itâ€™s more they are adding another CEO, not replacing one.');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1w62sxz','p7juvbm','2026-09-03',4,0.7501,'I bought the $355 leaps about a month ago when the shares were trading at $305. I got them for a really good price, and they\'re doing very well. The next catalyst could push me over a 100% gain in less than 6 weeks.\nMost of the other options in any mag 7 stock are very expensive.'),(2,'AAPL','1w62sxz','p7jttq1','2026-09-03',2,0,'AAPL is only about 6% below its allâ€‘time high. Thereâ€™s not much room left for a perfectâ€‘news rally.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -364,4 +365,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-03  3:55:40
+-- Dump completed on 2026-09-04  3:58:24
