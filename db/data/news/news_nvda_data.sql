@@ -246,6 +246,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -342,7 +343,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -351,7 +352,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'brian colello; cpa','...','2026-09-03',0.36704,'Nvidia: Hugging Face Acquisition Both a Wise Offensive Move, and Also Defensive','https://www.morningstar.com/stocks/nvidia-hugging-face-acquisition-both-wise-offensive-move-also-defensive',2),(2,'wall street breakfast','...','2026-09-03',-0.36704,'Wall Street Lunch: Ford Aims To Sell Over 100K EV Trucks In First Year','https://seekingalpha.com/article/4942815-wall-street-lunch-ford-aims-to-sell-over-100k-fathom-ev-trucks-in-first-year',4),(3,'faizan farooque','Please enable JS and disable any ad blocker...','2026-09-03',0.06364,'Nvidiaâ€™s DLSS 5 could be the breakthrough gamers never asked for','https://www.thestreet.com/investing/nvidias-dlss-5-could-be-the-breakthrough-gamers-never-asked-for',4),(4,'david sekera; cfa','...','2026-09-03',-0.16184,'September Stock Market Outlook: How to Position Your Portfolio During a Risky Stage','https://www.morningstar.com/stocks/september-stock-market-outlook-how-position-your-portfolio-during-risky-stage',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'null','...','2026-09-04',0.3372,'NVDA Stock On Track To Hit Over 2-Month High â€“ Analyst Calls $12.9B Hugging Face Deal â€˜Strategically Valuableâ€™ - Yahoo Finance','https://news.google.com/rss/articles/CBMikwFBVV95cUxOU1dvSkJMMGtxV0F1cm5ndVdiVTBCaVB3b3d6NTAyY3FEVmNVeFY0TWwwUHRLMUVyajhveGFJcW1WZTNhN1RWNVNxd0E5dTZmU2tCREExZ19ZLWVXOUxzRXVsbTRCckx1UDBDQnd0LTRGUG5YRDQyeHN6S3IyUmx3RXRsWVN3NGVBcXZEbW1ZdFNPN0k?oc=5',10),(2,'adam spatacco','Nearly three decades ago, Nvidia (NVDA +0.84%) started off as a chip designer for enhancing graphics for video games. As it turned out, these chips were also unusually good at the kind of math that tr...','2026-09-04',0.19904,'Prediction: Vera Rubin Is About to Become a $20 Billion Windfall for Nvidia by Next Quarter','https://www.fool.com/investing/2026/09/04/prediction-vera-rubin-is-about-to-become-a-20-bil/',40),(3,'the motley fool','...','2026-09-04',0,'Why Sandisk Stock Rallied Today','https://finance.yahoo.com/markets/stocks/articles/why-sandisk-stock-rallied-today-153625235.html',20),(4,'david moadel','A blowout jobs report pushed September rate hike odds past 60%, which should have hammered high-multiple chip stocks. Instead, the semiconductor complex ran straight into the headwind and left the res...','2026-09-04',0.55152,'Intel Climbs 4%, AMD Rises 3%, NVIDIA Ticks Up as Chip Stocks Shrug Off Rising Rate Hike Odds','https://247wallst.com/investing/2026/09/04/intel-climbs-4-as-chip-stocks-shrug-off-rising-rate-hike-odds-nvidia-and-amd-move-higher/',40),(5,'the motley fool','...','2026-09-04',0,'$1.3 Trillion in Projected Data Center Spending in 2027 Makes These Stocks No-Brainer Buys','https://finance.yahoo.com/technology/articles/1-3-trillion-projected-data-144000945.html',20),(6,'sarita garza','...','2026-09-04',0.60048,'NVIDIA (NASDAQ:NVDA) Stock Price Up 3.2% â€“ Still a Buy?','https://www.themarketsdaily.com/2026/09/04/nvidia-nasdaqnvda-stock-price-up-3-2-still-a-buy.html',20),(7,'ines ferrÃ©','...','2026-09-04',-0.3372,'Blowout jobs report raises worries of Fed rate hike: AlphaCheck','https://finance.yahoo.com/markets/article/blowout-jobs-report-raises-worries-of-fed-rate-hike-alphacheck-140242787.html',20),(8,'danessa lincoln','...','2026-09-04',0.43384,'NVIDIA (NASDAQ:NVDA) Given Buy Rating at Needham & Company LLC','https://www.themarketsdaily.com/2026/09/04/nvidia-nasdaqnvda-given-buy-rating-at-needham-company-llc.html',20),(9,'omor ibne ehsan','Goldman Sachs says the AI spending cycle is just getting started, but the stocks that made investors rich in the last leg may not be the ones that do it in the next one. Knowing which part of the stac...','2026-09-04',0.19976,'Goldman Sachs Says the AI Trade Is Barely Started. The Stocks That Got You Here Will Not Take You There','https://247wallst.com/investing/2026/09/04/goldman-sachs-says-the-ai-trade-is-barely-started-the-stocks-that-got-you-here-will-not-take-you-there/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -365,4 +366,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-04  5:12:27
+-- Dump completed on 2026-09-05  5:01:48

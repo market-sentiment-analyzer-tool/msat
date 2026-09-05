@@ -246,6 +246,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -342,7 +343,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -351,7 +352,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Defense and artificial intelligence stock Palantir Technologies (PLTR +7.71%) soared 9.1% through 10:10 a.m. ET Thursday on no obvious good news. Rather, investors appear to be reevaluating precisely ...','2026-09-03',0.13654,'Why Palantir Stock Bounced Back Today','https://www.fool.com/investing/2026/09/03/why-palantir-stock-bounced-back-today/',4),(2,'keithen drury','The artificial intelligence (AI) build-out is providing some generational investment opportunities that investors cannot afford to miss. The returns you can earn in this time frame will be unavailable...','2026-09-03',0.91644,'A Once-in-a-Lifetime Investment Opportunity: The 3 Best Stocks to Take Advantage of the AI Build-Out','https://www.fool.com/investing/2026/09/03/a-once-in-a-lifetime-investment-opportunity-the-3/',4),(3,'sarah holzmann','...','2026-09-02',0.04128,'Broadcom Stock Trades Lower After Earnings. Hereâ€™s What Traders Need to Know.','https://www.barchart.com/story/news/4410373/broadcom-stock-trades-lower-after-earnings-heres-what-traders-need-to-know',2),(4,'josh kohn-lindquist','The Dow Jones Industrial Average (^DJI +1.18%) gained 0.56% to 53,062, the S&P 500 (^GSPC +1.06%) rose 0.47% to 7,667, and the Nasdaq Composite (^IXIC +1.40%) added 0.45% to 26,218, as the major index...','2026-09-02',0.67054,'Stock Market Today, Sept. 2: Dell Helps Stocks Edge Higher Despite Geopolitical Tensions','https://www.fool.com/coverage/stock-market-today/2026/09/02/stock-market-today-sept-2-dell-helps-stocks-edge-higher-despite-geopolitical-tensions/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel foelber','Nvidia (NVDA +0.84%), Apple (AAPL -2.51%), and Alphabet (GOOGL -1.11%) (GOOG -1.05%) are the three most valuable companies in the world and dominate the S&P 500Â with a combined 20.4% weighting. So buy...','2026-09-04',0.19992,'Meet the Low-Cost Vanguard ETF With 26.2% Invested in Nvidia and Alphabet, While VOO Has Just 13.4%.','https://www.fool.com/investing/2026/09/04/meet-the-low-cost-vanguard-etf-with-26-invested-in/',4),(2,'moz farooque','Please enable JS and disable any ad blocker...','2026-09-04',0.2822,'Berkshire CEO explains Buffettâ€™s surprise AI stock bet','https://www.thestreet.com/investing/stocks/berkshire-buffett-alphabet-ai-bet',4),(3,'rich smith','Defense and artificial intelligence stock Palantir Technologies (PLTR -4.49%) soared 9.1% through 10:10 a.m. ET Thursday on no obvious good news. Rather, investors appear to be reevaluating precisely ...','2026-09-03',0.13654,'Why Palantir Stock Bounced Back Today','https://www.fool.com/investing/2026/09/03/why-palantir-stock-bounced-back-today/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -365,4 +366,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-04  5:12:26
+-- Dump completed on 2026-09-05  5:01:48

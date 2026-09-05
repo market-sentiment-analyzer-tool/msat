@@ -246,6 +246,7 @@ c431a193-2f0e-11f1-adc6-06212b971ab9:1-64,
 c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
+c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -351,7 +352,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'david sekera; cfa','...','2026-09-03',-0.16184,'September Stock Market Outlook: How to Position Your Portfolio During a Risky Stage','https://www.morningstar.com/stocks/september-stock-market-outlook-how-position-your-portfolio-during-risky-stage',2),(2,'pamela kock','Should you invest in a cloud and retail powerhouse or a fast-growing digital gaming leader? Choosing between Amazon.com (AMZN +1.54%) and DraftKings (DKNG -0.08%) depends on your preference for stabil...','2026-09-03',0.80038,'Amazon.com vs. DraftKings: Which Consumer Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/03/amazoncom-vs-draftkings-which-consumer-stock-is-a-better-buy-in-2026/',4),(3,'brian sozzi','...','2026-09-03',0.272,'For all their talk about AI, few companies are quantifying gains','https://ca.finance.yahoo.com/news/for-all-their-talk-about-ai-few-companies-are-quantifying-gains-122132208.html',2),(4,'hanz christensen','...','2026-09-03',0.2368,'Amazon.com, Inc. $AMZN Shares Acquired by Symmetry Partners LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-acquired-by-symmetry-partners-llc/11212431.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'marketbeat.com','...','2026-09-04',0,'Amazonâ€™s Robot Push Raises a Bigger Question About Its Next Margin Lever','https://www.investing.com/analysis/amazons-robot-push-raises-a-bigger-question-about-its-next-margin-lever-200687159',2),(2,'danessa lincoln','...','2026-09-04',0.2368,'Welch Group LLC Buys 2,206 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/09/04/welch-group-llc-buys-2206-shares-of-amazon-com-inc-amzn.html',2),(3,'trevor jennewine','Billionaire Peter Thiel, co-founder of Palantir Technologies, runs the investment company Thiel Macro. The company sold its entire portfolio in Q3 2025 and did not buy stocks again until Q2 2026, when...','2026-09-04',0.55214,'Palantir Billionaire Peter Thiel Buys an AI Stock Up 560% in 10 Years (Hint: Not Nvidia)','https://www.fool.com/investing/2026/09/04/palantir-peter-thield-buy-ai-stock-up-500-nvidia/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 4th, 2026\n\nJohnson Investment Counsel Inc. cut its holdings in shares of  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 3.6% in the 2nd quarter, according ...','2026-09-04',0.19988,'Johnson Investment Counsel Inc. Decreases Stake in Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/09/04/johnson-investment-counsel-inc-decreases-stake-in-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -365,4 +366,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-04  5:12:26
+-- Dump completed on 2026-09-05  5:01:48
