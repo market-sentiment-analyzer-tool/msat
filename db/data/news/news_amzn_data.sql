@@ -217,6 +217,7 @@ ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae800644-939d-11f1-84c0-2696fb02c49a:1-58,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
+af2a9e6a-a9b1-11f1-9c13-3ec14ff523d0:1-50,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -343,7 +344,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -352,7 +353,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'marketbeat.com','...','2026-09-04',0,'Amazonâ€™s Robot Push Raises a Bigger Question About Its Next Margin Lever','https://www.investing.com/analysis/amazons-robot-push-raises-a-bigger-question-about-its-next-margin-lever-200687159',2),(2,'danessa lincoln','...','2026-09-04',0.2368,'Welch Group LLC Buys 2,206 Shares of Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/09/04/welch-group-llc-buys-2206-shares-of-amazon-com-inc-amzn.html',2),(3,'trevor jennewine','Billionaire Peter Thiel, co-founder of Palantir Technologies, runs the investment company Thiel Macro. The company sold its entire portfolio in Q3 2025 and did not buy stocks again until Q2 2026, when...','2026-09-04',0.55214,'Palantir Billionaire Peter Thiel Buys an AI Stock Up 560% in 10 Years (Hint: Not Nvidia)','https://www.fool.com/investing/2026/09/04/palantir-peter-thield-buy-ai-stock-up-500-nvidia/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 4th, 2026\n\nJohnson Investment Counsel Inc. cut its holdings in shares of  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 3.6% in the 2nd quarter, according ...','2026-09-04',0.19988,'Johnson Investment Counsel Inc. Decreases Stake in Amazon.com, Inc. $AMZN','https://www.defenseworld.net/2026/09/04/johnson-investment-counsel-inc-decreases-stake-in-amazon-com-inc-amzn.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'abmn staff','\n					Posted by ABMN Staff on Sep 5th, 2026\n\nShares of Amazon.com, Inc. (NASDAQ:AMZN) have been assigned an average recommendation of â€œModerate Buyâ€ from the fifty-nine analysts that are  covering the...','2026-09-05',0.19984,'Amazon.com, Inc. (NASDAQ:AMZN) Receives Average Recommendation of â€œModerate Buyâ€ from Brokerages','https://www.americanbankingnews.com/2026/09/05/amazon-com-inc-nasdaqamzn-receives-average-recommendation-of-moderate-buy-from-brokerages.html',4),(2,'blue harbinger','...','2026-09-05',0.25456,'Amazon: 2 Tiny Fears, 3 Massive Growth Engines','https://seekingalpha.com/article/4943329-amazon-2-tiny-fears-3-massive-growth-engines',4),(3,'defense world staff','\n					Posted by Defense World Staff on Sep 5th, 2026\n\nEmpire Life Investments Inc. trimmed its stake in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 7.0% during the second quarter, according to it...','2026-09-05',0.4367,'Amazon.com, Inc. $AMZN Shares Sold by Empire Life Investments Inc.','https://www.defenseworld.net/2026/09/05/amazon-com-inc-amzn-shares-sold-by-empire-life-investments-inc.html',4),(4,'shane hupp','...','2026-09-05',0.2368,'Pennsylvania Capital Management Inc. ADV Sells 6,874 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13574128/pennsylvania-capital-management-inc-adv-sells-6874-shares-of-amazon-com-inc-amzn.html',2),(5,'manali pradhan','Historically, September has been a difficult month for Wall Street. The S&P 500 has fallen by an average of about 1.1% during the month from 1926 through 2024. Yet Nvidia (NVDA +0.84%) stock has gaine...','2026-09-05',0.2204,'Jensen Huang Just Sent a Signal That Could Matter More Than the September Effect','https://www.fool.com/investing/2026/09/05/jensen-huang-just-sent-a-signal-that-could-matter/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -366,4 +367,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-05  5:01:48
+-- Dump completed on 2026-09-06  5:14:18
