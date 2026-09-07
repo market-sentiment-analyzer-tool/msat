@@ -23,6 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
+05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
@@ -344,7 +345,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -353,7 +354,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'abmn staff','\n					Posted by ABMN Staff on Sep 5th, 2026\n\nShares of Amazon.com, Inc. (NASDAQ:AMZN) have been assigned an average recommendation of â€œModerate Buyâ€ from the fifty-nine analysts that are  covering the...','2026-09-05',0.19984,'Amazon.com, Inc. (NASDAQ:AMZN) Receives Average Recommendation of â€œModerate Buyâ€ from Brokerages','https://www.americanbankingnews.com/2026/09/05/amazon-com-inc-nasdaqamzn-receives-average-recommendation-of-moderate-buy-from-brokerages.html',4),(2,'blue harbinger','...','2026-09-05',0.25456,'Amazon: 2 Tiny Fears, 3 Massive Growth Engines','https://seekingalpha.com/article/4943329-amazon-2-tiny-fears-3-massive-growth-engines',4),(3,'defense world staff','\n					Posted by Defense World Staff on Sep 5th, 2026\n\nEmpire Life Investments Inc. trimmed its stake in  Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 7.0% during the second quarter, according to it...','2026-09-05',0.4367,'Amazon.com, Inc. $AMZN Shares Sold by Empire Life Investments Inc.','https://www.defenseworld.net/2026/09/05/amazon-com-inc-amzn-shares-sold-by-empire-life-investments-inc.html',4),(4,'shane hupp','...','2026-09-05',0.2368,'Pennsylvania Capital Management Inc. ADV Sells 6,874 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13574128/pennsylvania-capital-management-inc-adv-sells-6874-shares-of-amazon-com-inc-amzn.html',2),(5,'manali pradhan','Historically, September has been a difficult month for Wall Street. The S&P 500 has fallen by an average of about 1.1% during the month from 1926 through 2024. Yet Nvidia (NVDA +0.84%) stock has gaine...','2026-09-05',0.2204,'Jensen Huang Just Sent a Signal That Could Matter More Than the September Effect','https://www.fool.com/investing/2026/09/05/jensen-huang-just-sent-a-signal-that-could-matter/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'john ballard','...','2026-09-06',0.72176,'2 Superior Growth Stocks to Buy and Hold for 10 Years','https://finance.yahoo.com/markets/stocks/articles/2-superior-growth-stocks-buy-172000494.html',20),(2,'bram berkowitz','Hyperscalers driving the artificial intelligence (AI) revolution have been spending hundreds of billions annually since 2024 to build AI infrastructure.\nThis includes data centers equipped with variou...','2026-09-06',0.82736,'6 Hyperscalers Driving the AI Revolution Are Projected to Spend $1.3 Trillion on Capex in 2027. Only 1 Is Forecast to Have Positive Free Cash Flow.','https://www.fool.com/investing/2026/09/06/hyperscalers-driving-ai-capex-cash-flow/',4),(3,'ethan ryder','...','2026-09-06',0.2368,'Amazon.com, Inc. $AMZN Shares Bought by Munich Reinsurance Co Stock Corp in Munich','https://www.tickerreport.com/banking-finance/13575279/amazon-com-inc-amzn-shares-bought-by-munich-reinsurance-co-stock-corp-in-munich.html',2),(4,'paula ricardo','...','2026-09-06',0.65008,'2,390 Shares in Amazon.com, Inc. $AMZN Acquired by Noble Wealth Partners LLC','https://www.thelincolnianonline.com/2026/09/06/2390-shares-in-amazon-com-inc-amzn-acquired-by-noble-wealth-partners-llc.html',2),(5,'sarita garza','...','2026-09-06',0,'Leisure Capital Management Has $3.38 Million Holdings in Amazon.com, Inc. $AMZN','https://www.themarketsdaily.com/2026/09/06/leisure-capital-management-has-3-38-million-holdings-in-amazon-com-inc-amzn.html',2),(6,'kyle jackson','...','2026-09-06',0,'Mizuho Markets Americas LLC Has $49.05 Million Holdings in Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/mizuho-markets-americas-llc-has-49-05-million-holdings-in-amazon-com-inc-amzn/11215896.html',2),(7,'abmn staff','\n					Posted by ABMN Staff on Sep 6th, 2026\n\nEverSource Wealth Advisors LLC trimmed its holdings in shares of  Amazon.com, Inc. (NASDAQ:AMZN) by 13.3% in the second quarter, HoldingsChannel reports. T...','2026-09-06',0.72766,'EverSource Wealth Advisors LLC Sells 21,619 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/09/06/eversource-wealth-advisors-llc-sells-21619-shares-of-amazon-com-inc-amzn.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -367,4 +368,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-06  5:14:18
+-- Dump completed on 2026-09-07  5:22:33
