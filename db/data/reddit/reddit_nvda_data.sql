@@ -111,7 +111,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
-4eb1f373-a9a7-11f1-aa64-f61c55715d2d:1-85,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
@@ -169,6 +168,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
+76318420-aa70-11f1-8d58-f67d7b38d5f8:1-22,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
@@ -218,6 +218,7 @@ ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
 ae800644-939d-11f1-84c0-2696fb02c49a:1-58,
 ae837a6f-3ad8-11f1-b723-a65e77a3dd87:1-68,
 aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
+af2a9e6a-a9b1-11f1-9c13-3ec14ff523d0:1-50,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
@@ -344,7 +345,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -353,7 +354,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1w8bgao','p81i1wv','2026-09-05',3,0.5761,'Ok?\n\nAP owed to Nvidia by its customers is legally binding to be paid on the same level as unsecured senior bonds.   \n\nMore importantly, if the products are still being provided, the AP receives even higher priority because the products are deemed necessary to run the company.  \n\nSo sure, risk increased, then?'),(2,'NVDA_Stock','1w8bgao','p81lcvb','2026-09-05',3,0.9145,'>**you need them to keep buying your product to sustain your growth**, youâ€™re no longer just selling shovels.\n\ncredit means that the customer hasn\'t paid for it, so it\'s not cash in the nvidia bank, in fact with credit the company is losing money that they already spent on manufacturing the product; it\'s cash that could be spent elsewhere.\n\nmuch more importantly tho, nvidia is locking customers into nvidia standards like CUDA, which has been a huge part of their earlier successes.\n\ngoogle it and learn what nvidia is really about: \"how important was CUDA in nvidia development and market share\"'),(3,'NVDA_Stock','1w8bgao','p81dccr','2026-09-05',2,0.3382,'Stock has been doing well lately!'),(4,'NVDA_Stock','1w8bgao','p82ksyf','2026-09-06',2,-0.5106,'I worry if GOOG and META will pay their bills. '),(5,'NVDA_Stock','1w8bgao','p83catc','2026-09-06',1,0,'Will this put my 260$ call 09/11) in the money?'),(6,'Wallstreetbetsnew','1w874qx','p811kjb','2026-09-05',2,0,'Late news homieÂ '),(7,'Wallstreetbetsnew','1w874qx','p81gzpr','2026-09-05',2,-0.8176,'This reminds me of the Eminem lyrics. \"Had to give you a career to destroy it.\" Where Huggingface was virtually worthless before Nvidia to begin with. Nvidia props an unknown software platform. Gets everyone to start downloading it and feeding it their data and history. Then buys that company for 13B? The mother of all circle jerks.'),(8,'Wallstreetbetsnew','1w874qx','p82yx0e','2026-09-06',0,0.7501,'For me, they\'re not buying HF for today\'s revenue. They\'re buying a huge developer ecosystem that could become even more valuable as AI moves further into softwware and deployment');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -367,4 +367,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-06  4:02:07
+-- Dump completed on 2026-09-07  3:59:36
