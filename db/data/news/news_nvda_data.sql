@@ -196,6 +196,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
@@ -345,7 +346,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -354,7 +355,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'daniel sparks','Nvidia (NVDA +0.84%) closed Friday at $230.36, 2.6% below its 52-week high. Four of its biggest artificial intelligence (AI) chip peers ended the week nowhere near theirs. Advanced Micro Devices (AMD ...','2026-09-06',0.63348,'Nvidia Is Near Its High While Its Biggest Chip Peers Sit 18% to 32% Below Theirs. These Are the Chip Stocks to Buy.','https://www.fool.com/investing/2026/09/06/nvidia-is-near-its-high-while-its-biggest-chip-peers-sit-18-to-32-below-theirs-these-are-the-chip-stocks-to-buy/',40),(2,'rich duprey','The story may have moved, or the address was mistyped. The market, however, is still open for searching.\n\n				This post may contain links from our sponsors and affiliates, and Flywheel Publishing may ...','2026-09-06',0.35232,'Nvidiaâ€™s Profits Could Rival a Countryâ€™s GDP by 2029','https://247wallst.com/investing/2026/09/06/nvidias-profits-could-rival-a-countrys-gdp-by-2029/',4),(3,'dhierin bechai','...','2026-09-06',0.72176,'Nvidia: 70% Growth Guidance Makes This A Strong Buy','https://seekingalpha.com/article/4943417-nvidia-70-percent-growth-guidance-makes-this-a-strong-buy',4),(4,'jared blikre','...','2026-09-06',0.48992,'Why Nvidia wants Hugging Face to keep helping its rivals: Chart of the Day','https://ca.finance.yahoo.com/news/why-nvidia-wants-hugging-face-to-keep-helping-its-rivals-chart-of-the-day-132655037.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','...','2026-09-07',0.29728,'South Koreaâ€™s â€˜AI for Allâ€™ Is Great for Chipmakers, but It Will Run Into Wall of Reality','https://finance.yahoo.com/technology/ai/articles/south-korea-ai-great-chipmakers-161825561.html',20),(2,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-07',0.19846,'These 2 AI Power Stocks Jumped While the S&P 500 Fell','https://www.insidermonkey.com/blog/these-2-ai-power-stocks-jumped-while-the-sp-500-fell-1828414/',4),(3,'vandita jadeja','While investors pile into Nvidia, a quieter memory supplier has already outpaced it with gains topping 700% in a year, and analysts think the run is nowhere near finished.\n\nEveryone is fixated on NVID...','2026-09-07',0.7878,'Everyone Is Watching Nvidia. But This Memory Stock Could Be the Next AI Winner','https://247wallst.com/investing/2026/09/07/everyone-is-watching-nvidia-but-this-memory-stock-could-be-the-next-ai-winner/',4),(4,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-07',-0.15524,'Bernie Sanders Wants to Ban Superintelligence. What It Means for Microsoft and Amazon','https://www.insidermonkey.com/blog/bernie-sanders-wants-to-ban-superintelligence-what-it-means-for-microsoft-and-amazon-1828430/',4),(5,'tqp research','...','2026-09-07',0,'Nvidia: Building An AI Ecosystem','https://seekingalpha.com/article/4943546-nvidia-building-an-ai-ecosystem',4),(6,'geoff bysshe','...','2026-09-07',0,'Are The Mag 7 Looking to Lead the Market Again?','https://www.investing.com/analysis/are-the-mag-7-looking-to-lead-the-market-again-200687227',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -368,4 +369,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-07  5:22:33
+-- Dump completed on 2026-09-08  5:25:21
