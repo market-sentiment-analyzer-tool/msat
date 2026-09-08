@@ -23,6 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
+05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
@@ -168,7 +169,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
-76318420-aa70-11f1-8d58-f67d7b38d5f8:1-22,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
@@ -249,6 +249,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
+c70ae45c-ab39-11f1-98b3-fe2b14522328:1-106,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -345,7 +346,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -354,6 +355,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'wallstreetbets','1w9maz5','p8bu77l','2026-09-07',308,0.3818,'Sir, a second Dynamic Island has hit the screen'),(2,'wallstreetbets','1w9maz5','p8bfbhp','2026-09-07',154,-0.4939,'I guess thatâ€™s a lot of time wasted '),(3,'wallstreetbets','1w9maz5','p8bj4ni','2026-09-07',56,0.6249,'dude\'s been CEO of Pineapple for like a day he\'s already being mocked lmao\n\nedit: typo'),(4,'wallstreetbets','1w9maz5','p8bhbkb','2026-09-07',114,0,'Some will say this is ai'),(5,'wallstreetbets','1w9maz5','p8bfuu8','2026-09-07',38,0,'Your puts are cooked bro'),(6,'wallstreetbets','1w9maz5','p8bk384','2026-09-07',48,0.901,'I loved phones that let me pretend to be Captain Kirk every time I open them. Â And with todayâ€™s voice & agent support, you could straight role play it. Â And with that screen a Star Trek style LCARS interface would be possible too!\n\nI have no need for this overpriced phone, but Iâ€™m 100% getting one, and am already setting up a web site to manage the interface. Â â€œ*Computer, how are my stocks doingâ€¦ poorly? Thanks.*â€ itâ€™s gonna be like living in the *future*.'),(7,'wallstreetbets','1w9maz5','p8c92yy','2026-09-07',12,-0.5423,'Buy the rumor, sell the leaked screenshot, lose money on the news. The official Apple event pipeline.'),(8,'wallstreetbets','1w9maz5','p8bgcuy','2026-09-07',10,0,'I just *flipped* out!'),(9,'wallstreetbets','1w9maz5','p8d6ulm','2026-09-07',8,0,'Introducing the Iphone Nintendo DS'),(10,'wallstreetbets','1w9maz5','p8bh5wh','2026-09-07',7,0,'Donâ€™t even know where to pigging with'),(11,'wallstreetbets','1w9maz5','p8ct60u','2026-09-07',7,0.2263,'I thought this said Wendyâ€™s Apple event ðŸ˜”ðŸ˜”ðŸ˜”'),(12,'wallstreetbets','1w9maz5','p8cu79e','2026-09-07',6,-0.4019,'APPLE normally dumps after the new products call'),(13,'wallstreetbets','1w9maz5','p8bmdx0','2026-09-07',4,0,'Possibilities that it doesnâ€™t moon?'),(14,'wallstreetbets','1w9maz5','p8c1ip9','2026-09-07',7,0,'So flip screen is the new thing for Apple this year? '),(15,'wallstreetbets','1w9maz5','p8blw6y','2026-09-07',3,0,'John Apple is gonna take me to get chicken nuggets.'),(16,'wallstreetbets','1w9maz5','p8ciwha','2026-09-07',3,0,'Flashbacks to John Pork memes '),(17,'wallstreetbets','1w9maz5','p8bgyvf','2026-09-07',1,0,'John Apple'),(18,'wallstreetbets','1w9maz5','p8c4731','2026-09-07',1,0,'Oink oink '),(19,'wallstreetbets','1w9maz5','p8cm6h2','2026-09-07',1,-0.3084,'So do i slide or tap the top green icon? AI pls tell me i\'m unable to figure it out!'),(20,'wallstreetbets','1w9maz5','p8dh4pt','2026-09-07',1,-0.802,'That shit is gonna flop. No one wants a crease in their screen. '),(21,'wallstreetbets','1w9maz5','p8dmvmc','2026-09-07',1,-0.4019,'Apple usually dumps when they release a new device... then it pumps'),(22,'wallstreetbets','1w9maz5','p8erkjf','2026-09-07',1,0,'\'I am gay\' \n\n\\-Tim Apple'),(23,'wallstreetbets','1w9maz5','p8etejh','2026-09-07',1,-0.6669,'This shit is gonna get sold so hard  \n\n\nhttps://preview.redd.it/4yqrhop6h5oh1.jpeg?width=1080&format=pjpg&auto=webp&s=9104632d4246a59ef22184d085b950c675bc165c'),(24,'wallstreetbets','1w9maz5','p8ey86u','2026-09-07',1,0,'Now that 5th gen folding phones are out there, time for Apple to introduce a $2,500 folding phone.'),(25,'wallstreetbets','1w9maz5','p8g2jqx','2026-09-07',1,0.4215,'I just want another mini option. Iâ€™m still on like 12 or something and my battery lasts fourteen minutes. '),(26,'wallstreetbets','1w9maz5','p8g6kit','2026-09-07',1,-0.5267,'Wonder what they will call the massive issue with the stupid bendy screen. \n\nScreengate? '),(27,'wallstreetbets','1w9maz5','p8g6x9p','2026-09-07',1,0,'Puts anyone?'),(28,'wallstreetbets','1w9maz5','p8g7sxf','2026-09-07',1,-0.25,'Crap, I have calls and didn\'t even know this event is happening this Wed. Hopefully a bump before so I don\'t need to take any risk. '),(29,'wallstreetbets','1w9maz5','p8gmfjb','2026-09-08',1,-0.2732,'Will shatter on itâ€™s first drop '),(30,'wallstreetbets','1w9maz5','p8c0zev','2026-09-07',1,0,'Johnny Newspaper Seed'),(31,'wallstreetbets','1w9maz5','p8bh4nd','2026-09-07',-1,0.4926,'I even included the plastic screen ripple! Letâ€™s hope that doesnâ€™t exist on the real productÂ '),(32,'wallstreetbets','1w9maz5','p8bfyqm','2026-09-07',0,0.8468,'I picked up and he said that the Big Yahu, has chosen me, the good goy, to serve in the IDF. I feel so flattered '),(33,'wallstreetbets','1w9maz5','p8bxn53','2026-09-07',-1,-0.296,'you know there are talks that no any info confirms iphone fold');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -367,4 +369,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-07  3:59:35
+-- Dump completed on 2026-09-08  4:04:39
