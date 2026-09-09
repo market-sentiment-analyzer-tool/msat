@@ -65,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
@@ -346,7 +347,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -355,7 +356,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'eric sprague','    Nicolae Popescu/iStock via Getty Images\n \nNicolae Popescu/iStock via Getty Images\nPer my May article, Alphabet (GOOG) (GOOGL) is benefiting as AI-generated code increases. We now have the 2Q26 fil...','2026-09-07',-0.01234,'Alphabet Balances Strengths And Weaknesses','https://seekingalpha.com/article/4943514-google-balances-strengths-and-weaknesses',8),(2,'trevor jennewine','Billionaire Bill Ackman runs Pershing Square, one of the 20 most successful hedge funds in the world as measured by net gains since inception, according to LCH Investments. That makes him a good sourc...','2026-09-07',-0.16716,'Billionaire Bill Ackman Sells Alphabet Stock and Buys a Mega-Cap Stock Down 42% From Its High','https://www.fool.com/investing/2026/09/07/bill-ackman-sell-alphabet-stock-buy-mega-cap-stock/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'hannah pedone','Please enable JS and disable any ad blocker...','2026-09-08',0.56356,'Oracleâ€™s stock gets a boost as the OpenAI ecosystem comes back into favor','https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories',4),(2,'eric sprague','...','2026-09-07',0.04128,'Alphabet Balances Strengths And Weaknesses','https://seekingalpha.com/article/4943514-google-balances-strengths-and-weaknesses',4),(3,'trevor jennewine','Billionaire Bill Ackman runs Pershing Square, one of the 20 most successful hedge funds in the world as measured by net gains since inception, according to LCH Investments. That makes him a good sourc...','2026-09-07',-0.16716,'Billionaire Bill Ackman Sells Alphabet Stock and Buys a Mega-Cap Stock Down 42% From Its High','https://www.fool.com/investing/2026/09/07/bill-ackman-sell-alphabet-stock-buy-mega-cap-stock/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -369,4 +370,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-08  5:25:20
+-- Dump completed on 2026-09-09  5:28:21

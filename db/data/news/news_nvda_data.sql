@@ -65,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
@@ -346,7 +347,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -355,7 +356,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rich duprey','...','2026-09-07',0.29728,'South Koreaâ€™s â€˜AI for Allâ€™ Is Great for Chipmakers, but It Will Run Into Wall of Reality','https://finance.yahoo.com/technology/ai/articles/south-korea-ai-great-chipmakers-161825561.html',20),(2,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-07',0.19846,'These 2 AI Power Stocks Jumped While the S&P 500 Fell','https://www.insidermonkey.com/blog/these-2-ai-power-stocks-jumped-while-the-sp-500-fell-1828414/',4),(3,'vandita jadeja','While investors pile into Nvidia, a quieter memory supplier has already outpaced it with gains topping 700% in a year, and analysts think the run is nowhere near finished.\n\nEveryone is fixated on NVID...','2026-09-07',0.7878,'Everyone Is Watching Nvidia. But This Memory Stock Could Be the Next AI Winner','https://247wallst.com/investing/2026/09/07/everyone-is-watching-nvidia-but-this-memory-stock-could-be-the-next-ai-winner/',4),(4,'habib ur rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-07',-0.15524,'Bernie Sanders Wants to Ban Superintelligence. What It Means for Microsoft and Amazon','https://www.insidermonkey.com/blog/bernie-sanders-wants-to-ban-superintelligence-what-it-means-for-microsoft-and-amazon-1828430/',4),(5,'tqp research','...','2026-09-07',0,'Nvidia: Building An AI Ecosystem','https://seekingalpha.com/article/4943546-nvidia-building-an-ai-ecosystem',4),(6,'geoff bysshe','...','2026-09-07',0,'Are The Mag 7 Looking to Lead the Market Again?','https://www.investing.com/analysis/are-the-mag-7-looking-to-lead-the-market-again-200687227',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'business wire','\nWESTLAKE, Texas--(BUSINESS WIRE)--Sep 8, 2026--\nThe Schwab Trading Activity Indexâ„¢ (STAX) decreased to 57.50 in August, down from its score of 59.80 in July. The only index of its kind, the STAX is a...','2026-09-08',0.19966,'Schwab Trading Activity IndexTM: STAX Score Dips in August','https://www.postregister.com/businessreport/technology/schwab-trading-activity-index-stax-score-dips-in-august/article_8cb7967b-826b-53df-b006-f35bfa84fc85.html',4),(2,'vandita jadeja','Nvidia just posted the largest quarter in semiconductor history, yet the stock trades like Wall Street is only half-convinced. A credible case exists for 160% gains by 2030, but it hinges on three spe...','2026-09-08',0.38098,'Price Prediction: Nvidia Stock Could Be Worth This Much by 2030','https://247wallst.com/investing/2026/09/08/price-prediction-nvidia-stock-could-be-worth-this-much-by-2030/',40),(3,'vinay utham','...','2026-09-08',0.272,'Nvidia: Unusual Visibility, Unusual Value','https://seekingalpha.com/article/4943884-nvidia-unusual-visibility-unusual-value',4),(4,'cavenagh research','...','2026-09-08',0.50952,'Nvidia: Stop The Bubble Talk - This Is An Attractive Buy','https://seekingalpha.com/article/4943853-nvidia-stop-the-bubble-talk-this-is-an-attractive-buy',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -369,4 +370,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-08  5:25:21
+-- Dump completed on 2026-09-09  5:28:22
