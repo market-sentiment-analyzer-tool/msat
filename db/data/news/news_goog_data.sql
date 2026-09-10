@@ -274,6 +274,7 @@ d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
@@ -347,7 +348,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -356,7 +357,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'hannah pedone','Please enable JS and disable any ad blocker...','2026-09-08',0.56356,'Oracleâ€™s stock gets a boost as the OpenAI ecosystem comes back into favor','https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories',4),(2,'eric sprague','...','2026-09-07',0.04128,'Alphabet Balances Strengths And Weaknesses','https://seekingalpha.com/article/4943514-google-balances-strengths-and-weaknesses',4),(3,'trevor jennewine','Billionaire Bill Ackman runs Pershing Square, one of the 20 most successful hedge funds in the world as measured by net gains since inception, according to LCH Investments. That makes him a good sourc...','2026-09-07',-0.16716,'Billionaire Bill Ackman Sells Alphabet Stock and Buys a Mega-Cap Stock Down 42% From Its High','https://www.fool.com/investing/2026/09/07/bill-ackman-sell-alphabet-stock-buy-mega-cap-stock/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sean williams','For the first time in well over half a century, the trillion-dollar conglomerate built by Warren Buffett, Berkshire Hathaway (BRKA +0.18%)(BRKB +0.18%), entered the year in uncharted territory. The Or...','2026-09-09',0.77406,'Warren Buffett and His Successor, Greg Abel, Have Piled More Than $82 Billion Into This Perennial Winner (No, Not Alphabet!)','https://www.fool.com/investing/2026/09/09/warren-buffett-and-his-successor-greg-abel-piled-82-billion-into-perennial-winner-not-alphabet/',4),(2,'hannah pedone','Please enable JS and disable any ad blocker...','2026-09-08',0.56356,'Oracleâ€™s stock gets a boost as the OpenAI ecosystem comes back into favor','https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -370,4 +371,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-09  5:28:21
+-- Dump completed on 2026-09-10  5:25:05

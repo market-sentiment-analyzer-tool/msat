@@ -274,6 +274,7 @@ d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
@@ -347,7 +348,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -356,7 +357,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'business wire','\nWESTLAKE, Texas--(BUSINESS WIRE)--Sep 8, 2026--\nThe Schwab Trading Activity Indexâ„¢ (STAX) decreased to 57.50 in August, down from its score of 59.80 in July. The only index of its kind, the STAX is a...','2026-09-08',0.19966,'Schwab Trading Activity IndexTM: STAX Score Dips in August','https://www.postregister.com/businessreport/technology/schwab-trading-activity-index-stax-score-dips-in-august/article_8cb7967b-826b-53df-b006-f35bfa84fc85.html',4),(2,'vandita jadeja','Nvidia just posted the largest quarter in semiconductor history, yet the stock trades like Wall Street is only half-convinced. A credible case exists for 160% gains by 2030, but it hinges on three spe...','2026-09-08',0.38098,'Price Prediction: Nvidia Stock Could Be Worth This Much by 2030','https://247wallst.com/investing/2026/09/08/price-prediction-nvidia-stock-could-be-worth-this-much-by-2030/',40),(3,'vinay utham','...','2026-09-08',0.272,'Nvidia: Unusual Visibility, Unusual Value','https://seekingalpha.com/article/4943884-nvidia-unusual-visibility-unusual-value',4),(4,'cavenagh research','...','2026-09-08',0.50952,'Nvidia: Stop The Bubble Talk - This Is An Attractive Buy','https://seekingalpha.com/article/4943853-nvidia-stop-the-bubble-talk-this-is-an-attractive-buy',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'thornton mcenery','...','2026-09-09',-0.36704,'Defiance Politely Asks the SEC to Let It Sell An ETF 8-Ball','https://finance.yahoo.com/markets/options/articles/defiance-politely-asks-sec-let-170504737.html',20),(2,'omor ibne ehsan','A veteran of Google and Microsoft engineering just called out the AI industry for celebrating a definition of human-level intelligence that most humans would never recognize, and the financial stakes ...','2026-09-09',0.19948,'Google and Microsoft Vet Says AGI Hype â€˜Leaves Most of Humanity Outâ€™','https://247wallst.com/investing/2026/09/09/google-and-microsoft-vet-says-agi-hype-leaves-most-of-humanity-out/',4),(3,'vandita jadeja','Marvell has already handed investors a 242% gain over the past year, yet Wall Street analysts are piling on fresh buy ratings ahead of an October catalyst that could define the next leg of the trade.\n...','2026-09-09',0.19962,'Could Marvell Be the Next AI Stock to Deliver 100% Upside?','https://247wallst.com/investing/2026/09/09/could-marvell-be-the-next-ai-stock-to-deliver-100-upside/',4),(4,'chris ciaccia','...','2026-09-09',0.21856,'Nvidia gap with other chip stocks could narrow amid increased cash return: Melius','https://seekingalpha.com/news/4641278-nvidia-gap-with-other-chip-stocks-could-narrow-amid-increased-cash-return-melius?feed_item_type=news',40),(5,'zachary evens','...','2026-09-09',0.56024,'3 Great ETFs That Hold SpaceX','https://www.morningstar.com/funds/3-great-etfs-that-hold-spacex-2',2),(6,'paula ricardo','...','2026-09-09',0,'Research Analystsâ€™ Weekly Ratings Updates for NVIDIA (NVDA)','https://www.thelincolnianonline.com/2026/09/09/research-analysts-weekly-ratings-updates-for-nvidia-nvda.html',20),(7,'vandita jadeja','NVIDIA has minted fortunes once before, and its latest earnings suggest the AI hardware machine is still accelerating. But ballooning supply commitments, margin pressure, and a China-shaped hole in it...','2026-09-09',0.19988,'Prediction: NVIDIA Stock Has Returned 14,700% in 10 Years. Can It Do It Again?','https://247wallst.com/investing/2026/09/09/prediction-nvidia-stock-has-returned-14700-in-10-years-can-it-do-it-again/',40),(8,'konstantinos kosmidis','...','2026-09-09',0.21856,'Nvidia: Stronger Demand Visibility, Same Suppressed Multiple','https://seekingalpha.com/article/4944295-nvidia-stronger-demand-visibility-same-suppressed-multiple',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -370,4 +371,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-09  5:28:22
+-- Dump completed on 2026-09-10  5:25:05
