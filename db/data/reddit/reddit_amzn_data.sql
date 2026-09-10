@@ -65,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
@@ -250,6 +251,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
+c7da773f-accc-11f1-a1b2-bad161928772:1-106,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -282,7 +284,6 @@ df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
-e34ec24e-ac03-11f1-916c-c27d3ef516cb:1-124,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
@@ -347,7 +348,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -356,7 +357,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'wallstreetbets','1wanxdl','p8jgsvf','2026-09-08',132,0.5423,'+10% in premarket, people will buy at open and become long term investors'),(2,'wallstreetbets','1wanxdl','p8jkjtu','2026-09-08',67,0.1779,'Multi generational as in your grandkids will still be holding the bags?'),(3,'wallstreetbets','1wanxdl','p8jh8gp','2026-09-08',83,0,'https://preview.redd.it/tt36qx7kqaoh1.jpeg?width=1080&format=pjpg&auto=webp&s=e4c6a3d5a6b2469be4de631fe993121bb336e06a'),(4,'wallstreetbets','1wanxdl','p8jha6s','2026-09-08',27,0.1531,'As a Qualcomm holder Iâ€™m up 25% now, I donâ€™t know whether to sell or hold bags.'),(5,'wallstreetbets','1wanxdl','p8jidtp','2026-09-08',11,0.6369,'Best semi name not named NVDA\n\nIYKYK'),(6,'wallstreetbets','1wanxdl','p8jgcbr','2026-09-08',9,0,'What about this generation?'),(7,'wallstreetbets','1wanxdl','p8jj9q7','2026-09-08',7,0.4019,'Ahh yes more AI datacenters is exactly what we need'),(8,'wallstreetbets','1wanxdl','p8jlxxe','2026-09-08',6,0,'*insert Circular financing picture*'),(9,'wallstreetbets','1wanxdl','p8jjm70','2026-09-08',4,0.5423,'People who fomo buy a stock purely on random \"partnership\" or \"collaboration\" headlines are something else. '),(10,'wallstreetbets','1wanxdl','p8jg7n0','2026-09-08',4,0,'Old news..I\'m on the next next next already '),(11,'wallstreetbets','1wanxdl','p8jh6eq','2026-09-08',2,0.3612,'AI DC stocks pump again. like who would have expected at this point... '),(12,'wallstreetbets','1wanxdl','p8jgjtv','2026-09-08',2,0.5423,'Are my Amazon calls saved?'),(13,'wallstreetbets','1wanxdl','p8jxel0','2026-09-08',1,-0.647,'Why this stock never goes up straight? So many announcements but it moves slow and comes back fast.'),(14,'wallstreetbets','1wanxdl','p8kg7c8','2026-09-08',1,0.9313,'$18 EPS guided at est 30 PE (low) = $540 per share pre AWS announcementÂ \nNow it is going to be $1000 per shareÂ \nBuy Buy Buy in my opinion 2 yearsÂ '),(15,'wallstreetbets','1wanxdl','p8l2jgs','2026-09-08',1,0.807,'Amazon needing Qualcomm means Qualcomm really has something to be needed in data centers. Amazon has very strong data center chip/ connect ability already. ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -370,4 +370,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-09  4:08:53
+-- Dump completed on 2026-09-10  4:06:09

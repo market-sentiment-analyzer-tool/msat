@@ -65,6 +65,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
@@ -250,6 +251,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
+c7da773f-accc-11f1-a1b2-bad161928772:1-106,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -282,7 +284,6 @@ df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
-e34ec24e-ac03-11f1-916c-c27d3ef516cb:1-124,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
 e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
@@ -347,7 +348,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -356,6 +357,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1wbi32u','p8pz2wu','2026-09-09',1,0.6682,'Welcome to r/stocks!\n\nFor stock recommendations please see our portfolio sticky, sort by hot, it\'s the first sticky, or see [past portfolio stickies here.](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3A%22Rate+My+Portfolio%22&restrict_sr=on&sort=new&t=all)\n\nFor beginner advice, brokerage info, book recommendations, even advanced topics and more, please read our [Wiki here.](https://www.reddit.com/r/stocks/wiki/index)\n\nIf you\'re wondering **why a stock moved** a certain way, check out [Finviz](https://finviz.com/quote.ashx?t=spy) which aggregates the most news for almost every stock, but also see [Reuters](https://www.reuters.com/), and even [Yahoo Finance](https://finance.yahoo.com/).\n\nAlso include *some* [due diligence](https://www.investopedia.com/terms/d/duediligence.asp) to this post or it may be removed if it\'s low effort.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/stocks) if you have any questions or concerns.*'),(2,'stocks','1wbi32u','p8q2adg','2026-09-09',90,0.4939,'Many Finnish construction companies are rallying double digits ðŸ¤£\n\n\nhttps://www.inderes.fi/en/markets?market=FINLAND'),(3,'stocks','1wbi32u','p8q64pm','2026-09-09',37,0,'AI capex is basically becoming a giant power grid trade at this point lol'),(4,'stocks','1wbi32u','p8q0sjp','2026-09-09',112,0.9039,'These corporations are taking over the world is crazy. \n\nSaying that this is a really smart move from GOOG and it shows were they want to expand, basically north of European Nordic countries where you have a good and stable governments, good engineers base that will be willing to relocate to the area, with fresh water nearby for cooling and the most important 7 months per year of 0 degrees Celsius and negative temperatures where will save you billions in cooling and energy during the decades.'),(5,'stocks','1wbi32u','p8q31qk','2026-09-09',11,0.5106,'Bullish for Nokia, I guess'),(6,'stocks','1wbi32u','p8q286d','2026-09-09',17,0,'Rip my power bill'),(7,'stocks','1wbi32u','p8qff2j','2026-09-09',14,0.4404,'I truly believe that the AI bubble is a myth at this point. '),(8,'stocks','1wbi32u','p8qkvw6','2026-09-09',3,0,'Won\'t stay 0C for long if they keep polluting there.'),(9,'stocks','1wbi32u','p8t2j8t','2026-09-09',3,0.4939,'I hope they get taxed like every other company in europe too. We need to stop the irish loophole.'),(10,'stocks','1wbi32u','p8q88e1','2026-09-09',6,0.5106,'Bullish on water & electricity bills'),(11,'stocks','1wbi32u','p8qfbkv','2026-09-09',2,-0.3612,'Leave the â‚¬13B headline alone for a second. The 22-year Fortum deal is what I keep coming back to, because the project only makes sense if those data centers stay near full utilization past the initial depreciation. Do you read locked-in Nordic power as cheap opex, or as a fixed cost that has to be covered for 20 years?'),(12,'stocks','1wbi32u','p8ug93k','2026-09-09',1,0.6124,'Well better than the moon'),(13,'stocks','1wbi32u','p8q7wb3','2026-09-09',0,0.1531,'14B is like walking around money that the CEO probably cobbled together from loose change in the couch in the executive lounge.'),(14,'stocks','1wbi32u','p8qfc62','2026-09-09',-1,0,'All of a sudden the Greenland takeover makes sense. Wild. '),(15,'stocks','1wbi32u','p8qqu2i','2026-09-09',-6,-0.5574,'Destroying Finland I see'),(16,'stocks','1wbi32u','p8q2ljo','2026-09-09',-25,0,'[deleted]');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -369,4 +371,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-09  4:08:53
+-- Dump completed on 2026-09-10  4:06:09
