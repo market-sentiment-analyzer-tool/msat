@@ -200,6 +200,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+93c77c5f-ad95-11f1-97e7-de2ac96690de:1-52,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
@@ -251,7 +252,6 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
-c7da773f-accc-11f1-a1b2-bad161928772:1-106,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -275,6 +275,7 @@ d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
+dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
@@ -348,7 +349,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -357,6 +358,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wcxvdt','p91pwfl','2026-09-10',8,0,'To the moon!'),(2,'NVDA_Stock','1wcxvdt','p91yqbk','2026-09-10',2,-0.4939,'Exponential financials vs. \'circular\':\n\n* On concerns about circular finance, Jensen rejected the idea that NVIDIAâ€™s $500 billion platform commitment is circular, saying, â€œWe **put in one and 100 comes back in**.â€'),(3,'NVDA_Stock','1wcxvdt','p9200th','2026-09-10',2,0,'So is the 3-4T prediction correct? I think it should be much higher right? '),(4,'NVDA_Stock','1wccdwf','p8xv5xn','2026-09-10',2,0,'NVDA ecosystem to the moon late \'26.'),(5,'NVDA_Stock','1wcl5tj','p8zejsu','2026-09-10',9,-0.5267,'Calling BS.   The story claims DOJ was investigating since December.   If your company is being investigated that\'s a material issue requiring disclosure to shareholders.   The idea this is being exposed by investigative reporting 10 months later doesn\'t smell right.   Maybe they spelled NYPost wrong.'),(6,'NVDA_Stock','1wcl5tj','p8yyrtu','2026-09-10',4,0.1779,'If i had a dollar for all the anti monopoly inquiries over the last 20 years, I wouldnt have needed to invest in NVDA. Nothingburger'),(7,'NVDA_Stock','1wcl5tj','p8z262s','2026-09-10',3,-0.5859,'that deal is in the past wtf.. theyve got product based upon that acquisition '),(8,'NVDA_Stock','1wcl5tj','p8z1lvc','2026-09-10',3,0,'is nvda first and only one doing this?'),(9,'NVDA_Stock','1wcl5tj','p8yy7rg','2026-09-10',2,0.5106,'Love those paywall blocks - this is a clickbait non-story - DOJ reviews all similar deals.'),(10,'NVDA_Stock','1wcl5tj','p91flkb','2026-09-10',2,0,'nothingburger'),(11,'NVDA_Stock','1wcl5tj','p90ztjw','2026-09-10',1,0.4588,'Liquidity event before next leg honestly. ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -370,4 +372,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-10  4:06:09
+-- Dump completed on 2026-09-11  4:03:24
