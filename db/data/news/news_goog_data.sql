@@ -260,6 +260,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
+d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -348,7 +349,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -357,7 +358,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'sean williams','For the first time in well over half a century, the trillion-dollar conglomerate built by Warren Buffett, Berkshire Hathaway (BRKA +0.18%)(BRKB +0.18%), entered the year in uncharted territory. The Or...','2026-09-09',0.77406,'Warren Buffett and His Successor, Greg Abel, Have Piled More Than $82 Billion Into This Perennial Winner (No, Not Alphabet!)','https://www.fool.com/investing/2026/09/09/warren-buffett-and-his-successor-greg-abel-piled-82-billion-into-perennial-winner-not-alphabet/',4),(2,'hannah pedone','Please enable JS and disable any ad blocker...','2026-09-08',0.56356,'Oracleâ€™s stock gets a boost as the OpenAI ecosystem comes back into favor','https://www.marketwatch.com/story/oracles-stock-gets-a-boost-as-the-openai-ecosystem-comes-back-into-favor-f53c8024?mod=mw_rss_topstories',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'logan wallace','...','2026-09-10',0,'Alphabet Inc. (NASDAQ:GOOG) Receives Consensus Recommendation of â€œBuyâ€ from Brokerages','https://www.tickerreport.com/banking-finance/13579523/alphabet-inc-nasdaqgoog-receives-consensus-recommendation-of-buy-from-brokerages.html',2),(2,'donald scott','...','2026-09-10',0.28896,'Readystate Asset Management LP Takes $45.35 Million Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/09/10/readystate-asset-management-lp-takes-45-35-million-position-in-alphabet-inc-goog.html',2),(3,'adam levy','Nvidia (NVDA -2.27%) and Broadcom (AVGO -0.97%) reported very positive results in their most recent earnings statements. Not only are they seeing very strong demand for their artificial intelligence (...','2026-09-10',0.19994,'Not Nvidia. Not Broadcom. But This Semiconductor Stock Is Set to Grow Faster Than Any Other Major AI Chipmaker Through the End of the Decade.','https://www.fool.com/investing/2026/09/10/not-nvidia-not-broadcom-but-this-semiconductor-sto/',4),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 10th, 2026\n\nCrow s Nest Holdings LP trimmed its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 34.2% during the second quarter, according to the c...','2026-09-10',0.19988,'Crow s Nest Holdings LP Has $29.86 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/09/10/crow-s-nest-holdings-lp-has-29-86-million-stock-position-in-alphabet-inc-goog.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Sep 10th, 2026\n\nCrow s Nest Holdings LP trimmed its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 34.2% in the second quarter, Holdings Channel.com rep...','2026-09-10',0.43664,'Alphabet Inc. $GOOG Shares Sold by Crow s Nest Holdings LP','https://www.americanbankingnews.com/2026/09/10/alphabet-inc-goog-shares-sold-by-crow-s-nest-holdings-lp.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Sep 10th, 2026\n\nEndeavor Private Wealth Inc. increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 35.8% in the 2nd quarter, according to its most...','2026-09-10',0.595,'Endeavor Private Wealth Inc. Has $2.86 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/09/10/endeavor-private-wealth-inc-has-2-86-million-position-in-alphabet-inc-goog.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Sep 10th, 2026\n\nHB Wealth Management LLC lifted its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.5% in the 2nd quarter, according to its...','2026-09-10',0.59502,'HB Wealth Management LLC Has $126.52 Million Stake in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/09/10/hb-wealth-management-llc-has-126-52-million-stake-in-alphabet-inc-goog.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Sep 10th, 2026\n\nEndeavor Private Wealth Inc. increased its holdings in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 35.8% in the second quarter, according to t...','2026-09-10',0.72768,'Endeavor Private Wealth Inc. Acquires 2,134 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/09/10/endeavor-private-wealth-inc-acquires-2134-shares-of-alphabet-inc-goog.html',4),(9,'abmn staff','\n					Posted by ABMN Staff on Sep 10th, 2026\n\nHB Wealth Management LLC grew its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 3.5% during the second quarter, according to the company in its m...','2026-09-10',0.72764,'HB Wealth Management LLC Buys 12,007 Shares of Alphabet Inc. $GOOG','https://www.americanbankingnews.com/2026/09/10/hb-wealth-management-llc-buys-12007-shares-of-alphabet-inc-goog.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -371,4 +372,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-10  5:25:05
+-- Dump completed on 2026-09-11  5:23:50

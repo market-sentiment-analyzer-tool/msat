@@ -260,6 +260,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
+d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -348,7 +349,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -357,7 +358,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'thornton mcenery','...','2026-09-09',-0.36704,'Defiance Politely Asks the SEC to Let It Sell An ETF 8-Ball','https://finance.yahoo.com/markets/options/articles/defiance-politely-asks-sec-let-170504737.html',20),(2,'omor ibne ehsan','A veteran of Google and Microsoft engineering just called out the AI industry for celebrating a definition of human-level intelligence that most humans would never recognize, and the financial stakes ...','2026-09-09',0.19948,'Google and Microsoft Vet Says AGI Hype â€˜Leaves Most of Humanity Outâ€™','https://247wallst.com/investing/2026/09/09/google-and-microsoft-vet-says-agi-hype-leaves-most-of-humanity-out/',4),(3,'vandita jadeja','Marvell has already handed investors a 242% gain over the past year, yet Wall Street analysts are piling on fresh buy ratings ahead of an October catalyst that could define the next leg of the trade.\n...','2026-09-09',0.19962,'Could Marvell Be the Next AI Stock to Deliver 100% Upside?','https://247wallst.com/investing/2026/09/09/could-marvell-be-the-next-ai-stock-to-deliver-100-upside/',4),(4,'chris ciaccia','...','2026-09-09',0.21856,'Nvidia gap with other chip stocks could narrow amid increased cash return: Melius','https://seekingalpha.com/news/4641278-nvidia-gap-with-other-chip-stocks-could-narrow-amid-increased-cash-return-melius?feed_item_type=news',40),(5,'zachary evens','...','2026-09-09',0.56024,'3 Great ETFs That Hold SpaceX','https://www.morningstar.com/funds/3-great-etfs-that-hold-spacex-2',2),(6,'paula ricardo','...','2026-09-09',0,'Research Analystsâ€™ Weekly Ratings Updates for NVIDIA (NVDA)','https://www.thelincolnianonline.com/2026/09/09/research-analysts-weekly-ratings-updates-for-nvidia-nvda.html',20),(7,'vandita jadeja','NVIDIA has minted fortunes once before, and its latest earnings suggest the AI hardware machine is still accelerating. But ballooning supply commitments, margin pressure, and a China-shaped hole in it...','2026-09-09',0.19988,'Prediction: NVIDIA Stock Has Returned 14,700% in 10 Years. Can It Do It Again?','https://247wallst.com/investing/2026/09/09/prediction-nvidia-stock-has-returned-14700-in-10-years-can-it-do-it-again/',40),(8,'konstantinos kosmidis','...','2026-09-09',0.21856,'Nvidia: Stronger Demand Visibility, Same Suppressed Multiple','https://seekingalpha.com/article/4944295-nvidia-stronger-demand-visibility-same-suppressed-multiple',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'harsh chauhan','Nvidia (NVDA -2.27%) has played a pioneering role in the field of artificial intelligence (AI) thanks to its graphics processing units (GPUs), whose massive parallel computing power has enabled the tr...','2026-09-10',0.22032,'An Nvidia Move Just Put AMD and Intel on the Defensive','https://www.fool.com/investing/2026/09/10/an-nvidia-move-just-put-amd-and-intel-on-the-defen/',40),(2,'gerelyn terzo','...','2026-09-10',0,'Nvidia Just Handed Its 1.3 Million-Part Supply Chain to a Stock Cramer Called Ice Cold','https://finance.yahoo.com/markets/stocks/articles/nvidia-just-handed-1-3-164806380.html',200),(3,'anders bylund','Wholesale prices came in hot on Thursday morning, oil kept climbing, and the market did the math. Odds of a Fed rate hike next week jumped to 70%.\nThe Dow Jones Industrial Average (^DJI -0.60%) droppe...','2026-09-10',-0.18612,'The Dow, S&P 500, and Nasdaq All Fell 0.4% on Oil and Inflation','https://www.fool.com/investing/2026/09/10/dow-sp-500-and-nasdaq-fell-on-oil-and-inflation/',4),(4,'vandita jadeja','NVIDIA dominates AI infrastructure while AMD plays scrappy underdog, but one valuation metric suggests the market may be sleeping on the wrong stock. The answer comes down to a single GPU ramp that co...','2026-09-10',0.63368,'Nvidia Has the AI Hype. AMD Has the Valuation. Iâ€™d Buy This Stock.','https://247wallst.com/investing/2026/09/10/nvidia-has-the-ai-hype-amd-has-the-valuation-id-buy-this-stock/',40),(5,'rich duprey','...','2026-09-10',-0.65408,'Is Michael Burry Waving a White Flag? â€˜Big Shortâ€™ Investor Reduces Bearish Bets on NVDA, CRWV','https://finance.yahoo.com/markets/options/articles/michael-burry-waving-white-flag-151608180.html',20),(6,'alexa lomonaco','\nReference #18.1071ca17.1789104224.a5494f2\nhttps://errors.edgesuite.net/18.1071ca17.1789104224.a5494f2\n\nhttps://errors.edgesuite.net/18.1071ca17.1789104224.a5494f2...','2026-09-10',0.16184,'Our top 3 stocks that bucked the marketâ€™s recent pullback â€” plus, a look at the bottom 3','https://www.cnbc.com/2026/09/10/our-top-3-stocks-that-bucked-the-markets-recent-pullback-plus-a-look-at-the-bottom-3.html',40),(7,'keithen drury','...','2026-09-10',0.612,'Got $5,000? 3 No-Brainer Artificial Intelligence (AI) Stocks to Buy Right Now.','https://finance.yahoo.com/markets/stocks/articles/got-5-000-3-no-135000255.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -371,4 +372,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-10  5:25:05
+-- Dump completed on 2026-09-11  5:23:50
