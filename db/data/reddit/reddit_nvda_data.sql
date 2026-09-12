@@ -200,7 +200,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-93c77c5f-ad95-11f1-97e7-de2ac96690de:1-52,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
@@ -261,6 +260,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
+d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -312,6 +312,7 @@ f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
+f6743a70-ae5e-11f1-be91-fae7053f00cd:1-117,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
@@ -349,7 +350,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -358,7 +359,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wcxvdt','p91pwfl','2026-09-10',8,0,'To the moon!'),(2,'NVDA_Stock','1wcxvdt','p91yqbk','2026-09-10',2,-0.4939,'Exponential financials vs. \'circular\':\n\n* On concerns about circular finance, Jensen rejected the idea that NVIDIAâ€™s $500 billion platform commitment is circular, saying, â€œWe **put in one and 100 comes back in**.â€'),(3,'NVDA_Stock','1wcxvdt','p9200th','2026-09-10',2,0,'So is the 3-4T prediction correct? I think it should be much higher right? '),(4,'NVDA_Stock','1wccdwf','p8xv5xn','2026-09-10',2,0,'NVDA ecosystem to the moon late \'26.'),(5,'NVDA_Stock','1wcl5tj','p8zejsu','2026-09-10',9,-0.5267,'Calling BS.   The story claims DOJ was investigating since December.   If your company is being investigated that\'s a material issue requiring disclosure to shareholders.   The idea this is being exposed by investigative reporting 10 months later doesn\'t smell right.   Maybe they spelled NYPost wrong.'),(6,'NVDA_Stock','1wcl5tj','p8yyrtu','2026-09-10',4,0.1779,'If i had a dollar for all the anti monopoly inquiries over the last 20 years, I wouldnt have needed to invest in NVDA. Nothingburger'),(7,'NVDA_Stock','1wcl5tj','p8z262s','2026-09-10',3,-0.5859,'that deal is in the past wtf.. theyve got product based upon that acquisition '),(8,'NVDA_Stock','1wcl5tj','p8z1lvc','2026-09-10',3,0,'is nvda first and only one doing this?'),(9,'NVDA_Stock','1wcl5tj','p8yy7rg','2026-09-10',2,0.5106,'Love those paywall blocks - this is a clickbait non-story - DOJ reviews all similar deals.'),(10,'NVDA_Stock','1wcl5tj','p91flkb','2026-09-10',2,0,'nothingburger'),(11,'NVDA_Stock','1wcl5tj','p90ztjw','2026-09-10',1,0.4588,'Liquidity event before next leg honestly. ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wdgnp4','p96rl9z','2026-09-11',11,0,'https://preview.redd.it/e4e12eyd7xoh1.jpeg?width=1116&format=pjpg&auto=webp&s=1f9b898ad76665b3638362f2f69eb414faef99a0'),(2,'NVDA_Stock','1wdgnp4','p95lfzb','2026-09-11',3,0,'https://preview.redd.it/wgp9bpvbawoh1.png?width=970&format=png&auto=webp&s=b29f346ccc3380e9d6f29b5accd741d17758a162\n\n'),(3,'NVDA_Stock','1wdgnp4','p966989','2026-09-11',2,0,'NVDA 300 EOY'),(4,'NVDA_Stock','1wdgnp4','p97gq4e','2026-09-11',-1,0.5927,'But AMD is the stock going up'),(5,'NVDA_Stock','1wdz3df','p9ag0kl','2026-09-12',1,0.4404,'Good for the stock? ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -372,4 +373,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-11  4:03:24
+-- Dump completed on 2026-09-12  4:05:43

@@ -200,7 +200,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
-93c77c5f-ad95-11f1-97e7-de2ac96690de:1-52,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
@@ -261,6 +260,7 @@ cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
+d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -312,6 +312,7 @@ f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
+f6743a70-ae5e-11f1-be91-fae7053f00cd:1-117,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
@@ -349,7 +350,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -358,7 +359,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wcbz4l','p8wpbh9','2026-09-10',21,0.6848,'Iâ€™ve had a huge percentage of my net worth in aapl since 2012. Wealth advisors keep telling me to diversify but Iâ€™ve resisted and done quite well in staying consolidated.   \nI plan on diversifying some over the next two years, but probably still keep at least 40% with aapl. '),(2,'AAPL','1wcbz4l','p8x8rsl','2026-09-10',12,0.6369,'Apple is the greatest company on earth.  '),(3,'AAPL','1wcbz4l','p8xrqu5','2026-09-10',5,0.8775,'Apple is steadily moving their customers into a leasing model- which plays really well into also moving them into higher priced products. Recurring revenue from both hardware and services is a very winning strategy'),(4,'AAPL','1wcbz4l','p8yj1nj','2026-09-10',3,0.98,'I own a substantial amount of APPL. I\'m not selling and I\'m not buying more.\n\nHere\'s why I\'m not buying more:\n\n* It\'s quite clear that AI companies will grow drastically faster than APPL. Apple can keep making more and more money but AI companies are very likely to surpass them in importance, revenue, and profit in the next 5-10 years. In other words, nothing could be wrong for Apple but they will still end up being like the 10th biggest company instead of the 2nd. Nvidia is growing at 100% YoY. Anthropic is growing at 10x YoY. Just a few examples.\n* AAPL isn\'t cheap with a forward PE ratio of 32.26. Nvidia is 24.63 for example. But Nvidia is growing 5x faster than Apple.\n* It\'s quite clear that Apple has conceded the AI model race. They don\'t have anything to compete with OpenAI or Anthropic. They also don\'t have the hardware.\n* Their margins/sales are going to get squeezed because TSMC, Micron, SK Hynix, Samsung supplies will increasingly go towards AI companies. For example, Nvidia is the biggest TSMC customer now, replacing Apple. The cost of chips and RAM will increase for Apple, which means they will have to absorb some of the costs.\n* There\'s a very real threat that the phone of the future will not be anything like iOS or Android. AI allows a competitor to rebuild the phone from scratch for an AI world. For example, you may not need so many apps and your phone is just your assistant.\n\nI don\'t see any signs that Apple is going to fade yet - hence I\'m not selling. However, if a company ever demonstrates a device that fundamentally changes how a phone is used, I will sell all of my Apple. Someone can make the iPhone the Blackberry.'),(5,'AAPL','1wcbz4l','p8woda7','2026-09-10',5,0.7737,'My sole thesis: huge fan base that has no problem handing over money.\n\n\nPersonally I hate the products and ecosystem but I love the stock. '),(6,'AAPL','1wcbz4l','p8xucez','2026-09-10',5,0.7579,'As a long time AAPL holder, diversify.  In 3 short years NVDA and TSM have passed my AAPL holdings.  MU and others have held pace also.  I have way too much AAPL and started trimming this year.  Itâ€™s still a great company and have over 1000 shares as investments but if you are seeking faster growth AAPL may not be the lever.  '),(7,'AAPL','1wcbz4l','p8yduyy','2026-09-10',1,0.2023,'Good thesis. I am 10% AAPL, 60% S&P500 funds, and the rest a mix of other ETFs and a little BTC. Iâ€™m 35, have a decent mortgage that I pay out of income, and my investment time horizon on everything I own is 20 years.\n\nI am worried about the Chinese phone companies slowly eating away at AAPLâ€™s market share outside the U.S., the same way Chinese EVs are going to likely dominate the world by the end of this decade. But as of right now, I think AAPL is still the dominant player. Iâ€™ll reassess in three to five years.'),(8,'AAPL','1wcbz4l','p8yg17p','2026-09-10',1,0.5423,'Small investment. Switched VO to AAPL. Plan to buy more and keep for 10 years\n\nNew Mac Studios already have long wait lines.'),(9,'AAPL','1wcbz4l','p8yh9lq','2026-09-10',1,-0.4939,'Bought in 99,  \nSold enough for a house downpayment 15 years ago and unless thereâ€™s a catastrophic event in future, will the keep the rest'),(10,'AAPL','1wcbz4l','p8yto27','2026-09-10',1,-0.6369,'I have some holes ... All we need is a recession of some sort and people can\'t afford phones anymore. Option 2 the phone itself gets distracted with the onslaught of ak'),(11,'AAPL','1wcbz4l','p901vdr','2026-09-10',1,0.9779,'My AAPL holding has grown from 15% 8 years ago of my portfolio to now about 65%. Â  Iâ€™m not selling any time soon even as it becomes so overweight (fortunately my other investments have also grown). Â  Â \n\nAs Warren Buffet said Apple is like the perfect company to own and hold: Â brand loyalty, cash rich, high profit margins, great leadership, and a deep moat (its ecosystem of more than 2.5B devices). Â People who only checks PE ratios are missing the entire picture. Â People griping about Appleâ€™s lack of LLM models etc have no basic idea of what the company does and what they do best and they are welcome to invest in something else. Â '),(12,'AAPL','1wcbz4l','p903u3i','2026-09-10',1,0.5346,'I think Terrnusâ€™ background in hardware and engineer paired with Cookâ€™s supply chain savviness (he stays on as executive chairman) is the one-two punch that will elevate Apple to new heights. Â Is the stock the next great things? Â Everyone knows if youâ€™re chasing the next Nvidia look somewhere else but for long term investments AAPL is as solid as it can get. Â '),(13,'AAPL','1wcbz4l','p922kwh','2026-09-11',1,0,'Apple does not move on fundamentals. '),(14,'AAPL','1wcmw13','p8z51lw','2026-09-10',2,0,'What?'),(15,'AAPL','1wcmw13','p92zxlb','2026-09-11',1,0,'This post is an ad.Â '),(16,'AAPL','1wd0j0f','p92gp06','2026-09-11',3,-0.0516,'Wild. Considering how little Apple moves and often moves down after their event. You got lucky buddy youâ€™re not  a genius . Nothing more.'),(17,'AAPL','1wd0j0f','p9289qc','2026-09-11',2,0.7003,'Best wishes, lol'),(18,'AAPL','1wd0j0f','p92auzg','2026-09-11',2,0,'Own it donâ€™t trade it'),(19,'AAPL','1wd0j0f','p930jjs','2026-09-11',1,0.1531,'Iâ€™m lost. Doesnâ€™t it need to pass $335 to make any profit?');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wdp6p3','p9a99mi','2026-09-12',1,-0.6486,'Yeah but why is Siri still such a piece of shit? '),(2,'AAPL','1wdoydo','p97nxfg','2026-09-11',14,0.6369,'Buy it. Hold it forever'),(3,'AAPL','1wdoydo','p97jp43','2026-09-11',13,0,'But some now and then after the releaseâ€¦.'),(4,'AAPL','1wdoydo','p97kbls','2026-09-11',11,0.8402,'Pretty sure the time to buy AAPL is when you have the funds to do so. '),(5,'AAPL','1wdoydo','p98cefy','2026-09-11',2,0,'We all know aapl will surpass ath so that is your answer. You make money owning then seeing people make money without you '),(6,'AAPL','1wdoydo','p98uvkr','2026-09-11',1,0.8271,'When you ask the question, the best time to buy is always 3 months ago. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -372,4 +373,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-11  4:03:24
+-- Dump completed on 2026-09-12  4:05:42
