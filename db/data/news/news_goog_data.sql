@@ -284,6 +284,7 @@ deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
+e09fc985-af33-11f1-a85a-ae01afa5e0ec:1-59,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -350,7 +351,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -359,7 +360,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dave kovaleski','Berkshire Hathaway (BRKA +0.63%) (BRKB +0.67%) has not had many changes to its top five holdings. Apple, Bank of America, American Express, Coca-Cola, and Chevron have pretty much been locked in the t...','2026-09-11',0.52128,'Berkshire Hathaway Has a New Top Holding, and It Dominates Its Market','https://www.fool.com/investing/2026/09/11/berkshire-hathaway-has-a-new-top-holding-and-it-do/',4),(2,'logan wallace','...','2026-09-10',0,'Alphabet Inc. (NASDAQ:GOOG) Receives Consensus Recommendation of â€œBuyâ€ from Brokerages','https://www.tickerreport.com/banking-finance/13579523/alphabet-inc-nasdaqgoog-receives-consensus-recommendation-of-buy-from-brokerages.html',2),(3,'donald scott','...','2026-09-10',0.28896,'Readystate Asset Management LP Takes $45.35 Million Position in Alphabet Inc. $GOOG','https://www.thelincolnianonline.com/2026/09/10/readystate-asset-management-lp-takes-45-35-million-position-in-alphabet-inc-goog.html',2),(4,'adam levy','Nvidia (NVDA -0.03%) and Broadcom (AVGO +0.32%) reported very positive results in their most recent earnings statements. Not only are they seeing very strong demand for their artificial intelligence (...','2026-09-10',0.19994,'Not Nvidia. Not Broadcom. But This Semiconductor Stock Is Set to Grow Faster Than Any Other Major AI Chipmaker Through the End of the Decade.','https://www.fool.com/investing/2026/09/10/not-nvidia-not-broadcom-but-this-semiconductor-sto/',4),(5,'defense world staff','\n					Posted by Defense World Staff on Sep 10th, 2026\n\nCrow s Nest Holdings LP trimmed its position in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 34.2% during the second quarter, according to the c...','2026-09-10',0.19988,'Crow s Nest Holdings LP Has $29.86 Million Stock Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/09/10/crow-s-nest-holdings-lp-has-29-86-million-stock-position-in-alphabet-inc-goog.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Sep 10th, 2026\n\nCrow s Nest Holdings LP trimmed its stake in shares of  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 34.2% in the second quarter, Holdings Channel.com rep...','2026-09-10',0.43664,'Alphabet Inc. $GOOG Shares Sold by Crow s Nest Holdings LP','https://www.americanbankingnews.com/2026/09/10/alphabet-inc-goog-shares-sold-by-crow-s-nest-holdings-lp.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Sep 10th, 2026\n\nEndeavor Private Wealth Inc. increased its stake in  Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 35.8% in the 2nd quarter, according to its most...','2026-09-10',0.595,'Endeavor Private Wealth Inc. Has $2.86 Million Position in Alphabet Inc. $GOOG','https://www.defenseworld.net/2026/09/10/endeavor-private-wealth-inc-has-2-86-million-position-in-alphabet-inc-goog.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Google search on your laptop. YouTube on your TV. Chrome on your phone. It often feels -- and probably accurately so -- like tech giant Alphabet (GOOG +1.53%) (GOOGL +1.77%) and its products are every...','2026-09-11',0.19904,'Why Alphabet Stock Just Popped','https://www.fool.com/investing/2026/09/11/why-alphabet-stock-just-popped/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -373,4 +374,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-12  5:13:46
+-- Dump completed on 2026-09-13  5:29:04
