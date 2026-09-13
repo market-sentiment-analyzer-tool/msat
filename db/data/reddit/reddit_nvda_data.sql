@@ -129,6 +129,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
+5bd286fb-af2a-11f1-bb17-f64cf5ffadef:1-36,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
@@ -203,6 +204,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
@@ -312,7 +314,6 @@ f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
 f6712e3e-5d7d-11f1-b87c-3639d2adf3e9:1-63,
-f6743a70-ae5e-11f1-be91-fae7053f00cd:1-117,
 f69df68f-79bd-11f1-87c7-da867003acb4:1-56,
 f6b7841d-4903-11f1-b837-062bef4a189c:1-58,
 f77cb081-96c5-11f1-b95c-92fc8a49e46a:1-59,
@@ -359,7 +360,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wdgnp4','p96rl9z','2026-09-11',11,0,'https://preview.redd.it/e4e12eyd7xoh1.jpeg?width=1116&format=pjpg&auto=webp&s=1f9b898ad76665b3638362f2f69eb414faef99a0'),(2,'NVDA_Stock','1wdgnp4','p95lfzb','2026-09-11',3,0,'https://preview.redd.it/wgp9bpvbawoh1.png?width=970&format=png&auto=webp&s=b29f346ccc3380e9d6f29b5accd741d17758a162\n\n'),(3,'NVDA_Stock','1wdgnp4','p966989','2026-09-11',2,0,'NVDA 300 EOY'),(4,'NVDA_Stock','1wdgnp4','p97gq4e','2026-09-11',-1,0.5927,'But AMD is the stock going up'),(5,'NVDA_Stock','1wdz3df','p9ag0kl','2026-09-12',1,0.4404,'Good for the stock? ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wef64h','p9d8q5w','2026-09-12',9,0,'What would you say if i told you NVIDIA Groq 3 LPX recently produced roughly 3,400 tokens/sec on Gemma 4 31B with a 100K token input, about 4Ã— faster than the next fastest result in that particular Artificial Analysis test, which was reportedly Cerebras at about 882 t/s.'),(2,'NVDA_Stock','1wef64h','p9gmsud','2026-09-13',1,0,'How about costs?'),(3,'NVDA_Stock','1wef64h','p9d75no','2026-09-12',1,0.9931,'Best option will ofc have an edge, we need more data than their own performance benchmarks. They will of course cherry pick their stats. As far as I know both of these are still so new we donâ€™t really have any enterprise implementation to use as benchmark. But itâ€™s a lot more too it than just the hardware.   \nThings like routing kv cache efficiently and able to scale prefil and decode dynamically. Then tons of other tuning you can do pending on the specific workload.   \nMeaning the platform and orchestration layer has a lot to do with this as well. Hereâ€™s stuff like vllm, triton and llm-d a big part. Then thereâ€™s the security aspect, how fast can you ensure your organization standards properly? Itâ€™s a system compounded of many components and sure the hardware helps a lot but we canâ€™t only look at that.   \nInteresting to see Nvidia gets good competition though, thatâ€™s good for everyone. Even Nvidia.   \nGonna be interesting to follow for sure! '),(4,'NVDA_Stock','1wef64h','p9dx8ky','2026-09-12',-1,-0.1531,'> In terms of raw speed, it seems like Cerebras solutions are 5-6X faster than Groq.\n\nwtf are you talking about'),(5,'NVDA_Stock','1wef64h','p9geqz0','2026-09-13',0,-0.34,'And now there\'s d-Matrix for ultra fast low latency inference. Apparently built on doing more in stacked DRAM than a focus on flops.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -373,4 +374,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-12  4:05:43
+-- Dump completed on 2026-09-13  4:21:05
