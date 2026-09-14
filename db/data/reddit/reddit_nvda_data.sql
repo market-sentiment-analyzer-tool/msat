@@ -129,7 +129,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
-5bd286fb-af2a-11f1-bb17-f64cf5ffadef:1-36,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
 5c5dbe53-227b-11f1-8165-8671e18b1e8b:1-68,
@@ -257,6 +256,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+ce0828c7-aff3-11f1-bb4d-da25c7f4279f:1-22,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -285,6 +285,7 @@ deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
+e09fc985-af33-11f1-a85a-ae01afa5e0ec:1-59,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -351,7 +352,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -360,7 +361,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wef64h','p9d8q5w','2026-09-12',9,0,'What would you say if i told you NVIDIA Groq 3 LPX recently produced roughly 3,400 tokens/sec on Gemma 4 31B with a 100K token input, about 4Ã— faster than the next fastest result in that particular Artificial Analysis test, which was reportedly Cerebras at about 882 t/s.'),(2,'NVDA_Stock','1wef64h','p9gmsud','2026-09-13',1,0,'How about costs?'),(3,'NVDA_Stock','1wef64h','p9d75no','2026-09-12',1,0.9931,'Best option will ofc have an edge, we need more data than their own performance benchmarks. They will of course cherry pick their stats. As far as I know both of these are still so new we donâ€™t really have any enterprise implementation to use as benchmark. But itâ€™s a lot more too it than just the hardware.   \nThings like routing kv cache efficiently and able to scale prefil and decode dynamically. Then tons of other tuning you can do pending on the specific workload.   \nMeaning the platform and orchestration layer has a lot to do with this as well. Hereâ€™s stuff like vllm, triton and llm-d a big part. Then thereâ€™s the security aspect, how fast can you ensure your organization standards properly? Itâ€™s a system compounded of many components and sure the hardware helps a lot but we canâ€™t only look at that.   \nInteresting to see Nvidia gets good competition though, thatâ€™s good for everyone. Even Nvidia.   \nGonna be interesting to follow for sure! '),(4,'NVDA_Stock','1wef64h','p9dx8ky','2026-09-12',-1,-0.1531,'> In terms of raw speed, it seems like Cerebras solutions are 5-6X faster than Groq.\n\nwtf are you talking about'),(5,'NVDA_Stock','1wef64h','p9geqz0','2026-09-13',0,-0.34,'And now there\'s d-Matrix for ultra fast low latency inference. Apparently built on doing more in stacked DRAM than a focus on flops.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -374,4 +374,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-13  4:21:05
+-- Dump completed on 2026-09-14  4:22:26
