@@ -23,7 +23,6 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
-04bce664-b0bd-11f1-9a56-96d7e5a28576:1-37,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
@@ -195,6 +194,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8c530a4c-a37b-11f1-a317-1a21ce6c66a5:1-62,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
+8def9c4b-b185-11f1-a4e5-a67af4891d01:1-204,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
@@ -254,6 +254,7 @@ c59f6303-b3a4-11f0-bc3d-3a2225d2e71c:1-64,
 c62107a1-138b-11f1-96a2-cee3f645ea63:1-60,
 c639eef0-cf26-11f0-bcee-be38e0603c11:1-57,
 c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
+c7acfb62-b0c6-11f1-88f3-92abbed6d405:1-54,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
@@ -353,7 +354,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,7 +363,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wgdtjp','p9tl610','2026-09-14',15,0.7329,'Congrats!  My cost basis is 33 cents. Never sell '),(2,'AAPL','1wgdtjp','p9timgp','2026-09-14',7,0.8122,'Really wish I could\'ve been born younger to take advantage of Apple\'s spectacular growth, especially in the early 2010\'s. My cost average is about $150 ðŸ¥².'),(3,'AAPL','1wgdtjp','p9usnu7','2026-09-14',7,0.6792,'Bought my first 100 shares @$18 in 1998 when Steve officially came back as CEO. Stock promptly went down to &9!     \nWent to work there starting in 2005. The stock was $60 day I started. (Not split adjusted).  Working there changed my life. Happily retired now. Thank you Steve and Tim! '),(4,'AAPL','1wgdtjp','p9ttand','2026-09-14',6,0.6808,'Crossed that a while ago with the same feeling. I\'m somewhere around 10k shares now with DRIP and splits. I\'ve been buying AAPL since 2004 and adding to positions through each downturn. Funny how AAPL is dying is the trend in this sub yet somehow....'),(5,'AAPL','1wgdtjp','p9trijw','2026-09-14',2,0,'Mine is $15 '),(6,'AAPL','1wgdtjp','p9ujbsx','2026-09-14',2,0,'Itâ€™s John Apple now.'),(7,'AAPL','1wgdtjp','p9ualf7','2026-09-14',1,0.5826,'I sold mine and made a profit of 370$. YaaY me!!!'),(8,'AAPL','1wgdtjp','p9ujvnv','2026-09-14',1,0.7866,'That is some conviction you have on Apple stock.  Unless you have a portfolio of more than $20M, it never hurts to sell some and take your profits.'),(9,'AAPL','1wgdtjp','p9vytqf','2026-09-15',1,0.0516,'Youâ€™ll have to sell one day, either you get to enjoy your $$$$ or someone else will. '),(10,'AAPL','1wgdtjp','p9w43lp','2026-09-15',1,0,'Must have bought before at least 10 years before 2016');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -376,4 +376,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-15  4:22:59
+-- Dump completed on 2026-09-16  4:19:57
