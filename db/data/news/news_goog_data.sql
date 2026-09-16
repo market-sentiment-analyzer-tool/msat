@@ -285,6 +285,7 @@ de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
 df5fe017-24d3-11f1-a997-628402d3593c:1-56,
+e0732b3a-b18e-11f1-ab87-d22728c8735d:1-61,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e09fc985-af33-11f1-a85a-ae01afa5e0ec:1-59,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
@@ -353,7 +354,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,7 +363,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'the motley fool','...','2026-09-13',0.36704,'Amazon, Alphabet, and Microsoft: Which 2 to Buy and Which 1 to Avoid','https://finance.yahoo.com/markets/stocks/articles/amazon-alphabet-microsoft-2-buy-202800287.html',20),(2,'investing experts podcast','...','2026-09-13',0.3372,'Beyond Nvidia: Finding Opportunity In The AI Buildout','https://seekingalpha.com/article/4945868-beyond-nvidia-finding-opportunity-in-the-ai-buildout',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john ballard','Anthropic could reportedly complete an initial public offering (IPO) by early November, which could fetch a valuation of roughly $2 trillion. Amazon (AMZN -2.02%) and Alphabet (GOOGL -1.26%) (GOOG -1....','2026-09-15',0.19966,'2 Stocks That Will Cash In When Anthropic Goes Public','https://www.fool.com/investing/2026/09/15/stocks-cash-in-anthropic-goes-public-amzn-goog/',4),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-15',0.36112,'Googleâ€™s Traffic Numbers Look Fine, Its Search Economics Tell Another Story','https://www.insidermonkey.com/blog/googles-traffic-numbers-look-fine-its-search-economics-tell-another-story-1836858/',4),(3,'daniel sparks','Stocks tied to the artificial intelligence (AI) build-out sold off Monday morning. The selling followed a weekend essay from Anthropic CEO Dario Amodei calling for the industry to slow the pace at whi...','2026-09-14',0.19912,'Netflix Stock Rose 4% While the AI Trade Sold Off on Monday. Its Capital Goes Into Shows, Not Silicon.','https://www.fool.com/investing/2026/09/14/netflix-stock-rose-4-while-the-ai-trade-sold-off-on-monday-its-capital-goes-into-shows-not-silicon/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -376,4 +377,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-15  5:32:54
+-- Dump completed on 2026-09-16  5:25:17
