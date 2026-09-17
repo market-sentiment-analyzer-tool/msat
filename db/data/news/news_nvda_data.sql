@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -354,7 +355,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'moz farooque','Please enable JS and disable any ad blocker...','2026-09-15',-0.31772,'Bank of America says investors get AMD stock wrong','https://www.thestreet.com/investing/bofa-amd-stock-outlook',4),(2,'kim johansen','...','2026-09-15',0.02064,'YieldMax NVDA Option Income Strategy ETF (NYSEARCA:NVDY) Short Interest Update','https://www.themarketsdaily.com/2026/09/15/yieldmax-nvda-option-income-strategy-etf-nysearcanvdy-short-interest-update.html',20),(3,'russel kinnel','...','2026-09-15',0.55264,'My Favorite Active ETFs','https://www.morningstar.com/funds/my-favorite-active-etfs',2),(4,'trey thoelcke','Elon Musk and Jim Cramer landed on the same suspicion about AI doom warnings within hours of each other, but the reasons behind their shared skepticism put them on a collision course with very differe...','2026-09-15',-0.0614,'Musk and Cramer Agree on One Thing About the AI Panic','https://247wallst.com/investing/2026/09/15/musk-and-cramer-agree-on-one-thing-about-the-ai-panic/',4),(5,'alex sirois','Nvidia shares just dropped over 8% in a week while AI slowdown headlines pile up, and that is exactly when one investor keeps hitting the buy button with more conviction than ever.\n\nI keep hitting the...','2026-09-15',-0.1728,'Why Iâ€™m Doubling Down on Nvidia Stock Hand Over Fist','https://247wallst.com/investing/2026/09/15/why-im-doubling-down-on-nvidia-stock-hand-over-fist/',40),(6,'vandita jadeja','Nvidia sits at the center of the AI infrastructure boom, but a five-year hold on a modest stake could end up anywhere from a modest gain to a life-changing return depending on which forces win out.\n P...','2026-09-15',0.38094,'What Will $5,000 Invested in Nvidia Stock Be Worth in 5 Years?','https://247wallst.com/investing/2026/09/15/what-will-5000-invested-in-nvidia-stock-be-worth-in-5-years/',40),(7,'ghazal ahmed','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-15',0.09722,'Broadcomâ€™s Real Constraint Isnâ€™t Demand. Itâ€™s Supply.','https://www.insidermonkey.com/blog/broadcoms-real-constraint-isnt-demand-its-supply-1837906/',4),(8,'investing.com','...','2026-09-15',0,'Salesforce and Nvidia launch Koa, a CRM reasoning model','https://ca.investing.com/news/assorted/salesforce-and-nvidia-launch-koa-a-crm-reasoning-model-432SI-4839908',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'anders bylund','Both of the things that started this week on a sour note eased off on Wednesday. Oil fell and bond yields backed away from 5%; The market responded by going in three different directions at once.\nThe ...','2026-09-16',0.19762,'The Dow, S&P 500, and Nasdaq Split Ahead of a Near-Certain Rate Hike','https://www.fool.com/investing/2026/09/16/the-dow-sp-500-and-nasdaq-split-ahead-of-rate-hike/',4),(2,'david sekera; cfa','...','2026-09-16',-0.40848,'The Risks That Could Derail the Stock Market Further','https://www.morningstar.com/stocks/risks-that-could-derail-stock-market-further',2),(3,'omor ibne ehsan','...','2026-09-16',-0.2368,'OpenAIâ€™s CFO Just Explained Why Nvidia Is No Longer the Only Option','https://finance.yahoo.com/markets/stocks/articles/openai-cfo-just-explained-why-151139632.html',200),(4,'todd gordon','\nReference #18.e8c83017.1789623251.19c52742\nhttps://errors.edgesuite.net/18.e8c83017.1789623251.19c52742\n\nhttps://errors.edgesuite.net/18.e8c83017.1789623251.19c52742...','2026-09-16',0.66168,'Growth stocks are still attractive compared to value even as rates rise, charts show','https://www.cnbc.com/2026/09/16/growth-stocks-are-still-attractive-compared-to-value-even-as-rates-rise-charts-show.html',40),(5,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-16',0.1997,'Billionaire Ray Dalioâ€™s Bridgewaterâ€™s and Cathie Woodâ€™s ARK Portfolios: 2 Stocks They Both Own','https://www.insidermonkey.com/blog/billionaire-ray-dalios-bridgewaters-and-cathie-woods-ark-portfolios-2-stocks-they-both-own-1839082/',4),(6,'investing.com','...','2026-09-16',0.38592,'Apple building M8 AI servers, talks with Nvidia, reports The Information','https://ca.investing.com/news/stock-market-news/apple-building-m8-ai-servers-talks-with-nvidia-reports-the-information-4841887',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -377,4 +378,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-16  5:25:17
+-- Dump completed on 2026-09-17  5:34:19

@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -354,7 +355,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john ballard','Anthropic could reportedly complete an initial public offering (IPO) by early November, which could fetch a valuation of roughly $2 trillion. Amazon (AMZN -2.02%) and Alphabet (GOOGL -1.26%) (GOOG -1....','2026-09-15',0.19966,'2 Stocks That Will Cash In When Anthropic Goes Public','https://www.fool.com/investing/2026/09/15/stocks-cash-in-anthropic-goes-public-amzn-goog/',4),(2,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-15',0.36112,'Googleâ€™s Traffic Numbers Look Fine, Its Search Economics Tell Another Story','https://www.insidermonkey.com/blog/googles-traffic-numbers-look-fine-its-search-economics-tell-another-story-1836858/',4),(3,'daniel sparks','Stocks tied to the artificial intelligence (AI) build-out sold off Monday morning. The selling followed a weekend essay from Anthropic CEO Dario Amodei calling for the industry to slow the pace at whi...','2026-09-14',0.19912,'Netflix Stock Rose 4% While the AI Trade Sold Off on Monday. Its Capital Goes Into Shows, Not Silicon.','https://www.fool.com/investing/2026/09/14/netflix-stock-rose-4-while-the-ai-trade-sold-off-on-monday-its-capital-goes-into-shows-not-silicon/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'will healy','Shopify (SHOP +0.08%) has struggled since peaking at $179 per share nearly one year ago. While the company continues to grow at a brisk pace, conservative guidance and concerns about artificial intell...','2026-09-16',0.84576,'Down 25%, Is Shopify Stock a Better Buy than SpaceX and the \"Magnificent Seven\" Stocks in September?','https://www.fool.com/investing/2026/09/16/down-25-is-shopify-stock-a-better-buy-than-spacex/',4),(2,'adam levy','Anthropic is preparing for a record-breaking IPO this fall. The company is reportedly seeking a $2 trillion valuation with the potential to raise $100 billion from newly issued shares. Both would be r...','2026-09-16',0.34192,'What the Anthropic IPO Means for Amazon and Alphabet Investors','https://www.fool.com/investing/2026/09/16/what-anthropic-ipo-means-amazon-alphabet/',4),(3,'brandon evans','...','2026-09-15',0.35232,'Google releases new Gemini models built to improve conversing capabilities of voice agents','https://seekingalpha.com/news/4643146-google-releases-new-gemini-models-built-to-improve-conversing-capabilities-of-voice-agents?feed_item_type=news',40),(4,'john ballard','Anthropic could reportedly complete an initial public offering (IPO) by early November, which could fetch a valuation of roughly $2 trillion. Amazon (AMZN -0.99%) and Alphabet (GOOGL -0.61%) (GOOG -0....','2026-09-15',0.19966,'2 Stocks That Will Cash In When Anthropic Goes Public','https://www.fool.com/investing/2026/09/15/stocks-cash-in-anthropic-goes-public-amzn-goog/',4),(5,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-15',0.36112,'Googleâ€™s Traffic Numbers Look Fine, Its Search Economics Tell Another Story','https://www.insidermonkey.com/blog/googles-traffic-numbers-look-fine-its-search-economics-tell-another-story-1836858/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -377,4 +378,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-16  5:25:17
+-- Dump completed on 2026-09-17  5:34:19

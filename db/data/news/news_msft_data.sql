@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
@@ -354,7 +355,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'bnnbloomberg.ca staff','Published:Â September 15, 2026 at 1:22p.m. EDT\nKeith Richards, President & Chief Portfolio Manager, ValueTrend Wealth Management\nFocus: Technical analysis\nTop Picks: Alcoa, Pembina Pipeline, Global X C...','2026-09-15',0.33876,'Keith Richardsâ€™ Top Picks for Sept. 15, 2026','https://www.bnnbloomberg.ca/markets/2026/09/15/keith-richards-top-picks-for-sept-15-2026/',4),(2,'moz farooque','Please enable JS and disable any ad blocker...','2026-09-15',-0.31772,'Bank of America says investors get AMD stock wrong','https://www.thestreet.com/investing/bofa-amd-stock-outlook',4),(3,'russel kinnel','...','2026-09-15',0.55264,'My Favorite Active ETFs','https://www.morningstar.com/funds/my-favorite-active-etfs',2),(4,'joseph griffin','...','2026-09-15',-0.02064,'Short Interest in Direxion Daily MSFT Bear 1X ETF (NASDAQ:MSFD) Expands By 155.3%','https://www.tickerreport.com/banking-finance/13585227/short-interest-in-direxion-daily-msft-bear-1x-etf-nasdaqmsfd-expands-by-155-3.html',20),(5,'yiannis zourmpanos','...','2026-09-15',0,'Microsoft Is Defying AI Gravity','https://seekingalpha.com/article/4946460-microsoft-is-defying-ai-gravity',40),(6,'shane hupp','...','2026-09-15',0.2368,'Rep. Thomas H. Kean, Jr. Sells Shares of Microsoft Corporation (NASDAQ:MSFT)','https://www.tickerreport.com/banking-finance/13585111/rep-thomas-h-kean-jr-sells-shares-of-microsoft-corporation-nasdaqmsft.html',20),(7,'wall street breakfast','...','2026-09-15',-0.272,'Wall Street Breakfast Podcast: Alarm Bells On Wall Street','https://seekingalpha.com/article/4946397-wall-street-breakfast-podcast-alarm-bells-on-wall-street',4),(8,'defense world staff','\n					Posted by Defense World Staff on Sep 15th, 2026\n\nHamilton Capital Partners LLC lifted its holdings in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 12.3% during the second quarter, accor...','2026-09-15',0.19982,'Hamilton Capital Partners LLC Increases Stock Holdings in Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/09/15/hamilton-capital-partners-llc-increases-stock-holdings-in-microsoft-corporation-msft.html',40),(9,'defense world staff','\n					Posted by Defense World Staff on Sep 15th, 2026\n\nGateway Investment Advisers LLC lessened its holdings in  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 4.1% in the 2nd quarter, according...','2026-09-15',0.19986,'Microsoft Corporation $MSFT Stake Trimmed by Gateway Investment Advisers LLC','https://www.defenseworld.net/2026/09/15/microsoft-corporation-msft-stake-trimmed-by-gateway-investment-advisers-llc.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'david sekera; cfa','...','2026-09-16',-0.40848,'The Risks That Could Derail the Stock Market Further','https://www.morningstar.com/stocks/risks-that-could-derail-stock-market-further',2),(2,'paula ricardo','...','2026-09-16',0.45752,'Microsoft Corporation (NASDAQ:MSFT) Raises Dividend to $0.98 Per Share','https://www.thelincolnianonline.com/2026/09/16/microsoft-corporation-nasdaqmsft-raises-dividend-to-0-98-per-share.html',20),(3,'michael walen','...','2026-09-16',0.28896,'Microsoft Corporation (NASDAQ:MSFT) Declares Quarterly Dividend of $0.98','https://www.themarketsdaily.com/2026/09/16/microsoft-corporation-nasdaqmsft-declares-quarterly-dividend-of-0-98.html',20),(4,'danessa lincoln','...','2026-09-16',0.2368,'Microsoft (NASDAQ:MSFT) EVP Amy Hood Sells 41,674 Shares','https://www.themarketsdaily.com/2026/09/16/microsoft-nasdaqmsft-evp-amy-hood-sells-41674-shares.html',20),(5,'defense world staff','\n					Posted by Defense World Staff on Sep 16th, 2026\n\nEnvestnet Portfolio Solutions Inc. lifted its position in shares of  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 8.1% in the second quar...','2026-09-16',0.5522,'Envestnet Portfolio Solutions Inc. Purchases 25,814 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/09/16/envestnet-portfolio-solutions-inc-purchases-25814-shares-of-microsoft-corporation-msft.html',40),(6,'abmn staff','\n					Posted by ABMN Staff on Sep 16th, 2026\n\nHager Investment Management Services LLC lifted its stake in shares of  Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 12.9% in the 2nd quarter, Hol...','2026-09-16',0.43664,'Microsoft Corporation $MSFT Shares Bought by Hager Investment Management Services LLC','https://www.americanbankingnews.com/2026/09/16/microsoft-corporation-msft-shares-bought-by-hager-investment-management-services-llc.html',40),(7,'defense world staff','...','2026-09-16',0.2368,'4,445 Shares in Microsoft Corporation $MSFT Purchased by Quantum Financial Partners LLC','https://www.defenseworld.net/2026/09/16/4445-shares-in-microsoft-corporation-msft-purchased-by-quantum-financial-partners-llc.html',20),(8,'defense world staff','...','2026-09-16',-0.28896,'Guidance Capital Inc. Reduces Stock Position in Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/09/16/guidance-capital-inc-reduces-stock-position-in-microsoft-corporation-msft.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -377,4 +378,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-16  5:25:17
+-- Dump completed on 2026-09-17  5:34:19
