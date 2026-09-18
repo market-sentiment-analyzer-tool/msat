@@ -259,6 +259,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -355,7 +356,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -364,7 +365,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'will healy','Shopify (SHOP +0.08%) has struggled since peaking at $179 per share nearly one year ago. While the company continues to grow at a brisk pace, conservative guidance and concerns about artificial intell...','2026-09-16',0.84576,'Down 25%, Is Shopify Stock a Better Buy than SpaceX and the \"Magnificent Seven\" Stocks in September?','https://www.fool.com/investing/2026/09/16/down-25-is-shopify-stock-a-better-buy-than-spacex/',4),(2,'adam levy','Anthropic is preparing for a record-breaking IPO this fall. The company is reportedly seeking a $2 trillion valuation with the potential to raise $100 billion from newly issued shares. Both would be r...','2026-09-16',0.34192,'What the Anthropic IPO Means for Amazon and Alphabet Investors','https://www.fool.com/investing/2026/09/16/what-anthropic-ipo-means-amazon-alphabet/',4),(3,'brandon evans','...','2026-09-15',0.35232,'Google releases new Gemini models built to improve conversing capabilities of voice agents','https://seekingalpha.com/news/4643146-google-releases-new-gemini-models-built-to-improve-conversing-capabilities-of-voice-agents?feed_item_type=news',40),(4,'john ballard','Anthropic could reportedly complete an initial public offering (IPO) by early November, which could fetch a valuation of roughly $2 trillion. Amazon (AMZN -0.99%) and Alphabet (GOOGL -0.61%) (GOOG -0....','2026-09-15',0.19966,'2 Stocks That Will Cash In When Anthropic Goes Public','https://www.fool.com/investing/2026/09/15/stocks-cash-in-anthropic-goes-public-amzn-goog/',4),(5,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-15',0.36112,'Googleâ€™s Traffic Numbers Look Fine, Its Search Economics Tell Another Story','https://www.insidermonkey.com/blog/googles-traffic-numbers-look-fine-its-search-economics-tell-another-story-1836858/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'cpa','Shares of Magnite (MGNI +7.78%) charged out of the gate on Thursday, soaring as much as 12.9%. As of 11:40 a.m. ET, the stock was still up 7.2%.\nThe catalyst that sent the advertising technology (adte...','2026-09-17',0.19856,'Why Magnite Stock Rocketed Higher Today','https://www.fool.com/investing/2026/09/17/why-magnite-stock-rocketed-higher-today/',4),(2,'daniel howley','...','2026-09-16',0.32152,'Snap launches $2,195 Specs smart glasses','https://ca.finance.yahoo.com/news/snap-launches-2195-specs-smart-glasses-234000058.html',2),(3,'will healy','Shopify (SHOP -1.05%) has struggled since peaking at $179 per share nearly one year ago. While the company continues to grow at a brisk pace, conservative guidance and concerns about artificial intell...','2026-09-16',0.84576,'Down 25%, Is Shopify Stock a Better Buy than SpaceX and the \"Magnificent Seven\" Stocks in September?','https://www.fool.com/investing/2026/09/16/down-25-is-shopify-stock-a-better-buy-than-spacex/',4),(4,'adam levy','Anthropic is preparing for a record-breaking IPO this fall. The company is reportedly seeking a $2 trillion valuation with the potential to raise $100 billion from newly issued shares. Both would be r...','2026-09-16',0.34192,'What the Anthropic IPO Means for Amazon and Alphabet Investors','https://www.fool.com/investing/2026/09/16/what-anthropic-ipo-means-amazon-alphabet/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -378,4 +379,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-17  5:34:19
+-- Dump completed on 2026-09-18  5:22:21

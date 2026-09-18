@@ -259,6 +259,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -355,7 +356,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -364,7 +365,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'anders bylund','Both of the things that started this week on a sour note eased off on Wednesday. Oil fell and bond yields backed away from 5%; The market responded by going in three different directions at once.\nThe ...','2026-09-16',0.19762,'The Dow, S&P 500, and Nasdaq Split Ahead of a Near-Certain Rate Hike','https://www.fool.com/investing/2026/09/16/the-dow-sp-500-and-nasdaq-split-ahead-of-rate-hike/',4),(2,'david sekera; cfa','...','2026-09-16',-0.40848,'The Risks That Could Derail the Stock Market Further','https://www.morningstar.com/stocks/risks-that-could-derail-stock-market-further',2),(3,'omor ibne ehsan','...','2026-09-16',-0.2368,'OpenAIâ€™s CFO Just Explained Why Nvidia Is No Longer the Only Option','https://finance.yahoo.com/markets/stocks/articles/openai-cfo-just-explained-why-151139632.html',200),(4,'todd gordon','\nReference #18.e8c83017.1789623251.19c52742\nhttps://errors.edgesuite.net/18.e8c83017.1789623251.19c52742\n\nhttps://errors.edgesuite.net/18.e8c83017.1789623251.19c52742...','2026-09-16',0.66168,'Growth stocks are still attractive compared to value even as rates rise, charts show','https://www.cnbc.com/2026/09/16/growth-stocks-are-still-attractive-compared-to-value-even-as-rates-rise-charts-show.html',40),(5,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-16',0.1997,'Billionaire Ray Dalioâ€™s Bridgewaterâ€™s and Cathie Woodâ€™s ARK Portfolios: 2 Stocks They Both Own','https://www.insidermonkey.com/blog/billionaire-ray-dalios-bridgewaters-and-cathie-woods-ark-portfolios-2-stocks-they-both-own-1839082/',4),(6,'investing.com','...','2026-09-16',0.38592,'Apple building M8 AI servers, talks with Nvidia, reports The Information','https://ca.investing.com/news/stock-market-news/apple-building-m8-ai-servers-talks-with-nvidia-reports-the-information-4841887',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'kyle jackson','...','2026-09-17',-0.51888,'GraniteShares 2x Short NVDA Daily ETF (NASDAQ:NVD) Shares Gap Down â€“ Hereâ€™s Why','https://www.watchlistnews.com/graniteshares-2x-short-nvda-daily-etf-nasdaqnvd-shares-gap-down-heres-why/11228841.html',20),(2,'shane hupp','...','2026-09-17',-0.51888,'GraniteShares 2x Short NVDA Daily ETF (NASDAQ:NVD) Shares Gap Down â€“ Hereâ€™s What Happened','https://www.tickerreport.com/banking-finance/13587807/graniteshares-2x-short-nvda-daily-etf-nasdaqnvd-shares-gap-down-heres-what-happened.html',20),(3,'aj tiarsmith','At 24, Leopold Aschenbrenner turned a hedge fund into a $45 billion force in AI markets, then watched it collapse in days. Now he is making a new move, and Wall Street is paying close attention.\n Mark...','2026-09-17',0.44448,'â€œHeâ€™s Back, Heâ€™s Bigger Than Everâ€: 24-Year-Old Who Blew Up $45 Billion Hedge Fund Is Back With Options Bet On AI Stocks','https://247wallst.com/investing/2026/09/17/hes-back-hes-bigger-than-ever-24-year-old-who-blew-up-45-billion-hedge-fund-is-back-with-options-bet-on-ai-stocks/',4),(4,'the asian investor','...','2026-09-17',0.42136,'BST: Gain Pre-IPO Anthropic Exposure And A 6% Yield','https://seekingalpha.com/article/4947510-bst-gain-pre-ipo-anthropic-exposure-and-a-6-percent-yield',4),(5,'rich duprey','A Goldman Sachs options gauge just flashed a signal so rare it has appeared only four other times in two decades, and the timing of each previous instance tells a striking story about where tech stock...','2026-09-17',0.39972,'This Goldman Sachs Indicator Hit 0 Only 4 Other Times in the Last 20 Years. History Says Big Tech Rallies Followed','https://247wallst.com/investing/2026/09/17/this-goldman-sachs-indicator-hit-0-only-4-other-times-in-the-last-20-years-history-says-big-tech-rallies-followed/',4),(6,'chris neiger','Artificial intelligence (AI) stocks have already brought impressive returns for many investors in just a few short years. And two chip stocks that have soared recently are Broadcom (AVGO +2.29%) and A...','2026-09-17',0.5521,'Looking for a Good Deal on an AI Stock? This Leading Chipmaker Is Cheaper Than Broadcom and AMD.','https://www.fool.com/investing/2026/09/17/looking-for-a-good-deal-on-an-ai-stock-this-leadin/',4),(7,'treading softly','...','2026-09-17',0.30544,'Nvidia: An Article Focused On Facts, Not Feelings','https://seekingalpha.com/article/4946769-nvidia-an-article-focused-on-facts-not-feelings',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -378,4 +379,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-17  5:34:19
+-- Dump completed on 2026-09-18  5:22:21
