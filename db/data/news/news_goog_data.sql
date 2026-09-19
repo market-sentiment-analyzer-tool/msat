@@ -290,6 +290,7 @@ df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e0732b3a-b18e-11f1-ab87-d22728c8735d:1-61,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e09fc985-af33-11f1-a85a-ae01afa5e0ec:1-59,
+e12f0caf-b3e8-11f1-8ed3-622f6f970566:1-50,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -365,7 +366,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'cpa','Shares of Magnite (MGNI +7.78%) charged out of the gate on Thursday, soaring as much as 12.9%. As of 11:40 a.m. ET, the stock was still up 7.2%.\nThe catalyst that sent the advertising technology (adte...','2026-09-17',0.19856,'Why Magnite Stock Rocketed Higher Today','https://www.fool.com/investing/2026/09/17/why-magnite-stock-rocketed-higher-today/',4),(2,'daniel howley','...','2026-09-16',0.32152,'Snap launches $2,195 Specs smart glasses','https://ca.finance.yahoo.com/news/snap-launches-2195-specs-smart-glasses-234000058.html',2),(3,'will healy','Shopify (SHOP -1.05%) has struggled since peaking at $179 per share nearly one year ago. While the company continues to grow at a brisk pace, conservative guidance and concerns about artificial intell...','2026-09-16',0.84576,'Down 25%, Is Shopify Stock a Better Buy than SpaceX and the \"Magnificent Seven\" Stocks in September?','https://www.fool.com/investing/2026/09/16/down-25-is-shopify-stock-a-better-buy-than-spacex/',4),(4,'adam levy','Anthropic is preparing for a record-breaking IPO this fall. The company is reportedly seeking a $2 trillion valuation with the potential to raise $100 billion from newly issued shares. Both would be r...','2026-09-16',0.34192,'What the Anthropic IPO Means for Amazon and Alphabet Investors','https://www.fool.com/investing/2026/09/16/what-anthropic-ipo-means-amazon-alphabet/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-18',0.1992,'Gemini 3.8 Liveâ€™s Extended Thinking Model Beats OpenAI and xAI, Barely, and Maybe Briefly','https://www.insidermonkey.com/news/gemini-3-8-lives-extended-thinking-model-beats-openai-and-xai-barely-and-maybe-briefly-1839403/',4),(2,'aj tiarsmith','Warren Buffett just handed over the last title he held at Berkshire Hathaway, closing a run few investors will ever match. His five biggest stock positions reveal exactly how he thought about money, c...','2026-09-18',0.70942,'As Buffett Ends His Legendary Career, These Were His 5 Best Investments','https://247wallst.com/investing/2026/09/18/as-buffett-ends-his-legendary-career-these-were-his-5-best-investments/',4),(3,'ryan vanzo','Interest rates are back on the rise. On Sept. 16, the Federal Reserve voted unanimously to hike the federal funds rate by 0.25%. Markets fell the day the rate hike was announced.\n\"In a set of quarterl...','2026-09-18',0.77404,'Fed Chair Kevin Warsh Raises Interest Rates for the First Time in Over 3 Years. These AI Stocks Will Benefit','https://www.fool.com/investing/2026/09/18/fed-chair-kevin-warsh-raises-interest-rates-for-the-first-time-in-over-3-years-these-ai-stocks-will-benefit/',4),(4,'cpa','Shares of Magnite (MGNI -1.87%) charged out of the gate on Thursday, soaring as much as 12.9%. As of 11:40 a.m. ET, the stock was still up 7.2%.\nThe catalyst that sent the advertising technology (adte...','2026-09-17',0.19856,'Why Magnite Stock Rocketed Higher Today','https://www.fool.com/investing/2026/09/17/why-magnite-stock-rocketed-higher-today/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -379,4 +380,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-18  5:22:21
+-- Dump completed on 2026-09-19  5:14:41
