@@ -109,6 +109,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
+49ac2758-b3df-11f1-a6a7-7aaeec670ef4:1-59,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -195,7 +196,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8c530a4c-a37b-11f1-a317-1a21ce6c66a5:1-62,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
 8d927fab-ca6f-11f0-be0e-decd01ef5402:1-64,
-8f3b50cc-b316-11f1-ba6b-8e5d5ea2366b:1-230,
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
@@ -260,6 +260,7 @@ c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
+ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -356,7 +357,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -365,6 +366,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wk3t3m','panszfk','2026-09-18',14,0.7783,'This was the common wisdom when Apple was the first company to hit a $1 trillion valuation: its days of growth are over. Yet here we are a few years later about to hit a $5 trillion valuation.'),(2,'AAPL','1wk3t3m','panxxsh','2026-09-18',8,0,'5 trillion without the Duo. This a game changer long run once everyone adapts to the fold, there margins will be higher. '),(3,'AAPL','1wk3t3m','pap06sv','2026-09-19',1,0.3612,'They can simply raise the price of services and devices to grow. Services is something like 70% margin. '),(4,'AAPL','1wk3t3m','pap6u8k','2026-09-19',1,0.474,'Aapl has been reducing the number of shares outstanding by 500 MILLION a year for the last six years.  What is the graph above showing? There were 14.7B outstanding, but the trend is downward, not upward like shown in the graph.'),(5,'AAPL','1wk3t3m','paot1t9','2026-09-19',-1,0.2732,'God these posts are so old. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -378,4 +380,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-18  4:11:05
+-- Dump completed on 2026-09-19  4:06:11
