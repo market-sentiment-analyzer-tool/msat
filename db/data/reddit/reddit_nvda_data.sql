@@ -64,6 +64,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
+21bd3ae1-b4ab-11f1-a78b-06d258401a03:1-41,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
 229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
@@ -109,7 +110,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
-49ac2758-b3df-11f1-a6a7-7aaeec670ef4:1-59,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
@@ -291,6 +291,7 @@ df5fe017-24d3-11f1-a997-628402d3593c:1-56,
 e0732b3a-b18e-11f1-ab87-d22728c8735d:1-61,
 e079f13e-572c-11f1-8b93-fe516223f70f:1-67,
 e09fc985-af33-11f1-a85a-ae01afa5e0ec:1-59,
+e12f0caf-b3e8-11f1-8ed3-622f6f970566:1-50,
 e1422d40-b85c-11f0-a87b-d2686e313622:1-68,
 e2b58baf-c35c-11f0-b952-6a331cccbd94:1-70,
 e3b955db-0f9e-11f1-a1bb-c215eca60d21:1-66,
@@ -357,7 +358,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -366,6 +367,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'investing','1wkjedo','par11y8','2026-09-19',6,0.4208,'Your thesis misses the structural reason why MU, SNDK and other memory plays have skyrocketed recently compared to where they sat in late 2024. Back in late 2024, NVIDIA was already this highly valued. Meanwhile, MU and SNDK were trading at a tiny fraction of today\'s valuations because Wall Street viewed memory as a low-margin commodity specifically as memory prices were still low. What actually changed? Memory prices went absolutely parabolic. In 2024, NVIDIA was buying HBM memory at a fraction of the contract prices they are paying now. Right now, memory scarcity is the bottleneck, which is why MU and SNDK are up significantly. But memory is notoriously a boom-and-bust cycle. When supply capacity catches up in the near future and memory prices compress, MU and SNDK will face sharp margin contractions long before NVIDIA\'s ecosystem moat is ever threatened.Â '),(2,'investing','1wkjedo','parhsl4','2026-09-19',3,0.0516,'Memory is highly highly commoditized. When supply finally meets demand it goes cyclical again. Memory companies made zero money for a decade. Now they are holding a kings ransom because they know what is coming. Gpu/asic are the exact opposite. Highly engineered and customized and not commoditized. '),(3,'investing','1wkjedo','paqzvwp','2026-09-19',3,-0.5661,'What makes memory stocks cyclical? I guess I\'m under the impression memory and CPU are now closer related to a core need and not a discretionary item. I also feel that if memory slows down, why does the CPU boom when they\'re literally on the same board or in the same box. Why wouldn\'t they trend with each other?\n\n'),(4,'investing','1wkjedo','parek5v','2026-09-19',2,0.4404,'Sandisk is the company that made the little USB stick rolling around in my desk drawr and I cant get past that. Micron makes the DRAM that ends up in basically everything. Calling one \"more diversified in the memory ecosystem\" when the other is essentially just NAND is a stretch.'),(5,'investing','1wkjedo','park0xp','2026-09-19',1,0.0665,'I think the key distinction is that \"memory \" isn\'t automatically the same trade as AI . Micron and SanDisk are much more directly exposed to the memory cycle , pricing , inventory , supply discipline . NVIDIA  is exposed to AI compute demand , while AMD sits somewhere in between with its CPU/GPU/data center exposure . That said , AI growth directly supports HBM  and high end memory demand .  If ai spending slows , both accelerator demand and memory pricing could take a hit .\n\nI\'d watch HBM  demand , memory pricing , and hyperscaler capex rather than simply asking whether AI  is still growing '),(6,'investing','1wkjedo','paug8rm','2026-09-19',1,0.6705,'Memory is a commodity because it is built to a non-proprietary, industry-wide standard called JEDEC. Logic chips are application/sector specific and often use a proprietary architecture. This allows logic chip designers to carve out a niche and enforce customer lock-in, which helps to insulate themselves from the commodity cycle. The cycle itself is caused by the particular economics of building and running fabs, so technically the logic chip designers are also exposed to this over/under supply pendulum, but because logic is less commoditized than memory they handle it better.'),(7,'investing','1wkjedo','parbsx8','2026-09-19',1,0,'70% Micron is not diversification.'),(8,'investing','1wkjedo','paspckl','2026-09-19',-1,0,'Memory is a commodity, GPUs are not.  '),(9,'NVDA_Stock','1wkubfl','pauh65q','2026-09-19',10,0,'![gif](giphy|cb7t8mVPkiQDK)'),(10,'NVDA_Stock','1wkubfl','patrqdf','2026-09-19',8,0,'![gif](giphy|M8H6X1YllXh01sWlXc)'),(11,'NVDA_Stock','1wkubfl','patjbhy','2026-09-19',13,0.3612,'Sir, this is a Wendy\'s dumpster, and every dollar earned here goes straight into NVDA fractional shares.'),(12,'NVDA_Stock','1wkubfl','patvq94','2026-09-19',10,-0.0935,'Jensen does apologize sometimes though - he apologizes that he can\'t build even *more* chips to sell.'),(13,'NVDA_Stock','1wkubfl','pav4d74','2026-09-19',6,0,'Preach it brother, I\'m sipping the Kool-aid!'),(14,'NVDA_Stock','1wkubfl','pavo5sc','2026-09-20',6,0,'https://preview.redd.it/8k4wki5yykqh1.jpeg?width=500&format=pjpg&auto=webp&s=cb0a8e680131faaad8645384feaf34f993e22702'),(15,'NVDA_Stock','1wkubfl','patncf1','2026-09-19',6,0,'ðŸ‘ðŸ‘ðŸ‘'),(16,'NVDA_Stock','1wkubfl','pavgjkv','2026-09-20',2,0,'Mark my words. Next week we\'re going to the moon!'),(17,'NVDA_Stock','1wkubfl','pauybqq','2026-09-19',1,0.3716,'Long term investor here . Not a problem! '),(18,'NVDA_Stock','1wkubfl','pav38j9','2026-09-19',1,0,'How much more compute per chip on average next year vs this year?  Approximate.'),(19,'NVDA_Stock','1wkubfl','pavishi','2026-09-20',1,0,'You go first.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -379,4 +381,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-19  4:06:12
+-- Dump completed on 2026-09-20  4:25:12
