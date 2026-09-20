@@ -161,6 +161,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6d9f8713-8fb8-11f1-9650-7a48b512b4f2:1-60,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
+6e3935eb-b4b4-11f1-a292-ea64ea246195:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
 6f22e9a3-32fd-11f1-b6dd-fa28441f5a08:1-62,
@@ -357,7 +358,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -366,7 +367,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'jabran kundi','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-18',0.1992,'Gemini 3.8 Liveâ€™s Extended Thinking Model Beats OpenAI and xAI, Barely, and Maybe Briefly','https://www.insidermonkey.com/news/gemini-3-8-lives-extended-thinking-model-beats-openai-and-xai-barely-and-maybe-briefly-1839403/',4),(2,'aj tiarsmith','Warren Buffett just handed over the last title he held at Berkshire Hathaway, closing a run few investors will ever match. His five biggest stock positions reveal exactly how he thought about money, c...','2026-09-18',0.70942,'As Buffett Ends His Legendary Career, These Were His 5 Best Investments','https://247wallst.com/investing/2026/09/18/as-buffett-ends-his-legendary-career-these-were-his-5-best-investments/',4),(3,'ryan vanzo','Interest rates are back on the rise. On Sept. 16, the Federal Reserve voted unanimously to hike the federal funds rate by 0.25%. Markets fell the day the rate hike was announced.\n\"In a set of quarterl...','2026-09-18',0.77404,'Fed Chair Kevin Warsh Raises Interest Rates for the First Time in Over 3 Years. These AI Stocks Will Benefit','https://www.fool.com/investing/2026/09/18/fed-chair-kevin-warsh-raises-interest-rates-for-the-first-time-in-over-3-years-these-ai-stocks-will-benefit/',4),(4,'cpa','Shares of Magnite (MGNI -1.87%) charged out of the gate on Thursday, soaring as much as 12.9%. As of 11:40 a.m. ET, the stock was still up 7.2%.\nThe catalyst that sent the advertising technology (adte...','2026-09-17',0.19856,'Why Magnite Stock Rocketed Higher Today','https://www.fool.com/investing/2026/09/17/why-magnite-stock-rocketed-higher-today/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dulan lokuwithana',' \nA lawsuit has been filed in California accusing leading tech companies SpaceX (SPCX), Google (GOOG) (GOOGL), Anthropic (ANTHRO), and OpenAI (OPENAI) of illegally collaborating to slow down the pace ...','2026-09-19',-0.30092,'SpaceX, Google, Anthropic, OpenAI face antitrust lawsuit over AI slowdown','https://seekingalpha.com/news/4644566-spacex-google-face-antitrust-suit-over-ai-slowdown?feed_item_type=news',8),(2,'dulan lokuwithana',' \nGoogle (GOOG) on Friday confirmed that its Gemini model gained unauthorized access to three companies in May during a review of its cybersecurity capabilities, the first known incident of the compan...','2026-09-19',0.06072,'Google says Gemini AI model hacked three companies in security test','https://seekingalpha.com/news/4644563-google-gemini-ai-model-hacked-three-companies?feed_item_type=news',80),(3,'james brumley','Its enormous need for electricity, its massive physical footprint, and, most recently, concerns that it could inadvertently cause catastrophic problems have pushed the artificial intelligence (AI) bus...','2026-09-19',0.09742,'Sam Altman Admits the AI Industry Has Done \"a Terrible Job\" Explaining Its Benefits Amid Growing Backlash. Should That Worry Nvidia and Microsoft Investors?','https://www.fool.com/investing/2026/09/19/sam-altman-ai-industry-worry-nvidia-microsoft/',4),(4,'silin chen','Please enable JS and disable any ad blocker...','2026-09-19',0.06364,'Cathie Wood buys $19.2 million of tumbling AI stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-coreweave-19-2-million-of-tumbling-ai-stock',4),(5,'hanz christensen','...','2026-09-18',0,'Alphabet Target of Unusually Large Options Trading (NASDAQ:GOOGL)','https://www.watchlistnews.com/alphabet-target-of-unusually-large-options-trading-nasdaqgoogl/11230683.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -380,4 +381,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-19  5:14:41
+-- Dump completed on 2026-09-20  5:31:39
