@@ -107,6 +107,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+48de075f-b57e-11f1-8dad-2e891b47d40c:1-58,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
@@ -358,7 +359,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -367,7 +368,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dulan lokuwithana',' \nA lawsuit has been filed in California accusing leading tech companies SpaceX (SPCX), Google (GOOG) (GOOGL), Anthropic (ANTHRO), and OpenAI (OPENAI) of illegally collaborating to slow down the pace ...','2026-09-19',-0.30092,'SpaceX, Google, Anthropic, OpenAI face antitrust lawsuit over AI slowdown','https://seekingalpha.com/news/4644566-spacex-google-face-antitrust-suit-over-ai-slowdown?feed_item_type=news',8),(2,'dulan lokuwithana',' \nGoogle (GOOG) on Friday confirmed that its Gemini model gained unauthorized access to three companies in May during a review of its cybersecurity capabilities, the first known incident of the compan...','2026-09-19',0.06072,'Google says Gemini AI model hacked three companies in security test','https://seekingalpha.com/news/4644563-google-gemini-ai-model-hacked-three-companies?feed_item_type=news',80),(3,'james brumley','Its enormous need for electricity, its massive physical footprint, and, most recently, concerns that it could inadvertently cause catastrophic problems have pushed the artificial intelligence (AI) bus...','2026-09-19',0.09742,'Sam Altman Admits the AI Industry Has Done \"a Terrible Job\" Explaining Its Benefits Amid Growing Backlash. Should That Worry Nvidia and Microsoft Investors?','https://www.fool.com/investing/2026/09/19/sam-altman-ai-industry-worry-nvidia-microsoft/',4),(4,'silin chen','Please enable JS and disable any ad blocker...','2026-09-19',0.06364,'Cathie Wood buys $19.2 million of tumbling AI stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-coreweave-19-2-million-of-tumbling-ai-stock',4),(5,'hanz christensen','...','2026-09-18',0,'Alphabet Target of Unusually Large Options Trading (NASDAQ:GOOGL)','https://www.watchlistnews.com/alphabet-target-of-unusually-large-options-trading-nasdaqgoogl/11230683.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dulan lokuwithana','...','2026-09-19',-0.18104,'SpaceX, Google, Anthropic, OpenAI face antitrust lawsuit over AI slowdown','https://seekingalpha.com/news/4644566-spacex-google-face-antitrust-suit-over-ai-slowdown?feed_item_type=news',4),(2,'dulan lokuwithana','...','2026-09-19',-0.06176,'Google says Gemini AI model hacked three companies in security test','https://seekingalpha.com/news/4644563-google-gemini-ai-model-hacked-three-companies?feed_item_type=news',40),(3,'james brumley','Its enormous need for electricity, its massive physical footprint, and, most recently, concerns that it could inadvertently cause catastrophic problems have pushed the artificial intelligence (AI) bus...','2026-09-19',0.09742,'Sam Altman Admits the AI Industry Has Done \"a Terrible Job\" Explaining Its Benefits Amid Growing Backlash. Should That Worry Nvidia and Microsoft Investors?','https://www.fool.com/investing/2026/09/19/sam-altman-ai-industry-worry-nvidia-microsoft/',4),(4,'silin chen','Please enable JS and disable any ad blocker...','2026-09-19',0.06364,'Cathie Wood buys $19.2 million of tumbling AI stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-coreweave-19-2-million-of-tumbling-ai-stock',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -381,4 +382,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-20  5:31:39
+-- Dump completed on 2026-09-21  5:36:41
