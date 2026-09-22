@@ -107,6 +107,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
+48de075f-b57e-11f1-8dad-2e891b47d40c:1-58,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
@@ -178,6 +179,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
+7db3096a-b63c-11f1-a822-da0bf07824ab:1-58,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
@@ -329,7 +331,6 @@ f82f2007-743f-11f1-a559-1a3712190d31:1-59,
 f87a95de-16b0-11f1-b147-9e2f7d96cc89:1-59,
 f8d09091-f4e2-11f0-9049-8a2918301695:1-60,
 f91b7d1c-711b-11f1-9531-026bf641fa89:1-59,
-f94c50fb-b573-11f1-886f-12044afce86a:1-48,
 f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
@@ -359,7 +360,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -368,7 +369,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wlzfr3','pb333m8','2026-09-21',3,0.0772,'Is it mandatory to live and be in the USA to claim? '),(2,'AAPL','1wlh1lg','paygp6m','2026-09-20',1,0,'\\*billions');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wmmjfl','pb86qqh','2026-09-21',13,-0.296,'I donâ€™t understand the mention of Yom Kippur. Are non Jews supposed to stop shopping?'),(2,'AAPL','1wmmjfl','pb82lfs','2026-09-21',7,0.5423,'Itâ€™s UN week here and there are thousands of world leadersâ€™ staff and reporters who descend on the city. Itâ€™s one of the busiest periods for the city. I have overseas family that visit and buy Apple products here because they donâ€™t have actual Apple stores in their home country. It could account for what youâ€™re seeing.'),(3,'AAPL','1wmmjfl','pb9nlyq','2026-09-21',1,0.5499,'Apple and Yum Kippur.....hmmm\n\nAdam , eve and apple i can understand but whats the connection between jewish holiday and apple merchandise? ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -382,4 +383,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-21  4:22:43
+-- Dump completed on 2026-09-22  4:18:13
