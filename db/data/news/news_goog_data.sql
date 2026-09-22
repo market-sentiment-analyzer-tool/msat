@@ -334,6 +334,7 @@ f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb816084-b646-11f1-878c-7e3fa91c5222:1-56,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
@@ -359,7 +360,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -368,7 +369,6 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dulan lokuwithana','...','2026-09-19',-0.18104,'SpaceX, Google, Anthropic, OpenAI face antitrust lawsuit over AI slowdown','https://seekingalpha.com/news/4644566-spacex-google-face-antitrust-suit-over-ai-slowdown?feed_item_type=news',4),(2,'dulan lokuwithana','...','2026-09-19',-0.06176,'Google says Gemini AI model hacked three companies in security test','https://seekingalpha.com/news/4644563-google-gemini-ai-model-hacked-three-companies?feed_item_type=news',40),(3,'james brumley','Its enormous need for electricity, its massive physical footprint, and, most recently, concerns that it could inadvertently cause catastrophic problems have pushed the artificial intelligence (AI) bus...','2026-09-19',0.09742,'Sam Altman Admits the AI Industry Has Done \"a Terrible Job\" Explaining Its Benefits Amid Growing Backlash. Should That Worry Nvidia and Microsoft Investors?','https://www.fool.com/investing/2026/09/19/sam-altman-ai-industry-worry-nvidia-microsoft/',4),(4,'silin chen','Please enable JS and disable any ad blocker...','2026-09-19',0.06364,'Cathie Wood buys $19.2 million of tumbling AI stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-coreweave-19-2-million-of-tumbling-ai-stock',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -382,4 +382,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-21  5:36:41
+-- Dump completed on 2026-09-22  5:33:12
