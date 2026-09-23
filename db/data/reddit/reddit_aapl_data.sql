@@ -113,6 +113,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
+4da11121-b705-11f1-8385-d6e969f57a17:1-34,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
@@ -179,7 +180,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
 7c8eae41-648a-11f1-83ae-eecdf0e96318:1-54,
-7db3096a-b63c-11f1-a822-da0bf07824ab:1-58,
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
@@ -335,6 +335,7 @@ f9b01432-ee99-11f0-93b4-66973b524df7:1-62,
 fa0d1688-4a93-11f1-9d70-122f0cdc0f0f:1-55,
 fa2a992f-3233-11f1-bc57-023c6633697c:1-57,
 fb5a5f60-19d2-11f1-b562-4a02a0f80b82:1-57,
+fb816084-b646-11f1-878c-7e3fa91c5222:1-56,
 fb97ccf8-1cf8-11f1-8f55-46c1db01d04a:1-54,
 fc151e59-3dfe-11f1-97aa-4aae792b213d:1-63,
 fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
@@ -360,7 +361,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -369,7 +370,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wmmjfl','pb86qqh','2026-09-21',13,-0.296,'I donâ€™t understand the mention of Yom Kippur. Are non Jews supposed to stop shopping?'),(2,'AAPL','1wmmjfl','pb82lfs','2026-09-21',7,0.5423,'Itâ€™s UN week here and there are thousands of world leadersâ€™ staff and reporters who descend on the city. Itâ€™s one of the busiest periods for the city. I have overseas family that visit and buy Apple products here because they donâ€™t have actual Apple stores in their home country. It could account for what youâ€™re seeing.'),(3,'AAPL','1wmmjfl','pb9nlyq','2026-09-21',1,0.5499,'Apple and Yum Kippur.....hmmm\n\nAdam , eve and apple i can understand but whats the connection between jewish holiday and apple merchandise? ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wno76o','pbgjzqu','2026-09-22',3,0.3182,'Sure buddy'),(2,'AAPL','1wno76o','pbgmioq','2026-09-22',3,0.4588,'Engagement bait. Check OPs history '),(3,'AAPL','1wno76o','pbgjtoz','2026-09-22',5,0.0516,'What a nonsense comment ðŸ˜‚ '),(4,'AAPL','1wno76o','pbgouip','2026-09-22',1,-0.3818,'Hi Far Cupcake 3823, I disagree'),(5,'AAPL','1wno76o','pbgoy1h','2026-09-22',1,0,'Kick rocks. '),(6,'AAPL','1wno76o','pbgp62d','2026-09-22',1,0.7712,'According to you they havenâ€™t innovated yet their stock is at all time high. You donâ€™t need to know anything else buy the stock if you want to make money. Imagine the innovation of Neo, Duo, Ai m6, etcâ€¦ what it will do to the stock! '),(7,'AAPL','1wno76o','pbgpw0t','2026-09-22',1,0.5927,'One word: Moat. \n\nAlso, most users donâ€™t give af about tech innovation like some Indian engineer does. Sam engineers who will praise Android and hate on Apple due to lack of innovation but really itâ€™s just because they donâ€™t want to pay Apple prices but donâ€™t want to admit that. '),(8,'AAPL','1wno76o','pbgrmsc','2026-09-22',1,0.9287,'iPhones innovation is that they don\'t run on Android. Android is great for advertisers because it provides a unique Advertising ID that allows them to track user activity across apps and websites, facilitating targeted advertising. This capability helps advertisers create detailed user profiles for more effective marketing strategies.\n\nWhile Android is engineered first and foremost as a money maker for advertisers, Apple engineers their OS with their users first and foremost. You might not like all the decisions they make for their users, but at least that is their priority, not advertisers. And their phones integrate with their computers really well, better than anything out there. \n\n\n\n'),(9,'AAPL','1wno76o','pbgnbzr','2026-09-22',1,0.8481,'Tell me you donâ€™t know what innovation looks like without telling me you donâ€™t know what innovation looks like.'),(10,'AAPL','1wno76o','pbgjbyq','2026-09-22',0,0.5106,'trust.'),(11,'AAPL','1wno76o','pbgmpow','2026-09-22',0,-0.25,'This poster doesnâ€™t know what â€œinnovationâ€ means. Look at the hinge alone on the latest duo. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -383,4 +384,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-22  4:18:13
+-- Dump completed on 2026-09-23  4:15:25
