@@ -234,6 +234,7 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
+bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
 bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
 bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -360,7 +361,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -369,6 +370,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keith speights','Few artificial intelligence (AI) software companies have generated sizzling growth like Palantir Technologies (PLTR +3.68%) has. However, the AI stock is priced at a steep premium due to its success. ...','2026-09-23',0.50526,'Should You Forget Palantir and Buy These 3 Quantum Computing Stocks Instead?','https://www.fool.com/investing/2026/09/23/should-you-forget-palantir-and-buy-these-3-quantum/',4),(2,'john bromels','As the massive energy needs of the artificial intelligence (AI) build-out become increasingly apparent, AI companies and utilities alike are growing concerned.\nAcross the country, opposition to AI dat...','2026-09-22',0.59468,'Google Goes Nuclear With Power Upgrade Agreement in Georgia','https://www.fool.com/investing/2026/09/22/google-goes-nuclear-with-power-upgrade-agreement-in-georgia/',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -382,4 +384,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-22  5:33:12
+-- Dump completed on 2026-09-24  5:36:12
