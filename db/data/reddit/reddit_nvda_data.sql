@@ -234,6 +234,7 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
+bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
 bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
 bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
@@ -273,6 +274,7 @@ d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
+d6cef96f-b898-11f1-b88e-82e2b5155afc:1-59,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
@@ -281,7 +283,6 @@ d99748ba-37b5-11f1-9d27-cebe840e2d0a:1-63,
 d9c758ba-3ec8-11f1-9258-ae103e3e1572:1-66,
 daaff666-0bb0-11f1-8f56-da97ee01376e:1-55,
 dafa7500-50de-11f1-ad27-e6aac2cf079c:1-57,
-db45df62-b7cd-11f1-b033-be6e687bd902:1-67,
 db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
@@ -361,7 +362,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -370,7 +371,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wnwock','pbkcimg','2026-09-23',6,0,'Source?'),(2,'NVDA_Stock','1wnwock','pblb5n5','2026-09-23',13,-0.8402,'Fuck Musk and fuck that alt-right propaganda bot Grok.'),(3,'NVDA_Stock','1wnwock','pbk9f6n','2026-09-23',2,0.4404,'ðŸ‘ðŸ»'),(4,'NVDA_Stock','1wnwock','pbm3mwm','2026-09-23',5,0.7579,'400,000 bots. Just like the shit hole that is Twitter.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1wp1dob','pbrgbsj','2026-09-24',362,-0.4767,'There\'s an equal weight etf if you\'d rather be poor'),(2,'stocks','1wp1dob','pbs9a8v','2026-09-24',51,0.7783,'Itâ€™s counter intuitive for many people, but the winners tent to keep winning. The â€œApple canâ€™t sell more iPhonesâ€ and â€œNvidia canâ€™t sell more GPUâ€ crowd have been wrong for the past 20 years. At some point, new winners will emerge, until then the top companies in the S&P 500 will dominate the growth. '),(3,'stocks','1wp1dob','pbrtvh2','2026-09-24',42,0.9593,'>It does mean that movements in a relatively small number of mega-cap companies can have a larger effect on the index.\n\nThe reality is the reason why the index trends up over time is it adds more weight to the biggest winners and that has outweighed (by far) the losses from faltering companies.  As an entity, I can only lose 100% of value.  But on the flipside, I can 5/10/25/50x; there is no cap on the upside.\n\nWhen you say AAPL and NVDA have high concentration in the index that is a true statement.  But what is also true is their growth has had a lot of influence on the index propelling up.  You\'re talking about 2 companies that make around $250b in net profit combined and growing.  How many of the bottom SP500 stocks would it take to equal that amount?  It would be well over 100.\n\n'),(4,'stocks','1wp1dob','pbrs3vh','2026-09-24',6,0.5719,'well new ATH for META on the back of Muse Charms'),(5,'stocks','1wp1dob','pbruzj7','2026-09-24',8,0.4404,'Equal-weight S&P is a useful comparison here. If cap-weight keeps outperforming equal-weight, the mega-caps are still doing a lot of the lifting.'),(6,'stocks','1wp1dob','pbrrd3f','2026-09-24',5,0.0516,'So what? This has no bearing on future gains of either stocks or the market in general. '),(7,'stocks','1wp1dob','pbupe7b','2026-09-24',2,0,'Now compare it to rest of world.'),(8,'stocks','1wp1dob','pbvd70b','2026-09-24',1,0.8126,'That concentration of the top names is the reason for the gains. You can buy the equal weight S&P ticker RSP if youâ€™re truly concerned.'),(9,'stocks','1wp1dob','pbvgmii','2026-09-25',1,0.5661,'Is there an index that is S&P500 minus the top 10? (So like the other 60%?)'),(10,'stocks','1wp1dob','pbvtaiw','2026-09-25',1,0.3612,'In other news, water is wet. \n\nThis has been the case for like 2 years. '),(11,'stocks','1wp1dob','pbvwzfy','2026-09-25',1,-0.128,'Expect the big techs to continue to dominate the S&P 500.'),(12,'stocks','1wp1dob','pbwdxjl','2026-09-25',1,0.296,'Both going to 500 a share '),(13,'stocks','1wp1dob','pbs6fds','2026-09-24',1,0,'The trend will continue, AI companies will consume all'),(14,'stocks','1wp1dob','pbtpwna','2026-09-24',0,0.8227,'Not a worry \n\nThe index will self adjust when the big winners begin to fall behind and new winners emerge ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -384,4 +385,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-24  4:12:39
+-- Dump completed on 2026-09-25  4:24:30
