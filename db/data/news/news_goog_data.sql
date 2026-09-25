@@ -209,6 +209,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -361,7 +362,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -370,7 +371,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keith speights','Few artificial intelligence (AI) software companies have generated sizzling growth like Palantir Technologies (PLTR +3.68%) has. However, the AI stock is priced at a steep premium due to its success. ...','2026-09-23',0.50526,'Should You Forget Palantir and Buy These 3 Quantum Computing Stocks Instead?','https://www.fool.com/investing/2026/09/23/should-you-forget-palantir-and-buy-these-3-quantum/',4),(2,'john bromels','As the massive energy needs of the artificial intelligence (AI) build-out become increasingly apparent, AI companies and utilities alike are growing concerned.\nAcross the country, opposition to AI dat...','2026-09-22',0.59468,'Google Goes Nuclear With Power Upgrade Agreement in Georgia','https://www.fool.com/investing/2026/09/22/google-goes-nuclear-with-power-upgrade-agreement-in-georgia/',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'omor ibne ehsan','Alphabet shed 3.8% in a single session with no earnings warning, no guidance cut, and no regulatory news to explain it. The gap between where the stock trades now and where analysts say it belongs rai...','2026-09-24',0.13724,'Alphabet Drops Below $350: Buying Opportunity or the Start of Something Worse?','https://247wallst.com/investing/2026/09/24/alphabet-drops-below-350-buying-opportunity-or-the-start-of-something-worse/',4),(2,'adam levy','Meta Platforms (META +4.50%) released its Muse AI agent about two weeks ago, and it appears to have another hit on its hands. The Muse app has climbed to the top of the app store charts in recent days...','2026-09-24',0.9215,'News About Muse Drove a 1-Day 11% Jump in Meta Stock. But the AI Agent Could Be Even More Valuable Than the Market Is Giving It Credit For.','https://www.fool.com/investing/2026/09/24/news-about-muse-drove-1-day-11-jump-in-meta-stock/',4),(3,'summit research','...','2026-09-24',0.21856,'Alphabet: The Gemini-Cloud Divergence Hides A $1 Trillion Opportunity','https://seekingalpha.com/article/4949414-alphabet-the-gemini-cloud-divergence-hides-a-1-trillion-opportunity',4),(4,'keith speights','Few artificial intelligence (AI) software companies have generated sizzling growth like Palantir Technologies (PLTR +0.42%) has. However, the AI stock is priced at a steep premium due to its success. ...','2026-09-23',0.50526,'Should You Forget Palantir and Buy These 3 Quantum Computing Stocks Instead?','https://www.fool.com/investing/2026/09/23/should-you-forget-palantir-and-buy-these-3-quantum/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -384,4 +385,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-24  5:36:12
+-- Dump completed on 2026-09-25  5:34:18
