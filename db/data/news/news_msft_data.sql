@@ -220,6 +220,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
+ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -362,7 +363,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -371,7 +372,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sarita garza','...','2026-09-24',0,'Jefferies Financial Group Reiterates â€œBuyâ€ Rating for Microsoft (NASDAQ:MSFT)','https://www.themarketsdaily.com/2026/09/24/jefferies-financial-group-reiterates-buy-rating-for-microsoft-nasdaqmsft.html',20),(2,'tristan rich','...','2026-09-24',0.43384,'Microsoft (NASDAQ:MSFT) Receives Buy Rating from Jefferies Financial Group','https://www.themarketsdaily.com/2026/09/24/microsoft-nasdaqmsft-receives-buy-rating-from-jefferies-financial-group.html',20),(3,'larry ramer','Oracleâ€™s (ORCL) rapid cloud growth, impressive financial results, and exceptionally low valuation make the shares attractive to both growth and value investors.\nAdditionally, Oracleâ€™s multi-billionair...','2026-09-24',0.19962,'Oracleâ€™s AI Cloud Boom Is Accelerating. Is ORCL Stock Still Undervalued?','https://news.clearancejobs.com/2026/09/24/oracles-ai-cloud-boom-is-accelerating-is-orcl-stock-still-undervalued/',4),(4,'sara appino','Artificial intelligence is transforming every corner of the market, but not all players follow the same playbook. Choosing between BigBear.ai (BBAI -1.41%) and Nebius Group (NBIS +7.45%) requires bala...','2026-09-24',0.80036,'BigBear.ai vs. Nebius Group: Which Specialized AI Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/24/bigbear-ai-vs-nebius-group-which-specialized-ai-stock-is-a-better-buy-in-2026/',4),(5,'vandita jadeja','Azure just crossed a milestone that resets how analysts should value Microsoft, yet the stock sits below where it traded a year ago. The reason behind that disconnect points to an opportunity most inv...','2026-09-24',0.90692,'Prediction: Microsoftâ€™s Best Growth Opportunity May Still Be Ahead','https://247wallst.com/investing/2026/09/24/prediction-microsofts-best-growth-opportunity-may-still-be-ahead/',4),(6,'blockchain.news','\nJessie A Ellis\n Sep 24, 2026 12:30\n\nMicrosoft trades at $498.14, coiling just below a critical $506.52 resistance as momentum stalls â€” but with Wall Street consensus clustered around $567â€“$575 and Az...','2026-09-24',0.4717,'MSFT Price Prediction: Azure-Fueled Breakout Targets $570â€“$608 Before October Earnings','https://blockchain.news/news/20260924-price-prediction-msft-azure-fueled-breakout-targets-570608-before',40),(7,'david sekera; cfa','...','2026-09-24',0.18104,'Why Broadcom Stock Is Worth $650','https://www.morningstar.com/podcasts/the-morning-filter/why-broadcom-stock-is-worth-650-2',2),(8,'daniel pernas','...','2026-09-24',0,'7 Stocks With Technical Bottoms in Sight â€” What Investors Should Watch Now','https://ca.investing.com/analysis/7-stocks-with-technical-bottoms-in-sight--what-investors-should-watch-now-200628075',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'caleb silver','Geopolitical conflicts, stubborn inflation and unpredictable economic policy are tempering investorsâ€™ enthusiasm\nMichael M. Santiago / Getty Images\n Get personalized, AI-powered answers built on 27+ y...','2026-09-25',-0.4187,'Investors Step Cautiously Through a House of Horrors Scaring the Stock Market','https://www.investopedia.com/investors-step-cautiously-through-a-house-of-horrors-scaring-the-stock-market-12138897',4),(2,'michael james mcdonald','...','2026-09-25',0,'Option Activity Suggests Microsoft Rally Has Further To Go (Technical Analysis)','https://seekingalpha.com/article/4949768-option-activity-suggests-microsoft-rally-has-further-to-go-technical-analysis',40),(3,'yahoo finance','...','2026-09-25',0,'Costco is getting squeezed by the AI boom','https://www.bundle.app/en/finance/costco-is-getting-squeezed-by-the-ai-boom-5DE6E9B3-124D-4D00-A0D1-56AC8F542AE9',2),(4,'rips','Premium Services\nGood Morning Traders! \nTodayâ€™s economic calendar closes out the week with a few notable releases focused on business investment and consumer sentiment, starting with preliminary Augus...','2026-09-25',0.55208,'How To Trade SPY, QQQ, And 6 Mega Caps As Durable Goods Data, Michigan Sentiment Set Up Key Volatility Windows','https://www.benzinga.com/Opinion/26/09/61994178/how-to-trade-spy-qqq-and-6-mega-caps-as-durable-goods-data-michigan-sentiment-set-up-key-volatility-windows',8),(5,'chris lange','Not every S&P 500 dividend stock is built the same, and the gap between names that merely pay and names that can keep paying through any cycle comes down to one number hiding in plain sight on the cas...','2026-09-25',0.93078,'The S&P 500â€™s Best Dividend Stocks Share One Powerful Advantage','https://247wallst.com/investing/2026/09/25/the-sp-500s-best-dividend-stocks-share-one-powerful-advantage/',4),(6,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-09-25',0.06364,'Oppenheimer resets Microsoft stock price target after HQ visit','https://www.thestreet.com/investing/stocks/oppenheimer-resets-microsoft-stock-price-target-after-hq-visit',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -385,4 +386,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-25  5:34:18
+-- Dump completed on 2026-09-26  5:40:44
