@@ -209,7 +209,9 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
+9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
+9f7bacbd-b962-11f1-819d-92fb324d53cb:1-76,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -274,7 +276,6 @@ d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
-d6cef96f-b898-11f1-b88e-82e2b5155afc:1-59,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
@@ -362,7 +363,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -371,7 +372,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1wp1dob','pbrgbsj','2026-09-24',362,-0.4767,'There\'s an equal weight etf if you\'d rather be poor'),(2,'stocks','1wp1dob','pbs9a8v','2026-09-24',51,0.7783,'Itâ€™s counter intuitive for many people, but the winners tent to keep winning. The â€œApple canâ€™t sell more iPhonesâ€ and â€œNvidia canâ€™t sell more GPUâ€ crowd have been wrong for the past 20 years. At some point, new winners will emerge, until then the top companies in the S&P 500 will dominate the growth. '),(3,'stocks','1wp1dob','pbrtvh2','2026-09-24',42,0.9593,'>It does mean that movements in a relatively small number of mega-cap companies can have a larger effect on the index.\n\nThe reality is the reason why the index trends up over time is it adds more weight to the biggest winners and that has outweighed (by far) the losses from faltering companies.  As an entity, I can only lose 100% of value.  But on the flipside, I can 5/10/25/50x; there is no cap on the upside.\n\nWhen you say AAPL and NVDA have high concentration in the index that is a true statement.  But what is also true is their growth has had a lot of influence on the index propelling up.  You\'re talking about 2 companies that make around $250b in net profit combined and growing.  How many of the bottom SP500 stocks would it take to equal that amount?  It would be well over 100.\n\n'),(4,'stocks','1wp1dob','pbrs3vh','2026-09-24',6,0.5719,'well new ATH for META on the back of Muse Charms'),(5,'stocks','1wp1dob','pbruzj7','2026-09-24',8,0.4404,'Equal-weight S&P is a useful comparison here. If cap-weight keeps outperforming equal-weight, the mega-caps are still doing a lot of the lifting.'),(6,'stocks','1wp1dob','pbrrd3f','2026-09-24',5,0.0516,'So what? This has no bearing on future gains of either stocks or the market in general. '),(7,'stocks','1wp1dob','pbupe7b','2026-09-24',2,0,'Now compare it to rest of world.'),(8,'stocks','1wp1dob','pbvd70b','2026-09-24',1,0.8126,'That concentration of the top names is the reason for the gains. You can buy the equal weight S&P ticker RSP if youâ€™re truly concerned.'),(9,'stocks','1wp1dob','pbvgmii','2026-09-25',1,0.5661,'Is there an index that is S&P500 minus the top 10? (So like the other 60%?)'),(10,'stocks','1wp1dob','pbvtaiw','2026-09-25',1,0.3612,'In other news, water is wet. \n\nThis has been the case for like 2 years. '),(11,'stocks','1wp1dob','pbvwzfy','2026-09-25',1,-0.128,'Expect the big techs to continue to dominate the S&P 500.'),(12,'stocks','1wp1dob','pbwdxjl','2026-09-25',1,0.296,'Both going to 500 a share '),(13,'stocks','1wp1dob','pbs6fds','2026-09-24',1,0,'The trend will continue, AI companies will consume all'),(14,'stocks','1wp1dob','pbtpwna','2026-09-24',0,0.8227,'Not a worry \n\nThe index will self adjust when the big winners begin to fall behind and new winners emerge ');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wpw18x','pbyvt2f','2026-09-25',10,-0.4118,'Nothing moves the stock damn . Amd is all hype at this time with half the growth but is mooning - crazy '),(2,'NVDA_Stock','1wpw18x','pc0mb90','2026-09-25',3,0.7096,'To space/the moon post-elections NVDA ðŸ‘ðŸ˜'),(3,'NVDA_Stock','1wpw18x','pbzj78t','2026-09-25',4,0.9001,'So is this gonna boost our revenue and earnings per share which will boost our stock price?'),(4,'NVDA_Stock','1wpw18x','pbzwp05','2026-09-25',4,0,'Mush says a lot of stuff and 99% of it is bollocks '),(5,'NVDA_Stock','1wpw18x','pbz9hur','2026-09-25',2,-0.3612,'Nvidia sucks to trade. Range bound all year'),(6,'NVDA_Stock','1wpw18x','pbzwmrp','2026-09-25',2,0,'And still be shite '),(7,'NVDA_Stock','1wpw18x','pbytiqq','2026-09-25',-3,-0.2263,'\"Musk says\"... And then I already stopped reading.'),(8,'NVDA_Stock','1wpw18x','pc0ajqd','2026-09-25',-3,0.657,'I work with the teams setting this up and there is a 100% chance this will not happen.\n\nThey dont have the power, time, or chip supply');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -385,4 +386,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-25  4:24:30
+-- Dump completed on 2026-09-26  4:28:45
