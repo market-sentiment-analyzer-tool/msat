@@ -115,6 +115,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+50ce058e-ba2e-11f1-9117-b693b4dd4649:1-35,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
@@ -211,7 +212,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
-9f7bacbd-b962-11f1-819d-92fb324d53cb:1-76,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -221,6 +221,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
+ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -363,7 +364,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,6 +373,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'wallstreetbets','1wr7137','pca7gn8','2026-09-27',112,-0.7351,'Apple\'s couch cushion money. They\'ll appeal this down to a rounding error.'),(2,'wallstreetbets','1wr7137','pca6qgu','2026-09-27',135,0,'Theyâ€™ll settle for scraps. Check Neonode vs Samsung 2025'),(3,'wallstreetbets','1wr7137','pca8hgb','2026-09-27',45,0.8612,'The US patent system is a joke and stifles innovation more than it encourages innovation'),(4,'wallstreetbets','1wr7137','pca7flo','2026-09-27',32,0,'Vibration technology. Wild '),(5,'wallstreetbets','1wr7137','pca6jdt','2026-09-27',31,0.296,'Chat, are my shares cooked?'),(6,'wallstreetbets','1wr7137','pca9xfo','2026-09-27',4,0,'https://preview.redd.it/5euls1kzvyrh1.png?width=398&format=png&auto=webp&s=5614b56d808693d97ae7892581d0c47440e89b61\n\n'),(7,'wallstreetbets','1wr7137','pcai30v','2026-09-27',3,-0.2023,'Vibrator companies did it first, they want their cut'),(8,'wallstreetbets','1wr7137','pcad64c','2026-09-27',2,0,'Remember when this about of money meant anything for companies?'),(9,'wallstreetbets','1wr7137','pcaj1ms','2026-09-27',1,0,'all in Apple? '),(10,'wallstreetbets','1wr7137','pca7vmk','2026-09-27',0,-0.6124,'Iâ€™m sure the damages were worth $5.7b. How devastating'),(11,'wallstreetbets','1wr7137','pcaj37c','2026-09-27',0,0,'Lunch money '),(12,'wallstreetbets','1wr7137','pcajdr7','2026-09-27',0,-0.4023,'Believe it or not, bullish '),(13,'wallstreetbets','1wr7137','pcamoi4','2026-09-27',0,0,'So calls?');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -385,4 +387,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-26  4:28:44
+-- Dump completed on 2026-09-27  4:46:36

@@ -115,6 +115,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
+50ce058e-ba2e-11f1-9117-b693b4dd4649:1-35,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
@@ -211,7 +212,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
-9f7bacbd-b962-11f1-819d-92fb324d53cb:1-76,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
@@ -221,6 +221,7 @@ a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
+ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
 ac00024e-d704-11f0-9ed7-029d12b41896:1-66,
 ac778608-b2de-11f0-9770-a29135d94770:1-67,
 ad38cf86-c749-11f0-bccb-163e236132cc:1-62,
@@ -363,7 +364,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,7 +373,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wpw18x','pbyvt2f','2026-09-25',10,-0.4118,'Nothing moves the stock damn . Amd is all hype at this time with half the growth but is mooning - crazy '),(2,'NVDA_Stock','1wpw18x','pc0mb90','2026-09-25',3,0.7096,'To space/the moon post-elections NVDA ðŸ‘ðŸ˜'),(3,'NVDA_Stock','1wpw18x','pbzj78t','2026-09-25',4,0.9001,'So is this gonna boost our revenue and earnings per share which will boost our stock price?'),(4,'NVDA_Stock','1wpw18x','pbzwp05','2026-09-25',4,0,'Mush says a lot of stuff and 99% of it is bollocks '),(5,'NVDA_Stock','1wpw18x','pbz9hur','2026-09-25',2,-0.3612,'Nvidia sucks to trade. Range bound all year'),(6,'NVDA_Stock','1wpw18x','pbzwmrp','2026-09-25',2,0,'And still be shite '),(7,'NVDA_Stock','1wpw18x','pbytiqq','2026-09-25',-3,-0.2263,'\"Musk says\"... And then I already stopped reading.'),(8,'NVDA_Stock','1wpw18x','pc0ajqd','2026-09-25',-3,0.657,'I work with the teams setting this up and there is a 100% chance this will not happen.\n\nThey dont have the power, time, or chip supply');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +386,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-26  4:28:45
+-- Dump completed on 2026-09-27  4:46:36
