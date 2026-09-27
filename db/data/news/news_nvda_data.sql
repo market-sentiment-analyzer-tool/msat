@@ -78,6 +78,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,7 +373,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rick orford','Nvidia (NVDA +0.22%) has become one of the biggest names in the artificial intelligence (AI) boom, but what matters now is what comes next. Five years is a long time in tech, and Nvidia still has huge...','2026-09-25',0.1992,'Where Will Nvidia Be in 5 Years?','https://www.fool.com/investing/2026/09/25/where-will-nvidia-be-in-5-years/',40),(2,'caleb silver','Geopolitical conflicts, stubborn inflation and unpredictable economic policy are tempering investorsâ€™ enthusiasm\nMichael M. Santiago / Getty Images\n Get personalized, AI-powered answers built on 27+ y...','2026-09-25',-0.4187,'Investors Step Cautiously Through a House of Horrors Scaring the Stock Market','https://www.investopedia.com/investors-step-cautiously-through-a-house-of-horrors-scaring-the-stock-market-12138897',4),(3,'vandita jadeja','Nvidia sits at the heart of a $2 trillion cloud backlog, and a simple monthly contribution strategy could turn that tailwind into a dramatically different number by 2030. The spread between the best a...','2026-09-25',0.69936,'If You Invest $500 a Month in Nvidia Starting Now, This is What Youâ€™d Have in 2030','https://247wallst.com/investing/2026/09/25/if-you-invest-500-a-month-in-nvidia-starting-now-this-is-what-youd-have-in-2030/',40),(4,'vandita jadeja','A $15,000 bet split across three Nasdaq giants could look very different by 2030 depending on which of them ends up dragging the whole portfolio down.\n Price Targets desk. Editor: Vandita Jadeja.\nRead...','2026-09-25',0.69958,'If You Invest $15,000 Into These 3 Stocks, You Could Have $30,000 In 2030','https://247wallst.com/investing/2026/09/25/if-you-invest-15000-into-these-3-stocks-you-could-have-30000-in-2030/',4),(5,'vandita jadeja','NVIDIA trades at a multiple more typical of a mature chipmaker than a company growing revenue north of 100% year over year, and that gap between perception and reality is exactly where the next five y...','2026-09-25',0.67928,'This Magnificent Seven Stock Could Deliver Outsized Returns Over the Next 5 Years','https://247wallst.com/investing/2026/09/25/this-magnificent-seven-stock-could-deliver-outsized-returns-over-the-next-5-years/',4),(6,'yahoo finance','...','2026-09-25',0,'Costco is getting squeezed by the AI boom','https://www.bundle.app/en/finance/costco-is-getting-squeezed-by-the-ai-boom-5DE6E9B3-124D-4D00-A0D1-56AC8F542AE9',2),(7,'rips','Premium Services\nGood Morning Traders! \nTodayâ€™s economic calendar closes out the week with a few notable releases focused on business investment and consumer sentiment, starting with preliminary Augus...','2026-09-25',0.55208,'How To Trade SPY, QQQ, And 6 Mega Caps As Durable Goods Data, Michigan Sentiment Set Up Key Volatility Windows','https://www.benzinga.com/Opinion/26/09/61994178/how-to-trade-spy-qqq-and-6-mega-caps-as-durable-goods-data-michigan-sentiment-set-up-key-volatility-windows',8);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'faizan farooque','Please enable JS and disable any ad blocker...','2026-09-26',0.043,'UBS makes bold call as CoreWeave faces $35 billion problem','https://www.thestreet.com/investing/stocks/coreweave-buy-rating-120-price-target-ubs',4),(2,'abdul rahman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-26',0.68946,'Coinbase (COIN) Gets a Path to Tokenized Stocks in the US. But Can It Turn That Into Revenue?','https://www.insidermonkey.com/news/coinbase-coin-gets-a-path-to-tokenized-stocks-in-the-us-but-can-it-turn-that-into-revenue-1841539/',4),(3,'sara appino','Choosing between Figma (FIG -2.30%) and Palantir Technologies (PLTR -1.52%) requires balancing rapid expansion against proven profitability.\nFigma provides collaborative design tools that have become ...','2026-09-26',0.7999,'Figma vs. Palantir Technologies: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/26/figma-vs-palantir-technologies-which-technology-stock-is-a-better-buy-in-2026/',4),(4,'reuben gregg brewer','Nvidia (NVDA +0.22%) is the poster child for artificial intelligence (AI) stocks. That makes sense, given that it makes the high-powered chips that allow these highly complex computer programs to func...','2026-09-26',0.86156,'Prediction: Robotics Will Be the Biggest Opportunity Within the AI Supercycle. 1 Dividend Growth Stock to Own.','https://www.fool.com/investing/2026/09/26/prediction-robotics-will-be-the-biggest-opportunit/',4),(5,'luke lango','\n\n			The hottest new address in AI infrastructure may be a few hundred miles in the sky		\nSource: PixelNexusArt | stock.adobe.com\nListen to the audio version of this article (generated by AI).\nImagine...','2026-09-26',0.63376,'5 Space Stocks to Buy as Google Takes AI Into Orbit With Project Suncatcher','https://investorplace.com/hypergrowthinvesting/2026/09/spacex-just-put-a-launch-date-on-the-orbital-ai-boom/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +387,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-26  5:40:44
+-- Dump completed on 2026-09-27  5:57:44

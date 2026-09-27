@@ -78,6 +78,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,7 +373,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-09-25',-0.21856,'AI Infrastructure Buildout Risks','https://seekingalpha.com/article/4949702-ai-infrastructure-buildout-risks',4),(2,'tori brovet','...','2026-09-25',0.66168,'12 Best Blue-Chip Stocks to Buy for the Long Term','https://www.morningstar.com/stocks/10-best-blue-chip-stocks-buy-long-term',2),(3,'patrick sanders','One of the biggest arguments against data centers is how much power they require -- and whether the power grid can reasonably accommodate them. Data centers are estimated to consume 4% to 5% of electr...','2026-09-24',0.19936,'Google Is Taking a Major Step Forward Toward Space-Based AI Data Centers','https://www.fool.com/investing/2026/09/24/google-is-taking-a-major-step-forward-toward-space-based-ai-data-centers/',40),(4,'omor ibne ehsan','Alphabet shed 3.8% in a single session with no earnings warning, no guidance cut, and no regulatory news to explain it. The gap between where the stock trades now and where analysts say it belongs rai...','2026-09-24',0.13724,'Alphabet Drops Below $350: Buying Opportunity or the Start of Something Worse?','https://247wallst.com/investing/2026/09/24/alphabet-drops-below-350-buying-opportunity-or-the-start-of-something-worse/',4),(5,'adam levy','Meta Platforms (META -3.33%) released its Muse AI agent about two weeks ago, and it appears to have another hit on its hands. The Muse app has climbed to the top of the app store charts in recent days...','2026-09-24',0.9215,'News About Muse Drove a 1-Day 11% Jump in Meta Stock. But the AI Agent Could Be Even More Valuable Than the Market Is Giving It Credit For.','https://www.fool.com/investing/2026/09/24/news-about-muse-drove-1-day-11-jump-in-meta-stock/',4),(6,'summit research','...','2026-09-24',0.21856,'Alphabet: The Gemini-Cloud Divergence Hides A $1 Trillion Opportunity','https://seekingalpha.com/article/4949414-alphabet-the-gemini-cloud-divergence-hides-a-1-trillion-opportunity',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-09-25',-0.21856,'AI Infrastructure Buildout Risks','https://seekingalpha.com/article/4949702-ai-infrastructure-buildout-risks',4),(2,'tori brovet','...','2026-09-25',0.66168,'12 Best Blue-Chip Stocks to Buy for the Long Term','https://www.morningstar.com/stocks/10-best-blue-chip-stocks-buy-long-term',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +387,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-26  5:40:43
+-- Dump completed on 2026-09-27  5:57:44

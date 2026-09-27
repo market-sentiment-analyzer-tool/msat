@@ -78,6 +78,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -363,7 +364,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,7 +373,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'caleb silver','Geopolitical conflicts, stubborn inflation and unpredictable economic policy are tempering investorsâ€™ enthusiasm\nMichael M. Santiago / Getty Images\n Get personalized, AI-powered answers built on 27+ y...','2026-09-25',-0.4187,'Investors Step Cautiously Through a House of Horrors Scaring the Stock Market','https://www.investopedia.com/investors-step-cautiously-through-a-house-of-horrors-scaring-the-stock-market-12138897',4),(2,'michael james mcdonald','...','2026-09-25',0,'Option Activity Suggests Microsoft Rally Has Further To Go (Technical Analysis)','https://seekingalpha.com/article/4949768-option-activity-suggests-microsoft-rally-has-further-to-go-technical-analysis',40),(3,'yahoo finance','...','2026-09-25',0,'Costco is getting squeezed by the AI boom','https://www.bundle.app/en/finance/costco-is-getting-squeezed-by-the-ai-boom-5DE6E9B3-124D-4D00-A0D1-56AC8F542AE9',2),(4,'rips','Premium Services\nGood Morning Traders! \nTodayâ€™s economic calendar closes out the week with a few notable releases focused on business investment and consumer sentiment, starting with preliminary Augus...','2026-09-25',0.55208,'How To Trade SPY, QQQ, And 6 Mega Caps As Durable Goods Data, Michigan Sentiment Set Up Key Volatility Windows','https://www.benzinga.com/Opinion/26/09/61994178/how-to-trade-spy-qqq-and-6-mega-caps-as-durable-goods-data-michigan-sentiment-set-up-key-volatility-windows',8),(5,'chris lange','Not every S&P 500 dividend stock is built the same, and the gap between names that merely pay and names that can keep paying through any cycle comes down to one number hiding in plain sight on the cas...','2026-09-25',0.93078,'The S&P 500â€™s Best Dividend Stocks Share One Powerful Advantage','https://247wallst.com/investing/2026/09/25/the-sp-500s-best-dividend-stocks-share-one-powerful-advantage/',4),(6,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-09-25',0.06364,'Oppenheimer resets Microsoft stock price target after HQ visit','https://www.thestreet.com/investing/stocks/oppenheimer-resets-microsoft-stock-price-target-after-hq-visit',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'chris lange','The Nasdaq-100 is famous for growth stocks that pay little to nothing, but a few of its members quietly back their dividends with some of the deepest free cash flow in the entire market. These three n...','2026-09-26',0.26174,'3 Elite Dividend Stocks Hiding in the Nasdaq-100','https://247wallst.com/investing/2026/09/26/3-elite-dividend-stocks-hiding-in-the-nasdaq-100/',4),(2,'sara appino','Choosing between established software leaders requires balancing specialized fintech growth against broad enterprise cloud infrastructure. Investors must decide if Intuit (INTU -0.48%) or Oracle (ORCL...','2026-09-26',0.79926,'Intuit vs. Oracle: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/26/intuit-vs-oracle-which-technology-stock-is-a-better-buy-in-2026/',4),(3,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nBrookmont Capital Management boosted its holdings in Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 13.9% during the second quarter, accord...','2026-09-26',0.43648,'Brookmont Capital Management Acquires 1,515 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/09/26/brookmont-capital-management-acquires-1515-shares-of-microsoft-corporation-msft.html',40),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nEdgeRock Capital LLC lifted its position in shares of Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 16.0% during the second quarter, accor...','2026-09-26',0.4365,'Microsoft Corporation $MSFT Shares Bought by EdgeRock Capital LLC','https://www.defenseworld.net/2026/09/26/microsoft-corporation-msft-shares-bought-by-edgerock-capital-llc.html',40),(5,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nBartlett & CO. Wealth Management LLC grew its holdings in shares of Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 0.5% in the second quart...','2026-09-26',0.72736,'4,614 Microsoft Corporation $MSFT Shares Purchased by Bartlett & CO. Wealth Management LLC','https://www.defenseworld.net/2026/09/26/4614-microsoft-corporation-msft-shares-purchased-by-bartlett-co-wealth-management-llc.html',40);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +387,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-26  5:40:44
+-- Dump completed on 2026-09-27  5:57:44
