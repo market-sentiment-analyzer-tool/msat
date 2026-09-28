@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
+134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -364,7 +365,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -373,7 +374,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'chris lange','The Nasdaq-100 is famous for growth stocks that pay little to nothing, but a few of its members quietly back their dividends with some of the deepest free cash flow in the entire market. These three n...','2026-09-26',0.26174,'3 Elite Dividend Stocks Hiding in the Nasdaq-100','https://247wallst.com/investing/2026/09/26/3-elite-dividend-stocks-hiding-in-the-nasdaq-100/',4),(2,'sara appino','Choosing between established software leaders requires balancing specialized fintech growth against broad enterprise cloud infrastructure. Investors must decide if Intuit (INTU -0.48%) or Oracle (ORCL...','2026-09-26',0.79926,'Intuit vs. Oracle: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/26/intuit-vs-oracle-which-technology-stock-is-a-better-buy-in-2026/',4),(3,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nBrookmont Capital Management boosted its holdings in Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 13.9% during the second quarter, accord...','2026-09-26',0.43648,'Brookmont Capital Management Acquires 1,515 Shares of Microsoft Corporation $MSFT','https://www.defenseworld.net/2026/09/26/brookmont-capital-management-acquires-1515-shares-of-microsoft-corporation-msft.html',40),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nEdgeRock Capital LLC lifted its position in shares of Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 16.0% during the second quarter, accor...','2026-09-26',0.4365,'Microsoft Corporation $MSFT Shares Bought by EdgeRock Capital LLC','https://www.defenseworld.net/2026/09/26/microsoft-corporation-msft-shares-bought-by-edgerock-capital-llc.html',40),(5,'defense world staff','\n					Posted by Defense World Staff on Sep 26th, 2026\n\nBartlett & CO. Wealth Management LLC grew its holdings in shares of Microsoft Corporation (NASDAQ:MSFT â€“ Free Report) by 0.5% in the second quart...','2026-09-26',0.72736,'4,614 Microsoft Corporation $MSFT Shares Purchased by Bartlett & CO. Wealth Management LLC','https://www.defenseworld.net/2026/09/26/4614-microsoft-corporation-msft-shares-purchased-by-bartlett-co-wealth-management-llc.html',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'eric fry','\n\n			The next market superstar may not be a household name yet, and small caps could be where Wall Streetâ€™s biggest surprises are hiding.		\nSource: shutterstock.com/Sergey Nivens\nListen to the audio v...','2026-09-27',0.19994,'Wall Streetâ€™s Tom Brady Is Still Flying Under the Radar','https://investorplace.com/smartmoney/2026/09/wall-streets-tom-brady-is-still-flying-under-the-radar/',4),(2,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-27',0.47212,'Microsoft just sent a strong message to Anthropic','https://www.thestreet.com/technology/microsoft-just-sent-a-strong-message-to-anthropic-copilo-dario-amodei-satya-nadella',40),(3,'seeking alpha analyst connect','...','2026-09-27',0,'Analyst Connect September 2026: The Power Of Comments','https://seekingalpha.com/article/4949849-analyst-connect-september-2026-the-power-of-comments',4),(4,'vandita jadeja','AWS just posted its fastest growth in 18 quarters and CEO Andy Jassy is talking about a trillion-dollar revenue business, yet the stock sits well below where our model says it should be trading.\n Pric...','2026-09-27',0.68976,'This Magnificent Seven Stock Could Reach a New All-Time High','https://247wallst.com/investing/2026/09/27/this-magnificent-seven-stock-could-reach-a-new-all-time-high/',4),(5,'luke lango','\n\n			Faster earnings growth, historically low valuations and years of underperformance could give these stocks plenty of room to run		\nSource: iQoncept / Shutterstock\nListen to the audio version of th...','2026-09-27',0.19996,'The Small-Cap Comeback May Be Earlier Than It Looks','https://investorplace.com/hypergrowthinvesting/2026/09/the-small-cap-comeback-may-be-earlier-than-it-looks/',4),(6,'david dierking','Growth investors face an interesting choice today.\nOn one hand, growth stocks have delivered big returns over the past several years and strong corporate earnings growth could keep that trend going. O...','2026-09-27',0.9181,'History Says This Could Be the Smartest Growth ETF to Buy With $1,000 Right Now','https://www.fool.com/investing/2026/09/27/history-says-could-smartest-growth-etf-buy-iusg/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -387,4 +388,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-27  5:57:44
+-- Dump completed on 2026-09-28  6:02:31
