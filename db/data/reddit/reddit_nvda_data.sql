@@ -78,6 +78,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -115,7 +116,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
-50ce058e-ba2e-11f1-9117-b693b4dd4649:1-35,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
@@ -263,6 +263,7 @@ c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7acfb62-b0c6-11f1-88f3-92abbed6d405:1-54,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
+c98ef985-baf7-11f1-bd9b-e200f8cc7be2:1-82,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
@@ -364,7 +365,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -373,6 +374,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1wrppjh','pcexqpy','2026-09-27',10,0.34,'$1t sales, then get excited.'),(2,'NVDA_Stock','1wrppjh','pcenr3y','2026-09-27',14,0,'Unless Nvidia shows China sales numbers in their ER, it\'s all noise'),(3,'NVDA_Stock','1wrppjh','pcejy8f','2026-09-27',5,0,'Do these sales even move the needle anymore?'),(4,'NVDA_Stock','1wrppjh','pceky92','2026-09-27',5,-0.296,'How many fucking times have we been teased with similar china news only to get heavily sold off?'),(5,'NVDA_Stock','1wrppjh','pceqj3q','2026-09-27',6,0,'![gif](giphy|GxSk8xCahCYVwph2Yp)'),(6,'NVDA_Stock','1wrppjh','pcgzv3u','2026-09-27',3,0,'For the 15th time'),(7,'NVDA_Stock','1wrppjh','pcf46pd','2026-09-27',7,0.8126,'I hope it pushes us to like 2trilon revenueÂ '),(8,'NVDA_Stock','1wrppjh','pcfo0wu','2026-09-27',4,0.0772,'Before market open: trump restrict chips to China ðŸ˜‚ '),(9,'NVDA_Stock','1wrppjh','pcfwpnu','2026-09-27',2,0.5562,'![gif](giphy|XnjvNROVynOTaOApgC)  \nWoohoo ðŸ¤‘'),(10,'NVDA_Stock','1wrppjh','pcg9bak','2026-09-27',2,0.5423,'Blah blah blah.\n\nLike my late, great grand pappy used to say after coming home from the war...\n\nShow me the money or shaddup'),(11,'NVDA_Stock','1wrppjh','pcho42d','2026-09-28',1,0.2677,'See even with this news the stocks futures is Red!!! Takes a lot to make a positive difference.'),(12,'NVDA_Stock','1wrppjh','pch9iwi','2026-09-28',0,0.4404,'If it moves us up it won\'t be much or it\'s already priced in ðŸ¤”'),(13,'wallstreetbets','1wrpxtb','pcelzs3','2026-09-27',124,-0.431,'I didn\'t buy calls. Makes sense.'),(14,'wallstreetbets','1wrpxtb','pcelhzc','2026-09-27',139,0,'Leather Jacket Man 2028!!  ðŸ‡ºðŸ‡¸ðŸ¦…ðŸ‡ºðŸ‡¸'),(15,'wallstreetbets','1wrpxtb','pcenb58','2026-09-27',48,0.9642,'this coming out right after xiâ€™s visit, with outreach slightly before, makes it more meaningful than a random report.\n\nnvidia modeled 0 china revenue in guidance.  this is very bullish.  \n\ni mean who am i kidding, nvidia is 100% of my portfolio right now, so id call anything bullish.  please go up 4% tomorrow.'),(16,'wallstreetbets','1wrpxtb','pcemev4','2026-09-27',149,-0.5267,'Iâ€™ll believe it when i see it. China didnâ€™t even bother bringing any of their CEOs to the US during Xiâ€™s visit, that alone should tell you something. '),(17,'wallstreetbets','1wrpxtb','pcelx40','2026-09-27',61,0.5927,'Not a single gpu has been sold yet, but the market is gonna front run this and price in the next 10 years of sales in one day.   \nAnd then when they donâ€™t end up buying, the market is just gonna shrug it off'),(18,'wallstreetbets','1wrpxtb','pcekeyl','2026-09-27',47,0.126,'Damn! Monday morning market up 10%.'),(19,'wallstreetbets','1wrpxtb','pceto50','2026-09-27',9,-0.5106,'Problem is China continues to drag their feet on this. Nvidia and AMD havenâ€™t booked GPU sales in almost 2 years and not guiding for China sales next FY. \n\nChina is pushing their firms to become self-sufficient. Chinese companies begging for the chips since they want to be at the frontier. '),(20,'wallstreetbets','1wrpxtb','pcf478o','2026-09-27',10,0.802,'This article is literally 3 sentences...\n\nThe Chinese government â€Œhas signaled it â€Œcould allow some domestic â€‹companies like ByteDance and Alibaba to buy a new â€ŒNvidia â chip built for high-end professional computers, â The Information reported on Sunday, â€‹citing â€‹two â€‹people familiar â€Œwith the matter. China\'s Ministry of Industry and Information Technology told some Chinese companies â€Œthe government â€‹intends â€‹to â€‹approve the purchases, â€Œthe report added. Reuters â€‹could â€‹not immediately verify the report. \n\n(Reporting â€‹by â€ŒSumedha Mukherjee in â€‹Bengaluru; Editing by â€‹Nia Williams)\n\nWhat happened to journalism?'),(21,'wallstreetbets','1wrpxtb','pcemskr','2026-09-27',4,-0.5574,'I thought those GPUs were sold out already once the ban was lifted? '),(22,'wallstreetbets','1wrpxtb','pcf3f83','2026-09-27',3,0.4404,'i sold calls, hence the good news '),(23,'wallstreetbets','1wrpxtb','pcevcjo','2026-09-27',2,0,'https://preview.redd.it/q8puyw59s3sh1.png?width=640&format=png&auto=webp&s=bcd130314bafb522d374ae779107be895c628262\n\n'),(24,'wallstreetbets','1wrpxtb','pcgx7fl','2026-09-27',2,0,'Lol, US is so cooked if this happens.'),(25,'wallstreetbets','1wrpxtb','pceoj0f','2026-09-27',3,-0.4588,'Sell the news '),(26,'wallstreetbets','1wrpxtb','pces41d','2026-09-27',4,0,'But i thought China said their chips were on par with nivida? '),(27,'wallstreetbets','1wrpxtb','pch4fbm','2026-09-27',1,0,'So calls it is?!'),(28,'wallstreetbets','1wrpxtb','pchhywi','2026-09-28',1,0.3182,'Making a decision on if the USA is going to deal with tech companies building in china and  buying components to make tech from china it looks like   \nEarly in the year, XI brought their CEOs, but this time he left his CEOs back home'),(29,'wallstreetbets','1wrpxtb','pchoxgn','2026-09-28',1,-0.765,'What do they mean chips for high end professional computers. Are they lifting the ban or selling their pre-nerfed GPUâ€™s? '),(30,'wallstreetbets','1wrpxtb','pcev48a','2026-09-27',1,0.5305,'Ok, so itâ€™ll go up 3-4% on Monday. And when China ends up not buying a single GPU, itâ€™ll go down, right? Right? '),(31,'wallstreetbets','1wrpxtb','pcghx6x','2026-09-27',1,0.5563,'This is really bullish.Â ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +388,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-27  4:46:36
+-- Dump completed on 2026-09-28  4:49:01

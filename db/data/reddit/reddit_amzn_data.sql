@@ -78,6 +78,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
@@ -115,7 +116,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
-50ce058e-ba2e-11f1-9117-b693b4dd4649:1-35,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
@@ -263,6 +263,7 @@ c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7acfb62-b0c6-11f1-88f3-92abbed6d405:1-54,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
+c98ef985-baf7-11f1-bd9b-e200f8cc7be2:1-82,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
@@ -364,7 +365,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -373,6 +374,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'wallstreetbets','1wryctg','pcgxbnw','2026-09-27',71,0,'We all know the port diversity is 99.99%â€¦ '),(2,'wallstreetbets','1wryctg','pcgw4vn','2026-09-27',33,-0.1531,'Fuck it let me call a bank up for a loan. Any recommendations?'),(3,'wallstreetbets','1wryctg','pcgw4ba','2026-09-27',20,0,'Was thinking about opening a position, this could be a sign'),(4,'wallstreetbets','1wryctg','pcguxbd','2026-09-27',57,0.6486,'amzn always goes up on earnings '),(5,'wallstreetbets','1wryctg','pcgvs71','2026-09-27',20,-0.25,'Fuck it; count me in. Have $80k ready to deploy.\n\nHalf amzn; half goog'),(6,'wallstreetbets','1wryctg','pcgvvvo','2026-09-27',5,0,'Godspeed '),(7,'wallstreetbets','1wryctg','pcgxopc','2026-09-27',3,0.4215,'This has been a nice stock to swing over the last couple weeks'),(8,'wallstreetbets','1wryctg','pch26ea','2026-09-27',3,0.6114,'I agree with you here. However, I sold my shares I got 10k in $300c expo Jan/2026. Letâ€™s fucking go! '),(9,'wallstreetbets','1wryctg','pcgwu8w','2026-09-27',2,0.4404,'Also stocked up'),(10,'wallstreetbets','1wryctg','pcgxkw8','2026-09-27',2,0.4767,'you\'re right, but the headwind is advertising revenue falling because of chat/muse'),(11,'wallstreetbets','1wryctg','pchddna','2026-09-28',2,0.4588,'I bought a bunch of AMZN in 2016 and have been hodling it ðŸ˜'),(12,'wallstreetbets','1wryctg','pcgy8nk','2026-09-27',4,0.296,'Why shares '),(13,'wallstreetbets','1wryctg','pch55w8','2026-09-27',3,0,'it\'ll be 230 againÂ '),(14,'wallstreetbets','1wryctg','pcha4xm','2026-09-28',2,-0.7092,'Your cost basis kind of sucks but youâ€™ll make some $$$ if you hodl. I foresee $300 AMZN eoy if Bezos donâ€™t sell the next pump.'),(15,'wallstreetbets','1wryctg','pcgw9b1','2026-09-27',2,0.6956,'Not mentioned, but if a fraction of Starlinkâ€™s pie-in-the-sky TAM from the SPCX IPO is real, then LEO will take a meaningful market share of that biz longterm.'),(16,'wallstreetbets','1wryctg','pch18j3','2026-09-27',1,0,'Hmmm ðŸ¤”'),(17,'wallstreetbets','1wryctg','pch4i7w','2026-09-27',1,0.802,'Loaded up at $260. Added again at $250. I agree. The longterm value here is excellent. Worst case 10% yearly returns. I can live with that while the upside remains intact. '),(18,'wallstreetbets','1wryctg','pch7bqv','2026-09-28',1,0.554,'I have taken a position as well. Entered 250 shares @ 249. \n\nSame thesis as you. Cash printing machine that has been undervalued for a better half of this decade. Other than Google, there isn\'t a more attractive stock in the MAG7. '),(19,'wallstreetbets','1wryctg','pch8zdq','2026-09-28',1,0.5106,'Got a long term position in Amazon. I donâ€™t know about earnings but Iâ€™m expecting Amazon to have solid next couple years. '),(20,'wallstreetbets','1wryctg','pchg5fw','2026-09-28',1,0.481,'Late to this party again'),(21,'wallstreetbets','1wryctg','pchgcfy','2026-09-28',1,0.5106,'72.48% of your portfolio? Impressive '),(22,'wallstreetbets','1wryctg','pchj09f','2026-09-28',1,0.3736,'shares? why post? not wsb'),(23,'wallstreetbets','1wryctg','pcig83q','2026-09-28',1,0.4404,'Pump it up zaddy ðŸ™Œ'),(24,'wallstreetbets','1wryctg','pcihsh9','2026-09-28',1,0.6705,'https://preview.redd.it/1rlcjsl4v6sh1.jpeg?width=1296&format=pjpg&auto=webp&s=acdc7aaad4589460b158e66fbadef51bd463622d\n\n  \nGet ready to get rug pulledâ˜ºï¸'),(25,'wallstreetbets','1wryctg','pch9uc1','2026-09-28',1,0.6997,'Amazon is the most amazing company in the whole world. I expect it to be $250,000 in 1 year'),(26,'wallstreetbets','1wryctg','pchbqda','2026-09-28',1,0.6249,'https://preview.redd.it/xw7n9evao5sh1.jpeg?width=1206&format=pjpg&auto=webp&s=4c113596a58c1452f95c303a27bab0deb5b72b93\n\n  \nLoaded up with 288 shares'),(27,'wallstreetbets','1wryctg','pchhlxd','2026-09-28',1,-0.3527,'Earnings not for another month? What the fuck is this long term investing bets?'),(28,'wallstreetbets','1wryctg','pcheqdo','2026-09-28',-1,0.5574,'Lol a whole 0.12% profit on a $169,000 position after liquidating a long-term hold.\n\nhttps://preview.redd.it/52o3xfz6r5sh1.jpeg?width=400&format=pjpg&auto=webp&s=3e53f5484bc68845c8e805301c332886216558a5'),(29,'wallstreetbets','1wryctg','pcgyksr','2026-09-27',0,0,'I started adding at $246. Adding more this week.');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -386,4 +388,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-27  4:46:36
+-- Dump completed on 2026-09-28  4:49:01
