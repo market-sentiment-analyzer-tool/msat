@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
+134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -190,6 +191,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
+87450ae0-bbc4-11f1-867c-76ea22cab214:1-106,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
@@ -263,7 +265,6 @@ c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7acfb62-b0c6-11f1-88f3-92abbed6d405:1-54,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
-c98ef985-baf7-11f1-bd9b-e200f8cc7be2:1-82,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
@@ -365,7 +366,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,7 +375,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'wallstreetbets','1wryctg','pcgxbnw','2026-09-27',71,0,'We all know the port diversity is 99.99%â€¦ '),(2,'wallstreetbets','1wryctg','pcgw4vn','2026-09-27',33,-0.1531,'Fuck it let me call a bank up for a loan. Any recommendations?'),(3,'wallstreetbets','1wryctg','pcgw4ba','2026-09-27',20,0,'Was thinking about opening a position, this could be a sign'),(4,'wallstreetbets','1wryctg','pcguxbd','2026-09-27',57,0.6486,'amzn always goes up on earnings '),(5,'wallstreetbets','1wryctg','pcgvs71','2026-09-27',20,-0.25,'Fuck it; count me in. Have $80k ready to deploy.\n\nHalf amzn; half goog'),(6,'wallstreetbets','1wryctg','pcgvvvo','2026-09-27',5,0,'Godspeed '),(7,'wallstreetbets','1wryctg','pcgxopc','2026-09-27',3,0.4215,'This has been a nice stock to swing over the last couple weeks'),(8,'wallstreetbets','1wryctg','pch26ea','2026-09-27',3,0.6114,'I agree with you here. However, I sold my shares I got 10k in $300c expo Jan/2026. Letâ€™s fucking go! '),(9,'wallstreetbets','1wryctg','pcgwu8w','2026-09-27',2,0.4404,'Also stocked up'),(10,'wallstreetbets','1wryctg','pcgxkw8','2026-09-27',2,0.4767,'you\'re right, but the headwind is advertising revenue falling because of chat/muse'),(11,'wallstreetbets','1wryctg','pchddna','2026-09-28',2,0.4588,'I bought a bunch of AMZN in 2016 and have been hodling it ðŸ˜'),(12,'wallstreetbets','1wryctg','pcgy8nk','2026-09-27',4,0.296,'Why shares '),(13,'wallstreetbets','1wryctg','pch55w8','2026-09-27',3,0,'it\'ll be 230 againÂ '),(14,'wallstreetbets','1wryctg','pcha4xm','2026-09-28',2,-0.7092,'Your cost basis kind of sucks but youâ€™ll make some $$$ if you hodl. I foresee $300 AMZN eoy if Bezos donâ€™t sell the next pump.'),(15,'wallstreetbets','1wryctg','pcgw9b1','2026-09-27',2,0.6956,'Not mentioned, but if a fraction of Starlinkâ€™s pie-in-the-sky TAM from the SPCX IPO is real, then LEO will take a meaningful market share of that biz longterm.'),(16,'wallstreetbets','1wryctg','pch18j3','2026-09-27',1,0,'Hmmm ðŸ¤”'),(17,'wallstreetbets','1wryctg','pch4i7w','2026-09-27',1,0.802,'Loaded up at $260. Added again at $250. I agree. The longterm value here is excellent. Worst case 10% yearly returns. I can live with that while the upside remains intact. '),(18,'wallstreetbets','1wryctg','pch7bqv','2026-09-28',1,0.554,'I have taken a position as well. Entered 250 shares @ 249. \n\nSame thesis as you. Cash printing machine that has been undervalued for a better half of this decade. Other than Google, there isn\'t a more attractive stock in the MAG7. '),(19,'wallstreetbets','1wryctg','pch8zdq','2026-09-28',1,0.5106,'Got a long term position in Amazon. I donâ€™t know about earnings but Iâ€™m expecting Amazon to have solid next couple years. '),(20,'wallstreetbets','1wryctg','pchg5fw','2026-09-28',1,0.481,'Late to this party again'),(21,'wallstreetbets','1wryctg','pchgcfy','2026-09-28',1,0.5106,'72.48% of your portfolio? Impressive '),(22,'wallstreetbets','1wryctg','pchj09f','2026-09-28',1,0.3736,'shares? why post? not wsb'),(23,'wallstreetbets','1wryctg','pcig83q','2026-09-28',1,0.4404,'Pump it up zaddy ðŸ™Œ'),(24,'wallstreetbets','1wryctg','pcihsh9','2026-09-28',1,0.6705,'https://preview.redd.it/1rlcjsl4v6sh1.jpeg?width=1296&format=pjpg&auto=webp&s=acdc7aaad4589460b158e66fbadef51bd463622d\n\n  \nGet ready to get rug pulledâ˜ºï¸'),(25,'wallstreetbets','1wryctg','pch9uc1','2026-09-28',1,0.6997,'Amazon is the most amazing company in the whole world. I expect it to be $250,000 in 1 year'),(26,'wallstreetbets','1wryctg','pchbqda','2026-09-28',1,0.6249,'https://preview.redd.it/xw7n9evao5sh1.jpeg?width=1206&format=pjpg&auto=webp&s=4c113596a58c1452f95c303a27bab0deb5b72b93\n\n  \nLoaded up with 288 shares'),(27,'wallstreetbets','1wryctg','pchhlxd','2026-09-28',1,-0.3527,'Earnings not for another month? What the fuck is this long term investing bets?'),(28,'wallstreetbets','1wryctg','pcheqdo','2026-09-28',-1,0.5574,'Lol a whole 0.12% profit on a $169,000 position after liquidating a long-term hold.\n\nhttps://preview.redd.it/52o3xfz6r5sh1.jpeg?width=400&format=pjpg&auto=webp&s=3e53f5484bc68845c8e805301c332886216558a5'),(29,'wallstreetbets','1wryctg','pcgyksr','2026-09-27',0,0,'I started adding at $246. Adding more this week.');
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1wsavcp','pck0phm','2026-09-28',27,0.3182,'So with all that research, what do you expect the share price to reach by 2030 under your bull/base/bear?'),(2,'ValueInvesting','1wsavcp','pcjxxw8','2026-09-28',19,0,'TLDR?'),(3,'ValueInvesting','1wsavcp','pcki3gt','2026-09-28',16,-0.296,'All that research and you have no price targets for the stock?'),(4,'ValueInvesting','1wsavcp','pcm91q3','2026-09-28',7,0,'I expect $10 trillion by year end '),(5,'ValueInvesting','1wsavcp','pcl2nnv','2026-09-28',5,0,'So, basically flat? '),(6,'ValueInvesting','1wsavcp','pclrego','2026-09-28',2,0.1779,'My bet is there will be a recession by the time 2030 comes around. People will buy less retail. Many companies will go out of business and their AWS spend will to go $0. \n\nThat would probably be the time to buy this stock once all of the temporary bad news gets priced in.'),(7,'ValueInvesting','1wsavcp','pcn3htg','2026-09-28',1,0.0331,'I donâ€™t care enough to sell the shares at the prospect of capex producing minimal ROI. They will just stop spending it if it produces no ROI. So i care little about negative FCF in the near term. I donâ€™t think that is the most likely outcome. But in a few years it will be a blip.'),(8,'ValueInvesting','1wsavcp','pcl6it4','2026-09-28',0,-0.2878,'so FCF stays negative until when in your model? at \\~25x forward that\'s a lot of faith. I have it on my watchlist at 200-210, it\'s near 250 now');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -388,4 +389,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-28  4:49:01
+-- Dump completed on 2026-09-29  5:14:55

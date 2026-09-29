@@ -41,6 +41,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
+134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
@@ -190,6 +191,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
+87450ae0-bbc4-11f1-867c-76ea22cab214:1-106,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
@@ -263,7 +265,6 @@ c6bf6d14-a8e6-11f1-a88e-caf3e7f52722:1-57,
 c7acfb62-b0c6-11f1-88f3-92abbed6d405:1-54,
 c7fa5bf3-42ba-11f1-b485-aea80079aed3:1-61,
 c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
-c98ef985-baf7-11f1-bd9b-e200f8cc7be2:1-82,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
@@ -365,7 +366,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,6 +375,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wsivd8','pclrydn','2026-09-28',13,-0.5267,'No, other stocks or ETFs are stupid. Only Apple'),(2,'AAPL','1wsivd8','pclwy3r','2026-09-28',3,-0.3595,'No etfs for me. That\'s what Apple\'s apprently for lol. Apple beats em!'),(3,'AAPL','1wsivd8','pcm303p','2026-09-28',3,0,'Apple Nvidia! '),(4,'AAPL','1wsivd8','pcnzin6','2026-09-28',3,-0.296,'No one should only have one stock as their whole portfolio. Unless your portfolio is $338.xx. \n\n'),(5,'AAPL','1wsivd8','pclwow3','2026-09-28',2,0,'So youâ€™re done with a Boglehead portfolio?'),(6,'AAPL','1wsivd8','pclzyp8','2026-09-28',1,0.2189,'not sure how long your horizon is but be prepared to sit on it '),(7,'AAPL','1wsivd8','pcm056n','2026-09-28',1,0,'Si vwce e apple'),(8,'AAPL','1wsivd8','pcm45h9','2026-09-28',1,-0.4019,'Mag 7 minus Tesla.  Palantir Amd Netflix.  No ETFs..my mom has been in the stock market for 29 years and the gains on the couple of etfs she has suck compared to her individual stocks'),(9,'AAPL','1wsivd8','pcm766i','2026-09-28',1,-0.4588,'AAPL 75%  \nNvda 10%\n\nRest \\~ mrna mu sndk arm meta hood Pltr amd and will sell at will '),(10,'AAPL','1wsivd8','pcmcqp5','2026-09-28',1,0,'Mostly Apple. I also have Google, Intel, Nvidia, Xmax, akre '),(11,'AAPL','1wsivd8','pcmzokg','2026-09-28',1,0,'AAPL, BRK/B, COST, GOOG, AMZN, MSFT, NVDA,CRWD, PANW, DRAM, yup'),(12,'AAPL','1wsivd8','pcn3l20','2026-09-28',1,0.5267,'Got a chunk in VXUS international growth thatâ€™s doing 22% over the past 52 weeks.   Staying away from US companies aside from AAPL, NVDA, ARM,  & AMD '),(13,'AAPL','1wsivd8','pcopkx9','2026-09-28',1,0.2617,'Of course we diversify, but my biggest holding is Appl. '),(14,'AAPL','1wsivd8','pcpbr4n','2026-09-29',1,-0.7003,'Nfw, are you crazy?'),(15,'AAPL','1wsivd8','pcppn11','2026-09-29',1,0.6249,'I have AAPL and other individual stocks in one account and then a Wealthfront robo invest account. '),(16,'AAPL','1wssegl','pcp1r9v','2026-09-29',2,0.6908,'You should try to learn more about your investments before throwing your money at them. Buy backs donâ€™t impact quarterly earnings in any quantifiable way. '),(17,'AAPL','1wssegl','pcocq3j','2026-09-28',1,0.6956,'I just received a notice that the price of Apple One subscription is about to go up 10% when it renews next month.\n\nAnd there ya go. Earnings â€œgrowthâ€. Obviously isnâ€™t relevant to last quarterâ€™s results but the hardware price increases last quarter were a part of the overall earnings â€œincreaseâ€.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -387,4 +389,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-28  4:49:01
+-- Dump completed on 2026-09-29  5:14:55
