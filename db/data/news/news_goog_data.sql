@@ -273,6 +273,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d1749966-ada0-11f1-9237-7a52368f7064:1-59,
+d28195a7-bbcd-11f1-85a4-02b1c331172f:1-48,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -365,7 +366,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,6 +375,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keith speights','Which asset should most investors put their money into? Warren Buffett has recommended buying and holding an S&P 500 (^GSPC -0.77%) index fund. He has even advised this approach for most of the money ...','2026-09-28',0.19956,'Why I Just Bought This 8%-Yielding S&P 500 ETF','https://www.fool.com/investing/2026/09/28/why-i-just-bought-this-8-yielding-s-and-p-500-etf/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -387,4 +389,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-28  6:02:31
+-- Dump completed on 2026-09-29  6:22:20

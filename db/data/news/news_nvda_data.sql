@@ -273,6 +273,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d1749966-ada0-11f1-9237-7a52368f7064:1-59,
+d28195a7-bbcd-11f1-85a4-02b1c331172f:1-48,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -365,7 +366,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,7 +375,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'rob williams','BING-JHEN HONG/iStock Editorial via Getty Images\nChina is signaling that some of its biggest technology companies may be permitted to buy Nvidiaâ€™s (NVDA) newly released RTX Pro 5500 chips, potentially...','2026-09-27',0.65748,'China may allow Alibaba, ByteDance to buy Nvidiaâ€™s new RTX Pro 5500 chips','https://seekingalpha.com/news/4647403-china-may-allow-alibaba-bytedance-to-buy-nvidia-s-new-rtx-pro-5500-chips?feed_item_type=news',8),(2,'eric fry','\n\n			The next market superstar may not be a household name yet, and small caps could be where Wall Streetâ€™s biggest surprises are hiding.		\nSource: shutterstock.com/Sergey Nivens\nListen to the audio v...','2026-09-27',0.19994,'Wall Streetâ€™s Tom Brady Is Still Flying Under the Radar','https://investorplace.com/smartmoney/2026/09/wall-streets-tom-brady-is-still-flying-under-the-radar/',4),(3,'peace longe','Please enable JS and disable any ad blocker...','2026-09-27',0.06364,'Anthropic just handed Akamai a game-changing deal','https://www.thestreet.com/investing/stocks/anthropic-just-handed-akamai-a-game-changing-deal',4),(4,'aj tiarsmith','Dick Fuld spent nearly four decades building his fortune inside a single company, and then watched it vanish in a single morning. His story carries a warning that every investor sitting on a multi-bag...','2026-09-27',0.3361,'After 39 Years Working for the Same Company, He Had Accumulated 10.8 Million Shares of Stock. On September 15, 2008, Those Shares Were Worth Nothing. The Story of How Dick Fuld Lost Up to 80% of His Net Worth Holds an Important Lesson for Every Investor','https://247wallst.com/investing/2026/09/27/after-39-years-working-for-the-same-company-he-had-accumulated-10-8-million-shares-of-stock-on-september-15-2008-those-shares-were-worth-nothing-the-story-of-how-dick-fuld-lost-up-to-80-of-his-ne/',4),(5,'luke lango','\n\n			Faster earnings growth, historically low valuations and years of underperformance could give these stocks plenty of room to run		\nSource: iQoncept / Shutterstock\nListen to the audio version of th...','2026-09-27',0.19996,'The Small-Cap Comeback May Be Earlier Than It Looks','https://investorplace.com/hypergrowthinvesting/2026/09/the-small-cap-comeback-may-be-earlier-than-it-looks/',4),(6,'david dierking','Growth investors face an interesting choice today.\nOn one hand, growth stocks have delivered big returns over the past several years and strong corporate earnings growth could keep that trend going. O...','2026-09-27',0.9181,'History Says This Could Be the Smartest Growth ETF to Buy With $1,000 Right Now','https://www.fool.com/investing/2026/09/27/history-says-could-smartest-growth-etf-buy-iusg/',4),(7,'defense world staff','\n					Posted by Defense World Staff on Sep 27th, 2026\n\nWIM INVESTMENT MANAGEMENT Ltd lowered its position in NVIDIA Corporation (NASDAQ:NVDA â€“ Free Report) by 25.0% during the 2nd quarter, according t...','2026-09-27',0.4367,'WIM INVESTMENT MANAGEMENT Ltd Sells 16,600 Shares of NVIDIA Corporation $NVDA','https://www.defenseworld.net/2026/09/27/wim-investment-management-ltd-sells-16600-shares-of-nvidia-corporation-nvda.html',40);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-09-28',0,'Wall Street Lunch: MongoDB Tumbles As CEO CJ Desai Joins Meta To Lead Enterprise Push','https://seekingalpha.com/article/4950331-wall-street-lunch-mongodb-tumbles-as-ceo-cj-desai-joins-meta-to-lead-enterprise-push',4),(2,'chris katje','Premium Services\nShares of technology giant NVIDIA Corp (NASDAQ:NVDA) are trading higher Monday after the company announced a record stock buyback. Here are the details and how Jim Cramer may have pre...','2026-09-28',0.8368,'Nvidia Stock Gains on Record Buyback: Jim Cramer Gets His Wish','https://www.benzinga.com/trading-ideas/long-ideas/26/09/62032452/nvidia-stock-gains-on-record-buyback-jim-cramer-gets-his-wish',80),(3,'the techie','...','2026-09-28',0,'The Anti-Nvidia Trade','https://seekingalpha.com/article/4950335-the-anti-nvidia-trade',4),(4,'louis navellier','...','2026-09-28',-0.1024,'Mega-Cap Buybacks Are Becoming the New Fuel for an Expensive Market','https://www.investing.com/analysis/megacap-buybacks-are-becoming-the-new-fuel-for-an-expensive-market-200688540',2),(5,'the arora report','Premium Services\nIran Hopium Dashed\nPlease click here for an enlarged chart of the United States Oil ETF (NYSE:USO).\nNote the following:\nIn the early trade, there is also bullishness on Iran hopium as...','2026-09-28',0.56548,'Oil Rises; Metaâ€™s Muse Trade Extends To CPU Stocks Like Intel, AMD, Arm, Qualcomm','https://www.benzinga.com/Opinion/26/09/62031079/oil-rises-meta-muse-trade-extends-to-cpu-stocks-like-intel-amd-arm-qualcomm',8);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -388,4 +389,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-28  6:02:31
+-- Dump completed on 2026-09-29  6:22:21
