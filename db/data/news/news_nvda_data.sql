@@ -306,6 +306,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
+e6d7891a-bc94-11f1-a2cd-66fc8bb35b13:1-53,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -366,7 +367,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -375,7 +376,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-09-28',0,'Wall Street Lunch: MongoDB Tumbles As CEO CJ Desai Joins Meta To Lead Enterprise Push','https://seekingalpha.com/article/4950331-wall-street-lunch-mongodb-tumbles-as-ceo-cj-desai-joins-meta-to-lead-enterprise-push',4),(2,'chris katje','Premium Services\nShares of technology giant NVIDIA Corp (NASDAQ:NVDA) are trading higher Monday after the company announced a record stock buyback. Here are the details and how Jim Cramer may have pre...','2026-09-28',0.8368,'Nvidia Stock Gains on Record Buyback: Jim Cramer Gets His Wish','https://www.benzinga.com/trading-ideas/long-ideas/26/09/62032452/nvidia-stock-gains-on-record-buyback-jim-cramer-gets-his-wish',80),(3,'the techie','...','2026-09-28',0,'The Anti-Nvidia Trade','https://seekingalpha.com/article/4950335-the-anti-nvidia-trade',4),(4,'louis navellier','...','2026-09-28',-0.1024,'Mega-Cap Buybacks Are Becoming the New Fuel for an Expensive Market','https://www.investing.com/analysis/megacap-buybacks-are-becoming-the-new-fuel-for-an-expensive-market-200688540',2),(5,'the arora report','Premium Services\nIran Hopium Dashed\nPlease click here for an enlarged chart of the United States Oil ETF (NYSE:USO).\nNote the following:\nIn the early trade, there is also bullishness on Iran hopium as...','2026-09-28',0.56548,'Oil Rises; Metaâ€™s Muse Trade Extends To CPU Stocks Like Intel, AMD, Arm, Qualcomm','https://www.benzinga.com/Opinion/26/09/62031079/oil-rises-meta-muse-trade-extends-to-cpu-stocks-like-intel-amd-arm-qualcomm',8);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'william gavin','Please enable JS and disable any ad blocker...','2026-09-29',0.24468,'Could SpaceX be worth $12 trillion one day? Citi says Starship gets it closer.','https://www.marketwatch.com/bulletins/redirect/go?g=bdf15b60-c29f-4753-a719-e29700d65caa&mod=mw_rss_bulletins',4),(2,'multiplo invest','...','2026-09-29',0,'Nvidia: A Deep Analysis About The AI CapEx','https://seekingalpha.com/article/4950726-nvidia-a-deep-analysis-about-the-ai-capex',4),(3,'tech contrarians','    Justin Sullivan/Getty Images News\n \nJustin Sullivan/Getty Images News\nMicron Technology (MU) is scheduled to report its Q4 earnings after the bell this Wednesday. The stock is under heavy pressure...','2026-09-29',0.2,'Bulls Vs. Bears: Micron And The AI Trade: The TechTalk Podcast Episode 2','https://seekingalpha.com/article/4950721-bulls-vs-bears-micron-and-the-ai-trade-the-techtalk-podcast-episode-2',8),(4,'andres veurink','    J Studios/DigitalVision via Getty Images\n \nJ Studios/DigitalVision via Getty Images\nThe IPO for Cerebras Systems (CBRS) has been one of the largest recent IPOs on US markets in a long time. It sta...','2026-09-29',0.3796,'Cerebras Systems: Benchmark Numbers Do Not Make This A Winner','https://seekingalpha.com/article/4950714-cerebras-systems-benchmark-numbers-do-not-make-this-a-winner',8),(5,'chris katje','Premium Services\nNVIDIA Corp (NASDAQ:NVDA) announced a record-breaking $150 billion stock buyback on Monday. The news sent shares higher and is winning over market experts.\n      â€¢ NVIDIA stock is tra...','2026-09-29',0.85774,'Nvidia Stock Buyback Impresses Market Experts: â€˜Very Much Like This Moveâ€™','https://www.benzinga.com/trading-ideas/long-ideas/26/09/62055557/nvidia-stock-buyback-impresses-market-experts-very-much-like-this-move',80),(6,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-09-29',-0.481,'Huang doubles down on Chinese AI as Bessent threatens sanctions','https://www.thestreet.com/technology/huang-doubles-down-on-chinese-ai-as-bessent-threatens-sanctions',4),(7,'surbhi jain','Premium Services\nNvidia Corp (NASDAQ:NVDA) is generating enough cash from the AI infrastructure boom to fund its next wave of growth and still put $150 billion behind its own stock. \nThat makes the bu...','2026-09-29',0.19978,'Nvidia Just Put $150 Billion Behind Its Stock. Is It Cheap Enough?','https://www.benzinga.com/trading-ideas/long-ideas/26/09/62052812/nvidia-150b-buyback-is-nvda-stock-cheap',80),(8,'michael walen','...','2026-09-29',0.40848,'NVIDIA Corporation (NASDAQ: NVDA) Extends Its Stack to AI Safety','https://www.themarketsdaily.com/2026/09/29/nvidia-corporation-nasdaq-nvda-extends-its-stack-to-ai-safety.html',20),(9,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-29',0.1254,'Nvidia is set to challenge Anthropic and OpenAI with a new product','https://www.thestreet.com/technology/nvidia-open-agent-safety-platform-ai-quarantine-challenge-anthropic-openai',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -389,4 +390,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-29  6:22:21
+-- Dump completed on 2026-09-30  6:06:09

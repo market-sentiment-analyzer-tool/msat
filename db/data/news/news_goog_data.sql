@@ -306,6 +306,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
+e6d7891a-bc94-11f1-a2cd-66fc8bb35b13:1-53,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -366,7 +367,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -375,7 +376,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keith speights','Which asset should most investors put their money into? Warren Buffett has recommended buying and holding an S&P 500 (^GSPC -0.77%) index fund. He has even advised this approach for most of the money ...','2026-09-28',0.19956,'Why I Just Bought This 8%-Yielding S&P 500 ETF','https://www.fool.com/investing/2026/09/28/why-i-just-bought-this-8-yielding-s-and-p-500-etf/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.07%) (BRKB -0.15%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4),(2,'keith speights','Which asset should most investors put their money into? Warren Buffett has recommended buying and holding an S&P 500 (^GSPC -0.17%) index fund. He has even advised this approach for most of the money ...','2026-09-28',0.19956,'Why I Just Bought This 8%-Yielding S&P 500 ETF','https://www.fool.com/investing/2026/09/28/why-i-just-bought-this-8-yielding-s-and-p-500-etf/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -389,4 +390,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-29  6:22:20
+-- Dump completed on 2026-09-30  6:06:09
