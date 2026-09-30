@@ -191,7 +191,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 851aa780-8bc9-11f1-889a-a65ca6347c26:1-60,
 854ef346-f286-11f0-b70f-aade11d83d85:1-62,
 870d9090-7a81-11f1-8afc-0e1b5be6c51e:1-63,
-87450ae0-bbc4-11f1-867c-76ea22cab214:1-106,
 878ca563-f02a-11f0-82c5-2a1b0f5aac3f:1-59,
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
@@ -274,6 +273,7 @@ d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
 d0b12e89-84b9-11f1-b059-a6580cef1b97:1-56,
 d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d1749966-ada0-11f1-9237-7a52368f7064:1-59,
+d28195a7-bbcd-11f1-85a4-02b1c331172f:1-48,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
@@ -317,6 +317,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ee772d2b-bc8b-11f1-a155-32ebe227a6e7:1-61,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -366,7 +367,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -375,7 +376,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1wsavcp','pck0phm','2026-09-28',27,0.3182,'So with all that research, what do you expect the share price to reach by 2030 under your bull/base/bear?'),(2,'ValueInvesting','1wsavcp','pcjxxw8','2026-09-28',19,0,'TLDR?'),(3,'ValueInvesting','1wsavcp','pcki3gt','2026-09-28',16,-0.296,'All that research and you have no price targets for the stock?'),(4,'ValueInvesting','1wsavcp','pcm91q3','2026-09-28',7,0,'I expect $10 trillion by year end '),(5,'ValueInvesting','1wsavcp','pcl2nnv','2026-09-28',5,0,'So, basically flat? '),(6,'ValueInvesting','1wsavcp','pclrego','2026-09-28',2,0.1779,'My bet is there will be a recession by the time 2030 comes around. People will buy less retail. Many companies will go out of business and their AWS spend will to go $0. \n\nThat would probably be the time to buy this stock once all of the temporary bad news gets priced in.'),(7,'ValueInvesting','1wsavcp','pcn3htg','2026-09-28',1,0.0331,'I donâ€™t care enough to sell the shares at the prospect of capex producing minimal ROI. They will just stop spending it if it produces no ROI. So i care little about negative FCF in the near term. I donâ€™t think that is the most likely outcome. But in a few years it will be a blip.'),(8,'ValueInvesting','1wsavcp','pcl6it4','2026-09-28',0,-0.2878,'so FCF stays negative until when in your model? at \\~25x forward that\'s a lot of faith. I have it on my watchlist at 200-210, it\'s near 250 now');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -389,4 +389,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-29  5:14:55
+-- Dump completed on 2026-09-30  5:02:21
