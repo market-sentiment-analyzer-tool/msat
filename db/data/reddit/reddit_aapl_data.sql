@@ -22,6 +22,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 --
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
+0374631b-bd57-11f1-bc1f-063d22a67f4f:1-54,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
@@ -306,6 +307,7 @@ e3e5f22a-cfef-11f0-960c-6abcf00f3eb3:1-67,
 e519ec5c-afb2-11f0-808b-baf6ffc72915:1-224,
 e5825b7f-3948-11f1-aba7-622601080619:1-62,
 e5b1be2b-9080-11f1-9c1f-62e6866845f3:1-56,
+e6d7891a-bc94-11f1-a2cd-66fc8bb35b13:1-53,
 e7637266-e2cd-11f0-852b-82ad25bdf118:1-61,
 e7fde0fe-e919-11f0-8839-8e57180be455:1-55,
 e85a36e9-4126-11f1-b226-9abe80c03953:1-55,
@@ -317,7 +319,6 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
-ee772d2b-bc8b-11f1-a155-32ebe227a6e7:1-61,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -367,7 +368,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,6 +377,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wu5krb','pd07tce','2026-09-30',23,0.6369,'I\'m 40, I\'ve been DCA\'ing into AAPL weekly since I was around 23.  It\'s by far the best investment strategy I have had to date.'),(2,'AAPL','1wu5krb','pd0yhvk','2026-09-30',7,-0.4588,'DCA in $5k chunks over the next 3-6 months. Each time it goes down 2% or more'),(3,'AAPL','1wu5krb','pd1h649','2026-09-30',4,0.09,'DCA before 2027 because that will be the year for aapl. Nevertheless whenever you buy you are guaranteed to make money. Just donâ€™t panic sell and buy at a higher price. Donâ€™t be a retail trader but be an investor '),(4,'AAPL','1wu5krb','pd0if8a','2026-09-30',8,0.6249,'Yesterday was the day to invest.\n\nAt this point, I\'d wait for another trough.'),(5,'AAPL','1wu5krb','pd1s1wz','2026-09-30',2,0,'IMHO, DCA into VGT. Holds almost 16% AAPL and adds some diversification for that amount of money.'),(6,'AAPL','1wu5krb','pd1optr','2026-09-30',1,-0.9097,'Lump sump always lump sum  \nAlso always lump sum when stock has ripped to all time high  \nThen when it drops even slightly shit your pants and  sell it all  \nThen wait for it to rip again then lump sum into it again.  \nSell all even at slightest red day  \nRepeat.  \nRemember buy high and sell low  \nYouâ€™re welcome'),(7,'AAPL','1wu5krb','pd2a94q','2026-09-30',1,-0.5574,'40 P/E. Overvalued currently. '),(8,'AAPL','1wu5krb','pd3p4v4','2026-09-30',1,0.5106,'You do you. Have fun.'),(9,'AAPL','1wu5krb','pd3trlx','2026-09-30',1,0.3984,'Lump sum is proven to be a winning strategy according to many studies, but itâ€™s kinda mentally challenging. Iâ€™d DCA but split it into two or three purchases only'),(10,'AAPL','1wu5krb','pd46wjf','2026-10-01',1,0.7964,'8 yrs ago I found a good entry point and then lump sumâ€™d. Â Best decision.Â '),(11,'AAPL','1wu5krb','pd4yp41','2026-10-01',1,0.0387,'Pass...I just want my iphone to respond to hey google or hey claude or anything but siri.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -389,4 +391,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-30  5:02:21
+-- Dump completed on 2026-10-01  5:15:34
