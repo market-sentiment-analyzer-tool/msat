@@ -267,6 +267,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
+cee13d33-bd62-11f1-8963-6a64e6075f7d:1-54,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -367,7 +368,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,7 +377,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.07%) (BRKB -0.15%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4),(2,'keith speights','Which asset should most investors put their money into? Warren Buffett has recommended buying and holding an S&P 500 (^GSPC -0.17%) index fund. He has even advised this approach for most of the money ...','2026-09-28',0.19956,'Why I Just Bought This 8%-Yielding S&P 500 ETF','https://www.fool.com/investing/2026/09/28/why-i-just-bought-this-8-yielding-s-and-p-500-etf/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Alphabet (GOOG +1.01%) (GOOGL +0.93%) stock gained 2.8% through 11:20 a.m. ET Wednesday on a positive prognosis from Piper Sandler regarding the artificial intelligence industry.\nTurns out, Taiwan Sem...','2026-09-30',0.19932,'Why Alphabet Stock Popped on Wednesday','https://www.fool.com/investing/2026/09/30/why-alphabet-stock-popped-on-wednesday/',4),(2,'financialcontent','Alphabet (NASDAQ: GOOGL) (NASDAQ: GOOG) shares rose about 2% to $344.03 Wednesday morning as investors weighed Googleâ€™s participation in a voluntary AI safety accord, according to a GuruFocus article ...','2026-09-30',0.68892,'TrillionDollarBreaks â€“ Alphabet Inc. (NASDAQ: GOOGL) (NASDAQ: GOOG) Shares Rise About 2% as Google Joins Voluntary AI Safety Accord','https://www.financialcontent.com/article/nnwire-2026-9-30-trilliondollarbreaks-alphabet-inc-nasdaq-googl-nasdaq-goog-shares-rise-about-2-as-google-joins-voluntary-ai-safety-accord',40),(3,'arundhati sarkar','...','2026-09-30',0.2,'House Dem questions Big Tech over secret AI data center NDAs: WSJ','https://seekingalpha.com/news/4648367-house-dem-questions-big-tech-over-secret-ai-data-center-ndas-wsj?feed_item_type=news',4),(4,'patrick sanders','There are some new details about the upcoming initial public offering from Anthropic, the artificial intelligence start-up behind Claude. Reuters reported on Sept. 29 that the company is seeking a val...','2026-09-29',0.66846,'Anthropic Just Revealed a $518 Billion AI Spending Plan. Here Are the Stocks That Could Win.','https://www.fool.com/investing/2026/09/29/anthropic-just-revealed-a-518-billion-ai-spending-plan-here-are-the-stocks-that-could-win/',4),(5,'wall street breakfast','...','2026-09-29',0.35232,'Wall Street Lunch: Anthropic Targets Up To $2T Raise (Judgment Day Possible)','https://seekingalpha.com/article/4950765-wall-street-lunch-anthropic-targets-up-to-2t-raise-ipo-filing-shows',4),(6,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.84%) (BRKB -0.88%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -390,4 +391,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-30  6:06:09
+-- Dump completed on 2026-10-01  6:39:53

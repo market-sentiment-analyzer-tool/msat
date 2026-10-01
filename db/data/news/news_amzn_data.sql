@@ -267,6 +267,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
+cee13d33-bd62-11f1-8963-6a64e6075f7d:1-54,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -367,7 +368,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,7 +377,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.07%) (BRKB -0.15%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4),(2,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-09-29',0.19964,'Nancy Pelosi And Bill Ackman Are Betting On The Same Two Stocks','https://www.insidermonkey.com/news/nancy-pelosi-and-bill-ackman-are-betting-on-the-same-two-stocks-1845689/',4),(3,'will healy','Amazon and Alibaba are titans of e-commerce and cloud computing, but they operate in very different regulatory and economic environments. Between Amazon (AMZN +0.21%) and Alibaba Group (BABA -0.94%), ...','2026-09-29',0.83686,'Amazon vs. Alibaba: Which Consumer Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/29/amazon-com-vs-alibaba-which-consumer-stock-is-a-better-buy-in-2026/',40),(4,'defense world staff','\n					Posted by Defense World Staff on Sep 29th, 2026\n\nSusquehanna Fundamental Investments LLC acquired a new position in Amazon.com, Inc. (NASDAQ:AMZN) in the 2nd quarter, according to its most recen...','2026-09-29',0.43664,'Amazon.com, Inc. $AMZN Shares Newly Bought by Susquehanna Fundamental Investments LLC','https://www.defenseworld.net/2026/09/29/amazon-com-inc-amzn-shares-newly-bought-by-susquehanna-fundamental-investments-llc.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Sep 29th, 2026\n\nStrategic Advisors LLC decreased its stake in shares of Amazon.com, Inc. (NASDAQ:AMZN) by 26.5% in the 2nd quarter, according to its most recent ...','2026-09-29',0.19986,'Amazon.com, Inc. $AMZN Stock Sold by Strategic Advisors LLC','https://www.defenseworld.net/2026/09/29/amazon-com-inc-amzn-stock-sold-by-strategic-advisors-llc.html',4),(6,'abmn staff','\n					Posted by ABMN Staff on Sep 29th, 2026\n\nStrategic Advisors LLC lowered its stake in Amazon.com, Inc. (NASDAQ:AMZN) by 26.5% in the 2nd quarter, according to its most recent filing with the SEC. ...','2026-09-29',0.43666,'Amazon.com, Inc. $AMZN Shares Sold by Strategic Advisors LLC','https://www.americanbankingnews.com/2026/09/29/amazon-com-inc-amzn-shares-sold-by-strategic-advisors-llc.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-30',0.47212,'JPMorgan sends a strong message to Mag-7 stock investors','https://www.thestreet.com/investing/stocks/jpmorgan-sends-a-strong-message-to-mag-7-stock-investors-nvidia-tesla-apple-meta-microsoft-amazon-google',4),(2,'shane hupp','...','2026-09-30',0.16184,'Top Retail Stocks To Keep An Eye On â€“ September 30th','https://www.tickerreport.com/banking-finance/13602743/top-retail-stocks-to-keep-an-eye-on-september-30th.html',2),(3,'aaron rennie','Michael Nagle / Bloomberg, Kent NISHIMURA / AFP via Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Elon Musk and Delta Air Lines chief executive Ed Basti...','2026-09-30',-0.12296,'Why Elon Musk Says Deltaâ€™s CEO â€˜Will Lose His Jobâ€™','https://www.investopedia.com/market-update-why-elon-musk-says-delta-ceo-will-lose-his-job-12149261',4),(4,'priya nigam','Premium Services\nInvestor concerns around agentic commerce being a threat to Amazon.com Inc.â€™s (NASDAQ:AMZN) advertising business appear to be \"overstated,\" according to Rosenblatt Securities.\nThe Ama...','2026-09-30',0.33336,'Is Amazon Really Facing â€˜Risk Of Complete Displacementâ€™ by Agentic Commerce?','https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/62085223/is-amazon-really-facing-risk-of-complete-displacement-by-agentic-commerce',80),(5,'pamela kock','Investors often weigh the stability of an industrial giant against the growth potential of a specialized materials leader. Choosing between Corning (GLW -3.12%) and Honeywell International (HON +0.39%...','2026-09-30',0.80028,'Corning vs. Honeywell International: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/30/corning-vs-honeywell-international-which-technology-stock-is-a-better-buy-in-2026/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -390,4 +391,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-30  6:06:09
+-- Dump completed on 2026-10-01  6:39:53

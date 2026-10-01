@@ -267,6 +267,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
+cee13d33-bd62-11f1-8963-6a64e6075f7d:1-54,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
 d09ccf20-dfa9-11f0-ac3a-a62b46bc2628:1-68,
@@ -367,7 +368,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -376,7 +377,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'alanna baker','...','2026-09-29',0.16184,'Sangoma agrees to be acquired at $204 million','https://www.thelincolnianonline.com/2026/09/29/sangoma-agrees-to-be-acquired-at-204-million.html',2),(2,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.07%) (BRKB -0.15%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4),(3,'kim johansen','...','2026-09-29',0.25456,'Fair Isaac Corporation (NYSE: FICO) Faces a 99-Cent Mortgage Score Rival','https://www.themarketsdaily.com/2026/09/29/fair-isaac-corporation-nyse-fico-faces-a-99-cent-mortgage-score-rival.html',2),(4,'anthony miller','...','2026-09-29',0.56024,'Microsoft Corporation (NASDAQ: MSFT) Has a Cap on OpenAI Revenue Sharing','https://www.thelincolnianonline.com/2026/09/29/microsoft-corporation-nasdaq-msft-has-a-cap-on-openai-revenue-sharing.html',20),(5,'henry lazenby','...','2026-09-29',0,'Mining Forum: AI begins paying off, McKinsey says','https://www.mining.com/mining-forum-ai-begins-paying-off-mckinsey-says/',2),(6,'henry lazenby','COLORADO SPRINGS, Colo. â€“ Fifteen of 19 major mining companies tracked by McKinsey reported financial gains from artificial intelligence in the third quarter through Sept. 11, up from four in the prev...','2026-09-29',0.199,'Mining Forum: AI starts paying off, McKinsey says','https://www.northernminer.com/news/mining-forum-ai-starts-paying-off-mckinsey-says/1003895240/',4),(7,'vandita jadeja','Azure is accelerating past 40% growth, Copilot seats are doubling quarter over quarter, and a commercial backlog approaching $700 billion sits waiting to convert. Whether those engines can actually li...','2026-09-29',0.19976,'Microsoft Stock Has Multiple Engines Driving Its Next Leg Higher','https://247wallst.com/investing/2026/09/29/microsoft-stock-has-multiple-engines-driving-its-next-leg-higher/',40),(8,'blockchain.news','\nLawrence Jengar\n Sep 29, 2026 12:29 UTC\n\nMSFT is treading water at $508.62 with momentum effectively stalled at a crossroads â€” but the fundamental story is accelerating hard. With Azure growing 43%, ...','2026-09-29',0.19976,'MSFT Price Prediction: Azure at $100B, Copilot Monetizing â€” Wall Street Eyes $570â€“$640 Before Year-End','https://blockchain.news/news/20260929-price-prediction-msft-azure-at-100b-copilot-monetizing-wall',40),(9,'daniel sparks','Microsoft (MSFT -0.05%) is selling its artificial intelligence (AI) assistant for office work faster than ever. The company said it finished June with more than 30 million paid Microsoft 365 Copilot s...','2026-09-29',0.19956,'Prediction: Microsoft Will Double Its Paid Copilot Seats in the Next 12 Months','https://www.fool.com/investing/2026/09/29/prediction-microsoft-will-double-its-paid-copilot-seats-in-the-next-12-months/',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'louis gerard','...','2026-09-30',0,'Microsoft: Copilot Finally Has A Plan','https://seekingalpha.com/article/4951118-microsoft-copilot-finally-has-a-plan',4),(2,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-30',0.47212,'JPMorgan sends a strong message to Mag-7 stock investors','https://www.thestreet.com/investing/stocks/jpmorgan-sends-a-strong-message-to-mag-7-stock-investors-nvidia-tesla-apple-meta-microsoft-amazon-google',4),(3,'tomisin sanya','...','2026-09-30',0.06176,'Bank of Americaâ€™s AI Returns Challenge the Enterprise Adoption Reality Check','https://www.investing.com/analysis/bank-of-americas-ai-returns-challenge-the-enterprise-adoption-reality-check-200688707',2),(4,'daniel martin','By\nElection campaigns produce an overwhelming stream of manifestos, speeches, interviews, polling and commentary. Investors trying to understand what a change in government could mean for taxes, energ...','2026-09-30',-0.2697,'ChatGPTâ€™s Political Blind Spot Is an Investor Risk','https://www.securities.io/ai-political-analysis-investment-risk/',4),(5,'kim johansen','...','2026-09-30',0.42136,'Cigna lays out Lead to One growth plan','https://www.themarketsdaily.com/2026/09/30/cigna-lays-out-lead-to-one-growth-plan.html',2),(6,'donald scott','...','2026-09-30',0.2368,'MINISO CFO bought 150,600 shares','https://www.thelincolnianonline.com/2026/09/30/miniso-cfo-bought-150600-shares.html',2),(7,'sarita garza','...','2026-09-30',0,'ACM Research backlog rises 88.2% year over year','https://www.themarketsdaily.com/2026/09/30/acm-research-backlog-rises-88-2-year-over-year.html',2),(8,'danessa lincoln','...','2026-09-30',0.54464,'Power Solutions secures $220 million credit facility','https://www.themarketsdaily.com/2026/09/30/power-solutions-secures-220-million-credit-facility.html',2);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -390,4 +391,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-30  6:06:09
+-- Dump completed on 2026-10-01  6:39:53
