@@ -234,6 +234,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -368,7 +369,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -377,7 +378,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'louis gerard','...','2026-09-30',0,'Microsoft: Copilot Finally Has A Plan','https://seekingalpha.com/article/4951118-microsoft-copilot-finally-has-a-plan',4),(2,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-30',0.47212,'JPMorgan sends a strong message to Mag-7 stock investors','https://www.thestreet.com/investing/stocks/jpmorgan-sends-a-strong-message-to-mag-7-stock-investors-nvidia-tesla-apple-meta-microsoft-amazon-google',4),(3,'tomisin sanya','...','2026-09-30',0.06176,'Bank of Americaâ€™s AI Returns Challenge the Enterprise Adoption Reality Check','https://www.investing.com/analysis/bank-of-americas-ai-returns-challenge-the-enterprise-adoption-reality-check-200688707',2),(4,'daniel martin','By\nElection campaigns produce an overwhelming stream of manifestos, speeches, interviews, polling and commentary. Investors trying to understand what a change in government could mean for taxes, energ...','2026-09-30',-0.2697,'ChatGPTâ€™s Political Blind Spot Is an Investor Risk','https://www.securities.io/ai-political-analysis-investment-risk/',4),(5,'kim johansen','...','2026-09-30',0.42136,'Cigna lays out Lead to One growth plan','https://www.themarketsdaily.com/2026/09/30/cigna-lays-out-lead-to-one-growth-plan.html',2),(6,'donald scott','...','2026-09-30',0.2368,'MINISO CFO bought 150,600 shares','https://www.thelincolnianonline.com/2026/09/30/miniso-cfo-bought-150600-shares.html',2),(7,'sarita garza','...','2026-09-30',0,'ACM Research backlog rises 88.2% year over year','https://www.themarketsdaily.com/2026/09/30/acm-research-backlog-rises-88-2-year-over-year.html',2),(8,'danessa lincoln','...','2026-09-30',0.54464,'Power Solutions secures $220 million credit facility','https://www.themarketsdaily.com/2026/09/30/power-solutions-secures-220-million-credit-facility.html',2);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sara appino','As artificial intelligence reshapes the global data landscape, infrastructure providers are seeing unprecedented demand. Investors must decide between the widespread architectural reach of Arm (ARM +0...','2026-10-01',0.84998,'Arm vs. Credo Technology Group: Which Tech Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/01/arm-vs-credo-technology-group-which-tech-stock-is-a-better-buy-in-2026/',4),(2,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(3,'vandita jadeja','Wells Fargo just added Microsoft to its Q4 Tactical Ideas list and pushed its price target well above Wall Street consensus, betting that Azure and Copilot are about to prove the skeptics wrong.\n Pric...','2026-10-01',0.19966,'Wall Street Sees 40% Upside For Microsoft as AI Monetization Finally Pays Off','https://247wallst.com/investing/2026/10/01/wall-street-sees-40-upside-for-microsoft-as-ai-monetization-finally-pays-off/',40),(4,'sarah hansen','...','2026-10-01',0,'7 Charts on Q3 Market Highlights: Stocks Tread Water While the Bond Market Shudders','https://www.morningstar.com/markets/7-charts-q3-market-highlights-stocks-tread-water-while-bond-market-shudders',2),(5,'colin laidley','...','2026-10-01',0,'Stocks Run Out of Gas in Q3 as Bond Yields Surge','https://www.morningstar.com/stocks/stocks-run-out-gas-q3-bond-yields-surge',2),(6,'gary alexander','...','2026-10-01',0.42136,'Microsoft: A Multi-Year Compounder With Seat Growth And Azure Acceleration','https://seekingalpha.com/article/4951344-microsoft-a-multi-year-compounder-with-seat-growth-and-azure-acceleration',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -391,4 +392,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-01  6:39:53
+-- Dump completed on 2026-10-02  6:23:56

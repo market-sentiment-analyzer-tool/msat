@@ -234,6 +234,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -368,7 +369,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -377,7 +378,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-09-30',0.47212,'JPMorgan sends a strong message to Mag-7 stock investors','https://www.thestreet.com/investing/stocks/jpmorgan-sends-a-strong-message-to-mag-7-stock-investors-nvidia-tesla-apple-meta-microsoft-amazon-google',4),(2,'shane hupp','...','2026-09-30',0.16184,'Top Retail Stocks To Keep An Eye On â€“ September 30th','https://www.tickerreport.com/banking-finance/13602743/top-retail-stocks-to-keep-an-eye-on-september-30th.html',2),(3,'aaron rennie','Michael Nagle / Bloomberg, Kent NISHIMURA / AFP via Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Elon Musk and Delta Air Lines chief executive Ed Basti...','2026-09-30',-0.12296,'Why Elon Musk Says Deltaâ€™s CEO â€˜Will Lose His Jobâ€™','https://www.investopedia.com/market-update-why-elon-musk-says-delta-ceo-will-lose-his-job-12149261',4),(4,'priya nigam','Premium Services\nInvestor concerns around agentic commerce being a threat to Amazon.com Inc.â€™s (NASDAQ:AMZN) advertising business appear to be \"overstated,\" according to Rosenblatt Securities.\nThe Ama...','2026-09-30',0.33336,'Is Amazon Really Facing â€˜Risk Of Complete Displacementâ€™ by Agentic Commerce?','https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/62085223/is-amazon-really-facing-risk-of-complete-displacement-by-agentic-commerce',80),(5,'pamela kock','Investors often weigh the stability of an industrial giant against the growth potential of a specialized materials leader. Choosing between Corning (GLW -3.12%) and Honeywell International (HON +0.39%...','2026-09-30',0.80028,'Corning vs. Honeywell International: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/09/30/corning-vs-honeywell-international-which-technology-stock-is-a-better-buy-in-2026/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(2,'chris lange','Warehouse demand is accelerating from e-commerce, defense, and data centers all at once, and three industrial REITs are quietly capturing that rent growth while their dividends still have plenty of ro...','2026-10-01',0.6198,'3 Dividend REITs Built Around Warehouses America Cannot Stop Building','https://247wallst.com/investing/2026/10/01/3-dividend-reits-built-around-warehouses-america-cannot-stop-building/',4),(3,'vandita jadeja','Amazon shares sit 14% below their 52-week high, yet one specific earnings report next month could set the stage for a 62% surge over the next two years. Here is the exact date and the three numbers th...','2026-10-01',0.34212,'Price Prediction: Amazon Stock Will Hit $400 on This Date','https://247wallst.com/investing/2026/10/01/price-prediction-amazon-stock-will-hit-400-on-this-date/',40),(4,'colin laidley','...','2026-10-01',0,'Stocks Run Out of Gas in Q3 as Bond Yields Surge','https://www.morningstar.com/stocks/stocks-run-out-gas-q3-bond-yields-surge',2),(5,'the asian investor','...','2026-10-01',0,'Alibaba: On Track To Becoming A Custom Silicon Powerhouse','https://seekingalpha.com/article/4951337-alibaba-on-track-to-becoming-a-custom-silicon-powerhouse',4),(6,'alex sirois','Amazon and Shopify both want to own the future of AI-powered shopping, but they are betting on opposite visions of how that future works. One is building walls around its customers while the other is ...','2026-10-01',-0.22188,'Two of Ecommerceâ€™s Biggest Names Just Launched a Silent War','https://247wallst.com/investing/2026/10/01/two-of-ecommerces-biggest-names-just-launched-a-silent-war/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -391,4 +392,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-01  6:39:53
+-- Dump completed on 2026-10-02  6:23:56

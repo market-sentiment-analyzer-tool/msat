@@ -234,6 +234,7 @@ afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
+b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
@@ -368,7 +369,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -377,7 +378,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Alphabet (GOOG +1.01%) (GOOGL +0.93%) stock gained 2.8% through 11:20 a.m. ET Wednesday on a positive prognosis from Piper Sandler regarding the artificial intelligence industry.\nTurns out, Taiwan Sem...','2026-09-30',0.19932,'Why Alphabet Stock Popped on Wednesday','https://www.fool.com/investing/2026/09/30/why-alphabet-stock-popped-on-wednesday/',4),(2,'financialcontent','Alphabet (NASDAQ: GOOGL) (NASDAQ: GOOG) shares rose about 2% to $344.03 Wednesday morning as investors weighed Googleâ€™s participation in a voluntary AI safety accord, according to a GuruFocus article ...','2026-09-30',0.68892,'TrillionDollarBreaks â€“ Alphabet Inc. (NASDAQ: GOOGL) (NASDAQ: GOOG) Shares Rise About 2% as Google Joins Voluntary AI Safety Accord','https://www.financialcontent.com/article/nnwire-2026-9-30-trilliondollarbreaks-alphabet-inc-nasdaq-googl-nasdaq-goog-shares-rise-about-2-as-google-joins-voluntary-ai-safety-accord',40),(3,'arundhati sarkar','...','2026-09-30',0.2,'House Dem questions Big Tech over secret AI data center NDAs: WSJ','https://seekingalpha.com/news/4648367-house-dem-questions-big-tech-over-secret-ai-data-center-ndas-wsj?feed_item_type=news',4),(4,'patrick sanders','There are some new details about the upcoming initial public offering from Anthropic, the artificial intelligence start-up behind Claude. Reuters reported on Sept. 29 that the company is seeking a val...','2026-09-29',0.66846,'Anthropic Just Revealed a $518 Billion AI Spending Plan. Here Are the Stocks That Could Win.','https://www.fool.com/investing/2026/09/29/anthropic-just-revealed-a-518-billion-ai-spending-plan-here-are-the-stocks-that-could-win/',4),(5,'wall street breakfast','...','2026-09-29',0.35232,'Wall Street Lunch: Anthropic Targets Up To $2T Raise (Judgment Day Possible)','https://seekingalpha.com/article/4950765-wall-street-lunch-anthropic-targets-up-to-2t-raise-ipo-filing-shows',4),(6,'adam levy','Warren Buffett has quite an extensive fan base, and for good reason. He took a failing textile company called Berkshire Hathaway (BRKA -0.84%) (BRKB -0.88%) and turned it into a multinational holding ...','2026-09-29',0.76738,'These 2 Numbers Explain Why Warren Buffett and Bill Ackman Love Alphabet, Amazon, Microsoft, and Meta','https://www.fool.com/investing/2026/09/29/these-2-numbers-explain-why-warren-buffett-and-bil/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(2,'brett schafer','Hedge fund managers are making big moves to capitalize on the artificial intelligence (AI)-driven stock market gyrations. Billionaire Bill Ackman made some in his portfolio last quarter, completely se...','2026-10-01',0.30142,'Bill Ackman Sold Alphabet to Buy an AI Stock Down Roughly 20% From Its High. Was That the Right Call?','https://www.fool.com/investing/2026/10/01/bill-ackman-sold-alphabet-to-buy-an-ai-stock-down/',4),(3,'daily hodl agent','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-10-01',0.16824,'Berkshire Hathaway Parks 45.52% of $357,000,000,000 Portfolio in Three AI-Powered Stocks, Including Apple and Alphabet','https://dailyhodl.com/2026/10/01/berkshire-hathaway-parks-45-52-of-357000000000-portfolio-in-three-ai-powered-stocks-including-apple-and-alphabet/',4),(4,'yahoo finance','...','2026-09-30',-0.42136,'FTC reportedly looking into whether OpenAI, Anthropic violated consumer protection laws.','https://www.bundle.app/en/finance/ftc-reportedly-looking-into-whether-openai-anthropic-violated-consumer-protection-laws-13A4AE7B-FD5B-5198-A44D-CA473A85A993',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -391,4 +392,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-01  6:39:53
+-- Dump completed on 2026-10-02  6:23:56
