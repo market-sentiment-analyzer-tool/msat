@@ -195,6 +195,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 885316c0-4838-11f1-97cf-6a354d727c3b:1-55,
 8a29067f-533e-11f1-a089-dadb8309180d:1-55,
 8a3e416e-4772-11f1-8e08-92848a2c0135:1-48,
+8b0abb4f-beee-11f1-b774-f6d1df40b869:1-59,
 8be9cf17-2731-11f1-bc1f-92673700d232:1-55,
 8c530a4c-a37b-11f1-a317-1a21ce6c66a5:1-62,
 8c9e21e7-0568-11f1-b4b5-061ab459d6a8:1-59,
@@ -378,7 +379,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(2,'brett schafer','Hedge fund managers are making big moves to capitalize on the artificial intelligence (AI)-driven stock market gyrations. Billionaire Bill Ackman made some in his portfolio last quarter, completely se...','2026-10-01',0.30142,'Bill Ackman Sold Alphabet to Buy an AI Stock Down Roughly 20% From Its High. Was That the Right Call?','https://www.fool.com/investing/2026/10/01/bill-ackman-sold-alphabet-to-buy-an-ai-stock-down/',4),(3,'daily hodl agent','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-10-01',0.16824,'Berkshire Hathaway Parks 45.52% of $357,000,000,000 Portfolio in Three AI-Powered Stocks, Including Apple and Alphabet','https://dailyhodl.com/2026/10/01/berkshire-hathaway-parks-45-52-of-357000000000-portfolio-in-three-ai-powered-stocks-including-apple-and-alphabet/',4),(4,'yahoo finance','...','2026-09-30',-0.42136,'FTC reportedly looking into whether OpenAI, Anthropic violated consumer protection laws.','https://www.bundle.app/en/finance/ftc-reportedly-looking-into-whether-openai-anthropic-violated-consumer-protection-laws-13A4AE7B-FD5B-5198-A44D-CA473A85A993',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Planet Labs (PL +8.43%) stock soared 7.8% through 11:40 a.m. ET Friday after confirming the successful launch, aboard a \"Transporter\" Falcon 9 rocket managed by Space Exploration Technologies (SPCX +7...','2026-10-02',0.1986,'Why Planet Labs Stock Popped on Friday','https://www.fool.com/investing/2026/10/02/why-planet-labs-stock-popped-on-friday/',4),(2,'null','\n Your name\n\n\nYour email\n\n\n \nUpdated 1 October 2026, 13:25 UTC\nAlphabet Class A (GOOGL): $344.08 at the close on Wednesday 30 September, and $350.14 (+1.76%) in pre-market trading at 9:06am ET on Thur...','2026-10-02',0.19856,'Alphabet Stock After Gemini 4 Argon â€“ Bull and Bearâ€¦','https://etf-alerts.com/2026/10/02/alphabet-stock-after-gemini-4-argon-bull-and-bear/',2),(3,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(4,'yahoo finance','...','2026-10-01',-0.39512,'Micron CFO: No â€˜line of sightâ€™ for when memory shortage will end','https://www.bundle.app/en/finance/micron-cfo-no-line-of-sight-for-when-memory-shortage-will-end-3B539AB9-BD0D-56F7-BEF7-9898340C13CC',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -392,4 +393,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-02  6:23:56
+-- Dump completed on 2026-10-03  5:52:54
