@@ -278,6 +278,7 @@ d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d28195a7-bbcd-11f1-85a4-02b1c331172f:1-48,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d431a5cf-bfbc-11f1-8006-deb74967f25c:1-61,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
@@ -370,7 +371,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -379,7 +380,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'rich smith','Planet Labs (PL +8.43%) stock soared 7.8% through 11:40 a.m. ET Friday after confirming the successful launch, aboard a \"Transporter\" Falcon 9 rocket managed by Space Exploration Technologies (SPCX +7...','2026-10-02',0.1986,'Why Planet Labs Stock Popped on Friday','https://www.fool.com/investing/2026/10/02/why-planet-labs-stock-popped-on-friday/',4),(2,'null','\n Your name\n\n\nYour email\n\n\n \nUpdated 1 October 2026, 13:25 UTC\nAlphabet Class A (GOOGL): $344.08 at the close on Wednesday 30 September, and $350.14 (+1.76%) in pre-market trading at 9:06am ET on Thur...','2026-10-02',0.19856,'Alphabet Stock After Gemini 4 Argon â€“ Bull and Bearâ€¦','https://etf-alerts.com/2026/10/02/alphabet-stock-after-gemini-4-argon-bull-and-bear/',2),(3,'wall street breakfast','...','2026-10-01',0,'Wall Street Lunch: All About AI','https://seekingalpha.com/article/4951435-wall-street-lunch-all-about-ai',4),(4,'yahoo finance','...','2026-10-01',-0.39512,'Micron CFO: No â€˜line of sightâ€™ for when memory shortage will end','https://www.bundle.app/en/finance/micron-cfo-no-line-of-sight-for-when-memory-shortage-will-end-3B539AB9-BD0D-56F7-BEF7-9898340C13CC',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john ballard','Amazon (AMZN +1.32%), Meta Platforms (META +0.30%), and Alphabet (GOOG +1.62%) (GOOGL +1.55%) are my three-stock starter portfolio for new investors in October 2026. I think these stocks offer more lo...','2026-10-03',0.19994,'The S&P 500 Is Not Enough: My 3-Stock Starter Portfolio for New Investors','https://www.fool.com/investing/2026/10/03/sp-500-not-enough-my-3-stock-starter-portfolio/',4),(2,'mike schwenk','Intel (INTC -0.56%) and Marvell Technology (MRVL +1.57%) both sell chips for data centers, and both companies say demand tied to artificial intelligence (AI) is lifting that business. Beyond that, the...','2026-10-03',0.80024,'Intel vs. Marvell Technology: Which AI Chip Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/03/intel-vs-marvell-technology-which-ai-chip-stock-better-buy-2026/',4),(3,'financialcontent','Shareholder rights law firm Robbins LLP informs investors that a class action was filed on behalf of persons or entities who purchased or otherwise acquired Alphabet Inc. (NASDAQ: GOOG, GOOGL) securit...','2026-10-03',0.25746,'Investor Alert: Robbins LLP Informs Investors of the Alphabet Inc. Class Action Lawsuit','https://www.financialcontent.com/article/bizwire-2026-10-3-investor-alert-robbins-llp-informs-investors-of-the-alphabet-inc-class-action-lawsuit',4),(4,'mitch edgeman','...','2026-10-02',-0.36704,'Insider Selling: Alphabet (NASDAQ:GOOG) Director Sells $28,257.35 in Stock','https://www.themarketsdaily.com/2026/10/02/insider-selling-alphabet-nasdaqgoog-director-sells-28257-35-in-stock.html',2),(5,'micah haroldson','...','2026-10-02',0,'Polaris Financial Partners Purchases New Holdings in Alphabet Inc. $GOOG','https://www.watchlistnews.com/polaris-financial-partners-purchases-new-holdings-in-alphabet-inc-goog/11249145.html',2),(6,'rich smith','Planet Labs (PL +8.43%) stock soared 7.8% through 11:40 a.m. ET Friday after confirming the successful launch, aboard a \"Transporter\" Falcon 9 rocket managed by Space Exploration Technologies (SPCX +7...','2026-10-02',0.1986,'Why Planet Labs Stock Popped on Friday','https://www.fool.com/investing/2026/10/02/why-planet-labs-stock-popped-on-friday/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -393,4 +394,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-03  5:52:54
+-- Dump completed on 2026-10-04  6:29:32
