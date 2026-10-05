@@ -31,7 +31,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 09d76395-a438-11f1-b26e-325f5f0cf259:1-59,
 0a5fe9df-4c2a-11f1-9fb3-e6013d40c5e9:1-58,
 0aa05697-d961-11f0-bfdf-7a873155c414:1-65,
-0b436fa8-bfb3-11f1-979f-2a1ba54e8cda:1-22,
 0bf5faf5-67b1-11f1-82e1-0a728dbd0572:1-65,
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
@@ -279,6 +278,7 @@ d0d4bc3d-622f-11f1-baff-623a96e0057c:1-57,
 d1749966-ada0-11f1-9237-7a52368f7064:1-59,
 d28195a7-bbcd-11f1-85a4-02b1c331172f:1-48,
 d2edcbb2-f0f4-11f0-b4f5-4ec4ef580748:1-64,
+d431a5cf-bfbc-11f1-8006-deb74967f25c:1-61,
 d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
@@ -322,6 +322,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ef093ae9-c079-11f1-bda3-760e2ebe93b7:1-77,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -371,7 +372,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -380,6 +381,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1wxpm1i','pdvpfdo','2026-10-04',69,0.5859,'Amazon and Google will prevail as some of the biggest AI winners when itâ€™s all said and done.'),(2,'ValueInvesting','1wxpm1i','pdvr7q5','2026-10-04',11,0.0772,'Have you seen the concentration of VGT? Last I checked NVDA was like 16% of it. If youâ€™re worried about single stock concentration, then VGT may not be the option for you. '),(3,'ValueInvesting','1wxpm1i','pdvqkl7','2026-10-04',6,-0.593,'\\>But if a diversified ETF like VGT can deliver something close to that, with far less single-stock risk, why take the additional risk?\n\nYou wouldn\'t, but you\'re also assuming that you have any idea what return VGT, AMZN, or GOOGL will return over the next decade. Which you probably dont. :)'),(4,'ValueInvesting','1wxpm1i','pdvqwti','2026-10-04',4,0.5799,'Most of VGTs appreciation is from holding nvidia and micron and avgo lol. Is it actually less risky?'),(5,'ValueInvesting','1wxpm1i','pdvpq4n','2026-10-04',10,0.7311,'vgt\'s top holdings are basically those names anyway, you\'re just paying a fee to own them in a bundle with 300 other stocks that barely move the needle\n\n  \nthe real risk is you bail on amazon when it\'s down 40% but somehow hold vgt through the same drawdown because it feels safer. if you can stomach the volatility and actually let them compound, the individual names are fine'),(6,'ValueInvesting','1wxpm1i','pdw64uv','2026-10-04',1,0.5778,'I donâ€™t get it- VGT 34% gain over five years.  I would never buy into that.  Thayer are so many stocks that perform better than that!'),(7,'ValueInvesting','1wxpm1i','pdwlbeu','2026-10-04',1,0,'Indeed'),(8,'ValueInvesting','1wxpm1i','pdyb104','2026-10-05',1,0.5023,'if one wants to operate like a VC - where one or two outsized returns far outweigh risks in others, which itself is not a bad strategy, they would not go for ETF even a diversified one. At the end of day, to each their own, isnâ€™t it?'),(9,'ValueInvesting','1wxpm1i','pdvupwj','2026-10-04',1,-0.7885,'I don\'t really think comparing two individual stocks to an ETF that index is a lot of stock is reasonable. Captured in the VGT is not just the winners but the losers in this movement to AI. Amazon Google may not be the top winners but they\'re not going to be the losers that disappear while the ETF will hold a few of those also and have to bite the bullet. '),(10,'ValueInvesting','1wxpm1i','pdvw494','2026-10-04',0,0.8674,'VGT is greatly but I don\'t know if I\'d truely call it a \"diversified\" ETF.  It removes single-stock risk, but these are 350 bets on basically the same thesis.  Youndongr true benefit of capture ng money rotating between Semis, Cybersecurity, and SaaS though which is nice.\n\nPersonally, I own MSFT, AMZN, GOOGL, SPCX, MU plus VGT....'),(11,'ValueInvesting','1wxpm1i','pdy253t','2026-10-05',0,0.875,'Bitcoinâ€™s 10 year CAGR is 63%. With the benefit of hindsight, why buy VGT when you can buy bitcoin. '),(12,'ValueInvesting','1wxpm1i','pdvtxar','2026-10-04',-1,0.9161,'I think deploying capital into tech after the past few years is a mistake in a fund or individual stocks. The irony is that people think these are somehow \"value plays\" despite their rich valuations.\n\nDo people simply not realize that one...information technology is cyclical, and two information technology companies are massively rate sensitive due to their huge capex requirements. Both Amazon and Alphabet are draining free cash flow to dump funds into the AI buildout space which seems like quite a gamble.   \n  \nAmazon is I believe currently trying to find a way to spin off some $8b of Grace Blackwell AI hyperscalers onto a separate SPV so they can hide their depreciation off balance sheet. It\'s crazy, to me, that people cannot see what\'s happening here. Is it that people don\'t realize US 10y bond yields have risen 878% in the past 6 years? ...or do they incorrectly believe US tech companies are somehow immune to rising borrowing costs?  \n  \nI get that value can be relative, but holy cow, these tech companies are huge risks...and there are legitimate value plays everywhere one looks in equity markets, yet everyone wants to continue investing in the same handful of companies. ');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -393,4 +395,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-04  5:19:05
+-- Dump completed on 2026-10-05  5:03:37
