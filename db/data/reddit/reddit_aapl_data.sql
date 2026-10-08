@@ -143,6 +143,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 60c87aea-8000-11f1-990c-fac789fd9aab:1-58,
+60c9390e-c2d9-11f1-a97b-8a77ebc2efbd:1-99,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
 62720616-2021-11f1-9bf6-762e3962f105:1-67,
 628d4812-609c-11f1-bd90-7a2b804301df:1-53,
@@ -271,6 +272,7 @@ c86e2266-b537-11f0-b75b-daf4c43920bf:1-68,
 c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
+ce6d09a3-c219-11f1-9941-faf3f641b6a1:1-60,
 cee13d33-bd62-11f1-8963-6a64e6075f7d:1-54,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
 cfdd8506-c8df-11f0-81b3-568a323044cc:1-60,
@@ -331,7 +333,6 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
-f39ff06f-c20e-11f1-96f9-5a9733590332:1-358,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
@@ -374,7 +375,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -383,7 +384,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1wz6lvo','pe8z6rs','2026-10-06',6,-0.802,'Shit post after shit post.'),(2,'AAPL','1wz6lvo','pe96nm5','2026-10-06',1,0.7906,'Why is this supposed to be exciting? $150. Wow.'),(3,'AAPL','1wz6lvo','pe9361j','2026-10-06',1,0,'Today in basic math. Â ðŸ¤¦â€â™‚ï¸Â '),(4,'AAPL','1wzlu6g','pectqxv','2026-10-07',4,0,'Why? Models are a commodity. '),(5,'AAPL','1wzlu6g','pectv9m','2026-10-07',5,-0.5106,'Dumb take'),(6,'AAPL','1wzlu6g','pecu1fj','2026-10-07',5,0.3286,'Sell!! So I can buy more'),(7,'AAPL','1wzlu6g','pecup9c','2026-10-07',3,0,'ðŸ¤¡ðŸ’¸ðŸ¤¡ðŸ’¸ðŸ¤¡'),(8,'AAPL','1wzlu6g','pecutn4','2026-10-07',3,0,'Meanwhile people are waiting weeks for their new iPhone 18.'),(9,'AAPL','1wzlu6g','pecxm6p','2026-10-07',1,0,'Is this satire?ðŸ’€ ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -397,4 +397,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-07  5:37:41
+-- Dump completed on 2026-10-08  5:34:18
