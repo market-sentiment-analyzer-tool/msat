@@ -40,6 +40,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
+12b379fe-c3ae-11f1-9d0e-22875aa35afa:1-55,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
@@ -375,7 +376,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -384,7 +385,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-10-07',0.3372,'Wall Street Lunch: Skydance Bet On Technology, AI To Reshape Entertainment Business','https://seekingalpha.com/article/4952527-wall-street-lunch-skydance-bet-on-technology-ai-to-reshape-entertainment-business',4),(2,'financialcontent','NEW YORK, NY - October 7, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOO...','2026-10-07',0.61946,'Kaplan Fox Encourages Investors of Alphabet Inc. (NASDAQ: GOOGL, GOOG) to Contact the Firm to Learn About Their Legal Rights','https://www.financialcontent.com/article/newmediawire-2026-10-7-kaplan-fox-encourages-investors-of-alphabet-inc-nasdaq-googl-goog-to-contact-the-firm-to-learn-about-their-legal-rights',4),(3,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-10-07',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40),(4,'adria cimino','September was a lackluster month for stocks, with the S&P 500 slipping 0.4% -- so this year, the market experienced the \"September Effect,\" or the weakness that often happens during that month. But th...','2026-10-07',0.36172,'3 Top AI Stocks to Watch in October: They May Set the Tone for the Rest of the Market.','https://www.fool.com/investing/2026/10/07/3-top-ai-stocks-to-watch-in-october-they-may-set-the-tone-for-the-rest-of-the-market/',4),(5,'eric volkman','In a massive power generation deal agreed between two titans in their industries, Constellation Energy (CEG -0.27%) and Alphabet (GOOG +0.81%)(GOOGL +0.81%) have signed a pair of related long-term pow...','2026-10-07',0.41788,'Google Signs Nuclear Deal With Constellation Energy','https://www.fool.com/investing/2026/10/07/google-signs-nuclear-deal-with-constellation-energy/',40),(6,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-10-07',0.19978,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'adam spatacco','Nvidia (NVDA -2.94%) became the first company to cross the $5 trillion market cap threshold last year, powered by its position at the center of the artificial intelligence (AI) infrastructure boom. It...','2026-10-08',0.76012,'1 Unstoppable Artificial Intelligence (AI) Stock to Buy Before It Joins Nvidia in the $5 Trillion Club','https://www.fool.com/investing/2026/10/08/1-artificial-intelligence-ai-stock-that-could-join/',4),(2,'hannah pedone','Please enable JS and disable any ad blocker...','2026-10-08',0.63132,'A true â€˜nuclear renaissanceâ€™ is taking shape, and these stocks could be big winners','https://www.marketwatch.com/story/a-true-nuclear-renaissance-is-taking-shape-and-these-stocks-could-be-big-winners-e04f7364?mod=mw_rss_topstories',4),(3,'cpa','Shares of Black Hills Corporation (BKH +0.90%) were trading sharply higher on Wednesday, soaring as much as 10.2% in early trading. By the time the market closed, the stock was still up 7.2%.\n\nThe cat...','2026-10-07',0.1995,'Why Black Hills Stock Rocketed Higher Today','https://www.fool.com/investing/2026/10/07/why-black-hills-stock-rocketed-higher-today/',4),(4,'keithen drury','Amazon (AMZN -2.25%) and Alphabet (GOOG -0.72%) (GOOGL -0.63%) have lost some luster on the stock market over the past few months. Amazon is down by more than 10% from the all-time high it hit this su...','2026-10-07',0.86856,'Now Is the Perfect Time to Buy Amazon and Alphabet Stock','https://www.fool.com/investing/2026/10/07/now-is-the-perfect-time-to-buy-amazon-and-alphabet/',4),(5,'wall street breakfast','...','2026-10-07',0.3372,'Wall Street Lunch: Skydance Bet On Technology, AI To Reshape Entertainment Business','https://seekingalpha.com/article/4952527-wall-street-lunch-skydance-bet-on-technology-ai-to-reshape-entertainment-business',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -398,4 +399,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-08  6:46:07
+-- Dump completed on 2026-10-09  6:53:59
