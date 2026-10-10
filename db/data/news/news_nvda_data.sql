@@ -334,6 +334,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f4628ab5-c473-11f1-93c3-9ef9a2786243:1-63,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
@@ -376,7 +377,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -385,7 +386,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'mar vista investment partners','    Devrimb/iStock via Getty Images\n \nDevrimb/iStock via Getty Images\nFinancial asset prices do not exist in a vacuum. They revolve around a collection of macroeconomic forces that exert their own for...','2026-10-08',0.24128,'Mar Vista U.S. Quality Premier Portfolio Q3 2026 Commentary','https://seekingalpha.com/article/4952880-mar-vista-us-quality-premier-portfolio-q3-2026-commentary',8),(2,'moz farooque','Please enable JS and disable any ad blocker...','2026-10-08',0.06364,'Bank of America tweaks Marvell stock target after key Analyst Day','https://www.thestreet.com/investing/stocks/marvell-stock-bank-of-america-raises-price-target',4),(3,'the arora report','Premium Services\nPlease click here for an enlarged chart of SPDR S&P 500 ETF Trust (NYSE:SPY) which represents the benchmark stock market index S&P 500 (SPX).\nNote the following:\nMost portfolios are n...','2026-10-08',0.47026,'Stock Reaction To Samsung And TSMC Earnings Is An Early Indicator Of A Market Character Shiftâ€”Watch Oil And Yields','https://www.benzinga.com/Opinion/26/10/62255776/stock-reaction-to-samsung-and-tsmc-earnings-is-an-early-indicator-of-a-market-character-shift-watch-oil-and-yields',8),(4,'headtopics.com','Fintech News\nSecuritize has marked a significant milestone in the evolution of digital finance by launching a sophisticated platform that allows for the tokenization of shares from some of the most pr...','2026-10-08',0.2615,'Securitize Launches Tokenized US Blue Chip Stocks on Solana Blockchain','https://us.headtopics.com/news/securitize-launches-tokenized-us-blue-chip-stocks-on-solana-88600861',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'mitch edgeman','...','2026-10-09',0,'Humana Inc. (NYSE: HUM) Lifts Bonus-Eligible Medicare Coverage to 95%','https://www.themarketsdaily.com/2026/10/09/humana-inc-nyse-hum-lifts-bonus-eligible-medicare-coverage-to-95.html',2),(2,'mark dietrich','...','2026-10-09',0,'TruGolf (NASDAQ: TRUG) completes Polymath acquisition as $3.49 million Series A remains','https://www.watchlistnews.com/trugolf-nasdaq-trug-completes-polymath-acquisition-as-3-49-million-series-a-remains/11255705.html',2),(3,'caroline horne','...','2026-10-09',0.45752,'Evolution Metals (NASDAQ: EMAT) lifts fiscal 2026 guidance on strong demand','https://www.thelincolnianonline.com/2026/10/09/evolution-metals-nasdaq-emat-lifts-fiscal-2026-guidance-on-strong-demand.html',2),(4,'michael walen','...','2026-10-09',0,'Euroseas (NASDAQ: ESEA) signs $120.5 million newbuilding contracts','https://www.themarketsdaily.com/2026/10/09/euroseas-nasdaq-esea-signs-120-5-million-newbuilding-contracts.html',2),(5,'the arora report','Premium Services\nPlease click here for an enlarged chart of NVIDIA Corp (NASDAQ:NVDA).\nNote the following:\nMost portfolios are now heavily concentrated in the Mag 7 stocks.Â  For this reason, it is imp...','2026-10-09',0.65248,'Nvidia-Backed Data Center IPO Collapsesâ€”OpenAI Revenue Questionsâ€”Apple customers Are Not Price Insensitive. -â€¦','https://www.benzinga.com/Opinion/26/10/62277859/nvidia-backed-data-center-ipo-collapses-openai-revenue-questions-apple-customers-are-not-price-insensitive',8),(6,'dr. robert castellano','GlobalFoundries just signed a $2 billion deal with TSMC, and it has nothing to do with making GPUs. Understanding exactly what they agreed to build reveals how AI chip profits flow to companies most i...','2026-10-09',0.55228,'GlobalFoundries Can Profit From AI Without Making GPUs','https://247wallst.com/investing/2026/10/09/globalfoundries-can-profit-from-ai-without-making-gpus/',4),(7,'jake lerch','iShares MSCI World ETF (URTH +0.61%) offers lower management costs and a focus on developed-market stability compared to the higher-fee, tech-heavy growth profile of the iShares MSCI Emerging Markets ...','2026-10-09',0.19896,'Two International ETFs With Contrasting Styles: iShares MSCI World ETF (URTH) and Emerging Markets ETF (EEM)','https://www.fool.com/coverage/etfs/2026/10/09/two-international-etfs-with-contrasting-styles-ishares-msci-world-etf-urth-and-emerging-markets-etf-eem/',4),(8,'ethan ryder','...','2026-10-09',0.2368,'Prothena (NASDAQ: PRTA) insider buys $1.82 million of shares, lifts stake','https://www.tickerreport.com/banking-finance/13613892/prothena-nasdaq-prta-insider-buys-1-82-million-of-shares-lifts-stake.html',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -399,4 +400,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-09  6:53:59
+-- Dump completed on 2026-10-10  6:30:28

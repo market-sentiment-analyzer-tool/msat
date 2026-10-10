@@ -334,6 +334,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f4628ab5-c473-11f1-93c3-9ef9a2786243:1-63,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
@@ -376,7 +377,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -385,7 +386,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'moz farooque','Please enable JS and disable any ad blocker...','2026-10-08',0.06364,'Bank of America tweaks Marvell stock target after key Analyst Day','https://www.thestreet.com/investing/stocks/marvell-stock-bank-of-america-raises-price-target',4),(2,'caroline horne','...','2026-10-08',0,'Retail Stocks To Keep An Eye On â€“ October 8th','https://www.thelincolnianonline.com/2026/10/08/retail-stocks-to-keep-an-eye-on-october-8th.html',2),(3,'vandita jadeja','Fifty-eight analysts cover Amazon and not one rates it a sell, yet the stock still sits well below its 52-week high while free cash flow turns negative and capital spending surges to levels that would...','2026-10-08',0.19992,'58 Analysts, Zero Sells: Amazonâ€™s Price Target Is a Rare Consensus','https://247wallst.com/investing/2026/10/08/58-analysts-zero-sells-amazons-price-target-is-a-rare-consensus/',4),(4,'vandita jadeja','Everyone knows the AWS story, but three faster-growing businesses quietly running alongside it could change how investors value Amazon entirely.\n Price Targets desk. Editor: Vandita Jadeja.\nIt sounds ...','2026-10-08',0.55222,'Amazon Stock Has Another Growth Story Investors May Be Missing','https://247wallst.com/investing/2026/10/08/amazon-stock-has-another-growth-story-investors-may-be-missing/',40),(5,'wall street breakfast','...','2026-10-08',0,'The Fragile Math Of Oil Prices','https://seekingalpha.com/article/4952710-the-fragile-math-of-oil-prices',4),(6,'lilly mwogah','Amazon stock price is heading into Thursdayâ€™s trading session with two very different stories competing for investorsâ€™ attention: another round of layoffs and a share price that has continued climbing...','2026-10-08',0.13744,'Amazon Stock Price Near $260 in Premarket as Fresh Layoffs Put AI Spending and Cost Cuts in Focus','https://www.investingcube.com/shares/amazon-stock-price-near-260-in-premarket-as-fresh-layoffs-put-ai-spending-and-cost-cuts-in-focus/',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'robert izquierdo','Investors choosing between Coupang (CPNG +2.66%) and Shopify (SHOP +3.82%) face a choice between a dominant regional logistics powerhouse and a global leader in digital commerce infrastructure. Which ...','2026-10-09',0.55162,'Better E-Commerce Stock: Coupang vs. Shopify','https://www.fool.com/coverage/better-buy/2026/10/09/better-e-commerce-stock-coupang-vs-shopify/',4),(2,'sarita garza','...','2026-10-09',0,'Retail Stocks To Watch Now â€“ October 9th','https://www.themarketsdaily.com/2026/10/09/retail-stocks-to-watch-now-october-9th.html',2),(3,'robert izquierdo','CrowdStrike (CRWD +4.57%) and Palantir Technologies (PLTR +5.17%) offer distinct ways to play the AI software revolution. Choosing between them requires weighing the resilience of an established cyber...','2026-10-09',0.55104,'Better High-Growth AI Stock: CrowdStrike vs. Palantir Technologies','https://www.fool.com/coverage/better-buy/2026/10/09/better-high-growth-ai-stock-crowdstrike-vs-palantir-technologies/',4),(4,'silin chen','Please enable JS and disable any ad blocker...','2026-10-09',0.06364,'Qualcomm CFO talks AI, data centers, and next big bet on robots','https://www.thestreet.com/investing/stocks/qualcomm-cfo-talks-ai-data-centers-and-next-big-bet-on-robots-qcom',4),(5,'anusuya lahiri','Premium Services\nAmazon.com Inc. (NASDAQ:AMZN) stock rose nearly 1% during Fridayâ€™s premarket session as broader market sentiment improved. Nasdaq futures gained 0.72%, while S&P 500 futures climbed 0...','2026-10-09',0.52102,'Amazon Is Undervalued, Says Analyst â€” and AI Could Be Its Biggest Advantage','https://www.benzinga.com/markets/tech/26/10/62270135/amazon-is-undervalued-says-analyst-and-ai-could-be-its-biggest-advantage',80),(6,'clearbridge investments','...','2026-10-09',0.30544,'ClearBridge Large Cap Value Strategy Q3 2026 Commentary','https://seekingalpha.com/article/4953045-clearbridge-large-cap-value-strategy-q3-2026-commentary',4),(7,'clearbridge investments','...','2026-10-09',0.04128,'ClearBridge Q3 2026 Commentary','https://seekingalpha.com/article/4953030-clearbridge-q3-2026-commentary',4),(8,'defense world staff','\n					Posted by Defense World Staff on Oct 9th, 2026\n\nLotus Asset Management LLC purchased a new stake in Amazon.com, Inc. (NASDAQ:AMZN) in the second quarter, according to the company in its most rec...','2026-10-09',0.65738,'3,393 Shares in Amazon.com, Inc. $AMZN Bought by Lotus Asset Management LLC','https://www.defenseworld.net/2026/10/09/3393-shares-in-amazon-com-inc-amzn-bought-by-lotus-asset-management-llc.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -399,4 +400,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-09  6:53:59
+-- Dump completed on 2026-10-10  6:30:28
