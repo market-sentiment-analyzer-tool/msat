@@ -40,10 +40,12 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
+12b379fe-c3ae-11f1-9d0e-22875aa35afa:1-55,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
+149d8cac-c46a-11f1-9112-623f528c840c:1-42,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -64,7 +66,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
-201e61b4-c3a3-11f1-80ff-863d62233957:1-172,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -376,7 +377,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -385,6 +386,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1x1v9fd','pex4z7y','2026-10-09',12,0.802,'buy any dips and hold.  \n\nbuy and hold for 20 years, no need to over think it.'),(2,'AAPL','1x1v9fd','pewzg6v','2026-10-09',2,0.5719,'iPhone Duo success? '),(3,'AAPL','1x1v9fd','pexkutv','2026-10-09',1,0.5719,'Theyâ€™ll run it up before then pound it down, donâ€™t play earnings'),(4,'AAPL','1x1v9fd','pey0zbq','2026-10-09',1,-0.1965,'Share prices always priced in future growth (or worries). Â As someone else explained to me - you canâ€™t look at Apple like the other companies. Â Apple is priced to perfection/dominance, not just growth or PE alone. Â There are multiple head winds: Â memory chips is the big one regulative pressure (especially in Europe) is another. Â Then again no one knows how well the IPhone Duo and the rumored Home Hub would do. Â I think people are underestimating the iPhone Duoâ€¦.Â '),(5,'AAPL','1x1v9fd','pey15s3','2026-10-09',1,0.128,'Buy the rumors sell the news. Â Every cycle is similar. Â '),(6,'AAPL','1x1v9fd','pezmxfl','2026-10-10',1,0,'Look at the option chain +-$20'),(7,'AAPL','1x1v9fd','peyudq3','2026-10-10',0,0.765,'October 29 2026 - aapl will be trading around 350 - 350 based on success of Duo reservations \n\nOctober 2029 - aapl will be up on an average 20% / year (historic average) so approx price in October 2029 will be around 500+ ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -398,4 +400,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-09  5:38:01
+-- Dump completed on 2026-10-10  5:19:51
