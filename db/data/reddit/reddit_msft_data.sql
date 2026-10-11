@@ -45,7 +45,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-149d8cac-c46a-11f1-9112-623f528c840c:1-42,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -329,12 +328,14 @@ ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f07c7606-c531-11f1-a55b-8ab0a45bfaf6:1-28,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f4628ab5-c473-11f1-93c3-9ef9a2786243:1-63,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
@@ -377,7 +378,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -386,7 +387,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1x1r6oj','pevyert','2026-10-09',39,0.4019,'Yes any news can impact the stock '),(2,'stocks','1x1r6oj','pew1je4','2026-10-09',18,0.4215,'Yes, it could have a short-term impact. In the long run, though, I donâ€™t think it will matter. It doesnâ€™t change the underlying economics of the business; itâ€™s a temporary issue tied to the current administration.'),(3,'stocks','1x1r6oj','pewdu71','2026-10-09',5,-0.0258,'It favors MSFT, maybe its planning to do a new round layoff lol'),(4,'stocks','1x1r6oj','pew8irf','2026-10-09',9,0.6548,'Why would it? Worst case scenario they hire Americans instead of foreigners. Its not like the country is short on talent.\n\nEdit: not sure why this needs to be spelled out, but cheaper labor in the form of offshoring isn\'t \"worst case scenario\" for a company looking to minimize costs and maximize profitsÂ '),(5,'stocks','1x1r6oj','pew5rb8','2026-10-09',2,-0.7579,'The stock very obviously reacted in a negative way to the news yesterday. And today, it\'s regained all those losses and is trading at a nearly 52-week high. \n\nthat should tell you all you need to know. '),(6,'stocks','1x1r6oj','pewhgu9','2026-10-09',1,-0.6124,'These companies have so many lawyers and political connections that I\'d be surprised if this is even enforced, it will vaporize over the weekend as the gov gets distracted by the next shiny thing. Any market reaction will be only short term.'),(7,'stocks','1x1r6oj','pex49hs','2026-10-09',1,0,'for me it\'s noise next to the price. msft is on my watchlist at 400 and it\'s \\~535, a green card headline isn\'t what closes that gap'),(8,'stocks','1x1r6oj','pezfggp','2026-10-10',1,-0.0772,'MSFT is already back at ATH by the time you read this.'),(9,'stocks','1x1r6oj','pewntbi','2026-10-09',1,-0.2263,'If that means MS canâ€™t pay below market rate because people waiting for their green card are less likely to jump ship, then itâ€™s a net positive for the industry. i donâ€™t give a fuck rather itâ€™s good or bad for MS. '),(10,'stocks','1x1r6oj','pewgdy0','2026-10-09',1,0.0258,'Can the federal government decide to just deny visa applications for people planning to work at a company they donâ€™t like? \n\nI inagine Microsoft will sue and get a judge to order Trump to issue the visas. '),(11,'stocks','1x1r6oj','pevyuwk','2026-10-09',-5,-0.296,'It\'s just racist virtue signaling from the White House. Unlikely to cause any material changes to the companies involved.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -400,4 +400,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-10  5:19:52
+-- Dump completed on 2026-10-11  5:10:38

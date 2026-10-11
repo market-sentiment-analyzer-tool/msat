@@ -45,7 +45,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
-149d8cac-c46a-11f1-9112-623f528c840c:1-42,
 16898804-a81f-11f1-99a7-029547650963:1-49,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -329,12 +328,14 @@ ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f07c7606-c531-11f1-a55b-8ab0a45bfaf6:1-28,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f4628ab5-c473-11f1-93c3-9ef9a2786243:1-63,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
 f5da47df-9211-11f1-ab7c-aeea640783b8:1-64,
@@ -377,7 +378,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -386,7 +387,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1x1emez','pewc2lh','2026-10-09',2,0.7906,'Yes - AI anything IPOs should be postponed until they can prove revenue - Altman/Dario pay attention.\n\nMeanwhile buy low price NVDA - soaring post-midterms.'),(2,'NVDA_Stock','1x260oc','pezknte','2026-10-10',2,0,'Does it come with a local llm?');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1x2s2d8','pf5pw51','2026-10-11',4,0,'Now imagine what they could do if they took on AMD and Intel with consumer CPUs ðŸ¤«'),(2,'NVDA_Stock','1x2s2d8','pf51kb8','2026-10-10',3,0.0516,'Yea what do you expect, they havenâ€™t missed in years. Chips are the real currency of the future, they actually produce value.'),(3,'NVDA_Stock','1x2s2d8','pf4vhdn','2026-10-10',2,0,'https://preview.redd.it/6w46kczbwpuh1.png?width=1470&format=png&auto=webp&s=d96ecb0ec296477f52ea43576383c2af7670db75\n\n'),(4,'wallstreetbets','1x2qs90','pf4oh4p','2026-10-10',21,0.3182,'Probably short term bullish to invest in open models considering Altman can cause your stock to dump randomly because accounting.'),(5,'wallstreetbets','1x2qs90','pf5am97','2026-10-10',25,0.9474,'So NVDAâ€™s business model is essentially creating/buying AI companies, and then having that subsidiary company turn around and use that seed money to buy NVDAs products?\n\nSmart way to have great quarterly earnings, but surely at some point these AI startups need to actually be able to produce their own positive cash flow to keep this gravy train rollingâ€¦\n\nâ€¦rightâ€¦?'),(6,'wallstreetbets','1x2qs90','pf52cii','2026-10-10',2,0,'$NBIS pump');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -400,4 +401,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-10  5:19:52
+-- Dump completed on 2026-10-11  5:10:38
