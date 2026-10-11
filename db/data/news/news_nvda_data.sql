@@ -334,6 +334,7 @@ f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
 f2f0fd99-5be1-11f1-92e7-ce6303e0cb33:1-60,
 f32a151a-62f9-11f1-9424-26f67c7f5820:1-55,
 f3719568-e84d-11f0-9d56-664bdd69cfeb:1-61,
+f38dd108-c53d-11f1-b222-3ab45554024b:1-55,
 f4628ab5-c473-11f1-93c3-9ef9a2786243:1-63,
 f53ea047-0e0b-11f1-bf96-c63e5b61c804:1-64,
 f5719016-2cb3-11f1-b436-8a949bfbfdea:1-61,
@@ -377,7 +378,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -386,7 +387,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'mitch edgeman','...','2026-10-09',0,'Humana Inc. (NYSE: HUM) Lifts Bonus-Eligible Medicare Coverage to 95%','https://www.themarketsdaily.com/2026/10/09/humana-inc-nyse-hum-lifts-bonus-eligible-medicare-coverage-to-95.html',2),(2,'mark dietrich','...','2026-10-09',0,'TruGolf (NASDAQ: TRUG) completes Polymath acquisition as $3.49 million Series A remains','https://www.watchlistnews.com/trugolf-nasdaq-trug-completes-polymath-acquisition-as-3-49-million-series-a-remains/11255705.html',2),(3,'caroline horne','...','2026-10-09',0.45752,'Evolution Metals (NASDAQ: EMAT) lifts fiscal 2026 guidance on strong demand','https://www.thelincolnianonline.com/2026/10/09/evolution-metals-nasdaq-emat-lifts-fiscal-2026-guidance-on-strong-demand.html',2),(4,'michael walen','...','2026-10-09',0,'Euroseas (NASDAQ: ESEA) signs $120.5 million newbuilding contracts','https://www.themarketsdaily.com/2026/10/09/euroseas-nasdaq-esea-signs-120-5-million-newbuilding-contracts.html',2),(5,'the arora report','Premium Services\nPlease click here for an enlarged chart of NVIDIA Corp (NASDAQ:NVDA).\nNote the following:\nMost portfolios are now heavily concentrated in the Mag 7 stocks.Â  For this reason, it is imp...','2026-10-09',0.65248,'Nvidia-Backed Data Center IPO Collapsesâ€”OpenAI Revenue Questionsâ€”Apple customers Are Not Price Insensitive. -â€¦','https://www.benzinga.com/Opinion/26/10/62277859/nvidia-backed-data-center-ipo-collapses-openai-revenue-questions-apple-customers-are-not-price-insensitive',8),(6,'dr. robert castellano','GlobalFoundries just signed a $2 billion deal with TSMC, and it has nothing to do with making GPUs. Understanding exactly what they agreed to build reveals how AI chip profits flow to companies most i...','2026-10-09',0.55228,'GlobalFoundries Can Profit From AI Without Making GPUs','https://247wallst.com/investing/2026/10/09/globalfoundries-can-profit-from-ai-without-making-gpus/',4),(7,'jake lerch','iShares MSCI World ETF (URTH +0.61%) offers lower management costs and a focus on developed-market stability compared to the higher-fee, tech-heavy growth profile of the iShares MSCI Emerging Markets ...','2026-10-09',0.19896,'Two International ETFs With Contrasting Styles: iShares MSCI World ETF (URTH) and Emerging Markets ETF (EEM)','https://www.fool.com/coverage/etfs/2026/10/09/two-international-etfs-with-contrasting-styles-ishares-msci-world-etf-urth-and-emerging-markets-etf-eem/',4),(8,'ethan ryder','...','2026-10-09',0.2368,'Prothena (NASDAQ: PRTA) insider buys $1.82 million of shares, lifts stake','https://www.tickerreport.com/banking-finance/13613892/prothena-nasdaq-prta-insider-buys-1-82-million-of-shares-lifts-stake.html',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'cnw group','Searching for your content...\nPhone\n\n 877-269-7890 from 8 AM - 10 PM ET\n        \n		\n\nContact Cision\n\n\n 877-269-7890\n\nfrom 8 AM - 10 PM ET\n\nOct 10, 2026, 12:38 ET\nShare this article\nVANCOUVER, BC, Oct....','2026-10-10',0.5655,'AI Revenue Questions Pull Semiconductor Stocks Off October Highs','https://www.newswire.ca/news-releases/ai-revenue-questions-pull-semiconductor-stocks-off-october-highs-849977355.html',4),(2,'faizan farooque','Please enable JS and disable any ad blocker...','2026-10-10',-0.13636,'â€˜Big Shortâ€™ investors split over the AI risk that matters most','https://www.thestreet.com/investing/burry-eisman-big-short-investors-split-over-ai-risk-that-matters-most',4),(3,'brendan coffey','Deciding between the high-growth software and chip giant Broadcom Inc.(AVGO +0.39%) and the legendary turnaround play Intel Corp. (INTC -2.22%) is a classic choice between established efficiency and p...','2026-10-10',0.80026,'Broadcom vs. Intel: Which Chip Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/10/broadcom-vs-intel-which-chip-stock-is-a-better-buy-in-2026/',4),(4,'mitch edgeman','...','2026-10-10',-0.16184,'Leverage Shares 2x Long NVDA Daily ETF (NASDAQ:NVDG) Stock Falls 7.2% â€“ Should You Sell?','https://www.themarketsdaily.com/2026/10/10/leverage-shares-2x-long-nvda-daily-etf-nasdaqnvdg-stock-falls-7-2-should-you-sell.html',20),(5,'jake lerch','The Vanguard Morningstar Growth ETF (VUG +0.72%) provides low-cost exposure to large-cap giants, while the State Street SPDR S&P 600 Small Cap Growth ETF (SLYG +0.70%) tracks smaller companies with st...','2026-10-10',0.92784,'Which Growth-Focused ETF is the Better Fit? Vanguard Morningstar Growth (VUG) or SPDR Small Cap Growth ETF (SLYG)?','https://www.fool.com/coverage/etfs/2026/10/10/which-growth-focused-etf-is-the-better-fit-vanguard-morningstar-growth-vug-or-spdr-small-cap-growth-etf-slyg/',4),(6,'luke lango','\n\n			As AI moves from answering questions to completing tasks, Marvell, Arm, and Nebius could supply the infrastructure that makes it possible		\nListen to the audio version of this article (generated ...','2026-10-10',0.19992,'The 3 AI Stocks That Will Define 2027','https://investorplace.com/hypergrowthinvesting/2026/10/the-3-ai-stocks-that-will-define-2027/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -400,4 +401,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-10  6:30:28
+-- Dump completed on 2026-10-11  6:36:22
