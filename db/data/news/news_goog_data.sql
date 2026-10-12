@@ -273,6 +273,7 @@ c9fdb8de-eb73-11f0-80f6-1a19854944b6:1-64,
 cb59b483-387e-11f1-95a5-ca583d9a29ad:1-65,
 ccdc1e89-b320-11f1-9bfe-4604b2af8e78:1-57,
 cd400dad-c2e3-11f1-bf15-16d2b1f41f4b:1-58,
+ce2f4350-c607-11f1-b268-a6ffcdc2a51d:1-58,
 ce6d09a3-c219-11f1-9941-faf3f641b6a1:1-60,
 cee13d33-bd62-11f1-8963-6a64e6075f7d:1-54,
 cf7eee2b-661e-11f1-8d7f-1e4afc9f45e8:1-50,
@@ -378,7 +379,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -387,7 +388,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'dane bowler','...','2026-10-09',0.272,'Depreciation Subtleties: S&P Earnings Are Vastly Overstated','https://seekingalpha.com/article/4953181-depreciation-subtleties-s-and-p-earnings-are-vastly-overstated',4),(2,'prosper junior bakiny','If you had invested $10,000 in Alphabet (GOOG +0.87%) (GOOGL +0.97%) shortly after its IPO in 2004, your initial investment would be worth over $1 million today. Few corporations are capable of delive...','2026-10-09',0.19988,'Could Investing $10,000 in Alphabet Today Make You a Millionaire?','https://www.fool.com/investing/2026/10/09/could-investing-usd10-000-in-alphabet-today-make-you-a-millionaire/',4),(3,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / October 9, 2026 / Levi & Korsinsky, LLP notifies investors in Alphabet Inc. (NASDAQ:GOOGL, GOOG) that a securities class action is pending on behalf of persons an...','2026-10-09',0.25924,'GOOGL/GOOG Shareholder Alert: December 1, 2026 Lead Plaintiff Deadline in Alphabet Inc. Securities Class Action - Contact Levi & Korsinsky','https://www.financialcontent.com/article/accwirecq-2026-10-9-googlgoog-shareholder-alert-december-1-2026-lead-plaintiff-deadline-in-alphabet-inc-securities-class-action-contact-levi-and-korsinsky',4),(4,'adam spatacco','Quantum computing could become one of the next great markets to disrupt artificial intelligence (AI). That possibility has sent investors on a quest to find the next Nvidia. Two stocks that have emerg...','2026-10-09',0.74634,'Not IonQ. Not D-Wave. This Magnificent Quantum Computing Stock Is the One to Own for the Long Haul.','https://www.fool.com/investing/2026/10/09/not-ionq-not-d-wave-this-magnificent-quantum-compu/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Amazon (AMZN +3.29%) and Alphabet (GOOG +0.87%) (GOOGL +0.97%) are two of the biggest spenders in the artificial intelligence (AI) industry. Each has a sprawling cloud computing business with far more...','2026-10-11',0.87842,'Amazon and Alphabet Just Committed $420 Billion to Data Centers. 1 Stock Is the Better Buy.','https://www.fool.com/investing/2026/10/11/amazon-and-alphabet-just-committed-420-billion-to/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -401,4 +402,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-11  6:36:22
+-- Dump completed on 2026-10-12  6:41:16
