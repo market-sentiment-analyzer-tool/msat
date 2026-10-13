@@ -100,6 +100,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c467b2d-7b50-11f1-95a7-9e03efdf431c:1-57,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
+3cc40e27-c6d5-11f1-b20d-622cc4100ba9:1-52,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
@@ -388,7 +389,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Amazon (AMZN +3.29%) and Alphabet (GOOG +0.87%) (GOOGL +0.97%) are two of the biggest spenders in the artificial intelligence (AI) industry. Each has a sprawling cloud computing business with far more...','2026-10-11',0.87842,'Amazon and Alphabet Just Committed $420 Billion to Data Centers. 1 Stock Is the Better Buy.','https://www.fool.com/investing/2026/10/11/amazon-and-alphabet-just-committed-420-billion-to/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Amazon (AMZN -1.10%) and Alphabet (GOOG +0.32%) (GOOGL +0.30%) are two of the biggest spenders in the artificial intelligence (AI) industry. Each has a sprawling cloud computing business with far more...','2026-10-11',0.87842,'Amazon and Alphabet Just Committed $420 Billion to Data Centers. 1 Stock Is the Better Buy.','https://www.fool.com/investing/2026/10/11/amazon-and-alphabet-just-committed-420-billion-to/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -402,4 +403,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-12  6:41:16
+-- Dump completed on 2026-10-13  7:12:23
