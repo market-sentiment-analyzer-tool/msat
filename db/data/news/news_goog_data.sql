@@ -302,6 +302,7 @@ db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de514f5b-c790-11f1-8393-5a406e766c4a:1-60,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -380,7 +381,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -389,7 +390,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Amazon (AMZN -1.10%) and Alphabet (GOOG +0.32%) (GOOGL +0.30%) are two of the biggest spenders in the artificial intelligence (AI) industry. Each has a sprawling cloud computing business with far more...','2026-10-11',0.87842,'Amazon and Alphabet Just Committed $420 Billion to Data Centers. 1 Stock Is the Better Buy.','https://www.fool.com/investing/2026/10/11/amazon-and-alphabet-just-committed-420-billion-to/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','Apple (AAPL +0.09%) has built an enormous business by making products that work together. From the iPhone and Apple Watch to the Mac and iPad, the technology giant has given customers plenty of reason...','2026-10-13',0.84146,'Apple Is Taking on Amazon and Google in the Smart Home With a $299 Siri AI Device. Is HomeView the First Big Win for New CEO John Ternus?','https://www.fool.com/investing/2026/10/13/apple-is-taking-on-amazon-and-google-in-the-smart-home-with-a-299-siri-ai-device-is-homeview-the-first-big-win-for-new-ceo-john-ternus/',40),(2,'wall street breakfast','...','2026-10-13',0.2368,'Wall Street Breakfast Podcast: Six Flags Shares Plunge Premarket','https://seekingalpha.com/article/4953723-wall-street-breakfast-podcast-six-flags-shares-plunge-premarket',4),(3,'investing experts podcast','...','2026-10-13',0,'S&P Hits All-Time Highs, AI Trade Does All The Work','https://seekingalpha.com/article/4953647-s-and-p-hits-all-time-highs-ai-trade-does-all-the-work',4),(4,'yahoo finance','...','2026-10-13',-0.32152,'Broadcom CEO: Investors are ignoring a key lesson from Warren Buffett','https://www.bundle.app/en/finance/broadcom-ceo-investors-are-ignoring-a-key-lesson-from-warren-buffett-F0B56158-F21C-5F20-9F0B-E747EE4DF33B',2),(5,'financialcontent','NEW YORK, NY - October 12, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-12',0.4346,'Kaplan Fox Reminds Investors of Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a Securities Class Action Deadline - Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-12-kaplan-fox-reminds-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-securities-class-action-deadline-contact-the-firm-before-december-1-2026',4),(6,'micah zimmerman','Pick almost any frontier of anything from modern tech, search, or advertising, cloud computing, self-driving cars, or quantum physics, and odds are Alphabet (NASDAQ: GOOGL) (GOOG +0.16%) or Nvidia (NV...','2026-10-12',0.38064,'$10,000 Invested Equally in Alphabet and Nvidia Could Be Worth This Much by 2030','https://www.fool.com/investing/2026/10/12/10000-invested-equally-in-alphabet-and-nvidia-cou/',4),(7,'financialcontent','NEW YORK, Oct.  12, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-10-12',0.4346,'Kaplan Fox & Kilsheimer LLP Alerts Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to a Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-10-12-kaplan-fox-and-kilsheimer-llp-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-a-securities-class-action-deadline-on-december-1-2026',4),(8,'financialcontent','NEW YORK, Oct.  12, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities of a pending securities class action on behalf of investors who...','2026-10-12',-0.37146,'Levi & Korsinsky Reminds Alphabet Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 1, 2026 - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-10-12-levi-and-korsinsky-reminds-alphabet-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-1-2026-googlgoog',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -403,4 +404,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-13  7:12:23
+-- Dump completed on 2026-10-14  5:35:01

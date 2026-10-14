@@ -302,6 +302,7 @@ db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de514f5b-c790-11f1-8393-5a406e766c4a:1-60,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -380,7 +381,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -389,7 +390,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'clearbridge investments','...','2026-10-12',0.04128,'ClearBridge Sustainability Leaders Strategy Q3 2026 Commentary','https://seekingalpha.com/article/4953570-clearbridge-sustainability-leaders-strategy-q3-2026-commentary',4),(2,'investing.com','...','2026-10-12',0.56024,'Microsoft stock outlook: Azure growth and earnings set to drive next move','https://www.investing.com/news/stock-market-news/microsoft-stock-outlook-azure-growth-and-earnings-set-to-drive-next-move-93CH-4945006',20),(3,'investing.com','...','2026-10-12',0,'Microsoftâ€™s Maia 300 chip and what it means for Nvidia','https://www.investing.com/news/stock-market-news/microsofts-maia-300-chip-and-what-it-means-for-nvidia-93CH-4944991',2),(4,'reuben gregg brewer','Over the next 20 years, demand for electricity is expected to be six times higher than it was between 2005 and 2025. That step change in demand is being driven by new technologies like artificial inte...','2026-10-12',0.48888,'3 Dividend Stocks Riding the Same Nuclear Build-Out From Different Angles','https://www.fool.com/investing/2026/10/12/3-dividend-stocks-riding-the-same-nuclear-build-ou/',4),(5,'trey thoelcke','AI-related companies now control a share of the S&P 500 that rivals the most dangerous concentration episode in American financial history, and the last time anything came close, investors lost fortun...','2026-10-12',0.486,'S&P 500 Just Hit Record High in October. History Stands Ready to Repeat Itself.','https://247wallst.com/investing/2026/10/12/sp-500-just-hit-record-high-in-october-history-stands-ready-to-repeat-itself/',4),(6,'darius baruo','Price forecast\nMelius Research upgraded Microsoft to Buy with a $665 price target on October 5, 2026, while Scotiabank raised its target to $615 on the same date â€” both referencing the underlying NASD...','2026-10-12',0.54634,'MSFT Price Prediction: Analysts Set Targets Up to $665 as Tokenized Contract Nears Key Resistance at $541','https://blockchain.news/news/20261012-price-prediction-msft-analysts-set-targets-up-to-665',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'jake lerch','Choosing between Arista Networks (ANET -3.02%) and International Business Machines (IBM +1.66%) in 2026 requires balancing high-octane infrastructure demand with stable, diversified software and consu...','2026-10-13',0.80036,'Arista Networks vs. International Business Machines: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/13/arista-networks-vs-international-business-machines-which-technology-stock-is-a-better-buy-in-2026/',4),(2,'the arora report','Premium Services\nPlease click here for an enlarged chart of JPMorgan Chase & Co (NYSE:JPM).\nNote the following:\nMost portfolios are now heavily concentrated in the Mag 7 stocks.Â  For this reason, it i...','2026-10-13',0.19498,'Samsung, SK Hynix Fall In Seoul On China Memory Threatâ€”Broadcom CEO Compares AI Investors To Casino Gamblersâ€”JPM Whipsaws','https://www.benzinga.com/Opinion/26/10/62330739/samsung-sk-hynix-fall-in-seoul-on-china-memory-threat-broadcom-ceo-compares-ai-investors-to-casino-gamblers-jpm-whipsaws',8),(3,'dana sullivan kilroy','Please enable JS and disable any ad blocker...','2026-10-13',0.06364,'The AI buildout is on track to be the biggest bet in US history','https://www.thestreet.com/technology/the-ai-buildout-is-on-track-to-be-the-biggest-bet-in-us-history',4),(4,'investinglive.com','...','2026-10-13',0,'Stock market movers today. Bumble, JPMorgan and AI stocks: Why market reactions reversed','https://investinglive.com/stocks/bumble-jpmorgan-and-ai-stocks-why-market-reactions-reversed/',2),(5,'daniel shvartsman','...','2026-10-13',0,'Middle Coast Investing Q2 2026 Letter: Which Basket Is Up?','https://seekingalpha.com/article/4953809-middle-coast-investing-q2-2026-letter-which-basket-is-up',4),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-13',0.19984,'Claude Was Right About Microsoft (MSFT): Can The Stock Keep Rising?','https://www.insidermonkey.com/news/claude-was-right-about-microsoft-msft-can-the-stock-keep-rising-1853569/',40),(7,'karen gilchrist','...','2026-10-13',-0.21856,'Chip Stocks Fall as Chinese Competition and AI Speculation Risks Grow','https://www.morningstar.com/stocks/chip-stocks-fall-chinese-competition-ai-speculation-risks-grow',2),(8,'sara appino','The chip industry is at a crossroads as AI demand shifts from experimental to essential. Choosing between Advanced Micro Devices (AMD +1.90%) and SK Hynix (SKHY -3.19%) requires balancing high-growth ...','2026-10-13',0.84996,'Advanced Micro Devices vs. SK Hynix: Which Semiconductor Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/13/advanced-micro-devices-vs-sk-hynix-which-semiconductor-stock-is-a-better-buy-in-2026/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -403,4 +404,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-13  7:12:23
+-- Dump completed on 2026-10-14  5:35:01
