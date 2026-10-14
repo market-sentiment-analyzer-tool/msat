@@ -100,6 +100,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
 3c467b2d-7b50-11f1-95a7-9e03efdf431c:1-57,
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
+3cc40e27-c6d5-11f1-b20d-622cc4100ba9:1-52,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
@@ -135,7 +136,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5aab012c-3d36-11f1-a3ca-86c8516afed2:1-58,
 5afd2957-2b22-11f1-bc32-5eef1da4fb4d:1-68,
 5b7b3616-cd97-11f0-acf9-c644c16f578d:1-61,
-5b8518cd-c6ce-11f1-9f2f-5a87352d68d6:1-127,
 5b981b5d-cc01-11f0-934a-7a4085da0fb8:1-66,
 5c063416-f5ab-11f0-a722-124338999f98:1-64,
 5c4ec064-c817-11f0-b31d-fefd5b173010:1-61,
@@ -302,6 +302,7 @@ db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de4cc3f0-c786-11f1-8217-96844475ff5b:1-62,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -389,7 +390,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1x40r8j','pfg3xlb','2026-10-12',7,-0.7184,'Ffs no '),(2,'NVDA_Stock','1x40r8j','pffqo69','2026-10-12',5,-0.296,'No'),(3,'NVDA_Stock','1x40r8j','pfj5pho','2026-10-12',3,-0.1779,'SpaceX will take on massive debt and continually dilute shareholders in order to build terrestrial Nvidia data centers for a neocloud business. \n\nThey\'re basically funneling investor money directly into Nvidia. Nvidia will be worth significantly more than SpaceX.'),(4,'NVDA_Stock','1x40r8j','pfj1sli','2026-10-12',2,-0.5267,'No way OP - I\'ll bet $2m ... no to $1,000.'),(5,'NVDA_Stock','1x40r8j','pfj370v','2026-10-12',2,0,'I\'m out if that happens. '),(6,'NVDA_Stock','1x40r8j','pfgdvoh','2026-10-12',1,0.933,'I know you shouldnâ€™t look at past performance to judge future success, but nothing past or present supports spacex being the most valuable company. Did they suddenly start making a profit?');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1x4v27h','pghxip4','2026-10-13',4,0,'Three jokers having beer.'),(2,'NVDA_Stock','1x4v27h','pgh3sbe','2026-10-13',2,-0.4069,'The new model canâ€™t even cannibalizes the old one. Old iPhone prices drop when the new one comes out, etc. This demand is lucrative'),(3,'NVDA_Stock','1x4v27h','pgmiquj','2026-10-14',1,-0.296,'I think the idea of recent GPUs becoming obsolete stems from the idea of someone owning a PC then replacing with another.  These cluster of machines can still perform tasks and complete workloads. '),(4,'NVDA_Stock','1x4v27h','pgj0jbb','2026-10-13',-6,0.4404,'How much AI profit from end users does Meta get, or is it still all circular financing?'),(5,'NVDA_Stock','1x523ff','pgim9ga','2026-10-13',6,0.6249,'great calendar'),(6,'NVDA_Stock','1x4ue3p','pgh3wir','2026-10-13',1,0.34,'AES 256 widespread adoption started in 2000s.  \nlengthen it to aes 384 or aes 512 will prolong the security.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -403,4 +404,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-13  6:25:44
+-- Dump completed on 2026-10-14  4:23:44
