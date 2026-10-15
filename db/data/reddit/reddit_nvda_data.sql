@@ -209,6 +209,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
+91d6a430-c84d-11f1-8ab8-3a89ab73e89d:1-72,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
@@ -302,7 +303,7 @@ db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
-de4cc3f0-c786-11f1-8217-96844475ff5b:1-62,
+de514f5b-c790-11f1-8393-5a406e766c4a:1-60,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
 deb5d0d6-ec3c-11f0-b365-d6b7a8aa3532:1-65,
@@ -381,7 +382,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,7 +391,6 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1x4v27h','pghxip4','2026-10-13',4,0,'Three jokers having beer.'),(2,'NVDA_Stock','1x4v27h','pgh3sbe','2026-10-13',2,-0.4069,'The new model canâ€™t even cannibalizes the old one. Old iPhone prices drop when the new one comes out, etc. This demand is lucrative'),(3,'NVDA_Stock','1x4v27h','pgmiquj','2026-10-14',1,-0.296,'I think the idea of recent GPUs becoming obsolete stems from the idea of someone owning a PC then replacing with another.  These cluster of machines can still perform tasks and complete workloads. '),(4,'NVDA_Stock','1x4v27h','pgj0jbb','2026-10-13',-6,0.4404,'How much AI profit from end users does Meta get, or is it still all circular financing?'),(5,'NVDA_Stock','1x523ff','pgim9ga','2026-10-13',6,0.6249,'great calendar'),(6,'NVDA_Stock','1x4ue3p','pgh3wir','2026-10-13',1,0.34,'AES 256 widespread adoption started in 2000s.  \nlengthen it to aes 384 or aes 512 will prolong the security.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -404,4 +404,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-14  4:23:44
+-- Dump completed on 2026-10-15  4:05:54
