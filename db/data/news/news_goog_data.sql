@@ -123,6 +123,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+551aea68-c858-11f1-aea2-6adad17a285a:1-51,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -381,7 +382,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,7 +391,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'patrick sanders','Apple (AAPL +0.09%) has built an enormous business by making products that work together. From the iPhone and Apple Watch to the Mac and iPad, the technology giant has given customers plenty of reason...','2026-10-13',0.84146,'Apple Is Taking on Amazon and Google in the Smart Home With a $299 Siri AI Device. Is HomeView the First Big Win for New CEO John Ternus?','https://www.fool.com/investing/2026/10/13/apple-is-taking-on-amazon-and-google-in-the-smart-home-with-a-299-siri-ai-device-is-homeview-the-first-big-win-for-new-ceo-john-ternus/',40),(2,'wall street breakfast','...','2026-10-13',0.2368,'Wall Street Breakfast Podcast: Six Flags Shares Plunge Premarket','https://seekingalpha.com/article/4953723-wall-street-breakfast-podcast-six-flags-shares-plunge-premarket',4),(3,'investing experts podcast','...','2026-10-13',0,'S&P Hits All-Time Highs, AI Trade Does All The Work','https://seekingalpha.com/article/4953647-s-and-p-hits-all-time-highs-ai-trade-does-all-the-work',4),(4,'yahoo finance','...','2026-10-13',-0.32152,'Broadcom CEO: Investors are ignoring a key lesson from Warren Buffett','https://www.bundle.app/en/finance/broadcom-ceo-investors-are-ignoring-a-key-lesson-from-warren-buffett-F0B56158-F21C-5F20-9F0B-E747EE4DF33B',2),(5,'financialcontent','NEW YORK, NY - October 12, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-12',0.4346,'Kaplan Fox Reminds Investors of Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a Securities Class Action Deadline - Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-12-kaplan-fox-reminds-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-securities-class-action-deadline-contact-the-firm-before-december-1-2026',4),(6,'micah zimmerman','Pick almost any frontier of anything from modern tech, search, or advertising, cloud computing, self-driving cars, or quantum physics, and odds are Alphabet (NASDAQ: GOOGL) (GOOG +0.16%) or Nvidia (NV...','2026-10-12',0.38064,'$10,000 Invested Equally in Alphabet and Nvidia Could Be Worth This Much by 2030','https://www.fool.com/investing/2026/10/12/10000-invested-equally-in-alphabet-and-nvidia-cou/',4),(7,'financialcontent','NEW YORK, Oct.  12, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-10-12',0.4346,'Kaplan Fox & Kilsheimer LLP Alerts Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to a Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-10-12-kaplan-fox-and-kilsheimer-llp-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-a-securities-class-action-deadline-on-december-1-2026',4),(8,'financialcontent','NEW YORK, Oct.  12, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities of a pending securities class action on behalf of investors who...','2026-10-12',-0.37146,'Levi & Korsinsky Reminds Alphabet Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 1, 2026 - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-10-12-levi-and-korsinsky-reminds-alphabet-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-1-2026-googlgoog',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris neiger','For years, AI data centers have almost exclusively relied on GPUs for all AI processing and learning. But as tech companies have deployed more advanced models and AI agents become prolific, custom pro...','2026-10-14',0.76014,'As Big Tech Designs Its Own AI Chips, the Companies Behind the Scenes Win','https://www.fool.com/investing/2026/10/14/as-big-tech-designs-its-own-ai-chips-the-companies/',4),(2,'financialcontent','NEW YORK, NY - October 13, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-13',0.55012,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-13-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-lead-plaintiff-deadline-on-december-1-2026',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -404,4 +405,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-14  5:35:01
+-- Dump completed on 2026-10-15  5:22:50
