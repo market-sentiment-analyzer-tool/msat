@@ -94,6 +94,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
+38addaae-c916-11f1-b360-36565465e516:1-68,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -123,6 +124,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4f39e10d-4f4e-11f1-bb3d-22fec7d8e07f:1-58,
 51b812ff-b259-11f1-b8d8-b6af04afae6e:1-53,
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
+551aea68-c858-11f1-aea2-6adad17a285a:1-51,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
@@ -209,7 +211,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
-91d6a430-c84d-11f1-8ab8-3a89ab73e89d:1-72,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
@@ -382,7 +383,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -391,6 +392,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1x6sd2z','pgxzyjo','2026-10-15',31,0,'It always seems too pricy; it always grows more.'),(2,'AAPL','1x6sd2z','pgy1mcv','2026-10-15',5,0,'Are you buying for 10 years from now or for next week?'),(3,'AAPL','1x6sd2z','pgy6rke','2026-10-15',3,0.8774,'I\'d just buy whenever you can but if you wanna feel like you got a deal buy when it drops... like right now, it\'s down 0.054%!!'),(4,'AAPL','1x6sd2z','pgy731v','2026-10-15',3,-0.2347,'As for waiting for a pullback: probably the poorest-timed purchase of my life was buying $28k of AAPL in January of 2008. I watched it lose more than half its value over the course of that year. It was awful. But if you look at AAPLâ€™s chart now, the dip in 2008 is barely discernible. If youâ€™re investing for the long term, todayâ€™s dips barely matter. Just buy and donâ€™t worry about it.'),(5,'AAPL','1x6sd2z','pgznh6a','2026-10-15',2,0,'Wait for a Split '),(6,'AAPL','1x6sd2z','pgy0wk7','2026-10-15',4,-0.5106,'Wait for a red day to get in and dca every red day. Donâ€™t buy on green days. '),(7,'AAPL','1x6sd2z','pgy4xl5','2026-10-15',2,0.4137,'If you wait for a pullback you may never get a chance to actually buy'),(8,'AAPL','1x6sd2z','pgy1q7r','2026-10-15',1,0.69,'Honestlyâ€” how long are you holding? A year or more and it will simply be higher. 10 years and you will be a happy camper. YoY, AAPL performs!'),(9,'AAPL','1x6sd2z','pgyipr9','2026-10-15',1,-0.07,'If you never buy stocksthat â€œseem too priceyâ€œ you will miss out on so many good stocks'),(10,'AAPL','1x6sd2z','pgyomu2','2026-10-15',1,0,'DCA. Â '),(11,'AAPL','1x6sd2z','pgyzjug','2026-10-15',1,0.4404,'Look at this way. Everybody who bought aapl centuries ago or last week is profitable. '),(12,'AAPL','1x6sd2z','pgz5pcq','2026-10-15',1,0.7351,'Been in Apple since 1993, made me a millionaire, it can happen.  You canâ€™t win if you donâ€™t play the game.'),(13,'AAPL','1x6sd2z','pgz9qy1','2026-10-15',1,0,'Every step along the way was an all time high. '),(14,'AAPL','1x6sd2z','pgzf7k9','2026-10-15',1,0.6369,'Best performing stock I have owned'),(15,'AAPL','1x6sd2z','pgzrfwx','2026-10-15',1,0.9493,'They just partner with meta, and I know everyone on reddit has pitchforks for meta. But that just means buy but not now, maybe wait until after earnings cause AAPL usually tanks on earnings except for last quarter but I would wait unless you have FOMO than buy now '),(16,'AAPL','1x6sd2z','ph0xd8s','2026-10-16',1,0.4404,'The stock went up 2X in three years and these were supposed to be sucky years for Apple (in comparison it went up 10X in the last decade). Â '),(17,'AAPL','1x6sd2z','pgy78a1','2026-10-15',-3,0.7003,'Not at current valuations. Apple is only being propped up because it\'s the safe haven when competitors are spending a lot on AI CapEx.'),(18,'AAPL','1x6ziln','ph04l8i','2026-10-15',2,-0.3182,'Apple is the anti AI bet. Who knew..');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -404,4 +406,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-15  4:05:53
+-- Dump completed on 2026-10-16  4:02:44
