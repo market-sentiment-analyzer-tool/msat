@@ -115,6 +115,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 48de075f-b57e-11f1-8dad-2e891b47d40c:1-58,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
+4980d32d-c920-11f1-9d1c-4a902c91f4c1:1-60,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -382,7 +383,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -391,7 +392,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris neiger','For years, AI data centers have almost exclusively relied on GPUs for all AI processing and learning. But as tech companies have deployed more advanced models and AI agents become prolific, custom pro...','2026-10-14',0.76014,'As Big Tech Designs Its Own AI Chips, the Companies Behind the Scenes Win','https://www.fool.com/investing/2026/10/14/as-big-tech-designs-its-own-ai-chips-the-companies/',4),(2,'financialcontent','NEW YORK, NY - October 13, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-13',0.55012,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-13-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-lead-plaintiff-deadline-on-december-1-2026',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','An important event is coming up for Alphabet (GOOG +0.37%) (GOOGL +0.45%) investors: its third-quarter earnings. I think it has a great setup heading into its earnings report, and it could all combine...','2026-10-14',0.19984,'Prediction: Alphabet Will Soar After Oct. 28','https://www.fool.com/investing/2026/10/14/prediction-alphabet-will-soar-after-october-28/',4),(2,'financialcontent','NEW YORK, NY - October 14, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-14',0.55042,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-14-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-deadline-on-december-1-2026',4),(3,'keithen drury','Cloud computing infrastructure is vital to the artificial intelligence (AI) arms race, as few companies have in-house access to the computing power that serious AI workloads require. So most developer...','2026-10-14',0.19944,'3 Cloud Leaders That Will Make a Fortune From AI','https://www.fool.com/investing/2026/10/14/3-cloud-leaders-that-will-make-a-fortune-from-ai/',4),(4,'morningstar','...','2026-10-14',0.28896,'Google Shareholder Alert: Alphabet Inc. Securities Class Action Lawsuit','https://www.bundle.app/en/finance/google-shareholder-alert-alphabet-inc-securities-class-action-lawsuit-4F2199D8-12A3-5626-8C0B-3C75AB476625',20);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -405,4 +406,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-15  5:22:50
+-- Dump completed on 2026-10-16  5:14:16
