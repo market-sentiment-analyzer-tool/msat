@@ -253,6 +253,7 @@ bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
+bd2c3446-c9e8-11f1-bb1c-86fa6db8aef4:1-52,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -383,7 +384,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -392,7 +393,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','An important event is coming up for Alphabet (GOOG +0.37%) (GOOGL +0.45%) investors: its third-quarter earnings. I think it has a great setup heading into its earnings report, and it could all combine...','2026-10-14',0.19984,'Prediction: Alphabet Will Soar After Oct. 28','https://www.fool.com/investing/2026/10/14/prediction-alphabet-will-soar-after-october-28/',4),(2,'financialcontent','NEW YORK, NY - October 14, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-14',0.55042,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-14-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-deadline-on-december-1-2026',4),(3,'keithen drury','Cloud computing infrastructure is vital to the artificial intelligence (AI) arms race, as few companies have in-house access to the computing power that serious AI workloads require. So most developer...','2026-10-14',0.19944,'3 Cloud Leaders That Will Make a Fortune From AI','https://www.fool.com/investing/2026/10/14/3-cloud-leaders-that-will-make-a-fortune-from-ai/',4),(4,'morningstar','...','2026-10-14',0.28896,'Google Shareholder Alert: Alphabet Inc. Securities Class Action Lawsuit','https://www.bundle.app/en/finance/google-shareholder-alert-alphabet-inc-securities-class-action-lawsuit-4F2199D8-12A3-5626-8C0B-3C75AB476625',20);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / October 16, 2026 / Levi & Korsinsky, LLP alerts investors in Alphabet Inc. (NASDAQ:GOOGL, GOOG) that Chief Executive Officer Sundar Pichai and Chief Financial Off...','2026-10-16',-0.12976,'Alphabet Shareholder Alert: Investors With Losses May Seek to Lead the Class Action in Alphabet Inc. Securities Lawsuit - Contact Levi & Korsinsky','https://www.financialcontent.com/article/accwirecq-2026-10-16-alphabet-shareholder-alert-investors-with-losses-may-seek-to-lead-the-class-action-in-alphabet-inc-securities-lawsuit-contact-levi-and-korsinsky',4),(2,'adam levy','Microsoft (MSFT -1.93%) is planning a big change to its Azure cloud computing data centers starting next year. It will rely much more on its custom-designed silicon than on leading graphics processing...','2026-10-16',0.56678,'Microsoft CEO Satya Nadella Just Shared Bad News for Nvidia and Great News for This Rival Chipmaker','https://www.fool.com/investing/2026/10/16/microsoft-ceo-satya-nadella-just-shared-bad-news-f/',4),(3,'keith speights','Many Nvidia (NVDA -1.43%) investors warily monitor Advanced Micro Devices (AMD -5.96%) and Broadcom (AVGO -4.53%). And for good reason. AMD competes directly with Nvidia. Broadcom co-develops custom s...','2026-10-16',0.19982,'Not AMD. Not Broadcom. This is the Chip Designer Nvidia Investors Should Be Watching','https://www.fool.com/investing/2026/10/16/not-amd-not-broadcom-this-is-the-chip-designer-nvi/',4),(4,'financialcontent','NEW YORK, NY - October 15, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-15',0.4349,'Kaplan Fox Continues to Alert Investors of Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-15-kaplan-fox-continues-to-alert-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-class-action-deadline-on-december-1-2026',4),(5,'financialcontent','NEW YORK, NY - October 15, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-15',0.55042,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors Seeking Recovery to Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-15-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-seeking-recovery-to-contact-the-firm-before-december-1-2026',4),(6,'anusuya lahiri','Premium Services\nGoogle parent Alphabet Inc. (NASDAQ:GOOG) (NASDAQ:GOOGL) is heading into earnings with investors focused on Gemini 4 Argon, expanding AI infrastructure commitments and whether Google ...','2026-10-15',0.24072,'Google Undercuts Some AI Rivals on Price as Gemini 4 Argon Reaches Enterprises','https://www.benzinga.com/markets/tech/26/10/62393416/google-undercuts-some-ai-rivals-on-price-as-gemini-4-argon-reaches-enterprises',80);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -406,4 +407,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-16  5:14:16
+-- Dump completed on 2026-10-17  5:08:59

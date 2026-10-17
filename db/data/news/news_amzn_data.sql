@@ -253,6 +253,7 @@ bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
+bd2c3446-c9e8-11f1-bb1c-86fa6db8aef4:1-52,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -383,7 +384,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -392,7 +393,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'joseph griffin','...','2026-10-15',0.32152,'Do September Retail Sales Help Amazon.com, Inc. (NASDAQ: AMZN)?','https://www.tickerreport.com/banking-finance/13620484/do-september-retail-sales-help-amazon-com-inc-nasdaq-amzn.html',2),(2,'sara appino','ServiceNow (NOW +6.14%) and Palantir Technologies (PLTR -0.23%) represent the vanguard of the modern software era. Choosing between these enterprise giants requires a close look at their growth trajec...','2026-10-15',0.80006,'ServiceNow vs. Palantir Technologies: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/15/servicenow-vs-palantir-technologies-which-technology-stock-is-a-better-buy-in-2026/',4),(3,'robert izquierdo','Choosing between Broadcom (AVGO -0.56%) and NVIDIA (NVDA -1.84%) involves weighing two different approaches to the ongoing artificial intelligence boom. Both companies sit at the center of the modern ...','2026-10-15',0.7744,'Better Artificial Intelligence Stock for 2026: Broadcom vs. NVIDIA','https://www.fool.com/coverage/better-buy/2026/10/15/better-artificial-intelligence-stock-for-2026-broadcom-vs-nvidia/',4),(4,'joseph griffin','...','2026-10-15',-0.25456,'Direxion Daily AMZN Bear 1X ETF (NASDAQ:AMZD) Shares Shorted: Short Interest Down 43.5% in September','https://www.tickerreport.com/banking-finance/13620350/direxion-daily-amzn-bear-1x-etf-nasdaqamzd-shares-shorted-short-interest-down-43-5-in-september.html',20),(5,'sam daodu','Amazon and JPMorgan are blocking AI agents that can already pay with crypto, but a small Boston company thinks a protocol built on a forgotten HTTP error code can change their minds.\n The Crypto Desk ...','2026-10-15',0.11698,'AI Agents Can Already Pay in Crypto. Can a Website Tell Who Theyâ€™re Working For?','https://247wallst.com/investing/cryptocurrency/2026/10/15/ai-agents-can-already-pay-in-crypto-can-a-website-tell-who-theyre-working-for/',4),(6,'jeff lewis','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-15',0.34228,'Amazon (AMZN): Who Captures the Savings From its Custom AI Chips?','https://www.insidermonkey.com/news/amazon-amzn-who-captures-the-savings-from-its-custom-ai-chips-1854611/',40),(7,'zach anderson','Price forecast\nThe Amazon tokenized stock contract on Binance Futures fell 3.83% to $250.23, slipping beneath every tracked moving average and its daily pivot point. On the underlying AMZN equity, bot...','2026-10-15',-0.07926,'AMZN Price Prediction: Binance Contract Drops 3.83% Below All Key Moving Averages as Analysts Trim Targets','https://blockchain.news/news/20261015-price-prediction-amzn-binance-contract-drops-383-below-all',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'alex sirois','Amazon and Walmart both run booming ad businesses, but they are selling completely different things to advertisers and the gap between them is widening fast. Which model survives the next wave of reta...','2026-10-16',0.34196,'Amazon Ads: The E-Commerce Search Monolith vs. Walmart Connect: The In-Store Data Goldmine','https://247wallst.com/investing/2026/10/16/amazon-ads-the-e-commerce-search-monolith-vs-walmart-connect-the-in-store-data-goldmine/',40),(2,'vandita jadeja','Analysts have nearly united behind one mega-cap while remaining deeply split on the other, and the price targets reveal exactly why these two stocks belong in completely different conversations.\n Pric...','2026-10-16',0.68976,'Wall Street Agrees on Amazon and Canâ€™t Agree on Tesla. The Targets Show Why','https://247wallst.com/investing/2026/10/16/wall-street-agrees-on-amazon-and-cant-agree-on-tesla-the-targets-show-why/',40),(3,'bram berkowitz','Billionaire investors did not make their fortunes on luck.\nMost of them have been investing for decades and have experience across many cycles, allowing them to recognize the makings of a successful i...','2026-10-16',0.22024,'Billionaires Are Selling These 6 Artificial Intelligence (AI) Stocks. Should You Follow?','https://www.fool.com/investing/2026/10/16/billionaire-sell-artificial-intelligence-ai-stock/',4),(4,'hanz christensen','...','2026-10-16',0,'Amazon.com, Inc. $AMZN Stock Bought by LifeGoal Investments LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-stock-bought-by-lifegoal-investments-llc/11263996.html',2),(5,'keith speights','Many Nvidia (NVDA -1.43%) investors warily monitor Advanced Micro Devices (AMD -5.96%) and Broadcom (AVGO -4.53%). And for good reason. AMD competes directly with Nvidia. Broadcom co-develops custom s...','2026-10-16',0.19982,'Not AMD. Not Broadcom. This is the Chip Designer Nvidia Investors Should Be Watching','https://www.fool.com/investing/2026/10/16/not-amd-not-broadcom-this-is-the-chip-designer-nvi/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -406,4 +407,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-16  5:14:16
+-- Dump completed on 2026-10-17  5:08:59

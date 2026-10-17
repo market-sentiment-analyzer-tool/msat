@@ -253,6 +253,7 @@ bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
+bd2c3446-c9e8-11f1-bb1c-86fa6db8aef4:1-52,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -383,7 +384,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -392,7 +393,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'anusuya lahiri','...','2026-10-15',-0.18104,'Rate Pressure vs. AI Demand: Rising Treasury Yields Trigger Nvidia, AMD Slump','https://www.benzinga.com/markets/tech/26/10/62393159/rate-pressure-vs-ai-demand-rising-treasury-yields-trigger-nvidia-amd-slump',4),(2,'jim cramer','\nReference #18.8f15d617.1792127646.cc10d502\nhttps://errors.edgesuite.net/18.8f15d617.1792127646.cc10d502\n\nhttps://errors.edgesuite.net/18.8f15d617.1792127646.cc10d502...','2026-10-15',-0.42136,'How to weather the current AI stock storm that we were all dreading','https://www.cnbc.com/investingclub/2026/10/15/cramer-how-to-weather-the-current-ai-stock-storm-that-we-were-all-dreading.html',40),(3,'daily hodl agent','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-10-15',-0.28928,'â€˜Big Shortâ€™ Investor Michael Burry Hints Stocks Could Peak Within Nine Months, Funnels Bearish Bets Into Nasdaq and Chip Stocks ETF','https://dailyhodl.com/2026/10/15/big-short-investor-michael-burry-hints-stocks-could-peak-within-nine-months-funnels-bearish-bets-into-nasdaq-and-chip-stocks/',4),(4,'alex sirois','NVIDIA doubled its revenue while Broadcom grew AI chip sales 221%, yet the two companies are betting on completely opposite visions of who actually controls the future of AI computing.\n\nWithin a week ...','2026-10-15',0.1936,'Nvidia and Broadcom Narratives Define the AI Chip Landscape','https://247wallst.com/investing/2026/10/15/nvidia-and-broadcom-narratives-define-the-ai-chip-landscape/',40),(5,'sam daodu','Bybit now lets you swap crypto for over 1,000 US stocks, but what you actually own depends on which version of the service you use, and the difference matters more than most buyers realize.\n The Crypt...','2026-10-15',0.69484,'Can You Buy Stocks With Crypto? Bybit Adds 1,000 US Stocks, but Not Every Version Gives You the Shares','https://247wallst.com/investing/cryptocurrency/2026/10/15/can-you-buy-stocks-with-crypto-bybit-adds-1000-us-stocks-but-not-every-version-gives-you-the-shares/',4),(6,'robert izquierdo','Choosing between high-growth software leaders often involves balancing rapid expansion against proven profitability. We compare the collaborative design innovator Figma (FIG +7.03%) and the enterprise...','2026-10-15',0.55214,'Better High-Growth Software Stock for 2026: Figma vs. ServiceNow','https://www.fool.com/coverage/better-buy/2026/10/15/better-high-growth-software-stock-for-2026-figma-vs-servicenow/',4),(7,'robert izquierdo','As artificial intelligence continues to reshape the data center landscape, choosing between Astera Labs (ALAB +0.57%) and Marvell Technology (MRVL -1.65%) requires weighing explosive growth potential ...','2026-10-15',0.77456,'Better Artificial Intelligence Stock for 2026: Astera Labs vs. Marvell Technology','https://www.fool.com/coverage/better-buy/2026/10/15/better-artificial-intelligence-stock-for-2026-astera-labs-vs-marvell-technology/',4),(8,'miriam hart','Digital Currency / Investing\nStrategy added 766 holder wallets to reach 18,574, while Nvidia had the highest 24-hour volume at $40.71 million.\nRead the original article\nAlibabaâ€™s onchain value fell 3....','2026-10-15',0.23896,'Alibaba Tokenized Stock Volume Reaches $4.42 Million on Robinhood Chain','https://econotimes.com/Alibaba-Tokenized-Stock-Volume-Reaches-4-42-Million-on-Robinhood-Chain-1755115',4),(9,'sara appino','ServiceNow (NOW +6.14%) and Palantir Technologies (PLTR -0.23%) represent the vanguard of the modern software era. Choosing between these enterprise giants requires a close look at their growth trajec...','2026-10-15',0.80006,'ServiceNow vs. Palantir Technologies: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/15/servicenow-vs-palantir-technologies-which-technology-stock-is-a-better-buy-in-2026/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'david moadel','Investors are bailing on AI chip stocks, but not all of them equally, and the gap between winners and losers reveals something important about how Wall Street is rethinking the cost of building out ar...','2026-10-16',-0.01902,'Intel and AMD Drop 3% as Rotation Out of AI Chip Stocks Continues; NVIDIA Holds Steady','https://247wallst.com/investing/2026/10/16/intel-and-amd-drop-3-as-rotation-out-of-ai-chip-stocks-continues-nvidia-holds-steady/',40),(2,'nauman khan','...','2026-10-16',0.56024,'Nvidia AI Deal Talks Just Gave Bulls a Fresh Reason to Buy NVDA Stock','https://www.barchart.com/story/news/8098417/nvidia-ai-deal-talks-just-gave-bulls-a-fresh-reason-to-buy-nvda-stock',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -406,4 +407,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-16  5:14:17
+-- Dump completed on 2026-10-17  5:08:59
