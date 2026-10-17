@@ -53,6 +53,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
+18ba7788-c9de-11f1-b876-9ecd6cf9e6d6:1-77,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
@@ -94,7 +95,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 345435dd-d7cb-11f0-8f4d-da12f477d6a4:1-64,
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
-38addaae-c916-11f1-b360-36565465e516:1-68,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
@@ -116,6 +116,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 48de075f-b57e-11f1-8dad-2e891b47d40c:1-58,
 4938fb50-33c6-11f1-9f72-a2d98e4266c3:1-62,
+4980d32d-c920-11f1-9d1c-4a902c91f4c1:1-60,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
@@ -383,7 +384,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -392,7 +393,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1x6sd2z','pgxzyjo','2026-10-15',31,0,'It always seems too pricy; it always grows more.'),(2,'AAPL','1x6sd2z','pgy1mcv','2026-10-15',5,0,'Are you buying for 10 years from now or for next week?'),(3,'AAPL','1x6sd2z','pgy6rke','2026-10-15',3,0.8774,'I\'d just buy whenever you can but if you wanna feel like you got a deal buy when it drops... like right now, it\'s down 0.054%!!'),(4,'AAPL','1x6sd2z','pgy731v','2026-10-15',3,-0.2347,'As for waiting for a pullback: probably the poorest-timed purchase of my life was buying $28k of AAPL in January of 2008. I watched it lose more than half its value over the course of that year. It was awful. But if you look at AAPLâ€™s chart now, the dip in 2008 is barely discernible. If youâ€™re investing for the long term, todayâ€™s dips barely matter. Just buy and donâ€™t worry about it.'),(5,'AAPL','1x6sd2z','pgznh6a','2026-10-15',2,0,'Wait for a Split '),(6,'AAPL','1x6sd2z','pgy0wk7','2026-10-15',4,-0.5106,'Wait for a red day to get in and dca every red day. Donâ€™t buy on green days. '),(7,'AAPL','1x6sd2z','pgy4xl5','2026-10-15',2,0.4137,'If you wait for a pullback you may never get a chance to actually buy'),(8,'AAPL','1x6sd2z','pgy1q7r','2026-10-15',1,0.69,'Honestlyâ€” how long are you holding? A year or more and it will simply be higher. 10 years and you will be a happy camper. YoY, AAPL performs!'),(9,'AAPL','1x6sd2z','pgyipr9','2026-10-15',1,-0.07,'If you never buy stocksthat â€œseem too priceyâ€œ you will miss out on so many good stocks'),(10,'AAPL','1x6sd2z','pgyomu2','2026-10-15',1,0,'DCA. Â '),(11,'AAPL','1x6sd2z','pgyzjug','2026-10-15',1,0.4404,'Look at this way. Everybody who bought aapl centuries ago or last week is profitable. '),(12,'AAPL','1x6sd2z','pgz5pcq','2026-10-15',1,0.7351,'Been in Apple since 1993, made me a millionaire, it can happen.  You canâ€™t win if you donâ€™t play the game.'),(13,'AAPL','1x6sd2z','pgz9qy1','2026-10-15',1,0,'Every step along the way was an all time high. '),(14,'AAPL','1x6sd2z','pgzf7k9','2026-10-15',1,0.6369,'Best performing stock I have owned'),(15,'AAPL','1x6sd2z','pgzrfwx','2026-10-15',1,0.9493,'They just partner with meta, and I know everyone on reddit has pitchforks for meta. But that just means buy but not now, maybe wait until after earnings cause AAPL usually tanks on earnings except for last quarter but I would wait unless you have FOMO than buy now '),(16,'AAPL','1x6sd2z','ph0xd8s','2026-10-16',1,0.4404,'The stock went up 2X in three years and these were supposed to be sucky years for Apple (in comparison it went up 10X in the last decade). Â '),(17,'AAPL','1x6sd2z','pgy78a1','2026-10-15',-3,0.7003,'Not at current valuations. Apple is only being propped up because it\'s the safe haven when competitors are spending a lot on AI CapEx.'),(18,'AAPL','1x6ziln','ph04l8i','2026-10-15',2,-0.3182,'Apple is the anti AI bet. Who knew..');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1x7eihc','ph3h9q0','2026-10-16',3,0,'$348!! What is going on?'),(2,'AAPL','1x7eihc','ph3ksve','2026-10-16',3,-0.7189,'Jan 29 delivery. Shit these things are not easy to make'),(3,'AAPL','1x7eihc','ph5hwdi','2026-10-16',3,-0.0772,'I saw somewhere theyâ€™re now back ordered to Jan 2027'),(4,'AAPL','1x7eihc','ph3k1f7','2026-10-16',2,0,'360!! ðŸš€ðŸš€'),(5,'AAPL','1x7eihc','ph49mkx','2026-10-16',1,-0.0516,'Whatâ€™s up with resistance at 344-347 ðŸ«¨ðŸ˜­'),(6,'AAPL','1x7eihc','ph3fg9i','2026-10-16',1,0,'Letâ€™s go!  If it opens at premarket levels I will hit 110,000% in a bit over an hour '),(7,'AAPL','1x7eihc','ph4q9br','2026-10-16',0,0,'I got Nov 9th to 16th too. Just talked a rep they told me its typically closer to that 9th date but can be a couple days earlier! So fingers crossed!'),(8,'AAPL','1x7eihc','ph3u6ky','2026-10-16',-1,0.25,'I guarantee you even tho pre orders sold out, this is a new products so they did not manufacture a lot of these phones. Thats why it sold out. Iâ€™d say an article will point that out by next month'),(9,'AAPL','1x7eihc','ph5v4nq','2026-10-16',-1,-0.4588,'BTW today is the vest date for  RSUs for employees and many will sell them on vest so expect a dip in the stock');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -406,4 +407,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-16  4:02:44
+-- Dump completed on 2026-10-17  3:53:10
