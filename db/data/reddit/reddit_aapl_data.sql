@@ -53,7 +53,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 18342c1b-9c3c-11f1-b567-dae1f55d8bd0:1-64,
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
-18ba7788-c9de-11f1-b876-9ecd6cf9e6d6:1-77,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
@@ -83,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
+2d0dce17-caa8-11f1-beaf-1e34b8fa2242:1-65,
 2d27479a-ba38-11f1-a6ea-2a44e01af733:1-46,
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
@@ -254,6 +254,7 @@ bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
 bcf2bdc1-7cdc-11f1-9167-06ee258fb9a7:1-60,
 bd0d0750-a68c-11f1-b0f8-8e587865cbc0:1-54,
+bd2c3446-c9e8-11f1-bb1c-86fa6db8aef4:1-52,
 be2a0a85-a5c8-11f1-a473-1a5071d979f7:1-54,
 be60659f-f99a-11f0-b664-8a71e5e94d4c:1-72,
 bee30be2-fe52-11f0-839f-e6dea7609677:1-67,
@@ -384,7 +385,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -393,7 +394,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1x7eihc','ph3h9q0','2026-10-16',3,0,'$348!! What is going on?'),(2,'AAPL','1x7eihc','ph3ksve','2026-10-16',3,-0.7189,'Jan 29 delivery. Shit these things are not easy to make'),(3,'AAPL','1x7eihc','ph5hwdi','2026-10-16',3,-0.0772,'I saw somewhere theyâ€™re now back ordered to Jan 2027'),(4,'AAPL','1x7eihc','ph3k1f7','2026-10-16',2,0,'360!! ðŸš€ðŸš€'),(5,'AAPL','1x7eihc','ph49mkx','2026-10-16',1,-0.0516,'Whatâ€™s up with resistance at 344-347 ðŸ«¨ðŸ˜­'),(6,'AAPL','1x7eihc','ph3fg9i','2026-10-16',1,0,'Letâ€™s go!  If it opens at premarket levels I will hit 110,000% in a bit over an hour '),(7,'AAPL','1x7eihc','ph4q9br','2026-10-16',0,0,'I got Nov 9th to 16th too. Just talked a rep they told me its typically closer to that 9th date but can be a couple days earlier! So fingers crossed!'),(8,'AAPL','1x7eihc','ph3u6ky','2026-10-16',-1,0.25,'I guarantee you even tho pre orders sold out, this is a new products so they did not manufacture a lot of these phones. Thats why it sold out. Iâ€™d say an article will point that out by next month'),(9,'AAPL','1x7eihc','ph5v4nq','2026-10-16',-1,-0.4588,'BTW today is the vest date for  RSUs for employees and many will sell them on vest so expect a dip in the stock');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -407,4 +407,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-17  3:53:10
+-- Dump completed on 2026-10-18  3:59:31
