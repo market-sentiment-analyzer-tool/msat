@@ -243,6 +243,7 @@ b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
+b846faed-cab2-11f1-8cbf-b289668d31b3:1-68,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -384,7 +385,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -393,7 +394,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'alex sirois','Amazon and Walmart both run booming ad businesses, but they are selling completely different things to advertisers and the gap between them is widening fast. Which model survives the next wave of reta...','2026-10-16',0.34196,'Amazon Ads: The E-Commerce Search Monolith vs. Walmart Connect: The In-Store Data Goldmine','https://247wallst.com/investing/2026/10/16/amazon-ads-the-e-commerce-search-monolith-vs-walmart-connect-the-in-store-data-goldmine/',40),(2,'vandita jadeja','Analysts have nearly united behind one mega-cap while remaining deeply split on the other, and the price targets reveal exactly why these two stocks belong in completely different conversations.\n Pric...','2026-10-16',0.68976,'Wall Street Agrees on Amazon and Canâ€™t Agree on Tesla. The Targets Show Why','https://247wallst.com/investing/2026/10/16/wall-street-agrees-on-amazon-and-cant-agree-on-tesla-the-targets-show-why/',40),(3,'bram berkowitz','Billionaire investors did not make their fortunes on luck.\nMost of them have been investing for decades and have experience across many cycles, allowing them to recognize the makings of a successful i...','2026-10-16',0.22024,'Billionaires Are Selling These 6 Artificial Intelligence (AI) Stocks. Should You Follow?','https://www.fool.com/investing/2026/10/16/billionaire-sell-artificial-intelligence-ai-stock/',4),(4,'hanz christensen','...','2026-10-16',0,'Amazon.com, Inc. $AMZN Stock Bought by LifeGoal Investments LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-stock-bought-by-lifegoal-investments-llc/11263996.html',2),(5,'keith speights','Many Nvidia (NVDA -1.43%) investors warily monitor Advanced Micro Devices (AMD -5.96%) and Broadcom (AVGO -4.53%). And for good reason. AMD competes directly with Nvidia. Broadcom co-develops custom s...','2026-10-16',0.19982,'Not AMD. Not Broadcom. This is the Chip Designer Nvidia Investors Should Be Watching','https://www.fool.com/investing/2026/10/16/not-amd-not-broadcom-this-is-the-chip-designer-nvi/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'donald scott','...','2026-10-17',0,'Amazon.com, Inc. $AMZN Stock Purchased by Wedmont Private Capital','https://www.thelincolnianonline.com/2026/10/17/amazon-com-inc-amzn-stock-purchased-by-wedmont-private-capital.html',2),(2,'sarita garza','...','2026-10-17',0.3372,'124,655 Amazon.com, Inc. $AMZN Shares Acquired by Sound Income Strategies LLC','https://www.themarketsdaily.com/2026/10/17/124655-amazon-com-inc-amzn-shares-acquired-by-sound-income-strategies-llc.html',2),(3,'fred piard','...','2026-10-17',0,'FDIS: Consumer Discretionary Sector Dashboard For October','https://seekingalpha.com/article/4954831-fdis-consumer-discretionary-sector-dashboard-for-october',4),(4,'defense world staff','\n					Posted by Defense World Staff on Oct 17th, 2026\n\nGK Wealth Management LLC reduced its stake in Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 17.7% in the 3rd quarter, according to the company ...','2026-10-17',0.15858,'Amazon.com, Inc. $AMZN Stock: GK Wealth Management LLC Reduces Holdings','https://www.defenseworld.net/2026/10/17/amazon-com-inc-amzn-stock-gk-wealth-management-llc-reduces-holdings.html',4),(5,'defense world staff','\n					Posted by Defense World Staff on Oct 17th, 2026\n\nCastleview Partners LLC cut its stake in shares of Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 33.8% in the third quarter, according to the c...','2026-10-17',-0.03698,'Amazon.com, Inc. $AMZN Stock: Castleview Partners LLC Cuts Position','https://www.defenseworld.net/2026/10/17/amazon-com-inc-amzn-stock-castleview-partners-llc-cuts-position.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Oct 17th, 2026\n\nBill Few Associates Inc. grew its position in shares of Amazon.com, Inc. (NASDAQ:AMZN) by 40.0% during the third quarter, according to its most r...','2026-10-17',0.19986,'Amazon.com, Inc. $AMZN Stock Purchased by Bill Few Associates Inc.','https://www.defenseworld.net/2026/10/17/amazon-com-inc-amzn-stock-purchased-by-bill-few-associates-inc.html',4),(7,'defense world staff','\n					Posted by Defense World Staff on Oct 17th, 2026\n\nCastle Rock Wealth Management LLC lowered its position in shares of Amazon.com, Inc. (NASDAQ:AMZN) by 10.9% in the 3rd quarter, according to its ...','2026-10-17',0.41844,'Amazon.com, Inc. $AMZN Holdings Cut by Castle Rock Wealth Management LLC','https://www.defenseworld.net/2026/10/17/amazon-com-inc-amzn-holdings-cut-by-castle-rock-wealth-management-llc.html',4),(8,'defense world staff','\n					Posted by Defense World Staff on Oct 17th, 2026\n\nDraper Asset Management LLC lessened its stake in shares of Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 6.4% in the third quarter, according ...','2026-10-17',0.6574,'7,794 Amazon.com, Inc. $AMZN Shares Sold by Draper Asset Management LLC','https://www.defenseworld.net/2026/10/17/7794-amazon-com-inc-amzn-shares-sold-by-draper-asset-management-llc.html',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -407,4 +408,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-17  5:08:59
+-- Dump completed on 2026-10-18  5:14:47

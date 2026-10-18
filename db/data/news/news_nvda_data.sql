@@ -243,6 +243,7 @@ b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
+b846faed-cab2-11f1-8cbf-b289668d31b3:1-68,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
@@ -384,7 +385,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -393,7 +394,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'david moadel','Investors are bailing on AI chip stocks, but not all of them equally, and the gap between winners and losers reveals something important about how Wall Street is rethinking the cost of building out ar...','2026-10-16',-0.01902,'Intel and AMD Drop 3% as Rotation Out of AI Chip Stocks Continues; NVIDIA Holds Steady','https://247wallst.com/investing/2026/10/16/intel-and-amd-drop-3-as-rotation-out-of-ai-chip-stocks-continues-nvidia-holds-steady/',40),(2,'nauman khan','...','2026-10-16',0.56024,'Nvidia AI Deal Talks Just Gave Bulls a Fresh Reason to Buy NVDA Stock','https://www.barchart.com/story/news/8098417/nvidia-ai-deal-talks-just-gave-bulls-a-fresh-reason-to-buy-nvda-stock',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'danessa lincoln','...','2026-10-17',0.18104,'NVIDIA Corporation (NASDAQ: NVDA) Launches RTX Spark PCs','https://www.themarketsdaily.com/2026/10/17/nvidia-corporation-nasdaq-nvda-launches-rtx-spark-pcs.html',20),(2,'keithen drury','Adanced Micro Devices (AMD -5.96%) investors have enjoyed some incredible gains during 2026. Currently, AMD is the ninth-best-performing component of the S&P 500, returning about 160% so far this year...','2026-10-17',-0.22154,'1 Red Flag That AMD Investors Should Be Aware Of Now','https://www.fool.com/investing/2026/10/17/1-red-flag-that-amd-investors-should-be-aware-of/',4),(3,'hanz christensen','...','2026-10-17',0,'NVIDIA Corporation $NVDA Stock Holdings Raised by Moore Capital Management LP','https://www.watchlistnews.com/nvidia-corporation-nvda-stock-holdings-raised-by-moore-capital-management-lp/11266155.html',20),(4,'joseph griffin','...','2026-10-17',0.2368,'NVIDIA Corporation $NVDA Shares Purchased by Moore Capital Management LP','https://www.tickerreport.com/banking-finance/13623585/nvidia-corporation-nvda-shares-purchased-by-moore-capital-management-lp.html',20),(5,'joseph griffin','...','2026-10-17',0.21856,'NVIDIA Corporation $NVDA Stake Increased by Proficio Capital Partners LLC','https://www.tickerreport.com/banking-finance/13623508/nvidia-corporation-nvda-stake-increased-by-proficio-capital-partners-llc.html',20),(6,'joseph griffin','...','2026-10-17',0.2368,'Railway Pension Investments Ltd Buys 948,600 Shares of NVIDIA Corporation $NVDA','https://www.tickerreport.com/banking-finance/13623506/railway-pension-investments-ltd-buys-948600-shares-of-nvidia-corporation-nvda.html',20),(7,'sarita garza','...','2026-10-17',0.2368,'2,506 NVIDIA Corporation $NVDA Shares Purchased by Teza Capital Management LLC','https://www.themarketsdaily.com/2026/10/17/2506-nvidia-corporation-nvda-shares-purchased-by-teza-capital-management-llc.html',20),(8,'danessa lincoln','...','2026-10-17',0.39512,'Orgel Wealth Management LLC Purchases New Position in NVIDIA Corporation $NVDA','https://www.themarketsdaily.com/2026/10/17/orgel-wealth-management-llc-purchases-new-position-in-nvidia-corporation-nvda.html',20),(9,'kyle jackson','...','2026-10-17',0.42136,'4,356 NVIDIA Corporation $NVDA Shares Sold by M Holdings Securities Inc.','https://www.watchlistnews.com/4356-nvidia-corporation-nvda-shares-sold-by-m-holdings-securities-inc/11266072.html',20),(10,'nicole kennedy','...','2026-10-17',0.2368,'NVIDIA Corporation $NVDA Shares Sold by NS Partners Ltd','https://www.watchlistnews.com/nvidia-corporation-nvda-shares-sold-by-ns-partners-ltd/11266068.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -407,4 +408,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-17  5:08:59
+-- Dump completed on 2026-10-18  5:14:48
