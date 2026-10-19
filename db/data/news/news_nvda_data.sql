@@ -209,6 +209,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+912bc4bd-cb7d-11f1-bd4f-5289114d50a8:1-58,
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -385,7 +386,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -394,7 +395,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'danessa lincoln','...','2026-10-17',0.18104,'NVIDIA Corporation (NASDAQ: NVDA) Launches RTX Spark PCs','https://www.themarketsdaily.com/2026/10/17/nvidia-corporation-nasdaq-nvda-launches-rtx-spark-pcs.html',20),(2,'keithen drury','Adanced Micro Devices (AMD -5.96%) investors have enjoyed some incredible gains during 2026. Currently, AMD is the ninth-best-performing component of the S&P 500, returning about 160% so far this year...','2026-10-17',-0.22154,'1 Red Flag That AMD Investors Should Be Aware Of Now','https://www.fool.com/investing/2026/10/17/1-red-flag-that-amd-investors-should-be-aware-of/',4),(3,'hanz christensen','...','2026-10-17',0,'NVIDIA Corporation $NVDA Stock Holdings Raised by Moore Capital Management LP','https://www.watchlistnews.com/nvidia-corporation-nvda-stock-holdings-raised-by-moore-capital-management-lp/11266155.html',20),(4,'joseph griffin','...','2026-10-17',0.2368,'NVIDIA Corporation $NVDA Shares Purchased by Moore Capital Management LP','https://www.tickerreport.com/banking-finance/13623585/nvidia-corporation-nvda-shares-purchased-by-moore-capital-management-lp.html',20),(5,'joseph griffin','...','2026-10-17',0.21856,'NVIDIA Corporation $NVDA Stake Increased by Proficio Capital Partners LLC','https://www.tickerreport.com/banking-finance/13623508/nvidia-corporation-nvda-stake-increased-by-proficio-capital-partners-llc.html',20),(6,'joseph griffin','...','2026-10-17',0.2368,'Railway Pension Investments Ltd Buys 948,600 Shares of NVIDIA Corporation $NVDA','https://www.tickerreport.com/banking-finance/13623506/railway-pension-investments-ltd-buys-948600-shares-of-nvidia-corporation-nvda.html',20),(7,'sarita garza','...','2026-10-17',0.2368,'2,506 NVIDIA Corporation $NVDA Shares Purchased by Teza Capital Management LLC','https://www.themarketsdaily.com/2026/10/17/2506-nvidia-corporation-nvda-shares-purchased-by-teza-capital-management-llc.html',20),(8,'danessa lincoln','...','2026-10-17',0.39512,'Orgel Wealth Management LLC Purchases New Position in NVIDIA Corporation $NVDA','https://www.themarketsdaily.com/2026/10/17/orgel-wealth-management-llc-purchases-new-position-in-nvidia-corporation-nvda.html',20),(9,'kyle jackson','...','2026-10-17',0.42136,'4,356 NVIDIA Corporation $NVDA Shares Sold by M Holdings Securities Inc.','https://www.watchlistnews.com/4356-nvidia-corporation-nvda-shares-sold-by-m-holdings-securities-inc/11266072.html',20),(10,'nicole kennedy','...','2026-10-17',0.2368,'NVIDIA Corporation $NVDA Shares Sold by NS Partners Ltd','https://www.watchlistnews.com/nvidia-corporation-nvda-shares-sold-by-ns-partners-ltd/11266068.html',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'emily bary','Please enable JS and disable any ad blocker...','2026-10-18',0.69124,'These surprising stocks could be the biggest drivers of S&P 500 earnings growth','https://www.marketwatch.com/bulletins/redirect/go?g=eb72bb29-19f0-4cb0-8ceb-1f46f6ace570&mod=mw_rss_bulletins',4),(2,'suraj santlani','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-18',0.5522,'Why Did NVIDIA (NVDA) Rise Only 19% While Its Suppliers Did Far Better?','https://www.insidermonkey.com/news/why-did-nvidia-nvda-rise-only-19-while-its-suppliers-did-far-better-1855483/',40),(3,'emily bary','Please enable JS and disable any ad blocker...','2026-10-18',0.69124,'These surprising stocks could be some of the biggest drivers of S&P 500 earnings growth','https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories',4),(4,'the motley fool team','Ask investors about their best decision, and theyâ€™ll tell you about a stock they bought. Almost nobody brags about a sale. Selling gets far less attention, even though it matters just as much. Money p...','2026-10-18',0.19986,'Breakfast News: The Sunday Edition','https://www.fool.com/investing/breakfast-news/2026/10/18/breakfast-news/',4),(5,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-10-18',0.3526,'Jensen Huang credits Elon Musk with turning cars into computers','https://www.thestreet.com/automotive/jensen-huang-credits-elon-musk-with-turning-cars-into-computers',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -408,4 +409,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-18  5:14:48
+-- Dump completed on 2026-10-19  5:26:42

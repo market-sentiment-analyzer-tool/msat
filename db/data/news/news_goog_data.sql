@@ -209,6 +209,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 8ff4021e-06fb-11f1-a376-dec5e39c2bff:1-63,
 9080b05f-782c-11f1-b2a4-ea2b35b245d6:1-64,
 90e6d639-030b-11f1-b2ae-fee297079612:1-61,
+912bc4bd-cb7d-11f1-bd4f-5289114d50a8:1-58,
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
@@ -385,7 +386,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -394,7 +395,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'logan wallace','...','2026-10-17',0.39512,'Alphabet Inc. $GOOGL Holdings Lifted by Turtle Creek Wealth Advisors LLC','https://www.tickerreport.com/banking-finance/13623784/alphabet-inc-googl-holdings-lifted-by-turtle-creek-wealth-advisors-llc.html',2),(2,'mark dietrich','...','2026-10-17',0.52776,'9,532 Alphabet Inc. $GOOGL Shares Acquired by Turtle Creek Wealth Advisors LLC','https://www.watchlistnews.com/9532-alphabet-inc-googl-shares-acquired-by-turtle-creek-wealth-advisors-llc/11266351.html',2),(3,'micah haroldson','...','2026-10-17',0,'Alphabet Inc. $GOOGL Stock: Howard Financial Services LTD. Raises Holdings','https://www.watchlistnews.com/alphabet-inc-googl-stock-howard-financial-services-ltd-raises-holdings/11266236.html',2),(4,'joseph griffin','...','2026-10-17',0.2368,'Howard Financial Services LTD. Buys 2,539 Shares of Alphabet Inc. $GOOGL','https://www.tickerreport.com/banking-finance/13623665/howard-financial-services-ltd-buys-2539-shares-of-alphabet-inc-googl.html',2),(5,'ethan ryder','...','2026-10-17',0.21856,'Alphabet Inc. $GOOGL Stock: Trust Co. of Oklahoma Cuts Position','https://www.tickerreport.com/banking-finance/13623555/alphabet-inc-googl-stock-trust-co-of-oklahoma-cuts-position.html',2),(6,'kyle jackson','...','2026-10-17',0,'Alphabet Inc. $GOOGL Stock Sold by Ninety One North America Inc.','https://www.watchlistnews.com/alphabet-inc-googl-stock-sold-by-ninety-one-north-america-inc/11266119.html',2),(7,'abmn staff','\n					Posted by ABMN Staff on Oct 17th, 2026\n\nCurated Wealth Partners LLC lessened its position in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 87.0% during the 3rd quarter, according to the company ...','2026-10-17',0.595,'Alphabet Inc. $GOOGL Stock: Curated Wealth Partners LLC Trims Holdings','https://www.americanbankingnews.com/2026/10/17/alphabet-inc-googl-stock-curated-wealth-partners-llc-trims-holdings.html',4),(8,'abmn staff','\n					Posted by ABMN Staff on Oct 17th, 2026\n\nHBW Advisory Services LLC trimmed its position in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 7.2% during the third quarter, according to its most recen...','2026-10-17',0.19988,'Alphabet Inc. $GOOGL Stock Sold by HBW Advisory Services LLC','https://www.americanbankingnews.com/2026/10/17/alphabet-inc-googl-stock-sold-by-hbw-advisory-services-llc.html',4),(9,'abmn staff','\n					Posted by ABMN Staff on Oct 17th, 2026\n\nFort Washington Investment Advisors Inc. OH cut its holdings in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.9% during the third quarter, according to ...','2026-10-17',0.19988,'Alphabet Inc. $GOOGL Stock Holdings Trimmed by Fort Washington Investment Advisors Inc. OH','https://www.americanbankingnews.com/2026/10/17/alphabet-inc-googl-stock-holdings-trimmed-by-fort-washington-investment-advisors-inc-oh.html',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'marc guberti','Alphabet (GOOG -2.32%) (GOOGL -2.47%) might have what it takes to double in value by 2030. It is in the middle of a correction, but its 35% return during the past year shows what is possible when the ...','2026-10-18',0.19988,'Can Alphabet Stock Double By 2030?','https://www.fool.com/investing/2026/10/18/can-alphabet-stock-double-by-2030/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Oct 18th, 2026\n\nFirst Merchants Corp trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.7% in the 3rd quarter, according to the co...','2026-10-18',0.19958,'Alphabet Inc. $GOOGL Stock Position Reduced by First Merchants Corp','https://www.defenseworld.net/2026/10/18/alphabet-inc-googl-stock-position-reduced-by-first-merchants-corp.html',4),(3,'abmn staff','\n					Posted by ABMN Staff on Oct 18th, 2026\n\nFirst Merchants Corp lowered its stake in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.7% during the third quarter, Holdings Channel.com reports. The f...','2026-10-18',0.43654,'First Merchants Corp Sells 6,695 Shares of Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/10/18/first-merchants-corp-sells-6695-shares-of-alphabet-inc-googl.html',4),(4,'nicole kennedy','...','2026-10-18',0,'Alphabet Inc. $GOOGL Stock: Weaver Capital Management LLC Grows Holdings','https://www.watchlistnews.com/alphabet-inc-googl-stock-weaver-capital-management-llc-grows-holdings/11267020.html',2),(5,'hanz christensen','...','2026-10-18',0,'Alphabet Inc. $GOOGL Stock: Gunderson Capital Management LLC Raises Stake','https://www.watchlistnews.com/alphabet-inc-googl-stock-gunderson-capital-management-llc-raises-stake/11267019.html',2),(6,'tristan rich','...','2026-10-18',0,'Alphabet Inc. $GOOGL Holdings Lessened by RDA Financial Network','https://www.themarketsdaily.com/2026/10/18/alphabet-inc-googl-holdings-lessened-by-rda-financial-network.html',2),(7,'donna armstrong','...','2026-10-18',0.2368,'Ninety One SA Pty Ltd Acquires 28,754 Shares of Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/10/18/ninety-one-sa-pty-ltd-acquires-28754-shares-of-alphabet-inc-googl.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -408,4 +409,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-18  5:14:47
+-- Dump completed on 2026-10-19  5:26:42
