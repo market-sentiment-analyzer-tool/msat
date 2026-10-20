@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
+06023262-cc47-11f1-b548-aee6750b919c:1-58,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 07ecdd7e-c085-11f1-9cc4-ceaf47f53326:1-62,
@@ -386,7 +387,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -395,7 +396,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'emily bary','Please enable JS and disable any ad blocker...','2026-10-18',0.69124,'These surprising stocks could be the biggest drivers of S&P 500 earnings growth','https://www.marketwatch.com/bulletins/redirect/go?g=eb72bb29-19f0-4cb0-8ceb-1f46f6ace570&mod=mw_rss_bulletins',4),(2,'suraj santlani','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-18',0.5522,'Why Did NVIDIA (NVDA) Rise Only 19% While Its Suppliers Did Far Better?','https://www.insidermonkey.com/news/why-did-nvidia-nvda-rise-only-19-while-its-suppliers-did-far-better-1855483/',40),(3,'emily bary','Please enable JS and disable any ad blocker...','2026-10-18',0.69124,'These surprising stocks could be some of the biggest drivers of S&P 500 earnings growth','https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories',4),(4,'the motley fool team','Ask investors about their best decision, and theyâ€™ll tell you about a stock they bought. Almost nobody brags about a sale. Selling gets far less attention, even though it matters just as much. Money p...','2026-10-18',0.19986,'Breakfast News: The Sunday Edition','https://www.fool.com/investing/breakfast-news/2026/10/18/breakfast-news/',4),(5,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-10-18',0.3526,'Jensen Huang credits Elon Musk with turning cars into computers','https://www.thestreet.com/automotive/jensen-huang-credits-elon-musk-with-turning-cars-into-computers',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'eric fry','\n\n			The biggest AI profits may no longer be flowing to the Magnificent Seven, but to the companies supplying them.		\nSource: Oil and Gas Photographer / Shutterstock.com\nListen to the audio version of...','2026-10-19',0.67652,'The AI Trade Is Changing, and This Energy Giant Is Ready','https://investorplace.com/smartmoney/2026/10/ai-trade-changing-this-energy-giant-ready/',4),(2,'rick orford','Nvidia (NVDA +1.38%) has authorized a $235 billion buyback while continuing to invest aggressively across the AI ecosystem. The real opportunity is not the headline alone. If cash generation remains s...','2026-10-19',0.80316,'Is Nvidia Stock a Buy After Its Historic $235 Billion Buyback?','https://www.fool.com/investing/2026/10/19/is-nvidia-stock-a-buy-after-its-historic-235-billi/',40),(3,'rewey asset management','...','2026-10-19',0.28896,'Rewey Asset Management Q3 2026 Investment Letter','https://seekingalpha.com/article/4955235-rewey-asset-management-q3-2026-investment-letter',4),(4,'cpa','Shares of Sandisk (SNDK +5.53%) charged sharply higher on Monday, jumping as much as 8.3%. As of 11:24 a.m. ET, the stock was still up 7.9%.\n\nWhile a rebound in technology issues certainly helped, the...','2026-10-19',0.19882,'Why Sandisk Stock Shot Higher Today','https://www.fool.com/investing/2026/10/19/why-sandisk-stock-shot-higher-today/',4),(5,'silin chen','Please enable JS and disable any ad blocker...','2026-10-19',0.30044,'Intel stock surges as JPMorgan upgrades shares after 14% weekly plunge','https://www.thestreet.com/investing/stocks/intel-stock-surges-as-jpmorgan-upgrades-shares-after-14-weekly-plunge',4),(6,'geoffrey seiler','Semiconductor stocks have come under pressure as investors question the durability of the AI infrastructure build-out, driven by financing concerns alongside uncertain AI utility and revenue projectio...','2026-10-19',0.63342,'Semiconductor Sell-Off: 5 Stocks to Buy on the Dip','https://www.fool.com/investing/2026/10/19/semiconductor-sell-off-5-stocks-to-buy-on-the-dip/',4),(7,'marcus liu derivatives','By\nCboe Global Markets (C67.DE ) on October 19, 2026, launched extended pre-market and post-market trading sessions for select multi-listed single-stock and exchange-traded fund options on its Cboe Op...','2026-10-19',0.6992,'Cboe Options Exchange Extends Hours for Select Stock and ETF Options','https://www.securities.io/cboe-options-exchange-extends-hours-for-select-stock-and-etf-options/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -409,4 +410,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-19  5:26:42
+-- Dump completed on 2026-10-20  5:29:22

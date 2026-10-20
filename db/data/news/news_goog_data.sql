@@ -25,6 +25,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
+06023262-cc47-11f1-b548-aee6750b919c:1-58,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 07ecdd7e-c085-11f1-9cc4-ceaf47f53326:1-62,
@@ -386,7 +387,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -395,7 +396,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'marc guberti','Alphabet (GOOG -2.32%) (GOOGL -2.47%) might have what it takes to double in value by 2030. It is in the middle of a correction, but its 35% return during the past year shows what is possible when the ...','2026-10-18',0.19988,'Can Alphabet Stock Double By 2030?','https://www.fool.com/investing/2026/10/18/can-alphabet-stock-double-by-2030/',4),(2,'defense world staff','\n					Posted by Defense World Staff on Oct 18th, 2026\n\nFirst Merchants Corp trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.7% in the 3rd quarter, according to the co...','2026-10-18',0.19958,'Alphabet Inc. $GOOGL Stock Position Reduced by First Merchants Corp','https://www.defenseworld.net/2026/10/18/alphabet-inc-googl-stock-position-reduced-by-first-merchants-corp.html',4),(3,'abmn staff','\n					Posted by ABMN Staff on Oct 18th, 2026\n\nFirst Merchants Corp lowered its stake in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 3.7% during the third quarter, Holdings Channel.com reports. The f...','2026-10-18',0.43654,'First Merchants Corp Sells 6,695 Shares of Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/10/18/first-merchants-corp-sells-6695-shares-of-alphabet-inc-googl.html',4),(4,'nicole kennedy','...','2026-10-18',0,'Alphabet Inc. $GOOGL Stock: Weaver Capital Management LLC Grows Holdings','https://www.watchlistnews.com/alphabet-inc-googl-stock-weaver-capital-management-llc-grows-holdings/11267020.html',2),(5,'hanz christensen','...','2026-10-18',0,'Alphabet Inc. $GOOGL Stock: Gunderson Capital Management LLC Raises Stake','https://www.watchlistnews.com/alphabet-inc-googl-stock-gunderson-capital-management-llc-raises-stake/11267019.html',2),(6,'tristan rich','...','2026-10-18',0,'Alphabet Inc. $GOOGL Holdings Lessened by RDA Financial Network','https://www.themarketsdaily.com/2026/10/18/alphabet-inc-googl-holdings-lessened-by-rda-financial-network.html',2),(7,'donna armstrong','...','2026-10-18',0.2368,'Ninety One SA Pty Ltd Acquires 28,754 Shares of Alphabet Inc. $GOOGL','https://www.thelincolnianonline.com/2026/10/18/ninety-one-sa-pty-ltd-acquires-28754-shares-of-alphabet-inc-googl.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Oct.  19, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities between May 19, 2026 and July 16, 2026 of a pending securities ...','2026-10-19',0.3578,'GOOGL/GOOG Shareholder Alert: Alphabet Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky','https://www.financialcontent.com/article/gnwcq-2026-10-19-googlgoog-shareholder-alert-alphabet-inc-securities-class-action-lawsuit-investors-should-contact-levi-and-korsinsky',4),(2,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-19',0.71884,'Microsoft vs. Alphabet: Is GOOGLâ€™s Cloud Growth Worth More Than Investors Think?','https://www.insidermonkey.com/news/microsoft-vs-alphabet-is-googls-cloud-growth-worth-more-than-investors-think-1854097/',4),(3,'abmn staff','\n					Posted by ABMN Staff on Oct 19th, 2026\n\nV Square Quantitative Management LLC grew its position in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 6.3% during the third quarter, according...','2026-10-19',0.43648,'Alphabet Inc. $GOOGL Shares Purchased by V Square Quantitative Management LLC','https://www.americanbankingnews.com/2026/10/19/alphabet-inc-googl-shares-purchased-by-v-square-quantitative-management-llc.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Oct 19th, 2026\n\nCornerstone Enterprises LLC lowered its holdings in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 37.1% during the third quarter, according to it...','2026-10-19',0.19976,'Alphabet Inc. $GOOGL Stock: Cornerstone Enterprises LLC Decreases Stake','https://www.defenseworld.net/2026/10/19/alphabet-inc-googl-stock-cornerstone-enterprises-llc-decreases-stake.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Oct 19th, 2026\n\nCornerstone Enterprises LLC lessened its holdings in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 37.1% in the third quarter, according to its ...','2026-10-19',0.43652,'Cornerstone Enterprises LLC Sells 11,236 Shares of Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/10/19/cornerstone-enterprises-llc-sells-11236-shares-of-alphabet-inc-googl.html',4),(6,'rob williams','...','2026-10-18',-0.44592,'Google cuts quantum errors 40-fold in step toward practical use','https://seekingalpha.com/news/4654077-google-cuts-quantum-errors-40-fold-in-step-toward-practical-use?feed_item_type=news',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -409,4 +410,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-19  5:26:42
+-- Dump completed on 2026-10-20  5:29:22
