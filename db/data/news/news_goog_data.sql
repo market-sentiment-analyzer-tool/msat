@@ -70,6 +70,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+2256a4d9-cd10-11f1-b98b-16d6e592d5ee:1-63,
 229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
@@ -387,7 +388,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -396,7 +397,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Oct.  19, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities between May 19, 2026 and July 16, 2026 of a pending securities ...','2026-10-19',0.3578,'GOOGL/GOOG Shareholder Alert: Alphabet Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky','https://www.financialcontent.com/article/gnwcq-2026-10-19-googlgoog-shareholder-alert-alphabet-inc-securities-class-action-lawsuit-investors-should-contact-levi-and-korsinsky',4),(2,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-19',0.71884,'Microsoft vs. Alphabet: Is GOOGLâ€™s Cloud Growth Worth More Than Investors Think?','https://www.insidermonkey.com/news/microsoft-vs-alphabet-is-googls-cloud-growth-worth-more-than-investors-think-1854097/',4),(3,'abmn staff','\n					Posted by ABMN Staff on Oct 19th, 2026\n\nV Square Quantitative Management LLC grew its position in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 6.3% during the third quarter, according...','2026-10-19',0.43648,'Alphabet Inc. $GOOGL Shares Purchased by V Square Quantitative Management LLC','https://www.americanbankingnews.com/2026/10/19/alphabet-inc-googl-shares-purchased-by-v-square-quantitative-management-llc.html',4),(4,'defense world staff','\n					Posted by Defense World Staff on Oct 19th, 2026\n\nCornerstone Enterprises LLC lowered its holdings in Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 37.1% during the third quarter, according to it...','2026-10-19',0.19976,'Alphabet Inc. $GOOGL Stock: Cornerstone Enterprises LLC Decreases Stake','https://www.defenseworld.net/2026/10/19/alphabet-inc-googl-stock-cornerstone-enterprises-llc-decreases-stake.html',4),(5,'abmn staff','\n					Posted by ABMN Staff on Oct 19th, 2026\n\nCornerstone Enterprises LLC lessened its holdings in shares of Alphabet Inc. (NASDAQ:GOOGL â€“ Free Report) by 37.1% in the third quarter, according to its ...','2026-10-19',0.43652,'Cornerstone Enterprises LLC Sells 11,236 Shares of Alphabet Inc. $GOOGL','https://www.americanbankingnews.com/2026/10/19/cornerstone-enterprises-llc-sells-11236-shares-of-alphabet-inc-googl.html',4),(6,'rob williams','...','2026-10-18',-0.44592,'Google cuts quantum errors 40-fold in step toward practical use','https://seekingalpha.com/news/4654077-google-cuts-quantum-errors-40-fold-in-step-toward-practical-use?feed_item_type=news',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Oct.  20, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a pending securities class action on behalf of persons and entities that purchased or...','2026-10-20',0.33052,'GOOGL/GOOG UPCOMING DEADLINE: SueWallSt Alerts Alphabet Inc. Stockholders of Securities Class Action','https://www.financialcontent.com/article/gnwcq-2026-10-20-googlgoog-upcoming-deadline-suewallst-alerts-alphabet-inc-stockholders-of-securities-class-action',4),(2,'omor ibne ehsan','A personal check Eric Schmidt wrote in 2021 may have quietly become one of the most valuable private stakes in artificial intelligence, and the number attached to it grows larger every time Anthropic ...','2026-10-20',0.19974,'Googleâ€™s Former CEO Quietly Owns 1% of Anthropic','https://247wallst.com/investing/2026/10/20/googles-former-ceo-quietly-owns-1-of-anthropic/',4),(3,'keith speights','In early 2024, the man known as the \"Dean of Valuation\" viewed Nvidia (NVDA -0.29%) as ridiculously overpriced. New York University finance professor and author Aswath Damodaran posted on X (the socia...','2026-10-20',0.19938,'Nvidia Stock Hasnâ€™t Been This Cheap in 7 Years. Only 1 Explanation Makes Sense.','https://www.fool.com/investing/2026/10/20/nvidia-stock-hasn-t-been-this-cheap-in-7-years-only-1-explanation-makes-sense/',4),(4,'financialcontent','NEW YORK, NY - October 19, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-19',0.1981,'Kaplan Fox Continues to Remind Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of the Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-19-kaplan-fox-continues-to-remind-alphabet-inc-nasdaq-googl-goog-investors-of-the-lead-plaintiff-deadline-on-december-1-2026',4),(5,'anders bylund','Back on Dec. 27, 2010, I bought some Google stock at a split-adjusted $15.03 a share. The company has since renamed itself Alphabet (GOOG -1.10%) (GOOGL -1.14%), split its stock twice, and doubled dow...','2026-10-19',0.62126,'6 Signs of a Winning Stock, Each Shown by a Real Company','https://www.fool.com/investing/2026/10/19/6-signs-of-a-winning-stock-shown-by-real-companies/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -410,4 +411,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-20  5:29:22
+-- Dump completed on 2026-10-21  5:29:21

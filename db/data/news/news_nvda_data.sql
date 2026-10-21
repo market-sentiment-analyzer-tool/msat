@@ -70,6 +70,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+2256a4d9-cd10-11f1-b98b-16d6e592d5ee:1-63,
 229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
@@ -387,7 +388,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -396,7 +397,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'eric fry','\n\n			The biggest AI profits may no longer be flowing to the Magnificent Seven, but to the companies supplying them.		\nSource: Oil and Gas Photographer / Shutterstock.com\nListen to the audio version of...','2026-10-19',0.67652,'The AI Trade Is Changing, and This Energy Giant Is Ready','https://investorplace.com/smartmoney/2026/10/ai-trade-changing-this-energy-giant-ready/',4),(2,'rick orford','Nvidia (NVDA +1.38%) has authorized a $235 billion buyback while continuing to invest aggressively across the AI ecosystem. The real opportunity is not the headline alone. If cash generation remains s...','2026-10-19',0.80316,'Is Nvidia Stock a Buy After Its Historic $235 Billion Buyback?','https://www.fool.com/investing/2026/10/19/is-nvidia-stock-a-buy-after-its-historic-235-billi/',40),(3,'rewey asset management','...','2026-10-19',0.28896,'Rewey Asset Management Q3 2026 Investment Letter','https://seekingalpha.com/article/4955235-rewey-asset-management-q3-2026-investment-letter',4),(4,'cpa','Shares of Sandisk (SNDK +5.53%) charged sharply higher on Monday, jumping as much as 8.3%. As of 11:24 a.m. ET, the stock was still up 7.9%.\n\nWhile a rebound in technology issues certainly helped, the...','2026-10-19',0.19882,'Why Sandisk Stock Shot Higher Today','https://www.fool.com/investing/2026/10/19/why-sandisk-stock-shot-higher-today/',4),(5,'silin chen','Please enable JS and disable any ad blocker...','2026-10-19',0.30044,'Intel stock surges as JPMorgan upgrades shares after 14% weekly plunge','https://www.thestreet.com/investing/stocks/intel-stock-surges-as-jpmorgan-upgrades-shares-after-14-weekly-plunge',4),(6,'geoffrey seiler','Semiconductor stocks have come under pressure as investors question the durability of the AI infrastructure build-out, driven by financing concerns alongside uncertain AI utility and revenue projectio...','2026-10-19',0.63342,'Semiconductor Sell-Off: 5 Stocks to Buy on the Dip','https://www.fool.com/investing/2026/10/19/semiconductor-sell-off-5-stocks-to-buy-on-the-dip/',4),(7,'marcus liu derivatives','By\nCboe Global Markets (C67.DE ) on October 19, 2026, launched extended pre-market and post-market trading sessions for select multi-listed single-stock and exchange-traded fund options on its Cboe Op...','2026-10-19',0.6992,'Cboe Options Exchange Extends Hours for Select Stock and ETF Options','https://www.securities.io/cboe-options-exchange-extends-hours-for-select-stock-and-etf-options/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'faizan farooque','Please enable JS and disable any ad blocker...','2026-10-20',0.06364,'Amazonâ€™s $350 target rests on an AI bet beyond the cloud','https://www.thestreet.com/investing/amazons-350-target-rests-on-an-ai-bet-beyond-the-cloud',4),(2,'white brook capital','...','2026-10-20',0.04128,'White Brook Capital Partners Q3 2026 Commentary','https://seekingalpha.com/article/4955561-white-brook-capital-partners-q3-2026-commentary',4),(3,'the arora report','...','2026-10-20',-0.16184,'408x Oversubscribed AI IPO Crashes 32%â€”Democratic Sweep Prospects Trigger Selling in Data Center Stocks','https://www.benzinga.com/Opinion/26/10/62474366/408x-oversubscribed-ai-ipo-crashes-32-democratic-sweep-prospects-trigger-selling-in-data-center-stocks',4),(4,'meilin quinn','Robots are smarter than us now, says the man selling robots. Almost as if he has a stake in the matter...\nThe man in question is Nvidia (NVDA -0.29%) CEO Jensen Huang, who, to be fair, sells chips to ...','2026-10-20',0.43792,'AGI Is Almost Ready. Is Your Portfolio?','https://www.fool.com/investing/2026/10/20/agi-is-almost-ready-is-your-portfolio/',4),(5,'moz farooque','Please enable JS and disable any ad blocker...','2026-10-20',-0.11612,'Ed Yardeni spots a major shakeup in the S&P 500','https://www.thestreet.com/investing/stocks/yardeni-sp500-mag-seven-rotation',4),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-20',0.85,'These 2 Billionaires Like Nvidia (NVDA). Should You Buy the Dip Ahead of Earnings?','https://www.insidermonkey.com/news/these-2-billionaires-like-nvidia-nvda-should-you-buy-the-dip-ahead-of-earnings-1857477/',40),(7,'lawrence nga','Nvidia (NVDA -0.29%) has been one of the biggest winners of the artificial intelligence (AI) boom. But even its shareholders have reason to feel nervous.\nOn Oct. 16, the Nasdaq Composite fell 2.2%, wh...','2026-10-20',-0.29036,'Nvidia Stock Is Near Its High, but the Market Is Wobbling. Should Investors Sell?','https://www.fool.com/investing/2026/10/20/nvidia-is-near-its-high-but-market-is-wobbling/',40),(8,'celine provini','Please enable JS and disable any ad blocker...','2026-10-20',-0.3034,'Anthropic may double down on the site Microsoft walked away from','https://www.thestreet.com/technology/anthropic-45b-nscale-expansion-microsoft-site',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -410,4 +411,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-20  5:29:22
+-- Dump completed on 2026-10-21  5:29:21
