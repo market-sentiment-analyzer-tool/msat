@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.10.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	26.7.0
+-- Server version	26.10.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -70,6 +70,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+2256a4d9-cd10-11f1-b98b-16d6e592d5ee:1-63,
 229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
@@ -87,7 +88,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
-3183a86e-cd05-11f1-80c2-a64740e58fba:1-76,
 31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -157,6 +157,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
+64d1ac85-cdce-11f1-b2a0-16c43cf9f194:1-44,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
@@ -388,7 +389,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +398,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1xapu9g','phvlh8p','2026-10-20',23,0.5093,'Awesome! Should drop the stock another 3-4%'),(2,'NVDA_Stock','1xapu9g','phvoqzv','2026-10-20',22,0.4404,'All thanks to this guy\n\nhttps://preview.redd.it/d7wifron8mwh1.jpeg?width=595&format=pjpg&auto=webp&s=45a559cdab33e302173c804c0cdfd8a800d6df78'),(3,'NVDA_Stock','1xapu9g','phvmw2l','2026-10-20',19,-0.4717,'The detail I\'d focus on is in the Reuters piece: Nvidia reportedly told partners they might get only 5â€“10% of what they ordered, and it can make about 3 million of these RTX PRO 5500 cards worldwide in 2027. So the $35 billion headline is demand, not revenue. Still a useful signal as a holder. These are workstation cards, not the top data center chips, and Chinese firms are still lining up for them. The \"AI is dead\" story does not really match what buyers are doing. '),(4,'NVDA_Stock','1xapu9g','phvpe3y','2026-10-20',6,0,'ðŸš€ðŸš€'),(5,'NVDA_Stock','1xapu9g','19re700wg7pmq','2026-10-20',3,0.34,'It\'s only real when Nvidia reports this in their earnings'),(6,'NVDA_Stock','1xapu9g','phx15qa','2026-10-20',3,0.1779,'Company is too massive for a $35 billion order to increase the stock price. Hell the share buy back was huge news but yet we lost all the gains we made off that news. ðŸ¤”ðŸ¤”'),(7,'NVDA_Stock','1xapu9g','phwyqvn','2026-10-20',2,0,'Wait till after mid termsÂ '),(8,'NVDA_Stock','1xapu9g','phvhjyq','2026-10-20',6,-0.6486,'So the China market and AI sectors are still investing?  In the US, the narrative is that AI is dead.   Hmm ðŸ¤” '),(9,'NVDA_Stock','1xapu9g','phwnt0v','2026-10-20',2,0.4404,'NVDA to the moon new cycle post midterms. ðŸ‘'),(10,'NVDA_Stock','1xapu9g','phwf9xe','2026-10-20',2,0,'$0.035 Trillion of chips!'),(11,'NVDA_Stock','1xapu9g','phvp35t','2026-10-20',-2,0,'Puts it is'),(12,'NVDA_Stock','1xapu9g','19reajcr1sz2d','2026-10-20',-6,-0.3597,'This means nothing. ROI is highly suspect and gigantic spending is unsustainable  '),(13,'NVDA_Stock','1xajve6','phvewzc','2026-10-20',1,0.7964,'Awesome new revenue stream.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1xbn9nq','19rfpxjasp0as','2026-10-21',5,0,'The new GPU size'),(2,'NVDA_Stock','1xbn9nq','19rfuwn4b3a9w','2026-10-21',4,0.3612,'Will this fit in my mid tower '),(3,'NVDA_Stock','1xbn9nq','19rfs1tt70ate','2026-10-21',3,0,'https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment'),(4,'NVDA_Stock','1xbn9nq','19rfssd8mlqys','2026-10-21',2,0.6249,'Great message for developers and neoclouds, quite tone deaf for consumers.'),(5,'NVDA_Stock','1xbn9nq','19rg7iiw6k62p','2026-10-21',1,0.5327,'This is awesome news on every front. The only negative might be that these need to be controlled due to national security and not shipped to China. Iâ€™m not sure how they will ensure that they remain put. '),(6,'NVDA_Stock','1xbn9nq','19rgr3gnwrlj7','2026-10-22',1,0,'Gamechanger.');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -411,4 +412,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-21  4:13:06
+-- Dump completed on 2026-10-22  4:11:29

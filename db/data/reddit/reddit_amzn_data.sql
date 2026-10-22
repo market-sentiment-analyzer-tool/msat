@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.10.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	26.7.0
+-- Server version	26.10.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -70,6 +70,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
 21e65c21-f1bd-11f0-b2ba-26a083d12637:1-65,
+2256a4d9-cd10-11f1-b98b-16d6e592d5ee:1-63,
 229fbba0-ac0f-11f1-b3cb-e2c216f97496:1-54,
 22ab0fc0-f8cf-11f0-90cc-f256417b6560:1-69,
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
@@ -87,7 +88,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2dc776de-bddd-11f0-a47d-926d1beadf6d:1-72,
 2f0ca21a-e6be-11f0-b29d-46e93190f4b1:1-66,
 2fc94849-c681-11f0-9b6b-5292ed003874:1-65,
-3183a86e-cd05-11f1-80c2-a64740e58fba:1-76,
 31b7fb98-88a9-11f1-83e3-9231492cadca:1-53,
 320c0dc8-0179-11f1-af77-9e2eff35affe:1-60,
 33755382-e13c-11f0-aad7-1a1eb15c181c:1-69,
@@ -157,6 +157,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
+64d1ac85-cdce-11f1-b2a0-16c43cf9f194:1-44,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
@@ -388,7 +389,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,6 +398,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1xbvjpo','19rg9350tic84','2026-10-21',13,-0.5038,'Buying all those GPUs is one thing. Getting enough power to run them is a whole different problem. That\'s a lot of money tied up in hardware that isn\'t making a dime yet. AI demand might be huge but if the infrastructure can\'t keep up then what\'s the point of spending billions this early? lol'),(2,'ValueInvesting','1xbvjpo','19rgbfqmodrad','2026-10-21',7,0.34,'The main question is whether these racks are fully paid inventory or subject to vendor financing and cancellation terms. â€œDark GPUsâ€ are less concerning if Amazon has secured an option on scarce supply instead of committing billions to hardware it cannot easily unwind.'),(3,'ValueInvesting','1xbvjpo','19rgejix7teub','2026-10-21',3,-0.8179,'Seems like a trainwreck. Lots of bad things can happen. Electronics depreciate and become obsolete rapidly, so they will be unlikely to see a return on investment the longer they sit around and collect dust.\n\nAlso, if the AI bubble pops and Amazon can\'t profit and decides to sell these GPUs, then Nvidia will be competing with Amazon to sell GPUs, and it will flood the market. Nvidia will see sales evaporate and Amazon would see large write downs on their balance sheet.'),(4,'ValueInvesting','1xbvjpo','19rgmq4l3pnq9','2026-10-22',3,0,'â€œItâ€™s not x, itâ€™s y.â€ AI slop bs'),(5,'ValueInvesting','1xbvjpo','19rgc6nyce6ap','2026-10-21',3,0.1779,'All this AI sloppy text to say Amazon is buying out supply to beat others in buildout'),(6,'ValueInvesting','1xbvjpo','19rgck9ibzlnk','2026-10-21',4,0.6908,'Basically: amazon is front loading equipment in a bid to reduce costs of said equipment later.  \n\nTheyâ€™ll be be able to cap ex it or depreciate it for tax reasons and â€œrent it outâ€ \n\nSmart play. Bullish. '),(7,'ValueInvesting','1xbvjpo','19rg6f7b6lk6a','2026-10-21',2,-0.1779,'Crazy that nobody at Amazon has heard of JIT /s'),(8,'ValueInvesting','1xbvjpo','19rgfp2wxm3c4','2026-10-21',1,0.8381,'Nvidia GB300\n\nEveryone is missing one critical facet of this: You or I (with cash) can buy these today. \n\n8 of them in a rack mount unit 500k (this is break even with a 1 year commit to one in a rack already). \n\nI can buy a 100k desktop with a single unit in them.\n\nAmazon is taking them but you can buy them on the street too. '),(9,'ValueInvesting','1xbvjpo','19rgpenq39nq9','2026-10-22',1,-0.2057,'NVDA appears to be channel stuffing. This does not bode well for the sector'),(10,'ValueInvesting','1xbvjpo','19rgrcsnqbyw3','2026-10-22',1,0,'hear about the lil nuclear plant they are funding?'),(11,'ValueInvesting','1xbvjpo','19rgrt0crwx9d','2026-10-22',1,0.0742,'No sources.  no links.  complete emotional post.'),(12,'ValueInvesting','1xbvjpo','19rg3mumo2iqr','2026-10-21',1,0.5859,'What is the value play here?'),(13,'ValueInvesting','1xbvjpo','19rg88tzd450k','2026-10-21',0,-0.666,'Llms reading whole internet now. Where u find now new data? They focus now privat companies tresures and secret data....\nThey shouldnt sell own power data holding em alive over decades or generations for today worthless money ...only a dumb wll do that. Next we have to think about are that llms models... do u need the newest one? No older are powerfuller u can choose a b c d e f g or other....u not have to sell yor data for a short time profit... u should hide and protect em..\nThere are other failures leader in si doing todays u not should support em u should work on own product.'),(14,'ValueInvesting','1xbvjpo','19rg87fcwp2zo','2026-10-21',0,-0.3612,'The missing number for me is how long each rack waits before going live. The reported $3bn arriving every month doesn\'t by itself tell us whether the backlog is growing; we\'d need to know how much is getting installed too. Do the emails give any indication of that? A few weeks of staging and a six-month power delay would mean very different things for the return on that hardware.'),(15,'ValueInvesting','1xbvjpo','19rga9l7by9gh','2026-10-21',0,0.765,'Other hyperscalers have oversold their GPU capacity. Amazon is at least being direct with customers about what they can fulfill.');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -410,4 +412,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-21  4:13:06
+-- Dump completed on 2026-10-22  4:11:29
