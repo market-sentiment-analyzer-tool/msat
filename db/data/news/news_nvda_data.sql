@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.10.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	26.7.0
+-- Server version	26.10.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -47,6 +47,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -388,7 +389,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +398,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'faizan farooque','Please enable JS and disable any ad blocker...','2026-10-20',0.06364,'Amazonâ€™s $350 target rests on an AI bet beyond the cloud','https://www.thestreet.com/investing/amazons-350-target-rests-on-an-ai-bet-beyond-the-cloud',4),(2,'white brook capital','...','2026-10-20',0.04128,'White Brook Capital Partners Q3 2026 Commentary','https://seekingalpha.com/article/4955561-white-brook-capital-partners-q3-2026-commentary',4),(3,'the arora report','...','2026-10-20',-0.16184,'408x Oversubscribed AI IPO Crashes 32%â€”Democratic Sweep Prospects Trigger Selling in Data Center Stocks','https://www.benzinga.com/Opinion/26/10/62474366/408x-oversubscribed-ai-ipo-crashes-32-democratic-sweep-prospects-trigger-selling-in-data-center-stocks',4),(4,'meilin quinn','Robots are smarter than us now, says the man selling robots. Almost as if he has a stake in the matter...\nThe man in question is Nvidia (NVDA -0.29%) CEO Jensen Huang, who, to be fair, sells chips to ...','2026-10-20',0.43792,'AGI Is Almost Ready. Is Your Portfolio?','https://www.fool.com/investing/2026/10/20/agi-is-almost-ready-is-your-portfolio/',4),(5,'moz farooque','Please enable JS and disable any ad blocker...','2026-10-20',-0.11612,'Ed Yardeni spots a major shakeup in the S&P 500','https://www.thestreet.com/investing/stocks/yardeni-sp500-mag-seven-rotation',4),(6,'fahad saleem','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-20',0.85,'These 2 Billionaires Like Nvidia (NVDA). Should You Buy the Dip Ahead of Earnings?','https://www.insidermonkey.com/news/these-2-billionaires-like-nvidia-nvda-should-you-buy-the-dip-ahead-of-earnings-1857477/',40),(7,'lawrence nga','Nvidia (NVDA -0.29%) has been one of the biggest winners of the artificial intelligence (AI) boom. But even its shareholders have reason to feel nervous.\nOn Oct. 16, the Nasdaq Composite fell 2.2%, wh...','2026-10-20',-0.29036,'Nvidia Stock Is Near Its High, but the Market Is Wobbling. Should Investors Sell?','https://www.fool.com/investing/2026/10/20/nvidia-is-near-its-high-but-market-is-wobbling/',40),(8,'celine provini','Please enable JS and disable any ad blocker...','2026-10-20',-0.3034,'Anthropic may double down on the site Microsoft walked away from','https://www.thestreet.com/technology/anthropic-45b-nscale-expansion-microsoft-site',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'vandita jadeja','A brutal week of selling left NVIDIA at its cheapest valuation in months, but the fundamentals tell a completely different story than the price action suggests.\n Price Targets desk. Editor: Vandita Ja...','2026-10-21',0.1999,'The Cheapest NVIDIA Has Looked All Month: What the Price Target Says','https://247wallst.com/investing/2026/10/21/the-cheapest-nvidia-has-looked-all-month-what-the-price-target-says/',40),(2,'investing experts podcast','...','2026-10-21',0,'SpaceX, Tesla & The Next Phase Of The AI Trade','https://seekingalpha.com/article/4955999-spacex-tesla-and-the-next-phase-of-the-ai-trade',4),(3,'noor ul ain rehman','Our #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing Â· 30-day money back guarantee\nOur #1 AI Stock Pick â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly picks Â· Ad-free browsing\n...','2026-10-21',0.6213,'Nvidia vs. Microsoft: Is NVDAâ€™s Explosive Growth Being Undervalued?','https://www.insidermonkey.com/news/nvidia-vs-microsoft-is-nvdas-explosive-growth-being-undervalued-1854725/',40),(4,'keithen drury','The debate over whether Advanced Micro Devices (AMD +3.36%) or Nvidia (NVDA +2.54%) is the better GPU stock has raged on for ages. At the start of the artificial intelligence (AI) arms race in 2023, i...','2026-10-21',0.70936,'AMD vs. Nvidia. 1 Metric Proves Which Is the Best Stock.','https://www.fool.com/investing/2026/10/21/amd-vs-nvidia-1-metric-proves-which-is-the-best/',4),(5,'joel south','One quote from Elon Musk sent chip stocks surging in premarket trading, but whether that momentum signals a real turning point or just a brief relief rally is what the rest of October will decide.\n\nEl...','2026-10-21',-0.12188,'Elon Musk May Have Ended the October AI Crash as NVIDIA, Intel, and SanDisk Rally after One SpaceX Quote','https://247wallst.com/investing/2026/10/21/elon-musk-may-have-ended-the-october-ai-crash-as-nvidia-intel-and-sandisk-rally-after-one-spacex-quote/',4),(6,'vandita jadeja','Nvidia just posted triple-digit revenue growth and guided even higher, yet the stock sits barely above where it started the year. The question of whether shares can surge another 63% by 2027 comes dow...','2026-10-21',0.56686,'Prediction: Nvidiaâ€™s Road to $1 Trillion in Annual Revenue Could Transform Its Stock','https://247wallst.com/investing/2026/10/21/prediction-nvidias-road-to-1-trillion-in-annual-revenue-could-transform-its-stock/',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -411,4 +412,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-21  5:29:21
+-- Dump completed on 2026-10-22  5:34:38

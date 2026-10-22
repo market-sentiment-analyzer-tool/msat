@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 26.7.0, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 26.10.0, for Linux (x86_64)
 --
 -- Host: mysql    Database: MarketSentiment
 -- ------------------------------------------------------
--- Server version	26.7.0
+-- Server version	26.10.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -47,6 +47,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -388,7 +389,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +398,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Oct.  20, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a pending securities class action on behalf of persons and entities that purchased or...','2026-10-20',0.33052,'GOOGL/GOOG UPCOMING DEADLINE: SueWallSt Alerts Alphabet Inc. Stockholders of Securities Class Action','https://www.financialcontent.com/article/gnwcq-2026-10-20-googlgoog-upcoming-deadline-suewallst-alerts-alphabet-inc-stockholders-of-securities-class-action',4),(2,'omor ibne ehsan','A personal check Eric Schmidt wrote in 2021 may have quietly become one of the most valuable private stakes in artificial intelligence, and the number attached to it grows larger every time Anthropic ...','2026-10-20',0.19974,'Googleâ€™s Former CEO Quietly Owns 1% of Anthropic','https://247wallst.com/investing/2026/10/20/googles-former-ceo-quietly-owns-1-of-anthropic/',4),(3,'keith speights','In early 2024, the man known as the \"Dean of Valuation\" viewed Nvidia (NVDA -0.29%) as ridiculously overpriced. New York University finance professor and author Aswath Damodaran posted on X (the socia...','2026-10-20',0.19938,'Nvidia Stock Hasnâ€™t Been This Cheap in 7 Years. Only 1 Explanation Makes Sense.','https://www.fool.com/investing/2026/10/20/nvidia-stock-hasn-t-been-this-cheap-in-7-years-only-1-explanation-makes-sense/',4),(4,'financialcontent','NEW YORK, NY - October 19, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-19',0.1981,'Kaplan Fox Continues to Remind Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of the Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-19-kaplan-fox-continues-to-remind-alphabet-inc-nasdaq-googl-goog-investors-of-the-lead-plaintiff-deadline-on-december-1-2026',4),(5,'anders bylund','Back on Dec. 27, 2010, I bought some Google stock at a split-adjusted $15.03 a share. The company has since renamed itself Alphabet (GOOG -1.10%) (GOOGL -1.14%), split its stock twice, and doubled dow...','2026-10-19',0.62126,'6 Signs of a Winning Stock, Each Shown by a Real Company','https://www.fool.com/investing/2026/10/19/6-signs-of-a-winning-stock-shown-by-real-companies/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'prosper junior bakiny','Amazon (AMZN -0.10%) and Alphabet (GOOG -1.62%) (GOOGL -1.62%) are two companies that hardly need an introduction. Both are leaders in their respective industries, generally post excellent financial r...','2026-10-21',0.34226,'Amazon or Alphabet: If I Could Only Own One for the Next Decade, It Would Be This One','https://www.fool.com/investing/2026/10/21/amazon-or-alphabet-if-i-could-only-own-one-for-the/',4),(2,'investing experts podcast','...','2026-10-21',0,'SpaceX, Tesla & The Next Phase Of The AI Trade','https://seekingalpha.com/article/4955999-spacex-tesla-and-the-next-phase-of-the-ai-trade',4),(3,'namrata sen','...','2026-10-21',0.52776,'Ken Griffin Says Weâ€™re â€˜Almost Certainlyâ€™ in an AI Bubble, Recalls How Past Bubbles Created Market Leaders for Decades: â€˜I Just Wish Iâ€™d Kept My Amazon Stockâ€™','https://www.benzinga.com/markets/tech/26/10/62497237/ken-griffin-says-were-almost-certainly-in-an-ai-bubble-recalls-how-past-bubbles-created-market-leaders-for-decades-i-just-wish-id-kept-my-amazon-stock',4),(4,'yahoo finance','...','2026-10-21',0,'Anthropic to publicly file for IPO as early as Friday, sources say','https://www.bundle.app/en/finance/anthropic-to-publicly-file-for-ipo-as-early-as-friday-sources-say-22771BC1-4983-5916-B284-B418A9518E99',2),(5,'cpa','Amazon (AMZN -0.10%) and Alphabet (GOOG -1.62%)(GOOGL -1.62%) are two of the most valuable companies in the world. \nAlphabet has a robust business centered around YouTube and Google, and its valuation...','2026-10-20',0.91986,'Amazon vs Alphabet: Which \"Magnificent Seven\" Stock Is the Better Buy Right Now?','https://www.fool.com/investing/2026/10/20/amazon-vs-alphabet-which-magnificent-seven-stock-is-the-better-buy-right-now/',4),(6,'financialcontent','NEW YORK, NY - October 20, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-20',0.1981,'Kaplan Fox Urges Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-10-20-kaplan-fox-urges-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-deadline-on-december-1-2026',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -411,4 +412,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-21  5:29:21
+-- Dump completed on 2026-10-22  5:34:38
