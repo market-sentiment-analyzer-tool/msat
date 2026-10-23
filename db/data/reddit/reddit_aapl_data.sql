@@ -42,11 +42,13 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
 12705d51-ffe8-11f0-b328-a6cea9777483:1-64,
 12b379fe-c3ae-11f1-9d0e-22875aa35afa:1-55,
+12b8d644-ce98-11f1-8abd-1282beef2066:1-177,
 13124026-58bf-11f1-9200-5a1d153eeb36:1-59,
 1339cb9c-9918-11f1-9fe8-728839851b48:1-62,
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
 17bcafcf-6f89-11f1-8395-7af1d52d1051:1-59,
@@ -157,7 +159,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 631d192e-f674-11f0-8855-fedfb1c2ecfd:1-63,
 64586054-9530-11f1-b922-ae04e8ab399e:1-57,
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
-64d1ac85-cdce-11f1-b2a0-16c43cf9f194:1-44,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
@@ -389,7 +390,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -398,7 +399,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xc4p7e','19rglkb4his2p','2026-10-22',6,0.6369,'The stock has made me a millionaire 3 x over. Best stock purchase ever on 2008');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xcsqog','19rhzeazy3e1t','2026-10-22',3,-0.7269,'And GOOG is running away further down ðŸ˜­'),(2,'AAPL','1xcsqog','19rhyqwbc0cmd','2026-10-22',6,0.4404,'AAPL is just the anti-ai safe haven nowadays. Always up/flat when the market is on a vomit spree.'),(3,'AAPL','1xcsqog','19ri531mhkpnp','2026-10-22',2,0.4767,'More wild rides coming: Â Duo on sale tomorrow, Â MBP and iPad event on 10/28 and earnings on 11/2. Â Hold on to your seatbelt. Â '),(4,'AAPL','1xcsqog','19ri399psyzfp','2026-10-22',-6,-0.8225,'Why do apple fans obsess over this?    Dumbest dick measuring contest ever.'),(5,'AAPL','1xd03f8','19ricxcxzsd0j','2026-10-23',6,0,'Buyers are surrounding Apple customers with offers on the street upwards of $3000 USD. '),(6,'AAPL','1xd03f8','19ridde5nlucl','2026-10-23',2,0,'I heard $5000 was offered '),(7,'AAPL','1xcv8f8','19ri3m5j4q36o','2026-10-22',18,0.9566,'They donâ€™t need it. What I do find interesting is how this company is the adult in the room compared to all of the other tech companies. They make a ton of money, take only really measured risks and keep just improving the ecosystem and the earnings derived from it. While Zuckerberg is spending billions chasing AI greatness, and scaring the shit out of investors every quarter with how much they are spending, Apple just keeps moving forward, harvesting earnings from the great business they have.   \nI predict the duo will be a huge hit. While not a revolutionary product, it will be well engineered, affordable through cell partnerships and new to Apple. Get ready. '),(8,'AAPL','1xcv8f8','19ri37wl8uobm','2026-10-22',14,0,'I don\'t think so. Not even a thought until 400 even then.'),(9,'AAPL','1xcv8f8','19ri3pl1e8iow','2026-10-22',6,-0.4389,'ATH today in a crap market!'),(10,'AAPL','1xcv8f8','19ri3caruvau8','2026-10-22',5,-0.1215,'I strongly doubt it. Maybe around 500 or so. It doesn\'t matter anyway. (Long AAPL since 2007). '),(11,'AAPL','1xcv8f8','19riabp0vo90l','2026-10-23',4,0.5789,'The last time AAPL split was in 2020, price before split was $516 a share and it split 4:1. Before that was 2014, price before split was $656 per share and it split 7:1. So, arguments about usefulness aside, a split may come but probably not below $500 a share.'),(12,'AAPL','1xcv8f8','19ri32mh4t7dt','2026-10-22',3,0,'3:1 maybe. I will take dividends hike over a split. '),(13,'AAPL','1xcv8f8','19ri3btyt7pno','2026-10-22',2,-0.0516,'Leave it be'),(14,'AAPL','1xcv8f8','19ri3ka89yn4x','2026-10-22',2,0.0772,'Go to METAâ€™s page if you want a split '),(15,'AAPL','1xcv8f8','19ri3uxys5sbo','2026-10-22',2,0,'450-500, then weâ€™ll get a 4:1'),(16,'AAPL','1xcv8f8','19ri71elu3ov6','2026-10-22',2,0.4019,'I wish. '),(17,'AAPL','1xcv8f8','19ri4jfdmbjqa','2026-10-22',2,0.0936,'A split means nothing to the value of your investment. Would you prefer to have a $1 bill, or 4 quarters? Either way, your ultimate value is $1. Splits mean nothing. '),(18,'AAPL','1xcv8f8','19ri6crlu4azn','2026-10-22',1,0,'2 for one split is in 2029'),(19,'AAPL','1xcv8f8','19rii3yc4xpd0','2026-10-23',1,0,'At double the current valuation, likely. '),(20,'AAPL','1xcv8f8','19ri8y5oqde3n','2026-10-22',0,0,'You realize that stock splits donâ€™t make you any money, right?'),(21,'AAPL','1xcv8f8','19ri4tgce39up','2026-10-22',0,0.3599,'Nope! Dumb idea on many levels.  550, ill entertain the idea');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -412,4 +413,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-22  4:11:29
+-- Dump completed on 2026-10-23  4:18:21
