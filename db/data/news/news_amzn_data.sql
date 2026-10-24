@@ -56,6 +56,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1a1fa346-cf69-11f1-bfd1-e65b7642ac0a:1-57,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
@@ -390,7 +391,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -399,7 +400,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'silin chen','Please enable JS and disable any ad blocker...','2026-10-22',0.26364,'Cathie Wood sells $16 million of surging tech stock','https://www.thestreet.com/investing/stocks/cathie-wood-sells-16-million-of-surging-tech-stock-palantir-pltr',4),(2,'jennifer sor','The stock market was clobbered on Thursday. \nAI spending fears once again rocked the bull market, shaving nearly 3% off the Nasdaq 100 and sending investors retreating back to Treasury bonds, which ha...','2026-10-22',0.2095,'Surging oil prices and fresh tech jitters are hammering stocks','https://www.businessinsider.com/stock-market-today-tech-sell-off-meta-tesla-oil-prices-2026-10',4),(3,'aditya raghunath','...','2026-10-22',0,'What Investors Need to Know About Owning U.S. Stocks in a TFSA','https://www.fool.ca/2026/10/22/what-investors-need-to-know-about-owning-u-s-stocks-in-a-tfsa/',2),(4,'dmytro spilka','...','2026-10-22',0,'Hedge Hyperscaler Volatility With AI Infrastructure Stocks','https://www.benzinga.com/opinion/26/10/62525140/hedge-hyperscaler-volatility-with-ai-infrastructure-stocks',4),(5,'dylan berman','...','2026-10-22',0.38136,'Amazon Earnings Are a Week Away: Hereâ€™s What to Expect','https://www.benzinga.com/trading-ideas/movers/26/10/62522059/amazon-earnings-are-a-week-away-heres-what-to-expect',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'celine provini','Please enable JS and disable any ad blocker...','2026-10-23',0.26236,'Post-it Notes maker 3M eyes AI gold rush in major Amazon deal','https://www.thestreet.com/investing/stocks/post-it-notes-maker-3m-eyes-ai-gold-rush-in-major-amazon-deal',40),(2,'jake lerch','Software giants Adobe (ADBE -2.49%) and Salesforce (CRM -0.69%) are competing for dominance in the enterprise cloud market as businesses shift toward automated workflows. Deciding which stock is a bet...','2026-10-23',0.80014,'Adobe vs. Salesforce: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/23/adobe-vs-salesforce-which-technology-stock-is-a-better-buy-in-2026/',4),(3,'natasha abellard','\nReference #18.c9d11102.1792818613.c7a7e1aa\nhttps://errors.edgesuite.net/18.c9d11102.1792818613.c7a7e1aa\n\nhttps://errors.edgesuite.net/18.c9d11102.1792818613.c7a7e1aa...','2026-10-23',0.32152,'What we want to see when this data center stock reports earnings next week','https://www.cnbc.com/investingclub/2026/10/23/what-we-want-to-see-when-this-data-center-stock-reports-earnings-next-week.html',40),(4,'celine provini','Please enable JS and disable any ad blocker...','2026-10-23',0.06364,'7 stocks control more than 25% of Vanguard Total Stock Market Index Fund','https://www.thestreet.com/investing/7-stocks-control-more-than-25-of-vanguard-total-stock-market-index-fund',4),(5,'vandita jadeja','AWS just posted its fastest growth in 18 quarters, yet Amazon shares still sit well below their 52-week high. The path to $500 by 2030 exists, but it hinges on one part of the business clearing a very...','2026-10-23',0.34226,'Prediction: Amazon Could Double by 2030 if This Part of Its Business Delivers','https://247wallst.com/investing/2026/10/23/prediction-amazon-could-double-by-2030-if-this-part-of-its-business-delivers/',40),(6,'anthony miller','...','2026-10-23',0,'Weekly Research Analystsâ€™ Ratings Updates for Amazon.com (AMZN)','https://www.thelincolnianonline.com/2026/10/23/weekly-research-analysts-ratings-updates-for-amazon-com-amzn.html',2),(7,'john kingston','\n\n\nFour and a half years after a grassroots union was voted in by workers at an Amazon warehouse in Staten Island, New York, the battles in court over Amazonâ€™s pushback against the vote continues.\nAt ...','2026-10-23',0.48864,'NLRB ordered Amazon to bargain with Staten Island workers; itâ€™s now in federal court','https://www.freightwaves.com/news/nlrb-ordered-amazon-to-bargain-with-staten-island-workers-its-now-in-federal-court',40),(8,'sara appino','Choosing between Salesforce (CRM -0.69%) and Snowflake (SNOW +3.65%) requires weighing steady profitability against explosive revenue growth. Both companies are essential players in the modern data ec...','2026-10-23',0.80038,'Salesforce vs. Snowflake: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/23/salesforce-vs-snowflake-which-technology-stock-is-a-better-buy-in-2026/',4),(9,'sara appino','Software investing often requires choosing between established cash generators and high-growth disruptors. Should you prioritize the creative dominance of Adobe (ADBE -2.49%) or the defensive growth p...','2026-10-23',0.79998,'Adobe vs. CrowdStrike: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/23/adobe-vs-crowdstrike-which-technology-stock-is-a-better-buy-in-2026/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -413,4 +414,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-23  5:31:37
+-- Dump completed on 2026-10-24  5:10:31

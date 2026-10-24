@@ -56,6 +56,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1a1fa346-cf69-11f1-bfd1-e65b7642ac0a:1-57,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
@@ -390,7 +391,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -399,7 +400,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'stuart allsopp','...','2026-10-22',-0.46872,'Nvidia: Equity Investors Are Ignoring The Surge In Implied Default Risk','https://seekingalpha.com/article/4956526-nvidia-equity-investors-are-ignoring-the-surge-in-implied-default-risk',4),(2,'donna armstrong','...','2026-10-22',0,'NVIDIA Corporation (NASDAQ: NVDA) Targets 2.5x Substrate Capacity','https://www.thelincolnianonline.com/2026/10/22/nvidia-corporation-nasdaq-nvda-targets-2-5x-substrate-capacity.html',20),(3,'silin chen','Please enable JS and disable any ad blocker...','2026-10-22',0.06364,'Meta stock falls despite Wall Street analysts raising price targets','https://www.thestreet.com/investing/stocks/meta-stock-falls-despite-wall-street-analysts-raising-price-targets',4),(4,'kevin stankiewicz','\nReference #18.4ea7cb17.1792733488.949eb87e\nhttps://errors.edgesuite.net/18.4ea7cb17.1792733488.949eb87e\n\nhttps://errors.edgesuite.net/18.4ea7cb17.1792733488.949eb87e...','2026-10-22',-0.40848,'AI stocks tumble as the defensives rise. What it says about this uneasy market','https://www.cnbc.com/investingclub/2026/10/22/ai-stocks-tumble-as-the-defensives-rise-what-it-says-about-this-uneasy-market.html',40),(5,'britney nguyen','Please enable JS and disable any ad blocker...','2026-10-22',-0.05884,'Two big reasons Micron and other chip stocks are falling on Thursday','https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories',4),(6,'trey thoelcke','SOXX is splitting again, but the number that actually matters for your returns has nothing to do with share count or price. Knowing what to watch after November 5 could make the difference between rid...','2026-10-22',0.43652,'SOXX Is Splitting 3-for-1 Again: What Changes for Your Shares and What Doesnâ€™t','https://247wallst.com/investing/etf/2026/10/22/soxx-is-splitting-3-for-1-again-what-changes-for-your-shares-and-what-doesnt/',4),(7,'jennifer sor','The stock market was clobbered on Thursday. \nAI spending fears once again rocked the bull market, shaving nearly 3% off the Nasdaq 100 and sending investors retreating back to Treasury bonds, which ha...','2026-10-22',0.2095,'Surging oil prices and fresh tech jitters are hammering stocks','https://www.businessinsider.com/stock-market-today-tech-sell-off-meta-tesla-oil-prices-2026-10',4),(8,'vandita jadeja','NVIDIA now sells something far bigger than chips, and Wall Street is still catching up to what that means for the stock price. One supply constraint is quietly doing more to support the bull case than...','2026-10-22',0.39958,'Wall Street Didnâ€™t Expect This AI Stock to Become This Important','https://247wallst.com/investing/2026/10/22/wall-street-didnt-expect-this-ai-stock-to-become-this-important/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'john ballard','Lasting wealth often comes from owning great companies for decades, and the artificial intelligence (AI) build-out could produce a new generation of them. The semiconductor industry can experience ups...','2026-10-23',0.88716,'3 Magnificent AI Chip Stocks That Could Help Set You Up for Life','https://www.fool.com/investing/2026/10/23/3-magnificent-ai-chip-stocks-set-you-up-life/',4),(2,'celine provini','Please enable JS and disable any ad blocker...','2026-10-23',0.06364,'7 stocks control more than 25% of Vanguard Total Stock Market Index Fund','https://www.thestreet.com/investing/7-stocks-control-more-than-25-of-vanguard-total-stock-market-index-fund',4),(3,'alex sirois','Every time NVIDIA pulls back, the same question resurfaces: is the selloff a warning sign or a rare entry point into the most entrenched platform in AI computing? The answer depends on one software la...','2026-10-23',0.19854,'Ignore Near-Term Friction: Nvidiaâ€™s Unmatched Scale and CUDA Ecosystem Lock-In Make Every Pullback a Buying Opportunity for Years to Come','https://247wallst.com/investing/2026/10/23/ignore-near-term-friction-nvidias-unmatched-scale-and-cuda-ecosystem-lock-in-make-every-pullback-a-buying-opportunity-for-years-to-come/',4),(4,'muhammad umair','...','2026-10-23',-0.21856,'S&P 500 Forecast: Oil and AI Spending Risks Test the Path to 8,000','https://www.fxempire.com/forecasts/article/sp-500-forecast-oil-and-ai-spending-risks-test-the-path-to-8000-1640008',2),(5,'vandita jadeja','Wall Street already sees more than 50% upside in NVIDIA, but one analyst thinks even that target is too conservative. Here is the specific combination of catalysts that could push shares well beyond w...','2026-10-23',0.64492,'My Nvidia Stock Price Prediction for 2027 Is More Bullish Than You Might Expect','https://247wallst.com/investing/2026/10/23/my-nvidia-stock-price-prediction-for-2027-is-more-bullish-than-you-might-expect/',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -413,4 +414,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-23  5:31:37
+-- Dump completed on 2026-10-24  5:10:32

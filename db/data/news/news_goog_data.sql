@@ -56,6 +56,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1a1fa346-cf69-11f1-bfd1-e65b7642ac0a:1-57,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
@@ -390,7 +391,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -399,7 +400,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'investing experts podcast','...','2026-10-22',0.42136,'AI Spending Faces Reality Check As Tech Earnings Roll In','https://seekingalpha.com/article/4956542-ai-spending-faces-reality-check-as-tech-earnings-roll-in',4),(2,'financialcontent','Alphabet has been sued for securities fraud after its stock price fell 4% because Alphabet allegedly misrepresented the progress of development of its Gemini 3.5 Pro AI model. \nNew York, New York--(Ne...','2026-10-22',-0.36996,'GOOG, GOOGL Securities Notice: Alphabet Investors That Suffered Losses After the 4% Stock Drop Are Notified to Contact BFA Law About the Pending Class Action','https://www.financialcontent.com/article/newsfile-2026-10-22-goog-googl-securities-notice-alphabet-investors-that-suffered-losses-after-the-4-stock-drop-are-notified-to-contact-bfa-law-about-the-pending-class-action',40),(3,'financialcontent','NEW YORK, NY - October 21, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-10-21',0.4349,'Kaplan Fox Deadline Alert: Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors Have Until December 1, 2026 to Seek a Lead Plaintiff Role','https://www.financialcontent.com/article/newmediawire-2026-10-21-kaplan-fox-deadline-alert-alphabet-inc-nasdaq-googl-goog-investors-have-until-december-1-2026-to-seek-a-lead-plaintiff-role',4),(4,'geoffrey seiler','In my view, artificial intelligence (AI) stocks will once again lead the market higher in 2027. However, I think there will start to be a rotation away from the pure-play pick-and-shovel infrastructur...','2026-10-21',0.82724,'Prediction: This Artificial Intelligence (AI) Stock Will Be the Biggest Winner of 2027','https://www.fool.com/investing/2026/10/21/prediction-this-artificial-intelligence-ai-stock-w/',4),(5,'financialcontent','San Diego, California--(Newsfile Corp. - October 21, 2026) - Shareholder rights law firm Robbins LLP reminds investors that a class action was filed on behalf of persons or entities who purchased or o...','2026-10-21',-0.2622,'Did You Lose Money Investing in Alphabet Inc.? Robbins LLP Urges Investors with Significant Losses to Contact the Firm for Information About Their Rights Against GOOG','https://www.financialcontent.com/article/newsfile-2026-10-21-did-you-lose-money-investing-in-alphabet-inc-robbins-llp-urges-investors-with-significant-losses-to-contact-the-firm-for-information-about-their-rights-against-goog',40),(6,'financialcontent','NEW YORK, Oct.  21, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-10-21',0.4346,'Kaplan Fox Notifies Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of a Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-10-21-kaplan-fox-notifies-alphabet-inc-nasdaq-googl-goog-investors-of-a-securities-class-action-deadline-on-december-1-2026',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-10-22',0,'Meta erases its 2026 gain as investors punish Big Techâ€™s biggest spenders','https://www.bundle.app/en/finance/meta-erases-its-2026-gain-as-investors-punish-big-techs-biggest-spenders-C43B7AE0-84CF-5EB4-9A2E-48A1E34A12D1',2),(2,'investing experts podcast','...','2026-10-22',0.42136,'AI Spending Faces Reality Check As Tech Earnings Roll In','https://seekingalpha.com/article/4956542-ai-spending-faces-reality-check-as-tech-earnings-roll-in',4),(3,'financialcontent','Alphabet has been sued for securities fraud after its stock price fell 4% because Alphabet allegedly misrepresented the progress of development of its Gemini 3.5 Pro AI model. \nNew York, New York--(Ne...','2026-10-22',-0.36996,'GOOG, GOOGL Securities Notice: Alphabet Investors That Suffered Losses After the 4% Stock Drop Are Notified to Contact BFA Law About the Pending Class Action','https://www.financialcontent.com/article/newsfile-2026-10-22-goog-googl-securities-notice-alphabet-investors-that-suffered-losses-after-the-4-stock-drop-are-notified-to-contact-bfa-law-about-the-pending-class-action',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -413,4 +414,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-23  5:31:37
+-- Dump completed on 2026-10-24  5:10:31
