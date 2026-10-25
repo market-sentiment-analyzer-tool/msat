@@ -56,6 +56,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1865a7d7-1452-11f1-ae8b-1ab212f66e2d:1-67,
 187b582f-7052-11f1-8ebf-92df36b1fe48:1-66,
 19b4a178-b213-11f0-a14d-12a03b378155:1-70,
+1a1fa346-cf69-11f1-bfd1-e65b7642ac0a:1-57,
 1a5ae995-83f4-11f1-948e-ca2187ea1758:1-51,
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
@@ -64,7 +65,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
 1f0b03c0-6881-11f1-95ad-c222d71ab53c:1-58,
-1f36146a-cf60-11f1-8c17-3e6465c11d75:1-49,
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
@@ -194,6 +194,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
+814cc616-d029-11f1-a900-aa31fcfcea70:1-163,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
@@ -391,7 +392,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -400,7 +401,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xdbdqx','19rj4uws5g3xc','2026-10-23',38,0.7184,'We are back. My AAPL stock thanks those brave souls'),(2,'AAPL','1xdbdqx','19rj4ubd5adpe','2026-10-23',10,0,'The Gods of money making'),(3,'AAPL','1xdbdqx','19rj5f9fft2hw','2026-10-23',9,0.5423,'Fascinating. Havenâ€™t seen this in a long while. '),(4,'AAPL','1xdbdqx','19rj6w9plimsh','2026-10-23',4,0.4144,'Iâ€™ve held Apple so long itâ€™s like my buddy '),(5,'AAPL','1xdbdqx','19rjcufzm7isg','2026-10-23',6,-0.9052,'But Reddit told me the duo was a guaranteed failure and that Apple was doomed '),(6,'AAPL','1xdbdqx','19rj9fi4mf4yo','2026-10-23',3,0.3612,'I havenâ€™t seen a scene like this in a long time'),(7,'AAPL','1xdbdqx','19rja0uiazm5f','2026-10-23',3,0.4215,'Nice to see something normal again in these times.'),(8,'AAPL','1xdbdqx','19rj8x0nfrkrn','2026-10-23',5,-0.0516,'AAPL will shoot for the ðŸŒ™. Itâ€™s heading to $500 per share. Least capex on AI yet on par. Cash flow is still the king. ðŸ¤´ Never sold a stock of AAPL since 2012. What a stellar of a company Apple is. '),(9,'AAPL','1xdbdqx','19rjkd2i6psyo','2026-10-23',2,0.128,'Crazy. Â Surely they know Apple doesnâ€™t have 500 Duos for sale at the store, right? Â '),(10,'AAPL','1xdbdqx','19rj6gz4jhckg','2026-10-23',1,0,'Is that building opposite the *Trump Plaza*?'),(11,'AAPL','1xdbdqx','19rj6so02twpt','2026-10-23',1,0,'Incredible '),(12,'AAPL','1xdbdqx','19rj6z78klalh','2026-10-23',1,0.4588,'please hold one for me ðŸ«¡'),(13,'AAPL','1xdbdqx','19rj9ya7y1hi9','2026-10-23',1,0.636,'Lmao! '),(14,'AAPL','1xdbdqx','19rj9zhlg2f38','2026-10-23',1,0,'alot of PTO in one photo '),(15,'AAPL','1xdbdqx','19rjad2uolkv6','2026-10-23',1,0,'110,921% as of 9:32am this morning. Letâ€™s go!'),(16,'AAPL','1xdbdqx','19rjangzqu8kl','2026-10-23',1,0,'Resellers?'),(17,'AAPL','1xdbdqx','19rk40krbc25h','2026-10-24',1,-0.875,' This is crazy stupid   \nWe are doomed d'),(18,'AAPL','1xdbdqx','19rk5ia2jf0td','2026-10-24',1,0,'I have to be the firstâ€¦ FUâ€¦'),(19,'AAPL','1xdbdqx','19rj5534k3h0k','2026-10-23',1,0.8126,'If you orientate your device to *landscape* itâ€™ll help make your point much easier ðŸ‘'),(20,'AAPL','1xdbdqx','19rj7wlwr4kpw','2026-10-23',0,-0.4767,'Arenâ€™t ppl crying about inflation tho? '),(21,'AAPL','1xdbdqx','19rjfqh3sxnfm','2026-10-23',0,0.5362,'Why??? Why are we like this? Â '),(22,'AAPL','1xdbdqx','19rj823yv1iw2','2026-10-23',-2,0.6779,'Guys, this is really cool, but it has zero impact on the stock price. Not in the short term anyway. '),(23,'AAPL','1xdbdqx','19rjf1cf5twwy','2026-10-23',-2,0.1511,'So those are the people not complaining about the economy. \n\nI can never understand how people stand in line to purchase gadgets. \n'),(24,'AAPL','1xdbdqx','19rj9l9jn523o','2026-10-23',-3,0,'Duo is going to have massive issues, waiting for gen 2.'),(25,'AAPL','1xdbdqx','19rjanrlx1z37','2026-10-23',-5,-0.4767,'lol all for a POS duo.\n\nEarly reviews call out terrible UX.'),(26,'AAPL','1xdbdqx','19rjdbc3o25lu','2026-10-23',-6,0.2185,'Absolutely ridiculous and this all because of a phone, why are people are like this? Is it that important to have the newest phone for their ego?'),(27,'AAPL','1xdfcje','19rjn1xci5emb','2026-10-23',0,-0.4767,'Thatâ€™s terrible.  Iâ€™d never wait that long in person.  ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xef7t6','19rln666pxewx','2026-10-24',2,-0.7964,'No this is your last chance to sell your overvalued 40PE AAPL stock before the big crash on the earnings date');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -414,4 +415,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-24  4:06:17
+-- Dump completed on 2026-10-25  4:09:25
