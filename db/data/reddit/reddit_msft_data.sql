@@ -115,6 +115,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 457a48e5-fcc1-11f0-bb5f-5a7aef7883eb:1-67,
 459b8e06-36ef-11f1-b048-caff6bcbc25c:1-66,
 45b14f35-c9a6-11f0-86ec-865e1fa9cc51:1-60,
+465c1df6-d0f3-11f1-aa88-5ac28a1b0882:1-117,
 47132450-5660-11f1-b638-62a0aded030e:1-63,
 471ce1cd-1dc3-11f1-86c6-02c6ad400461:1-62,
 48de075f-b57e-11f1-8dad-2e891b47d40c:1-58,
@@ -194,7 +195,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 7ea7e381-8328-11f1-b8b8-96747405fa8d:1-56,
 7f26ad24-8d5f-11f1-a639-92b3db3904e4:1-57,
 7f8ebcfd-7760-11f1-835f-664968cefd55:1-64,
-814cc616-d029-11f1-a900-aa31fcfcea70:1-163,
 81fe94ab-7e72-11f1-94b8-f249d1504fe8:1-58,
 825f8d4b-5f10-11f1-b492-721bbb5d74b6:1-58,
 836bfed5-5fd6-11f1-a3eb-967da11ffcac:1-63,
@@ -219,6 +219,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
+94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
@@ -392,7 +393,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -401,6 +402,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1xf9ci5','19rn9tz6ssi2t','2026-10-25',28,0.25,'With 23 hour trading coming soon this may be the last chance many of these have to report after hours'),(2,'stocks','1xf9ci5','19rn7vf1299j8','2026-10-25',121,0,'Fed will keep the rate steady before midterms. '),(3,'stocks','1xf9ci5','19rn75ia7gupt','2026-10-25',35,0.6573,'the fed and earnings stacked on the same day feels like a setup for chaos, market\'s gonna be whiplashing all afternoon\n\n  \nmicrosoft has the most to prove imo, they\'ve been the loudest about ai and now people want to see it translate somewhere outside of azure credits\n\n  \nintel could be the real wildcard though, nobody expects much so any surprise there would move things more than another 2% beat from google'),(4,'stocks','1xf9ci5','19rn96cc55rb8','2026-10-25',8,0.1302,'Interest rates aren\'t changing so forget about that part.'),(5,'stocks','1xf9ci5','19rnivrp8j8n4','2026-10-25',2,0,'CALLSSS!!!'),(6,'stocks','1xf9ci5','19rnw9khurzia','2026-10-26',2,-0.6908,'No rate hike, short squeeze initiated'),(7,'stocks','1xf9ci5','19rn8l37hc1ac','2026-10-25',5,0.8469,'i have a pretty big CVNA bet, which reporting Wed!! It is giving me chills!! I feel like the little guy caught in the middle when giants fight!! like the other guy traveling in the flight when it is being targetted \'coz of a VVIP in it !! '),(8,'stocks','1xf9ci5','19rn9ubqh6iyq','2026-10-25',2,0.34,'I think goog has the most to prove.  Will have to see if theyâ€™ve been able to increase prices to offset the reduced volume of traditional searches.  Ultimately, it seems like thatâ€™ll have to break as traditional search dies off but it hasnâ€™t yet. '),(9,'stocks','1xf9ci5','19rnc3en8gk91','2026-10-25',3,0.8884,'A rate hike in October is very unlikely, so if anything that could be a positive catalyst for equities, probably the only one.\n\nImho we won\'t see any meaningful improvement until the Iran situation gets substantially better, hyperscalers earnings are most likely priced in and won\'t really produce rallies.'),(10,'stocks','1xf9ci5','19rnbnrq77zi9','2026-10-25',2,0.8612,'fed hikes then big tech earnings? lol good luck.'),(11,'stocks','1xf9ci5','19rnb1yxmf7nn','2026-10-25',1,-0.0258,'I believe that the Fed Funds rate is in the early stages of becoming intertwined with AI debt credit risks.  When the latter implodes ... not for a while yet ... there may be huge demand for government debt.  I don\'t know how Microsoft, Google, Amazon, and others bury all of this AI debt inside of their reported earnings.  Their free cash flow is evaporating fast.'),(12,'stocks','1xf9ci5','19rnfgfs2tkeb','2026-10-25',1,0.6115,'More importantly, visa announces earnings'),(13,'stocks','1xf9ci5','19rn8nr035f2d','2026-10-25',-1,0.4939,'fwiw futures have Wednesday at ~90% hold, the bigger move priced in is a hike in December at like 70%+. so I\'d watch Powell\'s presser tone more than the decision itself'),(14,'stocks','1xf9ci5','19rnby7mge64h','2026-10-25',-3,-0.2732,'market pricing in fed rate cut');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -414,4 +416,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-25  4:09:26
+-- Dump completed on 2026-10-26  4:15:14
