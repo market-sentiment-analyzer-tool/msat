@@ -234,6 +234,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
 ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
@@ -402,7 +403,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'james brumley','As the old adage goes, you get what you pay for. In other words, if you want quality, you can expect to pay a premium for it. The idea applies within the world of investing as well.\nStill, knowing tha...','2026-10-25',0.74654,'Not Nvidia. Not Microsoft. This \"Magnificent Seven\" Stock Is the Cheapest Right Now.','https://www.fool.com/investing/2026/10/25/not-nvidia-not-microsoft-this-magnificent-seven/',4),(2,'patrick sanders','Microsoft confirmed this week that it was pulling out of a planned artificial intelligence (AI) data center project in the United Kingdom. The facility, being developed by Nscale, was supposed to prov...','2026-10-25',0.19962,'As AI Labs Burn Cash, the Real Question Is Which Suppliers Get Paid','https://www.fool.com/investing/2026/10/25/as-ai-labs-burn-cash-the-real-question-is-which-su/',4),(3,'financialcontent','Alphabet has been sued for securities fraud after its stock price fell 4% because Alphabet allegedly misrepresented the progress of development of its Gemini 3.5 Pro AI model.\nNew York, New York--(New...','2026-10-24',-0.33004,'Investor Notification: Alphabet ($GOOG, $GOOGL) Investors Are Reminded to Contact BFA Law About the Ongoing Securities Fraud Class Action to Recover Losses','https://www.financialcontent.com/article/newsfile-2026-10-24-investor-notification-alphabet-goog-googl-investors-are-reminded-to-contact-bfa-law-about-the-ongoing-securities-fraud-class-action-to-recover-losses',4),(4,'marc guberti','The artificial intelligence (AI) investing thesis has been tough during the past month, but a bundle of tech earnings can change sentiment. Alphabet (GOOG -1.08%) (GOOGL -1.24%), Microsoft (MSFT +0.66...','2026-10-24',0.62128,'3 Key Things to Monitor When Tech Giants Report Earnings','https://www.fool.com/investing/2026/10/24/3-key-things-to-monitor-when-tech-giants-report-ea/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-10-26',-0.32152,'Anthropic is leasing data centers to reduce reliance on Amazon, Google, others','https://www.bundle.app/en/finance/anthropic-is-leasing-data-centers-to-reduce-reliance-on-amazon-google-others-F02891EA-F2D0-5B39-A74E-5CAD981352AE',2),(2,'yahoo finance','...','2026-10-26',0.48992,'Anthropicâ€™s IPO filing reveals $430 billion in locked-in AI computing â€” and Broadcom tops Google and Amazon: Chart of the Day','https://www.bundle.app/en/finance/anthropics-ipo-filing-reveals-430-billion-in-locked-in-ai-computing-and-broadcom-tops-google-and-amazon-chart-of-the-day-A8CC9446-EF4A-52AC-BA9F-31EA93A35986',20),(3,'keithen drury','Useful quantum computing is coming quicker than many investors realize. While 2030 used to be the year that most firms pointed to as the arrival date, that timeline has been accelerated to 2029, accor...','2026-10-25',0.63322,'3 Genius Quantum Computing Stocks to Buy Now','https://www.fool.com/investing/2026/10/25/3-genius-quantum-computing-stocks-to-buy-now/',4),(4,'james brumley','As the old adage goes, you get what you pay for. In other words, if you want quality, you can expect to pay a premium for it. The idea applies within the world of investing as well.\nStill, knowing tha...','2026-10-25',0.74654,'Not Nvidia. Not Microsoft. This \"Magnificent Seven\" Stock Is the Cheapest Right Now.','https://www.fool.com/investing/2026/10/25/not-nvidia-not-microsoft-this-magnificent-seven/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -416,4 +417,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-26  5:31:25
+-- Dump completed on 2026-10-27  5:46:46
