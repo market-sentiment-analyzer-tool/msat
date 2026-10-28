@@ -68,7 +68,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
-2034d46c-d1bf-11f1-9995-0eba86cc2f0b:1-175,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -225,6 +224,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+9a823100-d28c-11f1-977e-a6c737bfd336:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
@@ -235,6 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
 ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
@@ -394,7 +395,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -403,6 +404,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1xgzw1a','19rqrcef6cr2a','2026-10-27',19,0.8126,'Google own like 14% of Anthropic already if Anthropic valuation craters they could easily find another 200 billion and buy it out '),(2,'ValueInvesting','1xgzw1a','19rqrkt228emd','2026-10-27',35,0.1655,'To be clear, I am a Google bull and am invested in the stock. But there is a bear thesis that AI will cannibalize Google Search revenue, even if it\'s from Google\'s own AI. Google could both be a leader in AI and worse off because of it. I don\'t believe this will be the case, but it is possible.'),(3,'ValueInvesting','1xgzw1a','19rqrquc4rr40','2026-10-27',4,0.6705,'It\'s interesting how much these companies work together and not just with AI. For example Apple Car Play now uses Google Maps and Google competes with them with the Pixel, Chromebook, Googlebook, and probably more.'),(4,'ValueInvesting','1xgzw1a','19rqrumv3qadd','2026-10-27',4,0,'do they comment on open weight models as competition?'),(5,'ValueInvesting','1xgzw1a','19rqyr527sx6p','2026-10-27',4,-0.5267,'Google is a real threat because they actually know how to make a lot of money'),(6,'ValueInvesting','1xgzw1a','19rqrrty6wm4h','2026-10-27',8,0,'Human slop'),(7,'ValueInvesting','1xgzw1a','19rqzv25l1h4z','2026-10-27',2,-0.2991,'Realistically what kind of a moat does anthropic have? I find it hard to believe the other mega caps can\'t create models that go toe to toe in the futureÂ '),(8,'ValueInvesting','1xgzw1a','19rr4pjg9mghs','2026-10-27',2,-0.6046,'What? Anthropic is its own biggest threat. Did you see that ipo proposal??'),(9,'ValueInvesting','1xgzw1a','19rqsa8rpy5mr','2026-10-27',1,0,'What about chinese open weights? '),(10,'ValueInvesting','1xgzw1a','19rqvkw4cldz7','2026-10-27',1,0.504,'Is it truly a valueinvesting forum? What these kind of guys are doing here?'),(11,'ValueInvesting','1xgzw1a','19rr4ykd5wgsl','2026-10-27',1,0.9815,'I\'m a google shareholder. \n\nGoogle still has a strong moat in distribution. Not only in Search, but strengthening it with Google Cloud as well. And of course, they have Google workspace, Gmail, and YouTube. \n\nIs AI still a threat for search? Yes. But Google is in a strong position to do very well. The thing is, most queries in Search are not complex enough to need the best models. Most can be done with the latest Flash model. And then Google will layer on more features on top of AI mode and AI overviews. They\'re setting up for more monetizations from there.'),(12,'ValueInvesting','1xgzw1a','19rrb2yxzlurk','2026-10-28',1,0.7047,'Anthropic is no longer a startup , they are in mega corp territory. They wonâ€™t be able to compensate top talent with crazy early RSU packages anymore ; expect a talent shift back around to Google and Meta. That being said Alphabet is like the most bloated bureaucracy ever and is struggling with the dilemma of using compute to train top-tier LLMs vs to bolster their cloud earnings . Anthropicâ€™s sole focus is making the best LLM possible , Google feels a little scattered , more internal politics . I am still extremely bullish on Alphabetâ€™s future , but the stock isnâ€™t overly cheap rn. '),(13,'ValueInvesting','1xgzw1a','19rqrperxh2ww','2026-10-27',1,0.3716,'Google doesnâ€™t have a good LLM, their only real strength right now is strong balance sheet. Not saying it wonâ€™t change in the future, but for now I donâ€™t see how they would threat Anthropic in any meaningful way.'),(14,'ValueInvesting','1xgzw1a','19rqsrsozycck','2026-10-27',-1,0.4939,'Google is pretty far behind on LLMs'),(15,'ValueInvesting','1xgzw1a','19rqt3jkfmosg','2026-10-27',-4,-0.8376,'Google are so far behind. They have a big war chest but they are bleeding users by consistently being a geberation behind in an industry that is moving away from them.\n\nArgon was a total flop and it released just as a new round of competing models is about to ship. They\'ve lost momentum and become a bit of a meme in the space.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -416,4 +418,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-27  4:38:13
+-- Dump completed on 2026-10-28  5:02:36

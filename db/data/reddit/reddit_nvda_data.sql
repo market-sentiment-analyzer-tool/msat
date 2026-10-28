@@ -68,7 +68,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
-2034d46c-d1bf-11f1-9995-0eba86cc2f0b:1-175,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -225,6 +224,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+9a823100-d28c-11f1-977e-a6c737bfd336:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
@@ -235,6 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
 ab91bbe5-b96c-11f1-84a0-5291d6b4fc54:1-55,
@@ -394,7 +395,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -403,6 +404,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'stocks','1xgptmy','19rq982m4282q','2026-10-27',1,0.6682,'Welcome to r/stocks!\n\nFor stock recommendations please see our portfolio sticky, sort by hot, it\'s the first sticky, or see [past portfolio stickies here.](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3A%22Rate+My+Portfolio%22&restrict_sr=on&sort=new&t=all)\n\nFor beginner advice, brokerage info, book recommendations, even advanced topics and more, please read our [Wiki here.](https://www.reddit.com/r/stocks/wiki/index)\n\nIf you\'re wondering **why a stock moved** a certain way, check out [Finviz](https://finviz.com/quote.ashx?t=spy) which aggregates the most news for almost every stock, but also see [Reuters](https://www.reuters.com/), and even [Yahoo Finance](https://finance.yahoo.com/).\n\nAlso include *some* [due diligence](https://www.investopedia.com/terms/d/duediligence.asp) to this post or it may be removed if it\'s low effort.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/stocks) if you have any questions or concerns.*'),(2,'stocks','1xgptmy','19rqajdf9ye76','2026-10-27',97,0,'$3 Billionâ€¦ what is this, data center for ants?!'),(3,'stocks','1xgptmy','19rq9whta7kgw','2026-10-27',202,0.4404,'With all these companies owning pieces of each other, how long until they are effectively one mega corp?'),(4,'stocks','1xgptmy','19rq9hj1kvtyd','2026-10-27',145,0.5994,'What a beautiful circlejerk.'),(5,'stocks','1xgptmy','19rqa4x8ofi3o','2026-10-27',22,0.296,'How many companies does Nvidia own shares in now? Must be near 25'),(6,'stocks','1xgptmy','19rq9hxkvm1r6','2026-10-27',60,0.802,'Which Meta will use it buy Nividia chips, and everything look perfect '),(7,'stocks','1xgptmy','19rqa1oecnyar','2026-10-27',40,0.9063,'Does a seller investing in a customer ever end well?\n\nGiving them your money to buy your product? So you can give them more money to buy more of your product?\n\nCarlo Ponzi has entered the chat...'),(8,'stocks','1xgptmy','19rqa8cdl8h2d','2026-10-27',16,-0.6369,'Why is Nvidia investing into Meta? Meta is selling data centre time now because no one uses their AI'),(9,'stocks','1xgptmy','19rqaxzplar8k','2026-10-27',8,0.2023,'3B is nothing here. If Nvidia and Meta would be casual guys then this 3B is just buying a lunch for Meta. '),(10,'stocks','1xgptmy','19rqbf2u7dso3','2026-10-27',7,0.8481,'Iâ€™m going to invest 500 million in my mom. \n\nThen she will invest 500 million in me. \n\nWe have 1000 million in investments. '),(11,'stocks','1xgptmy','19rqligkyc411','2026-10-27',2,0.6705,'I own over 500 shares of NVDA.  I\'m beginning to think they are becoming the Berkshire Hathaway of tech stocks.  Last quarter, they reported a $7B increase from stock holdings in other companies.'),(12,'stocks','1xgptmy','19rqb5zcadwte','2026-10-27',3,0,'Its time to start a Circle Business.\n\nGive me 10 Million and I spend 99,99% in your products.\n\nPM me'),(13,'stocks','1xgptmy','19rqhel7o6x5w','2026-10-27',2,0.9365,'Healthy peer companies in a capitalist system should not need or even want to be investing into each other.  \n\nThis is a new phenomenon that will be looked back upon as one of the hall marks leading up to the coming collapse. \n\nThe only good news is the system works so well, the bubble they are creating is far beyond anything even the US government could bailout or backstop. Though I\'m sure many will scream for it. When 2008 bailouts happened, trillion dollar companies didn\'t even exist.  Now there are a bunch and even worth 4 or 5T.  \n\nFinally the US gov is 40T in debt and running a massive deficit during good times...that\'s also a big warning sign.  If the economic system was healthy and these companies are generating real profits, the gov should be bringing in great taxes not debt spending like wild.'),(14,'stocks','1xgptmy','19rqgp2x601gi','2026-10-27',2,0,'META is a fucking pos stock'),(15,'stocks','1xgptmy','19rqhehyepisi','2026-10-27',1,0.4019,'And so another pivot is added to the great circle jerk.'),(16,'stocks','1xgptmy','19rqoketmfhpf','2026-10-27',1,0,'Ach schÃ¶n mal wieder Rudelbumsen im Kreis '),(17,'stocks','1xgptmy','19rqqujnyg675','2026-10-27',1,0,'It\'s a circle-jerk at this point'),(18,'stocks','1xgptmy','19rqrzrdgpyzo','2026-10-27',1,0,'These numbers mean nothing to me now (although they should) '),(19,'stocks','1xgptmy','19rralpyd3kv5','2026-10-28',1,0.8934,'Just made about 1K on 5 shares of this in 3 weeks. Always buy the dip in this one. Zuck is the smartest of tech douchebros'),(20,'stocks','1xgptmy','19rqa98dowig3','2026-10-27',1,0,'Let the pump begin'),(21,'stocks','1xgptmy','19rqgl3bewcio','2026-10-27',1,0.7906,'Who cares. All Meta Seeâ€™s is the 200 Billion of AMD warrants. Meta just needs to act like there in partnership with Nvidia for the time being and just move on ðŸ˜…'),(22,'stocks','1xgptmy','19rqdly31zo0y','2026-10-27',0,0.8519,'Donâ€™t buy their stock if you donâ€™t like their biz practices- just cause you live rent free with mom doesnâ€™t make you a finance whiz -  What a bunch of morans'),(23,'stocks','1xgptmy','19rqd5sxyf5uo','2026-10-27',0,0.0258,'This is what I would call Cloud Piggy ðŸ· backing Investment on each other ðŸ¤”'),(24,'stocks','1xgptmy','19rqhyghnpxls','2026-10-27',0,0.886,'How does this work? Nvidia gives meta 3B. Meta uses it to buy Nvidia chips. And then Nvidia books that as revenue in one of the blockbuster quarters.'),(25,'stocks','1xgptmy','19rql3o51r0px','2026-10-27',0,-0.34,'\"Invest\" is the wrong term, \"desperately prop up a cash flow negative company so that it can continue purchasing your own product\" is a more accurate term.'),(26,'stocks','1xgptmy','19rqp89377mn9','2026-10-27',0,0.7579,'Investors = rich parent\n\nNVDA = rich parents son\n\nNVDA customers = taggers along\n\nAI trade = the big party that no one wants to stop'),(27,'stocks','1xgptmy','19rqwdzhv4wo3','2026-10-27',0,0.5423,'I too can buy zuck a beer'),(28,'stocks','1xgptmy','19rqba3cc1ylg','2026-10-27',-3,-0.5574,'$3 billion invested into mom groups and a shitty marketplace is wild.'),(29,'stocks','1xgptmy','19rqakbem86lf','2026-10-27',-1,0,'Ride the pump  \nJump off in time ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -416,4 +418,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-27  4:38:13
+-- Dump completed on 2026-10-28  5:02:37
