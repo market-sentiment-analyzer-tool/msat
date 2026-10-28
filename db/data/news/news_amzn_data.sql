@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
+3afa5389-d298-11f1-97c7-3a10c237d93b:1-53,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -394,7 +395,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -403,7 +404,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'yahoo finance','...','2026-10-26',-0.32152,'Anthropic is leasing data centers to reduce reliance on Amazon, Google, others','https://www.bundle.app/en/finance/anthropic-is-leasing-data-centers-to-reduce-reliance-on-amazon-google-others-F02891EA-F2D0-5B39-A74E-5CAD981352AE',2),(2,'priya nigam','...','2026-10-26',0.49992,'Amazon Q3 Preview: Analyst Expects AWS Growth To Outperform, Drive Upside','https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/10/62596000/amazon-q3-preview-analyst-expects-aws-growth-to-outperform-drive-upside',40),(3,'david marino-nachison','Thomas Fuller / SOPA Images / LightRocket via Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Itâ€™s another big week of earnings, with dozens of big compan...','2026-10-26',0.61866,'Big Tech Earnings Roll On With More Mag 7 Results Coming','https://www.investopedia.com/market-update-big-tech-earnings-roll-on-more-mag-7-results-amzn-msft-googl-goog-12194610',4),(4,'douglas a. mcintyre','Almost every Wall Street analyst is pounding the table on Nvidia, yet a growing chorus of skeptics argues the entire AI spending boom rests on a foundation that has yet to deliver a single dollar of p...','2026-10-26',0.19982,'98% Of Nvidia Analysts Have â€œBuyâ€ Rating','https://247wallst.com/investing/2026/10/26/98-of-nvidia-analysts-have-buy-rating/',4),(5,'jake lerch','The cloud software landscape offers two very different paths for investors: established profitability or high-octane growth. Choosing between Adobe (ADBE -1.97%) and Datadog (DDOG +3.93%) requires wei...','2026-10-26',0.79992,'Adobe vs. Datadog: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/26/adobe-vs-datadog-which-technology-stock-is-a-better-buy-in-2026/',4),(6,'cfa','...','2026-10-26',0.43384,'5 Stocks to Buy Trading at Big Discounts','https://www.morningstar.com/podcasts/the-morning-filter/5-stocks-buy-trading-big-discounts',2),(7,'yahoo finance','...','2026-10-26',0.48992,'Anthropicâ€™s IPO filing reveals $430 billion in locked-in AI computing â€” and Broadcom tops Google and Amazon: Chart of the Day','https://www.bundle.app/en/finance/anthropics-ipo-filing-reveals-430-billion-in-locked-in-ai-computing-and-broadcom-tops-google-and-amazon-chart-of-the-day-A8CC9446-EF4A-52AC-BA9F-31EA93A35986',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'wall street breakfast','...','2026-10-27',0.50952,'Wall Street Lunch: Sentiment Improves; All About Earnings','https://seekingalpha.com/article/4958098-wall-street-lunch-sentiment-improves-all-about-earnings',4),(2,'tobi opeyemi amure','Please enable JS and disable any ad blocker...','2026-10-27',0.06364,'Instagram quietly makes major change for Apple TV users','https://www.thestreet.com/entertainment/instagram-quietly-makes-major-change-for-apple-tv-users',4),(3,'ryan canady','...','2026-10-27',0.21856,'Amazon: One Metric Has Me Cooling On This Name Ahead Of Earnings (Downgrade)','https://seekingalpha.com/article/4958012-amazon-one-metric-has-me-cooling-on-this-name-ahead-of-earnings-downgrade',4),(4,'sneha nahata','...','2026-10-27',0.55264,'AMZN Stock: 3 Reasons Why Amazon Could Deliver Solid Growth in Q3','https://www.barchart.com/story/news/8479849/amzn-stock-3-reasons-why-amazon-could-deliver-solid-growth-in-q3',20),(5,'miriam hart','Digital Currency / Investing\nNvidia closed with 192,198 holder wallets, 394 above the previous reading; its supply contracted by 4,056 tokens as its price gained 2.16%.\nIn its Oct. 27 reading, Robinho...','2026-10-27',0.19598,'Robinhood Chain Trading Jumps as Tokenized Stock Market Cap Slips','https://econotimes.com/Robinhood-Chain-Trading-Jumps-as-Tokenized-Stock-Market-Cap-Slips-1764401',4),(6,'vandita jadeja','Our proprietary model and the full Wall Street consensus landed on virtually the same Amazon price target, but one upcoming earnings report could confirm the trade or blow the thesis apart.\n Price Tar...','2026-10-27',0.48886,'Our Model and Wall Street Agree on Amazonâ€™s Target. Now the Quarter Has to Deliver.','https://247wallst.com/investing/2026/10/27/our-model-and-wall-street-agree-on-amazons-target-now-the-quarter-has-to-deliver/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -417,4 +418,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-27  5:46:46
+-- Dump completed on 2026-10-28  6:25:30

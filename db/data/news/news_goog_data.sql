@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
+3afa5389-d298-11f1-97c7-3a10c237d93b:1-53,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -394,7 +395,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -403,7 +404,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'yahoo finance','...','2026-10-26',-0.32152,'Anthropic is leasing data centers to reduce reliance on Amazon, Google, others','https://www.bundle.app/en/finance/anthropic-is-leasing-data-centers-to-reduce-reliance-on-amazon-google-others-F02891EA-F2D0-5B39-A74E-5CAD981352AE',2),(2,'yahoo finance','...','2026-10-26',0.48992,'Anthropicâ€™s IPO filing reveals $430 billion in locked-in AI computing â€” and Broadcom tops Google and Amazon: Chart of the Day','https://www.bundle.app/en/finance/anthropics-ipo-filing-reveals-430-billion-in-locked-in-ai-computing-and-broadcom-tops-google-and-amazon-chart-of-the-day-A8CC9446-EF4A-52AC-BA9F-31EA93A35986',20),(3,'keithen drury','Useful quantum computing is coming quicker than many investors realize. While 2030 used to be the year that most firms pointed to as the arrival date, that timeline has been accelerated to 2029, accor...','2026-10-25',0.63322,'3 Genius Quantum Computing Stocks to Buy Now','https://www.fool.com/investing/2026/10/25/3-genius-quantum-computing-stocks-to-buy-now/',4),(4,'james brumley','As the old adage goes, you get what you pay for. In other words, if you want quality, you can expect to pay a premium for it. The idea applies within the world of investing as well.\nStill, knowing tha...','2026-10-25',0.74654,'Not Nvidia. Not Microsoft. This \"Magnificent Seven\" Stock Is the Cheapest Right Now.','https://www.fool.com/investing/2026/10/25/not-nvidia-not-microsoft-this-magnificent-seven/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'wall street breakfast','...','2026-10-27',0.50952,'Wall Street Lunch: Sentiment Improves; All About Earnings','https://seekingalpha.com/article/4958098-wall-street-lunch-sentiment-improves-all-about-earnings',4),(2,'financialcontent','NEW YORK, Oct.  27, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that Chief Executive Officer Sundar Pichai and Chief Financial Officer Anat Ashkenazi ar...','2026-10-27',0.09886,'Alphabet Shareholder Alert: Investors With Losses May Seek to Lead the Class Action in Alphabet Inc. Securities Lawsuit - Contact SueWallSt','https://www.financialcontent.com/article/gnwcq-2026-10-27-alphabet-shareholder-alert-investors-with-losses-may-seek-to-lead-the-class-action-in-alphabet-inc-securities-lawsuit-contact-suewallst',4),(3,'shane hupp','...','2026-10-27',0.39512,'Alphabet Inc. $GOOG Position Decreased by Private Wealth Partners LLC','https://www.tickerreport.com/banking-finance/13638216/alphabet-inc-goog-position-decreased-by-private-wealth-partners-llc.html',2),(4,'ethan ryder','...','2026-10-27',0.2368,'Alphabet Inc. $GOOG Shares Acquired by Strategic Planning Group LLC','https://www.tickerreport.com/banking-finance/13638214/alphabet-inc-goog-shares-acquired-by-strategic-planning-group-llc.html',2),(5,'defense world staff','\n					Posted by Defense World Staff on Oct 27th, 2026\n\nBoomfish Wealth Group LLC boosted its position in Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 10.0% during the 3rd quarter, according to its mos...','2026-10-27',0.72766,'Alphabet Inc. $GOOG Shares Acquired by Boomfish Wealth Group LLC','https://www.defenseworld.net/2026/10/27/alphabet-inc-goog-shares-acquired-by-boomfish-wealth-group-llc.html',4),(6,'defense world staff','\n					Posted by Defense World Staff on Oct 27th, 2026\n\nBRIA Capital Group LLC boosted its holdings in shares of Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 94.7% in the 3rd quarter, according to the ...','2026-10-27',0.1999,'Alphabet Inc. $GOOG Stock: BRIA Capital Group LLC Grows Stake','https://www.defenseworld.net/2026/10/27/alphabet-inc-goog-stock-bria-capital-group-llc-grows-stake.html',4),(7,'abmn staff','\n					Posted by ABMN Staff on Oct 27th, 2026\n\nBRIA Capital Group LLC boosted its stake in shares of Alphabet Inc. (NASDAQ:GOOG â€“ Free Report) by 94.7% during the third quarter, HoldingsChannel.com rep...','2026-10-27',0.41846,'Alphabet Inc. $GOOG Position Increased by BRIA Capital Group LLC','https://www.americanbankingnews.com/2026/10/27/alphabet-inc-goog-position-increased-by-bria-capital-group-llc.html',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -417,4 +418,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-27  5:46:46
+-- Dump completed on 2026-10-28  6:25:30
