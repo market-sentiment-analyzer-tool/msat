@@ -303,6 +303,7 @@ d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
+d64639a7-d362-11f1-a68f-aa1084429b90:1-56,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
@@ -395,7 +396,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -404,7 +405,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'celine provini','Please enable JS and disable any ad blocker...','2026-10-27',-0.27244,'Nebius vs. CoreWeave: Which neocloud stock has more debt?','https://www.thestreet.com/investing/stocks/nebius-vs-coreweave-neocloud-debt-balance-sheet',4),(2,'bnnbloomberg.ca staff','Published:Â October 27, 2026 at 1:24p.m. EDT\nBarry Schwartz, President & CIO, Baskin Wealth Management\nFocus: North American Large Caps\nTop Picks: TFI International, Fairfax, Topicus.com \nMARKET OUTLOO...','2026-10-27',0.34238,'Barry Schwartzâ€™s Top Picks for Oct. 27, 2026','https://www.bnnbloomberg.ca/markets/2026/10/27/barry-schwartzs-top-picks-for-oct-27-2026/',4),(3,'wall street breakfast','...','2026-10-27',0.50952,'Wall Street Lunch: Sentiment Improves; All About Earnings','https://seekingalpha.com/article/4958098-wall-street-lunch-sentiment-improves-all-about-earnings',4),(4,'miriam hart','Digital Currency / Investing\nNvidia closed with 192,198 holder wallets, 394 above the previous reading; its supply contracted by 4,056 tokens as its price gained 2.16%.\nIn its Oct. 27 reading, Robinho...','2026-10-27',0.19598,'Robinhood Chain Trading Jumps as Tokenized Stock Market Cap Slips','https://econotimes.com/Robinhood-Chain-Trading-Jumps-as-Tokenized-Stock-Market-Cap-Slips-1764401',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'sara appino','As data analysis and security converge, investors face a choice between two high-growth leaders. Should you favor the massive scale of Palantir Technologies (PLTR -0.97%) or the specialized agility of...','2026-10-28',0.8002,'Palantir Technologies vs. SentinelOne: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/28/palantir-technologies-vs-sentinelone-which-technology-stock-is-a-better-buy-in-2026/',4),(2,'investinglive.com','...','2026-10-28',0.272,'Microsoft, and Alphabet earnings after the close. What is expected?','https://investinglive.com/stocks/microsoft-and-alphabet-earnings-after-the-close-what-is-expected/',2),(3,'mike schwenk','As the artificial intelligence era moves from experimentation to massive infrastructure deployment, investors are comparing Advanced Micro Devices (AMD +3.25%) and Dell Technologies (DELL -1.63%) to f...','2026-10-28',0.84994,'Advanced Micro Devices vs. Dell Technologies: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/28/advanced-micro-devices-vs-dell-technologies-which-technology-stock-is-a-better-buy-in-2026/',4),(4,'null','...','2026-10-28',0.04128,'Microsoft will post earnings after the bell amid job cuts and new cash-flow test - CNBC','https://news.google.com/rss/articles/CBMigAFBVV95cUxNclpVVGdGd3NYYWo4bGNFRTVlYjhQc0VhMzhmZnRsRnlTNkRidVNwaGlQVVdPMktwMHRMYzhUTWpYUXFYaVFfZFRkSkRmbDNGOWxVa29MSWhhUDk4RE9BVElXUTY3SWo2SHRNbGVhRU9vbjd3ZHJnZlpTdHpSbHpDNA?oc=5',10),(5,'erica kollmann','...','2026-10-28',0,'Michael Burry Finds a $537 Billion Hole in Anthropicâ€™s IPO Story','https://www.benzinga.com/markets/ipos/26/10/62659397/michael-burry-finds-a-537-billion-hole-in-anthropics-ipo-story',4),(6,'prosper junior bakiny','The \"Magnificent Seven\" is perhaps one of the most popular groups of companies on the market. It is made up of tech -- or tech-adjacent -- leaders that have delivered outstanding long-term results, sp...','2026-10-28',0.85,'3 \"Magnificent Seven\" Stocks to Buy Hand Over Fist in November','https://www.fool.com/investing/2026/10/28/3-magnificent-seven-stocks-to-buy-hand-over-fist-i/',4),(7,'rips','...','2026-10-28',-0.12248,'How To Trade SPY, QQQ And 7 Mega Caps As Fed Decision Looms','https://www.benzinga.com/opinion/26/10/62656136/how-to-trade-spy-qqq-and-7-mega-caps-as-fed-decision-looms',4),(8,'mike schwenk','As enterprise digital transformation accelerates, choosing between high-growth productivity tools and essential security infrastructure is a classic dilemma. Should you invest in monday.com (MNDY -1.8...','2026-10-28',0.80032,'Monday.com vs. Okta: Which Technology Stock Is a Better Buy in 2027?','https://www.fool.com/coverage/better-buy/2026/10/28/mondaycom-vs-okta-which-technology-stock-is-a-better-buy-in-2027/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -418,4 +419,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-28  6:25:31
+-- Dump completed on 2026-10-29  6:35:53
