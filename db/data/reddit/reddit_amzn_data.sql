@@ -99,6 +99,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 36a4a873-49cd-11f1-a0da-26761bdc245f:1-55,
 379c3cdf-2fd6-11f1-8565-22bc7831ff10:1-65,
 3ab76f08-559a-11f1-ada9-c2cf0ca40106:1-60,
+3afa5389-d298-11f1-97c7-3a10c237d93b:1-53,
 3b41130b-21b1-11f1-bda9-324ebe87096c:1-62,
 3b9256c4-27fb-11f1-8f92-ca6453a1a84f:1-51,
 3c29fdda-fb2c-11f0-98e8-f642e5aa07e6:1-68,
@@ -224,7 +225,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
-9a823100-d28c-11f1-977e-a6c737bfd336:1-66,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
@@ -235,6 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a77f7904-d420-11f1-81c6-9e2ba8d32805:1-383,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
@@ -303,6 +304,7 @@ d539e7e3-a2da-11f1-87bf-929f1404fb3f:1-66,
 d5612613-afb6-11f0-bfad-5a64d06035e7:1-123,
 d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
+d64639a7-d362-11f1-a68f-aa1084429b90:1-56,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
@@ -395,7 +397,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -404,6 +406,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1xiweg3','19ruk6ixvz38j','2026-10-29',40,0.1779,'I think OP means is Amazon and Google both about to pull a microsoft'),(2,'ValueInvesting','1xiweg3','19ruotqm8wnc5','2026-10-29',12,0.1127,'I think part of the reason this happens is, a lot of us aren\'t privy to the kind of info, insight and experience that management has. And going further from that, many have little to no understanding of how their business works. It becomes a case of the Average Joe trying to second guess what a big company has chosen to do.\n\nManagement isn\'t always infallible of course. There\'s intentional mismanagement in certain cases and scandals to create massive personal gain. But we have to at least consider the good possibility that the Average Joe is going to get the narrative wrong. '),(3,'ValueInvesting','1xiweg3','19rum2mw7u5gj','2026-10-29',12,0,'Google pulled a Microsoft who pulled a Google'),(4,'ValueInvesting','1xiweg3','19rum6oue0b39','2026-10-29',7,-0.1027,'When Google first dumped down, I thought okay maybe Wall Street is making a calculated decision\n\nThen Amazon followed suit with a 12% drop and now Iâ€™m like, yeah these guys are just regarded\n\nJust dropping mag7 stocks just because, doesnâ€™t matter what they are'),(5,'ValueInvesting','1xiweg3','19ruygviup5ia','2026-10-30',4,0.8903,'I read a book earlier this year that had a chapter on the investor Nick Sleep and his partners Amazon investment. Afterwards I went looking for profitable companies burning cash through reinvestment and while a couple, like Viking, were intriguing I didn\'t pull the trigger, and now the company most like Amazon is Amazon.'),(6,'ValueInvesting','1xiweg3','19ruktjngi9sy','2026-10-29',21,0.9805,'I think google is a much better buy at this point than amazon in terms of growth potential. Google is AI/LLM, cloud, android OS, and advertisement... all very lucrative and high margin and fast growing. Advertisement growth will recover once LLM query gets monetized better (and it eventually will just like social media eventually became heavily monetized when it wasnt at first) and will also benefit more heavily from increasingly advanced AI algorithmic ad placement optimizations moving forward\n\nAmazon OTOH is retail/logistics (low margin and mature/slow growth) and cloud (high margin high growth) but yet its priced like the entire business is software/high margin. \n\nEdit: also growing ad business for amazon someone else pointed out but its still only about 20% as much as google\'s ad revenue'),(7,'ValueInvesting','1xiweg3','19rupnzl8ktgh','2026-10-29',3,0,'Now GOOG needs to pull a Google '),(8,'ValueInvesting','1xiweg3','19ruvnmoh8i03','2026-10-30',2,0.9928,'>anyways I\'m buying tomorrow without even reading the whole er this market is way too stupid for it to actually matter\n\nYep. We already know amazon is great, a quick glance at a few headlines to make sure nothing insanely unexpected happened and now I know I\'m clear to buy more. Hopefully it dips more at the open tomorrow, but my guess is it\'ll be stable and maybe even start climbing back up after just a few hours. Are the people selling amazon stock expecting the company to totally stall out and stop growing? Like what the actual heck do you think is gonna happen to it? Any scenario I can see be severely harmful to amazon would likely be severely harmful to the market as a whole and many of the alternative stocks that people buy instead of AMZN. Amazon wins from AI in so many ways, and without AI it is still solid. It might be the best buy in the stock market right now, and it may very well even have been the Best Buy in the stock market yesterday too'),(9,'ValueInvesting','1xiweg3','19ruk583j0vfl','2026-10-29',1,0,'Huh? A to M to G?  '),(10,'ValueInvesting','1xiweg3','19ruou0vxmnmq','2026-10-29',1,0,'Circle-Jerkyl'),(11,'ValueInvesting','1xiweg3','19rupq927lrmo','2026-10-29',1,0.5267,'Yes amazon will pull microsoft which pulled google who is pulling microsoft now.'),(12,'ValueInvesting','1xiweg3','19rurbl6t04yq','2026-10-29',1,0,'Yup'),(13,'ValueInvesting','1xiweg3','19ruzsrovc74y','2026-10-30',1,0.9584,'True, the market can overreact to capex but Amazon burned $42.4B in FCF over the last 12 months and says spending will rise again in 2027, so how of that spending can we actually assume goes away? If the valuation needs capex to fall sharply while growth stays strong , that\'s a pretty important assumption to check before buying the dip.'),(14,'ValueInvesting','1xiweg3','19ruqkzmha7ms','2026-10-29',1,-0.3939,'I mean.... Amazon is the #2 highest cumulative capex spender in history after ExxonMobile and that one includes numerous merges \n\nHow has that worked out for them? \n\nIs AWS a mistake? How about global retail distribution? \n\nDoes making their own chips make more or less sense at scale?'),(15,'ValueInvesting','1xiweg3','19rurisviqfc2','2026-10-29',-1,0,'Ainâ€™t nobody doing MAGA7 stocks anymore');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -417,4 +420,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-28  5:02:36
+-- Dump completed on 2026-10-30  5:29:03
