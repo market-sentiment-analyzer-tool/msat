@@ -345,6 +345,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -396,7 +397,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -405,7 +406,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'northern miner staff','\nPosted By: Northern Miner Staff\nOctober 28, 2026\n\nConstellation Energy (Nasdaq: CEG) received a conditional U.S. government loan commitment of up to $5 billion (C$7 billion) to boost output at existi...','2026-10-28',0.55174,'US offers Constellation up to $5B nuclear loan','https://www.northernminer.com/news/us-offers-constellation-up-to-5b-nuclear-loan/1003896211/',4),(2,'aaron mcdade','Sean Gallup / Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Amazon is due to report earnings Thursday afternoon, with traders expecting a big move from ...','2026-10-28',0.58064,'Hereâ€™s How Much Traders Expect Amazon Stock to Move After Earnings','https://www.investopedia.com/here-is-how-much-traders-expect-amazon-stock-to-move-after-earnings-amzn-q3-fy2026-12186021',40),(3,'prosper junior bakiny','The \"Magnificent Seven\" is perhaps one of the most popular groups of companies on the market. It is made up of tech -- or tech-adjacent -- leaders that have delivered outstanding long-term results, sp...','2026-10-28',0.85,'3 \"Magnificent Seven\" Stocks to Buy Hand Over Fist in November','https://www.fool.com/investing/2026/10/28/3-magnificent-seven-stocks-to-buy-hand-over-fist-i/',4),(4,'rips','...','2026-10-28',-0.12248,'How To Trade SPY, QQQ And 7 Mega Caps As Fed Decision Looms','https://www.benzinga.com/opinion/26/10/62656136/how-to-trade-spy-qqq-and-7-mega-caps-as-fed-decision-looms',4),(5,'mike schwenk','As enterprise digital transformation accelerates, choosing between high-growth productivity tools and essential security infrastructure is a classic dilemma. Should you invest in monday.com (MNDY -1.8...','2026-10-28',0.80032,'Monday.com vs. Okta: Which Technology Stock Is a Better Buy in 2027?','https://www.fool.com/coverage/better-buy/2026/10/28/mondaycom-vs-okta-which-technology-stock-is-a-better-buy-in-2027/',4),(6,'brendan coffey','As delivery networks expand globally, investors often weigh domestic leaders against international powerhouses. Choosing between DoorDash Inc. (DASH -0.63%) and MercadoLibre Inc. (MELI -0.44%) require...','2026-10-28',0.79996,'DoorDash vs. MercadoLibre: Which Consumer Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/28/doordash-vs-mercadolibre-which-consumer-stock-is-a-better-buy-in-2026/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'courtney carlsen','Hyperscalers need power, and a lot of it. Constellation Energy (CEG +2.52%) operates as one of the largest independent power producers and has been signing long-term deals with hyperscalers left and r...','2026-10-29',0.53678,'Constellation Just Signed 20-Year Deals With Amazon and Google. Where Will the Nuclear Energy Stock Be in 10 Years?','https://www.fool.com/investing/2026/10/29/constellation-sign-deals-amazon-google-energy/',40),(2,'sara appino','Is it better to invest in identity security or automation? Comparing Okta (OKTA -0.36%) and UiPath (PATH -2.89%) helps clarify which software leader fits your growth strategy for the coming years.\nOkt...','2026-10-29',0.80036,'Okta vs. UiPath: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/29/okta-vs-uipath-which-technology-stock-is-a-better-buy-in-2026/',4),(3,'wall street breakfast','...','2026-10-29',0.272,'Wall Street Lunch: A Deluge Of Earnings','https://seekingalpha.com/article/4959535-wall-street-lunch-a-deluge-of-earnings',4),(4,'opeyemi babalola','Please enable JS and disable any ad blocker...','2026-10-29',0.06364,'Michael Burry followed Anthropicâ€™s cash and saw familiar names','https://www.thestreet.com/investing/michael-burry-anthropic-ipo-big-tech-risks',4),(5,'sara appino','Choosing between a creative software titan and an enterprise infrastructure legend depends on your financial goals. Deciding between Adobe (ADBE -0.66%) and International Business Machines (IBM +2.00%...','2026-10-29',0.80008,'Adobe vs. International Business Machines: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/29/adobe-vs-international-business-machines-which-technology-stock-is-a-better-buy-in-2026/',4),(6,'mike schwenk','Investors often weigh established profitability against rapid expansion when choosing software stocks. Deciding whether Salesforce (CRM -4.63%) or Datadog (DDOG -4.51%) is the better buy depends on yo...','2026-10-29',0.80032,'Salesforce vs. Datadog: Which Technology Stock Is a Better Buy in 2026?','https://www.fool.com/coverage/better-buy/2026/10/29/salesforce-vs-datadog-which-technology-stock-is-a-better-buy-in-2026/',4),(7,'jared blikre','...','2026-10-29',-0.32152,'Google is on track for its worst day ever â€” with $500 billion in market value at stake','https://finance.yahoo.com/markets/article/alphabet-heads-for-a-500-billion-drop-in-market-value-the-biggest-in-its-history-134824763.html',20);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -419,4 +420,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-29  6:35:53
+-- Dump completed on 2026-10-30  6:35:19
