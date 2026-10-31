@@ -235,6 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
@@ -397,7 +398,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -406,7 +407,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'courtney carlsen','Hyperscalers need power, and a lot of it. Constellation Energy (CEG +2.52%) operates as one of the largest independent power producers and has been signing long-term deals with hyperscalers left and r...','2026-10-29',0.53678,'Constellation Just Signed 20-Year Deals With Amazon and Google. Where Will the Nuclear Energy Stock Be in 10 Years?','https://www.fool.com/investing/2026/10/29/constellation-sign-deals-amazon-google-energy/',4),(2,'bohdan kucheriavyi','    aquatarkus/iStock Editorial via Getty Images\n \naquatarkus/iStock Editorial via Getty Images\nThe marketâ€™s negative reaction to Alphabet Inc.â€™s (GOOG, GOOGL) Q3 earnings report is an overreaction in...','2026-10-29',0.5038,'Alphabet: Generational Buy Opportunity','https://seekingalpha.com/article/4959549-alphabet-generational-buy-opportunity',8),(3,'the motley fool team','On its third-quarter 2026 earnings call, held on Oct. 28, 2026, Alphabet (GOOGL -12.64%) (GOOG -12.29%) announced that consolidated revenue reached $127.6 billion, representing a 25% increase year ove...','2026-10-29',0.19886,'Alphabet: 3 Key Takeaways for Long-Term Investors','https://www.fool.com/earnings/takeaways/2026/10/29/alphabet-3-key-takeaways-for-long-term-investors/',4),(4,'wall street breakfast','...','2026-10-29',0.272,'Wall Street Lunch: A Deluge Of Earnings','https://seekingalpha.com/article/4959535-wall-street-lunch-a-deluge-of-earnings',4),(5,'omor ibne ehsan','Alphabet spent more on capital expenditures last quarter than it generated in operating cash flow, so it turned to stock sales and a mountain of new debt to keep the AI buildout running. What that mea...','2026-10-29',0.11732,'Alphabet Raised $41 Billion in One Quarter to Pay for AI','https://247wallst.com/investing/2026/10/29/alphabet-raised-41-billion-in-one-quarter-to-pay-for-ai/',4),(6,'yahoo finance','...','2026-10-29',0,'Stock market today: Dow, S&P 500, Nasdaq slip as Alphabet stock sinks 12% and AI jitters return','https://www.bundle.app/en/finance/stock-market-today-dow-sp-500-nasdaq-slip-as-alphabet-stock-sinks-12-and-ai-jitters-return-22C2B2EB-DA0C-5F88-9A2E-A8EF2F74356A',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / October 30, 2026 / Levi & Korsinsky, LLP notifies pension funds, ERISA plan fiduciaries, and asset managers that a securities class action has been filed against ...','2026-10-30',0.0101,'Levi & Korsinsky Reminds Shareholders of a Lead Plaintiff Deadline of December 1, 2026 in Alphabet Inc. Lawsuit - GOOGL/GOOG','https://www.financialcontent.com/article/accwirecq-2026-10-30-levi-and-korsinsky-reminds-shareholders-of-a-lead-plaintiff-deadline-of-december-1-2026-in-alphabet-inc-lawsuit-googlgoog',4),(2,'yahoo finance','...','2026-10-30',0,'Stock market today: Nasdaq dives over 3%, S&P 500 and Dow tank as AI reckoning grips Wall Street','https://www.bundle.app/en/finance/stock-market-today-nasdaq-dives-over-3-sp-500-and-dow-tank-as-ai-reckoning-grips-wall-street-59DF4700-DF72-5609-9D1B-DE62C7EDF799',2),(3,'wall street breakfast','...','2026-10-30',0,'Wall Street Breakfast Podcast: The Biggest Heist In History','https://seekingalpha.com/article/4960114-wall-street-breakfast-podcast-the-biggest-heist-in-history',4),(4,'wall street breakfast','...','2026-10-30',0,'The Biggest Crypto Heist In History','https://seekingalpha.com/article/4960090-the-biggest-crypto-heist-in-history',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -420,4 +421,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-30  6:35:19
+-- Dump completed on 2026-10-31  6:24:50

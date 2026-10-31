@@ -235,6 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
@@ -397,7 +398,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -406,7 +407,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'silin chen','Please enable JS and disable any ad blocker...','2026-10-29',0.26364,'Cathie Wood buys $9.1 million of tumbling tech stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-9-1-million-of-tumbling-tech-stock-robinhood-hood',4),(2,'omor ibne ehsan','For the first time in more than four decades, the Federal Reserve is shrinking its voting calendar, and the timing could not be more fraught with a December rate hike now seen as nearly certain and lo...','2026-10-29',0.03766,'The Fed Is Cutting Back on Rate Votes for the First Time Since 1981','https://247wallst.com/investing/2026/10/29/the-fed-is-cutting-back-on-rate-votes-for-the-first-time-since-1981/',4),(3,'yahoo finance','...','2026-10-29',-0.06176,'Alphabet tumbles, software and cybersecurity stocks sink as earnings disappoint: AlphaCheck','https://www.bundle.app/en/finance/alphabet-tumbles-software-and-cybersecurity-stocks-sink-as-earnings-disappoint-alphacheck-322006F2-641C-5F10-B760-87537D6F7778',2),(4,'jared blikre','...','2026-10-29',-0.32152,'Google is on track for its worst day ever â€” with $500 billion in market value at stake','https://finance.yahoo.com/markets/article/alphabet-heads-for-a-500-billion-drop-in-market-value-the-biggest-in-its-history-134824763.html',20),(5,'yahoo finance','...','2026-10-29',0.06176,'Alphabet heads for a $400 billion drop in market value, the biggest in its history','https://www.bundle.app/en/finance/alphabet-heads-for-a-400-billion-drop-in-market-value-the-biggest-in-its-history-DDBB7F5F-3892-5F58-AC96-61CA76454C55',2);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'hunting alphas','    Nico De Pasquale Photography/DigitalVision via Getty Images\n \nNico De Pasquale Photography/DigitalVision via Getty Images\nNvidia Corporation (NVDA) has slightly beaten the market since my last upd...','2026-10-30',0.18392,'Nvidia: Time To Lock In The Profits','https://seekingalpha.com/article/4960307-nvidia-time-to-lock-in-the-profits',8),(2,'vandita jadeja','NVIDIA just posted another blowout quarter yet the stock sits 11% below its 52-week high, and that gap between fundamentals and price may be exactly the opening bulls have been waiting for.\n Price Tar...','2026-10-30',0.3616,'Nvidiaâ€™s AI Dominance Could Have Further to Run','https://247wallst.com/investing/2026/10/30/nvidias-ai-dominance-could-have-further-to-run/',4),(3,'jake fitzgerald','QQQ investors hand nearly 8 cents of every dollar to a single chipmaker without realizing a quieter fund holds every same stock with none of that concentration risk.\nBuilding a portfolio and living of...','2026-10-30',0.19986,'This Little-Known ETF Owns QQQâ€™s Stocks Without the Big Bet on Nvidia','https://247wallst.com/investing/etf/2026/10/30/this-little-known-etf-owns-qqqs-stocks-without-the-big-bet-on-nvidia/',40),(4,'jennifer sor','It was a Friday full of bruising losses for the tech trade.\nThe Nasdaq 100 shed more than 3% to end October with its worst monthly loss since March 2025. The tech-led index lost 6.7% in the week, losi...','2026-10-30',-0.3774,'Nasdaq plunges after dismal earnings from Amazon and Intel','https://www.businessinsider.com/stock-market-today-nasdaq-amazon-intel-q3-earnings-2026-10',4),(5,'rips','...','2026-10-30',0.35232,'How To Trade SPY, And Tech Stocks As Amazon And Intel Earnings Deepen AI Concerns','https://www.benzinga.com/opinion/26/10/62738058/how-to-trade-spy-and-tech-stocks-as-amazon-and-intel-earnings-deepen-ai-concerns',4),(6,'yahoo finance','...','2026-10-30',0,'Stock market today: Nasdaq dives over 3%, S&P 500 and Dow tank as AI reckoning grips Wall Street','https://www.bundle.app/en/finance/stock-market-today-nasdaq-dives-over-3-sp-500-and-dow-tank-as-ai-reckoning-grips-wall-street-59DF4700-DF72-5609-9D1B-DE62C7EDF799',2);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -420,4 +421,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-30  6:35:19
+-- Dump completed on 2026-10-31  6:24:50
