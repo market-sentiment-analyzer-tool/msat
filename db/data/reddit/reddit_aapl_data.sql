@@ -235,7 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
-a77f7904-d420-11f1-81c6-9e2ba8d32805:1-383,
+a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
@@ -343,9 +343,11 @@ e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+eb5b16dc-d5b4-11f1-a8cd-c6e01667d06b:1-87,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -397,7 +399,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -406,6 +408,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1xkb1fx','19rxywkep34n4','2026-10-31',37,0.0772,'Reads like a LinkedIn post and provides no insight or opinion from op '),(2,'stocks','1xkb1fx','19rxpj9nq12ys','2026-10-31',60,-0.204,'Most valuable until Monday, when it has expected earnings and gets its 10% down treatment for being massively overvalued... perhaps.'),(3,'stocks','1xkb1fx','19rxx61f2vxvm','2026-10-31',3,-0.1926,'â€œWhat Iâ€™m wondering is whether investors are starting to pay more attention to how much money these companies actually make, rather than just how much they are growing.â€\n\nAre you implying NVDA doesnâ€™t print money??'),(4,'stocks','1xkb1fx','19ry7kfnlvb5s','2026-10-31',2,0.2501,'Impressive how so many words say absolutely nothing of value op '),(5,'stocks','1xkb1fx','19rxmdoyxkwn7','2026-10-31',7,0.4019,'I read through a ton of your posts. Interesting lexicon you have. '),(6,'stocks','1xkb1fx','19rxom7wn36ma','2026-10-31',4,0,'All because of iPhone Duo'),(7,'stocks','1xkb1fx','19ry6b61bdbno','2026-10-31',1,-0.2732,'Waiting for the drop to buying more around 280$ tbh'),(8,'stocks','1xkb1fx','19ry9q8jcd9vk','2026-10-31',1,0.8641,'Nvidia is cheap, Apple is expensive. Apple share price is justified just because a group of believers like the brand but the earnings and its growth do not justify its price.'),(9,'stocks','1xkb1fx','19rybfitk8mdd','2026-10-31',1,0,'steve wozniak >>>> jensen huang always'),(10,'stocks','1xkb1fx','19ryn0pv36ts1','2026-11-01',1,-0.3071,'Nvidia can do fuck all and all their products would get sold out until 2030\n\nChina wants to give them a trillion dollars for GPUs but canâ€™t because export restrictions\n\nThatâ€™s how undervalued Nvidia is '),(11,'stocks','1xkb1fx','19rxvimuwnt4x','2026-10-31',1,0.4588,'Apple and Google were always going to be the eventual winners of the AI race so this should come as a surprise to no one.'),(12,'stocks','1xkb1fx','19ry6848qagci','2026-10-31',0,0.34,'Market cap isn\'t a reflection of the actual value of a company.'),(13,'stocks','1xkb1fx','19rxshi9vx1z7','2026-10-31',-5,-0.2124,'On Monday at 5pm Apple will drop 10-15% after earnings.\n\nApple is just being algo bought to hedge the S&P against semiconductors due to fund managers being required to have money in the market.\n\nIf you look at how apple performs every day after market close it drops almost 1-2% consistently. That is them taking the money out slowly.\n\nThe earnings miss and forward guidance due to ram prices will be horrendous. That and the fact that they will take a loss on every iPhone duo sold this quarter will show up even in next earnings eps/guidance.\n\nThe company is lost. It now has 3 of the same products disguised as different products with no innovation. Itâ€™s a cult stock, but the good thing is cult stocks canâ€™t hide from sell side algos during earnings. That being said if youâ€™re a long term holder it doesnâ€™t matter, because stupid algos are set to hide in it even after dropping, like last earnings where it nukes 15%, it will just grind back up.'),(14,'stocks','1xkb1fx','19rxqfcaluzb6','2026-10-31',-6,0,'[removed]'),(15,'AAPL','1xkg1es','19rxwwn2j0n4x','2026-10-31',6,0.8223,'Expect a drop after earnings, but this stock is so strong! 375 for Christmas rally! '),(16,'AAPL','1xkg1es','19ry1eogzjh28','2026-10-31',5,-0.3291,'Can\'t get buy a MacStudio or MacMini for the past six months because of local LLM demand - and those are selling at outrageous prices, like, $25k when maxed out.  Apple surely profiting from that.  Who knows about everything else?'),(17,'AAPL','1xkg1es','19rxv62jhkk6c','2026-10-31',4,0.5106,'Apple hasnâ€™t failed me yet, got burned on some AI stocks that I bought in early October but my Apple has stood strong.'),(18,'AAPL','1xkg1es','19rxyl3y5f485','2026-10-31',1,0.886,'I think dip and sentiment on this duo launch isnâ€™t good. But at the same time it being the safe haven from AI could protect it from anything significant. '),(19,'AAPL','1xkg1es','19rxwfxv3278h','2026-10-31',1,0.34,'Most likely to dip after earnings depending on guidance. Â  Buy the rumors, sell the news. Â Memory still Â head wind. Â  Â But still Â long term bet. Â '),(20,'AAPL','1xkg1es','19rxulaceyrz8','2026-10-31',1,-0.1779,'Earnings is this week? Ah hell. I know what that means. And just when I was starting to smile...'),(21,'AAPL','1xkj6l3','19ry13pdugarm','2026-10-31',1,0.4404,'Iâ€™m just thrilled weâ€™re still in the 340â€™s after everything else tanked. '),(22,'AAPL','1xkj6l3','19ry0ag1odvgl','2026-10-31',-1,-0.0772,'Itâ€™s going back to $315'),(23,'AAPL','1xkj6l3','19ry3urk1aidc','2026-10-31',0,0.0258,'It always pukes after the earnings. Also it\'s sus why they postponed the earnings to next Monday.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -419,4 +422,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-30  5:29:03
+-- Dump completed on 2026-11-01  5:28:38

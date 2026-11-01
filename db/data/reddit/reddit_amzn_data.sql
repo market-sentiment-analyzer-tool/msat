@@ -235,7 +235,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
-a77f7904-d420-11f1-81c6-9e2ba8d32805:1-383,
+a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
 aa633926-9aa9-11f1-92cb-32e94deb5dfc:1-66,
@@ -343,9 +343,11 @@ e982dbbd-6e01-11f1-b38d-f620667b775d:1-64,
 e98cacce-c295-11f0-a580-6ac27ee36fb1:1-70,
 e999dc03-80c9-11f1-b620-4e5eeb94863b:1-62,
 ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
+eb5b16dc-d5b4-11f1-a8cd-c6e01667d06b:1-87,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
@@ -397,7 +399,7 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -406,7 +408,6 @@ CREATE TABLE `REDDIT_AMZN_DATA` (
 
 LOCK TABLES `REDDIT_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AMZN_DATA` VALUES (1,'ValueInvesting','1xiweg3','19ruk6ixvz38j','2026-10-29',40,0.1779,'I think OP means is Amazon and Google both about to pull a microsoft'),(2,'ValueInvesting','1xiweg3','19ruotqm8wnc5','2026-10-29',12,0.1127,'I think part of the reason this happens is, a lot of us aren\'t privy to the kind of info, insight and experience that management has. And going further from that, many have little to no understanding of how their business works. It becomes a case of the Average Joe trying to second guess what a big company has chosen to do.\n\nManagement isn\'t always infallible of course. There\'s intentional mismanagement in certain cases and scandals to create massive personal gain. But we have to at least consider the good possibility that the Average Joe is going to get the narrative wrong. '),(3,'ValueInvesting','1xiweg3','19rum2mw7u5gj','2026-10-29',12,0,'Google pulled a Microsoft who pulled a Google'),(4,'ValueInvesting','1xiweg3','19rum6oue0b39','2026-10-29',7,-0.1027,'When Google first dumped down, I thought okay maybe Wall Street is making a calculated decision\n\nThen Amazon followed suit with a 12% drop and now Iâ€™m like, yeah these guys are just regarded\n\nJust dropping mag7 stocks just because, doesnâ€™t matter what they are'),(5,'ValueInvesting','1xiweg3','19ruygviup5ia','2026-10-30',4,0.8903,'I read a book earlier this year that had a chapter on the investor Nick Sleep and his partners Amazon investment. Afterwards I went looking for profitable companies burning cash through reinvestment and while a couple, like Viking, were intriguing I didn\'t pull the trigger, and now the company most like Amazon is Amazon.'),(6,'ValueInvesting','1xiweg3','19ruktjngi9sy','2026-10-29',21,0.9805,'I think google is a much better buy at this point than amazon in terms of growth potential. Google is AI/LLM, cloud, android OS, and advertisement... all very lucrative and high margin and fast growing. Advertisement growth will recover once LLM query gets monetized better (and it eventually will just like social media eventually became heavily monetized when it wasnt at first) and will also benefit more heavily from increasingly advanced AI algorithmic ad placement optimizations moving forward\n\nAmazon OTOH is retail/logistics (low margin and mature/slow growth) and cloud (high margin high growth) but yet its priced like the entire business is software/high margin. \n\nEdit: also growing ad business for amazon someone else pointed out but its still only about 20% as much as google\'s ad revenue'),(7,'ValueInvesting','1xiweg3','19rupnzl8ktgh','2026-10-29',3,0,'Now GOOG needs to pull a Google '),(8,'ValueInvesting','1xiweg3','19ruvnmoh8i03','2026-10-30',2,0.9928,'>anyways I\'m buying tomorrow without even reading the whole er this market is way too stupid for it to actually matter\n\nYep. We already know amazon is great, a quick glance at a few headlines to make sure nothing insanely unexpected happened and now I know I\'m clear to buy more. Hopefully it dips more at the open tomorrow, but my guess is it\'ll be stable and maybe even start climbing back up after just a few hours. Are the people selling amazon stock expecting the company to totally stall out and stop growing? Like what the actual heck do you think is gonna happen to it? Any scenario I can see be severely harmful to amazon would likely be severely harmful to the market as a whole and many of the alternative stocks that people buy instead of AMZN. Amazon wins from AI in so many ways, and without AI it is still solid. It might be the best buy in the stock market right now, and it may very well even have been the Best Buy in the stock market yesterday too'),(9,'ValueInvesting','1xiweg3','19ruk583j0vfl','2026-10-29',1,0,'Huh? A to M to G?  '),(10,'ValueInvesting','1xiweg3','19ruou0vxmnmq','2026-10-29',1,0,'Circle-Jerkyl'),(11,'ValueInvesting','1xiweg3','19rupq927lrmo','2026-10-29',1,0.5267,'Yes amazon will pull microsoft which pulled google who is pulling microsoft now.'),(12,'ValueInvesting','1xiweg3','19rurbl6t04yq','2026-10-29',1,0,'Yup'),(13,'ValueInvesting','1xiweg3','19ruzsrovc74y','2026-10-30',1,0.9584,'True, the market can overreact to capex but Amazon burned $42.4B in FCF over the last 12 months and says spending will rise again in 2027, so how of that spending can we actually assume goes away? If the valuation needs capex to fall sharply while growth stays strong , that\'s a pretty important assumption to check before buying the dip.'),(14,'ValueInvesting','1xiweg3','19ruqkzmha7ms','2026-10-29',1,-0.3939,'I mean.... Amazon is the #2 highest cumulative capex spender in history after ExxonMobile and that one includes numerous merges \n\nHow has that worked out for them? \n\nIs AWS a mistake? How about global retail distribution? \n\nDoes making their own chips make more or less sense at scale?'),(15,'ValueInvesting','1xiweg3','19rurisviqfc2','2026-10-29',-1,0,'Ainâ€™t nobody doing MAGA7 stocks anymore');
 /*!40000 ALTER TABLE `REDDIT_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -420,4 +421,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-30  5:29:03
+-- Dump completed on 2026-11-01  5:28:39
