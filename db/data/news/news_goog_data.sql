@@ -224,6 +224,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
@@ -399,7 +400,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -408,7 +409,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / October 30, 2026 / Levi & Korsinsky, LLP notifies pension funds, ERISA plan fiduciaries, and asset managers that a securities class action has been filed against ...','2026-10-30',0.0101,'Levi & Korsinsky Reminds Shareholders of a Lead Plaintiff Deadline of December 1, 2026 in Alphabet Inc. Lawsuit - GOOGL/GOOG','https://www.financialcontent.com/article/accwirecq-2026-10-30-levi-and-korsinsky-reminds-shareholders-of-a-lead-plaintiff-deadline-of-december-1-2026-in-alphabet-inc-lawsuit-googlgoog',4),(2,'yahoo finance','...','2026-10-30',0,'Stock market today: Nasdaq dives over 3%, S&P 500 and Dow tank as AI reckoning grips Wall Street','https://www.bundle.app/en/finance/stock-market-today-nasdaq-dives-over-3-sp-500-and-dow-tank-as-ai-reckoning-grips-wall-street-59DF4700-DF72-5609-9D1B-DE62C7EDF799',2),(3,'wall street breakfast','...','2026-10-30',0,'Wall Street Breakfast Podcast: The Biggest Heist In History','https://seekingalpha.com/article/4960114-wall-street-breakfast-podcast-the-biggest-heist-in-history',4),(4,'wall street breakfast','...','2026-10-30',0,'The Biggest Crypto Heist In History','https://seekingalpha.com/article/4960090-the-biggest-crypto-heist-in-history',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','Alphabet (GOOGL -1.40%)(GOOG -1.45%) spent $51.4 billion on capital projects in the third quarter of 2026 while it builds out its artificial intelligence infrastructure. That was more than double its ...','2026-11-01',0.70926,'Alphabet Says Its AI Spending Will Keep Rising. 2 Data Center Stocks to Buy and Hold Through 2030.','https://www.fool.com/investing/2026/11/01/alphabet-says-its-ai-spending-will-keep-rising-2-data-center-stocks-to-buy-and-hold-through-2030/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -422,4 +423,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-01  6:58:05
+-- Dump completed on 2026-11-02  6:57:40
