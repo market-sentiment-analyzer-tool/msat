@@ -381,7 +381,8 @@ fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
 fdb48e4d-99e0-11f1-aeec-7608ecc01936:1-67,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
-fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60,
+ffc7fbfd-d756-11f1-af5c-9ef49254920a:1-57';
 
 --
 -- Table structure for table `NEWS_AMZN_DATA`
@@ -400,7 +401,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -409,7 +410,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'muhammad umair','...','2026-11-01',-0.2368,'Silver Price Forecast: Tech Sell-Off Raises Risk of a Drop to $45','https://www.fxempire.com/forecasts/article/silver-price-forecast-tech-sell-off-raises-risk-of-a-drop-to-45-1641801',2),(2,'cyn research','...','2026-11-01',0.50952,'Amazon: Keep It Simple, Buy The Dip','https://seekingalpha.com/article/4960725-amazon-keep-it-simple-buy-dip',4),(3,'tmf breakfast news','Welcome to our Sunday Edition: Your weekly step toward better investing through AI.\nLetâ€™s assume artificial general intelligence (AGI) already exists. This AI thinks, learns, and works on its own acro...','2026-11-01',0.19968,'Breakfast News: One Stock If AGI Is Here (Part 2)','https://www.fool.com/investing/breakfast-news/2026/11/01/breakfast-news/',4),(4,'the spokesman-review','Color Scheme\nSubscriber Actions\nStaff Options\nConnect With Us\nSupport Local Journalism\nAmazon.com (Nasdaq: AMZN) has grown into a company recently worth $2.7 trillion. Yet its shares are still appeali...','2026-11-01',-0.037,'Motley Fool: Amazon in the cloud - Sun, 01 Nov 2026 PST','http://www.spokesman.com/stories/2026/nov/01/motley-fool-amazon-in-the-cloud/',40),(5,'keithen drury','Being an investor in The Trade Desk (TTD -5.90%) up until 2025 was a great time. The stock always delivered strong returns, but then its business fell apart. The stock is now down 90% from its all-tim...','2026-11-01',-0.08998,'Is The Trade Desk Stock Too Cheap to Ignore?','https://www.fool.com/investing/2026/11/01/is-the-trade-desk-stock-too-cheap-to-ignore/',4),(6,'abmn staff','\n					Posted by ABMN Staff on Nov 1st, 2026\n\nCommonwealth Financial Services LLC lowered its stake in shares of Amazon.com, Inc. (NASDAQ:AMZN â€“ Free Report) by 21.1% in the 3rd quarter, according to t...','2026-11-01',0.43668,'5,339 Amazon.com, Inc. $AMZN Shares Sold by Commonwealth Financial Services LLC','https://www.americanbankingnews.com/2026/11/01/5339-amazon-com-inc-amzn-shares-sold-by-commonwealth-financial-services-llc.html',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'anthony miller','...','2026-11-02',0.18104,'Retail Stocks Worth Watching â€“ November 2nd','https://www.thelincolnianonline.com/2026/11/02/retail-stocks-worth-watching-november-2nd.html',2),(2,'celine provini','Please enable JS and disable any ad blocker...','2026-11-02',-0.15492,'Howard Marks sees a hidden risk in the AI boom','https://www.thestreet.com/investing/howard-marks-sees-hidden-lender-risk-in-ai-boom',4),(3,'wall street breakfast','    malerapaso/iStock via Getty Images\n \nmalerapaso/iStock via Getty Images\nDownload this episode on Apple, Spotify, or listen below:\n\n\n\n\n\n\n\n\n\n\nFalling oil prices lift stocks; AI trade looks calmer (0...','2026-11-02',0.62128,'Wall Street Lunch: Big Tech Earnings Take Center Stage','https://seekingalpha.com/article/4961068-wall-street-lunch-big-tech-earnings-take-center-stage',8),(4,'eric kulisch','\n\nParcel carriers will deliver about 2.4 billion packages during the current peak shipping season, up 4% from the same period last year, despite high inflation, according to an estimate from ShipMatri...','2026-11-02',0.62066,'Parcel shipping demand to increase 4% during holidays, ShipMatrix says','https://www.freightwaves.com/news/parcel-shipping-demand-to-increase-4-during-holidays-shipmatrix-says',4),(5,'michael khouw','\nReference #18.920ec617.1793690441.289ba2c4\nhttps://errors.edgesuite.net/18.920ec617.1793690441.289ba2c4\n\nhttps://errors.edgesuite.net/18.920ec617.1793690441.289ba2c4...','2026-11-02',0,'Apple reports after the bell. Options traders expect a big move','https://www.cnbc.com/2026/11/02/apple-reports-after-the-bell-options-traders-expect-a-big-move.html',40),(6,'max byerly','...','2026-11-02',0,'Retail Stocks To Keep An Eye On â€“ November 1st','https://www.tickerreport.com/banking-finance/13646741/retail-stocks-to-keep-an-eye-on-november-1st.html',2),(7,'danny vena','After a notable plunge, the cloud and AI specialist is rebounding.\nShares of Amazon (AMZN +2.20%) rallied on Monday, adding as much as 5.6%. As of 11:52 a.m. ET, the stock was still up 4.6%.\n\nThe cata...','2026-11-02',0.34174,'Why Amazon Stock Rallied Monday Morning','https://www.fool.com/investing/2026/11/02/why-amazon-stock-rallied-monday-morning/',40);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -423,4 +424,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-02  6:57:40
+-- Dump completed on 2026-11-03  7:20:55

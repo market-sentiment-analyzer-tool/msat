@@ -381,7 +381,8 @@ fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
 fdb48e4d-99e0-11f1-aeec-7608ecc01936:1-67,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
-fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60,
+ffc7fbfd-d756-11f1-af5c-9ef49254920a:1-57';
 
 --
 -- Table structure for table `NEWS_GOOG_DATA`
@@ -400,7 +401,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -409,7 +410,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','Alphabet (GOOGL -1.40%)(GOOG -1.45%) spent $51.4 billion on capital projects in the third quarter of 2026 while it builds out its artificial intelligence infrastructure. That was more than double its ...','2026-11-01',0.70926,'Alphabet Says Its AI Spending Will Keep Rising. 2 Data Center Stocks to Buy and Hold Through 2030.','https://www.fool.com/investing/2026/11/01/alphabet-says-its-ai-spending-will-keep-rising-2-data-center-stocks-to-buy-and-hold-through-2030/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anthony di pizio','The Vanguard Morningstar Mega Cap Growth ETF has crushed the S&P 500 since its inception in 2007.\nThe Morningstar U.S. Total Market index is made up of all 3,476 companies listed on American stock exc...','2026-11-02',0.19976,'Meet the Spectacular Vanguard ETF With 44.6% of Its Portfolio Parked in Nvidia, Alphabet, Apple, and Microsoft','https://www.fool.com/investing/2026/11/02/meet-vanguard-etf-446-portfolio-nvidia-alphabet/',4),(2,'eric sprague','...','2026-11-02',0.60896,'Google Search And Agentic AI: Slower Growth, Not Instant Death','https://seekingalpha.com/article/4960917-google-search-and-agentic-ai-slower-growth-not-instant-death',40),(3,'keithen drury','Alphabet is taking a tumble, and now is the perfect time to take action.\nAlphabet (GOOG -0.07%) (GOOGL -0.30%) just reported third-quarter earnings, and I thought the results were pretty good. However...','2026-11-02',0.8499,'Alphabet Plummets After Earnings. I Think the Stock Looks Like a Genius Buy Now.','https://www.fool.com/investing/2026/11/02/alphabet-plummets-after-earnings-i-think-the-stock/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -423,4 +424,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-02  6:57:40
+-- Dump completed on 2026-11-03  7:20:55
