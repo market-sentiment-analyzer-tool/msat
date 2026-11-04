@@ -229,6 +229,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
+9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -410,7 +411,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'anthony di pizio','The Vanguard Morningstar Mega Cap Growth ETF has crushed the S&P 500 since its inception in 2007.\nThe Morningstar U.S. Total Market index is made up of all 3,476 companies listed on American stock exc...','2026-11-02',0.19976,'Meet the Spectacular Vanguard ETF With 44.6% of Its Portfolio Parked in Nvidia, Alphabet, Apple, and Microsoft','https://www.fool.com/investing/2026/11/02/meet-vanguard-etf-446-portfolio-nvidia-alphabet/',4),(2,'eric sprague','...','2026-11-02',0.60896,'Google Search And Agentic AI: Slower Growth, Not Instant Death','https://seekingalpha.com/article/4960917-google-search-and-agentic-ai-slower-growth-not-instant-death',40),(3,'keithen drury','Alphabet is taking a tumble, and now is the perfect time to take action.\nAlphabet (GOOG -0.07%) (GOOGL -0.30%) just reported third-quarter earnings, and I thought the results were pretty good. However...','2026-11-02',0.8499,'Alphabet Plummets After Earnings. I Think the Stock Looks Like a Genius Buy Now.','https://www.fool.com/investing/2026/11/02/alphabet-plummets-after-earnings-i-think-the-stock/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(2,'financialcontent','NEW YORK, Nov.  03, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) of a pending securities class action. Class Period: May 19, 2026 through July 16, 2026. ...','2026-11-03',0.4151,'GOOGL/GOOG DEADLINE: SueWallSt Reminds Alphabet Inc. Investors of Upcoming Securities Class Action Deadline','https://www.financialcontent.com/article/gnwcq-2026-11-3-googlgoog-deadline-suewallst-reminds-alphabet-inc-investors-of-upcoming-securities-class-action-deadline',4),(3,'adria cimino','Last week, the stock had its worst day ever.\nAlphabet (GOOG +0.08%) (GOOGL +0.37%) investors had reason to frown last week as the stock posted its worst trading day ever. The shares fell 13% in one se...','2026-11-02',0.6786,'Alphabet Lost $500 Billion in Market Value. Should You Really Buy AI Stocks Now?','https://www.fool.com/investing/2026/11/02/alphabet-lost-usd500-billion-in-market-value-should-you-really-buy-ai-stocks-now/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -424,4 +425,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-03  7:20:55
+-- Dump completed on 2026-11-04  7:02:50

@@ -229,6 +229,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
+9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
 9de1912a-affd-11f1-a041-b637e3ca01a6:1-57,
 a0cc006c-5e42-11f1-a9fb-e61bef7c8da9:1-62,
 a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
@@ -401,7 +402,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -410,7 +411,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'anthony miller','...','2026-11-02',0.18104,'Retail Stocks Worth Watching â€“ November 2nd','https://www.thelincolnianonline.com/2026/11/02/retail-stocks-worth-watching-november-2nd.html',2),(2,'celine provini','Please enable JS and disable any ad blocker...','2026-11-02',-0.15492,'Howard Marks sees a hidden risk in the AI boom','https://www.thestreet.com/investing/howard-marks-sees-hidden-lender-risk-in-ai-boom',4),(3,'wall street breakfast','    malerapaso/iStock via Getty Images\n \nmalerapaso/iStock via Getty Images\nDownload this episode on Apple, Spotify, or listen below:\n\n\n\n\n\n\n\n\n\n\nFalling oil prices lift stocks; AI trade looks calmer (0...','2026-11-02',0.62128,'Wall Street Lunch: Big Tech Earnings Take Center Stage','https://seekingalpha.com/article/4961068-wall-street-lunch-big-tech-earnings-take-center-stage',8),(4,'eric kulisch','\n\nParcel carriers will deliver about 2.4 billion packages during the current peak shipping season, up 4% from the same period last year, despite high inflation, according to an estimate from ShipMatri...','2026-11-02',0.62066,'Parcel shipping demand to increase 4% during holidays, ShipMatrix says','https://www.freightwaves.com/news/parcel-shipping-demand-to-increase-4-during-holidays-shipmatrix-says',4),(5,'michael khouw','\nReference #18.920ec617.1793690441.289ba2c4\nhttps://errors.edgesuite.net/18.920ec617.1793690441.289ba2c4\n\nhttps://errors.edgesuite.net/18.920ec617.1793690441.289ba2c4...','2026-11-02',0,'Apple reports after the bell. Options traders expect a big move','https://www.cnbc.com/2026/11/02/apple-reports-after-the-bell-options-traders-expect-a-big-move.html',40),(6,'max byerly','...','2026-11-02',0,'Retail Stocks To Keep An Eye On â€“ November 1st','https://www.tickerreport.com/banking-finance/13646741/retail-stocks-to-keep-an-eye-on-november-1st.html',2),(7,'danny vena','After a notable plunge, the cloud and AI specialist is rebounding.\nShares of Amazon (AMZN +2.20%) rallied on Monday, adding as much as 5.6%. As of 11:52 a.m. ET, the stock was still up 4.6%.\n\nThe cata...','2026-11-02',0.34174,'Why Amazon Stock Rallied Monday Morning','https://www.fool.com/investing/2026/11/02/why-amazon-stock-rallied-monday-morning/',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'cain lee','...','2026-11-03',0.04128,'Buy The Big Tech Panic Before Capex Cools','https://seekingalpha.com/article/4961670-buy-big-tech-panic-before-capex-cools',4),(2,'rips','...','2026-11-03',0.3372,'How To Trade SPY, QQQ And Top Tech Stocks','https://www.benzinga.com/opinion/26/11/62828971/how-to-trade-spy-qqq-and-top-tech-stocks',4),(3,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(4,'faizan farooque','Please enable JS and disable any ad blocker...','2026-11-03',0.3526,'Jeremy Siegel sees an unexpected winner if AI weakens','https://www.thestreet.com/markets/jeremy-siegel-sees-an-unexpected-winner-if-ai-weakens',4),(5,'yahoo finance','...','2026-11-03',0.1824,'3 reasons why the tech stock rout is growing more alarming','https://www.bundle.app/en/finance/3-reasons-why-the-tech-stock-rout-is-growing-more-alarming-040B9559-CE32-5A85-AA78-46049202C494',2),(6,'steven fiorillo','...','2026-11-03',0.39512,'Amazon Q3: AWS Is The Crown Jewel, And The Market Just Put It On Sale','https://seekingalpha.com/article/4961287-amazon-q3-aws-crown-jewel-market-just-put-it-on-sale',40);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -424,4 +425,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-03  7:20:55
+-- Dump completed on 2026-11-04  7:02:50
