@@ -176,7 +176,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 6cc42c0c-0a1f-11f1-b244-06ec095b9eb2:1-62,
 6d9f8713-8fb8-11f1-9650-7a48b512b4f2:1-60,
 6dcd5546-5276-11f1-b2f4-76bca0a1d7e0:1-68,
-6deeb9e3-d74c-11f1-aecf-f215b01108dc:1-57,
 6e3935eb-b4b4-11f1-a292-ea64ea246195:1-62,
 6e7b3603-00b0-11f1-865d-8e1b2c5cef35:1-63,
 6e821575-4059-11f1-ad6f-c604a642ec68:1-61,
@@ -252,6 +251,7 @@ aef05797-7c19-11f1-a20f-a6d4f96baee9:1-63,
 af2a9e6a-a9b1-11f1-9c13-3ec14ff523d0:1-50,
 afdf238a-2669-11f1-a65b-3ac534442c67:1-60,
 b097d7d3-bd13-11f0-9402-66b64fa706e4:1-71,
+b111be48-d812-11f1-8f4f-2a976ee7e0d9:1-202,
 b12e4da5-3623-11f1-aecb-2e5737ba007c:1-64,
 b47792e5-444c-11f1-85a9-56a611f4f04e:1-60,
 b78f627f-be29-11f1-b249-8e2c944af315:1-51,
@@ -382,7 +382,8 @@ fd9594f5-8ef2-11f1-8d98-a2dc450292e3:1-60,
 fdb48e4d-99e0-11f1-aeec-7608ecc01936:1-67,
 fdde79b1-1e8b-11f1-8cbd-ba074ff6f766:1-63,
 fe293631-088c-11f1-85d4-96f6319bc502:1-63,
-fe835252-3f93-11f1-8981-5ad8a6544702:1-60';
+fe835252-3f93-11f1-8981-5ad8a6544702:1-60,
+ffc7fbfd-d756-11f1-af5c-9ef49254920a:1-57';
 
 --
 -- Table structure for table `REDDIT_NVDA_DATA`
@@ -401,7 +402,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -410,7 +411,7 @@ CREATE TABLE `REDDIT_NVDA_DATA` (
 
 LOCK TABLES `REDDIT_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1xm0pkr','19s1hqs4goog2','2026-11-02',3,0.5719,'\"We would like to make clear that neither the Singapore government nor its officials said \\[WSJ accusations\\]. And there were no such investigations conducted in respect of Alice Huang.\"'),(2,'NVDA_Stock','1xm0pkr','19s1vvfo2pghw','2026-11-02',2,-0.7184,'Fake news from the haters. Jensen can have as many hotties as he want any time he wants in the world, doesnt need some mid china honey.');
+INSERT INTO `REDDIT_NVDA_DATA` VALUES (1,'NVDA_Stock','1xmt4xy','19s34yuz2ra4j','2026-11-03',5,-0.5584,'  \n\"Nvidia is ordering its data centre partners to reduce exposure to Chinese customers in a move that further restrains Chinaâ€™s ability to keep up with US rivals as the race between the worldâ€™s two AI superpowers intensifies. In recent months, the worldâ€™s largest chipmaker has told cloud computing clients that they must now sell at least 51 per cent of their services to non-Chinese companies, according to five people with knowledge of the matter. There had been no previous restrictions. The instructions have been communicated verbally and carried out by Nvidiaâ€™s sales force and regional teams rather than spelt out in documents, the people said. The move means Chinese tech companies now face a new threat to their AI ambitions as Washington moves to further restrict their access to advanced US chips through overseas cloud computing deals. Many Chinese groups have previously relied on such leases for advanced AI tasks, including model training. These additional compliance rules apply to Nvidiaâ€™s clients globally and not just data centres in Asia, two of the people said. They only affect future contracts and not existing leasing agreements, however. Nvidia said: â€œDatacenters and clouds built on American chips are the foundation that American model and application makers need to compete worldwide. Longstanding US policy encourages every cloud to build on American infrastructure and to win business everywhere they can. Americaâ€™s longstanding policy has always supported the build-out of American infrastructure worldwide, bringing prosperity, influence, and jobs home.â€ Nvidia implemented the new requirement over the summer in a pre-emptive effort to reduce the kind of criticism it routinely receives from US lawmakers and other critics of its approach to China, according to two people familiar with the matter.\"\n\nsounds like pressure from WashDC'),(2,'NVDA_Stock','1xmt4xy','19s30aktaw3yd','2026-11-03',2,0,'Paywall'),(3,'NVDA_Stock','1xmt4xy','19s31qkxu9fr7','2026-11-03',2,0,'What does this even mean ');
 /*!40000 ALTER TABLE `REDDIT_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -424,4 +425,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-03  6:05:45
+-- Dump completed on 2026-11-04  5:49:40
