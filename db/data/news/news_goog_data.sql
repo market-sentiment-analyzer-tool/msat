@@ -227,6 +227,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+99cedf59-d8ea-11f1-8542-66d7df44966a:1-48,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
@@ -411,7 +412,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(2,'financialcontent','NEW YORK, Nov.  03, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) of a pending securities class action. Class Period: May 19, 2026 through July 16, 2026. ...','2026-11-03',0.4151,'GOOGL/GOOG DEADLINE: SueWallSt Reminds Alphabet Inc. Investors of Upcoming Securities Class Action Deadline','https://www.financialcontent.com/article/gnwcq-2026-11-3-googlgoog-deadline-suewallst-reminds-alphabet-inc-investors-of-upcoming-securities-class-action-deadline',4),(3,'adria cimino','Last week, the stock had its worst day ever.\nAlphabet (GOOG +0.08%) (GOOGL +0.37%) investors had reason to frown last week as the stock posted its worst trading day ever. The shares fell 13% in one se...','2026-11-02',0.6786,'Alphabet Lost $500 Billion in Market Value. Should You Really Buy AI Stocks Now?','https://www.fool.com/investing/2026/11/02/alphabet-lost-usd500-billion-in-market-value-should-you-really-buy-ai-stocks-now/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','The Claude maker just raised its minimum spending commitment to Google. Can it pay?\nAnthropic, the artificial intelligence (AI) company behind Claude, updated its initial public offering (IPO) filing ...','2026-11-04',0.78134,'Should You Buy Alphabet Stock After Anthropic Raised Its Google Commitment to $121 Billion?','https://www.fool.com/investing/2026/11/03/should-you-buy-alphabet-stock-after-anthropic-raised-its-google-commitment-to-usd121-billion/',40),(2,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(3,'financialcontent','NEW YORK, Nov.  03, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) of a pending securities class action. Class Period: May 19, 2026 through July 16, 2026. ...','2026-11-03',0.4151,'GOOGL/GOOG DEADLINE: SueWallSt Reminds Alphabet Inc. Investors of Upcoming Securities Class Action Deadline','https://www.financialcontent.com/article/gnwcq-2026-11-3-googlgoog-deadline-suewallst-reminds-alphabet-inc-investors-of-upcoming-securities-class-action-deadline',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -425,4 +426,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-04  7:02:50
+-- Dump completed on 2026-11-05  7:30:17

@@ -227,6 +227,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+99cedf59-d8ea-11f1-8542-66d7df44966a:1-48,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
@@ -402,7 +403,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -411,7 +412,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-11-03',0.272,'Wall Street Lunch: Midterm Elections & Earnings','https://seekingalpha.com/article/4961677-wall-street-lunch-midterm-elections-and-earnings',4),(2,'alex sirois','NVIDIA shares dropped 13% in a month while revenue roughly doubled, and that gap between price and business performance is exactly what keeps one investor buying every single dip.\n\nMy NVIDIA (NASDAQ:N...','2026-11-03',0.4353,'Nvidia Is Extremely Compelling Right Now And Hereâ€™s Why','https://247wallst.com/investing/2026/11/03/nvidia-is-extremely-compelling-right-now-and-heres-why/',40),(3,'ï»¿anjali belgaumkar','...','2026-11-03',0.32152,'Nvidia Stock Price Today: NVDA Rebounds 3% From $200 Support Level','https://coinpedia.org/crypto-live-news/nvidia-stock-price-today-nvda-rebounds-3-from-200-support-level/',20),(4,'danessa lincoln','...','2026-11-03',0.49992,'GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) Shares Gap Up â€“ Hereâ€™s What Happened','https://www.themarketsdaily.com/2026/11/03/graniteshares-2x-long-nvda-daily-etf-nasdaqnvdl-shares-gap-up-heres-what-happened.html',20),(5,'cision pr newswire','\n\n\n\nSearching for your content...\n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\n\n\n\n\nSearching for your content...\nNov 03, 2026, 11:31 ET\nShare this article\nNEW YORK, Nov. 3, 2026 /PRNewswire/ -- ...','2026-11-03',-0.03732,'Election Day Trading Splits the Benchmarks, With the Dow Lower and the Nasdaq Higher','https://www.prnewswire.com/news-releases/election-day-trading-splits-the-benchmarks-with-the-dow-lower-and-the-nasdaq-higher-302928098.html',4),(6,'rips','...','2026-11-03',0.3372,'How To Trade SPY, QQQ And Top Tech Stocks','https://www.benzinga.com/opinion/26/11/62828971/how-to-trade-spy-qqq-and-top-tech-stocks',4),(7,'faizan farooque','Please enable JS and disable any ad blocker...','2026-11-03',0.3526,'Jeremy Siegel sees an unexpected winner if AI weakens','https://www.thestreet.com/markets/jeremy-siegel-sees-an-unexpected-winner-if-ai-weakens',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'brian paoli','...','2026-11-04',0,'Semiconductor and Memory Stocks Weigh on ETF Returns Globally in October','https://www.morningstar.com/funds/semiconductor-memory-stocks-weigh-etf-returns-globally-october',2),(2,'the rule breakers team','Team Rule Breakers and Team Hidden Gems have recommended AMD across eight active Motley Fool services, and it has never carried a sell recommendation.\nBy Nov. 2, AMD (AMD +1.01%) had dropped about 28%...','2026-11-04',0.19898,'AMD Stock Rebounds. Is Its AI Edge Built to Last?','https://www.fool.com/investing/2026/11/04/amd-stock-rebounds-is-its-ai-edge-built-to-last/',4),(3,'silin chen','Please enable JS and disable any ad blocker...','2026-11-04',0.26364,'Cathie Wood buys $10.9 million of tumbling tech stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-10-9-million-of-tumbling-tech-stock-palantir-pltr',4),(4,'peter gratton','Michael Nagle / Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Defense, prisons, crypto, and anything with Elon Muskâ€™s name on it rallied during Republic...','2026-11-04',0.19846,'Hereâ€™s Whatâ€™s Moving After the Democratsâ€™ Sweep','https://www.investopedia.com/big-tech-rallies-defense-prison-stocks-sink-here-what-s-moving-after-the-democrats-sweep-12236110',4),(5,'the arora report','...','2026-11-04',-0.38136,'Why Investors May Be Getting The Blue Wave Trade Wrong; Iran Remains The Wild Card','https://www.benzinga.com/opinion/26/11/62876539/why-investors-may-be-getting-the-blue-wave-trade-wrong-iran-remains-the-wild-card',4),(6,'david moadel','AMD just delivered a blowout quarter with data center sales nearly doubling, yet its stock refuses to move while rivals Intel and NVIDIA take the punishment instead. Here is why a record report is pro...','2026-11-04',0.75198,'Intel Drops 5%, NVIDIA Retreats 2% After AMD Earnings Beat and Strong 2027 Outlook as Intel Falls 3%; AMD Stock Goes Nowhere','https://247wallst.com/investing/2026/11/04/intel-drops-5-nvidia-retreats-2-after-amd-earnings-beat-and-strong-2027-outlook-as-intel-falls-3-amd-stock-goes-nowhere/',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -425,4 +426,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-04  7:02:50
+-- Dump completed on 2026-11-05  7:30:17

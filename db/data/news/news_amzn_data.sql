@@ -227,6 +227,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+99cedf59-d8ea-11f1-8542-66d7df44966a:1-48,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
@@ -402,7 +403,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -411,7 +412,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'cain lee','...','2026-11-03',0.04128,'Buy The Big Tech Panic Before Capex Cools','https://seekingalpha.com/article/4961670-buy-big-tech-panic-before-capex-cools',4),(2,'rips','...','2026-11-03',0.3372,'How To Trade SPY, QQQ And Top Tech Stocks','https://www.benzinga.com/opinion/26/11/62828971/how-to-trade-spy-qqq-and-top-tech-stocks',4),(3,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(4,'faizan farooque','Please enable JS and disable any ad blocker...','2026-11-03',0.3526,'Jeremy Siegel sees an unexpected winner if AI weakens','https://www.thestreet.com/markets/jeremy-siegel-sees-an-unexpected-winner-if-ai-weakens',4),(5,'yahoo finance','...','2026-11-03',0.1824,'3 reasons why the tech stock rout is growing more alarming','https://www.bundle.app/en/finance/3-reasons-why-the-tech-stock-rout-is-growing-more-alarming-040B9559-CE32-5A85-AA78-46049202C494',2),(6,'steven fiorillo','...','2026-11-03',0.39512,'Amazon Q3: AWS Is The Crown Jewel, And The Market Just Put It On Sale','https://seekingalpha.com/article/4961287-amazon-q3-aws-crown-jewel-market-just-put-it-on-sale',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'donald scott','...','2026-11-04',0.16184,'Top Retail Stocks To Research â€“ November 4th','https://www.thelincolnianonline.com/2026/11/04/top-retail-stocks-to-research-november-4th.html',2),(2,'wall street breakfast','...','2026-11-04',0.21856,'Wall Street Lunch: Uncertainty Removed, Optimism Returns','https://seekingalpha.com/article/4962377-wall-street-lunch-uncertainty-removed-optimism-returns',4),(3,'larry ramer','Anthropic, the hugely successful AI model developer whose IPO is set to take place in November, is growing extremely rapidly. Moreover, its revenue growth is far outpacing its cost increases, and the ...','2026-11-04',-0.08968,'Could Anthropic Be the Next AI Stock Investors Canâ€™t Ignore?','https://news.clearancejobs.com/2026/11/04/could-anthropic-be-the-next-ai-stock-investors-cant-ignore/',4),(4,'peter gratton','Michael Nagle / Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Defense, prisons, crypto, and anything with Elon Muskâ€™s name on it rallied during Republic...','2026-11-04',0.19846,'Hereâ€™s Whatâ€™s Moving After the Democratsâ€™ Sweep','https://www.investopedia.com/big-tech-rallies-defense-prison-stocks-sink-here-what-s-moving-after-the-democrats-sweep-12236110',4),(5,'david moadel','Election night sent futures into a tailspin, but Big Tech opened with a surprising surge that left some Magnificent Seven names celebrating while others kept sliding. Whether the rebound signals a tru...','2026-11-04',0.52144,'Amazon Rallies 7%, Apple and Microsoft Climb 5% as Big Tech Leads Post-Election Rebound','https://247wallst.com/investing/2026/11/04/amazon-rallies-7-apple-and-microsoft-climb-5-as-big-tech-leads-post-election-rebound/',40);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -425,4 +426,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-04  7:02:50
+-- Dump completed on 2026-11-05  7:30:16
