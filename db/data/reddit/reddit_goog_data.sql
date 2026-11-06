@@ -47,6 +47,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+1719a74d-d9a7-11f1-9f5b-1a0fc1e8f977:1-135,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -123,7 +124,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 4980d32d-c920-11f1-9d1c-4a902c91f4c1:1-60,
 498f82fe-45dd-11f1-bdc6-8ac30c7292b1:1-56,
 4b4b2d3e-2e45-11f1-ba67-3e6da6b442e2:1-63,
-4b7a4bf8-d8de-11f1-8a56-6258de9c6291:1-127,
 4bbe7738-daf0-11f0-929a-86ae2bb9e6f8:1-68,
 4be56f4d-c101-11f0-8971-124eb79007ca:1-70,
 4db814b5-dbbb-11f0-af80-ae09ae153eea:1-67,
@@ -228,6 +228,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
+99cedf59-d8ea-11f1-8542-66d7df44966a:1-48,
 9af76c55-3a11-11f1-a7d3-864a7512df42:1-66,
 9b44b623-b8a2-11f1-9c33-1af271813d78:1-53,
 9beff6d1-d81d-11f1-a8fa-3eeff9924654:1-53,
@@ -403,7 +404,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -412,7 +413,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'investing','1xnzxr4','19s59js6xshmt','2026-11-04',67,-0.3818,'Spend too much: upset investors\n\nDonâ€™t spend enough: become irrelevant \n\nPick one'),(2,'investing','1xnzxr4','19s5adtl41w78','2026-11-04',8,0.2023,'Why is there a huge land grab and rush to grow so fast? It\'s because OpenAI and Anthropic are trying to win before google wakes up. Slowing down datacenters gives google time to catch up. Grab the land while it is fallow.'),(3,'investing','1xnzxr4','19s5f96x1i8n4','2026-11-04',3,0.7717,'So your bull case is cheaper inference plus Cloud covering the bill. Two hopes in one sentence, and Cloud is the only part that has ever actually shown a profit.\n\n  \nAlso \"spending needed to keep the existing business competitive\" is what every company calls everything, it\'s not a category you can pull numbers out of.'),(4,'investing','1xnzxr4','19s59lqdkc2tf','2026-11-04',10,-0.8298,'AI answers are just searches. AI isn\'t an alternative to search. It can\'t search innately. Never has. It doesn\'t have an index. It just runs a search behind the scenes and then summarizes roughly the first page of results.  I\'m not convinced there is a threat to search, beyond Google simply not prioritizing search such that the product has become worse - which definitely appears to be the case across the Google portfolio.'),(5,'investing','1xnzxr4','19s5bun2yoz0i','2026-11-04',5,-0.0346,'cheaper inference doesnt fix this though. the problem isnt what an AI overview costs to serve, its that the overview answers the question and theres no click left to sell. advertisers buy clicks. drive the cost per answer to zero and you still lost the inventory. featured snippets was the warning shot years ago, everyone in SEO screamed, google kept doing it, now the whole top of the page is the answer. cloud covering the gap is also a bit convenient, cloud is where a chunk of the capex is going so counting it as the offset is circular. i still hold GOOGL so grain of salt but i dont see how falling capex rescues search margins if the query stops producing a billable click'),(6,'investing','1xnzxr4','19s59iq4c07d0','2026-11-04',2,0,'[removed]'),(7,'investing','1xnzxr4','19s59gstm5x6q','2026-11-04',3,0.1969,'I don\'t think investors want them to stop spending they want a better explanation of what the next dollar buys.'),(8,'investing','1xnzxr4','19s59wnh1u3b4','2026-11-04',1,0.3406,'You\'re assuming the economics stay weak long enough to damage the investment case and that\'s the part I\'m less convinced about. If serving costs fall and Google gets better at placing useful ads in answers, today\'s margins might tell us very little about margins five years out. Still wouldn\'t pay any price for it.'),(9,'investing','1xnzxr4','19s5ftfwhz48z','2026-11-04',1,-0.2411,'Ramp is a corporate card company, their data shows where businesses swipe, not how Google monetizes a query. Not sure that breakdown says what you think it says.'),(10,'investing','1xnzxr4','19s5nxerd3woz','2026-11-05',1,0.3612,'its gonna be fine bro \nas soon as google flips on ads for ai search, it will be huge. because the volume of ai search is growing insanely fast.'),(11,'investing','1xnzxr4','19s5oit6zo6df','2026-11-05',1,0.5423,'The election results made Google a buy.  Google can navigate all the regulation that other AI companies can\'t'),(12,'investing','1xnzxr4','19s5p2ovw3d4y','2026-11-05',1,0.4939,'Ramp sells corporate cards. I\'d want to know what makes their read on AI Overviews monetization better than Google\'s own segment disclosure.'),(13,'investing','1xnzxr4','19s5bhpupzzut','2026-11-04',1,0.8337,'Google cutting AI spending would definitely not be good for the company.  They should be spending every dollar they can.   This is a once in a lifetime opportunity.\n\nWe can see their spending is working.   Their cloud is growing faster than the other hyperscalers.  Not just in percent but in absolute dollars.   They shared on their call they have over $300 billion of revenue they would realize in the next 2 years.\n\nPlus they have had 13 straight quarters of increasing margins with their cloud.'),(14,'investing','1xnzxr4','19s5aznmgs56q','2026-11-04',-1,0.6271,'Google\'s search moat is gone. I rarely ever use search anymore. AI blew up their model and the funny thing is, AI used Google\'s own links to nail them. Here\'s the issue. I ask AI a question. It can either give me the right answer, or it can tailor its answer to serve an ad. Any other ads shown are not relevant to what I am asking, so ads have no place in the experience. Maybe they will be able to replace all their search ad revenue and profit hosting AI in the cloud, but that isn\'t a moat. In fact, that is the exact opposite of a moat. '),(15,'investing','1xnzxr4','19s5b5of4iyx0','2026-11-04',-1,0.8005,'In the end, the real problem is that what they are spending on will become a commodity, and will have low margins. I\'m convinced that GOOG will become more like a telecom company, with low margins, low PER, scarce growth, and a steady and safe business. I would be prepared for a change of paradigm that would certainly lower the stock price to get to that lower PE.');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -426,4 +426,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-05  6:05:46
+-- Dump completed on 2026-11-06  6:03:05
