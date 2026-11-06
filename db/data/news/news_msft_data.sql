@@ -239,6 +239,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
 a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
@@ -403,7 +404,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -412,7 +413,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'ryne mauck','Microsoft surged over 6% today, and if you hold a 401(k) or IRA, that move almost certainly rippled through your retirement savings in ways most investors never think to check.\n The ETF Examiner desk....','2026-11-04',-0.01906,'Microsoft Rallies as Political Risk Fades: What It Means for Your Retirement Fund','https://247wallst.com/investing/etf/2026/11/04/microsoft-rallies-as-political-risk-fades-what-it-means-for-your-retirement-fund/',40),(2,'jason kephart','...','2026-11-04',0.08216,'David Girouxâ€™s Flagship Fund Is Reopening to Investors','https://www.morningstar.com/funds/david-girouxs-flagship-fund-is-reopening-investors',2),(3,'the rule breakers team','Team Rule Breakers and Team Hidden Gems have recommended AMD across eight active Motley Fool services, and it has never carried a sell recommendation.\nBy Nov. 2, AMD (AMD +1.01%) had dropped about 28%...','2026-11-04',0.19898,'AMD Stock Rebounds. Is Its AI Edge Built to Last?','https://www.fool.com/investing/2026/11/04/amd-stock-rebounds-is-its-ai-edge-built-to-last/',4),(4,'wall street breakfast','...','2026-11-04',0.21856,'Wall Street Lunch: Uncertainty Removed, Optimism Returns','https://seekingalpha.com/article/4962377-wall-street-lunch-uncertainty-removed-optimism-returns',4),(5,'vandita jadeja','Azure is accelerating, Copilot adoption is surging, and a $677 billion commercial backlog sits on the books, yet a massive capex bill threatens to swallow the gains before investors ever see them.\n Pr...','2026-11-04',0.67932,'This Magnificent 7 Stock Is Quietly Building an AI Empire','https://247wallst.com/investing/2026/11/04/this-magnificent-7-stock-is-quietly-building-an-ai-empire/',4),(6,'peter gratton','Michael Nagle / Getty Images\n Defense, prisons, crypto, and anything with Elon Muskâ€™s name on it rallied during Republicansâ€™ two-year trifecta. On Wednesday, traders were figuring out what comes next....','2026-11-04',0.19794,'Hereâ€™s Whatâ€™s Moving After the Democratsâ€™ Sweep','https://www.investopedia.com/big-tech-rallies-defense-prison-stocks-sink-here-what-s-moving-after-the-democrats-sweep-12236110',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wall street breakfast','    wildpixel/iStock via Getty Images\n \nwildpixel/iStock via Getty Images\nDownload this episode on Apple, Spotify, or listen below:\n\n\n\n\n\n\n\n\n\n\nMarkets plunged as investors reacted to uncertainty surrou...','2026-11-05',-0.19532,'Wall Street Lunch: Fear Grips The Market','https://seekingalpha.com/article/4963328-wall-street-lunch-fear-grips-the-market',8),(2,'fund letters','...','2026-11-05',0,'Bristol Gate U.S. Equity Q3 2026 Investor Letter','https://seekingalpha.com/article/4963194-bristol-gate-us-equity-q3-2026-investor-letter',4),(3,'douglas a. mcintyre','Buyouts are spreading from Microsoft to Oracle to Google, and the total already tops six figures. If these companies are the canaries in the coal mine, one workforce calculation shows how quickly the ...','2026-11-05',0.17138,'Google Joins The Surge Of Tech Layoffs','https://247wallst.com/investing/2026/11/05/google-joins-the-surge-of-tech-layoffs/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -426,4 +427,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-05  7:30:17
+-- Dump completed on 2026-11-06  7:29:29

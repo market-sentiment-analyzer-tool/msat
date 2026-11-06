@@ -239,6 +239,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
 a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
@@ -403,7 +404,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -412,7 +413,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'donald scott','...','2026-11-04',0.16184,'Top Retail Stocks To Research â€“ November 4th','https://www.thelincolnianonline.com/2026/11/04/top-retail-stocks-to-research-november-4th.html',2),(2,'wall street breakfast','...','2026-11-04',0.21856,'Wall Street Lunch: Uncertainty Removed, Optimism Returns','https://seekingalpha.com/article/4962377-wall-street-lunch-uncertainty-removed-optimism-returns',4),(3,'larry ramer','Anthropic, the hugely successful AI model developer whose IPO is set to take place in November, is growing extremely rapidly. Moreover, its revenue growth is far outpacing its cost increases, and the ...','2026-11-04',-0.08968,'Could Anthropic Be the Next AI Stock Investors Canâ€™t Ignore?','https://news.clearancejobs.com/2026/11/04/could-anthropic-be-the-next-ai-stock-investors-cant-ignore/',4),(4,'peter gratton','Michael Nagle / Getty Images\n Get personalized, AI-powered answers built on 27+ years of trusted expertise.\n\n Defense, prisons, crypto, and anything with Elon Muskâ€™s name on it rallied during Republic...','2026-11-04',0.19846,'Hereâ€™s Whatâ€™s Moving After the Democratsâ€™ Sweep','https://www.investopedia.com/big-tech-rallies-defense-prison-stocks-sink-here-what-s-moving-after-the-democrats-sweep-12236110',4),(5,'david moadel','Election night sent futures into a tailspin, but Big Tech opened with a surprising surge that left some Magnificent Seven names celebrating while others kept sliding. Whether the rebound signals a tru...','2026-11-04',0.52144,'Amazon Rallies 7%, Apple and Microsoft Climb 5% as Big Tech Leads Post-Election Rebound','https://247wallst.com/investing/2026/11/04/amazon-rallies-7-apple-and-microsoft-climb-5-as-big-tech-leads-post-election-rebound/',40);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'wall street breakfast','    wildpixel/iStock via Getty Images\n \nwildpixel/iStock via Getty Images\nDownload this episode on Apple, Spotify, or listen below:\n\n\n\n\n\n\n\n\n\n\nMarkets plunged as investors reacted to uncertainty surrou...','2026-11-05',-0.19532,'Wall Street Lunch: Fear Grips The Market','https://seekingalpha.com/article/4963328-wall-street-lunch-fear-grips-the-market',8),(2,'colin laidley','...','2026-11-05',0.272,'AI Stock Selloff Gains Steam as Election Fallout Spreads','https://www.morningstar.com/stocks/ai-stock-selloff-gains-steam-election-fallout-spreads',2),(3,'the rule breakers team','MercadoLibreâ€™s revenue jumped 45% last quarter while its margins shrank. The reason -- a deliberate bet on free shipping and fast-growing credit to win shoppersâ€™ loyalty -- makes this quarter a real t...','2026-11-05',0.9043,'MercadoLibre Pays Up to Win Shoppersâ€™ Loyalty','https://www.fool.com/investing/2026/11/05/mercadolibre-pays-up-to-win-shoppers-loyalty/',4),(4,'larry ramer','Although many on the Street are fretting about Amazonâ€™s (AMZN) huge investment in its AI business and the possibility of AI disrupting its e-commerce unit, the tech giantâ€™s future actually remains ver...','2026-11-05',0.57128,'Amazon Stock Looks Undervalued Despite AI Spending Fears','https://news.clearancejobs.com/2026/11/05/amazon-stock-looks-undervalued-despite-ai-spending-fears/',40),(5,'vandita jadeja','AWS just posted its fastest growth in nearly five years, yet Amazon shares tanked after earnings. The gap between what the cloud numbers are saying and how the market reacted reveals a high-stakes dis...','2026-11-05',0.6998,'Amazon Is Winning the AI Race in the Cloud. Hereâ€™s What Investors Need to Watch Next.','https://247wallst.com/investing/2026/11/05/amazon-is-winning-the-ai-race-in-the-cloud-heres-what-investors-need-to-watch-next/',40),(6,'bram berkowitz','Despite strong guidance for AWS over the next few years, Amazon sold off following its recent earnings report.\nAlthough investors are extremely worried about an artificial intelligence bubble and when...','2026-11-05',0.5669,'CEO Andy Jassy Just Told Investors That AWS Can Grow Revenue 40% in 2027 and 2028 and Eventually Become a Trillion-Dollar Business. Is It Enough to Get Wall Street on Board?','https://www.fool.com/investing/2026/11/05/ceo-andy-jassy-just-told-investors-that-aws-can-gr/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -426,4 +427,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-05  7:30:16
+-- Dump completed on 2026-11-06  7:29:29

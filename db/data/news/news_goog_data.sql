@@ -239,6 +239,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
 a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
@@ -403,7 +404,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -412,7 +413,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel sparks','The Claude maker just raised its minimum spending commitment to Google. Can it pay?\nAnthropic, the artificial intelligence (AI) company behind Claude, updated its initial public offering (IPO) filing ...','2026-11-04',0.78134,'Should You Buy Alphabet Stock After Anthropic Raised Its Google Commitment to $121 Billion?','https://www.fool.com/investing/2026/11/03/should-you-buy-alphabet-stock-after-anthropic-raised-its-google-commitment-to-usd121-billion/',40),(2,'john ballard','Alphabet and Amazon both sold off on AI spending fears, but that spending could also make them AI winners.\nGreat companies will sometimes see their stocks fall. But what truly makes a monster stock is...','2026-11-03',0.70944,'2 Monster Stocks to Buy and Hold for the Next 20 Years','https://www.fool.com/investing/2026/11/03/2-monster-stocks-buy-hold-next-20-years/',4),(3,'financialcontent','NEW YORK, Nov.  03, 2026  (GLOBE NEWSWIRE) -- SueWallSt alerts investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) of a pending securities class action. Class Period: May 19, 2026 through July 16, 2026. ...','2026-11-03',0.4151,'GOOGL/GOOG DEADLINE: SueWallSt Reminds Alphabet Inc. Investors of Upcoming Securities Class Action Deadline','https://www.financialcontent.com/article/gnwcq-2026-11-3-googlgoog-deadline-suewallst-reminds-alphabet-inc-investors-of-upcoming-securities-class-action-deadline',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'danny vena','A Democratic sweep might be just the medicine Google needs to prosper.\nShares of Alphabet (GOOGL -2.20%) (GOOG -1.93%) charged higher Wednesday, gaining as much as 5.9%. By the time trading closed, th...','2026-11-04',0.19874,'Why Alphabet Stock Popped on Wednesday','https://www.fool.com/investing/2026/11/04/why-alphabet-stock-popped-on-wednesday/',4),(2,'yahoo finance','...','2026-11-04',0.50952,'Stock market today: Dow surges 1,500 points in best day of 2026, S&P 500 and Nasdaq rally after historic midterm election','https://www.bundle.app/en/finance/stock-market-today-dow-surges-1500-points-in-best-day-of-2026-sp-500-and-nasdaq-rally-after-historic-midterm-election-1C265AC4-0B7D-5DDB-B7C7-4651DB42E651',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -426,4 +427,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-05  7:30:17
+-- Dump completed on 2026-11-06  7:29:29
