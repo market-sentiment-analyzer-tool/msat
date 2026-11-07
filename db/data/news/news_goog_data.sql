@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -404,7 +405,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -413,7 +414,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'danny vena','A Democratic sweep might be just the medicine Google needs to prosper.\nShares of Alphabet (GOOGL -2.20%) (GOOG -1.93%) charged higher Wednesday, gaining as much as 5.9%. By the time trading closed, th...','2026-11-04',0.19874,'Why Alphabet Stock Popped on Wednesday','https://www.fool.com/investing/2026/11/04/why-alphabet-stock-popped-on-wednesday/',4),(2,'yahoo finance','...','2026-11-04',0.50952,'Stock market today: Dow surges 1,500 points in best day of 2026, S&P 500 and Nasdaq rally after historic midterm election','https://www.bundle.app/en/finance/stock-market-today-dow-surges-1500-points-in-best-day-of-2026-sp-500-and-nasdaq-rally-after-historic-midterm-election-1C265AC4-0B7D-5DDB-B7C7-4651DB42E651',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'frederik mueller','...','2026-11-06',0.62264,'Alphabet: Why The Company Remains A Strong Buy','https://seekingalpha.com/article/4963221-alphabet-why-the-company-remains-a-strong-buy',4),(2,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2),(3,'tmf breakfast news','Where our analysts see opportunity in the AI sell-off.\n\nWhen stocks fall this fast, itâ€™s tempting to assume theyâ€™ll keep falling, and acting on that fear is often costly.\nThree of our analysts offer a...','2026-11-06',0.45442,'Breakfast News: Staying Calm in a Correction','https://www.fool.com/investing/breakfast-news/2026/11/06/breakfast-news/',4),(4,'adam spatacco','The Democratic Party won control of both the House of Representatives and the Senate in the midterm elections.\nThe 2026 midterm elections ended in a major political shake-up, with Democrats winning co...','2026-11-06',0.91108,'Not Nvidia. Not Palantir. The Midterms Just Made This Magnificent Artificial Intelligence (AI) Stock the Safer Bet.','https://www.fool.com/investing/2026/11/06/not-nvidia-not-palantir-the-midterms-just-made-thi/',4),(5,'investing experts podcast','...','2026-11-05',0.25456,'Keep Calm, Stocks Are On Sale','https://seekingalpha.com/article/4963531-keep-calm-stocks-are-on-sale',4),(6,'financialcontent','NEW YORK, NY - November 5, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-11-05',-0.05646,'Kaplan Fox Shareholder Alert: Deadline to Lead in the Securities Fraud Lawsuit Against Alphabet Inc. (NASDAQ: GOOGL, GOOG) is December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-5-kaplan-fox-shareholder-alert-deadline-to-lead-in-the-securities-fraud-lawsuit-against-alphabet-inc-nasdaq-googl-goog-is-december-1-2026',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -427,4 +428,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-06  7:29:29
+-- Dump completed on 2026-11-07  6:41:36

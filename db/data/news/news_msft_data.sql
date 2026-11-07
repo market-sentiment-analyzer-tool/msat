@@ -79,6 +79,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
+27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
@@ -404,7 +405,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -413,7 +414,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wall street breakfast','    wildpixel/iStock via Getty Images\n \nwildpixel/iStock via Getty Images\nDownload this episode on Apple, Spotify, or listen below:\n\n\n\n\n\n\n\n\n\n\nMarkets plunged as investors reacted to uncertainty surrou...','2026-11-05',-0.19532,'Wall Street Lunch: Fear Grips The Market','https://seekingalpha.com/article/4963328-wall-street-lunch-fear-grips-the-market',8),(2,'fund letters','...','2026-11-05',0,'Bristol Gate U.S. Equity Q3 2026 Investor Letter','https://seekingalpha.com/article/4963194-bristol-gate-us-equity-q3-2026-investor-letter',4),(3,'douglas a. mcintyre','Buyouts are spreading from Microsoft to Oracle to Google, and the total already tops six figures. If these companies are the canaries in the coal mine, one workforce calculation shows how quickly the ...','2026-11-05',0.17138,'Google Joins The Surge Of Tech Layoffs','https://247wallst.com/investing/2026/11/05/google-joins-the-surge-of-tech-layoffs/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'adam spatacco','Following the results of the midterm elections, Wall Street seems convinced data center construction will slow down in the U.S.\nWall Street appears to have found a silver lining following the Democrat...','2026-11-06',0.13886,'Prediction: Wall Street Has the Post-Midterm Artificial Intelligence (AI) Trade Completely Wrong','https://www.fool.com/investing/2026/11/06/prediction-wall-street-has-the-post-midterm-artifi/',4),(2,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2),(3,'terrill dicki','Price Prediction\nMicrosoft shares were the subject of a Baird price-target increase to $600 on October 30, 2026, while Binance futures data on the MSFT contract showed a neutral funding rate and short...','2026-11-06',0.19376,'MSFT Price Prediction: Baird target meets mixed futures signals','https://blockchain.news/news/20261106-price-prediction-target-msft-baird-meets-mixed-futures-signals',40),(4,'adam spatacco','The Democratic Party won control of both the House of Representatives and the Senate in the midterm elections.\nThe 2026 midterm elections ended in a major political shake-up, with Democrats winning co...','2026-11-06',0.91108,'Not Nvidia. Not Palantir. The Midterms Just Made This Magnificent Artificial Intelligence (AI) Stock the Safer Bet.','https://www.fool.com/investing/2026/11/06/not-nvidia-not-palantir-the-midterms-just-made-thi/',4),(5,'julie hung','...','2026-11-06',0.272,'Hyperscalers: AI Investment Will Outpace Near-Term Earnings','https://www.morningstar.com/markets/hyperscalers-ai-investment-will-outpace-near-term-earnings',2),(6,'danessa lincoln','...','2026-11-06',0.2368,'Microsoft Corporation $MSFT Shares Purchased by QRG Capital Management Inc.','https://www.themarketsdaily.com/2026/11/06/microsoft-corporation-msft-shares-purchased-by-qrg-capital-management-inc.html',20),(7,'defense world staff','...','2026-11-06',0,'Microsoft Corporation $MSFT Stock Sold by Andra AP fonden','https://www.defenseworld.net/2026/11/06/microsoft-corporation-msft-stock-sold-by-andra-ap-fonden.html',20);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -427,4 +428,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-06  7:29:29
+-- Dump completed on 2026-11-07  6:41:36
