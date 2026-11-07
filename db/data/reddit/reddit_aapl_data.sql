@@ -47,7 +47,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
-1719a74d-d9a7-11f1-9f5b-1a0fc1e8f977:1-135,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -84,6 +83,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+29f0fde7-da6c-11f1-b492-56cb263a07ba:1-133,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
@@ -240,6 +240,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
 a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
@@ -404,7 +405,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -413,7 +414,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xod3ek','19s62mbwa7pxc','2026-11-05',16,0.5848,'My first buy in was at a split-adjusted $0.57/share!'),(2,'AAPL','1xod3ek','19s62lw786m0z','2026-11-05',9,0,'6$ '),(3,'AAPL','1xod3ek','19s665zryy7lv','2026-11-05',7,0,'Oldest lot was in 2008. Schwab says cost basis is 3.48'),(4,'AAPL','1xod3ek','19s67mtc1i1hf','2026-11-05',6,0,'$.33 as in 33 cents. I hit 111,870% yesterday. There are a few here that are closer to $.25. '),(5,'AAPL','1xod3ek','19s62xgdfwydf','2026-11-05',4,0,'â‚¬38,3 19th August 2005\n\nOne and only Time I bought ï£¿ '),(6,'AAPL','1xod3ek','19s6h7mfkfoci','2026-11-05',3,0.4767,'1991. Around $17. Started with 100 shares. Reinvested dividends. In my IRA. Sold some off because my IRA was 100% Apple but I still have thousands of shares. My husband ( RIP) picked the stock. He mowed yards for a living.   \nSame situation with Amazon.   \nSince his death it is in a managed portfolio. Pure luck. '),(7,'AAPL','1xod3ek','19s683tkpk6x0','2026-11-05',3,0.8271,'$60,000 investment in Apple (AAPL) made in late 2015 would be worth approximately $687,000 today (including dividend-adjusted growth), reflecting a total return of roughly 1,040% over the 10-year span.\n\nCongrats '),(8,'AAPL','1xod3ek','19s6irz2fru9x','2026-11-05',3,0,'$345 in May 2011 - pre 7-1 split in 2014 and pre 4-1 split in 2020 so $12.32? '),(9,'AAPL','1xod3ek','19s63co2ioef9','2026-11-05',2,0,'$75 in 2008. '),(10,'AAPL','1xod3ek','19s63i7dfrrwi','2026-11-05',2,0,'$19'),(11,'AAPL','1xod3ek','19s67vvez2j9e','2026-11-05',2,0,'$250 or something. I\'m young and I\'m just starting out. You guys are legends to me.'),(12,'AAPL','1xod3ek','19s6bvecwmiv4','2026-11-05',2,0.7902,'Apple in brokerage $65.30 bought in 2014 and kept adding shares.  Last buy order was 2022.\n\nApple in Roth IRA $21.65 bought in 2014. Never touched that since.  \n\nI spoke to a friend who is a professional photographer.  Bought Apple in 2000 .27 cents. No words other than sell a little in a year your income is low, she wonâ€™t listenâ€¦\n\nI have ignored al;l the background noise over the years and a very happy shareholder:)'),(13,'AAPL','1xod3ek','19s6iry8uq4u9','2026-11-05',2,0.8047,'$3.13 in 2007. In my case I bought roughly a Camry\'s worth on it. Now it\'s worth 100 Camrys. But others on here are far wealthier and smarter than I am. Compare and despair.'),(14,'AAPL','1xod3ek','19s6ivrr9qsqt','2026-11-05',2,-0.2411,'My mom first bought in about 1986-7. Â Added some soon thereafter. Still has it. Not sure the basis. She also has MSFT at $4.\n\nMom is a gunslingerÂ '),(15,'AAPL','1xod3ek','19s6u23hvsni9','2026-11-05',2,0.296,'5000 split adjusted shares.  '),(16,'AAPL','1xod3ek','19s7h9sqgoxs4','2026-11-06',2,0,'123$ in 2021 when I was new to investing.'),(17,'AAPL','1xod3ek','19s65in7wi5mp','2026-11-05',1,0,'$24'),(18,'AAPL','1xod3ek','19s69ab5xfwu8','2026-11-05',1,0,'$6 split adjusted'),(19,'AAPL','1xod3ek','19s6b4ujql69t','2026-11-05',1,0.7579,'Own 1402 shares valued at almost 500k. 396k in gains at 424%'),(20,'AAPL','1xod3ek','19s6c9zz96ygy','2026-11-05',1,0,'My cost basis is $22.15'),(21,'AAPL','1xod3ek','19s6cokep969t','2026-11-05',1,0,'probably less than $1 with all the splits...'),(22,'AAPL','1xod3ek','19s6enijytk3k','2026-11-05',1,0,'Bought 3000 Nov 2009 @ $4.58. '),(23,'AAPL','1xod3ek','19s6ff711cnwj','2026-11-05',1,0.34,'Around $0.40 back in 2004. Wish I bought moreâ€¦'),(24,'AAPL','1xod3ek','19s6fxq69bdaa','2026-11-05',1,0,'$20 '),(25,'AAPL','1xod3ek','19s6hlia6gqo3','2026-11-05',1,0.8225,'I picked up a nice tranche at $56. Ah, the good \'ol days.'),(26,'AAPL','1xod3ek','19s6ji2iw8p36','2026-11-05',1,0,'25Â¢ in 2002 (actually $14 split 56 times)'),(27,'AAPL','1xod3ek','19s6k7u9guxhc','2026-11-05',1,-0.5574,'Full ported when Steve Jobs died'),(28,'AAPL','1xod3ek','19s6ldb991k3m','2026-11-05',1,0.3595,'$1.50 in 2005. 30k shares!'),(29,'AAPL','1xod3ek','19s6lrukwyznn','2026-11-05',1,0.6272,'I am not sure but it was less than $0.50 a share split adjusted as I bought two lots in 1999 averaging $0.52 a share. '),(30,'AAPL','1xod3ek','19s6o058bct1h','2026-11-05',1,0,'First bought in 2019. Was around $50/share split adjustedÂ '),(31,'AAPL','1xod3ek','19s6oxkp7q29v','2026-11-05',1,0,'$0.40'),(32,'AAPL','1xod3ek','19s6to4j1btvn','2026-11-05',1,0,'According to my broker itâ€™s $13 (post splits). Â '),(33,'AAPL','1xod3ek','19s6ucitpjqbk','2026-11-05',1,0.3182,'About 8 bucks I think back in 2009 when Steve was still alive.  Still have them.'),(34,'AAPL','1xod3ek','19s6x3h31v20x','2026-11-05',1,0,'[deleted]'),(35,'AAPL','1xod3ek','19s6xt72329s2','2026-11-05',1,0.296,'$24.78 - 9-5-2014 - 91.5 shares'),(36,'AAPL','1xod3ek','19s75e4j566tf','2026-11-05',1,0,'Avg price is $163, cheapest I bought was around $50'),(37,'AAPL','1xod3ek','19s7f9kpq9a0y','2026-11-06',1,0.9146,'Bought it for around $10 a share when Steve Jobs came back to the company.   And they had $10 a share in cash.   They were practically giving the company away.   Arne Alsin a financial writer for [theStreet.com](http://theStreet.com) said Apple should fold up the company and give the cash back to investors as they had no chance of competing against Microsoft.  That was thousands of percent ago.     I\'ve been able to buy a House, Cars, College Education for the kids all from my Apple investments.   Thanks to Steve Jobs, Tim Cook and Apple.   '),(38,'AAPL','1xod3ek','19s7i6x578utf','2026-11-06',1,0.6124,'Whatever it cost 13 or 14 years ago. I wish it had been 20 because I could have bought at $50, just prior to the original iPhone announcement.\n\n$50 is not the split-adjusted price.'),(39,'AAPL','1xod3ek','19s7jmyniccn5','2026-11-06',1,0.296,'160$ 100 shares '),(40,'AAPL','1xod3ek','19s7k7pj4vkec','2026-11-06',1,-0.2411,'January 2008. It was $79. Not sure what the split adjustment is '),(41,'AAPL','1xod3ek','19s6rasjlb0n4','2026-11-05',0,0.8047,'First bought in 2018. $43/share split adjusted.   \nOnly bought 4 shares but since then slowly accumulated up to 124 shares. ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -427,4 +427,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-06  6:03:05
+-- Dump completed on 2026-11-07  5:34:30

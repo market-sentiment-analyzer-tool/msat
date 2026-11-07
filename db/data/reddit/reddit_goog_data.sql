@@ -47,7 +47,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
-1719a74d-d9a7-11f1-9f5b-1a0fc1e8f977:1-135,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -84,6 +83,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
+29f0fde7-da6c-11f1-b492-56cb263a07ba:1-133,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
 2a866ae9-6c65-11f1-a9b1-be9a04563dc5:1-70,
 2aa9f331-5caf-11f1-a31e-a2974bd019c5:1-67,
@@ -240,6 +240,7 @@ a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
+a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
 a8d50815-d4f3-11f1-bfa0-4adb8d36038b:1-55,
 a9b8493d-d1c9-11f1-bec4-baf5600171d8:1-58,
 a9f41daf-71e2-11f1-8ba8-0ec1c576227e:1-56,
@@ -404,7 +405,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -413,6 +414,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'ValueInvesting','1xpa6er','19s84xkz0a9dw','2026-11-06',143,0.34,'I would expect more numbers from a value investing subreddit '),(2,'ValueInvesting','1xpa6er','19s8dbuzwic5g','2026-11-06',44,0.8968,'\"I don\'t have the time to list down all their fundamentals, but they are pretty strong.\"  \n\\- AceStrikeer, the goat of value investing '),(3,'ValueInvesting','1xpa6er','19s84n1lepi4h','2026-11-06',75,0,'Comparing NOW to META, AMZN and GOOG is ridiculous and makes it look like a NOW shill.'),(4,'ValueInvesting','1xpa6er','19s84u7avu1hg','2026-11-06',28,0,'Iâ€™ll DCA GOOG for yearsâ€¦ this is a prime time for long term'),(5,'ValueInvesting','1xpa6er','19s895e7atyir','2026-11-06',3,0.5859,'Not necessarily. Iâ€™ll say that buying Google and Amazon are generally wise for the long run.'),(6,'ValueInvesting','1xpa6er','19s83e1qix9tv','2026-11-06',25,0.9776,'Disagree. We are still early to middle innings of AI. Itâ€™s like trying to predict the winners of the internet in 1998. Do you remember the internet in 1998? I do. Itâ€™s nothing like the internet that spawned Meta, Google, Amazon.\n\nAnd the same applies today. AI isnâ€™t fully developed. AI today will likely look nothing like AI of 2037. I think also people havenâ€™t come to terms yet that companies that grew from the internet and where asset light and now asset heavy. Businesses change like people. Itâ€™s the cycle of life and same applies to businesses.\n\nThis is why I say if you want to invest in AI you have to stay with picks and shovels. Right now pick and shovels win no matter who wins AI. Itâ€™s too early in AI to know who wins. We donâ€™t even know what the technology looks like when itâ€™s fully developed.'),(7,'ValueInvesting','1xpa6er','19s86ggpy9lad','2026-11-06',3,0.8316,'Agreed. I\'ve been buying GOOG under $280 for the past week or so. Would love to build up a nice big position there between $250-$280. I already own too much META from years ago, but might pop in some shares if it sinks further under $600.'),(8,'ValueInvesting','1xpa6er','19s8cz7eiyrk3','2026-11-06',4,-0.2023,'All of these companies are riding on the AI hype train. Lets just see what happens when or if the AI story doesnt pan out as expected. For me its was too early to make that call and way to risky.'),(9,'ValueInvesting','1xpa6er','19s83e3q09o1v','2026-11-06',8,0.2748,'META is almost value territory, the AMZN and GOOG are bulletproof mid-term to long-term.  \nMy personal take, bought 4k META 660 CALLS 07/27'),(10,'ValueInvesting','1xpa6er','19s83wrmt0agz','2026-11-06',7,-0.1027,'I disagree on Now. That company growth is slow. '),(11,'ValueInvesting','1xpa6er','19s845p1k5w5c','2026-11-06',4,0,'At least wait until the hiking cycle is done'),(12,'ValueInvesting','1xpa6er','19s864fotgef6','2026-11-06',4,0,'Just get qqq'),(13,'ValueInvesting','1xpa6er','19s8ksdap1szk','2026-11-06',2,0,'Iâ€™m betting on the company that manufactures the chips for all the above - TSMC.'),(14,'ValueInvesting','1xpa6er','19s8kwcvifv9h','2026-11-06',2,0.6597,'I\'ll invest in NOW when that garbage company will stop SBC. Currently they just give stock to employees like candy.'),(15,'ValueInvesting','1xpa6er','19s85a0ynydxc','2026-11-06',1,-0.296,'Que va, pues no les queda caÃ­da y pÃ©rdidas contables...'),(16,'ValueInvesting','1xpa6er','19s8f9fd2696p','2026-11-06',1,0.4137,'I have a couple questions for you: what is your measure of intrinsic value? And are you looking at figures from the LTM or NTM?'),(17,'ValueInvesting','1xpa6er','19s8nf0mhc7i8','2026-11-06',1,0.4404,'ocf is 20-30% made up of sbc look at sbc/ocf '),(18,'ValueInvesting','1xpa6er','19s8ooc3bvsp1','2026-11-06',1,0.6808,'\'you can literally check their quarterly reports.\' Thanks so much for the help.'),(19,'ValueInvesting','1xpa6er','19s8q96goimf9','2026-11-06',1,0,'Why not Microsoft?'),(20,'ValueInvesting','1xpa6er','19s8y1g36bmrk','2026-11-06',1,-0.25,'so now with a p/e of 70 is value? kind of disgusted with the round trip it gave me.'),(21,'ValueInvesting','1xpa6er','19s8yrrrb0t1e','2026-11-06',1,-0.6568,'META can go down much more. I don\'t like their business at all. '),(22,'ValueInvesting','1xpa6er','19s8yy4i3s6bm','2026-11-06',1,0.7579,'You just got a table with numbers you dont understand and asked your chat to reassure you they\'re greatÂ '),(23,'ValueInvesting','1xpa6er','19s91ky7rq6f4','2026-11-07',1,0,'I see youtube is now making us watch 2 ads at a time instead of 1'),(24,'ValueInvesting','1xpa6er','19s929f04sttt','2026-11-07',1,0.7231,'I wish but Iâ€™m up BIG on GOOG so Iâ€™m waiting for an actual drop this was earnings season so everything fluctuates. Missing a random earnings wonâ€™t make me jump in it has to be something bigger. '),(25,'ValueInvesting','1xpa6er','19s9awb50pr7n','2026-11-07',1,0.7733,'Amzn is not at a great price.  I did buy a little on the dip but it went right back up and hasn\'t dropped down again'),(26,'ValueInvesting','1xpa6er','19s84nom70oar','2026-11-06',1,-0.296,'Lol, no'),(27,'ValueInvesting','1xpa6er','19s87j4nwbr41','2026-11-06',1,0,'Not NOW. AI software will replace Service-Now.'),(28,'ValueInvesting','1xpa6er','19s8y3b65nll1','2026-11-06',1,0,'i spot a bag holder'),(29,'ValueInvesting','1xpa6er','19s850vf7y3no','2026-11-06',-1,-0.1576,'Could not agree more.  Added to my GOOG yesterday.  No company better positioned for the next decade.\n\nI have been walking on air since my purchase.   Love I was able to get a deal.\n\nBut NOW?  Which one of these is not alike?'),(30,'ValueInvesting','1xpa6er','19s85gcaesgsj','2026-11-06',0,0.3182,'I\'m sure they are. Shill me your bags'),(31,'ValueInvesting','1xpa6er','19s8dtukycidh','2026-11-06',0,0,'Why? '),(32,'ValueInvesting','1xpa6er','19s8geowpi9kw','2026-11-06',0,0.4588,'Interest rate hike expected next month makes me think this has room to drill further. '),(33,'ValueInvesting','1xpa6er','19s8k4toznx1d','2026-11-06',0,0,'Netflix '),(34,'ValueInvesting','1xpa6er','19s883qlfclc0','2026-11-06',-1,-0.5849,'This is a very naive and shallow approach, imho. You ignore the fact they are spending like crazy on AI buildout and their whole economics are changing. This companies are not what they used to be before. '),(35,'ValueInvesting','1xpa6er','19s83jq3e4e0z','2026-11-06',-3,0,'[deleted]');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -426,4 +428,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-06  6:03:05
+-- Dump completed on 2026-11-07  5:34:30
