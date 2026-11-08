@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+28879b5a-db40-11f1-a7e0-f235c3a9b319:1-54,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -405,7 +406,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -414,7 +415,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'frederik mueller','...','2026-11-06',0.62264,'Alphabet: Why The Company Remains A Strong Buy','https://seekingalpha.com/article/4963221-alphabet-why-the-company-remains-a-strong-buy',4),(2,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2),(3,'tmf breakfast news','Where our analysts see opportunity in the AI sell-off.\n\nWhen stocks fall this fast, itâ€™s tempting to assume theyâ€™ll keep falling, and acting on that fear is often costly.\nThree of our analysts offer a...','2026-11-06',0.45442,'Breakfast News: Staying Calm in a Correction','https://www.fool.com/investing/breakfast-news/2026/11/06/breakfast-news/',4),(4,'adam spatacco','The Democratic Party won control of both the House of Representatives and the Senate in the midterm elections.\nThe 2026 midterm elections ended in a major political shake-up, with Democrats winning co...','2026-11-06',0.91108,'Not Nvidia. Not Palantir. The Midterms Just Made This Magnificent Artificial Intelligence (AI) Stock the Safer Bet.','https://www.fool.com/investing/2026/11/06/not-nvidia-not-palantir-the-midterms-just-made-thi/',4),(5,'investing experts podcast','...','2026-11-05',0.25456,'Keep Calm, Stocks Are On Sale','https://seekingalpha.com/article/4963531-keep-calm-stocks-are-on-sale',4),(6,'financialcontent','NEW YORK, NY - November 5, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-11-05',-0.05646,'Kaplan Fox Shareholder Alert: Deadline to Lead in the Securities Fraud Lawsuit Against Alphabet Inc. (NASDAQ: GOOGL, GOOG) is December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-5-kaplan-fox-shareholder-alert-deadline-to-lead-in-the-securities-fraud-lawsuit-against-alphabet-inc-nasdaq-googl-goog-is-december-1-2026',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'chris neiger','SK Hynix is a clear leader in the memory market, and its latest quarterly results indicate a bright future.\nShares of Micron TechnologyÂ and Sandisk have soared 280% and 457%, respectively, over the pa...','2026-11-07',0.48882,'Micron and Sandisk Lead the Memory Market. 1 Stock Has Far Greater Upside.','https://www.fool.com/investing/2026/11/07/micron-and-sandisk-lead-the-memory-market-1-stock/',4),(2,'micah haroldson','...','2026-11-07',0,'Alphabet Inc. $GOOG Stock Sold by Kelleher Financial Advisors','https://www.watchlistnews.com/alphabet-inc-goog-stock-sold-by-kelleher-financial-advisors/11297475.html',2),(3,'alex crippen','\nReference #18.ccab3717.1794120442.db82ccce\nhttps://errors.edgesuite.net/18.ccab3717.1794120442.db82ccce\n\nhttps://errors.edgesuite.net/18.ccab3717.1794120442.db82ccce...','2026-11-07',-0.12248,'Berkshire shares surge as Wall Street swoons amid AI fears','https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html',40),(4,'john ballard','The Nasdaq slipped last month on AI spending concerns, but these tech stocks still deliver useful services to the masses every day.\nThe Nasdaq Composite (^IXIC +1.09%) is down about 5% since the end o...','2026-11-07',0.34226,'3 Internet Giants to Hold for the Next 10 Years','https://www.fool.com/investing/2026/11/07/3-internet-giants-to-hold-for-the-next-10-years/',4),(5,'abmn staff','...','2026-11-07',-0.1024,'Alphabet Inc. $GOOG Stock: AIA Group Ltd Lowers Stake','https://www.americanbankingnews.com/2026/11/07/alphabet-inc-goog-stock-aia-group-ltd-lowers-stake.html',2),(6,'financialcontent','NEW YORK, NY - November 6, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GO...','2026-11-06',0.1981,'Kaplan Fox Class Action Reminder: Alphabet Inc. (NASDAQ: GOOGL, GOOG) Lead Plaintiff Deadline is December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-6-kaplan-fox-class-action-reminder-alphabet-inc-nasdaq-googl-goog-lead-plaintiff-deadline-is-december-1-2026',4),(7,'frederik mueller',' \njetcityimage/iStock Editorial via Getty Images\nOn Oct. 28, Alphabet (GOOG) (GOOGL) presented its latest Q3 2026 earnings results, in which the company reported a 25% revenue increase compared to the...','2026-11-06',0.81828,'Alphabet: Why The Company Remains A Strong Buy','https://seekingalpha.com/article/4963221-alphabet-why-the-company-remains-a-strong-buy',8),(8,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -428,4 +429,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-07  6:41:36
+-- Dump completed on 2026-11-08  6:47:38

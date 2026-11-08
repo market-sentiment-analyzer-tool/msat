@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+28879b5a-db40-11f1-a7e0-f235c3a9b319:1-54,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -405,7 +406,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -414,7 +415,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'nicole kennedy','...','2026-11-06',0,'GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) Stock Jumps 11.1% â€“ Hereâ€™s Why','https://www.watchlistnews.com/graniteshares-2x-long-nvda-daily-etf-nasdaqnvdl-stock-jumps-11-1-heres-why/11296275.html',20),(2,'omor ibne ehsan','A nonprofit just tallied how much teachers, firefighters, and other public retirees have riding on AI, and the next day the market flinched. Who ends up covering the gap if the bet goes wrong?\nRead Mo...','2026-11-06',0.1993,'State Pension Funds Have at Least $578 Billion Riding on Tumbling AI Stocks','https://247wallst.com/investing/2026/11/06/state-pension-funds-have-at-least-578-billion-riding-on-tumbling-ai-stocks/',4),(3,'shubham vishwakarma','...','2026-11-06',0,'Nvidia Stock Price Prediction 2026-2040: Can NVDA Become the First $6 Trillion AI Giant','https://coinpedia.org/stock-price-prediction/nvidia-nvda-stock-price-prediction/',20),(4,'hannah pedone','Please enable JS and disable any ad blocker...','2026-11-06',0.06364,'Nvidia, AMD and other chip stocks rebound. Is the â€˜violentâ€™ AI selloff over?','https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories',4),(5,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2),(6,'omor ibne ehsan','A blockbuster labor report and a brutal sell-off landed on the same morning, yet they had nothing to do with each other. One of them poses a bigger threat to the biggest index fund in America, and it ...','2026-11-06',0.18098,'Jobless Claims Just Matched a 57-Year Low on the Day Stocks Crashed','https://247wallst.com/investing/2026/11/06/jobless-claims-just-matched-a-57-year-low-on-the-day-stocks-crashed/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'dulan lokuwithana','Justin Sullivan/Getty Images News\nThe Trump administration believes Nvidiaâ€™s (NVDA) CEO, Jensen Huang, had a romantic relationship with a Chinese woman who allegedly served Chinaâ€™s main intelligence a...','2026-11-07',0.47726,'Nvidia CEO was romantically involved with alleged Chinese spy, U.S. memo says: FT','https://seekingalpha.com/news/4668736-nvidia-ceo-romantically-involved-alleged-chinese-spy?feed_item_type=news',80),(2,'dulan lokuwithana','Justin Sullivan/Getty Images News\nNvidia (NVDA) recorded its sixth consecutive weekly drop this week amid a broader selloff in the U.S. tech sector, adding to the sharp losses the company recorded in ...','2026-11-07',-0.15812,'Bulls vs. Bears: NVIDIA sparks valuation debate as stock nears six-month low','https://seekingalpha.com/news/4668735-nvidia-sparks-valuation-debate-after-selloff?feed_item_type=news',80),(3,'prosper junior bakiny','The bullish case for these companies continues to get stronger. \nWhile the debate over the future of artificial intelligence (AI) infrastructure spending continues to rage on Wall Street, many corpora...','2026-11-07',0.78788,'The Artificial Intelligence (AI) Boom Is Far From Over. Here Are 4 Potential Long-Term Winners','https://www.fool.com/investing/2026/11/07/the-artificial-intelligence-ai-boom-is-far-from-over-here-are-4-potential-long-term-winners/',4),(4,'joseph griffin','...','2026-11-07',0,'NVIDIA Corporation $NVDA Stock Sold by SFM LLC d b a Sweeney Financial Advisors','https://www.tickerreport.com/banking-finance/13654009/nvidia-corporation-nvda-stock-sold-by-sfm-llc-d-b-a-sweeney-financial-advisors.html',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -428,4 +429,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-07  6:41:36
+-- Dump completed on 2026-11-08  6:47:38

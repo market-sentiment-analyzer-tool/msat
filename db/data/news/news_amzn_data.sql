@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+28879b5a-db40-11f1-a7e0-f235c3a9b319:1-54,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -405,7 +406,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -414,7 +415,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'vandita jadeja','Amazon just posted its highest operating margin ever, yet the stock tanked in premarket trading. The reason comes down to one number buried in the cash flow statement that has investors questioning wh...','2026-11-06',-0.08132,'Amazon Just Delivered a Record-Breaking Quarter. But Thereâ€™s One Number Investors Shouldnâ€™t Ignore.','https://247wallst.com/investing/2026/11/06/amazon-just-delivered-a-record-breaking-quarter-but-theres-one-number-investors-shouldnt-ignore/',40),(2,'adam spatacco','Following the results of the midterm elections, Wall Street seems convinced data center construction will slow down in the U.S.\nWall Street appears to have found a silver lining following the Democrat...','2026-11-06',0.13886,'Prediction: Wall Street Has the Post-Midterm Artificial Intelligence (AI) Trade Completely Wrong','https://www.fool.com/investing/2026/11/06/prediction-wall-street-has-the-post-midterm-artifi/',4),(3,'colleen cabili','...','2026-11-06',0.2,'7 tech companies, close to 35% of the S&P 500: how index weighting works','https://qz.com/magnificent-seven-stocks-sp-500-share',2),(4,'trey thoelcke','Nearly every analyst loves Amazon, yet Jim Cramer calls big tech a millstone and the spending keeps climbing. One number in the next earnings report could decide whether the crowded bullish consensus ...','2026-11-06',-0.05482,'Not One Analyst Rates Amazon a Sell. Is Wall Street Right?','https://247wallst.com/investing/2026/11/06/not-one-analyst-rates-amazon-a-sell-is-wall-street-right/',40),(5,'alvin lang','Price Prediction\nAmazon.com shares are the subject of the analyst targets cited here, while the price action and derivatives data come from the Binance futures market on the AMZN-traded instrument. Th...','2026-11-06',0.55076,'AMZN Price Prediction: Shares Hold Above Key Averages as Binance Futures Positioning Builds','https://blockchain.news/news/20261106-price-prediction-amzn-shares-hold-above-key-averages-as',40),(6,'harrison rolfes','...','2026-11-06',0.52776,'Want to Invest in Anthropic? Hereâ€™s What to Know Before the IPO','https://www.morningstar.com/podcasts/investing-insights/want-invest-anthropic-heres-what-know-before-ipo-2',2),(7,'abmn staff','...','2026-11-06',0.2368,'75,585 Amazon.com, Inc. $AMZN Shares Sold by Investment House LLC','https://www.americanbankingnews.com/2026/11/06/75585-amazon-com-inc-amzn-shares-sold-by-investment-house-llc.html',2),(8,'kyle jackson','...','2026-11-06',0.2368,'Amazon.com, Inc. $AMZN Stock Sold by SBI Securities Co. Ltd.','https://www.watchlistnews.com/amazon-com-inc-amzn-stock-sold-by-sbi-securities-co-ltd/11295650.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'lindsey winhoffer','...','2026-11-07',0,'Amazon.com, Inc. $AMZN Position Lifted by Strategic Planning Group LLC','https://www.watchlistnews.com/amazon-com-inc-amzn-position-lifted-by-strategic-planning-group-llc/11297532.html',2),(2,'mitch edgeman','...','2026-11-07',0,'Amazon.com, Inc. $AMZN Stock: Royal Fund Management LLC Grows Position','https://www.themarketsdaily.com/2026/11/07/amazon-com-inc-amzn-stock-royal-fund-management-llc-grows-position.html',2),(3,'rich duprey','Layoffs have nearly vanished, yet consumer sentiment sits at recession levels. A labor market that shields those with jobs while shutting out those seeking one may be setting up the holiday quarter an...','2026-11-07',-0.08116,'America Just Matched a 57-Year Employment Record. Why Are Workers Still Worried?','https://247wallst.com/investing/2026/11/07/america-just-matched-a-57-year-employment-record-why-are-workers-still-worried/',4),(4,'dhierin bechai','...','2026-11-07',0.73848,'Amazon: Strong Buy Before AWS Growth Rewrites The Earnings Story','https://seekingalpha.com/article/4964602-amazon-strong-buy-before-aws-growth-rewrites-the-earnings-story',4),(5,'brendan coffey','Revenue is falling at one retailer while another grows near 39%, yet their debt loads and valuations tell surprisingly different stories.\nChoosing between a established retail turnaround and a fast-gr...','2026-11-07',0.80014,'Advance Auto Parts vs. MercadoLibre: Does Retailer Turnaround or Transformation Make a Stock a Better Buy for 2027?','https://www.fool.com/coverage/better-buy/2026/11/07/advance-auto-parts-vs-mercadolibre-does-retailer-turnaround-or-transformation-make-a-stock-a-better-buy-for-2027/',4),(6,'ethan ryder','...','2026-11-07',0.39512,'Amazon.com, Inc. $AMZN Position Lifted by CMH Wealth Management LLC','https://www.tickerreport.com/banking-finance/13653717/amazon-com-inc-amzn-position-lifted-by-cmh-wealth-management-llc.html',2),(7,'mark dietrich','...','2026-11-07',0.52776,'CMH Wealth Management LLC Acquires 6,153 Shares of Amazon.com, Inc. $AMZN','https://www.watchlistnews.com/cmh-wealth-management-llc-acquires-6153-shares-of-amazon-com-inc-amzn/11297064.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -428,4 +429,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-07  6:41:36
+-- Dump completed on 2026-11-08  6:47:38
