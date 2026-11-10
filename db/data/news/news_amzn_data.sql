@@ -189,6 +189,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
+7667906d-dcdb-11f1-b69d-32d6083558f4:1-51,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
@@ -407,7 +408,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -416,7 +417,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'rich duprey','Anthropic has no public shares yet, but Amazon, NVIDIA and Microsoft already feel its wobble. Big investors are pushing back on the price, and the fallout could reshape how Wall Street values every do...','2026-11-08',0.3996,'Anthropicâ€™s $2.5 Trillion IPO Dream Could Be Heading for a $1 Trillion Reality Check','https://247wallst.com/investing/2026/11/08/anthropics-2-5-trillion-ipo-dream-could-be-heading-for-a-1-trillion-reality-check/',4),(2,'tmf breakfast news','Does Amazon Web Services still have a moat? Test it against Buffett and Mungerâ€™s criteria with this weekâ€™s prompt.\nWelcome to our Sunday Edition: Your weekly step toward better investing through AI. \n...','2026-11-08',0.19986,'Breakfast News: The Buffett Moat Test','https://www.fool.com/investing/breakfast-news/2026/11/08/breakfast-news/',4),(3,'dante gardener','...','2026-11-08',0.52776,'4,908 Amazon.com, Inc. $AMZN Shares Purchased by XXI Wealth LLC','https://www.thelincolnianonline.com/2026/11/08/4908-amazon-com-inc-amzn-shares-purchased-by-xxi-wealth-llc.html',2),(4,'abmn staff','...','2026-11-08',0.2368,'Amazon.com, Inc. $AMZN Shares Newly Acquired by Baypointe Partners LLC','https://www.americanbankingnews.com/2026/11/08/amazon-com-inc-amzn-shares-newly-acquired-by-baypointe-partners-llc.html',2),(5,'jennifer saibil','The biggest company in the world sees huge opportunities.\nAmazon (AMZN -0.35%) just reported outstanding third-quarter results, but its stock sank after earnings. There were clear worries about how mu...','2026-11-08',-0.03756,'1 Stat That Makes Amazon Hard to Ignore Right Now','https://www.fool.com/investing/2026/11/08/1-stat-that-makes-hot-ticker-hard-to-ignore-right/',40),(6,'abmn staff','...','2026-11-08',0,'Amazon.com, Inc. $AMZN Stock Purchased by Atala Financial Inc','https://www.americanbankingnews.com/2026/11/08/amazon-com-inc-amzn-stock-purchased-by-atala-financial-inc.html',2),(7,'abmn staff','...','2026-11-08',0.52776,'Core Wealth Management Inc. Sells 2,414 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/11/08/core-wealth-management-inc-sells-2414-shares-of-amazon-com-inc-amzn.html',2);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'natasha abellard','\nReference #18.a772cd17.1794297096.a8f0a673\nhttps://errors.edgesuite.net/18.a772cd17.1794297096.a8f0a673\n\nhttps://errors.edgesuite.net/18.a772cd17.1794297096.a8f0a673...','2026-11-09',0.38136,'Why Jim Cramer believes Nvidia is still valuable despite the CEO affair controversy','https://www.cnbc.com/investingclub/2026/11/09/why-jim-cramer-believes-nvidia-is-still-valuable-despite-the-ceo-affair-controversy.html',40),(2,'alexa lomonaco','\nReference #18.a772cd17.1794297096.a8f0a7db\nhttps://errors.edgesuite.net/18.a772cd17.1794297096.a8f0a7db\n\nhttps://errors.edgesuite.net/18.a772cd17.1794297096.a8f0a7db...','2026-11-09',0.25456,'Jim Cramer says this is the stock to buy as data center development slows','https://www.cnbc.com/investingclub/2026/11/09/cramer-says-this-is-the-stock-to-buy-as-data-center-development-slows.html',40),(3,'investinglive.com','...','2026-11-09',0.43384,'Morgan Stanley says buy the AI dip, sees $3.4 trillion in hyperscaler spending through 2028','https://investinglive.com/stocks/morgan-stanley-says-buy-the-ai-dip-sees-3-4-trillion-in-hyperscaler-spending-through-2028/',2),(4,'jake lerch','Understanding where Amazon earns its money makes its enormous investment plans easier to evaluate.\nTake a moment and think about the last time you used Amazon (AMZN +2.94%). Did you buy something? Pay...','2026-11-09',0.64522,'Amazon Generated $202 Billion in Quarterly Sales. Most of Its Operating Profit Came From Just 1 Business.','https://www.fool.com/investing/2026/11/09/amazon-generated-202-billion-in-quarterly-sales/',40),(5,'luca socci','...','2026-11-09',0.06176,'Amazon: The Rings Of Power Show Why The Big Capex Bet Can Pay Off','https://seekingalpha.com/article/4964879-amazon-the-rings-of-power-show-why-the-big-capex-bet-can-pay-off',4),(6,'stephen wisnefski','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-09',-0.24886,'Stock Market Today: Futures Jump as Market Looks to Rebound from Last Weekâ€™s Big Losses; Nvidia Shares Slide as Company Investigates CEO Huang','https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11092026-12244409',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -430,4 +431,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-09  7:20:15
+-- Dump completed on 2026-11-10  7:51:54

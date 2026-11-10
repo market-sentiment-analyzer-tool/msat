@@ -189,6 +189,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 73e06ddb-da29-11f0-b7d1-fe1b9def36da:1-64,
 7517fc30-ccca-11f0-81f9-a2889788757c:1-62,
 751e3724-92d3-11f1-ad16-02c091c15a58:1-58,
+7667906d-dcdb-11f1-b69d-32d6083558f4:1-51,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
@@ -407,7 +408,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -416,7 +417,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'tristan rich','...','2026-11-08',0,'Alphabet Inc. $GOOG Holdings Decreased by Inscription Capital LLC','https://www.themarketsdaily.com/2026/11/08/alphabet-inc-goog-holdings-decreased-by-inscription-capital-llc.html',2),(2,'abmn staff','...','2026-11-08',0.2368,'Alphabet Inc. $GOOG Shares Bought by Alta Advisers Ltd','https://www.americanbankingnews.com/2026/11/08/alphabet-inc-goog-shares-bought-by-alta-advisers-ltd.html',2),(3,'quant galore','In recent years, the word â€œarbitrageâ€ has been thrown around more and more, especially after the rise of cryptocurrencies. But most times, it is used incorrectly and describes strategies with far grea...','2026-11-08',0.19976,'Dual-Class Arbitrage is a Literal Cash Cow. â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/dual-class-arbitrage-is-a-literal-cash-cow',4),(4,'chris neiger','SK Hynix is a clear leader in the memory market, and its latest quarterly results indicate a bright future.\nShares of Micron TechnologyÂ and Sandisk have soared 280% and 457%, respectively, over the pa...','2026-11-07',0.48882,'Micron and Sandisk Lead the Memory Market. 1 Stock Has Far Greater Upside.','https://www.fool.com/investing/2026/11/07/micron-and-sandisk-lead-the-memory-market-1-stock/',4),(5,'micah haroldson','...','2026-11-07',0,'Alphabet Inc. $GOOG Stock Sold by Kelleher Financial Advisors','https://www.watchlistnews.com/alphabet-inc-goog-stock-sold-by-kelleher-financial-advisors/11297475.html',2),(6,'alex crippen','\nReference #18.8c51c317.1794208799.cef109c5\nhttps://errors.edgesuite.net/18.8c51c317.1794208799.cef109c5\n\nhttps://errors.edgesuite.net/18.8c51c317.1794208799.cef109c5...','2026-11-07',-0.12248,'Berkshire shares surge as Wall Street swoons amid AI fears','https://www.cnbc.com/2026/11/07/berkshire-shares-surge-as-wall-street-swoons-amid-ai-fears.html',40),(7,'john ballard','The Nasdaq slipped last month on AI spending concerns, but these tech stocks still deliver useful services to the masses every day.\nThe Nasdaq Composite (^IXIC +1.09%) is down about 5% since the end o...','2026-11-07',0.34226,'3 Internet Giants to Hold for the Next 10 Years','https://www.fool.com/investing/2026/11/07/3-internet-giants-to-hold-for-the-next-10-years/',4),(8,'abmn staff','...','2026-11-07',-0.1024,'Alphabet Inc. $GOOG Stock: AIA Group Ltd Lowers Stake','https://www.americanbankingnews.com/2026/11/07/alphabet-inc-goog-stock-aia-group-ltd-lowers-stake.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  09, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP notifies investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that a class action lawsuit has been filed on behalf of shareholders who p...','2026-11-09',0.58786,'Alphabet Deadline Alert: Levi & Korsinsky Reminds Alphabet Inc. (GOOGL/GOOG) Investors of Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-9-alphabet-deadline-alert-levi-and-korsinsky-reminds-alphabet-inc-googlgoog-investors-of-securities-class-action-deadline-on-december-1-2026',4),(2,'hanz christensen','...','2026-11-09',0.2368,'2,228 Alphabet Inc. $GOOG Shares Sold by W.G. Shaheen & Associates DBA Whitney & Co','https://www.watchlistnews.com/2228-alphabet-inc-goog-shares-sold-by-w-g-shaheen-associates-dba-whitney-co/11299438.html',2),(3,'silin chen','Please enable JS and disable any ad blocker...','2026-11-08',0.26364,'Cathie Wood buys $17.2 million of tumbling tech stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-17-2-million-of-tumbling-tech-stock-alphabet-googl',4),(4,'tristan rich','...','2026-11-08',0,'Alphabet Inc. $GOOG Holdings Decreased by Inscription Capital LLC','https://www.themarketsdaily.com/2026/11/08/alphabet-inc-goog-holdings-decreased-by-inscription-capital-llc.html',2),(5,'abmn staff','...','2026-11-08',0.2368,'Alphabet Inc. $GOOG Shares Bought by Alta Advisers Ltd','https://www.americanbankingnews.com/2026/11/08/alphabet-inc-goog-shares-bought-by-alta-advisers-ltd.html',2);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -430,4 +431,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-09  7:20:15
+-- Dump completed on 2026-11-10  7:51:54
