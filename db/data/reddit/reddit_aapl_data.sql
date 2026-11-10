@@ -82,6 +82,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
 282104d4-51ab-11f1-838d-c2504b7d6f82:1-68,
+28879b5a-db40-11f1-a7e0-f235c3a9b319:1-54,
 2949f6ef-9d06-11f1-bd5c-1ed8a00ac57b:1-54,
 29db102f-b6ca-11f0-8395-d2656a0051a4:1-68,
 2a174cc3-4383-11f1-97d2-324057c8b733:1-61,
@@ -151,7 +152,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5cc01eab-5a52-11f1-a764-6a0c929f538e:1-60,
 5ce47231-6ebf-11f1-b124-363d7c5d329b:1-63,
 5d494d69-0d43-11f1-9bf0-c2e960c9aaa4:1-66,
-5d61bb46-db35-11f1-873f-2aa83bf710f7:1-245,
 5f545efe-f34e-11f0-b637-b275f31fbca5:1-66,
 60c87aea-8000-11f1-990c-fac789fd9aab:1-58,
 61010cb0-694b-11f1-bea2-565cee605b51:1-60,
@@ -313,6 +313,7 @@ d5e1ba8d-7da8-11f1-a6e5-46c7a8c93fd4:1-66,
 d602fc22-b148-11f0-aca8-e6eb8c86dbbd:1-68,
 d64639a7-d362-11f1-a68f-aa1084429b90:1-56,
 d779bbe2-bea5-11f0-8c61-dad1a7e5e3c3:1-67,
+d86d95eb-dcd2-11f1-90b3-46085f8de93d:1-184,
 d8760a95-c1c9-11f0-89dc-4602addb0d64:1-67,
 d887b5ac-c425-11f0-9939-ea18aa9e6f0e:1-66,
 d8e109f2-8a37-11f1-9fbe-ee5f719dc0c0:1-57,
@@ -324,6 +325,7 @@ db89d5a4-dc84-11f0-b03c-5e57ba2828b3:1-64,
 dd5a9c6b-acd7-11f1-81b6-de4a73e60784:1-56,
 ddab01c1-1c2f-11f1-ac78-9e81d0b8e41d:1-60,
 de0b268b-0632-11f1-8080-5a8e819522a2:1-64,
+de0c09cf-dc0d-11f1-b7c6-f635349febcc:1-60,
 de514f5b-c790-11f1-8393-5a406e766c4a:1-60,
 de8e1383-984d-11f1-aa46-f26fd0d78bd7:1-60,
 deaa959a-f419-11f0-b030-b6eb66098df2:1-65,
@@ -406,7 +408,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -415,6 +417,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'stocks','1xru2mp','19sdqlmh1mozo','2026-11-09',23,0.7003,'Theyâ€™re both great companies. You should hold both.'),(2,'stocks','1xru2mp','19sdr248iz9j7','2026-11-09',131,0.2088,'Lmao comparing AAPLs earnings vs MU at their peak is completely nonsense.  People don\'t think AAPLs revenue goes off a cliff in 2 years.'),(3,'stocks','1xru2mp','19sdsckdmi3nm','2026-11-09',40,0,'WHAT DOES A CASH COW SAY??\n\n  \nMUUUUUUUUUUU'),(4,'stocks','1xru2mp','19sdza8m127sx','2026-11-09',9,0.872,'I\'ve been buying Micron for a month on its way down. Im confident the company has much more runway than market is counting. They also begin stock buy backs in December. I will continue to buy when possible under $950 and ride it up to $1500+ in the next 2-3 quarters ðŸ“ˆðŸ“ˆ'),(5,'stocks','1xru2mp','19sdrdbbzlhxf','2026-11-09',12,0.0516,'The cycle point is fair, but Micron\'s own guide doesn\'t show the turn yet. It guided the quarter ending in early December to $61.5B revenue (plus or minus $1.5B) at roughly 86% gross margin, up from $54.2B last quarter, and its three biggest business units were already at 83-90% gross margin. So the discount is a bet on how fast new supply shows up, not on anything visible in the numbers so far. The next guide is where that gets tested.'),(6,'stocks','1xru2mp','19sdqu7dsbu2t','2026-11-09',17,0.3612,'I feel like you put nvdia in the title for SEO purposes. ðŸ¤®ðŸ¤¡'),(7,'stocks','1xru2mp','19se0d9p0n4zk','2026-11-09',3,0.9062,'yeah the gap looks silly until you remember what you\'re actually buying. Apple\'s profit shows up again next quarter bc people are locked into the ecosystem, Micron\'s shows up until the fabs catch up and then it doesn\'t. That said i think the market is pricing the turn like it\'s already here, and memory cycles have a habit of lasting longer than everyone expects. Could be wrong, the supply response is the whole ballgame here.'),(8,'stocks','1xru2mp','19sdrxvwm3wg5','2026-11-09',1,0.5423,'Apple will be holding the same lvl of revenue and profits in 10 or 20 years in the foreseeable future. MU is cyclical in an industry that suffers when cycles end'),(9,'stocks','1xru2mp','19sdqsbjjlres','2026-11-09',1,-0.1761,'Micron can be replaced. As new fabs come online, it wonâ€™t be able to keep charging a premium for RAM that costs little to make. Apple is different: once youâ€™re in its ecosystem, itâ€™s very hard to get out.'),(10,'stocks','1xru2mp','19sdsf7o0t4p0','2026-11-09',1,0.3321,'One way to frame it is that the $37.7B is more than eleven times what Micron earned in the same quarter a year ago, so the market is pricing it on a normalized cycle number rather than on the run rate. The tell for how long it lasts is usually supply rather than demand: when memory makers lift capex sharply and new fabs come online, pricing tends to turn before end demand does, so industry capex guidance is worth watching as closely as the HBM story.'),(11,'stocks','1xru2mp','19sdrg86df56r','2026-11-09',1,-0.6749,'Micron can only continue to price their storage so high until demand becomes an issue. \n\nThe big spenders took out huge loans to get this fiscal year rolling, if they decide to scale back even by 50%, Micron is screwed, and it\'s current P/E contraction has taken that into account.'),(12,'stocks','1xru2mp','19sdr0u65n37o','2026-11-09',0,0,'MU cyclical? '),(13,'stocks','1xru2mp','19sdqyf62girk','2026-11-09',-2,0,'Micron wonâ€™t be making that much forever'),(14,'stocks','1xru2mp','19sdra5jzlhxd','2026-11-09',-2,0,'Micron produces a commodity and weâ€™re going through the peak of a commodity cycle. So thereâ€™s a built in discount because we know it wonâ€™t lastÂ '),(15,'stocks','1xru2mp','19sdrd5t5fh1h','2026-11-09',0,0.7734,'Micron is only worth $800 compared to Apple\'s $5T? WOW! '),(16,'stocks','1xru2mp','19sdxqxg6vwn8','2026-11-09',-3,-0.743,'What did Micron do with all that â€œearningsâ€? Pay down debt and capex. No FCF for buybacks or dividends. No way it out-earns APPL next 5 years.'),(17,'AAPL','1xrog5h','19sdfyr4qmkro','2026-11-09',3,0.4939,'Yawn. Donâ€™t you realize that most of have been in Apple for decades? We donâ€™t care.Â '),(18,'AAPL','1xrog5h','19sdetqx2dwo0','2026-11-09',2,0,'Nope'),(19,'AAPL','1xrog5h','19sdfavzmvkpx','2026-11-09',2,-0.5636,'Who cares? I donâ€™t need to sell any right now, and if I have cash, a cheaper AAPL gives a less expensive buy in.\n\nBut that said. AAPL isnâ€™t as exposed to the AI weakness we are seeing, so itâ€™s probably one of the few fortresses of tech.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -428,4 +431,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-08  5:41:31
+-- Dump completed on 2026-11-10  6:57:20
