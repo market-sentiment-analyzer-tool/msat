@@ -23,6 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
+055e61ba-dda0-11f1-9e49-96c6de40bed4:1-50,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 06023262-cc47-11f1-b548-aee6750b919c:1-58,
@@ -408,7 +409,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -417,7 +418,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  09, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP notifies investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that a class action lawsuit has been filed on behalf of shareholders who p...','2026-11-09',0.58786,'Alphabet Deadline Alert: Levi & Korsinsky Reminds Alphabet Inc. (GOOGL/GOOG) Investors of Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-9-alphabet-deadline-alert-levi-and-korsinsky-reminds-alphabet-inc-googlgoog-investors-of-securities-class-action-deadline-on-december-1-2026',4),(2,'hanz christensen','...','2026-11-09',0.2368,'2,228 Alphabet Inc. $GOOG Shares Sold by W.G. Shaheen & Associates DBA Whitney & Co','https://www.watchlistnews.com/2228-alphabet-inc-goog-shares-sold-by-w-g-shaheen-associates-dba-whitney-co/11299438.html',2),(3,'silin chen','Please enable JS and disable any ad blocker...','2026-11-08',0.26364,'Cathie Wood buys $17.2 million of tumbling tech stock','https://www.thestreet.com/investing/stocks/cathie-wood-buys-17-2-million-of-tumbling-tech-stock-alphabet-googl',4),(4,'tristan rich','...','2026-11-08',0,'Alphabet Inc. $GOOG Holdings Decreased by Inscription Capital LLC','https://www.themarketsdaily.com/2026/11/08/alphabet-inc-goog-holdings-decreased-by-inscription-capital-llc.html',2),(5,'abmn staff','...','2026-11-08',0.2368,'Alphabet Inc. $GOOG Shares Bought by Alta Advisers Ltd','https://www.americanbankingnews.com/2026/11/08/alphabet-inc-goog-shares-bought-by-alta-advisers-ltd.html',2);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'david marino-nachison','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-10',0.01066,'Hereâ€™s How Much Anthropic Expects to Sell Shares for When Its IPO Lands','https://www.investopedia.com/how-much-anthropic-expects-to-sell-shares-for-when-its-ipo-lands-claude-ant-stock-12246718',4),(2,'financialcontent','NEW YORK, NY - November 10, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-10',0.55012,'Kaplan Fox & Kilsheimer LLP Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-10-kaplan-fox-and-kilsheimer-llp-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-december-1-2026',4),(3,'financialcontent','NEW YORK, Nov.  10, 2026  (GLOBE NEWSWIRE) -- SueWallSt notifies investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that a securities class action asserting Exchange Act claims is pending in the United ...','2026-11-10',0.5867,'Google Investor Alert: Alphabet Inc. Securities Class Action Notice - Contact SueWallSt','https://www.financialcontent.com/article/gnwcq-2026-11-10-google-investor-alert-alphabet-inc-securities-class-action-notice-contact-suewallst',40),(4,'patrick sanders','Chip and cloud suppliers are now investors in a customer whose spending plans far outrun its revenue.\nArtificial intelligence companies are spending hundreds of billions of dollars to build the infras...','2026-11-10',0.74448,'Nvidia, Alphabet, and Micron Just Agreed to Buy $26 Billion of Stock in One of Their Biggest Customers','https://www.fool.com/investing/2026/11/10/nvidia-alphabet-and-micron-just-agreed-to-buy-26-billion-of-stock-in-one-of-their-biggest-customers/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -431,4 +432,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-10  7:51:54
+-- Dump completed on 2026-11-11  7:18:53

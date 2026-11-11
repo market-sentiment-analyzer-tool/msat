@@ -23,6 +23,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 
 SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-60,
 042ac20c-a504-11f1-8e9e-aa9353e7f375:1-52,
+055e61ba-dda0-11f1-9e49-96c6de40bed4:1-50,
 05b5c144-aa7c-11f1-af87-0a2fa7fbf923:1-49,
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 06023262-cc47-11f1-b548-aee6750b919c:1-58,
@@ -408,7 +409,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -417,7 +418,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'financialcontent','Investigation centers on the November 6, 2026 news about NVIDIA Corporation; investors with losses may have potential claims to recover them\nShareholders with losses of $50,000 or more are encouraged ...','2026-11-09',-0.44786,'Lost Money on NVIDIA Corporation Shares? The Law Offices of Frank R. Cruz Investigates Potential Securities Fraud After 8.8% Stock Decline','https://www.financialcontent.com/article/bizwire-2026-11-9-lost-money-on-nvidia-corporation-shares-the-law-offices-of-frank-r-cruz-investigates-potential-securities-fraud-after-88-stock-decline',40),(2,'bay area ideas','...','2026-11-09',0,'Nvidia: The Jensen Affair Saga Is Just Noise','https://seekingalpha.com/article/4965209-nvidia-the-jensen-affair-saga-is-just-noise',4),(3,'wall street breakfast','...','2026-11-09',0,'Wall Street Lunch: Megaspeed In The Crosshairs','https://seekingalpha.com/article/4965212-wall-street-lunch-megaspeed-in-the-crosshairs',4),(4,'jr research','...','2026-11-09',0.10608,'Nvidia: China Spy Saga Not Enough To Shake Me Off','https://seekingalpha.com/article/4965187-nvidia-china-spy-saga-not-enough-to-shake-me-off',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-11-10',-0.35232,'Wall Street Lunch: When $1T Is A Disappointing Number','https://seekingalpha.com/article/4965780-wall-street-lunch-when-1t-is-a-disappointing-number',4),(2,'financialcontent','Faruqi & Faruqi, LLP Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses In NVIDIA To Contact Him Directly To Discuss Their Options\nIf you purchased or acquired ...','2026-11-10',0.5932,'NVDA DEADLINE ALERT: Faruqi & Faruqi, LLP Reminds NVIDIA (NASDAQ: NVDA) Investors of Securities Class Action Lawsuit Deadline on January 8, 2027','https://www.financialcontent.com/article/bizwire-2026-11-10-nvda-deadline-alert-faruqi-and-faruqi-llp-reminds-nvidia-nasdaq-nvda-investors-of-securities-class-action-lawsuit-deadline-on-january-8-2027',40),(3,'douglas a. mcintyre','Building a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guide to Retirement Income helps, and it is free ...','2026-11-10',-0.1124,'Jensen Huangâ€™s Net Worth Drops $4.6 Billion, And Falling Fast','https://247wallst.com/investing/2026/11/10/jensen-huangs-net-worth-drops-4-6-billion-and-falling-fast/',4),(4,'jonathan ponciano','A board investigation, an FBI review, and a shareholder lawsuit have investors asking a new question about Nvidia: what the company looks like without its founder.\nIn just five weeks, Nvidia (NVDA -5....','2026-11-10',0.07242,'Nvidia Stock Has Wiped Out $1.7 Trillion in Value Since October. What Could Happen If Jensen Huang Steps Down?','https://www.fool.com/investing/2026/11/10/nvidia-stock-has-wiped-out-usd1-7-trillion-in-value-since-october-what-could-happen-if-jensen-huang-steps-down/',40),(5,'david jagielski','The midterm elections took place last week, and some big names in tech have been falling sharply, potentially creating some exciting buying opportunities in the process.\nLast week, the midterm electio...','2026-11-10',0.15816,'Midterm Meltdowns: 3 Top Tech Stocks Down Big Since the Election Results','https://www.fool.com/investing/2026/11/10/midterm-meltdowns-3-top-tech-stocks-down-big-since-the-election-results/',4),(6,'null','...','2026-11-10',-0.56768,'Nvidia Is Down 30% From Its High. History Says This Is What Happens Next. - The Motley Fool','https://news.google.com/rss/articles/CBMilwFBVV95cUxNZXdzQzhNMVk1bGlTWjdyc3EtdUphNXZBS3hjY1NaLTJSUURXWFNqb3Q5NHBKdmxuTUdRel9mcXNIRnEwWjBhQXBxb25BdzJNbzU1MjJCMkxnZnNHY0VtM1hKMHAzSU9DTFpfWHRwQ1EwR2t0VjU1NDd0YnJ6MXp2bFJwVXNZc3hDSndQbTZ2YWFLaHZ5UFR3?oc=5',10);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -431,4 +432,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-10  7:51:54
+-- Dump completed on 2026-11-11  7:18:54
