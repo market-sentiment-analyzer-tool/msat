@@ -228,6 +228,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+97d72db8-de6d-11f1-bbeb-72e982b2ec90:1-54,
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
@@ -409,7 +410,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -418,7 +419,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'david marino-nachison','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-10',0.01066,'Hereâ€™s How Much Anthropic Expects to Sell Shares for When Its IPO Lands','https://www.investopedia.com/how-much-anthropic-expects-to-sell-shares-for-when-its-ipo-lands-claude-ant-stock-12246718',4),(2,'financialcontent','NEW YORK, NY - November 10, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-10',0.55012,'Kaplan Fox & Kilsheimer LLP Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-10-kaplan-fox-and-kilsheimer-llp-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-december-1-2026',4),(3,'financialcontent','NEW YORK, Nov.  10, 2026  (GLOBE NEWSWIRE) -- SueWallSt notifies investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that a securities class action asserting Exchange Act claims is pending in the United ...','2026-11-10',0.5867,'Google Investor Alert: Alphabet Inc. Securities Class Action Notice - Contact SueWallSt','https://www.financialcontent.com/article/gnwcq-2026-11-10-google-investor-alert-alphabet-inc-securities-class-action-notice-contact-suewallst',40),(4,'patrick sanders','Chip and cloud suppliers are now investors in a customer whose spending plans far outrun its revenue.\nArtificial intelligence companies are spending hundreds of billions of dollars to build the infras...','2026-11-10',0.74448,'Nvidia, Alphabet, and Micron Just Agreed to Buy $26 Billion of Stock in One of Their Biggest Customers','https://www.fool.com/investing/2026/11/10/nvidia-alphabet-and-micron-just-agreed-to-buy-26-billion-of-stock-in-one-of-their-biggest-customers/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'cision pr newswire','\n\n\n\nSearching for your content...\n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\n\n\n\n\nSearching for your content...\nNov 11, 2026, 12:36 ET\nShare this article\nPromise vs. Reality: The Alphabet Gemin...','2026-11-11',0.5522,'GOOGL/GOOG Shareholder Alert: December 1, 2026 Lead Plaintiff Deadline in Alphabet Inc. Securities Class Action - Contact Levi & Korsinsky','https://www.prnewswire.com/news-releases/googlgoog-shareholder-alert-december-1-2026-lead-plaintiff-deadline-in-alphabet-inc-securities-class-action---contact-levi--korsinsky-302936685.html',4),(2,'financialcontent','NEW YORK, Nov.  11, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-11-11',0.4346,'Kaplan Fox Reminds Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of a Securities Class Action Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-11-kaplan-fox-reminds-alphabet-inc-nasdaq-googl-goog-investors-of-a-securities-class-action-deadline-on-december-1-2026',4),(3,'prosper junior bakiny','Equity markets are experiencing significant volatility following the midterm elections, but investors should look beyond that.\nThe results of the recent U.S. midterm elections have rocked equity marke...','2026-11-11',0.84582,'3 Artificial Intelligence (AI) Stocks to Buy on the Post-Election Dip and Hold for 5 Years','https://www.fool.com/investing/2026/11/11/3-artificial-intelligence-ai-stocks-to-buy-on-the-post-election-dip-and-hold-for-5-years/',4),(4,'lawrence nga','Alphabet and CoreWeave are both positioned to benefit from AI, but one has a much stronger financial foundation.\nA stock market crash can create opportunities to buy great businesses at discounted pri...','2026-11-11',0.6574,'Alphabet or CoreWeave: Which AI Stock Is Better to Buy in a Market Crash?','https://www.fool.com/investing/2026/11/11/alphabet-or-coreweave-which-ai-stock-is-better-to/',4),(5,'financialcontent','NEW YORK, NY - November 10, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-10',0.1981,'Kaplan Fox & Kilsheimer LLP Alerts Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to the Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-10-kaplan-fox-and-kilsheimer-llp-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-the-lead-plaintiff-deadline-on-december-1-2026',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -432,4 +433,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-11  7:18:53
+-- Dump completed on 2026-11-12  7:50:29

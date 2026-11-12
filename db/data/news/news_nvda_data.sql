@@ -228,6 +228,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
 971a1ea0-75d1-11f1-806a-d6980de73bf0:1-60,
+97d72db8-de6d-11f1-bbeb-72e982b2ec90:1-54,
 97dd1dca-d68a-11f1-a308-0a94445fe9e2:1-50,
 98f29ee3-ae68-11f1-a1eb-aa6b79eb7fb5:1-63,
 9959add2-9e98-11f1-ac58-dac36ce06065:1-60,
@@ -409,7 +410,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -418,7 +419,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wall street breakfast','...','2026-11-10',-0.35232,'Wall Street Lunch: When $1T Is A Disappointing Number','https://seekingalpha.com/article/4965780-wall-street-lunch-when-1t-is-a-disappointing-number',4),(2,'financialcontent','Faruqi & Faruqi, LLP Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses In NVIDIA To Contact Him Directly To Discuss Their Options\nIf you purchased or acquired ...','2026-11-10',0.5932,'NVDA DEADLINE ALERT: Faruqi & Faruqi, LLP Reminds NVIDIA (NASDAQ: NVDA) Investors of Securities Class Action Lawsuit Deadline on January 8, 2027','https://www.financialcontent.com/article/bizwire-2026-11-10-nvda-deadline-alert-faruqi-and-faruqi-llp-reminds-nvidia-nasdaq-nvda-investors-of-securities-class-action-lawsuit-deadline-on-january-8-2027',40),(3,'douglas a. mcintyre','Building a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guide to Retirement Income helps, and it is free ...','2026-11-10',-0.1124,'Jensen Huangâ€™s Net Worth Drops $4.6 Billion, And Falling Fast','https://247wallst.com/investing/2026/11/10/jensen-huangs-net-worth-drops-4-6-billion-and-falling-fast/',4),(4,'jonathan ponciano','A board investigation, an FBI review, and a shareholder lawsuit have investors asking a new question about Nvidia: what the company looks like without its founder.\nIn just five weeks, Nvidia (NVDA -5....','2026-11-10',0.07242,'Nvidia Stock Has Wiped Out $1.7 Trillion in Value Since October. What Could Happen If Jensen Huang Steps Down?','https://www.fool.com/investing/2026/11/10/nvidia-stock-has-wiped-out-usd1-7-trillion-in-value-since-october-what-could-happen-if-jensen-huang-steps-down/',40),(5,'david jagielski','The midterm elections took place last week, and some big names in tech have been falling sharply, potentially creating some exciting buying opportunities in the process.\nLast week, the midterm electio...','2026-11-10',0.15816,'Midterm Meltdowns: 3 Top Tech Stocks Down Big Since the Election Results','https://www.fool.com/investing/2026/11/10/midterm-meltdowns-3-top-tech-stocks-down-big-since-the-election-results/',4),(6,'null','...','2026-11-10',-0.56768,'Nvidia Is Down 30% From Its High. History Says This Is What Happens Next. - The Motley Fool','https://news.google.com/rss/articles/CBMilwFBVV95cUxNZXdzQzhNMVk1bGlTWjdyc3EtdUphNXZBS3hjY1NaLTJSUURXWFNqb3Q5NHBKdmxuTUdRel9mcXNIRnEwWjBhQXBxb25BdzJNbzU1MjJCMkxnZnNHY0VtM1hKMHAzSU9DTFpfWHRwQ1EwR2t0VjU1NDd0YnJ6MXp2bFJwVXNZc3hDSndQbTZ2YWFLaHZ5UFR3?oc=5',10);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'kyle jackson','...','2026-11-11',0,'Technology Stocks To Keep An Eye On â€“ November 11th','https://www.watchlistnews.com/technology-stocks-to-keep-an-eye-on-november-11th/11303133.html',2),(2,'the wall street journal','Skip to comments.\nPosted on 11/11/2026 11:15:54 AM PST by E. Pluribus Unum\nFor six months, no one really noticed Culper Researchâ€™s report. All that changed this week.When Christian Lamarco decided to ...','2026-11-11',0.19994,'The 31-Year-Old Trader Who Called Out Jensen Huangâ€™s â€˜China Problemâ€™â€”and Shorted Nvidia','https://freerepublic.com/focus/f-news/4402660/posts',40),(3,'chris katje','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-11-11',0.68088,'EXCLUSIVE: Jensen Huang Drama Puts Q3 Financials on Backburner, Expert Says â€˜No One Cares About Their Record Revenuesâ€™','https://www.benzinga.com/trading-ideas/long-ideas/26/11/63160921/exclusive-jensen-huang-drama-puts-q3-financials-on-backburner-expert-says-no-one-cares-about-their-record-revenues',8),(4,'aj tiarsmith','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-11',0.58064,'Cramer Says Apple Investors Who Sold After Steve Jobs Missed Years Of Gains. The Stock Is Up Nearly 3,000% Since. Now Heâ€™s Asking If Nvidia Needs Jensen Huang','https://247wallst.com/investing/2026/11/11/cramer-says-apple-investors-who-sold-after-steve-jobs-missed-years-of-gains-the-stock-is-up-nearly-3000-since-now-hes-asking-if-nvidia-needs-jensen-huang/',40),(5,'cision pr newswire','\n\n\n\nSearching for your content...\n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\n\n\n\n\nSearching for your content...\nNov 11, 2026, 13:30 ET\nShare this article\nVANCOUVER, BC, Nov. 11, 2026 /PRNewswir...','2026-11-11',0.1981,'Nasdaq Jumps Over 4% This Week as Chip Names Drive a Sharp Midweek Rally','https://www.prnewswire.com/news-releases/nasdaq-jumps-over-4-this-week-as-chip-names-drive-a-sharp-midweek-rally-302936836.html',4);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -432,4 +433,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-11  7:18:54
+-- Dump completed on 2026-11-12  7:50:29
