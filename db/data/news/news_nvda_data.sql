@@ -224,6 +224,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+941ffd14-df33-11f1-b922-86250fa0e6e6:1-49,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
@@ -410,7 +411,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -419,7 +420,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'kyle jackson','...','2026-11-11',0,'Technology Stocks To Keep An Eye On â€“ November 11th','https://www.watchlistnews.com/technology-stocks-to-keep-an-eye-on-november-11th/11303133.html',2),(2,'the wall street journal','Skip to comments.\nPosted on 11/11/2026 11:15:54 AM PST by E. Pluribus Unum\nFor six months, no one really noticed Culper Researchâ€™s report. All that changed this week.When Christian Lamarco decided to ...','2026-11-11',0.19994,'The 31-Year-Old Trader Who Called Out Jensen Huangâ€™s â€˜China Problemâ€™â€”and Shorted Nvidia','https://freerepublic.com/focus/f-news/4402660/posts',40),(3,'chris katje','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-11-11',0.68088,'EXCLUSIVE: Jensen Huang Drama Puts Q3 Financials on Backburner, Expert Says â€˜No One Cares About Their Record Revenuesâ€™','https://www.benzinga.com/trading-ideas/long-ideas/26/11/63160921/exclusive-jensen-huang-drama-puts-q3-financials-on-backburner-expert-says-no-one-cares-about-their-record-revenues',8),(4,'aj tiarsmith','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-11',0.58064,'Cramer Says Apple Investors Who Sold After Steve Jobs Missed Years Of Gains. The Stock Is Up Nearly 3,000% Since. Now Heâ€™s Asking If Nvidia Needs Jensen Huang','https://247wallst.com/investing/2026/11/11/cramer-says-apple-investors-who-sold-after-steve-jobs-missed-years-of-gains-the-stock-is-up-nearly-3000-since-now-hes-asking-if-nvidia-needs-jensen-huang/',40),(5,'cision pr newswire','\n\n\n\nSearching for your content...\n\nContact Us\n\n\n 888-776-0942\n\nfrom 8 AM - 10 PM ET\n\n\n\n\n\nSearching for your content...\nNov 11, 2026, 13:30 ET\nShare this article\nVANCOUVER, BC, Nov. 11, 2026 /PRNewswir...','2026-11-11',0.1981,'Nasdaq Jumps Over 4% This Week as Chip Names Drive a Sharp Midweek Rally','https://www.prnewswire.com/news-releases/nasdaq-jumps-over-4-this-week-as-chip-names-drive-a-sharp-midweek-rally-302936836.html',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'wajeeh khan','...','2026-11-12',0.39512,'Jensen Huang Just Resigned from Nvidia, Plunging NVDA Shares Deep into Oversold Territory. Hereâ€™s What Barchart Options Data Says Could Come Next.','https://www.barchart.com/story/news/8807734/jensen-huang-just-resigned-from-nvidia-plunging-nvda-shares-deep-into-oversold-territory-heres-what-barchart-options-data-says-could-come-next',20),(2,'wall street breakfast','...','2026-11-12',-0.35232,'Wall Street Lunch: Nvidia Tumbles As CEO Huang Quits Amid Scandal','https://seekingalpha.com/article/4967232-wall-street-lunch-nvidia-tumbles-as-ceo-huang-quits-amid-scandals',40),(3,'jason capul','Justin Sullivan/Getty Images News\nGoldman Sachs analysts are pointing to Appleâ€™s (AAPL) experience more than a decade ago as a useful frame for how investors may value Nvidia (NVDA) amid questions aro...','2026-11-12',0.51108,'Goldman Sachs sees favorable risk-reward in Nvidia, citing Apple leadership parallel','https://seekingalpha.com/news/4671691-goldman-sachs-sees-favorable-risk-reward-in-nvidia-citing-apple-leadership-parallel?feed_item_type=news',8),(4,'christine ji','Please enable JS and disable any ad blocker...','2026-11-12',0.06364,'Nvidia stock is on sale after Jensen Huangâ€™s exit. Is the selloff just starting?','https://www.marketwatch.com/bulletins/redirect/go?g=889aa63f-d126-4844-bd1e-edfa4bfa6a4c&mod=mw_rss_bulletins',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -433,4 +434,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-12  7:50:29
+-- Dump completed on 2026-11-13  7:27:41
