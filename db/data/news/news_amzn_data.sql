@@ -28,6 +28,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 06023262-cc47-11f1-b548-aee6750b919c:1-58,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+070e4fec-dffa-11f1-a830-3e0d5149d30a:1-65,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 07ecdd7e-c085-11f1-9cc4-ceaf47f53326:1-62,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
@@ -411,7 +412,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -420,7 +421,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'john ballard','Three Dow giants pair market dominance with the financial strength to keep growing for the next decade.\nThe Dow Jones Industrial Average (^DJI -0.36%) is up about 9% this year through Nov. 9. The inde...','2026-11-12',0.62132,'3 Unstoppable Dow Stocks to Buy in November and Hold for the Next Decade','https://www.fool.com/investing/2026/11/12/3-unstoppable-dow-stocks-to-buy-in-november-and-hold-for-the-next-decade/',4),(2,'michael joseph','Michael Joseph, CFA, is a portfolio manager and deputy chief investment officer at Meristead Wealth (formerly Stansberry Asset Management) and writes about markets, investing and the economy. As of Ju...','2026-11-12',0.22058,'Which business moats will still matter in the age of AI?','https://fortune.com/2026/11/12/ai-agents-behavioral-moats-consumer-inertia-investors/',4),(3,'the curious analyst','...','2026-11-12',0.44592,'AWS Will Keep Amazon Profitable For Years To Come','https://seekingalpha.com/article/4966934-aws-will-keep-amazon-profitable-for-years-to-come',40),(4,'mohit oberoi','...','2026-11-12',0.06176,'Amazon Has Quietly Recouped Its Post Q3 Earnings Losses. AMZN Stock Could Hit $300 Next.','https://www.barchart.com/story/news/8798049/amazon-has-quietly-recouped-its-post-q3-earnings-losses-amzn-stock-could-hit-300-next',20);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'john kingston','\n\n\nNew Yorkâ€“It is increasingly clear that before the end of 2026, the New York City Council will likely pass legislation that will be called the Delivery Protection Act, a law that from the start had ...','2026-11-13',0.19906,'Amazon-focused bill likely to pass in NYC but only after changes','https://www.freightwaves.com/news/amazon-focused-bill-likely-to-pass-in-nyc-but-only-after-changes',4),(2,'mike barrington','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-13',0.34228,'Amazon Joins Goldman Sachsâ€™ Conviction List Alongside 4 Other Stock Picks','https://247wallst.com/investing/2026/11/13/amazon-joins-goldman-sachs-conviction-list-alongside-4-other-stock-picks/',40),(3,'dave kovaleski','The stock has averaged a 20% annual return over the past 60 years. \nThe Magnificent Seven stocks have not been so magnificent as of late. The Roundhill Magnificent Seven ETF (MAGS -0.29%), which inves...','2026-11-13',0.76746,'Forget the \"Magnificent Seven.\" Berkshire Hathaway Could Be the Better Long-Term Bet.','https://www.fool.com/investing/2026/11/13/forget-the-magnificent-seven-berkshire-hathaway-could-be-the-better-long-term-bet/',4),(4,'alan pierce','Amazonâ€™s record profitability and rapid AWS growth strengthen its investment case, but AI spending and shrinking free cash flow complicate the picture.\nAmazon reported a record 13.9% third-quarter ope...','2026-11-13',0.3422,'Amazonâ€™s Record Margin Meets a Growing Cash-Flow Test','https://equity-insider.com/amazon-record-margin-growing-cash-flow-test/',4),(5,'stephen wisnefski','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-13',0.61842,'Stock Market Today: Futures Tick Higher as Nvidia Shares Rise; Major Indexes on Track for Big Weekly Gains','https://www.investopedia.com/stock-market-today-dow-jones-today-s-and-p-500-nasdaq-11132026-12252143',4),(6,'trey thoelcke','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-13',0.63356,'What Youâ€™ll Actually Own If You Buy Into the Anthropic IPO','https://247wallst.com/investing/2026/11/13/what-youll-actually-own-if-you-buy-into-the-anthropic-ipo/',4),(7,'micah haroldson','...','2026-11-13',0.45752,'21,434 Amazon.com, Inc. $AMZN Shares Sold by WealthCare Asset Management LLC','https://www.watchlistnews.com/21434-amazon-com-inc-amzn-shares-sold-by-wealthcare-asset-management-llc/11305909.html',2),(8,'mark dietrich','...','2026-11-13',0,'Amazon.com, Inc. $AMZN Stock: Verde Servicos Internacionais S.A. Decreases Holdings','https://www.watchlistnews.com/amazon-com-inc-amzn-stock-verde-servicos-internacionais-s-a-decreases-holdings/11305799.html',2);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -434,4 +435,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-13  7:27:41
+-- Dump completed on 2026-11-14  7:08:06
