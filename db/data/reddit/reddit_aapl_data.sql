@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+17369371-dfef-11f1-8e17-a24ef142142b:1-327,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -166,7 +167,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
-6669486d-df27-11f1-a241-7238b850f322:1-1438,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
@@ -225,6 +225,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+941ffd14-df33-11f1-b922-86250fa0e6e6:1-49,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
@@ -411,7 +412,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -420,7 +421,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xufze1','19sj5alnqy4yp','2026-11-12',27,0,'Tim Apple has to change his name to Tim Nvidia'),(2,'AAPL','1xufze1','19sj5g8161t43','2026-11-12',18,0.3576,'As a LT holder of AAPL and having met Tim Cook at Apple stores, he clearly can take over. This would be a big loss to AAPL as Ternus needs guidance. \n\nI think Appleâ€™s chief hardware guy Johny Srouji makes more sense with his military no nonsense commanding presence can calm and take over Nvidia after this turmoil '),(3,'AAPL','1xufze1','19sj55x6nho6c','2026-11-12',12,0.3818,'I donâ€™t think Tim Cook will take the offer though. He has been clear he wants to retire. '),(4,'AAPL','1xufze1','19sjajfmtfpgg','2026-11-12',8,0,'Never heard of him, is he related to Tim Apple?'),(5,'AAPL','1xufze1','19sj6544d8dk4','2026-11-12',5,0.2023,'Tim Cook could do 4 more years at NVIDIA , while the company work on succession '),(6,'AAPL','1xufze1','19sjgrmokfmhx','2026-11-12',6,-0.2204,'Why is anyone taking this seriously '),(7,'AAPL','1xufze1','19sj4voz3kkgx','2026-11-12',10,0.3182,'Sure, grandpa, now letâ€™s get you to bed.'),(8,'AAPL','1xufze1','19sjdrgcfbp9c','2026-11-12',3,-0.7184,'Tim Cook would have to step down from the Apple Board and likely sell his stock. Not gonna happen.'),(9,'AAPL','1xufze1','19sj74ebtxrqd','2026-11-12',2,0.1139,'Trump is buying Nividia, the man never stops.'),(10,'AAPL','1xufze1','19sj7lc2ww0pw','2026-11-12',2,-0.0258,'Question is does Tim want to work that hard? '),(11,'AAPL','1xufze1','19sj8a17u8tyc','2026-11-12',3,0.6249,'Tim Cook would do great at Nvidia. '),(12,'AAPL','1xufze1','19sj5im66hup1','2026-11-12',3,-0.357,'I have no interest in what Trump thinks'),(13,'AAPL','1xufze1','19sj6apisi9b9','2026-11-12',3,0.4023,'Will never happen.  Idiot.'),(14,'AAPL','1xufze1','19sjexgi5po6c','2026-11-12',1,0.4404,'Hope not.Â '),(15,'AAPL','1xufze1','19sjey55f59r7','2026-11-12',1,0,'TIMOTHY APPLE'),(16,'AAPL','1xufze1','19sjpte6cf0df','2026-11-12',1,0.6249,'Trump is famous for his great hiring practices. '),(17,'AAPL','1xufze1','19sjy5mvuxi1w','2026-11-13',1,-0.5563,'Trump is an utter idiot.  '),(18,'AAPL','1xufze1','19sk1xl7u60td','2026-11-13',1,-0.4215,'The Mid-Term election loss was a much needed med for Trump. He\'s become sensible nowadays.'),(19,'AAPL','1xufze1','19sj9gaymuug4','2026-11-12',1,0.2263,'Surprised he didn\'t nominate himself. '),(20,'AAPL','1xufze1','19sje0rsnflwh','2026-11-12',0,-0.9022,'Trump is an idiot who knew of the Chinese spy and refused to intervene even though it was threatening national security. Heâ€™s a corrupt motherfucker.'),(21,'AAPL','1xufze1','19sj9e8ubtl7l','2026-11-12',-1,-0.7404,'Bro is sundowning so hard. This country is fucked '),(22,'AAPL','1xufze1','19sj86q4rrfs1','2026-11-12',0,0.743,'Tim sits pretty as executive chair, taking in more $ and power than ever (Ternus is just the CEO). Â It would be a demotion for Tim, going from being Chairman of the number 1 company to CEO of number 3. Â  Â  Itâ€™s like asking Pedo to be a Senator. Â '),(23,'AAPL','1xufze1','19sjc4plr8psz','2026-11-12',0,0.8658,'Yes Tim did a great job overseeing Siri ai ðŸ˜‚'),(24,'AAPL','1xufze1','19sjcb73useqo','2026-11-12',0,0,'Lol.... high IQ at work '),(25,'AAPL','1xuhty2','19sj7p36g6nsy','2026-11-12',9,-0.4588,'Apple\'s not doing business in a vacuum.  Perhaps you\'re aware of the whole \"AI\" thing that\'s put crushing demand on chips and memory...'),(26,'AAPL','1xuhty2','19sj80g0sn56r','2026-11-12',3,-0.93,'Apple has never been â€œaffordableâ€ like some K-Mart specials. Â In fact people have been griping for decades that Apple products are overpriced. Â The Duo is only $100 more than the Samsung Fold and people were screaming bloody murder. Â  Â  The Neo is kinda their first endeavor into lower cost market! Â Â '),(27,'AAPL','1xuhty2','19sjbll2vt539','2026-11-12',3,0.137,'In 2002 Appleâ€™s cheapest laptop came in at $999. A G3 iBook. In todayâ€™s dollars thatâ€™s about $1875. Appleâ€™s cheapest laptop now is $699. Thatâ€™s like 60% less expensive than the cheapest laptop in 2003. Yes weâ€™ve had recent price hikes and yes the AI boom hurts pricing and yes inflation sucks. But historically, adjusted for inflation, apple computers are generally very affordable, even with recent price increases. '),(28,'AAPL','1xuhty2','19sj8kz3xtt6t','2026-11-12',2,0.5879,'Please read the news - AI chips demand a premium even over APPL chip and memory buys - so APPL is having to pay more. Even Dan Ives who can barely stop praising APPL up one side and down the other to catch his breath admits this.'),(29,'AAPL','1xuhty2','19sjw4yp3we0w','2026-11-13',1,0.8807,'The Neo is Apple\'s attempt to recapture the education market that the Chromebook conquered.\n\nWhats brilliant was AAPL using surplus chips from the iPhone 16 pro max to power the Neo.\n\nI\'ve been using the MBP formerly Powerbook since 2001 and loved what the Neo represented.\n\nIt\'s introducing new people to the Mac ecosystem and according to consensus, they like belonging there.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -434,4 +434,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-13  7:13:37
+-- Dump completed on 2026-11-14  6:05:09

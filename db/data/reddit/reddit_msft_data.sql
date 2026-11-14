@@ -48,6 +48,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
+17369371-dfef-11f1-8e17-a24ef142142b:1-327,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -166,7 +167,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 64bb1860-15e7-11f1-9de0-1e03a4025538:1-62,
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
-6669486d-df27-11f1-a241-7238b850f322:1-1438,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
@@ -225,6 +225,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 916d1696-ab45-11f1-a0f3-167d06d20d95:1-53,
 917f5838-1f54-11f1-bfd4-9e2c33b442ed:1-58,
 92a4495f-eaaa-11f0-a398-128a5403e979:1-67,
+941ffd14-df33-11f1-b922-86250fa0e6e6:1-49,
 94b429d8-190b-11f1-9624-5a2d6ac1cb02:1-66,
 94db429b-d034-11f1-b495-5a13ee7f3fbd:1-54,
 96be82cc-72af-11f1-9279-4aca45626b8e:1-70,
@@ -411,7 +412,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -420,6 +421,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1xv0agw','19sk987q7vxlw','2026-11-13',51,-0.5574,'Remember the Crowdstrike outage, I remember when that was going to bankrupt themâ€¦'),(2,'stocks','1xv0agw','19sk8z8is3zkw','2026-11-13',11,-0.3612,'It seems that there has never been such a long interruption.'),(3,'stocks','1xv0agw','19sk7tmxp597m','2026-11-13',59,0.7213,'Nothing will happen to Microsoft and AI stocks. There was an AWS outage last year which was a much bigger impact than outlook outage and AMAZON stock was positive on that day. '),(4,'stocks','1xv0agw','19sk8ze8v8elc','2026-11-13',19,0.126,'Outage sounds better then being hacked!'),(5,'stocks','1xv0agw','19skegn59fco3','2026-11-13',9,-0.5812,'MS is pinning it on an auth/routing config component, they patched part of the infra this morning and say servers are stabilizing. azure status page shows no issues, it\'s the 365/exchange side, so idk if it moves the stock much unless it drags into next week'),(6,'stocks','1xv0agw','19sk8bllqbqw5','2026-11-13',16,-0.5423,'No, an outage will not move the stock. Do you understand how expensive it is to move a F500 company from one platform to another? No, because nobody does it. '),(7,'stocks','1xv0agw','19skkjn308lid','2026-11-13',8,-0.5878,'Still down for me - started yesterday around noon here on the east coast of the USA.   Would not surprise me if it was a rogue AI agent.'),(8,'stocks','1xv0agw','19sk7ksxjr8ir','2026-11-13',6,-0.1531,'My money is on several disgruntled employees throwing spanners in the power looms.'),(9,'stocks','1xv0agw','19sk7i6m2s3j5','2026-11-13',4,0.2732,'Well Iâ€™d expect AWS and GCP to boom'),(10,'stocks','1xv0agw','19skoe9w41m91','2026-11-13',4,0,'It will move the stock, but not by as much as what happened to crowdstrike'),(11,'stocks','1xv0agw','19skgypouuspt','2026-11-13',2,-0.4019,'Emails are coming through for me now.  Still is a gap in emails from time servers that went down till when they went back up that havenâ€™t arrived and may be lost. '),(12,'stocks','1xv0agw','19skj8gr4af38','2026-11-13',2,0,'This is a nothing burger for the stock'),(13,'stocks','1xv0agw','19skklkvmcov4','2026-11-13',2,0.7251,'I hold MSFT, and the way I look at outages is through the contract structure: most enterprise customers are on multi-year agreements with service credits, so a day of downtime costs credits and reputation far more than revenue. What would worry me more is a pattern of repeated incidents during a big round of layoffs, because that is when renewal conversations start to get harder.'),(14,'stocks','1xv0agw','19skjgjxmfjkw','2026-11-13',1,0,'Vibe debugging '),(15,'stocks','1xv0agw','19skoq5o6sgys','2026-11-13',1,-0.1027,'If they cant find the issue then Ai probably hid it. '),(16,'stocks','1xv0agw','19skti4g5l6u9','2026-11-13',1,0.5267,'I know that this doesn\'t fix anything and wasn\'t really the question, but as of right now my Microsoft suite is back up and running. Maybe the company has enough historical dependency that it didn\'t tank as much as if a less experienced company with this much dependency across the world would\'ve experienced. '),(17,'stocks','1xv0agw','19sk8k8p8kmhu','2026-11-13',1,0.7506,'The world runs on Microsoft. Nobody comes close in replacing Microsoft infrastructure. We complain itâ€™s down, but millions of companies also rely on Microsoft. Once itâ€™s back up businesses will return to normal and the stock will continue to go up. Just buy the dip (if it dips).'),(18,'stocks','1xv0agw','19skn0wpiqjfo','2026-11-13',0,-0.4767,'One day of outage means literally nothing other than an excuse to make the stock red. '),(19,'stocks','1xv0agw','19skot8uuu1ur','2026-11-13',0,0.6705,'I remember a few years ago, everything went out at once. Only for a couple of hours.\n\nI\'m pretty sure the only people concerned was Miss 1k Instagram likes and those types of people.'),(20,'stocks','1xv0agw','19skpmsrj6ndv','2026-11-13',0,0,'More things are being vibe coded.  This is a likely consequence.'),(21,'stocks','1xv0agw','19sku7uefbisl','2026-11-13',-1,0.4588,'It should be -10%, MSFT can not figure out the issue after 16h. Office 364 represents 33% of their revenue.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -433,4 +435,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-13  7:13:37
+-- Dump completed on 2026-11-14  6:05:09
