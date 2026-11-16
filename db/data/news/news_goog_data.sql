@@ -360,6 +360,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
@@ -413,7 +414,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -422,7 +423,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, NY - November 13, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-13',-0.0019,'Kaplan Fox Reminds Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors With Significant Losses to Seek a Leadership Role Before Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-13-kaplan-fox-reminds-alphabet-inc-nasdaq-googl-goog-investors-with-significant-losses-to-seek-a-leadership-role-before-deadline-on-december-1-2026',4),(2,'financialcontent','NEW YORK, Nov.  13, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-11-13',0.25956,'Kaplan Fox Alerts Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to a Securities Class Action Lawsuit â€“ Contact the Firm Before Deadline on December 1, 2026 for Leadership Role','https://www.financialcontent.com/article/gnwcq-2026-11-13-kaplan-fox-alerts-alphabet-inc-nasdaq-googl-goog-investors-to-a-securities-class-action-lawsuit-contact-the-firm-before-deadline-on-december-1-2026-for-leadership-role',4),(3,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / November 13, 2026 / Levi & Korsinsky, LLP alerts investors in Alphabet Inc. (NASDAQ:GOOGL, GOOG) of a pending securities class action. Class Period: May 19, 2026 ...','2026-11-13',0.13468,'GOOGL/GOOG DEADLINE: Levi & Korsinsky Reminds Alphabet Inc. Investors of Upcoming Securities Class Action Deadline','https://www.financialcontent.com/article/accwirecq-2026-11-13-googlgoog-deadline-levi-and-korsinsky-reminds-alphabet-inc-investors-of-upcoming-securities-class-action-deadline',4),(4,'chris neiger','Alphabet stock looks like a downright bargain.\nMany companies are tapping into the artificial intelligence (AI) boom in their own way. Two companies in this sector are already seeing benefits, and it ...','2026-11-13',0.91852,'Not Apple. Not Microsoft. This \"Magnificent Seven\" Stock Is My Top Tech Buy for 2027.','https://www.fool.com/investing/2026/11/13/not-apple-microsoft-magnificent-7-stock-buy-goog/',4),(5,'bram berkowitz','The largest news publisher in the country has sued Google over monopolistic advertising practices that it believes cost the company billions.\nFew industries have felt disruption in the 21st century mo...','2026-11-13',-0.28152,'This Media Stock Has a $1 Billion Market Cap. A Pending Lawsuit Could Reap as Much as $2.7 Billion in Damages.','https://www.fool.com/investing/2026/11/13/media-stock-1-billion-market-cap-pending-lawsuit-reap-2-7-billion-damages/',4),(6,'james brumley','Stocks are finally settling down following a few weeks of extreme volatility. Use this lull as an entry point before more investors realize many of these names are currently on sale at a great price.\n...','2026-11-13',0.71858,'2 Bargain Stocks to Buy With $1,000 in November','https://www.fool.com/investing/2026/11/13/2-bargain-stocks-to-buy-with-1000-in-november/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'gerelyn terzo',' The Full Benefits Desk desk. Editor: Gerelyn Terzo.\nThe biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money ...','2026-11-14',-0.01468,'He Thinks His $200,000 S&P 500 401(k) Spreads His AI Risk. Two Alphabet Share Classes Put $10,380 in One Company. A 20% Drop Could Cost Him $2,076','https://247wallst.com/personal-finance/2026/11/14/he-thinks-his-200000-sp-500-401k-spreads-his-ai-risk-two-alphabet-share-classes-put-10380-in-one-company-a-20-drop-could-cost-him-2076/',4),(2,'prosper junior bakiny','Anthropic could start its life as a publicly traded company with a bang.\nWill Space Exploration Technologies (SPCX -0.59%) end the year with its record as the largest IPO in history still intact? Mayb...','2026-11-14',0.75986,'Forget SpaceX: This Potential Blockbuster IPO Has Attracted $26 Billion From AI Giants','https://www.fool.com/investing/2026/11/14/forget-spacex-this-potential-blockbuster-ipo-has-attracted-usd26-billion-from-ai-giants/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -436,4 +437,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-15  7:23:20
+-- Dump completed on 2026-11-16  7:26:28

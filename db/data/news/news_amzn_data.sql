@@ -360,6 +360,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
@@ -413,7 +414,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -422,7 +423,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'robert izquierdo','AT&T and Verizon both trade at similar valuations, but their paths diverge sharply in other areas.\nAT&T (T +0.00%) and Verizon Communications (VZ -0.41%) have spent years competing for the loyalty of ...','2026-11-14',0.80038,'AT&T vs. Verizon: Which Telecom Stock Is a Better Buy for 2027?','https://www.fool.com/coverage/better-buy/2026/11/14/at-and-t-vs-verizon-which-telecom-stock-is-a-better-buy-for-2027/',4),(2,'ethan ryder','...','2026-11-14',0.52776,'6,105 Amazon.com, Inc. $AMZN Shares Sold by Angeles Wealth Management LLC','https://www.tickerreport.com/banking-finance/13663960/6105-amazon-com-inc-amzn-shares-sold-by-angeles-wealth-management-llc.html',2),(3,'abmn staff','...','2026-11-14',0.2368,'Busey Bank Sells 8,185 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/11/14/busey-bank-sells-8185-shares-of-amazon-com-inc-amzn.html',2),(4,'abmn staff','...','2026-11-14',0.272,'Amazon.com, Inc. $AMZN Stock Position Raised by Black Diamond Financial LLC','https://www.americanbankingnews.com/2026/11/14/amazon-com-inc-amzn-stock-position-raised-by-black-diamond-financial-llc.html',2),(5,'marketbeat','Shares of Amazon.com, Inc. (NASDAQ:AMZN - Get Free Report) have earned an average rating of \"Moderate Buy\" from the sixty research firms that are presently covering the company, MarketBeat reports. Th...','2026-11-14',0.2,'Amazon.com, Inc. (NASDAQ:AMZN) Stock Has Consensus Price Target of $321.74 According to Brokerages','https://www.marketbeat.com/instant-alerts/consensus-amazoncom-inc-nasdaq-amzn-stock-has-consensus-price-target-of-32174-according-to-brokerages-2026-11-14/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'wall street breakfast','...','2026-11-15',0,'Wall Street Brunch: Nvidia, Anthropic And GTA 6 (Oh, My!)','https://seekingalpha.com/article/4968405-wall-street-brunch-nvidia-anthropic-and-gta-6-oh-my',4),(2,'kim johansen','...','2026-11-15',0.2368,'Amazon.com, Inc. $AMZN Shares Bought by North Dakota State Investment Board','https://www.themarketsdaily.com/2026/11/15/amazon-com-inc-amzn-shares-bought-by-north-dakota-state-investment-board.html',2),(3,'kyle jackson','...','2026-11-15',0.2368,'1,963 Amazon.com, Inc. $AMZN Shares Sold by Lynx Investment Advisory','https://www.watchlistnews.com/1963-amazon-com-inc-amzn-shares-sold-by-lynx-investment-advisory/11307627.html',2),(4,'lindsey winhoffer','...','2026-11-15',0.2368,'Amazon.com, Inc. $AMZN Shares Sold by Mcdonald Capital Investors Inc. CA','https://www.watchlistnews.com/amazon-com-inc-amzn-shares-sold-by-mcdonald-capital-investors-inc-ca/11307628.html',2),(5,'abmn staff','...','2026-11-15',0.2368,'BLB&B Advisors LLC Sells 2,359 Shares of Amazon.com, Inc. $AMZN','https://www.americanbankingnews.com/2026/11/15/blbb-advisors-llc-sells-2359-shares-of-amazon-com-inc-amzn.html',2),(6,'opeyemi babalola','Please enable JS and disable any ad blocker...','2026-11-15',0.3182,'Goldman Sachsâ€™ calm 2027 forecast comes with a catch','https://www.thestreet.com/economy/goldman-sachs-2027-forecast',4),(7,'marketbeat','North Dakota State Investment Board increased its stake in shares of Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 3.9% in the 3rd quarter, according to its most recent 13F filing with the Securitie...','2026-11-15',0.2,'Amazon.com, Inc. $AMZN Stock: North Dakota State Investment Board Raises Holdings','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stock-north-dakota-state-investment-board-raises-holdings-2026-11-15/',4),(8,'marketbeat','Vantage Investment Partners LLC trimmed its position in Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 3.5% in the third quarter, according to its most recent disclosure with the Securities and Excha...','2026-11-15',-0.0368,'Amazon.com, Inc. $AMZN Stock: Vantage Investment Partners LLC Cuts Holdings','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stock-vantage-investment-partners-llc-cuts-holdings-2026-11-15/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -436,4 +437,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-15  7:23:20
+-- Dump completed on 2026-11-16  7:26:28
