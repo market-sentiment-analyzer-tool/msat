@@ -28,6 +28,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 05ce0485-12c3-11f1-be7f-ae8bdda924fb:1-63,
 06023262-cc47-11f1-b548-aee6750b919c:1-58,
 063ee96c-bab8-11f0-846e-36fac19fdb38:1-68,
+070e4fec-dffa-11f1-a830-3e0d5149d30a:1-65,
 0789b953-e786-11f0-8eed-829cad47bbbf:1-64,
 07ecdd7e-c085-11f1-9cc4-ceaf47f53326:1-62,
 09563136-a204-11f1-80ca-5eca850e79d9:1-61,
@@ -48,7 +49,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 134f9f2f-bb02-11f1-9ede-d22304aa37ad:1-50,
 1479504d-04a1-11f1-bffc-2ac52c41f950:1-62,
 16898804-a81f-11f1-99a7-029547650963:1-49,
-17369371-dfef-11f1-8e17-a24ef142142b:1-327,
 176bed3d-cdda-11f1-9b27-321341f5fcde:1-61,
 176f76e9-bc49-11f0-b398-3ac28be51465:1-71,
 17b98275-8e29-11f1-ba27-4eb3d3c8e788:1-57,
@@ -194,6 +194,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 7667906d-dcdb-11f1-b69d-32d6083558f4:1-51,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
+7854422b-e181-11f1-b489-9216445b33e6:1-700,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
@@ -267,6 +268,7 @@ b78f627f-be29-11f1-b249-8e2c944af315:1-51,
 b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b846faed-cab2-11f1-8cbf-b289668d31b3:1-68,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
+b96c3548-e0c4-11f1-8df4-5a299545b1d0:1-49,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
@@ -412,7 +414,7 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -421,7 +423,6 @@ CREATE TABLE `REDDIT_MSFT_DATA` (
 
 LOCK TABLES `REDDIT_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_MSFT_DATA` VALUES (1,'stocks','1xv0agw','19sk987q7vxlw','2026-11-13',51,-0.5574,'Remember the Crowdstrike outage, I remember when that was going to bankrupt themâ€¦'),(2,'stocks','1xv0agw','19sk8z8is3zkw','2026-11-13',11,-0.3612,'It seems that there has never been such a long interruption.'),(3,'stocks','1xv0agw','19sk7tmxp597m','2026-11-13',59,0.7213,'Nothing will happen to Microsoft and AI stocks. There was an AWS outage last year which was a much bigger impact than outlook outage and AMAZON stock was positive on that day. '),(4,'stocks','1xv0agw','19sk8ze8v8elc','2026-11-13',19,0.126,'Outage sounds better then being hacked!'),(5,'stocks','1xv0agw','19skegn59fco3','2026-11-13',9,-0.5812,'MS is pinning it on an auth/routing config component, they patched part of the infra this morning and say servers are stabilizing. azure status page shows no issues, it\'s the 365/exchange side, so idk if it moves the stock much unless it drags into next week'),(6,'stocks','1xv0agw','19sk8bllqbqw5','2026-11-13',16,-0.5423,'No, an outage will not move the stock. Do you understand how expensive it is to move a F500 company from one platform to another? No, because nobody does it. '),(7,'stocks','1xv0agw','19skkjn308lid','2026-11-13',8,-0.5878,'Still down for me - started yesterday around noon here on the east coast of the USA.   Would not surprise me if it was a rogue AI agent.'),(8,'stocks','1xv0agw','19sk7ksxjr8ir','2026-11-13',6,-0.1531,'My money is on several disgruntled employees throwing spanners in the power looms.'),(9,'stocks','1xv0agw','19sk7i6m2s3j5','2026-11-13',4,0.2732,'Well Iâ€™d expect AWS and GCP to boom'),(10,'stocks','1xv0agw','19skoe9w41m91','2026-11-13',4,0,'It will move the stock, but not by as much as what happened to crowdstrike'),(11,'stocks','1xv0agw','19skgypouuspt','2026-11-13',2,-0.4019,'Emails are coming through for me now.  Still is a gap in emails from time servers that went down till when they went back up that havenâ€™t arrived and may be lost. '),(12,'stocks','1xv0agw','19skj8gr4af38','2026-11-13',2,0,'This is a nothing burger for the stock'),(13,'stocks','1xv0agw','19skklkvmcov4','2026-11-13',2,0.7251,'I hold MSFT, and the way I look at outages is through the contract structure: most enterprise customers are on multi-year agreements with service credits, so a day of downtime costs credits and reputation far more than revenue. What would worry me more is a pattern of repeated incidents during a big round of layoffs, because that is when renewal conversations start to get harder.'),(14,'stocks','1xv0agw','19skjgjxmfjkw','2026-11-13',1,0,'Vibe debugging '),(15,'stocks','1xv0agw','19skoq5o6sgys','2026-11-13',1,-0.1027,'If they cant find the issue then Ai probably hid it. '),(16,'stocks','1xv0agw','19skti4g5l6u9','2026-11-13',1,0.5267,'I know that this doesn\'t fix anything and wasn\'t really the question, but as of right now my Microsoft suite is back up and running. Maybe the company has enough historical dependency that it didn\'t tank as much as if a less experienced company with this much dependency across the world would\'ve experienced. '),(17,'stocks','1xv0agw','19sk8k8p8kmhu','2026-11-13',1,0.7506,'The world runs on Microsoft. Nobody comes close in replacing Microsoft infrastructure. We complain itâ€™s down, but millions of companies also rely on Microsoft. Once itâ€™s back up businesses will return to normal and the stock will continue to go up. Just buy the dip (if it dips).'),(18,'stocks','1xv0agw','19skn0wpiqjfo','2026-11-13',0,-0.4767,'One day of outage means literally nothing other than an excuse to make the stock red. '),(19,'stocks','1xv0agw','19skot8uuu1ur','2026-11-13',0,0.6705,'I remember a few years ago, everything went out at once. Only for a couple of hours.\n\nI\'m pretty sure the only people concerned was Miss 1k Instagram likes and those types of people.'),(20,'stocks','1xv0agw','19skpmsrj6ndv','2026-11-13',0,0,'More things are being vibe coded.  This is a likely consequence.'),(21,'stocks','1xv0agw','19sku7uefbisl','2026-11-13',-1,0.4588,'It should be -10%, MSFT can not figure out the issue after 16h. Office 364 represents 33% of their revenue.');
 /*!40000 ALTER TABLE `REDDIT_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -435,4 +436,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-14  6:05:09
+-- Dump completed on 2026-11-16  6:24:40
