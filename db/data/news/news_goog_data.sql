@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1d5bb216-e262-11f1-b52e-1245c201bb8e:1-49,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -414,7 +415,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,7 +424,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'gerelyn terzo',' The Full Benefits Desk desk. Editor: Gerelyn Terzo.\nThe biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money ...','2026-11-14',-0.01468,'He Thinks His $200,000 S&P 500 401(k) Spreads His AI Risk. Two Alphabet Share Classes Put $10,380 in One Company. A 20% Drop Could Cost Him $2,076','https://247wallst.com/personal-finance/2026/11/14/he-thinks-his-200000-sp-500-401k-spreads-his-ai-risk-two-alphabet-share-classes-put-10380-in-one-company-a-20-drop-could-cost-him-2076/',4),(2,'prosper junior bakiny','Anthropic could start its life as a publicly traded company with a bang.\nWill Space Exploration Technologies (SPCX -0.59%) end the year with its record as the largest IPO in history still intact? Mayb...','2026-11-14',0.75986,'Forget SpaceX: This Potential Blockbuster IPO Has Attracted $26 Billion From AI Giants','https://www.fool.com/investing/2026/11/14/forget-spacex-this-potential-blockbuster-ipo-has-attracted-usd26-billion-from-ai-giants/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  16, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-11-16',0.1978,'Kaplan Fox Notifies Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of an Upcoming Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-16-kaplan-fox-notifies-alphabet-inc-nasdaq-googl-goog-investors-of-an-upcoming-lead-plaintiff-deadline-on-december-1-2026',4),(2,'financialcontent','NEW YORK, Nov.  16, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities of a pending securities class action on behalf of investors who...','2026-11-16',-0.37146,'Levi & Korsinsky Reminds Alphabet Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 1, 2026 - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-11-16-levi-and-korsinsky-reminds-alphabet-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-1-2026-googlgoog',4),(3,'adria cimino','One of this companyâ€™s businesses is very familiar to most of us.\nArtificial intelligence (AI) infrastructure stocks are key players driving this technology revolution, and they have seen their shares ...','2026-11-16',0.63376,'1 No-Brainer AI Infrastructure Stock to Buy Hand Over Fist in November','https://www.fool.com/investing/2026/11/16/1-no-brainer-ai-infrastructure-stock-to-buy-hand-over-fist-in-november/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -437,4 +438,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-16  7:26:28
+-- Dump completed on 2026-11-17  8:38:14

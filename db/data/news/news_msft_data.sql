@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1d5bb216-e262-11f1-b52e-1245c201bb8e:1-49,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -414,7 +415,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,7 +424,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'wall street breakfast','    Leon Neal/Getty Images News\n \nLeon Neal/Getty Images News\nListen below or on the go on Apple Podcasts and Spotify\n\n\n\n\n\n\n\n\n\n\nNvidia reports with Kress at helm. Bull v. Bear. (0:30) Can Anthropicâ€™s ...','2026-11-15',0.19958,'Wall Street Brunch: Nvidia, Anthropic And GTA 6 (Oh, My!)','https://seekingalpha.com/article/4968405-wall-street-brunch-nvidia-anthropic-and-gta-6-oh-my',8),(2,'opeyemi babalola','Please enable JS and disable any ad blocker...','2026-11-15',0.3182,'Goldman Sachsâ€™ calm 2027 forecast comes with a catch','https://www.thestreet.com/economy/goldman-sachs-2027-forecast',4),(3,'sarita garza','...','2026-11-15',0.28896,'Microsoft Corporation $MSFT Stock: NorthCrest Asset Manangement LLC Raises Stake','https://www.themarketsdaily.com/2026/11/15/microsoft-corporation-msft-stock-northcrest-asset-manangement-llc-raises-stake.html',20),(4,'logan wallace','...','2026-11-15',0,'Microsoft Corporation $MSFT Stake Lessened by Seilern Investment Management Ltd','https://www.tickerreport.com/banking-finance/13664096/microsoft-corporation-msft-stake-lessened-by-seilern-investment-management-ltd.html',20),(5,'kyle jackson','...','2026-11-15',0,'Microsoft Corporation $MSFT Holdings Raised by Steel Grove Capital Advisors LLC','https://www.watchlistnews.com/microsoft-corporation-msft-holdings-raised-by-steel-grove-capital-advisors-llc/11307469.html',20),(6,'marketbeat','Steel Grove Capital Advisors LLC boosted its stake in shares of Microsoft Corporation (NASDAQ:MSFT - Free Report) by 14.1% during the 3rd quarter, according to its most recent filing with the SEC. The...','2026-11-15',0.2,'Microsoft Corporation $MSFT Stock Purchased by Steel Grove Capital Advisors LLC','https://www.marketbeat.com/instant-alerts/filing-microsoft-corporation-msft-stock-purchased-by-steel-grove-capital-advisors-llc-2026-11-15/',40),(7,'marketbeat','Seilern Investment Management Ltd lessened its holdings in shares of Microsoft Corporation (NASDAQ:MSFT - Free Report) by 19.9% in the 3rd quarter, according to the company in its most recent Form 13F...','2026-11-15',0.2,'Microsoft Corporation $MSFT Stock Position Reduced by Seilern Investment Management Ltd','https://www.marketbeat.com/instant-alerts/filing-microsoft-corporation-msft-stock-position-reduced-by-seilern-investment-management-ltd-2026-11-15/',40),(8,'marketbeat','McCollum Christoferson Group LLC lifted its holdings in Microsoft Corporation (NASDAQ:MSFT - Free Report) by 92.5% during the 3rd quarter, according to the company in its most recent Form 13F filing w...','2026-11-15',0.4368,'Microsoft Corporation $MSFT Shares Acquired by McCollum Christoferson Group LLC','https://www.marketbeat.com/instant-alerts/filing-microsoft-corporation-msft-shares-acquired-by-mccollum-christoferson-group-llc-2026-11-15/',40);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'investing.com','...','2026-11-16',0,'Microsoft 365 outage: what it means for the stock and market positioning','https://www.investing.com/news/stock-market-news/microsoft-365-outage-what-it-means-for-the-stock-and-market-positioning-93CH-5030741',20),(2,'jake lerch','The latest technology sell-off makes portfolio overlap easier to notice.\nConsider an investor who owns three exchange-traded funds (ETFs), each containing dozens or hundreds of holdings. In theory, th...','2026-11-16',0.19964,'The Nasdaq Just Entered a Correction. Are Your ETFs All Making the Same Bet?','https://www.fool.com/investing/2026/11/16/the-nasdaq-just-entered-a-correction-are-your-etfs-all-making-the-same-bet/',4),(3,'matt frankel','Equal weighting reduces your exposure to the mega-cap tech stocks. But thereâ€™s more to the story. \n\nMany investors own S&P 500 index funds because they view them as a diversified investment. In one se...','2026-11-16',0.53674,'Is an Equal-Weight S&P 500 Fund Safer Right Now Than the One You Own?','https://www.fool.com/investing/2026/11/16/is-an-equal-weight-s-and-p-500-fund-safer-right-now-than-the-one-you-own/',4),(4,'celine provini','Please enable JS and disable any ad blocker...','2026-11-16',0.06364,'Take-Two isnâ€™t the only stock with a stake in GTA 6','https://www.thestreet.com/investing/take-two-gta-6-who-else-gets-paid',4),(5,'vandita jadeja',' Price Targets desk. Editor: Vandita Jadeja.\nBuilding a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guid...','2026-11-16',0.79992,'One Magnificent Seven Stock Looks Ready for Its Next Big Move','https://247wallst.com/investing/2026/11/16/one-magnificent-seven-stock-looks-ready-for-its-next-big-move/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -437,4 +438,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-16  7:26:28
+-- Dump completed on 2026-11-17  8:38:15
