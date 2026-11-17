@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+413c4ce2-e258-11f1-9c56-4e61c63f172d:1-557,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -194,7 +195,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 7667906d-dcdb-11f1-b69d-32d6083558f4:1-51,
 766a7950-0242-11f1-82e3-d278b7e35e2f:1-64,
 76c6eb6d-66e6-11f1-a0ff-a2116d74a30c:1-62,
-7854422b-e181-11f1-b489-9216445b33e6:1-700,
 78aa5f81-a756-11f1-9f92-e64dad3e5875:1-56,
 78ffc339-1131-11f1-91f8-eed224e56f17:1-58,
 797e8966-dee1-11f0-b0d6-3ec9d84f4f6f:1-69,
@@ -361,6 +361,7 @@ ea22c53a-bb80-11f0-9245-065db7d9f361:1-67,
 ec1f771c-6554-11f1-ad7a-46ca6d60b776:1-59,
 ec50952a-d897-11f0-8e07-da6e52640bac:1-63,
 ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
+ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
@@ -414,7 +415,7 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,7 +424,6 @@ CREATE TABLE `REDDIT_GOOG_DATA` (
 
 LOCK TABLES `REDDIT_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_GOOG_DATA` VALUES (1,'stocks','1xxcp7f','19sp87r290ytd','2026-11-16',71,0.7083,'Hydrogen is really impressive for a lower tier and one thing google is really excellent at is how much they have lowered the rate of hallucinations. '),(2,'stocks','1xxcp7f','19sp7y8u7bv44','2026-11-16',30,0.3071,'the argument against this is that ANT and OAI are simply better products but personally I enjoy using Gemini. iâ€™m not really a Claude user but it seems to be the furthest along product of the AI tools on the market - i believe this is the general argument against what youâ€™re saying '),(3,'stocks','1xxcp7f','19spb74dhuyx0','2026-11-16',8,0.0558,'I think that yes this is huge, and the muted reaction so far isn\'t rational.\n\nBut my very half-hearted defence of it would be that (a) Google has been here before - at the frontier - and lost it, so perhaps some people are waiting to see if this is more than a \'blip\'; combined with (b) we know Anthropic (and even OpenAI) have some much stronger internal models that they aren\'t releasing, so it\'s not entirely clear how much sandbagging is going on.'),(4,'stocks','1xxcp7f','19sp9y7y6swg0','2026-11-16',8,0,'Gemini for day to day stuff. Claude for coding '),(5,'stocks','1xxcp7f','19sp8iga61y6d','2026-11-16',7,-0.5927,'This has literally been the narrative for years before the previous year. I still think they have the potential, but I think people are tired of potential and need them to start delivering now'),(6,'stocks','1xxcp7f','19spaulvmlute','2026-11-16',3,0.978,'I don\'t know about you, but I pay for the high tier products and claude is not comparable to the rest, it\'s just a superior product at the moment. If the result has real world impact for me, I\'m not using a cheaper alternative, I\'m using the best of the best. It might be different for other people, so the economics may play a role in terms of which company will be the more profitable.'),(7,'stocks','1xxcp7f','19sp7zhltkgg1','2026-11-16',1,0.8569,'Meta also has models on par with the best open weights available (intelligence wise at least)\n\nNot sure what the recent google models change about the market'),(8,'stocks','1xxcp7f','19sp9h3vl3lmt','2026-11-16',-4,0,'Anyone who has actually used the products understands that Anthropic and OpenAI are far ahead of everyone else ');
 /*!40000 ALTER TABLE `REDDIT_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -437,4 +437,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-16  6:24:40
+-- Dump completed on 2026-11-17  7:48:00
