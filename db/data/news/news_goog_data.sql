@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -415,7 +416,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -424,7 +425,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  16, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-11-16',0.1978,'Kaplan Fox Notifies Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors of an Upcoming Lead Plaintiff Deadline on December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-16-kaplan-fox-notifies-alphabet-inc-nasdaq-googl-goog-investors-of-an-upcoming-lead-plaintiff-deadline-on-december-1-2026',4),(2,'financialcontent','NEW YORK, Nov.  16, 2026  (GLOBE NEWSWIRE) -- Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ: GOOGL, GOOG) securities of a pending securities class action on behalf of investors who...','2026-11-16',-0.37146,'Levi & Korsinsky Reminds Alphabet Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 1, 2026 - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-11-16-levi-and-korsinsky-reminds-alphabet-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-1-2026-googlgoog',4),(3,'adria cimino','One of this companyâ€™s businesses is very familiar to most of us.\nArtificial intelligence (AI) infrastructure stocks are key players driving this technology revolution, and they have seen their shares ...','2026-11-16',0.63376,'1 No-Brainer AI Infrastructure Stock to Buy Hand Over Fist in November','https://www.fool.com/investing/2026/11/16/1-no-brainer-ai-infrastructure-stock-to-buy-hand-over-fist-in-november/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  17, 2026  (GLOBE NEWSWIRE) -- SueWallSt notifies pension funds, ERISA plan fiduciaries, and asset managers that a securities class action has been filed against Alphabet Inc. (NASDAQ: ...','2026-11-17',0.00932,'SueWallSt Reminds Shareholders of a Lead Plaintiff Deadline of December 1, 2026 in Alphabet Inc. Lawsuit - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-11-17-suewallst-reminds-shareholders-of-a-lead-plaintiff-deadline-of-december-1-2026-in-alphabet-inc-lawsuit-googlgoog',4),(2,'sean williams','Duquesne Family Officeâ€™s billionaire boss swapped one trillion-dollar artificial intelligence (AI) hyperscaler for another.\nAlthough earnings season -- the six-week period when most S&P 500 (^GSPC -1....','2026-11-17',0.19964,'Billionaire Stanley Druckenmiller Dumped Google Parent Alphabet in Favor of Another Trillion-Dollar AI Giant','https://www.fool.com/investing/2026/11/17/billionaire-stanley-druckenmiller-dumped-google-parent-alphabet-for-trillion-dollar-ai-giant/',40),(3,'calvin cao','\n    There were 2,537 press releases posted in the last 24 hours and 505,384 in the last 365 days.\n  \nProposed framework covers SGE Token licensing, royalty-free use, and potential institutional and i...','2026-11-17',0.1831,'SGE.FOUNDATION Describes Proposed Token-Based Licensing Structure','https://www.einpresswire.com/article/957176160/sge-foundation-describes-proposed-token-based-licensing-structure',4),(4,'rj fulton','As competition for digital advertising dollars intensifies, the ability to monetize artificial intelligence without sacrificing profitability could determine which technology giant delivers stronger s...','2026-11-17',0.19994,'Alphabet vs. Meta Platforms: Both Are Betting Billions on AI, but One Stock Has the Edge for 2027','https://www.fool.com/coverage/better-buy/2026/11/17/alphabet-vs-meta-platforms-both-are-betting-billions-on-ai-but-one-stock-has-the-edge-for-2027/',4),(5,'cove street capital','...','2026-11-17',0,'The Basilisk In The Market','https://seekingalpha.com/article/4968850-the-basilisk-in-the-market',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -438,4 +439,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-17  8:38:14
+-- Dump completed on 2026-11-18  8:01:30

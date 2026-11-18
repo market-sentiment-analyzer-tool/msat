@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -415,7 +416,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -424,7 +425,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'jennifer sor','The AI trade was struggling again on Monday as investors headed toward new catalysts with the potential to rewire the bull market. \nTech stocks were shaken on as traders fretted about the health of th...','2026-11-16',-0.318,'A struggling AI trade is dragging stocks lower ahead of Anthropicâ€™s mega-IPO','https://www.businessinsider.com/ai-stock-selloff-nvidia-q3-earnings-anthropic-ipo-2026-11',4),(2,'adam spatacco','The Nasdaq recently fell into correction territory.\nAfter years of unusually high gains fueled by artificial intelligence (AI) stocks, the Nasdaq Composite (^IXIC -2.49%) recently entered correction t...','2026-11-16',0.19964,'Nasdaq Stock Market Correction: These 6 Words From Warren Buffett Are More Relevant Than Ever','https://www.fool.com/investing/2026/11/16/nasdaq-stock-market-correction-these-6-words-from-warren-buffett-are-more-relevant-than-ever/',4),(3,'vandita jadeja',' Price Targets desk. Editor: Vandita Jadeja.\nBuilding a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guid...','2026-11-16',0.2616,'Something Is Changing at Amazon, and Investors Should Pay Attention','https://247wallst.com/investing/2026/11/16/something-is-changing-at-amazon-and-investors-should-pay-attention/',4),(4,'neil patel','Market sentiment has taken a negative turn for a business investors considered a perennial winner.\nEven the best-performing stocks face troubling times. Netflix (NFLX -2.25%) is experiencing this now....','2026-11-16',-0.01876,'Netflix Stock Now Trades at a 70% Discount to Its Peak Valuation, and One Number Is to Blame','https://www.fool.com/investing/2026/11/16/netflix-stock-trades-70-discount-peak-valuation-one-number-blame/',4),(5,'neha gupta','Join Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free browsing Â· 30-day money back guarantee\nJoin Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free bro...','2026-11-16',0.62134,'Ken Fisher Portfolio Review: 10 Highest-Conviction Technology Stocks for Long-Term Growth','https://www.insidermonkey.com/news/ken-fisher-portfolio-review-10-highest-conviction-technology-stocks-for-long-term-growth-1864154/',4),(6,'matt frankel','Equal weighting reduces your exposure to the mega-cap tech stocks. But thereâ€™s more to the story. \n\nMany investors own S&P 500 index funds because they view them as a diversified investment. In one se...','2026-11-16',0.53674,'Is an Equal-Weight S&P 500 Fund Safer Right Now Than the One You Own?','https://www.fool.com/investing/2026/11/16/is-an-equal-weight-s-and-p-500-fund-safer-right-now-than-the-one-you-own/',4),(7,'moz farooque','Please enable JS and disable any ad blocker...','2026-11-16',0.06364,'Elon Musk calls out Jeff Bezos over SpaceX rivals','https://www.thestreet.com/technology/spacex-musk-bezos-launch-rivalry',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'opeyemi babalola','Please enable JS and disable any ad blocker...','2026-11-17',0.54316,'Bill Ackmanâ€™s $14 billion bet beyond the Magnificent 7','https://www.thestreet.com/investing/bill-ackman-sells-microsoft-buys-netflix-13f',4),(2,'leo sun','The leading power producer faces near-term headwinds.\nVistra(VST -2.31%), the largest competitive power producer in America, reached a record high of $217.02 per share on Sept. 22, 2025, marking a 556...','2026-11-17',-0.16734,'Vistra Is Down 41% From Its High. History Suggests This Is What Happens Next.','https://www.fool.com/investing/2026/11/17/vistra-is-down-41-from-its-high-history-suggests-this-is-what-happens-next/',4),(3,'nidhi kolhapur','...','2026-11-17',0.67536,'Magnificent 7 US Stocks : Meta, Amazon and Nvidia Lead the Buy List','https://coinpedia.org/stock-market-news/magnificent-7-us-stocks-meta-amazon-and-nvidia-lead-the-buy-list/',20),(4,'hanz christensen','...','2026-11-17',0.52776,'123,051 Amazon.com, Inc. $AMZN Shares Purchased by Partners Wealth Management LLC','https://www.watchlistnews.com/123051-amazon-com-inc-amzn-shares-purchased-by-partners-wealth-management-llc/11310925.html',2),(5,'micah haroldson','...','2026-11-17',0.14232,'Amazon.com, Inc. $AMZN Stock: International Assets Investment Management LLC Decreases Holdings','https://www.watchlistnews.com/amazon-com-inc-amzn-stock-international-assets-investment-management-llc-decreases-holdings/11310923.html',2),(6,'financialcontent','\nPrepared meals are now available alongside millions of other items with Amazon Grocery Same-Day Delivery in 2,300+ cities and towns, and a curated selection available with Amazon Now 30-minute delive...','2026-11-17',0.50538,'Amazon Grocery Launches Its Own Line of Prepared Meals with Same-Day Delivery: Salads Starting Under $3, All Meals Under $8','https://www.financialcontent.com/article/bizwire-2026-11-17-amazon-grocery-launches-its-own-line-of-prepared-meals-with-same-day-delivery-salads-starting-under-3-all-meals-under-8',40);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -438,4 +439,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-17  8:38:14
+-- Dump completed on 2026-11-18  8:01:30

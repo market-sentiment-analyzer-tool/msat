@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -415,7 +416,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -424,7 +425,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'investing.com','...','2026-11-16',0,'Microsoft 365 outage: what it means for the stock and market positioning','https://www.investing.com/news/stock-market-news/microsoft-365-outage-what-it-means-for-the-stock-and-market-positioning-93CH-5030741',20),(2,'jake lerch','The latest technology sell-off makes portfolio overlap easier to notice.\nConsider an investor who owns three exchange-traded funds (ETFs), each containing dozens or hundreds of holdings. In theory, th...','2026-11-16',0.19964,'The Nasdaq Just Entered a Correction. Are Your ETFs All Making the Same Bet?','https://www.fool.com/investing/2026/11/16/the-nasdaq-just-entered-a-correction-are-your-etfs-all-making-the-same-bet/',4),(3,'matt frankel','Equal weighting reduces your exposure to the mega-cap tech stocks. But thereâ€™s more to the story. \n\nMany investors own S&P 500 index funds because they view them as a diversified investment. In one se...','2026-11-16',0.53674,'Is an Equal-Weight S&P 500 Fund Safer Right Now Than the One You Own?','https://www.fool.com/investing/2026/11/16/is-an-equal-weight-s-and-p-500-fund-safer-right-now-than-the-one-you-own/',4),(4,'celine provini','Please enable JS and disable any ad blocker...','2026-11-16',0.06364,'Take-Two isnâ€™t the only stock with a stake in GTA 6','https://www.thestreet.com/investing/take-two-gta-6-who-else-gets-paid',4),(5,'vandita jadeja',' Price Targets desk. Editor: Vandita Jadeja.\nBuilding a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guid...','2026-11-16',0.79992,'One Magnificent Seven Stock Looks Ready for Its Next Big Move','https://247wallst.com/investing/2026/11/16/one-magnificent-seven-stock-looks-ready-for-its-next-big-move/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'opeyemi babalola','Please enable JS and disable any ad blocker...','2026-11-17',0.54316,'Bill Ackmanâ€™s $14 billion bet beyond the Magnificent 7','https://www.thestreet.com/investing/bill-ackman-sells-microsoft-buys-netflix-13f',4),(2,'evette mitkov','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-11-17',-0.16896,'Microsoft Stock Falls Amid Sector Weakness and Outages','https://www.benzinga.com/trading-ideas/movers/26/11/63364174/microsoft-stock-falls-amid-sector-weakness-and-outages',80),(3,'mei tan frontier ai','By\nMicrosoft AI announced seven specialized models on November 17, 2026, covering coding, cybersecurity, image generation and editing, realtime voice, transcription and decision routing, while claimin...','2026-11-17',0.13314,'Microsoft Releases Seven AI Models With Lower-Cost Enterprise Options','https://www.securities.io/microsoft-releases-seven-ai-models-with-lower-cost-enterprise-options/',40),(4,'ryne mauck',' The ETF Examiner desk. Editor: Ryne Mauck.\nBuilding a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive Guide...','2026-11-17',-0.01912,'Bill Ackman Cut His Microsoft Stake. Your S&P 500 Fund Canâ€™t.','https://247wallst.com/investing/etf/2026/11/17/bill-ackman-cut-his-microsoft-stake-your-sp-500-fund-cant/',40),(5,'fountainhead','...','2026-11-17',0.61736,'AMD: The Strong AI Contender Keeps Getting Better','https://seekingalpha.com/article/4969168-amd-the-strong-ai-contender-keeps-getting-better',4),(6,'chris lange','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-17',0.48876,'Microsoft Leads 4 Stocks That Just Announced Bigger Dividend Payments','https://247wallst.com/investing/2026/11/17/microsoft-leads-4-stocks-that-just-announced-bigger-dividend-payments/',40),(7,'nidhi kolhapur','...','2026-11-17',0.67536,'Magnificent 7 US Stocks : Meta, Amazon and Nvidia Lead the Buy List','https://coinpedia.org/stock-market-news/magnificent-7-us-stocks-meta-amazon-and-nvidia-lead-the-buy-list/',2),(8,'the arora report','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-11-17',0.16824,'Nvidia Earningsâ€”First Without Huangâ€”Options Market Signals 8.5% Stock Move','https://www.benzinga.com/opinion/26/11/63352031/nvidia-earnings-first-without-huang-options-market-signals-8-5-stock-move',8);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -438,4 +439,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-17  8:38:15
+-- Dump completed on 2026-11-18  8:01:30
