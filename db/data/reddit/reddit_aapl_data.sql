@@ -63,6 +63,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1cc5b5bb-6d35-11f1-b665-ea5a79ca5b97:1-62,
 1cf36fa5-a0f4-11f1-b726-0a2de1e7f358:1-55,
 1d3e0e79-ff20-11f0-b1af-f692592d95d8:1-63,
+1d5bb216-e262-11f1-b52e-1245c201bb8e:1-49,
 1ddc405e-4518-11f1-ae08-060f8b0f318b:1-61,
 1e06e42b-1b68-11f1-81ad-4e1771dbb352:1-55,
 1eaf0098-ce62-11f0-b5ae-ea70e161eee1:1-66,
@@ -70,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
 21bc4812-c153-11f1-8864-d6b831ac9055:1-60,
@@ -114,7 +116,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
-413c4ce2-e258-11f1-9c56-4e61c63f172d:1-557,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -273,6 +274,7 @@ baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
 bb75c9e0-87dc-11f1-9f75-7ec553f777eb:1-58,
+bbe2305d-e3e5-11f1-bcac-36ba11730cef:1-498,
 bc216cd2-8973-11f1-9526-a27d4da0db7f:1-57,
 bc7f6fd3-2d7e-11f1-949d-268e3df0ae10:1-57,
 bcc32e60-f806-11f0-9666-ca22665f0ab6:1-66,
@@ -415,7 +417,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -424,6 +426,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1xzj6s5','19stw6yxrvght','2026-11-18',11,-0.8905,'Because they\'re idiots.\n\nMost people short stocks at highs because they are predicting a reversal. It\'s a stupid strategy.\n\nAAPL is the elite leading stock of this market. It is within 3% of its all-time high while most other technology stocks have had major corrections.\n\nThose shorting AAPL here have no clue how the stock market works and should probably stop trading.'),(2,'AAPL','1xzj6s5','19stvn031kugx','2026-11-18',11,0,'â€œEvery day on Redditâ€â€¦ your answer can be found in your question. '),(3,'AAPL','1xzj6s5','19suejirmh1l0','2026-11-18',3,-0.8455,'Lot of POS Android users spew their Apple hate on Reddit in the form of â€œshorting $AAPL.â€ All because theyâ€™re bitter they couldnâ€™t afford Appleâ€™s ecosystem years ago and got conned into Android. All they talk about is tech and the price. Completely missing the point of Appleâ€™s moat operating successfully regardless of tech or price.\n\nIn America, Apple is the gold standard and Americans feel that way despite tech or price. Android users are broke and bitter in my experience'),(4,'AAPL','1xzj6s5','19stxsxuwf2v5','2026-11-18',3,-0.1779,'If you believe in the Apple thesis as a long term hold, just ignore the noise. I continue to DCA when it is red. Buy more when it drops a higher percentage. It is one of my biggest holdings in my portfolio. '),(5,'AAPL','1xzj6s5','19su0ddlox1z5','2026-11-18',3,0,'*Michael Blair has entered the chat*'),(6,'AAPL','1xzj6s5','19su1lrvpj4u8','2026-11-18',3,-0.926,'For 1 person who thinks Apple is THE COMPANY there are two people who hate Apple, especially on social media.Â \n\nThe recurring thesis is that 1) Apple doesnâ€™t innovate anymore, 2) Apple is overvalued, and c) Apple is failing the AI race. Â Also many people for some reasons hate Apple products and ecosystem, and they are very vocal about that. Â They think Apple is a cult and Apple users are crazy cultists.Â '),(7,'AAPL','1xzj6s5','19stwhmac5074','2026-11-18',1,0.9565,'Itâ€™s nothing new. Plus youâ€™ll see it on Reddit because itâ€™s their way of hoping to be successful with their bets. I donâ€™t see the likes of Berkshire doing that. Like Berkshire, Iâ€™ll continue long because itâ€™s worked for decades for me. Every holiday the sales go great with them. Their latest product, the HomeView is currently sold out. The HomeView was released less than a week ago.'),(8,'AAPL','1xzj6s5','19styc0b64ny9','2026-11-18',1,0,'I donâ€™t\n\nOwn it donâ€™t trade it'),(9,'AAPL','1xzj6s5','19stznhffshtv','2026-11-18',1,0,'â€œOnce a day on Redditâ€? I rarely see anyone talk about shorting Apple '),(10,'AAPL','1xzj6s5','19su15t4vco5e','2026-11-18',1,-0.7717,'Let them short more. Look at our price near ATH. That will tell you who are the fools.'),(11,'AAPL','1xzj6s5','19su1tchgcwn6','2026-11-18',1,0.8748,'I agree.  In the last two years Iâ€™ve seen many YouTuber â€œinvestors â€œ saying â€œoh Apple..not interested.  Theyâ€™re not innovative.  Google is gonna kick their assâ€. And here Apple is ..stock doing great while something like google has lost all profits for shareholders for what..a year? I mean lol'),(12,'AAPL','1xzj6s5','19suaokcyw20z','2026-11-18',1,0.743,'Well, not â€œeveryoneâ€. I have never shorted Apple. I buy and I hold.'),(13,'AAPL','1xzj6s5','19sud0p0yjxvo','2026-11-18',1,0.4939,'Oh sorry, didnâ€™t know you could only buy calls on Apple '),(14,'AAPL','1xzj6s5','19suokn6j6wci','2026-11-19',1,0.3115,'I\'ve been investing in individual stocks, including Apple, and funds for over 14 years. I have never seen a company get as much scrutiny over its products, reputation, and business model/strategy as Apple. For any misstep, no matter how small, it gets blasted by the media and on message boards. No other company is subjected to this treatment.\n\nThink about how many \"-gates\" there have been. Mapgate, antennagate, bendgate, etc. They didn\'t make a car so they got slammed. The Vision Pro didn\'t sell as well as they wanted so they got slammed for that too. Even though all of this turned out to be inconsequential to their fundamentals. \n\nMeanwhile Meta has burned through $80B on Reality Labs without any meaningful return but they\'re lauded for a little bit of success in glasses. I still have a hard time understanding why Apple attracts as much hate as it does.'),(15,'AAPL','1xzj6s5','19suubdw3fpz9','2026-11-19',1,0,'Everyone knows everything!!! Donâ€™t you know that already? '),(16,'AAPL','1xzj6s5','19stx6h5hm14y','2026-11-18',1,0.2195,'Anchors at CNBC like Dan Nathan have a naturally born hatred for AAPL stock, I donâ€™t know if theyâ€™re told to broadcast an opposing viewpoint (to cover their ass) or itâ€™s authentic. Their tones seem honest and their main treatise had been slowing growth and lack of new products. \n\nThe latter is really shortsighted as Ternus appears to be more hardware focused. Service is slowing as Apple TV losses a billion, whether they turn this around or not will be Ternusâ€™ major challenge in 2027. \n\nHedge funds tend to use AAPL shares for cost of funds.  Thereâ€™s where the reliable cash is stored. Iâ€™m long AAPL stocks for a long time and I too sell reinvested dividends shares for COF. \n\nHas short interest increased or just the puts margin?'),(17,'AAPL','1xzj6s5','19su3q7t75xl1','2026-11-18',0,0.8442,'Can someone tell me what does apple actually give to people? I mean there\'s gotta be some reason why a share is so much, but by what I know apple just makes a chip. And an OS that works REALLY great with that chip. So Apple does not build their own phone, Samsung gives them the parts, China assable them and that\'s it. Why are people obsessed with this business model? '),(18,'AAPL','1xzj6s5','19stwxfh1yblv','2026-11-18',-1,0,'because it\'s over-extended, and the forward PE......');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -437,4 +440,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-17  7:48:00
+-- Dump completed on 2026-11-19  7:14:59
