@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20489412-e3f0-11f1-a56b-2e90db941af0:1-55,
 20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -416,7 +417,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -425,7 +426,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, Nov.  17, 2026  (GLOBE NEWSWIRE) -- SueWallSt notifies pension funds, ERISA plan fiduciaries, and asset managers that a securities class action has been filed against Alphabet Inc. (NASDAQ: ...','2026-11-17',0.00932,'SueWallSt Reminds Shareholders of a Lead Plaintiff Deadline of December 1, 2026 in Alphabet Inc. Lawsuit - GOOGL/GOOG','https://www.financialcontent.com/article/gnwcq-2026-11-17-suewallst-reminds-shareholders-of-a-lead-plaintiff-deadline-of-december-1-2026-in-alphabet-inc-lawsuit-googlgoog',4),(2,'sean williams','Duquesne Family Officeâ€™s billionaire boss swapped one trillion-dollar artificial intelligence (AI) hyperscaler for another.\nAlthough earnings season -- the six-week period when most S&P 500 (^GSPC -1....','2026-11-17',0.19964,'Billionaire Stanley Druckenmiller Dumped Google Parent Alphabet in Favor of Another Trillion-Dollar AI Giant','https://www.fool.com/investing/2026/11/17/billionaire-stanley-druckenmiller-dumped-google-parent-alphabet-for-trillion-dollar-ai-giant/',40),(3,'calvin cao','\n    There were 2,537 press releases posted in the last 24 hours and 505,384 in the last 365 days.\n  \nProposed framework covers SGE Token licensing, royalty-free use, and potential institutional and i...','2026-11-17',0.1831,'SGE.FOUNDATION Describes Proposed Token-Based Licensing Structure','https://www.einpresswire.com/article/957176160/sge-foundation-describes-proposed-token-based-licensing-structure',4),(4,'rj fulton','As competition for digital advertising dollars intensifies, the ability to monetize artificial intelligence without sacrificing profitability could determine which technology giant delivers stronger s...','2026-11-17',0.19994,'Alphabet vs. Meta Platforms: Both Are Betting Billions on AI, but One Stock Has the Edge for 2027','https://www.fool.com/coverage/better-buy/2026/11/17/alphabet-vs-meta-platforms-both-are-betting-billions-on-ai-but-one-stock-has-the-edge-for-2027/',4),(5,'cove street capital','...','2026-11-17',0,'The Basilisk In The Market','https://seekingalpha.com/article/4968850-the-basilisk-in-the-market',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Alphabet already owns a huge chunk of Anthropic. It wants more.\nBy Keithen Drury â€“ Nov 18, 2026 at 3:05PM EST\n10 stocks we like better than Alphabet â€º\nAnthropic is going public Thursday, and it wonâ€™t ...','2026-11-18',0.48516,'Alphabet is Buying Around $10 Billion More Anthropic Shares on Day 1. Should You Follow?','https://www.fool.com/investing/2026/11/18/alphabet-is-buying-around-usd10-billion-more-anthropic-shares-on-day-1-should-you-follow/',4),(2,'adria cimino','These companies are building AI businesses designed to last.\nBy Adria Cimino â€“ Nov 18, 2026 at 5:02AM EST\n10 stocks we like better than Amazon â€º\nArtificial intelligence (AI) has been the engine poweri...','2026-11-18',0.52144,'3 Unstoppable AI Stocks to Buy Hand Over Fist Now That the Midterms Are Over','https://www.fool.com/investing/2026/11/18/3-unstoppable-ai-stocks-to-buy-hand-over-fist-now/',4),(3,'cpa','These stocks have tremendous growth potential due to AI, modest valuations, and have less risk than Nvidia these days.\nBy David Jagielski, CPA â€“ Nov 17, 2026 at 3:30PM EST\n10 stocks we like better tha...','2026-11-17',0.65728,'Worried About Nvidia? 3 Artificial Intelligence (AI) Stocks That May Be Safer Buys Right Now','https://www.fool.com/investing/2026/11/17/worried-about-nvidia-3-artificial-intelligence-ai-stocks-that-may-be-safer-buys-right-now/',4),(4,'adam spatacco','Berkshire Hathaway has nearly one-third of its portfolio invested in two \"Magnificent Seven\" stocks.\nBy Adam Spatacco â€“ Nov 17, 2026 at 1:00PM EST\n10 stocks we like better than Apple â€º\nWarren Buffett ...','2026-11-17',0.93708,'Warren Buffettâ€™s Successor, Greg Abel, Has 30.2% of Berkshireâ€™s $367 Billion Portfolio in Just 2 Magnificent Artificial Intelligence (AI) Stocks. Hereâ€™s the One Iâ€™d Buy Without Hesitation.','https://www.fool.com/investing/2026/11/17/warren-buffett-s-successor-greg-abel-has-30-2-of-berkshire-s-usd367-billion-portfolio-in-just-2-monster-artificial-intelligence-ai-stocks-here-s-the-one-i-d-buy-without-hesitation/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -439,4 +440,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-18  8:01:30
+-- Dump completed on 2026-11-19  8:07:22

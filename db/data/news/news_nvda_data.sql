@@ -71,6 +71,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 1fc0ff7d-20eb-11f1-b779-42a1b6b9df9c:1-64,
 1fdd96e2-95fc-11f1-b95e-3a49634fe4fb:1-52,
 200788ae-de18-11f0-8eae-c636a90bc413:1-66,
+20489412-e3f0-11f1-a56b-2e90db941af0:1-55,
 20c06783-e326-11f1-a99c-aafe46a5cb2e:1-54,
 20fb13a4-ed06-11f0-825a-92cd93f56f25:1-57,
 218080e0-e52a-11f0-876d-4e0608c41fb5:1-60,
@@ -416,7 +417,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -425,7 +426,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'stephen wisnefski','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-17',0.11074,'Jensen Huang Would Be â€˜Honoredâ€™ to Have His Old Job at Nvidia Back','https://www.investopedia.com/jensen-huang-would-be-honored-to-have-his-old-job-at-nvidia-back-nvda-stock-ceo-12260995',40),(2,'thomas richmond','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-17',0.47196,'Live: Will Nvidiaâ€™s Q3 Earnings Tonight Bring Leadership Update After 28% Selloff?','https://247wallst.com/investing/2026/11/17/live-will-nvidias-q3-earnings-tonight-bring-leadership-update-after-28-selloff/',4),(3,'andrew moran','This copy is for your personal, non-commercial use only. Distribution and use of this material are governed by our Subscriber Agreement and by copyright law. For non-personal use or to order multiple ...','2026-11-17',0.46716,'Nvidia Forms National Security, Export-Control Committee After Jensen Huang Fallout','https://www.theepochtimes.com/business/nvidia-forms-national-security-export-control-committee-after-jensen-huang-fallout-6125998',40),(4,'jeremy phillips','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-17',0.42764,'Nvidia Sold a Quarter of Its Intel Shares and More Than Half Its Nokia Stake. SpaceX Is Now Its Biggest Investment','https://247wallst.com/investing/2026/11/17/nvidia-sold-a-quarter-of-its-intel-shares-and-more-than-half-its-nokia-stake-spacex-is-now-its-biggest-investment/',40),(5,'david moadel',' Market Movers desk. Editor: David Moadel.\nIt sounds nuts, but SoFi is giving new Active Invest users up to $1,000 in stock for a limited time, and all it takes is a $50 deposit to get started. See fo...','2026-11-17',-0.20934,'IREN Is Down 26% in a Week Even as Soros and Intel Disclose New Stakes. What Will It Take to Get IREN Stock Back to $20?','https://247wallst.com/investing/2026/11/17/iren-is-down-26-in-a-week-even-as-soros-and-intel-disclose-new-stakes-what-will-it-take-to-get-iren-stock-back-to-20/',4),(6,'david beren','The biggest 401k decisions tend to get made once and never revisited: when to roll it over, what to hold inside it, and when to start taking money out. That is exactly what the report: 401k & IRA Tips...','2026-11-17',-0.0039,'Jim Simonsâ€™ Fund Just Dumped 99.7% of Its Nvidia, Which Had Been Its No. 1 Holding','https://247wallst.com/investing/2026/11/17/jim-simons-fund-just-dumped-99-7-of-its-nvidia-which-had-been-its-no-1-holding/',4);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'colin laidley','...','2026-11-18',0.47416,'Big IPOs Are Enticing, but Are They Good Investments?','https://www.morningstar.com/stocks/big-ipos-are-enticing-are-they-good-investments',2),(2,'david moadel',' Market Movers desk. Editor: David Moadel.\nReleased:The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash...','2026-11-18',0.19838,'NVIDIA Is Near Its 52-Week Low. Will NVDA Stock Hit $100 or $200 First?','https://247wallst.com/investing/2026/11/18/nvidia-is-near-its-52-week-low-will-nvda-stock-hit-100-or-200-first/',40),(3,'leo sun','The SPAC-backed robot maker flopped after its market debut.\nBy Leo Sun â€“ Nov 18, 2026 at 2:20PM EST\n10 stocks we like better than Agility Robotics â€º\nAgility Robotics (AGLT -4.46%), a developer of huma...','2026-11-18',0.63338,'Agility Robotics Opened at $11.26 and Dropped to $6. Hereâ€™s the Price Where Iâ€™d Buy the First Humanoid Robot Stock.','https://www.fool.com/investing/2026/11/18/agility-robotics-opened-at-1126-and-dropped-10-heres-the-price-where-id-buy-the-first-humanoid-robot-stock/',4),(4,'keithen drury','Neocloud stocks have sold off heavily in the wake of the Nvidia transition. \nBy Keithen Drury â€“ Nov 18, 2026 at 2:15PM EST\n10 stocks we like better than Nebius Group â€º\nThe neocloud industry has gotten...','2026-11-18',0.19888,'CoreWeave and Nebius: 2 AI Neocloud Stocks Due for a Rebound','https://www.fool.com/investing/2026/11/18/coreweave-and-nebius-2-ai-neocloud-stocks-due-for-a-rebound/',4),(5,'steve muchoki','...','2026-11-18',0,'Nvidia Stock Price Prediction 2026 to 2027','https://coinpedia.org/price-analysis/nvidia-stock-price-prediction-2026-to-2027/',20);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -439,4 +440,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-18  8:01:30
+-- Dump completed on 2026-11-19  8:07:22
