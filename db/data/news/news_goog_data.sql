@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3cc40e27-c6d5-11f1-b20d-622cc4100ba9:1-52,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
+3dd675bd-e4b7-11f1-a53b-729020f79f7f:1-51,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
@@ -417,7 +418,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -426,7 +427,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'keithen drury','Alphabet already owns a huge chunk of Anthropic. It wants more.\nBy Keithen Drury â€“ Nov 18, 2026 at 3:05PM EST\n10 stocks we like better than Alphabet â€º\nAnthropic is going public Thursday, and it wonâ€™t ...','2026-11-18',0.48516,'Alphabet is Buying Around $10 Billion More Anthropic Shares on Day 1. Should You Follow?','https://www.fool.com/investing/2026/11/18/alphabet-is-buying-around-usd10-billion-more-anthropic-shares-on-day-1-should-you-follow/',4),(2,'adria cimino','These companies are building AI businesses designed to last.\nBy Adria Cimino â€“ Nov 18, 2026 at 5:02AM EST\n10 stocks we like better than Amazon â€º\nArtificial intelligence (AI) has been the engine poweri...','2026-11-18',0.52144,'3 Unstoppable AI Stocks to Buy Hand Over Fist Now That the Midterms Are Over','https://www.fool.com/investing/2026/11/18/3-unstoppable-ai-stocks-to-buy-hand-over-fist-now/',4),(3,'cpa','These stocks have tremendous growth potential due to AI, modest valuations, and have less risk than Nvidia these days.\nBy David Jagielski, CPA â€“ Nov 17, 2026 at 3:30PM EST\n10 stocks we like better tha...','2026-11-17',0.65728,'Worried About Nvidia? 3 Artificial Intelligence (AI) Stocks That May Be Safer Buys Right Now','https://www.fool.com/investing/2026/11/17/worried-about-nvidia-3-artificial-intelligence-ai-stocks-that-may-be-safer-buys-right-now/',4),(4,'adam spatacco','Berkshire Hathaway has nearly one-third of its portfolio invested in two \"Magnificent Seven\" stocks.\nBy Adam Spatacco â€“ Nov 17, 2026 at 1:00PM EST\n10 stocks we like better than Apple â€º\nWarren Buffett ...','2026-11-17',0.93708,'Warren Buffettâ€™s Successor, Greg Abel, Has 30.2% of Berkshireâ€™s $367 Billion Portfolio in Just 2 Magnificent Artificial Intelligence (AI) Stocks. Hereâ€™s the One Iâ€™d Buy Without Hesitation.','https://www.fool.com/investing/2026/11/17/warren-buffett-s-successor-greg-abel-has-30-2-of-berkshire-s-usd367-billion-portfolio-in-just-2-monster-artificial-intelligence-ai-stocks-here-s-the-one-i-d-buy-without-hesitation/',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'daniel howley','...','2026-11-19',0.2368,'Anthropic shares open for trading at $111.50, spiking more than 30% above IPO price','https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html',20),(2,'prosper junior bakiny','AI spending continues to rise, and three of its biggest beneficiaries still trade at bargain valuations.\n\nBy Prosper Junior Bakiny â€“ Nov 19, 2026 at 2:14PM EST\n10 stocks we like better than Alphabet â€º...','2026-11-19',0.64582,'3 Dirt Cheap Artificial Intelligence (AI) Stocks to Load Up on Before 2027','https://www.fool.com/investing/2026/11/19/3-dirt-cheap-artificial-intelligence-ai-stocks-to-load-up-on-before-2027/',4),(3,'tech contrarians','...','2026-11-19',0,'Has Nvidia Peaked? TheTechTalk Podcast Episode 3','https://seekingalpha.com/article/4970246-has-nvidia-peaked-techtalk-podcast-episode-3',4),(4,'rich smith','Google just switched support from SpaceX to Blue Origin on its new AI-in-space project.\nBy Rich Smith â€“ Nov 19, 2026 at 12:58PM EST\n10 stocks we like better than Alphabet â€º\nAlphabet (GOOG -2.93%) (GOO...','2026-11-19',0.1986,'Why Alphabet Stock Popped Today','https://www.fool.com/investing/2026/11/19/why-alphabet-stock-popped-today/',4),(5,'financialcontent','NEW YORK, NY - November 19, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-19',0.55012,'Kaplan Fox Encourages Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Deadline on December 1, 2026 for a Leadership Role','https://www.financialcontent.com/article/newmediawire-2026-11-19-kaplan-fox-encourages-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-deadline-on-december-1-2026-for-a-leadership-role',4),(6,'jeremy phillips','Released: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash flow should come from, and how much you c...','2026-11-19',0.22024,'Anthropic, the AI Company Google Backed With $33 Billion, Just Priced Its IPO. Hereâ€™s What Alphabet Shareholders Own','https://247wallst.com/investing/2026/11/19/anthropic-the-ai-company-google-backed-with-33-billion-just-priced-its-ipo-heres-what-alphabet-shareholders-own/',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -440,4 +441,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-19  8:07:22
+-- Dump completed on 2026-11-20  7:52:42

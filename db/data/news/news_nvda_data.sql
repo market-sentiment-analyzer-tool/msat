@@ -114,6 +114,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3cc40e27-c6d5-11f1-b20d-622cc4100ba9:1-52,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
+3dd675bd-e4b7-11f1-a53b-729020f79f7f:1-51,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
@@ -426,7 +427,7 @@ CREATE TABLE `NEWS_NVDA_DATA` (
 
 LOCK TABLES `NEWS_NVDA_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'colin laidley','...','2026-11-18',0.47416,'Big IPOs Are Enticing, but Are They Good Investments?','https://www.morningstar.com/stocks/big-ipos-are-enticing-are-they-good-investments',2),(2,'david moadel',' Market Movers desk. Editor: David Moadel.\nReleased:The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash...','2026-11-18',0.19838,'NVIDIA Is Near Its 52-Week Low. Will NVDA Stock Hit $100 or $200 First?','https://247wallst.com/investing/2026/11/18/nvidia-is-near-its-52-week-low-will-nvda-stock-hit-100-or-200-first/',40),(3,'leo sun','The SPAC-backed robot maker flopped after its market debut.\nBy Leo Sun â€“ Nov 18, 2026 at 2:20PM EST\n10 stocks we like better than Agility Robotics â€º\nAgility Robotics (AGLT -4.46%), a developer of huma...','2026-11-18',0.63338,'Agility Robotics Opened at $11.26 and Dropped to $6. Hereâ€™s the Price Where Iâ€™d Buy the First Humanoid Robot Stock.','https://www.fool.com/investing/2026/11/18/agility-robotics-opened-at-1126-and-dropped-10-heres-the-price-where-id-buy-the-first-humanoid-robot-stock/',4),(4,'keithen drury','Neocloud stocks have sold off heavily in the wake of the Nvidia transition. \nBy Keithen Drury â€“ Nov 18, 2026 at 2:15PM EST\n10 stocks we like better than Nebius Group â€º\nThe neocloud industry has gotten...','2026-11-18',0.19888,'CoreWeave and Nebius: 2 AI Neocloud Stocks Due for a Rebound','https://www.fool.com/investing/2026/11/18/coreweave-and-nebius-2-ai-neocloud-stocks-due-for-a-rebound/',4),(5,'steve muchoki','...','2026-11-18',0,'Nvidia Stock Price Prediction 2026 to 2027','https://coinpedia.org/price-analysis/nvidia-stock-price-prediction-2026-to-2027/',20);
+INSERT INTO `NEWS_NVDA_DATA` VALUES (1,'jake fitzgerald',' Money Talks desk. Editor: Jake FitzGerald.\nReleased: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the ca...','2026-11-19',0.33702,'â€˜SpaceX Has Gone All In With Nvidiaâ€™: Nvidiaâ€™s Biggest Customer Is Also Its Biggest Stock Holding at $19.7B','https://247wallst.com/personal-finance/2026/11/19/spacex-has-gone-all-in-with-nvidia-nvidias-biggest-customer-is-also-its-biggest-stock-holding-at-19-7b/',4),(2,'patrick sanders','Anthropic opened trading today at 34% above its IPO price. A great company can still be a bad buy if you pay too much, and Warren Buffett warned about exactly that.\nBy Patrick Sanders â€“ Nov 19, 2026 a...','2026-11-19',0.0381,'Anthropic Was Worth $111.50 on Its First Day of Trading. Is That a Problem for Investors?','https://www.fool.com/investing/2026/11/19/anthropic-was-worth-111-50-on-its-first-day-of-trading-is-that-a-problem-for-investors/',4),(3,'ebube jones','...','2026-11-19',-0.43384,'Muddy Waters Has Issued a New Short Call on Nvidia. I Still Expect NVDA Stock to Grind Higher.','https://www.barchart.com/story/news/8922932/muddy-waters-has-issued-a-new-short-call-on-nvidia-i-still-expect-nvda-stock-to-grind-higher',20),(4,'kenio fontes','...','2026-11-19',0.272,'Anthropic: Everyone Sees The Upside, Nobody Knows The Real Value','https://seekingalpha.com/article/4970255-anthropic-everyone-sees-the-upside-nobody-knows-the-real-value',4),(5,'tech contrarians','...','2026-11-19',0,'Has Nvidia Peaked? TheTechTalk Podcast Episode 3','https://seekingalpha.com/article/4970246-has-nvidia-peaked-techtalk-podcast-episode-3',40);
 /*!40000 ALTER TABLE `NEWS_NVDA_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -440,4 +441,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-19  8:07:22
+-- Dump completed on 2026-11-20  7:52:42
