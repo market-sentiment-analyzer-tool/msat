@@ -118,6 +118,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+42820d3b-e647-11f1-9cab-c6a7c74479ba:1-57,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -418,7 +419,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -427,7 +428,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'patrick sanders','Anthropic opened trading today at 34% above its IPO price. A great company can still be a bad buy if you pay too much, and Warren Buffett warned about exactly that.\nBy Patrick Sanders â€“ Nov 19, 2026 a...','2026-11-19',0.0381,'Anthropic Was Worth $111.50 on Its First Day of Trading. Is That a Problem for Investors?','https://www.fool.com/investing/2026/11/19/anthropic-was-worth-111-50-on-its-first-day-of-trading-is-that-a-problem-for-investors/',4),(2,'daniel howley','...','2026-11-19',0.2368,'Anthropic shares open for trading at $111.50, spiking more than 30% above IPO price','https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html',20),(3,'prosper junior bakiny','AI spending continues to rise, and three of its biggest beneficiaries still trade at bargain valuations.\n\nBy Prosper Junior Bakiny â€“ Nov 19, 2026 at 2:14PM EST\n10 stocks we like better than Alphabet â€º...','2026-11-19',0.64582,'3 Dirt Cheap Artificial Intelligence (AI) Stocks to Load Up on Before 2027','https://www.fool.com/investing/2026/11/19/3-dirt-cheap-artificial-intelligence-ai-stocks-to-load-up-on-before-2027/',4),(4,'john kingston','\n\n\nWith the possibility of the New York City Delivery Protection Act headed toward some sort of amended structure and then a vote in the New York City Council before the end of the year, the push agai...','2026-11-19',-0.42672,'NYC push against delivery bill brings in legal and racial arguments','https://www.freightwaves.com/news/nyc-push-against-delivery-bill-brings-in-legal-and-racial-arguments',4),(5,'kenio fontes','...','2026-11-19',0.272,'Anthropic: Everyone Sees The Upside, Nobody Knows The Real Value','https://seekingalpha.com/article/4970255-anthropic-everyone-sees-the-upside-nobody-knows-the-real-value',4),(6,'tech contrarians',' \nBenjamin Fanjoy/Getty Images News\nNvidia (NVDA) reported its Q3 earnings this week. It was the companyâ€™s first earnings call without Jensen Huang, who resigned just days earlier as CEO of the compan...','2026-11-19',0.2,'Has Nvidia Peaked? TheTechTalk Podcast Episode 3','https://seekingalpha.com/article/4970246-has-nvidia-peaked-techtalk-podcast-episode-3',8);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'dulan lokuwithana','4kodiak/iStock Unreleased via Getty Images\nAmazon (AMZN) is in advanced discussions to acquire the San Francisco-based AI startup Decart as part of a $7.5B deal that could be announced as early as nex...','2026-11-21',0.5899,'Amazon nearing $7.5B deal to buy AI start-up Decart: FT','https://seekingalpha.com/news/4675396-amazon-nears-75b-deal-buy-ai-start-up-decart?feed_item_type=news',80),(2,'aparajita chatterjee','Please enable JS and disable any ad blocker...','2026-11-21',-0.19092,'Bank of America doubles down on Amazon stock ahead of 2027','https://www.thestreet.com/investing/stocks/bank-of-america-doubles-down-on-amazon-stock-ahead-of-2027',40),(3,'shane hupp','...','2026-11-21',0.2368,'Garde Capital Inc. Acquires 5,818 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13668378/garde-capital-inc-acquires-5818-shares-of-amazon-com-inc-amzn.html',2),(4,'marketbeat','Integrity Advisory Solutions LLC raised its stake in Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 16.1% in the 3rd quarter, according to the company in its most recent filing with the Securities & ...','2026-11-21',0.72776,'Amazon.com, Inc. $AMZN Stake Increased by Integrity Advisory Solutions LLC','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stake-increased-by-integrity-advisory-solutions-llc-2026-11-21/',4),(5,'marketbeat','Oregon Public Employees Retirement Fund increased its holdings in Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 0.3% during the third quarter, according to the company in its most recent 13F filing ...','2026-11-21',0.2,'Amazon.com, Inc. $AMZN Stock Bought by Oregon Public Employees Retirement Fund','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stock-bought-by-oregon-public-employees-retirement-fund-2026-11-21/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -441,4 +442,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-20  7:52:42
+-- Dump completed on 2026-11-22  7:36:32
