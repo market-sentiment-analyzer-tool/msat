@@ -83,6 +83,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
+2523e270-e63a-11f1-a2e5-8ac05a165aa2:1-418,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
@@ -114,6 +115,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3c4f8e9d-f73e-11f0-90fd-be0176a293a4:1-64,
 3cc40e27-c6d5-11f1-b20d-622cc4100ba9:1-52,
 3d68a629-5408-11f1-9ec7-fa8d5827564e:1-56,
+3dd675bd-e4b7-11f1-a53b-729020f79f7f:1-51,
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
@@ -171,7 +173,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
-672bbddc-e4ad-11f1-96ae-d6faee152b2c:1-254,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
@@ -418,7 +419,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -427,7 +428,6 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1y0oddf','19sw8r0wtku83','2026-11-20',15,0.8271,'Just discovered Apple Intelligence has a pretty robust LLM installed in macOS 27. Type â€˜fm chatâ€™ into Terminal and start a conversation. '),(2,'AAPL','1y0oddf','19swha5czaz2b','2026-11-20',5,-0.0026,'Apple will not have the shiniest AI in the market and thats okay. It will become the edge where AI runs and hence sell more iphones and macs which is all shareholders care about.   \nOne more thing is privacy. For any AI agent to do everything for you, it needs to know everything about you and people dont/ wonâ€™t like that. '),(3,'AAPL','1y0oddf','19swl00ak4ow2','2026-11-20',2,0.3612,'Good Investment. It just needs to be basic so they donâ€™t have to pay open ai or anthropic '),(4,'AAPL','1y0oddf','19sw8ki6obls3','2026-11-20',-2,0,'lol â€¦ the canâ€™t even get Siri right '),(5,'AAPL','1y0oddf','19sw90joqpuyq','2026-11-20',-3,-0.6486,'aapl stayed out of the AI bloodbath by admitting to be the dumbest tech company in the s&p with no capex spend. No point in pretending now'),(6,'AAPL','1y0oddf','19swgmq3a2sjk','2026-11-20',-2,-0.5423,'SHORT'),(7,'AAPL','1y0oddf','19sw9c40d8a9t','2026-11-20',-6,-0.25,'Ugh. At some point Apple will have to choose between two groups of customers: people who love AI and want it integrated into their phones, and people who hate AI, disable it when it appears on their phones, and who quietly unfriend anyone they see using it.');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -441,4 +441,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-20  6:52:20
+-- Dump completed on 2026-11-22  6:20:39
