@@ -368,6 +368,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f015f53a-e716-11f1-bf0e-5e18fe8779a8:1-47,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -419,7 +420,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -428,7 +429,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, NY - November 20, 2026 (NEWMEDIAWIRE) - Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-20',-0.23574,'Kaplan Fox Alerts Investors to a Deadline for a Securities Fraud Class Action Lawsuit Against Alphabet Inc. (NASDAQ: GOOGL, GOOG) on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-20-kaplan-fox-alerts-investors-to-a-deadline-for-a-securities-fraud-class-action-lawsuit-against-alphabet-inc-nasdaq-googl-goog-on-december-1-2026',4),(2,'will healy','Take-Two and Anthropic grabbed investor attention in the latter part of the week.\nBy Will Healy â€“ Nov 20, 2026 at 4:33PM EST\n10 stocks we like better than Anthropic â€º\nTake-Two Interactive (TTWO +0.65%...','2026-11-20',0.80006,'Take-Two Interactive vs. Anthropic: Which Market-Moving Stock Is the Better Buy?','https://www.fool.com/investing/2026/11/20/take-two-interactive-vs-anthropic-which-market-moving-stock-is-the-better-buy/',4),(3,'patrick sanders','The sell-off has been brutal, but demand numbers from Nvidia, Google Cloud, and Anthropicâ€™s IPO filing tell a different story.\nBy Patrick Sanders â€“ Nov 20, 2026 at 1:19PM EST\n10 stocks we like better ...','2026-11-20',0.70918,'Dan Ives Just Delivered Great News for AI Stocks. Hereâ€™s the Part That Matters.','https://www.fool.com/investing/2026/11/20/dan-ives-just-delivered-great-news-for-ai-stocks-here-s-the-part-that-matters/',4),(4,'financialcontent','NEW YORK, Nov.  20, 2026  (GLOBE NEWSWIRE) -- Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, GOOG)...','2026-11-20',0.4346,'Kaplan Fox Reminds Investors of Alphabet Inc. (NASDAQ: GOOGL, GOOG) to a Securities Class Action Deadline â€“ Contact the Firm Before December 1, 2026','https://www.financialcontent.com/article/gnwcq-2026-11-20-kaplan-fox-reminds-investors-of-alphabet-inc-nasdaq-googl-goog-to-a-securities-class-action-deadline-contact-the-firm-before-december-1-2026',4),(5,'financialcontent','NEW YORK CITY, NY / ACCESS Newswire / November 20, 2026 / Levi & Korsinsky, LLP reminds purchasers of Alphabet Inc. (NASDAQ:GOOGL, GOOG) securities between May 19, 2026 and July 16, 2026 of a pending ...','2026-11-20',0.36614,'GOOGL/GOOG Shareholder Alert: Alphabet Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky','https://www.financialcontent.com/article/accwirecq-2026-11-20-googlgoog-shareholder-alert-alphabet-inc-securities-class-action-lawsuit-investors-should-contact-levi-and-korsinsky',4);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'matt frankel','Anthropic is already one of the largest companies in the world, and its growth could carry it past all of them.\nBy Matt Frankel, CFPÂ® â€“ Nov 22, 2026 at 8:18AM EST\n10 stocks we like better than Anthrop...','2026-11-22',0.62036,'Prediction: Anthropic Will Be the Worldâ€™s Most Valuable Company by 2030','https://www.fool.com/investing/2026/11/22/prediction-anthropic-will-be-the-world-s-most-valuable-company-by-2030/',4),(2,'neil patel','Is the massive investment paying off?\nBy Neil Patel â€“ Nov 21, 2026 at 11:11PM EST\n10 stocks we like better than Meta Platforms â€º\nMark Zuckerberg founded Facebook in his Harvard dorm room in 2004. It d...','2026-11-22',0.59502,'Mark Zuckerbergâ€™s Meta Platforms Is Pouring Up to $145 Billion Into AI This Year. Investors Should Watch This 1 Number.','https://www.fool.com/investing/2026/11/21/mark-zuckerberg-s-meta-platforms-is-pouring-up-to-usd145-billion-into-ai-this-year-investors-should-watch-this-1-number/',4),(3,'geoffrey seiler','Tepper was selling shares of AMD, Broadcom, and Alphabet in Q3, while buying Nvidia and Micron. \nBy Geoffrey Seiler â€“ Nov 21, 2026 at 10:00PM EST\n10 stocks we like better than Advanced Micro Devices â€º...','2026-11-22',0.11746,'Billionaire David Tepper Just Made a Massive AI Chip Rotation â€” Will It Pay Off?','https://www.fool.com/investing/2026/11/21/billionaire-david-tepper-just-made-a-massive-ai-chip-rotation-will-it-pay-off/',4),(4,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-11-21',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -442,4 +443,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-22  7:36:32
+-- Dump completed on 2026-11-23  8:22:55

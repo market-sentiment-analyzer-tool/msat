@@ -368,6 +368,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f015f53a-e716-11f1-bf0e-5e18fe8779a8:1-47,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -419,7 +420,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -428,7 +429,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'dulan lokuwithana','4kodiak/iStock Unreleased via Getty Images\nAmazon (AMZN) is in advanced discussions to acquire the San Francisco-based AI startup Decart as part of a $7.5B deal that could be announced as early as nex...','2026-11-21',0.5899,'Amazon nearing $7.5B deal to buy AI start-up Decart: FT','https://seekingalpha.com/news/4675396-amazon-nears-75b-deal-buy-ai-start-up-decart?feed_item_type=news',80),(2,'aparajita chatterjee','Please enable JS and disable any ad blocker...','2026-11-21',-0.19092,'Bank of America doubles down on Amazon stock ahead of 2027','https://www.thestreet.com/investing/stocks/bank-of-america-doubles-down-on-amazon-stock-ahead-of-2027',40),(3,'shane hupp','...','2026-11-21',0.2368,'Garde Capital Inc. Acquires 5,818 Shares of Amazon.com, Inc. $AMZN','https://www.tickerreport.com/banking-finance/13668378/garde-capital-inc-acquires-5818-shares-of-amazon-com-inc-amzn.html',2),(4,'marketbeat','Integrity Advisory Solutions LLC raised its stake in Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 16.1% in the 3rd quarter, according to the company in its most recent filing with the Securities & ...','2026-11-21',0.72776,'Amazon.com, Inc. $AMZN Stake Increased by Integrity Advisory Solutions LLC','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stake-increased-by-integrity-advisory-solutions-llc-2026-11-21/',4),(5,'marketbeat','Oregon Public Employees Retirement Fund increased its holdings in Amazon.com, Inc. (NASDAQ:AMZN - Free Report) by 0.3% during the third quarter, according to the company in its most recent 13F filing ...','2026-11-21',0.2,'Amazon.com, Inc. $AMZN Stock Bought by Oregon Public Employees Retirement Fund','https://www.marketbeat.com/instant-alerts/filing-amazoncom-inc-amzn-stock-bought-by-oregon-public-employees-retirement-fund-2026-11-21/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-11-22',0.26364,'Donald Trump announces new penalties for U.S tech firms','https://www.thestreet.com/technology/donald-trump-announces-new-penalties-for-u-s-tech-firms',4),(2,'david beren','Released: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash flow should come from, and how much you c...','2026-11-22',0.46306,'Prologis Has Barely Moved in Five Years, but $1,000 From a Decade Ago Is Worth More Than $3,000','https://247wallst.com/investing/2026/11/22/prologis-has-barely-moved-in-five-years-but-1000-from-a-decade-ago-is-worth-more-than-3000/',4),(3,'matt frankel','Anthropic is already one of the largest companies in the world, and its growth could carry it past all of them.\nBy Matt Frankel, CFPÂ® â€“ Nov 22, 2026 at 8:18AM EST\n10 stocks we like better than Anthrop...','2026-11-22',0.62036,'Prediction: Anthropic Will Be the Worldâ€™s Most Valuable Company by 2030','https://www.fool.com/investing/2026/11/22/prediction-anthropic-will-be-the-world-s-most-valuable-company-by-2030/',4);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -442,4 +443,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-22  7:36:32
+-- Dump completed on 2026-11-23  8:22:54
