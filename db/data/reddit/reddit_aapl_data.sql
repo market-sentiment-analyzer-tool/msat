@@ -83,7 +83,6 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 24411d8d-e205-11f0-a569-169444caaadc:1-64,
 2466f2ae-9dce-11f1-94e7-da5af4083292:1-60,
 2470cc70-fa64-11f0-86dc-82369ed94c0c:1-63,
-2523e270-e63a-11f1-a2e5-8ac05a165aa2:1-418,
 2536561f-d0b9-11f0-bb9b-626eb97a6633:1-62,
 27b1acc0-da76-11f1-bb7b-3a1799fc14a8:1-57,
 280af002-54d2-11f1-8d9b-0a46cf787806:1-61,
@@ -119,6 +118,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 3e1e525e-e5f3-11f0-9a9d-6ede5e4d8afe:1-64,
 3e9e652b-4dbb-11f1-b141-76f7c24ac0b2:1-47,
 4138df5a-6a11-11f1-853a-225e0ca3e733:1-56,
+42820d3b-e647-11f1-9cab-c6a7c74479ba:1-57,
 432f005b-6ad6-11f1-9cff-72fa8093ff6e:1-66,
 44aa5e94-cb38-11f0-b38b-0aff0044bf67:1-59,
 4535dc4f-8583-11f1-b3a4-d26ec6ff6096:1-67,
@@ -273,6 +273,7 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b846faed-cab2-11f1-8cbf-b289668d31b3:1-68,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 b96c3548-e0c4-11f1-8df4-5a299545b1d0:1-49,
+ba608665-e70a-11f1-84d0-4a78215612a8:1-104,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
@@ -419,7 +420,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -428,6 +429,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1y2pv5l','19t16i5w77sas','2026-11-22',3,0,'Did you adjust for stock splits?'),(2,'AAPL','1y2pv5l','19t0v3g4v4uf5','2026-11-22',3,0.8519,'Iâ€™ve been doing the same for years - if you love the product, invest the same in stocks as you do in the product. Now into low seven figures of AAPL.'),(3,'AAPL','1y2pv5l','19t16tkncvklc','2026-11-22',1,0.431,'Not a bad idea for DCA. Â '),(4,'AAPL','1y2pv5l','19t179wpysy6b','2026-11-22',1,0.8173,'Wow. Thatâ€™s incredible growth, isnâ€™t it? '),(5,'AAPL','1y2pv5l','19t18e3qfixoj','2026-11-22',1,-0.7564,'This is true but don\'t u be investing without reasoning. Apple did crash and however if u did hold through all the bottoms, u will end up making money. But apple isn\'t immuned to risks.\n\n| Period | Peak-to-trough decline | Recovery from bottom |\n|---|---:|---|\n| 2018â€“2019 trade war | -38.5% | ~9 months |\n| March 2020 COVID crash | -31.4% | ~2.5 months |\n| September 2020 tech selloff | -20.4% | ~3 months |\n| 2022â€“2023 interest-rate hikes | -30.9% | ~5 months |\n| April 2025 tariff crash | -33.4% | ~6.5 months |'),(6,'AAPL','1y2pv5l','19t1a9qgqcc1w','2026-11-22',1,0,'Have been doing that for the past few years '),(7,'AAPL','1y2pv5l','19t1fogqnwhz5','2026-11-22',1,0.5423,'Or, skip the iPhone and use the money to buy the stock'),(8,'AAPL','1y2pv5l','19t1ucaj3c1ky','2026-11-23',1,0.8735,'Apple and Amazon have already paid for me in appreciation to buy anything I want for them for my entire life. But Iâ€™m making it close, at least on the Amazon side :)'),(9,'AAPL','1y2pv5l','19t0vosu789oj','2026-11-22',0,0.5423,'Same I buy everything Apple and have 7 figures in it which my children will inherit and will follow the same investment strategy. However my Dec 19 Duo wait list is taking forever '),(10,'AAPL','1y2poij','19t0u0f95r3c4','2026-11-22',30,-0.3252,'If you really need a explanation for every daily move you\'re not gonna be satisfied '),(11,'AAPL','1y2poij','19t13w3c1j5b9','2026-11-22',6,0.34,'Just a fyi. \"Pts\" usually refer to percentage POINTS not the dollar amount. \n\nPeople are going to get confused by your title. It\'s up 2% at the time of your screenshot.'),(12,'AAPL','1y2poij','19t0tzmjlrkpw','2026-11-22',8,-0.3412,'Itâ€™s not, itâ€™s only up $2.31.'),(13,'AAPL','1y2poij','19t0wt0fpu9wj','2026-11-22',7,0.296,'AAPL stands to gain from the AI sector collapsing. Cheaper processors and memory mean cheaper hardware production costs for them.\n\nAI is nothing more than value-add for their business model.'),(14,'AAPL','1y2poij','19t0tzycyh4f5','2026-11-22',3,0.6705,'AI is a bit dodgy atm. Apple is in a prime  \nPosition to buy up what it needs along the way as the dominoâ€™s could fall '),(15,'AAPL','1y2poij','19t0vch3lkzog','2026-11-22',2,0.4767,'Everything is up since the crash Friday even ai stocks are up significantly '),(16,'AAPL','1y2poij','19t0yw4ga3an5','2026-11-22',1,0,'Arenâ€™t the markets closed on a Sunday?'),(17,'AAPL','1y2poij','19t16xfjzukkj','2026-11-22',1,0.8225,'If memories got freed up all the OEMs (including autos etc) would benefit. Â '),(18,'AAPL','1y2poij','19t1826ma897p','2026-11-22',1,-0.5106,'OP, stick to ETFs. This post is dumb in multiple ways. '),(19,'AAPL','1y2poij','19t1l2k0edgh1','2026-11-23',1,0.3612,'AAPL has long transitioned to a steady growth and solid business.  It will not grow 100% but it is reliable.  Have had this stock since 1987 and I donâ€™t think the thesis has changed with the pullbackâ€¦ '),(20,'AAPL','1y2poij','19t1qqhzy9i90','2026-11-23',1,0.8442,'Everything being up overnight and dropping the next day is common. Apparently this phenomenon has been studied for decades. Even NVDA is up right now, but Iâ€™d be surprised if it all stays up past noon EST.\n\nhttps://elmwealth.com/night-moves-overnight-drift/'),(21,'AAPL','1y2poij','19t1viyuedbqc','2026-11-23',1,0,'How are you seeing stock prices on a Sunday?Â ');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -441,4 +443,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-22  6:20:39
+-- Dump completed on 2026-11-23  6:56:06
