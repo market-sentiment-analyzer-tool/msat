@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+11e1a623-e7f2-11f1-9ec2-5222e2eb17fe:1-54,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
 124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
@@ -420,7 +421,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -429,7 +430,7 @@ CREATE TABLE `NEWS_GOOG_DATA` (
 
 LOCK TABLES `NEWS_GOOG_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'matt frankel','Anthropic is already one of the largest companies in the world, and its growth could carry it past all of them.\nBy Matt Frankel, CFPÂ® â€“ Nov 22, 2026 at 8:18AM EST\n10 stocks we like better than Anthrop...','2026-11-22',0.62036,'Prediction: Anthropic Will Be the Worldâ€™s Most Valuable Company by 2030','https://www.fool.com/investing/2026/11/22/prediction-anthropic-will-be-the-world-s-most-valuable-company-by-2030/',4),(2,'neil patel','Is the massive investment paying off?\nBy Neil Patel â€“ Nov 21, 2026 at 11:11PM EST\n10 stocks we like better than Meta Platforms â€º\nMark Zuckerberg founded Facebook in his Harvard dorm room in 2004. It d...','2026-11-22',0.59502,'Mark Zuckerbergâ€™s Meta Platforms Is Pouring Up to $145 Billion Into AI This Year. Investors Should Watch This 1 Number.','https://www.fool.com/investing/2026/11/21/mark-zuckerberg-s-meta-platforms-is-pouring-up-to-usd145-billion-into-ai-this-year-investors-should-watch-this-1-number/',4),(3,'geoffrey seiler','Tepper was selling shares of AMD, Broadcom, and Alphabet in Q3, while buying Nvidia and Micron. \nBy Geoffrey Seiler â€“ Nov 21, 2026 at 10:00PM EST\n10 stocks we like better than Advanced Micro Devices â€º...','2026-11-22',0.11746,'Billionaire David Tepper Just Made a Massive AI Chip Rotation â€” Will It Pay Off?','https://www.fool.com/investing/2026/11/21/billionaire-david-tepper-just-made-a-massive-ai-chip-rotation-will-it-pay-off/',4),(4,'mark hake','Not too many people realize that bothÂ GoogleÂ (GOOG,Â GOOGL) andÂ FacebookÂ (FB) make some of the largest stock buyers in the market. They both have massive share repurchase programs that influence their ...','2026-11-21',0.84144,'Facebook and Google Love Stock Buybacks â€” DataDrivenInvestor','https://www.datadriveninvestor.com/articles/facebook-and-google-love-stock-buybacks',40);
+INSERT INTO `NEWS_GOOG_DATA` VALUES (1,'financialcontent','NEW YORK, NY - November 23, 2026 (NEWMEDIAWIRE) -Â Kaplan Fox & Kilsheimer LLP announces that a class action lawsuit has been filed against Alphabet Inc. (â€œAlphabetâ€ or the â€œCompanyâ€) (NASDAQ: GOOGL, G...','2026-11-23',0.1978,'Kaplan Fox Urges Alphabet Inc. (NASDAQ: GOOGL, GOOG) Investors to Contact the Firm Before the Deadline on December 1, 2026','https://www.financialcontent.com/article/newmediawire-2026-11-23-kaplan-fox-urges-alphabet-inc-nasdaq-googl-goog-investors-to-contact-the-firm-before-the-deadline-on-december-1-2026',4),(2,'cfpÂ®','Iâ€™ve invested through plenty of downturns since 2003, and the lessons from the last big one are guiding what Iâ€™m doing now.\nBy Matt Frankel, CFPÂ® â€“ Nov 23, 2026 at 3:12PM EST\n10 stocks we like better ...','2026-11-23',0.1997,'The Stock Market Just Fell 10% From The Highs. Hereâ€™s Exactly What Iâ€™m Doing With My Own Money.','https://www.fool.com/investing/2026/11/23/the-stock-market-just-fell-10-from-the-highs-here-s-exactly-what-i-m-doing-with-my-own-money/',4),(3,'matt frankel','Anthropic is already one of the largest companies in the world, and its growth could carry it past all of them.\nBy Matt Frankel, CFPÂ® â€“ Nov 22, 2026 at 8:18AM EST\n10 stocks we like better than Anthrop...','2026-11-22',0.62036,'Prediction: Anthropic Will Be the Worldâ€™s Most Valuable Company by 2030','https://www.fool.com/investing/2026/11/22/prediction-anthropic-will-be-the-world-s-most-valuable-company-by-2030/',4);
 /*!40000 ALTER TABLE `NEWS_GOOG_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -443,4 +444,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-23  8:22:55
+-- Dump completed on 2026-11-24 10:31:31

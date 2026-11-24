@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+11e1a623-e7f2-11f1-9ec2-5222e2eb17fe:1-54,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
 124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
@@ -420,7 +421,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -429,7 +430,7 @@ CREATE TABLE `NEWS_AMZN_DATA` (
 
 LOCK TABLES `NEWS_AMZN_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'hillary remy','Please enable JS and disable any ad blocker...','2026-11-22',0.26364,'Donald Trump announces new penalties for U.S tech firms','https://www.thestreet.com/technology/donald-trump-announces-new-penalties-for-u-s-tech-firms',4),(2,'david beren','Released: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash flow should come from, and how much you c...','2026-11-22',0.46306,'Prologis Has Barely Moved in Five Years, but $1,000 From a Decade Ago Is Worth More Than $3,000','https://247wallst.com/investing/2026/11/22/prologis-has-barely-moved-in-five-years-but-1000-from-a-decade-ago-is-worth-more-than-3000/',4),(3,'matt frankel','Anthropic is already one of the largest companies in the world, and its growth could carry it past all of them.\nBy Matt Frankel, CFPÂ® â€“ Nov 22, 2026 at 8:18AM EST\n10 stocks we like better than Anthrop...','2026-11-22',0.62036,'Prediction: Anthropic Will Be the Worldâ€™s Most Valuable Company by 2030','https://www.fool.com/investing/2026/11/22/prediction-anthropic-will-be-the-world-s-most-valuable-company-by-2030/',4);
+INSERT INTO `NEWS_AMZN_DATA` VALUES (1,'peter gratton','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-23',0.52482,'How Good Was Mondayâ€™s Stock Rally? Hereâ€™s Where It Ranks in History','https://www.investopedia.com/how-good-was-monday-stock-rally-here-where-it-ranks-in-history-nvda-nasdaq-s-and-p-500-dow-jones-12275212',4),(2,'marketbeat','Amazon.com, Inc. (NASDAQ:AMZN - Get Free Report) shares were up 3.5% during mid-day trading on Monday after Oppenheimer raised their price target on the stock from $285.00 to $310.00. Oppenheimer curr...','2026-11-23',0.2,'Amazon.com (NASDAQ:AMZN) Stock Jumps 3.5% After Analyst Upgrade','https://www.marketbeat.com/instant-alerts/price-amazoncom-nasdaq-amzn-stock-jumps-35-after-analyst-upgrade-2026-11-23/',4),(3,'vandita jadeja',' Price Targets desk. Editor: Vandita Jadeja.\nReleased: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the c...','2026-11-23',0.4184,'Prediction: This AI Hardware Stock Could Surprise Investors Over the Next 3 Years','https://247wallst.com/investing/2026/11/23/prediction-this-ai-hardware-stock-could-surprise-investors-over-the-next-3-years/',4),(4,'daniel foelber','Anthropicâ€™s IPO is a market-disrupting event, but it could also create opportunities in the long run.  \nBy Daniel Foelber â€“ Nov 23, 2026 at 11:15AM EST\n10 stocks we like better than Anthropic â€º\nAnthro...','2026-11-23',-0.01864,'2 Reasons Anthropicâ€™s IPO Is a Bigger Risk to the Stock Market Than SpaceXâ€™s','https://www.fool.com/investing/2026/11/23/2-reasons-anthropic-s-ipo-is-a-bigger-risk-to-the-stock-market-than-spacex-s/',4),(5,'keithen drury','The iPhone maker is staying strong. \nBy Keithen Drury â€“ Nov 23, 2026 at 11:12AM EST\n10 stocks we like better than Apple â€º\nIt has been a wild few weeks on Wall Street for big tech. Many of the leading ...','2026-11-23',0.7362,'Apple Hit an All-Time High While AI Stocks Sold Off. Hereâ€™s the Big Tech Stock Iâ€™d Buy.','https://www.fool.com/investing/2026/11/23/apple-hit-an-all-time-high-while-ai-stocks-sold-off-here-s-the-big-tech-stock-i-d-buy/',4),(6,'david beren','Released: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash flow should come from, and how much you c...','2026-11-23',0.34212,'Billionaire Seth Klarman Has 18% of His $5 Billion Stock Portfolio in Amazon','https://247wallst.com/investing/2026/11/23/billionaire-seth-klarman-has-18-of-his-5-billion-stock-portfolio-in-amazon/',40),(7,'ai hardware','By\nAmazon (AMZN ) announced on November 23, 2026 that it had signed an agreement to purchase the proprietary technology behind the Decart Optimization Stack, or DOS. The purchase is intended to improv...','2026-11-23',0.60556,'Amazon Signs Decart Deal to Add AI Optimization Software and Team','https://www.securities.io/amazon-signs-decart-deal-to-add-ai-optimization-software-and-team/',40);
 /*!40000 ALTER TABLE `NEWS_AMZN_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -443,4 +444,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-23  8:22:54
+-- Dump completed on 2026-11-24 10:31:30
