@@ -141,6 +141,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 5399e427-dd4b-11f0-a314-b2a77fb690bd:1-61,
 551aea68-c858-11f1-aea2-6adad17a285a:1-51,
 5547c09b-4cf5-11f1-ae4d-bacad39c2278:1-52,
+561c4cb9-e8b1-11f1-84d0-ae6fb41a7483:1-55,
 5691ae5a-e399-11f0-a7b8-86298bc47ea9:1-54,
 56dff724-0954-11f1-a1ab-f6268f9019c6:1-69,
 56ea8503-b925-11f0-a3de-9a207d6c32ed:1-64,
@@ -421,7 +422,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -430,7 +431,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'peter gratton','\n  If you are a reader experiencing an access issue, please contact\n  support@people.inc. \n  To help us troubleshoot more quickly, you may include your IP address. \n  You can find it by visiting\n  ica...','2026-11-23',0.52482,'How Good Was Mondayâ€™s Stock Rally? Hereâ€™s Where It Ranks in History','https://www.investopedia.com/how-good-was-monday-stock-rally-here-where-it-ranks-in-history-nvda-nasdaq-s-and-p-500-dow-jones-12275212',4),(2,'dante gardener','...','2026-11-23',0.35232,'Microsoft (NASDAQ:MSFT) Stock Price Up 1.6% â€“ Whatâ€™s Next?','https://www.thelincolnianonline.com/2026/11/23/microsoft-nasdaqmsft-stock-price-up-1-6-whats-next.html',20),(3,'david beren','Released: The Definitive Guide to Retirement Income. It is a free guide from Fisher Investments covering what your retirement will really cost, where the cash flow should come from, and how much you c...','2026-11-23',0.48756,'Billionaire Andreas Halvorsen Exited Microsoft and Made TSMC His Top Holding at $1.8 Billion','https://247wallst.com/investing/2026/11/23/billionaire-andreas-halvorsen-exited-microsoft-and-made-tsmc-his-top-holding-at-1-8-billion/',40),(4,'the arora report','This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block i...','2026-11-23',0.16824,'Huang Reinstatedâ€”Time To Add Positions In AI And Semi Stocks','https://www.benzinga.com/opinion/26/11/63553578/huang-reinstated-time-to-add-positions-in-ai-and-semi-stocks',8),(5,'bnnbloomberg.ca staff','Published:Â November 23, 2026 at 1:25p.m. EST\nMarket Call â€“ November 23, 2026 \nPaul Harris, Partner & Portfolio Manager, Harris Douglas Asset Management\nFocus: North American & Global Stocks\nTop Picks:...','2026-11-23',0.36172,'Paul Harrisâ€™ Top Picks for Nov. 23, 2026','https://www.bnnbloomberg.ca/markets/2026/11/23/paul-harris-top-picks-for-nov-23-2026/',4),(6,'brendan coffey','Two software giants with very different financial profiles, one a cash-generating incumbent and the other a fast-growing disruptor, both vying for corporate software budgets.\nBy Brendan Coffey â€“ Updat...','2026-11-23',0.80038,'Docusign vs. Figma: Which Technology Stock Is a Better Buy for 2027?','https://www.fool.com/coverage/better-buy/2026/11/23/docusign-vs-figma-which-technology-stock-is-a-better-buy-for-2027/',4),(7,'wsm admin','Posted on Nov 23, 2026\nÂ \nKey Takeaways\nÂ \nThe organization responsible for holding more than $114 trillion in U.S. securities has launched a blockchain tokenization service.Â \nAnd thatâ€™s only oneÂ of the...','2026-11-23',0.19992,'A $114 Trillion Wall Street Giant Just Put This 9-Cent Crypto on the Map','https://durangodowntown.com/news/arts-entertainment/a-114-trillion-wall-street-giant-just-put-this-9-cent-crypto-on-the-map/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'noor ul ain rehman','Join Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free browsing Â· 30-day money back guarantee\nJoin Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free bro...','2026-11-24',0.86154,'10 Best Quantum Computing Stocks To Buy for 2027','https://www.insidermonkey.com/news/10-best-quantum-computing-stocks-to-buy-for-2027-1869041/',4),(2,'daniel foelber','Nvidia stock is dirt cheap, but there are serious risks to the investment thesis.\nBy Daniel Foelber â€“ Nov 24, 2026 at 2:29PM EST\n10 stocks we like better than Nvidia â€º\nNvidia (NVDA -5.86%) was in free...','2026-11-24',0.1381,'With Jensen Huang Back as CEO, Is It More Likely That Nvidia Will Rebound to $243.37 or Plummet to $100?','https://www.fool.com/investing/2026/11/24/with-jensen-huang-back-as-ceo-is-it-more-likely-that-nvidia-will-rebound-to-usd243-37-or-plummet-to-usd100/',4),(3,'david jagielski','Amazon, Microsoft, and Walmart are massive companies that are likely to continue to dominate their respective industries for years to come.\nBy David Jagielski, CPA â€“ Nov 24, 2026 at 2:22PM EST\n10 stoc...','2026-11-24',0.60838,'3 Unstoppable Stocks That Can Be Great Buys for Decades','https://www.fool.com/investing/2026/11/24/3-unstoppable-stocks-that-can-be-great-buys-for-decades/',4),(4,'rebecca mezistrano','Please enable JS and disable any ad blocker...','2026-11-24',0.40084,'â€œPanic drivenâ€ AI selloff: Why Gene Munster sees opportunity now','https://www.thestreet.com/video/panic-driven-ai-selloff-why-gene-munster-sees-an-opportunity-now',4),(5,'brendan coffey','Fastly sells speed, Okta sells security, and their valuations and profit profiles tell very different stories for 2027.\nBy Brendan Coffey â€“ Updated Nov 24, 2026 at 12:30PM EST\n10 stocks we like better...','2026-11-24',0.8003,'Fastly vs. Okta: Which Technology Stock Is a Better Buy for 2027?','https://www.fool.com/coverage/better-buy/2026/11/24/fastly-vs-okta-which-technology-stock-is-a-better-buy-for-2027/',4);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -444,4 +445,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-24 10:31:31
+-- Dump completed on 2026-11-25  9:20:36
