@@ -39,6 +39,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 0da3cd2f-07c4-11f1-aee6-ee82c2f0579b:1-59,
 0eb27143-8193-11f1-86ec-ea0a9d083a16:1-55,
 0eed82ba-2bec-11f1-b443-562508bae064:1-59,
+11e1a623-e7f2-11f1-9ec2-5222e2eb17fe:1-54,
 1217054e-864b-11f1-bc26-12f59257621f:1-56,
 124f5583-8714-11f1-8eae-32c858cdf6c3:1-56,
 1265e738-7f37-11f1-be77-1ec957069a19:1-59,
@@ -173,6 +174,7 @@ SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '0371795c-4b5e-11f1-9260-666e295f5a4f:1-
 64eb1790-0c7a-11f1-ae37-cef80a0c0938:1-63,
 65b324fa-1a9e-11f1-935d-1a82e74799c0:1-58,
 672017ad-2a56-11f1-91bb-7609b1e75cb0:1-63,
+67b27491-e8a5-11f1-b224-9e2397d1d113:1-925,
 67ee559b-46a9-11f1-a322-eaa6ea373a64:1-57,
 68b656f6-57f8-11f1-a63c-aa289e2b73e7:1-56,
 69501ed9-8c96-11f1-b9df-bebd48381070:1-64,
@@ -273,7 +275,6 @@ b797a802-78f7-11f1-93a0-8a31b549f707:1-57,
 b846faed-cab2-11f1-8cbf-b289668d31b3:1-68,
 b8a411fd-b793-11f0-9ea5-06519f48293b:1-71,
 b96c3548-e0c4-11f1-8df4-5a299545b1d0:1-49,
-ba608665-e70a-11f1-84d0-4a78215612a8:1-104,
 baa5d493-b600-11f0-80b3-e6572f670325:1-67,
 baa8858a-6ba4-11f1-8aa9-064d6e53e9c8:1-62,
 bafdcd93-b7d9-11f1-a50f-3aafaf2989ee:1-59,
@@ -369,6 +370,7 @@ ed7f378d-3490-11f1-a640-f2e9b1e89449:1-63,
 ee2edb78-e18e-11f1-9a0d-c6ae42ec3155:1-57,
 ef7ebf62-d42b-11f1-805a-ea7cc694fdbb:1-56,
 efa8e653-fbf4-11f0-aec6-22d34be46de2:1-68,
+f015f53a-e716-11f1-bf0e-5e18fe8779a8:1-47,
 f0b09636-c5b7-11f0-9ac8-966ddae600bc:1-63,
 f0bcfac1-c4ee-11f0-bcfd-d21fd7890440:1-65,
 f1aed640-41f0-11f1-8631-3a54dc72984a:1-54,
@@ -420,7 +422,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
   `sentiment` float DEFAULT NULL,
   `p_description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -429,7 +431,7 @@ CREATE TABLE `REDDIT_AAPL_DATA` (
 
 LOCK TABLES `REDDIT_AAPL_DATA` WRITE;
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` DISABLE KEYS */;
-INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1y2pv5l','19t16i5w77sas','2026-11-22',3,0,'Did you adjust for stock splits?'),(2,'AAPL','1y2pv5l','19t0v3g4v4uf5','2026-11-22',3,0.8519,'Iâ€™ve been doing the same for years - if you love the product, invest the same in stocks as you do in the product. Now into low seven figures of AAPL.'),(3,'AAPL','1y2pv5l','19t16tkncvklc','2026-11-22',1,0.431,'Not a bad idea for DCA. Â '),(4,'AAPL','1y2pv5l','19t179wpysy6b','2026-11-22',1,0.8173,'Wow. Thatâ€™s incredible growth, isnâ€™t it? '),(5,'AAPL','1y2pv5l','19t18e3qfixoj','2026-11-22',1,-0.7564,'This is true but don\'t u be investing without reasoning. Apple did crash and however if u did hold through all the bottoms, u will end up making money. But apple isn\'t immuned to risks.\n\n| Period | Peak-to-trough decline | Recovery from bottom |\n|---|---:|---|\n| 2018â€“2019 trade war | -38.5% | ~9 months |\n| March 2020 COVID crash | -31.4% | ~2.5 months |\n| September 2020 tech selloff | -20.4% | ~3 months |\n| 2022â€“2023 interest-rate hikes | -30.9% | ~5 months |\n| April 2025 tariff crash | -33.4% | ~6.5 months |'),(6,'AAPL','1y2pv5l','19t1a9qgqcc1w','2026-11-22',1,0,'Have been doing that for the past few years '),(7,'AAPL','1y2pv5l','19t1fogqnwhz5','2026-11-22',1,0.5423,'Or, skip the iPhone and use the money to buy the stock'),(8,'AAPL','1y2pv5l','19t1ucaj3c1ky','2026-11-23',1,0.8735,'Apple and Amazon have already paid for me in appreciation to buy anything I want for them for my entire life. But Iâ€™m making it close, at least on the Amazon side :)'),(9,'AAPL','1y2pv5l','19t0vosu789oj','2026-11-22',0,0.5423,'Same I buy everything Apple and have 7 figures in it which my children will inherit and will follow the same investment strategy. However my Dec 19 Duo wait list is taking forever '),(10,'AAPL','1y2poij','19t0u0f95r3c4','2026-11-22',30,-0.3252,'If you really need a explanation for every daily move you\'re not gonna be satisfied '),(11,'AAPL','1y2poij','19t13w3c1j5b9','2026-11-22',6,0.34,'Just a fyi. \"Pts\" usually refer to percentage POINTS not the dollar amount. \n\nPeople are going to get confused by your title. It\'s up 2% at the time of your screenshot.'),(12,'AAPL','1y2poij','19t0tzmjlrkpw','2026-11-22',8,-0.3412,'Itâ€™s not, itâ€™s only up $2.31.'),(13,'AAPL','1y2poij','19t0wt0fpu9wj','2026-11-22',7,0.296,'AAPL stands to gain from the AI sector collapsing. Cheaper processors and memory mean cheaper hardware production costs for them.\n\nAI is nothing more than value-add for their business model.'),(14,'AAPL','1y2poij','19t0tzycyh4f5','2026-11-22',3,0.6705,'AI is a bit dodgy atm. Apple is in a prime  \nPosition to buy up what it needs along the way as the dominoâ€™s could fall '),(15,'AAPL','1y2poij','19t0vch3lkzog','2026-11-22',2,0.4767,'Everything is up since the crash Friday even ai stocks are up significantly '),(16,'AAPL','1y2poij','19t0yw4ga3an5','2026-11-22',1,0,'Arenâ€™t the markets closed on a Sunday?'),(17,'AAPL','1y2poij','19t16xfjzukkj','2026-11-22',1,0.8225,'If memories got freed up all the OEMs (including autos etc) would benefit. Â '),(18,'AAPL','1y2poij','19t1826ma897p','2026-11-22',1,-0.5106,'OP, stick to ETFs. This post is dumb in multiple ways. '),(19,'AAPL','1y2poij','19t1l2k0edgh1','2026-11-23',1,0.3612,'AAPL has long transitioned to a steady growth and solid business.  It will not grow 100% but it is reliable.  Have had this stock since 1987 and I donâ€™t think the thesis has changed with the pullbackâ€¦ '),(20,'AAPL','1y2poij','19t1qqhzy9i90','2026-11-23',1,0.8442,'Everything being up overnight and dropping the next day is common. Apparently this phenomenon has been studied for decades. Even NVDA is up right now, but Iâ€™d be surprised if it all stays up past noon EST.\n\nhttps://elmwealth.com/night-moves-overnight-drift/'),(21,'AAPL','1y2poij','19t1viyuedbqc','2026-11-23',1,0,'How are you seeing stock prices on a Sunday?Â ');
+INSERT INTO `REDDIT_AAPL_DATA` VALUES (1,'AAPL','1y4h7yd','19t4kusy4jdb8','2026-11-24',21,0.8442,'Itâ€™s always a good time to buy if youâ€™re a holder. If youâ€™re trying to time the market, I canâ€™t help you. '),(2,'AAPL','1y4h7yd','19t4lziixlbfp','2026-11-24',6,0,'I got in at 309 and it was ATH at that time. '),(3,'AAPL','1y4h7yd','19t4m3r9xk750','2026-11-24',5,0.5423,'Everyone who owns AAPL even bought at ATH has made money. That is a fact. Just donâ€™t buy in one shot. Accumulate the dips '),(4,'AAPL','1y4h7yd','19t4mgmv2nns2','2026-11-24',8,0,'time in the market beats timing the market'),(5,'AAPL','1y4h7yd','19t4ksbjlva5c','2026-11-24',6,0.5423,'Do you usually buy stocks when theyâ€™re at all time highs?'),(6,'AAPL','1y4h7yd','19t4ubfgg3a5g','2026-11-24',2,0,'Literally ever week I see this post/question about AAPL.  '),(7,'AAPL','1y4h7yd','19t4l08fp7qcg','2026-11-24',4,0.807,'Yep please buy!'),(8,'AAPL','1y4h7yd','19t4qn84ajztt','2026-11-24',2,0.7964,'anytime is a good time to buy Apple. Keep buying and holding. '),(9,'AAPL','1y4h7yd','19t4otbkehych','2026-11-24',1,0,'Stock. Singular. '),(10,'AAPL','1y4h7yd','19t4pwlkba8th','2026-11-24',1,0,'Put 1 dollar in and watch the price '),(11,'AAPL','1y4h7yd','19t4qrh11sg82','2026-11-24',1,0,'Drip, drip, drip '),(12,'AAPL','1y4h7yd','19t4slpgfyw4l','2026-11-24',1,0,'Dollar cost average your way into it'),(13,'AAPL','1y4h7yd','19t4snxht3d41','2026-11-24',1,0.2732,'Itâ€™s been a safe bet in history but no one knows for sure.'),(14,'AAPL','1y4h7yd','19t4v3jvz0qoz','2026-11-24',1,0.3818,'Once you walk by an Apple Store and see it looks like a Microsoft Store is when you stop buying AAPL stock.  Otherwise since no one not even Buffett (since 2000) beats the market every year.  Buy AAPL or VOO/VGT whenever you have any money leftover.  '),(15,'AAPL','1y4h7yd','19t5djms7f9r8','2026-11-25',1,0.6956,'The only better time has and will always be yesterday. \n\nThereâ€™s no bad time to get into AAPL. '),(16,'AAPL','1y4h7yd','19t4kub1uq6n7','2026-11-24',0,-0.431,'accumulate on the dips. Wouldn\'t buy at ATH'),(17,'AAPL','1y4h7yd','19t4lbh0qwjs5','2026-11-24',0,0.5859,'Took some profit after buying at 198 and going up 70%, i\'m hesitant on buying right now'),(18,'AAPL','1y4h7yd','19t4pwf24sxsw','2026-11-24',0,-0.443,'I would not buy in one shot right now. Maybe start with a very very small position and see whether you like the innovation, new product lineups, quarterly financials, etc. and then take a call before adding more. It\'s at an all time high with absurd PE ratio and no real change in financial performance so you may lose too. '),(19,'AAPL','1y4h7yd','19t4pvc274ffm','2026-11-24',-2,-0.5864,'It doesnâ€™t really matter but I would wait till it goes down some');
 /*!40000 ALTER TABLE `REDDIT_AAPL_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -443,4 +445,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-23  6:56:06
+-- Dump completed on 2026-11-25  8:37:00
