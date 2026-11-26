@@ -251,6 +251,7 @@ a35b3f3f-1842-11f1-a53c-6e357fc069b2:1-63,
 a3e34ab3-5b1b-11f1-8cfb-22f29ea0a193:1-57,
 a3f275d0-e072-11f0-bffc-a646233cc73c:1-70,
 a4afabc4-63bf-11f1-bc9f-127066ed37e2:1-55,
+a5f538fa-e977-11f1-8785-7edcf10cc71e:1-58,
 a6182a4d-fd8a-11f0-a095-26efd5cfe332:1-63,
 a6509fc6-750b-11f1-ac59-4a0beac2bdd2:1-57,
 a881b65b-d9b3-11f1-ac6c-4e826f60b3d2:1-46,
@@ -422,7 +423,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
   `n_url` varchar(255) DEFAULT NULL,
   `n_weight` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -431,7 +432,7 @@ CREATE TABLE `NEWS_MSFT_DATA` (
 
 LOCK TABLES `NEWS_MSFT_DATA` WRITE;
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` DISABLE KEYS */;
-INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'noor ul ain rehman','Join Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free browsing Â· 30-day money back guarantee\nJoin Premium â€” 33% OFF: $9.99Â (was $14.99)Â Â Monthly Research Reports Â· Ad-free bro...','2026-11-24',0.86154,'10 Best Quantum Computing Stocks To Buy for 2027','https://www.insidermonkey.com/news/10-best-quantum-computing-stocks-to-buy-for-2027-1869041/',4),(2,'daniel foelber','Nvidia stock is dirt cheap, but there are serious risks to the investment thesis.\nBy Daniel Foelber â€“ Nov 24, 2026 at 2:29PM EST\n10 stocks we like better than Nvidia â€º\nNvidia (NVDA -5.86%) was in free...','2026-11-24',0.1381,'With Jensen Huang Back as CEO, Is It More Likely That Nvidia Will Rebound to $243.37 or Plummet to $100?','https://www.fool.com/investing/2026/11/24/with-jensen-huang-back-as-ceo-is-it-more-likely-that-nvidia-will-rebound-to-usd243-37-or-plummet-to-usd100/',4),(3,'david jagielski','Amazon, Microsoft, and Walmart are massive companies that are likely to continue to dominate their respective industries for years to come.\nBy David Jagielski, CPA â€“ Nov 24, 2026 at 2:22PM EST\n10 stoc...','2026-11-24',0.60838,'3 Unstoppable Stocks That Can Be Great Buys for Decades','https://www.fool.com/investing/2026/11/24/3-unstoppable-stocks-that-can-be-great-buys-for-decades/',4),(4,'rebecca mezistrano','Please enable JS and disable any ad blocker...','2026-11-24',0.40084,'â€œPanic drivenâ€ AI selloff: Why Gene Munster sees opportunity now','https://www.thestreet.com/video/panic-driven-ai-selloff-why-gene-munster-sees-an-opportunity-now',4),(5,'brendan coffey','Fastly sells speed, Okta sells security, and their valuations and profit profiles tell very different stories for 2027.\nBy Brendan Coffey â€“ Updated Nov 24, 2026 at 12:30PM EST\n10 stocks we like better...','2026-11-24',0.8003,'Fastly vs. Okta: Which Technology Stock Is a Better Buy for 2027?','https://www.fool.com/coverage/better-buy/2026/11/24/fastly-vs-okta-which-technology-stock-is-a-better-buy-for-2027/',4);
+INSERT INTO `NEWS_MSFT_DATA` VALUES (1,'eric fry','\n\n			eBay delivered spectacular growth, but its shareholders still lost money. Tesla investors should take note.		\nSource: Zigres / Shutterstock.com\nListen to the audio version of this article (genera...','2026-11-25',0.35196,'Before You Buy Tesla, Read This Warning From 1999','https://investorplace.com/smartmoney/2026/11/before-buy-tesla-read-this-warning/',4),(2,'ryne mauck',' The ETF Examiner desk. Editor: Ryne Mauck.\nRead: Building a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitive...','2026-11-25',0.32098,'Every Dollar of Your Retirement Income Comes From One Fund at 73. These 3 ETFs Spread the Load','https://247wallst.com/investing/etf/2026/11/25/every-dollar-of-your-retirement-income-comes-from-one-fund-at-73-these-3-etfs-spread-the-load/',4),(3,'vandita jadeja',' Price Targets desk. Editor: Vandita Jadeja.\nRead: Building a portfolio and living off one are two completely different skills, and almost nobody teaches the second. This problem is what The Definitiv...','2026-11-25',0.6204,'Prediction: IRENâ€™s Microsoft Deal Could Be Just the Beginning of Its Next Growth Phase','https://247wallst.com/investing/2026/11/25/prediction-irens-microsoft-deal-could-be-just-the-beginning-of-its-next-growth-phase-massive-upside-ahead/',40),(4,'ines ferrÃ©','...','2026-11-25',-0.36704,'Nasdaq 100 on pace to enter bear market as AI trade melts down: AlphaCheck','https://ca.finance.yahoo.com/news/ai-trade-melts-down-as-tarrif-worries-fed-hike-odds-spook-market-alphacheck-150907700.html',2),(5,'baron capital','...','2026-11-25',0,'Baron Technology ETF Q3 2026 Shareholder Letter','https://seekingalpha.com/article/4971887-baron-technology-etf-q3-2026-shareholder-letter',4),(6,'kyle jackson','...','2026-11-25',0,'Microsoft (MSFT) and Its Rivals Financial Comparison','https://www.watchlistnews.com/microsoft-msft-and-its-rivals-financial-comparison/11321148.html',20),(7,'andrew daniels','...','2026-11-25',0,'Is Your Fund About to Hand You a Big Tax Bill?','https://www.morningstar.com/funds/is-your-fund-about-hand-you-big-tax-bill',2),(8,'investinglive.com','...','2026-11-25',0.2,'Wall Street braces for another beatdown as US futures tumble, tech selloff deepens','https://investinglive.com/stocks/wall-street-braces-for-another-beatdown-as-us-futures-tumble-tech-selloff-deepens/',2);
 /*!40000 ALTER TABLE `NEWS_MSFT_DATA` ENABLE KEYS */;
 UNLOCK TABLES;
 SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
@@ -445,4 +446,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-25  9:20:36
+-- Dump completed on 2026-11-26  8:59:59
